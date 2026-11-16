@@ -66,3 +66,87 @@ def test_replay_reports_first_bad_step_and_closes_process(monkeypatch):
         integration._replay("source.save", commands, expected, "A")
     assert fake.closed
     assert fake.sent == [{"cmd": "load_save", "path": "source.save"}, *commands]
+
+
+@pytest.mark.parametrize("decision", ["card_select", "bundle_select", "event_choice",
+                                      "rest_site", "shop", "unknown"])
+def test_pending_or_unexpected_decision_is_not_combat_end(decision):
+    from test_save_load import _assert_room_outcome
+    with pytest.raises((AssertionError, pytest.fail.Exception)):
+        _assert_room_outcome({"type": "decision", "decision": decision}, 3)
+
+
+@pytest.mark.parametrize("state", [
+    {"type": "error", "error_code": "combat_turn_timeout"},
+    {"type": "decision", "decision": "card_reward", "from_event": True},
+    {"type": "decision", "decision": "game_over", "victory": True},
+    {"type": "decision", "decision": "game_over", "victory": False, "player": {"hp": 20}},
+])
+def test_invalid_outcome_rejected(state):
+    from test_save_load import _assert_room_outcome
+    with pytest.raises(AssertionError):
+        _assert_room_outcome(state, 3)
+
+
+@pytest.mark.parametrize("state", [
+    {"type": "decision", "decision": "card_reward", "cards": [{"index": 0}],
+     "gold_earned": 10, "player": {"hp": 20}},
+    {"type": "decision", "decision": "map_select", "choices": [{"col": 1}], "player": {"hp": 20}},
+    {"type": "decision", "decision": "game_over", "victory": False, "player": {"hp": 0}},
+])
+def test_explicit_outcomes_require_combat_depth(state):
+    from test_save_load import _assert_room_outcome
+    _assert_room_outcome(state, 2)
+    with pytest.raises(AssertionError, match="at least two combat actions"):
+        _assert_room_outcome(state, 1)
+
+
+def test_record_room_rejects_pending_selection_after_combat_action():
+    from test_save_load import _record_room
+    choice = {"col": 1, "row": 1, "type": "Monster"}
+    combat = {"type": "decision", "decision": "combat_play", "hand": [], "energy": 0}
+
+    class FakeGame:
+        sent = []
+
+        def send(self, command):
+            self.sent.append(command)
+            if len(self.sent) == 1:
+                return combat
+            if len(self.sent) == 2:
+                return combat
+            return {"type": "decision", "decision": "card_select"}
+
+        def get_map(self):
+            return {"type": "map", "current_coord": {"col": 1, "row": 1}}
+
+    game = FakeGame()
+    with pytest.raises(pytest.fail.Exception, match="unsupported pending choice.*card_select"):
+        _record_room(game, {"type": "decision", "decision": "map_select", "choices": [choice]}, choice)
+    assert len(game.sent) == 3
+
+
+def test_replay_rejects_truncated_trace_before_starting_process(monkeypatch):
+    import test_save_load as integration
+
+    def unexpected_process():
+        pytest.fail("invalid trace must be rejected before process creation")
+
+    monkeypatch.setattr(integration, "Game", unexpected_process)
+    with pytest.raises(AssertionError, match="trace length mismatch"):
+        integration._replay("source.save", [{"cmd": "action"}], [{}], "A")
+
+
+def test_record_room_rejects_ignored_map_action():
+    from test_save_load import _record_room
+    choice = {"col": 1, "row": 1, "type": "Monster"}
+
+    class FakeGame:
+        def send(self, command):
+            return {"type": "decision", "decision": "combat_play"}
+
+        def get_map(self):
+            return {"type": "map", "current_coord": {"col": 0, "row": 0}}
+
+    with pytest.raises(AssertionError, match="room entry coordinate"):
+        _record_room(FakeGame(), {"type": "decision", "decision": "map_select", "choices": [choice]}, choice)

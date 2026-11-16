@@ -16,7 +16,6 @@ requires_engine = pytest.mark.skipif(
 )
 
 
-
 @requires_engine
 def test_load_map_save_does_not_retrigger_neow(tmp_path):
     save_path = tmp_path / "map_select.save"
@@ -40,7 +39,6 @@ def test_load_map_save_does_not_retrigger_neow(tmp_path):
     finally:
         game.close()
 
-
 @requires_engine
 def test_load_pre_neow_save_preserves_neow_choice(tmp_path):
     save_path = tmp_path / "pre_neow.save"
@@ -62,8 +60,6 @@ def test_load_pre_neow_save_preserves_neow_choice(tmp_path):
         assert state["decision"] == "event_choice"
     finally:
         game.close()
-
-
 
 
 def _decision(state):
@@ -92,13 +88,20 @@ def _checkpoint(game, path):
 
 def _record_room(game, state, choice):
     """Record entry and every combat action through the first room's outcome."""
+    assert state["decision"] == "map_select", state
+    assert choice in state["choices"], "room entry must be a legal map action"
+    assert choice["type"] == "Monster", "M0-A requires a combat branch"
     commands = [{"cmd": "action", "action": "select_map_node",
                  "args": {"col": choice["col"], "row": choice["row"]}}]
     snapshots = [_snapshot(game, state)]
     state = _decision(game.send(commands[0]))
     snapshots.append(_snapshot(game, state))
+    assert state["decision"] == "combat_play", f"Monster entry did not start combat: {state}"
+    assert_same({"col": choice["col"], "row": choice["row"]},
+                snapshots[1]["map"]["current_coord"], "room entry coordinate")
     for _ in range(300):
         if state["decision"] != "combat_play":
+            _assert_room_outcome(state, len(commands) - 1)
             return commands, snapshots
         command = combat_action(state)
         commands.append(command)
@@ -107,7 +110,28 @@ def _record_room(game, state, choice):
     pytest.fail("combat did not finish within 300 actions")
 
 
+def _assert_room_outcome(state, combat_actions):
+    """Only outcomes emitted after combat, never an arbitrary external prompt."""
+    _decision(state)
+    decision = state["decision"]
+    assert combat_actions >= 2, "must execute at least two combat actions"
+    if decision == "card_reward":
+        assert state.get("from_event", False) is False, "event reward is not a combat outcome"
+        assert state["cards"], "combat card reward must offer cards"
+        assert "gold_earned" in state, "missing native post-combat reward field"
+        assert state["player"]["hp"] > 0, state
+    elif decision == "map_select":
+        assert state["choices"], "first-room exit must offer a continuation"
+        assert state["player"]["hp"] > 0, state
+    elif decision == "game_over":
+        assert state["victory"] is False, "first Monster cannot produce final victory"
+        assert state["player"]["hp"] <= 0, "defeat must report dead player"
+    else:
+        pytest.fail(f"unsupported pending choice or unexpected combat outcome: {decision}: {state}")
+
+
 def _replay(path, commands, expected, label):
+    assert len(expected) == len(commands) + 1, "replay trace length mismatch"
     game = Game()
     try:
         state = game.send({"cmd": "load_save", "path": str(path)})
@@ -118,7 +142,6 @@ def _replay(path, commands, expected, label):
                         f"{label}/{step} {command}")
     finally:
         game.close()
-
 
 @requires_engine
 def test_m0a_continuous_matches_reload(tmp_path):
@@ -139,9 +162,8 @@ def test_m0a_continuous_matches_reload(tmp_path):
     finally:
         assert path.read_bytes() == original, "source save was modified"
 
-
 @requires_engine
-def test_m0a_independent_branches_repeat_from_immutable_save(tmp_path):
+def test_m0a_independent_branches_repeat_from_immutable_save(tmp_path, record_property):
     path = tmp_path / "immutable.save"
     game = Game()
     try:
@@ -149,8 +171,8 @@ def test_m0a_independent_branches_repeat_from_immutable_save(tmp_path):
     finally:
         game.close()
     original = path.read_bytes()
-    choices = initial["choices"]
-    assert len(choices) >= 2, "fixed seed must expose two legal map branches"
+    choices = [choice for choice in initial["choices"] if choice["type"] == "Monster"]
+    assert len(choices) >= 2, "fixed seed must expose two legal Monster branches"
     assert (choices[0]["col"], choices[0]["row"]) != (choices[1]["col"], choices[1]["row"])
     # A, B, A: every branch has its own process, including the repeated A.
     recorded = None
@@ -162,6 +184,12 @@ def test_m0a_independent_branches_repeat_from_immutable_save(tmp_path):
                 assert_same(initial, state, f"branch {index}/load")
                 assert choice in state["choices"], "branch action must be legal after load"
                 commands, snapshots = _record_room(game, state, choice)
+                label = "AB"[index]
+                record_property(f"branch_{label}_coverage", str({
+                    "node": {key: choice[key] for key in ("col", "row", "type")},
+                    "combat_actions": len(commands) - 1,
+                    "end_decision": snapshots[-1]["state"]["decision"],
+                }))
                 if index == 0:
                     recorded = commands, snapshots
             finally:
