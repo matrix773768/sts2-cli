@@ -13,15 +13,12 @@ import time
 
 from branch_memory import MemorySampler
 from branch_scheduler import BranchTask, run_batch
+from room_policy import action, combat_action
 from search_env import SearchEnv
 
 
 SEED = "m0-a-save-load-1"
 STOP = ("card_reward", "map_select")
-
-
-def action(name, **args):
-    return {"action": name, "args": args}
 
 
 def _neow(state):
@@ -37,19 +34,6 @@ def _neow(state):
         return (action("skip_select") if not state["min_select"]
                 else action("select_cards", indices="0"))
     raise ValueError(f"Unsupported Neow decision: {decision}")
-
-
-def _combat(state):
-    for card in state["hand"]:
-        if card["can_play"] and card["cost"] <= state["energy"]:
-            args = {"card_index": card["index"]}
-            if card["target_type"] == "AnyEnemy":
-                target = next((e for e in state["enemies"] if e["hp"] > 0), None)
-                if target is None:
-                    continue
-                args["target_index"] = target["index"]
-            return action("play_card", **args)
-    return action("end_turn")
 
 
 def make_workload(config, deadline):
@@ -75,7 +59,7 @@ def make_workload(config, deadline):
             for _ in range(299):
                 if state["decision"] != "combat_play":
                     break
-                state = env.step(_combat(state))
+                state = env.step(combat_action(state))
             if (state["decision"] not in (*STOP, "game_over") or
                     len(env.position().prefix) < 3 or state.get("from_event")):
                 raise ValueError(f"Unexpected end of fixed combat: {state['decision']}")
