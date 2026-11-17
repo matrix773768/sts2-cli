@@ -167,7 +167,7 @@ class Program
                 return sim.LoadSave(saveJson, loadLang);
             }
             case "get_map":
-                return sim.GetFullMap();
+                return sim.GetFullMap(cmd.TryGetProperty("include_start", out var includeStart) && includeStart.ValueKind == JsonValueKind.True);
 
             case "set_player":
             {

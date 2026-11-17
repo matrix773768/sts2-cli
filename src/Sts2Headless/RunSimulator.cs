@@ -3800,7 +3800,7 @@ public class RunSimulator
         };
     }
 
-    public Dictionary<string, object?> GetFullMap()
+    public Dictionary<string, object?> GetFullMap(bool includeStart = false)
     {
         if (_runState?.Map == null)
             return Error("No map available");
@@ -3862,7 +3862,7 @@ public class RunSimulator
         }
         catch { }
 
-        return new Dictionary<string, object?>
+        var result = new Dictionary<string, object?>
         {
             ["type"] = "map",
             ["context"] = RunContext(),
@@ -3874,6 +3874,23 @@ public class RunSimulator
                 ["row"] = (int)currentCoord.Value.row,
             } : null,
         };
+        if (includeStart)
+        {
+            var start = map.StartingMapPoint;
+            result["starting_point"] = new Dictionary<string, object?>
+            {
+                ["col"] = (int)start.coord.col,
+                ["row"] = (int)start.coord.row,
+                ["type"] = start.PointType.ToString(),
+                ["children"] = start.Children?.Select(child => new Dictionary<string, object?>
+                {
+                    ["col"] = (int)child.coord.col,
+                    ["row"] = (int)child.coord.row,
+                    ["type"] = child.PointType.ToString(),
+                }).ToList(),
+            };
+        }
+        return result;
     }
 
     public void CleanUp()
