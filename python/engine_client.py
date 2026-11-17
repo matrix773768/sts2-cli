@@ -14,11 +14,16 @@ from headless_runtime import headless_command
 ROOT = Path(__file__).resolve().parents[1]
 
 
+class EngineCancelled(RuntimeError):
+    """External cancellation interrupted engine I/O."""
+
 class EngineClient:
     """Run the built headless engine with per-process logs and user data."""
 
-    def __init__(self, *, deadline=None, log_root=None, startup_timeout=20, command_timeout=45):
+    def __init__(self, *, deadline=None, log_root=None, startup_timeout=20, command_timeout=45,
+                 cancelled=None, on_process=None):
         self._deadline = deadline
+        self._cancelled = cancelled
         self._lock = threading.RLock()
         self._command_timeout = command_timeout
         self._runtime_ready = threading.Event()
@@ -49,6 +54,9 @@ class EngineClient:
         self._last_response = None
         self._closed = False
         # Launch the built DLL directly so terminating this process also stops the engine.
+        self._check_cancelled()
+        if self._remaining(startup_timeout) <= 0:
+            raise TimeoutError("Engine launch deadline exceeded")
         self.proc = subprocess.Popen(
             headless_command(), cwd=cwd, env=env,
             stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
@@ -60,6 +68,8 @@ class EngineClient:
         ]
         self._threads = []
         try:
+            if on_process is not None:
+                on_process(self.proc, self.log_dir)
             for thread in threads:
                 thread.start()
                 self._threads.append(thread)
@@ -115,10 +125,16 @@ class EngineClient:
         return max(0, min(timeout, self._deadline - time.monotonic()))
 
     def _read(self, timeout):
-        try:
-            line = self._responses.get(timeout=timeout)
-        except queue.Empty:
-            raise TimeoutError(self._diagnostic(f"No engine response within {timeout}s")) from None
+        end = time.monotonic() + timeout
+        while True:
+            self._check_cancelled()
+            remaining = max(0, end - time.monotonic())
+            try:
+                line = self._responses.get(timeout=min(remaining, 0.05) if self._cancelled else remaining)
+                break
+            except queue.Empty:
+                if time.monotonic() >= end:
+                    raise TimeoutError(self._diagnostic(f"No engine response within {timeout}s")) from None
         if line is None:
             raise RuntimeError(self._diagnostic(f"Engine stdout closed (exit={self.proc.poll()})"))
         if isinstance(line, OSError):
@@ -131,6 +147,10 @@ class EngineClient:
             raise RuntimeError(self._diagnostic("Expected a typed engine response"))
         return self._last_response
 
+    def _check_cancelled(self):
+        if self._cancelled is not None and self._cancelled():
+            raise EngineCancelled("Engine request canceled")
+
     def send(self, cmd):
         with self._lock:
             return self._send(cmd)
@@ -141,6 +161,11 @@ class EngineClient:
         if self._remaining(self._command_timeout) <= 0:
             self.close(graceful=False)
             raise TimeoutError(self._diagnostic("Engine run deadline exceeded"))
+        try:
+            self._check_cancelled()
+        except EngineCancelled:
+            self.close(graceful=False)
+            raise
         self._last_command = cmd
         data = (json.dumps(cmd) + "\n").encode("utf-8")
         with (self.log_dir / "commands.jsonl").open("ab") as log:

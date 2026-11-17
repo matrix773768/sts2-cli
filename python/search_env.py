@@ -142,10 +142,15 @@ class SearchEnv:
     """Single-owner environment. Create separate instances for concurrent runs."""
 
     def __init__(self, *, game_build, checkpoint_dir, log_root=None,
-                 startup_timeout=20, command_timeout=45, run_timeout=300):
+                 startup_timeout=20, command_timeout=45, run_timeout=300,
+                 deadline=None, cancelled=None, on_process=None, timings=None):
         self._config = dict(game_build=game_build, checkpoint_dir=Path(checkpoint_dir).resolve(),
                             log_root=log_root, startup_timeout=startup_timeout,
                             command_timeout=command_timeout, run_timeout=run_timeout)
+        self._deadline = deadline
+        self._cancelled = cancelled
+        self._on_process = on_process
+        self._timings = timings
         self._engine = None
         self._build_id = None
         self._state = None
@@ -154,6 +159,15 @@ class SearchEnv:
         self._source = ()
         self._lang = "en"
 
+    def _timed(self, label, fn, *args, **kwargs):
+        if self._timings is None:
+            return fn(*args, **kwargs)
+        start = time.monotonic()
+        try:
+            return fn(*args, **kwargs)
+        finally:
+            self._timings[label] = self._timings.get(label, 0) + time.monotonic() - start
+
     def _build(self):
         try:
             return Build(self._config["game_build"], _digest((ROOT / "lib/sts2.dll").read_bytes()),
@@ -161,11 +175,11 @@ class SearchEnv:
         except OSError as error:
             raise CheckpointError(f"Cannot fingerprint local engine: {error}") from error
 
-    def _request(self, command, expected):
+    def _request(self, command, expected, *, timing=None):
         if self._engine is None:
             raise EngineFailure("No active engine session")
         try:
-            response = self._engine.send(command)
+            response = self._timed(timing or command["cmd"], self._engine.send, command)
             decision = response.get("decision")
             if (response.get("type") != expected or
                     expected == "decision" and (
@@ -199,8 +213,8 @@ class SearchEnv:
         if (seed is None) == (checkpoint is None):
             raise ValueError("Specify exactly one of seed and checkpoint")
         self.close()
-        self._build_id = self._build()
-        payload = self._payload(checkpoint, self._build_id) if checkpoint else None
+        self._build_id = self._timed('fingerprint', self._build)
+        payload = self._timed('checkpoint_validation', self._payload, checkpoint, self._build_id) if checkpoint else None
         self._root = checkpoint
         self._prefix.clear()
         self._lang = checkpoint.lang if checkpoint else lang
@@ -208,8 +222,11 @@ class SearchEnv:
                         ("seed", seed, character, str(ascension)))
         config = self._config
         try:
-            self._engine = EngineClient(
-                deadline=time.monotonic() + config["run_timeout"],
+            deadline = time.monotonic() + config["run_timeout"]
+            if self._deadline is not None:
+                deadline = min(deadline, self._deadline)
+            self._engine = self._timed('startup', EngineClient,
+                deadline=deadline, cancelled=self._cancelled, on_process=self._on_process,
                 log_root=config["log_root"], startup_timeout=config["startup_timeout"],
                 command_timeout=config["command_timeout"],
             )
@@ -223,16 +240,21 @@ class SearchEnv:
                                ascension=ascension, lang=lang)
             self._state = self._request(command, "decision")
             if checkpoint:
-                _compare(json.loads(checkpoint.observation), self.observe(), "load decision")
-                world = self.get_map()
-                _compare(json.loads(checkpoint.world_map), world, "load map")
-                _validate_boundary(self._state, world)
-                if self._payload(checkpoint, self._build_id) != payload:
-                    raise CheckpointError("Checkpoint changed during restore")
+                self._timed("checkpoint_validation", _compare, json.loads(checkpoint.observation),
+                            self._state, "load decision")
+                world = self._request({"cmd": "get_map", "include_start": True}, "map",
+                                      timing="restore_map")
+                self._timed("checkpoint_validation", self._verify_restore, checkpoint, payload, world)
             return self.observe()
         except BaseException:
             self.close()
             raise
+
+    def _verify_restore(self, checkpoint, payload, world):
+        _compare(json.loads(checkpoint.world_map), world, "load map")
+        _validate_boundary(self._state, world)
+        if self._payload(checkpoint, self._build_id) != payload:
+            raise CheckpointError("Checkpoint changed during restore")
 
     def observe(self):
         """Return a detached copy of the cached decision without engine I/O."""
@@ -244,8 +266,11 @@ class SearchEnv:
         """Execute an action dictionary with 'action' and optional 'args'."""
         command = self._advance(action)
         if self._root is not None:
-            self._prefix.append(ReplayStep(command, _json(self._state), _json(self.get_map())))
+            self._timed('trace', self._record_step, command, self.get_map())
         return self.observe()
+
+    def _record_step(self, command, world):
+        self._prefix.append(ReplayStep(command, _json(self._state), _json(world)))
 
     def _advance(self, action):
         if self._state is None or self._state.get("decision") == "game_over":
@@ -324,17 +349,23 @@ class SearchEnv:
 
     def replay(self, position):
         """Open a fresh branch and stop at the first replay mismatch."""
-        child = self.branch(position.checkpoint)
+        child = SearchEnv(**self._config)
+        child.restore_position(position)
+        return child
+
+    def restore_position(self, position):
+        """Reset this environment and verify a recorded prefix in a fresh process."""
+        self.reset(checkpoint=position.checkpoint)
         try:
             for index, expected in enumerate(position.prefix, 1):
-                command = child._advance(json.loads(expected.action))
-                _compare(json.loads(expected.observation), child._state, f"step {index} decision")
-                world = child.get_map()
+                command = self._advance(json.loads(expected.action))
+                _compare(json.loads(expected.observation), self._state, f"step {index} decision")
+                world = self.get_map()
                 _compare(json.loads(expected.world_map), world, f"step {index} map")
-                child._prefix.append(ReplayStep(command, _json(child._state), _json(world)))
-            return child
+                self._timed("trace", self._record_step, command, world)
+            return self.observe()
         except BaseException:
-            child.close()
+            self.close()
             raise
 
     def close(self):
@@ -344,7 +375,7 @@ class SearchEnv:
         engine, self._engine = self._engine, None
         self._state = None
         if engine:
-            engine.close(graceful=graceful)
+            self._timed('shutdown', engine.close, graceful=graceful)
 
     def __enter__(self):
         return self
