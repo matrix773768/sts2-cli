@@ -2,16 +2,31 @@
 
 ## Testing Requirements
 
-Any code change MUST pass a full regression test before claiming completion:
+### During development
 
-```bash
-# Run 5 games per character, ALL must complete (0 crashes/stuck)
-for char in Ironclad Silent Defect Regent Necrobinder; do
-    STS2_GAME_DIR="$HOME/Library/Application Support/Steam/steamapps/common/Slay the Spire 2/SlayTheSpire2.app/Contents/Resources/data_sts2_macos_arm64" python3 python/play_full_run.py 5 "$char" 2>&1 | grep -E "Wins|Completed"
-do
-```
+Identify the affected behavior and risk before editing. After a small change, run only directly relevant tests. Choose the smallest sufficient set and avoid running successively broader sets by default. Stop after the required checks pass. Reuse prior results for unaffected behavior and identify the revision tested.
 
-Expected: `Completed: 5/5` for every character.
+| Risk | Validation |
+| --- | --- |
+| Low | Directly relevant unit or targeted tests. Documentation-only changes normally need only a diff check. |
+| Medium | Relevant targeted tests and representative real-engine cases where needed. |
+| High | Add focused real-engine regression for affected invariants. RNG, Save/Load, game-state transitions, native async behavior, and cross-process determinism warrant additional coverage when affected. |
+
+For a new failure, inspect the diff and existing logs, then run the smallest reproduction. Expand coverage only when the cause is unclear, shared state is involved, or the suspected impact increases. Verify the original failing case after repair. Preserve existing assertions, seeds, and coverage unless explicitly changing a test fixture for a verified reason. Report unresolved native behavior or major architectural disagreements before continuing the affected work.
+
+### Stage and commit acceptance
+
+Run the module's targeted suite once at module completion, reusing the result if the relevant code and fixtures have not changed. Run full pytest once by default at the end of a major milestone. Run the five-character batch when changes affect native combat, game flow, or other behavior with global simulation impact. Documentation and fixture-only changes normally do not require it.
+
+Review the diff and run `git diff --check`. Report actual checks and results, skipped full validation, and remaining risks. Cite versioned prior runs when relevant and identify them as prior results. Before running experiments materially beyond the task's test budget, explain what uncovered failure they could detect.
+
+### Performance experiments
+
+Manage benchmarks separately from regression tests. Use a small sample to validate measurement and statistics during development. Collect formal benchmark data after the feature stabilizes. Report sample counts and note when P95 or other tail estimates are unstable.
+
+### Full compatibility acceptance
+
+Run the full pytest suite and five full games per character on the supported game and runtime configuration documented in `docs/PROJECT_STATUS.md`. Full compatibility requires the suite to pass and Ironclad, Silent, Defect, Regent, and Necrobinder each to complete 5/5 games without a crash or stall. Report skips and their reasons. Never report a check as passed if it was not run. Development verification and commit acceptance may have a narrower scope.
 
 ## Localization
 
