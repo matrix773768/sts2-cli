@@ -409,6 +409,8 @@ public class RunSimulator
         {
             if (_runState == null) return Error("No run in progress");
             var runState = _runState;
+            if (PendingBossRewardRoom is { } bossRoom)
+                return CardRewardState(runState.Players[0], bossRoom);
             if (runState.CurrentRoom is MerchantRoom)
                 return Error("Leave the shop before entering another room");
             Log($"EnterRoom: type={roomType} encounter={encounter} event={eventId}");
@@ -898,6 +900,10 @@ public class RunSimulator
                 _combatTurnTimedOut = false;
                 return DetectDecisionPoint();
             }
+
+            if (action is "proceed" or "leave_room" or "select_map_node" &&
+                PendingBossRewardRoom is { } bossRoom)
+                return CardRewardState(player, bossRoom);
 
             if (_runState.CurrentRoom is MerchantRoom && _merchantPurchase is { IsCompleted: false } &&
                 action is "buy_card" or "buy_relic" or "buy_potion" or "remove_card")
@@ -1688,24 +1694,9 @@ public class RunSimulator
         if (_runState?.CurrentRoom is MerchantRoom)
             return DoLeaveRoom(player);
 
-        // Check if we need to move to next act (boss defeated)
-        var room = _runState?.CurrentRoom;
-        if (room is CombatRoom combatRoom && combatRoom.RoomType == RoomType.Boss)
-        {
-            if (combatRoom.IsPreFinished || !CombatManager.Instance.IsInProgress)
-            {
-                // Final act boss → victory (same rule as DetectPostCombatState, #81).
-                if (_runState != null && _runState.CurrentActIndex >= 2)
-                {
-                    Log($"Final boss defeated via Proceed (Act {_runState.CurrentActIndex + 1}), reporting victory");
-                    return GameOverState(true);
-                }
-                RunManager.Instance.EnterNextAct().GetAwaiter().GetResult();
-                WaitForActionExecutor();
-                HealBetweenActs();
-                return DetectDecisionPoint();
-            }
-        }
+        // Only post-combat reward settlement decides when a boss can advance the run.
+        if (_runState?.CurrentRoom is CombatRoom { RoomType: RoomType.Boss })
+            return DetectDecisionPoint();
 
         RunManager.Instance.ProceedFromTerminalRewardsScreenAsync().GetAwaiter().GetResult();
         WaitForActionExecutor();
@@ -2829,6 +2820,10 @@ public class RunSimulator
     #endregion
 
     #region Helpers
+
+    private CombatRoom? PendingBossRewardRoom =>
+        _pendingCardReward != null && _runState?.CurrentRoom is CombatRoom { RoomType: RoomType.Boss } room
+            ? room : null;
 
     private bool HasPendingSelection => _cardSelector.HasPending || _cardSelector.HasPendingReward ||
         (_pendingBundles != null && _pendingBundleTcs != null && !_pendingBundleTcs.Task.IsCompleted);
