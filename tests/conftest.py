@@ -26,7 +26,8 @@ COMMAND_TIMEOUT = 45
 class Game:
     """Run the built headless engine with per-process logs and user data."""
 
-    def __init__(self):
+    def __init__(self, *, deadline=None):
+        self._deadline = deadline
         log_root = ROOT / "logs" / "test-engine"
         log_root.mkdir(parents=True, exist_ok=True)
         self.log_dir = Path(tempfile.mkdtemp(prefix="game-", dir=log_root))
@@ -65,7 +66,7 @@ class Game:
         for thread in self._threads:
             thread.start()
         try:
-            ready = self._read(STARTUP_TIMEOUT)
+            ready = self._read(self._remaining(STARTUP_TIMEOUT))
             if ready.get("type") != "ready":
                 raise RuntimeError(self._diagnostic(f"Expected ready, got {ready!r}"))
         except BaseException:
@@ -101,6 +102,11 @@ class Game:
         (self.log_dir / "failure.txt").write_text(detail, encoding="utf-8")
         return detail
 
+    def _remaining(self, timeout):
+        if self._deadline is None:
+            return timeout
+        return max(0, min(timeout, self._deadline - time.monotonic()))
+
     def _read(self, timeout):
         try:
             line = self._responses.get(timeout=timeout)
@@ -124,7 +130,7 @@ class Game:
         started = time.monotonic()
         self._commands.put(data)
         try:
-            return self._read(max(0, COMMAND_TIMEOUT - (time.monotonic() - started)))
+            return self._read(self._remaining(COMMAND_TIMEOUT - (time.monotonic() - started)))
         except BaseException:
             self.close(graceful=False)
             raise
