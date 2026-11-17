@@ -2,45 +2,130 @@
 
 import json
 import os
+from pathlib import Path
+import queue
 import shutil
 import subprocess
+import tempfile
+import threading
+import time
+
 import pytest
 
 DOTNET = os.path.expanduser("~/.dotnet-arm64/dotnet")
 if not os.path.isfile(DOTNET):
     DOTNET = shutil.which("dotnet") or DOTNET
-PROJECT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-                       "src", "Sts2Headless", "Sts2Headless.csproj")
+ROOT = Path(__file__).resolve().parents[1]
+ENGINE = ROOT / "src/Sts2Headless/bin/Debug/net9.0/Sts2Headless.dll"
+STARTUP_TIMEOUT = 20
+COMMAND_TIMEOUT = 45
 
 
 class Game:
-    """Wraps the headless C# process for testing."""
+    """Run the built headless engine with per-process logs and user data."""
 
     def __init__(self):
-        env = os.environ.copy()
-        # Match the interactive launcher's default: resolve dependencies from lib,
-        # never silently borrow missing assemblies from the Steam installation.
-        env["STS2_GAME_DIR"] = os.path.join(os.path.dirname(os.path.dirname(PROJECT)), "..", "lib")
-        self.proc = subprocess.Popen(
-            [DOTNET, "run", "--no-build", "--project", PROJECT],
-            stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-            text=True, bufsize=1, env=env,
-        )
-        ready = self._read()
-        assert ready.get("type") == "ready", f"Expected ready, got: {ready}"
+        log_root = ROOT / "logs" / "test-engine"
+        log_root.mkdir(parents=True, exist_ok=True)
+        self.log_dir = Path(tempfile.mkdtemp(prefix="game-", dir=log_root))
+        cwd = self.log_dir / "cwd"
+        profile = self.log_dir / "profile"
+        roaming = profile / "AppData" / "Roaming"
+        local = profile / "AppData" / "Local"
+        temp = self.log_dir / "temp"
+        for directory in (cwd, roaming, local, temp):
+            directory.mkdir(parents=True)
 
-    def _read(self):
-        while True:
-            line = self.proc.stdout.readline().strip()
-            if not line:
-                raise RuntimeError("EOF from game process")
-            if line.startswith("{"):
-                return json.loads(line)
+        env = {key: value for key, value in os.environ.items()
+               if not key.upper().startswith("STEAM")}
+        env.update(
+            STS2_LIB=str(ROOT / "lib"), STS2_GAME_DIR=str(ROOT / "lib"),
+            HOME=str(profile), USERPROFILE=str(profile), APPDATA=str(roaming),
+            LOCALAPPDATA=str(local), XDG_DATA_HOME=str(profile / ".local/share"),
+            XDG_CONFIG_HOME=str(profile / ".config"), TMP=str(temp), TEMP=str(temp),
+            TMPDIR=str(temp),
+        )
+        self._commands = queue.Queue()
+        self._responses = queue.Queue()
+        self._last_command = None
+        self._last_response = None
+        self._closed = False
+        # Launch the built DLL directly so terminating this process also stops the engine.
+        self.proc = subprocess.Popen(
+            [DOTNET, str(ENGINE)], cwd=cwd, env=env,
+            stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+        )
+        self._threads = [
+            threading.Thread(target=self._drain, args=(self.proc.stdout, "stdout.log"), daemon=True),
+            threading.Thread(target=self._drain, args=(self.proc.stderr, "stderr.log"), daemon=True),
+            threading.Thread(target=self._write_commands, daemon=True),
+        ]
+        for thread in self._threads:
+            thread.start()
+        try:
+            ready = self._read(STARTUP_TIMEOUT)
+            if ready.get("type") != "ready":
+                raise RuntimeError(self._diagnostic(f"Expected ready, got {ready!r}"))
+        except BaseException:
+            self.close(graceful=False)
+            raise
+
+    def _drain(self, stream, filename):
+        try:
+            with (self.log_dir / filename).open("wb") as log:
+                for line in iter(stream.readline, b""):
+                    log.write(line)
+                    log.flush()
+                    if stream is self.proc.stdout and line.lstrip().startswith(b"{"):
+                        self._responses.put(line)
+        except OSError as error:
+            self._responses.put(error)
+        finally:
+            if stream is self.proc.stdout:
+                self._responses.put(None)
+
+    def _write_commands(self):
+        try:
+            with self.proc.stdin:
+                while (command := self._commands.get()) is not None:
+                    self.proc.stdin.write(command)
+                    self.proc.stdin.flush()
+        except OSError as error:
+            self._responses.put(error)
+
+    def _diagnostic(self, message):
+        detail = (f"{message}; last command={self._last_command!r}; "
+                  f"last response={self._last_response!r}; logs={self.log_dir}")
+        (self.log_dir / "failure.txt").write_text(detail, encoding="utf-8")
+        return detail
+
+    def _read(self, timeout):
+        try:
+            line = self._responses.get(timeout=timeout)
+        except queue.Empty:
+            raise TimeoutError(self._diagnostic(f"No engine response within {timeout}s")) from None
+        if line is None:
+            raise RuntimeError(self._diagnostic(f"Engine stdout closed (exit={self.proc.poll()})"))
+        if isinstance(line, OSError):
+            raise RuntimeError(self._diagnostic(f"Engine pipe error: {line}")) from line
+        try:
+            self._last_response = json.loads(line)
+        except (ValueError, UnicodeError) as error:
+            raise RuntimeError(self._diagnostic(f"Invalid engine JSON: {line!r}")) from error
+        return self._last_response
 
     def send(self, cmd):
-        self.proc.stdin.write(json.dumps(cmd) + "\n")
-        self.proc.stdin.flush()
-        return self._read()
+        self._last_command = cmd
+        data = (json.dumps(cmd) + "\n").encode("utf-8")
+        with (self.log_dir / "commands.jsonl").open("ab") as log:
+            log.write(data)
+        started = time.monotonic()
+        self._commands.put(data)
+        try:
+            return self._read(max(0, COMMAND_TIMEOUT - (time.monotonic() - started)))
+        except BaseException:
+            self.close(graceful=False)
+            raise
 
     def start(self, character="Ironclad", seed="test", ascension=0, lang="en"):
         return self.send({"cmd": "start_run", "character": character,
@@ -66,17 +151,25 @@ class Game:
     def set_draw_order(self, cards):
         return self.send({"cmd": "set_draw_order", "cards": cards})
 
-    def close(self):
+    def close(self, *, graceful=True):
+        if self._closed:
+            return
+        self._closed = True
+        if graceful and self.proc.poll() is None:
+            self._commands.put(b'{"cmd":"quit"}\n')
+        self._commands.put(None)
         try:
-            self.proc.stdin.write('{"cmd":"quit"}\n')
-            self.proc.stdin.flush()
-        except Exception:
-            pass
-        try:
-            self.proc.terminate()
-            self.proc.wait(timeout=5)
-        except Exception:
+            if not graceful and self.proc.poll() is None:
+                self.proc.kill()
+            self.proc.wait(timeout=3)
+        except subprocess.TimeoutExpired:
             self.proc.kill()
+            self.proc.wait(timeout=5)
+        finally:
+            for thread in self._threads:
+                thread.join(timeout=5)
+            self.proc.stdout.close()
+            self.proc.stderr.close()
 
     # --- Auto-play helpers ---
 
@@ -130,5 +223,7 @@ class Game:
 def game():
     """Each test gets an independent game process."""
     g = Game()
-    yield g
-    g.close()
+    try:
+        yield g
+    finally:
+        g.close()
