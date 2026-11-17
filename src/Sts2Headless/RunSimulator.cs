@@ -1055,18 +1055,30 @@ public class RunSimulator
 
         Log($"Playing card {card.GetType().Name} (index {cardIndex}) targeting {(target != null ? target.Monster?.GetType().Name ?? "creature" : "none")}");
 
-        var handCountBefore = hand.Count;
-
         var playAction = new PlayCardAction(card, target);
+        var canceled = false;
+        // The native executor can mark a canceled action Finished when it unwinds.
+        playAction.BeforeCancelled += _ => canceled = true;
         RunManager.Instance.ActionQueueSet.EnqueueWithoutSynchronizing(playAction);
         WaitForActionExecutor();
 
-        // Check if card play had no effect (hand unchanged, same card still at same index)
-        var handAfter = pcs.Hand.Cards;
-        if (handAfter.Count == handCountBefore && cardIndex < handAfter.Count && handAfter[cardIndex] == card)
-        {
-            return Error($"Card could not be played (still in hand after action): {card.GetType().Name} [{card.Id}]");
-        }
+        if (playAction.Exception is { } exception)
+            return ErrorWithTrace($"Native play failed for {card.Id}", exception);
+        if (canceled || playAction.State == MegaCrit.Sts2.Core.Entities.Actions.GameActionState.Canceled)
+            return Error($"Native play canceled for {card.Id}");
+
+        // Native PlayCardAction creates this context after validating the card and target
+        // and spending resources. A skipped action can still signal completion.
+        if (playAction.PlayerChoiceContext != null && HasPendingSelection &&
+            ReferenceEquals(RunManager.Instance.ActionExecutor.CurrentlyRunningAction, playAction))
+            return DetectDecisionPoint();
+
+        if (!playAction.CompletionTask.IsCompletedSuccessfully ||
+            playAction.State != MegaCrit.Sts2.Core.Entities.Actions.GameActionState.Finished)
+            return Error($"Native play did not finish for {card.Id} (state={playAction.State}, " +
+                         $"completion={playAction.CompletionTask.Status}); do not retry the action");
+        if (playAction.PlayerChoiceContext == null)
+            return Error($"Native play skipped {card.Id} before executing its effect");
 
         return DetectDecisionPoint();
     }
