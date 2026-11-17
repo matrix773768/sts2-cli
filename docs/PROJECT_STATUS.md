@@ -1,7 +1,7 @@
 # STS2 AI — 项目状态与交接（PROJECT_STATUS）
 
 > 更新日期：2026-11-17（Asia/Singapore）
-> 当前阶段：M1-C 单步地图前瞻已实现。
+> 当前阶段：M1-C 单步地图前瞻及 M1-C2 事件选项前瞻已实现。
 > 本文件描述 **matrix773768/sts2-cli** 的 `port/v0.113.1` 分支，不代表上游 `wuhao21/sts2-cli` 或 `main` 的支持情况。
 > M0 最后一次业务代码提交：`bc48ac58aeca80c2c7b9249cbf98f316ae99a27b` — Restore native Ancient healing and act-start travel rules。
 > 本文件是交接摘要；具体实现、测试断言、原生 IL 及日志以当前仓库和本机实际文件为准。不要将历史总结当成新的测试结果。
@@ -118,6 +118,15 @@
 - 现有 `m0-a-save-load-1` 地图有 `(2,1)`、`(3,1)`、`(5,1)` 三条 Monster 出边。每支执行 27 步，回到地图时均为 68/80 HP（−12）、116 金币（+17），领取 `CARD.HAVOC`，遗物和药水无变化。各得 −11.15 分，按平局规则推荐 `(2,1)`。并发 1 和 4 的轨迹及评分一致，单次搜索分别耗时 9.672 秒和 2.297 秒。耗时来自单次演示。
 - 定向测试 8 项通过，全量 pytest **153 通过、0 失败、1 跳过**，基线 146 项结果逐项一致。唯一跳过仍为 S1 出边不足的跨房 A/B/A 用例。未改动原生逻辑，未重跑五角色批量。演示可用 `python -m pytest -q -s tests/test_map_search.py::test_map_lookahead_serial_parallel` 复现。
 - 默认房间策略当前只覆盖普通战斗与战后卡牌奖励。事件、商店、休息点和战斗内特殊选择等需要明确的策略。下一阶段可先增加房间策略和评价覆盖，再讨论加深搜索。
+
+### M1-C2 事件选项前瞻
+
+- 基线为 `88b19945`。`python/event_search.py` 的 `search_event(position, config)` 接收停在 `event_choice` 的 `SearchPosition`。每个解锁选项都从原生地图检查点独立恢复并逐步比对前缀，然后执行对应的 `choose_option`。普通结果须在同一幕、层和坐标返回地图，也接受真正的游戏终局。
+- 固定续选策略使用原生提供的索引和数量约束，支持事件牌选、事件卡牌奖励、选包与同事件的新决策页。遇到重复事件观察、未知决策、预算截断或不可比较边界，保留状态与原因。任何解锁选项未获得可比结果时不给出推荐。评分复用 M1-C，默认同分按原生选项索引升序。
+- Regent `run_4` 的既有合法路线在第一幕第 3 层进入 The Legends Were True。`Nab the Map` 增加 `CARD.SPOILS_MAP`，HP 和当前金币不变，分数 0。`Slowly Find an Exit` 损失 8 HP 并增加 Fysh Oil，当前金币不变，分数 −8。两支都返回地图，默认推荐选项 0。牌组与药水变化仅记录。
+- 单次演示串行 4.328 秒，并发上限 4 时 1.922 秒。两个配置的完整轨迹与评分一致，四个分支均正常退出，源检查点字节及调用者状态不变。定向测试 9 项通过。复现可运行 `python -m pytest -q -s tests/test_event_search.py::test_event_lookahead_serial_parallel`。
+
+- 全量 pytest **162 通过、0 失败、1 跳过**，原有 154 项结果逐项一致。唯一跳过仍因旧 S1 出边不足。未修改原生规则，未重跑五角色批量。
 
 ## 7. 协作与操作流程
 

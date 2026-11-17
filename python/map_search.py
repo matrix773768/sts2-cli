@@ -94,6 +94,13 @@ class Heuristic:
                             "gold": self.gold_weight * (after.gold - before.gold)})
 
 
+def evaluate_outcome(initial, resources, outcome, evaluator):
+    score = evaluator(initial, resources, outcome)
+    if not math.isfinite(score.total):
+        raise ValueError("Evaluator returned a non-finite score")
+    return score
+
+
 Policy = Callable[[dict], dict | None]
 
 
@@ -194,9 +201,7 @@ def _candidate(node, result, initial, evaluator):
         outcome = "map"
     else:
         return Candidate(node, result, resources, changes, reason="No comparable room boundary")
-    score = evaluator(initial, resources, outcome)
-    if not math.isfinite(score.total):
-        raise ValueError("Evaluator returned a non-finite score")
+    score = evaluate_outcome(initial, resources, outcome, evaluator)
     return Candidate(node, result, resources, changes, outcome, score)
 
 
