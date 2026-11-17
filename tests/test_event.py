@@ -103,7 +103,7 @@ class TestEventSelectionContinuation:
         ("skip_card_reward", 0),
     ])
     def test_event_waits_through_consecutive_card_rewards(self, game, action, cards_added):
-        state = game.start(seed="jester-2nd")
+        state = game.start(seed="run_22")
         deck_before = state["player"]["deck_size"]
         option = next(o for o in state["options"] if o["text_key"].endswith(".KALEIDOSCOPE"))
         state = game.act("choose_option", option_index=option["index"])
@@ -119,7 +119,7 @@ class TestEventSelectionContinuation:
         assert state["player"]["deck_size"] == deck_before + cards_added
 
     def test_event_finishes_after_bundle_selection(self, game):
-        state = game.start(seed="run_5")
+        state = game.start(seed="run_9")
         deck_before = state["player"]["deck_size"]
         option = next(o for o in state["options"] if o["text_key"].endswith(".SCROLL_BOXES"))
         state = game.act("choose_option", option_index=option["index"])
