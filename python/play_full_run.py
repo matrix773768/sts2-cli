@@ -19,40 +19,25 @@ import json
 import subprocess
 import sys
 import random
-import os
 import queue
 import threading
 from game_log import GameLogger
+from headless_runtime import headless_command
 
 VALID_CHARACTERS = ["Ironclad", "Silent", "Defect", "Regent", "Necrobinder"]
-
-def _find_dotnet():
-    for p in [os.path.expanduser("~/.dotnet-arm64/dotnet"),
-              os.path.expanduser("~/.dotnet/dotnet"), "dotnet"]:
-        try:
-            if subprocess.run([p, "--version"], capture_output=True, timeout=5).returncode == 0:
-                return p
-        except (FileNotFoundError, subprocess.TimeoutExpired):
-            continue
-    return "dotnet"
-
-DOTNET = _find_dotnet()
-PROJECT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-                       "src", "Sts2Headless", "Sts2Headless.csproj")
-
 
 def play_run(seed: str, character: str = "Ironclad", verbose: bool = True, log: bool = True):
     """Play a complete run and return the result."""
     rng = random.Random(seed)
     logger = GameLogger(character, seed, enabled=log)
-    proc = subprocess.Popen(
-        [DOTNET, "run", "--no-build", "--project", PROJECT],
-        stdin=subprocess.PIPE,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.DEVNULL if not verbose else None,
-        text=True,
-        bufsize=1,
-    )
+    try:
+        proc = subprocess.Popen(
+            headless_command(), stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+            stderr=subprocess.DEVNULL if not verbose else None,
+            text=True, encoding="utf-8", bufsize=1,
+        )
+    except (OSError, RuntimeError) as error:
+        return {"seed": seed, "error": f"Could not start the .NET 9 headless engine: {error}"}
 
     responses = queue.Queue()
 

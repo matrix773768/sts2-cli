@@ -16,6 +16,7 @@ import os
 import argparse
 import random
 from game_log import GameLogger
+from headless_runtime import headless_command
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECT = os.path.join(ROOT, "src", "Sts2Headless", "Sts2Headless.csproj")
@@ -139,17 +140,11 @@ def _build():
 
 def ensure_setup():
     """Check that everything is ready to run. Auto-setup if needed."""
-    issues = []
-
-    # Check .NET SDK
-    if not DOTNET:
-        print("❌ .NET SDK not found.")
-        print("   Install .NET 9+ from https://dotnet.microsoft.com/download")
-        sys.exit(1)
-
     # Check lib/sts2.dll exists
     sts2_dll = os.path.join(LIB_DIR, "sts2.dll")
     if not os.path.isfile(sts2_dll) or not os.path.isfile(os.path.join(LIB_DIR, "Sentry.Godot.dll")):
+        if not DOTNET:
+            sys.exit(".NET SDK 9+ is required to set up the game DLLs and build.")
         print(t("📦 Game DLLs missing. Running setup...", "📦 缺少游戏 DLL，正在运行安装程序……"))
         game_dir = _find_game_dir()
         if not game_dir:
@@ -172,6 +167,8 @@ def ensure_setup():
     exe_dir = os.path.join(ROOT, "src", "Sts2Headless", "bin", "Debug", "net9.0")
     exe = os.path.join(exe_dir, "Sts2Headless.dll")
     if not os.path.isfile(exe) or os.path.getmtime(sts2_dll) > os.path.getmtime(exe):
+        if not DOTNET:
+            sys.exit(".NET SDK 9+ is required to build the headless engine.")
         print("🏗️  Building...")
         if not _build():
             print("❌ Build failed. Try: ./setup.sh")
@@ -1499,11 +1496,13 @@ def play(character="Ironclad", seed=None, auto=False, ascension=0, log=True,
 
     logger = GameLogger(character, actual_seed, enabled=log)
     action_log = []
-    proc = subprocess.Popen(
-        [DOTNET, "run", "--no-build", "--project", PROJECT],
-        stdin=subprocess.PIPE, stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE, text=True, bufsize=1,
-    )
+    try:
+        proc = subprocess.Popen(
+            headless_command(), stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+            text=True, encoding="utf-8", bufsize=1,
+        )
+    except (OSError, RuntimeError) as error:
+        sys.exit(f"Could not start the .NET 9 headless engine: {error}")
 
     def read():
         while True:
@@ -1538,9 +1537,8 @@ def play(character="Ironclad", seed=None, auto=False, ascension=0, log=True,
     get_input._save_fn = do_save
     try:
         ready = read()
-        if not ready:
-            print("Failed to start simulator")
-            return
+        if not ready or ready.get("type") != "ready":
+            sys.exit("Failed to start simulator. Check the .NET 9 host diagnostics above.")
 
         game_lang = "en" if LANG == "en" else "zh"
         if native_save_path:

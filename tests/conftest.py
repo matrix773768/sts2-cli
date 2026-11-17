@@ -6,6 +6,7 @@ from pathlib import Path
 import queue
 import shutil
 import subprocess
+import sys
 import tempfile
 import threading
 import time
@@ -16,7 +17,8 @@ DOTNET = os.path.expanduser("~/.dotnet-arm64/dotnet")
 if not os.path.isfile(DOTNET):
     DOTNET = shutil.which("dotnet") or DOTNET
 ROOT = Path(__file__).resolve().parents[1]
-ENGINE = ROOT / "src/Sts2Headless/bin/Debug/net9.0/Sts2Headless.dll"
+sys.path.insert(0, str(ROOT / "python"))
+from headless_runtime import headless_command
 STARTUP_TIMEOUT = 20
 COMMAND_TIMEOUT = 45
 
@@ -52,7 +54,7 @@ class Game:
         self._closed = False
         # Launch the built DLL directly so terminating this process also stops the engine.
         self.proc = subprocess.Popen(
-            [DOTNET, str(ENGINE)], cwd=cwd, env=env,
+            headless_command(), cwd=cwd, env=env,
             stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
         )
         self._threads = [

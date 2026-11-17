@@ -41,6 +41,14 @@ class Program
 
     static void Main(string[] args)
     {
+        Console.Error.WriteLine($"[INFO] CoreCLR {Environment.Version}");
+        if (Environment.Version.Major != 9)
+        {
+            Console.Error.WriteLine("[FATAL] Sts2Headless requires .NET 9. Use a .NET 9 host.");
+            Environment.ExitCode = 1;
+            return;
+        }
+
         // Prevent unhandled exceptions from crashing the process
         AppDomain.CurrentDomain.UnhandledException += (_, e) =>
         {
