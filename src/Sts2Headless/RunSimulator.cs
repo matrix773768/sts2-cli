@@ -228,6 +228,7 @@ public class RunSimulator
     private int _lastKnownHp;
     private readonly HeadlessCardSelector _cardSelector = new();
     private IDisposable? _cardSelectorScope;
+    private Task<bool>? _merchantPurchase;
     // Pending bundle selection (Scroll Boxes: pick 1 of N packs)
     private IReadOnlyList<IReadOnlyList<CardModel>>? _pendingBundles;
     private TaskCompletionSource<IEnumerable<CardModel>>? _pendingBundleTcs;
@@ -408,6 +409,8 @@ public class RunSimulator
         {
             if (_runState == null) return Error("No run in progress");
             var runState = _runState;
+            if (runState.CurrentRoom is MerchantRoom)
+                return Error("Leave the shop before entering another room");
             Log($"EnterRoom: type={roomType} encounter={encounter} event={eventId}");
 
             AbstractRoom room;
@@ -552,6 +555,15 @@ public class RunSimulator
                 RunManager.Instance.EnterAct(_runState.CurrentActIndex, doTransition: false).GetAwaiter().GetResult();
                 _syncCtx.Pump();
                 Log($"Entered Act {_runState.CurrentActIndex}");
+
+                // EnterAct initializes the map but resets unknown-node odds for a new act.
+                // Restore the saved odds without advancing or replacing the native RNG.
+                var savedOdds = save.SerializableOdds;
+                var unknownOdds = _runState.Odds.UnknownMapPoint;
+                unknownOdds.MonsterOdds = savedOdds.UnknownMapPointMonsterOddsValue;
+                unknownOdds.EliteOdds = savedOdds.UnknownMapPointEliteOddsValue;
+                unknownOdds.TreasureOdds = savedOdds.UnknownMapPointTreasureOddsValue;
+                unknownOdds.ShopOdds = savedOdds.UnknownMapPointShopOddsValue;
 
                 if (shouldResumeInitialNeow && _runState.Map?.StartingMapPoint != null)
                 {
@@ -887,6 +899,10 @@ public class RunSimulator
                 return DetectDecisionPoint();
             }
 
+            if (_runState.CurrentRoom is MerchantRoom && _merchantPurchase is { IsCompleted: false } &&
+                action is "buy_card" or "buy_relic" or "buy_potion" or "remove_card")
+                return Error("A shop purchase is still in progress");
+
             switch (action)
             {
                 case "select_map_node":
@@ -937,6 +953,8 @@ public class RunSimulator
 
     private Dictionary<string, object?> DoMapSelect(Player player, Dictionary<string, object?>? args)
     {
+        if (_runState?.CurrentRoom is MerchantRoom)
+            return Error("Leave the shop before selecting a map node");
         if (args == null || !args.ContainsKey("col") || !args.ContainsKey("row"))
             return Error("select_map_node requires 'col' and 'row'");
 
@@ -1238,7 +1256,8 @@ public class RunSimulator
             // Adroit, #80). Run the purchase on a background task and yield as soon as a
             // pending selection appears so the caller can resolve it; the background task
             // continues once the selector's TCS is fed by select_cards.
-            var task = Task.Run(() => RunManager.Instance.MerchantSynchronizer.PurchaseLocalEntry(entry));
+            var task = _merchantPurchase =
+                Task.Run(() => RunManager.Instance.MerchantSynchronizer.PurchaseLocalEntry(entry));
             for (int i = 0; i < 100; i++)
             {
                 _syncCtx.Pump();
@@ -1297,13 +1316,14 @@ public class RunSimulator
             return Error("Not in a shop");
 
         var removal = GetShopInventory().CardRemovalEntry;
-        if (removal == null) return Error("No card removal available");
+        if (removal?.IsStocked != true) return Error("No card removal available");
         if (player.Gold < removal.Cost) return Error("Not enough gold");
 
         try
         {
             // Run on background thread so card selection can pause (same pattern as event options)
-            var task = Task.Run(() => RunManager.Instance.MerchantSynchronizer.PurchaseLocalEntry(removal));
+            var task = _merchantPurchase =
+                Task.Run(() => RunManager.Instance.MerchantSynchronizer.PurchaseLocalEntry(removal));
             for (int i = 0; i < 100; i++)
             {
                 _syncCtx.Pump();
@@ -1589,13 +1609,36 @@ public class RunSimulator
     private Dictionary<string, object?> DoLeaveRoom(Player player)
     {
         Log("Leaving room");
+        if (_runState is { CurrentRoom: MerchantRoom } runState)
+        {
+            _syncCtx.Pump();
+            if (HasPendingSelection || _merchantPurchase is { IsCompleted: false })
+                return Error("Finish the pending shop purchase or selection before leaving");
+
+            var coord = runState.CurrentMapCoord;
+            var history = runState.CurrentMapPointHistoryEntry;
+            RunManager.Instance.EnterRoom(new MapRoom()).GetAwaiter().GetResult();
+            if (runState.CurrentRoom is not MapRoom || runState.CurrentMapCoord != coord ||
+                !ReferenceEquals(runState.CurrentMapPointHistoryEntry, history))
+                return Error("Shop exit did not return to the same map location");
+
+            // MerchantRoom.Exit skips its synchronizer in TestMode. The room has
+            // exited and its map history entry is still current, so finalize it once.
+            if (TestMode.IsOn)
+                RunManager.Instance.MerchantSynchronizer.OnMerchantExited();
+            _merchantPurchase = null;
+            _syncCtx.Pump();
+            WaitForActionExecutor();
+            return DetectDecisionPoint();
+        }
+
         RunManager.Instance.ProceedFromTerminalRewardsScreenAsync().GetAwaiter().GetResult();
         _syncCtx.Pump();
         WaitForActionExecutor();
 
         // If still in a non-combat room, force to map
         var room = _runState?.CurrentRoom;
-        if (room is RestSiteRoom || room is MerchantRoom || room is EventRoom || room is TreasureRoom)
+        if (room is RestSiteRoom || room is EventRoom || room is TreasureRoom)
         {
             Log("Force leaving non-combat room to map");
             try
@@ -1642,6 +1685,8 @@ public class RunSimulator
     private Dictionary<string, object?> DoProceed(Player player)
     {
         Log("Proceeding");
+        if (_runState?.CurrentRoom is MerchantRoom)
+            return DoLeaveRoom(player);
 
         // Check if we need to move to next act (boss defeated)
         var room = _runState?.CurrentRoom;
@@ -2666,7 +2711,7 @@ public class RunSimulator
             ["cards"] = cards,
             ["relics"] = relics,
             ["potions"] = potions,
-            ["card_removal_cost"] = removal?.Cost,
+            ["card_removal_cost"] = removal?.IsStocked == true ? removal.Cost : (int?)null,
             ["player"] = PlayerSummary(player),
         };
     }
