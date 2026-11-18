@@ -1,0 +1,1155 @@
+{
+  "versions": {
+    "sampler": "m1-d1-v1",
+    "policy": "M1-F2-discard-v1",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "solver_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13",
+    "solver": "0.51.5/78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+    "headless_sha256": "39254847490612e59a8add592024788475fda706d6ca7b436d73ea0652c6cdda",
+    "coreclr": "9.0.7",
+    "native_identity": "ae303af86f4744b3d3f8d50defa3f136a1f5b285c237813e65e86078adc3f97b",
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3"
+  },
+  "budgets": [
+    128,
+    512
+  ],
+  "offline_oracle": true,
+  "potions": false,
+  "f4_wall_ms": 75424.57729997113,
+  "reused_control_evidence": true,
+  "cases": {
+    "strength-early": {
+      "live": "d94e2ad7131350b0b69f7548d80f9908e9a3f1d9411946985a3a76d23412840a",
+      "initial_rebuild_ms": 2003.1644999980927,
+      "baseline": {
+        "status": "native_win",
+        "first_prediction": 15,
+        "first_strict_search": 40,
+        "search_transitions": 40,
+        "fixed_prediction_transitions": 25,
+        "total_charged": 65,
+        "hot_ms": 830.3116,
+        "wall_ms": 17499.244399834424,
+        "resources": {
+          "hp": 65,
+          "locked_hp": 59,
+          "max_hp": 80,
+          "hp_lost": 7,
+          "potions_used": [],
+          "potion_slots": [
+            "ENERGY_POTION",
+            null,
+            "FLEX_POTION"
+          ]
+        },
+        "trials": [
+          {
+            "key": "2f4081c6e957f314aff0881b11ca5cc3b859d8883d17c69ea474777b17a465c6",
+            "search_transitions": 15,
+            "fixed_prediction_transitions": 15,
+            "status": "prediction_mismatch",
+            "matched_actions": 14,
+            "strict_terminal": false,
+            "fixed_prediction_ms": 3013.660999946296,
+            "native_replay_ms": 2609.9413000047207,
+            "first_difference": 15,
+            "mismatch_frame": {
+              "terminal": true,
+              "before_window": {
+                "side": "Player",
+                "round": 4,
+                "card_plays": 11,
+                "card_draws": 22,
+                "plays_in_window": 2,
+                "enemy_hp": 4
+              },
+              "terminal_window": {
+                "side": "Enemy",
+                "round": 4,
+                "card_plays": 11,
+                "card_draws": 22,
+                "plays_in_window": 0,
+                "enemy_hp": 0
+              },
+              "actual_sha256": "9cf20301bba70df5facb1b8dddc0a542a28627cd969fbece0bc545a49cff9016",
+              "expected_sha256": "036cbd83dffdeb4b30f920cd258c8f01f794efedd07cc1dc65be82a220b6a493"
+            }
+          },
+          {
+            "key": "567822e1c3c3ba6725a12ecbe1418b4e7e65fa237a43ddf33c25eabad254cabf",
+            "search_transitions": 25,
+            "fixed_prediction_transitions": 10,
+            "status": "win",
+            "matched_actions": 10,
+            "strict_terminal": true,
+            "fixed_prediction_ms": 3151.260699843988,
+            "native_replay_ms": 2420.6788998562843,
+            "root_frame_sha256": "65467a2974b58d0aed1374188bfd6579b84282ddec58ea60c97eb99b9e10637a",
+            "strict_frame_sha256": [
+              "e8d8c4117e4732bd71424a13b8200dcc99ed36d92da402f28a70e6d5c7fe79d2",
+              "953e6c83115322b1493933d078129ef5da7204c49aa6282bda8dc8851118e2b3",
+              "d092e478185e1ed31b750d82782fd03ba3d912497f4310db5dafac57b3b8ddad",
+              "5150909bbbb32217f308e108642515b759675d6b6c29f2565cd59ccbe9a13ba6",
+              "3d23e6df868a7796776456a78ed8c9742de0d1bf9e051bdbfca46ee84734bdc6",
+              "0e7560e9e5d3de66beb61bf02f8e84c8a4c31da4213a39df84b2225128fe48ae",
+              "b4875ca7a56df0fb9fe910b54ff33224831a522d4315fa61b70ec7dec3526998",
+              "973825af884510adb676a8c7e6d754a47b56df517a92797dfde26d2d4cda493c",
+              "eb69c3789506e37906740d11dc665d00358a2d8908d155bbc36d33b2d91b7390",
+              "934be546f8e4482026d31191967fbc695f3a5877c53db0e08912336acb3e6bf2"
+            ],
+            "terminal_boundary": "card_reward"
+          }
+        ]
+      },
+      "tiers": {
+        "128": {
+          "quality_status": "transition_cap",
+          "quality_observed": 37,
+          "quality_charged": 37,
+          "seed_replay_transitions": 10,
+          "validation_transitions": 15,
+          "total_charged": 117,
+          "selected": {
+            "key": "567822e1c3c3ba6725a12ecbe1418b4e7e65fa237a43ddf33c25eabad254cabf",
+            "resources": {
+              "hp": 65,
+              "locked_hp": 59,
+              "max_hp": 80,
+              "hp_lost": 7,
+              "potions_used": [],
+              "potion_slots": [
+                "ENERGY_POTION",
+                null,
+                "FLEX_POTION"
+              ]
+            },
+            "source": "first_strict"
+          },
+          "delta_hp": 0,
+          "elapsed_ms": 8840.979699976742,
+          "search_cap": 37,
+          "quality_ms": 3323.358800029382,
+          "quality_hot_ms": 382.2878,
+          "quality_peak_bytes": 123383808,
+          "unique_predicted_wins": 2,
+          "higher_predicted_hp": 2,
+          "best_predicted_locked_hp": 64,
+          "validation": [
+            {
+              "key": "9fc465097d1bc14fa3ff70a5ce7260bdc20348a1634fbe8c7ace7ba45097d48c",
+              "predicted_hp": 64,
+              "discovery_transitions": 84,
+              "status": "prediction_mismatch",
+              "evidence_origin": "128",
+              "reused_validation": false,
+              "elapsed_ms": 5510.845100041479,
+              "fixed_prediction_transitions": 15,
+              "matched_actions": 14,
+              "strict_terminal": false,
+              "fixed_prediction_ms": 2933.841400081292,
+              "native_replay_ms": 2576.086200075224,
+              "first_difference": 15,
+              "mismatch_frame": {
+                "terminal": true,
+                "before_window": {
+                  "side": "Player",
+                  "round": 4,
+                  "card_plays": 11,
+                  "card_draws": 22,
+                  "plays_in_window": 2,
+                  "enemy_hp": 4
+                },
+                "terminal_window": {
+                  "side": "Enemy",
+                  "round": 4,
+                  "card_plays": 11,
+                  "card_draws": 22,
+                  "plays_in_window": 0,
+                  "enemy_hp": 0
+                },
+                "actual_sha256": "9cf20301bba70df5facb1b8dddc0a542a28627cd969fbece0bc545a49cff9016",
+                "expected_sha256": "036cbd83dffdeb4b30f920cd258c8f01f794efedd07cc1dc65be82a220b6a493"
+              }
+            }
+          ]
+        },
+        "512": {
+          "quality_status": "alternatives_exhausted",
+          "quality_observed": 278,
+          "quality_charged": 278,
+          "seed_replay_transitions": 10,
+          "validation_transitions": 45,
+          "total_charged": 388,
+          "selected": {
+            "key": "567822e1c3c3ba6725a12ecbe1418b4e7e65fa237a43ddf33c25eabad254cabf",
+            "resources": {
+              "hp": 65,
+              "locked_hp": 59,
+              "max_hp": 80,
+              "hp_lost": 7,
+              "potions_used": [],
+              "potion_slots": [
+                "ENERGY_POTION",
+                null,
+                "FLEX_POTION"
+              ]
+            },
+            "source": "first_strict"
+          },
+          "delta_hp": 0,
+          "elapsed_ms": 15060.571799986064,
+          "search_cap": 399,
+          "quality_ms": 3456.7010002210736,
+          "quality_hot_ms": 617.4266,
+          "quality_peak_bytes": 124440576,
+          "unique_predicted_wins": 24,
+          "higher_predicted_hp": 12,
+          "best_predicted_locked_hp": 64,
+          "validation": [
+            {
+              "key": "9fc465097d1bc14fa3ff70a5ce7260bdc20348a1634fbe8c7ace7ba45097d48c",
+              "predicted_hp": 64,
+              "discovery_transitions": 84,
+              "status": "prediction_mismatch",
+              "evidence_origin": "128",
+              "reused_validation": true,
+              "elapsed_ms": 0,
+              "fixed_prediction_transitions": 15,
+              "matched_actions": 14,
+              "strict_terminal": false,
+              "fixed_prediction_ms": 0,
+              "native_replay_ms": 0,
+              "first_difference": 15,
+              "mismatch_frame": {
+                "terminal": true,
+                "before_window": {
+                  "side": "Player",
+                  "round": 4,
+                  "card_plays": 11,
+                  "card_draws": 22,
+                  "plays_in_window": 2,
+                  "enemy_hp": 4
+                },
+                "terminal_window": {
+                  "side": "Enemy",
+                  "round": 4,
+                  "card_plays": 11,
+                  "card_draws": 22,
+                  "plays_in_window": 0,
+                  "enemy_hp": 0
+                },
+                "actual_sha256": "9cf20301bba70df5facb1b8dddc0a542a28627cd969fbece0bc545a49cff9016",
+                "expected_sha256": "036cbd83dffdeb4b30f920cd258c8f01f794efedd07cc1dc65be82a220b6a493"
+              }
+            },
+            {
+              "key": "37f052a2220b9b1744d6af4e10f01d0eca280c83c5ea165391596b098db3cf69",
+              "predicted_hp": 64,
+              "discovery_transitions": 94,
+              "status": "prediction_mismatch",
+              "evidence_origin": "512",
+              "reused_validation": false,
+              "elapsed_ms": 5909.370200010017,
+              "fixed_prediction_transitions": 15,
+              "matched_actions": 14,
+              "strict_terminal": false,
+              "fixed_prediction_ms": 3188.3944999426603,
+              "native_replay_ms": 2720.05319991149,
+              "first_difference": 15,
+              "mismatch_frame": {
+                "terminal": true,
+                "before_window": {
+                  "side": "Player",
+                  "round": 4,
+                  "card_plays": 11,
+                  "card_draws": 22,
+                  "plays_in_window": 2,
+                  "enemy_hp": 4
+                },
+                "terminal_window": {
+                  "side": "Enemy",
+                  "round": 4,
+                  "card_plays": 11,
+                  "card_draws": 22,
+                  "plays_in_window": 0,
+                  "enemy_hp": 0
+                },
+                "actual_sha256": "9cf20301bba70df5facb1b8dddc0a542a28627cd969fbece0bc545a49cff9016",
+                "expected_sha256": "036cbd83dffdeb4b30f920cd258c8f01f794efedd07cc1dc65be82a220b6a493"
+              }
+            },
+            {
+              "key": "2f4081c6e957f314aff0881b11ca5cc3b859d8883d17c69ea474777b17a465c6",
+              "predicted_hp": 64,
+              "discovery_transitions": 105,
+              "status": "prediction_mismatch",
+              "evidence_origin": "512",
+              "reused_validation": false,
+              "elapsed_ms": 5678.389300126582,
+              "fixed_prediction_transitions": 15,
+              "matched_actions": 14,
+              "strict_terminal": false,
+              "fixed_prediction_ms": 3016.302799805999,
+              "native_replay_ms": 2661.0636000987142,
+              "first_difference": 15,
+              "mismatch_frame": {
+                "terminal": true,
+                "before_window": {
+                  "side": "Player",
+                  "round": 4,
+                  "card_plays": 11,
+                  "card_draws": 22,
+                  "plays_in_window": 2,
+                  "enemy_hp": 4
+                },
+                "terminal_window": {
+                  "side": "Enemy",
+                  "round": 4,
+                  "card_plays": 11,
+                  "card_draws": 22,
+                  "plays_in_window": 0,
+                  "enemy_hp": 0
+                },
+                "actual_sha256": "9cf20301bba70df5facb1b8dddc0a542a28627cd969fbece0bc545a49cff9016",
+                "expected_sha256": "036cbd83dffdeb4b30f920cd258c8f01f794efedd07cc1dc65be82a220b6a493"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "block-hive-stocked": {
+      "live": "f73cfbd515db076cce20262f80c7846c56cc9284ba9c1d522ac4ec236ea99d14",
+      "initial_rebuild_ms": 1968.5830001253635,
+      "baseline": {
+        "status": "native_win",
+        "first_prediction": 33,
+        "first_strict_search": 33,
+        "search_transitions": 33,
+        "fixed_prediction_transitions": 33,
+        "total_charged": 66,
+        "hot_ms": 352.182,
+        "wall_ms": 8722.70069993101,
+        "resources": {
+          "hp": 65,
+          "locked_hp": 59,
+          "max_hp": 80,
+          "hp_lost": 11,
+          "potions_used": [],
+          "potion_slots": [
+            "SWIFT_POTION",
+            "FLEX_POTION",
+            null
+          ]
+        },
+        "trials": [
+          {
+            "key": "b6a534a6b63039401f905ea60083fd3f411cb914d3b057791129f157ea6ef122",
+            "search_transitions": 33,
+            "fixed_prediction_transitions": 33,
+            "status": "win",
+            "matched_actions": 33,
+            "strict_terminal": true,
+            "fixed_prediction_ms": 2817.6860997918993,
+            "native_replay_ms": 2752.8574999887496,
+            "root_frame_sha256": "9a6382766fb8e1bb10bd319cc0f83f2241e58fa9820b747bed917d5a4bca9508",
+            "strict_frame_sha256": [
+              "2387ed77e12bdc092162610b8a3ca10cd342cf7cc069b1565c3abf30477453c8",
+              "aedecd25a011363a56de13f6403bd94a0d75807108cc6955dc0b1d942f2ec624",
+              "1a77d94b8828652fad6370372c3acf5b77f9ba945dcac33d036b1948a51bfd14",
+              "e204b28d3ccdef9720a102d350dd9a232a1c84e25f0f08b6d6511471b937647d",
+              "b1fda62e85361e75e7b577bd604947a024ba00ffaf459a5d8cd3449966056e81",
+              "40259a53809c6c8b5e9ce4cd6439ae2e3a7d082897101233f1df149c34727577",
+              "5ca152aab96e7a615410ff7489be71f3c774928b3abe4041b52f612615c3c820",
+              "fa3be5241cbb20c0528713bd7f45d3df75cb9ccc709bb727d37472577b044ecd",
+              "3f1768942cb6a58950c232fff8032fd786250db96cc865f0f3a00f067fe01da4",
+              "52491c76ee5fbd264c511a2e67bc7719674895caaab6ef365e239f22415192b5",
+              "63052e6e8ba9f27bd04dd20944a084a667cef33ea7f7381507ed60c06bd4f9e4",
+              "f8fbe3c28ff487fefe97235fef3b3129b676c783e9e9fbdcef1596fb8c66dd1a",
+              "55053ea8871c37a0104cc4dd17ab586808fd69c0761b3515ae76932763619231",
+              "2e87398e9d890d6328ba3c9fbc377b8e5354d1275af3cdecdca2d3ded1c81209",
+              "4d7936c519487a9c8ab5a90b4e351028c6d106979d3dcef950fce9836a1ba656",
+              "69b55c553a7e36c65da294c5a3d9a623581eeaa76a77d60346fcb065fa1974a1",
+              "c281da856b0edec24d96f8c46fabc2ff74b99db53004e49d0e00ec9e587fe022",
+              "1c6920b20354ef124667a57be10f6cab6f623f1c8e992fded9ea5f2496b5e437",
+              "ff44b82fa0ceb5b70fd7d697db8d027d071bf3384cb3e951e57d40bcadd88e76",
+              "af1ace73012bc84e18423cb01a4141e66e13b76b9bdbf000d12594148d0ba9df",
+              "47ed4ead733ef6e25251b8c1cb488727ff6e4dd815a308627141153cdfb5ee40",
+              "535ffa114b3c6815423222c03b48dc3b757562909b75c1d117b274bbb7768e2d",
+              "5c412d10cd99e9e24433cfb8ccc0faee03547568a7f14965f8a1b5c174100892",
+              "547b69fd7b40f1d45793dcc251b8aa37e7b2aaacc6ebcca091745a3ad869e2ad",
+              "922a34201c427aeac904352278f276f483426f01622a407491fab1882ff29eba",
+              "8edcf64805c7fc7f53511ab07b31a2aa04768290254ccda56d9df260fb0ac202",
+              "5aca59db70835835e127dd5fe56c93ee1da54c422ab098fcf489a2d2a92c9e8a",
+              "8e8930157a7b0972babc49cbb0171380b46626b734955ac7ac5381f6650f928c",
+              "937d92dc5806e67f2e1614f8355293f5266c9e9c9b9decb540cbf1d25c9c82cd",
+              "f163341bbf0b2c683182e085b59188919585cdee64bdaab3db3c8f56a63769e8",
+              "15d38bd263019eb25ed0f9bd2f33cdcb0a8b69010dc4d38f2c4ce9bc80506343",
+              "59c6401a79403bd6dd60000b8d78645193982f40c63bec379fa381fa13230331",
+              "302ba099957357b99515595636dfc577d9f83856cfb7a34273950a4c6aebae51"
+            ],
+            "terminal_boundary": "card_reward"
+          }
+        ]
+      },
+      "tiers": {
+        "128": {
+          "quality_status": "transition_cap",
+          "quality_observed": 48,
+          "quality_charged": 48,
+          "seed_replay_transitions": 33,
+          "validation_transitions": 0,
+          "total_charged": 114,
+          "selected": {
+            "key": "b6a534a6b63039401f905ea60083fd3f411cb914d3b057791129f157ea6ef122",
+            "resources": {
+              "hp": 65,
+              "locked_hp": 59,
+              "max_hp": 80,
+              "hp_lost": 11,
+              "potions_used": [],
+              "potion_slots": [
+                "SWIFT_POTION",
+                "FLEX_POTION",
+                null
+              ]
+            },
+            "source": "first_strict"
+          },
+          "delta_hp": 0,
+          "elapsed_ms": 2896.7433001380414,
+          "search_cap": 48,
+          "quality_ms": 2893.78449996002,
+          "quality_hot_ms": 383.6671,
+          "quality_peak_bytes": 123666432,
+          "unique_predicted_wins": 0,
+          "higher_predicted_hp": 0,
+          "best_predicted_locked_hp": null,
+          "validation": []
+        },
+        "512": {
+          "quality_status": "transition_cap",
+          "quality_observed": 398,
+          "quality_charged": 398,
+          "seed_replay_transitions": 33,
+          "validation_transitions": 0,
+          "total_charged": 464,
+          "selected": {
+            "key": "b6a534a6b63039401f905ea60083fd3f411cb914d3b057791129f157ea6ef122",
+            "resources": {
+              "hp": 65,
+              "locked_hp": 59,
+              "max_hp": 80,
+              "hp_lost": 11,
+              "potions_used": [],
+              "potion_slots": [
+                "SWIFT_POTION",
+                "FLEX_POTION",
+                null
+              ]
+            },
+            "source": "first_strict"
+          },
+          "delta_hp": 0,
+          "elapsed_ms": 3432.494299951941,
+          "search_cap": 398,
+          "quality_ms": 3428.3535999711603,
+          "quality_hot_ms": 757.7579,
+          "quality_peak_bytes": 129449984,
+          "unique_predicted_wins": 0,
+          "higher_predicted_hp": 0,
+          "best_predicted_locked_hp": null,
+          "validation": []
+        }
+      }
+    },
+    "poison-early": {
+      "live": "3ae89e17f3b0d370f9ece1e3787cc97bb3417eb73facbc2e2e998865378dc3d7",
+      "initial_rebuild_ms": 1879.115799907595,
+      "baseline": {
+        "status": "native_win",
+        "first_prediction": 9,
+        "first_strict_search": 56,
+        "search_transitions": 56,
+        "fixed_prediction_transitions": 29,
+        "total_charged": 85,
+        "hot_ms": 1085.9917,
+        "wall_ms": 27959.21319979243,
+        "resources": {
+          "hp": 60,
+          "locked_hp": 60,
+          "max_hp": 70,
+          "hp_lost": 0,
+          "potions_used": [],
+          "potion_slots": [
+            null,
+            null,
+            "FLEX_POTION"
+          ]
+        },
+        "trials": [
+          {
+            "key": "5334d8677f8a6fdb2177476e0b2982597b614bdfcb052e5f9eb81106719e584e",
+            "search_transitions": 9,
+            "fixed_prediction_transitions": 9,
+            "status": "prediction_mismatch",
+            "matched_actions": 8,
+            "strict_terminal": false,
+            "fixed_prediction_ms": 3213.428599992767,
+            "native_replay_ms": 2661.0570000484586,
+            "first_difference": 9,
+            "mismatch_frame": {
+              "terminal": true,
+              "before_window": {
+                "side": "Player",
+                "round": 2,
+                "card_plays": 7,
+                "card_draws": 14,
+                "plays_in_window": 3,
+                "enemy_hp": 5
+              },
+              "terminal_window": {
+                "side": "Enemy",
+                "round": 2,
+                "card_plays": 7,
+                "card_draws": 14,
+                "plays_in_window": 0,
+                "enemy_hp": 0
+              },
+              "actual_sha256": "094fb335a17d8287c3131ac32ad6be78e00a8fe2b694c51a6ed91d7cbc114eb4",
+              "expected_sha256": "f2ca360797e4b3a71d11dfbec1f6a09ce6b563cca3204e2ef23772e5e95e64cd"
+            }
+          },
+          {
+            "key": "4d6531f7240647f7aa8ed768319b8f6b3d11a6e4e19050aa4f6fe8c39e516154",
+            "search_transitions": 18,
+            "fixed_prediction_transitions": 9,
+            "status": "prediction_mismatch",
+            "matched_actions": 8,
+            "strict_terminal": false,
+            "fixed_prediction_ms": 3413.837500149384,
+            "native_replay_ms": 2629.394899820909,
+            "first_difference": 9,
+            "mismatch_frame": {
+              "terminal": true,
+              "before_window": {
+                "side": "Player",
+                "round": 2,
+                "card_plays": 7,
+                "card_draws": 14,
+                "plays_in_window": 3,
+                "enemy_hp": 5
+              },
+              "terminal_window": {
+                "side": "Enemy",
+                "round": 2,
+                "card_plays": 7,
+                "card_draws": 14,
+                "plays_in_window": 0,
+                "enemy_hp": 0
+              },
+              "actual_sha256": "7ecd45b1e57948069ebb6a6ec368e6cdf1a8bd3cef6ceba326baafe6802595ce",
+              "expected_sha256": "14fe2acf4dbd4177642a43b83f46c45efd6669191471ae69c9a02f719caa3fa3"
+            }
+          },
+          {
+            "key": "7c3ef9ffcf252f086ad49864396621a9c1cdf3a6e5939c0fc6d467154cd9db26",
+            "search_transitions": 29,
+            "fixed_prediction_transitions": 11,
+            "status": "win",
+            "matched_actions": 11,
+            "strict_terminal": true,
+            "fixed_prediction_ms": 3339.5730000920594,
+            "native_replay_ms": 2453.824199968949,
+            "root_frame_sha256": "045211e4c8ae87d8e3f30b7079f503554cc19776748c30103baad3fccbbc19da",
+            "strict_frame_sha256": [
+              "b938565f199a35c356b1bc78a83db5bed305b479a45b14004a7b9ef7c37050e3",
+              "a729f1de46b2578c41ed943ae9489b2d705e9c75dcf9d5ad756fb8182d4458c0",
+              "b593b2b921ec7e0a84c52ac4aced1a39b1ced13e78106e83adc29796c2925074",
+              "a0fece2c02c40b861b1a5515441d6666c3810dbcfa1cad330b9943b74e747222",
+              "72f1927ab8012a425804d2a060ace582b342808e1bd545432f89ecc56aced7b6",
+              "b6c630290996f0870244fea1871db67c337108b5fe5d187929c9efc75f87a7d0",
+              "f6d3fa2e64971cf23529485961ce77e0a1df501e8985ea2533a349e8a4a5c217",
+              "610a50018d99e8226e83b2098939db471b59b8cbd2e6eb569726ffff4396ff19",
+              "16c30cd626b892f69ac5ed8f33988aa2e11b1b966b6e676eca91ebda90516b40",
+              "874c1e852717b43cbbbbfcd89c64df756f077259d526a8383e01c91d5053f3d3",
+              "3586fbaeb1377fc8681845789be3233c6fc631629a1dd9fc02d522c5f0bb82ff"
+            ],
+            "terminal_boundary": "card_reward"
+          }
+        ]
+      },
+      "tiers": {
+        "128": {
+          "quality_status": "transition_cap",
+          "quality_observed": 27,
+          "quality_charged": 27,
+          "seed_replay_transitions": 11,
+          "validation_transitions": 0,
+          "total_charged": 112,
+          "selected": {
+            "key": "7c3ef9ffcf252f086ad49864396621a9c1cdf3a6e5939c0fc6d467154cd9db26",
+            "resources": {
+              "hp": 60,
+              "locked_hp": 60,
+              "max_hp": 70,
+              "hp_lost": 0,
+              "potions_used": [],
+              "potion_slots": [
+                null,
+                null,
+                "FLEX_POTION"
+              ]
+            },
+            "source": "first_strict"
+          },
+          "delta_hp": 0,
+          "elapsed_ms": 3497.7272001560777,
+          "search_cap": 27,
+          "quality_ms": 3493.3497000019997,
+          "quality_hot_ms": 513.251,
+          "quality_peak_bytes": 124231680,
+          "unique_predicted_wins": 4,
+          "higher_predicted_hp": 0,
+          "best_predicted_locked_hp": 60,
+          "validation": []
+        },
+        "512": {
+          "quality_status": "alternatives_exhausted",
+          "quality_observed": 191,
+          "quality_charged": 191,
+          "seed_replay_transitions": 11,
+          "validation_transitions": 0,
+          "total_charged": 276,
+          "selected": {
+            "key": "7c3ef9ffcf252f086ad49864396621a9c1cdf3a6e5939c0fc6d467154cd9db26",
+            "resources": {
+              "hp": 60,
+              "locked_hp": 60,
+              "max_hp": 70,
+              "hp_lost": 0,
+              "potions_used": [],
+              "potion_slots": [
+                null,
+                null,
+                "FLEX_POTION"
+              ]
+            },
+            "source": "first_strict"
+          },
+          "delta_hp": 0,
+          "elapsed_ms": 3902.576700085774,
+          "search_cap": 379,
+          "quality_ms": 3887.948399875313,
+          "quality_hot_ms": 870.8058,
+          "quality_peak_bytes": 125657088,
+          "unique_predicted_wins": 22,
+          "higher_predicted_hp": 0,
+          "best_predicted_locked_hp": 60,
+          "validation": []
+        }
+      }
+    },
+    "shiv-lean": {
+      "live": "b7184ddf117da631e5f51ced6a672115af51fdaed9887b889bd4e9dbdd015873",
+      "initial_rebuild_ms": 1514.6792999003083,
+      "baseline": {
+        "status": "native_win",
+        "first_prediction": 18,
+        "first_strict_search": 18,
+        "search_transitions": 18,
+        "fixed_prediction_transitions": 18,
+        "total_charged": 36,
+        "hot_ms": 367.5643,
+        "wall_ms": 8786.837700055912,
+        "resources": {
+          "hp": 20,
+          "locked_hp": 20,
+          "max_hp": 70,
+          "hp_lost": 8,
+          "potions_used": [],
+          "potion_slots": [
+            null,
+            null,
+            null
+          ]
+        },
+        "trials": [
+          {
+            "key": "b4b9555c23e72737b488c562ab7fc4b25c8b715a34e6b0b301adf3c7c3727234",
+            "search_transitions": 18,
+            "fixed_prediction_transitions": 18,
+            "status": "win",
+            "matched_actions": 18,
+            "strict_terminal": true,
+            "fixed_prediction_ms": 3244.706799974665,
+            "native_replay_ms": 2180.2850998938084,
+            "root_frame_sha256": "ec9f5fddff6b301d499638bfedeb0eb2d58c05990ccd2b14be00437a5434d4bc",
+            "strict_frame_sha256": [
+              "9792eec8f911dd06efc009bbb65e7afec1041e580ca64f840ea56c8be771de7c",
+              "6bd3134e855274133ac920a672b592f34b3a9372a291832b70ec3b1f5c1f9041",
+              "3d5668d87c4952b7984cf58833b306c57e0a33f2e9d8dfa1e2ad741f9c7f68da",
+              "4996987180ed1a82a4ddb6fb15a19b1d6f9189fff657d31a36963c83db0443b0",
+              "f7161399d5e53eadf0e43969f69bfa8531dbf94ab669d82d7d0a5a24df060979",
+              "4346ab79bd1db24934fa3699bb62a895033b6fae79246d0077791d57bc26439f",
+              "67d8048f5ea7341ab8e9a1afb89c5ef4d585ec8e1a98f3d9b6411a2462c5ec04",
+              "f8aed99995c2b4a0b7d22f412ce27100ace38d98929d11b24039f2d956e074d5",
+              "c96223080ecf4ca1a1e1e7a964d08c537cc86cd867531dea7911025d4b0cd5fa",
+              "34b5cb703ca5201021a801a5d69fcee35b3cd433321e67e64c2e3b82b3fd4c24",
+              "93881e08a87d2f13f98d19c3411a5036089b325df17a3fa53b34ea2c530d009b",
+              "be17753b11beab9cfbee5a2d5547aeda45b43038abbb8def9ee109decb62e340",
+              "801e3f61ebafee30046c0025f2498c112717db6a6fe471c2562821a75b69eca1",
+              "30835eacc890661f162a3400ac66f8b1cfc377b92a7e144eaa84784048fa5ea4",
+              "92182d9535e8cf561487ea5a3ce6d736bcb3a987a0ffc7d6cd672057a9516217",
+              "18838430d5f5f89e1c95a88cfeb841cbae5213545f6286855debcd69c8bc1070",
+              "d079d1e4c030a6cea9b04ebf9efb9aa311e5c02e091b9f18903de1f430b2595b",
+              "b09dd249ddff8f52f111856452d4d9ff772a103e403498e56fc6d47327d9fe5f"
+            ],
+            "terminal_boundary": "card_reward"
+          }
+        ]
+      },
+      "tiers": {
+        "128": {
+          "quality_status": "transition_cap",
+          "quality_observed": 55,
+          "quality_charged": 55,
+          "seed_replay_transitions": 18,
+          "validation_transitions": 0,
+          "total_charged": 91,
+          "selected": {
+            "key": "b4b9555c23e72737b488c562ab7fc4b25c8b715a34e6b0b301adf3c7c3727234",
+            "resources": {
+              "hp": 20,
+              "locked_hp": 20,
+              "max_hp": 70,
+              "hp_lost": 8,
+              "potions_used": [],
+              "potion_slots": [
+                null,
+                null,
+                null
+              ]
+            },
+            "source": "first_strict"
+          },
+          "delta_hp": 0,
+          "elapsed_ms": 2887.9251000471413,
+          "search_cap": 55,
+          "quality_ms": 2884.671000065282,
+          "quality_hot_ms": 385.5259,
+          "quality_peak_bytes": 123531264,
+          "unique_predicted_wins": 2,
+          "higher_predicted_hp": 0,
+          "best_predicted_locked_hp": 18,
+          "validation": []
+        },
+        "512": {
+          "quality_status": "transition_cap",
+          "quality_observed": 428,
+          "quality_charged": 428,
+          "seed_replay_transitions": 18,
+          "validation_transitions": 31,
+          "total_charged": 495,
+          "selected": {
+            "key": "9c5b87c700f6d12391214b7cc0d7e5996007a58d5e24dce8fa0265b12a613434",
+            "resources": {
+              "hp": 28,
+              "locked_hp": 28,
+              "max_hp": 70,
+              "hp_lost": 0,
+              "potions_used": [],
+              "potion_slots": [
+                null,
+                null,
+                null
+              ]
+            },
+            "source": "refinement",
+            "discovery_transitions": 416
+          },
+          "delta_hp": 8,
+          "elapsed_ms": 13606.811599805951,
+          "search_cap": 428,
+          "quality_ms": 2924.1083001252264,
+          "quality_hot_ms": 738.1973,
+          "quality_peak_bytes": 129564672,
+          "unique_predicted_wins": 35,
+          "higher_predicted_hp": 2,
+          "best_predicted_locked_hp": 28,
+          "validation": [
+            {
+              "key": "9c5b87c700f6d12391214b7cc0d7e5996007a58d5e24dce8fa0265b12a613434",
+              "predicted_hp": 28,
+              "discovery_transitions": 416,
+              "status": "win",
+              "evidence_origin": "512",
+              "reused_validation": false,
+              "elapsed_ms": 5373.300699982792,
+              "fixed_prediction_transitions": 13,
+              "matched_actions": 13,
+              "resources": {
+                "hp": 28,
+                "locked_hp": 28,
+                "max_hp": 70,
+                "hp_lost": 0,
+                "potions_used": [],
+                "potion_slots": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "comparable_potion_slots": true,
+              "strict_terminal": true,
+              "fixed_prediction_ms": 2879.6212000306696,
+              "native_replay_ms": 2492.9748999420553,
+              "root_frame_sha256": "ec9f5fddff6b301d499638bfedeb0eb2d58c05990ccd2b14be00437a5434d4bc",
+              "strict_frame_sha256": [
+                "8b614f2821b94a4b2cef3bd255aa47b69bd651f3af36e87733c50fc49822f8e8",
+                "2bc98ebf594591ffcee292ed40127c23f0b42aaf37946ae45fb035cfa3861c3b",
+                "8f9ad3a8d87ea9bcd811121b0ef13d278adbf0bbd6334f2d63ad9503fac9acfb",
+                "25d79d5a8de583b154c6971edc92b364da5e62640ccce32bd62ee211d8d1f62e",
+                "910c96103c5710e6f25382d2c5f5a1a32efb8098689ba88f375586f9e31a4a9e",
+                "4543a07f5c986e647148d8b861a59fbbb77774a21fc047fc657fefd617f8765f",
+                "12487ec3948a4ab3bb39508d7f4e765b07a55a099e7b3c13d698f551b164f0f9",
+                "1cfd86fefd3a3b6918ed2e8716da0421c1a09fb80fef458e921be13105b658a9",
+                "87161b38ab93f5935b05e94361573d1a2455d13631d71934e3788b5adf02f8cb",
+                "e10e0e33274e8ca57026f161b529f13986435e412ebb8cfeba005d65a2acb608",
+                "324b7e20847c588441cd90d60e2e7b8c8f977279a7a7704fbed3d08e74e61d8a",
+                "65f18112c328b3a9a4f9b679dd9f7195aad6cabfd4fc272d9a2182f98d8ed3fb",
+                "829a64f8588e2a056cabb13daa4ebb3d08c2f322ae81bb9cde812079751d2af5"
+              ],
+              "terminal_boundary": "card_reward"
+            },
+            {
+              "key": "bf19136ce975c235e1395cb2a930b810480874fd23623a33f98681a7c808a2cc",
+              "predicted_hp": 21,
+              "discovery_transitions": 403,
+              "status": "win",
+              "evidence_origin": "512",
+              "reused_validation": false,
+              "elapsed_ms": 5286.706999875605,
+              "fixed_prediction_transitions": 18,
+              "matched_actions": 18,
+              "resources": {
+                "hp": 21,
+                "locked_hp": 21,
+                "max_hp": 70,
+                "hp_lost": 7,
+                "potions_used": [],
+                "potion_slots": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "comparable_potion_slots": true,
+              "strict_terminal": true,
+              "fixed_prediction_ms": 2720.243299845606,
+              "native_replay_ms": 2565.5251999851316,
+              "root_frame_sha256": "ec9f5fddff6b301d499638bfedeb0eb2d58c05990ccd2b14be00437a5434d4bc",
+              "strict_frame_sha256": [
+                "9792eec8f911dd06efc009bbb65e7afec1041e580ca64f840ea56c8be771de7c",
+                "e37311b79953f6d4b7414a894ae20b8e30535487a197cc6a3d3d08e97a23c138",
+                "a24d6ae41531d639dd69607bb26c6fc789d964fb072f3c65578af8682adf7af9",
+                "844b0ecb2b45af66d38de41c1282e2cc06fe3c8630ae872198676d3b5de30f3e",
+                "0735af524ea5dfdeb970ab627167b2d3c9437134c81dde9f508a183118677b41",
+                "a65683a2639f9440fbb8e5ed092bc355f490a171d5347d745d8a393d46787d32",
+                "1a2318a5d4508caf0dea21766eeba9df3a6596f05e4ee60312ba58caf9df74f0",
+                "904a73c6bc627c2caa3250a41a262033021dea29e98bb1cae7f7276d9d55aca8",
+                "659ac917dce6f60a0e4d5d8682afdae6e52b256fa6ceac50c31f5303104a0986",
+                "002d3691e19b8b9c72d7f3a3476d28ddb4d0df0849775ec4c98fef97d336e905",
+                "901cecb6e2dfc9205eb8e125f8980e7ae578ad4f30afcd32e090ecdc604a6ef6",
+                "a38d9e8b9eb3cc3797a11f8374da7878425cf0a7a10a2ef8dd26942ede5678e5",
+                "d41ab6fb54b796eabcc8c2179a0538f921ffe59135b2fd2c8a2b2113da4f0e1f",
+                "421536c0a5c2e3c6ba00221f839e5cda1784d0cf24baf1ee8be2cc2ea71093f9",
+                "aae1702a007ead043a5368aefb5ef7eefa88bc118972844b2db155d0691769c0",
+                "6b56b40048648c6baddfb8191bbe77a98eecc8adab7504b658339f0c88ca09ad",
+                "b0008b92312b077dd203a2be0b2faead7f967c5fc16208a4dc5e259cb7abe518",
+                "e8e51df752a8cd5792aab833791516fa66d6fa78358eaef6d5b07c4bfa1bd1a2"
+              ],
+              "terminal_boundary": "card_reward"
+            }
+          ]
+        }
+      }
+    },
+    "shiv-hive-stocked": {
+      "live": "ecf67edc7b9e0cb58095153d9c6190c54856b6471409c8644aa003c16ac8f7d8",
+      "initial_rebuild_ms": 1638.8284999411553,
+      "baseline": {
+        "status": "native_win",
+        "first_prediction": 26,
+        "first_strict_search": 26,
+        "search_transitions": 26,
+        "fixed_prediction_transitions": 26,
+        "total_charged": 52,
+        "hot_ms": 496.8626,
+        "wall_ms": 8816.349699860439,
+        "resources": {
+          "hp": 46,
+          "locked_hp": 46,
+          "max_hp": 70,
+          "hp_lost": 9,
+          "potions_used": [],
+          "potion_slots": [
+            null,
+            "FLEX_POTION",
+            null
+          ]
+        },
+        "trials": [
+          {
+            "key": "952014665acb15f89cf6112a746ef01173d36afa5f3ed05581b151cd82b89945",
+            "search_transitions": 26,
+            "fixed_prediction_transitions": 26,
+            "status": "win",
+            "matched_actions": 26,
+            "strict_terminal": true,
+            "fixed_prediction_ms": 3265.5090000480413,
+            "native_replay_ms": 2898.2084998860955,
+            "root_frame_sha256": "c25d9a340aebfe708e3c65db28921988cc61a14fc5c83ac15ea0cbbd58718f67",
+            "strict_frame_sha256": [
+              "4c7a53e1db6eec0c5ae9cbc828e64484de8c5aaa56f7651b99460526d1c02ffa",
+              "8c79c0efd45a3b5fb5b9c1962a570ff7054df45173796fd857a1cc1a5cff941f",
+              "a5719e174972b2b871b6c748f2dde6e6f798beb04045ffabda4be214bf4ae983",
+              "332f07cf8650de76ee2c41a5972f7e3f4e3aff0c0d533b7d036e6f895590d509",
+              "993156adb872ca4d1fd9c619e313342d76c1c02171b316c9ca0f3bb9fa08a8ee",
+              "16fbb0c973b35eb8605af95ef6c9abc3a649b34a959e7bc460767ee3cfc7cea9",
+              "3e5a3b9eb74891937948316aded4dc485a4c424e8fd56f4b476a79310251d512",
+              "78fc7730d12b507e2f60ee6e4c8aff0114166084fb7b5c2a51e7d40ccaee8d42",
+              "d327c9f33be270a10465acca7a4f85e6adbd184c43f817a3dc045aade568afc5",
+              "ee928d7cbd84ca77dd8f6f5104a34bf74a99da3e1f5cea0c4cec24b5bdbf0b13",
+              "0b91d1b8d8087e4ad29265a389da66a1bdbfdc80a830f84aaea2ee8439aef177",
+              "b0f5e03878a4d98b537c20a249b73c6068c4ba7f1cbc010c90bc624a4a92763e",
+              "db2cc48f6f9c289aab7387db4b578332d08fd0f9fb406713fb405404a8f6ff42",
+              "af724d720372cdd0df1ab2679eca811c3cf499017905629f44dd2c7b8c4a1a58",
+              "87783e3580c253965b66a3101f589c2c7c9bc1788d63bdb5949768beb12ac9d2",
+              "4729b892c2b43fc73cb7fed853fa353291cb33b52dd196afd9aae7e907857a31",
+              "342c5dfdf5500d1b3d84ed05dd88a7876aaea980fdbd5344ba4821d5827b0720",
+              "1060d083cf74e4dc00722f3fca55bcbf7a9b1061ad8b714880ec1f9a36c9a4a4",
+              "1cab34ccbb52e47471ec370f4f63205b01ab3741db3b1ae83244ce6dec0ea410",
+              "6c985bd6b2ee10b7e96eead0be30e6c764c1f1f3524dda92b1c3fbda824084dd",
+              "c712bdf9d483a5782c6feb1d3a564474836eea9ccac8e3afaedc0539b4dbba65",
+              "e7bf9db8e5bab4d45f285b7b7bc53270d87ad3ec5de6e4088b9cadc3eb90af5b",
+              "226e6a93b97ba57f1b4a83b79fd5bba05dd70eb84b175ae1b8363f42cfaa089e",
+              "a35b7c3e4729d5a369cca54c240dd431ea5acae70cb700b2cb09828c9cca321d",
+              "8354a5925dce516388cbdd1263be3bfbf5f30db86c2caef872a3f89716e5ff7c",
+              "95bb495e7391d3f4e2fa0cc79bb7e863eaf7112d531e172c9b20718c1dd46d15"
+            ],
+            "terminal_boundary": "card_reward"
+          }
+        ]
+      },
+      "tiers": {
+        "128": {
+          "quality_status": "transition_cap",
+          "quality_observed": 51,
+          "quality_charged": 51,
+          "seed_replay_transitions": 26,
+          "validation_transitions": 0,
+          "total_charged": 103,
+          "selected": {
+            "key": "952014665acb15f89cf6112a746ef01173d36afa5f3ed05581b151cd82b89945",
+            "resources": {
+              "hp": 46,
+              "locked_hp": 46,
+              "max_hp": 70,
+              "hp_lost": 9,
+              "potions_used": [],
+              "potion_slots": [
+                null,
+                "FLEX_POTION",
+                null
+              ]
+            },
+            "source": "first_strict"
+          },
+          "delta_hp": 0,
+          "elapsed_ms": 2423.6708998214453,
+          "search_cap": 51,
+          "quality_ms": 2419.9602000880986,
+          "quality_hot_ms": 308.2097,
+          "quality_peak_bytes": 123514880,
+          "unique_predicted_wins": 2,
+          "higher_predicted_hp": 0,
+          "best_predicted_locked_hp": 46,
+          "validation": []
+        },
+        "512": {
+          "quality_status": "transition_cap",
+          "quality_observed": 412,
+          "quality_charged": 412,
+          "seed_replay_transitions": 26,
+          "validation_transitions": 0,
+          "total_charged": 464,
+          "selected": {
+            "key": "952014665acb15f89cf6112a746ef01173d36afa5f3ed05581b151cd82b89945",
+            "resources": {
+              "hp": 46,
+              "locked_hp": 46,
+              "max_hp": 70,
+              "hp_lost": 9,
+              "potions_used": [],
+              "potion_slots": [
+                null,
+                "FLEX_POTION",
+                null
+              ]
+            },
+            "source": "first_strict"
+          },
+          "delta_hp": 0,
+          "elapsed_ms": 2850.0524000264704,
+          "search_cap": 412,
+          "quality_ms": 2821.925299940631,
+          "quality_hot_ms": 636.5093,
+          "quality_peak_bytes": 129388544,
+          "unique_predicted_wins": 31,
+          "higher_predicted_hp": 0,
+          "best_predicted_locked_hp": 46,
+          "validation": []
+        }
+      }
+    },
+    "strength-hive-low": {
+      "live": "85f110a49b3abfe69c25639a639e6083a00a355940a9543f75033593fe991b56",
+      "initial_rebuild_ms": 1703.0778001062572,
+      "baseline": {
+        "status": "native_win",
+        "first_prediction": 73,
+        "first_strict_search": 73,
+        "search_transitions": 73,
+        "fixed_prediction_transitions": 24,
+        "total_charged": 97,
+        "hot_ms": 505.0352,
+        "wall_ms": 9258.723400067538,
+        "resources": {
+          "hp": 12,
+          "locked_hp": 6,
+          "max_hp": 80,
+          "hp_lost": 36,
+          "potions_used": [],
+          "potion_slots": [
+            null,
+            null,
+            "DEXTERITY_POTION"
+          ]
+        },
+        "trials": [
+          {
+            "key": "9f2e532079e22cb90469047013fb9901bb32d68c098d99fd6bd2916be0602fac",
+            "search_transitions": 73,
+            "fixed_prediction_transitions": 24,
+            "status": "win",
+            "matched_actions": 24,
+            "strict_terminal": true,
+            "fixed_prediction_ms": 3192.9436000064015,
+            "native_replay_ms": 2723.0122999753803,
+            "root_frame_sha256": "8944ef94c7eb4413fefc2ce69a29912d311249886445ade72529ca32d47c34fa",
+            "strict_frame_sha256": [
+              "30c235d04569105861e65f7f8581cbed517106feb1697d1960447eb1dd7c6f63",
+              "43c06f32445a9816db93b6f71d119454ee45dc87090d89e230f98cf5b76c8f33",
+              "cd531431a67b23f1e326b08d0e210c5dc4f78d12cdeecf9c410673d23394cdb1",
+              "817a3a27af44ff15d80e0a42c7ef26d1668be8af516e98725cf1ac734088f5d2",
+              "130ee1af43fbe0620ce0c44786bb210891acd7721fb9e300ef9753f6ff956f37",
+              "49c1109e879b0475cedb230ea972e3334e455dd8d7ff2c660f7d4bd997322e38",
+              "dc2ca9fb01e8b6c783e30055d57345730c0a6195fc967fd01bad10476b12723f",
+              "7fb6c4122e333f3246eee6ad9eb2cf845404135464c45d23deb5f1fa6ec7644a",
+              "66b26c3070e9fee496fa8c623d2a394e4f371fcd8f57d1c45856f5ab8cb50845",
+              "0d269e8f9ed3d0f8f828363e3bd1c3d0fd0e0015bb469c17307f9cd9d2a2785d",
+              "af4a2483d0004f679c2c5663445e2cedf45c7c39f6abdac2c5cfa160cbbf8ba5",
+              "2389c21f660c8c4cb3d6768fec128b62b86978d1b4ee04ce3c2d836a2538a544",
+              "3ffcc6cd7db3fc968146fd6e3d1ddc2b9601be3c6195a28d4458e55f5f48e7fc",
+              "d4caeef146fe5f378b78a97499854277680d4622e7b970df64282b0c20bc0b8e",
+              "ebcaeacbf03cd60dd5ba707eb7a04090a21ff050a8e7461656bd0bfe9ac1bf1a",
+              "f7727a7eedb1ad1d0bd0eca351700c6b406abc317ffd419b8b391d29f28c6f81",
+              "d99a2dcff3159821804b0b911ce9cebfc4a1ddacc86bf5a16ef702a72df8a291",
+              "2d5817b61ce211ee94347eedc258602f218f9f712219e9526de5eef77772f43f",
+              "88dec933a26e1bb3ade6dc321b3bddcfcde52aa03f2b085127b4696a9d20a04d",
+              "840105e54e8a9c97e6c3e809282cf72ff91e138c5462549adc6b259d9391f762",
+              "56b8cc0dd12afe6a1f39d05b7c3f4060cb1d0329a077f7f73bbbc1f8cc0f9fac",
+              "a1a1127daa91690eda933cc211ba2dac4749b85418aa06538f024e8ba8d1e04c",
+              "77bde51eebb46434dca6158eb1e6f25ea46a30b3bf114af74f36edb75fb58844",
+              "bef92accad6211aa2d76ddcf527f497dd16f8995a8cd140cca86ec5368dfec99"
+            ],
+            "terminal_boundary": "card_reward"
+          }
+        ]
+      },
+      "tiers": {
+        "128": {
+          "quality_status": "transition_cap",
+          "quality_observed": 28,
+          "quality_charged": 28,
+          "seed_replay_transitions": 24,
+          "validation_transitions": 0,
+          "total_charged": 125,
+          "selected": {
+            "key": "9f2e532079e22cb90469047013fb9901bb32d68c098d99fd6bd2916be0602fac",
+            "resources": {
+              "hp": 12,
+              "locked_hp": 6,
+              "max_hp": 80,
+              "hp_lost": 36,
+              "potions_used": [],
+              "potion_slots": [
+                null,
+                null,
+                "DEXTERITY_POTION"
+              ]
+            },
+            "source": "first_strict"
+          },
+          "delta_hp": 0,
+          "elapsed_ms": 2347.9633000679314,
+          "search_cap": 28,
+          "quality_ms": 2343.967800028622,
+          "quality_hot_ms": 278.5533,
+          "quality_peak_bytes": 123547648,
+          "unique_predicted_wins": 0,
+          "higher_predicted_hp": 0,
+          "best_predicted_locked_hp": null,
+          "validation": []
+        },
+        "512": {
+          "quality_status": "transition_cap",
+          "quality_observed": 367,
+          "quality_charged": 367,
+          "seed_replay_transitions": 24,
+          "validation_transitions": 0,
+          "total_charged": 464,
+          "selected": {
+            "key": "9f2e532079e22cb90469047013fb9901bb32d68c098d99fd6bd2916be0602fac",
+            "resources": {
+              "hp": 12,
+              "locked_hp": 6,
+              "max_hp": 80,
+              "hp_lost": 36,
+              "potions_used": [],
+              "potion_slots": [
+                null,
+                null,
+                "DEXTERITY_POTION"
+              ]
+            },
+            "source": "first_strict"
+          },
+          "delta_hp": 0,
+          "elapsed_ms": 2420.753699960187,
+          "search_cap": 367,
+          "quality_ms": 2399.1473999340087,
+          "quality_hot_ms": 478.576,
+          "quality_peak_bytes": 126717952,
+          "unique_predicted_wins": 18,
+          "higher_predicted_hp": 0,
+          "best_predicted_locked_hp": 6,
+          "validation": []
+        }
+      }
+    }
+  }
+}
