@@ -1,0 +1,211 @@
+{
+  "scope": "offline-teacher",
+  "rootAndRngMatched": true,
+  "actions": [
+    {
+      "turn": 1,
+      "kind": "PlayCard",
+      "cardId": "SCRAPE",
+      "targetCombatId": 1,
+      "state": {
+        "hp": 75,
+        "aliveEnemies": 1,
+        "turn": 1
+      }
+    },
+    {
+      "turn": 1,
+      "kind": "PlayCard",
+      "cardId": "BOOST_AWAY",
+      "targetCombatId": null,
+      "state": {
+        "hp": 75,
+        "aliveEnemies": 1,
+        "turn": 1
+      }
+    },
+    {
+      "turn": 1,
+      "kind": "EndTurn",
+      "cardId": "",
+      "targetCombatId": null,
+      "state": {
+        "hp": 64,
+        "aliveEnemies": 1,
+        "turn": 2
+      }
+    },
+    {
+      "turn": 2,
+      "kind": "PlayCard",
+      "cardId": "OVERCLOCK",
+      "targetCombatId": null,
+      "state": {
+        "hp": 64,
+        "aliveEnemies": 1,
+        "turn": 2
+      }
+    },
+    {
+      "turn": 2,
+      "kind": "PlayCard",
+      "cardId": "REFRACT",
+      "targetCombatId": 1,
+      "state": {
+        "hp": 64,
+        "aliveEnemies": 1,
+        "turn": 2
+      }
+    },
+    {
+      "turn": 2,
+      "kind": "PlayCard",
+      "cardId": "STRIKE_DEFECT",
+      "targetCombatId": 1,
+      "state": {
+        "hp": 64,
+        "aliveEnemies": 1,
+        "turn": 2
+      }
+    },
+    {
+      "turn": 2,
+      "kind": "PlayCard",
+      "cardId": "PANIC_BUTTON",
+      "targetCombatId": null,
+      "state": {
+        "hp": 64,
+        "aliveEnemies": 1,
+        "turn": 2
+      }
+    },
+    {
+      "turn": 2,
+      "kind": "EndTurn",
+      "cardId": "",
+      "targetCombatId": null,
+      "state": {
+        "hp": 64,
+        "aliveEnemies": 1,
+        "turn": 3
+      }
+    },
+    {
+      "turn": 3,
+      "kind": "PlayCard",
+      "cardId": "NULL",
+      "targetCombatId": 1,
+      "state": {
+        "hp": 64,
+        "aliveEnemies": 1,
+        "turn": 3
+      }
+    },
+    {
+      "turn": 3,
+      "kind": "PlayCard",
+      "cardId": "MODDED",
+      "targetCombatId": null,
+      "state": {
+        "hp": 64,
+        "aliveEnemies": 1,
+        "turn": 3
+      }
+    },
+    {
+      "turn": 3,
+      "kind": "PlayCard",
+      "cardId": "CLAW",
+      "targetCombatId": 1,
+      "state": {
+        "hp": 64,
+        "aliveEnemies": 1,
+        "turn": 3
+      }
+    },
+    {
+      "turn": 3,
+      "kind": "PlayCard",
+      "cardId": "NULL",
+      "targetCombatId": 1,
+      "state": {
+        "hp": 64,
+        "aliveEnemies": 1,
+        "turn": 3
+      }
+    },
+    {
+      "turn": 3,
+      "kind": "EndTurn",
+      "cardId": "",
+      "targetCombatId": null,
+      "state": {
+        "hp": 64,
+        "aliveEnemies": 1,
+        "turn": 4
+      }
+    },
+    {
+      "turn": 4,
+      "kind": "PlayCard",
+      "cardId": "SCRAPE",
+      "targetCombatId": 1,
+      "state": {
+        "hp": 64,
+        "aliveEnemies": 1,
+        "turn": 4
+      }
+    },
+    {
+      "turn": 4,
+      "kind": "PlayCard",
+      "cardId": "NULL",
+      "targetCombatId": 1,
+      "state": {
+        "hp": 64,
+        "aliveEnemies": 1,
+        "turn": 4
+      }
+    },
+    {
+      "turn": 4,
+      "kind": "PlayCard",
+      "cardId": "BOOST_AWAY",
+      "targetCombatId": null,
+      "state": {
+        "hp": 64,
+        "aliveEnemies": 1,
+        "turn": 4
+      }
+    },
+    {
+      "turn": 4,
+      "kind": "EndTurn",
+      "cardId": "",
+      "targetCombatId": null,
+      "state": {
+        "hp": 64,
+        "aliveEnemies": 1,
+        "turn": 5
+      }
+    },
+    {
+      "turn": 5,
+      "kind": "PlayCard",
+      "cardId": "REFRACT",
+      "targetCombatId": 1,
+      "state": {
+        "hp": 64,
+        "aliveEnemies": 0,
+        "turn": 5
+      }
+    }
+  ],
+  "terminal": {
+    "hp": 64,
+    "aliveEnemies": 0,
+    "turn": 5
+  },
+  "postCombatHp": 64,
+  "combatInProgress": false
+}

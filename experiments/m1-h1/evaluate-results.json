@@ -1,0 +1,181 @@
+[
+  {
+    "root": "dev-02-defect-elite",
+    "processStatus": 0,
+    "processSeconds": 18.187,
+    "evaluate800": {
+      "root": "dev-02-defect-elite",
+      "nodes": 800,
+      "processStatus": 0,
+      "processSeconds": 12.968,
+      "scenario": {
+        "CharacterId": "DEFECT",
+        "EncounterId": "INFESTED_PRISMS_ELITE",
+        "Seed": "NOVELTY-DEV-20260915-02",
+        "Ascension": 10,
+        "ActIndexForTest": 1
+      },
+      "won": false,
+      "quality": {
+        "won": false,
+        "outstandingStolenResource": 0,
+        "projectedBattleHpLost": 11,
+        "strategicHpDeficit": 11,
+        "potionStrategicCost": 0,
+        "projectedBattlePotionCount": 0,
+        "enemyHp": 97,
+        "combatEndedTurn": null,
+        "theftPolicy": null,
+        "survives": true,
+        "deathSaveUseCount": 0,
+        "growthHpCredit": 0,
+        "growthRewardCount": 0
+      },
+      "boundary": "TimeLimit",
+      "expanded": 334,
+      "transitions": 2594,
+      "seconds": 7.5481512,
+      "rootStamp": "cf6540545bf3ec8f49c6faa8cd0040d709ea887d91739066a35085bbeb80b9c6",
+      "peakMiB": 185.7,
+      "liveStamp": "cf6540545bf3ec8f49c6faa8cd0040d709ea887d91739066a35085bbeb80b9c6"
+    },
+    "mode": "Evaluate",
+    "rootStamp": "cf6540545bf3ec8f49c6faa8cd0040d709ea887d91739066a35085bbeb80b9c6",
+    "liveStamp": "cf6540545bf3ec8f49c6faa8cd0040d709ea887d91739066a35085bbeb80b9c6",
+    "quality": {
+      "won": true,
+      "outstandingStolenResource": 0,
+      "projectedBattleHpLost": 20,
+      "strategicHpDeficit": 20,
+      "potionStrategicCost": 0,
+      "projectedBattlePotionCount": 0,
+      "enemyHp": 0,
+      "score": 10001017979,
+      "combatEndedTurn": 6,
+      "theftPolicy": null,
+      "survives": true,
+      "deathSaveUseCount": 0,
+      "growthHpCredit": 0,
+      "growthRewardCount": 0
+    },
+    "snapshot": {
+      "hasRisk": false,
+      "playerDead": false,
+      "turn": 6,
+      "predictionGaps": [
+        {
+          "sourceId": "BOOST_AWAY",
+          "method": "OnPlay",
+          "reason": "MethodMirrorIncomplete",
+          "compensated": true,
+          "key": "BOOST_AWAY.OnPlay"
+        },
+        {
+          "sourceId": "BULK_UP",
+          "method": "OnPlay",
+          "reason": "MethodNotMirrored",
+          "compensated": true,
+          "key": "BULK_UP.OnPlay"
+        },
+        {
+          "sourceId": "CLAW",
+          "method": "OnPlay",
+          "reason": "MethodMirrorIncomplete",
+          "compensated": true,
+          "key": "CLAW.OnPlay"
+        },
+        {
+          "sourceId": "MODDED",
+          "method": "OnPlay",
+          "reason": "MethodMirrorIncomplete",
+          "compensated": true,
+          "key": "MODDED.OnPlay"
+        },
+        {
+          "sourceId": "OVERCLOCK",
+          "method": "OnPlay",
+          "reason": "MethodMirrorIncomplete",
+          "compensated": true,
+          "key": "OVERCLOCK.OnPlay"
+        },
+        {
+          "sourceId": "PANIC_BUTTON",
+          "method": "OnPlay",
+          "reason": "MethodMirrorIncomplete",
+          "compensated": true,
+          "key": "PANIC_BUTTON.OnPlay"
+        }
+      ],
+      "boundaryReason": "None"
+    },
+    "totalExpanded": 2209,
+    "totalTransitions": 12929,
+    "searchedTurns": 6,
+    "boundary": "None",
+    "onlyDeathRoutes": false,
+    "wallSeconds": 12.7838337,
+    "peakMiB": 227.5,
+    "timeBoundaryObserved": false,
+    "policy": {
+      "Profile": {
+        "BeamWidth": 24,
+        "MaxExpandedNodes": 2400,
+        "MaxCardBranchesPerNode": 32,
+        "MaxPileChoiceBranchesPerAction": 18,
+        "MaxHandChoiceBranchesPerAction": 24,
+        "SoftTimeBudgetMilliseconds": 15000,
+        "SecondRankBand": false,
+        "ContinuousThreatRanking": false,
+        "BaseScoreTacticalTies": false,
+        "AdaptiveNoveltyRefinement": false,
+        "OffensiveRefinementPortfolio": false,
+        "BoundedOffensiveRefinementPortfolio": false,
+        "ReallocatedRefinementPortfolio": true,
+        "StopPortfolioAtHpTarget": true,
+        "BaseScoreOnly": false,
+        "AggressivePowerCommitment": false
+      },
+      "PotionPolicy": 1,
+      "PotionStrategy": {
+        "DefaultPolicy": 1,
+        "Directives": [],
+        "HasForcedDirectives": false,
+        "ForcedDirectiveCount": 0
+      },
+      "FixedBudget": true,
+      "MaxDegreeOfParallelism": 2,
+      "IncludeTurnSetup": false,
+      "ActTransitionBossHpStrategy": 0,
+      "FinalBossHpStrategy": 0,
+      "AcceptableBattleHpLoss": 0,
+      "StopAtAcceptableBattleHpLoss": false,
+      "Act3BossStrategy": false,
+      "GrowthBudgets": {
+        "HandOfGreed": 0,
+        "TheHunt": 0,
+        "Feed": 0,
+        "Royalties": 0,
+        "Alchemize": 0,
+        "GeneticAlgorithm": 0,
+        "TheScythe": 0,
+        "Goopy": 0,
+        "ForbiddenGrimoire": 0,
+        "MadScience": 0,
+        "ShowOff": 0
+      },
+      "RelicTargets": [],
+      "HasGrowthTargets": false,
+      "IgnoreLongTermRewards": false,
+      "VerifyIncrementalSearch": false,
+      "DetailedDiagnostics": false,
+      "MeasurePhasePerformance": false,
+      "UseBeamWidthPortfolio": false,
+      "BeamWidthPortfolioPlainBaselineMember": true,
+      "UseNoveltyPortfolio": false,
+      "observePortfolio": false
+    },
+    "diagnostics": [
+      "[search-diagnostic] [CombatSolver/Test] POWER_COMMITMENTS scope=solver aggressive=False candidates=0 frontier_evaluations=0 created=0 admitted=0 expired=0 realized=0 seats_peak=0"
+    ]
+  }
+]
