@@ -1,0 +1,230 @@
+{
+  "schema": 1,
+  "policy": "M1-F3B-v1",
+  "arm": "C",
+  "uses_hidden_rng": true,
+  "cap_per_condition": 128,
+  "cases": [
+    {
+      "status": "native_continuation",
+      "q1_matches_original": true,
+      "q1_ms": 3047.5610001012683,
+      "wall_ms": 23379.610300064087,
+      "known_transitions": 10,
+      "charged_transitions": 10,
+      "source_manifest_sha256": "b53b4e9fcc92c635cbf20f7effbba00bc60a94e06b62e9fd38af6a38f1d08a17",
+      "checkpoint_sha256": "ad0fbb70bb6a84e072d9afc0966c4dc3ca0ea77233c347412229a753cff2589b",
+      "partition": "development",
+      "parent_history": "4d4cd07d489963dae0f05ca9035757debb72b633a36b37c92c0ea060f686f550",
+      "divergence_at_entry": 111,
+      "run_id": "iron-6-a2",
+      "root_id": "d293c9253b77f5fe853d5ba2c83e12e808e488ca4974b8a7940547d8dd94f49f",
+      "root_live": "4d10e28611aa5d203beee7f24366d60e37d989fb0935c7c107b3c107422983cb",
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 12,
+        "room_type": "Monster",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "headless_sha256": "f4dc5c008da2ca6ba7b6210272bbc1ffc817496538162fdb0fd67db679686cba",
+      "attempts": [
+        {
+          "potions": false,
+          "cap": 128,
+          "status": "win",
+          "transitions": 10,
+          "charged_transitions": 10,
+          "search_ms": 4030.215899925679,
+          "search_hot_ms": 383.6938,
+          "search_cpu_ms": 359.375,
+          "verification": {
+            "status": "win",
+            "elapsed_ms": 3285.446200054139,
+            "matched_actions": 7,
+            "strict_terminal": true,
+            "first_difference": null,
+            "detail": null
+          }
+        }
+      ],
+      "rewalk_actions": 7,
+      "rewalk_ms": 611.7499000392854,
+      "fixed_frames_ms": 3762.291799997911,
+      "apply_and_continue_ms": 9246.277200058103,
+      "continuation_ms": 5907.20979985781,
+      "followup_commands": 14,
+      "terminal_public": "card_reward",
+      "native_outcome": {
+        "initial_hp": 13,
+        "final_hp": 11,
+        "hp_lost": 2,
+        "hp_healed": 0,
+        "self_damage": 1,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "rescue_id": "2a9af8ffc5e44ea89a33dc3afa6d8211",
+      "route_id": "598da95a2c5146199925b1a15913af0b",
+      "resources_delta": {
+        "hp": 4,
+        "max_hp": 0,
+        "gold": 19,
+        "deck": {
+          "added": [],
+          "removed": []
+        },
+        "relics": {
+          "added": [],
+          "removed": []
+        },
+        "potion_slots": []
+      },
+      "continuation_status": "sample_cap",
+      "new_roots": [
+        {
+          "id": "7a3d7024d7ea78f3e07bec8f83c8210819ff14be565086ab62e42b7bf7c7213d",
+          "live": "a694709635ea87f8b3b2d2e26a4b6d0e7f87d708f7fe0384f0a863aa5bee61a8",
+          "context": {
+            "act": 1,
+            "act_name": "OVERGROWTH.title",
+            "floor": 13,
+            "room_type": "Monster",
+            "boss": {
+              "id": "VANTOM_BOSS",
+              "name": "VANTOM.name"
+            }
+          },
+          "encounter": "VINE_SHAMBLER_NORMAL",
+          "hp": 17,
+          "offline_teacher_assisted": true
+        },
+        {
+          "id": "4cb3a7be861f0798d39ba13607182d15113ff4e489586aba4417817b6af953ce",
+          "live": "dd22915a758f3adebcd18a7f126f889e7e2b3cb2472a0c25e5dfe53654df669d",
+          "context": {
+            "act": 1,
+            "act_name": "OVERGROWTH.title",
+            "floor": 14,
+            "room_type": "Monster",
+            "boss": {
+              "id": "VANTOM_BOSS",
+              "name": "VANTOM.name"
+            }
+          },
+          "encounter": "SNAPPING_JAXFRUIT_NORMAL",
+          "hp": 13,
+          "offline_teacher_assisted": true
+        }
+      ]
+    },
+    {
+      "status": "no_verified_win",
+      "q1_matches_original": true,
+      "q1_ms": 3469.5353999268264,
+      "wall_ms": 11696.889200014994,
+      "known_transitions": 130,
+      "charged_transitions": 130,
+      "source_manifest_sha256": "f309b509bdcb60de90465586c2b1d62eb840d3cb771eafb9e66cb73dc4b71164",
+      "checkpoint_sha256": "1938d1eb9e485ed4345aec051705fa9048379e0d56a14b4a5d1b267c0d710834",
+      "partition": "validation",
+      "parent_history": "978653cf5be8e7535df28dc203b1c65adcb410e4c585129b33d74b55da7ec42b",
+      "divergence_at_entry": 104,
+      "run_id": "iron-4",
+      "root_id": "6c9f3b440c3f4864419ead464332ba905b12c42cacaf7f1b5f52e154ec129eca",
+      "root_live": "4525501939d5d01b3f24d55db7594414c7a4dddfe4084740e0860cd6dc6eef88",
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 12,
+        "room_type": "Elite",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "headless_sha256": "a05c7cfa3900cc382eff79156c4826fa7463c134047554b82d95dc7b9ef5eb42",
+      "attempts": [
+        {
+          "potions": false,
+          "cap": 128,
+          "status": "exhausted",
+          "transitions": 65,
+          "charged_transitions": 65,
+          "search_ms": 4171.828899998218,
+          "search_hot_ms": 434.6475,
+          "search_cpu_ms": 437.5,
+          "verification": null
+        },
+        {
+          "potions": true,
+          "cap": 128,
+          "status": "exhausted",
+          "transitions": 65,
+          "charged_transitions": 65,
+          "search_ms": 4041.1384000908583,
+          "search_hot_ms": 400.9378,
+          "search_cpu_ms": 390.625,
+          "verification": null
+        }
+      ]
+    },
+    {
+      "status": "no_verified_win",
+      "q1_matches_original": true,
+      "q1_ms": 3411.6309999953955,
+      "wall_ms": 9348.964600125328,
+      "known_transitions": 0,
+      "charged_transitions": 256,
+      "source_manifest_sha256": "b53b4e9fcc92c635cbf20f7effbba00bc60a94e06b62e9fd38af6a38f1d08a17",
+      "checkpoint_sha256": "04776a5073c8d910b364ef67213e1fe6bd072d485bb6c12a7de70b7c4e0401f8",
+      "partition": "development",
+      "parent_history": "955434e845ef78c40bbfe20a9f13b59f584cfef16e4ec3f9353f0468dbc9a2c3",
+      "divergence_at_entry": 96,
+      "run_id": "silent-8",
+      "root_id": "752437e4ce84142b64203e609020a53290c0cf02052a32e6cdcc6f7e227b20ab",
+      "root_live": "bcb95eb7166efa895041a3b586ea2b853599e453ff91b72c5ae9e2a7d3a651c1",
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 12,
+        "room_type": "Elite",
+        "boss": {
+          "id": "THE_KIN_BOSS",
+          "name": "KIN_PRIEST.name"
+        }
+      },
+      "headless_sha256": "f4dc5c008da2ca6ba7b6210272bbc1ffc817496538162fdb0fd67db679686cba",
+      "attempts": [
+        {
+          "potions": false,
+          "cap": 128,
+          "status": "unsupported",
+          "transitions": null,
+          "charged_transitions": 128,
+          "search_ms": 2984.5745998900384,
+          "search_hot_ms": null,
+          "search_cpu_ms": null,
+          "verification": null
+        },
+        {
+          "potions": true,
+          "cap": 128,
+          "status": "unsupported",
+          "transitions": null,
+          "charged_transitions": 128,
+          "search_ms": 2944.941299967468,
+          "search_hot_ms": null,
+          "search_cpu_ms": null,
+          "verification": null
+        }
+      ]
+    }
+  ]
+}

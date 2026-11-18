@@ -127,8 +127,7 @@ class Session(f2.Session):
             self.rpc_ms[cmd] += elapsed(clock)
 
 
-@contextmanager
-def restore(bank, root, deadline, cancelled, memory=None):
+def checkpoint_bytes(bank, root):
     name = root["checkpoint"]
     if Path(name).name != name:
         raise ValueError("Checkpoint must be a local filename")
@@ -139,24 +138,34 @@ def restore(bank, root, deadline, cancelled, memory=None):
         raise f1.i2.StopRun("root_mismatch", "Checkpoint is missing") from error
     if f1.digest(source) != root["checkpoint_sha256"]:
         raise f1.i2.StopRun("root_mismatch", "Checkpoint SHA-256 mismatch")
+    return path, source
+
+
+def restore_root(game, root, path, enter):
+    state = game.request("load_save", path=str(path), lang="en")
+    world = boundaries(game, state)
+    if (stamp(state), stamp(world)) != (root["map_public_sha256"], root["map_edges_sha256"]):
+        raise f1.i2.StopRun("root_mismatch", "Restored map differs from source")
+    if not any(root["entry"]["args"] == {k: n[k] for k in ("col", "row")}
+               for n in state["choices"]):
+        raise f1.i2.StopRun("root_mismatch", "Entry is absent from the restored map")
+    if root["entry"]["action"] != "select_map_node":
+        raise ValueError("Expected a native map entry")
+    state = enter(root["entry"])
+    identity = game.request("f1_begin")
+    for surface, actual, expected in (("public", state, root["public_root"]),
+                                       ("live", identity, root["identity"])):
+        if actual != expected:
+            raise f1.i2.StopRun("root_mismatch", f"{surface}: {stamp(actual)} != {stamp(expected)}")
+    return state
+
+
+@contextmanager
+def restore(bank, root, deadline, cancelled, memory=None):
+    path, source = checkpoint_bytes(bank, root)
     with Session(bank, deadline, cancelled, memory) as game:
         try:
-            state = game.request("load_save", path=str(path), lang="en")
-            world = boundaries(game, state)
-            if (stamp(state), stamp(world)) != (root["map_public_sha256"], root["map_edges_sha256"]):
-                raise f1.i2.StopRun("root_mismatch", "Restored map differs from source")
-            if not any(root["entry"]["args"] == {k: n[k] for k in ("col", "row")}
-                       for n in state["choices"]):
-                raise f1.i2.StopRun("root_mismatch", "Entry is absent from the restored map")
-            if root["entry"]["action"] != "select_map_node":
-                raise ValueError("Expected a native map entry")
-            state = game.execute_action(root["entry"])
-            identity = game.request("f1_begin")
-            for surface, actual, expected in (("public", state, root["public_root"]),
-                                               ("live", identity, root["identity"])):
-                if actual != expected:
-                    raise f1.i2.StopRun("root_mismatch", f"{surface}: {stamp(actual)} != {stamp(expected)}")
-            yield game, state
+            yield game, restore_root(game, root, path, game.execute_action)
         finally:
             if path.read_bytes() != source:
                 raise f1.i2.StopRun("root_mismatch", "Source checkpoint changed during audit")
@@ -207,14 +216,15 @@ def audit(bank, root, deadline, cancelled, memory=None):
     return result
 
 
-def sample(bank, spec, limits, versions, batch_deadline, cancelled, disk_guard, parent, memory):
+def sample(bank, spec, limits, versions, batch_deadline, cancelled, disk_guard, parent, memory,
+           resume_battle=None):
     clock = perf_counter()
     deadline = min(monotonic() + limits["run_seconds"], batch_deadline)
     history, split = lineage(spec)
     commands, roots, validations = [], [], []
     run = dict(id=spec["id"], history=history, partition=split, spec=spec, commands=commands,
                status="action_limit", max_act=0, candidates=0,
-               offline_teacher_assisted=bool(spec.get("archive") or (
+               offline_teacher_assisted=bool(resume_battle or spec.get("archive") or (
                    parent and parent["run"]["offline_teacher_assisted"])))
     rng = random.Random(spec.get("policy_seed", spec["seed"]))
     candidate_path = None
@@ -227,6 +237,18 @@ def sample(bank, spec, limits, versions, batch_deadline, cancelled, disk_guard, 
                 return game.request(**command)
 
             if parent:
+                run["parent"] = dict(run_id=parent["run"]["id"], root_id=parent["root"]["id"],
+                                     prefix_length=parent["prefix_length"] - 1)
+            if resume_battle:
+                path, source = checkpoint_bytes(bank, parent["root"])
+                try:
+                    state = restore_root(game, parent["root"], path,
+                                         lambda entry: send(dict(cmd="action", **entry)))
+                    state = resume_battle(game, state, send)
+                finally:
+                    if path.read_bytes() != source:
+                        raise f1.i2.StopRun("root_mismatch", "Source checkpoint changed during continuation")
+            elif parent:
                 root = parent["root"]
                 path = bank / root["checkpoint"]
                 if f1.digest(path.read_bytes()) != root["checkpoint_sha256"]:
@@ -235,8 +257,6 @@ def sample(bank, spec, limits, versions, batch_deadline, cancelled, disk_guard, 
                 if (stamp(state), stamp(boundaries(game, state))) != (
                         root["map_public_sha256"], root["map_edges_sha256"]):
                     raise f1.i2.StopRun("root_mismatch", "Continuation map differs")
-                run["parent"] = dict(run_id=parent["run"]["id"], root_id=root["id"],
-                                     prefix_length=parent["prefix_length"] - 1)
             elif spec.get("archive"):
                 source = ARCHIVE.read_bytes()
                 run["archive_sha256"] = f1.digest(source)
@@ -646,6 +666,19 @@ def collect(bank, manifest, config, args, save, disk_guard):
         save()
 
 
+def versions_for_host(bank, host):
+    setup(bank, host)
+    versions = dict(sampler=VERSION, policy=f2.VERSION, game="0.113.1/26660232",
+                    game_sha256=f1.i2.NATIVE_HASH, solver_sha256=f1.i2.SOLVER_HASH,
+                    solver="0.51.5/78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+                    headless_sha256=f1.digest(f1.DLL.read_bytes()), coreclr="9.0.7",
+                    native_identity="f1-continuation-v1",
+                    archive_sha256=f1.digest(ARCHIVE.read_bytes()))
+    versions["native_identity"] = stamp([versions[k] for k in (
+        "game", "game_sha256", "solver_sha256", "headless_sha256", "coreclr", "native_identity")])
+    return versions
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("operation", choices=("sample", "evaluate", "audit", "index"))
@@ -674,15 +707,7 @@ def main():
                 parser.error("bank does not exist")
             config = manifest["config"]
         config_specs(config)
-        setup(bank, args.host)
-        versions = dict(sampler=VERSION, policy=f2.VERSION, game="0.113.1/26660232",
-                        game_sha256=f1.i2.NATIVE_HASH, solver_sha256=f1.i2.SOLVER_HASH,
-                        solver="0.51.5/78e4545e825e58c3d999354b1ffcd54241b1d2cf",
-                        headless_sha256=f1.digest(f1.DLL.read_bytes()), coreclr="9.0.7",
-                        native_identity="f1-continuation-v1",
-                        archive_sha256=f1.digest(ARCHIVE.read_bytes()))
-        versions["native_identity"] = stamp([versions[k] for k in (
-            "game", "game_sha256", "solver_sha256", "headless_sha256", "coreclr", "native_identity")])
+        versions = versions_for_host(bank, args.host)
         if manifest is None:
             manifest = dict(schema=SCHEMA, config=config, versions=versions,
                             game_sha256=versions["game_sha256"], solver_sha256=versions["solver_sha256"],

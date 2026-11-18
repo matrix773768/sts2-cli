@@ -33,16 +33,23 @@ def action_for_wire(action):
     return {**action, "kind": KINDS[kind] if isinstance(kind, int) else kind}
 
 
-def expect_native(output, root, result):
+def prepare_native(output, root, result):
     actions = [action_for_wire(a) for a in result["actions"]]
     preparation, plan = f3a.search(output, root, f3a.BUDGETS[0], actions)
     if not plan or preparation["status"] != "complete_win":
-        return dict(status="independent_prediction_rejected", preparation=preparation)
+        return dict(status="independent_prediction_rejected", preparation=preparation), None
     stamps = [f1.digest(step[0]["exact_continuation_state"].encode()) for step in plan["frames"]]
     mismatch = next((i for i, (a, b) in enumerate(zip(stamps, result["stamps"]), 1) if a != b), None)
     if mismatch is not None or len(stamps) != len(result["stamps"]):
         return dict(status="search_fixed_prediction_difference", preparation=preparation,
-                    first_difference=mismatch, expected=stamps, actual=result["stamps"])
+                    first_difference=mismatch, expected=stamps, actual=result["stamps"]), None
+    return preparation, plan
+
+
+def expect_native(output, root, result):
+    preparation, plan = prepare_native(output, root, result)
+    if plan is None:
+        return preparation
     native = f3a.replay(output, root, plan)
     native["preparation"] = preparation
     return native

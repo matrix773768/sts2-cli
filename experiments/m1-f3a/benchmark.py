@@ -83,49 +83,59 @@ def search(output, root, budget, fixed_actions=None):
     return row, plan
 
 
-def replay(output, root, plan):
-    row = dict(root_verified=False, matched_actions=0, strict_terminal=False, trace=[],
+def replay_live(game, state, plan, row, send=None):
+    """Strictly replay on an already restored root and leave its native run live."""
+    if len(plan["actions"]) != len(plan["frames"]) or not 1 <= len(plan["actions"]) <= MAX_PLAN:
+        raise f1.i2.StopRun("invalid_prediction_frames", "Expected a complete bounded set of frames")
+    send = send or game.request
+    row.update(root_verified=True, matched_actions=0, strict_terminal=False, trace=[],
                terminal_contract="Raw F2 comparison; E2 death-only window contract is inapplicable to a predicted win.")
+    game.teacher_frames = []
+    game.teacher_choices = row["choice_evidence"] = []
+    root_frame = game.request("i1_begin")["state"]
+    equal("root", plan["root"], root_frame)
+    row["root_frame_sha256"] = frame_hash(root_frame)
+    try:
+        for index, (action, expected) in enumerate(zip(plan["actions"], plan["frames"]), 1):
+            row["attempted_step"] = index
+            step = send("i1_step", action=action)
+            if step["type"] == "i1_rejected":
+                raise f1.i2.StopRun("plan_action_rejected", step["reason"])
+            state = step["decision"]
+            if state["type"] == "error":
+                game.engine_error(state)
+            last = index == len(plan["actions"])
+            audit = dict(step=index, native_action=step["native_action"], native_ms=step["native_ms"],
+                         expected_sha256=frame_hash(expected), actual_sha256=frame_hash(step["state"]),
+                         terminal=step["terminal"], decision=state["decision"])
+            row["trace"].append(audit)
+            equal(index, expected, step["state"])
+            equal(f"{index}:terminal_callback", last, step["terminal"])
+            if not last:
+                equal(f"{index}:active_boundary", "combat_play", state["decision"])
+            elif state["decision"] not in ("card_reward", "map_select", "game_over"):
+                raise Difference(f"{index}:postcombat_boundary", "native postcombat", state["decision"])
+            row["matched_actions"] += 1
+        row["strict_terminal"] = True
+        game.request("i1_release")
+    finally:
+        if game.engine.proc.poll() is None:
+            row["native_final"] = game.request("f1_final")
+    row["status"] = f1.outcome(row, state)
+    if row["status"] != "win":
+        row["detail"] = "Strict predicted route did not reach a confirmed native win"
+    row["terminal_public"] = state
+    return state
+
+
+def replay(output, root, plan):
+    row = dict(root_verified=False, matched_actions=0, strict_terminal=False, trace=[])
     if len(plan["actions"]) != len(plan["frames"]) or not 1 <= len(plan["actions"]) <= MAX_PLAN:
         return dict(row, status="invalid_prediction_frames")
     clock = perf_counter()
     try:
         with restored(output, root) as (game, state):
-            row["root_verified"] = True
-            game.teacher_frames = []
-            game.teacher_choices = row["choice_evidence"] = []
-            root_frame = game.request("i1_begin")["state"]
-            equal("root", plan["root"], root_frame)
-            row["root_frame_sha256"] = frame_hash(root_frame)
-            try:
-                for index, (action, expected) in enumerate(zip(plan["actions"], plan["frames"]), 1):
-                    row["attempted_step"] = index
-                    step = game.request("i1_step", action=action)
-                    if step["type"] == "i1_rejected":
-                        raise f1.i2.StopRun("plan_action_rejected", step["reason"])
-                    state = step["decision"]
-                    if state["type"] == "error":
-                        game.engine_error(state)
-                    last = index == len(plan["actions"])
-                    audit = dict(step=index, native_action=step["native_action"], native_ms=step["native_ms"],
-                                 expected_sha256=frame_hash(expected), actual_sha256=frame_hash(step["state"]),
-                                 terminal=step["terminal"], decision=state["decision"])
-                    row["trace"].append(audit)
-                    equal(index, expected, step["state"])
-                    equal(f"{index}:terminal_callback", last, step["terminal"])
-                    if not last:
-                        equal(f"{index}:active_boundary", "combat_play", state["decision"])
-                    elif state["decision"] not in ("card_reward", "map_select", "game_over"):
-                        raise Difference(f"{index}:postcombat_boundary", "native postcombat", state["decision"])
-                    row["matched_actions"] += 1
-                row["strict_terminal"] = True
-                game.request("i1_release")
-            finally:
-                if game.engine.proc.poll() is None:
-                    row["native_final"] = game.request("f1_final")
-            row["status"] = f1.outcome(row, state)
-            if row["status"] != "win":
-                row["detail"] = "Strict predicted route did not reach a confirmed native win"
+            replay_live(game, state, plan, row)
             row["peak_working_set_bytes"] = game.report["peak_working_set_bytes"]
     except Difference as error:
         row.update(status="prediction_mismatch", first_difference=dict(phase=error.phase,
