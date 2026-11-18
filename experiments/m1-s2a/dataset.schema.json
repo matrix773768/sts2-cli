@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "M1-S2A version 1 generated cohort",
+  "type": "object",
+  "required": ["schema", "generator", "plan_sha256", "catalog_sha256", "versions", "cases", "failures", "f3b_selection", "repeated_cases", "duplicate_specs", "duplicate_live"],
+  "properties": {
+    "schema": {"const": 1},
+    "generator": {"const": "m1-s2a-v1"},
+    "plan_sha256": {"$ref": "#/$defs/hash"},
+    "catalog_sha256": {"$ref": "#/$defs/hash"},
+    "versions": {"type": "object", "required": ["game", "headless_sha256", "game_sha256", "solver_sha256", "coreclr"]},
+    "cases": {"type": "array", "items": {
+      "allOf": [
+        {"$ref": "#/$defs/candidate"},
+        {"required": ["root", "live", "audit", "f3b"]}
+      ],
+      "properties": {
+        "live": {"$ref": "#/$defs/hash"},
+        "root": {
+          "type": "object",
+          "required": ["id", "source", "synthetic", "native_verified", "native_reachable", "level"],
+          "properties": {
+            "source": {"const": "synthetic"}, "synthetic": {"const": true},
+            "native_verified": {"const": true}, "native_reachable": {"const": "unknown"},
+            "level": {"enum": ["L0", "L3"]}
+          }
+        },
+        "audit": {"type": "object", "required": ["rebuilds"], "properties": {
+          "rebuilds": {"type": "array", "minItems": 2, "maxItems": 2}
+        }},
+        "f3b": {"type": ["object", "null"]}
+      }
+    }},
+    "failures": {"type": "array", "items": {
+      "allOf": [{"$ref": "#/$defs/candidate"}, {"required": ["status"]}]
+    }},
+    "f3b_selection": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "repeated_cases": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+  },
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "candidate": {
+      "type": "object",
+      "required": ["case", "generator_seed", "case_seed", "rule", "profile", "tags", "parameters", "spec", "spec_sha256"],
+      "properties": {
+        "case": {"type": "string"},
+        "generator_seed": {"type": "integer"},
+        "case_seed": {"type": "integer", "minimum": 0},
+        "rule": {"type": "string"},
+        "profile": {"type": "string"},
+        "tags": {"type": "array", "items": {"type": "string"}},
+        "parameters": {"type": "object", "required": ["deck_size", "upgrades", "hp_percent", "starter_relic", "potion"]},
+        "spec_sha256": {"$ref": "#/$defs/hash"},
+        "spec": {"$ref": "#/$defs/SyntheticCombatSpec"}
+      }
+    },
+    "SyntheticCombatSpec": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema", "character", "ascension", "act", "act_variant", "encounter", "seed", "deck", "hp", "max_hp", "relics", "potions"],
+      "properties": {
+        "schema": {"const": 2},
+        "character": {"enum": ["Ironclad", "Silent"]},
+        "ascension": {"type": "integer", "minimum": 0, "maximum": 10},
+        "act": {"enum": [1, 2]},
+        "act_variant": {"type": "string"},
+        "encounter": {"type": "string"},
+        "seed": {"type": "string", "minLength": 1},
+        "deck": {"type": "array", "minItems": 1, "maxItems": 40, "items": {
+          "type": "object", "additionalProperties": false,
+          "required": ["id", "upgrade"], "properties": {
+            "id": {"type": "string"}, "upgrade": {"enum": [0, 1]}
+          }
+        }},
+        "hp": {"type": "integer", "minimum": 1, "maximum": 999},
+        "max_hp": {"type": "integer", "minimum": 1, "maximum": 999},
+        "relics": {"type": "array", "uniqueItems": true, "items": {"enum": ["BURNING_BLOOD", "RING_OF_THE_SNAKE"]}},
+        "potions": {"type": "array", "items": {"enum": [null, "FLEX_POTION", "DEXTERITY_POTION"]}}
+      }
+    }
+  }
+}

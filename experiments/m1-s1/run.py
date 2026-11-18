@@ -30,6 +30,11 @@ def capture(game, spec):
     snapshot = game.request("synthetic_snapshot")
     identity = game.request("f1_begin")
     snapshot_ms = bank.elapsed(clock)
+    if spec["schema"] == 2:
+        f3a.equal("synthetic act context",
+                  (spec["act"], spec["act"], spec["act_variant"], snapshot["act_boss"]),
+                  (public["context"]["act"], snapshot["act"], snapshot["act_variant"],
+                   public["context"]["boss"]["id"]))
     resource = identity["resources"]
     pots = spec["potions"] + [None] * (len(resource["potions"]) - len(spec["potions"]))
     actual = (snapshot["seed"], snapshot["character"], snapshot["ascension"], identity["encounter"],
@@ -61,7 +66,8 @@ def sample(output, spec, versions, actions=0):
         surfaces, timing = capture(game, spec)
         root = dict(surfaces, id="synthetic-" + bank.stamp([spec, versions, surfaces["identity"]["live"]]),
                     spec=spec, versions=versions, source=ROOT_KIND, synthetic=True,
-                    native_reachable=False, native_verified=False, level="unverified")
+                    native_reachable="unknown" if spec["schema"] == 2 else False,
+                    native_verified=False, level="unverified")
         frames = []
         clock = perf_counter()
         for tick in range(1, actions + 1):
@@ -89,7 +95,7 @@ def verified_variant(output, spec, versions, actions=0):
 
 @contextmanager
 def rebuild(output, root):
-    if root["source"] != ROOT_KIND or not root["native_verified"] or root["native_reachable"]:
+    if root["source"] != ROOT_KIND or not root["native_verified"] or root["native_reachable"] not in (False, "unknown"):
         raise ValueError("Expected an independently verified synthetic root")
     if bank.f1.digest(bank.f1.DLL.read_bytes()) != root["versions"]["headless_sha256"]:
         raise ValueError("Synthetic host binary differs from the recorded root")

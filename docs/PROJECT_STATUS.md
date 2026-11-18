@@ -1,12 +1,14 @@
 # STS2 AI — 项目状态与交接（PROJECT_STATUS）
 
 > 更新日期：2026-11-18（Asia/Shanghai）
-> 当前主线：M1-S1 已验证独立原生合成战斗和 F3B 严格重放。下一步验证更多原生遭遇及局面合同，再考虑扩展合成样本。战损优化和 M2 局外学习暂缓。
+> 当前主线：M1-S2A 已验证规则化生成、两角色和第二幕合成样本的独立冷重建。下一步按机制扩充原生与预测兼容性证据。战损优化和 M2 局外学习暂缓。
 > 本文件描述 **matrix773768/sts2-cli** 的 `port/v0.113.1` 分支，不代表上游 `wuhao21/sts2-cli` 或 `main` 的支持情况。
 > M0 最后一次业务代码提交：`bc48ac58aeca80c2c7b9249cbf98f316ae99a27b` — Restore native Ancient healing and act-start travel rules。
 > 本文件是交接摘要；具体实现、测试断言、原生 IL 及日志以当前仓库和本机实际文件为准。不要将历史总结当成新的测试结果。
 
 ## 本阶段交接
+
+M1-S2A 用原生 ModelDb 约束强度多段、格挡转伤、中毒和小刀成长四种规则。16 根均两次独立重建，覆盖铁甲战士、静默猎手、第一幕两个变体及第二幕 HIVE。预选 6 根运行冻结 F3B，2 根通过完整原生验收，其余原因分别为终局差分、Neutralize 预测不支持及生存者待选。真实可达性均为 unknown。见 [M1-S2A 报告与复现](m1-s2a-synthetic-combat-generation.md)。
 
 M1-S1 在没有地图历史的条件下，用非保存原生跑局初始化铁甲战士 A0 普通战。三个配置分别两次独立重建通过，覆盖同种子、换种子与升级一张牌。基础根 F3B 无药用 13 次转移，独立原生严格验收 13/13。样本标记为 synthetic、native_verified 且 native_reachable=false，与 D1 的真实合法历史分开。见 [M1-S1 证据与复现](m1-s1-synthetic-combat-feasibility.md)。
 

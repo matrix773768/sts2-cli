@@ -1,0 +1,2714 @@
+{
+  "schema": 1,
+  "generator": "m1-s2a-v1",
+  "plan_sha256": "cb923f796b9e68861a75b4e9e9f2f6fe735d4487debce30e26de8148f94ebdb5",
+  "catalog_sha256": "f8774ef880b5d3b74c8b93c54eb2b3c588a7219d027b328e9e94cacad96ebd54",
+  "versions": {
+    "sampler": "m1-d1-v1",
+    "policy": "M1-F2-discard-v1",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "solver_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13",
+    "solver": "0.51.5/78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+    "headless_sha256": "69123c82caf783043200aca90b2a792e7fcac23184505738d9936abfcd64c681",
+    "coreclr": "9.0.7",
+    "native_identity": "5c2b9afc06ab824bb5d2116afd7c858f6e58adffcc61eb1ecfcddad49b4674aa",
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+    "synthetic_spec": 2,
+    "initializer": "m1-s2a-v1"
+  },
+  "cases": [
+    {
+      "case": "strength-early",
+      "generator": "m1-s2a-v1",
+      "generator_seed": 260118,
+      "rule": "strength",
+      "profile": "early",
+      "case_seed": 14792136299261395505,
+      "tags": [
+        "strength",
+        "multi_hit"
+      ],
+      "parameters": {
+        "deck_size": 13,
+        "upgrades": 0,
+        "hp_percent": 83,
+        "starter_relic": true,
+        "potion": "FLEX_POTION"
+      },
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 1,
+        "act_variant": "OVERGROWTH",
+        "encounter": "SHRINKER_BEETLE_WEAK",
+        "seed": "ED492CE37F49",
+        "hp": 66,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          null,
+          "FLEX_POTION"
+        ],
+        "deck": [
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "SWORD_BOOMERANG",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "SWORD_BOOMERANG",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "FLAME_BARRIER",
+            "upgrade": 0
+          },
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          }
+        ]
+      },
+      "spec_sha256": "1a2d2ecf4c347f58761e567abf897a0e593be574c2dbeb063418c269aba655b5",
+      "root": {
+        "id": "synthetic-574f0930f96c83857c27714cc8ec80e54545c43b55b229f5ea7371f290c75b19",
+        "source": "synthetic",
+        "synthetic": true,
+        "native_verified": true,
+        "native_reachable": "unknown",
+        "level": "L0"
+      },
+      "audit": {
+        "rebuilds": [
+          {
+            "handshake_ms": 209.7469000145793,
+            "initialize_ms": 1623.6399000044912,
+            "snapshot_ms": 120.09709980338812,
+            "root_ms": 1953.4838998224586,
+            "peak_working_set_bytes": 99983360
+          },
+          {
+            "handshake_ms": 203.8230001926422,
+            "initialize_ms": 1781.2604000791907,
+            "snapshot_ms": 123.49899997934699,
+            "root_ms": 2108.58240025118,
+            "peak_working_set_bytes": 99844096
+          }
+        ],
+        "legal_action_frames": []
+      },
+      "live": "d94e2ad7131350b0b69f7548d80f9908e9a3f1d9411946985a3a76d23412840a",
+      "f3b": {
+        "arm": "C",
+        "cap": 128,
+        "potions": false,
+        "uses_hidden_rng": true,
+        "status": "strict_difference",
+        "search_status": "predicted_win",
+        "search_ms": 3421.8338998034596,
+        "transitions": 15,
+        "search_hot_ms": 444.1836,
+        "search_peak_working_set_bytes": 120188928,
+        "prediction_prepare_ms": 682.9869,
+        "fixed_prediction": {
+          "node_budget": 1000,
+          "soft_ms": 6000,
+          "cancel_ms": 8000,
+          "root_verified": true,
+          "capture_wall_ms": 1143.2627001777291,
+          "status": "complete_win",
+          "solve_ms": 0.0009,
+          "search_cpu_ms": 0,
+          "predicted_win": true,
+          "fixed_route": true,
+          "transitions": null,
+          "expanded_nodes": null,
+          "total_expanded_nodes": null,
+          "boundary": null,
+          "encounter": "SHRINKER_BEETLE_WEAK",
+          "ms": 1094.1456,
+          "peak_working_set_bytes": 120549376,
+          "plan_action_count": 15,
+          "plan_rounds": 4,
+          "elapsed_ms": 3301.984100136906
+        },
+        "native_replay": {
+          "matched_actions": 14,
+          "strict_terminal": false,
+          "root_frame_sha256": "65467a2974b58d0aed1374188bfd6579b84282ddec58ea60c97eb99b9e10637a",
+          "attempted_step": 15,
+          "actual_frame_sha256": [
+            "e8d8c4117e4732bd71424a13b8200dcc99ed36d92da402f28a70e6d5c7fe79d2",
+            "953e6c83115322b1493933d078129ef5da7204c49aa6282bda8dc8851118e2b3",
+            "d092e478185e1ed31b750d82782fd03ba3d912497f4310db5dafac57b3b8ddad",
+            "5150909bbbb32217f308e108642515b759675d6b6c29f2565cd59ccbe9a13ba6",
+            "9921449d2237fac20abf95ffe224efeb21808d9830dcd0568e09e915c18d1886",
+            "1725b2c0e1e56db9501f8b45f7edc05d9fdfd01376ad94e0aa71276f5d391bc9",
+            "2a986d69cd947ef4ea88ef4eec9299e62e1cc6a0c4110c79a52f094e7d3c3507",
+            "736df5c2976270ca1b75392d4d4fd67c1488c098f75f35ad7f253dc58600861c",
+            "14104989fb9cbe20ae340d984aa8e412ef4efcc0e5d8d144c50242e640d96f17",
+            "380436aed2074221a4079bfa97ae3e4bef800b903597d13701b3833c9272258d",
+            "79956e68db3d920a22e9b2bd654a5942b806c88836617c4a1d71d6a4ddb43be0",
+            "1c48fc7e0ace17ef86fc64125ff110ca165a0948db5e366add359bda0638d5ae",
+            "16622a43fb8e7056d87620e68d0d84ea1f8d8c7a5fe358b689d14add8694cb49",
+            "4ef6764880737a944c7127c0fbd9aba7db90a600e33af5aef00feffd0d5a3532",
+            "9cf20301bba70df5facb1b8dddc0a542a28627cd969fbece0bc545a49cff9016"
+          ],
+          "outcome": {
+            "initial_hp": 66,
+            "final_hp": 64,
+            "hp_lost": 2,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          }
+        },
+        "phase": 15,
+        "expected_sha256": "036cbd83dffdeb4b30f920cd258c8f01f794efedd07cc1dc65be82a220b6a493",
+        "actual_sha256": "9cf20301bba70df5facb1b8dddc0a542a28627cd969fbece0bc545a49cff9016",
+        "elapsed_ms": 9352.704199962318,
+        "route_action_count": 15,
+        "rollout_stops": {
+          "predicted_win": 1
+        },
+        "unsupported_actions": [],
+        "first_difference": {
+          "step": 15,
+          "action": "end_turn",
+          "fields": {
+            "Y": {
+              "expected": "0/0/2/2",
+              "actual": "0/0/0/0"
+            },
+            "AttackStarts": {
+              "expected": 1,
+              "actual": 0
+            }
+          }
+        }
+      },
+      "native_context": {
+        "context": {
+          "act": 1,
+          "act_name": "OVERGROWTH.title",
+          "floor": 0,
+          "room_type": "Monster",
+          "boss": {
+            "id": "CEREMONIAL_BEAST_BOSS",
+            "name": "CEREMONIAL_BEAST.name"
+          }
+        },
+        "act_variant": "OVERGROWTH",
+        "act_boss": "CEREMONIAL_BEAST_BOSS",
+        "visited_map_nodes": 0
+      }
+    },
+    {
+      "case": "strength-lean",
+      "generator": "m1-s2a-v1",
+      "generator_seed": 260118,
+      "rule": "strength",
+      "profile": "lean",
+      "case_seed": 2704809600408781116,
+      "tags": [
+        "strength",
+        "multi_hit"
+      ],
+      "parameters": {
+        "deck_size": 14,
+        "upgrades": 1,
+        "hp_percent": 46,
+        "starter_relic": false,
+        "potion": null
+      },
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 1,
+        "act_variant": "UNDERDOCKS",
+        "encounter": "SEAPUNK_WEAK",
+        "seed": "2EF2135A69A8",
+        "hp": 36,
+        "max_hp": 80,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 1
+          },
+          {
+            "id": "SWORD_BOOMERANG",
+            "upgrade": 0
+          },
+          {
+            "id": "SWORD_BOOMERANG",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          }
+        ]
+      },
+      "spec_sha256": "0d5c8da3297ddeb1886302716fa1b0286e78f9f3191f9ddc07db5fed390a27f5",
+      "root": {
+        "id": "synthetic-ee60a920ca269de8460d05f978d1256b13e67b783da567e2c1d27e15338fb24d",
+        "source": "synthetic",
+        "synthetic": true,
+        "native_verified": true,
+        "native_reachable": "unknown",
+        "level": "L0"
+      },
+      "audit": {
+        "rebuilds": [
+          {
+            "handshake_ms": 218.13379996456206,
+            "initialize_ms": 1596.3554999325424,
+            "snapshot_ms": 126.26260006800294,
+            "root_ms": 1940.7518999651074,
+            "peak_working_set_bytes": 99831808
+          },
+          {
+            "handshake_ms": 290.81870010122657,
+            "initialize_ms": 1548.4551000408828,
+            "snapshot_ms": 131.2235000077635,
+            "root_ms": 1970.497300149873,
+            "peak_working_set_bytes": 100306944
+          }
+        ],
+        "legal_action_frames": []
+      },
+      "live": "83d3a881b3f96fe972ddcf1f5a7ed8dded06a8342203a8a0dbf1f2b5fd02d1be",
+      "f3b": null,
+      "native_context": {
+        "context": {
+          "act": 1,
+          "act_name": "UNDERDOCKS.title",
+          "floor": 0,
+          "room_type": "Monster",
+          "boss": {
+            "id": "WATERFALL_GIANT_BOSS",
+            "name": "WATERFALL_GIANT.name"
+          }
+        },
+        "act_variant": "UNDERDOCKS",
+        "act_boss": "WATERFALL_GIANT_BOSS",
+        "visited_map_nodes": 0
+      }
+    },
+    {
+      "case": "strength-hive-low",
+      "generator": "m1-s2a-v1",
+      "generator_seed": 260118,
+      "rule": "strength",
+      "profile": "hive-low",
+      "case_seed": 9203615286261902320,
+      "tags": [
+        "strength",
+        "multi_hit"
+      ],
+      "parameters": {
+        "deck_size": 16,
+        "upgrades": 2,
+        "hp_percent": 53,
+        "starter_relic": true,
+        "potion": "DEXTERITY_POTION"
+      },
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "TUNNELER_WEAK",
+        "seed": "50949DAC2189",
+        "hp": 42,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          null,
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 1
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 1
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "SWORD_BOOMERANG",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "FLAME_BARRIER",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          }
+        ]
+      },
+      "spec_sha256": "ec3c3c19377b89d758d26f31eac48cfc72013e5fa760b4d5c5da17a3e3704098",
+      "root": {
+        "id": "synthetic-7920426a4488ec8148cbb5fd0a4cbc4e82171ba07b883a4cf68e18f5348d075a",
+        "source": "synthetic",
+        "synthetic": true,
+        "native_verified": true,
+        "native_reachable": "unknown",
+        "level": "L3"
+      },
+      "audit": {
+        "rebuilds": [
+          {
+            "handshake_ms": 240.53129996173084,
+            "initialize_ms": 1560.4304000735283,
+            "snapshot_ms": 141.11310010775924,
+            "root_ms": 1942.0748001430184,
+            "peak_working_set_bytes": 99274752
+          },
+          {
+            "handshake_ms": 337.17399998568,
+            "initialize_ms": 1433.614799985662,
+            "snapshot_ms": 134.04959999024868,
+            "root_ms": 1904.8383999615908,
+            "peak_working_set_bytes": 99348480
+          }
+        ],
+        "legal_action_frames": []
+      },
+      "live": "85f110a49b3abfe69c25639a639e6083a00a355940a9543f75033593fe991b56",
+      "f3b": {
+        "arm": "C",
+        "cap": 128,
+        "potions": false,
+        "uses_hidden_rng": true,
+        "status": "win",
+        "search_status": "predicted_win",
+        "search_ms": 3368.466299958527,
+        "transitions": 73,
+        "search_hot_ms": 529.3348,
+        "search_peak_working_set_bytes": 123764736,
+        "prediction_prepare_ms": 641.0061,
+        "fixed_prediction": {
+          "node_budget": 1000,
+          "soft_ms": 6000,
+          "cancel_ms": 8000,
+          "root_verified": true,
+          "capture_wall_ms": 1135.7213999144733,
+          "status": "complete_win",
+          "solve_ms": 0.0008,
+          "search_cpu_ms": 0,
+          "predicted_win": true,
+          "fixed_route": true,
+          "transitions": null,
+          "expanded_nodes": null,
+          "total_expanded_nodes": null,
+          "boundary": null,
+          "encounter": "TUNNELER_WEAK",
+          "ms": 1087.6452,
+          "peak_working_set_bytes": 124403712,
+          "plan_action_count": 24,
+          "plan_rounds": 7,
+          "elapsed_ms": 3463.6840999592096
+        },
+        "native_replay": {
+          "matched_actions": 24,
+          "strict_terminal": true,
+          "elapsed_ms": 2626.4845998957753,
+          "status": "win",
+          "root_frame_sha256": "8944ef94c7eb4413fefc2ce69a29912d311249886445ade72529ca32d47c34fa",
+          "attempted_step": 24,
+          "peak_working_set_bytes": 115351552,
+          "actual_frame_sha256": [
+            "30c235d04569105861e65f7f8581cbed517106feb1697d1960447eb1dd7c6f63",
+            "43c06f32445a9816db93b6f71d119454ee45dc87090d89e230f98cf5b76c8f33",
+            "cd531431a67b23f1e326b08d0e210c5dc4f78d12cdeecf9c410673d23394cdb1",
+            "817a3a27af44ff15d80e0a42c7ef26d1668be8af516e98725cf1ac734088f5d2",
+            "130ee1af43fbe0620ce0c44786bb210891acd7721fb9e300ef9753f6ff956f37",
+            "49c1109e879b0475cedb230ea972e3334e455dd8d7ff2c660f7d4bd997322e38",
+            "dc2ca9fb01e8b6c783e30055d57345730c0a6195fc967fd01bad10476b12723f",
+            "7fb6c4122e333f3246eee6ad9eb2cf845404135464c45d23deb5f1fa6ec7644a",
+            "66b26c3070e9fee496fa8c623d2a394e4f371fcd8f57d1c45856f5ab8cb50845",
+            "0d269e8f9ed3d0f8f828363e3bd1c3d0fd0e0015bb469c17307f9cd9d2a2785d",
+            "af4a2483d0004f679c2c5663445e2cedf45c7c39f6abdac2c5cfa160cbbf8ba5",
+            "2389c21f660c8c4cb3d6768fec128b62b86978d1b4ee04ce3c2d836a2538a544",
+            "3ffcc6cd7db3fc968146fd6e3d1ddc2b9601be3c6195a28d4458e55f5f48e7fc",
+            "d4caeef146fe5f378b78a97499854277680d4622e7b970df64282b0c20bc0b8e",
+            "ebcaeacbf03cd60dd5ba707eb7a04090a21ff050a8e7461656bd0bfe9ac1bf1a",
+            "f7727a7eedb1ad1d0bd0eca351700c6b406abc317ffd419b8b391d29f28c6f81",
+            "d99a2dcff3159821804b0b911ce9cebfc4a1ddacc86bf5a16ef702a72df8a291",
+            "2d5817b61ce211ee94347eedc258602f218f9f712219e9526de5eef77772f43f",
+            "88dec933a26e1bb3ade6dc321b3bddcfcde52aa03f2b085127b4696a9d20a04d",
+            "840105e54e8a9c97e6c3e809282cf72ff91e138c5462549adc6b259d9391f762",
+            "56b8cc0dd12afe6a1f39d05b7c3f4060cb1d0329a077f7f73bbbc1f8cc0f9fac",
+            "a1a1127daa91690eda933cc211ba2dac4749b85418aa06538f024e8ba8d1e04c",
+            "77bde51eebb46434dca6158eb1e6f25ea46a30b3bf114af74f36edb75fb58844",
+            "bef92accad6211aa2d76ddcf527f497dd16f8995a8cd140cca86ec5368dfec99"
+          ],
+          "outcome": {
+            "initial_hp": 42,
+            "final_hp": 6,
+            "hp_lost": 36,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          }
+        },
+        "elapsed_ms": 9459.603799972683,
+        "route_action_count": 24,
+        "rollout_stops": {
+          "death": 3,
+          "predicted_win": 1
+        },
+        "unsupported_actions": []
+      },
+      "native_context": {
+        "context": {
+          "act": 2,
+          "act_name": "HIVE.title",
+          "floor": 0,
+          "room_type": "Monster",
+          "boss": {
+            "id": "KNOWLEDGE_DEMON_BOSS",
+            "name": "KNOWLEDGE_DEMON.name"
+          }
+        },
+        "act_variant": "HIVE",
+        "act_boss": "KNOWLEDGE_DEMON_BOSS",
+        "visited_map_nodes": 0
+      }
+    },
+    {
+      "case": "strength-hive-stocked",
+      "generator": "m1-s2a-v1",
+      "generator_seed": 260118,
+      "rule": "strength",
+      "profile": "hive-stocked",
+      "case_seed": 14387585022230498060,
+      "tags": [
+        "strength",
+        "multi_hit"
+      ],
+      "parameters": {
+        "deck_size": 17,
+        "upgrades": 5,
+        "hp_percent": 91,
+        "starter_relic": true,
+        "potion": "DEXTERITY_POTION"
+      },
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "DA9BCF5FEE54",
+        "hp": 72,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          null,
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "BASH",
+            "upgrade": 1
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 1
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "SWORD_BOOMERANG",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 1
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 1
+          },
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "SWORD_BOOMERANG",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 1
+          }
+        ]
+      },
+      "spec_sha256": "9d581908726974c914b4fb0accc83dc86ba45447452a65c17e158f46bfa62af6",
+      "root": {
+        "id": "synthetic-135428c0008696b67974d49408f961f42f55d5c3c347d9614f34b7ade18873ac",
+        "source": "synthetic",
+        "synthetic": true,
+        "native_verified": true,
+        "native_reachable": "unknown",
+        "level": "L0"
+      },
+      "audit": {
+        "rebuilds": [
+          {
+            "handshake_ms": 310.2883000392467,
+            "initialize_ms": 1514.2863998189569,
+            "snapshot_ms": 97.00719988904893,
+            "root_ms": 1921.5818997472525,
+            "peak_working_set_bytes": 99016704
+          },
+          {
+            "handshake_ms": 221.31810011342168,
+            "initialize_ms": 1455.731200054288,
+            "snapshot_ms": 72.30039988644421,
+            "root_ms": 1749.3497000541538,
+            "peak_working_set_bytes": 99033088
+          }
+        ],
+        "legal_action_frames": []
+      },
+      "live": "970ef9300981b90822ca4f09008175572b4c834395e1d53d4b5ed387dc94fbb4",
+      "f3b": null,
+      "native_context": {
+        "context": {
+          "act": 2,
+          "act_name": "HIVE.title",
+          "floor": 0,
+          "room_type": "Monster",
+          "boss": {
+            "id": "THE_INSATIABLE_BOSS",
+            "name": "THE_INSATIABLE.name"
+          }
+        },
+        "act_variant": "HIVE",
+        "act_boss": "THE_INSATIABLE_BOSS",
+        "visited_map_nodes": 0
+      }
+    },
+    {
+      "case": "block-early",
+      "generator": "m1-s2a-v1",
+      "generator_seed": 260118,
+      "rule": "block",
+      "profile": "early",
+      "case_seed": 17768096994533434492,
+      "tags": [
+        "block",
+        "block_to_damage"
+      ],
+      "parameters": {
+        "deck_size": 13,
+        "upgrades": 1,
+        "hp_percent": 72,
+        "starter_relic": true,
+        "potion": "FLEX_POTION"
+      },
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 1,
+        "act_variant": "OVERGROWTH",
+        "encounter": "NIBBITS_WEAK",
+        "seed": "A2BC52C135B2",
+        "hp": 57,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "BODY_SLAM",
+            "upgrade": 1
+          },
+          {
+            "id": "BODY_SLAM",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "spec_sha256": "da82c920babaddf8ebbe60c17fb968ed8e7177f080509f153a63b54cc08ae5f0",
+      "root": {
+        "id": "synthetic-f047d8c3eaf3eb769c5bb4b8b14fe10aa03b1fe913029325716b15fb0409aeb7",
+        "source": "synthetic",
+        "synthetic": true,
+        "native_verified": true,
+        "native_reachable": "unknown",
+        "level": "L0"
+      },
+      "audit": {
+        "rebuilds": [
+          {
+            "handshake_ms": 206.26590005122125,
+            "initialize_ms": 1688.5432999115437,
+            "snapshot_ms": 101.54169984161854,
+            "root_ms": 1996.3508998043835,
+            "peak_working_set_bytes": 99938304
+          },
+          {
+            "handshake_ms": 227.4140000808984,
+            "initialize_ms": 1590.7848000060767,
+            "snapshot_ms": 118.9870999660343,
+            "root_ms": 1937.1859000530094,
+            "peak_working_set_bytes": 99979264
+          }
+        ],
+        "legal_action_frames": []
+      },
+      "live": "c81ecdfc9fdb0f687b67f40f9087b7bc68451dfa9156320b9954cfca73be070d",
+      "f3b": null,
+      "native_context": {
+        "context": {
+          "act": 1,
+          "act_name": "OVERGROWTH.title",
+          "floor": 0,
+          "room_type": "Monster",
+          "boss": {
+            "id": "THE_KIN_BOSS",
+            "name": "KIN_PRIEST.name"
+          }
+        },
+        "act_variant": "OVERGROWTH",
+        "act_boss": "THE_KIN_BOSS",
+        "visited_map_nodes": 0
+      }
+    },
+    {
+      "case": "block-lean",
+      "generator": "m1-s2a-v1",
+      "generator_seed": 260118,
+      "rule": "block",
+      "profile": "lean",
+      "case_seed": 9369316421162668086,
+      "tags": [
+        "block",
+        "block_to_damage"
+      ],
+      "parameters": {
+        "deck_size": 14,
+        "upgrades": 2,
+        "hp_percent": 43,
+        "starter_relic": false,
+        "potion": null
+      },
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 1,
+        "act_variant": "UNDERDOCKS",
+        "encounter": "CORPSE_SLUGS_WEAK",
+        "seed": "68A243D777AB",
+        "hp": 34,
+        "max_hp": 80,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "BODY_SLAM",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 1
+          },
+          {
+            "id": "FLAME_BARRIER",
+            "upgrade": 0
+          },
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 1
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          }
+        ]
+      },
+      "spec_sha256": "c531190965deac4f17d9cdca445624d8b63947a8db19daa80d035b99cd0aa706",
+      "root": {
+        "id": "synthetic-4a37b50de48c772ef51ada8da5cc5d983fc8f21bd6ea1cf946fb935ad6352734",
+        "source": "synthetic",
+        "synthetic": true,
+        "native_verified": true,
+        "native_reachable": "unknown",
+        "level": "L0"
+      },
+      "audit": {
+        "rebuilds": [
+          {
+            "handshake_ms": 239.8240000475198,
+            "initialize_ms": 1648.650199873373,
+            "snapshot_ms": 116.14300007931888,
+            "root_ms": 2004.6172000002116,
+            "peak_working_set_bytes": 100524032
+          },
+          {
+            "handshake_ms": 196.39190007001162,
+            "initialize_ms": 1405.3869000636041,
+            "snapshot_ms": 55.6573998183012,
+            "root_ms": 1657.436199951917,
+            "peak_working_set_bytes": 100216832
+          }
+        ],
+        "legal_action_frames": []
+      },
+      "live": "3792c8fb93c900bfb379f73ed3108b43322a009d92c18f12e50b6b3c0edcfa4e",
+      "f3b": null,
+      "native_context": {
+        "context": {
+          "act": 1,
+          "act_name": "UNDERDOCKS.title",
+          "floor": 0,
+          "room_type": "Monster",
+          "boss": {
+            "id": "LAGAVULIN_MATRIARCH_BOSS",
+            "name": "LAGAVULIN_MATRIARCH.name"
+          }
+        },
+        "act_variant": "UNDERDOCKS",
+        "act_boss": "LAGAVULIN_MATRIARCH_BOSS",
+        "visited_map_nodes": 0
+      }
+    },
+    {
+      "case": "block-hive-low",
+      "generator": "m1-s2a-v1",
+      "generator_seed": 260118,
+      "rule": "block",
+      "profile": "hive-low",
+      "case_seed": 12773981435701738814,
+      "tags": [
+        "block",
+        "block_to_damage"
+      ],
+      "parameters": {
+        "deck_size": 17,
+        "upgrades": 3,
+        "hp_percent": 53,
+        "starter_relic": true,
+        "potion": null
+      },
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "8EA7C5DE57A2",
+        "hp": 42,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "FLAME_BARRIER",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "FLAME_BARRIER",
+            "upgrade": 1
+          },
+          {
+            "id": "BASH",
+            "upgrade": 1
+          },
+          {
+            "id": "BODY_SLAM",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 1
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "BODY_SLAM",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "spec_sha256": "18f7b760d7e4024f9df8cf909b38482a5aee6a02e8783a9231c617e3f91103eb",
+      "root": {
+        "id": "synthetic-853879abd40f2766a82749abfb17e6a98cfe2c2479665b8664b1e355cd05650f",
+        "source": "synthetic",
+        "synthetic": true,
+        "native_verified": true,
+        "native_reachable": "unknown",
+        "level": "L0"
+      },
+      "audit": {
+        "rebuilds": [
+          {
+            "handshake_ms": 99.09459995105863,
+            "initialize_ms": 1254.281200002879,
+            "snapshot_ms": 121.20219995267689,
+            "root_ms": 1474.5779999066144,
+            "peak_working_set_bytes": 100249600
+          },
+          {
+            "handshake_ms": 183.23409999720752,
+            "initialize_ms": 1512.948000105098,
+            "snapshot_ms": 98.43560005538166,
+            "root_ms": 1794.617700157687,
+            "peak_working_set_bytes": 100286464
+          }
+        ],
+        "legal_action_frames": []
+      },
+      "live": "d2e9ffdf669c5c918d4bb779c4887953b329814ffe473f7ef671e37b110119a9",
+      "f3b": null,
+      "native_context": {
+        "context": {
+          "act": 2,
+          "act_name": "HIVE.title",
+          "floor": 0,
+          "room_type": "Monster",
+          "boss": {
+            "id": "THE_INSATIABLE_BOSS",
+            "name": "THE_INSATIABLE.name"
+          }
+        },
+        "act_variant": "HIVE",
+        "act_boss": "THE_INSATIABLE_BOSS",
+        "visited_map_nodes": 0
+      }
+    },
+    {
+      "case": "block-hive-stocked",
+      "generator": "m1-s2a-v1",
+      "generator_seed": 260118,
+      "rule": "block",
+      "profile": "hive-stocked",
+      "case_seed": 4041542656963838546,
+      "tags": [
+        "block",
+        "block_to_damage"
+      ],
+      "parameters": {
+        "deck_size": 17,
+        "upgrades": 5,
+        "hp_percent": 88,
+        "starter_relic": true,
+        "potion": "FLEX_POTION"
+      },
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "TUNNELER_WEAK",
+        "seed": "6DB34CC8F909",
+        "hp": 70,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 1
+          },
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "FLAME_BARRIER",
+            "upgrade": 1
+          },
+          {
+            "id": "BODY_SLAM",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 1
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 1
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 1
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "FLAME_BARRIER",
+            "upgrade": 0
+          }
+        ]
+      },
+      "spec_sha256": "0033faeba54a80e4a8d33e472759fffe2ce9983ccbc44508d796235c0104910d",
+      "root": {
+        "id": "synthetic-dc0577a92ec2c0be16ea930d7561e70a4a01bf05680a69d36f2ca6f604394dac",
+        "source": "synthetic",
+        "synthetic": true,
+        "native_verified": true,
+        "native_reachable": "unknown",
+        "level": "L3"
+      },
+      "audit": {
+        "rebuilds": [
+          {
+            "handshake_ms": 251.83649989776313,
+            "initialize_ms": 1686.6504999343306,
+            "snapshot_ms": 148.2512999791652,
+            "root_ms": 2086.738299811259,
+            "peak_working_set_bytes": 100708352
+          },
+          {
+            "handshake_ms": 230.55859981104732,
+            "initialize_ms": 1579.6024999581277,
+            "snapshot_ms": 133.46409983932972,
+            "root_ms": 1943.6251996085048,
+            "peak_working_set_bytes": 100548608
+          }
+        ],
+        "legal_action_frames": []
+      },
+      "live": "f73cfbd515db076cce20262f80c7846c56cc9284ba9c1d522ac4ec236ea99d14",
+      "f3b": {
+        "arm": "C",
+        "cap": 128,
+        "potions": false,
+        "uses_hidden_rng": true,
+        "status": "win",
+        "search_status": "predicted_win",
+        "search_ms": 2773.475700058043,
+        "transitions": 33,
+        "search_hot_ms": 537.4844,
+        "search_peak_working_set_bytes": 123396096,
+        "prediction_prepare_ms": 482.8339,
+        "fixed_prediction": {
+          "node_budget": 1000,
+          "soft_ms": 6000,
+          "cancel_ms": 8000,
+          "root_verified": true,
+          "capture_wall_ms": 1135.6230999808758,
+          "status": "complete_win",
+          "solve_ms": 0.0005,
+          "search_cpu_ms": 0,
+          "predicted_win": true,
+          "fixed_route": true,
+          "transitions": null,
+          "expanded_nodes": null,
+          "total_expanded_nodes": null,
+          "boundary": null,
+          "encounter": "TUNNELER_WEAK",
+          "ms": 1087.7648,
+          "peak_working_set_bytes": 122871808,
+          "plan_action_count": 33,
+          "plan_rounds": 10,
+          "elapsed_ms": 2997.554099885747
+        },
+        "native_replay": {
+          "matched_actions": 33,
+          "strict_terminal": true,
+          "elapsed_ms": 2902.280200039968,
+          "status": "win",
+          "root_frame_sha256": "9a6382766fb8e1bb10bd319cc0f83f2241e58fa9820b747bed917d5a4bca9508",
+          "attempted_step": 33,
+          "peak_working_set_bytes": 115146752,
+          "actual_frame_sha256": [
+            "2387ed77e12bdc092162610b8a3ca10cd342cf7cc069b1565c3abf30477453c8",
+            "aedecd25a011363a56de13f6403bd94a0d75807108cc6955dc0b1d942f2ec624",
+            "1a77d94b8828652fad6370372c3acf5b77f9ba945dcac33d036b1948a51bfd14",
+            "e204b28d3ccdef9720a102d350dd9a232a1c84e25f0f08b6d6511471b937647d",
+            "b1fda62e85361e75e7b577bd604947a024ba00ffaf459a5d8cd3449966056e81",
+            "40259a53809c6c8b5e9ce4cd6439ae2e3a7d082897101233f1df149c34727577",
+            "5ca152aab96e7a615410ff7489be71f3c774928b3abe4041b52f612615c3c820",
+            "fa3be5241cbb20c0528713bd7f45d3df75cb9ccc709bb727d37472577b044ecd",
+            "3f1768942cb6a58950c232fff8032fd786250db96cc865f0f3a00f067fe01da4",
+            "52491c76ee5fbd264c511a2e67bc7719674895caaab6ef365e239f22415192b5",
+            "63052e6e8ba9f27bd04dd20944a084a667cef33ea7f7381507ed60c06bd4f9e4",
+            "f8fbe3c28ff487fefe97235fef3b3129b676c783e9e9fbdcef1596fb8c66dd1a",
+            "55053ea8871c37a0104cc4dd17ab586808fd69c0761b3515ae76932763619231",
+            "2e87398e9d890d6328ba3c9fbc377b8e5354d1275af3cdecdca2d3ded1c81209",
+            "4d7936c519487a9c8ab5a90b4e351028c6d106979d3dcef950fce9836a1ba656",
+            "69b55c553a7e36c65da294c5a3d9a623581eeaa76a77d60346fcb065fa1974a1",
+            "c281da856b0edec24d96f8c46fabc2ff74b99db53004e49d0e00ec9e587fe022",
+            "1c6920b20354ef124667a57be10f6cab6f623f1c8e992fded9ea5f2496b5e437",
+            "ff44b82fa0ceb5b70fd7d697db8d027d071bf3384cb3e951e57d40bcadd88e76",
+            "af1ace73012bc84e18423cb01a4141e66e13b76b9bdbf000d12594148d0ba9df",
+            "47ed4ead733ef6e25251b8c1cb488727ff6e4dd815a308627141153cdfb5ee40",
+            "535ffa114b3c6815423222c03b48dc3b757562909b75c1d117b274bbb7768e2d",
+            "5c412d10cd99e9e24433cfb8ccc0faee03547568a7f14965f8a1b5c174100892",
+            "547b69fd7b40f1d45793dcc251b8aa37e7b2aaacc6ebcca091745a3ad869e2ad",
+            "922a34201c427aeac904352278f276f483426f01622a407491fab1882ff29eba",
+            "8edcf64805c7fc7f53511ab07b31a2aa04768290254ccda56d9df260fb0ac202",
+            "5aca59db70835835e127dd5fe56c93ee1da54c422ab098fcf489a2d2a92c9e8a",
+            "8e8930157a7b0972babc49cbb0171380b46626b734955ac7ac5381f6650f928c",
+            "937d92dc5806e67f2e1614f8355293f5266c9e9c9b9decb540cbf1d25c9c82cd",
+            "f163341bbf0b2c683182e085b59188919585cdee64bdaab3db3c8f56a63769e8",
+            "15d38bd263019eb25ed0f9bd2f33cdcb0a8b69010dc4d38f2c4ce9bc80506343",
+            "59c6401a79403bd6dd60000b8d78645193982f40c63bec379fa381fa13230331",
+            "302ba099957357b99515595636dfc577d9f83856cfb7a34273950a4c6aebae51"
+          ],
+          "outcome": {
+            "initial_hp": 70,
+            "final_hp": 59,
+            "hp_lost": 11,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          }
+        },
+        "elapsed_ms": 8674.433999927714,
+        "route_action_count": 33,
+        "rollout_stops": {
+          "predicted_win": 1
+        },
+        "unsupported_actions": []
+      },
+      "native_context": {
+        "context": {
+          "act": 2,
+          "act_name": "HIVE.title",
+          "floor": 0,
+          "room_type": "Monster",
+          "boss": {
+            "id": "KNOWLEDGE_DEMON_BOSS",
+            "name": "KNOWLEDGE_DEMON.name"
+          }
+        },
+        "act_variant": "HIVE",
+        "act_boss": "KNOWLEDGE_DEMON_BOSS",
+        "visited_map_nodes": 0
+      }
+    },
+    {
+      "case": "poison-early",
+      "generator": "m1-s2a-v1",
+      "generator_seed": 260118,
+      "rule": "poison",
+      "profile": "early",
+      "case_seed": 15666635581515498850,
+      "tags": [
+        "poison"
+      ],
+      "parameters": {
+        "deck_size": 14,
+        "upgrades": 1,
+        "hp_percent": 87,
+        "starter_relic": true,
+        "potion": "FLEX_POTION"
+      },
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 1,
+        "act_variant": "OVERGROWTH",
+        "encounter": "SHRINKER_BEETLE_WEAK",
+        "seed": "8062CDCD2C32",
+        "hp": 60,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          null,
+          "FLEX_POTION"
+        ],
+        "deck": [
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEADLY_POISON",
+            "upgrade": 0
+          },
+          {
+            "id": "POISONED_STAB",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DODGE_AND_ROLL",
+            "upgrade": 1
+          },
+          {
+            "id": "DAGGER_SPRAY",
+            "upgrade": 0
+          },
+          {
+            "id": "SURVIVOR",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "POISONED_STAB",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "BOUNCING_FLASK",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "NEUTRALIZE",
+            "upgrade": 0
+          }
+        ]
+      },
+      "spec_sha256": "dbefc06f66ad33fca7e7f30c207501edb05ef24e1b962f7931e981c6d163cab3",
+      "root": {
+        "id": "synthetic-9696f3e859949dc41496374038f83a302555f88d7b09bbe48c25defdfebd7695",
+        "source": "synthetic",
+        "synthetic": true,
+        "native_verified": true,
+        "native_reachable": "unknown",
+        "level": "L0"
+      },
+      "audit": {
+        "rebuilds": [
+          {
+            "handshake_ms": 257.82599998638034,
+            "initialize_ms": 1632.6577998697758,
+            "snapshot_ms": 108.14409982413054,
+            "root_ms": 1998.6278996802866,
+            "peak_working_set_bytes": 98840576
+          },
+          {
+            "handshake_ms": 238.43419994227588,
+            "initialize_ms": 1745.7480998709798,
+            "snapshot_ms": 115.14689982868731,
+            "root_ms": 2099.329199641943,
+            "peak_working_set_bytes": 100093952
+          }
+        ],
+        "legal_action_frames": []
+      },
+      "live": "3ae89e17f3b0d370f9ece1e3787cc97bb3417eb73facbc2e2e998865378dc3d7",
+      "f3b": {
+        "arm": "C",
+        "cap": 128,
+        "potions": false,
+        "uses_hidden_rng": true,
+        "status": "unsupported_prediction",
+        "error_type": "StopRun",
+        "detail": "PredictionUnsupportedException: Unknown Harmony patch Sts2Headless.RunSimulator+LocPatches.NeutralizePrefix (owner=sts2headless.locpatch) on mirrored MegaCrit.Sts2.Core.Models.Cards.Neutralize.OnPlay.",
+        "elapsed_ms": 2194.4768000394106
+      },
+      "native_context": {
+        "context": {
+          "act": 1,
+          "act_name": "OVERGROWTH.title",
+          "floor": 0,
+          "room_type": "Monster",
+          "boss": {
+            "id": "CEREMONIAL_BEAST_BOSS",
+            "name": "CEREMONIAL_BEAST.name"
+          }
+        },
+        "act_variant": "OVERGROWTH",
+        "act_boss": "CEREMONIAL_BEAST_BOSS",
+        "visited_map_nodes": 0
+      }
+    },
+    {
+      "case": "poison-lean",
+      "generator": "m1-s2a-v1",
+      "generator_seed": 260118,
+      "rule": "poison",
+      "profile": "lean",
+      "case_seed": 13125841908168284761,
+      "tags": [
+        "poison"
+      ],
+      "parameters": {
+        "deck_size": 16,
+        "upgrades": 1,
+        "hp_percent": 52,
+        "starter_relic": false,
+        "potion": null
+      },
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 1,
+        "act_variant": "UNDERDOCKS",
+        "encounter": "SEAPUNK_WEAK",
+        "seed": "AE4C68B86F4A",
+        "hp": 36,
+        "max_hp": 70,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "POISONED_STAB",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "SURVIVOR",
+            "upgrade": 0
+          },
+          {
+            "id": "POISONED_STAB",
+            "upgrade": 0
+          },
+          {
+            "id": "DEADLY_POISON",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "DAGGER_SPRAY",
+            "upgrade": 0
+          },
+          {
+            "id": "DODGE_AND_ROLL",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "BOUNCING_FLASK",
+            "upgrade": 1
+          },
+          {
+            "id": "NEUTRALIZE",
+            "upgrade": 0
+          }
+        ]
+      },
+      "spec_sha256": "7eb4b80a9364b2a50d7ccee3f90ade4058a99736c7d6b712ad304e198716aef0",
+      "root": {
+        "id": "synthetic-03fcd3f37f4200cab0957e62985f89e7b89c49cd4a90d7febc8f1904d41cbfb7",
+        "source": "synthetic",
+        "synthetic": true,
+        "native_verified": true,
+        "native_reachable": "unknown",
+        "level": "L0"
+      },
+      "audit": {
+        "rebuilds": [
+          {
+            "handshake_ms": 241.99999985285103,
+            "initialize_ms": 1731.4665000885725,
+            "snapshot_ms": 193.2244999334216,
+            "root_ms": 2166.690999874845,
+            "peak_working_set_bytes": 100052992
+          },
+          {
+            "handshake_ms": 224.3272999767214,
+            "initialize_ms": 1820.8596999756992,
+            "snapshot_ms": 148.74009997583926,
+            "root_ms": 2193.92709992826,
+            "peak_working_set_bytes": 100048896
+          }
+        ],
+        "legal_action_frames": []
+      },
+      "live": "4e59bda2dfd9a18415626d3f099b203b18bd9f185ed60901ec92d1a298484dd2",
+      "f3b": null,
+      "native_context": {
+        "context": {
+          "act": 1,
+          "act_name": "UNDERDOCKS.title",
+          "floor": 0,
+          "room_type": "Monster",
+          "boss": {
+            "id": "SOUL_FYSH_BOSS",
+            "name": "SOUL_FYSH.name"
+          }
+        },
+        "act_variant": "UNDERDOCKS",
+        "act_boss": "SOUL_FYSH_BOSS",
+        "visited_map_nodes": 0
+      }
+    },
+    {
+      "case": "poison-hive-low",
+      "generator": "m1-s2a-v1",
+      "generator_seed": 260118,
+      "rule": "poison",
+      "profile": "hive-low",
+      "case_seed": 11748074105884555335,
+      "tags": [
+        "poison"
+      ],
+      "parameters": {
+        "deck_size": 15,
+        "upgrades": 1,
+        "hp_percent": 52,
+        "starter_relic": true,
+        "potion": "DEXTERITY_POTION"
+      },
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "1B344D3E91BA",
+        "hp": 36,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          null,
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "BOUNCING_FLASK",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 1
+          },
+          {
+            "id": "NEUTRALIZE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEADLY_POISON",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "SURVIVOR",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "POISONED_STAB",
+            "upgrade": 0
+          },
+          {
+            "id": "DAGGER_SPRAY",
+            "upgrade": 0
+          },
+          {
+            "id": "DAGGER_SPRAY",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "spec_sha256": "dc8e301554ad60bfb87da17f2c68d22a04f26bd88223e505d10a0366f07558e0",
+      "root": {
+        "id": "synthetic-338b8625d95a3547aec33062c975905cfd9e7b25daf0d9e02257afdd415072a6",
+        "source": "synthetic",
+        "synthetic": true,
+        "native_verified": true,
+        "native_reachable": "unknown",
+        "level": "L0"
+      },
+      "audit": {
+        "rebuilds": [
+          {
+            "handshake_ms": 222.7736001368612,
+            "initialize_ms": 1667.9396000690758,
+            "snapshot_ms": 130.75909996405244,
+            "root_ms": 2021.4723001699895,
+            "peak_working_set_bytes": 100528128
+          },
+          {
+            "handshake_ms": 237.11059987545013,
+            "initialize_ms": 1895.1370001304895,
+            "snapshot_ms": 116.65769992396235,
+            "root_ms": 2248.905299929902,
+            "peak_working_set_bytes": 100364288
+          }
+        ],
+        "legal_action_frames": []
+      },
+      "live": "ba503bb2599ec0e1e8ef486983e668d991c272cf0be8a06586772e9e4a780fcb",
+      "f3b": null,
+      "native_context": {
+        "context": {
+          "act": 2,
+          "act_name": "HIVE.title",
+          "floor": 0,
+          "room_type": "Monster",
+          "boss": {
+            "id": "KAISER_CRAB_BOSS",
+            "name": "KAISER_CRAB.name"
+          }
+        },
+        "act_variant": "HIVE",
+        "act_boss": "KAISER_CRAB_BOSS",
+        "visited_map_nodes": 0
+      }
+    },
+    {
+      "case": "poison-hive-stocked",
+      "generator": "m1-s2a-v1",
+      "generator_seed": 260118,
+      "rule": "poison",
+      "profile": "hive-stocked",
+      "case_seed": 6512786669763405356,
+      "tags": [
+        "poison"
+      ],
+      "parameters": {
+        "deck_size": 18,
+        "upgrades": 4,
+        "hp_percent": 97,
+        "starter_relic": true,
+        "potion": "DEXTERITY_POTION"
+      },
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "BABDC8FE630B",
+        "hp": 67,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          null,
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 1
+          },
+          {
+            "id": "DEFLECT",
+            "upgrade": 1
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFLECT",
+            "upgrade": 0
+          },
+          {
+            "id": "DAGGER_SPRAY",
+            "upgrade": 0
+          },
+          {
+            "id": "SURVIVOR",
+            "upgrade": 0
+          },
+          {
+            "id": "POISONED_STAB",
+            "upgrade": 1
+          },
+          {
+            "id": "BOUNCING_FLASK",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "POISONED_STAB",
+            "upgrade": 0
+          },
+          {
+            "id": "DEADLY_POISON",
+            "upgrade": 0
+          },
+          {
+            "id": "DAGGER_SPRAY",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "NEUTRALIZE",
+            "upgrade": 1
+          }
+        ]
+      },
+      "spec_sha256": "44c9b6fe570604774e6c037fb1cf93333e53b1532595a228ec7d88297425e492",
+      "root": {
+        "id": "synthetic-5b190048c3ec24c9c043d5273d30dd176cdf1481bf54b0808dd9f6a473f4fd45",
+        "source": "synthetic",
+        "synthetic": true,
+        "native_verified": true,
+        "native_reachable": "unknown",
+        "level": "L0"
+      },
+      "audit": {
+        "rebuilds": [
+          {
+            "handshake_ms": 292.416799813509,
+            "initialize_ms": 1592.2473999671638,
+            "snapshot_ms": 107.88100003264844,
+            "root_ms": 1992.5451998133212,
+            "peak_working_set_bytes": 98955264
+          },
+          {
+            "handshake_ms": 246.50729983113706,
+            "initialize_ms": 1866.3498000241816,
+            "snapshot_ms": 202.61249993927777,
+            "root_ms": 2315.4695997945964,
+            "peak_working_set_bytes": 100360192
+          }
+        ],
+        "legal_action_frames": []
+      },
+      "live": "80970d15f405ad1eb2dd29a3e572f215cd0886916eeb3d66c955ebdfeadb0b8a",
+      "f3b": null,
+      "native_context": {
+        "context": {
+          "act": 2,
+          "act_name": "HIVE.title",
+          "floor": 0,
+          "room_type": "Monster",
+          "boss": {
+            "id": "KAISER_CRAB_BOSS",
+            "name": "KAISER_CRAB.name"
+          }
+        },
+        "act_variant": "HIVE",
+        "act_boss": "KAISER_CRAB_BOSS",
+        "visited_map_nodes": 0
+      }
+    },
+    {
+      "case": "shiv-early",
+      "generator": "m1-s2a-v1",
+      "generator_seed": 260118,
+      "rule": "shiv",
+      "profile": "early",
+      "case_seed": 14480934169888190822,
+      "tags": [
+        "shiv",
+        "scaling"
+      ],
+      "parameters": {
+        "deck_size": 15,
+        "upgrades": 0,
+        "hp_percent": 70,
+        "starter_relic": true,
+        "potion": null
+      },
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 1,
+        "act_variant": "OVERGROWTH",
+        "encounter": "SHRINKER_BEETLE_WEAK",
+        "seed": "61F7863494C6",
+        "hp": 49,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DODGE_AND_ROLL",
+            "upgrade": 0
+          },
+          {
+            "id": "DAGGER_SPRAY",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "SURVIVOR",
+            "upgrade": 0
+          },
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "spec_sha256": "cd5d28ce5d06022d6245ec2bfb0c06df4d652cb8ca2b037c6d49f232d119bcc4",
+      "root": {
+        "id": "synthetic-d528066b5703f2065e3acfd377e87b32e70f5c8c65ff8f6670036b96a325ca22",
+        "source": "synthetic",
+        "synthetic": true,
+        "native_verified": true,
+        "native_reachable": "unknown",
+        "level": "L0"
+      },
+      "audit": {
+        "rebuilds": [
+          {
+            "handshake_ms": 218.58910005539656,
+            "initialize_ms": 1873.098700074479,
+            "snapshot_ms": 125.27809990569949,
+            "root_ms": 2216.965900035575,
+            "peak_working_set_bytes": 100081664
+          },
+          {
+            "handshake_ms": 223.64009986631572,
+            "initialize_ms": 1692.867400124669,
+            "snapshot_ms": 120.62529986724257,
+            "root_ms": 2037.1327998582274,
+            "peak_working_set_bytes": 100327424
+          }
+        ],
+        "legal_action_frames": []
+      },
+      "live": "e21939cab150feb1b632bb01028234c9fea827653855e9c024bacd2266803b53",
+      "f3b": null,
+      "native_context": {
+        "context": {
+          "act": 1,
+          "act_name": "OVERGROWTH.title",
+          "floor": 0,
+          "room_type": "Monster",
+          "boss": {
+            "id": "THE_KIN_BOSS",
+            "name": "KIN_PRIEST.name"
+          }
+        },
+        "act_variant": "OVERGROWTH",
+        "act_boss": "THE_KIN_BOSS",
+        "visited_map_nodes": 0
+      }
+    },
+    {
+      "case": "shiv-lean",
+      "generator": "m1-s2a-v1",
+      "generator_seed": 260118,
+      "rule": "shiv",
+      "profile": "lean",
+      "case_seed": 15819613902141685935,
+      "tags": [
+        "shiv",
+        "scaling"
+      ],
+      "parameters": {
+        "deck_size": 15,
+        "upgrades": 0,
+        "hp_percent": 41,
+        "starter_relic": false,
+        "potion": null
+      },
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 1,
+        "act_variant": "UNDERDOCKS",
+        "encounter": "CORPSE_SLUGS_WEAK",
+        "seed": "9C79EFDD765D",
+        "hp": 28,
+        "max_hp": 70,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DAGGER_SPRAY",
+            "upgrade": 0
+          },
+          {
+            "id": "DODGE_AND_ROLL",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DODGE_AND_ROLL",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "SURVIVOR",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          }
+        ]
+      },
+      "spec_sha256": "5d350371cfde800a77b218cf61ce8763bbfec226a5976431872d72e1f6e83204",
+      "root": {
+        "id": "synthetic-4aba52e221f90168ff613eb7cde82c22256a7e5402a8594492db75c47fd116ec",
+        "source": "synthetic",
+        "synthetic": true,
+        "native_verified": true,
+        "native_reachable": "unknown",
+        "level": "L0"
+      },
+      "audit": {
+        "rebuilds": [
+          {
+            "handshake_ms": 240.96539989113808,
+            "initialize_ms": 1603.8659000769258,
+            "snapshot_ms": 116.97169998660684,
+            "root_ms": 1961.8029999546707,
+            "peak_working_set_bytes": 98820096
+          },
+          {
+            "handshake_ms": 201.21289999224246,
+            "initialize_ms": 1562.0726000051945,
+            "snapshot_ms": 128.4723998978734,
+            "root_ms": 1891.7578998953104,
+            "peak_working_set_bytes": 100286464
+          }
+        ],
+        "legal_action_frames": []
+      },
+      "live": "b7184ddf117da631e5f51ced6a672115af51fdaed9887b889bd4e9dbdd015873",
+      "f3b": {
+        "arm": "C",
+        "cap": 128,
+        "potions": false,
+        "uses_hidden_rng": true,
+        "status": "exhausted",
+        "search_status": "exhausted",
+        "search_ms": 3233.4727998822927,
+        "transitions": 9,
+        "search_hot_ms": 230.1011,
+        "search_peak_working_set_bytes": 118824960,
+        "prediction_prepare_ms": 743.7633,
+        "elapsed_ms": 3233.5153000894934,
+        "rollout_stops": {
+          "unsupported": 4
+        },
+        "unsupported_actions": [
+          {
+            "card_id": "SURVIVOR",
+            "boundary": "PendingChoice",
+            "count": 4
+          }
+        ]
+      },
+      "native_context": {
+        "context": {
+          "act": 1,
+          "act_name": "UNDERDOCKS.title",
+          "floor": 0,
+          "room_type": "Monster",
+          "boss": {
+            "id": "WATERFALL_GIANT_BOSS",
+            "name": "WATERFALL_GIANT.name"
+          }
+        },
+        "act_variant": "UNDERDOCKS",
+        "act_boss": "WATERFALL_GIANT_BOSS",
+        "visited_map_nodes": 0
+      }
+    },
+    {
+      "case": "shiv-hive-low",
+      "generator": "m1-s2a-v1",
+      "generator_seed": 260118,
+      "rule": "shiv",
+      "profile": "hive-low",
+      "case_seed": 10739422833181419505,
+      "tags": [
+        "shiv",
+        "scaling"
+      ],
+      "parameters": {
+        "deck_size": 15,
+        "upgrades": 2,
+        "hp_percent": 50,
+        "starter_relic": true,
+        "potion": null
+      },
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "12059F4E74C6",
+        "hp": 35,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "SURVIVOR",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 1
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "DAGGER_SPRAY",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "ACCURACY",
+            "upgrade": 1
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "DAGGER_SPRAY",
+            "upgrade": 0
+          }
+        ]
+      },
+      "spec_sha256": "79cf8d62752411a2901b8e5cc42a87e74a11c32f3bee534591c3caddc77f77dc",
+      "root": {
+        "id": "synthetic-f11aa96ed04f5f527285b6164e2fa6501dfc26f38151b0a50fe988ac96469b90",
+        "source": "synthetic",
+        "synthetic": true,
+        "native_verified": true,
+        "native_reachable": "unknown",
+        "level": "L0"
+      },
+      "audit": {
+        "rebuilds": [
+          {
+            "handshake_ms": 236.48179997690022,
+            "initialize_ms": 1628.9625999052078,
+            "snapshot_ms": 111.46329995244741,
+            "root_ms": 1976.9076998345554,
+            "peak_working_set_bytes": 100327424
+          },
+          {
+            "handshake_ms": 198.9909999538213,
+            "initialize_ms": 1694.872499909252,
+            "snapshot_ms": 92.22329990006983,
+            "root_ms": 1986.086799763143,
+            "peak_working_set_bytes": 100417536
+          }
+        ],
+        "legal_action_frames": []
+      },
+      "live": "c2bf1faadf4aa7028522010de3cd1908a097ab70513e02d3bc98fee34c03d154",
+      "f3b": null,
+      "native_context": {
+        "context": {
+          "act": 2,
+          "act_name": "HIVE.title",
+          "floor": 0,
+          "room_type": "Monster",
+          "boss": {
+            "id": "KAISER_CRAB_BOSS",
+            "name": "KAISER_CRAB.name"
+          }
+        },
+        "act_variant": "HIVE",
+        "act_boss": "KAISER_CRAB_BOSS",
+        "visited_map_nodes": 0
+      }
+    },
+    {
+      "case": "shiv-hive-stocked",
+      "generator": "m1-s2a-v1",
+      "generator_seed": 260118,
+      "rule": "shiv",
+      "profile": "hive-stocked",
+      "case_seed": 9734377906629499976,
+      "tags": [
+        "shiv",
+        "scaling"
+      ],
+      "parameters": {
+        "deck_size": 19,
+        "upgrades": 4,
+        "hp_percent": 79,
+        "starter_relic": true,
+        "potion": "FLEX_POTION"
+      },
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "8B02DBC9E4D5",
+        "hp": 55,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 1
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "DAGGER_SPRAY",
+            "upgrade": 0
+          },
+          {
+            "id": "SURVIVOR",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 1
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 1
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "DAGGER_SPRAY",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 1
+          },
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          }
+        ]
+      },
+      "spec_sha256": "65effd5274aeea087a84d77521c9be9c4b870cb614f3b48f7aaef5fa9be27e63",
+      "root": {
+        "id": "synthetic-3971da08fb83b2ed323e1dbc5ba68ea1ecd18d685748d1744625e4a39e70cbc1",
+        "source": "synthetic",
+        "synthetic": true,
+        "native_verified": true,
+        "native_reachable": "unknown",
+        "level": "L0"
+      },
+      "audit": {
+        "rebuilds": [
+          {
+            "handshake_ms": 210.25460003875196,
+            "initialize_ms": 1688.9206999912858,
+            "snapshot_ms": 127.96419998630881,
+            "root_ms": 2027.1395000163466,
+            "peak_working_set_bytes": 100261888
+          },
+          {
+            "handshake_ms": 263.1647000089288,
+            "initialize_ms": 1737.421000143513,
+            "snapshot_ms": 125.99450000561774,
+            "root_ms": 2126.5802001580596,
+            "peak_working_set_bytes": 100564992
+          }
+        ],
+        "legal_action_frames": []
+      },
+      "live": "ecf67edc7b9e0cb58095153d9c6190c54856b6471409c8644aa003c16ac8f7d8",
+      "f3b": {
+        "arm": "C",
+        "cap": 128,
+        "potions": false,
+        "uses_hidden_rng": true,
+        "status": "exhausted",
+        "search_status": "exhausted",
+        "search_ms": 3209.765800042078,
+        "transitions": 6,
+        "search_hot_ms": 202.2966,
+        "search_peak_working_set_bytes": 119439360,
+        "prediction_prepare_ms": 662.3782,
+        "elapsed_ms": 3209.809800144285,
+        "rollout_stops": {
+          "unsupported": 4
+        },
+        "unsupported_actions": [
+          {
+            "card_id": "SURVIVOR",
+            "boundary": "PendingChoice",
+            "count": 4
+          }
+        ]
+      },
+      "native_context": {
+        "context": {
+          "act": 2,
+          "act_name": "HIVE.title",
+          "floor": 0,
+          "room_type": "Monster",
+          "boss": {
+            "id": "KNOWLEDGE_DEMON_BOSS",
+            "name": "KNOWLEDGE_DEMON.name"
+          }
+        },
+        "act_variant": "HIVE",
+        "act_boss": "KNOWLEDGE_DEMON_BOSS",
+        "visited_map_nodes": 0
+      }
+    }
+  ],
+  "failures": [],
+  "f3b_selection": [
+    "strength-early",
+    "block-hive-stocked",
+    "poison-early",
+    "shiv-lean",
+    "shiv-hive-stocked",
+    "strength-hive-low"
+  ],
+  "repeated_cases": [
+    "poison-early",
+    "shiv-early",
+    "block-early",
+    "strength-early"
+  ],
+  "duplicate_specs": [],
+  "duplicate_live": [],
+  "native_save_or_replay_files": 0,
+  "catalog_ms": 1691.7929998598993,
+  "catalog_peak_working_set_bytes": 87339008,
+  "generation_ms": 2.9066000133752823
+}

@@ -1,0 +1,211 @@
+{
+  "schema": 1,
+  "generator_seed": 260118,
+  "repeat_seed": 2425,
+  "repeat_count": 4,
+  "profiles": {
+    "early": {
+      "act": 1,
+      "act_variant": "OVERGROWTH",
+      "encounters": [
+        "SHRINKER_BEETLE_WEAK",
+        "NIBBITS_WEAK"
+      ],
+      "deck": [
+        13,
+        15
+      ],
+      "upgrades": [
+        0,
+        1
+      ],
+      "hp_percent": [
+        70,
+        88
+      ],
+      "starter_relic": true,
+      "potion_options": [
+        null,
+        "FLEX_POTION"
+      ]
+    },
+    "lean": {
+      "act": 1,
+      "act_variant": "UNDERDOCKS",
+      "encounters": [
+        "CORPSE_SLUGS_WEAK",
+        "SEAPUNK_WEAK"
+      ],
+      "deck": [
+        13,
+        16
+      ],
+      "upgrades": [
+        0,
+        2
+      ],
+      "hp_percent": [
+        40,
+        55
+      ],
+      "starter_relic": false,
+      "potion_options": [
+        null
+      ]
+    },
+    "hive-low": {
+      "act": 2,
+      "act_variant": "HIVE",
+      "encounters": [
+        "BOWLBUGS_WEAK",
+        "TUNNELER_WEAK"
+      ],
+      "deck": [
+        15,
+        17
+      ],
+      "upgrades": [
+        1,
+        3
+      ],
+      "hp_percent": [
+        45,
+        65
+      ],
+      "starter_relic": true,
+      "potion_options": [
+        null,
+        "DEXTERITY_POTION"
+      ]
+    },
+    "hive-stocked": {
+      "act": 2,
+      "act_variant": "HIVE",
+      "encounters": [
+        "BOWLBUGS_WEAK",
+        "TUNNELER_WEAK"
+      ],
+      "deck": [
+        17,
+        20
+      ],
+      "upgrades": [
+        3,
+        5
+      ],
+      "hp_percent": [
+        78,
+        100
+      ],
+      "starter_relic": true,
+      "potion_options": [
+        "FLEX_POTION",
+        "DEXTERITY_POTION"
+      ]
+    }
+  },
+  "rules": {
+    "strength": {
+      "character": "Ironclad",
+      "tags": [
+        "strength",
+        "multi_hit"
+      ],
+      "keep": [
+        "BASH"
+      ],
+      "anchors": [
+        "INFLAME",
+        "TWIN_STRIKE"
+      ],
+      "attack": [
+        "POMMEL_STRIKE",
+        "TWIN_STRIKE",
+        "SWORD_BOOMERANG"
+      ],
+      "guard": [
+        "SHRUG_IT_OFF",
+        "IRON_WAVE",
+        "FLAME_BARRIER"
+      ]
+    },
+    "block": {
+      "character": "Ironclad",
+      "tags": [
+        "block",
+        "block_to_damage"
+      ],
+      "keep": [
+        "BASH"
+      ],
+      "anchors": [
+        "BODY_SLAM",
+        "SHRUG_IT_OFF"
+      ],
+      "attack": [
+        "BODY_SLAM",
+        "IRON_WAVE",
+        "POMMEL_STRIKE"
+      ],
+      "guard": [
+        "SHRUG_IT_OFF",
+        "FLAME_BARRIER",
+        "IRON_WAVE"
+      ]
+    },
+    "poison": {
+      "character": "Silent",
+      "tags": [
+        "poison"
+      ],
+      "keep": [
+        "NEUTRALIZE",
+        "SURVIVOR"
+      ],
+      "anchors": [
+        "DEADLY_POISON",
+        "BOUNCING_FLASK"
+      ],
+      "attack": [
+        "POISONED_STAB",
+        "DAGGER_SPRAY"
+      ],
+      "guard": [
+        "BACKFLIP",
+        "DODGE_AND_ROLL",
+        "DEFLECT"
+      ]
+    },
+    "shiv": {
+      "character": "Silent",
+      "tags": [
+        "shiv",
+        "scaling"
+      ],
+      "keep": [
+        "SURVIVOR"
+      ],
+      "anchors": [
+        "BLADE_DANCE",
+        "ACCURACY"
+      ],
+      "attack": [
+        "DAGGER_SPRAY",
+        "SLICE"
+      ],
+      "guard": [
+        "CLOAK_AND_DAGGER",
+        "BACKFLIP",
+        "DODGE_AND_ROLL"
+      ]
+    }
+  },
+  "f3b_cases": [
+    "strength-early",
+    "block-hive-stocked",
+    "poison-early",
+    "shiv-lean",
+    "shiv-hive-stocked",
+    "strength-hive-low"
+  ]
+}
