@@ -1,7 +1,7 @@
 # STS2 AI — 项目状态与交接（PROJECT_STATUS）
 
 > 更新日期：2026-11-18（Asia/Shanghai）
-> 当前阶段：M1-I2 已验证同一局内多次使用实验性 CombatSolver 战斗控制器。
+> 当前阶段：M1-I3 已在实验性 CombatSolver 战斗控制器中验证甲虫汁及连续跑局。
 > 本文件描述 **matrix773768/sts2-cli** 的 `port/v0.113.1` 分支，不代表上游 `wuhao21/sts2-cli` 或 `main` 的支持情况。
 > M0 最后一次业务代码提交：`bc48ac58aeca80c2c7b9249cbf98f316ae99a27b` — Restore native Ancient healing and act-start travel rules。
 > 本文件是交接摘要；具体实现、测试断言、原生 IL 及日志以当前仓库和本机实际文件为准。不要将历史总结当成新的测试结果。
@@ -138,6 +138,11 @@
 
 - [M1-I2 报告](m1-i2-reusable-combat-integration.md)记录了 Ironclad A0 的 `run_1` 从 Neow 到原生正常战败。前三场普通战由求解器完整执行，38 步逐动作差分通过且各自正常结算。后两场计划含用药，原生确定性回退分别胜利、战败。
 - 实验复用 M1-I1 的同进程原生根捕获和固定求解器版本。每场释放旧战斗引用，保留实测分类和首差。仅支持首个玩家回合接管及无选择的出牌和结束回合。实验使用隐藏 RNG，标为 offline-teacher，生产默认策略保持原样。
+
+### M1-I3 甲虫汁与连续跑局
+
+- [M1-I3 报告](m1-i3-potion-integration.md)记录了固定 Ironclad A0 种子 `run_1` 的 9 场完整接管和 158 步原生差分，包括甲虫汁的消耗、缩小效果和非法参数拒绝。该局在第 17 层 Boss 战回退后正常战败。第二种子 `run_2` 有 2 场完整接管，在第 7 层回退后正常战败。
+- 药水接管只支持无选择且有明确敌方 Combat ID 的甲虫汁。严格执行入口仅存在于隔离实验构建，数据继续标记 offline-teacher。
 
 ## 7. 协作与操作流程
 

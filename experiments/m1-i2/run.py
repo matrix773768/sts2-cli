@@ -31,9 +31,10 @@ class StopRun(Exception):
 
 
 class OfflineTeacherRun:
-    def __init__(self, seed, output, verify=False):
+    def __init__(self, seed, output, verify=False, verify_potion=False):
         self.output = output
         self.verify_rejection = verify
+        self.verify_potion = verify_potion
         self.rng = random.Random(seed)
         self.deadline = monotonic() + RUN_SECONDS
         self.read_memory = _reader()
@@ -111,7 +112,19 @@ class OfflineTeacherRun:
                 raise StopRun("protocol_error", "Invalid turn was not rejected")
             self.verify(combat, "rejected_action", begin["state"], self.request("i1_state")["state"])
             self.report["invalid_turn_rejected_without_mutation"] = True
+        previous = begin["state"]
         for index, (action, expected) in enumerate(zip(plan["actions"], plan["frames"]), 1):
+            if self.verify_potion and action["kind"] == "UsePotion":
+                self.verify_potion = False
+                for field, value, reason in (
+                    ("potion_slot", -1, "Invalid potion slot or ID"),
+                    ("target_combat_id", 2**32 - 1, "Invalid potion target"),
+                ):
+                    rejected = self.request("i1_step", action={**action, field: value})
+                    if rejected.get("type") != "i1_rejected" or rejected.get("reason") != reason:
+                        raise StopRun("protocol_error", f"Invalid potion {field} was not rejected")
+                    self.verify(combat, field, previous, self.request("i1_state")["state"])
+                combat["invalid_potion_rejected_without_mutation"] = True
             entry = {"plan_action": action, "accepted": None}
             combat["executed"].append(entry)
             step = self.request("i1_step", action=action)
@@ -131,6 +144,14 @@ class OfflineTeacherRun:
                 return decision
             self.verify(combat, index, expected, step["state"])
             combat["matched_actions"] += 1
+            if action["kind"] == "UsePotion":
+                evidence = ("player_potions", "all_enemy_powers", "enemy_hps_by_model",
+                            "player_hp", "player_ordered_piles", "rng_counters")
+                entry["potion_evidence"] = {
+                    "before": {key: previous[0][key] for key in evidence},
+                    "after": {key: step["state"][0][key] for key in evidence},
+                }
+            previous = step["state"]
             last = index == len(plan["actions"])
             valid_decisions = ("card_reward", "map_select", "game_over") if last else ("combat_play",)
             if step["terminal"] != last or decision["decision"] not in valid_decisions:
@@ -246,6 +267,7 @@ def main():
     parser.add_argument("--seed", default="run_1")
     parser.add_argument("--out", type=Path, default=ROOT / "logs/m1-i2")
     parser.add_argument("--verify", action="store_true")
+    parser.add_argument("--verify-potion", action="store_true")
     args = parser.parse_args()
     for path, expected in ((ROOT / "lib/sts2.dll", NATIVE_HASH), (SOLVER, SOLVER_HASH)):
         if sha256(path.read_bytes()).hexdigest() != expected:
@@ -259,13 +281,20 @@ def main():
     native = engine_client.headless_command()
     dll = BUILD / "Headless/bin/Debug/net9.0/OfflineSearchHarness.dll"
     engine_client.headless_command = lambda: [*native[:-1], str(dll)]
-    result = OfflineTeacherRun(args.seed, output, verify=args.verify).run()
+    result = OfflineTeacherRun(args.seed, output, verify=args.verify, verify_potion=args.verify_potion).run()
     verified = [c for c in result["combats"] if c["differential"] == "pass"
                 and c.get("outcome") == "victory" and "settled_player" in c]
     print(f"{result['status']}: {len(result['combats'])} combats, {len(verified)} verified teacher wins. {output}")
     terminal = result["status"] in ("victory", "defeat") and result["exit_code"] == 0
     verification_passed = len(verified) >= 2 and result.get("invalid_turn_rejected_without_mutation")
-    return 0 if terminal and (not args.verify or verification_passed) else 1
+    potion_verified = any(
+        c.get("invalid_potion_rejected_without_mutation") and
+        any("potion_evidence" in step for step in c["executed"][:-1]
+            if step.get("decision") == "combat_play")
+        for c in verified
+    )
+    return 0 if (terminal and (not args.verify or verification_passed)
+                 and (not args.verify_potion or potion_verified)) else 1
 
 
 if __name__ == "__main__":

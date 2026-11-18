@@ -39,6 +39,11 @@ def build():
     program.write_text(code.replace(anchor,
         'result = cmd.GetProperty("cmd").GetString()?.StartsWith("i1_", StringComparison.Ordinal) == true ? IntegrationProbe.Run(sim, cmd) : HandleCommand(sim, cmd);'),
         encoding="utf-8")
+    simulator = src / "RunSimulator.cs"
+    code = simulator.read_text(encoding="utf-8")
+    anchor = "public class RunSimulator"
+    assert code.count(anchor) == 1
+    simulator.write_text(code.replace(anchor, "public partial class RunSimulator"), encoding="utf-8")
     shutil.copyfile(HERE / "IntegrationProbe.cs", src / "IntegrationProbe.cs")
     env = {**os.environ, "DOTNET_CLI_HOME": str(ROOT / "logs/dotnet-home"),
            "NUGET_PACKAGES": str(ROOT / "logs/nuget-packages")}
