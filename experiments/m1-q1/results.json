@@ -1,0 +1,2824 @@
+{
+  "scope": "public-observation-native",
+  "distributionOrder": [
+    "min",
+    "median",
+    "max"
+  ],
+  "roots": {
+    "small": [
+      "11f3c612f52c92b5089f7cb37de170607b81f482e871c12a39abcbe60a35065a",
+      "11f3c612f52c92b5089f7cb37de170607b81f482e871c12a39abcbe60a35065a"
+    ],
+    "prisms": [
+      "4d5e409fbc5bcf6cfff29d46aa0d9ca415d4831d38996e7f55fc447338484bf4",
+      "4d5e409fbc5bcf6cfff29d46aa0d9ca415d4831d38996e7f55fc447338484bf4"
+    ],
+    "decimillipede": [
+      "e377d2ee2aeb7069daa85a39ee5d9f74c1fcaa8d393fd13a8c6e43b5dfd58f4b",
+      "e377d2ee2aeb7069daa85a39ee5d9f74c1fcaa8d393fd13a8c6e43b5dfd58f4b"
+    ]
+  },
+  "results": {
+    "small/first": {
+      "status": "win",
+      "actions": 16,
+      "endTurn": 5,
+      "outcome": {
+        "initialHp": 80,
+        "finalHp": 63,
+        "hpLost": 17,
+        "hpHealed": 0,
+        "selfDamage": 0,
+        "combatEnded": true,
+        "survived": true,
+        "finalEnemyHp": 0,
+        "potions": [],
+        "unattributedHpLoss": 0
+      },
+      "postCombatHp": 69,
+      "trajectory": [
+        {
+          "turn": 1,
+          "selected": {
+            "handIndex": 0,
+            "id": "STRIKE_IRONCLAD",
+            "target": 1,
+            "damage": 6,
+            "block": 0,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 80,
+          "after": 80,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 56,
+              "block": 0,
+              "incoming": 4
+            }
+          ]
+        },
+        {
+          "turn": 1,
+          "selected": {
+            "handIndex": 0,
+            "id": "DEFEND_IRONCLAD",
+            "target": null,
+            "damage": 0,
+            "block": 5,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 80,
+          "after": 80,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 50,
+              "block": 0,
+              "incoming": 4
+            }
+          ]
+        },
+        {
+          "turn": 1,
+          "selected": {
+            "handIndex": 0,
+            "id": "DEFEND_IRONCLAD",
+            "target": null,
+            "damage": 0,
+            "block": 5,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 80,
+          "after": 80,
+          "block": 5,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 50,
+              "block": 0,
+              "incoming": 4
+            }
+          ]
+        },
+        {
+          "turn": 1,
+          "selected": null,
+          "before": 80,
+          "after": 80,
+          "block": 10,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 50,
+              "block": 0,
+              "incoming": 4
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "selected": {
+            "handIndex": 0,
+            "id": "BASH",
+            "target": 1,
+            "damage": 8,
+            "block": 0,
+            "draw": 0,
+            "energy": 2,
+            "power": false
+          },
+          "before": 80,
+          "after": 80,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 50,
+              "block": 0,
+              "incoming": 0
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "selected": {
+            "handIndex": 0,
+            "id": "DEFEND_IRONCLAD",
+            "target": null,
+            "damage": 0,
+            "block": 5,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 80,
+          "after": 80,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 42,
+              "block": 0,
+              "incoming": 0
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "selected": null,
+          "before": 80,
+          "after": 80,
+          "block": 5,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 42,
+              "block": 0,
+              "incoming": 0
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "selected": {
+            "handIndex": 0,
+            "id": "STRIKE_IRONCLAD",
+            "target": 1,
+            "damage": 9,
+            "block": 0,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 80,
+          "after": 80,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 42,
+              "block": 0,
+              "incoming": 11
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "selected": {
+            "handIndex": 0,
+            "id": "STRIKE_IRONCLAD",
+            "target": 1,
+            "damage": 9,
+            "block": 0,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 80,
+          "after": 80,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 33,
+              "block": 0,
+              "incoming": 11
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "selected": {
+            "handIndex": 0,
+            "id": "STRIKE_IRONCLAD",
+            "target": 1,
+            "damage": 9,
+            "block": 0,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 80,
+          "after": 80,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 24,
+              "block": 0,
+              "incoming": 11
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "selected": null,
+          "before": 80,
+          "after": 69,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 15,
+              "block": 0,
+              "incoming": 11
+            }
+          ]
+        },
+        {
+          "turn": 4,
+          "selected": {
+            "handIndex": 0,
+            "id": "BASH",
+            "target": 1,
+            "damage": 8,
+            "block": 0,
+            "draw": 0,
+            "energy": 2,
+            "power": false
+          },
+          "before": 69,
+          "after": 69,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 15,
+              "block": 0,
+              "incoming": 11
+            }
+          ]
+        },
+        {
+          "turn": 4,
+          "selected": {
+            "handIndex": 0,
+            "id": "DEFEND_IRONCLAD",
+            "target": null,
+            "damage": 0,
+            "block": 5,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 69,
+          "after": 69,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 7,
+              "block": 0,
+              "incoming": 11
+            }
+          ]
+        },
+        {
+          "turn": 4,
+          "selected": null,
+          "before": 69,
+          "after": 63,
+          "block": 5,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 7,
+              "block": 0,
+              "incoming": 11
+            }
+          ]
+        },
+        {
+          "turn": 5,
+          "selected": {
+            "handIndex": 0,
+            "id": "DEFEND_IRONCLAD",
+            "target": null,
+            "damage": 0,
+            "block": 5,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 63,
+          "after": 63,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 7,
+              "block": 0,
+              "incoming": 0
+            }
+          ]
+        },
+        {
+          "turn": 5,
+          "selected": {
+            "handIndex": 0,
+            "id": "STRIKE_IRONCLAD",
+            "target": 1,
+            "damage": 9,
+            "block": 0,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 63,
+          "after": 69,
+          "block": 5,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 7,
+              "block": 0,
+              "incoming": 0
+            }
+          ]
+        }
+      ],
+      "timings": {
+        "cold": {
+          "warmMs": [
+            0.0001,
+            0.00015,
+            0.0002
+          ],
+          "battleMs": [
+            487.468,
+            524.32365,
+            561.1793
+          ],
+          "peakMiB": [
+            152.382812,
+            152.515625,
+            152.648438
+          ],
+          "processMs": [
+            3610.0,
+            3828.0,
+            4046.0
+          ],
+          "harnessSetupMs": [
+            2462,
+            2580.0,
+            2698
+          ],
+          "simulationMs": [
+            0,
+            0.0,
+            0
+          ],
+          "decisionSumMs": [
+            0.4081,
+            0.7722,
+            1.1363
+          ],
+          "decisionFirstMs": [
+            0.4005,
+            0.76375,
+            1.127
+          ],
+          "decisionMedianMs": [
+            0.00055,
+            0.000575,
+            0.0006
+          ],
+          "observeSumMs": [
+            27.4237,
+            35.3424,
+            43.2611
+          ],
+          "executeSumMs": [
+            458.6285,
+            487.19175,
+            515.755
+          ]
+        },
+        "prewarmed": {
+          "warmMs": [
+            197.7311,
+            223.684,
+            249.6369
+          ],
+          "battleMs": [
+            414.6345,
+            454.5559,
+            494.4773
+          ],
+          "peakMiB": [
+            155.261719,
+            155.380859,
+            155.5
+          ],
+          "processMs": [
+            4343.0,
+            4382.5,
+            4422.0
+          ],
+          "harnessSetupMs": [
+            2642,
+            2659.5,
+            2677
+          ],
+          "simulationMs": [
+            0,
+            0.0,
+            0
+          ],
+          "decisionSumMs": [
+            0.0072,
+            0.0086,
+            0.01
+          ],
+          "decisionFirstMs": [
+            0.0004,
+            0.00055,
+            0.0007
+          ],
+          "decisionMedianMs": [
+            0.0003,
+            0.0004,
+            0.0005
+          ],
+          "observeSumMs": [
+            20.0048,
+            20.73635,
+            21.4679
+          ],
+          "executeSumMs": [
+            391.7189,
+            432.49225,
+            473.2656
+          ]
+        }
+      },
+      "samples": [
+        {
+          "warm": false,
+          "warmMs": 0.0001,
+          "battleMs": 487.468,
+          "peakMiB": 152.6484375,
+          "repeat": 0,
+          "processMs": 3609.999999869615,
+          "harnessSetupMs": 2462,
+          "simulationMs": 0,
+          "decisionSumMs": 0.40809999999999996,
+          "decisionFirstMs": 0.4005,
+          "decisionMedianMs": 0.0005499999999999999,
+          "observeSumMs": 27.423700000000004,
+          "executeSumMs": 458.6284999999999
+        },
+        {
+          "warm": true,
+          "warmMs": 249.6369,
+          "battleMs": 414.6345,
+          "peakMiB": 155.5,
+          "repeat": 0,
+          "processMs": 4343.000000109896,
+          "harnessSetupMs": 2677,
+          "simulationMs": 0,
+          "decisionSumMs": 0.009999999999999998,
+          "decisionFirstMs": 0.0007,
+          "decisionMedianMs": 0.0005,
+          "observeSumMs": 21.467900000000004,
+          "executeSumMs": 391.71889999999996
+        },
+        {
+          "warm": false,
+          "warmMs": 0.0002,
+          "battleMs": 561.1793,
+          "peakMiB": 152.3828125,
+          "repeat": 1,
+          "processMs": 4046.000000089407,
+          "harnessSetupMs": 2698,
+          "simulationMs": 0,
+          "decisionSumMs": 1.136299999999999,
+          "decisionFirstMs": 1.127,
+          "decisionMedianMs": 0.0006,
+          "observeSumMs": 43.26109999999999,
+          "executeSumMs": 515.7549999999999
+        },
+        {
+          "warm": true,
+          "warmMs": 197.7311,
+          "battleMs": 494.4773,
+          "peakMiB": 155.26171875,
+          "repeat": 1,
+          "processMs": 4422.000000020489,
+          "harnessSetupMs": 2642,
+          "simulationMs": 0,
+          "decisionSumMs": 0.007199999999999999,
+          "decisionFirstMs": 0.0004,
+          "decisionMedianMs": 0.0003,
+          "observeSumMs": 20.004799999999996,
+          "executeSumMs": 473.26560000000006
+        }
+      ]
+    },
+    "small/tactical": {
+      "status": "win",
+      "actions": 10,
+      "endTurn": 3,
+      "outcome": {
+        "initialHp": 80,
+        "finalHp": 80,
+        "hpLost": 0,
+        "hpHealed": 0,
+        "selfDamage": 0,
+        "combatEnded": true,
+        "survived": true,
+        "finalEnemyHp": 0,
+        "potions": [],
+        "unattributedHpLoss": 0
+      },
+      "postCombatHp": 80,
+      "trajectory": [
+        {
+          "turn": 1,
+          "selected": {
+            "handIndex": 1,
+            "id": "DEFEND_IRONCLAD",
+            "target": null,
+            "damage": 0,
+            "block": 5,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 80,
+          "after": 80,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 56,
+              "block": 0,
+              "incoming": 4
+            }
+          ]
+        },
+        {
+          "turn": 1,
+          "selected": {
+            "handIndex": 0,
+            "id": "STRIKE_IRONCLAD",
+            "target": 1,
+            "damage": 6,
+            "block": 0,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 80,
+          "after": 80,
+          "block": 5,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 56,
+              "block": 0,
+              "incoming": 4
+            }
+          ]
+        },
+        {
+          "turn": 1,
+          "selected": {
+            "handIndex": 1,
+            "id": "STRIKE_IRONCLAD",
+            "target": 1,
+            "damage": 6,
+            "block": 0,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 80,
+          "after": 80,
+          "block": 5,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 50,
+              "block": 0,
+              "incoming": 4
+            }
+          ]
+        },
+        {
+          "turn": 1,
+          "selected": null,
+          "before": 80,
+          "after": 80,
+          "block": 5,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 44,
+              "block": 0,
+              "incoming": 4
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "selected": {
+            "handIndex": 0,
+            "id": "BASH",
+            "target": 1,
+            "damage": 8,
+            "block": 0,
+            "draw": 0,
+            "energy": 2,
+            "power": false
+          },
+          "before": 80,
+          "after": 80,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 44,
+              "block": 0,
+              "incoming": 0
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "selected": {
+            "handIndex": 1,
+            "id": "STRIKE_IRONCLAD",
+            "target": 1,
+            "damage": 9,
+            "block": 0,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 80,
+          "after": 80,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 36,
+              "block": 0,
+              "incoming": 0
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "selected": null,
+          "before": 80,
+          "after": 80,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 27,
+              "block": 0,
+              "incoming": 0
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "selected": {
+            "handIndex": 0,
+            "id": "STRIKE_IRONCLAD",
+            "target": 1,
+            "damage": 9,
+            "block": 0,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 80,
+          "after": 80,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 27,
+              "block": 0,
+              "incoming": 11
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "selected": {
+            "handIndex": 0,
+            "id": "STRIKE_IRONCLAD",
+            "target": 1,
+            "damage": 9,
+            "block": 0,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 80,
+          "after": 80,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 18,
+              "block": 0,
+              "incoming": 11
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "selected": {
+            "handIndex": 0,
+            "id": "STRIKE_IRONCLAD",
+            "target": 1,
+            "damage": 9,
+            "block": 0,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 80,
+          "after": 80,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 9,
+              "block": 0,
+              "incoming": 11
+            }
+          ]
+        }
+      ],
+      "timings": {
+        "cold": {
+          "warmMs": [
+            0.0001,
+            0.0001,
+            0.0001
+          ],
+          "battleMs": [
+            505.9739,
+            554.64165,
+            603.3094
+          ],
+          "peakMiB": [
+            152.871094,
+            153.324219,
+            153.777344
+          ],
+          "processMs": [
+            3953.0,
+            4047.0,
+            4141.0
+          ],
+          "harnessSetupMs": [
+            2612,
+            2665.0,
+            2718
+          ],
+          "simulationMs": [
+            0,
+            0.0,
+            0
+          ],
+          "decisionSumMs": [
+            2.5793,
+            3.56525,
+            4.5512
+          ],
+          "decisionFirstMs": [
+            2.4419,
+            3.43115,
+            4.4204
+          ],
+          "decisionMedianMs": [
+            0.01035,
+            0.0115,
+            0.01265
+          ],
+          "observeSumMs": [
+            33.2513,
+            33.89445,
+            34.5376
+          ],
+          "executeSumMs": [
+            465.9308,
+            516.102,
+            566.2732
+          ]
+        },
+        "prewarmed": {
+          "warmMs": [
+            83.9505,
+            160.01235,
+            236.0742
+          ],
+          "battleMs": [
+            320.7047,
+            384.66735,
+            448.63
+          ],
+          "peakMiB": [
+            154.230469,
+            154.464844,
+            154.699219
+          ],
+          "processMs": [
+            3547.0,
+            3961.0,
+            4375.0
+          ],
+          "harnessSetupMs": [
+            2333,
+            2574.5,
+            2816
+          ],
+          "simulationMs": [
+            0,
+            0.0,
+            0
+          ],
+          "decisionSumMs": [
+            0.0524,
+            0.06225,
+            0.0721
+          ],
+          "decisionFirstMs": [
+            0.0017,
+            0.00485,
+            0.008
+          ],
+          "decisionMedianMs": [
+            0.0058,
+            0.006175,
+            0.00655
+          ],
+          "observeSumMs": [
+            12.7169,
+            15.5433,
+            18.3697
+          ],
+          "executeSumMs": [
+            307.1849,
+            368.362,
+            429.5391
+          ]
+        }
+      },
+      "samples": [
+        {
+          "warm": false,
+          "warmMs": 0.0001,
+          "battleMs": 505.9739,
+          "peakMiB": 153.77734375,
+          "repeat": 0,
+          "processMs": 4140.999999828637,
+          "harnessSetupMs": 2718,
+          "simulationMs": 0,
+          "decisionSumMs": 4.5512,
+          "decisionFirstMs": 4.4204,
+          "decisionMedianMs": 0.010350000000000002,
+          "observeSumMs": 34.5376,
+          "executeSumMs": 465.93080000000003
+        },
+        {
+          "warm": true,
+          "warmMs": 83.9505,
+          "battleMs": 448.63,
+          "peakMiB": 154.23046875,
+          "repeat": 0,
+          "processMs": 3547.000000020489,
+          "harnessSetupMs": 2333,
+          "simulationMs": 0,
+          "decisionSumMs": 0.07210000000000001,
+          "decisionFirstMs": 0.0017,
+          "decisionMedianMs": 0.00655,
+          "observeSumMs": 18.3697,
+          "executeSumMs": 429.5391
+        },
+        {
+          "warm": false,
+          "warmMs": 0.0001,
+          "battleMs": 603.3094,
+          "peakMiB": 152.87109375,
+          "repeat": 1,
+          "processMs": 3952.999999979511,
+          "harnessSetupMs": 2612,
+          "simulationMs": 0,
+          "decisionSumMs": 2.5793000000000004,
+          "decisionFirstMs": 2.4419,
+          "decisionMedianMs": 0.01265,
+          "observeSumMs": 33.2513,
+          "executeSumMs": 566.2732
+        },
+        {
+          "warm": true,
+          "warmMs": 236.0742,
+          "battleMs": 320.7047,
+          "peakMiB": 154.69921875,
+          "repeat": 1,
+          "processMs": 4375.0,
+          "harnessSetupMs": 2816,
+          "simulationMs": 0,
+          "decisionSumMs": 0.052399999999999995,
+          "decisionFirstMs": 0.008,
+          "decisionMedianMs": 0.0058,
+          "observeSumMs": 12.716899999999999,
+          "executeSumMs": 307.18489999999997
+        }
+      ]
+    },
+    "prisms/first": {
+      "status": "death",
+      "actions": 29,
+      "endTurn": 6,
+      "outcome": {
+        "initialHp": 75,
+        "finalHp": 0,
+        "hpLost": 75,
+        "hpHealed": 0,
+        "selfDamage": 0,
+        "combatEnded": false,
+        "survived": false,
+        "finalEnemyHp": 56,
+        "potions": [],
+        "unattributedHpLoss": 3
+      },
+      "postCombatHp": 0,
+      "trajectory": [
+        {
+          "turn": 1,
+          "selected": {
+            "handIndex": 0,
+            "id": "DEFEND_DEFECT",
+            "target": null,
+            "damage": 0,
+            "block": 5,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 75,
+          "after": 75,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 171,
+              "block": 0,
+              "incoming": 17
+            }
+          ]
+        },
+        {
+          "turn": 1,
+          "selected": null,
+          "before": 75,
+          "after": 64,
+          "block": 5,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 171,
+              "block": 0,
+              "incoming": 20
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "selected": {
+            "handIndex": 0,
+            "id": "DUALCAST",
+            "target": null,
+            "damage": 0,
+            "block": 0,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 64,
+          "after": 64,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 168,
+              "block": 0,
+              "incoming": 17
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "selected": {
+            "handIndex": 0,
+            "id": "ZAP",
+            "target": null,
+            "damage": 0,
+            "block": 0,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 64,
+          "after": 64,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 152,
+              "block": 0,
+              "incoming": 20
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "selected": {
+            "handIndex": 0,
+            "id": "STRIKE_DEFECT",
+            "target": 1,
+            "damage": 6,
+            "block": 0,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 64,
+          "after": 64,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 152,
+              "block": 0,
+              "incoming": 23
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "selected": {
+            "handIndex": 1,
+            "id": "BOOST_AWAY",
+            "target": null,
+            "damage": 0,
+            "block": 9,
+            "draw": 0,
+            "energy": 0,
+            "power": false
+          },
+          "before": 64,
+          "after": 64,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 146,
+              "block": 0,
+              "incoming": 23
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "selected": null,
+          "before": 64,
+          "after": 47,
+          "block": 9,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 146,
+              "block": 0,
+              "incoming": 26
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "selected": {
+            "handIndex": 0,
+            "id": "OVERCLOCK",
+            "target": null,
+            "damage": 0,
+            "block": 0,
+            "draw": 3,
+            "energy": 0,
+            "power": false
+          },
+          "before": 47,
+          "after": 47,
+          "block": 18,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 143,
+              "block": 0,
+              "incoming": 18
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "selected": {
+            "handIndex": 0,
+            "id": "STRIKE_DEFECT",
+            "target": 1,
+            "damage": 6,
+            "block": 0,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 47,
+          "after": 47,
+          "block": 18,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 143,
+              "block": 0,
+              "incoming": 27
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "selected": {
+            "handIndex": 0,
+            "id": "BULK_UP",
+            "target": null,
+            "damage": 0,
+            "block": 0,
+            "draw": 0,
+            "energy": 2,
+            "power": true
+          },
+          "before": 47,
+          "after": 47,
+          "block": 18,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 137,
+              "block": 0,
+              "incoming": 27
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "selected": {
+            "handIndex": 0,
+            "id": "DEFEND_DEFECT",
+            "target": null,
+            "damage": 0,
+            "block": 8,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 47,
+          "after": 47,
+          "block": 18,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 137,
+              "block": 0,
+              "incoming": 27
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "selected": {
+            "handIndex": 2,
+            "id": "PANIC_BUTTON",
+            "target": null,
+            "damage": 0,
+            "block": 33,
+            "draw": 0,
+            "energy": 0,
+            "power": false
+          },
+          "before": 47,
+          "after": 47,
+          "block": 26,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 137,
+              "block": 0,
+              "incoming": 36
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "selected": null,
+          "before": 47,
+          "after": 47,
+          "block": 59,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 137,
+              "block": 0,
+              "incoming": 45
+            }
+          ]
+        },
+        {
+          "turn": 4,
+          "selected": {
+            "handIndex": 0,
+            "id": "DEFEND_DEFECT",
+            "target": null,
+            "damage": 0,
+            "block": 0,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 47,
+          "after": 47,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 134,
+              "block": 0,
+              "incoming": 10
+            }
+          ]
+        },
+        {
+          "turn": 4,
+          "selected": {
+            "handIndex": 0,
+            "id": "DEFEND_DEFECT",
+            "target": null,
+            "damage": 0,
+            "block": 0,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 47,
+          "after": 47,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 134,
+              "block": 0,
+              "incoming": 13
+            }
+          ]
+        },
+        {
+          "turn": 4,
+          "selected": {
+            "handIndex": 0,
+            "id": "NULL",
+            "target": 1,
+            "damage": 16,
+            "block": 0,
+            "draw": 0,
+            "energy": 2,
+            "power": false
+          },
+          "before": 47,
+          "after": 47,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 134,
+              "block": 0,
+              "incoming": 16
+            }
+          ]
+        },
+        {
+          "turn": 4,
+          "selected": {
+            "handIndex": 1,
+            "id": "MODDED",
+            "target": null,
+            "damage": 0,
+            "block": 0,
+            "draw": 2,
+            "energy": 0,
+            "power": false
+          },
+          "before": 47,
+          "after": 47,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 118,
+              "block": 0,
+              "incoming": 12
+            }
+          ]
+        },
+        {
+          "turn": 4,
+          "selected": {
+            "handIndex": 1,
+            "id": "CLAW",
+            "target": 1,
+            "damage": 7,
+            "block": 0,
+            "draw": 0,
+            "energy": 0,
+            "power": false
+          },
+          "before": 47,
+          "after": 47,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 118,
+              "block": 0,
+              "incoming": 14
+            }
+          ]
+        },
+        {
+          "turn": 4,
+          "selected": null,
+          "before": 47,
+          "after": 33,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 111,
+              "block": 0,
+              "incoming": 14
+            }
+          ]
+        },
+        {
+          "turn": 5,
+          "selected": {
+            "handIndex": 0,
+            "id": "VOLTAIC",
+            "target": null,
+            "damage": 0,
+            "block": 0,
+            "draw": 0,
+            "energy": 3,
+            "power": false
+          },
+          "before": 33,
+          "after": 33,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 108,
+              "block": 0,
+              "incoming": 19
+            }
+          ]
+        },
+        {
+          "turn": 5,
+          "selected": {
+            "handIndex": 2,
+            "id": "CLAW",
+            "target": 1,
+            "damage": 10,
+            "block": 0,
+            "draw": 0,
+            "energy": 0,
+            "power": false
+          },
+          "before": 33,
+          "after": 33,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 100,
+              "block": 0,
+              "incoming": 25
+            }
+          ]
+        },
+        {
+          "turn": 5,
+          "selected": {
+            "handIndex": 2,
+            "id": "SCRAPE",
+            "target": 1,
+            "damage": 13,
+            "block": 0,
+            "draw": 5,
+            "energy": 1,
+            "power": false
+          },
+          "before": 33,
+          "after": 33,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 90,
+              "block": 0,
+              "incoming": 25
+            }
+          ]
+        },
+        {
+          "turn": 5,
+          "selected": null,
+          "before": 33,
+          "after": 8,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 77,
+              "block": 0,
+              "incoming": 25
+            }
+          ]
+        },
+        {
+          "turn": 6,
+          "selected": {
+            "handIndex": 0,
+            "id": "STRIKE_DEFECT",
+            "target": 1,
+            "damage": 9,
+            "block": 0,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 8,
+          "after": 8,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 71,
+              "block": 0,
+              "incoming": 17
+            }
+          ]
+        },
+        {
+          "turn": 6,
+          "selected": {
+            "handIndex": 0,
+            "id": "DEFEND_DEFECT",
+            "target": null,
+            "damage": 0,
+            "block": 8,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 8,
+          "after": 8,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 62,
+              "block": 0,
+              "incoming": 17
+            }
+          ]
+        },
+        {
+          "turn": 6,
+          "selected": {
+            "handIndex": 1,
+            "id": "COMPACT",
+            "target": null,
+            "damage": 0,
+            "block": 10,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 8,
+          "after": 8,
+          "block": 8,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 62,
+              "block": 0,
+              "incoming": 23
+            }
+          ]
+        },
+        {
+          "turn": 6,
+          "selected": {
+            "handIndex": 0,
+            "id": "FUEL",
+            "target": null,
+            "damage": 0,
+            "block": 0,
+            "draw": 0,
+            "energy": 0,
+            "power": false
+          },
+          "before": 8,
+          "after": 8,
+          "block": 18,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 62,
+              "block": 0,
+              "incoming": 29
+            }
+          ]
+        },
+        {
+          "turn": 6,
+          "selected": {
+            "handIndex": 0,
+            "id": "BOOST_AWAY",
+            "target": null,
+            "damage": 0,
+            "block": 12,
+            "draw": 0,
+            "energy": 0,
+            "power": false
+          },
+          "before": 8,
+          "after": 8,
+          "block": 18,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 62,
+              "block": 0,
+              "incoming": 35
+            }
+          ]
+        },
+        {
+          "turn": 6,
+          "selected": null,
+          "before": 8,
+          "after": 0,
+          "block": 30,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 62,
+              "block": 0,
+              "incoming": 41
+            }
+          ]
+        }
+      ],
+      "timings": {
+        "cold": {
+          "warmMs": [
+            0.0004,
+            0.0004,
+            0.0004
+          ],
+          "battleMs": [
+            245.9874,
+            385.81615,
+            525.6449
+          ],
+          "peakMiB": [
+            162.425781,
+            163.125,
+            163.824219
+          ],
+          "processMs": [
+            4484.0,
+            5078.0,
+            5672.0
+          ],
+          "harnessSetupMs": [
+            3019,
+            3788.5,
+            4558
+          ],
+          "simulationMs": [
+            0,
+            0.0,
+            0
+          ],
+          "decisionSumMs": [
+            0.7161,
+            1.3643,
+            2.0125
+          ],
+          "decisionFirstMs": [
+            0.7054,
+            1.35305,
+            2.0007
+          ],
+          "decisionMedianMs": [
+            0.0003,
+            0.00035,
+            0.0004
+          ],
+          "observeSumMs": [
+            43.7362,
+            58.4179,
+            73.0996
+          ],
+          "executeSumMs": [
+            200.9436,
+            325.232,
+            449.5204
+          ]
+        },
+        "prewarmed": {
+          "warmMs": [
+            366.5339,
+            390.6732,
+            414.8125
+          ],
+          "battleMs": [
+            396.1738,
+            468.8968,
+            541.6198
+          ],
+          "peakMiB": [
+            160.675781,
+            163.164062,
+            165.652344
+          ],
+          "processMs": [
+            5657.0,
+            6445.5,
+            7234.0
+          ],
+          "harnessSetupMs": [
+            3813,
+            4530.0,
+            5247
+          ],
+          "simulationMs": [
+            0,
+            0.0,
+            0
+          ],
+          "decisionSumMs": [
+            0.0116,
+            0.0151,
+            0.0186
+          ],
+          "decisionFirstMs": [
+            0.0005,
+            0.0007,
+            0.0009
+          ],
+          "decisionMedianMs": [
+            0.0004,
+            0.0005,
+            0.0006
+          ],
+          "observeSumMs": [
+            51.5039,
+            60.9859,
+            70.4679
+          ],
+          "executeSumMs": [
+            343.9969,
+            407.057,
+            470.1171
+          ]
+        }
+      },
+      "samples": [
+        {
+          "warm": false,
+          "warmMs": 0.0004,
+          "battleMs": 525.6449,
+          "peakMiB": 163.82421875,
+          "repeat": 0,
+          "processMs": 4484.000000171363,
+          "harnessSetupMs": 3019,
+          "simulationMs": 0,
+          "decisionSumMs": 2.0125000000000015,
+          "decisionFirstMs": 2.0007,
+          "decisionMedianMs": 0.0004,
+          "observeSumMs": 73.0996,
+          "executeSumMs": 449.5204000000001
+        },
+        {
+          "warm": true,
+          "warmMs": 366.5339,
+          "battleMs": 396.1738,
+          "peakMiB": 165.65234375,
+          "repeat": 0,
+          "processMs": 5656.999999890104,
+          "harnessSetupMs": 3813,
+          "simulationMs": 0,
+          "decisionSumMs": 0.011599999999999996,
+          "decisionFirstMs": 0.0005,
+          "decisionMedianMs": 0.0004,
+          "observeSumMs": 51.5039,
+          "executeSumMs": 343.9969
+        },
+        {
+          "warm": false,
+          "warmMs": 0.0004,
+          "battleMs": 245.9874,
+          "peakMiB": 162.42578125,
+          "repeat": 1,
+          "processMs": 5672.000000020489,
+          "harnessSetupMs": 4558,
+          "simulationMs": 0,
+          "decisionSumMs": 0.7160999999999995,
+          "decisionFirstMs": 0.7054,
+          "decisionMedianMs": 0.0003,
+          "observeSumMs": 43.73619999999999,
+          "executeSumMs": 200.9436
+        },
+        {
+          "warm": true,
+          "warmMs": 414.8125,
+          "battleMs": 541.6198,
+          "peakMiB": 160.67578125,
+          "repeat": 1,
+          "processMs": 7233.999999938533,
+          "harnessSetupMs": 5247,
+          "simulationMs": 0,
+          "decisionSumMs": 0.018600000000000002,
+          "decisionFirstMs": 0.0009,
+          "decisionMedianMs": 0.0006,
+          "observeSumMs": 70.46790000000001,
+          "executeSumMs": 470.11710000000016
+        }
+      ]
+    },
+    "prisms/tactical": {
+      "status": "win",
+      "actions": 19,
+      "endTurn": 5,
+      "outcome": {
+        "initialHp": 75,
+        "finalHp": 64,
+        "hpLost": 11,
+        "hpHealed": 0,
+        "selfDamage": 0,
+        "combatEnded": true,
+        "survived": true,
+        "finalEnemyHp": 0,
+        "potions": [],
+        "unattributedHpLoss": 0
+      },
+      "postCombatHp": 64,
+      "trajectory": [
+        {
+          "turn": 1,
+          "selected": {
+            "handIndex": 1,
+            "id": "SCRAPE",
+            "target": 1,
+            "damage": 10,
+            "block": 0,
+            "draw": 5,
+            "energy": 1,
+            "power": false
+          },
+          "before": 75,
+          "after": 75,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 171,
+              "block": 0,
+              "incoming": 17
+            }
+          ]
+        },
+        {
+          "turn": 1,
+          "selected": {
+            "handIndex": 4,
+            "id": "BOOST_AWAY",
+            "target": null,
+            "damage": 0,
+            "block": 9,
+            "draw": 0,
+            "energy": 0,
+            "power": false
+          },
+          "before": 75,
+          "after": 75,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 161,
+              "block": 0,
+              "incoming": 17
+            }
+          ]
+        },
+        {
+          "turn": 1,
+          "selected": null,
+          "before": 75,
+          "after": 64,
+          "block": 9,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 161,
+              "block": 0,
+              "incoming": 20
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "selected": {
+            "handIndex": 4,
+            "id": "REFRACT",
+            "target": 1,
+            "damage": 26,
+            "block": 0,
+            "draw": 0,
+            "energy": 3,
+            "power": false
+          },
+          "before": 64,
+          "after": 64,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 158,
+              "block": 0,
+              "incoming": 17
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "selected": {
+            "handIndex": 3,
+            "id": "DEFEND_DEFECT",
+            "target": null,
+            "damage": 0,
+            "block": 5,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 64,
+          "after": 64,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 132,
+              "block": 0,
+              "incoming": 17
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "selected": {
+            "handIndex": 0,
+            "id": "OVERCLOCK",
+            "target": null,
+            "damage": 0,
+            "block": 0,
+            "draw": 3,
+            "energy": 0,
+            "power": false
+          },
+          "before": 64,
+          "after": 64,
+          "block": 5,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 132,
+              "block": 0,
+              "incoming": 20
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "selected": {
+            "handIndex": 3,
+            "id": "PANIC_BUTTON",
+            "target": null,
+            "damage": 0,
+            "block": 30,
+            "draw": 0,
+            "energy": 0,
+            "power": false
+          },
+          "before": 64,
+          "after": 64,
+          "block": 5,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 132,
+              "block": 0,
+              "incoming": 23
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "selected": null,
+          "before": 64,
+          "after": 64,
+          "block": 35,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 132,
+              "block": 0,
+              "incoming": 26
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "selected": {
+            "handIndex": 2,
+            "id": "NULL",
+            "target": 1,
+            "damage": 13,
+            "block": 0,
+            "draw": 0,
+            "energy": 2,
+            "power": false
+          },
+          "before": 64,
+          "after": 64,
+          "block": 18,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 121,
+              "block": 0,
+              "incoming": 18
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "selected": {
+            "handIndex": 3,
+            "id": "MODDED",
+            "target": null,
+            "damage": 0,
+            "block": 0,
+            "draw": 2,
+            "energy": 0,
+            "power": false
+          },
+          "before": 64,
+          "after": 64,
+          "block": 18,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 100,
+              "block": 0,
+              "incoming": 12
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "selected": {
+            "handIndex": 4,
+            "id": "NULL",
+            "target": 1,
+            "damage": 13,
+            "block": 0,
+            "draw": 0,
+            "energy": 2,
+            "power": false
+          },
+          "before": 64,
+          "after": 64,
+          "block": 18,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 100,
+              "block": 0,
+              "incoming": 18
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "selected": {
+            "handIndex": 3,
+            "id": "CLAW",
+            "target": 1,
+            "damage": 4,
+            "block": 0,
+            "draw": 0,
+            "energy": 0,
+            "power": false
+          },
+          "before": 64,
+          "after": 64,
+          "block": 18,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 87,
+              "block": 0,
+              "incoming": 18
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "selected": null,
+          "before": 64,
+          "after": 64,
+          "block": 18,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 83,
+              "block": 0,
+              "incoming": 18
+            }
+          ]
+        },
+        {
+          "turn": 4,
+          "selected": {
+            "handIndex": 2,
+            "id": "SCRAPE",
+            "target": 1,
+            "damage": 10,
+            "block": 0,
+            "draw": 5,
+            "energy": 1,
+            "power": false
+          },
+          "before": 64,
+          "after": 64,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 77,
+              "block": 0,
+              "incoming": 7
+            }
+          ]
+        },
+        {
+          "turn": 4,
+          "selected": {
+            "handIndex": 4,
+            "id": "BOOST_AWAY",
+            "target": null,
+            "damage": 0,
+            "block": 9,
+            "draw": 0,
+            "energy": 0,
+            "power": false
+          },
+          "before": 64,
+          "after": 64,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 67,
+              "block": 0,
+              "incoming": 7
+            }
+          ]
+        },
+        {
+          "turn": 4,
+          "selected": {
+            "handIndex": 2,
+            "id": "NULL",
+            "target": 1,
+            "damage": 13,
+            "block": 0,
+            "draw": 0,
+            "energy": 2,
+            "power": false
+          },
+          "before": 64,
+          "after": 64,
+          "block": 9,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 67,
+              "block": 0,
+              "incoming": 9
+            }
+          ]
+        },
+        {
+          "turn": 4,
+          "selected": null,
+          "before": 64,
+          "after": 64,
+          "block": 9,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 50,
+              "block": 0,
+              "incoming": 9
+            }
+          ]
+        },
+        {
+          "turn": 5,
+          "selected": {
+            "handIndex": 2,
+            "id": "REFRACT",
+            "target": 1,
+            "damage": 26,
+            "block": 0,
+            "draw": 0,
+            "energy": 3,
+            "power": false
+          },
+          "before": 64,
+          "after": 64,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 48,
+              "block": 0,
+              "incoming": 19
+            }
+          ]
+        },
+        {
+          "turn": 5,
+          "selected": {
+            "handIndex": 1,
+            "id": "STRIKE_DEFECT",
+            "target": 1,
+            "damage": 6,
+            "block": 0,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 64,
+          "after": 64,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 2,
+              "block": 0,
+              "incoming": 19
+            }
+          ]
+        }
+      ],
+      "timings": {
+        "cold": {
+          "warmMs": [
+            0.0001,
+            0.00015,
+            0.0002
+          ],
+          "battleMs": [
+            599.6729,
+            626.36125,
+            653.0496
+          ],
+          "peakMiB": [
+            165.660156,
+            165.974609,
+            166.289062
+          ],
+          "processMs": [
+            5547.0,
+            5844.0,
+            6141.0
+          ],
+          "harnessSetupMs": [
+            3735,
+            4122.0,
+            4509
+          ],
+          "simulationMs": [
+            0,
+            0.0,
+            0
+          ],
+          "decisionSumMs": [
+            2.0788,
+            3.11655,
+            4.1543
+          ],
+          "decisionFirstMs": [
+            1.9388,
+            2.9665,
+            3.9942
+          ],
+          "decisionMedianMs": [
+            0.0057,
+            0.0065,
+            0.0073
+          ],
+          "observeSumMs": [
+            63.0587,
+            64.9218,
+            66.7849
+          ],
+          "executeSumMs": [
+            527.734,
+            557.3001,
+            586.8662
+          ]
+        },
+        "prewarmed": {
+          "warmMs": [
+            330.6925,
+            375.471,
+            420.2495
+          ],
+          "battleMs": [
+            581.0638,
+            639.96785,
+            698.8719
+          ],
+          "peakMiB": [
+            166.765625,
+            166.824219,
+            166.882812
+          ],
+          "processMs": [
+            5750.0,
+            6328.0,
+            6906.0
+          ],
+          "harnessSetupMs": [
+            3746,
+            4203.5,
+            4661
+          ],
+          "simulationMs": [
+            0,
+            0.0,
+            0
+          ],
+          "decisionSumMs": [
+            0.1048,
+            0.1366,
+            0.1684
+          ],
+          "decisionFirstMs": [
+            0.0058,
+            0.0062,
+            0.0066
+          ],
+          "decisionMedianMs": [
+            0.0057,
+            0.0067,
+            0.0077
+          ],
+          "observeSumMs": [
+            45.3066,
+            51.1703,
+            57.034
+          ],
+          "executeSumMs": [
+            534.6643,
+            587.23465,
+            639.805
+          ]
+        }
+      },
+      "samples": [
+        {
+          "warm": false,
+          "warmMs": 0.0001,
+          "battleMs": 653.0496,
+          "peakMiB": 165.66015625,
+          "repeat": 0,
+          "processMs": 5547.000000020489,
+          "harnessSetupMs": 3735,
+          "simulationMs": 0,
+          "decisionSumMs": 2.0787999999999998,
+          "decisionFirstMs": 1.9388,
+          "decisionMedianMs": 0.0057,
+          "observeSumMs": 63.0587,
+          "executeSumMs": 586.8662
+        },
+        {
+          "warm": true,
+          "warmMs": 420.2495,
+          "battleMs": 581.0638,
+          "peakMiB": 166.765625,
+          "repeat": 0,
+          "processMs": 5750.0,
+          "harnessSetupMs": 3746,
+          "simulationMs": 0,
+          "decisionSumMs": 0.10480000000000002,
+          "decisionFirstMs": 0.0066,
+          "decisionMedianMs": 0.0057,
+          "observeSumMs": 45.306599999999996,
+          "executeSumMs": 534.6643
+        },
+        {
+          "warm": false,
+          "warmMs": 0.0002,
+          "battleMs": 599.6729,
+          "peakMiB": 166.2890625,
+          "repeat": 1,
+          "processMs": 6141.000000061467,
+          "harnessSetupMs": 4509,
+          "simulationMs": 0,
+          "decisionSumMs": 4.154299999999999,
+          "decisionFirstMs": 3.9942,
+          "decisionMedianMs": 0.0073,
+          "observeSumMs": 66.7849,
+          "executeSumMs": 527.7339999999999
+        },
+        {
+          "warm": true,
+          "warmMs": 330.6925,
+          "battleMs": 698.8719,
+          "peakMiB": 166.8828125,
+          "repeat": 1,
+          "processMs": 6905.999999959022,
+          "harnessSetupMs": 4661,
+          "simulationMs": 0,
+          "decisionSumMs": 0.16840000000000002,
+          "decisionFirstMs": 0.0058,
+          "decisionMedianMs": 0.0077,
+          "observeSumMs": 57.034000000000006,
+          "executeSumMs": 639.805
+        }
+      ]
+    },
+    "decimillipede/first": {
+      "status": "unsupported_choice",
+      "actions": 4,
+      "endTurn": 2,
+      "outcome": {
+        "initialHp": 80,
+        "finalHp": 56,
+        "hpLost": 24,
+        "hpHealed": 0,
+        "selfDamage": 0,
+        "combatEnded": false,
+        "survived": true,
+        "finalEnemyHp": 136,
+        "potions": [],
+        "unattributedHpLoss": 0
+      },
+      "postCombatHp": 56,
+      "trajectory": [
+        {
+          "turn": 1,
+          "selected": {
+            "handIndex": 1,
+            "id": "BARRICADE",
+            "target": null,
+            "damage": 0,
+            "block": 0,
+            "draw": 0,
+            "energy": 2,
+            "power": true
+          },
+          "before": 80,
+          "after": 80,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 46,
+              "block": 0,
+              "incoming": 12
+            },
+            {
+              "id": 2,
+              "hp": 52,
+              "block": 0,
+              "incoming": 7
+            },
+            {
+              "id": 3,
+              "hp": 48,
+              "block": 0,
+              "incoming": 9
+            }
+          ]
+        },
+        {
+          "turn": 1,
+          "selected": {
+            "handIndex": 1,
+            "id": "RAMPAGE",
+            "target": 1,
+            "damage": 10,
+            "block": 0,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          },
+          "before": 80,
+          "after": 80,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 46,
+              "block": 0,
+              "incoming": 12
+            },
+            {
+              "id": 2,
+              "hp": 52,
+              "block": 0,
+              "incoming": 7
+            },
+            {
+              "id": 3,
+              "hp": 48,
+              "block": 0,
+              "incoming": 9
+            }
+          ]
+        },
+        {
+          "turn": 1,
+          "selected": null,
+          "before": 80,
+          "after": 56,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 36,
+              "block": 0,
+              "incoming": 12
+            },
+            {
+              "id": 2,
+              "hp": 52,
+              "block": 0,
+              "incoming": 7
+            },
+            {
+              "id": 3,
+              "hp": 48,
+              "block": 0,
+              "incoming": 9
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "selected": {
+            "handIndex": 0,
+            "id": "BURNING_PACT",
+            "target": null,
+            "damage": 0,
+            "block": 0,
+            "draw": 3,
+            "energy": 1,
+            "power": false
+          },
+          "before": 56,
+          "after": 56,
+          "block": 0,
+          "enemies": [
+            {
+              "id": 1,
+              "hp": 36,
+              "block": 0,
+              "incoming": 9
+            },
+            {
+              "id": 2,
+              "hp": 52,
+              "block": 0,
+              "incoming": 16
+            },
+            {
+              "id": 3,
+              "hp": 48,
+              "block": 0,
+              "incoming": 7
+            }
+          ]
+        }
+      ],
+      "timings": {
+        "cold": {
+          "warmMs": [
+            0,
+            5e-05,
+            0.0001
+          ],
+          "battleMs": [
+            208.6699,
+            238.5125,
+            268.3551
+          ],
+          "peakMiB": [
+            168.035156,
+            168.066406,
+            168.097656
+          ],
+          "processMs": [
+            7218.0,
+            7546.5,
+            7875.0
+          ],
+          "harnessSetupMs": [
+            5981,
+            6250.0,
+            6519
+          ],
+          "simulationMs": [
+            0,
+            0.0,
+            0
+          ],
+          "decisionSumMs": [
+            1.207,
+            1.24095,
+            1.2749
+          ],
+          "decisionFirstMs": [
+            1.2054,
+            1.23935,
+            1.2733
+          ],
+          "decisionMedianMs": [
+            0.00055,
+            0.00055,
+            0.00055
+          ],
+          "observeSumMs": [
+            24.9527,
+            28.7035,
+            32.4543
+          ],
+          "executeSumMs": [
+            181.9616,
+            208.0062,
+            234.0508
+          ]
+        },
+        "prewarmed": {
+          "warmMs": [
+            456.4145,
+            462.1183,
+            467.8221
+          ],
+          "battleMs": [
+            245.0373,
+            252.42355,
+            259.8098
+          ],
+          "peakMiB": [
+            165.988281,
+            166.810547,
+            167.632812
+          ],
+          "processMs": [
+            6750.0,
+            7484.5,
+            8219.0
+          ],
+          "harnessSetupMs": [
+            4953,
+            5738.0,
+            6523
+          ],
+          "simulationMs": [
+            0,
+            0.0,
+            0
+          ],
+          "decisionSumMs": [
+            0.0019,
+            0.002,
+            0.0021
+          ],
+          "decisionFirstMs": [
+            0.0004,
+            0.00045,
+            0.0005
+          ],
+          "decisionMedianMs": [
+            0.0005,
+            0.000525,
+            0.00055
+          ],
+          "observeSumMs": [
+            14.2033,
+            14.37895,
+            14.5546
+          ],
+          "executeSumMs": [
+            229.8879,
+            237.4229,
+            244.9579
+          ]
+        }
+      },
+      "samples": [
+        {
+          "warm": false,
+          "warmMs": 0,
+          "battleMs": 208.6699,
+          "peakMiB": 168.09765625,
+          "repeat": 0,
+          "processMs": 7875.0,
+          "harnessSetupMs": 6519,
+          "simulationMs": 0,
+          "decisionSumMs": 1.2069999999999999,
+          "decisionFirstMs": 1.2054,
+          "decisionMedianMs": 0.0005499999999999999,
+          "observeSumMs": 24.9527,
+          "executeSumMs": 181.96159999999998
+        },
+        {
+          "warm": true,
+          "warmMs": 467.8221,
+          "battleMs": 245.0373,
+          "peakMiB": 167.6328125,
+          "repeat": 0,
+          "processMs": 6750.0,
+          "harnessSetupMs": 4953,
+          "simulationMs": 0,
+          "decisionSumMs": 0.0019,
+          "decisionFirstMs": 0.0004,
+          "decisionMedianMs": 0.0005,
+          "observeSumMs": 14.5546,
+          "executeSumMs": 229.8879
+        },
+        {
+          "warm": false,
+          "warmMs": 0.0001,
+          "battleMs": 268.3551,
+          "peakMiB": 168.03515625,
+          "repeat": 1,
+          "processMs": 7218.000000109896,
+          "harnessSetupMs": 5981,
+          "simulationMs": 0,
+          "decisionSumMs": 1.2749,
+          "decisionFirstMs": 1.2733,
+          "decisionMedianMs": 0.0005499999999999999,
+          "observeSumMs": 32.454299999999996,
+          "executeSumMs": 234.05079999999998
+        },
+        {
+          "warm": true,
+          "warmMs": 456.4145,
+          "battleMs": 259.8098,
+          "peakMiB": 165.98828125,
+          "repeat": 1,
+          "processMs": 8219.000000040978,
+          "harnessSetupMs": 6523,
+          "simulationMs": 0,
+          "decisionSumMs": 0.0021,
+          "decisionFirstMs": 0.0005,
+          "decisionMedianMs": 0.0005499999999999999,
+          "observeSumMs": 14.203299999999999,
+          "executeSumMs": 244.9579
+        }
+      ]
+    },
+    "decimillipede/tactical": {
+      "status": "unsupported_native_host",
+      "exitCode": 3221225477,
+      "failure": "DecimillipedeSegment.ReattachMove -> Godot.ResourceLoader: 0xC0000005",
+      "timings": {
+        "cold": {
+          "processMs": [
+            13110.0,
+            13360.0,
+            13610.0
+          ]
+        },
+        "prewarmed": {
+          "processMs": [
+            14656.0,
+            14695.0,
+            14734.0
+          ]
+        }
+      },
+      "samples": [
+        {
+          "warm": false,
+          "repeat": 0,
+          "processMs": 13609.999999869615
+        },
+        {
+          "warm": true,
+          "repeat": 0,
+          "processMs": 14656.000000191852
+        },
+        {
+          "warm": false,
+          "repeat": 1,
+          "processMs": 13109.999999869615
+        },
+        {
+          "warm": true,
+          "repeat": 1,
+          "processMs": 14733.999999938533
+        }
+      ]
+    }
+  }
+}

@@ -160,6 +160,10 @@
 
 - [M1-H1 报告](m1-h1-hard-combat-survival-gap.md)在同根同 RNG 下原生验证 A10 Infested Prisms 的协调器胜路，18 步、第 5 回合、损 11 HP。受限 Evaluate 未胜，提高额度的 Evaluate 得到 20 HP 模拟胜路。下一步可追踪参考前缀，现阶段未能归因到长期估值或 Beam 淘汰。Queen 仍无胜利见证。
 
+### M1-Q1 极速战斗策略
+
+- [M1-Q1 报告](m1-q1-fast-combat-baseline.md)在同根 A10 Infested Prisms 上用公开信息、零搜索的战术策略取得 4/4 原生胜利，第 5 回合、损 11 HP。预热后整场纯决策 0.105–0.168 ms，原生推进约 535–640 ms。Decimillipede 的选牌与重接执行覆盖仍未打通。正式策略维持原样。
+
 ## 7. 协作与操作流程
 
 - 新 Codex 对话开头：阅读本文件、`CLAUDE.md` 与实际代码；确认当前 Git 分支、HEAD、工作区状态、Steam build、CoreCLR；优先报告与本文档不一致之处。本文档不是代替代码审查或测试的权威来源。
