@@ -168,6 +168,10 @@
 
 - [M1-Q2 报告](m1-q2-fast-combat-generalization.md)固定 Q1 策略对照七个 A10 生成根。战术组只在原 Q1 Defect 精英根获胜，五个新根中两场原生死亡、三场选牌停止。隔离贴图绕过保留 Decimillipede 原生重接，使既有 Ironclad 根完成战术组战败。下一步优先补选择与高速原生验证，再评估多回合策略。
 
+### M1-Q3 原生战斗选牌
+
+- [M1-Q3 报告](m1-q3-native-combat-choices.md)在隔离宿主接入五类原生选择，七根中六根的手序和战术组均运行到原生终局。Q2 七个选牌中止单元里五个抵达终局，Silent 另遇弃牌请求。燃烧契约路径跨进程对齐 19 个逐步状态/RNG 戳。可继续对 Regent 和 Defect Boss 做定向原生 SL。
+
 ## 7. 协作与操作流程
 
 - 新 Codex 对话开头：阅读本文件、`CLAUDE.md` 与实际代码；确认当前 Git 分支、HEAD、工作区状态、Steam build、CoreCLR；优先报告与本文档不一致之处。本文档不是代替代码审查或测试的权威来源。
