@@ -1,0 +1,3565 @@
+[
+  {
+    "id": "ironclad-a0-run_1-f02",
+    "policy": "A",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2947.716500144452,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 80,
+        "final_hp": 64,
+        "hp_lost": 16,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 5,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "win",
+    "peak_working_set_bytes": 116908032,
+    "elapsed_ms": 3355.862000025809,
+    "action_requests": 18,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": 0.1601,
+      "observation": null,
+      "action_native": null,
+      "action_wall": 338.7495
+    },
+    "result_player_hp": 70,
+    "resource_changes": {
+      "gold": {
+        "before": 99,
+        "after": 118
+      }
+    },
+    "other_verified_wins": [
+      "B",
+      "C"
+    ],
+    "better_verified_routes": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "ironclad-a0-run_1-f02",
+    "policy": "B",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2755.4864999838173,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 80,
+        "final_hp": 80,
+        "hp_lost": 0,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 3,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "win",
+    "peak_working_set_bytes": 116625408,
+    "elapsed_ms": 3193.1705998722464,
+    "action_requests": 10,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": 2.036,
+      "observation": 12.7779,
+      "action_native": 279.3518,
+      "action_wall": 337.2336
+    },
+    "result_player_hp": 80,
+    "resource_changes": {
+      "gold": {
+        "before": 99,
+        "after": 118
+      }
+    },
+    "other_verified_wins": [
+      "A",
+      "C"
+    ],
+    "better_verified_routes": []
+  },
+  {
+    "id": "ironclad-a0-run_1-f03",
+    "policy": "A",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2750.4680000711232,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 70,
+        "final_hp": 42,
+        "hp_lost": 28,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 6,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "win",
+    "peak_working_set_bytes": 117456896,
+    "elapsed_ms": 3370.3535001259297,
+    "action_requests": 20,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": 0.2358,
+      "observation": null,
+      "action_native": null,
+      "action_wall": 551.4435
+    },
+    "result_player_hp": 48,
+    "resource_changes": {
+      "gold": {
+        "before": 118,
+        "after": 129
+      }
+    },
+    "other_verified_wins": [
+      "B"
+    ],
+    "better_verified_routes": [
+      "B"
+    ]
+  },
+  {
+    "id": "ironclad-a0-run_1-f03",
+    "policy": "B",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2918.3203999418765,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 70,
+        "final_hp": 55,
+        "hp_lost": 15,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 4,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "win",
+    "peak_working_set_bytes": 117084160,
+    "elapsed_ms": 3332.415899960324,
+    "action_requests": 13,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": 2.7898,
+      "observation": 16.5756,
+      "action_native": 295.5966,
+      "action_wall": 360.8268
+    },
+    "result_player_hp": 61,
+    "resource_changes": {
+      "gold": {
+        "before": 118,
+        "after": 129
+      }
+    },
+    "other_verified_wins": [
+      "A"
+    ],
+    "better_verified_routes": []
+  },
+  {
+    "id": "ironclad-a0-run_1-f04",
+    "policy": "A",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2926.780099980533,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 48,
+        "final_hp": 30,
+        "hp_lost": 18,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 4,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "win",
+    "peak_working_set_bytes": 117157888,
+    "elapsed_ms": 3412.0334000326693,
+    "action_requests": 14,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": 0.1403,
+      "observation": null,
+      "action_native": null,
+      "action_wall": 364.5582
+    },
+    "result_player_hp": 36,
+    "resource_changes": {
+      "gold": {
+        "before": 129,
+        "after": 146
+      }
+    },
+    "other_verified_wins": [
+      "B"
+    ],
+    "better_verified_routes": [
+      "B"
+    ]
+  },
+  {
+    "id": "ironclad-a0-run_1-f04",
+    "policy": "B",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2877.1309999283403,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 48,
+        "final_hp": 40,
+        "hp_lost": 8,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 4,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "win",
+    "peak_working_set_bytes": 117075968,
+    "elapsed_ms": 3300.6662998814136,
+    "action_requests": 12,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": 2.3884,
+      "observation": 15.8166,
+      "action_native": 305.5543,
+      "action_wall": 377.5074
+    },
+    "result_player_hp": 46,
+    "resource_changes": {
+      "gold": {
+        "before": 129,
+        "after": 146
+      }
+    },
+    "other_verified_wins": [
+      "A"
+    ],
+    "better_verified_routes": []
+  },
+  {
+    "id": "ironclad-a0-run_1-f05",
+    "policy": "A",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2802.1790001075715,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": false,
+      "outcome": {
+        "initial_hp": 36,
+        "final_hp": 0,
+        "hp_lost": 36,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": false,
+        "survived": false,
+        "final_enemy_hp": 48,
+        "potions": [],
+        "unattributed_hp_loss": 5
+      },
+      "round": 5,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "death",
+    "peak_working_set_bytes": 116297728,
+    "elapsed_ms": 3093.336299993098,
+    "action_requests": 20,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": 0.1318,
+      "observation": null,
+      "action_native": null,
+      "action_wall": 225.0211
+    },
+    "result_player_hp": 0,
+    "resource_changes": {},
+    "other_verified_wins": [
+      "C",
+      "B_cf"
+    ],
+    "better_verified_routes": [
+      "C",
+      "B_cf"
+    ]
+  },
+  {
+    "id": "ironclad-a0-run_1-f05",
+    "policy": "B",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2802.7977999299765,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": false,
+      "outcome": {
+        "initial_hp": 36,
+        "final_hp": 0,
+        "hp_lost": 36,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": false,
+        "survived": false,
+        "final_enemy_hp": 10,
+        "potions": [],
+        "unattributed_hp_loss": 2
+      },
+      "round": 5,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "death",
+    "peak_working_set_bytes": 116707328,
+    "elapsed_ms": 3222.3512998316437,
+    "action_requests": 19,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": 2.2563,
+      "observation": 27.6444,
+      "action_native": 268.0673,
+      "action_wall": 357.1546
+    },
+    "result_player_hp": 0,
+    "resource_changes": {},
+    "other_verified_wins": [
+      "C",
+      "B_cf"
+    ],
+    "better_verified_routes": [
+      "C",
+      "B_cf"
+    ]
+  },
+  {
+    "id": "silent-a0-run_2-f02",
+    "policy": "A",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2622.349000070244,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 70,
+        "final_hp": 66,
+        "hp_lost": 4,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 4,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "win",
+    "peak_working_set_bytes": 117190656,
+    "elapsed_ms": 3076.4611000195146,
+    "action_requests": 19,
+    "choice_requests": 1,
+    "timing_ms": {
+      "policy": 0.2018,
+      "observation": null,
+      "action_native": null,
+      "action_wall": 400.9941
+    },
+    "result_player_hp": 66,
+    "resource_changes": {
+      "gold": {
+        "before": 99,
+        "after": 111
+      },
+      "potions": {
+        "before": [
+          null,
+          null,
+          null
+        ],
+        "after": [
+          "CUNNING_POTION",
+          null,
+          null
+        ]
+      }
+    },
+    "other_verified_wins": [],
+    "better_verified_routes": []
+  },
+  {
+    "id": "silent-a0-run_2-f02",
+    "policy": "B",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2821.585400030017,
+    "coreclr": "9.0.7",
+    "status": "unsupported",
+    "detail": "unknown_or_repeated_request",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": false,
+      "outcome": {
+        "initial_hp": 70,
+        "final_hp": 70,
+        "hp_lost": 0,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": false,
+        "survived": true,
+        "final_enemy_hp": 35,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 2,
+      "choice_requests": [
+        {
+          "step": 6,
+          "action": "SURVIVOR",
+          "min_select": 1,
+          "max_select": 1,
+          "reason": "unknown_or_repeated_request",
+          "candidates": [
+            {
+              "index": 0,
+              "id": "STRIKE_SILENT"
+            },
+            {
+              "index": 1,
+              "id": "DEFEND_SILENT"
+            },
+            {
+              "index": 2,
+              "id": "STRIKE_SILENT"
+            },
+            {
+              "index": 3,
+              "id": "ADRENALINE"
+            }
+          ]
+        }
+      ],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "peak_working_set_bytes": 116436992,
+    "elapsed_ms": 3279.944400070235,
+    "action_requests": 6,
+    "choice_requests": 1,
+    "timing_ms": {
+      "policy": 3.5858,
+      "observation": 16.5974,
+      "action_native": 317.88,
+      "action_wall": 392.9094
+    },
+    "result_player_hp": 70,
+    "resource_changes": {},
+    "other_verified_wins": [
+      "A"
+    ],
+    "better_verified_routes": []
+  },
+  {
+    "id": "silent-a0-run_2-f03",
+    "policy": "A",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 3021.285700146109,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 66,
+        "final_hp": 55,
+        "hp_lost": 11,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 5,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "win",
+    "peak_working_set_bytes": 118259712,
+    "elapsed_ms": 3465.175300138071,
+    "action_requests": 24,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": 0.1787,
+      "observation": null,
+      "action_native": null,
+      "action_wall": 382.2514
+    },
+    "result_player_hp": 55,
+    "resource_changes": {
+      "gold": {
+        "before": 111,
+        "after": 126
+      },
+      "potions": {
+        "before": [
+          "CUNNING_POTION",
+          null,
+          null
+        ],
+        "after": [
+          "CUNNING_POTION",
+          "COLORLESS_POTION",
+          null
+        ]
+      }
+    },
+    "other_verified_wins": [],
+    "better_verified_routes": []
+  },
+  {
+    "id": "silent-a0-run_2-f03",
+    "policy": "B",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2312.815000070259,
+    "coreclr": "9.0.7",
+    "status": "unsupported",
+    "detail": "unknown_or_repeated_request",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": false,
+      "outcome": {
+        "initial_hp": 66,
+        "final_hp": 66,
+        "hp_lost": 0,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": false,
+        "survived": true,
+        "final_enemy_hp": 40,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 2,
+      "choice_requests": [
+        {
+          "step": 5,
+          "action": "SURVIVOR",
+          "min_select": 1,
+          "max_select": 1,
+          "reason": "unknown_or_repeated_request",
+          "candidates": [
+            {
+              "index": 0,
+              "id": "DEFEND_SILENT"
+            },
+            {
+              "index": 1,
+              "id": "NEUTRALIZE"
+            },
+            {
+              "index": 2,
+              "id": "STRIKE_SILENT"
+            },
+            {
+              "index": 3,
+              "id": "ADRENALINE"
+            }
+          ]
+        }
+      ],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "peak_working_set_bytes": 116133888,
+    "elapsed_ms": 2643.8933999743313,
+    "action_requests": 5,
+    "choice_requests": 1,
+    "timing_ms": {
+      "policy": 4.6418,
+      "observation": 20.6345,
+      "action_native": 203.5129,
+      "action_wall": 275.498
+    },
+    "result_player_hp": 66,
+    "resource_changes": {},
+    "other_verified_wins": [
+      "A"
+    ],
+    "better_verified_routes": []
+  },
+  {
+    "id": "silent-a0-run_2-f08",
+    "policy": "A",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2958.812499884516,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 18,
+        "final_hp": 15,
+        "hp_lost": 3,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 5,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "win",
+    "peak_working_set_bytes": 119111680,
+    "elapsed_ms": 3541.0579999443144,
+    "action_requests": 27,
+    "choice_requests": 1,
+    "timing_ms": {
+      "policy": 0.2942,
+      "observation": null,
+      "action_native": null,
+      "action_wall": 504.9099
+    },
+    "result_player_hp": 15,
+    "resource_changes": {
+      "gold": {
+        "before": 171,
+        "after": 190
+      }
+    },
+    "other_verified_wins": [],
+    "better_verified_routes": []
+  },
+  {
+    "id": "silent-a0-run_2-f08",
+    "policy": "B",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2602.837600046769,
+    "coreclr": "9.0.7",
+    "status": "unsupported",
+    "detail": "unknown_or_repeated_request",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": false,
+      "outcome": {
+        "initial_hp": 18,
+        "final_hp": 16,
+        "hp_lost": 2,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": false,
+        "survived": true,
+        "final_enemy_hp": 24,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 5,
+      "choice_requests": [
+        {
+          "step": 23,
+          "action": "SURVIVOR",
+          "min_select": 1,
+          "max_select": 1,
+          "reason": "unknown_or_repeated_request",
+          "candidates": [
+            {
+              "index": 0,
+              "id": "SNAKEBITE"
+            },
+            {
+              "index": 1,
+              "id": "PIERCING_WAIL"
+            },
+            {
+              "index": 2,
+              "id": "STRIKE_SILENT"
+            },
+            {
+              "index": 3,
+              "id": "DEFLECT"
+            },
+            {
+              "index": 4,
+              "id": "DEFEND_SILENT"
+            }
+          ]
+        }
+      ],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "peak_working_set_bytes": 120680448,
+    "elapsed_ms": 3130.798599915579,
+    "action_requests": 23,
+    "choice_requests": 1,
+    "timing_ms": {
+      "policy": 4.495,
+      "observation": 35.2268,
+      "action_native": 354.8785,
+      "action_wall": 464.6994
+    },
+    "result_player_hp": 16,
+    "resource_changes": {},
+    "other_verified_wins": [
+      "A"
+    ],
+    "better_verified_routes": []
+  },
+  {
+    "id": "silent-a0-run_2-f09",
+    "policy": "A",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 3143.3554999530315,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": false,
+      "outcome": {
+        "initial_hp": 15,
+        "final_hp": 0,
+        "hp_lost": 15,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": false,
+        "survived": false,
+        "final_enemy_hp": 32,
+        "potions": [],
+        "unattributed_hp_loss": 1
+      },
+      "round": 4,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "death",
+    "peak_working_set_bytes": 117932032,
+    "elapsed_ms": 3636.505499947816,
+    "action_requests": 24,
+    "choice_requests": 1,
+    "timing_ms": {
+      "policy": 0.2642,
+      "observation": null,
+      "action_native": null,
+      "action_wall": 401.6253
+    },
+    "result_player_hp": 0,
+    "resource_changes": {},
+    "other_verified_wins": [],
+    "better_verified_routes": []
+  },
+  {
+    "id": "silent-a0-run_2-f09",
+    "policy": "B",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 3008.1504001282156,
+    "coreclr": "9.0.7",
+    "status": "unsupported",
+    "detail": "unknown_or_repeated_request",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": false,
+      "outcome": {
+        "initial_hp": 15,
+        "final_hp": 15,
+        "hp_lost": 0,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": false,
+        "survived": true,
+        "final_enemy_hp": 57,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 2,
+      "choice_requests": [
+        {
+          "step": 8,
+          "action": "SURVIVOR",
+          "min_select": 1,
+          "max_select": 1,
+          "reason": "unknown_or_repeated_request",
+          "candidates": [
+            {
+              "index": 0,
+              "id": "DEFEND_SILENT"
+            },
+            {
+              "index": 1,
+              "id": "POISONED_STAB"
+            },
+            {
+              "index": 2,
+              "id": "STRIKE_SILENT"
+            },
+            {
+              "index": 3,
+              "id": "DEFLECT"
+            }
+          ]
+        }
+      ],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "peak_working_set_bytes": 118358016,
+    "elapsed_ms": 3321.700399974361,
+    "action_requests": 8,
+    "choice_requests": 1,
+    "timing_ms": {
+      "policy": 2.4,
+      "observation": 16.5354,
+      "action_native": 205.0151,
+      "action_wall": 253.4029
+    },
+    "result_player_hp": 15,
+    "resource_changes": {},
+    "other_verified_wins": [],
+    "better_verified_routes": []
+  },
+  {
+    "id": "ironclad-a10-run_2-f02",
+    "policy": "A",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 3019.7632999625057,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 64,
+        "final_hp": 38,
+        "hp_lost": 26,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 5,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "win",
+    "peak_working_set_bytes": 117129216,
+    "elapsed_ms": 3413.8016998767853,
+    "action_requests": 16,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": 0.1735,
+      "observation": null,
+      "action_native": null,
+      "action_wall": 308.1041
+    },
+    "result_player_hp": 44,
+    "resource_changes": {
+      "gold": {
+        "before": 99,
+        "after": 108
+      },
+      "potions": {
+        "before": [
+          null,
+          null
+        ],
+        "after": [
+          "ASHWATER",
+          null
+        ]
+      }
+    },
+    "other_verified_wins": [
+      "B"
+    ],
+    "better_verified_routes": [
+      "B"
+    ]
+  },
+  {
+    "id": "ironclad-a10-run_2-f02",
+    "policy": "B",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2800.705600064248,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 64,
+        "final_hp": 43,
+        "hp_lost": 21,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 5,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "win",
+    "peak_working_set_bytes": 116895744,
+    "elapsed_ms": 3311.2967000342906,
+    "action_requests": 14,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": 5.0774,
+      "observation": 21.0487,
+      "action_native": 362.106,
+      "action_wall": 458.0274
+    },
+    "result_player_hp": 49,
+    "resource_changes": {
+      "gold": {
+        "before": 99,
+        "after": 108
+      },
+      "potions": {
+        "before": [
+          null,
+          null
+        ],
+        "after": [
+          "ASHWATER",
+          null
+        ]
+      }
+    },
+    "other_verified_wins": [
+      "A"
+    ],
+    "better_verified_routes": []
+  },
+  {
+    "id": "ironclad-a10-run_2-f03",
+    "policy": "A",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2956.47450000979,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 44,
+        "final_hp": 28,
+        "hp_lost": 16,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 4,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "win",
+    "peak_working_set_bytes": 117186560,
+    "elapsed_ms": 3364.280399866402,
+    "action_requests": 13,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": 0.1134,
+      "observation": null,
+      "action_native": null,
+      "action_wall": 338.6374
+    },
+    "result_player_hp": 34,
+    "resource_changes": {
+      "gold": {
+        "before": 108,
+        "after": 119
+      },
+      "potions": {
+        "before": [
+          "ASHWATER",
+          null
+        ],
+        "after": [
+          "ASHWATER",
+          "COLORLESS_POTION"
+        ]
+      }
+    },
+    "other_verified_wins": [
+      "B"
+    ],
+    "better_verified_routes": []
+  },
+  {
+    "id": "ironclad-a10-run_2-f03",
+    "policy": "B",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2944.2129000090063,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 44,
+        "final_hp": 26,
+        "hp_lost": 18,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 5,
+      "choice_requests": [
+        {
+          "step": 12,
+          "action": "HEADBUTT",
+          "source": "discard",
+          "effect": "topdeck",
+          "min_select": 1,
+          "max_select": 1,
+          "allow_empty": false,
+          "energy": 2,
+          "turn": 4,
+          "candidates": [
+            {
+              "index": 0,
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0,
+              "cost": 1,
+              "type": "Skill",
+              "damage": 0,
+              "block": 5,
+              "key": "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            },
+            {
+              "index": 1,
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0,
+              "cost": 1,
+              "type": "Attack",
+              "damage": 6,
+              "block": 0,
+              "key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            },
+            {
+              "index": 2,
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0,
+              "cost": 1,
+              "type": "Attack",
+              "damage": 6,
+              "block": 0,
+              "key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            },
+            {
+              "index": 3,
+              "id": "BARRICADE",
+              "upgrade": 0,
+              "cost": 3,
+              "type": "Power",
+              "damage": 0,
+              "block": 0,
+              "key": "BARRICADE+0|energy=False:3|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            },
+            {
+              "index": 4,
+              "id": "SLIMED",
+              "upgrade": 0,
+              "cost": 1,
+              "type": "Status",
+              "damage": 0,
+              "block": 0,
+              "key": "SLIMED+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            },
+            {
+              "index": 5,
+              "id": "SLIMED",
+              "upgrade": 0,
+              "cost": 1,
+              "type": "Status",
+              "damage": 0,
+              "block": 0,
+              "key": "SLIMED+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            }
+          ],
+          "indexes": [
+            0
+          ]
+        }
+      ],
+      "choice_checks": [
+        {
+          "step": 12,
+          "action": "HEADBUTT",
+          "effect": true
+        }
+      ],
+      "choice_observation_ms": 1.5814,
+      "choice_decision_ms": 1.334
+    },
+    "status": "win",
+    "peak_working_set_bytes": 117952512,
+    "elapsed_ms": 3449.853800004348,
+    "action_requests": 16,
+    "choice_requests": 1,
+    "timing_ms": {
+      "policy": 3.8837,
+      "observation": 48.3456,
+      "action_native": 326.7889,
+      "action_wall": 441.597
+    },
+    "result_player_hp": 32,
+    "resource_changes": {
+      "gold": {
+        "before": 108,
+        "after": 119
+      },
+      "potions": {
+        "before": [
+          "ASHWATER",
+          null
+        ],
+        "after": [
+          "ASHWATER",
+          "COLORLESS_POTION"
+        ]
+      }
+    },
+    "other_verified_wins": [
+      "A"
+    ],
+    "better_verified_routes": [
+      "A"
+    ]
+  },
+  {
+    "id": "ironclad-a10-run_2-f05",
+    "policy": "A",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2615.3114999178797,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 34,
+        "final_hp": 25,
+        "hp_lost": 9,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 4,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "win",
+    "peak_working_set_bytes": 117489664,
+    "elapsed_ms": 3012.3284000437707,
+    "action_requests": 14,
+    "choice_requests": 1,
+    "timing_ms": {
+      "policy": 0.1408,
+      "observation": null,
+      "action_native": null,
+      "action_wall": 335.0204
+    },
+    "result_player_hp": 31,
+    "resource_changes": {
+      "gold": {
+        "before": 119,
+        "after": 127
+      }
+    },
+    "other_verified_wins": [
+      "B"
+    ],
+    "better_verified_routes": [
+      "B"
+    ]
+  },
+  {
+    "id": "ironclad-a10-run_2-f05",
+    "policy": "B",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2813.140300102532,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 34,
+        "final_hp": 33,
+        "hp_lost": 1,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 3,
+      "choice_requests": [
+        {
+          "step": 5,
+          "action": "HEADBUTT",
+          "source": "discard",
+          "effect": "topdeck",
+          "min_select": 1,
+          "max_select": 1,
+          "allow_empty": false,
+          "energy": 2,
+          "turn": 2,
+          "candidates": [
+            {
+              "index": 0,
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0,
+              "cost": 1,
+              "type": "Skill",
+              "damage": 0,
+              "block": 5,
+              "key": "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            },
+            {
+              "index": 1,
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0,
+              "cost": 1,
+              "type": "Attack",
+              "damage": 6,
+              "block": 0,
+              "key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            },
+            {
+              "index": 2,
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0,
+              "cost": 1,
+              "type": "Attack",
+              "damage": 6,
+              "block": 0,
+              "key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            },
+            {
+              "index": 3,
+              "id": "BARRICADE",
+              "upgrade": 0,
+              "cost": 3,
+              "type": "Power",
+              "damage": 0,
+              "block": 0,
+              "key": "BARRICADE+0|energy=False:3|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            }
+          ],
+          "indexes": [
+            0
+          ]
+        }
+      ],
+      "choice_checks": [
+        {
+          "step": 5,
+          "action": "HEADBUTT",
+          "effect": true
+        }
+      ],
+      "choice_observation_ms": 2.6974,
+      "choice_decision_ms": 2.3506
+    },
+    "status": "win",
+    "peak_working_set_bytes": 117088256,
+    "elapsed_ms": 3095.3734999056906,
+    "action_requests": 10,
+    "choice_requests": 1,
+    "timing_ms": {
+      "policy": 3.4771,
+      "observation": 8.0588,
+      "action_native": 203.9589,
+      "action_wall": 239.5089
+    },
+    "result_player_hp": 39,
+    "resource_changes": {
+      "gold": {
+        "before": 119,
+        "after": 127
+      }
+    },
+    "other_verified_wins": [
+      "A"
+    ],
+    "better_verified_routes": []
+  },
+  {
+    "id": "ironclad-a10-run_2-f06",
+    "policy": "A",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2690.399100072682,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": false,
+      "outcome": {
+        "initial_hp": 31,
+        "final_hp": 0,
+        "hp_lost": 31,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": false,
+        "survived": false,
+        "final_enemy_hp": 35,
+        "potions": [],
+        "unattributed_hp_loss": 2
+      },
+      "round": 4,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "death",
+    "peak_working_set_bytes": 117276672,
+    "elapsed_ms": 3128.242400009185,
+    "action_requests": 13,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": 0.1452,
+      "observation": null,
+      "action_native": null,
+      "action_wall": 391.1032
+    },
+    "result_player_hp": 0,
+    "resource_changes": {},
+    "other_verified_wins": [],
+    "better_verified_routes": []
+  },
+  {
+    "id": "ironclad-a10-run_2-f06",
+    "policy": "B",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2331.230799900368,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": false,
+      "outcome": {
+        "initial_hp": 31,
+        "final_hp": 0,
+        "hp_lost": 31,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": false,
+        "survived": false,
+        "final_enemy_hp": 15,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 4,
+      "choice_requests": [
+        {
+          "step": 5,
+          "action": "HEADBUTT",
+          "source": "discard",
+          "effect": "topdeck",
+          "min_select": 1,
+          "max_select": 1,
+          "allow_empty": false,
+          "energy": 2,
+          "turn": 2,
+          "candidates": [
+            {
+              "index": 0,
+              "id": "POMMEL_STRIKE",
+              "upgrade": 0,
+              "cost": 1,
+              "type": "Attack",
+              "damage": 9,
+              "block": 0,
+              "key": "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            },
+            {
+              "index": 1,
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0,
+              "cost": 1,
+              "type": "Attack",
+              "damage": 6,
+              "block": 0,
+              "key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            },
+            {
+              "index": 2,
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0,
+              "cost": 1,
+              "type": "Attack",
+              "damage": 6,
+              "block": 0,
+              "key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            },
+            {
+              "index": 3,
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0,
+              "cost": 1,
+              "type": "Skill",
+              "damage": 0,
+              "block": 5,
+              "key": "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            },
+            {
+              "index": 4,
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0,
+              "cost": 1,
+              "type": "Skill",
+              "damage": 0,
+              "block": 5,
+              "key": "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            }
+          ],
+          "indexes": [
+            0
+          ]
+        }
+      ],
+      "choice_checks": [
+        {
+          "step": 5,
+          "action": "HEADBUTT",
+          "effect": true
+        }
+      ],
+      "choice_observation_ms": 3.627,
+      "choice_decision_ms": 2.9386
+    },
+    "status": "death",
+    "peak_working_set_bytes": 116695040,
+    "elapsed_ms": 2719.9071999639273,
+    "action_requests": 14,
+    "choice_requests": 1,
+    "timing_ms": {
+      "policy": 5.1149000000000004,
+      "observation": 17.5273,
+      "action_native": 241.9924,
+      "action_wall": 313.9994
+    },
+    "result_player_hp": 0,
+    "resource_changes": {},
+    "other_verified_wins": [],
+    "better_verified_routes": []
+  },
+  {
+    "id": "defect-a10-run_1-f02",
+    "policy": "A",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2779.260100098327,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 60,
+        "final_hp": 54,
+        "hp_lost": 6,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 3,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "win",
+    "peak_working_set_bytes": 115425280,
+    "elapsed_ms": 3235.081900143996,
+    "action_requests": 11,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": 0.0826,
+      "observation": null,
+      "action_native": null,
+      "action_wall": 387.2241
+    },
+    "result_player_hp": 54,
+    "resource_changes": {
+      "gold": {
+        "before": 99,
+        "after": 113
+      }
+    },
+    "other_verified_wins": [
+      "B"
+    ],
+    "better_verified_routes": []
+  },
+  {
+    "id": "defect-a10-run_1-f02",
+    "policy": "B",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2906.4003999810666,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 60,
+        "final_hp": 54,
+        "hp_lost": 6,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 6,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "win",
+    "peak_working_set_bytes": 117133312,
+    "elapsed_ms": 3356.7447001114488,
+    "action_requests": 21,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": 2.2074,
+      "observation": 19.5794,
+      "action_native": 293.3074,
+      "action_wall": 370.1502
+    },
+    "result_player_hp": 54,
+    "resource_changes": {
+      "gold": {
+        "before": 99,
+        "after": 113
+      }
+    },
+    "other_verified_wins": [
+      "A"
+    ],
+    "better_verified_routes": []
+  },
+  {
+    "id": "defect-a10-run_1-f03",
+    "policy": "A",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2176.247099880129,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 54,
+        "final_hp": 52,
+        "hp_lost": 2,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 3,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "win",
+    "peak_working_set_bytes": 117088256,
+    "elapsed_ms": 2609.579399926588,
+    "action_requests": 15,
+    "choice_requests": 1,
+    "timing_ms": {
+      "policy": 0.1314,
+      "observation": null,
+      "action_native": null,
+      "action_wall": 350.4516
+    },
+    "result_player_hp": 52,
+    "resource_changes": {
+      "gold": {
+        "before": 113,
+        "after": 121
+      }
+    },
+    "other_verified_wins": [
+      "B"
+    ],
+    "better_verified_routes": []
+  },
+  {
+    "id": "defect-a10-run_1-f03",
+    "policy": "B",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2716.2927999161184,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 54,
+        "final_hp": 49,
+        "hp_lost": 5,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 5,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "win",
+    "peak_working_set_bytes": 117485568,
+    "elapsed_ms": 3160.7788000255823,
+    "action_requests": 16,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": 2.3436,
+      "observation": 15.7577,
+      "action_native": 316.5645,
+      "action_wall": 384.9234
+    },
+    "result_player_hp": 49,
+    "resource_changes": {
+      "gold": {
+        "before": 113,
+        "after": 121
+      }
+    },
+    "other_verified_wins": [
+      "A"
+    ],
+    "better_verified_routes": [
+      "A"
+    ]
+  },
+  {
+    "id": "defect-a10-run_1-f05",
+    "policy": "A",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2794.6597998961806,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 50,
+        "final_hp": 11,
+        "hp_lost": 39,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 11,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "win",
+    "peak_working_set_bytes": 121618432,
+    "elapsed_ms": 3435.4975998867303,
+    "action_requests": 54,
+    "choice_requests": 3,
+    "timing_ms": {
+      "policy": 0.429,
+      "observation": null,
+      "action_native": null,
+      "action_wall": 577.3861
+    },
+    "result_player_hp": 11,
+    "resource_changes": {
+      "gold": {
+        "before": 133,
+        "after": 146
+      },
+      "potions": {
+        "before": [
+          "BEETLE_JUICE",
+          null
+        ],
+        "after": [
+          "BEETLE_JUICE",
+          "DEXTERITY_POTION"
+        ]
+      }
+    },
+    "other_verified_wins": [],
+    "better_verified_routes": []
+  },
+  {
+    "id": "defect-a10-run_1-f05",
+    "policy": "B",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2742.1738000120968,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": false,
+      "outcome": {
+        "initial_hp": 50,
+        "final_hp": 0,
+        "hp_lost": 50,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": false,
+        "survived": false,
+        "final_enemy_hp": 41,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 9,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "death",
+    "peak_working_set_bytes": 120967168,
+    "elapsed_ms": 3035.712100099772,
+    "action_requests": 35,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": 1.2237,
+      "observation": 22.7884,
+      "action_native": 185.3524,
+      "action_wall": 258.6448
+    },
+    "result_player_hp": 0,
+    "resource_changes": {},
+    "other_verified_wins": [
+      "A"
+    ],
+    "better_verified_routes": [
+      "A"
+    ]
+  },
+  {
+    "id": "defect-a10-run_1-f06",
+    "policy": "A",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2747.8674999438226,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": false,
+      "outcome": {
+        "initial_hp": 11,
+        "final_hp": 0,
+        "hp_lost": 11,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": false,
+        "survived": false,
+        "final_enemy_hp": 72,
+        "potions": [],
+        "unattributed_hp_loss": 6
+      },
+      "round": 3,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "death",
+    "peak_working_set_bytes": 114892800,
+    "elapsed_ms": 3104.0608999319375,
+    "action_requests": 12,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": 0.0879,
+      "observation": null,
+      "action_native": null,
+      "action_wall": 247.3877
+    },
+    "result_player_hp": 0,
+    "resource_changes": {},
+    "other_verified_wins": [],
+    "better_verified_routes": []
+  },
+  {
+    "id": "defect-a10-run_1-f06",
+    "policy": "B",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2784.3017000705004,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": false,
+      "outcome": {
+        "initial_hp": 11,
+        "final_hp": 0,
+        "hp_lost": 11,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": false,
+        "survived": false,
+        "final_enemy_hp": 72,
+        "potions": [],
+        "unattributed_hp_loss": 6
+      },
+      "round": 3,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "death",
+    "peak_working_set_bytes": 116740096,
+    "elapsed_ms": 3283.854100154713,
+    "action_requests": 10,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": 4.0072,
+      "observation": 65.5085,
+      "action_native": 308.2247,
+      "action_wall": 441.5349
+    },
+    "result_player_hp": 0,
+    "resource_changes": {},
+    "other_verified_wins": [],
+    "better_verified_routes": []
+  },
+  {
+    "id": "ironclad-a0-run_1-archive-f08",
+    "policy": "A",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2842.113899998367,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": false,
+      "outcome": {
+        "initial_hp": 44,
+        "final_hp": 0,
+        "hp_lost": 44,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": false,
+        "survived": false,
+        "final_enemy_hp": 2,
+        "potions": [],
+        "unattributed_hp_loss": 1
+      },
+      "round": 5,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "death",
+    "peak_working_set_bytes": 116551680,
+    "elapsed_ms": 3186.7640998680145,
+    "action_requests": 19,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": 0.1651,
+      "observation": null,
+      "action_native": null,
+      "action_wall": 279.2669
+    },
+    "result_player_hp": 0,
+    "resource_changes": {},
+    "other_verified_wins": [
+      "B"
+    ],
+    "better_verified_routes": [
+      "B"
+    ]
+  },
+  {
+    "id": "ironclad-a0-run_1-archive-f08",
+    "policy": "B",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2863.664299948141,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 44,
+        "final_hp": 8,
+        "hp_lost": 39,
+        "hp_healed": 3,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 5,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "win",
+    "peak_working_set_bytes": 117444608,
+    "elapsed_ms": 3488.5032000020146,
+    "action_requests": 17,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": 2.7925,
+      "observation": 26.2639,
+      "action_native": 459.8897,
+      "action_wall": 571.2721
+    },
+    "result_player_hp": 14,
+    "resource_changes": {
+      "max_hp": {
+        "before": 80,
+        "after": 83
+      },
+      "gold": {
+        "before": 116,
+        "after": 157
+      },
+      "relics": {
+        "before": [
+          "BURNING_BLOOD",
+          "LOST_COFFER",
+          "SWORD_OF_STONE"
+        ],
+        "after": [
+          "BURNING_BLOOD",
+          "LOST_COFFER",
+          "SWORD_OF_STONE",
+          "SHOVEL"
+        ]
+      }
+    },
+    "other_verified_wins": [],
+    "better_verified_routes": []
+  },
+  {
+    "id": "ironclad-a0-run_1-archive-f17",
+    "policy": "A",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2682.209499878809,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": false,
+      "outcome": {
+        "initial_hp": 73,
+        "final_hp": 0,
+        "hp_lost": 73,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": false,
+        "survived": false,
+        "final_enemy_hp": 168,
+        "potions": [],
+        "unattributed_hp_loss": 3
+      },
+      "round": 9,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "death",
+    "peak_working_set_bytes": 121819136,
+    "elapsed_ms": 3065.011200029403,
+    "action_requests": 36,
+    "choice_requests": 2,
+    "timing_ms": {
+      "policy": 0.2259,
+      "observation": null,
+      "action_native": null,
+      "action_wall": 339.0423
+    },
+    "result_player_hp": 0,
+    "resource_changes": {},
+    "other_verified_wins": [
+      "archive"
+    ],
+    "better_verified_routes": [
+      "archive"
+    ]
+  },
+  {
+    "id": "ironclad-a0-run_1-archive-f17",
+    "policy": "B",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2757.201600121334,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": false,
+      "outcome": {
+        "initial_hp": 73,
+        "final_hp": 0,
+        "hp_lost": 73,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": false,
+        "survived": false,
+        "final_enemy_hp": 118,
+        "potions": [],
+        "unattributed_hp_loss": 3
+      },
+      "round": 10,
+      "choice_requests": [
+        {
+          "step": 16,
+          "action": "HEADBUTT",
+          "source": "discard",
+          "effect": "topdeck",
+          "min_select": 1,
+          "max_select": 1,
+          "allow_empty": false,
+          "energy": 0,
+          "turn": 5,
+          "candidates": [
+            {
+              "index": 0,
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0,
+              "cost": 1,
+              "type": "Skill",
+              "damage": 0,
+              "block": 5,
+              "key": "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            },
+            {
+              "index": 1,
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0,
+              "cost": 1,
+              "type": "Attack",
+              "damage": 6,
+              "block": 0,
+              "key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            },
+            {
+              "index": 2,
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0,
+              "cost": 1,
+              "type": "Skill",
+              "damage": 0,
+              "block": 5,
+              "key": "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            },
+            {
+              "index": 3,
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0,
+              "cost": 1,
+              "type": "Attack",
+              "damage": 6,
+              "block": 0,
+              "key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            },
+            {
+              "index": 4,
+              "id": "UPPERCUT",
+              "upgrade": 0,
+              "cost": 2,
+              "type": "Attack",
+              "damage": 13,
+              "block": 0,
+              "key": "UPPERCUT+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=13;Power=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            }
+          ],
+          "indexes": [
+            4
+          ]
+        },
+        {
+          "step": 33,
+          "action": "HEADBUTT",
+          "source": "discard",
+          "effect": "topdeck",
+          "min_select": 1,
+          "max_select": 1,
+          "allow_empty": false,
+          "energy": 0,
+          "turn": 10,
+          "candidates": [
+            {
+              "index": 0,
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0,
+              "cost": 1,
+              "type": "Skill",
+              "damage": 0,
+              "block": 8,
+              "key": "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            },
+            {
+              "index": 1,
+              "id": "POMMEL_STRIKE",
+              "upgrade": 0,
+              "cost": 1,
+              "type": "Attack",
+              "damage": 9,
+              "block": 0,
+              "key": "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            }
+          ],
+          "indexes": [
+            0
+          ]
+        }
+      ],
+      "choice_checks": [
+        {
+          "step": 16,
+          "action": "HEADBUTT",
+          "effect": true
+        },
+        {
+          "step": 33,
+          "action": "HEADBUTT",
+          "effect": true
+        }
+      ],
+      "choice_observation_ms": 8.1958,
+      "choice_decision_ms": 5.7166
+    },
+    "status": "death",
+    "peak_working_set_bytes": 122093568,
+    "elapsed_ms": 3843.762499978766,
+    "action_requests": 34,
+    "choice_requests": 2,
+    "timing_ms": {
+      "policy": 8.2236,
+      "observation": 142.3592,
+      "action_native": 720.6704,
+      "action_wall": 1010.7671
+    },
+    "result_player_hp": 0,
+    "resource_changes": {},
+    "other_verified_wins": [
+      "archive"
+    ],
+    "better_verified_routes": [
+      "archive"
+    ]
+  },
+  {
+    "id": "ironclad-a0-run_1-archive-f17",
+    "policy": "archive",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2503.1427999492735,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 73,
+        "final_hp": 2,
+        "hp_lost": 71,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [
+          {
+            "potion_id": "STRENGTH_POTION",
+            "target_combat_id": 0,
+            "turn": 1,
+            "slot_index": 0,
+            "origin": "player"
+          }
+        ],
+        "unattributed_hp_loss": 0
+      },
+      "round": 14,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "win",
+    "peak_working_set_bytes": 123342848,
+    "elapsed_ms": 3340.5303000472486,
+    "action_requests": 51,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": null,
+      "observation": null,
+      "action_native": null,
+      "action_wall": 736.2406
+    },
+    "result_player_hp": 8,
+    "resource_changes": {
+      "gold": {
+        "before": 123,
+        "after": 223
+      },
+      "potions": {
+        "before": [
+          "STRENGTH_POTION",
+          "DEXTERITY_POTION",
+          "FLEX_POTION"
+        ],
+        "after": [
+          null,
+          "DEXTERITY_POTION",
+          "FLEX_POTION"
+        ]
+      }
+    },
+    "other_verified_wins": [],
+    "better_verified_routes": []
+  },
+  {
+    "id": "ironclad-a0-run_1-f05",
+    "policy": "C",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2429.212300106883,
+    "coreclr": "9.0.7",
+    "matched_actions": 17,
+    "differential": "pass",
+    "capture_native_wall_ms": 62.63540009967983,
+    "solve_wall_ms": 4661.395899951458,
+    "plan": {
+      "type": "i1_plan",
+      "status": "complete_win",
+      "solve_ms": 4554.8327,
+      "predicted_win": true,
+      "transitions": 4468,
+      "expanded_nodes": 1000,
+      "total_expanded_nodes": 1000,
+      "boundary": "NodeLimit",
+      "encounter": "NIBBITS_NORMAL",
+      "actions": [
+        {
+          "kind": "PlayCard",
+          "turn": 1,
+          "card_id": "IRON_WAVE",
+          "card_occurrence": 0,
+          "card_state_key": "IRON_WAVE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5;Damage=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 1,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 1,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "EndTurn",
+          "turn": 1,
+          "card_id": "",
+          "card_occurrence": 0,
+          "card_state_key": "",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 2,
+          "card_id": "BASH",
+          "card_occurrence": 0,
+          "card_state_key": "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 2,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "EndTurn",
+          "turn": 2,
+          "card_id": "",
+          "card_occurrence": 0,
+          "card_state_key": "",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 3,
+          "card_id": "FEED",
+          "card_occurrence": 0,
+          "card_state_key": "FEED+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=Exhaust|vars=Damage=10;MaxHp=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 3,
+          "card_id": "IRON_WAVE",
+          "card_occurrence": 0,
+          "card_state_key": "IRON_WAVE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5;Damage=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 2,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 3,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 2,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "EndTurn",
+          "turn": 3,
+          "card_id": "",
+          "card_occurrence": 0,
+          "card_state_key": "",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 4,
+          "card_id": "BASH",
+          "card_occurrence": 0,
+          "card_state_key": "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 2,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 4,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 2,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "EndTurn",
+          "turn": 4,
+          "card_id": "",
+          "card_occurrence": 0,
+          "card_state_key": "",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 5,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 2,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 5,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 2,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 5,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 2,
+          "potion_id": "",
+          "potion_slot": -1
+        }
+      ],
+      "ms": 4634.1087,
+      "mode": "offline-teacher",
+      "schema_version": 1,
+      "peak_working_set_bytes": 155467776
+    },
+    "lock_hp": 21,
+    "teacher_total_ms": 5170.050000073388,
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 36,
+        "final_hp": 21,
+        "hp_lost": 18,
+        "hp_healed": 3,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 5,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "win",
+    "peak_working_set_bytes": 158162944,
+    "elapsed_ms": 7654.162100050598,
+    "action_requests": 17,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": null,
+      "observation": null,
+      "action_native": 370.8577,
+      "action_wall": 434.0698
+    },
+    "result_player_hp": 27,
+    "resource_changes": {
+      "max_hp": {
+        "before": 80,
+        "after": 83
+      },
+      "gold": {
+        "before": 146,
+        "after": 164
+      },
+      "potions": {
+        "before": [
+          "BEETLE_JUICE",
+          null,
+          null
+        ],
+        "after": [
+          "BEETLE_JUICE",
+          "DEXTERITY_POTION",
+          null
+        ]
+      }
+    },
+    "other_verified_wins": [
+      "B_cf"
+    ],
+    "better_verified_routes": []
+  },
+  {
+    "id": "silent-a0-run_2-f02",
+    "policy": "C",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2871.4715999085456,
+    "coreclr": "9.0.7",
+    "matched_actions": 0,
+    "differential": "not_run",
+    "capture_native_wall_ms": 95.88060015812516,
+    "teacher_total_ms": 246.58269993960857,
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": false,
+      "outcome": {
+        "initial_hp": 70,
+        "final_hp": 70,
+        "hp_lost": 0,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": false,
+        "survived": true,
+        "final_enemy_hp": 44,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 1,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "unsupported",
+    "detail": "PredictionUnsupportedException: Unknown Harmony patch Sts2Headless.RunSimulator+LocPatches.NeutralizePrefix (owner=sts2headless.locpatch) on mirrored MegaCrit.Sts2.Core.Models.Cards.Neutralize.OnPlay.",
+    "elapsed_ms": 3201.637400081381,
+    "action_requests": 0,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": null,
+      "observation": null,
+      "action_native": null,
+      "action_wall": null
+    },
+    "result_player_hp": 70,
+    "resource_changes": {},
+    "other_verified_wins": [
+      "A"
+    ],
+    "better_verified_routes": []
+  },
+  {
+    "id": "ironclad-a10-run_2-f06",
+    "policy": "C",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 3146.574500016868,
+    "coreclr": "9.0.7",
+    "matched_actions": 0,
+    "differential": "not_run",
+    "capture_native_wall_ms": 80.05180000327528,
+    "solve_wall_ms": 6047.355700051412,
+    "plan": {
+      "type": "i1_plan",
+      "status": "unsupported",
+      "solve_ms": 6034.5303,
+      "predicted_win": true,
+      "transitions": 7817,
+      "expanded_nodes": 1000,
+      "total_expanded_nodes": 1000,
+      "boundary": "NodeLimit",
+      "encounter": "CUBEX_CONSTRUCT_NORMAL",
+      "actions": [
+        {
+          "kind": "PlayCard",
+          "turn": 1,
+          "card_id": "POMMEL_STRIKE",
+          "card_occurrence": 0,
+          "card_state_key": "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 1,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 1,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "EndTurn",
+          "turn": 1,
+          "card_id": "",
+          "card_occurrence": 0,
+          "card_state_key": "",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 2,
+          "card_id": "BASH",
+          "card_occurrence": 0,
+          "card_state_key": "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 2,
+          "card_id": "HEADBUTT",
+          "card_occurrence": 0,
+          "card_state_key": "HEADBUTT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1,
+          "choice": {
+            "effect": 1,
+            "source_pile": 3,
+            "cards": [
+              {
+                "card_id": "BASH",
+                "upgrade_level": 0,
+                "state_key": "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "source_occurrence": 0,
+                "option_occurrence": 0,
+                "title": "BASH.title"
+              }
+            ],
+            "source_id": "",
+            "context_id": "",
+            "timing": 0
+          }
+        },
+        {
+          "kind": "EndTurn",
+          "turn": 2,
+          "card_id": "",
+          "card_occurrence": 0,
+          "card_state_key": "",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 3,
+          "card_id": "BASH",
+          "card_occurrence": 0,
+          "card_state_key": "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "UsePotion",
+          "turn": 3,
+          "card_id": "",
+          "card_occurrence": 0,
+          "card_state_key": "",
+          "card_state_occurrence": 0,
+          "potion_id": "COLORLESS_POTION",
+          "potion_slot": 1,
+          "choice": {
+            "effect": 16,
+            "source_pile": 0,
+            "cards": [
+              {
+                "card_id": "REND",
+                "upgrade_level": 0,
+                "state_key": "REND+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=CalculationBase=10;ExtraDamage=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "source_occurrence": 0,
+                "option_occurrence": 0,
+                "title": "REND.title"
+              }
+            ],
+            "source_id": "COLORLESS_POTION",
+            "context_id": "",
+            "timing": 0
+          }
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 3,
+          "card_id": "REND",
+          "card_occurrence": 0,
+          "card_state_key": "REND+0|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=CalculationBase=10;ExtraDamage=5|-|:0|baselib=-|cost-state=1:1[0:1:6:False,]/stars=-1:1[0:True:True,]|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 3,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1
+        }
+      ],
+      "reason": "plan_action_or_choice",
+      "mode": "offline-teacher",
+      "schema_version": 1,
+      "peak_working_set_bytes": 172609536
+    },
+    "fallback_reason": "unsupported",
+    "teacher_total_ms": 6134.547600056976,
+    "status": "unsupported",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": false,
+      "outcome": {
+        "initial_hp": 31,
+        "final_hp": 31,
+        "hp_lost": 0,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": false,
+        "survived": true,
+        "final_enemy_hp": 70,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 1,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "peak_working_set_bytes": 172818432,
+    "elapsed_ms": 9344.026900129393,
+    "action_requests": 0,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": null,
+      "observation": null,
+      "action_native": null,
+      "action_wall": null
+    },
+    "result_player_hp": 31,
+    "resource_changes": {},
+    "other_verified_wins": [],
+    "better_verified_routes": []
+  },
+  {
+    "id": "defect-a10-run_1-f05",
+    "policy": "C",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 3045.5650999210775,
+    "coreclr": "9.0.7",
+    "matched_actions": 0,
+    "differential": "not_run",
+    "capture_native_wall_ms": 69.85199986957014,
+    "solve_wall_ms": 5339.345500105992,
+    "plan": {
+      "type": "i1_plan",
+      "status": "budget_exhausted",
+      "solve_ms": 5320.3892,
+      "predicted_win": false,
+      "transitions": 4516,
+      "expanded_nodes": 1000,
+      "total_expanded_nodes": 1000,
+      "boundary": "NodeLimit",
+      "encounter": "NIBBITS_NORMAL",
+      "actions": [
+        {
+          "kind": "PlayCard",
+          "turn": 1,
+          "card_id": "BOOST_AWAY",
+          "card_occurrence": 0,
+          "card_state_key": "BOOST_AWAY+0|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 1,
+          "card_id": "DUALCAST",
+          "card_occurrence": 0,
+          "card_state_key": "DUALCAST+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 1,
+          "card_id": "STRIKE_DEFECT",
+          "card_occurrence": 0,
+          "card_state_key": "STRIKE_DEFECT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 1,
+          "card_id": "DEFEND_DEFECT",
+          "card_occurrence": 0,
+          "card_state_key": "DEFEND_DEFECT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "EndTurn",
+          "turn": 1,
+          "card_id": "",
+          "card_occurrence": 0,
+          "card_state_key": "",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 2,
+          "card_id": "GLACIER",
+          "card_occurrence": 0,
+          "card_state_key": "GLACIER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 2,
+          "card_id": "COOLHEADED",
+          "card_occurrence": 0,
+          "card_state_key": "COOLHEADED+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "EndTurn",
+          "turn": 2,
+          "card_id": "",
+          "card_occurrence": 0,
+          "card_state_key": "",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 3,
+          "card_id": "COOLHEADED",
+          "card_occurrence": 0,
+          "card_state_key": "COOLHEADED+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 3,
+          "card_id": "DEFEND_DEFECT",
+          "card_occurrence": 0,
+          "card_state_key": "DEFEND_DEFECT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 3,
+          "card_id": "ZAP",
+          "card_occurrence": 0,
+          "card_state_key": "ZAP+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "EndTurn",
+          "turn": 3,
+          "card_id": "",
+          "card_occurrence": 0,
+          "card_state_key": "",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 4,
+          "card_id": "BOOST_AWAY",
+          "card_occurrence": 0,
+          "card_state_key": "BOOST_AWAY+0|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 4,
+          "card_id": "DEFEND_DEFECT",
+          "card_occurrence": 0,
+          "card_state_key": "DEFEND_DEFECT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 4,
+          "card_id": "STRIKE_DEFECT",
+          "card_occurrence": 0,
+          "card_state_key": "STRIKE_DEFECT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 4,
+          "card_id": "STRIKE_DEFECT",
+          "card_occurrence": 0,
+          "card_state_key": "STRIKE_DEFECT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "EndTurn",
+          "turn": 4,
+          "card_id": "",
+          "card_occurrence": 0,
+          "card_state_key": "",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 5,
+          "card_id": "GLACIER",
+          "card_occurrence": 0,
+          "card_state_key": "GLACIER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 5,
+          "card_id": "DUALCAST",
+          "card_occurrence": 0,
+          "card_state_key": "DUALCAST+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "EndTurn",
+          "turn": 5,
+          "card_id": "",
+          "card_occurrence": 0,
+          "card_state_key": "",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 6,
+          "card_id": "BOOST_AWAY",
+          "card_occurrence": 0,
+          "card_state_key": "BOOST_AWAY+0|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 6,
+          "card_id": "DEFEND_DEFECT",
+          "card_occurrence": 0,
+          "card_state_key": "DEFEND_DEFECT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 6,
+          "card_id": "DEFEND_DEFECT",
+          "card_occurrence": 0,
+          "card_state_key": "DEFEND_DEFECT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 6,
+          "card_id": "DEFEND_DEFECT",
+          "card_occurrence": 0,
+          "card_state_key": "DEFEND_DEFECT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "EndTurn",
+          "turn": 6,
+          "card_id": "",
+          "card_occurrence": 0,
+          "card_state_key": "",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        }
+      ],
+      "reason": "NodeLimit",
+      "mode": "offline-teacher",
+      "schema_version": 1,
+      "peak_working_set_bytes": 154447872
+    },
+    "fallback_reason": "budget_exhausted",
+    "teacher_total_ms": 5422.862799838185,
+    "status": "budget_exhausted",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": false,
+      "outcome": {
+        "initial_hp": 50,
+        "final_hp": 50,
+        "hp_lost": 0,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": false,
+        "survived": true,
+        "final_enemy_hp": 94,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 1,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "peak_working_set_bytes": 154710016,
+    "elapsed_ms": 8559.233299922198,
+    "action_requests": 0,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": null,
+      "observation": null,
+      "action_native": null,
+      "action_wall": null
+    },
+    "result_player_hp": 50,
+    "resource_changes": {},
+    "other_verified_wins": [
+      "A"
+    ],
+    "better_verified_routes": []
+  },
+  {
+    "id": "ironclad-a0-run_1-f02",
+    "policy": "C",
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2838.1177000701427,
+    "coreclr": "9.0.7",
+    "matched_actions": 10,
+    "differential": "pass",
+    "capture_native_wall_ms": 83.95919995382428,
+    "solve_wall_ms": 2100.1104000024498,
+    "plan": {
+      "type": "i1_plan",
+      "status": "complete_win",
+      "solve_ms": 2064.9738,
+      "predicted_win": true,
+      "transitions": 802,
+      "expanded_nodes": 214,
+      "total_expanded_nodes": 214,
+      "boundary": "None",
+      "encounter": "FUZZY_WURM_CRAWLER_WEAK",
+      "actions": [
+        {
+          "kind": "PlayCard",
+          "turn": 1,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 1,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 1,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "EndTurn",
+          "turn": 1,
+          "card_id": "",
+          "card_occurrence": 0,
+          "card_state_key": "",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 2,
+          "card_id": "BASH",
+          "card_occurrence": 0,
+          "card_state_key": "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 2,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "EndTurn",
+          "turn": 2,
+          "card_id": "",
+          "card_occurrence": 0,
+          "card_state_key": "",
+          "card_state_occurrence": 0,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 3,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 3,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1
+        },
+        {
+          "kind": "PlayCard",
+          "turn": 3,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "target_combat_id": 1,
+          "potion_id": "",
+          "potion_slot": -1
+        }
+      ],
+      "ms": 2089.8437,
+      "mode": "offline-teacher",
+      "schema_version": 1,
+      "peak_working_set_bytes": 142315520
+    },
+    "lock_hp": 76,
+    "teacher_total_ms": 2405.0867999903858,
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 80,
+        "final_hp": 76,
+        "hp_lost": 4,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 3,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "win",
+    "peak_working_set_bytes": 144486400,
+    "elapsed_ms": 5313.90990014188,
+    "action_requests": 10,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": null,
+      "observation": null,
+      "action_native": 188.6708,
+      "action_wall": 215.9407
+    },
+    "result_player_hp": 80,
+    "resource_changes": {
+      "gold": {
+        "before": 99,
+        "after": 118
+      }
+    },
+    "other_verified_wins": [
+      "A",
+      "B"
+    ],
+    "better_verified_routes": [
+      "B"
+    ]
+  },
+  {
+    "id": "ironclad-a0-run_1-f05",
+    "policy": "B_cf",
+    "intervention": {
+      "step": 5,
+      "action": {
+        "action": "play_card",
+        "args": {
+          "card_index": 3,
+          "target_index": 0
+        }
+      },
+      "reference": "C"
+    },
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2766.4238999132067,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": true,
+      "outcome": {
+        "initial_hp": 36,
+        "final_hp": 21,
+        "hp_lost": 18,
+        "hp_healed": 3,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 5,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "win",
+    "peak_working_set_bytes": 118046720,
+    "elapsed_ms": 3366.97159986943,
+    "action_requests": 17,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": 3.0081,
+      "observation": 47.9482,
+      "action_native": 408.9417,
+      "action_wall": 529.0176
+    },
+    "result_player_hp": 27,
+    "resource_changes": {
+      "max_hp": {
+        "before": 80,
+        "after": 83
+      },
+      "gold": {
+        "before": 146,
+        "after": 164
+      },
+      "potions": {
+        "before": [
+          "BEETLE_JUICE",
+          null,
+          null
+        ],
+        "after": [
+          "BEETLE_JUICE",
+          "DEXTERITY_POTION",
+          null
+        ]
+      }
+    },
+    "other_verified_wins": [
+      "C"
+    ],
+    "better_verified_routes": []
+  },
+  {
+    "id": "defect-a10-run_1-f05",
+    "policy": "B_cf",
+    "intervention": {
+      "step": 1,
+      "action": {
+        "action": "play_card",
+        "args": {
+          "card_index": 0,
+          "target_index": 0
+        }
+      },
+      "reference": "A"
+    },
+    "checkpoint_match": true,
+    "root_verified": true,
+    "cold_root_ms": 2523.583399830386,
+    "coreclr": "9.0.7",
+    "native_final": {
+      "type": "f1_final",
+      "terminal_callback": false,
+      "outcome": {
+        "initial_hp": 50,
+        "final_hp": 0,
+        "hp_lost": 50,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": false,
+        "survived": false,
+        "final_enemy_hp": 41,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "round": 9,
+      "choice_requests": [],
+      "choice_checks": [],
+      "choice_observation_ms": 0,
+      "choice_decision_ms": 0
+    },
+    "status": "death",
+    "peak_working_set_bytes": 121008128,
+    "elapsed_ms": 2941.753199789673,
+    "action_requests": 35,
+    "choice_requests": 0,
+    "timing_ms": {
+      "policy": 1.7703,
+      "observation": 30.5782,
+      "action_native": 250.0179,
+      "action_wall": 383.5263
+    },
+    "result_player_hp": 0,
+    "resource_changes": {},
+    "other_verified_wins": [
+      "A"
+    ],
+    "better_verified_routes": [
+      "A"
+    ]
+  }
+]

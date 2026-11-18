@@ -9,17 +9,17 @@ ROOT = HERE.parents[1]
 BUILD = ROOT / "logs/m1-i1-build"
 SOLVER = ROOT.parent / "CombatSolver-m1-cs1/baseline.dll"
 
-def build():
+def build(output=BUILD, stage=None):
     if hashlib.sha256(SOLVER.read_bytes()).hexdigest() != "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13":
         raise ValueError("Unexpected CombatSolver DLL")
-    src = BUILD / "Headless"
+    src = output / "Headless"
     src.mkdir(parents=True, exist_ok=True)
-    for name, dest in [("Sts2Headless", src), ("GodotStubs", BUILD / "GodotStubs")]:
+    for name, dest in [("Sts2Headless", src), ("GodotStubs", output / "GodotStubs")]:
         dest.mkdir(exist_ok=True)
         for file in (ROOT / "src" / name).iterdir():
             if file.suffix in {".cs", ".csproj"}:
                 shutil.copyfile(file, dest / file.name)
-    core = BUILD / "GodotStubs/Core.cs"
+    core = output / "GodotStubs/Core.cs"
     code = core.read_text(encoding="utf-8")
     anchor = "public class Node : GodotObject\n{"
     assert code.count(anchor) == 1
@@ -45,6 +45,8 @@ def build():
     assert code.count(anchor) == 1
     simulator.write_text(code.replace(anchor, "public partial class RunSimulator"), encoding="utf-8")
     shutil.copyfile(HERE / "IntegrationProbe.cs", src / "IntegrationProbe.cs")
+    if stage is not None:
+        stage(src)
     env = {**os.environ, "DOTNET_CLI_HOME": str(ROOT / "logs/dotnet-home"),
            "NUGET_PACKAGES": str(ROOT / "logs/nuget-packages")}
     subprocess.run(["dotnet", "build", str(project), "-p:NuGetAudit=false"], check=True, env=env, timeout=60)
