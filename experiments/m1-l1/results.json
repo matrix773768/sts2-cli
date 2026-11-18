@@ -1,0 +1,1042 @@
+[
+  {
+    "root": "small",
+    "rngGroup": "M1CS1",
+    "scope": "offline-teacher",
+    "profile": {
+      "beamWidth": 24,
+      "maxExpandedNodes": 1000,
+      "maxCardBranchesPerNode": 32,
+      "maxPileChoiceBranchesPerAction": 18,
+      "maxHandChoiceBranchesPerAction": 24,
+      "softTimeBudgetMilliseconds": 30000,
+      "secondRankBand": false,
+      "contextualRanking": null,
+      "continuousThreatRanking": false,
+      "baseScoreTacticalTies": false,
+      "adaptiveNoveltyRefinement": false,
+      "beamWeightPerturbation": null,
+      "offensiveRefinementPortfolio": false,
+      "boundedOffensiveRefinementPortfolio": false,
+      "reallocatedRefinementPortfolio": true,
+      "stopPortfolioAtHpTarget": true,
+      "baseScoreOnly": false,
+      "aggressivePowerCommitment": false
+    },
+    "discoveryNodes": 24,
+    "generatedEvents": 3,
+    "counts": {
+      "win": 3
+    },
+    "eligibleWins": 3,
+    "tiedPairs": 1,
+    "strictPairs": [
+      {
+        "better": 0,
+        "worse": 2,
+        "generatedScore": "correct",
+        "manualScore": "correct",
+        "sharedBeamRank": {}
+      },
+      {
+        "better": 1,
+        "worse": 2,
+        "generatedScore": "correct",
+        "manualScore": "correct",
+        "sharedBeamRank": {}
+      }
+    ],
+    "solveMillisecondsMedian": 515.8,
+    "peakWorkingSetMiB": 169.4,
+    "rows": [
+      {
+        "action": {
+          "kind": "PlayCard",
+          "cardId": "STRIKE_IRONCLAD",
+          "cardOccurrence": 0,
+          "potionId": "",
+          "targetCombatId": 1,
+          "choice": null
+        },
+        "outcome": "win",
+        "boundaryReason": "None",
+        "matched": true,
+        "replayMatched": true,
+        "risk": false,
+        "hasPredictionRisk": false,
+        "failure": null,
+        "score": 1779999,
+        "playerHp": 80,
+        "enemyHp": 50,
+        "energy": 2,
+        "block": 0,
+        "traits": "None",
+        "shufflesCrossed": 0,
+        "endShuffles": 1,
+        "expandedNodes": 136,
+        "transitionCount": 355,
+        "quality": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0
+        ],
+        "retention": [
+          {
+            "rawRank": 1,
+            "requiredIndex": null,
+            "routingIndex": null,
+            "selectedIndex": 1,
+            "boundary": 1,
+            "reason": "outer_rank_best"
+          }
+        ],
+        "milliseconds": 479.9
+      },
+      {
+        "action": {
+          "kind": "PlayCard",
+          "cardId": "DEFEND_IRONCLAD",
+          "cardOccurrence": 0,
+          "potionId": "",
+          "targetCombatId": null,
+          "choice": null
+        },
+        "outcome": "win",
+        "boundaryReason": "None",
+        "matched": true,
+        "replayMatched": true,
+        "risk": false,
+        "hasPredictionRisk": false,
+        "failure": null,
+        "score": 1839999,
+        "playerHp": 80,
+        "enemyHp": 56,
+        "energy": 2,
+        "block": 5,
+        "traits": "None",
+        "shufflesCrossed": 0,
+        "endShuffles": 1,
+        "expandedNodes": 123,
+        "transitionCount": 329,
+        "quality": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0
+        ],
+        "retention": [
+          {
+            "rawRank": 0,
+            "requiredIndex": null,
+            "routingIndex": null,
+            "selectedIndex": 0,
+            "boundary": 1,
+            "reason": "outer_rank_best"
+          }
+        ],
+        "milliseconds": 515.8
+      },
+      {
+        "action": {
+          "kind": "EndTurn",
+          "cardId": "",
+          "cardOccurrence": 0,
+          "potionId": "",
+          "targetCombatId": null,
+          "choice": null
+        },
+        "outcome": "win",
+        "boundaryReason": "None",
+        "matched": true,
+        "replayMatched": true,
+        "risk": false,
+        "hasPredictionRisk": false,
+        "failure": null,
+        "score": 1599999,
+        "playerHp": 76,
+        "enemyHp": 56,
+        "energy": 3,
+        "block": 0,
+        "traits": "None",
+        "shufflesCrossed": 0,
+        "endShuffles": 2,
+        "expandedNodes": 245,
+        "transitionCount": 691,
+        "quality": [
+          0,
+          0,
+          4,
+          0,
+          0,
+          10,
+          6,
+          0
+        ],
+        "retention": [
+          {
+            "rawRank": 11,
+            "requiredIndex": null,
+            "routingIndex": null,
+            "selectedIndex": 11,
+            "boundary": 6,
+            "reason": "outer_rank_best"
+          }
+        ],
+        "milliseconds": 851.3
+      }
+    ]
+  },
+  {
+    "root": "seapunk",
+    "rngGroup": "M1CS1",
+    "scope": "offline-teacher",
+    "profile": {
+      "beamWidth": 24,
+      "maxExpandedNodes": 1000,
+      "maxCardBranchesPerNode": 32,
+      "maxPileChoiceBranchesPerAction": 18,
+      "maxHandChoiceBranchesPerAction": 24,
+      "softTimeBudgetMilliseconds": 30000,
+      "secondRankBand": false,
+      "contextualRanking": null,
+      "continuousThreatRanking": false,
+      "baseScoreTacticalTies": false,
+      "adaptiveNoveltyRefinement": false,
+      "beamWeightPerturbation": null,
+      "offensiveRefinementPortfolio": false,
+      "boundedOffensiveRefinementPortfolio": false,
+      "reallocatedRefinementPortfolio": true,
+      "stopPortfolioAtHpTarget": true,
+      "baseScoreOnly": false,
+      "aggressivePowerCommitment": false
+    },
+    "discoveryNodes": 24,
+    "generatedEvents": 3,
+    "counts": {
+      "win": 3
+    },
+    "eligibleWins": 3,
+    "tiedPairs": 0,
+    "strictPairs": [
+      {
+        "better": 1,
+        "worse": 0,
+        "generatedScore": "correct",
+        "manualScore": "inverted",
+        "sharedBeamRank": {
+          "1": "correct"
+        }
+      },
+      {
+        "better": 0,
+        "worse": 2,
+        "generatedScore": "correct",
+        "manualScore": "correct",
+        "sharedBeamRank": {}
+      },
+      {
+        "better": 1,
+        "worse": 2,
+        "generatedScore": "correct",
+        "manualScore": "correct",
+        "sharedBeamRank": {}
+      }
+    ],
+    "solveMillisecondsMedian": 428.7,
+    "peakWorkingSetMiB": 170.1,
+    "rows": [
+      {
+        "action": {
+          "kind": "PlayCard",
+          "cardId": "STRIKE_IRONCLAD",
+          "cardOccurrence": 0,
+          "potionId": "",
+          "targetCombatId": 1,
+          "choice": null
+        },
+        "outcome": "win",
+        "boundaryReason": "None",
+        "matched": true,
+        "replayMatched": true,
+        "risk": false,
+        "hasPredictionRisk": false,
+        "failure": null,
+        "score": 1679999,
+        "playerHp": 80,
+        "enemyHp": 39,
+        "energy": 2,
+        "block": 0,
+        "traits": "None",
+        "shufflesCrossed": 0,
+        "endShuffles": 1,
+        "expandedNodes": 206,
+        "transitionCount": 612,
+        "quality": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4,
+          0
+        ],
+        "retention": [
+          {
+            "rawRank": 1,
+            "requiredIndex": null,
+            "routingIndex": null,
+            "selectedIndex": 1,
+            "boundary": 1,
+            "reason": "outer_rank_best"
+          }
+        ],
+        "milliseconds": 560.1
+      },
+      {
+        "action": {
+          "kind": "PlayCard",
+          "cardId": "DEFEND_IRONCLAD",
+          "cardOccurrence": 0,
+          "potionId": "",
+          "targetCombatId": null,
+          "choice": null
+        },
+        "outcome": "win",
+        "boundaryReason": "None",
+        "matched": true,
+        "replayMatched": true,
+        "risk": false,
+        "hasPredictionRisk": false,
+        "failure": null,
+        "score": 1769999,
+        "playerHp": 80,
+        "enemyHp": 45,
+        "energy": 2,
+        "block": 5,
+        "traits": "None",
+        "shufflesCrossed": 0,
+        "endShuffles": 1,
+        "expandedNodes": 225,
+        "transitionCount": 661,
+        "quality": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          4,
+          0
+        ],
+        "retention": [
+          {
+            "rawRank": 0,
+            "requiredIndex": null,
+            "routingIndex": null,
+            "selectedIndex": 0,
+            "boundary": 1,
+            "reason": "outer_rank_best"
+          }
+        ],
+        "milliseconds": 428.7
+      },
+      {
+        "action": {
+          "kind": "EndTurn",
+          "cardId": "",
+          "cardOccurrence": 0,
+          "potionId": "",
+          "targetCombatId": null,
+          "choice": null
+        },
+        "outcome": "win",
+        "boundaryReason": "None",
+        "matched": true,
+        "replayMatched": true,
+        "risk": false,
+        "hasPredictionRisk": false,
+        "failure": null,
+        "score": 1049999,
+        "playerHp": 69,
+        "enemyHp": 45,
+        "energy": 3,
+        "block": 0,
+        "traits": "None",
+        "shufflesCrossed": 0,
+        "endShuffles": 1,
+        "expandedNodes": 150,
+        "transitionCount": 439,
+        "quality": [
+          0,
+          0,
+          8,
+          0,
+          0,
+          14,
+          4,
+          0
+        ],
+        "retention": [
+          {
+            "rawRank": 13,
+            "requiredIndex": null,
+            "routingIndex": null,
+            "selectedIndex": 13,
+            "boundary": 6,
+            "reason": "outer_rank_best"
+          }
+        ],
+        "milliseconds": 416.4
+      }
+    ]
+  },
+  {
+    "root": "pressure-queen",
+    "rngGroup": "HIGH-PRESSURE-20260923-QUEEN-IRONCLAD",
+    "scope": "offline-teacher",
+    "profile": {
+      "beamWidth": 24,
+      "maxExpandedNodes": 1000,
+      "maxCardBranchesPerNode": 32,
+      "maxPileChoiceBranchesPerAction": 18,
+      "maxHandChoiceBranchesPerAction": 24,
+      "softTimeBudgetMilliseconds": 30000,
+      "secondRankBand": false,
+      "contextualRanking": null,
+      "continuousThreatRanking": false,
+      "baseScoreTacticalTies": false,
+      "adaptiveNoveltyRefinement": false,
+      "beamWeightPerturbation": null,
+      "offensiveRefinementPortfolio": false,
+      "boundedOffensiveRefinementPortfolio": false,
+      "reallocatedRefinementPortfolio": true,
+      "stopPortfolioAtHpTarget": true,
+      "baseScoreOnly": false,
+      "aggressivePowerCommitment": false
+    },
+    "discoveryNodes": 24,
+    "generatedEvents": 14,
+    "counts": {
+      "truncated": 13,
+      "unknown": 1
+    },
+    "eligibleWins": 0,
+    "tiedPairs": 0,
+    "strictPairs": [],
+    "solveMillisecondsMedian": 3297.8,
+    "peakWorkingSetMiB": 257.2,
+    "rows": [
+      {
+        "action": {
+          "kind": "PlayCard",
+          "cardId": "STRIKE_IRONCLAD",
+          "cardOccurrence": 0,
+          "potionId": "",
+          "targetCombatId": 1,
+          "choice": null
+        },
+        "outcome": "truncated",
+        "boundaryReason": "NodeLimit",
+        "matched": true,
+        "replayMatched": true,
+        "risk": false,
+        "hasPredictionRisk": false,
+        "failure": null,
+        "score": -4668001,
+        "playerHp": 80,
+        "enemyHp": 610,
+        "energy": 2,
+        "block": 0,
+        "traits": "None",
+        "shufflesCrossed": 0,
+        "endShuffles": 0,
+        "expandedNodes": 1000,
+        "transitionCount": 8132,
+        "quality": null,
+        "retention": [
+          {
+            "rawRank": 8,
+            "requiredIndex": null,
+            "routingIndex": null,
+            "selectedIndex": 8,
+            "boundary": 1,
+            "reason": "outer_rank_best"
+          }
+        ],
+        "milliseconds": 10475.6
+      },
+      {
+        "action": {
+          "kind": "PlayCard",
+          "cardId": "STRIKE_IRONCLAD",
+          "cardOccurrence": 0,
+          "potionId": "",
+          "targetCombatId": 2,
+          "choice": null
+        },
+        "outcome": "truncated",
+        "boundaryReason": "NodeLimit",
+        "matched": true,
+        "replayMatched": true,
+        "risk": false,
+        "hasPredictionRisk": false,
+        "failure": null,
+        "score": -4668001,
+        "playerHp": 80,
+        "enemyHp": 610,
+        "energy": 2,
+        "block": 0,
+        "traits": "None",
+        "shufflesCrossed": 0,
+        "endShuffles": 0,
+        "expandedNodes": 1000,
+        "transitionCount": 8270,
+        "quality": null,
+        "retention": [
+          {
+            "rawRank": 9,
+            "requiredIndex": null,
+            "routingIndex": null,
+            "selectedIndex": 9,
+            "boundary": 1,
+            "reason": "outer_rank_best"
+          }
+        ],
+        "milliseconds": 3764.8
+      },
+      {
+        "action": {
+          "kind": "PlayCard",
+          "cardId": "BEAT_DOWN",
+          "cardOccurrence": 0,
+          "potionId": "",
+          "targetCombatId": null,
+          "choice": null
+        },
+        "outcome": "truncated",
+        "boundaryReason": "NodeLimit",
+        "matched": true,
+        "replayMatched": true,
+        "risk": false,
+        "hasPredictionRisk": false,
+        "failure": null,
+        "score": -4808001,
+        "playerHp": 80,
+        "enemyHp": 624,
+        "energy": 0,
+        "block": 0,
+        "traits": "None",
+        "shufflesCrossed": 0,
+        "endShuffles": 0,
+        "expandedNodes": 1000,
+        "transitionCount": 7778,
+        "quality": null,
+        "retention": [
+          {
+            "rawRank": 12,
+            "requiredIndex": null,
+            "routingIndex": null,
+            "selectedIndex": 12,
+            "boundary": 1,
+            "reason": "outer_rank_best"
+          }
+        ],
+        "milliseconds": 3309.0
+      },
+      {
+        "action": {
+          "kind": "PlayCard",
+          "cardId": "FIGHT_ME",
+          "cardOccurrence": 0,
+          "potionId": "",
+          "targetCombatId": 1,
+          "choice": null
+        },
+        "outcome": "truncated",
+        "boundaryReason": "NodeLimit",
+        "matched": true,
+        "replayMatched": true,
+        "risk": false,
+        "hasPredictionRisk": false,
+        "failure": null,
+        "score": -4558001,
+        "playerHp": 80,
+        "enemyHp": 596,
+        "energy": 1,
+        "block": 0,
+        "traits": "None",
+        "shufflesCrossed": 0,
+        "endShuffles": 0,
+        "expandedNodes": 1000,
+        "transitionCount": 7965,
+        "quality": null,
+        "retention": [
+          {
+            "rawRank": 2,
+            "requiredIndex": null,
+            "routingIndex": null,
+            "selectedIndex": 2,
+            "boundary": 1,
+            "reason": "outer_rank_best"
+          }
+        ],
+        "milliseconds": 3190.6
+      },
+      {
+        "action": {
+          "kind": "PlayCard",
+          "cardId": "FIGHT_ME",
+          "cardOccurrence": 0,
+          "potionId": "",
+          "targetCombatId": 2,
+          "choice": null
+        },
+        "outcome": "truncated",
+        "boundaryReason": "NodeLimit",
+        "matched": true,
+        "replayMatched": true,
+        "risk": false,
+        "hasPredictionRisk": false,
+        "failure": null,
+        "score": -4528001,
+        "playerHp": 80,
+        "enemyHp": 596,
+        "energy": 1,
+        "block": 0,
+        "traits": "None",
+        "shufflesCrossed": 0,
+        "endShuffles": 0,
+        "expandedNodes": 1000,
+        "transitionCount": 8230,
+        "quality": null,
+        "retention": [
+          {
+            "rawRank": 1,
+            "requiredIndex": null,
+            "routingIndex": null,
+            "selectedIndex": 1,
+            "boundary": 1,
+            "reason": "outer_rank_best"
+          }
+        ],
+        "milliseconds": 3326.6
+      },
+      {
+        "action": {
+          "kind": "PlayCard",
+          "cardId": "THUNDERCLAP",
+          "cardOccurrence": 0,
+          "potionId": "",
+          "targetCombatId": null,
+          "choice": null
+        },
+        "outcome": "truncated",
+        "boundaryReason": "NodeLimit",
+        "matched": true,
+        "replayMatched": true,
+        "risk": false,
+        "hasPredictionRisk": false,
+        "failure": null,
+        "score": -4364001,
+        "playerHp": 80,
+        "enemyHp": 594,
+        "energy": 2,
+        "block": 0,
+        "traits": "None",
+        "shufflesCrossed": 0,
+        "endShuffles": 0,
+        "expandedNodes": 1000,
+        "transitionCount": 8310,
+        "quality": null,
+        "retention": [
+          {
+            "rawRank": 4,
+            "requiredIndex": null,
+            "routingIndex": null,
+            "selectedIndex": 4,
+            "boundary": 1,
+            "reason": "outer_rank_best"
+          }
+        ],
+        "milliseconds": 3286.7
+      },
+      {
+        "action": {
+          "kind": "PlayCard",
+          "cardId": "CATASTROPHE",
+          "cardOccurrence": 0,
+          "potionId": "",
+          "targetCombatId": null,
+          "choice": null
+        },
+        "outcome": "truncated",
+        "boundaryReason": "NodeLimit",
+        "matched": true,
+        "replayMatched": true,
+        "risk": false,
+        "hasPredictionRisk": false,
+        "failure": null,
+        "score": -4588001,
+        "playerHp": 80,
+        "enemyHp": 602,
+        "energy": 1,
+        "block": 0,
+        "traits": "None",
+        "shufflesCrossed": 0,
+        "endShuffles": 0,
+        "expandedNodes": 1000,
+        "transitionCount": 7868,
+        "quality": null,
+        "retention": [
+          {
+            "rawRank": 6,
+            "requiredIndex": null,
+            "routingIndex": null,
+            "selectedIndex": 6,
+            "boundary": 1,
+            "reason": "outer_rank_best"
+          }
+        ],
+        "milliseconds": 3104.8
+      },
+      {
+        "action": {
+          "kind": "UsePotion",
+          "cardId": "",
+          "cardOccurrence": 0,
+          "potionId": "ATTACK_POTION",
+          "targetCombatId": null,
+          "choice": {
+            "effect": "GenerateToHand",
+            "sourcePile": "None",
+            "cards": [
+              {
+                "cardId": "PILLAGE",
+                "upgradeLevel": 0,
+                "stateKey": "PILLAGE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "sourceOccurrence": 0,
+                "optionOccurrence": 0,
+                "title": "PILLAGE.title"
+              }
+            ],
+            "sourceId": "ATTACK_POTION",
+            "contextId": "",
+            "timing": "Action"
+          }
+        },
+        "outcome": "truncated",
+        "boundaryReason": "NodeLimit",
+        "matched": true,
+        "replayMatched": true,
+        "risk": false,
+        "hasPredictionRisk": false,
+        "failure": null,
+        "score": -4808001,
+        "playerHp": 80,
+        "enemyHp": 624,
+        "energy": 3,
+        "block": 0,
+        "traits": "Resource, Control",
+        "shufflesCrossed": 0,
+        "endShuffles": 0,
+        "expandedNodes": 1000,
+        "transitionCount": 6099,
+        "quality": null,
+        "retention": [
+          {
+            "rawRank": 5,
+            "requiredIndex": null,
+            "routingIndex": 0,
+            "selectedIndex": 5,
+            "boundary": 1,
+            "reason": "outer_rank_best"
+          }
+        ],
+        "milliseconds": 2459.1
+      },
+      {
+        "action": {
+          "kind": "UsePotion",
+          "cardId": "",
+          "cardOccurrence": 0,
+          "potionId": "ATTACK_POTION",
+          "targetCombatId": null,
+          "choice": {
+            "effect": "GenerateToHand",
+            "sourcePile": "None",
+            "cards": [
+              {
+                "cardId": "CONFLAGRATION",
+                "upgradeLevel": 0,
+                "stateKey": "CONFLAGRATION+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=2;HitCount=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "sourceOccurrence": 0,
+                "optionOccurrence": 0,
+                "title": "CONFLAGRATION.title"
+              }
+            ],
+            "sourceId": "ATTACK_POTION",
+            "contextId": "",
+            "timing": "Action"
+          }
+        },
+        "outcome": "truncated",
+        "boundaryReason": "NodeLimit",
+        "matched": true,
+        "replayMatched": true,
+        "risk": false,
+        "hasPredictionRisk": false,
+        "failure": null,
+        "score": -4808001,
+        "playerHp": 80,
+        "enemyHp": 624,
+        "energy": 3,
+        "block": 0,
+        "traits": "Resource, Control",
+        "shufflesCrossed": 0,
+        "endShuffles": 0,
+        "expandedNodes": 1000,
+        "transitionCount": 6291,
+        "quality": null,
+        "retention": [
+          {
+            "rawRank": 10,
+            "requiredIndex": null,
+            "routingIndex": 2,
+            "selectedIndex": 10,
+            "boundary": 1,
+            "reason": "outer_rank_best"
+          }
+        ],
+        "milliseconds": 2455.7
+      },
+      {
+        "action": {
+          "kind": "UsePotion",
+          "cardId": "",
+          "cardOccurrence": 0,
+          "potionId": "ATTACK_POTION",
+          "targetCombatId": null,
+          "choice": {
+            "effect": "GenerateToHand",
+            "sourcePile": "None",
+            "cards": [],
+            "sourceId": "ATTACK_POTION",
+            "contextId": "",
+            "timing": "Action"
+          }
+        },
+        "outcome": "unknown",
+        "boundaryReason": null,
+        "matched": false,
+        "replayMatched": true,
+        "risk": null,
+        "hasPredictionRisk": false,
+        "failure": "PotionPolicyUnsatisfied",
+        "score": -4808001,
+        "playerHp": 80,
+        "enemyHp": 624,
+        "energy": 3,
+        "block": 0,
+        "traits": "Control",
+        "shufflesCrossed": 0,
+        "endShuffles": null,
+        "expandedNodes": null,
+        "transitionCount": null,
+        "quality": null,
+        "retention": [
+          {
+            "rawRank": 11,
+            "requiredIndex": null,
+            "routingIndex": null,
+            "selectedIndex": 11,
+            "boundary": 1,
+            "reason": "outer_rank_best"
+          }
+        ],
+        "milliseconds": 2283.5
+      },
+      {
+        "action": {
+          "kind": "UsePotion",
+          "cardId": "",
+          "cardOccurrence": 0,
+          "potionId": "ATTACK_POTION",
+          "targetCombatId": null,
+          "choice": {
+            "effect": "GenerateToHand",
+            "sourcePile": "None",
+            "cards": [
+              {
+                "cardId": "BULLY",
+                "upgradeLevel": 0,
+                "stateKey": "BULLY+0|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=CalculationBase=4;ExtraDamage=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "sourceOccurrence": 0,
+                "optionOccurrence": 0,
+                "title": "BULLY.title"
+              }
+            ],
+            "sourceId": "ATTACK_POTION",
+            "contextId": "",
+            "timing": "Action"
+          }
+        },
+        "outcome": "truncated",
+        "boundaryReason": "NodeLimit",
+        "matched": true,
+        "replayMatched": true,
+        "risk": false,
+        "hasPredictionRisk": false,
+        "failure": null,
+        "score": -4808001,
+        "playerHp": 80,
+        "enemyHp": 624,
+        "energy": 3,
+        "block": 0,
+        "traits": "Resource, Control",
+        "shufflesCrossed": 0,
+        "endShuffles": 0,
+        "expandedNodes": 1000,
+        "transitionCount": 6151,
+        "quality": null,
+        "retention": [
+          {
+            "rawRank": 7,
+            "requiredIndex": null,
+            "routingIndex": 1,
+            "selectedIndex": 7,
+            "boundary": 1,
+            "reason": "outer_rank_best"
+          }
+        ],
+        "milliseconds": 2553.9
+      },
+      {
+        "action": {
+          "kind": "UsePotion",
+          "cardId": "",
+          "cardOccurrence": 0,
+          "potionId": "SHIP_IN_A_BOTTLE",
+          "targetCombatId": null,
+          "choice": null
+        },
+        "outcome": "truncated",
+        "boundaryReason": "NodeLimit",
+        "matched": true,
+        "replayMatched": true,
+        "risk": false,
+        "hasPredictionRisk": false,
+        "failure": null,
+        "score": -4508001,
+        "playerHp": 80,
+        "enemyHp": 624,
+        "energy": 3,
+        "block": 10,
+        "traits": "Scaling",
+        "shufflesCrossed": 0,
+        "endShuffles": 0,
+        "expandedNodes": 1000,
+        "transitionCount": 7775,
+        "quality": null,
+        "retention": [
+          {
+            "rawRank": 0,
+            "requiredIndex": null,
+            "routingIndex": null,
+            "selectedIndex": 0,
+            "boundary": 1,
+            "reason": "outer_rank_best"
+          }
+        ],
+        "milliseconds": 3781.9
+      },
+      {
+        "action": {
+          "kind": "UsePotion",
+          "cardId": "",
+          "cardOccurrence": 0,
+          "potionId": "POTION_OF_BINDING",
+          "targetCombatId": null,
+          "choice": null
+        },
+        "outcome": "truncated",
+        "boundaryReason": "NodeLimit",
+        "matched": true,
+        "replayMatched": true,
+        "risk": false,
+        "hasPredictionRisk": false,
+        "failure": null,
+        "score": -4424001,
+        "playerHp": 80,
+        "enemyHp": 624,
+        "energy": 3,
+        "block": 0,
+        "traits": "Control",
+        "shufflesCrossed": 0,
+        "endShuffles": 0,
+        "expandedNodes": 1000,
+        "transitionCount": 7360,
+        "quality": null,
+        "retention": [
+          {
+            "rawRank": 3,
+            "requiredIndex": null,
+            "routingIndex": null,
+            "selectedIndex": 3,
+            "boundary": 1,
+            "reason": "outer_rank_best"
+          }
+        ],
+        "milliseconds": 3454.5
+      },
+      {
+        "action": {
+          "kind": "EndTurn",
+          "cardId": "",
+          "cardOccurrence": 0,
+          "potionId": "",
+          "targetCombatId": null,
+          "choice": null
+        },
+        "outcome": "truncated",
+        "boundaryReason": "NodeLimit",
+        "matched": true,
+        "replayMatched": true,
+        "risk": false,
+        "hasPredictionRisk": false,
+        "failure": null,
+        "score": -6068001,
+        "playerHp": 53,
+        "enemyHp": 618,
+        "energy": 3,
+        "block": 0,
+        "traits": "None",
+        "shufflesCrossed": 0,
+        "endShuffles": 0,
+        "expandedNodes": 1000,
+        "transitionCount": 8316,
+        "quality": null,
+        "retention": [
+          {
+            "rawRank": 19,
+            "requiredIndex": null,
+            "routingIndex": null,
+            "selectedIndex": 19,
+            "boundary": 5,
+            "reason": "outer_rank_best"
+          }
+        ],
+        "milliseconds": 3470.5
+      }
+    ]
+  }
+]
