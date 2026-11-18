@@ -1,0 +1,4542 @@
+{
+  "q1_native": [
+    {
+      "id": "run1-offering-west-a2f02",
+      "candidate_steps": 37,
+      "native_steps": 37,
+      "action_parity": true,
+      "native_outcome": "win",
+      "candidate_outcome": "native_win",
+      "native_final": {
+        "type": "f1_final",
+        "terminal_callback": true,
+        "outcome": {
+          "initial_hp": 93,
+          "final_hp": 11,
+          "hp_lost": 82,
+          "hp_healed": 0,
+          "self_damage": 8,
+          "combat_ended": true,
+          "survived": true,
+          "final_enemy_hp": 0,
+          "potions": [],
+          "unattributed_hp_loss": 0
+        },
+        "round": 11,
+        "resources": {
+          "hp": 17,
+          "max_hp": 93,
+          "gold": 235,
+          "deck": [
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "MOLTEN_FIST+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Damage=10|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "RAMPAGE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=10;Increase=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "FEED+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Damage=10;MaxHp=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "IRON_WAVE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5;Damage=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "CINDER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=18|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "THUNDERCLAP+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=4;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "UPPERCUT+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=13;Power=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "HEADBUTT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "OFFERING+0|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Cards=3;Energy=2;HpLoss=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TAUNT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=6;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BLOOD_WALL+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=16;HpLoss=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "FLAME_BARRIER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=12;DamageBack=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "VICIOUS+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TEAR_ASUNDER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=CalculationBase=0;CalculationExtra=1;Damage=5;Repeat=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+          ],
+          "potions": [
+            "BLESSING_OF_THE_FORGE",
+            "DEXTERITY_POTION",
+            "FLEX_POTION"
+          ],
+          "relics": [
+            "BURNING_BLOOD",
+            "LOST_COFFER",
+            "SWORD_OF_STONE",
+            "SHOVEL",
+            "STRAWBERRY",
+            "GLASS_EYE"
+          ]
+        },
+        "choice_requests": [],
+        "choice_checks": [],
+        "choice_observation_ms": 0,
+        "choice_decision_ms": 0
+      }
+    },
+    {
+      "id": "run1-offering-west-a2f03",
+      "candidate_steps": 7,
+      "native_steps": 7,
+      "action_parity": true,
+      "native_outcome": "death",
+      "candidate_outcome": "death",
+      "native_final": {
+        "type": "f1_final",
+        "terminal_callback": false,
+        "outcome": {
+          "initial_hp": 17,
+          "final_hp": 0,
+          "hp_lost": 17,
+          "hp_healed": 0,
+          "self_damage": 0,
+          "combat_ended": false,
+          "survived": false,
+          "final_enemy_hp": 22,
+          "potions": [],
+          "unattributed_hp_loss": 3
+        },
+        "round": 2,
+        "resources": {
+          "hp": 0,
+          "max_hp": 93,
+          "gold": 235,
+          "deck": [
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "MOLTEN_FIST+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Damage=10|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "RAMPAGE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=10;Increase=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "FEED+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Damage=10;MaxHp=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "IRON_WAVE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5;Damage=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "CINDER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=18|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "THUNDERCLAP+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=4;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "UPPERCUT+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=13;Power=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "HEADBUTT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "OFFERING+0|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Cards=3;Energy=2;HpLoss=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TAUNT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=6;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BLOOD_WALL+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=16;HpLoss=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "FLAME_BARRIER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=12;DamageBack=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "VICIOUS+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TEAR_ASUNDER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=CalculationBase=0;CalculationExtra=1;Damage=5;Repeat=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "INFERNO+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=InfernoPower=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+          ],
+          "potions": [
+            "BLESSING_OF_THE_FORGE",
+            "DEXTERITY_POTION",
+            "FLEX_POTION"
+          ],
+          "relics": [
+            "BURNING_BLOOD",
+            "LOST_COFFER",
+            "SWORD_OF_STONE",
+            "SHOVEL",
+            "STRAWBERRY",
+            "GLASS_EYE"
+          ]
+        },
+        "choice_requests": [
+          {
+            "step": 3,
+            "action": "HEADBUTT",
+            "source": "discard",
+            "effect": "topdeck",
+            "min_select": 1,
+            "max_select": 1,
+            "allow_empty": false,
+            "energy": 0,
+            "turn": 1,
+            "candidates": [
+              {
+                "index": 0,
+                "id": "SHRUG_IT_OFF",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Skill",
+                "damage": 0,
+                "block": 8,
+                "key": "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 1,
+                "id": "RAMPAGE",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Attack",
+                "damage": 15,
+                "block": 0,
+                "key": "RAMPAGE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=15;Increase=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              }
+            ],
+            "indexes": [
+              1
+            ]
+          }
+        ],
+        "choice_checks": [
+          {
+            "step": 3,
+            "action": "HEADBUTT",
+            "effect": true
+          }
+        ],
+        "choice_observation_ms": 1.8398,
+        "choice_decision_ms": 1.4219
+      }
+    },
+    {
+      "id": "run1-offering-east-a2f06",
+      "candidate_steps": 9,
+      "native_steps": 9,
+      "action_parity": true,
+      "native_outcome": "death",
+      "candidate_outcome": "death",
+      "native_final": {
+        "type": "f1_final",
+        "terminal_callback": false,
+        "outcome": {
+          "initial_hp": 17,
+          "final_hp": 0,
+          "hp_lost": 17,
+          "hp_healed": 0,
+          "self_damage": 6,
+          "combat_ended": false,
+          "survived": false,
+          "final_enemy_hp": 38,
+          "potions": [],
+          "unattributed_hp_loss": 1
+        },
+        "round": 3,
+        "resources": {
+          "hp": 0,
+          "max_hp": 93,
+          "gold": 210,
+          "deck": [
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "MOLTEN_FIST+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Damage=10|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "RAMPAGE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=10;Increase=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "FEED+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Damage=10;MaxHp=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "IRON_WAVE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5;Damage=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "CINDER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=18|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "THUNDERCLAP+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=4;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "UPPERCUT+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=13;Power=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "HEADBUTT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "OFFERING+0|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Cards=3;Energy=2;HpLoss=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TAUNT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=6;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BLOOD_WALL+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=16;HpLoss=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "FLAME_BARRIER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=12;DamageBack=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TEAR_ASUNDER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=CalculationBase=0;CalculationExtra=1;Damage=5;Repeat=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "INFERNO+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=InfernoPower=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "ENLIGHTENMENT+0|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+          ],
+          "potions": [
+            "BLESSING_OF_THE_FORGE",
+            "DEXTERITY_POTION",
+            "FLEX_POTION"
+          ],
+          "relics": [
+            "BURNING_BLOOD",
+            "LOST_COFFER",
+            "SWORD_OF_STONE",
+            "SHOVEL",
+            "STRAWBERRY",
+            "GLASS_EYE"
+          ]
+        },
+        "choice_requests": [
+          {
+            "step": 3,
+            "action": "HEADBUTT",
+            "source": "discard",
+            "effect": "topdeck",
+            "min_select": 1,
+            "max_select": 1,
+            "allow_empty": false,
+            "energy": 0,
+            "turn": 1,
+            "candidates": [
+              {
+                "index": 0,
+                "id": "SHRUG_IT_OFF",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Skill",
+                "damage": 0,
+                "block": 8,
+                "key": "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 1,
+                "id": "RAMPAGE",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Attack",
+                "damage": 15,
+                "block": 0,
+                "key": "RAMPAGE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=15;Increase=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              }
+            ],
+            "indexes": [
+              1
+            ]
+          }
+        ],
+        "choice_checks": [
+          {
+            "step": 3,
+            "action": "HEADBUTT",
+            "effect": true
+          }
+        ],
+        "choice_observation_ms": 1.8105,
+        "choice_decision_ms": 1.7155
+      }
+    },
+    {
+      "id": "run1-skip-middle-a2f02",
+      "candidate_steps": 44,
+      "native_steps": 44,
+      "action_parity": true,
+      "native_outcome": "win",
+      "candidate_outcome": "native_win",
+      "native_final": {
+        "type": "f1_final",
+        "terminal_callback": true,
+        "outcome": {
+          "initial_hp": 93,
+          "final_hp": 16,
+          "hp_lost": 77,
+          "hp_healed": 0,
+          "self_damage": 4,
+          "combat_ended": true,
+          "survived": true,
+          "final_enemy_hp": 0,
+          "potions": [],
+          "unattributed_hp_loss": 0
+        },
+        "round": 14,
+        "resources": {
+          "hp": 22,
+          "max_hp": 93,
+          "gold": 235,
+          "deck": [
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "MOLTEN_FIST+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Damage=10|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "RAMPAGE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=10;Increase=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "FEED+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Damage=10;MaxHp=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "IRON_WAVE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5;Damage=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "CINDER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=18|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "THUNDERCLAP+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=4;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "UPPERCUT+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=13;Power=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "HEADBUTT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TAUNT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=6;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BLOOD_WALL+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=16;HpLoss=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "FLAME_BARRIER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=12;DamageBack=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "VICIOUS+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TEAR_ASUNDER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=CalculationBase=0;CalculationExtra=1;Damage=5;Repeat=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+          ],
+          "potions": [
+            "BLESSING_OF_THE_FORGE",
+            "DEXTERITY_POTION",
+            "FLEX_POTION"
+          ],
+          "relics": [
+            "BURNING_BLOOD",
+            "LOST_COFFER",
+            "SWORD_OF_STONE",
+            "SHOVEL",
+            "STRAWBERRY",
+            "GLASS_EYE"
+          ]
+        },
+        "choice_requests": [
+          {
+            "step": 5,
+            "action": "HEADBUTT",
+            "source": "discard",
+            "effect": "topdeck",
+            "min_select": 1,
+            "max_select": 1,
+            "allow_empty": false,
+            "energy": 1,
+            "turn": 2,
+            "candidates": [
+              {
+                "index": 0,
+                "id": "FLAME_BARRIER",
+                "upgrade": 0,
+                "cost": 2,
+                "type": "Skill",
+                "damage": 0,
+                "block": 12,
+                "key": "FLAME_BARRIER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=12;DamageBack=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 1,
+                "id": "TAUNT",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Skill",
+                "damage": 0,
+                "block": 6,
+                "key": "TAUNT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=6;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 2,
+                "id": "UPPERCUT",
+                "upgrade": 0,
+                "cost": 2,
+                "type": "Attack",
+                "damage": 13,
+                "block": 0,
+                "key": "UPPERCUT+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=13;Power=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 3,
+                "id": "FEED",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Attack",
+                "damage": 10,
+                "block": 0,
+                "key": "FEED+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=Exhaust|vars=Damage=10;MaxHp=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 4,
+                "id": "RAMPAGE",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Attack",
+                "damage": 15,
+                "block": 0,
+                "key": "RAMPAGE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=15;Increase=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              }
+            ],
+            "indexes": [
+              0
+            ]
+          }
+        ],
+        "choice_checks": [
+          {
+            "step": 5,
+            "action": "HEADBUTT",
+            "effect": true
+          }
+        ],
+        "choice_observation_ms": 1.984,
+        "choice_decision_ms": 1.57
+      }
+    },
+    {
+      "id": "run1-skip-middle-a2f05",
+      "candidate_steps": 12,
+      "native_steps": 12,
+      "action_parity": true,
+      "native_outcome": "death",
+      "candidate_outcome": "death",
+      "native_final": {
+        "type": "f1_final",
+        "terminal_callback": false,
+        "outcome": {
+          "initial_hp": 22,
+          "final_hp": 0,
+          "hp_lost": 22,
+          "hp_healed": 0,
+          "self_damage": 2,
+          "combat_ended": false,
+          "survived": false,
+          "final_enemy_hp": 34,
+          "potions": [],
+          "unattributed_hp_loss": 0
+        },
+        "round": 4,
+        "resources": {
+          "hp": 0,
+          "max_hp": 93,
+          "gold": 235,
+          "deck": [
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "MOLTEN_FIST+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Damage=10|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "RAMPAGE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=10;Increase=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "FEED+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Damage=10;MaxHp=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "IRON_WAVE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5;Damage=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "CINDER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=18|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "THUNDERCLAP+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=4;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "UPPERCUT+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=13;Power=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "HEADBUTT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TAUNT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=6;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BLOOD_WALL+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=16;HpLoss=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "FLAME_BARRIER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=12;DamageBack=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "VICIOUS+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "INFERNO+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=InfernoPower=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+          ],
+          "potions": [
+            "BLESSING_OF_THE_FORGE",
+            "DEXTERITY_POTION",
+            "FLEX_POTION"
+          ],
+          "relics": [
+            "BURNING_BLOOD",
+            "LOST_COFFER",
+            "SWORD_OF_STONE",
+            "SHOVEL",
+            "STRAWBERRY",
+            "GLASS_EYE"
+          ]
+        },
+        "choice_requests": [
+          {
+            "step": 11,
+            "action": "HEADBUTT",
+            "source": "discard",
+            "effect": "topdeck",
+            "min_select": 1,
+            "max_select": 1,
+            "allow_empty": false,
+            "energy": 2,
+            "turn": 4,
+            "candidates": [
+              {
+                "index": 0,
+                "id": "FLAME_BARRIER",
+                "upgrade": 0,
+                "cost": 2,
+                "type": "Skill",
+                "damage": 0,
+                "block": 12,
+                "key": "FLAME_BARRIER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=12;DamageBack=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 1,
+                "id": "DEFEND_IRONCLAD",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Skill",
+                "damage": 0,
+                "block": 5,
+                "key": "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 2,
+                "id": "CINDER",
+                "upgrade": 0,
+                "cost": 2,
+                "type": "Attack",
+                "damage": 18,
+                "block": 0,
+                "key": "CINDER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=18|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 3,
+                "id": "DEFEND_IRONCLAD",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Skill",
+                "damage": 0,
+                "block": 5,
+                "key": "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 4,
+                "id": "STRIKE_IRONCLAD",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Attack",
+                "damage": 6,
+                "block": 0,
+                "key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 5,
+                "id": "POMMEL_STRIKE",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Attack",
+                "damage": 9,
+                "block": 0,
+                "key": "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 6,
+                "id": "BASH",
+                "upgrade": 0,
+                "cost": 2,
+                "type": "Attack",
+                "damage": 8,
+                "block": 0,
+                "key": "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 7,
+                "id": "STRIKE_IRONCLAD",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Attack",
+                "damage": 6,
+                "block": 0,
+                "key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 8,
+                "id": "SHRUG_IT_OFF",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Skill",
+                "damage": 0,
+                "block": 8,
+                "key": "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 9,
+                "id": "IRON_WAVE",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Attack",
+                "damage": 5,
+                "block": 5,
+                "key": "IRON_WAVE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5;Damage=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 10,
+                "id": "THUNDERCLAP",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Attack",
+                "damage": 4,
+                "block": 0,
+                "key": "THUNDERCLAP+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=4;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 11,
+                "id": "RAMPAGE",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Attack",
+                "damage": 15,
+                "block": 0,
+                "key": "RAMPAGE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=15;Increase=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 12,
+                "id": "SHRUG_IT_OFF",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Skill",
+                "damage": 0,
+                "block": 8,
+                "key": "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 13,
+                "id": "TAUNT",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Skill",
+                "damage": 0,
+                "block": 6,
+                "key": "TAUNT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=6;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 14,
+                "id": "STRIKE_IRONCLAD",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Attack",
+                "damage": 6,
+                "block": 0,
+                "key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 15,
+                "id": "STRIKE_IRONCLAD",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Attack",
+                "damage": 6,
+                "block": 0,
+                "key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 16,
+                "id": "INFERNO",
+                "upgrade": 1,
+                "cost": 1,
+                "type": "Power",
+                "damage": 0,
+                "block": 0,
+                "key": "INFERNO+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=InfernoPower=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              }
+            ],
+            "indexes": [
+              2
+            ]
+          }
+        ],
+        "choice_checks": [
+          {
+            "step": 11,
+            "action": "HEADBUTT",
+            "effect": true
+          }
+        ],
+        "choice_observation_ms": 3.4938,
+        "choice_decision_ms": 2.9361
+      }
+    }
+  ],
+  "blind_prefix": {
+    "id": "run1-offering-west-a2f03",
+    "encounter": "BOWLBUGS_WEAK",
+    "arm": "C",
+    "potions": true,
+    "status": "native_win",
+    "used": 24,
+    "first_prediction": 24,
+    "first_native": 24,
+    "tiers": {
+      "128": "native_win"
+    },
+    "hot_ms": 613.4754,
+    "cpu_ms": 546.875,
+    "wall_ms": 12475.986500037834,
+    "trials": [
+      {
+        "status": "predicted_win",
+        "cap": 128,
+        "transitions": 24,
+        "reused_prefix_transitions": 0,
+        "branches": 0,
+        "diagnoses": 1,
+        "rejected_wins": 0,
+        "hot_ms": 613.4754,
+        "cpu_ms": 546.875,
+        "replay_ms": 428.8091000000001,
+        "frame_audit_ms": 17.057100000000002,
+        "menu_ms": 39.00650000000001,
+        "peak_working_set_bytes": 134066176,
+        "root_stamp": "efa9e92eee3d3ef44371bc756c01dfc779f639aa488aa1fa89be293f6353c7bb",
+        "root_unchanged": true,
+        "checkpoints": [],
+        "winner_key": "7e8d44adb284b140db7c957435f675f11f410ba578f05210aab42b52eac6ebb4",
+        "winner_node": 24,
+        "transition_faults": [],
+        "search_rpc_ms": 1713.584200013429,
+        "prediction_prepare_ms": 956.1076,
+        "rollouts": 2,
+        "rollout_stops": {
+          "death": 1,
+          "predicted_win": 1
+        },
+        "node_stops": {
+          "active": 23,
+          "death": 1,
+          "predicted_win": 1
+        },
+        "verification": {
+          "root_verified": true,
+          "matched_actions": 17,
+          "strict_terminal": true,
+          "terminal_contract": "Raw F2 comparison; E2 death-only window contract is inapplicable to a predicted win.",
+          "choice_evidence": [
+            {
+              "step": 5,
+              "binding": {
+                "surface": "implicit_singleton",
+                "effect": "MoveToDrawTop",
+                "selected": {
+                  "card_id": "SHRUG_IT_OFF",
+                  "upgrade_level": 0,
+                  "state_key": "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                  "source_occurrence": 0,
+                  "option_occurrence": 0,
+                  "title": "SHRUG_IT_OFF.title"
+                },
+                "option": 0,
+                "source_index": 0
+              },
+              "destination_verified": true
+            }
+          ],
+          "root_frame_sha256": "a4d4e80f9287f167d50894377d5748f27f36044b13b92e026fcd6a2dcd21e5ca",
+          "attempted_step": 17,
+          "native_final": {
+            "type": "f1_final",
+            "terminal_callback": true,
+            "outcome": {
+              "initial_hp": 17,
+              "final_hp": 9,
+              "hp_lost": 8,
+              "hp_healed": 0,
+              "self_damage": 2,
+              "combat_ended": true,
+              "survived": true,
+              "final_enemy_hp": 0,
+              "potions": [
+                {
+                  "potion_id": "DEXTERITY_POTION",
+                  "target_combat_id": 0,
+                  "turn": 1,
+                  "slot_index": 1,
+                  "origin": "player"
+                },
+                {
+                  "potion_id": "BLESSING_OF_THE_FORGE",
+                  "target_combat_id": 0,
+                  "turn": 1,
+                  "slot_index": 0,
+                  "origin": "player"
+                },
+                {
+                  "potion_id": "FLEX_POTION",
+                  "target_combat_id": 0,
+                  "turn": 1,
+                  "slot_index": 2,
+                  "origin": "player"
+                }
+              ],
+              "unattributed_hp_loss": 0
+            },
+            "round": 5,
+            "resources": {
+              "hp": 15,
+              "max_hp": 93,
+              "gold": 252,
+              "deck": [
+                "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "MOLTEN_FIST+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Damage=10|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "RAMPAGE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=10;Increase=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "FEED+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Damage=10;MaxHp=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "IRON_WAVE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5;Damage=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "CINDER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=18|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "THUNDERCLAP+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=4;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "UPPERCUT+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=13;Power=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "HEADBUTT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "OFFERING+0|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Cards=3;Energy=2;HpLoss=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "TAUNT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=6;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "BLOOD_WALL+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=16;HpLoss=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "FLAME_BARRIER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=12;DamageBack=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "VICIOUS+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "TEAR_ASUNDER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=CalculationBase=0;CalculationExtra=1;Damage=5;Repeat=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "INFERNO+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=InfernoPower=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              ],
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "relics": [
+                "BURNING_BLOOD",
+                "LOST_COFFER",
+                "SWORD_OF_STONE",
+                "SHOVEL",
+                "STRAWBERRY",
+                "GLASS_EYE"
+              ]
+            },
+            "choice_requests": [],
+            "choice_checks": [],
+            "choice_observation_ms": 0,
+            "choice_decision_ms": 0
+          },
+          "status": "win",
+          "peak_working_set_bytes": 125140992,
+          "elapsed_ms": 3688.5337999556214,
+          "preparation": {
+            "node_budget": 1000,
+            "soft_ms": 6000,
+            "cancel_ms": 8000,
+            "root_verified": true,
+            "capture_wall_ms": 1626.3207998126745,
+            "status": "complete_win",
+            "solve_ms": 0.0008,
+            "search_cpu_ms": 0,
+            "predicted_win": true,
+            "fixed_route": true,
+            "transitions": null,
+            "expanded_nodes": null,
+            "total_expanded_nodes": null,
+            "boundary": null,
+            "encounter": "BOWLBUGS_WEAK",
+            "ms": 1550.9211,
+            "peak_working_set_bytes": 134676480,
+            "plan_action_count": 17,
+            "plan_rounds": 5,
+            "elapsed_ms": 4337.831000098959
+          }
+        },
+        "winning_plan": {
+          "strategy": "AGGRO",
+          "interventions": [],
+          "repair_reason": "initial_strategy"
+        }
+      }
+    ],
+    "history": "run1-offering-west-a2f03-C-allow.json.gz"
+  },
+  "sentinel": {
+    "search": {
+      "status": "predicted_win",
+      "cap": 128,
+      "transitions": 32,
+      "reused_prefix_transitions": 4,
+      "branches": 1,
+      "diagnoses": 0,
+      "rejected_wins": 0,
+      "hot_ms": 526.1554,
+      "cpu_ms": 484.375,
+      "replay_ms": 376.98549999999994,
+      "frame_audit_ms": 14.8506,
+      "menu_ms": 29.784899999999997,
+      "peak_working_set_bytes": 130793472,
+      "root_stamp": "808630f00377b30eef620ba95cf0723c88eb217ef61c953645355a9a3ef83040",
+      "root_unchanged": true,
+      "checkpoints": [],
+      "winner_key": "27b97ad7b0942dd0f8d82071834d3d082cc2ea486493169b108b1e3e0b246f22",
+      "winner_node": 32,
+      "actions": [
+        {
+          "kind": 0,
+          "turn": 1,
+          "card_id": "IRON_WAVE",
+          "card_occurrence": 0,
+          "target_index": -1,
+          "target_combat_id": 1,
+          "card_title": "",
+          "target_name": "",
+          "nested_choices_before_primary": 0,
+          "potion_slot": -1,
+          "potion_id": "",
+          "potion_title": "",
+          "replay_count": 0,
+          "card_state_key": "IRON_WAVE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5;Damage=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "ends_player_turn": false,
+          "card_upgrade_level": 0,
+          "card_enchantment_id": "",
+          "is_executable": true,
+          "action_title": ""
+        },
+        {
+          "kind": 0,
+          "turn": 1,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "target_index": -1,
+          "target_combat_id": 1,
+          "card_title": "",
+          "target_name": "",
+          "nested_choices_before_primary": 0,
+          "potion_slot": -1,
+          "potion_id": "",
+          "potion_title": "",
+          "replay_count": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "ends_player_turn": false,
+          "card_upgrade_level": 0,
+          "card_enchantment_id": "",
+          "is_executable": true,
+          "action_title": ""
+        },
+        {
+          "kind": 0,
+          "turn": 1,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "target_index": -1,
+          "target_combat_id": 1,
+          "card_title": "",
+          "target_name": "",
+          "nested_choices_before_primary": 0,
+          "potion_slot": -1,
+          "potion_id": "",
+          "potion_title": "",
+          "replay_count": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "ends_player_turn": false,
+          "card_upgrade_level": 0,
+          "card_enchantment_id": "",
+          "is_executable": true,
+          "action_title": ""
+        },
+        {
+          "kind": 2,
+          "turn": 1,
+          "card_id": "",
+          "card_occurrence": 0,
+          "target_index": -1,
+          "card_title": "",
+          "target_name": "",
+          "nested_choices_before_primary": 0,
+          "potion_slot": -1,
+          "potion_id": "",
+          "potion_title": "",
+          "replay_count": 0,
+          "card_state_key": "",
+          "card_state_occurrence": 0,
+          "ends_player_turn": false,
+          "card_upgrade_level": 0,
+          "card_enchantment_id": "",
+          "is_executable": false,
+          "action_title": ""
+        },
+        {
+          "kind": 0,
+          "turn": 2,
+          "card_id": "BASH",
+          "card_occurrence": 0,
+          "target_index": -1,
+          "target_combat_id": 1,
+          "card_title": "",
+          "target_name": "",
+          "nested_choices_before_primary": 0,
+          "potion_slot": -1,
+          "potion_id": "",
+          "potion_title": "",
+          "replay_count": 0,
+          "card_state_key": "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "ends_player_turn": false,
+          "card_upgrade_level": 0,
+          "card_enchantment_id": "",
+          "is_executable": true,
+          "action_title": ""
+        },
+        {
+          "kind": 0,
+          "turn": 2,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "target_index": -1,
+          "target_combat_id": 1,
+          "card_title": "",
+          "target_name": "",
+          "nested_choices_before_primary": 0,
+          "potion_slot": -1,
+          "potion_id": "",
+          "potion_title": "",
+          "replay_count": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "ends_player_turn": false,
+          "card_upgrade_level": 0,
+          "card_enchantment_id": "",
+          "is_executable": true,
+          "action_title": ""
+        },
+        {
+          "kind": 2,
+          "turn": 2,
+          "card_id": "",
+          "card_occurrence": 0,
+          "target_index": -1,
+          "card_title": "",
+          "target_name": "",
+          "nested_choices_before_primary": 0,
+          "potion_slot": -1,
+          "potion_id": "",
+          "potion_title": "",
+          "replay_count": 0,
+          "card_state_key": "",
+          "card_state_occurrence": 0,
+          "ends_player_turn": false,
+          "card_upgrade_level": 0,
+          "card_enchantment_id": "",
+          "is_executable": false,
+          "action_title": ""
+        },
+        {
+          "kind": 0,
+          "turn": 3,
+          "card_id": "FEED",
+          "card_occurrence": 0,
+          "target_index": -1,
+          "target_combat_id": 1,
+          "card_title": "",
+          "target_name": "",
+          "nested_choices_before_primary": 0,
+          "potion_slot": -1,
+          "potion_id": "",
+          "potion_title": "",
+          "replay_count": 0,
+          "card_state_key": "FEED+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=Exhaust|vars=Damage=10;MaxHp=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "ends_player_turn": false,
+          "card_upgrade_level": 0,
+          "card_enchantment_id": "",
+          "is_executable": true,
+          "action_title": ""
+        },
+        {
+          "kind": 0,
+          "turn": 3,
+          "card_id": "IRON_WAVE",
+          "card_occurrence": 0,
+          "target_index": -1,
+          "target_combat_id": 2,
+          "card_title": "",
+          "target_name": "",
+          "nested_choices_before_primary": 0,
+          "potion_slot": -1,
+          "potion_id": "",
+          "potion_title": "",
+          "replay_count": 0,
+          "card_state_key": "IRON_WAVE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5;Damage=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "ends_player_turn": false,
+          "card_upgrade_level": 0,
+          "card_enchantment_id": "",
+          "is_executable": true,
+          "action_title": ""
+        },
+        {
+          "kind": 0,
+          "turn": 3,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "target_index": -1,
+          "target_combat_id": 2,
+          "card_title": "",
+          "target_name": "",
+          "nested_choices_before_primary": 0,
+          "potion_slot": -1,
+          "potion_id": "",
+          "potion_title": "",
+          "replay_count": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "ends_player_turn": false,
+          "card_upgrade_level": 0,
+          "card_enchantment_id": "",
+          "is_executable": true,
+          "action_title": ""
+        },
+        {
+          "kind": 2,
+          "turn": 3,
+          "card_id": "",
+          "card_occurrence": 0,
+          "target_index": -1,
+          "card_title": "",
+          "target_name": "",
+          "nested_choices_before_primary": 0,
+          "potion_slot": -1,
+          "potion_id": "",
+          "potion_title": "",
+          "replay_count": 0,
+          "card_state_key": "",
+          "card_state_occurrence": 0,
+          "ends_player_turn": false,
+          "card_upgrade_level": 0,
+          "card_enchantment_id": "",
+          "is_executable": false,
+          "action_title": ""
+        },
+        {
+          "kind": 0,
+          "turn": 4,
+          "card_id": "BASH",
+          "card_occurrence": 0,
+          "target_index": -1,
+          "target_combat_id": 2,
+          "card_title": "",
+          "target_name": "",
+          "nested_choices_before_primary": 0,
+          "potion_slot": -1,
+          "potion_id": "",
+          "potion_title": "",
+          "replay_count": 0,
+          "card_state_key": "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "ends_player_turn": false,
+          "card_upgrade_level": 0,
+          "card_enchantment_id": "",
+          "is_executable": true,
+          "action_title": ""
+        },
+        {
+          "kind": 0,
+          "turn": 4,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "target_index": -1,
+          "target_combat_id": 2,
+          "card_title": "",
+          "target_name": "",
+          "nested_choices_before_primary": 0,
+          "potion_slot": -1,
+          "potion_id": "",
+          "potion_title": "",
+          "replay_count": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "ends_player_turn": false,
+          "card_upgrade_level": 0,
+          "card_enchantment_id": "",
+          "is_executable": true,
+          "action_title": ""
+        },
+        {
+          "kind": 2,
+          "turn": 4,
+          "card_id": "",
+          "card_occurrence": 0,
+          "target_index": -1,
+          "card_title": "",
+          "target_name": "",
+          "nested_choices_before_primary": 0,
+          "potion_slot": -1,
+          "potion_id": "",
+          "potion_title": "",
+          "replay_count": 0,
+          "card_state_key": "",
+          "card_state_occurrence": 0,
+          "ends_player_turn": false,
+          "card_upgrade_level": 0,
+          "card_enchantment_id": "",
+          "is_executable": false,
+          "action_title": ""
+        },
+        {
+          "kind": 0,
+          "turn": 5,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "target_index": -1,
+          "target_combat_id": 2,
+          "card_title": "",
+          "target_name": "",
+          "nested_choices_before_primary": 0,
+          "potion_slot": -1,
+          "potion_id": "",
+          "potion_title": "",
+          "replay_count": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "ends_player_turn": false,
+          "card_upgrade_level": 0,
+          "card_enchantment_id": "",
+          "is_executable": true,
+          "action_title": ""
+        },
+        {
+          "kind": 0,
+          "turn": 5,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "target_index": -1,
+          "target_combat_id": 2,
+          "card_title": "",
+          "target_name": "",
+          "nested_choices_before_primary": 0,
+          "potion_slot": -1,
+          "potion_id": "",
+          "potion_title": "",
+          "replay_count": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "ends_player_turn": false,
+          "card_upgrade_level": 0,
+          "card_enchantment_id": "",
+          "is_executable": true,
+          "action_title": ""
+        },
+        {
+          "kind": 0,
+          "turn": 5,
+          "card_id": "STRIKE_IRONCLAD",
+          "card_occurrence": 0,
+          "target_index": -1,
+          "target_combat_id": 2,
+          "card_title": "",
+          "target_name": "",
+          "nested_choices_before_primary": 0,
+          "potion_slot": -1,
+          "potion_id": "",
+          "potion_title": "",
+          "replay_count": 0,
+          "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "ends_player_turn": false,
+          "card_upgrade_level": 0,
+          "card_enchantment_id": "",
+          "is_executable": true,
+          "action_title": ""
+        }
+      ],
+      "stamps": [
+        "ded9c3379cf9ba2ee2acc5d92d47bb7b55d586c063c0ca72075ca3444d97b8fe",
+        "bb3a885a1874fe68651e49e2a24534445a9d2982e69c4cfc2aedcf0ebc0e22ac",
+        "2892358e7c485586d5c99287949838b076be5bf8eea19af998b7a18991f5e836",
+        "9b3afdd664bf5f86453774c95a41e743e47da74377df048598c50029d1a98bd4",
+        "135bf4e1c8966ca5e2f3a51d01e637384dbbf329243b69528b47eb3af28e297b",
+        "aeab790a1a7224ba01d18b3fe941fa936529aaf4c6241709de0262d4aa8eec19",
+        "c9dbcea032c8ffb7d0538fcfd65d2ffe7e5e0414a56d0e381669b21681ff4349",
+        "23017309bdf822c8f99138f27521578f9ddb90a8269fd71f5e18e5e2b27b56be",
+        "56a5c62cc698e6fc3fed09da5e263cda44d048041dbdda00a012606378b38bfd",
+        "8980dfeda501f60382374577736c8d8c0a7e11d9399b0bd9bb733765e9c7243e",
+        "c125ca6c76871446a2160bb31df2d18df15521e25d9e1d1369268e9f852ea159",
+        "522d5d0322b65af8c2c9f597fe9e79d1a8cfb6a1e197d7a1dfae8b471492c85f",
+        "e2eccdd25345ab36451f11aaa435d603d8596df098ffea48bb19b383cbdeea5b",
+        "c58a5b3d5e9dd4b954529c7f6415f8968f66ad01f7bfe3724e31a81d27e7c64a",
+        "3703b824b3c8634b6f76ea5a8ce075bb13a19a375986931b548cd46fd35d17c8",
+        "2a04615c54458ff09db6fab0d3a6152cc2d6be26f27177befe06ddb0bcb55f7a",
+        "1be25191307731f99aa3f1220743ba7dd9f97b828fcff90e899dec5cb6c457ca"
+      ],
+      "routes": [
+        {
+          "id": 0,
+          "plan": {
+            "strategy": "Q1",
+            "interventions": [],
+            "repair_reason": "fixture_control"
+          },
+          "anchor": 4,
+          "stop": "death",
+          "nodes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        {
+          "id": 1,
+          "plan": {
+            "strategy": "Q1",
+            "interventions": [
+              {
+                "anchor": "9b3afdd664bf5f86453774c95a41e743e47da74377df048598c50029d1a98bd4",
+                "mode": "single_action",
+                "forced": {
+                  "action": {
+                    "kind": 0,
+                    "turn": 2,
+                    "card_id": "BASH",
+                    "card_occurrence": 0,
+                    "target_index": -1,
+                    "target_combat_id": 1,
+                    "card_title": "",
+                    "target_name": "",
+                    "nested_choices_before_primary": 0,
+                    "potion_slot": -1,
+                    "potion_id": "",
+                    "potion_title": "",
+                    "replay_count": 0,
+                    "card_state_key": "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                    "card_state_occurrence": 0,
+                    "ends_player_turn": false,
+                    "card_upgrade_level": 0,
+                    "card_enchantment_id": "",
+                    "is_executable": true,
+                    "action_title": ""
+                  },
+                  "card": {
+                    "hand_index": 3,
+                    "id": "BASH",
+                    "target": 1,
+                    "damage": 8,
+                    "block": 0,
+                    "draw": 0,
+                    "energy": 2,
+                    "power": false
+                  }
+                },
+                "strategy": "Q1",
+                "window": 0
+              }
+            ],
+            "parent_route_id": 0,
+            "repair_reason": "fixture_alternative"
+          },
+          "anchor": 4,
+          "stop": "predicted_win",
+          "nodes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ],
+          "parent_unchanged": true
+        }
+      ],
+      "history": [
+        {
+          "id": 0,
+          "frame": {
+            "stamp": "808630f00377b30eef620ba95cf0723c88eb217ef61c953645355a9a3ef83040",
+            "turn": 1,
+            "hp": 36,
+            "block": 0,
+            "energy": 3,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 44,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 46,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "STRIKE_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "IRON_WAVE+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "draw": [
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "BASH+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "FEED+0",
+              "BODY_SLAM+0"
+            ],
+            "discard": [],
+            "exhaust": [],
+            "powers": [],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 0,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [],
+            "remaining": 90,
+            "alive": 2
+          }
+        },
+        {
+          "id": 1,
+          "parent": 0,
+          "action": {
+            "kind": 0,
+            "turn": 1,
+            "card_id": "IRON_WAVE",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "target_combat_id": 1,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "IRON_WAVE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5;Damage=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": true,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "ded9c3379cf9ba2ee2acc5d92d47bb7b55d586c063c0ca72075ca3444d97b8fe",
+            "turn": 1,
+            "hp": 36,
+            "block": 5,
+            "energy": 2,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 39,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 46,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "STRIKE_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "draw": [
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "BASH+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "FEED+0",
+              "BODY_SLAM+0"
+            ],
+            "discard": [
+              "IRON_WAVE+0"
+            ],
+            "exhaust": [],
+            "powers": [],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 0,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [],
+            "remaining": 85,
+            "alive": 2
+          }
+        },
+        {
+          "id": 2,
+          "parent": 1,
+          "action": {
+            "kind": 0,
+            "turn": 1,
+            "card_id": "STRIKE_IRONCLAD",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "target_combat_id": 1,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": true,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "bb3a885a1874fe68651e49e2a24534445a9d2982e69c4cfc2aedcf0ebc0e22ac",
+            "turn": 1,
+            "hp": 36,
+            "block": 5,
+            "energy": 1,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 33,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 46,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "draw": [
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "BASH+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "FEED+0",
+              "BODY_SLAM+0"
+            ],
+            "discard": [
+              "IRON_WAVE+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "exhaust": [],
+            "powers": [],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 0,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [],
+            "remaining": 79,
+            "alive": 2
+          }
+        },
+        {
+          "id": 3,
+          "parent": 2,
+          "action": {
+            "kind": 0,
+            "turn": 1,
+            "card_id": "STRIKE_IRONCLAD",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "target_combat_id": 1,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": true,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "2892358e7c485586d5c99287949838b076be5bf8eea19af998b7a18991f5e836",
+            "turn": 1,
+            "hp": 36,
+            "block": 5,
+            "energy": 0,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 27,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 46,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0"
+            ],
+            "draw": [
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "BASH+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "FEED+0",
+              "BODY_SLAM+0"
+            ],
+            "discard": [
+              "IRON_WAVE+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "exhaust": [],
+            "powers": [],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 0,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [],
+            "remaining": 73,
+            "alive": 2
+          }
+        },
+        {
+          "id": 4,
+          "parent": 3,
+          "action": {
+            "kind": 2,
+            "turn": 1,
+            "card_id": "",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": false,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "9b3afdd664bf5f86453774c95a41e743e47da74377df048598c50029d1a98bd4",
+            "turn": 2,
+            "hp": 35,
+            "block": 0,
+            "energy": 3,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 27,
+                "block": 5
+              },
+              {
+                "id": 2,
+                "hp": 46,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "BASH+0",
+              "DEFEND_IRONCLAD+0"
+            ],
+            "draw": [
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "FEED+0",
+              "BODY_SLAM+0"
+            ],
+            "discard": [
+              "IRON_WAVE+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0"
+            ],
+            "exhaust": [],
+            "powers": [
+              "2:STRENGTH_POWER:2"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 1,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [],
+            "remaining": 73,
+            "alive": 2
+          }
+        },
+        {
+          "id": 5,
+          "parent": 4,
+          "action": {
+            "kind": 0,
+            "turn": 2,
+            "card_id": "DEFEND_IRONCLAD",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": true,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "07cea06561c9c3ad7e4f5ecb7e56742a8846317f0b743daf0da499e86efbfbf4",
+            "turn": 2,
+            "hp": 35,
+            "block": 5,
+            "energy": 2,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 27,
+                "block": 5
+              },
+              {
+                "id": 2,
+                "hp": 46,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "JUGGLING+0",
+              "STRIKE_IRONCLAD+0",
+              "BASH+0",
+              "DEFEND_IRONCLAD+0"
+            ],
+            "draw": [
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "FEED+0",
+              "BODY_SLAM+0"
+            ],
+            "discard": [
+              "IRON_WAVE+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0"
+            ],
+            "exhaust": [],
+            "powers": [
+              "2:STRENGTH_POWER:2"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 1,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [],
+            "remaining": 73,
+            "alive": 2
+          }
+        },
+        {
+          "id": 6,
+          "parent": 5,
+          "action": {
+            "kind": 0,
+            "turn": 2,
+            "card_id": "DEFEND_IRONCLAD",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": true,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "c518fe83470a0e54a7915b055b7cacb45f79813f57d1b15c5080191134727419",
+            "turn": 2,
+            "hp": 35,
+            "block": 10,
+            "energy": 1,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 27,
+                "block": 5
+              },
+              {
+                "id": 2,
+                "hp": 46,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "JUGGLING+0",
+              "STRIKE_IRONCLAD+0",
+              "BASH+0"
+            ],
+            "draw": [
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "FEED+0",
+              "BODY_SLAM+0"
+            ],
+            "discard": [
+              "IRON_WAVE+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0"
+            ],
+            "exhaust": [],
+            "powers": [
+              "2:STRENGTH_POWER:2"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 1,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [],
+            "remaining": 73,
+            "alive": 2
+          }
+        },
+        {
+          "id": 7,
+          "parent": 6,
+          "action": {
+            "kind": 0,
+            "turn": 2,
+            "card_id": "STRIKE_IRONCLAD",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "target_combat_id": 2,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": true,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "1e4cffe9d2a4720617a426535f10333d03a8115bea3b12479cd7e3e46f086523",
+            "turn": 2,
+            "hp": 35,
+            "block": 10,
+            "energy": 0,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 27,
+                "block": 5
+              },
+              {
+                "id": 2,
+                "hp": 40,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "JUGGLING+0",
+              "BASH+0"
+            ],
+            "draw": [
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "FEED+0",
+              "BODY_SLAM+0"
+            ],
+            "discard": [
+              "IRON_WAVE+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "exhaust": [],
+            "powers": [
+              "2:STRENGTH_POWER:2"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 1,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [],
+            "remaining": 67,
+            "alive": 2
+          }
+        },
+        {
+          "id": 8,
+          "parent": 7,
+          "action": {
+            "kind": 2,
+            "turn": 2,
+            "card_id": "",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": false,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "2219b11288ef07e4b8b8f04fb3bb9ea2332a4bec1644117779964d7073e5c659",
+            "turn": 3,
+            "hp": 31,
+            "block": 0,
+            "energy": 3,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 27,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 40,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "FEED+0",
+              "BODY_SLAM+0",
+              "IRON_WAVE+0"
+            ],
+            "draw": [
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "BASH+0",
+              "STRIKE_IRONCLAD+0",
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "discard": [],
+            "exhaust": [],
+            "powers": [
+              "1:STRENGTH_POWER:2",
+              "2:STRENGTH_POWER:2"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 5,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [],
+            "remaining": 67,
+            "alive": 2
+          }
+        },
+        {
+          "id": 9,
+          "parent": 8,
+          "action": {
+            "kind": 0,
+            "turn": 3,
+            "card_id": "IRON_WAVE",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "target_combat_id": 1,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "IRON_WAVE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5;Damage=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": true,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "79a40e4ef2dc4bcbea768c98bd8ed06d2e22c295fdc6d0f558046d1f3deafd25",
+            "turn": 3,
+            "hp": 31,
+            "block": 5,
+            "energy": 2,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 22,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 40,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "FEED+0",
+              "BODY_SLAM+0"
+            ],
+            "draw": [
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "BASH+0",
+              "STRIKE_IRONCLAD+0",
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "discard": [
+              "IRON_WAVE+0"
+            ],
+            "exhaust": [],
+            "powers": [
+              "1:STRENGTH_POWER:2",
+              "2:STRENGTH_POWER:2"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 5,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [],
+            "remaining": 62,
+            "alive": 2
+          }
+        },
+        {
+          "id": 10,
+          "parent": 9,
+          "action": {
+            "kind": 0,
+            "turn": 3,
+            "card_id": "FEED",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "target_combat_id": 1,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "FEED+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=Exhaust|vars=Damage=10;MaxHp=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": true,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "8bb04abacd71f255866072edc40058d79cac8bde67254c8754fbe7935814b963",
+            "turn": 3,
+            "hp": 31,
+            "block": 5,
+            "energy": 1,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 12,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 40,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "BODY_SLAM+0"
+            ],
+            "draw": [
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "BASH+0",
+              "STRIKE_IRONCLAD+0",
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "discard": [
+              "IRON_WAVE+0"
+            ],
+            "exhaust": [
+              "FEED+0"
+            ],
+            "powers": [
+              "1:STRENGTH_POWER:2",
+              "2:STRENGTH_POWER:2"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 5,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [
+              "FEED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "remaining": 52,
+            "alive": 2
+          }
+        },
+        {
+          "id": 11,
+          "parent": 10,
+          "action": {
+            "kind": 0,
+            "turn": 3,
+            "card_id": "STRIKE_IRONCLAD",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "target_combat_id": 1,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": true,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "68c5d911b2aae72942ed06f4c184620eeae13bc9624d8264f8bbea8f195a35c1",
+            "turn": 3,
+            "hp": 31,
+            "block": 5,
+            "energy": 0,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 6,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 40,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "STRIKE_IRONCLAD+0",
+              "BODY_SLAM+0"
+            ],
+            "draw": [
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "BASH+0",
+              "STRIKE_IRONCLAD+0",
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "discard": [
+              "IRON_WAVE+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "exhaust": [
+              "FEED+0"
+            ],
+            "powers": [
+              "1:STRENGTH_POWER:2",
+              "2:STRENGTH_POWER:2"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 5,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [
+              "FEED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "remaining": 46,
+            "alive": 2
+          }
+        },
+        {
+          "id": 12,
+          "parent": 11,
+          "action": {
+            "kind": 2,
+            "turn": 3,
+            "card_id": "",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": false,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "ae15550b1cb6658f60c5bceec74191c16d4cf1ad998398a024d6a0d02b6e10ce",
+            "turn": 4,
+            "hp": 14,
+            "block": 0,
+            "energy": 3,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 6,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 40,
+                "block": 5
+              }
+            ],
+            "hand": [
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "BASH+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "draw": [
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "discard": [
+              "IRON_WAVE+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "BODY_SLAM+0"
+            ],
+            "exhaust": [
+              "FEED+0"
+            ],
+            "powers": [
+              "1:STRENGTH_POWER:2",
+              "2:STRENGTH_POWER:2"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 22,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [
+              "FEED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "remaining": 46,
+            "alive": 2
+          }
+        },
+        {
+          "id": 13,
+          "parent": 12,
+          "action": {
+            "kind": 0,
+            "turn": 4,
+            "card_id": "STRIKE_IRONCLAD",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "target_combat_id": 1,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": true,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "3ada57c7027a16843da7c5d7e8961b6d24ae3b93ff559bfdcf02f7860c7e6d36",
+            "turn": 4,
+            "hp": 14,
+            "block": 0,
+            "energy": 2,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 0,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 40,
+                "block": 5
+              }
+            ],
+            "hand": [
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "BASH+0"
+            ],
+            "draw": [
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "discard": [
+              "IRON_WAVE+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "BODY_SLAM+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "exhaust": [
+              "FEED+0"
+            ],
+            "powers": [
+              "2:STRENGTH_POWER:2"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 22,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [
+              "FEED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "remaining": 40,
+            "alive": 1
+          }
+        },
+        {
+          "id": 14,
+          "parent": 13,
+          "action": {
+            "kind": 0,
+            "turn": 4,
+            "card_id": "BASH",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "target_combat_id": 2,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": true,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "0425e079378da2e3cc3a5b55d7b75a78206ff369d58726a460570f7415fb5004",
+            "turn": 4,
+            "hp": 14,
+            "block": 0,
+            "energy": 0,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 0,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 37,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0"
+            ],
+            "draw": [
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "discard": [
+              "IRON_WAVE+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "BODY_SLAM+0",
+              "STRIKE_IRONCLAD+0",
+              "BASH+0"
+            ],
+            "exhaust": [
+              "FEED+0"
+            ],
+            "powers": [
+              "2:STRENGTH_POWER:2",
+              "2:VULNERABLE_POWER:2"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 22,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [
+              "BASH.OnPlay: MethodMirrorIncomplete",
+              "FEED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "remaining": 37,
+            "alive": 1
+          }
+        },
+        {
+          "id": 15,
+          "parent": 14,
+          "action": {
+            "kind": 2,
+            "turn": 4,
+            "card_id": "",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": false,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "e5a0289d11f140ccc3b5daaf137afaffa126c9e2b259b0c20b83714663acc992",
+            "turn": 5,
+            "hp": 14,
+            "block": 0,
+            "energy": 3,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 0,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 37,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "draw": [
+              "STRIKE_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "IRON_WAVE+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "BASH+0",
+              "DEFEND_IRONCLAD+0",
+              "BODY_SLAM+0"
+            ],
+            "discard": [],
+            "exhaust": [
+              "FEED+0"
+            ],
+            "powers": [
+              "2:STRENGTH_POWER:4",
+              "2:VULNERABLE_POWER:1"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 22,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [
+              "BASH.OnPlay: MethodMirrorIncomplete",
+              "FEED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "remaining": 37,
+            "alive": 1
+          }
+        },
+        {
+          "id": 16,
+          "parent": 15,
+          "action": {
+            "kind": 0,
+            "turn": 5,
+            "card_id": "STRIKE_IRONCLAD",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "target_combat_id": 2,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": true,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "9909208b72dad6b95427005d6e392c3b3f2a909cc29425e797878cc7713b3e20",
+            "turn": 5,
+            "hp": 14,
+            "block": 0,
+            "energy": 2,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 0,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 28,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "draw": [
+              "STRIKE_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "IRON_WAVE+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "BASH+0",
+              "DEFEND_IRONCLAD+0",
+              "BODY_SLAM+0"
+            ],
+            "discard": [
+              "STRIKE_IRONCLAD+0"
+            ],
+            "exhaust": [
+              "FEED+0"
+            ],
+            "powers": [
+              "2:STRENGTH_POWER:4",
+              "2:VULNERABLE_POWER:1"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 22,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [
+              "BASH.OnPlay: MethodMirrorIncomplete",
+              "FEED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "remaining": 28,
+            "alive": 1
+          }
+        },
+        {
+          "id": 17,
+          "parent": 16,
+          "action": {
+            "kind": 0,
+            "turn": 5,
+            "card_id": "STRIKE_IRONCLAD",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "target_combat_id": 2,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": true,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "e11ae73119f0859092372b39af7d4900c90694df96858ae8a4348bb03b45f5d0",
+            "turn": 5,
+            "hp": 14,
+            "block": 0,
+            "energy": 1,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 0,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 19,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "draw": [
+              "STRIKE_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "IRON_WAVE+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "BASH+0",
+              "DEFEND_IRONCLAD+0",
+              "BODY_SLAM+0"
+            ],
+            "discard": [
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "exhaust": [
+              "FEED+0"
+            ],
+            "powers": [
+              "2:STRENGTH_POWER:4",
+              "2:VULNERABLE_POWER:1"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 22,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [
+              "BASH.OnPlay: MethodMirrorIncomplete",
+              "FEED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "remaining": 19,
+            "alive": 1
+          }
+        },
+        {
+          "id": 18,
+          "parent": 17,
+          "action": {
+            "kind": 0,
+            "turn": 5,
+            "card_id": "STRIKE_IRONCLAD",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "target_combat_id": 2,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": true,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "0baa510ca5a67a27615738f0e281e38094e0f172089357581daef2cf380c5903",
+            "turn": 5,
+            "hp": 14,
+            "block": 0,
+            "energy": 0,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 0,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 10,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0"
+            ],
+            "draw": [
+              "STRIKE_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "IRON_WAVE+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "BASH+0",
+              "DEFEND_IRONCLAD+0",
+              "BODY_SLAM+0"
+            ],
+            "discard": [
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "exhaust": [
+              "FEED+0"
+            ],
+            "powers": [
+              "2:STRENGTH_POWER:4",
+              "2:VULNERABLE_POWER:1"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 22,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [
+              "BASH.OnPlay: MethodMirrorIncomplete",
+              "FEED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "remaining": 10,
+            "alive": 1
+          }
+        },
+        {
+          "id": 19,
+          "parent": 18,
+          "action": {
+            "kind": 2,
+            "turn": 5,
+            "card_id": "",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": false,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "f9ee6f76b7b637f4d58f22da8fcced5c66f53d41c6de680bfbb6e88917ef8323",
+            "turn": 5,
+            "hp": 0,
+            "block": 0,
+            "energy": 0,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 0,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 10,
+                "block": 0
+              }
+            ],
+            "hand": [],
+            "draw": [
+              "STRIKE_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "IRON_WAVE+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "BASH+0",
+              "DEFEND_IRONCLAD+0",
+              "BODY_SLAM+0"
+            ],
+            "discard": [
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0"
+            ],
+            "exhaust": [
+              "FEED+0"
+            ],
+            "powers": [
+              "2:STRENGTH_POWER:4",
+              "2:VULNERABLE_POWER:1"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 36,
+            "stop": "death",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [
+              "BASH.OnPlay: MethodMirrorIncomplete",
+              "FEED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "remaining": 10,
+            "alive": 1
+          }
+        },
+        {
+          "id": 20,
+          "parent": 4,
+          "action": {
+            "kind": 0,
+            "turn": 2,
+            "card_id": "BASH",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "target_combat_id": 1,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": true,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "135bf4e1c8966ca5e2f3a51d01e637384dbbf329243b69528b47eb3af28e297b",
+            "turn": 2,
+            "hp": 35,
+            "block": 0,
+            "energy": 1,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 24,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 46,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0"
+            ],
+            "draw": [
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "FEED+0",
+              "BODY_SLAM+0"
+            ],
+            "discard": [
+              "IRON_WAVE+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "BASH+0"
+            ],
+            "exhaust": [],
+            "powers": [
+              "1:VULNERABLE_POWER:2",
+              "2:STRENGTH_POWER:2"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 1,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [
+              "BASH.OnPlay: MethodMirrorIncomplete"
+            ],
+            "remaining": 70,
+            "alive": 2
+          }
+        },
+        {
+          "id": 21,
+          "parent": 20,
+          "action": {
+            "kind": 0,
+            "turn": 2,
+            "card_id": "STRIKE_IRONCLAD",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "target_combat_id": 1,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": true,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "aeab790a1a7224ba01d18b3fe941fa936529aaf4c6241709de0262d4aa8eec19",
+            "turn": 2,
+            "hp": 35,
+            "block": 0,
+            "energy": 0,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 15,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 46,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0"
+            ],
+            "draw": [
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "FEED+0",
+              "BODY_SLAM+0"
+            ],
+            "discard": [
+              "IRON_WAVE+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "BASH+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "exhaust": [],
+            "powers": [
+              "1:VULNERABLE_POWER:2",
+              "2:STRENGTH_POWER:2"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 1,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [
+              "BASH.OnPlay: MethodMirrorIncomplete"
+            ],
+            "remaining": 61,
+            "alive": 2
+          }
+        },
+        {
+          "id": 22,
+          "parent": 21,
+          "action": {
+            "kind": 2,
+            "turn": 2,
+            "card_id": "",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": false,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "c9dbcea032c8ffb7d0538fcfd65d2ffe7e5e0414a56d0e381669b21681ff4349",
+            "turn": 3,
+            "hp": 21,
+            "block": 0,
+            "energy": 3,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 15,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 46,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "FEED+0",
+              "BODY_SLAM+0",
+              "IRON_WAVE+0"
+            ],
+            "draw": [
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "BASH+0",
+              "STRIKE_IRONCLAD+0",
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "discard": [],
+            "exhaust": [],
+            "powers": [
+              "1:STRENGTH_POWER:2",
+              "1:VULNERABLE_POWER:1",
+              "2:STRENGTH_POWER:2"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 15,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [
+              "BASH.OnPlay: MethodMirrorIncomplete"
+            ],
+            "remaining": 61,
+            "alive": 2
+          }
+        },
+        {
+          "id": 23,
+          "parent": 22,
+          "action": {
+            "kind": 0,
+            "turn": 3,
+            "card_id": "FEED",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "target_combat_id": 1,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "FEED+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=Exhaust|vars=Damage=10;MaxHp=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": true,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "23017309bdf822c8f99138f27521578f9ddb90a8269fd71f5e18e5e2b27b56be",
+            "turn": 3,
+            "hp": 24,
+            "block": 0,
+            "energy": 2,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 0,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 46,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "BODY_SLAM+0",
+              "IRON_WAVE+0"
+            ],
+            "draw": [
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "BASH+0",
+              "STRIKE_IRONCLAD+0",
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "discard": [],
+            "exhaust": [
+              "FEED+0"
+            ],
+            "powers": [
+              "2:STRENGTH_POWER:2"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 15,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [
+              "BASH.OnPlay: MethodMirrorIncomplete",
+              "FEED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "remaining": 46,
+            "alive": 1
+          }
+        },
+        {
+          "id": 24,
+          "parent": 23,
+          "action": {
+            "kind": 0,
+            "turn": 3,
+            "card_id": "IRON_WAVE",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "target_combat_id": 2,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "IRON_WAVE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5;Damage=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": true,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "56a5c62cc698e6fc3fed09da5e263cda44d048041dbdda00a012606378b38bfd",
+            "turn": 3,
+            "hp": 24,
+            "block": 5,
+            "energy": 1,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 0,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 41,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "BODY_SLAM+0"
+            ],
+            "draw": [
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "BASH+0",
+              "STRIKE_IRONCLAD+0",
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "discard": [
+              "IRON_WAVE+0"
+            ],
+            "exhaust": [
+              "FEED+0"
+            ],
+            "powers": [
+              "2:STRENGTH_POWER:2"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 15,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [
+              "BASH.OnPlay: MethodMirrorIncomplete",
+              "FEED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "remaining": 41,
+            "alive": 1
+          }
+        },
+        {
+          "id": 25,
+          "parent": 24,
+          "action": {
+            "kind": 0,
+            "turn": 3,
+            "card_id": "STRIKE_IRONCLAD",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "target_combat_id": 2,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": true,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "8980dfeda501f60382374577736c8d8c0a7e11d9399b0bd9bb733765e9c7243e",
+            "turn": 3,
+            "hp": 24,
+            "block": 5,
+            "energy": 0,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 0,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 35,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "STRIKE_IRONCLAD+0",
+              "BODY_SLAM+0"
+            ],
+            "draw": [
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "BASH+0",
+              "STRIKE_IRONCLAD+0",
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "discard": [
+              "IRON_WAVE+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "exhaust": [
+              "FEED+0"
+            ],
+            "powers": [
+              "2:STRENGTH_POWER:2"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 15,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [
+              "BASH.OnPlay: MethodMirrorIncomplete",
+              "FEED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "remaining": 35,
+            "alive": 1
+          }
+        },
+        {
+          "id": 26,
+          "parent": 25,
+          "action": {
+            "kind": 2,
+            "turn": 3,
+            "card_id": "",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": false,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "c125ca6c76871446a2160bb31df2d18df15521e25d9e1d1369268e9f852ea159",
+            "turn": 4,
+            "hp": 21,
+            "block": 0,
+            "energy": 3,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 0,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 35,
+                "block": 5
+              }
+            ],
+            "hand": [
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "BASH+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "draw": [
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "discard": [
+              "IRON_WAVE+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "BODY_SLAM+0"
+            ],
+            "exhaust": [
+              "FEED+0"
+            ],
+            "powers": [
+              "2:STRENGTH_POWER:2"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 18,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [
+              "BASH.OnPlay: MethodMirrorIncomplete",
+              "FEED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "remaining": 35,
+            "alive": 1
+          }
+        },
+        {
+          "id": 27,
+          "parent": 26,
+          "action": {
+            "kind": 0,
+            "turn": 4,
+            "card_id": "BASH",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "target_combat_id": 2,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": true,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "522d5d0322b65af8c2c9f597fe9e79d1a8cfb6a1e197d7a1dfae8b471492c85f",
+            "turn": 4,
+            "hp": 21,
+            "block": 0,
+            "energy": 1,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 0,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 32,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "draw": [
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "discard": [
+              "IRON_WAVE+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "BODY_SLAM+0",
+              "BASH+0"
+            ],
+            "exhaust": [
+              "FEED+0"
+            ],
+            "powers": [
+              "2:STRENGTH_POWER:2",
+              "2:VULNERABLE_POWER:2"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 18,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [
+              "BASH.OnPlay: MethodMirrorIncomplete",
+              "FEED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "remaining": 32,
+            "alive": 1
+          }
+        },
+        {
+          "id": 28,
+          "parent": 27,
+          "action": {
+            "kind": 0,
+            "turn": 4,
+            "card_id": "STRIKE_IRONCLAD",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "target_combat_id": 2,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": true,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "e2eccdd25345ab36451f11aaa435d603d8596df098ffea48bb19b383cbdeea5b",
+            "turn": 4,
+            "hp": 21,
+            "block": 0,
+            "energy": 0,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 0,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 23,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0"
+            ],
+            "draw": [
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "discard": [
+              "IRON_WAVE+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "BODY_SLAM+0",
+              "BASH+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "exhaust": [
+              "FEED+0"
+            ],
+            "powers": [
+              "2:STRENGTH_POWER:2",
+              "2:VULNERABLE_POWER:2"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 18,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [
+              "BASH.OnPlay: MethodMirrorIncomplete",
+              "FEED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "remaining": 23,
+            "alive": 1
+          }
+        },
+        {
+          "id": 29,
+          "parent": 28,
+          "action": {
+            "kind": 2,
+            "turn": 4,
+            "card_id": "",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": false,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "c58a5b3d5e9dd4b954529c7f6415f8968f66ad01f7bfe3724e31a81d27e7c64a",
+            "turn": 5,
+            "hp": 21,
+            "block": 0,
+            "energy": 3,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 0,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 23,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "draw": [
+              "STRIKE_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "IRON_WAVE+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "BASH+0",
+              "DEFEND_IRONCLAD+0",
+              "BODY_SLAM+0"
+            ],
+            "discard": [],
+            "exhaust": [
+              "FEED+0"
+            ],
+            "powers": [
+              "2:STRENGTH_POWER:4",
+              "2:VULNERABLE_POWER:1"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 18,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [
+              "BASH.OnPlay: MethodMirrorIncomplete",
+              "FEED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "remaining": 23,
+            "alive": 1
+          }
+        },
+        {
+          "id": 30,
+          "parent": 29,
+          "action": {
+            "kind": 0,
+            "turn": 5,
+            "card_id": "STRIKE_IRONCLAD",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "target_combat_id": 2,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": true,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "3703b824b3c8634b6f76ea5a8ce075bb13a19a375986931b548cd46fd35d17c8",
+            "turn": 5,
+            "hp": 21,
+            "block": 0,
+            "energy": 2,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 0,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 14,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "draw": [
+              "STRIKE_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "IRON_WAVE+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "BASH+0",
+              "DEFEND_IRONCLAD+0",
+              "BODY_SLAM+0"
+            ],
+            "discard": [
+              "STRIKE_IRONCLAD+0"
+            ],
+            "exhaust": [
+              "FEED+0"
+            ],
+            "powers": [
+              "2:STRENGTH_POWER:4",
+              "2:VULNERABLE_POWER:1"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 18,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [
+              "BASH.OnPlay: MethodMirrorIncomplete",
+              "FEED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "remaining": 14,
+            "alive": 1
+          }
+        },
+        {
+          "id": 31,
+          "parent": 30,
+          "action": {
+            "kind": 0,
+            "turn": 5,
+            "card_id": "STRIKE_IRONCLAD",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "target_combat_id": 2,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": true,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "2a04615c54458ff09db6fab0d3a6152cc2d6be26f27177befe06ddb0bcb55f7a",
+            "turn": 5,
+            "hp": 21,
+            "block": 0,
+            "energy": 1,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 0,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 5,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "draw": [
+              "STRIKE_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "IRON_WAVE+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "BASH+0",
+              "DEFEND_IRONCLAD+0",
+              "BODY_SLAM+0"
+            ],
+            "discard": [
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "exhaust": [
+              "FEED+0"
+            ],
+            "powers": [
+              "2:STRENGTH_POWER:4",
+              "2:VULNERABLE_POWER:1"
+            ],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 18,
+            "stop": "active",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [
+              "BASH.OnPlay: MethodMirrorIncomplete",
+              "FEED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "remaining": 5,
+            "alive": 1
+          }
+        },
+        {
+          "id": 32,
+          "parent": 31,
+          "action": {
+            "kind": 0,
+            "turn": 5,
+            "card_id": "STRIKE_IRONCLAD",
+            "card_occurrence": 0,
+            "target_index": -1,
+            "target_combat_id": 2,
+            "card_title": "",
+            "target_name": "",
+            "nested_choices_before_primary": 0,
+            "potion_slot": -1,
+            "potion_id": "",
+            "potion_title": "",
+            "replay_count": 0,
+            "card_state_key": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "card_state_occurrence": 0,
+            "ends_player_turn": false,
+            "card_upgrade_level": 0,
+            "card_enchantment_id": "",
+            "is_executable": true,
+            "action_title": ""
+          },
+          "frame": {
+            "stamp": "1be25191307731f99aa3f1220743ba7dd9f97b828fcff90e899dec5cb6c457ca",
+            "turn": 5,
+            "hp": 21,
+            "block": 0,
+            "energy": 0,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 0,
+                "block": 0
+              },
+              {
+                "id": 2,
+                "hp": 0,
+                "block": 0
+              }
+            ],
+            "hand": [
+              "JUGGLING+0",
+              "DEFEND_IRONCLAD+0"
+            ],
+            "draw": [
+              "STRIKE_IRONCLAD+0",
+              "DEFEND_IRONCLAD+0",
+              "IRON_WAVE+0",
+              "DEFEND_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0",
+              "BASH+0",
+              "DEFEND_IRONCLAD+0",
+              "BODY_SLAM+0"
+            ],
+            "discard": [
+              "STRIKE_IRONCLAD+0",
+              "STRIKE_IRONCLAD+0"
+            ],
+            "exhaust": [
+              "FEED+0"
+            ],
+            "powers": [],
+            "potions": [
+              "BEETLE_JUICE",
+              null,
+              null
+            ],
+            "cumulative_loss": 18,
+            "stop": "predicted_win",
+            "boundary": "None",
+            "risk": false,
+            "gaps": [
+              "BASH.OnPlay: MethodMirrorIncomplete",
+              "FEED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "remaining": 0,
+            "alive": 0
+          }
+        }
+      ],
+      "transition_faults": []
+    },
+    "native": {
+      "root_verified": true,
+      "matched_actions": 17,
+      "strict_terminal": true,
+      "trace": [
+        {
+          "step": 1,
+          "native_action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 3,
+              "target_index": 0
+            }
+          },
+          "native_ms": 74.6898,
+          "expected_sha256": "f99897c1cd780e2a2aca25e444f8264dccd524026f51ce6f6e32ecc3584d2d63",
+          "actual_sha256": "f99897c1cd780e2a2aca25e444f8264dccd524026f51ce6f6e32ecc3584d2d63",
+          "terminal": false,
+          "decision": "combat_play"
+        },
+        {
+          "step": 2,
+          "native_action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 0,
+              "target_index": 0
+            }
+          },
+          "native_ms": 6.3453,
+          "expected_sha256": "1b438b5304b84c68da011e240779d8ad579fbb18942fc6bdedb6dffef7a983dd",
+          "actual_sha256": "1b438b5304b84c68da011e240779d8ad579fbb18942fc6bdedb6dffef7a983dd",
+          "terminal": false,
+          "decision": "combat_play"
+        },
+        {
+          "step": 3,
+          "native_action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 2,
+              "target_index": 0
+            }
+          },
+          "native_ms": 5.0941,
+          "expected_sha256": "b23138d797d582604417fb25dc3a353055b691b8af6e81d4dadadb7465f43084",
+          "actual_sha256": "b23138d797d582604417fb25dc3a353055b691b8af6e81d4dadadb7465f43084",
+          "terminal": false,
+          "decision": "combat_play"
+        },
+        {
+          "step": 4,
+          "native_action": {
+            "action": "end_turn",
+            "args": {}
+          },
+          "native_ms": 56.4158,
+          "expected_sha256": "d926576835cd4e271e7afb8ca2e761f3e987c5043874d5ef9e30d04f05d1f97d",
+          "actual_sha256": "d926576835cd4e271e7afb8ca2e761f3e987c5043874d5ef9e30d04f05d1f97d",
+          "terminal": false,
+          "decision": "combat_play"
+        },
+        {
+          "step": 5,
+          "native_action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 3,
+              "target_index": 0
+            }
+          },
+          "native_ms": 31.0175,
+          "expected_sha256": "f58d5ac340d4d4c24586b3f7f796709d012dd1bbce1714d6cde556a07edf5dc3",
+          "actual_sha256": "f58d5ac340d4d4c24586b3f7f796709d012dd1bbce1714d6cde556a07edf5dc3",
+          "terminal": false,
+          "decision": "combat_play"
+        },
+        {
+          "step": 6,
+          "native_action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 2,
+              "target_index": 0
+            }
+          },
+          "native_ms": 5.1041,
+          "expected_sha256": "8a35fde73f098308beffdd44e11d4a8c82a91d511be24265f5bab0263f31e460",
+          "actual_sha256": "8a35fde73f098308beffdd44e11d4a8c82a91d511be24265f5bab0263f31e460",
+          "terminal": false,
+          "decision": "combat_play"
+        },
+        {
+          "step": 7,
+          "native_action": {
+            "action": "end_turn",
+            "args": {}
+          },
+          "native_ms": 20.6591,
+          "expected_sha256": "691dc31f5cc89bf917632ce51f820d11ec799568b2b2785e92c3e15a59a687d5",
+          "actual_sha256": "691dc31f5cc89bf917632ce51f820d11ec799568b2b2785e92c3e15a59a687d5",
+          "terminal": false,
+          "decision": "combat_play"
+        },
+        {
+          "step": 8,
+          "native_action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 2,
+              "target_index": 0
+            }
+          },
+          "native_ms": 22.0273,
+          "expected_sha256": "b471489414bbcb9554ad6de47bf60706ab980579a764760bed2a3d1093a6a4b0",
+          "actual_sha256": "b471489414bbcb9554ad6de47bf60706ab980579a764760bed2a3d1093a6a4b0",
+          "terminal": false,
+          "decision": "combat_play"
+        },
+        {
+          "step": 9,
+          "native_action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 3,
+              "target_index": 0
+            }
+          },
+          "native_ms": 3.6988,
+          "expected_sha256": "2598886784758fb40c91330f5cea608d33b3dbf900d9a444f0d5e8edfba0f0e2",
+          "actual_sha256": "2598886784758fb40c91330f5cea608d33b3dbf900d9a444f0d5e8edfba0f0e2",
+          "terminal": false,
+          "decision": "combat_play"
+        },
+        {
+          "step": 10,
+          "native_action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 0,
+              "target_index": 0
+            }
+          },
+          "native_ms": 4.4383,
+          "expected_sha256": "43bf8ba2207e489f00c01f13cb130c0c2df98b5f3a7eb4f9abe0b4defb2f1f69",
+          "actual_sha256": "43bf8ba2207e489f00c01f13cb130c0c2df98b5f3a7eb4f9abe0b4defb2f1f69",
+          "terminal": false,
+          "decision": "combat_play"
+        },
+        {
+          "step": 11,
+          "native_action": {
+            "action": "end_turn",
+            "args": {}
+          },
+          "native_ms": 6.8557,
+          "expected_sha256": "59c604388bbc38c57123ca3911065c79c381e467449c4b725ac4cd113f01e9a0",
+          "actual_sha256": "59c604388bbc38c57123ca3911065c79c381e467449c4b725ac4cd113f01e9a0",
+          "terminal": false,
+          "decision": "combat_play"
+        },
+        {
+          "step": 12,
+          "native_action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 3,
+              "target_index": 0
+            }
+          },
+          "native_ms": 5.7855,
+          "expected_sha256": "37e94b601d1a990bf22e6eafe021a153883340c3043fe8f83fd0e32025d98c50",
+          "actual_sha256": "37e94b601d1a990bf22e6eafe021a153883340c3043fe8f83fd0e32025d98c50",
+          "terminal": false,
+          "decision": "combat_play"
+        },
+        {
+          "step": 13,
+          "native_action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 3,
+              "target_index": 0
+            }
+          },
+          "native_ms": 5.2239,
+          "expected_sha256": "cff0e5716121df5339a8bae97c43c9cc9c30d25d774bd6a983720282c1983b11",
+          "actual_sha256": "cff0e5716121df5339a8bae97c43c9cc9c30d25d774bd6a983720282c1983b11",
+          "terminal": false,
+          "decision": "combat_play"
+        },
+        {
+          "step": 14,
+          "native_action": {
+            "action": "end_turn",
+            "args": {}
+          },
+          "native_ms": 8.8922,
+          "expected_sha256": "cbdca9346529af74965b7adb5ecd425f4ae5db6b9bf1400f061d43f89b1ddcdb",
+          "actual_sha256": "cbdca9346529af74965b7adb5ecd425f4ae5db6b9bf1400f061d43f89b1ddcdb",
+          "terminal": false,
+          "decision": "combat_play"
+        },
+        {
+          "step": 15,
+          "native_action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 2,
+              "target_index": 0
+            }
+          },
+          "native_ms": 5.8553,
+          "expected_sha256": "d0c315fc71f495c825963c574a82f1ee668a11bfd67b353da8eae9f5202de17f",
+          "actual_sha256": "d0c315fc71f495c825963c574a82f1ee668a11bfd67b353da8eae9f5202de17f",
+          "terminal": false,
+          "decision": "combat_play"
+        },
+        {
+          "step": 16,
+          "native_action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 2,
+              "target_index": 0
+            }
+          },
+          "native_ms": 5.3974,
+          "expected_sha256": "dac50ca55638d6f365c46d703922783d1a94aa6870a39edfbcdfcd03cd38980c",
+          "actual_sha256": "dac50ca55638d6f365c46d703922783d1a94aa6870a39edfbcdfcd03cd38980c",
+          "terminal": false,
+          "decision": "combat_play"
+        },
+        {
+          "step": 17,
+          "native_action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 2,
+              "target_index": 0
+            }
+          },
+          "native_ms": 51.4628,
+          "expected_sha256": "46383b898452615fccdb4a30ea4178471fd0a5d8795825349d6d137c3c896166",
+          "actual_sha256": "46383b898452615fccdb4a30ea4178471fd0a5d8795825349d6d137c3c896166",
+          "terminal": true,
+          "decision": "card_reward"
+        }
+      ],
+      "terminal_contract": "Raw F2 comparison; E2 death-only window contract is inapplicable to a predicted win.",
+      "choice_evidence": [],
+      "root_frame_sha256": "5b28eb871796266c7d0c80a2db8d1a3d0ebb50891fc934462bbbd2c76052d187",
+      "attempted_step": 17,
+      "native_final": {
+        "type": "f1_final",
+        "terminal_callback": true,
+        "outcome": {
+          "initial_hp": 36,
+          "final_hp": 21,
+          "hp_lost": 18,
+          "hp_healed": 3,
+          "self_damage": 0,
+          "combat_ended": true,
+          "survived": true,
+          "final_enemy_hp": 0,
+          "potions": [],
+          "unattributed_hp_loss": 0
+        },
+        "round": 5,
+        "resources": {
+          "hp": 27,
+          "max_hp": 83,
+          "gold": 164,
+          "deck": [
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BODY_SLAM+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=CalculationBase=0;ExtraDamage=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "JUGGLING+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "FEED+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Damage=10;MaxHp=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "IRON_WAVE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5;Damage=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+          ],
+          "potions": [
+            "BEETLE_JUICE",
+            "DEXTERITY_POTION",
+            null
+          ],
+          "relics": [
+            "BURNING_BLOOD",
+            "LOST_COFFER"
+          ]
+        },
+        "choice_requests": [],
+        "choice_checks": [],
+        "choice_observation_ms": 0,
+        "choice_decision_ms": 0
+      },
+      "status": "win",
+      "peak_working_set_bytes": 123858944,
+      "elapsed_ms": 3069.6440001484007,
+      "preparation": {
+        "node_budget": 1000,
+        "soft_ms": 6000,
+        "cancel_ms": 8000,
+        "root_verified": true,
+        "capture_wall_ms": 1171.3137000333518,
+        "status": "complete_win",
+        "solve_ms": 0.0004,
+        "search_cpu_ms": 0,
+        "predicted_win": true,
+        "fixed_route": true,
+        "transitions": null,
+        "expanded_nodes": null,
+        "total_expanded_nodes": null,
+        "boundary": null,
+        "encounter": "NIBBITS_NORMAL",
+        "ms": 1096.7327,
+        "peak_working_set_bytes": 131117056,
+        "plan_action_count": 17,
+        "plan_rounds": 5,
+        "elapsed_ms": 3740.9598000813276
+      }
+    }
+  },
+  "cold_native_roots": [
+    {
+      "id": "run1-offering-west-a2f02",
+      "restore_ms": 1728.8848001044244
+    },
+    {
+      "id": "run1-offering-west-a2f03",
+      "restore_ms": 2042.513099964708
+    },
+    {
+      "id": "run1-offering-east-a2f06",
+      "restore_ms": 2284.5059998799115
+    },
+    {
+      "id": "run1-skip-middle-a2f02",
+      "restore_ms": 2670.709100086242
+    },
+    {
+      "id": "run1-skip-middle-a2f05",
+      "restore_ms": 2510.082700056955
+    }
+  ]
+}
