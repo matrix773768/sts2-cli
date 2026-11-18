@@ -46,11 +46,11 @@ def prepare_native(output, root, result, *, restore=f3a.restored):
     return preparation, plan
 
 
-def expect_native(output, root, result):
-    preparation, plan = prepare_native(output, root, result)
+def expect_native(output, root, result, *, restore=f3a.restored):
+    preparation, plan = prepare_native(output, root, result, restore=restore)
     if plan is None:
         return preparation
-    native = f3a.replay(output, root, plan)
+    native = f3a.replay(output, root, plan, restore=restore)
     native["preparation"] = preparation
     return native
 
@@ -70,7 +70,7 @@ def search(output, root, arm, potions, cap, rejected, *, restore=f3a.restored):
         return result
 
 
-def run_cell(output, root, arm, potions, cap):
+def run_cell(output, root, arm, potions, cap, *, restore=f3a.restored):
     trials, rejected, compact = [], [], []
     used = 0
     status = "not_run"
@@ -81,7 +81,7 @@ def run_cell(output, root, arm, potions, cap):
         if used == cap:
             break
         try:
-            result = search(output, root, arm, potions, cap - used, rejected)
+            result = search(output, root, arm, potions, cap - used, rejected, restore=restore)
         except (f1.i2.StopRun, RuntimeError, OSError, TimeoutError, f3a.Difference) as error:
             result = dict(status=f1.classify(error), detail=str(error), transitions=0)
         used += result["transitions"]
@@ -89,7 +89,7 @@ def run_cell(output, root, arm, potions, cap):
         if status == "predicted_win":
             if first_prediction is None:
                 first_prediction = used
-            verified = expect_native(output, root, result)
+            verified = expect_native(output, root, result, restore=restore)
             result["verification"] = verified
             status = verified["status"]
             if status == "win":

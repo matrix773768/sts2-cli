@@ -108,6 +108,9 @@ def replay_live(game, state, plan, row, send=None):
             audit = dict(step=index, native_action=step["native_action"], native_ms=step["native_ms"],
                          expected_sha256=frame_hash(expected), actual_sha256=frame_hash(step["state"]),
                          terminal=step["terminal"], decision=state["decision"])
+            if "terminal_window" in step:
+                audit["terminal_window"] = step["terminal_window"]
+                audit["before_window"] = step.get("before_window")
             row["trace"].append(audit)
             equal(index, expected, step["state"])
             equal(f"{index}:terminal_callback", last, step["terminal"])
@@ -128,13 +131,13 @@ def replay_live(game, state, plan, row, send=None):
     return state
 
 
-def replay(output, root, plan):
+def replay(output, root, plan, *, restore=restored):
     row = dict(root_verified=False, matched_actions=0, strict_terminal=False, trace=[])
     if len(plan["actions"]) != len(plan["frames"]) or not 1 <= len(plan["actions"]) <= MAX_PLAN:
         return dict(row, status="invalid_prediction_frames")
     clock = perf_counter()
     try:
-        with restored(output, root) as (game, state):
+        with restore(output, root) as (game, state):
             replay_live(game, state, plan, row)
             row["peak_working_set_bytes"] = game.report["peak_working_set_bytes"]
     except Difference as error:

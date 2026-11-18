@@ -1,12 +1,14 @@
 # STS2 AI — 项目状态与交接（PROJECT_STATUS）
 
 > 更新日期：2026-11-18（Asia/Shanghai）
-> 当前主线：M1-F3D-A 已解决两条冻结 Shiv 根的 Survivor 预测待选。下一步按机制扩充原生与预测兼容性证据。战损优化和 M2 局外学习暂缓。
+> 当前主线：M1-F3D-B 已验证 S2A 六个冻结搜索根的完整原生胜路。敌方侧终局窗口仍严格拒绝。下一步按机制扩充原生与预测兼容性证据。战损优化和 M2 局外学习暂缓。
 > 本文件描述 **matrix773768/sts2-cli** 的 `port/v0.113.1` 分支，不代表上游 `wuhao21/sts2-cli` 或 `main` 的支持情况。
 > M0 最后一次业务代码提交：`bc48ac58aeca80c2c7b9249cbf98f316ae99a27b` — Restore native Ancient healing and act-start travel rules。
 > 本文件是交接摘要；具体实现、测试断言、原生 IL 及日志以当前仓库和本机实际文件为准。不要将历史总结当成新的测试结果。
 
 ## 本阶段交接
+
+M1-F3D-B 复现了敌方侧原生胜利回调与冻结预测保留玩家侧计数的终局差分，保留严格拒绝并用既有重试得到替代胜路。隔离撤下已知 Neutralize 替代 prefix，使用原生中和完成搜索与重放。S2A 六个冻结根全部取得原生验收胜路，122 步严格匹配。见 [M1-F3D-B 报告与复现](m1-f3d-b-prediction-compatibility.md)。
 
 M1-F3D-A 为 Survivor 出牌编码单张合法手牌弃牌，复用原生实例绑定和严格帧核对。相同额度内，两条冻结 S2A Shiv 根从首步待选耗尽变为 18 和 26 次转移的完整原生胜利。重复同名同状态防御的第二个原实例也通过固定预测与原生差分。见 [M1-F3D-A 报告与复现](m1-f3d-a-survivor-choice.md)。
 
