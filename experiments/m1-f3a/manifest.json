@@ -1,0 +1,4820 @@
+{
+  "schema": 1,
+  "source": "tests/boss_reward_run_1.jsonl",
+  "source_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+  "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+  "solver_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13",
+  "routes": [
+    {
+      "branch": "offering-west",
+      "boss_reward": "Offering",
+      "direction": "west",
+      "encounters": [
+        {
+          "id": "run1-offering-west-a2f02",
+          "duplicate": false
+        },
+        {
+          "id": "run1-offering-west-a2f03",
+          "duplicate": false
+        }
+      ],
+      "status": "death",
+      "boss_reward_hp": 8,
+      "map_actions": 3,
+      "native_command_count": 55
+    },
+    {
+      "branch": "offering-east",
+      "boss_reward": "Offering",
+      "direction": "east",
+      "encounters": [
+        {
+          "id": "run1-offering-west-a2f02",
+          "duplicate": true
+        },
+        {
+          "id": "run1-offering-east-a2f06",
+          "duplicate": false
+        }
+      ],
+      "status": "death",
+      "boss_reward_hp": 8,
+      "map_actions": 6,
+      "native_command_count": 63
+    },
+    {
+      "branch": "skip-middle",
+      "boss_reward": "skip",
+      "direction": "middle",
+      "encounters": [
+        {
+          "id": "run1-skip-middle-a2f02",
+          "duplicate": false
+        },
+        {
+          "id": "run1-skip-middle-a2f05",
+          "duplicate": false
+        }
+      ],
+      "status": "death",
+      "boss_reward_hp": 8,
+      "map_actions": 5,
+      "native_command_count": 71
+    }
+  ],
+  "roots": [
+    {
+      "id": "run1-offering-west-a2f02",
+      "branch": "offering-west",
+      "source_group": "boss_reward_run_1",
+      "character": "Ironclad",
+      "ascension": 0,
+      "seed": "run_1",
+      "context": {
+        "act": 2,
+        "act_name": "HIVE.title",
+        "floor": 2,
+        "room_type": "Monster",
+        "boss": {
+          "id": "KNOWLEDGE_DEMON_BOSS",
+          "name": "KNOWLEDGE_DEMON.name"
+        }
+      },
+      "identity": {
+        "type": "f1_root",
+        "encounter": "TUNNELER_WEAK",
+        "live": "61aa29b03d9e1ad0829605359d94c1648da64ed6350038ea9dceb3592d0d3a64",
+        "resources": {
+          "hp": 93,
+          "max_hp": 93,
+          "gold": 223,
+          "deck": [
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "MOLTEN_FIST+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Damage=10|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "RAMPAGE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=10;Increase=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "FEED+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Damage=10;MaxHp=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "IRON_WAVE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5;Damage=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "CINDER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=18|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "THUNDERCLAP+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=4;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "UPPERCUT+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=13;Power=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "HEADBUTT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "OFFERING+0|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Cards=3;Energy=2;HpLoss=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TAUNT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=6;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BLOOD_WALL+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=16;HpLoss=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "FLAME_BARRIER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=12;DamageBack=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "VICIOUS+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TEAR_ASUNDER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=CalculationBase=0;CalculationExtra=1;Damage=5;Repeat=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+          ],
+          "potions": [
+            null,
+            "DEXTERITY_POTION",
+            "FLEX_POTION"
+          ],
+          "relics": [
+            "BURNING_BLOOD",
+            "LOST_COFFER",
+            "SWORD_OF_STONE",
+            "SHOVEL",
+            "STRAWBERRY",
+            "GLASS_EYE"
+          ]
+        }
+      },
+      "public_root": {
+        "type": "decision",
+        "decision": "combat_play",
+        "context": {
+          "act": 2,
+          "act_name": "HIVE.title",
+          "floor": 2,
+          "room_type": "Monster",
+          "boss": {
+            "id": "KNOWLEDGE_DEMON_BOSS",
+            "name": "KNOWLEDGE_DEMON.name"
+          }
+        },
+        "round": 1,
+        "energy": 3,
+        "max_energy": 3,
+        "hand": [
+          {
+            "index": 0,
+            "id": "CARD.POMMEL_STRIKE",
+            "name": "POMMEL_STRIKE.title",
+            "cost": 1,
+            "type": "Attack",
+            "rarity": "Common",
+            "can_play": true,
+            "target_type": "AnyEnemy",
+            "stats": {
+              "damage": 9,
+              "cards": 1
+            },
+            "description": "POMMEL_STRIKE.description",
+            "damage_by_target": [
+              {
+                "target_index": 0,
+                "name": "TUNNELER.name",
+                "damage": 9
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "id": "CARD.TAUNT",
+            "name": "TAUNT.title",
+            "cost": 1,
+            "type": "Skill",
+            "rarity": "Common",
+            "can_play": true,
+            "target_type": "AnyEnemy",
+            "stats": {
+              "block": 6,
+              "vulnerablepower": 1
+            },
+            "description": "TAUNT.description"
+          },
+          {
+            "index": 2,
+            "id": "CARD.DEFEND_IRONCLAD",
+            "name": "DEFEND_IRONCLAD.title",
+            "cost": 1,
+            "type": "Skill",
+            "rarity": "Basic",
+            "can_play": true,
+            "target_type": "Self",
+            "stats": {
+              "block": 5
+            },
+            "description": "DEFEND_IRONCLAD.description"
+          },
+          {
+            "index": 3,
+            "id": "CARD.RAMPAGE",
+            "name": "RAMPAGE.title",
+            "cost": 1,
+            "type": "Attack",
+            "rarity": "Uncommon",
+            "can_play": true,
+            "target_type": "AnyEnemy",
+            "stats": {
+              "damage": 10,
+              "increase": 5
+            },
+            "description": "RAMPAGE.description",
+            "damage_by_target": [
+              {
+                "target_index": 0,
+                "name": "TUNNELER.name",
+                "damage": 10
+              }
+            ]
+          },
+          {
+            "index": 4,
+            "id": "CARD.SHRUG_IT_OFF",
+            "name": "SHRUG_IT_OFF.title",
+            "cost": 1,
+            "type": "Skill",
+            "rarity": "Common",
+            "can_play": true,
+            "target_type": "Self",
+            "stats": {
+              "block": 8,
+              "cards": 1
+            },
+            "description": "SHRUG_IT_OFF.description"
+          }
+        ],
+        "enemies": [
+          {
+            "index": 0,
+            "name": "TUNNELER.name",
+            "hp": 87,
+            "max_hp": 87,
+            "block": 0,
+            "intents": [
+              {
+                "type": "Attack",
+                "damage": 13
+              }
+            ],
+            "intends_attack": true,
+            "powers": null
+          }
+        ],
+        "player": {
+          "name": "IRONCLAD.title",
+          "hp": 93,
+          "max_hp": 93,
+          "block": 0,
+          "gold": 223,
+          "relics": [
+            {
+              "name": "BURNING_BLOOD.title",
+              "description": "BURNING_BLOOD.description",
+              "vars": {
+                "Heal": 6
+              }
+            },
+            {
+              "name": "LOST_COFFER.title",
+              "description": "LOST_COFFER.description",
+              "vars": null
+            },
+            {
+              "name": "SWORD_OF_STONE.title",
+              "description": "SWORD_OF_STONE.description",
+              "vars": {
+                "Elites": 5
+              }
+            },
+            {
+              "name": "SHOVEL.title",
+              "description": "SHOVEL.description",
+              "vars": null
+            },
+            {
+              "name": "STRAWBERRY.title",
+              "description": "STRAWBERRY.description",
+              "vars": {
+                "MaxHp": 7
+              }
+            },
+            {
+              "name": "GLASS_EYE.title",
+              "description": "GLASS_EYE.description",
+              "vars": null
+            }
+          ],
+          "potions": [
+            {
+              "index": 0,
+              "name": "DEXTERITY_POTION.title",
+              "description": "DEXTERITY_POTION.description",
+              "vars": {
+                "DexterityPower": 2
+              },
+              "target_type": "AnyPlayer"
+            },
+            {
+              "index": 1,
+              "name": "FLEX_POTION.title",
+              "description": "FLEX_POTION.description",
+              "vars": {
+                "StrengthPower": 5
+              },
+              "target_type": "AnyPlayer"
+            }
+          ],
+          "deck_size": 28,
+          "deck": [
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.DEFEND_IRONCLAD",
+              "name": "DEFEND_IRONCLAD.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "DEFEND_IRONCLAD.description",
+              "stats": {
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 8
+                },
+                "description": "DEFEND_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.DEFEND_IRONCLAD",
+              "name": "DEFEND_IRONCLAD.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "DEFEND_IRONCLAD.description",
+              "stats": {
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 8
+                },
+                "description": "DEFEND_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.DEFEND_IRONCLAD",
+              "name": "DEFEND_IRONCLAD.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "DEFEND_IRONCLAD.description",
+              "stats": {
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 8
+                },
+                "description": "DEFEND_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.DEFEND_IRONCLAD",
+              "name": "DEFEND_IRONCLAD.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "DEFEND_IRONCLAD.description",
+              "stats": {
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 8
+                },
+                "description": "DEFEND_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.BASH",
+              "name": "BASH.title",
+              "cost": 2,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "BASH.description",
+              "stats": {
+                "damage": 8,
+                "vulnerablepower": 2
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "damage": 10,
+                  "vulnerablepower": 3
+                },
+                "description": "BASH.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.MOLTEN_FIST",
+              "name": "MOLTEN_FIST.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "MOLTEN_FIST.description",
+              "stats": {
+                "damage": 10
+              },
+              "keywords": [
+                "Exhaust"
+              ],
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 14
+                },
+                "description": "MOLTEN_FIST.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.RAMPAGE",
+              "name": "RAMPAGE.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "RAMPAGE.description",
+              "stats": {
+                "damage": 10,
+                "increase": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 10,
+                  "increase": 10
+                },
+                "description": "RAMPAGE.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.FEED",
+              "name": "FEED.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "FEED.description",
+              "stats": {
+                "damage": 10,
+                "maxhp": 3
+              },
+              "keywords": [
+                "Exhaust"
+              ],
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 12,
+                  "maxhp": 4
+                },
+                "description": "FEED.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.IRON_WAVE",
+              "name": "IRON_WAVE.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "IRON_WAVE.description",
+              "stats": {
+                "damage": 5,
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 7,
+                  "block": 7
+                },
+                "description": "IRON_WAVE.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.SHRUG_IT_OFF",
+              "name": "SHRUG_IT_OFF.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "SHRUG_IT_OFF.description",
+              "stats": {
+                "block": 8,
+                "cards": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 11,
+                  "cards": 1
+                },
+                "description": "SHRUG_IT_OFF.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.CINDER",
+              "name": "CINDER.title",
+              "cost": 2,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "CINDER.description",
+              "stats": {
+                "damage": 18
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "damage": 24
+                },
+                "description": "CINDER.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.POMMEL_STRIKE",
+              "name": "POMMEL_STRIKE.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "POMMEL_STRIKE.description",
+              "stats": {
+                "damage": 9,
+                "cards": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 10,
+                  "cards": 2
+                },
+                "description": "POMMEL_STRIKE.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.POMMEL_STRIKE",
+              "name": "POMMEL_STRIKE.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "POMMEL_STRIKE.description",
+              "stats": {
+                "damage": 9,
+                "cards": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 10,
+                  "cards": 2
+                },
+                "description": "POMMEL_STRIKE.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.THUNDERCLAP",
+              "name": "THUNDERCLAP.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "THUNDERCLAP.description",
+              "stats": {
+                "damage": 4,
+                "vulnerablepower": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 7,
+                  "vulnerablepower": 1
+                },
+                "description": "THUNDERCLAP.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.SHRUG_IT_OFF",
+              "name": "SHRUG_IT_OFF.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "SHRUG_IT_OFF.description",
+              "stats": {
+                "block": 8,
+                "cards": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 11,
+                  "cards": 1
+                },
+                "description": "SHRUG_IT_OFF.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.UPPERCUT",
+              "name": "UPPERCUT.title",
+              "cost": 2,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "UPPERCUT.description",
+              "stats": {
+                "damage": 13,
+                "power": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "damage": 13,
+                  "power": 2
+                },
+                "description": "UPPERCUT.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.HEADBUTT",
+              "name": "HEADBUTT.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "HEADBUTT.description",
+              "stats": {
+                "damage": 9
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 12
+                },
+                "description": "HEADBUTT.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.OFFERING",
+              "name": "OFFERING.title",
+              "cost": 0,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "OFFERING.description",
+              "stats": {
+                "hploss": 6,
+                "energy": 2,
+                "cards": 3
+              },
+              "keywords": [
+                "Exhaust"
+              ],
+              "after_upgrade": {
+                "cost": 0,
+                "stats": {
+                  "hploss": 6,
+                  "energy": 2,
+                  "cards": 5
+                },
+                "description": "OFFERING.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.TAUNT",
+              "name": "TAUNT.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "TAUNT.description",
+              "stats": {
+                "block": 6,
+                "vulnerablepower": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 7,
+                  "vulnerablepower": 2
+                },
+                "description": "TAUNT.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.BLOOD_WALL",
+              "name": "BLOOD_WALL.title",
+              "cost": 2,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "BLOOD_WALL.description",
+              "stats": {
+                "hploss": 2,
+                "block": 16
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "hploss": 2,
+                  "block": 20
+                },
+                "description": "BLOOD_WALL.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.FLAME_BARRIER",
+              "name": "FLAME_BARRIER.title",
+              "cost": 2,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "FLAME_BARRIER.description",
+              "stats": {
+                "block": 12,
+                "damageback": 4
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "block": 16,
+                  "damageback": 6
+                },
+                "description": "FLAME_BARRIER.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.VICIOUS",
+              "name": "VICIOUS.title",
+              "cost": 1,
+              "type": "Power",
+              "upgraded": false,
+              "description": "VICIOUS.description",
+              "stats": {
+                "cards": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "cards": 2
+                },
+                "description": "VICIOUS.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.TEAR_ASUNDER",
+              "name": "TEAR_ASUNDER.title",
+              "cost": 2,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "TEAR_ASUNDER.description",
+              "stats": {
+                "damage": 5,
+                "repeat": 1,
+                "calculationbase": 0,
+                "calculationextra": 1,
+                "calculatedhits": 0
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "damage": 7,
+                  "repeat": 1,
+                  "calculationbase": 0,
+                  "calculationextra": 1,
+                  "calculatedhits": 0
+                },
+                "description": "TEAR_ASUNDER.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            }
+          ]
+        },
+        "player_powers": null,
+        "draw_pile_count": 23,
+        "discard_pile_count": 0
+      },
+      "checkpoint": "offering-west-007.save.json",
+      "checkpoint_sha256": "c623b2d43e3b0986db6e3a4dfa1e06adffede573f268a8ffe079170fba1e82ce",
+      "entry": {
+        "action": "select_map_node",
+        "args": {
+          "col": 1,
+          "row": 1
+        }
+      },
+      "entry_command_index": 9,
+      "deck_mechanisms": {
+        "draw": [
+          "OFFERING",
+          "POMMEL_STRIKE",
+          "SHRUG_IT_OFF",
+          "VICIOUS"
+        ],
+        "energy_or_cost_change": [
+          "OFFERING"
+        ],
+        "discard_topdeck_and_scaling": [
+          "HEADBUTT",
+          "RAMPAGE"
+        ],
+        "self_hp_loss_payoffs": [
+          "TEAR_ASUNDER"
+        ],
+        "max_hp_on_kill": [
+          "FEED"
+        ]
+      },
+      "partition": "development",
+      "independently_root_verified": true,
+      "stratum": "research"
+    },
+    {
+      "id": "run1-offering-west-a2f03",
+      "branch": "offering-west",
+      "source_group": "boss_reward_run_1",
+      "character": "Ironclad",
+      "ascension": 0,
+      "seed": "run_1",
+      "context": {
+        "act": 2,
+        "act_name": "HIVE.title",
+        "floor": 3,
+        "room_type": "Monster",
+        "boss": {
+          "id": "KNOWLEDGE_DEMON_BOSS",
+          "name": "KNOWLEDGE_DEMON.name"
+        }
+      },
+      "identity": {
+        "type": "f1_root",
+        "encounter": "BOWLBUGS_WEAK",
+        "live": "efa9e92eee3d3ef44371bc756c01dfc779f639aa488aa1fa89be293f6353c7bb",
+        "resources": {
+          "hp": 17,
+          "max_hp": 93,
+          "gold": 235,
+          "deck": [
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "MOLTEN_FIST+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Damage=10|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "RAMPAGE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=10;Increase=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "FEED+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Damage=10;MaxHp=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "IRON_WAVE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5;Damage=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "CINDER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=18|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "THUNDERCLAP+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=4;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "UPPERCUT+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=13;Power=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "HEADBUTT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "OFFERING+0|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Cards=3;Energy=2;HpLoss=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TAUNT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=6;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BLOOD_WALL+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=16;HpLoss=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "FLAME_BARRIER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=12;DamageBack=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "VICIOUS+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TEAR_ASUNDER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=CalculationBase=0;CalculationExtra=1;Damage=5;Repeat=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "INFERNO+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=InfernoPower=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+          ],
+          "potions": [
+            "BLESSING_OF_THE_FORGE",
+            "DEXTERITY_POTION",
+            "FLEX_POTION"
+          ],
+          "relics": [
+            "BURNING_BLOOD",
+            "LOST_COFFER",
+            "SWORD_OF_STONE",
+            "SHOVEL",
+            "STRAWBERRY",
+            "GLASS_EYE"
+          ]
+        }
+      },
+      "public_root": {
+        "type": "decision",
+        "decision": "combat_play",
+        "context": {
+          "act": 2,
+          "act_name": "HIVE.title",
+          "floor": 3,
+          "room_type": "Monster",
+          "boss": {
+            "id": "KNOWLEDGE_DEMON_BOSS",
+            "name": "KNOWLEDGE_DEMON.name"
+          }
+        },
+        "round": 1,
+        "energy": 3,
+        "max_energy": 3,
+        "hand": [
+          {
+            "index": 0,
+            "id": "CARD.STRIKE_IRONCLAD",
+            "name": "STRIKE_IRONCLAD.title",
+            "cost": 1,
+            "type": "Attack",
+            "rarity": "Basic",
+            "can_play": true,
+            "target_type": "AnyEnemy",
+            "stats": {
+              "damage": 6
+            },
+            "description": "STRIKE_IRONCLAD.description",
+            "damage_by_target": [
+              {
+                "target_index": 0,
+                "name": "BOWLBUG_ROCK.name",
+                "damage": 6
+              },
+              {
+                "target_index": 1,
+                "name": "BOWLBUG_EGG.name",
+                "damage": 6
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "id": "CARD.DEFEND_IRONCLAD",
+            "name": "DEFEND_IRONCLAD.title",
+            "cost": 1,
+            "type": "Skill",
+            "rarity": "Basic",
+            "can_play": true,
+            "target_type": "Self",
+            "stats": {
+              "block": 5
+            },
+            "description": "DEFEND_IRONCLAD.description"
+          },
+          {
+            "index": 2,
+            "id": "CARD.STRIKE_IRONCLAD",
+            "name": "STRIKE_IRONCLAD.title",
+            "cost": 1,
+            "type": "Attack",
+            "rarity": "Basic",
+            "can_play": true,
+            "target_type": "AnyEnemy",
+            "stats": {
+              "damage": 6
+            },
+            "description": "STRIKE_IRONCLAD.description",
+            "damage_by_target": [
+              {
+                "target_index": 0,
+                "name": "BOWLBUG_ROCK.name",
+                "damage": 6
+              },
+              {
+                "target_index": 1,
+                "name": "BOWLBUG_EGG.name",
+                "damage": 6
+              }
+            ]
+          },
+          {
+            "index": 3,
+            "id": "CARD.HEADBUTT",
+            "name": "HEADBUTT.title",
+            "cost": 1,
+            "type": "Attack",
+            "rarity": "Common",
+            "can_play": true,
+            "target_type": "AnyEnemy",
+            "stats": {
+              "damage": 9
+            },
+            "description": "HEADBUTT.description",
+            "damage_by_target": [
+              {
+                "target_index": 0,
+                "name": "BOWLBUG_ROCK.name",
+                "damage": 9
+              },
+              {
+                "target_index": 1,
+                "name": "BOWLBUG_EGG.name",
+                "damage": 9
+              }
+            ]
+          },
+          {
+            "index": 4,
+            "id": "CARD.SHRUG_IT_OFF",
+            "name": "SHRUG_IT_OFF.title",
+            "cost": 1,
+            "type": "Skill",
+            "rarity": "Common",
+            "can_play": true,
+            "target_type": "Self",
+            "stats": {
+              "block": 8,
+              "cards": 1
+            },
+            "description": "SHRUG_IT_OFF.description"
+          }
+        ],
+        "enemies": [
+          {
+            "index": 0,
+            "name": "BOWLBUG_ROCK.name",
+            "hp": 46,
+            "max_hp": 46,
+            "block": 0,
+            "intents": [
+              {
+                "type": "Attack",
+                "damage": 15
+              }
+            ],
+            "intends_attack": true,
+            "powers": [
+              {
+                "name": "IMBALANCED_POWER.title",
+                "description": "IMBALANCED_POWER.description",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "name": "BOWLBUG_EGG.name",
+            "hp": 22,
+            "max_hp": 22,
+            "block": 0,
+            "intents": [
+              {
+                "type": "Attack",
+                "damage": 7
+              },
+              {
+                "type": "Defend"
+              }
+            ],
+            "intends_attack": true,
+            "powers": null
+          }
+        ],
+        "player": {
+          "name": "IRONCLAD.title",
+          "hp": 17,
+          "max_hp": 93,
+          "block": 0,
+          "gold": 235,
+          "relics": [
+            {
+              "name": "BURNING_BLOOD.title",
+              "description": "BURNING_BLOOD.description",
+              "vars": {
+                "Heal": 6
+              }
+            },
+            {
+              "name": "LOST_COFFER.title",
+              "description": "LOST_COFFER.description",
+              "vars": null
+            },
+            {
+              "name": "SWORD_OF_STONE.title",
+              "description": "SWORD_OF_STONE.description",
+              "vars": {
+                "Elites": 5
+              }
+            },
+            {
+              "name": "SHOVEL.title",
+              "description": "SHOVEL.description",
+              "vars": null
+            },
+            {
+              "name": "STRAWBERRY.title",
+              "description": "STRAWBERRY.description",
+              "vars": {
+                "MaxHp": 7
+              }
+            },
+            {
+              "name": "GLASS_EYE.title",
+              "description": "GLASS_EYE.description",
+              "vars": null
+            }
+          ],
+          "potions": [
+            {
+              "index": 0,
+              "name": "BLESSING_OF_THE_FORGE.title",
+              "description": "BLESSING_OF_THE_FORGE.description",
+              "vars": null,
+              "target_type": "AnyPlayer"
+            },
+            {
+              "index": 1,
+              "name": "DEXTERITY_POTION.title",
+              "description": "DEXTERITY_POTION.description",
+              "vars": {
+                "DexterityPower": 2
+              },
+              "target_type": "AnyPlayer"
+            },
+            {
+              "index": 2,
+              "name": "FLEX_POTION.title",
+              "description": "FLEX_POTION.description",
+              "vars": {
+                "StrengthPower": 5
+              },
+              "target_type": "AnyPlayer"
+            }
+          ],
+          "deck_size": 29,
+          "deck": [
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.DEFEND_IRONCLAD",
+              "name": "DEFEND_IRONCLAD.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "DEFEND_IRONCLAD.description",
+              "stats": {
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 8
+                },
+                "description": "DEFEND_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.DEFEND_IRONCLAD",
+              "name": "DEFEND_IRONCLAD.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "DEFEND_IRONCLAD.description",
+              "stats": {
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 8
+                },
+                "description": "DEFEND_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.DEFEND_IRONCLAD",
+              "name": "DEFEND_IRONCLAD.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "DEFEND_IRONCLAD.description",
+              "stats": {
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 8
+                },
+                "description": "DEFEND_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.DEFEND_IRONCLAD",
+              "name": "DEFEND_IRONCLAD.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "DEFEND_IRONCLAD.description",
+              "stats": {
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 8
+                },
+                "description": "DEFEND_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.BASH",
+              "name": "BASH.title",
+              "cost": 2,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "BASH.description",
+              "stats": {
+                "damage": 8,
+                "vulnerablepower": 2
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "damage": 10,
+                  "vulnerablepower": 3
+                },
+                "description": "BASH.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.MOLTEN_FIST",
+              "name": "MOLTEN_FIST.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "MOLTEN_FIST.description",
+              "stats": {
+                "damage": 10
+              },
+              "keywords": [
+                "Exhaust"
+              ],
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 14
+                },
+                "description": "MOLTEN_FIST.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.RAMPAGE",
+              "name": "RAMPAGE.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "RAMPAGE.description",
+              "stats": {
+                "damage": 10,
+                "increase": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 10,
+                  "increase": 10
+                },
+                "description": "RAMPAGE.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.FEED",
+              "name": "FEED.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "FEED.description",
+              "stats": {
+                "damage": 10,
+                "maxhp": 3
+              },
+              "keywords": [
+                "Exhaust"
+              ],
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 12,
+                  "maxhp": 4
+                },
+                "description": "FEED.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.IRON_WAVE",
+              "name": "IRON_WAVE.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "IRON_WAVE.description",
+              "stats": {
+                "damage": 5,
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 7,
+                  "block": 7
+                },
+                "description": "IRON_WAVE.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.SHRUG_IT_OFF",
+              "name": "SHRUG_IT_OFF.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "SHRUG_IT_OFF.description",
+              "stats": {
+                "block": 8,
+                "cards": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 11,
+                  "cards": 1
+                },
+                "description": "SHRUG_IT_OFF.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.CINDER",
+              "name": "CINDER.title",
+              "cost": 2,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "CINDER.description",
+              "stats": {
+                "damage": 18
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "damage": 24
+                },
+                "description": "CINDER.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.POMMEL_STRIKE",
+              "name": "POMMEL_STRIKE.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "POMMEL_STRIKE.description",
+              "stats": {
+                "damage": 9,
+                "cards": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 10,
+                  "cards": 2
+                },
+                "description": "POMMEL_STRIKE.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.POMMEL_STRIKE",
+              "name": "POMMEL_STRIKE.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "POMMEL_STRIKE.description",
+              "stats": {
+                "damage": 9,
+                "cards": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 10,
+                  "cards": 2
+                },
+                "description": "POMMEL_STRIKE.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.THUNDERCLAP",
+              "name": "THUNDERCLAP.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "THUNDERCLAP.description",
+              "stats": {
+                "damage": 4,
+                "vulnerablepower": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 7,
+                  "vulnerablepower": 1
+                },
+                "description": "THUNDERCLAP.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.SHRUG_IT_OFF",
+              "name": "SHRUG_IT_OFF.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "SHRUG_IT_OFF.description",
+              "stats": {
+                "block": 8,
+                "cards": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 11,
+                  "cards": 1
+                },
+                "description": "SHRUG_IT_OFF.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.UPPERCUT",
+              "name": "UPPERCUT.title",
+              "cost": 2,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "UPPERCUT.description",
+              "stats": {
+                "damage": 13,
+                "power": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "damage": 13,
+                  "power": 2
+                },
+                "description": "UPPERCUT.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.HEADBUTT",
+              "name": "HEADBUTT.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "HEADBUTT.description",
+              "stats": {
+                "damage": 9
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 12
+                },
+                "description": "HEADBUTT.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.OFFERING",
+              "name": "OFFERING.title",
+              "cost": 0,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "OFFERING.description",
+              "stats": {
+                "hploss": 6,
+                "energy": 2,
+                "cards": 3
+              },
+              "keywords": [
+                "Exhaust"
+              ],
+              "after_upgrade": {
+                "cost": 0,
+                "stats": {
+                  "hploss": 6,
+                  "energy": 2,
+                  "cards": 5
+                },
+                "description": "OFFERING.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.TAUNT",
+              "name": "TAUNT.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "TAUNT.description",
+              "stats": {
+                "block": 6,
+                "vulnerablepower": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 7,
+                  "vulnerablepower": 2
+                },
+                "description": "TAUNT.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.BLOOD_WALL",
+              "name": "BLOOD_WALL.title",
+              "cost": 2,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "BLOOD_WALL.description",
+              "stats": {
+                "hploss": 2,
+                "block": 16
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "hploss": 2,
+                  "block": 20
+                },
+                "description": "BLOOD_WALL.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.FLAME_BARRIER",
+              "name": "FLAME_BARRIER.title",
+              "cost": 2,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "FLAME_BARRIER.description",
+              "stats": {
+                "block": 12,
+                "damageback": 4
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "block": 16,
+                  "damageback": 6
+                },
+                "description": "FLAME_BARRIER.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.VICIOUS",
+              "name": "VICIOUS.title",
+              "cost": 1,
+              "type": "Power",
+              "upgraded": false,
+              "description": "VICIOUS.description",
+              "stats": {
+                "cards": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "cards": 2
+                },
+                "description": "VICIOUS.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.TEAR_ASUNDER",
+              "name": "TEAR_ASUNDER.title",
+              "cost": 2,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "TEAR_ASUNDER.description",
+              "stats": {
+                "damage": 5,
+                "repeat": 1,
+                "calculationbase": 0,
+                "calculationextra": 1,
+                "calculatedhits": 0
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "damage": 7,
+                  "repeat": 1,
+                  "calculationbase": 0,
+                  "calculationextra": 1,
+                  "calculatedhits": 0
+                },
+                "description": "TEAR_ASUNDER.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.INFERNO",
+              "name": "INFERNO.title",
+              "cost": 1,
+              "type": "Power",
+              "upgraded": true,
+              "description": "INFERNO.description",
+              "stats": {
+                "infernopower": 9
+              },
+              "keywords": null,
+              "after_upgrade": null
+            }
+          ]
+        },
+        "player_powers": null,
+        "draw_pile_count": 24,
+        "discard_pile_count": 0
+      },
+      "checkpoint": "offering-west-046.save.json",
+      "checkpoint_sha256": "e765f3874c4b8cfc720e98b61f672bedb0939cdcd00a57cf926b7353f1643e17",
+      "entry": {
+        "action": "select_map_node",
+        "args": {
+          "col": 1,
+          "row": 2
+        }
+      },
+      "entry_command_index": 48,
+      "deck_mechanisms": {
+        "draw": [
+          "OFFERING",
+          "POMMEL_STRIKE",
+          "SHRUG_IT_OFF",
+          "VICIOUS"
+        ],
+        "energy_or_cost_change": [
+          "OFFERING"
+        ],
+        "discard_topdeck_and_scaling": [
+          "HEADBUTT",
+          "RAMPAGE"
+        ],
+        "self_hp_loss_payoffs": [
+          "INFERNO",
+          "TEAR_ASUNDER"
+        ],
+        "max_hp_on_kill": [
+          "FEED"
+        ]
+      },
+      "partition": "development",
+      "independently_root_verified": true,
+      "stratum": "research"
+    },
+    {
+      "id": "run1-offering-east-a2f06",
+      "branch": "offering-east",
+      "source_group": "boss_reward_run_1",
+      "character": "Ironclad",
+      "ascension": 0,
+      "seed": "run_1",
+      "context": {
+        "act": 2,
+        "act_name": "HIVE.title",
+        "floor": 6,
+        "room_type": "Monster",
+        "boss": {
+          "id": "KNOWLEDGE_DEMON_BOSS",
+          "name": "KNOWLEDGE_DEMON.name"
+        }
+      },
+      "identity": {
+        "type": "f1_root",
+        "encounter": "BOWLBUGS_WEAK",
+        "live": "af1f8ef845f6b59760a93d1969ac3af2620fd747c07ee06f002dac615796d6a7",
+        "resources": {
+          "hp": 17,
+          "max_hp": 93,
+          "gold": 210,
+          "deck": [
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "MOLTEN_FIST+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Damage=10|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "RAMPAGE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=10;Increase=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "FEED+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Damage=10;MaxHp=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "IRON_WAVE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5;Damage=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "CINDER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=18|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "THUNDERCLAP+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=4;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "UPPERCUT+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=13;Power=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "HEADBUTT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "OFFERING+0|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Cards=3;Energy=2;HpLoss=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TAUNT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=6;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BLOOD_WALL+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=16;HpLoss=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "FLAME_BARRIER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=12;DamageBack=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TEAR_ASUNDER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=CalculationBase=0;CalculationExtra=1;Damage=5;Repeat=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "INFERNO+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=InfernoPower=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "ENLIGHTENMENT+0|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+          ],
+          "potions": [
+            "BLESSING_OF_THE_FORGE",
+            "DEXTERITY_POTION",
+            "FLEX_POTION"
+          ],
+          "relics": [
+            "BURNING_BLOOD",
+            "LOST_COFFER",
+            "SWORD_OF_STONE",
+            "SHOVEL",
+            "STRAWBERRY",
+            "GLASS_EYE"
+          ]
+        }
+      },
+      "public_root": {
+        "type": "decision",
+        "decision": "combat_play",
+        "context": {
+          "act": 2,
+          "act_name": "HIVE.title",
+          "floor": 6,
+          "room_type": "Monster",
+          "boss": {
+            "id": "KNOWLEDGE_DEMON_BOSS",
+            "name": "KNOWLEDGE_DEMON.name"
+          }
+        },
+        "round": 1,
+        "energy": 3,
+        "max_energy": 3,
+        "hand": [
+          {
+            "index": 0,
+            "id": "CARD.STRIKE_IRONCLAD",
+            "name": "STRIKE_IRONCLAD.title",
+            "cost": 1,
+            "type": "Attack",
+            "rarity": "Basic",
+            "can_play": true,
+            "target_type": "AnyEnemy",
+            "stats": {
+              "damage": 6
+            },
+            "description": "STRIKE_IRONCLAD.description",
+            "damage_by_target": [
+              {
+                "target_index": 0,
+                "name": "BOWLBUG_ROCK.name",
+                "damage": 6
+              },
+              {
+                "target_index": 1,
+                "name": "BOWLBUG_NECTAR.name",
+                "damage": 6
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "id": "CARD.DEFEND_IRONCLAD",
+            "name": "DEFEND_IRONCLAD.title",
+            "cost": 1,
+            "type": "Skill",
+            "rarity": "Basic",
+            "can_play": true,
+            "target_type": "Self",
+            "stats": {
+              "block": 5
+            },
+            "description": "DEFEND_IRONCLAD.description"
+          },
+          {
+            "index": 2,
+            "id": "CARD.STRIKE_IRONCLAD",
+            "name": "STRIKE_IRONCLAD.title",
+            "cost": 1,
+            "type": "Attack",
+            "rarity": "Basic",
+            "can_play": true,
+            "target_type": "AnyEnemy",
+            "stats": {
+              "damage": 6
+            },
+            "description": "STRIKE_IRONCLAD.description",
+            "damage_by_target": [
+              {
+                "target_index": 0,
+                "name": "BOWLBUG_ROCK.name",
+                "damage": 6
+              },
+              {
+                "target_index": 1,
+                "name": "BOWLBUG_NECTAR.name",
+                "damage": 6
+              }
+            ]
+          },
+          {
+            "index": 3,
+            "id": "CARD.HEADBUTT",
+            "name": "HEADBUTT.title",
+            "cost": 1,
+            "type": "Attack",
+            "rarity": "Common",
+            "can_play": true,
+            "target_type": "AnyEnemy",
+            "stats": {
+              "damage": 9
+            },
+            "description": "HEADBUTT.description",
+            "damage_by_target": [
+              {
+                "target_index": 0,
+                "name": "BOWLBUG_ROCK.name",
+                "damage": 9
+              },
+              {
+                "target_index": 1,
+                "name": "BOWLBUG_NECTAR.name",
+                "damage": 9
+              }
+            ]
+          },
+          {
+            "index": 4,
+            "id": "CARD.SHRUG_IT_OFF",
+            "name": "SHRUG_IT_OFF.title",
+            "cost": 1,
+            "type": "Skill",
+            "rarity": "Common",
+            "can_play": true,
+            "target_type": "Self",
+            "stats": {
+              "block": 8,
+              "cards": 1
+            },
+            "description": "SHRUG_IT_OFF.description"
+          }
+        ],
+        "enemies": [
+          {
+            "index": 0,
+            "name": "BOWLBUG_ROCK.name",
+            "hp": 46,
+            "max_hp": 46,
+            "block": 0,
+            "intents": [
+              {
+                "type": "Attack",
+                "damage": 15
+              }
+            ],
+            "intends_attack": true,
+            "powers": [
+              {
+                "name": "IMBALANCED_POWER.title",
+                "description": "IMBALANCED_POWER.description",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "name": "BOWLBUG_NECTAR.name",
+            "hp": 38,
+            "max_hp": 38,
+            "block": 0,
+            "intents": [
+              {
+                "type": "Attack",
+                "damage": 3
+              }
+            ],
+            "intends_attack": true,
+            "powers": null
+          }
+        ],
+        "player": {
+          "name": "IRONCLAD.title",
+          "hp": 17,
+          "max_hp": 93,
+          "block": 0,
+          "gold": 210,
+          "relics": [
+            {
+              "name": "BURNING_BLOOD.title",
+              "description": "BURNING_BLOOD.description",
+              "vars": {
+                "Heal": 6
+              }
+            },
+            {
+              "name": "LOST_COFFER.title",
+              "description": "LOST_COFFER.description",
+              "vars": null
+            },
+            {
+              "name": "SWORD_OF_STONE.title",
+              "description": "SWORD_OF_STONE.description",
+              "vars": {
+                "Elites": 5
+              }
+            },
+            {
+              "name": "SHOVEL.title",
+              "description": "SHOVEL.description",
+              "vars": null
+            },
+            {
+              "name": "STRAWBERRY.title",
+              "description": "STRAWBERRY.description",
+              "vars": {
+                "MaxHp": 7
+              }
+            },
+            {
+              "name": "GLASS_EYE.title",
+              "description": "GLASS_EYE.description",
+              "vars": null
+            }
+          ],
+          "potions": [
+            {
+              "index": 0,
+              "name": "BLESSING_OF_THE_FORGE.title",
+              "description": "BLESSING_OF_THE_FORGE.description",
+              "vars": null,
+              "target_type": "AnyPlayer"
+            },
+            {
+              "index": 1,
+              "name": "DEXTERITY_POTION.title",
+              "description": "DEXTERITY_POTION.description",
+              "vars": {
+                "DexterityPower": 2
+              },
+              "target_type": "AnyPlayer"
+            },
+            {
+              "index": 2,
+              "name": "FLEX_POTION.title",
+              "description": "FLEX_POTION.description",
+              "vars": {
+                "StrengthPower": 5
+              },
+              "target_type": "AnyPlayer"
+            }
+          ],
+          "deck_size": 29,
+          "deck": [
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.DEFEND_IRONCLAD",
+              "name": "DEFEND_IRONCLAD.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "DEFEND_IRONCLAD.description",
+              "stats": {
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 8
+                },
+                "description": "DEFEND_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.DEFEND_IRONCLAD",
+              "name": "DEFEND_IRONCLAD.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "DEFEND_IRONCLAD.description",
+              "stats": {
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 8
+                },
+                "description": "DEFEND_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.DEFEND_IRONCLAD",
+              "name": "DEFEND_IRONCLAD.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "DEFEND_IRONCLAD.description",
+              "stats": {
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 8
+                },
+                "description": "DEFEND_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.DEFEND_IRONCLAD",
+              "name": "DEFEND_IRONCLAD.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "DEFEND_IRONCLAD.description",
+              "stats": {
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 8
+                },
+                "description": "DEFEND_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.BASH",
+              "name": "BASH.title",
+              "cost": 2,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "BASH.description",
+              "stats": {
+                "damage": 8,
+                "vulnerablepower": 2
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "damage": 10,
+                  "vulnerablepower": 3
+                },
+                "description": "BASH.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.MOLTEN_FIST",
+              "name": "MOLTEN_FIST.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "MOLTEN_FIST.description",
+              "stats": {
+                "damage": 10
+              },
+              "keywords": [
+                "Exhaust"
+              ],
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 14
+                },
+                "description": "MOLTEN_FIST.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.RAMPAGE",
+              "name": "RAMPAGE.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "RAMPAGE.description",
+              "stats": {
+                "damage": 10,
+                "increase": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 10,
+                  "increase": 10
+                },
+                "description": "RAMPAGE.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.FEED",
+              "name": "FEED.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "FEED.description",
+              "stats": {
+                "damage": 10,
+                "maxhp": 3
+              },
+              "keywords": [
+                "Exhaust"
+              ],
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 12,
+                  "maxhp": 4
+                },
+                "description": "FEED.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.IRON_WAVE",
+              "name": "IRON_WAVE.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "IRON_WAVE.description",
+              "stats": {
+                "damage": 5,
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 7,
+                  "block": 7
+                },
+                "description": "IRON_WAVE.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.SHRUG_IT_OFF",
+              "name": "SHRUG_IT_OFF.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "SHRUG_IT_OFF.description",
+              "stats": {
+                "block": 8,
+                "cards": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 11,
+                  "cards": 1
+                },
+                "description": "SHRUG_IT_OFF.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.CINDER",
+              "name": "CINDER.title",
+              "cost": 2,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "CINDER.description",
+              "stats": {
+                "damage": 18
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "damage": 24
+                },
+                "description": "CINDER.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.POMMEL_STRIKE",
+              "name": "POMMEL_STRIKE.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "POMMEL_STRIKE.description",
+              "stats": {
+                "damage": 9,
+                "cards": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 10,
+                  "cards": 2
+                },
+                "description": "POMMEL_STRIKE.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.POMMEL_STRIKE",
+              "name": "POMMEL_STRIKE.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "POMMEL_STRIKE.description",
+              "stats": {
+                "damage": 9,
+                "cards": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 10,
+                  "cards": 2
+                },
+                "description": "POMMEL_STRIKE.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.THUNDERCLAP",
+              "name": "THUNDERCLAP.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "THUNDERCLAP.description",
+              "stats": {
+                "damage": 4,
+                "vulnerablepower": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 7,
+                  "vulnerablepower": 1
+                },
+                "description": "THUNDERCLAP.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.SHRUG_IT_OFF",
+              "name": "SHRUG_IT_OFF.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "SHRUG_IT_OFF.description",
+              "stats": {
+                "block": 8,
+                "cards": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 11,
+                  "cards": 1
+                },
+                "description": "SHRUG_IT_OFF.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.UPPERCUT",
+              "name": "UPPERCUT.title",
+              "cost": 2,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "UPPERCUT.description",
+              "stats": {
+                "damage": 13,
+                "power": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "damage": 13,
+                  "power": 2
+                },
+                "description": "UPPERCUT.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.HEADBUTT",
+              "name": "HEADBUTT.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "HEADBUTT.description",
+              "stats": {
+                "damage": 9
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 12
+                },
+                "description": "HEADBUTT.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.OFFERING",
+              "name": "OFFERING.title",
+              "cost": 0,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "OFFERING.description",
+              "stats": {
+                "hploss": 6,
+                "energy": 2,
+                "cards": 3
+              },
+              "keywords": [
+                "Exhaust"
+              ],
+              "after_upgrade": {
+                "cost": 0,
+                "stats": {
+                  "hploss": 6,
+                  "energy": 2,
+                  "cards": 5
+                },
+                "description": "OFFERING.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.TAUNT",
+              "name": "TAUNT.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "TAUNT.description",
+              "stats": {
+                "block": 6,
+                "vulnerablepower": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 7,
+                  "vulnerablepower": 2
+                },
+                "description": "TAUNT.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.BLOOD_WALL",
+              "name": "BLOOD_WALL.title",
+              "cost": 2,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "BLOOD_WALL.description",
+              "stats": {
+                "hploss": 2,
+                "block": 16
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "hploss": 2,
+                  "block": 20
+                },
+                "description": "BLOOD_WALL.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.FLAME_BARRIER",
+              "name": "FLAME_BARRIER.title",
+              "cost": 2,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "FLAME_BARRIER.description",
+              "stats": {
+                "block": 12,
+                "damageback": 4
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "block": 16,
+                  "damageback": 6
+                },
+                "description": "FLAME_BARRIER.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.TEAR_ASUNDER",
+              "name": "TEAR_ASUNDER.title",
+              "cost": 2,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "TEAR_ASUNDER.description",
+              "stats": {
+                "damage": 5,
+                "repeat": 1,
+                "calculationbase": 0,
+                "calculationextra": 1,
+                "calculatedhits": 0
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "damage": 7,
+                  "repeat": 1,
+                  "calculationbase": 0,
+                  "calculationextra": 1,
+                  "calculatedhits": 0
+                },
+                "description": "TEAR_ASUNDER.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.INFERNO",
+              "name": "INFERNO.title",
+              "cost": 1,
+              "type": "Power",
+              "upgraded": true,
+              "description": "INFERNO.description",
+              "stats": {
+                "infernopower": 9
+              },
+              "keywords": null,
+              "after_upgrade": null
+            },
+            {
+              "id": "CARD.ENLIGHTENMENT",
+              "name": "ENLIGHTENMENT.title",
+              "cost": 0,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "ENLIGHTENMENT.description",
+              "stats": null,
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 0,
+                "stats": null,
+                "description": "ENLIGHTENMENT.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            }
+          ]
+        },
+        "player_powers": null,
+        "draw_pile_count": 24,
+        "discard_pile_count": 0
+      },
+      "checkpoint": "offering-east-052.save.json",
+      "checkpoint_sha256": "f7dd4226959fd53f9f2b713dfce13578501fa98b3d7c9e83a88e188ea1115d19",
+      "entry": {
+        "action": "select_map_node",
+        "args": {
+          "col": 6,
+          "row": 5
+        }
+      },
+      "entry_command_index": 54,
+      "deck_mechanisms": {
+        "draw": [
+          "OFFERING",
+          "POMMEL_STRIKE",
+          "SHRUG_IT_OFF"
+        ],
+        "energy_or_cost_change": [
+          "ENLIGHTENMENT",
+          "OFFERING"
+        ],
+        "discard_topdeck_and_scaling": [
+          "HEADBUTT",
+          "RAMPAGE"
+        ],
+        "self_hp_loss_payoffs": [
+          "INFERNO",
+          "TEAR_ASUNDER"
+        ],
+        "max_hp_on_kill": [
+          "FEED"
+        ]
+      },
+      "partition": "development",
+      "independently_root_verified": true,
+      "stratum": "research"
+    },
+    {
+      "id": "run1-skip-middle-a2f02",
+      "branch": "skip-middle",
+      "source_group": "boss_reward_run_1",
+      "character": "Ironclad",
+      "ascension": 0,
+      "seed": "run_1",
+      "context": {
+        "act": 2,
+        "act_name": "HIVE.title",
+        "floor": 2,
+        "room_type": "Monster",
+        "boss": {
+          "id": "KNOWLEDGE_DEMON_BOSS",
+          "name": "KNOWLEDGE_DEMON.name"
+        }
+      },
+      "identity": {
+        "type": "f1_root",
+        "encounter": "TUNNELER_WEAK",
+        "live": "3ea05592d1887452948a43eb266331db79af65b6aeefd1e431022217cf8e1131",
+        "resources": {
+          "hp": 93,
+          "max_hp": 93,
+          "gold": 223,
+          "deck": [
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "MOLTEN_FIST+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Damage=10|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "RAMPAGE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=10;Increase=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "FEED+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Damage=10;MaxHp=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "IRON_WAVE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5;Damage=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "CINDER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=18|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "THUNDERCLAP+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=4;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "UPPERCUT+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=13;Power=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "HEADBUTT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TAUNT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=6;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BLOOD_WALL+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=16;HpLoss=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "FLAME_BARRIER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=12;DamageBack=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "VICIOUS+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TEAR_ASUNDER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=CalculationBase=0;CalculationExtra=1;Damage=5;Repeat=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+          ],
+          "potions": [
+            null,
+            "DEXTERITY_POTION",
+            "FLEX_POTION"
+          ],
+          "relics": [
+            "BURNING_BLOOD",
+            "LOST_COFFER",
+            "SWORD_OF_STONE",
+            "SHOVEL",
+            "STRAWBERRY",
+            "GLASS_EYE"
+          ]
+        }
+      },
+      "public_root": {
+        "type": "decision",
+        "decision": "combat_play",
+        "context": {
+          "act": 2,
+          "act_name": "HIVE.title",
+          "floor": 2,
+          "room_type": "Monster",
+          "boss": {
+            "id": "KNOWLEDGE_DEMON_BOSS",
+            "name": "KNOWLEDGE_DEMON.name"
+          }
+        },
+        "round": 1,
+        "energy": 3,
+        "max_energy": 3,
+        "hand": [
+          {
+            "index": 0,
+            "id": "CARD.TAUNT",
+            "name": "TAUNT.title",
+            "cost": 1,
+            "type": "Skill",
+            "rarity": "Common",
+            "can_play": true,
+            "target_type": "AnyEnemy",
+            "stats": {
+              "block": 6,
+              "vulnerablepower": 1
+            },
+            "description": "TAUNT.description"
+          },
+          {
+            "index": 1,
+            "id": "CARD.UPPERCUT",
+            "name": "UPPERCUT.title",
+            "cost": 2,
+            "type": "Attack",
+            "rarity": "Uncommon",
+            "can_play": true,
+            "target_type": "AnyEnemy",
+            "stats": {
+              "damage": 13,
+              "power": 1
+            },
+            "description": "UPPERCUT.description",
+            "damage_by_target": [
+              {
+                "target_index": 0,
+                "name": "TUNNELER.name",
+                "damage": 13
+              }
+            ]
+          },
+          {
+            "index": 2,
+            "id": "CARD.MOLTEN_FIST",
+            "name": "MOLTEN_FIST.title",
+            "cost": 1,
+            "type": "Attack",
+            "rarity": "Common",
+            "can_play": true,
+            "target_type": "AnyEnemy",
+            "stats": {
+              "damage": 10
+            },
+            "description": "MOLTEN_FIST.description",
+            "keywords": [
+              "Exhaust"
+            ],
+            "damage_by_target": [
+              {
+                "target_index": 0,
+                "name": "TUNNELER.name",
+                "damage": 10
+              }
+            ]
+          },
+          {
+            "index": 3,
+            "id": "CARD.FLAME_BARRIER",
+            "name": "FLAME_BARRIER.title",
+            "cost": 2,
+            "type": "Skill",
+            "rarity": "Uncommon",
+            "can_play": true,
+            "target_type": "Self",
+            "stats": {
+              "block": 12,
+              "damageback": 4
+            },
+            "description": "FLAME_BARRIER.description"
+          },
+          {
+            "index": 4,
+            "id": "CARD.FEED",
+            "name": "FEED.title",
+            "cost": 1,
+            "type": "Attack",
+            "rarity": "Rare",
+            "can_play": true,
+            "target_type": "AnyEnemy",
+            "stats": {
+              "damage": 10,
+              "maxhp": 3
+            },
+            "description": "FEED.description",
+            "keywords": [
+              "Exhaust"
+            ],
+            "damage_by_target": [
+              {
+                "target_index": 0,
+                "name": "TUNNELER.name",
+                "damage": 10
+              }
+            ]
+          }
+        ],
+        "enemies": [
+          {
+            "index": 0,
+            "name": "TUNNELER.name",
+            "hp": 87,
+            "max_hp": 87,
+            "block": 0,
+            "intents": [
+              {
+                "type": "Attack",
+                "damage": 13
+              }
+            ],
+            "intends_attack": true,
+            "powers": null
+          }
+        ],
+        "player": {
+          "name": "IRONCLAD.title",
+          "hp": 93,
+          "max_hp": 93,
+          "block": 0,
+          "gold": 223,
+          "relics": [
+            {
+              "name": "BURNING_BLOOD.title",
+              "description": "BURNING_BLOOD.description",
+              "vars": {
+                "Heal": 6
+              }
+            },
+            {
+              "name": "LOST_COFFER.title",
+              "description": "LOST_COFFER.description",
+              "vars": null
+            },
+            {
+              "name": "SWORD_OF_STONE.title",
+              "description": "SWORD_OF_STONE.description",
+              "vars": {
+                "Elites": 5
+              }
+            },
+            {
+              "name": "SHOVEL.title",
+              "description": "SHOVEL.description",
+              "vars": null
+            },
+            {
+              "name": "STRAWBERRY.title",
+              "description": "STRAWBERRY.description",
+              "vars": {
+                "MaxHp": 7
+              }
+            },
+            {
+              "name": "GLASS_EYE.title",
+              "description": "GLASS_EYE.description",
+              "vars": null
+            }
+          ],
+          "potions": [
+            {
+              "index": 0,
+              "name": "DEXTERITY_POTION.title",
+              "description": "DEXTERITY_POTION.description",
+              "vars": {
+                "DexterityPower": 2
+              },
+              "target_type": "AnyPlayer"
+            },
+            {
+              "index": 1,
+              "name": "FLEX_POTION.title",
+              "description": "FLEX_POTION.description",
+              "vars": {
+                "StrengthPower": 5
+              },
+              "target_type": "AnyPlayer"
+            }
+          ],
+          "deck_size": 27,
+          "deck": [
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.DEFEND_IRONCLAD",
+              "name": "DEFEND_IRONCLAD.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "DEFEND_IRONCLAD.description",
+              "stats": {
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 8
+                },
+                "description": "DEFEND_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.DEFEND_IRONCLAD",
+              "name": "DEFEND_IRONCLAD.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "DEFEND_IRONCLAD.description",
+              "stats": {
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 8
+                },
+                "description": "DEFEND_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.DEFEND_IRONCLAD",
+              "name": "DEFEND_IRONCLAD.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "DEFEND_IRONCLAD.description",
+              "stats": {
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 8
+                },
+                "description": "DEFEND_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.DEFEND_IRONCLAD",
+              "name": "DEFEND_IRONCLAD.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "DEFEND_IRONCLAD.description",
+              "stats": {
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 8
+                },
+                "description": "DEFEND_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.BASH",
+              "name": "BASH.title",
+              "cost": 2,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "BASH.description",
+              "stats": {
+                "damage": 8,
+                "vulnerablepower": 2
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "damage": 10,
+                  "vulnerablepower": 3
+                },
+                "description": "BASH.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.MOLTEN_FIST",
+              "name": "MOLTEN_FIST.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "MOLTEN_FIST.description",
+              "stats": {
+                "damage": 10
+              },
+              "keywords": [
+                "Exhaust"
+              ],
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 14
+                },
+                "description": "MOLTEN_FIST.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.RAMPAGE",
+              "name": "RAMPAGE.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "RAMPAGE.description",
+              "stats": {
+                "damage": 10,
+                "increase": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 10,
+                  "increase": 10
+                },
+                "description": "RAMPAGE.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.FEED",
+              "name": "FEED.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "FEED.description",
+              "stats": {
+                "damage": 10,
+                "maxhp": 3
+              },
+              "keywords": [
+                "Exhaust"
+              ],
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 12,
+                  "maxhp": 4
+                },
+                "description": "FEED.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.IRON_WAVE",
+              "name": "IRON_WAVE.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "IRON_WAVE.description",
+              "stats": {
+                "damage": 5,
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 7,
+                  "block": 7
+                },
+                "description": "IRON_WAVE.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.SHRUG_IT_OFF",
+              "name": "SHRUG_IT_OFF.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "SHRUG_IT_OFF.description",
+              "stats": {
+                "block": 8,
+                "cards": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 11,
+                  "cards": 1
+                },
+                "description": "SHRUG_IT_OFF.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.CINDER",
+              "name": "CINDER.title",
+              "cost": 2,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "CINDER.description",
+              "stats": {
+                "damage": 18
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "damage": 24
+                },
+                "description": "CINDER.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.POMMEL_STRIKE",
+              "name": "POMMEL_STRIKE.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "POMMEL_STRIKE.description",
+              "stats": {
+                "damage": 9,
+                "cards": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 10,
+                  "cards": 2
+                },
+                "description": "POMMEL_STRIKE.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.POMMEL_STRIKE",
+              "name": "POMMEL_STRIKE.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "POMMEL_STRIKE.description",
+              "stats": {
+                "damage": 9,
+                "cards": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 10,
+                  "cards": 2
+                },
+                "description": "POMMEL_STRIKE.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.THUNDERCLAP",
+              "name": "THUNDERCLAP.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "THUNDERCLAP.description",
+              "stats": {
+                "damage": 4,
+                "vulnerablepower": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 7,
+                  "vulnerablepower": 1
+                },
+                "description": "THUNDERCLAP.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.SHRUG_IT_OFF",
+              "name": "SHRUG_IT_OFF.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "SHRUG_IT_OFF.description",
+              "stats": {
+                "block": 8,
+                "cards": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 11,
+                  "cards": 1
+                },
+                "description": "SHRUG_IT_OFF.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.UPPERCUT",
+              "name": "UPPERCUT.title",
+              "cost": 2,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "UPPERCUT.description",
+              "stats": {
+                "damage": 13,
+                "power": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "damage": 13,
+                  "power": 2
+                },
+                "description": "UPPERCUT.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.HEADBUTT",
+              "name": "HEADBUTT.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "HEADBUTT.description",
+              "stats": {
+                "damage": 9
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 12
+                },
+                "description": "HEADBUTT.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.TAUNT",
+              "name": "TAUNT.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "TAUNT.description",
+              "stats": {
+                "block": 6,
+                "vulnerablepower": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 7,
+                  "vulnerablepower": 2
+                },
+                "description": "TAUNT.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.BLOOD_WALL",
+              "name": "BLOOD_WALL.title",
+              "cost": 2,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "BLOOD_WALL.description",
+              "stats": {
+                "hploss": 2,
+                "block": 16
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "hploss": 2,
+                  "block": 20
+                },
+                "description": "BLOOD_WALL.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.FLAME_BARRIER",
+              "name": "FLAME_BARRIER.title",
+              "cost": 2,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "FLAME_BARRIER.description",
+              "stats": {
+                "block": 12,
+                "damageback": 4
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "block": 16,
+                  "damageback": 6
+                },
+                "description": "FLAME_BARRIER.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.VICIOUS",
+              "name": "VICIOUS.title",
+              "cost": 1,
+              "type": "Power",
+              "upgraded": false,
+              "description": "VICIOUS.description",
+              "stats": {
+                "cards": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "cards": 2
+                },
+                "description": "VICIOUS.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.TEAR_ASUNDER",
+              "name": "TEAR_ASUNDER.title",
+              "cost": 2,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "TEAR_ASUNDER.description",
+              "stats": {
+                "damage": 5,
+                "repeat": 1,
+                "calculationbase": 0,
+                "calculationextra": 1,
+                "calculatedhits": 0
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "damage": 7,
+                  "repeat": 1,
+                  "calculationbase": 0,
+                  "calculationextra": 1,
+                  "calculatedhits": 0
+                },
+                "description": "TEAR_ASUNDER.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            }
+          ]
+        },
+        "player_powers": null,
+        "draw_pile_count": 22,
+        "discard_pile_count": 0
+      },
+      "checkpoint": "skip-middle-007.save.json",
+      "checkpoint_sha256": "2c3303672a429f545a4ea1f94a0813a36cb673c63e8e655055200009d084fe35",
+      "entry": {
+        "action": "select_map_node",
+        "args": {
+          "col": 3,
+          "row": 1
+        }
+      },
+      "entry_command_index": 9,
+      "deck_mechanisms": {
+        "draw": [
+          "POMMEL_STRIKE",
+          "SHRUG_IT_OFF",
+          "VICIOUS"
+        ],
+        "discard_topdeck_and_scaling": [
+          "HEADBUTT",
+          "RAMPAGE"
+        ],
+        "self_hp_loss_payoffs": [
+          "TEAR_ASUNDER"
+        ],
+        "max_hp_on_kill": [
+          "FEED"
+        ]
+      },
+      "partition": "development",
+      "independently_root_verified": true,
+      "stratum": "research"
+    },
+    {
+      "id": "run1-skip-middle-a2f05",
+      "branch": "skip-middle",
+      "source_group": "boss_reward_run_1",
+      "character": "Ironclad",
+      "ascension": 0,
+      "seed": "run_1",
+      "context": {
+        "act": 2,
+        "act_name": "HIVE.title",
+        "floor": 5,
+        "room_type": "Monster",
+        "boss": {
+          "id": "KNOWLEDGE_DEMON_BOSS",
+          "name": "KNOWLEDGE_DEMON.name"
+        }
+      },
+      "identity": {
+        "type": "f1_root",
+        "encounter": "BOWLBUGS_WEAK",
+        "live": "70e2953ec59fb65d51e603af7896218fc12bb7ba107eca7cf7a630fae897993e",
+        "resources": {
+          "hp": 22,
+          "max_hp": 93,
+          "gold": 235,
+          "deck": [
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "MOLTEN_FIST+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Damage=10|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "RAMPAGE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=10;Increase=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "FEED+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Damage=10;MaxHp=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "IRON_WAVE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5;Damage=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "CINDER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=18|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "THUNDERCLAP+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=4;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "UPPERCUT+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=13;Power=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "HEADBUTT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TAUNT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=6;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BLOOD_WALL+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=16;HpLoss=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "FLAME_BARRIER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=12;DamageBack=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "VICIOUS+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "INFERNO+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=InfernoPower=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+          ],
+          "potions": [
+            "BLESSING_OF_THE_FORGE",
+            "DEXTERITY_POTION",
+            "FLEX_POTION"
+          ],
+          "relics": [
+            "BURNING_BLOOD",
+            "LOST_COFFER",
+            "SWORD_OF_STONE",
+            "SHOVEL",
+            "STRAWBERRY",
+            "GLASS_EYE"
+          ]
+        }
+      },
+      "public_root": {
+        "type": "decision",
+        "decision": "combat_play",
+        "context": {
+          "act": 2,
+          "act_name": "HIVE.title",
+          "floor": 5,
+          "room_type": "Monster",
+          "boss": {
+            "id": "KNOWLEDGE_DEMON_BOSS",
+            "name": "KNOWLEDGE_DEMON.name"
+          }
+        },
+        "round": 1,
+        "energy": 3,
+        "max_energy": 3,
+        "hand": [
+          {
+            "index": 0,
+            "id": "CARD.CINDER",
+            "name": "CINDER.title",
+            "cost": 2,
+            "type": "Attack",
+            "rarity": "Common",
+            "can_play": true,
+            "target_type": "AnyEnemy",
+            "stats": {
+              "damage": 18
+            },
+            "description": "CINDER.description",
+            "damage_by_target": [
+              {
+                "target_index": 0,
+                "name": "BOWLBUG_ROCK.name",
+                "damage": 18
+              },
+              {
+                "target_index": 1,
+                "name": "BOWLBUG_NECTAR.name",
+                "damage": 18
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "id": "CARD.DEFEND_IRONCLAD",
+            "name": "DEFEND_IRONCLAD.title",
+            "cost": 1,
+            "type": "Skill",
+            "rarity": "Basic",
+            "can_play": true,
+            "target_type": "Self",
+            "stats": {
+              "block": 5
+            },
+            "description": "DEFEND_IRONCLAD.description"
+          },
+          {
+            "index": 2,
+            "id": "CARD.DEFEND_IRONCLAD",
+            "name": "DEFEND_IRONCLAD.title",
+            "cost": 1,
+            "type": "Skill",
+            "rarity": "Basic",
+            "can_play": true,
+            "target_type": "Self",
+            "stats": {
+              "block": 5
+            },
+            "description": "DEFEND_IRONCLAD.description"
+          },
+          {
+            "index": 3,
+            "id": "CARD.STRIKE_IRONCLAD",
+            "name": "STRIKE_IRONCLAD.title",
+            "cost": 1,
+            "type": "Attack",
+            "rarity": "Basic",
+            "can_play": true,
+            "target_type": "AnyEnemy",
+            "stats": {
+              "damage": 6
+            },
+            "description": "STRIKE_IRONCLAD.description",
+            "damage_by_target": [
+              {
+                "target_index": 0,
+                "name": "BOWLBUG_ROCK.name",
+                "damage": 6
+              },
+              {
+                "target_index": 1,
+                "name": "BOWLBUG_NECTAR.name",
+                "damage": 6
+              }
+            ]
+          },
+          {
+            "index": 4,
+            "id": "CARD.FLAME_BARRIER",
+            "name": "FLAME_BARRIER.title",
+            "cost": 2,
+            "type": "Skill",
+            "rarity": "Uncommon",
+            "can_play": true,
+            "target_type": "Self",
+            "stats": {
+              "block": 12,
+              "damageback": 4
+            },
+            "description": "FLAME_BARRIER.description"
+          }
+        ],
+        "enemies": [
+          {
+            "index": 0,
+            "name": "BOWLBUG_ROCK.name",
+            "hp": 46,
+            "max_hp": 46,
+            "block": 0,
+            "intents": [
+              {
+                "type": "Attack",
+                "damage": 15
+              }
+            ],
+            "intends_attack": true,
+            "powers": [
+              {
+                "name": "IMBALANCED_POWER.title",
+                "description": "IMBALANCED_POWER.description",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "name": "BOWLBUG_NECTAR.name",
+            "hp": 38,
+            "max_hp": 38,
+            "block": 0,
+            "intents": [
+              {
+                "type": "Attack",
+                "damage": 3
+              }
+            ],
+            "intends_attack": true,
+            "powers": null
+          }
+        ],
+        "player": {
+          "name": "IRONCLAD.title",
+          "hp": 22,
+          "max_hp": 93,
+          "block": 0,
+          "gold": 235,
+          "relics": [
+            {
+              "name": "BURNING_BLOOD.title",
+              "description": "BURNING_BLOOD.description",
+              "vars": {
+                "Heal": 6
+              }
+            },
+            {
+              "name": "LOST_COFFER.title",
+              "description": "LOST_COFFER.description",
+              "vars": null
+            },
+            {
+              "name": "SWORD_OF_STONE.title",
+              "description": "SWORD_OF_STONE.description",
+              "vars": {
+                "Elites": 5
+              }
+            },
+            {
+              "name": "SHOVEL.title",
+              "description": "SHOVEL.description",
+              "vars": null
+            },
+            {
+              "name": "STRAWBERRY.title",
+              "description": "STRAWBERRY.description",
+              "vars": {
+                "MaxHp": 7
+              }
+            },
+            {
+              "name": "GLASS_EYE.title",
+              "description": "GLASS_EYE.description",
+              "vars": null
+            }
+          ],
+          "potions": [
+            {
+              "index": 0,
+              "name": "BLESSING_OF_THE_FORGE.title",
+              "description": "BLESSING_OF_THE_FORGE.description",
+              "vars": null,
+              "target_type": "AnyPlayer"
+            },
+            {
+              "index": 1,
+              "name": "DEXTERITY_POTION.title",
+              "description": "DEXTERITY_POTION.description",
+              "vars": {
+                "DexterityPower": 2
+              },
+              "target_type": "AnyPlayer"
+            },
+            {
+              "index": 2,
+              "name": "FLEX_POTION.title",
+              "description": "FLEX_POTION.description",
+              "vars": {
+                "StrengthPower": 5
+              },
+              "target_type": "AnyPlayer"
+            }
+          ],
+          "deck_size": 27,
+          "deck": [
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.DEFEND_IRONCLAD",
+              "name": "DEFEND_IRONCLAD.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "DEFEND_IRONCLAD.description",
+              "stats": {
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 8
+                },
+                "description": "DEFEND_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.DEFEND_IRONCLAD",
+              "name": "DEFEND_IRONCLAD.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "DEFEND_IRONCLAD.description",
+              "stats": {
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 8
+                },
+                "description": "DEFEND_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.DEFEND_IRONCLAD",
+              "name": "DEFEND_IRONCLAD.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "DEFEND_IRONCLAD.description",
+              "stats": {
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 8
+                },
+                "description": "DEFEND_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.DEFEND_IRONCLAD",
+              "name": "DEFEND_IRONCLAD.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "DEFEND_IRONCLAD.description",
+              "stats": {
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 8
+                },
+                "description": "DEFEND_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.BASH",
+              "name": "BASH.title",
+              "cost": 2,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "BASH.description",
+              "stats": {
+                "damage": 8,
+                "vulnerablepower": 2
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "damage": 10,
+                  "vulnerablepower": 3
+                },
+                "description": "BASH.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.MOLTEN_FIST",
+              "name": "MOLTEN_FIST.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "MOLTEN_FIST.description",
+              "stats": {
+                "damage": 10
+              },
+              "keywords": [
+                "Exhaust"
+              ],
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 14
+                },
+                "description": "MOLTEN_FIST.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.RAMPAGE",
+              "name": "RAMPAGE.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "RAMPAGE.description",
+              "stats": {
+                "damage": 10,
+                "increase": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 10,
+                  "increase": 10
+                },
+                "description": "RAMPAGE.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.FEED",
+              "name": "FEED.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "FEED.description",
+              "stats": {
+                "damage": 10,
+                "maxhp": 3
+              },
+              "keywords": [
+                "Exhaust"
+              ],
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 12,
+                  "maxhp": 4
+                },
+                "description": "FEED.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.IRON_WAVE",
+              "name": "IRON_WAVE.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "IRON_WAVE.description",
+              "stats": {
+                "damage": 5,
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 7,
+                  "block": 7
+                },
+                "description": "IRON_WAVE.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.SHRUG_IT_OFF",
+              "name": "SHRUG_IT_OFF.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "SHRUG_IT_OFF.description",
+              "stats": {
+                "block": 8,
+                "cards": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 11,
+                  "cards": 1
+                },
+                "description": "SHRUG_IT_OFF.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.CINDER",
+              "name": "CINDER.title",
+              "cost": 2,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "CINDER.description",
+              "stats": {
+                "damage": 18
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "damage": 24
+                },
+                "description": "CINDER.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.POMMEL_STRIKE",
+              "name": "POMMEL_STRIKE.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "POMMEL_STRIKE.description",
+              "stats": {
+                "damage": 9,
+                "cards": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 10,
+                  "cards": 2
+                },
+                "description": "POMMEL_STRIKE.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.POMMEL_STRIKE",
+              "name": "POMMEL_STRIKE.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "POMMEL_STRIKE.description",
+              "stats": {
+                "damage": 9,
+                "cards": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 10,
+                  "cards": 2
+                },
+                "description": "POMMEL_STRIKE.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.THUNDERCLAP",
+              "name": "THUNDERCLAP.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "THUNDERCLAP.description",
+              "stats": {
+                "damage": 4,
+                "vulnerablepower": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 7,
+                  "vulnerablepower": 1
+                },
+                "description": "THUNDERCLAP.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.SHRUG_IT_OFF",
+              "name": "SHRUG_IT_OFF.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "SHRUG_IT_OFF.description",
+              "stats": {
+                "block": 8,
+                "cards": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 11,
+                  "cards": 1
+                },
+                "description": "SHRUG_IT_OFF.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.UPPERCUT",
+              "name": "UPPERCUT.title",
+              "cost": 2,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "UPPERCUT.description",
+              "stats": {
+                "damage": 13,
+                "power": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "damage": 13,
+                  "power": 2
+                },
+                "description": "UPPERCUT.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.HEADBUTT",
+              "name": "HEADBUTT.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "HEADBUTT.description",
+              "stats": {
+                "damage": 9
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 12
+                },
+                "description": "HEADBUTT.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.TAUNT",
+              "name": "TAUNT.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "TAUNT.description",
+              "stats": {
+                "block": 6,
+                "vulnerablepower": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 7,
+                  "vulnerablepower": 2
+                },
+                "description": "TAUNT.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.BLOOD_WALL",
+              "name": "BLOOD_WALL.title",
+              "cost": 2,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "BLOOD_WALL.description",
+              "stats": {
+                "hploss": 2,
+                "block": 16
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "hploss": 2,
+                  "block": 20
+                },
+                "description": "BLOOD_WALL.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.FLAME_BARRIER",
+              "name": "FLAME_BARRIER.title",
+              "cost": 2,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "FLAME_BARRIER.description",
+              "stats": {
+                "block": 12,
+                "damageback": 4
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "block": 16,
+                  "damageback": 6
+                },
+                "description": "FLAME_BARRIER.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.VICIOUS",
+              "name": "VICIOUS.title",
+              "cost": 1,
+              "type": "Power",
+              "upgraded": false,
+              "description": "VICIOUS.description",
+              "stats": {
+                "cards": 1
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "cards": 2
+                },
+                "description": "VICIOUS.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.INFERNO",
+              "name": "INFERNO.title",
+              "cost": 1,
+              "type": "Power",
+              "upgraded": true,
+              "description": "INFERNO.description",
+              "stats": {
+                "infernopower": 9
+              },
+              "keywords": null,
+              "after_upgrade": null
+            }
+          ]
+        },
+        "player_powers": null,
+        "draw_pile_count": 22,
+        "discard_pile_count": 0
+      },
+      "checkpoint": "skip-middle-057.save.json",
+      "checkpoint_sha256": "de80102579784275fc6c2aefa37ecbb94973812c0d8705209e8ea30fa8e42de8",
+      "entry": {
+        "action": "select_map_node",
+        "args": {
+          "col": 5,
+          "row": 4
+        }
+      },
+      "entry_command_index": 59,
+      "deck_mechanisms": {
+        "draw": [
+          "POMMEL_STRIKE",
+          "SHRUG_IT_OFF",
+          "VICIOUS"
+        ],
+        "discard_topdeck_and_scaling": [
+          "HEADBUTT",
+          "RAMPAGE"
+        ],
+        "self_hp_loss_payoffs": [
+          "INFERNO"
+        ],
+        "max_hp_on_kill": [
+          "FEED"
+        ]
+      },
+      "partition": "development",
+      "independently_root_verified": true,
+      "stratum": "research"
+    }
+  ],
+  "partition_note": "All candidates share one historical Act 1 lineage. No held-out roots."
+}

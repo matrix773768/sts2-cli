@@ -1,0 +1,1058 @@
+[
+  {
+    "id": "run1-offering-west-a2f02",
+    "attempts": [
+      {
+        "node_budget": 1000,
+        "soft_ms": 6000,
+        "cancel_ms": 8000,
+        "root_verified": true,
+        "capture_wall_ms": 6931.738400133327,
+        "status": "unsupported",
+        "solve_ms": 6405.3728,
+        "search_cpu_ms": 8093.75,
+        "predicted_win": false,
+        "fixed_route": false,
+        "transitions": 3028,
+        "expanded_nodes": 484,
+        "total_expanded_nodes": 484,
+        "boundary": "TimeLimit",
+        "encounter": "TUNNELER_WEAK",
+        "rejected_action": {
+          "kind": "UsePotion",
+          "card_id": "",
+          "potion_id": "DEXTERITY_POTION",
+          "potion_slot": 1
+        },
+        "reason": "plan_action_or_choice",
+        "peak_working_set_bytes": 149864448,
+        "plan_action_count": 16,
+        "plan_rounds": 5,
+        "elapsed_ms": 9065.367399947718
+      },
+      {
+        "node_budget": 3500,
+        "soft_ms": 12000,
+        "cancel_ms": 15000,
+        "root_verified": true,
+        "capture_wall_ms": 13347.795400070027,
+        "status": "complete_win",
+        "solve_ms": 12302.3977,
+        "search_cpu_ms": 15750,
+        "predicted_win": true,
+        "fixed_route": false,
+        "transitions": 9493,
+        "expanded_nodes": 1834,
+        "total_expanded_nodes": 1834,
+        "boundary": "TimeLimit",
+        "encounter": "TUNNELER_WEAK",
+        "ms": 13280.7467,
+        "peak_working_set_bytes": 178700288,
+        "plan_action_count": 21,
+        "plan_rounds": 7,
+        "elapsed_ms": 16553.619500016794
+      }
+    ],
+    "teacher": "CombatSolver 0.51.5 offline-oracle",
+    "first_prediction_budget": 3500,
+    "replay": {
+      "root_verified": true,
+      "matched_actions": 21,
+      "strict_terminal": true,
+      "terminal_contract": "Raw F2 comparison; E2 death-only window contract is inapplicable to a predicted win.",
+      "choice_evidence": [],
+      "root_frame_sha256": "46fe99cf3bcc186a0fed505ac87313b7616c85e5107ba5667ca453b1bd58f4d2",
+      "attempted_step": 21,
+      "native_final": {
+        "type": "f1_final",
+        "terminal_callback": true,
+        "outcome": {
+          "initial_hp": 93,
+          "final_hp": 65,
+          "hp_lost": 28,
+          "hp_healed": 0,
+          "self_damage": 2,
+          "combat_ended": true,
+          "survived": true,
+          "final_enemy_hp": 0,
+          "potions": [],
+          "unattributed_hp_loss": 0
+        },
+        "round": 7,
+        "choice_requests": [],
+        "choice_checks": [],
+        "choice_observation_ms": 0,
+        "choice_decision_ms": 0
+      },
+      "status": "win",
+      "peak_working_set_bytes": 124911616,
+      "elapsed_ms": 2703.7563999183476,
+      "result_player_hp": 71,
+      "resource_changes": {
+        "gold": {
+          "before": 223,
+          "after": 235
+        },
+        "potions": {
+          "before": [
+            null,
+            "DEXTERITY_POTION",
+            "FLEX_POTION"
+          ],
+          "after": [
+            "BLESSING_OF_THE_FORGE",
+            "DEXTERITY_POTION",
+            "FLEX_POTION"
+          ]
+        }
+      }
+    },
+    "controls": {
+      "A": {
+        "status": "win",
+        "policy_version": "M1-F2-discard-v1/Q1+Choice",
+        "root_verified": true,
+        "elapsed_ms": 2871.3315001223236,
+        "cold_root_ms": 2142.377700190991,
+        "peak_working_set_bytes": 123363328,
+        "actions": 37,
+        "timing_ms": {
+          "decision_ms": 2.0621,
+          "observe_ms": 93.5408,
+          "execute_ms": 451.2762,
+          "execute_wall_ms": 685.2896
+        },
+        "outcome": {
+          "initial_hp": 93,
+          "final_hp": 11,
+          "hp_lost": 82,
+          "hp_healed": 0,
+          "self_damage": 8,
+          "combat_ended": true,
+          "survived": true,
+          "final_enemy_hp": 0,
+          "potions": [],
+          "unattributed_hp_loss": 0
+        },
+        "round": 11,
+        "result_player_hp": 17,
+        "choice_decision_ms": 0,
+        "resource_changes": {
+          "gold": {
+            "before": 223,
+            "after": 235
+          },
+          "potions": {
+            "before": [
+              null,
+              "DEXTERITY_POTION",
+              "FLEX_POTION"
+            ],
+            "after": [
+              "BLESSING_OF_THE_FORGE",
+              "DEXTERITY_POTION",
+              "FLEX_POTION"
+            ]
+          }
+        }
+      },
+      "B": {
+        "status": "win",
+        "policy_version": "M1-F2-discard-v1/hand-order",
+        "root_verified": true,
+        "elapsed_ms": 2713.0839000456035,
+        "cold_root_ms": 2132.270900066942,
+        "peak_working_set_bytes": 122859520,
+        "actions": 38,
+        "timing_ms": {
+          "decision_ms": 0.4787,
+          "observe_ms": null,
+          "execute_ms": null,
+          "execute_wall_ms": 516.3545
+        },
+        "outcome": {
+          "initial_hp": 93,
+          "final_hp": 23,
+          "hp_lost": 70,
+          "hp_healed": 0,
+          "self_damage": 6,
+          "combat_ended": true,
+          "survived": true,
+          "final_enemy_hp": 0,
+          "potions": [],
+          "unattributed_hp_loss": 0
+        },
+        "round": 10,
+        "result_player_hp": 29,
+        "choice_decision_ms": 0,
+        "resource_changes": {
+          "gold": {
+            "before": 223,
+            "after": 235
+          },
+          "potions": {
+            "before": [
+              null,
+              "DEXTERITY_POTION",
+              "FLEX_POTION"
+            ],
+            "after": [
+              "BLESSING_OF_THE_FORGE",
+              "DEXTERITY_POTION",
+              "FLEX_POTION"
+            ]
+          }
+        }
+      }
+    },
+    "teacher_hp_loss_ratio": 0.3010752688172043,
+    "stratum": "research"
+  },
+  {
+    "id": "run1-offering-west-a2f03",
+    "attempts": [
+      {
+        "node_budget": 1000,
+        "soft_ms": 6000,
+        "cancel_ms": 8000,
+        "root_verified": true,
+        "capture_wall_ms": 6790.6738999299705,
+        "status": "unsupported",
+        "solve_ms": 6414.7395,
+        "search_cpu_ms": 7515.625,
+        "predicted_win": true,
+        "fixed_route": false,
+        "transitions": 3012,
+        "expanded_nodes": 324,
+        "total_expanded_nodes": 324,
+        "boundary": "TimeLimit",
+        "encounter": "BOWLBUGS_WEAK",
+        "rejected_action": {
+          "kind": "UsePotion",
+          "card_id": "",
+          "potion_id": "FLEX_POTION",
+          "potion_slot": 2
+        },
+        "reason": "plan_action_or_choice",
+        "peak_working_set_bytes": 152772608,
+        "plan_action_count": 13,
+        "plan_rounds": 4,
+        "elapsed_ms": 9433.465500129387
+      }
+    ],
+    "teacher": "CombatSolver 0.51.5 offline-oracle",
+    "first_prediction_budget": 1000,
+    "fixed_prediction_preparation": {
+      "node_budget": 1000,
+      "soft_ms": 6000,
+      "cancel_ms": 8000,
+      "root_verified": true,
+      "capture_wall_ms": 1030.7174001354724,
+      "status": "complete_win",
+      "solve_ms": 0.0006,
+      "search_cpu_ms": 0,
+      "predicted_win": true,
+      "fixed_route": true,
+      "transitions": null,
+      "expanded_nodes": null,
+      "total_expanded_nodes": null,
+      "boundary": null,
+      "encounter": "BOWLBUGS_WEAK",
+      "ms": 961.4784,
+      "peak_working_set_bytes": 134594560,
+      "plan_action_count": 13,
+      "plan_rounds": 4,
+      "elapsed_ms": 3341.91339998506
+    },
+    "replay": {
+      "root_verified": true,
+      "matched_actions": 13,
+      "strict_terminal": true,
+      "terminal_contract": "Raw F2 comparison; E2 death-only window contract is inapplicable to a predicted win.",
+      "choice_evidence": [],
+      "root_frame_sha256": "a4d4e80f9287f167d50894377d5748f27f36044b13b92e026fcd6a2dcd21e5ca",
+      "attempted_step": 13,
+      "native_final": {
+        "type": "f1_final",
+        "terminal_callback": true,
+        "outcome": {
+          "initial_hp": 17,
+          "final_hp": 4,
+          "hp_lost": 16,
+          "hp_healed": 3,
+          "self_damage": 0,
+          "combat_ended": true,
+          "survived": true,
+          "final_enemy_hp": 0,
+          "potions": [
+            {
+              "potion_id": "FLEX_POTION",
+              "target_combat_id": 0,
+              "turn": 2,
+              "slot_index": 2,
+              "origin": "player"
+            },
+            {
+              "potion_id": "BLESSING_OF_THE_FORGE",
+              "target_combat_id": 0,
+              "turn": 3,
+              "slot_index": 0,
+              "origin": "player"
+            }
+          ],
+          "unattributed_hp_loss": 0
+        },
+        "round": 4,
+        "choice_requests": [],
+        "choice_checks": [],
+        "choice_observation_ms": 0,
+        "choice_decision_ms": 0
+      },
+      "status": "win",
+      "peak_working_set_bytes": 124272640,
+      "elapsed_ms": 2738.811800023541,
+      "result_player_hp": 10,
+      "resource_changes": {
+        "max_hp": {
+          "before": 93,
+          "after": 96
+        },
+        "gold": {
+          "before": 235,
+          "after": 252
+        },
+        "potions": {
+          "before": [
+            "BLESSING_OF_THE_FORGE",
+            "DEXTERITY_POTION",
+            "FLEX_POTION"
+          ],
+          "after": [
+            null,
+            "DEXTERITY_POTION",
+            null
+          ]
+        }
+      }
+    },
+    "controls": {
+      "A": {
+        "status": "death",
+        "policy_version": "M1-F2-discard-v1/Q1+Choice",
+        "root_verified": true,
+        "elapsed_ms": 2337.8632001113147,
+        "cold_root_ms": 2066.0788000095636,
+        "peak_working_set_bytes": 117145600,
+        "actions": 7,
+        "timing_ms": {
+          "decision_ms": 2.1904,
+          "observe_ms": 33.8701,
+          "execute_ms": 152.4818,
+          "execute_wall_ms": 226.2022
+        },
+        "outcome": {
+          "initial_hp": 17,
+          "final_hp": 0,
+          "hp_lost": 17,
+          "hp_healed": 0,
+          "self_damage": 0,
+          "combat_ended": false,
+          "survived": false,
+          "final_enemy_hp": 22,
+          "potions": [],
+          "unattributed_hp_loss": 3
+        },
+        "round": 2,
+        "result_player_hp": 0,
+        "choice_decision_ms": 2.2303,
+        "resource_changes": {}
+      },
+      "B": {
+        "status": "death",
+        "policy_version": "M1-F2-discard-v1/hand-order",
+        "root_verified": true,
+        "elapsed_ms": 2200.7184999529272,
+        "cold_root_ms": 2046.511499909684,
+        "peak_working_set_bytes": 115257344,
+        "actions": 4,
+        "timing_ms": {
+          "decision_ms": 0.0316,
+          "observe_ms": null,
+          "execute_ms": null,
+          "execute_wall_ms": 108.1869
+        },
+        "outcome": {
+          "initial_hp": 17,
+          "final_hp": 0,
+          "hp_lost": 17,
+          "hp_healed": 0,
+          "self_damage": 0,
+          "combat_ended": false,
+          "survived": false,
+          "final_enemy_hp": 56,
+          "potions": [],
+          "unattributed_hp_loss": 0
+        },
+        "round": 1,
+        "result_player_hp": 0,
+        "choice_decision_ms": 0,
+        "resource_changes": {}
+      }
+    },
+    "teacher_hp_loss_ratio": 0.9411764705882353,
+    "stratum": "research"
+  },
+  {
+    "id": "run1-offering-east-a2f06",
+    "attempts": [
+      {
+        "node_budget": 1000,
+        "soft_ms": 6000,
+        "cancel_ms": 8000,
+        "root_verified": true,
+        "capture_wall_ms": 7090.667499927804,
+        "status": "unsupported",
+        "solve_ms": 6508.1462,
+        "search_cpu_ms": 7265.625,
+        "predicted_win": true,
+        "fixed_route": false,
+        "transitions": 3308,
+        "expanded_nodes": 390,
+        "total_expanded_nodes": 390,
+        "boundary": "TimeLimit",
+        "encounter": "BOWLBUGS_WEAK",
+        "rejected_action": {
+          "kind": "UsePotion",
+          "card_id": "",
+          "potion_id": "BLESSING_OF_THE_FORGE",
+          "potion_slot": 0
+        },
+        "reason": "plan_action_or_choice",
+        "peak_working_set_bytes": 152375296,
+        "plan_action_count": 17,
+        "plan_rounds": 4,
+        "elapsed_ms": 9284.173500025645
+      }
+    ],
+    "teacher": "CombatSolver 0.51.5 offline-oracle",
+    "first_prediction_budget": 1000,
+    "fixed_prediction_preparation": {
+      "node_budget": 1000,
+      "soft_ms": 6000,
+      "cancel_ms": 8000,
+      "root_verified": true,
+      "capture_wall_ms": 862.2179999947548,
+      "status": "complete_win",
+      "solve_ms": 0.0005,
+      "search_cpu_ms": 0,
+      "predicted_win": true,
+      "fixed_route": true,
+      "transitions": null,
+      "expanded_nodes": null,
+      "total_expanded_nodes": null,
+      "boundary": null,
+      "encounter": "BOWLBUGS_WEAK",
+      "ms": 814.2158,
+      "peak_working_set_bytes": 134459392,
+      "plan_action_count": 17,
+      "plan_rounds": 4,
+      "elapsed_ms": 3066.4796999190003
+    },
+    "replay": {
+      "root_verified": true,
+      "matched_actions": 17,
+      "strict_terminal": true,
+      "terminal_contract": "Raw F2 comparison; E2 death-only window contract is inapplicable to a predicted win.",
+      "choice_evidence": [
+        {
+          "step": 3,
+          "binding": {
+            "surface": "implicit_singleton",
+            "effect": "MoveToDrawTop",
+            "selected": {
+              "card_id": "SHRUG_IT_OFF",
+              "upgrade_level": 1,
+              "state_key": "SHRUG_IT_OFF+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=11;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "source_occurrence": 0,
+              "option_occurrence": 0,
+              "title": "SHRUG_IT_OFF.title+"
+            },
+            "option": 0,
+            "source_index": 0
+          },
+          "destination_verified": true
+        }
+      ],
+      "root_frame_sha256": "541c89b283d5274610a420ae6158290b3f84da4bed8053ca45995dfcf21ec7aa",
+      "attempted_step": 17,
+      "native_final": {
+        "type": "f1_final",
+        "terminal_callback": true,
+        "outcome": {
+          "initial_hp": 17,
+          "final_hp": 12,
+          "hp_lost": 8,
+          "hp_healed": 3,
+          "self_damage": 8,
+          "combat_ended": true,
+          "survived": true,
+          "final_enemy_hp": 0,
+          "potions": [
+            {
+              "potion_id": "BLESSING_OF_THE_FORGE",
+              "target_combat_id": 0,
+              "turn": 1,
+              "slot_index": 0,
+              "origin": "player"
+            },
+            {
+              "potion_id": "FLEX_POTION",
+              "target_combat_id": 0,
+              "turn": 2,
+              "slot_index": 2,
+              "origin": "player"
+            }
+          ],
+          "unattributed_hp_loss": 0
+        },
+        "round": 4,
+        "choice_requests": [],
+        "choice_checks": [],
+        "choice_observation_ms": 0,
+        "choice_decision_ms": 0
+      },
+      "status": "win",
+      "peak_working_set_bytes": 125067264,
+      "elapsed_ms": 2622.290500206873,
+      "result_player_hp": 18,
+      "resource_changes": {
+        "max_hp": {
+          "before": 93,
+          "after": 96
+        },
+        "gold": {
+          "before": 210,
+          "after": 227
+        },
+        "potions": {
+          "before": [
+            "BLESSING_OF_THE_FORGE",
+            "DEXTERITY_POTION",
+            "FLEX_POTION"
+          ],
+          "after": [
+            null,
+            "DEXTERITY_POTION",
+            null
+          ]
+        }
+      }
+    },
+    "controls": {
+      "A": {
+        "status": "death",
+        "policy_version": "M1-F2-discard-v1/Q1+Choice",
+        "root_verified": true,
+        "elapsed_ms": 2370.8740000147372,
+        "cold_root_ms": 2088.623500196263,
+        "peak_working_set_bytes": 117293056,
+        "actions": 9,
+        "timing_ms": {
+          "decision_ms": 1.9486,
+          "observe_ms": 18.5403,
+          "execute_ms": 178.2818,
+          "execute_wall_ms": 248.1692
+        },
+        "outcome": {
+          "initial_hp": 17,
+          "final_hp": 0,
+          "hp_lost": 17,
+          "hp_healed": 0,
+          "self_damage": 6,
+          "combat_ended": false,
+          "survived": false,
+          "final_enemy_hp": 38,
+          "potions": [],
+          "unattributed_hp_loss": 1
+        },
+        "round": 3,
+        "result_player_hp": 0,
+        "choice_decision_ms": 1.3272,
+        "resource_changes": {}
+      },
+      "B": {
+        "status": "death",
+        "policy_version": "M1-F2-discard-v1/hand-order",
+        "root_verified": true,
+        "elapsed_ms": 2537.6707001123577,
+        "cold_root_ms": 2274.0221000276506,
+        "peak_working_set_bytes": 116805632,
+        "actions": 8,
+        "timing_ms": {
+          "decision_ms": 0.1139,
+          "observe_ms": null,
+          "execute_ms": null,
+          "execute_wall_ms": 178.5894
+        },
+        "outcome": {
+          "initial_hp": 17,
+          "final_hp": 0,
+          "hp_lost": 17,
+          "hp_healed": 0,
+          "self_damage": 0,
+          "combat_ended": false,
+          "survived": false,
+          "final_enemy_hp": 52,
+          "potions": [],
+          "unattributed_hp_loss": 4
+        },
+        "round": 2,
+        "result_player_hp": 0,
+        "choice_decision_ms": 0,
+        "resource_changes": {}
+      }
+    },
+    "teacher_hp_loss_ratio": 0.47058823529411764,
+    "stratum": "research"
+  },
+  {
+    "id": "run1-skip-middle-a2f02",
+    "attempts": [
+      {
+        "node_budget": 1000,
+        "soft_ms": 6000,
+        "cancel_ms": 8000,
+        "root_verified": true,
+        "capture_wall_ms": 7413.590699899942,
+        "status": "unsupported",
+        "solve_ms": 6768.1741,
+        "search_cpu_ms": 8359.375,
+        "predicted_win": true,
+        "fixed_route": false,
+        "transitions": 3312,
+        "expanded_nodes": 688,
+        "total_expanded_nodes": 688,
+        "boundary": "TimeLimit",
+        "encounter": "TUNNELER_WEAK",
+        "rejected_action": {
+          "kind": "UsePotion",
+          "card_id": "",
+          "potion_id": "FLEX_POTION",
+          "potion_slot": 2
+        },
+        "reason": "plan_action_or_choice",
+        "peak_working_set_bytes": 156303360,
+        "plan_action_count": 19,
+        "plan_rounds": 6,
+        "elapsed_ms": 10019.26640002057
+      }
+    ],
+    "teacher": "CombatSolver 0.51.5 offline-oracle",
+    "first_prediction_budget": 1000,
+    "fixed_prediction_preparation": {
+      "node_budget": 1000,
+      "soft_ms": 6000,
+      "cancel_ms": 8000,
+      "root_verified": true,
+      "capture_wall_ms": 912.9794000182301,
+      "status": "complete_win",
+      "solve_ms": 0.0006,
+      "search_cpu_ms": 0,
+      "predicted_win": true,
+      "fixed_route": true,
+      "transitions": null,
+      "expanded_nodes": null,
+      "total_expanded_nodes": null,
+      "boundary": null,
+      "encounter": "TUNNELER_WEAK",
+      "ms": 877.3908,
+      "peak_working_set_bytes": 134242304,
+      "plan_action_count": 19,
+      "plan_rounds": 6,
+      "elapsed_ms": 2945.7357998471707
+    },
+    "replay": {
+      "root_verified": true,
+      "matched_actions": 19,
+      "strict_terminal": true,
+      "terminal_contract": "Raw F2 comparison; E2 death-only window contract is inapplicable to a predicted win.",
+      "choice_evidence": [
+        {
+          "step": 6,
+          "binding": {
+            "surface": "cards",
+            "effect": "MoveToDrawTop",
+            "option": 4,
+            "source_index": 4,
+            "selected": {
+              "card_id": "RAMPAGE",
+              "upgrade_level": 0,
+              "state_key": "RAMPAGE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=15;Increase=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "source_occurrence": 0,
+              "option_occurrence": 0,
+              "title": "RAMPAGE.title"
+            },
+            "menu": [
+              "UPPERCUT+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=13;Power=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "TAUNT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=6;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "FLAME_BARRIER+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=12;DamageBack=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "FEED+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=Exhaust|vars=Damage=10;MaxHp=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "RAMPAGE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=15;Increase=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            ]
+          },
+          "destination_verified": true
+        }
+      ],
+      "root_frame_sha256": "6af19cdb0bb8d47e12adacf131514a8ce004ac7f222326eb7a9179ccf3206fba",
+      "attempted_step": 19,
+      "native_final": {
+        "type": "f1_final",
+        "terminal_callback": true,
+        "outcome": {
+          "initial_hp": 93,
+          "final_hp": 59,
+          "hp_lost": 34,
+          "hp_healed": 0,
+          "self_damage": 0,
+          "combat_ended": true,
+          "survived": true,
+          "final_enemy_hp": 0,
+          "potions": [
+            {
+              "potion_id": "FLEX_POTION",
+              "target_combat_id": 0,
+              "turn": 1,
+              "slot_index": 2,
+              "origin": "player"
+            }
+          ],
+          "unattributed_hp_loss": 0
+        },
+        "round": 6,
+        "choice_requests": [],
+        "choice_checks": [],
+        "choice_observation_ms": 0,
+        "choice_decision_ms": 0
+      },
+      "status": "win",
+      "peak_working_set_bytes": 125861888,
+      "elapsed_ms": 2440.91449980624,
+      "result_player_hp": 65,
+      "resource_changes": {
+        "gold": {
+          "before": 223,
+          "after": 235
+        },
+        "potions": {
+          "before": [
+            null,
+            "DEXTERITY_POTION",
+            "FLEX_POTION"
+          ],
+          "after": [
+            "BLESSING_OF_THE_FORGE",
+            "DEXTERITY_POTION",
+            null
+          ]
+        }
+      }
+    },
+    "controls": {
+      "A": {
+        "status": "win",
+        "policy_version": "M1-F2-discard-v1/Q1+Choice",
+        "root_verified": true,
+        "elapsed_ms": 2807.128499960527,
+        "cold_root_ms": 2040.428000036627,
+        "peak_working_set_bytes": 123346944,
+        "actions": 44,
+        "timing_ms": {
+          "decision_ms": 2.1535,
+          "observe_ms": 60.0011,
+          "execute_ms": 514.4555,
+          "execute_wall_ms": 723.2865
+        },
+        "outcome": {
+          "initial_hp": 93,
+          "final_hp": 16,
+          "hp_lost": 77,
+          "hp_healed": 0,
+          "self_damage": 4,
+          "combat_ended": true,
+          "survived": true,
+          "final_enemy_hp": 0,
+          "potions": [],
+          "unattributed_hp_loss": 0
+        },
+        "round": 14,
+        "result_player_hp": 22,
+        "choice_decision_ms": 2.9874,
+        "resource_changes": {
+          "gold": {
+            "before": 223,
+            "after": 235
+          },
+          "potions": {
+            "before": [
+              null,
+              "DEXTERITY_POTION",
+              "FLEX_POTION"
+            ],
+            "after": [
+              "BLESSING_OF_THE_FORGE",
+              "DEXTERITY_POTION",
+              "FLEX_POTION"
+            ]
+          }
+        }
+      },
+      "B": {
+        "status": "win",
+        "policy_version": "M1-F2-discard-v1/hand-order",
+        "root_verified": true,
+        "elapsed_ms": 2781.599899986759,
+        "cold_root_ms": 2143.0122999008745,
+        "peak_working_set_bytes": 122871808,
+        "actions": 37,
+        "timing_ms": {
+          "decision_ms": 0.4692,
+          "observe_ms": null,
+          "execute_ms": null,
+          "execute_wall_ms": 580.394
+        },
+        "outcome": {
+          "initial_hp": 93,
+          "final_hp": 11,
+          "hp_lost": 82,
+          "hp_healed": 0,
+          "self_damage": 4,
+          "combat_ended": true,
+          "survived": true,
+          "final_enemy_hp": 0,
+          "potions": [],
+          "unattributed_hp_loss": 0
+        },
+        "round": 11,
+        "result_player_hp": 17,
+        "choice_decision_ms": 0,
+        "resource_changes": {
+          "gold": {
+            "before": 223,
+            "after": 235
+          },
+          "potions": {
+            "before": [
+              null,
+              "DEXTERITY_POTION",
+              "FLEX_POTION"
+            ],
+            "after": [
+              "BLESSING_OF_THE_FORGE",
+              "DEXTERITY_POTION",
+              "FLEX_POTION"
+            ]
+          }
+        }
+      }
+    },
+    "teacher_hp_loss_ratio": 0.3655913978494624,
+    "stratum": "research"
+  },
+  {
+    "id": "run1-skip-middle-a2f05",
+    "attempts": [
+      {
+        "node_budget": 1000,
+        "soft_ms": 6000,
+        "cancel_ms": 8000,
+        "root_verified": true,
+        "capture_wall_ms": 7207.303700037301,
+        "status": "unsupported",
+        "solve_ms": 6725.9704,
+        "search_cpu_ms": 7515.625,
+        "predicted_win": true,
+        "fixed_route": false,
+        "transitions": 3708,
+        "expanded_nodes": 389,
+        "total_expanded_nodes": 389,
+        "boundary": "TimeLimit",
+        "encounter": "BOWLBUGS_WEAK",
+        "rejected_action": {
+          "kind": "UsePotion",
+          "card_id": "",
+          "potion_id": "BLESSING_OF_THE_FORGE",
+          "potion_slot": 0
+        },
+        "reason": "plan_action_or_choice",
+        "peak_working_set_bytes": 156471296,
+        "plan_action_count": 15,
+        "plan_rounds": 4,
+        "elapsed_ms": 9594.317100010812
+      }
+    ],
+    "teacher": "CombatSolver 0.51.5 offline-oracle",
+    "first_prediction_budget": 1000,
+    "fixed_prediction_preparation": {
+      "node_budget": 1000,
+      "soft_ms": 6000,
+      "cancel_ms": 8000,
+      "root_verified": true,
+      "capture_wall_ms": 946.9139999710023,
+      "status": "complete_win",
+      "solve_ms": 0.0006,
+      "search_cpu_ms": 0,
+      "predicted_win": true,
+      "fixed_route": true,
+      "transitions": null,
+      "expanded_nodes": null,
+      "total_expanded_nodes": null,
+      "boundary": null,
+      "encounter": "BOWLBUGS_WEAK",
+      "ms": 872.1574,
+      "peak_working_set_bytes": 134049792,
+      "plan_action_count": 15,
+      "plan_rounds": 4,
+      "elapsed_ms": 3170.2837999910116
+    },
+    "replay": {
+      "root_verified": true,
+      "matched_actions": 15,
+      "strict_terminal": true,
+      "terminal_contract": "Raw F2 comparison; E2 death-only window contract is inapplicable to a predicted win.",
+      "choice_evidence": [],
+      "root_frame_sha256": "71f251b955182221b5fc07aca029da842ad1871a3aeb7d05d756632851faa2a9",
+      "attempted_step": 15,
+      "native_final": {
+        "type": "f1_final",
+        "terminal_callback": true,
+        "outcome": {
+          "initial_hp": 22,
+          "final_hp": 22,
+          "hp_lost": 0,
+          "hp_healed": 0,
+          "self_damage": 0,
+          "combat_ended": true,
+          "survived": true,
+          "final_enemy_hp": 0,
+          "potions": [
+            {
+              "potion_id": "BLESSING_OF_THE_FORGE",
+              "target_combat_id": 0,
+              "turn": 1,
+              "slot_index": 0,
+              "origin": "player"
+            },
+            {
+              "potion_id": "FLEX_POTION",
+              "target_combat_id": 0,
+              "turn": 2,
+              "slot_index": 2,
+              "origin": "player"
+            },
+            {
+              "potion_id": "DEXTERITY_POTION",
+              "target_combat_id": 0,
+              "turn": 3,
+              "slot_index": 1,
+              "origin": "player"
+            }
+          ],
+          "unattributed_hp_loss": 0
+        },
+        "round": 4,
+        "choice_requests": [],
+        "choice_checks": [],
+        "choice_observation_ms": 0,
+        "choice_decision_ms": 0
+      },
+      "status": "win",
+      "peak_working_set_bytes": 124915712,
+      "elapsed_ms": 2857.928700046614,
+      "result_player_hp": 28,
+      "resource_changes": {
+        "gold": {
+          "before": 235,
+          "after": 252
+        },
+        "potions": {
+          "before": [
+            "BLESSING_OF_THE_FORGE",
+            "DEXTERITY_POTION",
+            "FLEX_POTION"
+          ],
+          "after": [
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    },
+    "controls": {
+      "A": {
+        "status": "death",
+        "policy_version": "M1-F2-discard-v1/Q1+Choice",
+        "root_verified": true,
+        "elapsed_ms": 2409.3710999004543,
+        "cold_root_ms": 2093.2722000870854,
+        "peak_working_set_bytes": 117075968,
+        "actions": 12,
+        "timing_ms": {
+          "decision_ms": 1.7707,
+          "observe_ms": 19.4295,
+          "execute_ms": 214.1488,
+          "execute_wall_ms": 275.6856
+        },
+        "outcome": {
+          "initial_hp": 22,
+          "final_hp": 0,
+          "hp_lost": 22,
+          "hp_healed": 0,
+          "self_damage": 2,
+          "combat_ended": false,
+          "survived": false,
+          "final_enemy_hp": 34,
+          "potions": [],
+          "unattributed_hp_loss": 0
+        },
+        "round": 4,
+        "result_player_hp": 0,
+        "choice_decision_ms": 2.6554,
+        "resource_changes": {}
+      },
+      "B": {
+        "status": "death",
+        "policy_version": "M1-F2-discard-v1/hand-order",
+        "root_verified": true,
+        "elapsed_ms": 2471.231499919668,
+        "cold_root_ms": 2124.4739000685513,
+        "peak_working_set_bytes": 116760576,
+        "actions": 11,
+        "timing_ms": {
+          "decision_ms": 0.1461,
+          "observe_ms": null,
+          "execute_ms": null,
+          "execute_wall_ms": 284.4051
+        },
+        "outcome": {
+          "initial_hp": 22,
+          "final_hp": 0,
+          "hp_lost": 22,
+          "hp_healed": 0,
+          "self_damage": 0,
+          "combat_ended": false,
+          "survived": false,
+          "final_enemy_hp": 45,
+          "potions": [],
+          "unattributed_hp_loss": 1
+        },
+        "round": 3,
+        "result_player_hp": 0,
+        "choice_decision_ms": 0,
+        "resource_changes": {}
+      }
+    },
+    "teacher_hp_loss_ratio": 0.0,
+    "stratum": "research"
+  }
+]
