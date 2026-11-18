@@ -1,0 +1,2282 @@
+{
+  "matrices": [
+    {
+      "A": {
+        "case": "dev-02-defect-elite",
+        "root": "4d5e409fbc5bcf6cfff29d46aa0d9ca415d4831d38996e7f55fc447338484bf4",
+        "live": "4d5e409fbc5bcf6cfff29d46aa0d9ca415d4831d38996e7f55fc447338484bf4",
+        "processMs": 6047.000000020489,
+        "nativeOutcome": {
+          "initialHp": 75,
+          "finalHp": 64,
+          "hpLost": 11,
+          "hpHealed": 0,
+          "selfDamage": 0,
+          "combatEnded": true,
+          "survived": true,
+          "finalEnemyHp": 0,
+          "potions": [],
+          "unattributedHpLoss": 0
+        },
+        "nativeChoices": [],
+        "nativeVerifiedPrefixExecuteMs": 232.89889999999997,
+        "nativeExecuteMs": 443.9045,
+        "nativeExecuted": 19,
+        "audit": {
+          "status": "state_difference",
+          "nativeStatus": "win",
+          "planned": 19,
+          "steps": [
+            {
+              "index": 1,
+              "cardId": "SCRAPE",
+              "kind": "PlayCard",
+              "predictionMs": 153.5926
+            },
+            {
+              "index": 2,
+              "cardId": "BOOST_AWAY",
+              "kind": "PlayCard",
+              "predictionMs": 52.0555
+            },
+            {
+              "index": 3,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 91.0763
+            },
+            {
+              "index": 4,
+              "cardId": "REFRACT",
+              "kind": "PlayCard",
+              "predictionMs": 3.6516
+            },
+            {
+              "index": 5,
+              "cardId": "DEFEND_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 1.2469
+            },
+            {
+              "index": 6,
+              "cardId": "OVERCLOCK",
+              "kind": "PlayCard",
+              "predictionMs": 4.86
+            },
+            {
+              "index": 7,
+              "cardId": "PANIC_BUTTON",
+              "kind": "PlayCard",
+              "predictionMs": 4.5133
+            },
+            {
+              "index": 8,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 4.1285
+            },
+            {
+              "index": 9,
+              "cardId": "NULL",
+              "kind": "PlayCard",
+              "predictionMs": 2.9514
+            },
+            {
+              "index": 10,
+              "cardId": "MODDED",
+              "kind": "PlayCard",
+              "predictionMs": 4.0381
+            },
+            {
+              "index": 11,
+              "cardId": "NULL",
+              "kind": "PlayCard",
+              "predictionMs": 1.2622
+            },
+            {
+              "index": 12,
+              "cardId": "CLAW",
+              "kind": "PlayCard",
+              "predictionMs": 2.4537
+            },
+            {
+              "index": 13,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 3.4793
+            },
+            {
+              "index": 14,
+              "cardId": "SCRAPE",
+              "kind": "PlayCard",
+              "predictionMs": 1.5364
+            },
+            {
+              "index": 15,
+              "cardId": "BOOST_AWAY",
+              "kind": "PlayCard",
+              "predictionMs": 3.3015
+            },
+            {
+              "index": 16,
+              "cardId": "NULL",
+              "kind": "PlayCard",
+              "predictionMs": 1.8445
+            },
+            {
+              "index": 17,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 5.9196
+            },
+            {
+              "index": 18,
+              "cardId": "REFRACT",
+              "kind": "PlayCard",
+              "predictionMs": 3.0545
+            },
+            {
+              "index": 19,
+              "cardId": "STRIKE_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 15.5895
+            }
+          ],
+          "_difference": {
+            "step": 19,
+            "differences": [
+              {
+                "enemy": 0,
+                "field": "playerCardStates",
+                "predicted": {
+                  "Discard:BOOST_AWAY:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:COMPACT:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:DAZED:-:0:E:R0:XFalse:SFalse:TFalse:DFalse:MFalse": 1,
+                  "Discard:DEFEND_DEFECT:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:DUALCAST:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:MODDED:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:NULL:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:REFRACT:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:SCRAPE:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:STRIKE_DEFECT:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:VOLTAIC:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:ZAP:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:ASCENDERS_BANE:-:0:E:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:BURN:-:0:-:R0:XFalse:SFalse:TFalse:DFalse:MFalse": 1,
+                  "Draw:CLAW:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:DARKNESS:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:DEFEND_DEFECT:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 3,
+                  "Draw:ETERNAL_ARMOR:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:NULL:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:OVERCLOCK:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:STRIKE_DEFECT:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Exhaust:PANIC_BUTTON:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Hand:BULK_UP:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Hand:DAZED:-:0:E:R0:XFalse:SFalse:TFalse:DFalse:MFalse": 1,
+                  "Hand:STRIKE_DEFECT:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1
+                },
+                "actual": {
+                  "Discard:BOOST_AWAY:TAINTED:6:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:COMPACT:TAINTED:6:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:DAZED:-:0:E:R0:XFalse:SFalse:TFalse:DFalse:MFalse": 1,
+                  "Discard:DEFEND_DEFECT:TAINTED:6:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:DUALCAST:TAINTED:6:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:MODDED:TAINTED:6:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:NULL:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:REFRACT:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:SCRAPE:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:STRIKE_DEFECT:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:VOLTAIC:TAINTED:6:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:ZAP:TAINTED:6:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:ASCENDERS_BANE:-:0:E:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:BURN:-:0:-:R0:XFalse:SFalse:TFalse:DFalse:MFalse": 1,
+                  "Draw:CLAW:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:DARKNESS:TAINTED:6:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:DEFEND_DEFECT:TAINTED:6:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 3,
+                  "Draw:ETERNAL_ARMOR:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:NULL:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:OVERCLOCK:TAINTED:6:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:STRIKE_DEFECT:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Exhaust:PANIC_BUTTON:TAINTED:6:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Hand:BULK_UP:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Hand:DAZED:-:0:E:R0:XFalse:SFalse:TFalse:DFalse:MFalse": 1,
+                  "Hand:STRIKE_DEFECT:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1
+                }
+              },
+              {
+                "enemy": 0,
+                "field": "exactContinuationState",
+                "edits": [
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  },
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  },
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  },
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  },
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  },
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  },
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  },
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  },
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  },
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  },
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  },
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  },
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  }
+                ]
+              }
+            ]
+          },
+          "rootCaptureMs": 21.2553,
+          "solverAdapterMs": 190.5059,
+          "rootForkAndSnapshotMs": 78.7158,
+          "auditedMs": 1365.1536,
+          "compareMs": 198.42960000000002,
+          "matched": 18,
+          "benchmark": {
+            "samples": [
+              {
+                "forkMs": 3.9265,
+                "advanceMs": 46.0944,
+                "allocatedBytes": 732968
+              },
+              {
+                "forkMs": 1.1312,
+                "advanceMs": 39.1994,
+                "allocatedBytes": 722792
+              },
+              {
+                "forkMs": 1.1247,
+                "advanceMs": 38.566,
+                "allocatedBytes": 723448
+              },
+              {
+                "forkMs": 0.4515,
+                "advanceMs": 19.1465,
+                "allocatedBytes": 723112
+              },
+              {
+                "forkMs": 0.555,
+                "advanceMs": 18.9033,
+                "allocatedBytes": 728016
+              },
+              {
+                "forkMs": 0.3824,
+                "advanceMs": 19.8763,
+                "allocatedBytes": 722792
+              },
+              {
+                "forkMs": 0.4986,
+                "advanceMs": 16.7249,
+                "allocatedBytes": 722792
+              }
+            ],
+            "branch": null
+          },
+          "allocatedBytes": 37781720,
+          "peakWorkingSetBytes": 179060736,
+          "firstDifferenceAction": {
+            "handIndex": 1,
+            "id": "STRIKE_DEFECT",
+            "target": 1,
+            "damage": 6,
+            "block": 0,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          }
+        },
+        "nativeBattleMs": 979.2121,
+        "nativeEndTurn": 5,
+        "nativeObservationMs": 43.846199999999996
+      },
+      "B": {
+        "case": "dev-00-ironclad-elite",
+        "root": "e377d2ee2aeb7069daa85a39ee5d9f74c1fcaa8d393fd13a8c6e43b5dfd58f4b",
+        "live": "e377d2ee2aeb7069daa85a39ee5d9f74c1fcaa8d393fd13a8c6e43b5dfd58f4b",
+        "processMs": 7327.999999979511,
+        "nativeOutcome": {
+          "initialHp": 80,
+          "finalHp": 0,
+          "hpLost": 80,
+          "hpHealed": 0,
+          "selfDamage": 5,
+          "combatEnded": false,
+          "survived": false,
+          "finalEnemyHp": 72,
+          "potions": [],
+          "unattributedHpLoss": 3
+        },
+        "nativeChoices": [
+          {
+            "step": 4,
+            "action": "BURNING_PACT",
+            "source": "hand",
+            "effect": "exhaust",
+            "minSelect": 1,
+            "maxSelect": 1,
+            "allowEmpty": false,
+            "energy": 2,
+            "turn": 2,
+            "candidates": [
+              {
+                "index": 0,
+                "id": "THUNDERCLAP",
+                "upgrade": 1,
+                "cost": 1,
+                "type": "Attack",
+                "damage": 7,
+                "block": 0,
+                "key": "THUNDERCLAP+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=7;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 1,
+                "id": "BASH",
+                "upgrade": 0,
+                "cost": 2,
+                "type": "Attack",
+                "damage": 8,
+                "block": 0,
+                "key": "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 2,
+                "id": "DEFEND_IRONCLAD",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Skill",
+                "damage": 0,
+                "block": 5,
+                "key": "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 3,
+                "id": "STONE_ARMOR",
+                "upgrade": 1,
+                "cost": 1,
+                "type": "Power",
+                "damage": 0,
+                "block": 0,
+                "key": "STONE_ARMOR+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=PlatingPower=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              }
+            ],
+            "indexes": [
+              0
+            ]
+          }
+        ],
+        "nativeVerifiedPrefixExecuteMs": 226.5598,
+        "nativeExecuteMs": 236.4146,
+        "nativeExecuted": 20,
+        "audit": {
+          "status": "state_difference",
+          "nativeStatus": "death",
+          "planned": 20,
+          "steps": [
+            {
+              "index": 1,
+              "cardId": "BARRICADE",
+              "kind": "PlayCard",
+              "predictionMs": 121.6905
+            },
+            {
+              "index": 2,
+              "cardId": "RAMPAGE",
+              "kind": "PlayCard",
+              "predictionMs": 49.9827
+            },
+            {
+              "index": 3,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 114.483
+            },
+            {
+              "index": 4,
+              "cardId": "BURNING_PACT",
+              "kind": "PlayCard",
+              "predictionMs": 12.9723
+            },
+            {
+              "index": 5,
+              "cardId": "BASH",
+              "kind": "PlayCard",
+              "predictionMs": 3.0152
+            },
+            {
+              "index": 6,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 2.0456
+            },
+            {
+              "index": 7,
+              "cardId": "JACKPOT",
+              "kind": "PlayCard",
+              "predictionMs": 9.4953
+            },
+            {
+              "index": 8,
+              "cardId": "ANGER",
+              "kind": "PlayCard",
+              "predictionMs": 15.3296
+            },
+            {
+              "index": 9,
+              "cardId": "OFFERING",
+              "kind": "PlayCard",
+              "predictionMs": 1.8076
+            },
+            {
+              "index": 10,
+              "cardId": "STRIKE_IRONCLAD",
+              "kind": "PlayCard",
+              "predictionMs": 4.0298
+            },
+            {
+              "index": 11,
+              "cardId": "DEFEND_IRONCLAD",
+              "kind": "PlayCard",
+              "predictionMs": 8.2009
+            },
+            {
+              "index": 12,
+              "cardId": "ANGER",
+              "kind": "PlayCard",
+              "predictionMs": 0.9882
+            },
+            {
+              "index": 13,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 2.8952
+            },
+            {
+              "index": 14,
+              "cardId": "RESTLESSNESS",
+              "kind": "PlayCard",
+              "predictionMs": 1.1322
+            },
+            {
+              "index": 15,
+              "cardId": "PERFECTED_STRIKE",
+              "kind": "PlayCard",
+              "predictionMs": 4.2638
+            },
+            {
+              "index": 16,
+              "cardId": "BULLY",
+              "kind": "PlayCard",
+              "predictionMs": 1.96
+            },
+            {
+              "index": 17,
+              "cardId": "INFERNAL_BLADE",
+              "kind": "PlayCard",
+              "predictionMs": 4.606
+            },
+            {
+              "index": 18,
+              "cardId": "ANGER",
+              "kind": "PlayCard",
+              "predictionMs": 5.9542
+            },
+            {
+              "index": 19,
+              "cardId": "STOMP",
+              "kind": "PlayCard",
+              "predictionMs": 3.4136
+            },
+            {
+              "index": 20,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 5.787
+            }
+          ],
+          "_difference": {
+            "step": 20,
+            "differences": [
+              {
+                "enemy": 0,
+                "field": "exactContinuationState",
+                "edits": [
+                  {
+                    "predicted": "3",
+                    "actual": "0",
+                    "context": "t]/baselib=-,;Y=0/"
+                  },
+                  {
+                    "predicted": "6",
+                    "actual": "0",
+                    "context": "/baselib=-,;Y=0/3/"
+                  },
+                  {
+                    "predicted": "6",
+                    "actual": "0",
+                    "context": "aselib=-,;Y=0/3/6/"
+                  },
+                  {
+                    "predicted": "4",
+                    "actual": "0",
+                    "context": "Hp=0;AttackStarts="
+                  }
+                ]
+              },
+              {
+                "enemy": 1,
+                "field": "exactContinuationState",
+                "edits": [
+                  {
+                    "predicted": "3",
+                    "actual": "0",
+                    "context": "t]/baselib=-,;Y=0/"
+                  },
+                  {
+                    "predicted": "6",
+                    "actual": "0",
+                    "context": "/baselib=-,;Y=0/3/"
+                  },
+                  {
+                    "predicted": "6",
+                    "actual": "0",
+                    "context": "aselib=-,;Y=0/3/6/"
+                  },
+                  {
+                    "predicted": "4",
+                    "actual": "0",
+                    "context": "Hp=0;AttackStarts="
+                  }
+                ]
+              },
+              {
+                "enemy": 2,
+                "field": "exactContinuationState",
+                "edits": [
+                  {
+                    "predicted": "3",
+                    "actual": "0",
+                    "context": "t]/baselib=-,;Y=0/"
+                  },
+                  {
+                    "predicted": "6",
+                    "actual": "0",
+                    "context": "/baselib=-,;Y=0/3/"
+                  },
+                  {
+                    "predicted": "6",
+                    "actual": "0",
+                    "context": "aselib=-,;Y=0/3/6/"
+                  },
+                  {
+                    "predicted": "4",
+                    "actual": "0",
+                    "context": "Hp=0;AttackStarts="
+                  }
+                ]
+              }
+            ]
+          },
+          "rootCaptureMs": 26.9315,
+          "solverAdapterMs": 137.8453,
+          "rootForkAndSnapshotMs": 120.025,
+          "auditedMs": 1351.8078,
+          "compareMs": 359.4346,
+          "matched": 19,
+          "benchmark": {
+            "samples": [
+              {
+                "forkMs": 1.8029,
+                "advanceMs": 21.1276,
+                "allocatedBytes": 803272
+              },
+              {
+                "forkMs": 0.6684,
+                "advanceMs": 19.0956,
+                "allocatedBytes": 803968
+              },
+              {
+                "forkMs": 0.6797,
+                "advanceMs": 16.4581,
+                "allocatedBytes": 796112
+              },
+              {
+                "forkMs": 0.4513,
+                "advanceMs": 16.6254,
+                "allocatedBytes": 796080
+              },
+              {
+                "forkMs": 0.3913,
+                "advanceMs": 16.8294,
+                "allocatedBytes": 797728
+              },
+              {
+                "forkMs": 0.5609,
+                "advanceMs": 19.4238,
+                "allocatedBytes": 796080
+              },
+              {
+                "forkMs": 0.5679,
+                "advanceMs": 19.2014,
+                "allocatedBytes": 801336
+              }
+            ],
+            "branch": null
+          },
+          "allocatedBytes": 67877064,
+          "peakWorkingSetBytes": 182181888,
+          "firstDifferenceAction": null
+        },
+        "nativeBattleMs": 961.1286,
+        "nativeEndTurn": 4,
+        "nativeObservationMs": 56.3418
+      },
+      "C": {
+        "case": "holdout-02-defect",
+        "root": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+        "live": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+        "processMs": 6577.999999979511,
+        "nativeOutcome": {
+          "initialHp": 75,
+          "finalHp": 0,
+          "hpLost": 75,
+          "hpHealed": 0,
+          "selfDamage": 0,
+          "combatEnded": false,
+          "survived": false,
+          "finalEnemyHp": 185,
+          "potions": [],
+          "unattributedHpLoss": 2
+        },
+        "nativeChoices": [],
+        "nativeVerifiedPrefixExecuteMs": 233.8135000000001,
+        "nativeExecuteMs": 250.5270000000001,
+        "nativeExecuted": 43,
+        "audit": {
+          "status": "state_difference",
+          "nativeStatus": "death",
+          "planned": 43,
+          "steps": [
+            {
+              "index": 1,
+              "cardId": "DRAMATIC_ENTRANCE",
+              "kind": "PlayCard",
+              "predictionMs": 93.8163
+            },
+            {
+              "index": 2,
+              "cardId": "STRIKE_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 1.5563
+            },
+            {
+              "index": 3,
+              "cardId": "MULTI_CAST",
+              "kind": "PlayCard",
+              "predictionMs": 5.4193
+            },
+            {
+              "index": 4,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 73.7819
+            },
+            {
+              "index": 5,
+              "cardId": "BOOST_AWAY",
+              "kind": "PlayCard",
+              "predictionMs": 17.5134
+            },
+            {
+              "index": 6,
+              "cardId": "FINESSE",
+              "kind": "PlayCard",
+              "predictionMs": 5.4649
+            },
+            {
+              "index": 7,
+              "cardId": "STRIKE_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 1.8738
+            },
+            {
+              "index": 8,
+              "cardId": "STRIKE_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 1.0159
+            },
+            {
+              "index": 9,
+              "cardId": "SKIM",
+              "kind": "PlayCard",
+              "predictionMs": 1.6428
+            },
+            {
+              "index": 10,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 3.2082
+            },
+            {
+              "index": 11,
+              "cardId": "SHADOW_SHIELD",
+              "kind": "PlayCard",
+              "predictionMs": 2.3911
+            },
+            {
+              "index": 12,
+              "cardId": "DEFEND_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 1.1264
+            },
+            {
+              "index": 13,
+              "cardId": "SUPERCRITICAL",
+              "kind": "PlayCard",
+              "predictionMs": 4.0712
+            },
+            {
+              "index": 14,
+              "cardId": "STRIKE_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 1.1266
+            },
+            {
+              "index": 15,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 14.3958
+            },
+            {
+              "index": 16,
+              "cardId": "UPROAR",
+              "kind": "PlayCard",
+              "predictionMs": 2.2477
+            },
+            {
+              "index": 17,
+              "cardId": "TEMPEST",
+              "kind": "PlayCard",
+              "predictionMs": 1.6727
+            },
+            {
+              "index": 18,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 7.0172
+            },
+            {
+              "index": 19,
+              "cardId": "FRANTIC_ESCAPE",
+              "kind": "PlayCard",
+              "predictionMs": 8.1272
+            },
+            {
+              "index": 20,
+              "cardId": "MOMENTUM_STRIKE",
+              "kind": "PlayCard",
+              "predictionMs": 4.8653
+            },
+            {
+              "index": 21,
+              "cardId": "COMPACT",
+              "kind": "PlayCard",
+              "predictionMs": 6.1117
+            },
+            {
+              "index": 22,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 2.0192
+            },
+            {
+              "index": 23,
+              "cardId": "FRANTIC_ESCAPE",
+              "kind": "PlayCard",
+              "predictionMs": 1.9404
+            },
+            {
+              "index": 24,
+              "cardId": "FRANTIC_ESCAPE",
+              "kind": "PlayCard",
+              "predictionMs": 1.1923
+            },
+            {
+              "index": 25,
+              "cardId": "FINESSE",
+              "kind": "PlayCard",
+              "predictionMs": 1.1857
+            },
+            {
+              "index": 26,
+              "cardId": "STRIKE_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 0.9016
+            },
+            {
+              "index": 27,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 2.1067
+            },
+            {
+              "index": 28,
+              "cardId": "CHARGE_BATTERY",
+              "kind": "PlayCard",
+              "predictionMs": 10.2231
+            },
+            {
+              "index": 29,
+              "cardId": "DEFEND_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 1.3174
+            },
+            {
+              "index": 30,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 3.775
+            },
+            {
+              "index": 31,
+              "cardId": "FRANTIC_ESCAPE",
+              "kind": "PlayCard",
+              "predictionMs": 0.9116
+            },
+            {
+              "index": 32,
+              "cardId": "STRIKE_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 0.6823
+            },
+            {
+              "index": 33,
+              "cardId": "STRIKE_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 0.6202
+            },
+            {
+              "index": 34,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 1.0388
+            },
+            {
+              "index": 35,
+              "cardId": "FRANTIC_ESCAPE",
+              "kind": "PlayCard",
+              "predictionMs": 1.5873
+            },
+            {
+              "index": 36,
+              "cardId": "BOOST_AWAY",
+              "kind": "PlayCard",
+              "predictionMs": 1.3834
+            },
+            {
+              "index": 37,
+              "cardId": "DEFEND_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 1.3186
+            },
+            {
+              "index": 38,
+              "cardId": "DEFEND_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 1.3025
+            },
+            {
+              "index": 39,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 1.5715
+            },
+            {
+              "index": 40,
+              "cardId": "FRANTIC_ESCAPE",
+              "kind": "PlayCard",
+              "predictionMs": 1.1366
+            },
+            {
+              "index": 41,
+              "cardId": "DEFEND_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 1.0714
+            },
+            {
+              "index": 42,
+              "cardId": "STRIKE_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 2.0817
+            },
+            {
+              "index": 43,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 8.6499
+            }
+          ],
+          "_difference": {
+            "step": 43,
+            "differences": [
+              {
+                "enemy": 0,
+                "field": "exactContinuationState",
+                "edits": [
+                  {
+                    "predicted": "1",
+                    "actual": "0",
+                    "context": "ble]/baselib=-,;Y="
+                  },
+                  {
+                    "predicted": "3",
+                    "actual": "0",
+                    "context": "/baselib=-,;Y=1/0/"
+                  },
+                  {
+                    "predicted": "2",
+                    "actual": "0",
+                    "context": "aselib=-,;Y=1/0/3/"
+                  },
+                  {
+                    "predicted": "1",
+                    "actual": "0",
+                    "context": "Hp=0;AttackStarts="
+                  }
+                ]
+              }
+            ]
+          },
+          "rootCaptureMs": 8.2041,
+          "solverAdapterMs": 122.1704,
+          "rootForkAndSnapshotMs": 98.1628,
+          "auditedMs": 1170.9701,
+          "compareMs": 310.91060000000004,
+          "matched": 42,
+          "benchmark": {
+            "samples": [
+              {
+                "forkMs": 1.068,
+                "advanceMs": 44.4399,
+                "allocatedBytes": 1375184
+              },
+              {
+                "forkMs": 0.5036,
+                "advanceMs": 48.026,
+                "allocatedBytes": 1364720
+              },
+              {
+                "forkMs": 0.5479,
+                "advanceMs": 55.5608,
+                "allocatedBytes": 1364976
+              },
+              {
+                "forkMs": 1.0003,
+                "advanceMs": 43.517,
+                "allocatedBytes": 1369944
+              },
+              {
+                "forkMs": 0.4035,
+                "advanceMs": 24.8107,
+                "allocatedBytes": 1364720
+              },
+              {
+                "forkMs": 0.1944,
+                "advanceMs": 18.5866,
+                "allocatedBytes": 1375032
+              },
+              {
+                "forkMs": 0.1912,
+                "advanceMs": 16.97,
+                "allocatedBytes": 1364720
+              }
+            ],
+            "branch": {
+              "prefix": 18,
+              "parentUnchanged": true,
+              "repeatEqual": true,
+              "distinct": true,
+              "first": {
+                "digest": "FFBAAEBC77AD571DF485203F76C742E1C5F75B05A7D0C737FCD6FF3A08904E01",
+                "ms": 0.4,
+                "boundary": "None",
+                "risk": false
+              },
+              "alternative": {
+                "digest": "D3B472CD45808794B0A6935A3F253C777A485DB4E56B64001D9886CE32B56EBE",
+                "ms": 0.7733,
+                "boundary": "None",
+                "risk": false
+              },
+              "repeated": {
+                "digest": "FFBAAEBC77AD571DF485203F76C742E1C5F75B05A7D0C737FCD6FF3A08904E01",
+                "ms": 0.3866,
+                "boundary": "None",
+                "risk": false
+              }
+            }
+          },
+          "allocatedBytes": 62100224,
+          "peakWorkingSetBytes": 179388416,
+          "firstDifferenceAction": null
+        },
+        "nativeBattleMs": 890.5647,
+        "nativeEndTurn": 10,
+        "nativeObservationMs": 55.53180000000002
+      }
+    },
+    {
+      "A": {
+        "case": "dev-02-defect-elite",
+        "root": "4d5e409fbc5bcf6cfff29d46aa0d9ca415d4831d38996e7f55fc447338484bf4",
+        "live": "4d5e409fbc5bcf6cfff29d46aa0d9ca415d4831d38996e7f55fc447338484bf4",
+        "processMs": 6281.000000191852,
+        "nativeOutcome": {
+          "initialHp": 75,
+          "finalHp": 64,
+          "hpLost": 11,
+          "hpHealed": 0,
+          "selfDamage": 0,
+          "combatEnded": true,
+          "survived": true,
+          "finalEnemyHp": 0,
+          "potions": [],
+          "unattributedHpLoss": 0
+        },
+        "nativeChoices": [],
+        "nativeVerifiedPrefixExecuteMs": 220.14229999999995,
+        "nativeExecuteMs": 336.00759999999997,
+        "nativeExecuted": 19,
+        "audit": {
+          "status": "state_difference",
+          "nativeStatus": "win",
+          "planned": 19,
+          "steps": [
+            {
+              "index": 1,
+              "cardId": "SCRAPE",
+              "kind": "PlayCard",
+              "predictionMs": 128.046
+            },
+            {
+              "index": 2,
+              "cardId": "BOOST_AWAY",
+              "kind": "PlayCard",
+              "predictionMs": 49.0564
+            },
+            {
+              "index": 3,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 91.2166
+            },
+            {
+              "index": 4,
+              "cardId": "REFRACT",
+              "kind": "PlayCard",
+              "predictionMs": 2.9751
+            },
+            {
+              "index": 5,
+              "cardId": "DEFEND_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 1.0977
+            },
+            {
+              "index": 6,
+              "cardId": "OVERCLOCK",
+              "kind": "PlayCard",
+              "predictionMs": 4.7257
+            },
+            {
+              "index": 7,
+              "cardId": "PANIC_BUTTON",
+              "kind": "PlayCard",
+              "predictionMs": 4.8218
+            },
+            {
+              "index": 8,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 6.5782
+            },
+            {
+              "index": 9,
+              "cardId": "NULL",
+              "kind": "PlayCard",
+              "predictionMs": 4.73
+            },
+            {
+              "index": 10,
+              "cardId": "MODDED",
+              "kind": "PlayCard",
+              "predictionMs": 4.2759
+            },
+            {
+              "index": 11,
+              "cardId": "NULL",
+              "kind": "PlayCard",
+              "predictionMs": 1.2356
+            },
+            {
+              "index": 12,
+              "cardId": "CLAW",
+              "kind": "PlayCard",
+              "predictionMs": 3.4078
+            },
+            {
+              "index": 13,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 3.0321
+            },
+            {
+              "index": 14,
+              "cardId": "SCRAPE",
+              "kind": "PlayCard",
+              "predictionMs": 1.2489
+            },
+            {
+              "index": 15,
+              "cardId": "BOOST_AWAY",
+              "kind": "PlayCard",
+              "predictionMs": 2.9853
+            },
+            {
+              "index": 16,
+              "cardId": "NULL",
+              "kind": "PlayCard",
+              "predictionMs": 1.4584
+            },
+            {
+              "index": 17,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 4.4129
+            },
+            {
+              "index": 18,
+              "cardId": "REFRACT",
+              "kind": "PlayCard",
+              "predictionMs": 3.3892
+            },
+            {
+              "index": 19,
+              "cardId": "STRIKE_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 24.7763
+            }
+          ],
+          "_difference": {
+            "step": 19,
+            "differences": [
+              {
+                "enemy": 0,
+                "field": "playerCardStates",
+                "predicted": {
+                  "Discard:BOOST_AWAY:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:COMPACT:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:DAZED:-:0:E:R0:XFalse:SFalse:TFalse:DFalse:MFalse": 1,
+                  "Discard:DEFEND_DEFECT:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:DUALCAST:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:MODDED:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:NULL:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:REFRACT:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:SCRAPE:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:STRIKE_DEFECT:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:VOLTAIC:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:ZAP:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:ASCENDERS_BANE:-:0:E:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:BURN:-:0:-:R0:XFalse:SFalse:TFalse:DFalse:MFalse": 1,
+                  "Draw:CLAW:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:DARKNESS:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:DEFEND_DEFECT:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 3,
+                  "Draw:ETERNAL_ARMOR:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:NULL:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:OVERCLOCK:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:STRIKE_DEFECT:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Exhaust:PANIC_BUTTON:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Hand:BULK_UP:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Hand:DAZED:-:0:E:R0:XFalse:SFalse:TFalse:DFalse:MFalse": 1,
+                  "Hand:STRIKE_DEFECT:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1
+                },
+                "actual": {
+                  "Discard:BOOST_AWAY:TAINTED:6:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:COMPACT:TAINTED:6:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:DAZED:-:0:E:R0:XFalse:SFalse:TFalse:DFalse:MFalse": 1,
+                  "Discard:DEFEND_DEFECT:TAINTED:6:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:DUALCAST:TAINTED:6:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:MODDED:TAINTED:6:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:NULL:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:REFRACT:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:SCRAPE:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:STRIKE_DEFECT:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:VOLTAIC:TAINTED:6:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Discard:ZAP:TAINTED:6:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:ASCENDERS_BANE:-:0:E:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:BURN:-:0:-:R0:XFalse:SFalse:TFalse:DFalse:MFalse": 1,
+                  "Draw:CLAW:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:DARKNESS:TAINTED:6:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:DEFEND_DEFECT:TAINTED:6:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 3,
+                  "Draw:ETERNAL_ARMOR:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:NULL:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:OVERCLOCK:TAINTED:6:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Draw:STRIKE_DEFECT:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Exhaust:PANIC_BUTTON:TAINTED:6:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Hand:BULK_UP:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1,
+                  "Hand:DAZED:-:0:E:R0:XFalse:SFalse:TFalse:DFalse:MFalse": 1,
+                  "Hand:STRIKE_DEFECT:-:0:-:R0:XFalse:SFalse:TFalse:DTrue:MFalse": 1
+                }
+              },
+              {
+                "enemy": 0,
+                "field": "exactContinuationState",
+                "edits": [
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  },
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  },
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  },
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  },
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  },
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  },
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  },
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  },
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  },
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  },
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  },
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  },
+                  {
+                    "predicted": "-",
+                    "actual": "TAINTED",
+                    "context": "/True/False/-:0:0/"
+                  },
+                  {
+                    "predicted": "0",
+                    "actual": "6",
+                    "context": "rue/False/-:0:0/-:"
+                  }
+                ]
+              }
+            ]
+          },
+          "rootCaptureMs": 11.8786,
+          "solverAdapterMs": 197.0618,
+          "rootForkAndSnapshotMs": 133.0956,
+          "auditedMs": 1253.1281,
+          "compareMs": 168.4814,
+          "matched": 18,
+          "benchmark": {
+            "samples": [
+              {
+                "forkMs": 2.3092,
+                "advanceMs": 33.0191,
+                "allocatedBytes": 732968
+              },
+              {
+                "forkMs": 0.9183,
+                "advanceMs": 32.6463,
+                "allocatedBytes": 722792
+              },
+              {
+                "forkMs": 1.2786,
+                "advanceMs": 38.3599,
+                "allocatedBytes": 723448
+              },
+              {
+                "forkMs": 0.952,
+                "advanceMs": 29.6523,
+                "allocatedBytes": 723112
+              },
+              {
+                "forkMs": 0.8396,
+                "advanceMs": 33.9023,
+                "allocatedBytes": 728016
+              },
+              {
+                "forkMs": 0.8418,
+                "advanceMs": 35.898,
+                "allocatedBytes": 722792
+              },
+              {
+                "forkMs": 0.7995,
+                "advanceMs": 18.1811,
+                "allocatedBytes": 722792
+              }
+            ],
+            "branch": null
+          },
+          "allocatedBytes": 37816392,
+          "peakWorkingSetBytes": 178610176,
+          "firstDifferenceAction": {
+            "handIndex": 1,
+            "id": "STRIKE_DEFECT",
+            "target": 1,
+            "damage": 6,
+            "block": 0,
+            "draw": 0,
+            "energy": 1,
+            "power": false
+          }
+        },
+        "nativeBattleMs": 844.6476,
+        "nativeEndTurn": 5,
+        "nativeObservationMs": 38.3379
+      },
+      "B": {
+        "case": "dev-00-ironclad-elite",
+        "root": "e377d2ee2aeb7069daa85a39ee5d9f74c1fcaa8d393fd13a8c6e43b5dfd58f4b",
+        "live": "e377d2ee2aeb7069daa85a39ee5d9f74c1fcaa8d393fd13a8c6e43b5dfd58f4b",
+        "processMs": 6750.0,
+        "nativeOutcome": {
+          "initialHp": 80,
+          "finalHp": 0,
+          "hpLost": 80,
+          "hpHealed": 0,
+          "selfDamage": 5,
+          "combatEnded": false,
+          "survived": false,
+          "finalEnemyHp": 72,
+          "potions": [],
+          "unattributedHpLoss": 3
+        },
+        "nativeChoices": [
+          {
+            "step": 4,
+            "action": "BURNING_PACT",
+            "source": "hand",
+            "effect": "exhaust",
+            "minSelect": 1,
+            "maxSelect": 1,
+            "allowEmpty": false,
+            "energy": 2,
+            "turn": 2,
+            "candidates": [
+              {
+                "index": 0,
+                "id": "THUNDERCLAP",
+                "upgrade": 1,
+                "cost": 1,
+                "type": "Attack",
+                "damage": 7,
+                "block": 0,
+                "key": "THUNDERCLAP+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=7;VulnerablePower=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 1,
+                "id": "BASH",
+                "upgrade": 0,
+                "cost": 2,
+                "type": "Attack",
+                "damage": 8,
+                "block": 0,
+                "key": "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 2,
+                "id": "DEFEND_IRONCLAD",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Skill",
+                "damage": 0,
+                "block": 5,
+                "key": "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 3,
+                "id": "STONE_ARMOR",
+                "upgrade": 1,
+                "cost": 1,
+                "type": "Power",
+                "damage": 0,
+                "block": 0,
+                "key": "STONE_ARMOR+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=PlatingPower=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              }
+            ],
+            "indexes": [
+              0
+            ]
+          }
+        ],
+        "nativeVerifiedPrefixExecuteMs": 200.98330000000004,
+        "nativeExecuteMs": 211.33790000000005,
+        "nativeExecuted": 20,
+        "audit": {
+          "status": "state_difference",
+          "nativeStatus": "death",
+          "planned": 20,
+          "steps": [
+            {
+              "index": 1,
+              "cardId": "BARRICADE",
+              "kind": "PlayCard",
+              "predictionMs": 153.9511
+            },
+            {
+              "index": 2,
+              "cardId": "RAMPAGE",
+              "kind": "PlayCard",
+              "predictionMs": 43.9872
+            },
+            {
+              "index": 3,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 70.2868
+            },
+            {
+              "index": 4,
+              "cardId": "BURNING_PACT",
+              "kind": "PlayCard",
+              "predictionMs": 6.1952
+            },
+            {
+              "index": 5,
+              "cardId": "BASH",
+              "kind": "PlayCard",
+              "predictionMs": 3.7414
+            },
+            {
+              "index": 6,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 2.6256
+            },
+            {
+              "index": 7,
+              "cardId": "JACKPOT",
+              "kind": "PlayCard",
+              "predictionMs": 6.9268
+            },
+            {
+              "index": 8,
+              "cardId": "ANGER",
+              "kind": "PlayCard",
+              "predictionMs": 21.6733
+            },
+            {
+              "index": 9,
+              "cardId": "OFFERING",
+              "kind": "PlayCard",
+              "predictionMs": 2.3496
+            },
+            {
+              "index": 10,
+              "cardId": "STRIKE_IRONCLAD",
+              "kind": "PlayCard",
+              "predictionMs": 4.3821
+            },
+            {
+              "index": 11,
+              "cardId": "DEFEND_IRONCLAD",
+              "kind": "PlayCard",
+              "predictionMs": 8.0462
+            },
+            {
+              "index": 12,
+              "cardId": "ANGER",
+              "kind": "PlayCard",
+              "predictionMs": 1.0198
+            },
+            {
+              "index": 13,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 4.9987
+            },
+            {
+              "index": 14,
+              "cardId": "RESTLESSNESS",
+              "kind": "PlayCard",
+              "predictionMs": 1.6594
+            },
+            {
+              "index": 15,
+              "cardId": "PERFECTED_STRIKE",
+              "kind": "PlayCard",
+              "predictionMs": 2.6
+            },
+            {
+              "index": 16,
+              "cardId": "BULLY",
+              "kind": "PlayCard",
+              "predictionMs": 2.3559
+            },
+            {
+              "index": 17,
+              "cardId": "INFERNAL_BLADE",
+              "kind": "PlayCard",
+              "predictionMs": 4.6725
+            },
+            {
+              "index": 18,
+              "cardId": "ANGER",
+              "kind": "PlayCard",
+              "predictionMs": 4.7036
+            },
+            {
+              "index": 19,
+              "cardId": "STOMP",
+              "kind": "PlayCard",
+              "predictionMs": 3.4751
+            },
+            {
+              "index": 20,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 6.082
+            }
+          ],
+          "_difference": {
+            "step": 20,
+            "differences": [
+              {
+                "enemy": 0,
+                "field": "exactContinuationState",
+                "edits": [
+                  {
+                    "predicted": "3",
+                    "actual": "0",
+                    "context": "t]/baselib=-,;Y=0/"
+                  },
+                  {
+                    "predicted": "6",
+                    "actual": "0",
+                    "context": "/baselib=-,;Y=0/3/"
+                  },
+                  {
+                    "predicted": "6",
+                    "actual": "0",
+                    "context": "aselib=-,;Y=0/3/6/"
+                  },
+                  {
+                    "predicted": "4",
+                    "actual": "0",
+                    "context": "Hp=0;AttackStarts="
+                  }
+                ]
+              },
+              {
+                "enemy": 1,
+                "field": "exactContinuationState",
+                "edits": [
+                  {
+                    "predicted": "3",
+                    "actual": "0",
+                    "context": "t]/baselib=-,;Y=0/"
+                  },
+                  {
+                    "predicted": "6",
+                    "actual": "0",
+                    "context": "/baselib=-,;Y=0/3/"
+                  },
+                  {
+                    "predicted": "6",
+                    "actual": "0",
+                    "context": "aselib=-,;Y=0/3/6/"
+                  },
+                  {
+                    "predicted": "4",
+                    "actual": "0",
+                    "context": "Hp=0;AttackStarts="
+                  }
+                ]
+              },
+              {
+                "enemy": 2,
+                "field": "exactContinuationState",
+                "edits": [
+                  {
+                    "predicted": "3",
+                    "actual": "0",
+                    "context": "t]/baselib=-,;Y=0/"
+                  },
+                  {
+                    "predicted": "6",
+                    "actual": "0",
+                    "context": "/baselib=-,;Y=0/3/"
+                  },
+                  {
+                    "predicted": "6",
+                    "actual": "0",
+                    "context": "aselib=-,;Y=0/3/6/"
+                  },
+                  {
+                    "predicted": "4",
+                    "actual": "0",
+                    "context": "Hp=0;AttackStarts="
+                  }
+                ]
+              }
+            ]
+          },
+          "rootCaptureMs": 17.9344,
+          "solverAdapterMs": 148.8514,
+          "rootForkAndSnapshotMs": 124.719,
+          "auditedMs": 1327.2904,
+          "compareMs": 387.8524,
+          "matched": 19,
+          "benchmark": {
+            "samples": [
+              {
+                "forkMs": 3.2024,
+                "advanceMs": 23.871,
+                "allocatedBytes": 803272
+              },
+              {
+                "forkMs": 0.5576,
+                "advanceMs": 14.6718,
+                "allocatedBytes": 803968
+              },
+              {
+                "forkMs": 0.7438,
+                "advanceMs": 16.3329,
+                "allocatedBytes": 796112
+              },
+              {
+                "forkMs": 0.4086,
+                "advanceMs": 11.4536,
+                "allocatedBytes": 796080
+              },
+              {
+                "forkMs": 0.4017,
+                "advanceMs": 14.9945,
+                "allocatedBytes": 796368
+              },
+              {
+                "forkMs": 0.6121,
+                "advanceMs": 16.8685,
+                "allocatedBytes": 796080
+              },
+              {
+                "forkMs": 0.3919,
+                "advanceMs": 14.4654,
+                "allocatedBytes": 801336
+              }
+            ],
+            "branch": null
+          },
+          "allocatedBytes": 67884216,
+          "peakWorkingSetBytes": 183107584,
+          "firstDifferenceAction": null
+        },
+        "nativeBattleMs": 915.9299,
+        "nativeEndTurn": 4,
+        "nativeObservationMs": 50.897999999999996
+      },
+      "C": {
+        "case": "holdout-02-defect",
+        "root": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+        "live": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+        "processMs": 6390.000000130385,
+        "nativeOutcome": {
+          "initialHp": 75,
+          "finalHp": 0,
+          "hpLost": 75,
+          "hpHealed": 0,
+          "selfDamage": 0,
+          "combatEnded": false,
+          "survived": false,
+          "finalEnemyHp": 185,
+          "potions": [],
+          "unattributedHpLoss": 2
+        },
+        "nativeChoices": [],
+        "nativeVerifiedPrefixExecuteMs": 248.61899999999997,
+        "nativeExecuteMs": 271.7249,
+        "nativeExecuted": 43,
+        "audit": {
+          "status": "state_difference",
+          "nativeStatus": "death",
+          "planned": 43,
+          "steps": [
+            {
+              "index": 1,
+              "cardId": "DRAMATIC_ENTRANCE",
+              "kind": "PlayCard",
+              "predictionMs": 140.7749
+            },
+            {
+              "index": 2,
+              "cardId": "STRIKE_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 3.407
+            },
+            {
+              "index": 3,
+              "cardId": "MULTI_CAST",
+              "kind": "PlayCard",
+              "predictionMs": 8.4389
+            },
+            {
+              "index": 4,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 110.6048
+            },
+            {
+              "index": 5,
+              "cardId": "BOOST_AWAY",
+              "kind": "PlayCard",
+              "predictionMs": 20.6171
+            },
+            {
+              "index": 6,
+              "cardId": "FINESSE",
+              "kind": "PlayCard",
+              "predictionMs": 4.1407
+            },
+            {
+              "index": 7,
+              "cardId": "STRIKE_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 1.6259
+            },
+            {
+              "index": 8,
+              "cardId": "STRIKE_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 0.7794
+            },
+            {
+              "index": 9,
+              "cardId": "SKIM",
+              "kind": "PlayCard",
+              "predictionMs": 1.918
+            },
+            {
+              "index": 10,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 4.9
+            },
+            {
+              "index": 11,
+              "cardId": "SHADOW_SHIELD",
+              "kind": "PlayCard",
+              "predictionMs": 3.3102
+            },
+            {
+              "index": 12,
+              "cardId": "DEFEND_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 1.185
+            },
+            {
+              "index": 13,
+              "cardId": "SUPERCRITICAL",
+              "kind": "PlayCard",
+              "predictionMs": 3.5067
+            },
+            {
+              "index": 14,
+              "cardId": "STRIKE_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 1.0417
+            },
+            {
+              "index": 15,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 14.6119
+            },
+            {
+              "index": 16,
+              "cardId": "UPROAR",
+              "kind": "PlayCard",
+              "predictionMs": 2.151
+            },
+            {
+              "index": 17,
+              "cardId": "TEMPEST",
+              "kind": "PlayCard",
+              "predictionMs": 1.0946
+            },
+            {
+              "index": 18,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 5.46
+            },
+            {
+              "index": 19,
+              "cardId": "FRANTIC_ESCAPE",
+              "kind": "PlayCard",
+              "predictionMs": 6.6536
+            },
+            {
+              "index": 20,
+              "cardId": "MOMENTUM_STRIKE",
+              "kind": "PlayCard",
+              "predictionMs": 2.3503
+            },
+            {
+              "index": 21,
+              "cardId": "COMPACT",
+              "kind": "PlayCard",
+              "predictionMs": 4.1651
+            },
+            {
+              "index": 22,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 1.2132
+            },
+            {
+              "index": 23,
+              "cardId": "FRANTIC_ESCAPE",
+              "kind": "PlayCard",
+              "predictionMs": 1.5068
+            },
+            {
+              "index": 24,
+              "cardId": "FRANTIC_ESCAPE",
+              "kind": "PlayCard",
+              "predictionMs": 1.1963
+            },
+            {
+              "index": 25,
+              "cardId": "FINESSE",
+              "kind": "PlayCard",
+              "predictionMs": 2.4959
+            },
+            {
+              "index": 26,
+              "cardId": "STRIKE_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 1.4318
+            },
+            {
+              "index": 27,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 2.5079
+            },
+            {
+              "index": 28,
+              "cardId": "CHARGE_BATTERY",
+              "kind": "PlayCard",
+              "predictionMs": 6.0293
+            },
+            {
+              "index": 29,
+              "cardId": "DEFEND_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 0.6716
+            },
+            {
+              "index": 30,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 1.4996
+            },
+            {
+              "index": 31,
+              "cardId": "FRANTIC_ESCAPE",
+              "kind": "PlayCard",
+              "predictionMs": 1.0524
+            },
+            {
+              "index": 32,
+              "cardId": "STRIKE_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 1.4749
+            },
+            {
+              "index": 33,
+              "cardId": "STRIKE_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 1.4075
+            },
+            {
+              "index": 34,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 1.727
+            },
+            {
+              "index": 35,
+              "cardId": "FRANTIC_ESCAPE",
+              "kind": "PlayCard",
+              "predictionMs": 1.2443
+            },
+            {
+              "index": 36,
+              "cardId": "BOOST_AWAY",
+              "kind": "PlayCard",
+              "predictionMs": 1.3346
+            },
+            {
+              "index": 37,
+              "cardId": "DEFEND_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 0.6987
+            },
+            {
+              "index": 38,
+              "cardId": "DEFEND_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 1.2096
+            },
+            {
+              "index": 39,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 2.6044
+            },
+            {
+              "index": 40,
+              "cardId": "FRANTIC_ESCAPE",
+              "kind": "PlayCard",
+              "predictionMs": 0.8537
+            },
+            {
+              "index": 41,
+              "cardId": "DEFEND_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 1.2913
+            },
+            {
+              "index": 42,
+              "cardId": "STRIKE_DEFECT",
+              "kind": "PlayCard",
+              "predictionMs": 2.017
+            },
+            {
+              "index": 43,
+              "cardId": "",
+              "kind": "EndTurn",
+              "predictionMs": 14.368
+            }
+          ],
+          "_difference": {
+            "step": 43,
+            "differences": [
+              {
+                "enemy": 0,
+                "field": "exactContinuationState",
+                "edits": [
+                  {
+                    "predicted": "1",
+                    "actual": "0",
+                    "context": "ble]/baselib=-,;Y="
+                  },
+                  {
+                    "predicted": "3",
+                    "actual": "0",
+                    "context": "/baselib=-,;Y=1/0/"
+                  },
+                  {
+                    "predicted": "2",
+                    "actual": "0",
+                    "context": "aselib=-,;Y=1/0/3/"
+                  },
+                  {
+                    "predicted": "1",
+                    "actual": "0",
+                    "context": "Hp=0;AttackStarts="
+                  }
+                ]
+              }
+            ]
+          },
+          "rootCaptureMs": 10.6988,
+          "solverAdapterMs": 194.2276,
+          "rootForkAndSnapshotMs": 97.5985,
+          "auditedMs": 1397.1446,
+          "compareMs": 356.6555000000001,
+          "matched": 42,
+          "benchmark": {
+            "samples": [
+              {
+                "forkMs": 2.1159,
+                "advanceMs": 55.4238,
+                "allocatedBytes": 1375184
+              },
+              {
+                "forkMs": 0.5605,
+                "advanceMs": 48.1835,
+                "allocatedBytes": 1364720
+              },
+              {
+                "forkMs": 0.4399,
+                "advanceMs": 27.9051,
+                "allocatedBytes": 1364688
+              },
+              {
+                "forkMs": 0.2438,
+                "advanceMs": 36.6497,
+                "allocatedBytes": 1375064
+              },
+              {
+                "forkMs": 0.4031,
+                "advanceMs": 41.6552,
+                "allocatedBytes": 1364720
+              },
+              {
+                "forkMs": 0.2756,
+                "advanceMs": 21.2877,
+                "allocatedBytes": 1365632
+              },
+              {
+                "forkMs": 0.2533,
+                "advanceMs": 20.4054,
+                "allocatedBytes": 1364720
+              }
+            ],
+            "branch": {
+              "prefix": 18,
+              "parentUnchanged": true,
+              "repeatEqual": true,
+              "distinct": true,
+              "first": {
+                "digest": "FFBAAEBC77AD571DF485203F76C742E1C5F75B05A7D0C737FCD6FF3A08904E01",
+                "ms": 0.5668,
+                "boundary": "None",
+                "risk": false
+              },
+              "alternative": {
+                "digest": "D3B472CD45808794B0A6935A3F253C777A485DB4E56B64001D9886CE32B56EBE",
+                "ms": 1.5201,
+                "boundary": "None",
+                "risk": false
+              },
+              "repeated": {
+                "digest": "FFBAAEBC77AD571DF485203F76C742E1C5F75B05A7D0C737FCD6FF3A08904E01",
+                "ms": 0.6274,
+                "boundary": "None",
+                "risk": false
+              }
+            }
+          },
+          "allocatedBytes": 62316920,
+          "peakWorkingSetBytes": 181964800,
+          "firstDifferenceAction": null
+        },
+        "nativeBattleMs": 989.0608,
+        "nativeEndTurn": 10,
+        "nativeObservationMs": 51.398500000000006
+      }
+    }
+  ]
+}
