@@ -8,7 +8,7 @@ import random
 from statistics import median
 import time
 
-from conftest import Game, ROOT
+ROOT = Path(__file__).resolve().parents[1]
 
 
 MAX_ACTIONS = 1200
@@ -115,6 +115,8 @@ class Run:
             combat["rounds"] = max(combat["rounds"], state["round"])
 
     def play(self):
+        from conftest import Game
+
         self.game = Game(deadline=self.deadline)
         self.startup = time.perf_counter() - self.started
         rng = random.Random(self.seed)
