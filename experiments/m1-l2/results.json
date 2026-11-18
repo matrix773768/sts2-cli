@@ -1,0 +1,5559 @@
+[
+  {
+    "root": "small",
+    "scope": "offline-teacher",
+    "scan": [
+      {
+        "root": "small",
+        "nodes": 240,
+        "processStatus": 0,
+        "processSeconds": 7.172,
+        "scenario": {
+          "CharacterId": "IRONCLAD",
+          "EncounterId": "FUZZY_WURM_CRAWLER_WEAK",
+          "Seed": "M1CS1",
+          "Ascension": 0,
+          "ActIndexForTest": 0
+        },
+        "won": true,
+        "quality": {
+          "won": true,
+          "outstandingStolenResource": 0,
+          "projectedBattleHpLost": 0,
+          "strategicHpDeficit": 0,
+          "potionStrategicCost": 0,
+          "projectedBattlePotionCount": 0,
+          "enemyHp": 0,
+          "combatEndedTurn": 3,
+          "theftPolicy": null,
+          "survives": true,
+          "deathSaveUseCount": 0,
+          "growthHpCredit": 0,
+          "growthRewardCount": 0
+        },
+        "boundary": "None",
+        "expanded": 153,
+        "transitions": 423,
+        "seconds": 2.8544311,
+        "rootStamp": "dabf065677835eebeaa1d4d23e94f24a112b5243e4c151b7b70161ca594d9a91",
+        "peakMiB": 160.4,
+        "liveStamp": "dabf065677835eebeaa1d4d23e94f24a112b5243e4c151b7b70161ca594d9a91"
+      },
+      {
+        "root": "small",
+        "nodes": 800,
+        "processStatus": 0,
+        "processSeconds": 7.672,
+        "scenario": {
+          "CharacterId": "IRONCLAD",
+          "EncounterId": "FUZZY_WURM_CRAWLER_WEAK",
+          "Seed": "M1CS1",
+          "Ascension": 0,
+          "ActIndexForTest": 0
+        },
+        "won": true,
+        "quality": {
+          "won": true,
+          "outstandingStolenResource": 0,
+          "projectedBattleHpLost": 0,
+          "strategicHpDeficit": 0,
+          "potionStrategicCost": 0,
+          "projectedBattlePotionCount": 0,
+          "enemyHp": 0,
+          "combatEndedTurn": 3,
+          "theftPolicy": null,
+          "survives": true,
+          "deathSaveUseCount": 0,
+          "growthHpCredit": 0,
+          "growthRewardCount": 0
+        },
+        "boundary": "None",
+        "expanded": 153,
+        "transitions": 423,
+        "seconds": 2.869391,
+        "rootStamp": "dabf065677835eebeaa1d4d23e94f24a112b5243e4c151b7b70161ca594d9a91",
+        "peakMiB": 163.4,
+        "liveStamp": "dabf065677835eebeaa1d4d23e94f24a112b5243e4c151b7b70161ca594d9a91"
+      }
+    ],
+    "prefix": [
+      {
+        "nodes": 400,
+        "rootStamp": "dabf065677835eebeaa1d4d23e94f24a112b5243e4c151b7b70161ca594d9a91",
+        "liveStamp": "dabf065677835eebeaa1d4d23e94f24a112b5243e4c151b7b70161ca594d9a91",
+        "liveUnchanged": true,
+        "processSeconds": 9.891,
+        "peakMiB": 174.6,
+        "discovery": {
+          "expandedNodes": 24,
+          "transitionCount": 74,
+          "milliseconds": 1531.6393
+        },
+        "counts": {
+          "win": 3
+        },
+        "eligibleWins": 3,
+        "verifiedWitnesses": 3,
+        "ties": 1,
+        "candidateSeconds": 1.818,
+        "candidateExpanded": 504,
+        "candidateTransitions": 1375,
+        "control": {
+          "won": true,
+          "quality": {
+            "won": true,
+            "outstandingStolenResource": 0,
+            "projectedBattleHpLost": 0,
+            "strategicHpDeficit": 0,
+            "potionStrategicCost": 0,
+            "projectedBattlePotionCount": 0,
+            "enemyHp": 0,
+            "combatEndedTurn": 3,
+            "theftPolicy": null,
+            "survives": true,
+            "deathSaveUseCount": 0,
+            "growthHpCredit": 0,
+            "growthRewardCount": 0
+          },
+          "expanded": 153,
+          "transitions": 423,
+          "boundary": "None",
+          "matchedFirstAction": {
+            "bef9b15a574ac14a": {
+              "sameWitness": true,
+              "sameQuality": true
+            }
+          },
+          "witness": "08d529f445c53f27754bacb170514292318574cf412d78260f26d707e5411b47"
+        },
+        "rows": {
+          "23556d4e3e5c5bc4": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "STRIKE_IRONCLAD",
+              "cardOccurrence": 0,
+              "targetIndex": 0,
+              "targetCombatId": 1,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "0a1775bb7bcbc0ae7072863bcd8b55eb83aee2fdcc71cb551709ed44c4ef76f7",
+            "state": "384237cea4cf61ed0e125d4430bf3ff3bc356d8f7e46b468fdffb2a750dea3ca",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 50,
+              "energy": 2,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1779999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              3,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              3,
+              0
+            ],
+            "witness": "997efd1ce9046230e285fa343a676f94353e6daeb09c564d499e96a3966d641d",
+            "retention": {
+              "1": {
+                "rawRank": 1,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 1
+              }
+            },
+            "expanded": 136,
+            "transitions": 355,
+            "seconds": 0.4769
+          },
+          "bef9b15a574ac14a": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "DEFEND_IRONCLAD",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "0a1775bb7bcbc0ae7072863bcd8b55eb83aee2fdcc71cb551709ed44c4ef76f7",
+            "state": "8dec7cf9c3cf09c6a8068ad439ef9223564678b24b7c084d43eccdd507758683",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 56,
+              "energy": 2,
+              "block": 5,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1839999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              3,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              3,
+              0
+            ],
+            "witness": "08d529f445c53f27754bacb170514292318574cf412d78260f26d707e5411b47",
+            "retention": {
+              "1": {
+                "rawRank": 0,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 0
+              }
+            },
+            "expanded": 123,
+            "transitions": 329,
+            "seconds": 0.5115
+          },
+          "17c47dd3d910e8dd": {
+            "action": {
+              "kind": "EndTurn",
+              "turn": 1,
+              "cardId": "",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": false
+            },
+            "parent": "0a1775bb7bcbc0ae7072863bcd8b55eb83aee2fdcc71cb551709ed44c4ef76f7",
+            "state": "8586fe66db6dea2c7ab3b1fbf106f042f9eaacb3aa4f45401293ccb39615988e",
+            "postState": {
+              "playerHp": 76,
+              "enemyHp": 56,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1599999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              4,
+              0,
+              0,
+              10,
+              6,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              4,
+              0,
+              0,
+              10,
+              6,
+              0
+            ],
+            "witness": "dfe5a57121d3a9ea670ca6cde660706614d713e473d6c4d51782bf0e1ce973a7",
+            "retention": {
+              "6": {
+                "rawRank": 11,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 11
+              }
+            },
+            "expanded": 245,
+            "transitions": 691,
+            "seconds": 0.8297
+          }
+        },
+        "strict": [
+          {
+            "better": "23556d4e3e5c5bc4",
+            "worse": "17c47dd3d910e8dd",
+            "scoreReversal": false,
+            "sharedBoundaries": [],
+            "beamReversal": false
+          },
+          {
+            "better": "bef9b15a574ac14a",
+            "worse": "17c47dd3d910e8dd",
+            "scoreReversal": false,
+            "sharedBoundaries": [],
+            "beamReversal": false
+          }
+        ]
+      },
+      {
+        "nodes": 1200,
+        "rootStamp": "dabf065677835eebeaa1d4d23e94f24a112b5243e4c151b7b70161ca594d9a91",
+        "liveStamp": "dabf065677835eebeaa1d4d23e94f24a112b5243e4c151b7b70161ca594d9a91",
+        "liveUnchanged": true,
+        "processSeconds": 9.0,
+        "peakMiB": 169.7,
+        "discovery": {
+          "expandedNodes": 24,
+          "transitionCount": 74,
+          "milliseconds": 1558.9842
+        },
+        "counts": {
+          "win": 3
+        },
+        "eligibleWins": 3,
+        "verifiedWitnesses": 3,
+        "ties": 1,
+        "candidateSeconds": 1.939,
+        "candidateExpanded": 504,
+        "candidateTransitions": 1375,
+        "control": {
+          "won": true,
+          "quality": {
+            "won": true,
+            "outstandingStolenResource": 0,
+            "projectedBattleHpLost": 0,
+            "strategicHpDeficit": 0,
+            "potionStrategicCost": 0,
+            "projectedBattlePotionCount": 0,
+            "enemyHp": 0,
+            "combatEndedTurn": 3,
+            "theftPolicy": null,
+            "survives": true,
+            "deathSaveUseCount": 0,
+            "growthHpCredit": 0,
+            "growthRewardCount": 0
+          },
+          "expanded": 153,
+          "transitions": 423,
+          "boundary": "None",
+          "matchedFirstAction": {
+            "bef9b15a574ac14a": {
+              "sameWitness": true,
+              "sameQuality": true
+            }
+          },
+          "witness": "08d529f445c53f27754bacb170514292318574cf412d78260f26d707e5411b47"
+        },
+        "rows": {
+          "23556d4e3e5c5bc4": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "STRIKE_IRONCLAD",
+              "cardOccurrence": 0,
+              "targetIndex": 0,
+              "targetCombatId": 1,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "0a1775bb7bcbc0ae7072863bcd8b55eb83aee2fdcc71cb551709ed44c4ef76f7",
+            "state": "384237cea4cf61ed0e125d4430bf3ff3bc356d8f7e46b468fdffb2a750dea3ca",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 50,
+              "energy": 2,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1779999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              3,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              3,
+              0
+            ],
+            "witness": "997efd1ce9046230e285fa343a676f94353e6daeb09c564d499e96a3966d641d",
+            "retention": {
+              "1": {
+                "rawRank": 1,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 1
+              }
+            },
+            "expanded": 136,
+            "transitions": 355,
+            "seconds": 0.544
+          },
+          "bef9b15a574ac14a": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "DEFEND_IRONCLAD",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "0a1775bb7bcbc0ae7072863bcd8b55eb83aee2fdcc71cb551709ed44c4ef76f7",
+            "state": "8dec7cf9c3cf09c6a8068ad439ef9223564678b24b7c084d43eccdd507758683",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 56,
+              "energy": 2,
+              "block": 5,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1839999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              3,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              3,
+              0
+            ],
+            "witness": "08d529f445c53f27754bacb170514292318574cf412d78260f26d707e5411b47",
+            "retention": {
+              "1": {
+                "rawRank": 0,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 0
+              }
+            },
+            "expanded": 123,
+            "transitions": 329,
+            "seconds": 0.5157
+          },
+          "17c47dd3d910e8dd": {
+            "action": {
+              "kind": "EndTurn",
+              "turn": 1,
+              "cardId": "",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": false
+            },
+            "parent": "0a1775bb7bcbc0ae7072863bcd8b55eb83aee2fdcc71cb551709ed44c4ef76f7",
+            "state": "8586fe66db6dea2c7ab3b1fbf106f042f9eaacb3aa4f45401293ccb39615988e",
+            "postState": {
+              "playerHp": 76,
+              "enemyHp": 56,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1599999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              4,
+              0,
+              0,
+              10,
+              6,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              4,
+              0,
+              0,
+              10,
+              6,
+              0
+            ],
+            "witness": "dfe5a57121d3a9ea670ca6cde660706614d713e473d6c4d51782bf0e1ce973a7",
+            "retention": {
+              "6": {
+                "rawRank": 11,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 11
+              }
+            },
+            "expanded": 245,
+            "transitions": 691,
+            "seconds": 0.8793
+          }
+        },
+        "strict": [
+          {
+            "better": "23556d4e3e5c5bc4",
+            "worse": "17c47dd3d910e8dd",
+            "scoreReversal": false,
+            "sharedBoundaries": [],
+            "beamReversal": false
+          },
+          {
+            "better": "bef9b15a574ac14a",
+            "worse": "17c47dd3d910e8dd",
+            "scoreReversal": false,
+            "sharedBoundaries": [],
+            "beamReversal": false
+          }
+        ]
+      }
+    ],
+    "stability": {
+      "sameStrict": 2,
+      "flippedStrict": 0,
+      "strictVsTie": 0,
+      "sameTie": 1,
+      "only400Strict": 0,
+      "only1200Strict": 0
+    },
+    "stabilityIncludingBudgetLimitedWins": {
+      "sameStrict": 2,
+      "flippedStrict": 0,
+      "strictVsTie": 0,
+      "sameTie": 1,
+      "only400Strict": 0,
+      "only1200Strict": 0
+    }
+  },
+  {
+    "root": "nibbits",
+    "scope": "offline-teacher",
+    "scan": [
+      {
+        "root": "nibbits",
+        "nodes": 240,
+        "processStatus": 0,
+        "processSeconds": 8.578,
+        "scenario": {
+          "CharacterId": "IRONCLAD",
+          "EncounterId": "NIBBITS_NORMAL",
+          "Seed": "run_1",
+          "Ascension": 0,
+          "ActIndexForTest": 0
+        },
+        "won": false,
+        "quality": {
+          "won": false,
+          "outstandingStolenResource": 0,
+          "projectedBattleHpLost": 23,
+          "strategicHpDeficit": 23,
+          "potionStrategicCost": 0,
+          "projectedBattlePotionCount": 0,
+          "enemyHp": 46,
+          "combatEndedTurn": null,
+          "theftPolicy": null,
+          "survives": true,
+          "deathSaveUseCount": 0,
+          "growthHpCredit": 0,
+          "growthRewardCount": 0
+        },
+        "boundary": "NodeLimit",
+        "expanded": 240,
+        "transitions": 850,
+        "seconds": 4.1606084,
+        "rootStamp": "87ee52112742837e7897b731e3b46ce187c13563b214a19f33dbc8e4a7f86b33",
+        "peakMiB": 168.8,
+        "liveStamp": "87ee52112742837e7897b731e3b46ce187c13563b214a19f33dbc8e4a7f86b33"
+      },
+      {
+        "root": "nibbits",
+        "nodes": 800,
+        "processStatus": 0,
+        "processSeconds": 9.875,
+        "scenario": {
+          "CharacterId": "IRONCLAD",
+          "EncounterId": "NIBBITS_NORMAL",
+          "Seed": "run_1",
+          "Ascension": 0,
+          "ActIndexForTest": 0
+        },
+        "won": true,
+        "quality": {
+          "won": true,
+          "outstandingStolenResource": 0,
+          "projectedBattleHpLost": 29,
+          "strategicHpDeficit": 23,
+          "potionStrategicCost": 0,
+          "projectedBattlePotionCount": 0,
+          "enemyHp": 0,
+          "combatEndedTurn": 8,
+          "theftPolicy": null,
+          "survives": true,
+          "deathSaveUseCount": 0,
+          "growthHpCredit": 0,
+          "growthRewardCount": 0
+        },
+        "boundary": "None",
+        "expanded": 613,
+        "transitions": 2059,
+        "seconds": 4.9563114,
+        "rootStamp": "87ee52112742837e7897b731e3b46ce187c13563b214a19f33dbc8e4a7f86b33",
+        "peakMiB": 171.9,
+        "liveStamp": "87ee52112742837e7897b731e3b46ce187c13563b214a19f33dbc8e4a7f86b33"
+      }
+    ],
+    "prefix": [
+      {
+        "nodes": 400,
+        "rootStamp": "87ee52112742837e7897b731e3b46ce187c13563b214a19f33dbc8e4a7f86b33",
+        "liveStamp": "87ee52112742837e7897b731e3b46ce187c13563b214a19f33dbc8e4a7f86b33",
+        "liveUnchanged": true,
+        "processSeconds": 16.172,
+        "peakMiB": 184.9,
+        "discovery": {
+          "expandedNodes": 24,
+          "transitionCount": 59,
+          "milliseconds": 1419.6754
+        },
+        "counts": {
+          "win": 4
+        },
+        "eligibleWins": 0,
+        "verifiedWitnesses": 4,
+        "ties": 0,
+        "candidateSeconds": 7.752,
+        "candidateExpanded": 1600,
+        "candidateTransitions": 5884,
+        "control": {
+          "won": true,
+          "quality": {
+            "won": true,
+            "outstandingStolenResource": 0,
+            "projectedBattleHpLost": 37,
+            "strategicHpDeficit": 31,
+            "potionStrategicCost": 0,
+            "projectedBattlePotionCount": 0,
+            "enemyHp": 0,
+            "combatEndedTurn": 5,
+            "theftPolicy": null,
+            "survives": true,
+            "deathSaveUseCount": 0,
+            "growthHpCredit": 0,
+            "growthRewardCount": 0
+          },
+          "expanded": 400,
+          "transitions": 1423,
+          "boundary": "NodeLimit",
+          "matchedFirstAction": {
+            "2a55a71bbd27e95e": {
+              "sameWitness": false,
+              "sameQuality": null
+            }
+          },
+          "witness": "0404b8d07ce38ad761429382883b87e489b96582b89afcb84efe93a7e5608b4c"
+        },
+        "rows": {
+          "2a55a71bbd27e95e": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "DEFEND_IRONCLAD",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "d06b8056f721b5dec6d8f6a60a117c0d229a372595de153255d39010d9db6d29",
+            "state": "f8f96e35e488fd3c4634bfbbc34bd74956c1d8dfb936f306fff6f2976e620eb8",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 89,
+              "energy": 2,
+              "block": 5,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1479999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": [
+              0,
+              0,
+              31,
+              0,
+              0,
+              37,
+              5,
+              0
+            ],
+            "witness": "814a2de2e3bedb9feb4c77d9a71bf5430efed4da0e0558800c380c0d2bb8777b",
+            "retention": {
+              "1": {
+                "rawRank": 0,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 0
+              }
+            },
+            "expanded": 400,
+            "transitions": 1442,
+            "seconds": 2.3236
+          },
+          "1505cac7cfcfa52e": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "STRIKE_IRONCLAD",
+              "cardOccurrence": 0,
+              "targetIndex": 0,
+              "targetCombatId": 1,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "d06b8056f721b5dec6d8f6a60a117c0d229a372595de153255d39010d9db6d29",
+            "state": "0a2b267e6c026329da2b71651f0ea0ca42775a14b3198675effd80c552a6342b",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 83,
+              "energy": 2,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1389999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": [
+              0,
+              0,
+              36,
+              0,
+              0,
+              42,
+              5,
+              0
+            ],
+            "witness": "8c47dcc872d77f9bc31f2cc2828446e208c2814498c10fb94333f951e610f6c8",
+            "retention": {
+              "1": {
+                "rawRank": 1,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 1
+              }
+            },
+            "expanded": 400,
+            "transitions": 1487,
+            "seconds": 1.792
+          },
+          "b627609d9a8a9aec": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "STRIKE_IRONCLAD",
+              "cardOccurrence": 0,
+              "targetIndex": 1,
+              "targetCombatId": 2,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "d06b8056f721b5dec6d8f6a60a117c0d229a372595de153255d39010d9db6d29",
+            "state": "528564458525b0e96067fb6c741336434a38d73161324cb36781296720111c31",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 83,
+              "energy": 2,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1389999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": [
+              0,
+              0,
+              36,
+              0,
+              0,
+              42,
+              5,
+              0
+            ],
+            "witness": "44253e082f2071a5a59e2eb5fa16101d4bd4bf4620ea6bd92167e5f76e556ce1",
+            "retention": {
+              "1": {
+                "rawRank": 2,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 2
+              }
+            },
+            "expanded": 400,
+            "transitions": 1496,
+            "seconds": 1.9258
+          },
+          "97d50bdfa2a10752": {
+            "action": {
+              "kind": "EndTurn",
+              "turn": 1,
+              "cardId": "",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": false
+            },
+            "parent": "d06b8056f721b5dec6d8f6a60a117c0d229a372595de153255d39010d9db6d29",
+            "state": "7eadb1837ae3604c031d1f5a842265742dbd4896c36b48dad4d9a8b9bedc74a9",
+            "postState": {
+              "playerHp": 74,
+              "enemyHp": 89,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 729999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": [
+              0,
+              0,
+              52,
+              0,
+              0,
+              58,
+              6,
+              0
+            ],
+            "witness": "14e81fb9d5d9f3dbf9cd0b8a5b29dfff094ac308d4c06415d179d809515c660f",
+            "retention": {
+              "6": {
+                "rawRank": 23,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 23
+              }
+            },
+            "expanded": 400,
+            "transitions": 1459,
+            "seconds": 1.7104
+          }
+        },
+        "strict": []
+      },
+      {
+        "nodes": 1200,
+        "rootStamp": "87ee52112742837e7897b731e3b46ce187c13563b214a19f33dbc8e4a7f86b33",
+        "liveStamp": "87ee52112742837e7897b731e3b46ce187c13563b214a19f33dbc8e4a7f86b33",
+        "liveUnchanged": true,
+        "processSeconds": 17.438,
+        "peakMiB": 192.6,
+        "discovery": {
+          "expandedNodes": 24,
+          "transitionCount": 59,
+          "milliseconds": 1457.1775
+        },
+        "counts": {
+          "win": 4
+        },
+        "eligibleWins": 4,
+        "verifiedWitnesses": 4,
+        "ties": 1,
+        "candidateSeconds": 9.814,
+        "candidateExpanded": 2533,
+        "candidateTransitions": 8708,
+        "control": {
+          "won": true,
+          "quality": {
+            "won": true,
+            "outstandingStolenResource": 0,
+            "projectedBattleHpLost": 29,
+            "strategicHpDeficit": 23,
+            "potionStrategicCost": 0,
+            "projectedBattlePotionCount": 0,
+            "enemyHp": 0,
+            "combatEndedTurn": 8,
+            "theftPolicy": null,
+            "survives": true,
+            "deathSaveUseCount": 0,
+            "growthHpCredit": 0,
+            "growthRewardCount": 0
+          },
+          "expanded": 613,
+          "transitions": 2059,
+          "boundary": "None",
+          "matchedFirstAction": {
+            "1505cac7cfcfa52e": {
+              "sameWitness": true,
+              "sameQuality": true
+            }
+          },
+          "witness": "618495bc72c69678b0b81eb59d26d14b95574cdde24cfa1f14ce1a04a2fd22d7"
+        },
+        "rows": {
+          "2a55a71bbd27e95e": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "DEFEND_IRONCLAD",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "d06b8056f721b5dec6d8f6a60a117c0d229a372595de153255d39010d9db6d29",
+            "state": "f8f96e35e488fd3c4634bfbbc34bd74956c1d8dfb936f306fff6f2976e620eb8",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 89,
+              "energy": 2,
+              "block": 5,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1479999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              23,
+              0,
+              0,
+              29,
+              8,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              23,
+              0,
+              0,
+              29,
+              8,
+              0
+            ],
+            "witness": "f4edcae8a1d65822f8868d8db0b3ff6802c2feb34c5b89d7c8d447f63842ad3b",
+            "retention": {
+              "1": {
+                "rawRank": 0,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 0
+              }
+            },
+            "expanded": 604,
+            "transitions": 2040,
+            "seconds": 3.0341
+          },
+          "1505cac7cfcfa52e": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "STRIKE_IRONCLAD",
+              "cardOccurrence": 0,
+              "targetIndex": 0,
+              "targetCombatId": 1,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "d06b8056f721b5dec6d8f6a60a117c0d229a372595de153255d39010d9db6d29",
+            "state": "0a2b267e6c026329da2b71651f0ea0ca42775a14b3198675effd80c552a6342b",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 83,
+              "energy": 2,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1389999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              23,
+              0,
+              0,
+              29,
+              8,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              23,
+              0,
+              0,
+              29,
+              8,
+              0
+            ],
+            "witness": "618495bc72c69678b0b81eb59d26d14b95574cdde24cfa1f14ce1a04a2fd22d7",
+            "retention": {
+              "1": {
+                "rawRank": 1,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 1
+              }
+            },
+            "expanded": 611,
+            "transitions": 2108,
+            "seconds": 2.9435
+          },
+          "b627609d9a8a9aec": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "STRIKE_IRONCLAD",
+              "cardOccurrence": 0,
+              "targetIndex": 1,
+              "targetCombatId": 2,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "d06b8056f721b5dec6d8f6a60a117c0d229a372595de153255d39010d9db6d29",
+            "state": "528564458525b0e96067fb6c741336434a38d73161324cb36781296720111c31",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 83,
+              "energy": 2,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1389999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              32,
+              0,
+              0,
+              38,
+              9,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              32,
+              0,
+              0,
+              38,
+              9,
+              0
+            ],
+            "witness": "358d6aeb221dc08da14c6fb53ef4588bd2fdaf39e350c597b999b7e745c7b508",
+            "retention": {
+              "1": {
+                "rawRank": 2,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 2
+              }
+            },
+            "expanded": 636,
+            "transitions": 2195,
+            "seconds": 2.3377
+          },
+          "97d50bdfa2a10752": {
+            "action": {
+              "kind": "EndTurn",
+              "turn": 1,
+              "cardId": "",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": false
+            },
+            "parent": "d06b8056f721b5dec6d8f6a60a117c0d229a372595de153255d39010d9db6d29",
+            "state": "7eadb1837ae3604c031d1f5a842265742dbd4896c36b48dad4d9a8b9bedc74a9",
+            "postState": {
+              "playerHp": 74,
+              "enemyHp": 89,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 729999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              42,
+              0,
+              0,
+              48,
+              9,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              42,
+              0,
+              0,
+              48,
+              9,
+              0
+            ],
+            "witness": "5c5d7d9a801d772980de39ec477b35c9601461b4cb88849a7b67e8baff1816d4",
+            "retention": {
+              "6": {
+                "rawRank": 23,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 23
+              }
+            },
+            "expanded": 682,
+            "transitions": 2365,
+            "seconds": 1.4982
+          }
+        },
+        "strict": [
+          {
+            "better": "1505cac7cfcfa52e",
+            "worse": "97d50bdfa2a10752",
+            "scoreReversal": false,
+            "sharedBoundaries": [],
+            "beamReversal": false
+          },
+          {
+            "better": "1505cac7cfcfa52e",
+            "worse": "b627609d9a8a9aec",
+            "scoreReversal": false,
+            "sharedBoundaries": [
+              1
+            ],
+            "beamReversal": false
+          },
+          {
+            "better": "2a55a71bbd27e95e",
+            "worse": "97d50bdfa2a10752",
+            "scoreReversal": false,
+            "sharedBoundaries": [],
+            "beamReversal": false
+          },
+          {
+            "better": "2a55a71bbd27e95e",
+            "worse": "b627609d9a8a9aec",
+            "scoreReversal": false,
+            "sharedBoundaries": [
+              1
+            ],
+            "beamReversal": false
+          },
+          {
+            "better": "b627609d9a8a9aec",
+            "worse": "97d50bdfa2a10752",
+            "scoreReversal": false,
+            "sharedBoundaries": [],
+            "beamReversal": false
+          }
+        ]
+      }
+    ],
+    "stability": {
+      "sameStrict": 0,
+      "flippedStrict": 0,
+      "strictVsTie": 0,
+      "sameTie": 0,
+      "only400Strict": 0,
+      "only1200Strict": 5
+    },
+    "stabilityIncludingBudgetLimitedWins": {
+      "sameStrict": 4,
+      "flippedStrict": 0,
+      "strictVsTie": 2,
+      "sameTie": 0,
+      "only400Strict": 0,
+      "only1200Strict": 0
+    }
+  },
+  {
+    "root": "crawlers",
+    "scope": "offline-teacher",
+    "scan": [
+      {
+        "root": "crawlers",
+        "nodes": 240,
+        "processStatus": 0,
+        "processSeconds": 6.438,
+        "scenario": {
+          "CharacterId": "IRONCLAD",
+          "EncounterId": "OVERGROWTH_CRAWLERS",
+          "Seed": "run_2",
+          "Ascension": 0,
+          "ActIndexForTest": 0
+        },
+        "won": false,
+        "quality": {
+          "won": false,
+          "outstandingStolenResource": 0,
+          "projectedBattleHpLost": 32,
+          "strategicHpDeficit": 32,
+          "potionStrategicCost": 0,
+          "projectedBattlePotionCount": 0,
+          "enemyHp": 76,
+          "combatEndedTurn": null,
+          "theftPolicy": null,
+          "survives": true,
+          "deathSaveUseCount": 0,
+          "growthHpCredit": 0,
+          "growthRewardCount": 0
+        },
+        "boundary": "NodeLimit",
+        "expanded": 240,
+        "transitions": 870,
+        "seconds": 2.0654727,
+        "rootStamp": "1faf52631147f24359d103bcb61db69e8da4957bdc52ad9f0bfc5434e6044e64",
+        "peakMiB": 169.9,
+        "liveStamp": "1faf52631147f24359d103bcb61db69e8da4957bdc52ad9f0bfc5434e6044e64"
+      },
+      {
+        "root": "crawlers",
+        "nodes": 800,
+        "processStatus": 0,
+        "processSeconds": 7.391,
+        "scenario": {
+          "CharacterId": "IRONCLAD",
+          "EncounterId": "OVERGROWTH_CRAWLERS",
+          "Seed": "run_2",
+          "Ascension": 0,
+          "ActIndexForTest": 0
+        },
+        "won": true,
+        "quality": {
+          "won": true,
+          "outstandingStolenResource": 0,
+          "projectedBattleHpLost": 34,
+          "strategicHpDeficit": 28,
+          "potionStrategicCost": 0,
+          "projectedBattlePotionCount": 0,
+          "enemyHp": 0,
+          "combatEndedTurn": 9,
+          "theftPolicy": null,
+          "survives": true,
+          "deathSaveUseCount": 0,
+          "growthHpCredit": 0,
+          "growthRewardCount": 0
+        },
+        "boundary": "None",
+        "expanded": 757,
+        "transitions": 2463,
+        "seconds": 3.1886492,
+        "rootStamp": "1faf52631147f24359d103bcb61db69e8da4957bdc52ad9f0bfc5434e6044e64",
+        "peakMiB": 169.4,
+        "liveStamp": "1faf52631147f24359d103bcb61db69e8da4957bdc52ad9f0bfc5434e6044e64"
+      }
+    ],
+    "prefix": [
+      {
+        "nodes": 400,
+        "rootStamp": "1faf52631147f24359d103bcb61db69e8da4957bdc52ad9f0bfc5434e6044e64",
+        "liveStamp": "1faf52631147f24359d103bcb61db69e8da4957bdc52ad9f0bfc5434e6044e64",
+        "liveUnchanged": true,
+        "processSeconds": 16.281,
+        "peakMiB": 184.2,
+        "discovery": {
+          "expandedNodes": 24,
+          "transitionCount": 59,
+          "milliseconds": 1476.7184
+        },
+        "counts": {
+          "truncated": 4
+        },
+        "eligibleWins": 0,
+        "verifiedWitnesses": 0,
+        "ties": 0,
+        "candidateSeconds": 7.858,
+        "candidateExpanded": 1600,
+        "candidateTransitions": 5918,
+        "control": {
+          "won": false,
+          "quality": {
+            "won": false,
+            "outstandingStolenResource": 0,
+            "projectedBattleHpLost": 23,
+            "strategicHpDeficit": 23,
+            "potionStrategicCost": 0,
+            "projectedBattlePotionCount": 0,
+            "enemyHp": 34,
+            "combatEndedTurn": null,
+            "theftPolicy": null,
+            "survives": true,
+            "deathSaveUseCount": 0,
+            "growthHpCredit": 0,
+            "growthRewardCount": 0
+          },
+          "expanded": 400,
+          "transitions": 1433,
+          "boundary": "NodeLimit",
+          "matchedFirstAction": {
+            "5654ed665c7be24a": {
+              "sameWitness": false,
+              "sameQuality": null
+            }
+          },
+          "witness": "dce631a65f7dd03a0efc541754e3beaf03112cbc0fe986259d30f2ce4d84bf53"
+        },
+        "rows": {
+          "5654ed665c7be24a": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "STRIKE_IRONCLAD",
+              "cardOccurrence": 0,
+              "targetIndex": 0,
+              "targetCombatId": 1,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "3abc2a56fe095c412696b2466bcc5a5ec111048a1c6bbbfdd544adc4328ee6d3",
+            "state": "ba05cd97926248032cc491c9b92555b6d5d0f6c0aee207a1f4c0fa38deac2da8",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 90,
+              "energy": 2,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1379999,
+            "replayMatched": true,
+            "outcome": "truncated",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": null,
+            "witness": null,
+            "retention": {
+              "1": {
+                "rawRank": 2,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 2
+              }
+            },
+            "expanded": 400,
+            "transitions": 1451,
+            "seconds": 2.2244
+          },
+          "6dbdadbeaf50f839": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "STRIKE_IRONCLAD",
+              "cardOccurrence": 0,
+              "targetIndex": 1,
+              "targetCombatId": 2,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "3abc2a56fe095c412696b2466bcc5a5ec111048a1c6bbbfdd544adc4328ee6d3",
+            "state": "8a1459f17209e698f5a9cb24bb292e9397c5b8663df8b4e72b3d45e8d18bf149",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 90,
+              "energy": 2,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1379999,
+            "replayMatched": true,
+            "outcome": "truncated",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": null,
+            "witness": null,
+            "retention": {
+              "1": {
+                "rawRank": 1,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 1
+              }
+            },
+            "expanded": 400,
+            "transitions": 1519,
+            "seconds": 1.9582
+          },
+          "44cc3c4603eff96f": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "DEFEND_IRONCLAD",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "3abc2a56fe095c412696b2466bcc5a5ec111048a1c6bbbfdd544adc4328ee6d3",
+            "state": "d97b691792d2efbcaa6b93be42dd768027cd09853f566617b1fe3a906ef5b004",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 96,
+              "energy": 2,
+              "block": 5,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1439999,
+            "replayMatched": true,
+            "outcome": "truncated",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": null,
+            "witness": null,
+            "retention": {
+              "1": {
+                "rawRank": 0,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 0
+              }
+            },
+            "expanded": 400,
+            "transitions": 1480,
+            "seconds": 1.9626
+          },
+          "13d78ea9b61c05e0": {
+            "action": {
+              "kind": "EndTurn",
+              "turn": 1,
+              "cardId": "",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": false
+            },
+            "parent": "3abc2a56fe095c412696b2466bcc5a5ec111048a1c6bbbfdd544adc4328ee6d3",
+            "state": "8119d952c07c86fc687a18da4c281e6d9685ca3174eb9e62e45d98f78b2045e0",
+            "postState": {
+              "playerHp": 76,
+              "enemyHp": 96,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 989999,
+            "replayMatched": true,
+            "outcome": "truncated",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": null,
+            "witness": null,
+            "retention": {
+              "6": {
+                "rawRank": 23,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 23
+              }
+            },
+            "expanded": 400,
+            "transitions": 1468,
+            "seconds": 1.7128
+          }
+        },
+        "strict": []
+      },
+      {
+        "nodes": 1200,
+        "rootStamp": "1faf52631147f24359d103bcb61db69e8da4957bdc52ad9f0bfc5434e6044e64",
+        "liveStamp": "1faf52631147f24359d103bcb61db69e8da4957bdc52ad9f0bfc5434e6044e64",
+        "liveUnchanged": true,
+        "processSeconds": 18.969,
+        "peakMiB": 190.7,
+        "discovery": {
+          "expandedNodes": 24,
+          "transitionCount": 59,
+          "milliseconds": 1489.6046
+        },
+        "counts": {
+          "win": 4
+        },
+        "eligibleWins": 4,
+        "verifiedWitnesses": 4,
+        "ties": 0,
+        "candidateSeconds": 11.046,
+        "candidateExpanded": 3305,
+        "candidateTransitions": 11015,
+        "control": {
+          "won": true,
+          "quality": {
+            "won": true,
+            "outstandingStolenResource": 0,
+            "projectedBattleHpLost": 34,
+            "strategicHpDeficit": 28,
+            "potionStrategicCost": 0,
+            "projectedBattlePotionCount": 0,
+            "enemyHp": 0,
+            "combatEndedTurn": 9,
+            "theftPolicy": null,
+            "survives": true,
+            "deathSaveUseCount": 0,
+            "growthHpCredit": 0,
+            "growthRewardCount": 0
+          },
+          "expanded": 757,
+          "transitions": 2463,
+          "boundary": "None",
+          "matchedFirstAction": {
+            "5654ed665c7be24a": {
+              "sameWitness": false,
+              "sameQuality": true
+            }
+          },
+          "witness": "9384ecf5b0633b7347126d483f62130fb2122802dd55a507a77775914ad13f1a"
+        },
+        "rows": {
+          "5654ed665c7be24a": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "STRIKE_IRONCLAD",
+              "cardOccurrence": 0,
+              "targetIndex": 0,
+              "targetCombatId": 1,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "3abc2a56fe095c412696b2466bcc5a5ec111048a1c6bbbfdd544adc4328ee6d3",
+            "state": "ba05cd97926248032cc491c9b92555b6d5d0f6c0aee207a1f4c0fa38deac2da8",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 90,
+              "energy": 2,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1379999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              28,
+              0,
+              0,
+              34,
+              9,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              28,
+              0,
+              0,
+              34,
+              9,
+              0
+            ],
+            "witness": "70b31e4d6b1197ff21d2865671f7a4cb552bb49e8a4896897765cd1d08436311",
+            "retention": {
+              "1": {
+                "rawRank": 2,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 2
+              }
+            },
+            "expanded": 710,
+            "transitions": 2324,
+            "seconds": 3.3071
+          },
+          "6dbdadbeaf50f839": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "STRIKE_IRONCLAD",
+              "cardOccurrence": 0,
+              "targetIndex": 1,
+              "targetCombatId": 2,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "3abc2a56fe095c412696b2466bcc5a5ec111048a1c6bbbfdd544adc4328ee6d3",
+            "state": "8a1459f17209e698f5a9cb24bb292e9397c5b8663df8b4e72b3d45e8d18bf149",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 90,
+              "energy": 2,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1379999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              49,
+              0,
+              0,
+              55,
+              11,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              49,
+              0,
+              0,
+              55,
+              11,
+              0
+            ],
+            "witness": "3eaf983d470ff0a7e5740d337fad58d7c10a2b5109d92dd859c47776aa8f9989",
+            "retention": {
+              "1": {
+                "rawRank": 1,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 1
+              }
+            },
+            "expanded": 913,
+            "transitions": 3058,
+            "seconds": 4.212
+          },
+          "44cc3c4603eff96f": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "DEFEND_IRONCLAD",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "3abc2a56fe095c412696b2466bcc5a5ec111048a1c6bbbfdd544adc4328ee6d3",
+            "state": "d97b691792d2efbcaa6b93be42dd768027cd09853f566617b1fe3a906ef5b004",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 96,
+              "energy": 2,
+              "block": 5,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1439999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              49,
+              0,
+              0,
+              55,
+              7,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              49,
+              0,
+              0,
+              55,
+              7,
+              0
+            ],
+            "witness": "484502608ef4539d4cc1baa7370658a42effcb77fb84de7128bee083fb38f72a",
+            "retention": {
+              "1": {
+                "rawRank": 0,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 0
+              }
+            },
+            "expanded": 580,
+            "transitions": 2058,
+            "seconds": 1.737
+          },
+          "13d78ea9b61c05e0": {
+            "action": {
+              "kind": "EndTurn",
+              "turn": 1,
+              "cardId": "",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": false
+            },
+            "parent": "3abc2a56fe095c412696b2466bcc5a5ec111048a1c6bbbfdd544adc4328ee6d3",
+            "state": "8119d952c07c86fc687a18da4c281e6d9685ca3174eb9e62e45d98f78b2045e0",
+            "postState": {
+              "playerHp": 76,
+              "enemyHp": 96,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 989999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              65,
+              0,
+              0,
+              71,
+              13,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              65,
+              0,
+              0,
+              71,
+              13,
+              0
+            ],
+            "witness": "f706e6d7bed2fd4abb63f7c92dde4ac68c8a97e0335706b33449bec6870badfd",
+            "retention": {
+              "6": {
+                "rawRank": 23,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 23
+              }
+            },
+            "expanded": 1102,
+            "transitions": 3575,
+            "seconds": 1.7895
+          }
+        },
+        "strict": [
+          {
+            "better": "44cc3c4603eff96f",
+            "worse": "13d78ea9b61c05e0",
+            "scoreReversal": false,
+            "sharedBoundaries": [],
+            "beamReversal": false
+          },
+          {
+            "better": "5654ed665c7be24a",
+            "worse": "13d78ea9b61c05e0",
+            "scoreReversal": false,
+            "sharedBoundaries": [],
+            "beamReversal": false
+          },
+          {
+            "better": "6dbdadbeaf50f839",
+            "worse": "13d78ea9b61c05e0",
+            "scoreReversal": false,
+            "sharedBoundaries": [],
+            "beamReversal": false
+          },
+          {
+            "better": "5654ed665c7be24a",
+            "worse": "44cc3c4603eff96f",
+            "scoreReversal": true,
+            "sharedBoundaries": [
+              1
+            ],
+            "beamReversal": true
+          },
+          {
+            "better": "44cc3c4603eff96f",
+            "worse": "6dbdadbeaf50f839",
+            "scoreReversal": false,
+            "sharedBoundaries": [
+              1
+            ],
+            "beamReversal": false
+          },
+          {
+            "better": "5654ed665c7be24a",
+            "worse": "6dbdadbeaf50f839",
+            "scoreReversal": false,
+            "sharedBoundaries": [
+              1
+            ],
+            "beamReversal": true
+          }
+        ]
+      }
+    ],
+    "stability": {
+      "sameStrict": 0,
+      "flippedStrict": 0,
+      "strictVsTie": 0,
+      "sameTie": 0,
+      "only400Strict": 0,
+      "only1200Strict": 6
+    },
+    "stabilityIncludingBudgetLimitedWins": {
+      "sameStrict": 0,
+      "flippedStrict": 0,
+      "strictVsTie": 0,
+      "sameTie": 0,
+      "only400Strict": 0,
+      "only1200Strict": 6
+    }
+  },
+  {
+    "root": "dev-10-ironclad-monster",
+    "scope": "offline-teacher",
+    "scan": [
+      {
+        "root": "dev-10-ironclad-monster",
+        "nodes": 240,
+        "processStatus": 0,
+        "processSeconds": 8.188,
+        "scenario": {
+          "CharacterId": "IRONCLAD",
+          "EncounterId": "NIBBITS_WEAK",
+          "Seed": "NOVELTY-DEV-20260915-10",
+          "Ascension": 10,
+          "ActIndexForTest": 0
+        },
+        "won": true,
+        "quality": {
+          "won": true,
+          "outstandingStolenResource": 0,
+          "projectedBattleHpLost": 6,
+          "strategicHpDeficit": 0,
+          "potionStrategicCost": 0,
+          "projectedBattlePotionCount": 0,
+          "enemyHp": 0,
+          "combatEndedTurn": 2,
+          "theftPolicy": null,
+          "survives": true,
+          "deathSaveUseCount": 0,
+          "growthHpCredit": 0,
+          "growthRewardCount": 0
+        },
+        "boundary": "None",
+        "expanded": 174,
+        "transitions": 1385,
+        "seconds": 2.9193563,
+        "rootStamp": "08d23effa1eeefe845cb0c3ed9500f374a37b8bc7b4d0baa96b9887bc6527b5f",
+        "peakMiB": 182.4,
+        "liveStamp": "08d23effa1eeefe845cb0c3ed9500f374a37b8bc7b4d0baa96b9887bc6527b5f"
+      },
+      {
+        "root": "dev-10-ironclad-monster",
+        "nodes": 800,
+        "processStatus": 0,
+        "processSeconds": 8.156,
+        "scenario": {
+          "CharacterId": "IRONCLAD",
+          "EncounterId": "NIBBITS_WEAK",
+          "Seed": "NOVELTY-DEV-20260915-10",
+          "Ascension": 10,
+          "ActIndexForTest": 0
+        },
+        "won": true,
+        "quality": {
+          "won": true,
+          "outstandingStolenResource": 0,
+          "projectedBattleHpLost": 6,
+          "strategicHpDeficit": 0,
+          "potionStrategicCost": 0,
+          "projectedBattlePotionCount": 0,
+          "enemyHp": 0,
+          "combatEndedTurn": 2,
+          "theftPolicy": null,
+          "survives": true,
+          "deathSaveUseCount": 0,
+          "growthHpCredit": 0,
+          "growthRewardCount": 0
+        },
+        "boundary": "None",
+        "expanded": 150,
+        "transitions": 1263,
+        "seconds": 3.0492991,
+        "rootStamp": "08d23effa1eeefe845cb0c3ed9500f374a37b8bc7b4d0baa96b9887bc6527b5f",
+        "peakMiB": 179.8,
+        "liveStamp": "08d23effa1eeefe845cb0c3ed9500f374a37b8bc7b4d0baa96b9887bc6527b5f"
+      }
+    ],
+    "prefix": [
+      {
+        "nodes": 400,
+        "rootStamp": "08d23effa1eeefe845cb0c3ed9500f374a37b8bc7b4d0baa96b9887bc6527b5f",
+        "liveStamp": "08d23effa1eeefe845cb0c3ed9500f374a37b8bc7b4d0baa96b9887bc6527b5f",
+        "liveUnchanged": true,
+        "processSeconds": 30.938,
+        "peakMiB": 217.1,
+        "discovery": {
+          "expandedNodes": 24,
+          "transitionCount": 237,
+          "milliseconds": 2161.2585
+        },
+        "counts": {
+          "win": 9
+        },
+        "eligibleWins": 4,
+        "verifiedWitnesses": 9,
+        "ties": 3,
+        "candidateSeconds": 20.36,
+        "candidateExpanded": 2805,
+        "candidateTransitions": 18192,
+        "control": {
+          "won": true,
+          "quality": {
+            "won": true,
+            "outstandingStolenResource": 0,
+            "projectedBattleHpLost": 6,
+            "strategicHpDeficit": 0,
+            "potionStrategicCost": 0,
+            "projectedBattlePotionCount": 0,
+            "enemyHp": 0,
+            "combatEndedTurn": 2,
+            "theftPolicy": null,
+            "survives": true,
+            "deathSaveUseCount": 0,
+            "growthHpCredit": 0,
+            "growthRewardCount": 0
+          },
+          "expanded": 271,
+          "transitions": 1704,
+          "boundary": "None",
+          "matchedFirstAction": {
+            "29013f374948d858": {
+              "sameWitness": false,
+              "sameQuality": true
+            }
+          },
+          "witness": "904cca18101b45f035ac1706ac9a962f4c89816da99490ce43945a525c544ad0"
+        },
+        "rows": {
+          "c43d06b516c309f7": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "AGGRESSION",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "AGGRESSION+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=Innate|vars=|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 1,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "cc9cedf92c12b135f6980fa76c903b108c970a37c0addc2c5d29bbef7cd775cd",
+            "state": "59414a81aeba1e3dfece90e7c6ca6109e605b69acb6a6693af789f749bab1eb0",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 44,
+              "energy": 2,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1539999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              2,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              2,
+              0
+            ],
+            "witness": "4fe688fbfc67a8b3315004e2a84aff17aba257b709712eab6f9229f544e820e4",
+            "retention": {
+              "1": {
+                "rawRank": 3,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 3
+              }
+            },
+            "expanded": 152,
+            "transitions": 1346,
+            "seconds": 2.5272
+          },
+          "5afd4f6f77c057f6": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "STRIKE_IRONCLAD",
+              "cardOccurrence": 0,
+              "targetIndex": 0,
+              "targetCombatId": 1,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "cc9cedf92c12b135f6980fa76c903b108c970a37c0addc2c5d29bbef7cd775cd",
+            "state": "37e971ef5f865741c1fcb8fdd4bd1e34016ed91fdb1f22edaa586dc7b8deaaea",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 36,
+              "energy": 2,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1619999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              2,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              2,
+              0
+            ],
+            "witness": "ed02edc34a8a6b4ee37417fe30a2d6f3abd6935d26cd44f11141d89024c36014",
+            "retention": {
+              "1": {
+                "rawRank": 4,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 4
+              }
+            },
+            "expanded": 218,
+            "transitions": 1500,
+            "seconds": 2.4634
+          },
+          "29013f374948d858": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "BATTLE_TRANCE",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "BATTLE_TRANCE+1|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Cards=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 1,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "cc9cedf92c12b135f6980fa76c903b108c970a37c0addc2c5d29bbef7cd775cd",
+            "state": "b4f4177165e63e58e1e2e392098517c3cb6902803ba4184e4f340f71d8c1a3c8",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 44,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1539999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              2,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              2,
+              0
+            ],
+            "witness": "5af2f39add19aa436bb83b8a060cfd62d393d9dda54bbde25880d44523123b37",
+            "retention": {
+              "1": {
+                "rawRank": 5,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 5
+              }
+            },
+            "expanded": 164,
+            "transitions": 999,
+            "seconds": 1.4753
+          },
+          "38b08a17e83a2a80": {
+            "action": {
+              "kind": "UsePotion",
+              "turn": 1,
+              "cardId": "",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": {
+                "effect": "GenerateToHand",
+                "sourcePile": "None",
+                "cards": [
+                  {
+                    "cardId": "VOLLEY",
+                    "upgradeLevel": 0,
+                    "stateKey": "VOLLEY+0|energy=True:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=10|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                    "sourceOccurrence": 0,
+                    "optionOccurrence": 0,
+                    "title": "VOLLEY.title"
+                  }
+                ],
+                "sourceId": "COLORLESS_POTION",
+                "contextId": "",
+                "timing": "Action"
+              },
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": 0,
+              "potionId": "COLORLESS_POTION",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "cc9cedf92c12b135f6980fa76c903b108c970a37c0addc2c5d29bbef7cd775cd",
+            "state": "bc80ba2cb97ec608c6be6ea7bec891281128a6fe46e68981b89cde22dcef2543",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 44,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "Scaling, Resource, Control",
+            "score": 1539999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": [
+              0,
+              0,
+              23,
+              0,
+              0,
+              0,
+              2,
+              2
+            ],
+            "witness": "45d119fd2d1959de03de7442de5fd633609c449a5ec47000abfd8a7c91bfe570",
+            "retention": {
+              "1": {
+                "rawRank": 0,
+                "requiredIndex": null,
+                "routingIndex": 0,
+                "selectedIndex": 0
+              }
+            },
+            "expanded": 400,
+            "transitions": 2465,
+            "seconds": 4.385
+          },
+          "40ef9157c475d71a": {
+            "action": {
+              "kind": "UsePotion",
+              "turn": 1,
+              "cardId": "",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": {
+                "effect": "GenerateToHand",
+                "sourcePile": "None",
+                "cards": [
+                  {
+                    "cardId": "MASTER_OF_STRATEGY",
+                    "upgradeLevel": 0,
+                    "stateKey": "MASTER_OF_STRATEGY+0|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Cards=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                    "sourceOccurrence": 0,
+                    "optionOccurrence": 0,
+                    "title": "MASTER_OF_STRATEGY.title"
+                  }
+                ],
+                "sourceId": "COLORLESS_POTION",
+                "contextId": "",
+                "timing": "Action"
+              },
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": 0,
+              "potionId": "COLORLESS_POTION",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "cc9cedf92c12b135f6980fa76c903b108c970a37c0addc2c5d29bbef7cd775cd",
+            "state": "b33210a210194fe2c33ed9d4233e5e4d2498ada5d64df1904dfb1e369eeb1416",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 44,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "Scaling, Resource, Control",
+            "score": 1539999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": [
+              0,
+              0,
+              23,
+              0,
+              0,
+              0,
+              1,
+              2
+            ],
+            "witness": "f350c53431e5cafcd7e41772aef23834cc0684fe28fdb43675b408cac7565c3e",
+            "retention": {
+              "1": {
+                "rawRank": 1,
+                "requiredIndex": null,
+                "routingIndex": 1,
+                "selectedIndex": 1
+              }
+            },
+            "expanded": 400,
+            "transitions": 2400,
+            "seconds": 3.5572
+          },
+          "5669a37e4d6eb92b": {
+            "action": {
+              "kind": "UsePotion",
+              "turn": 1,
+              "cardId": "",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": {
+                "effect": "GenerateToHand",
+                "sourcePile": "None",
+                "cards": [
+                  {
+                    "cardId": "FASTEN",
+                    "upgradeLevel": 0,
+                    "stateKey": "FASTEN+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=ExtraBlock=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                    "sourceOccurrence": 0,
+                    "optionOccurrence": 0,
+                    "title": "FASTEN.title"
+                  }
+                ],
+                "sourceId": "COLORLESS_POTION",
+                "contextId": "",
+                "timing": "Action"
+              },
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": 0,
+              "potionId": "COLORLESS_POTION",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "cc9cedf92c12b135f6980fa76c903b108c970a37c0addc2c5d29bbef7cd775cd",
+            "state": "936173393cb19d5c14927b8f842e475b131f2dd32e5bf88d6a75759baccfce67",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 44,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "Scaling, Resource, Control",
+            "score": 1539999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": [
+              0,
+              0,
+              23,
+              0,
+              0,
+              0,
+              1,
+              2
+            ],
+            "witness": "46f53a17575d2cd8606102a804869651060a15fc0272959ef42984f2d6d589e6",
+            "retention": {
+              "1": {
+                "rawRank": 2,
+                "requiredIndex": null,
+                "routingIndex": 2,
+                "selectedIndex": 2
+              }
+            },
+            "expanded": 400,
+            "transitions": 2162,
+            "seconds": 1.7966
+          },
+          "a3d347b6a7a63cb0": {
+            "action": {
+              "kind": "UsePotion",
+              "turn": 1,
+              "cardId": "",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": {
+                "effect": "GenerateToHand",
+                "sourcePile": "None",
+                "cards": [],
+                "sourceId": "COLORLESS_POTION",
+                "contextId": "",
+                "timing": "Action"
+              },
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": 0,
+              "potionId": "COLORLESS_POTION",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "cc9cedf92c12b135f6980fa76c903b108c970a37c0addc2c5d29bbef7cd775cd",
+            "state": "f3abc81597a8dbc88159045bdd297ca2dd35a1ea51c48081ac91ad1edcd920f8",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 44,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "Control",
+            "score": 1539999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": [
+              0,
+              0,
+              23,
+              0,
+              0,
+              0,
+              1,
+              2
+            ],
+            "witness": "c9713c7e89a798cdaca009a22c8b083d9aa7134452346b08802c21b8511d1d60",
+            "retention": {
+              "1": {
+                "rawRank": 6,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 6
+              }
+            },
+            "expanded": 400,
+            "transitions": 2131,
+            "seconds": 1.5621
+          },
+          "a31c115fd45bb4f3": {
+            "action": {
+              "kind": "UsePotion",
+              "turn": 1,
+              "cardId": "",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": 1,
+              "potionId": "BOTTLED_POTENTIAL",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "cc9cedf92c12b135f6980fa76c903b108c970a37c0addc2c5d29bbef7cd775cd",
+            "state": "97fcc5b4ab73ea1d2f1ce627496f7ac523be2ccfe73a899f5de56e9571b53b6a",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 44,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 1
+            },
+            "traits": "Control",
+            "score": 1539999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": [
+              0,
+              0,
+              23,
+              0,
+              0,
+              0,
+              1,
+              2
+            ],
+            "witness": "f7b80e1a3c353e30443d79b22e8e4450483bd0be6b98cca475f5b181879059b5",
+            "retention": {
+              "1": {
+                "rawRank": 7,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 7
+              }
+            },
+            "expanded": 400,
+            "transitions": 3056,
+            "seconds": 1.6841
+          },
+          "d1b36aed6342a6c8": {
+            "action": {
+              "kind": "EndTurn",
+              "turn": 1,
+              "cardId": "",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": false
+            },
+            "parent": "cc9cedf92c12b135f6980fa76c903b108c970a37c0addc2c5d29bbef7cd775cd",
+            "state": "6969a79bde75ff9c4b9da1af8ae9c2a8436c52fbb026f5f0eb5dfcda1e7c47a4",
+            "postState": {
+              "playerHp": 66,
+              "enemyHp": 44,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 849999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              8,
+              0,
+              0,
+              14,
+              3,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              8,
+              0,
+              0,
+              14,
+              3,
+              0
+            ],
+            "witness": "1645504bfdcc7563a996f934d4d6e509b4db557812afab4926788948e1a8dbe1",
+            "retention": {
+              "5": {
+                "rawRank": 20,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 20
+              }
+            },
+            "expanded": 271,
+            "transitions": 2133,
+            "seconds": 0.9095
+          }
+        },
+        "strict": [
+          {
+            "better": "29013f374948d858",
+            "worse": "d1b36aed6342a6c8",
+            "scoreReversal": false,
+            "sharedBoundaries": [],
+            "beamReversal": false
+          },
+          {
+            "better": "5afd4f6f77c057f6",
+            "worse": "d1b36aed6342a6c8",
+            "scoreReversal": false,
+            "sharedBoundaries": [],
+            "beamReversal": false
+          },
+          {
+            "better": "c43d06b516c309f7",
+            "worse": "d1b36aed6342a6c8",
+            "scoreReversal": false,
+            "sharedBoundaries": [],
+            "beamReversal": false
+          }
+        ]
+      },
+      {
+        "nodes": 1200,
+        "rootStamp": "08d23effa1eeefe845cb0c3ed9500f374a37b8bc7b4d0baa96b9887bc6527b5f",
+        "liveStamp": "08d23effa1eeefe845cb0c3ed9500f374a37b8bc7b4d0baa96b9887bc6527b5f",
+        "liveUnchanged": true,
+        "processSeconds": 40.094,
+        "peakMiB": 241.1,
+        "discovery": {
+          "expandedNodes": 24,
+          "transitionCount": 237,
+          "milliseconds": 2105.1235
+        },
+        "counts": {
+          "win": 9
+        },
+        "eligibleWins": 4,
+        "verifiedWitnesses": 9,
+        "ties": 3,
+        "candidateSeconds": 29.972,
+        "candidateExpanded": 6170,
+        "candidateTransitions": 36928,
+        "control": {
+          "won": true,
+          "quality": {
+            "won": true,
+            "outstandingStolenResource": 0,
+            "projectedBattleHpLost": 6,
+            "strategicHpDeficit": 0,
+            "potionStrategicCost": 0,
+            "projectedBattlePotionCount": 0,
+            "enemyHp": 0,
+            "combatEndedTurn": 2,
+            "theftPolicy": null,
+            "survives": true,
+            "deathSaveUseCount": 0,
+            "growthHpCredit": 0,
+            "growthRewardCount": 0
+          },
+          "expanded": 271,
+          "transitions": 1704,
+          "boundary": "None",
+          "matchedFirstAction": {
+            "29013f374948d858": {
+              "sameWitness": false,
+              "sameQuality": true
+            }
+          },
+          "witness": "904cca18101b45f035ac1706ac9a962f4c89816da99490ce43945a525c544ad0"
+        },
+        "rows": {
+          "c43d06b516c309f7": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "AGGRESSION",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "AGGRESSION+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=Innate|vars=|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 1,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "cc9cedf92c12b135f6980fa76c903b108c970a37c0addc2c5d29bbef7cd775cd",
+            "state": "59414a81aeba1e3dfece90e7c6ca6109e605b69acb6a6693af789f749bab1eb0",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 44,
+              "energy": 2,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1539999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              2,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              2,
+              0
+            ],
+            "witness": "4fe688fbfc67a8b3315004e2a84aff17aba257b709712eab6f9229f544e820e4",
+            "retention": {
+              "1": {
+                "rawRank": 3,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 3
+              }
+            },
+            "expanded": 152,
+            "transitions": 1346,
+            "seconds": 2.6906
+          },
+          "5afd4f6f77c057f6": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "STRIKE_IRONCLAD",
+              "cardOccurrence": 0,
+              "targetIndex": 0,
+              "targetCombatId": 1,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "cc9cedf92c12b135f6980fa76c903b108c970a37c0addc2c5d29bbef7cd775cd",
+            "state": "37e971ef5f865741c1fcb8fdd4bd1e34016ed91fdb1f22edaa586dc7b8deaaea",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 36,
+              "energy": 2,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1619999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              2,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              2,
+              0
+            ],
+            "witness": "ed02edc34a8a6b4ee37417fe30a2d6f3abd6935d26cd44f11141d89024c36014",
+            "retention": {
+              "1": {
+                "rawRank": 4,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 4
+              }
+            },
+            "expanded": 218,
+            "transitions": 1500,
+            "seconds": 2.4685
+          },
+          "29013f374948d858": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "BATTLE_TRANCE",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "BATTLE_TRANCE+1|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Cards=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 1,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "cc9cedf92c12b135f6980fa76c903b108c970a37c0addc2c5d29bbef7cd775cd",
+            "state": "b4f4177165e63e58e1e2e392098517c3cb6902803ba4184e4f340f71d8c1a3c8",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 44,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1539999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              2,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              2,
+              0
+            ],
+            "witness": "5af2f39add19aa436bb83b8a060cfd62d393d9dda54bbde25880d44523123b37",
+            "retention": {
+              "1": {
+                "rawRank": 5,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 5
+              }
+            },
+            "expanded": 164,
+            "transitions": 999,
+            "seconds": 1.4909
+          },
+          "38b08a17e83a2a80": {
+            "action": {
+              "kind": "UsePotion",
+              "turn": 1,
+              "cardId": "",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": {
+                "effect": "GenerateToHand",
+                "sourcePile": "None",
+                "cards": [
+                  {
+                    "cardId": "VOLLEY",
+                    "upgradeLevel": 0,
+                    "stateKey": "VOLLEY+0|energy=True:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=10|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                    "sourceOccurrence": 0,
+                    "optionOccurrence": 0,
+                    "title": "VOLLEY.title"
+                  }
+                ],
+                "sourceId": "COLORLESS_POTION",
+                "contextId": "",
+                "timing": "Action"
+              },
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": 0,
+              "potionId": "COLORLESS_POTION",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "cc9cedf92c12b135f6980fa76c903b108c970a37c0addc2c5d29bbef7cd775cd",
+            "state": "bc80ba2cb97ec608c6be6ea7bec891281128a6fe46e68981b89cde22dcef2543",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 44,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "Scaling, Resource, Control",
+            "score": 1539999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "TimeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": [
+              0,
+              0,
+              23,
+              0,
+              0,
+              0,
+              2,
+              2
+            ],
+            "witness": "45d119fd2d1959de03de7442de5fd633609c449a5ec47000abfd8a7c91bfe570",
+            "retention": {
+              "1": {
+                "rawRank": 0,
+                "requiredIndex": null,
+                "routingIndex": 0,
+                "selectedIndex": 0
+              }
+            },
+            "expanded": 565,
+            "transitions": 3476,
+            "seconds": 6.1798
+          },
+          "40ef9157c475d71a": {
+            "action": {
+              "kind": "UsePotion",
+              "turn": 1,
+              "cardId": "",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": {
+                "effect": "GenerateToHand",
+                "sourcePile": "None",
+                "cards": [
+                  {
+                    "cardId": "MASTER_OF_STRATEGY",
+                    "upgradeLevel": 0,
+                    "stateKey": "MASTER_OF_STRATEGY+0|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Cards=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                    "sourceOccurrence": 0,
+                    "optionOccurrence": 0,
+                    "title": "MASTER_OF_STRATEGY.title"
+                  }
+                ],
+                "sourceId": "COLORLESS_POTION",
+                "contextId": "",
+                "timing": "Action"
+              },
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": 0,
+              "potionId": "COLORLESS_POTION",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "cc9cedf92c12b135f6980fa76c903b108c970a37c0addc2c5d29bbef7cd775cd",
+            "state": "b33210a210194fe2c33ed9d4233e5e4d2498ada5d64df1904dfb1e369eeb1416",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 44,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "Scaling, Resource, Control",
+            "score": 1539999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": [
+              0,
+              0,
+              23,
+              0,
+              0,
+              0,
+              1,
+              2
+            ],
+            "witness": "f350c53431e5cafcd7e41772aef23834cc0684fe28fdb43675b408cac7565c3e",
+            "retention": {
+              "1": {
+                "rawRank": 1,
+                "requiredIndex": null,
+                "routingIndex": 1,
+                "selectedIndex": 1
+              }
+            },
+            "expanded": 1200,
+            "transitions": 6527,
+            "seconds": 5.3686
+          },
+          "5669a37e4d6eb92b": {
+            "action": {
+              "kind": "UsePotion",
+              "turn": 1,
+              "cardId": "",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": {
+                "effect": "GenerateToHand",
+                "sourcePile": "None",
+                "cards": [
+                  {
+                    "cardId": "FASTEN",
+                    "upgradeLevel": 0,
+                    "stateKey": "FASTEN+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=ExtraBlock=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                    "sourceOccurrence": 0,
+                    "optionOccurrence": 0,
+                    "title": "FASTEN.title"
+                  }
+                ],
+                "sourceId": "COLORLESS_POTION",
+                "contextId": "",
+                "timing": "Action"
+              },
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": 0,
+              "potionId": "COLORLESS_POTION",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "cc9cedf92c12b135f6980fa76c903b108c970a37c0addc2c5d29bbef7cd775cd",
+            "state": "936173393cb19d5c14927b8f842e475b131f2dd32e5bf88d6a75759baccfce67",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 44,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "Scaling, Resource, Control",
+            "score": 1539999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": [
+              0,
+              0,
+              23,
+              0,
+              0,
+              0,
+              1,
+              2
+            ],
+            "witness": "46f53a17575d2cd8606102a804869651060a15fc0272959ef42984f2d6d589e6",
+            "retention": {
+              "1": {
+                "rawRank": 2,
+                "requiredIndex": null,
+                "routingIndex": 2,
+                "selectedIndex": 2
+              }
+            },
+            "expanded": 1200,
+            "transitions": 6657,
+            "seconds": 3.9483
+          },
+          "a3d347b6a7a63cb0": {
+            "action": {
+              "kind": "UsePotion",
+              "turn": 1,
+              "cardId": "",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": {
+                "effect": "GenerateToHand",
+                "sourcePile": "None",
+                "cards": [],
+                "sourceId": "COLORLESS_POTION",
+                "contextId": "",
+                "timing": "Action"
+              },
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": 0,
+              "potionId": "COLORLESS_POTION",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "cc9cedf92c12b135f6980fa76c903b108c970a37c0addc2c5d29bbef7cd775cd",
+            "state": "f3abc81597a8dbc88159045bdd297ca2dd35a1ea51c48081ac91ad1edcd920f8",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 44,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "Control",
+            "score": 1539999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": [
+              0,
+              0,
+              23,
+              0,
+              0,
+              0,
+              1,
+              2
+            ],
+            "witness": "c9713c7e89a798cdaca009a22c8b083d9aa7134452346b08802c21b8511d1d60",
+            "retention": {
+              "1": {
+                "rawRank": 6,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 6
+              }
+            },
+            "expanded": 1200,
+            "transitions": 6162,
+            "seconds": 3.1328
+          },
+          "a31c115fd45bb4f3": {
+            "action": {
+              "kind": "UsePotion",
+              "turn": 1,
+              "cardId": "",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": 1,
+              "potionId": "BOTTLED_POTENTIAL",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "cc9cedf92c12b135f6980fa76c903b108c970a37c0addc2c5d29bbef7cd775cd",
+            "state": "97fcc5b4ab73ea1d2f1ce627496f7ac523be2ccfe73a899f5de56e9571b53b6a",
+            "postState": {
+              "playerHp": 80,
+              "enemyHp": 44,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 1
+            },
+            "traits": "Control",
+            "score": 1539999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": [
+              0,
+              0,
+              23,
+              0,
+              0,
+              0,
+              1,
+              2
+            ],
+            "witness": "f7b80e1a3c353e30443d79b22e8e4450483bd0be6b98cca475f5b181879059b5",
+            "retention": {
+              "1": {
+                "rawRank": 7,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 7
+              }
+            },
+            "expanded": 1200,
+            "transitions": 8128,
+            "seconds": 3.7822
+          },
+          "d1b36aed6342a6c8": {
+            "action": {
+              "kind": "EndTurn",
+              "turn": 1,
+              "cardId": "",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": false
+            },
+            "parent": "cc9cedf92c12b135f6980fa76c903b108c970a37c0addc2c5d29bbef7cd775cd",
+            "state": "6969a79bde75ff9c4b9da1af8ae9c2a8436c52fbb026f5f0eb5dfcda1e7c47a4",
+            "postState": {
+              "playerHp": 66,
+              "enemyHp": 44,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 849999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              8,
+              0,
+              0,
+              14,
+              3,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              8,
+              0,
+              0,
+              14,
+              3,
+              0
+            ],
+            "witness": "1645504bfdcc7563a996f934d4d6e509b4db557812afab4926788948e1a8dbe1",
+            "retention": {
+              "5": {
+                "rawRank": 20,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 20
+              }
+            },
+            "expanded": 271,
+            "transitions": 2133,
+            "seconds": 0.9107
+          }
+        },
+        "strict": [
+          {
+            "better": "29013f374948d858",
+            "worse": "d1b36aed6342a6c8",
+            "scoreReversal": false,
+            "sharedBoundaries": [],
+            "beamReversal": false
+          },
+          {
+            "better": "5afd4f6f77c057f6",
+            "worse": "d1b36aed6342a6c8",
+            "scoreReversal": false,
+            "sharedBoundaries": [],
+            "beamReversal": false
+          },
+          {
+            "better": "c43d06b516c309f7",
+            "worse": "d1b36aed6342a6c8",
+            "scoreReversal": false,
+            "sharedBoundaries": [],
+            "beamReversal": false
+          }
+        ]
+      }
+    ],
+    "stability": {
+      "sameStrict": 3,
+      "flippedStrict": 0,
+      "strictVsTie": 0,
+      "sameTie": 3,
+      "only400Strict": 0,
+      "only1200Strict": 0
+    },
+    "stabilityIncludingBudgetLimitedWins": {
+      "sameStrict": 27,
+      "flippedStrict": 0,
+      "strictVsTie": 0,
+      "sameTie": 9,
+      "only400Strict": 0,
+      "only1200Strict": 0
+    }
+  },
+  {
+    "root": "dev-11-silent-monster",
+    "scope": "offline-teacher",
+    "scan": [
+      {
+        "root": "dev-11-silent-monster",
+        "nodes": 240,
+        "processStatus": 0,
+        "processSeconds": 9.188,
+        "scenario": {
+          "CharacterId": "SILENT",
+          "EncounterId": "OVERGROWTH_CRAWLERS",
+          "Seed": "NOVELTY-DEV-20260915-11",
+          "Ascension": 10,
+          "ActIndexForTest": 0
+        },
+        "won": false,
+        "quality": {
+          "won": false,
+          "outstandingStolenResource": 0,
+          "projectedBattleHpLost": 19,
+          "strategicHpDeficit": 19,
+          "potionStrategicCost": 0,
+          "projectedBattlePotionCount": 0,
+          "enemyHp": 54,
+          "combatEndedTurn": null,
+          "theftPolicy": null,
+          "survives": true,
+          "deathSaveUseCount": 0,
+          "growthHpCredit": 0,
+          "growthRewardCount": 0
+        },
+        "boundary": "NodeLimit",
+        "expanded": 240,
+        "transitions": 2074,
+        "seconds": 4.1237228,
+        "rootStamp": "bbd5581db983b44938862a7bc49e3970acf0e9036cf1afbdf2ec6a91267b1422",
+        "peakMiB": 184.1,
+        "liveStamp": "bbd5581db983b44938862a7bc49e3970acf0e9036cf1afbdf2ec6a91267b1422"
+      },
+      {
+        "root": "dev-11-silent-monster",
+        "nodes": 800,
+        "processStatus": 0,
+        "processSeconds": 12.172,
+        "scenario": {
+          "CharacterId": "SILENT",
+          "EncounterId": "OVERGROWTH_CRAWLERS",
+          "Seed": "NOVELTY-DEV-20260915-11",
+          "Ascension": 10,
+          "ActIndexForTest": 0
+        },
+        "won": true,
+        "quality": {
+          "won": true,
+          "outstandingStolenResource": 0,
+          "projectedBattleHpLost": 5,
+          "strategicHpDeficit": 3,
+          "potionStrategicCost": 23,
+          "projectedBattlePotionCount": 2,
+          "enemyHp": 0,
+          "combatEndedTurn": 5,
+          "theftPolicy": null,
+          "survives": true,
+          "deathSaveUseCount": 0,
+          "growthHpCredit": 0,
+          "growthRewardCount": 0
+        },
+        "boundary": "TimeLimit",
+        "expanded": 654,
+        "transitions": 4631,
+        "seconds": 6.7196695,
+        "rootStamp": "bbd5581db983b44938862a7bc49e3970acf0e9036cf1afbdf2ec6a91267b1422",
+        "peakMiB": 194.0,
+        "liveStamp": "bbd5581db983b44938862a7bc49e3970acf0e9036cf1afbdf2ec6a91267b1422"
+      }
+    ],
+    "prefix": [
+      {
+        "nodes": 400,
+        "rootStamp": "bbd5581db983b44938862a7bc49e3970acf0e9036cf1afbdf2ec6a91267b1422",
+        "liveStamp": "bbd5581db983b44938862a7bc49e3970acf0e9036cf1afbdf2ec6a91267b1422",
+        "liveUnchanged": true,
+        "processSeconds": 33.516,
+        "peakMiB": 221.4,
+        "discovery": {
+          "expandedNodes": 24,
+          "transitionCount": 451,
+          "milliseconds": 3171.1973
+        },
+        "counts": {
+          "truncated": 11
+        },
+        "eligibleWins": 0,
+        "verifiedWitnesses": 0,
+        "ties": 0,
+        "candidateSeconds": 21.574,
+        "candidateExpanded": 4400,
+        "candidateTransitions": 27366,
+        "control": {
+          "won": false,
+          "quality": {
+            "won": false,
+            "outstandingStolenResource": 0,
+            "projectedBattleHpLost": 11,
+            "strategicHpDeficit": 11,
+            "potionStrategicCost": 0,
+            "projectedBattlePotionCount": 0,
+            "enemyHp": 54,
+            "combatEndedTurn": null,
+            "theftPolicy": null,
+            "survives": true,
+            "deathSaveUseCount": 0,
+            "growthHpCredit": 0,
+            "growthRewardCount": 0
+          },
+          "expanded": 400,
+          "transitions": 2412,
+          "boundary": "NodeLimit",
+          "matchedFirstAction": {
+            "12807574c94072cc": {
+              "sameWitness": false,
+              "sameQuality": null
+            }
+          },
+          "witness": "746eddc7e76c67b9a5818e420dfebd90ba63a0d689fb25ae672665ed0078f793"
+        },
+        "rows": {
+          "12807574c94072cc": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "POISONED_STAB",
+              "cardOccurrence": 0,
+              "targetIndex": 0,
+              "targetCombatId": 1,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "POISONED_STAB+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=8;PoisonPower=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 1,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "daa4b6a51c0b2d269abe232784e13aab8fb04f53e22409cfab61dea8afd534f6",
+            "state": "c30d559bb6b3f649ac16e517b19e4b073db7fee8bac2fcce30c5a2ecbade3647",
+            "postState": {
+              "playerHp": 70,
+              "enemyHp": 92,
+              "energy": 2,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 991999,
+            "replayMatched": true,
+            "outcome": "truncated",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": null,
+            "witness": null,
+            "retention": {
+              "1": {
+                "rawRank": 6,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 6
+              }
+            },
+            "expanded": 400,
+            "transitions": 2671,
+            "seconds": 5.0422
+          },
+          "10d03d3df73a0f24": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "POISONED_STAB",
+              "cardOccurrence": 0,
+              "targetIndex": 1,
+              "targetCombatId": 2,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "POISONED_STAB+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=8;PoisonPower=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 1,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "daa4b6a51c0b2d269abe232784e13aab8fb04f53e22409cfab61dea8afd534f6",
+            "state": "3b760726688d21968420e1e8b76e661ea4215fef071d16181b789b06ee23ee68",
+            "postState": {
+              "playerHp": 70,
+              "enemyHp": 92,
+              "energy": 2,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 991999,
+            "replayMatched": true,
+            "outcome": "truncated",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": null,
+            "witness": null,
+            "retention": {
+              "1": {
+                "rawRank": 7,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 7
+              }
+            },
+            "expanded": 400,
+            "transitions": 2995,
+            "seconds": 4.8618
+          },
+          "17801bd664cb912a": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "STRIKE_SILENT",
+              "cardOccurrence": 0,
+              "targetIndex": 0,
+              "targetCombatId": 1,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "STRIKE_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "daa4b6a51c0b2d269abe232784e13aab8fb04f53e22409cfab61dea8afd534f6",
+            "state": "45aa0c2c56668c3b085975433c825aa0963aa3fb6ede536139a1aedb1b122d48",
+            "postState": {
+              "playerHp": 70,
+              "enemyHp": 94,
+              "energy": 2,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 971999,
+            "replayMatched": true,
+            "outcome": "truncated",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": null,
+            "witness": null,
+            "retention": {
+              "1": {
+                "rawRank": 8,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 8
+              }
+            },
+            "expanded": 400,
+            "transitions": 2555,
+            "seconds": 2.0827
+          },
+          "f46837e47195c33d": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "STRIKE_SILENT",
+              "cardOccurrence": 0,
+              "targetIndex": 1,
+              "targetCombatId": 2,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "STRIKE_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "daa4b6a51c0b2d269abe232784e13aab8fb04f53e22409cfab61dea8afd534f6",
+            "state": "a551d75e39657421788461bd2ba69738851e225a9a7100fb426592b77e8d24cf",
+            "postState": {
+              "playerHp": 70,
+              "enemyHp": 94,
+              "energy": 2,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 971999,
+            "replayMatched": true,
+            "outcome": "truncated",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": null,
+            "witness": null,
+            "retention": {
+              "1": {
+                "rawRank": 9,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 9
+              }
+            },
+            "expanded": 400,
+            "transitions": 2576,
+            "seconds": 1.6604
+          },
+          "5aec5d89c68a1898": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "LEG_SWEEP",
+              "cardOccurrence": 0,
+              "targetIndex": 0,
+              "targetCombatId": 1,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "LEG_SWEEP+1|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=14;WeakPower=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 1,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "daa4b6a51c0b2d269abe232784e13aab8fb04f53e22409cfab61dea8afd534f6",
+            "state": "2bc3ce83abbc6696690c211f7f95eb49a4719c4cc24430b20e315a23e9c05a13",
+            "postState": {
+              "playerHp": 70,
+              "enemyHp": 100,
+              "energy": 1,
+              "block": 14,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1091999,
+            "replayMatched": true,
+            "outcome": "truncated",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": null,
+            "witness": null,
+            "retention": {
+              "1": {
+                "rawRank": 3,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 3
+              }
+            },
+            "expanded": 400,
+            "transitions": 2422,
+            "seconds": 1.3211
+          },
+          "34c34b57f554011c": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "LEG_SWEEP",
+              "cardOccurrence": 0,
+              "targetIndex": 1,
+              "targetCombatId": 2,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "LEG_SWEEP+1|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=14;WeakPower=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 1,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "daa4b6a51c0b2d269abe232784e13aab8fb04f53e22409cfab61dea8afd534f6",
+            "state": "58fd1b65b2574c8f8db8b5a35e820d819bec0bc24b9aaf6514415e5face73ef8",
+            "postState": {
+              "playerHp": 70,
+              "enemyHp": 100,
+              "energy": 1,
+              "block": 14,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1091999,
+            "replayMatched": true,
+            "outcome": "truncated",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": null,
+            "witness": null,
+            "retention": {
+              "1": {
+                "rawRank": 4,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 4
+              }
+            },
+            "expanded": 400,
+            "transitions": 2469,
+            "seconds": 1.2397
+          },
+          "adb0e544f4376220": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "PIERCING_WAIL",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "PIERCING_WAIL+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=Exhaust|vars=StrengthLoss=8|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 1,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "daa4b6a51c0b2d269abe232784e13aab8fb04f53e22409cfab61dea8afd534f6",
+            "state": "1f5fa9f36af69f407784a245f4bd65741d13abf211e170880c42117ddeb370ca",
+            "postState": {
+              "playerHp": 70,
+              "enemyHp": 100,
+              "energy": 2,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1091999,
+            "replayMatched": true,
+            "outcome": "truncated",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": null,
+            "witness": null,
+            "retention": {
+              "1": {
+                "rawRank": 0,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 0
+              }
+            },
+            "expanded": 400,
+            "transitions": 2179,
+            "seconds": 1.2535
+          },
+          "d03be27c2c22fea5": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "ENVENOM",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "ENVENOM+1|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=EnvenomPower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 1,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "daa4b6a51c0b2d269abe232784e13aab8fb04f53e22409cfab61dea8afd534f6",
+            "state": "7e303f1ea8f5a6649e2e3e17971a018883c2306a7e15e6e15761bf44ca0d0969",
+            "postState": {
+              "playerHp": 70,
+              "enemyHp": 100,
+              "energy": 1,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 911999,
+            "replayMatched": true,
+            "outcome": "truncated",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": null,
+            "witness": null,
+            "retention": {
+              "1": {
+                "rawRank": 2,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 2
+              }
+            },
+            "expanded": 400,
+            "transitions": 2412,
+            "seconds": 1.1578
+          },
+          "fc49ae5efa2916e5": {
+            "action": {
+              "kind": "UsePotion",
+              "turn": 1,
+              "cardId": "",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": 0,
+              "potionId": "REGEN_POTION",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "daa4b6a51c0b2d269abe232784e13aab8fb04f53e22409cfab61dea8afd534f6",
+            "state": "50c51ca1c06a8c5119a2246f2502f938cb04d7bbe3152572b0d9171944ae68c2",
+            "postState": {
+              "playerHp": 70,
+              "enemyHp": 100,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "Scaling, Control",
+            "score": 911999,
+            "replayMatched": true,
+            "outcome": "truncated",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": null,
+            "witness": null,
+            "retention": {
+              "1": {
+                "rawRank": 1,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 1
+              }
+            },
+            "expanded": 400,
+            "transitions": 2207,
+            "seconds": 1.0596
+          },
+          "8de3b6f4f50f0bc5": {
+            "action": {
+              "kind": "UsePotion",
+              "turn": 1,
+              "cardId": "",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": 1,
+              "potionId": "BOTTLED_POTENTIAL",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "daa4b6a51c0b2d269abe232784e13aab8fb04f53e22409cfab61dea8afd534f6",
+            "state": "1add37963e6c3fe656faa3d11737bc65b9149f0224bed1373c1747b9426dbf02",
+            "postState": {
+              "playerHp": 70,
+              "enemyHp": 100,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 1
+            },
+            "traits": "Control",
+            "score": 911999,
+            "replayMatched": true,
+            "outcome": "truncated",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": null,
+            "witness": null,
+            "retention": {
+              "1": {
+                "rawRank": 5,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 5
+              }
+            },
+            "expanded": 400,
+            "transitions": 2380,
+            "seconds": 0.9764
+          },
+          "e4c135221f4bfed5": {
+            "action": {
+              "kind": "EndTurn",
+              "turn": 1,
+              "cardId": "",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": false
+            },
+            "parent": "daa4b6a51c0b2d269abe232784e13aab8fb04f53e22409cfab61dea8afd534f6",
+            "state": "30c2e95f17e65efaffee9ab9244de818335862e4599b0ff91c6f32ad078a9e80",
+            "postState": {
+              "playerHp": 64,
+              "enemyHp": 100,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 499999,
+            "replayMatched": true,
+            "outcome": "truncated",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": null,
+            "witness": null,
+            "retention": {
+              "4": {
+                "rawRank": 34,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": null
+              }
+            },
+            "expanded": 400,
+            "transitions": 2500,
+            "seconds": 0.9191
+          }
+        },
+        "strict": []
+      },
+      {
+        "nodes": 1200,
+        "rootStamp": "bbd5581db983b44938862a7bc49e3970acf0e9036cf1afbdf2ec6a91267b1422",
+        "liveStamp": "bbd5581db983b44938862a7bc49e3970acf0e9036cf1afbdf2ec6a91267b1422",
+        "liveUnchanged": true,
+        "processSeconds": 34.063,
+        "peakMiB": 234.1,
+        "discovery": {
+          "expandedNodes": 24,
+          "transitionCount": 269,
+          "milliseconds": 1629.2036
+        },
+        "counts": {
+          "win": 11
+        },
+        "eligibleWins": 3,
+        "verifiedWitnesses": 11,
+        "ties": 0,
+        "candidateSeconds": 23.718,
+        "candidateExpanded": 12212,
+        "candidateTransitions": 67396,
+        "control": {
+          "won": true,
+          "quality": {
+            "won": true,
+            "outstandingStolenResource": 0,
+            "projectedBattleHpLost": 17,
+            "strategicHpDeficit": 17,
+            "potionStrategicCost": 0,
+            "projectedBattlePotionCount": 0,
+            "enemyHp": 0,
+            "combatEndedTurn": 7,
+            "theftPolicy": null,
+            "survives": true,
+            "deathSaveUseCount": 0,
+            "growthHpCredit": 0,
+            "growthRewardCount": 0
+          },
+          "expanded": 1200,
+          "transitions": 6623,
+          "boundary": "NodeLimit",
+          "matchedFirstAction": {
+            "12807574c94072cc": {
+              "sameWitness": false,
+              "sameQuality": null
+            }
+          },
+          "witness": "4927ca9e24e2bf1de94a9591b6729d9faa4111280bf24c93217251e1cd57245e"
+        },
+        "rows": {
+          "12807574c94072cc": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "POISONED_STAB",
+              "cardOccurrence": 0,
+              "targetIndex": 0,
+              "targetCombatId": 1,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "POISONED_STAB+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=8;PoisonPower=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 1,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "daa4b6a51c0b2d269abe232784e13aab8fb04f53e22409cfab61dea8afd534f6",
+            "state": "c30d559bb6b3f649ac16e517b19e4b073db7fee8bac2fcce30c5a2ecbade3647",
+            "postState": {
+              "playerHp": 70,
+              "enemyHp": 92,
+              "energy": 2,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 991999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "TimeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": [
+              0,
+              0,
+              6,
+              0,
+              0,
+              6,
+              5,
+              0
+            ],
+            "witness": "029b219f04278dbdae6a3b9adcd5cce2bc6b1debe920b053b60c2b07fc749e77",
+            "retention": {
+              "1": {
+                "rawRank": 6,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 6
+              }
+            },
+            "expanded": 994,
+            "transitions": 5583,
+            "seconds": 6.2748
+          },
+          "10d03d3df73a0f24": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "POISONED_STAB",
+              "cardOccurrence": 0,
+              "targetIndex": 1,
+              "targetCombatId": 2,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "POISONED_STAB+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=8;PoisonPower=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 1,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "daa4b6a51c0b2d269abe232784e13aab8fb04f53e22409cfab61dea8afd534f6",
+            "state": "3b760726688d21968420e1e8b76e661ea4215fef071d16181b789b06ee23ee68",
+            "postState": {
+              "playerHp": 70,
+              "enemyHp": 92,
+              "energy": 2,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 991999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": [
+              0,
+              0,
+              11,
+              0,
+              0,
+              14,
+              4,
+              1
+            ],
+            "witness": "bf7b53cf40513e1f5bc45d27210e5a1760e9de0027e0d834c70749c972e31741",
+            "retention": {
+              "1": {
+                "rawRank": 7,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 7
+              }
+            },
+            "expanded": 1200,
+            "transitions": 6806,
+            "seconds": 3.3113
+          },
+          "17801bd664cb912a": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "STRIKE_SILENT",
+              "cardOccurrence": 0,
+              "targetIndex": 0,
+              "targetCombatId": 1,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "STRIKE_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "daa4b6a51c0b2d269abe232784e13aab8fb04f53e22409cfab61dea8afd534f6",
+            "state": "45aa0c2c56668c3b085975433c825aa0963aa3fb6ede536139a1aedb1b122d48",
+            "postState": {
+              "playerHp": 70,
+              "enemyHp": 94,
+              "energy": 2,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 971999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": [
+              0,
+              0,
+              6,
+              0,
+              0,
+              6,
+              7,
+              0
+            ],
+            "witness": "4f3d028a01f284368aa247e5d9b8accee98567d63d97b8db7ef2bec4e17cf5e9",
+            "retention": {
+              "1": {
+                "rawRank": 8,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 8
+              }
+            },
+            "expanded": 1200,
+            "transitions": 6751,
+            "seconds": 1.8348
+          },
+          "f46837e47195c33d": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "STRIKE_SILENT",
+              "cardOccurrence": 0,
+              "targetIndex": 1,
+              "targetCombatId": 2,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "STRIKE_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "daa4b6a51c0b2d269abe232784e13aab8fb04f53e22409cfab61dea8afd534f6",
+            "state": "a551d75e39657421788461bd2ba69738851e225a9a7100fb426592b77e8d24cf",
+            "postState": {
+              "playerHp": 70,
+              "enemyHp": 94,
+              "energy": 2,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 971999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": [
+              0,
+              0,
+              23,
+              0,
+              0,
+              6,
+              5,
+              2
+            ],
+            "witness": "d99d746ee4e2580bf695f9285e2f7befb12f8af474b49a9e73b26a54c1c10e3c",
+            "retention": {
+              "1": {
+                "rawRank": 9,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 9
+              }
+            },
+            "expanded": 1200,
+            "transitions": 6977,
+            "seconds": 1.7399
+          },
+          "5aec5d89c68a1898": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "LEG_SWEEP",
+              "cardOccurrence": 0,
+              "targetIndex": 0,
+              "targetCombatId": 1,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "LEG_SWEEP+1|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=14;WeakPower=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 1,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "daa4b6a51c0b2d269abe232784e13aab8fb04f53e22409cfab61dea8afd534f6",
+            "state": "2bc3ce83abbc6696690c211f7f95eb49a4719c4cc24430b20e315a23e9c05a13",
+            "postState": {
+              "playerHp": 70,
+              "enemyHp": 100,
+              "energy": 1,
+              "block": 14,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1091999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              5,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              5,
+              0
+            ],
+            "witness": "490fabebdb17cd896d6fff58b913559d3318cf764f905eaca3b18324e2f1fe2b",
+            "retention": {
+              "1": {
+                "rawRank": 3,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 3
+              }
+            },
+            "expanded": 785,
+            "transitions": 4505,
+            "seconds": 1.143
+          },
+          "34c34b57f554011c": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "LEG_SWEEP",
+              "cardOccurrence": 0,
+              "targetIndex": 1,
+              "targetCombatId": 2,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "LEG_SWEEP+1|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=14;WeakPower=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 1,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "daa4b6a51c0b2d269abe232784e13aab8fb04f53e22409cfab61dea8afd534f6",
+            "state": "58fd1b65b2574c8f8db8b5a35e820d819bec0bc24b9aaf6514415e5face73ef8",
+            "postState": {
+              "playerHp": 70,
+              "enemyHp": 100,
+              "energy": 1,
+              "block": 14,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1091999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              0
+            ],
+            "witness": "35a19d1a13635f9af5bb9d5c49a5b8192b7c1e90132f371772951169abd43654",
+            "retention": {
+              "1": {
+                "rawRank": 4,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 4
+              }
+            },
+            "expanded": 1040,
+            "transitions": 5912,
+            "seconds": 1.4884
+          },
+          "adb0e544f4376220": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "PIERCING_WAIL",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "PIERCING_WAIL+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=Exhaust|vars=StrengthLoss=8|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 1,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "daa4b6a51c0b2d269abe232784e13aab8fb04f53e22409cfab61dea8afd534f6",
+            "state": "1f5fa9f36af69f407784a245f4bd65741d13abf211e170880c42117ddeb370ca",
+            "postState": {
+              "playerHp": 70,
+              "enemyHp": 100,
+              "energy": 2,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 1091999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": [
+              0,
+              0,
+              9,
+              0,
+              0,
+              9,
+              5,
+              1
+            ],
+            "witness": "98cf6b642ffefcb596e3cc4a55833584e8d014943fbc583ecbcce630a6ff8875",
+            "retention": {
+              "1": {
+                "rawRank": 0,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 0
+              }
+            },
+            "expanded": 1200,
+            "transitions": 6857,
+            "seconds": 1.7131
+          },
+          "d03be27c2c22fea5": {
+            "action": {
+              "kind": "PlayCard",
+              "turn": 1,
+              "cardId": "ENVENOM",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "ENVENOM+1|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=EnvenomPower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 1,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "daa4b6a51c0b2d269abe232784e13aab8fb04f53e22409cfab61dea8afd534f6",
+            "state": "7e303f1ea8f5a6649e2e3e17971a018883c2306a7e15e6e15761bf44ca0d0969",
+            "postState": {
+              "playerHp": 70,
+              "enemyHp": 100,
+              "energy": 1,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 911999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "None",
+            "failure": null,
+            "risk": false,
+            "quality": [
+              0,
+              0,
+              6,
+              0,
+              0,
+              6,
+              6,
+              0
+            ],
+            "witnessQuality": [
+              0,
+              0,
+              6,
+              0,
+              0,
+              6,
+              6,
+              0
+            ],
+            "witness": "5e79606380647feebd2b300e09b38c16f4b8c4a9d673543c96e87465ac9374dc",
+            "retention": {
+              "1": {
+                "rawRank": 2,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 2
+              }
+            },
+            "expanded": 993,
+            "transitions": 5405,
+            "seconds": 1.5389
+          },
+          "fc49ae5efa2916e5": {
+            "action": {
+              "kind": "UsePotion",
+              "turn": 1,
+              "cardId": "",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": 0,
+              "potionId": "REGEN_POTION",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "daa4b6a51c0b2d269abe232784e13aab8fb04f53e22409cfab61dea8afd534f6",
+            "state": "50c51ca1c06a8c5119a2246f2502f938cb04d7bbe3152572b0d9171944ae68c2",
+            "postState": {
+              "playerHp": 70,
+              "enemyHp": 100,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "Scaling, Control",
+            "score": 911999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": [
+              0,
+              0,
+              23,
+              0,
+              0,
+              1,
+              5,
+              2
+            ],
+            "witness": "9f933f8f72be3fc5de219e3ca9320fb0add06234b4dd7906cb0743ca15d5dbf5",
+            "retention": {
+              "1": {
+                "rawRank": 1,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 1
+              }
+            },
+            "expanded": 1200,
+            "transitions": 5942,
+            "seconds": 1.5737
+          },
+          "8de3b6f4f50f0bc5": {
+            "action": {
+              "kind": "UsePotion",
+              "turn": 1,
+              "cardId": "",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": 1,
+              "potionId": "BOTTLED_POTENTIAL",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": true
+            },
+            "parent": "daa4b6a51c0b2d269abe232784e13aab8fb04f53e22409cfab61dea8afd534f6",
+            "state": "1add37963e6c3fe656faa3d11737bc65b9149f0224bed1373c1747b9426dbf02",
+            "postState": {
+              "playerHp": 70,
+              "enemyHp": 100,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 1
+            },
+            "traits": "Control",
+            "score": 911999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": [
+              0,
+              0,
+              23,
+              0,
+              0,
+              9,
+              6,
+              2
+            ],
+            "witness": "cffc5b9af00472c1cb5ab2067900d30c6b15cd8cbdef88983be3270df5faa82c",
+            "retention": {
+              "1": {
+                "rawRank": 5,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 5
+              }
+            },
+            "expanded": 1200,
+            "transitions": 6076,
+            "seconds": 1.5868
+          },
+          "e4c135221f4bfed5": {
+            "action": {
+              "kind": "EndTurn",
+              "turn": 1,
+              "cardId": "",
+              "cardOccurrence": 0,
+              "targetIndex": -1,
+              "targetCombatId": null,
+              "choice": null,
+              "nestedChoices": null,
+              "nestedChoicesBeforePrimary": 0,
+              "potionSlot": -1,
+              "potionId": "",
+              "turnStartChoices": null,
+              "replayCount": 0,
+              "cardStateKey": "",
+              "cardStateOccurrence": 0,
+              "endsPlayerTurn": false,
+              "cardUpgradeLevel": 0,
+              "cardEnchantmentId": "",
+              "isExecutable": false
+            },
+            "parent": "daa4b6a51c0b2d269abe232784e13aab8fb04f53e22409cfab61dea8afd534f6",
+            "state": "30c2e95f17e65efaffee9ab9244de818335862e4599b0ff91c6f32ad078a9e80",
+            "postState": {
+              "playerHp": 64,
+              "enemyHp": 100,
+              "energy": 3,
+              "block": 0,
+              "shufflesCrossed": 0
+            },
+            "traits": "None",
+            "score": 499999,
+            "replayMatched": true,
+            "outcome": "win",
+            "boundary": "NodeLimit",
+            "failure": null,
+            "risk": false,
+            "quality": null,
+            "witnessQuality": [
+              0,
+              0,
+              23,
+              0,
+              0,
+              10,
+              6,
+              2
+            ],
+            "witness": "a7990c041af5144067617cf09cfd8d1afb3e0d8a4e2193a7dd621389e48304f4",
+            "retention": {
+              "5": {
+                "rawRank": 22,
+                "requiredIndex": null,
+                "routingIndex": null,
+                "selectedIndex": 22
+              }
+            },
+            "expanded": 1200,
+            "transitions": 6582,
+            "seconds": 1.5136
+          }
+        },
+        "strict": [
+          {
+            "better": "5aec5d89c68a1898",
+            "worse": "34c34b57f554011c",
+            "scoreReversal": false,
+            "sharedBoundaries": [
+              1
+            ],
+            "beamReversal": false
+          },
+          {
+            "better": "34c34b57f554011c",
+            "worse": "d03be27c2c22fea5",
+            "scoreReversal": false,
+            "sharedBoundaries": [
+              1
+            ],
+            "beamReversal": true
+          },
+          {
+            "better": "5aec5d89c68a1898",
+            "worse": "d03be27c2c22fea5",
+            "scoreReversal": false,
+            "sharedBoundaries": [
+              1
+            ],
+            "beamReversal": true
+          }
+        ]
+      }
+    ],
+    "stability": {
+      "sameStrict": 0,
+      "flippedStrict": 0,
+      "strictVsTie": 0,
+      "sameTie": 0,
+      "only400Strict": 0,
+      "only1200Strict": 3
+    },
+    "stabilityIncludingBudgetLimitedWins": {
+      "sameStrict": 0,
+      "flippedStrict": 0,
+      "strictVsTie": 0,
+      "sameTie": 0,
+      "only400Strict": 0,
+      "only1200Strict": 55
+    }
+  },
+  {
+    "root": "dev-00-ironclad-elite",
+    "scope": "offline-teacher",
+    "scan": [
+      {
+        "root": "dev-00-ironclad-elite",
+        "nodes": 240,
+        "processStatus": 0,
+        "processSeconds": 15.172,
+        "scenario": {
+          "CharacterId": "IRONCLAD",
+          "EncounterId": "DECIMILLIPEDE_ELITE",
+          "Seed": "NOVELTY-DEV-20260915-00",
+          "Ascension": 10,
+          "ActIndexForTest": 1
+        },
+        "won": false,
+        "quality": {
+          "won": false,
+          "outstandingStolenResource": 0,
+          "projectedBattleHpLost": 16,
+          "strategicHpDeficit": 16,
+          "potionStrategicCost": 9,
+          "projectedBattlePotionCount": 1,
+          "enemyHp": 146,
+          "combatEndedTurn": null,
+          "theftPolicy": null,
+          "survives": true,
+          "deathSaveUseCount": 0,
+          "growthHpCredit": 0,
+          "growthRewardCount": 0
+        },
+        "boundary": "TimeLimit",
+        "expanded": 101,
+        "transitions": 3146,
+        "seconds": 8.0259931,
+        "rootStamp": "1af424f047731b20dc7dd1a94b89287812a53fedc8abc4c3fb05b42e616b23f1",
+        "peakMiB": 193.2,
+        "liveStamp": "1af424f047731b20dc7dd1a94b89287812a53fedc8abc4c3fb05b42e616b23f1"
+      },
+      {
+        "root": "dev-00-ironclad-elite",
+        "nodes": 800,
+        "processStatus": 0,
+        "processSeconds": 15.312,
+        "scenario": {
+          "CharacterId": "IRONCLAD",
+          "EncounterId": "DECIMILLIPEDE_ELITE",
+          "Seed": "NOVELTY-DEV-20260915-00",
+          "Ascension": 10,
+          "ActIndexForTest": 1
+        },
+        "won": false,
+        "quality": {
+          "won": false,
+          "outstandingStolenResource": 0,
+          "projectedBattleHpLost": 16,
+          "strategicHpDeficit": 16,
+          "potionStrategicCost": 9,
+          "projectedBattlePotionCount": 1,
+          "enemyHp": 146,
+          "combatEndedTurn": null,
+          "theftPolicy": null,
+          "survives": true,
+          "deathSaveUseCount": 0,
+          "growthHpCredit": 0,
+          "growthRewardCount": 0
+        },
+        "boundary": "TimeLimit",
+        "expanded": 101,
+        "transitions": 3146,
+        "seconds": 7.9751088,
+        "rootStamp": "1af424f047731b20dc7dd1a94b89287812a53fedc8abc4c3fb05b42e616b23f1",
+        "peakMiB": 191.4,
+        "liveStamp": "1af424f047731b20dc7dd1a94b89287812a53fedc8abc4c3fb05b42e616b23f1"
+      }
+    ]
+  },
+  {
+    "root": "dev-02-defect-elite",
+    "scope": "offline-teacher",
+    "scan": [
+      {
+        "root": "dev-02-defect-elite",
+        "nodes": 240,
+        "processStatus": 0,
+        "processSeconds": 11.656,
+        "scenario": {
+          "CharacterId": "DEFECT",
+          "EncounterId": "INFESTED_PRISMS_ELITE",
+          "Seed": "NOVELTY-DEV-20260915-02",
+          "Ascension": 10,
+          "ActIndexForTest": 1
+        },
+        "won": false,
+        "quality": {
+          "won": false,
+          "outstandingStolenResource": 0,
+          "projectedBattleHpLost": 11,
+          "strategicHpDeficit": 11,
+          "potionStrategicCost": 0,
+          "projectedBattlePotionCount": 0,
+          "enemyHp": 136,
+          "combatEndedTurn": null,
+          "theftPolicy": null,
+          "survives": true,
+          "deathSaveUseCount": 0,
+          "growthHpCredit": 0,
+          "growthRewardCount": 0
+        },
+        "boundary": "NodeLimit",
+        "expanded": 240,
+        "transitions": 1746,
+        "seconds": 5.8449045,
+        "rootStamp": "cf6540545bf3ec8f49c6faa8cd0040d709ea887d91739066a35085bbeb80b9c6",
+        "peakMiB": 181.0,
+        "liveStamp": "cf6540545bf3ec8f49c6faa8cd0040d709ea887d91739066a35085bbeb80b9c6"
+      },
+      {
+        "root": "dev-02-defect-elite",
+        "nodes": 800,
+        "processStatus": 0,
+        "processSeconds": 12.968,
+        "scenario": {
+          "CharacterId": "DEFECT",
+          "EncounterId": "INFESTED_PRISMS_ELITE",
+          "Seed": "NOVELTY-DEV-20260915-02",
+          "Ascension": 10,
+          "ActIndexForTest": 1
+        },
+        "won": false,
+        "quality": {
+          "won": false,
+          "outstandingStolenResource": 0,
+          "projectedBattleHpLost": 11,
+          "strategicHpDeficit": 11,
+          "potionStrategicCost": 0,
+          "projectedBattlePotionCount": 0,
+          "enemyHp": 97,
+          "combatEndedTurn": null,
+          "theftPolicy": null,
+          "survives": true,
+          "deathSaveUseCount": 0,
+          "growthHpCredit": 0,
+          "growthRewardCount": 0
+        },
+        "boundary": "TimeLimit",
+        "expanded": 334,
+        "transitions": 2594,
+        "seconds": 7.5481512,
+        "rootStamp": "cf6540545bf3ec8f49c6faa8cd0040d709ea887d91739066a35085bbeb80b9c6",
+        "peakMiB": 185.7,
+        "liveStamp": "cf6540545bf3ec8f49c6faa8cd0040d709ea887d91739066a35085bbeb80b9c6"
+      }
+    ]
+  },
+  {
+    "root": "dev-05-ironclad-boss",
+    "scope": "offline-teacher",
+    "scan": [
+      {
+        "root": "dev-05-ironclad-boss",
+        "nodes": 240,
+        "processStatus": 0,
+        "processSeconds": 14.718,
+        "scenario": {
+          "CharacterId": "IRONCLAD",
+          "EncounterId": "THE_INSATIABLE_BOSS",
+          "Seed": "NOVELTY-DEV-20260915-05",
+          "Ascension": 10,
+          "ActIndexForTest": 1
+        },
+        "won": false,
+        "quality": {
+          "won": false,
+          "outstandingStolenResource": 0,
+          "projectedBattleHpLost": 0,
+          "strategicHpDeficit": 0,
+          "potionStrategicCost": 0,
+          "projectedBattlePotionCount": 0,
+          "enemyHp": 335,
+          "combatEndedTurn": null,
+          "theftPolicy": null,
+          "survives": true,
+          "deathSaveUseCount": 0,
+          "growthHpCredit": 0,
+          "growthRewardCount": 0
+        },
+        "boundary": "TimeLimit",
+        "expanded": 220,
+        "transitions": 3291,
+        "seconds": 8.3939685,
+        "rootStamp": "a98fbacc55f2283dde6dc97233d90a0643007ac19e807007216a58c4ffe1ee40",
+        "peakMiB": 200.3,
+        "liveStamp": "a98fbacc55f2283dde6dc97233d90a0643007ac19e807007216a58c4ffe1ee40"
+      },
+      {
+        "root": "dev-05-ironclad-boss",
+        "nodes": 800,
+        "processStatus": 0,
+        "processSeconds": 14.172,
+        "scenario": {
+          "CharacterId": "IRONCLAD",
+          "EncounterId": "THE_INSATIABLE_BOSS",
+          "Seed": "NOVELTY-DEV-20260915-05",
+          "Ascension": 10,
+          "ActIndexForTest": 1
+        },
+        "won": false,
+        "quality": {
+          "won": false,
+          "outstandingStolenResource": 0,
+          "projectedBattleHpLost": 0,
+          "strategicHpDeficit": 0,
+          "potionStrategicCost": 0,
+          "projectedBattlePotionCount": 0,
+          "enemyHp": 335,
+          "combatEndedTurn": null,
+          "theftPolicy": null,
+          "survives": true,
+          "deathSaveUseCount": 0,
+          "growthHpCredit": 0,
+          "growthRewardCount": 0
+        },
+        "boundary": "TimeLimit",
+        "expanded": 205,
+        "transitions": 3018,
+        "seconds": 8.0190227,
+        "rootStamp": "a98fbacc55f2283dde6dc97233d90a0643007ac19e807007216a58c4ffe1ee40",
+        "peakMiB": 203.0,
+        "liveStamp": "a98fbacc55f2283dde6dc97233d90a0643007ac19e807007216a58c4ffe1ee40"
+      }
+    ]
+  },
+  {
+    "root": "pressure-queen",
+    "scope": "offline-teacher",
+    "scan": [
+      {
+        "root": "pressure-queen",
+        "nodes": 240,
+        "processStatus": 0,
+        "processSeconds": 13.047,
+        "scenario": {
+          "CharacterId": "IRONCLAD",
+          "EncounterId": "QUEEN_BOSS",
+          "Seed": "HIGH-PRESSURE-20260923-QUEEN-IRONCLAD",
+          "Ascension": 10,
+          "ActIndexForTest": 2
+        },
+        "won": false,
+        "quality": {
+          "won": false,
+          "outstandingStolenResource": 0,
+          "projectedBattleHpLost": 8,
+          "strategicHpDeficit": 8,
+          "potionStrategicCost": 18,
+          "projectedBattlePotionCount": 2,
+          "enemyHp": 553,
+          "combatEndedTurn": null,
+          "theftPolicy": null,
+          "survives": true,
+          "deathSaveUseCount": 0,
+          "growthHpCredit": 0,
+          "growthRewardCount": 0
+        },
+        "boundary": "TimeLimit",
+        "expanded": 187,
+        "transitions": 1723,
+        "seconds": 7.5462045,
+        "rootStamp": "a95ff11240f430cbe0a7612d5c33a158b0590bded031275d0afa6af637d8dffc",
+        "peakMiB": 186.7,
+        "liveStamp": "a95ff11240f430cbe0a7612d5c33a158b0590bded031275d0afa6af637d8dffc"
+      },
+      {
+        "root": "pressure-queen",
+        "nodes": 800,
+        "processStatus": 0,
+        "processSeconds": 13.391,
+        "scenario": {
+          "CharacterId": "IRONCLAD",
+          "EncounterId": "QUEEN_BOSS",
+          "Seed": "HIGH-PRESSURE-20260923-QUEEN-IRONCLAD",
+          "Ascension": 10,
+          "ActIndexForTest": 2
+        },
+        "won": false,
+        "quality": {
+          "won": false,
+          "outstandingStolenResource": 0,
+          "projectedBattleHpLost": 8,
+          "strategicHpDeficit": 8,
+          "potionStrategicCost": 18,
+          "projectedBattlePotionCount": 2,
+          "enemyHp": 553,
+          "combatEndedTurn": null,
+          "theftPolicy": null,
+          "survives": true,
+          "deathSaveUseCount": 0,
+          "growthHpCredit": 0,
+          "growthRewardCount": 0
+        },
+        "boundary": "TimeLimit",
+        "expanded": 368,
+        "transitions": 3050,
+        "seconds": 7.1760189,
+        "rootStamp": "a95ff11240f430cbe0a7612d5c33a158b0590bded031275d0afa6af637d8dffc",
+        "peakMiB": 199.8,
+        "liveStamp": "a95ff11240f430cbe0a7612d5c33a158b0590bded031275d0afa6af637d8dffc"
+      }
+    ]
+  }
+]

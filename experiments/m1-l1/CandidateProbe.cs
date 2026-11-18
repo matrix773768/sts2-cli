@@ -7,7 +7,7 @@ namespace OfflineSearchHarness;
 internal static class CandidateProbe
 {
     internal static void Run(CombatRootSnapshot root, SolverDisplayNames names,
-        BattleDamageSnapshot damage, SearchPolicySnapshot policy, MainLoopContext loop, string output)
+        BattleDamageSnapshot damage, SearchPolicySnapshot policy, MainLoopContext loop, string output, bool captureWitnesses = false)
     {
         using var deadline = new CancellationTokenSource(TimeSpan.FromMinutes(4));
         var task = Task.Run(() =>
@@ -28,8 +28,10 @@ internal static class CandidateProbe
                 Profile = policy.Profile with { MaxExpandedNodes = 24 },
                 Diagnostics = new SearchDiagnosticsSink(_ => { }, _ => { }, observer),
             };
-            new CombatBeamSolver(root, names, damage, discovery, deadline.Token,
+            var discoveryWatch = Stopwatch.StartNew();
+            var discoveryResult = new CombatBeamSolver(root, names, damage, discovery, deadline.Token,
                 searchProfile: discovery.Profile).Solve();
+            discoveryWatch.Stop();
 
             var json = UnattendedTestFiles.JsonOptions;
             static PlanAction Normalize(PlanAction action) => action with
@@ -77,6 +79,8 @@ internal static class CandidateProbe
                     energy, block, replayMatched, pool, outcome, matched, quality, failure,
                     boundaryReason = result?.BoundaryReason, risk = result?.Snapshot.HasRisk,
                     endShuffles = result?.Snapshot.ShufflesCrossed,
+                    witness = captureWitnesses && quality?.Won == true && matched
+                        ? result!.BestNode.Actions.Select(Normalize).ToArray() : null,
                     expandedNodes = result?.ExpandedNodes, transitionCount = result?.TransitionCount, milliseconds = watch.Elapsed.TotalMilliseconds,
                 });
             }
@@ -87,6 +91,11 @@ internal static class CandidateProbe
                 scope = "offline-teacher", discoveryNodes = 24,
                 budget = ModRuntime.DescribePolicy(policy),
                 peakWorkingSet = System.Diagnostics.Process.GetCurrentProcess().PeakWorkingSet64,
+                discovery = new
+                {
+                    discoveryResult.ExpandedNodes, discoveryResult.TransitionCount,
+                    milliseconds = discoveryWatch.Elapsed.TotalMilliseconds,
+                },
                 generatedEvents = generated.Count, rows,
             }, json));
         }, deadline.Token);
