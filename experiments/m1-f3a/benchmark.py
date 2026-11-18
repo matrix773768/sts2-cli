@@ -55,13 +55,13 @@ def restored(output, root):
                 raise f1.i2.StopRun("root_mismatch", "Checkpoint mutated")
 
 
-def search(output, root, budget, fixed_actions=None):
+def search(output, root, budget, fixed_actions=None, *, restore=restored):
     nodes, soft, cancel = budget
     row = dict(node_budget=nodes, soft_ms=soft, cancel_ms=cancel, root_verified=False)
     plan = None
     clock = perf_counter()
     try:
-        with restored(output, root) as (game, _):
+        with restore(output, root) as (game, _):
             row["root_verified"] = True
             before = game.request("f1_audit")
             params = {"fixed_actions": fixed_actions} if fixed_actions else {}

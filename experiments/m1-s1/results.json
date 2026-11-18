@@ -1,0 +1,396 @@
+{
+  "schema": 1,
+  "end_to_end_ms": 21024.911700049415,
+  "native_save_or_replay_files": 0,
+  "samples": [
+    {
+      "name": "base",
+      "id": "synthetic-a28f96bcfc8980ddeebbd1d3e718fc9c66500198b46d4fc442416100f5a1206c",
+      "spec": {
+        "schema": 1,
+        "character": "Ironclad",
+        "ascension": 0,
+        "encounter": "SHRINKER_BEETLE_WEAK",
+        "seed": "S1TEST01",
+        "deck": [
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "BASH",
+            "upgrade": 0
+          }
+        ],
+        "hp": 60,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION"
+        ]
+      },
+      "versions": {
+        "sampler": "m1-d1-v1",
+        "policy": "M1-F2-discard-v1",
+        "game": "0.113.1/26660232",
+        "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+        "solver_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13",
+        "solver": "0.51.5/78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+        "headless_sha256": "c7bb440282a2ef9281a6d1e1297633f605d6cda88f8ec7adce8a46f78d01cdd0",
+        "coreclr": "9.0.7",
+        "native_identity": "da4915194f43c4f0c380d02a98b2c976b04111e8b94efd4d2d8a72c7396ac469",
+        "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+        "synthetic_spec": 1,
+        "initializer": "m1-s1-v1"
+      },
+      "source": "synthetic",
+      "synthetic": true,
+      "native_reachable": false,
+      "native_verified": true,
+      "level": "L3",
+      "live": "87c07d2714273b2f8586a4945e8b90f759b20af770ddcc6a3bbbab928fda2d1a",
+      "visited_map_nodes": 0,
+      "native_rng_stream_counts": {
+        "run_rng": 12,
+        "player_rng": 4
+      },
+      "rebuilds": [
+        {
+          "handshake_ms": 159.24399998039007,
+          "initialize_ms": 1541.0192999988794,
+          "snapshot_ms": 127.60260002687573,
+          "root_ms": 1827.8659000061452,
+          "peak_working_set_bytes": 103460864,
+          "legal_action_ms": 109.79939997196198
+        },
+        {
+          "handshake_ms": 285.83780000917614,
+          "initialize_ms": 1578.2410998363048,
+          "snapshot_ms": 83.59539997763932,
+          "root_ms": 1947.6742998231202,
+          "peak_working_set_bytes": 103952384,
+          "legal_action_ms": 174.03499991632998
+        }
+      ],
+      "same_root": true,
+      "legal_action_steps": 3
+    },
+    {
+      "name": "seed",
+      "id": "synthetic-2cff861b95cb32f8b063282da14e7e4da423cb2721a1bd1a43670a1abdfcf8fd",
+      "spec": {
+        "schema": 1,
+        "character": "Ironclad",
+        "ascension": 0,
+        "encounter": "SHRINKER_BEETLE_WEAK",
+        "seed": "S1TEST02",
+        "deck": [
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "BASH",
+            "upgrade": 0
+          }
+        ],
+        "hp": 60,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION"
+        ]
+      },
+      "versions": {
+        "sampler": "m1-d1-v1",
+        "policy": "M1-F2-discard-v1",
+        "game": "0.113.1/26660232",
+        "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+        "solver_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13",
+        "solver": "0.51.5/78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+        "headless_sha256": "c7bb440282a2ef9281a6d1e1297633f605d6cda88f8ec7adce8a46f78d01cdd0",
+        "coreclr": "9.0.7",
+        "native_identity": "da4915194f43c4f0c380d02a98b2c976b04111e8b94efd4d2d8a72c7396ac469",
+        "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+        "synthetic_spec": 1,
+        "initializer": "m1-s1-v1"
+      },
+      "source": "synthetic",
+      "synthetic": true,
+      "native_reachable": false,
+      "native_verified": true,
+      "level": "L0",
+      "live": "e5445a928609e9ca765e6550bdec3503933f0563739653602a3623a133685185",
+      "visited_map_nodes": 0,
+      "native_rng_stream_counts": {
+        "run_rng": 12,
+        "player_rng": 4
+      },
+      "rebuilds": [
+        {
+          "handshake_ms": 217.2321998514235,
+          "initialize_ms": 1582.4859000276774,
+          "snapshot_ms": 166.5254000108689,
+          "root_ms": 1966.2434998899698,
+          "peak_working_set_bytes": 99692544
+        },
+        {
+          "handshake_ms": 301.7565000336617,
+          "initialize_ms": 1517.5576000474393,
+          "snapshot_ms": 156.29140008240938,
+          "root_ms": 1975.6055001635104,
+          "peak_working_set_bytes": 99647488
+        }
+      ],
+      "same_root": true,
+      "legal_action_steps": 0
+    },
+    {
+      "name": "upgrade",
+      "id": "synthetic-26509bfd7973cb313ff519d1a4b715d681805b79708fff6e1c282335fe6e9962",
+      "spec": {
+        "schema": 1,
+        "character": "Ironclad",
+        "ascension": 0,
+        "encounter": "SHRINKER_BEETLE_WEAK",
+        "seed": "S1TEST01",
+        "deck": [
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "BASH",
+            "upgrade": 1
+          }
+        ],
+        "hp": 60,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION"
+        ]
+      },
+      "versions": {
+        "sampler": "m1-d1-v1",
+        "policy": "M1-F2-discard-v1",
+        "game": "0.113.1/26660232",
+        "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+        "solver_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13",
+        "solver": "0.51.5/78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+        "headless_sha256": "c7bb440282a2ef9281a6d1e1297633f605d6cda88f8ec7adce8a46f78d01cdd0",
+        "coreclr": "9.0.7",
+        "native_identity": "da4915194f43c4f0c380d02a98b2c976b04111e8b94efd4d2d8a72c7396ac469",
+        "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+        "synthetic_spec": 1,
+        "initializer": "m1-s1-v1"
+      },
+      "source": "synthetic",
+      "synthetic": true,
+      "native_reachable": false,
+      "native_verified": true,
+      "level": "L0",
+      "live": "f65e5aca3b652ffb5e925e6e56afa0dd3c0f63c2ca46374083574a5384af0034",
+      "visited_map_nodes": 0,
+      "native_rng_stream_counts": {
+        "run_rng": 12,
+        "player_rng": 4
+      },
+      "rebuilds": [
+        {
+          "handshake_ms": 234.12229982204735,
+          "initialize_ms": 1611.1981999129057,
+          "snapshot_ms": 171.1964998394251,
+          "root_ms": 2016.5169995743781,
+          "peak_working_set_bytes": 99672064
+        },
+        {
+          "handshake_ms": 187.93389992788434,
+          "initialize_ms": 1697.666099993512,
+          "snapshot_ms": 143.59420002438128,
+          "root_ms": 2029.1941999457777,
+          "peak_working_set_bytes": 98320384
+        }
+      ],
+      "same_root": true,
+      "legal_action_steps": 0
+    }
+  ],
+  "f3b": {
+    "arm": "C",
+    "cap": 128,
+    "potions": false,
+    "uses_hidden_rng": true,
+    "status": "win",
+    "search_status": "predicted_win",
+    "search_ms": 3149.1076999809593,
+    "transitions": 13,
+    "search_hot_ms": 455.7286,
+    "search_peak_working_set_bytes": 119214080,
+    "prediction_prepare_ms": 603.4214,
+    "fixed_prediction": {
+      "node_budget": 1000,
+      "soft_ms": 6000,
+      "cancel_ms": 8000,
+      "root_verified": true,
+      "capture_wall_ms": 1019.5764000527561,
+      "status": "complete_win",
+      "solve_ms": 0.0004,
+      "search_cpu_ms": 0,
+      "predicted_win": true,
+      "fixed_route": true,
+      "transitions": null,
+      "expanded_nodes": null,
+      "total_expanded_nodes": null,
+      "boundary": null,
+      "encounter": "SHRINKER_BEETLE_WEAK",
+      "ms": 974.2223,
+      "peak_working_set_bytes": 119816192,
+      "plan_action_count": 13,
+      "plan_rounds": 4,
+      "elapsed_ms": 3097.051699878648
+    },
+    "native_replay": {
+      "status": "win",
+      "elapsed_ms": 2377.3579001426697,
+      "matched_actions": 13,
+      "strict_terminal": true,
+      "root_frame_sha256": "035e17e68b56d10f572a959b0766703661b6eda150bf329ce94f3d51e6ec84f4",
+      "peak_working_set_bytes": 109068288,
+      "outcome": {
+        "initial_hp": 60,
+        "final_hp": 50,
+        "hp_lost": 10,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "settlement_hp": 56,
+      "terminal_decision": "card_reward",
+      "matched_frame_sha256": [
+        "49a98c9cb9a8a41e9cc7069f49d877fcb88f8447d1e1b67cd6534513f797612f",
+        "0f582d878d39164d2988afd4d1c421be6ca0a50dd421f26b9bbeed5c78ca517a",
+        "2e590a327676b06cfd90cb885596f07c6125aea2d314dbcf4d489f09153220d9",
+        "ef8e6087bd4fce00b6e2b84612eaf84d8164c01b2058f3c632cf12572059793b",
+        "262bfbaa3c8bbbf63aec24adb83522b0713083960dc793020d4b41405dae091a",
+        "52e1eaef2d7acdc495764a27466c16fbdf8e80a2f3fd5e835fb79ca193f18c0d",
+        "bcc9d6513de88fd8f99cb3ab7a1719f2b2e96306ba8c565967619b2453c37f41",
+        "21ebffbfcecd5c1d983ef8e6557f6955a2d2c28d9da428eb692ce6a50f8c91af",
+        "2cf9f78339d220428348b136bc9765e456f719879a7b0f7a60ae5dc7eb2d565f",
+        "49e1e6f4f09e6d01fe61ea69b78cf6b24255de181a437d4985cb67b0665e3ff0",
+        "1ff3f9f94019132253fdbdae4d119c387b909576e6d2e08e311b289eb1bc9dab",
+        "ab337433404a751072592cc6ad11b6848ff73c7db21a5d31b3f8a6b39369bd87",
+        "e0724c6d8eca164f4be142206f8db53f386acfca383e942860a385786541ed16"
+      ]
+    }
+  }
+}

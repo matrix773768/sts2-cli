@@ -33,9 +33,9 @@ def action_for_wire(action):
     return {**action, "kind": KINDS[kind] if isinstance(kind, int) else kind}
 
 
-def prepare_native(output, root, result):
+def prepare_native(output, root, result, *, restore=f3a.restored):
     actions = [action_for_wire(a) for a in result["actions"]]
-    preparation, plan = f3a.search(output, root, f3a.BUDGETS[0], actions)
+    preparation, plan = f3a.search(output, root, f3a.BUDGETS[0], actions, restore=restore)
     if not plan or preparation["status"] != "complete_win":
         return dict(status="independent_prediction_rejected", preparation=preparation), None
     stamps = [f1.digest(step[0]["exact_continuation_state"].encode()) for step in plan["frames"]]
@@ -55,8 +55,8 @@ def expect_native(output, root, result):
     return native
 
 
-def search(output, root, arm, potions, cap, rejected):
-    with f3a.restored(output, root) as (game, _):
+def search(output, root, arm, potions, cap, rejected, *, restore=f3a.restored):
+    with restore(output, root) as (game, _):
         audit = game.request("f1_audit")
         response = game.request("i1_f3b", arm=arm, potions=potions, cap=cap, rejected=rejected)
         rpc_ms = game.last_request_ms
