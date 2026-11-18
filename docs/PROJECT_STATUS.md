@@ -164,6 +164,10 @@
 
 - [M1-Q1 报告](m1-q1-fast-combat-baseline.md)在同根 A10 Infested Prisms 上用公开信息、零搜索的战术策略取得 4/4 原生胜利，第 5 回合、损 11 HP。预热后整场纯决策 0.105–0.168 ms，原生推进约 535–640 ms。Decimillipede 的选牌与重接执行覆盖仍未打通。正式策略维持原样。
 
+### M1-Q2 极速策略跨根验证
+
+- [M1-Q2 报告](m1-q2-fast-combat-generalization.md)固定 Q1 策略对照七个 A10 生成根。战术组只在原 Q1 Defect 精英根获胜，五个新根中两场原生死亡、三场选牌停止。隔离贴图绕过保留 Decimillipede 原生重接，使既有 Ironclad 根完成战术组战败。下一步优先补选择与高速原生验证，再评估多回合策略。
+
 ## 7. 协作与操作流程
 
 - 新 Codex 对话开头：阅读本文件、`CLAUDE.md` 与实际代码；确认当前 Git 分支、HEAD、工作区状态、Steam build、CoreCLR；优先报告与本文档不一致之处。本文档不是代替代码审查或测试的权威来源。
