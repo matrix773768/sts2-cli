@@ -213,8 +213,13 @@ class Limits:
 
 
 def native_files(output):
-    return [p.name for p in output.rglob("*") if p.is_file()
-            and p.name.lower().endswith((".save", ".save.json", ".mcr"))]
+    def fail_unless_removed(error):
+        # Parallel collectors remove their isolated process directories on exit.
+        if not isinstance(error, FileNotFoundError):
+            raise error
+
+    return [name for _, _, files in os.walk(output, onerror=fail_unless_removed)
+            for name in files if name.lower().endswith((".save", ".save.json", ".mcr"))]
 
 
 def generate_one(scratch, case, versions, limits):
