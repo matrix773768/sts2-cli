@@ -1,0 +1,34 @@
+{
+  "limits": {
+    "run_seconds": 90,
+    "batch_seconds": 300,
+    "audit_seconds": 14,
+    "combat_seconds": 20,
+    "run_actions": 450,
+    "combat_actions": 140,
+    "roots_per_run": 9,
+    "max_runs": 2,
+    "disk_mib": 768,
+    "min_act": 1
+  },
+  "defaults": {
+    "character": "Ironclad",
+    "ascension": 0,
+    "map": "west",
+    "reward": "first",
+    "shop": "leave"
+  },
+  "runs": [
+    {
+      "id": "silent-3",
+      "character": "Silent",
+      "seed": "run_3",
+      "map": "east"
+    },
+    {
+      "id": "iron-4",
+      "seed": "run_4",
+      "map": "middle"
+    }
+  ]
+}
