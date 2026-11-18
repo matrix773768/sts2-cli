@@ -1,12 +1,14 @@
 # STS2 AI — 项目状态与交接（PROJECT_STATUS）
 
 > 更新日期：2026-11-18（Asia/Shanghai）
-> 当前主线：M1-S2A 已验证规则化生成、两角色和第二幕合成样本的独立冷重建。下一步按机制扩充原生与预测兼容性证据。战损优化和 M2 局外学习暂缓。
+> 当前主线：M1-F3D-A 已解决两条冻结 Shiv 根的 Survivor 预测待选。下一步按机制扩充原生与预测兼容性证据。战损优化和 M2 局外学习暂缓。
 > 本文件描述 **matrix773768/sts2-cli** 的 `port/v0.113.1` 分支，不代表上游 `wuhao21/sts2-cli` 或 `main` 的支持情况。
 > M0 最后一次业务代码提交：`bc48ac58aeca80c2c7b9249cbf98f316ae99a27b` — Restore native Ancient healing and act-start travel rules。
 > 本文件是交接摘要；具体实现、测试断言、原生 IL 及日志以当前仓库和本机实际文件为准。不要将历史总结当成新的测试结果。
 
 ## 本阶段交接
+
+M1-F3D-A 为 Survivor 出牌编码单张合法手牌弃牌，复用原生实例绑定和严格帧核对。相同额度内，两条冻结 S2A Shiv 根从首步待选耗尽变为 18 和 26 次转移的完整原生胜利。重复同名同状态防御的第二个原实例也通过固定预测与原生差分。见 [M1-F3D-A 报告与复现](m1-f3d-a-survivor-choice.md)。
 
 M1-S2A 用原生 ModelDb 约束强度多段、格挡转伤、中毒和小刀成长四种规则。16 根均两次独立重建，覆盖铁甲战士、静默猎手、第一幕两个变体及第二幕 HIVE。预选 6 根运行冻结 F3B，2 根通过完整原生验收，其余原因分别为终局差分、Neutralize 预测不支持及生存者待选。真实可达性均为 unknown。见 [M1-S2A 报告与复现](m1-s2a-synthetic-combat-generation.md)。
 

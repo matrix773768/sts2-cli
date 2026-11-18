@@ -187,8 +187,9 @@ internal sealed partial class FirstWin : IDisposable
             var key = CardChoiceSupport.ChoiceCardKey(card);
             var before = hand.Take(move.HandIndex);
             PlanCardChoice? choice = null;
-            if (move.Id == "HEADBUTT" && CardChoiceSupport.GetSpec(sim, card) is { Options.Count: > 0 } spec)
-                choice = Headbutt(spec);
+            if (move.Id is "HEADBUTT" or "SURVIVOR" &&
+                CardChoiceSupport.GetSpec(sim, card) is { Options.Count: > 0 } spec)
+                choice = SelectCard(spec, move.Id == "SURVIVOR" ? card : null);
             options.Add(new(new PlanAction(PlanActionKind.PlayCard, node.Frame.Turn,
                 CardId: move.Id, CardOccurrence: before.Count(c => c.Preview.Id.Entry == move.Id),
                 TargetCombatId: move.Target, Choice: choice, CardStateKey: key,
@@ -208,7 +209,7 @@ internal sealed partial class FirstWin : IDisposable
         return node.Options = options.ToArray();
     }
 
-    private static PlanCardChoice Headbutt(CardChoiceSpec spec)
+    private static PlanCardChoice? SelectCard(CardChoiceSpec spec, PredictedCard? played)
     {
         int Value(PredictedCard option)
         {
@@ -219,12 +220,25 @@ internal sealed partial class FirstWin : IDisposable
                 3 * Stat("Damage") + 4 * Stat("Block") + 5 * card.CurrentUpgradeLevel
                 - 3 * (card.EnergyCost?.GetResolved() ?? 0) + (card.Type == CardType.Power ? 15 : 0);
         }
-        var picked = spec.Options.OrderByDescending(Value).First();
+        // A Survivor's callback sees the hand after the played instance has left it.
+        // Both occurrence counters must be in that callback's coordinate system.
+        var options = spec.Options;
+        var source = spec.SourceCards;
+        if (played != null)
+        {
+            if (spec is not { Effect: PlanChoiceEffect.Discard, SourcePile: PileType.Hand, MinCount: 1, MaxCount: 1 })
+                return null;
+            options = options.Where(c => !ReferenceEquals(c.Original, played.Original)).ToArray();
+            source = source.Where(c => !ReferenceEquals(c.Original, played.Original)).ToArray();
+        }
+        if (options.Count == 0)
+            return null;
+        var picked = played == null ? options.OrderByDescending(Value).First() : options.OrderBy(Value).First();
         string key = CardChoiceSupport.ChoiceCardKey(picked);
-        int Occurrence(IEnumerable<PredictedCard> source) => source.TakeWhile(c => !ReferenceEquals(c, picked))
+        int Occurrence(IEnumerable<PredictedCard> cards) => cards.TakeWhile(c => !ReferenceEquals(c, picked))
             .Count(c => CardChoiceSupport.ChoiceCardKey(c) == key);
         var token = new PlanCardToken(picked.Preview.Id.Entry, picked.Preview.CurrentUpgradeLevel, key,
-            Occurrence(spec.SourceCards), Occurrence(spec.Options), picked.Preview.Title);
+            Occurrence(source), Occurrence(options), picked.Preview.Title);
         return new(spec.Effect, spec.SourcePile, [token], ContextId: spec.ContextId);
     }
 

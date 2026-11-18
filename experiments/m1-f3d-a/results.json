@@ -1,0 +1,637 @@
+{
+  "baseline_versions": {
+    "sampler": "m1-d1-v1",
+    "policy": "M1-F2-discard-v1",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "solver_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13",
+    "solver": "0.51.5/78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+    "headless_sha256": "69123c82caf783043200aca90b2a792e7fcac23184505738d9936abfcd64c681",
+    "coreclr": "9.0.7",
+    "native_identity": "5c2b9afc06ab824bb5d2116afd7c858f6e58adffcc61eb1ecfcddad49b4674aa",
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3"
+  },
+  "versions": {
+    "sampler": "m1-d1-v1",
+    "policy": "M1-F2-discard-v1",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "solver_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13",
+    "solver": "0.51.5/78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+    "headless_sha256": "cf73881a56a80a67d42d836be44b4677f491a7be6ff75f922632b80f3a7d073b",
+    "coreclr": "9.0.7",
+    "native_identity": "62353d631467902ec350a88b5694c7f0eec8e965ee4c5e32805d83a0f7ff3ab7",
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3"
+  },
+  "wall_ms": 53167.419200064614,
+  "cap": 128,
+  "arm": "C",
+  "potions": false,
+  "cases": {
+    "shiv-lean": {
+      "live": "b7184ddf117da631e5f51ced6a672115af51fdaed9887b889bd4e9dbdd015873",
+      "same_cross_build": true,
+      "baseline": {
+        "status": "exhausted",
+        "transitions": 9,
+        "elapsed_ms": 2307.2495001833886,
+        "boundary": "PendingChoice",
+        "first_action": {
+          "kind": 0,
+          "turn": 1,
+          "card_id": "SURVIVOR",
+          "card_occurrence": 0,
+          "target_index": -1,
+          "card_title": "",
+          "target_name": "",
+          "nested_choices_before_primary": 0,
+          "potion_slot": -1,
+          "potion_id": "",
+          "potion_title": "",
+          "replay_count": 0,
+          "card_state_key": "SURVIVOR+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=8|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "ends_player_turn": false,
+          "card_upgrade_level": 0,
+          "card_enchantment_id": "",
+          "is_executable": true,
+          "action_title": ""
+        },
+        "native_request": [
+          {
+            "step": 1,
+            "action": "SURVIVOR",
+            "source": "hand",
+            "effect": "discard",
+            "min_select": 1,
+            "max_select": 1,
+            "allow_empty": false,
+            "energy": 2,
+            "turn": 1,
+            "candidates": [
+              {
+                "index": 0,
+                "id": "DODGE_AND_ROLL",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Skill",
+                "damage": 0,
+                "block": 4,
+                "key": "DODGE_AND_ROLL+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 1,
+                "id": "DEFEND_SILENT",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Skill",
+                "damage": 0,
+                "block": 5,
+                "key": "DEFEND_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 2,
+                "id": "BLADE_DANCE",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Skill",
+                "damage": 0,
+                "block": 0,
+                "key": "BLADE_DANCE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=Exhaust|vars=Cards=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 3,
+                "id": "DEFEND_SILENT",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Skill",
+                "damage": 0,
+                "block": 5,
+                "key": "DEFEND_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              }
+            ],
+            "indexes": [
+              2
+            ]
+          }
+        ],
+        "native_discard_audit": [
+          {
+            "step": 1,
+            "action": "SURVIVOR",
+            "discard": true,
+            "minimum": 1,
+            "maximum": 1,
+            "instances": [
+              {
+                "option": 2,
+                "discard_index": 0,
+                "absent_from_hand": true,
+                "absent_from_exhaust": true,
+                "id": "BLADE_DANCE"
+              }
+            ],
+            "rng_at_choice": {
+              "shuffle": 1,
+              "generation": 0,
+              "selection": 0,
+              "monster_ai": 0
+            },
+            "rng_after": {
+              "shuffle": 1,
+              "generation": 0,
+              "selection": 0,
+              "monster_ai": 0
+            }
+          },
+          {
+            "step": 1,
+            "action": "SURVIVOR",
+            "effect": true
+          }
+        ]
+      },
+      "fixed": {
+        "status": "win",
+        "transitions": 18,
+        "search_ms": 2438.0063998978585,
+        "search_hot_ms": 303.21,
+        "search_peak_working_set_bytes": 123228160,
+        "first_action": {
+          "kind": 0,
+          "turn": 1,
+          "card_id": "SURVIVOR",
+          "card_occurrence": 0,
+          "target_index": -1,
+          "card_title": "",
+          "target_name": "",
+          "choice": {
+            "effect": 2,
+            "source_pile": 2,
+            "cards": [
+              {
+                "card_id": "BLADE_DANCE",
+                "upgrade_level": 0,
+                "state_key": "BLADE_DANCE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=Exhaust|vars=Cards=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "source_occurrence": 0,
+                "option_occurrence": 0,
+                "title": "BLADE_DANCE.title"
+              }
+            ],
+            "source_id": "",
+            "context_id": "",
+            "timing": 0
+          },
+          "nested_choices_before_primary": 0,
+          "potion_slot": -1,
+          "potion_id": "",
+          "potion_title": "",
+          "replay_count": 0,
+          "card_state_key": "SURVIVOR+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=8|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "ends_player_turn": false,
+          "card_upgrade_level": 0,
+          "card_enchantment_id": "",
+          "is_executable": true,
+          "action_title": ""
+        },
+        "boundary": "None",
+        "fixed_prediction_ms": 2830.8890000917017,
+        "native_replay_ms": 2298.893600003794,
+        "matched_actions": 18,
+        "strict_terminal": true,
+        "outcome": {
+          "initial_hp": 28,
+          "final_hp": 20,
+          "hp_lost": 8,
+          "hp_healed": 0,
+          "self_damage": 0,
+          "combat_ended": true,
+          "survived": true,
+          "final_enemy_hp": 0,
+          "potions": [],
+          "unattributed_hp_loss": 0
+        },
+        "frame_digests": [
+          "9792eec8f911dd06efc009bbb65e7afec1041e580ca64f840ea56c8be771de7c",
+          "6bd3134e855274133ac920a672b592f34b3a9372a291832b70ec3b1f5c1f9041",
+          "3d5668d87c4952b7984cf58833b306c57e0a33f2e9d8dfa1e2ad741f9c7f68da",
+          "4996987180ed1a82a4ddb6fb15a19b1d6f9189fff657d31a36963c83db0443b0",
+          "f7161399d5e53eadf0e43969f69bfa8531dbf94ab669d82d7d0a5a24df060979",
+          "4346ab79bd1db24934fa3699bb62a895033b6fae79246d0077791d57bc26439f",
+          "67d8048f5ea7341ab8e9a1afb89c5ef4d585ec8e1a98f3d9b6411a2462c5ec04",
+          "f8aed99995c2b4a0b7d22f412ce27100ace38d98929d11b24039f2d956e074d5",
+          "c96223080ecf4ca1a1e1e7a964d08c537cc86cd867531dea7911025d4b0cd5fa",
+          "34b5cb703ca5201021a801a5d69fcee35b3cd433321e67e64c2e3b82b3fd4c24",
+          "93881e08a87d2f13f98d19c3411a5036089b325df17a3fa53b34ea2c530d009b",
+          "be17753b11beab9cfbee5a2d5547aeda45b43038abbb8def9ee109decb62e340",
+          "801e3f61ebafee30046c0025f2498c112717db6a6fe471c2562821a75b69eca1",
+          "30835eacc890661f162a3400ac66f8b1cfc377b92a7e144eaa84784048fa5ea4",
+          "92182d9535e8cf561487ea5a3ce6d736bcb3a987a0ffc7d6cd672057a9516217",
+          "18838430d5f5f89e1c95a88cfeb841cbae5213545f6286855debcd69c8bc1070",
+          "d079d1e4c030a6cea9b04ebf9efb9aa311e5c02e091b9f18903de1f430b2595b",
+          "b09dd249ddff8f52f111856452d4d9ff772a103e403498e56fc6d47327d9fe5f"
+        ]
+      },
+      "prefix": {
+        "elapsed_ms": 2309.6291997935623,
+        "choice": {
+          "binding": {
+            "surface": "cards",
+            "effect": "Discard",
+            "option": 2,
+            "source_index": 2,
+            "selected": {
+              "card_id": "BLADE_DANCE",
+              "upgrade_level": 0,
+              "state_key": "BLADE_DANCE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=Exhaust|vars=Cards=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "source_occurrence": 0,
+              "option_occurrence": 0
+            },
+            "menu": [
+              "DODGE_AND_ROLL+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "DEFEND_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "BLADE_DANCE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=Exhaust|vars=Cards=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "DEFEND_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            ]
+          },
+          "destination_verified": true
+        },
+        "pre_audit": {
+          "type": "f2_audit",
+          "stamp": "b7184ddf117da631e5f51ced6a672115af51fdaed9887b889bd4e9dbdd015873",
+          "rng": {
+            "shuffle": 1,
+            "generation": 0,
+            "selection": 0,
+            "monster_ai": 0
+          }
+        },
+        "post_audit": {
+          "type": "f2_audit",
+          "stamp": "1a55fb58aa51e4a3932e3078d8b3a040d96577b4b9c267145a09bc3d6d17310c",
+          "rng": {
+            "shuffle": 1,
+            "generation": 0,
+            "selection": 0,
+            "monster_ai": 0
+          }
+        },
+        "native_action": {
+          "action": "play_card",
+          "args": {
+            "card_index": 0
+          }
+        },
+        "native_frame_sha256": "9792eec8f911dd06efc009bbb65e7afec1041e580ca64f840ea56c8be771de7c",
+        "predicted_frame_sha256": "9792eec8f911dd06efc009bbb65e7afec1041e580ca64f840ea56c8be771de7c",
+        "fixed_prediction_ms": 2816.557199927047
+      },
+      "duplicate": {
+        "elapsed_ms": 2222.97600004822,
+        "choice": {
+          "binding": {
+            "surface": "cards",
+            "effect": "Discard",
+            "option": 3,
+            "source_index": 3,
+            "selected": {
+              "card_id": "DEFEND_SILENT",
+              "upgrade_level": 0,
+              "state_key": "DEFEND_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "source_occurrence": 1,
+              "option_occurrence": 1
+            },
+            "menu": [
+              "DODGE_AND_ROLL+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "DEFEND_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "BLADE_DANCE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=Exhaust|vars=Cards=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "DEFEND_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            ]
+          },
+          "destination_verified": true
+        },
+        "pre_audit": {
+          "type": "f2_audit",
+          "stamp": "b7184ddf117da631e5f51ced6a672115af51fdaed9887b889bd4e9dbdd015873",
+          "rng": {
+            "shuffle": 1,
+            "generation": 0,
+            "selection": 0,
+            "monster_ai": 0
+          }
+        },
+        "post_audit": {
+          "type": "f2_audit",
+          "stamp": "7a95e785c527db5b88060555a93456e6d5e36146d74fee36ca84418b9662aa45",
+          "rng": {
+            "shuffle": 1,
+            "generation": 0,
+            "selection": 0,
+            "monster_ai": 0
+          }
+        },
+        "native_action": {
+          "action": "play_card",
+          "args": {
+            "card_index": 0
+          }
+        },
+        "native_frame_sha256": "8a173aed58f30de1ddff6ae9aa3360e6c33912e4e862e5793cc6a65463eabc3e",
+        "predicted_frame_sha256": "8a173aed58f30de1ddff6ae9aa3360e6c33912e4e862e5793cc6a65463eabc3e",
+        "fixed_prediction_ms": 2927.371700061485,
+        "expected_index": 3
+      }
+    },
+    "shiv-hive-stocked": {
+      "live": "ecf67edc7b9e0cb58095153d9c6190c54856b6471409c8644aa003c16ac8f7d8",
+      "same_cross_build": true,
+      "baseline": {
+        "status": "exhausted",
+        "transitions": 6,
+        "elapsed_ms": 2392.7551000379026,
+        "boundary": "PendingChoice",
+        "first_action": {
+          "kind": 0,
+          "turn": 1,
+          "card_id": "SURVIVOR",
+          "card_occurrence": 0,
+          "target_index": -1,
+          "card_title": "",
+          "target_name": "",
+          "nested_choices_before_primary": 0,
+          "potion_slot": -1,
+          "potion_id": "",
+          "potion_title": "",
+          "replay_count": 0,
+          "card_state_key": "SURVIVOR+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=8|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "ends_player_turn": false,
+          "card_upgrade_level": 0,
+          "card_enchantment_id": "",
+          "is_executable": true,
+          "action_title": ""
+        },
+        "native_request": [
+          {
+            "step": 1,
+            "action": "SURVIVOR",
+            "source": "hand",
+            "effect": "discard",
+            "min_select": 1,
+            "max_select": 1,
+            "allow_empty": false,
+            "energy": 2,
+            "turn": 1,
+            "candidates": [
+              {
+                "index": 0,
+                "id": "DEFEND_SILENT",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Skill",
+                "damage": 0,
+                "block": 5,
+                "key": "DEFEND_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 1,
+                "id": "DEFEND_SILENT",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Skill",
+                "damage": 0,
+                "block": 5,
+                "key": "DEFEND_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 2,
+                "id": "DEFEND_SILENT",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Skill",
+                "damage": 0,
+                "block": 5,
+                "key": "DEFEND_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 3,
+                "id": "ACCURACY",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Power",
+                "damage": 0,
+                "block": 0,
+                "key": "ACCURACY+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=AccuracyPower=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 4,
+                "id": "DAGGER_SPRAY",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Attack",
+                "damage": 4,
+                "block": 0,
+                "key": "DAGGER_SPRAY+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=4;HitCount=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              },
+              {
+                "index": 5,
+                "id": "DEFEND_SILENT",
+                "upgrade": 0,
+                "cost": 1,
+                "type": "Skill",
+                "damage": 0,
+                "block": 5,
+                "key": "DEFEND_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+              }
+            ],
+            "indexes": [
+              4
+            ]
+          }
+        ],
+        "native_discard_audit": [
+          {
+            "step": 1,
+            "action": "SURVIVOR",
+            "discard": true,
+            "minimum": 1,
+            "maximum": 1,
+            "instances": [
+              {
+                "option": 4,
+                "discard_index": 0,
+                "absent_from_hand": true,
+                "absent_from_exhaust": true,
+                "id": "DAGGER_SPRAY"
+              }
+            ],
+            "rng_at_choice": {
+              "shuffle": 1,
+              "generation": 0,
+              "selection": 0,
+              "monster_ai": 0
+            },
+            "rng_after": {
+              "shuffle": 1,
+              "generation": 0,
+              "selection": 0,
+              "monster_ai": 0
+            }
+          },
+          {
+            "step": 1,
+            "action": "SURVIVOR",
+            "effect": true
+          }
+        ]
+      },
+      "fixed": {
+        "status": "win",
+        "transitions": 26,
+        "search_ms": 3291.4515000302345,
+        "search_hot_ms": 400.8466,
+        "search_peak_working_set_bytes": 123514880,
+        "first_action": {
+          "kind": 0,
+          "turn": 1,
+          "card_id": "SURVIVOR",
+          "card_occurrence": 0,
+          "target_index": -1,
+          "card_title": "",
+          "target_name": "",
+          "choice": {
+            "effect": 2,
+            "source_pile": 2,
+            "cards": [
+              {
+                "card_id": "DAGGER_SPRAY",
+                "upgrade_level": 0,
+                "state_key": "DAGGER_SPRAY+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=4;HitCount=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+                "source_occurrence": 0,
+                "option_occurrence": 0,
+                "title": "DAGGER_SPRAY.title"
+              }
+            ],
+            "source_id": "",
+            "context_id": "",
+            "timing": 0
+          },
+          "nested_choices_before_primary": 0,
+          "potion_slot": -1,
+          "potion_id": "",
+          "potion_title": "",
+          "replay_count": 0,
+          "card_state_key": "SURVIVOR+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=8|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "card_state_occurrence": 0,
+          "ends_player_turn": false,
+          "card_upgrade_level": 0,
+          "card_enchantment_id": "",
+          "is_executable": true,
+          "action_title": ""
+        },
+        "boundary": "None",
+        "fixed_prediction_ms": 2351.525800069794,
+        "native_replay_ms": 2819.3757000844926,
+        "matched_actions": 26,
+        "strict_terminal": true,
+        "outcome": {
+          "initial_hp": 55,
+          "final_hp": 46,
+          "hp_lost": 9,
+          "hp_healed": 0,
+          "self_damage": 0,
+          "combat_ended": true,
+          "survived": true,
+          "final_enemy_hp": 0,
+          "potions": [],
+          "unattributed_hp_loss": 0
+        },
+        "frame_digests": [
+          "4c7a53e1db6eec0c5ae9cbc828e64484de8c5aaa56f7651b99460526d1c02ffa",
+          "8c79c0efd45a3b5fb5b9c1962a570ff7054df45173796fd857a1cc1a5cff941f",
+          "a5719e174972b2b871b6c748f2dde6e6f798beb04045ffabda4be214bf4ae983",
+          "332f07cf8650de76ee2c41a5972f7e3f4e3aff0c0d533b7d036e6f895590d509",
+          "993156adb872ca4d1fd9c619e313342d76c1c02171b316c9ca0f3bb9fa08a8ee",
+          "16fbb0c973b35eb8605af95ef6c9abc3a649b34a959e7bc460767ee3cfc7cea9",
+          "3e5a3b9eb74891937948316aded4dc485a4c424e8fd56f4b476a79310251d512",
+          "78fc7730d12b507e2f60ee6e4c8aff0114166084fb7b5c2a51e7d40ccaee8d42",
+          "d327c9f33be270a10465acca7a4f85e6adbd184c43f817a3dc045aade568afc5",
+          "ee928d7cbd84ca77dd8f6f5104a34bf74a99da3e1f5cea0c4cec24b5bdbf0b13",
+          "0b91d1b8d8087e4ad29265a389da66a1bdbfdc80a830f84aaea2ee8439aef177",
+          "b0f5e03878a4d98b537c20a249b73c6068c4ba7f1cbc010c90bc624a4a92763e",
+          "db2cc48f6f9c289aab7387db4b578332d08fd0f9fb406713fb405404a8f6ff42",
+          "af724d720372cdd0df1ab2679eca811c3cf499017905629f44dd2c7b8c4a1a58",
+          "87783e3580c253965b66a3101f589c2c7c9bc1788d63bdb5949768beb12ac9d2",
+          "4729b892c2b43fc73cb7fed853fa353291cb33b52dd196afd9aae7e907857a31",
+          "342c5dfdf5500d1b3d84ed05dd88a7876aaea980fdbd5344ba4821d5827b0720",
+          "1060d083cf74e4dc00722f3fca55bcbf7a9b1061ad8b714880ec1f9a36c9a4a4",
+          "1cab34ccbb52e47471ec370f4f63205b01ab3741db3b1ae83244ce6dec0ea410",
+          "6c985bd6b2ee10b7e96eead0be30e6c764c1f1f3524dda92b1c3fbda824084dd",
+          "c712bdf9d483a5782c6feb1d3a564474836eea9ccac8e3afaedc0539b4dbba65",
+          "e7bf9db8e5bab4d45f285b7b7bc53270d87ad3ec5de6e4088b9cadc3eb90af5b",
+          "226e6a93b97ba57f1b4a83b79fd5bba05dd70eb84b175ae1b8363f42cfaa089e",
+          "a35b7c3e4729d5a369cca54c240dd431ea5acae70cb700b2cb09828c9cca321d",
+          "8354a5925dce516388cbdd1263be3bfbf5f30db86c2caef872a3f89716e5ff7c",
+          "95bb495e7391d3f4e2fa0cc79bb7e863eaf7112d531e172c9b20718c1dd46d15"
+        ]
+      },
+      "prefix": {
+        "elapsed_ms": 2020.3027999959886,
+        "choice": {
+          "binding": {
+            "surface": "cards",
+            "effect": "Discard",
+            "option": 4,
+            "source_index": 4,
+            "selected": {
+              "card_id": "DAGGER_SPRAY",
+              "upgrade_level": 0,
+              "state_key": "DAGGER_SPRAY+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=4;HitCount=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "source_occurrence": 0,
+              "option_occurrence": 0
+            },
+            "menu": [
+              "DEFEND_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "DEFEND_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "DEFEND_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "ACCURACY+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=AccuracyPower=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "DAGGER_SPRAY+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=4;HitCount=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "DEFEND_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+            ]
+          },
+          "destination_verified": true
+        },
+        "pre_audit": {
+          "type": "f2_audit",
+          "stamp": "ecf67edc7b9e0cb58095153d9c6190c54856b6471409c8644aa003c16ac8f7d8",
+          "rng": {
+            "shuffle": 1,
+            "generation": 0,
+            "selection": 0,
+            "monster_ai": 0
+          }
+        },
+        "post_audit": {
+          "type": "f2_audit",
+          "stamp": "268574d52d6947d5f3dab01a44020007d8686b6a597ff87487a7cd4cf1eb2643",
+          "rng": {
+            "shuffle": 1,
+            "generation": 0,
+            "selection": 0,
+            "monster_ai": 0
+          }
+        },
+        "native_action": {
+          "action": "play_card",
+          "args": {
+            "card_index": 2
+          }
+        },
+        "native_frame_sha256": "4c7a53e1db6eec0c5ae9cbc828e64484de8c5aaa56f7651b99460526d1c02ffa",
+        "predicted_frame_sha256": "4c7a53e1db6eec0c5ae9cbc828e64484de8c5aaa56f7651b99460526d1c02ffa",
+        "fixed_prediction_ms": 3133.361699990928
+      }
+    }
+  }
+}
