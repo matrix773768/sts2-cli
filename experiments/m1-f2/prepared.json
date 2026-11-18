@@ -1,0 +1,296 @@
+[
+  {
+    "root": "08ab5179e7ef74c129797f580aa621d7c1dbe5e8b2b68652e2cc30e6ecd16684",
+    "hand_order": true,
+    "request": {
+      "step": 1,
+      "action": "PREPARED",
+      "source": "hand",
+      "effect": "discard",
+      "min_select": 1,
+      "max_select": 1,
+      "allow_empty": false,
+      "energy": 3,
+      "turn": 1,
+      "candidates": [
+        {
+          "index": 0,
+          "id": "DEFEND_SILENT",
+          "upgrade": 0,
+          "cost": 1,
+          "type": "Skill",
+          "damage": 0,
+          "block": 5,
+          "key": "DEFEND_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+        },
+        {
+          "index": 1,
+          "id": "STRIKE_SILENT",
+          "upgrade": 0,
+          "cost": 1,
+          "type": "Attack",
+          "damage": 6,
+          "block": 0,
+          "key": "STRIKE_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+        },
+        {
+          "index": 2,
+          "id": "PREPARED",
+          "upgrade": 0,
+          "cost": 0,
+          "type": "Skill",
+          "damage": 0,
+          "block": 0,
+          "key": "PREPARED+0|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+        },
+        {
+          "index": 3,
+          "id": "PREPARED",
+          "upgrade": 0,
+          "cost": 0,
+          "type": "Skill",
+          "damage": 0,
+          "block": 0,
+          "key": "PREPARED+0|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+        },
+        {
+          "index": 4,
+          "id": "PREPARED",
+          "upgrade": 0,
+          "cost": 0,
+          "type": "Skill",
+          "damage": 0,
+          "block": 0,
+          "key": "PREPARED+0|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+        },
+        {
+          "index": 5,
+          "id": "DEFEND_SILENT",
+          "upgrade": 0,
+          "cost": 1,
+          "type": "Skill",
+          "damage": 0,
+          "block": 5,
+          "key": "DEFEND_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+        },
+        {
+          "index": 6,
+          "id": "STRIKE_SILENT",
+          "upgrade": 0,
+          "cost": 1,
+          "type": "Attack",
+          "damage": 6,
+          "block": 0,
+          "key": "STRIKE_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+        }
+      ],
+      "indexes": [
+        0
+      ]
+    },
+    "check": {
+      "step": 1,
+      "action": "PREPARED",
+      "discard": true,
+      "minimum": 1,
+      "maximum": 1,
+      "instances": [
+        {
+          "option": 0,
+          "discard_index": 0,
+          "absent_from_hand": true,
+          "absent_from_exhaust": true,
+          "id": "DEFEND_SILENT"
+        }
+      ],
+      "rng_at_choice": {
+        "shuffle": 1,
+        "generation": 0,
+        "selection": 0,
+        "monster_ai": 0
+      },
+      "rng_after": {
+        "shuffle": 1,
+        "generation": 0,
+        "selection": 0,
+        "monster_ai": 0
+      }
+    },
+    "pre_audit": {
+      "stamp": "08ab5179e7ef74c129797f580aa621d7c1dbe5e8b2b68652e2cc30e6ecd16684",
+      "rng": {
+        "shuffle": 1,
+        "generation": 0,
+        "selection": 0,
+        "monster_ai": 0
+      }
+    },
+    "post_audit": {
+      "stamp": "19c4596f08a14ce05549458a6aca23ab4d7daedcb4eaf4c13998e167ce24f415",
+      "rng": {
+        "shuffle": 1,
+        "generation": 0,
+        "selection": 0,
+        "monster_ai": 0
+      }
+    },
+    "next_turn": 2,
+    "next_audit": {
+      "type": "f2_audit",
+      "stamp": "2de816b2c2d2c1de2d2f42345c2d1d73b592e72b7995d833a4086104851e558c",
+      "rng": {
+        "shuffle": 2,
+        "generation": 0,
+        "selection": 0,
+        "monster_ai": 0
+      }
+    }
+  },
+  {
+    "root": "08ab5179e7ef74c129797f580aa621d7c1dbe5e8b2b68652e2cc30e6ecd16684",
+    "hand_order": false,
+    "request": {
+      "step": 1,
+      "action": "PREPARED",
+      "source": "hand",
+      "effect": "discard",
+      "min_select": 1,
+      "max_select": 1,
+      "allow_empty": false,
+      "energy": 3,
+      "turn": 1,
+      "candidates": [
+        {
+          "index": 0,
+          "id": "DEFEND_SILENT",
+          "upgrade": 0,
+          "cost": 1,
+          "type": "Skill",
+          "damage": 0,
+          "block": 5,
+          "key": "DEFEND_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+        },
+        {
+          "index": 1,
+          "id": "STRIKE_SILENT",
+          "upgrade": 0,
+          "cost": 1,
+          "type": "Attack",
+          "damage": 6,
+          "block": 0,
+          "key": "STRIKE_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+        },
+        {
+          "index": 2,
+          "id": "PREPARED",
+          "upgrade": 0,
+          "cost": 0,
+          "type": "Skill",
+          "damage": 0,
+          "block": 0,
+          "key": "PREPARED+0|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+        },
+        {
+          "index": 3,
+          "id": "PREPARED",
+          "upgrade": 0,
+          "cost": 0,
+          "type": "Skill",
+          "damage": 0,
+          "block": 0,
+          "key": "PREPARED+0|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+        },
+        {
+          "index": 4,
+          "id": "PREPARED",
+          "upgrade": 0,
+          "cost": 0,
+          "type": "Skill",
+          "damage": 0,
+          "block": 0,
+          "key": "PREPARED+0|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+        },
+        {
+          "index": 5,
+          "id": "DEFEND_SILENT",
+          "upgrade": 0,
+          "cost": 1,
+          "type": "Skill",
+          "damage": 0,
+          "block": 5,
+          "key": "DEFEND_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+        },
+        {
+          "index": 6,
+          "id": "STRIKE_SILENT",
+          "upgrade": 0,
+          "cost": 1,
+          "type": "Attack",
+          "damage": 6,
+          "block": 0,
+          "key": "STRIKE_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+        }
+      ],
+      "indexes": [
+        2
+      ]
+    },
+    "check": {
+      "step": 1,
+      "action": "PREPARED",
+      "discard": true,
+      "minimum": 1,
+      "maximum": 1,
+      "instances": [
+        {
+          "option": 2,
+          "discard_index": 0,
+          "absent_from_hand": true,
+          "absent_from_exhaust": true,
+          "id": "PREPARED"
+        }
+      ],
+      "rng_at_choice": {
+        "shuffle": 1,
+        "generation": 0,
+        "selection": 0,
+        "monster_ai": 0
+      },
+      "rng_after": {
+        "shuffle": 1,
+        "generation": 0,
+        "selection": 0,
+        "monster_ai": 0
+      }
+    },
+    "pre_audit": {
+      "stamp": "08ab5179e7ef74c129797f580aa621d7c1dbe5e8b2b68652e2cc30e6ecd16684",
+      "rng": {
+        "shuffle": 1,
+        "generation": 0,
+        "selection": 0,
+        "monster_ai": 0
+      }
+    },
+    "post_audit": {
+      "stamp": "6a64ead74ac6184b80c4696876ccc1ddbf242f2375ae648438344f6839674008",
+      "rng": {
+        "shuffle": 1,
+        "generation": 0,
+        "selection": 0,
+        "monster_ai": 0
+      }
+    },
+    "next_turn": 2,
+    "next_audit": {
+      "type": "f2_audit",
+      "stamp": "2de816b2c2d2c1de2d2f42345c2d1d73b592e72b7995d833a4086104851e558c",
+      "rng": {
+        "shuffle": 2,
+        "generation": 0,
+        "selection": 0,
+        "monster_ai": 0
+      }
+    }
+  }
+]
