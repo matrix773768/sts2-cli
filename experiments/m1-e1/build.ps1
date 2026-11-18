@@ -1,8 +1,12 @@
-param([switch]$Repair)
+param([switch]$Repair, [switch]$TerminalParity)
 $ErrorActionPreference = 'Stop'
 $base=(Resolve-Path CombatSolver-m1-cs1).Path
 $src="$base/CombatSolver-78e4545e825e58c3d999354b1ffcd54241b1d2cf"
 $target = if ($Repair) { "CombatSolver-m1-e1/repair" } else { "CombatSolver-m1-e1" }
+if ($TerminalParity) {
+    if (!$Repair) { throw 'Terminal parity uses the Q3 repair harness' }
+    $target = 'CombatSolver-m1-e2/repair'
+}
 $work=(New-Item -ItemType Directory $target -Force).FullName
 $probe="$work/OfflineSearchHarness"
 New-Item -ItemType Directory $probe -Force | Out-Null
@@ -57,6 +61,22 @@ Instrument '            if (selector.Requested || status == "execution_timeout")
             if (selector.Requested || status == "execution_timeout")'
 Instrument '        File.WriteAllText(Path.Combine(output, "fast.json")' '        route.Finish(status);
         File.WriteAllText(Path.Combine(output, "fast.json")'
+if ($TerminalParity) {
+    Copy-Item "$PSScriptRoot/../m1-e2/TerminalProbe.cs" $probe
+    $routeSource = [IO.File]::ReadAllText("$probe/RouteProbe.cs").Replace(
+        'internal sealed class RouteProbe', 'internal sealed partial class RouteProbe').Replace(
+        'Compare(index, _nativeTerminal ?? Native());',
+        'Compare(index, ObserveActionReturn(index));').Replace(
+        'var benchmark = _matched > 0 ? Benchmark() : null;',
+        'var benchmark = _matched > 0 ? Benchmark() : null; FinishTerminal(nativeStatus, complete);')
+    [IO.File]::WriteAllText("$probe/RouteProbe.cs",$routeSource)
+    Instrument '        _finish = () => { route.CaptureTerminal(); return ledger.Capture(combat, ended: true); };' @'
+        using var lifecycle = route.InstallLifecycle();
+        _finish = () => { route.CaptureTerminal(); return ledger.Capture(combat, ended: true); };
+'@
+    Instrument '            selector.Begin(i + 1, selected?.Id);' '            route.BeforeAction(i + 1);
+            selector.Begin(i + 1, selected?.Id);'
+}
 [IO.File]::WriteAllText("$probe/FastCombat.cs",$fast)
 $p="$probe/Program.cs"
 $t=[IO.File]::ReadAllText($p)
