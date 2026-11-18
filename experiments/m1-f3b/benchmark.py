@@ -46,12 +46,14 @@ def prepare_native(output, root, result, *, restore=f3a.restored):
     return preparation, plan
 
 
-def expect_native(output, root, result, *, restore=f3a.restored):
+def expect_native(output, root, result, *, restore=f3a.restored, keep_frames=False):
     preparation, plan = prepare_native(output, root, result, restore=restore)
     if plan is None:
         return preparation
     native = f3a.replay(output, root, plan, restore=restore)
     native["preparation"] = preparation
+    if keep_frames:
+        native["fixed_plan"] = plan
     return native
 
 
@@ -70,31 +72,45 @@ def search(output, root, arm, potions, cap, rejected, *, restore=f3a.restored):
         return result
 
 
-def run_cell(output, root, arm, potions, cap, *, restore=f3a.restored):
+def run_cell(output, root, arm, potions, cap, *, restore=f3a.restored,
+             charge_fixed=False, keep_frames=False):
     trials, rejected, compact = [], [], []
     used = 0
+    fixed = 0
     status = "not_run"
     first_prediction = None
     native_win = None
     start = perf_counter()
     for _ in range(MAX_NATIVE_CHECKS):
-        if used == cap:
+        if used + fixed == cap:
             break
         try:
-            result = search(output, root, arm, potions, cap - used, rejected, restore=restore)
+            result = search(output, root, arm, potions, cap - used - fixed, rejected, restore=restore)
         except (f1.i2.StopRun, RuntimeError, OSError, TimeoutError, f3a.Difference) as error:
-            result = dict(status=f1.classify(error), detail=str(error), transitions=0)
+            # In strict accounting a failed transport cannot expose its partial cost.
+            result = dict(status=f1.classify(error), detail=str(error),
+                          transitions=cap - used - fixed if charge_fixed else 0,
+                          **({"cost_is_upper_bound": True} if charge_fixed else {}))
         used += result["transitions"]
         status = result["status"]
         if status == "predicted_win":
             if first_prediction is None:
                 first_prediction = used
-            verified = expect_native(output, root, result, restore=restore)
+            if charge_fixed:
+                cost = len(result["actions"])
+                if cost > cap - used - fixed:
+                    status = "prediction_only_budget"
+                    trials.append(result | {"validation_skipped": status})
+                    compact.append(dict(status=status, transitions=result["transitions"],
+                                        winner_key=result["winner_key"]))
+                    break
+                fixed += cost
+            verified = expect_native(output, root, result, restore=restore, keep_frames=keep_frames)
             result["verification"] = verified
             status = verified["status"]
             if status == "win":
                 status = "native_win"
-                native_win = used
+                native_win = used + fixed
             else:
                 rejected.append(result["winner_key"])
         trials.append(result)
@@ -107,7 +123,7 @@ def run_cell(output, root, arm, potions, cap, *, restore=f3a.restored):
                                    for stop in sorted({n["frame"]["stop"] for n in result["history"]})}
         if "verification" in result:
             brief["verification"] = {k: v for k, v in result["verification"].items()
-                                     if k not in ("trace", "first_difference")}
+                                     if k not in ("trace", "first_difference", "fixed_plan")}
             if status == "native_win":
                 winner = [r for r in result["routes"] if r["stop"] == "predicted_win"]
                 brief["winning_plan"] = winner[-1]["plan"] if winner else {"strategy": "beam"}
@@ -118,9 +134,9 @@ def run_cell(output, root, arm, potions, cap, *, restore=f3a.restored):
     for tier in [v for v in TIERS if v <= cap] or [cap]:
         if native_win is not None and native_win <= tier:
             tiers[str(tier)] = "native_win"
-        elif used >= tier and (first_prediction is None or first_prediction > tier):
+        elif used + fixed >= tier and (first_prediction is None or first_prediction > tier):
             tiers[str(tier)] = "no_win_within_budget"
-        elif used > tier:
+        elif used + fixed > tier:
             tiers[str(tier)] = "prediction_only"
         else:
             tiers[str(tier)] = status
@@ -130,7 +146,8 @@ def run_cell(output, root, arm, potions, cap, *, restore=f3a.restored):
     print(label, status, used, flush=True)
     return dict(id=root["id"], encounter=root["identity"]["encounter"], arm=arm, potions=potions,
                 status=status, used=used, first_prediction=first_prediction, first_native=native_win,
-                tiers=tiers, hot_ms=sum(t.get("hot_ms", 0) for t in trials),
+                tiers=tiers, **({"fixed_transitions": fixed, "total_charged": used + fixed}
+                                if charge_fixed else {}), hot_ms=sum(t.get("hot_ms", 0) for t in trials),
                 cpu_ms=sum(t.get("cpu_ms", 0) for t in trials),
                 wall_ms=f1.ms(start), trials=compact, history=archive_path.name)
 

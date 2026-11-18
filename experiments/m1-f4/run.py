@@ -22,13 +22,14 @@ def history(path):
         return json.load(stream)
 
 
-def optimize(output, root, seed, cap, restore):
+def optimize(output, root, seed, cap, restore, *, keep_frames=False):
     clock = perf_counter()
     try:
         with restore(output, root) as (game, _):
             before = game.request("f1_audit")
             response = game.request("i1_f4", arm="C", potions=False, cap=cap, rejected=[],
-                                    seed_actions=seed["actions"], seed_stamps=seed["stamps"])
+                                    seed_actions=seed["actions"], seed_stamps=seed["stamps"],
+                                    include_history=keep_frames)
             f3a.equal("native refinement source", before, game.request("f1_audit"))
         if "search" not in response:
             return dict(status=response["status"], transitions=0, candidates=[], reason=response,
@@ -58,7 +59,7 @@ def accepted_resources(native):
     return resources
 
 
-def refine(output, root, incumbent, spent, cap, restore, cache):
+def refine(output, root, incumbent, spent, cap, restore, cache, *, keep_frames=False):
     started = perf_counter()
     baseline = accepted_resources(incumbent["verification"])
     chosen = dict(key=incumbent["winner_key"], resources=baseline, source="first_strict")
@@ -75,7 +76,7 @@ def refine(output, root, incumbent, spent, cap, restore, cache):
     # Additional checks can use whatever remains after search and earlier checks.
     reserve = min(f3a.MAX_PLAN, (remaining - len(incumbent["actions"])) // 2)
     search_cap = remaining - reserve
-    quality = optimize(output, root, incumbent, search_cap, restore)
+    quality = optimize(output, root, incumbent, search_cap, restore, keep_frames=keep_frames)
     f3b.save_history(output / "quality.json.gz", quality)
     observed = quality["transitions"]
     charged = search_cap if observed is None else observed
@@ -105,7 +106,8 @@ def refine(output, root, incumbent, spent, cap, restore, cache):
         else:
             clock = perf_counter()
             evidence = f3b.expect_native(output, root, {
-                "actions": candidate["actions"], "stamps": candidate["stamps"]}, restore=restore)
+                "actions": candidate["actions"], "stamps": candidate["stamps"]},
+                restore=restore, keep_frames=keep_frames)
             native_ms = bank.elapsed(clock)
             origin = output.name
             cache[key] = (evidence, origin)

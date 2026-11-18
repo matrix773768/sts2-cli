@@ -23,10 +23,22 @@ def bounds(profile, key, lower, upper):
     return values
 
 
-def generate_case(plan, name, profile_name, native):
+def sufficient_copies(rule, counts, slots):
+    """Check each pool and their union after accounting for shared candidates."""
+    attack, guard = set(rule["attack"]), set(rule["guard"])
+    capacity = {card: 2 - counts[card] for card in attack | guard}
+    return (sum(capacity[card] for card in attack) >= (slots + 1) // 2
+            and sum(capacity[card] for card in guard) >= slots // 2
+            and sum(capacity.values()) >= slots)
+
+
+def generate_case(plan, name, profile_name, native, *, instance=None):
     rule, profile = plan["rules"][name], plan["profiles"][profile_name]
     key = f"{name}-{profile_name}"
-    case_seed = int(bank.stamp([VERSION, plan["generator_seed"], name, profile_name])[:16], 16)
+    seed_fields = [VERSION, plan["generator_seed"], name, profile_name]
+    if instance is not None:
+        seed_fields.extend(instance)
+    case_seed = int(bank.stamp(seed_fields)[:16], 16)
     rng = random.Random(case_seed)
     character = next((c for c in native["characters"] if c["name"] == rule["character"]), None)
     if character is None:
@@ -52,12 +64,23 @@ def generate_case(plan, name, profile_name, native):
     size = rng.randint(*bounds(profile, "deck", 12, 22))
     deck = [*rule["keep"], *rule["anchors"]]
     counts = Counter(rule["anchors"])
-    for position in range(size // 2 - len(rule["anchors"])):
+    slots_to_fill = size // 2 - len(rule["anchors"])
+    for position in range(slots_to_fill):
         role = "attack" if position % 2 == 0 else "guard"
         eligible = [c for c in rule[role] if counts[c] < 2]
         if not eligible:
             raise ValueError(f"{key}: {role} pool exhausted under the two-copy ceiling")
         choice = rng.choice(eligible)
+        if instance is not None:
+            remaining = slots_to_fill - position - 1
+            next_rule = rule if role == "guard" else rule | {"attack": rule["guard"], "guard": rule["attack"]}
+            def feasible(card):
+                return sufficient_copies(next_rule, counts + Counter({card: 1}), remaining)
+            if not feasible(choice):
+                feasible_cards = [card for card in eligible if feasible(card)]
+                if not feasible_cards:
+                    raise ValueError(f"{key}: insufficient native cards for the remaining role slots")
+                choice = rng.choice(feasible_cards)
         deck.append(choice)
         counts[choice] += 1
     deck.extend(card for card in basics for _ in range(2))

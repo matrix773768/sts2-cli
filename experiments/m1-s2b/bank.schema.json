@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Synthetic Combat Bank v1",
+  "oneOf": [
+    {"$ref": "#/$defs/plan"},
+    {"$ref": "#/$defs/index"},
+    {"$ref": "#/$defs/artifact"}
+  ],
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "split": {"enum": ["development", "validation", "test"]},
+    "versions": {
+      "type": "object",
+      "required": ["game", "game_sha256", "headless_sha256", "solver_sha256", "coreclr", "synthetic_spec", "initializer"]
+    },
+    "candidate": {
+      "allOf": [{"$ref": "../m1-s2a/dataset.schema.json#/$defs/candidate"}],
+      "required": ["id", "replica", "family", "split", "synthetic", "native_reachable"],
+      "properties": {
+        "id": {"$ref": "#/$defs/hash"},
+        "replica": {"type": "integer", "minimum": 0},
+        "family": {"type": "array", "items": {"type": "string"}, "minItems": 3, "maxItems": 3},
+        "split": {"$ref": "#/$defs/split"},
+        "synthetic": {"const": true},
+        "native_reachable": {"const": "unknown"}
+      }
+    },
+    "plan": {
+      "type": "object",
+      "required": ["schema", "generator", "cohort", "config", "config_sha256", "catalog_sha256", "versions", "cases", "evaluation_ids"],
+      "properties": {
+        "schema": {"const": 1},
+        "generator": {"const": "m1-s2b-v1"},
+        "cohort": {"enum": ["pilot", "formal"]},
+        "config_sha256": {"$ref": "#/$defs/hash"},
+        "catalog_sha256": {"$ref": "#/$defs/hash"},
+        "versions": {"$ref": "#/$defs/versions"},
+        "cases": {"type": "array", "items": {"$ref": "#/$defs/candidate"}},
+        "evaluation_ids": {"type": "array", "items": {"$ref": "#/$defs/hash"}, "uniqueItems": true}
+      }
+    },
+    "index": {
+      "type": "object",
+      "required": ["schema", "generator", "plan_sha256", "versions", "synthetic", "native_reachable", "coverage", "status_counts", "evaluation_ids", "rows"],
+      "properties": {
+        "schema": {"const": 1},
+        "generator": {"const": "m1-s2b-v1"},
+        "plan_sha256": {"$ref": "#/$defs/hash"},
+        "versions": {"$ref": "#/$defs/versions"},
+        "synthetic": {"const": true},
+        "native_reachable": {"const": "unknown"},
+        "rows": {"type": "array", "items": {
+          "type": "object",
+          "required": ["id", "split", "rule", "profile", "case_seed", "spec_sha256", "character", "act", "act_variant", "encounter", "seed", "hp", "status"],
+          "properties": {"id": {"$ref": "#/$defs/hash"}, "split": {"$ref": "#/$defs/split"}}
+        }}
+      }
+    },
+    "root_record": {
+      "type": "object",
+      "required": ["case", "status"],
+      "properties": {"case": {"$ref": "#/$defs/candidate"}},
+      "if": {"properties": {"status": {"const": "verified"}}},
+      "then": {
+        "required": ["root", "audit", "native_key"],
+        "properties": {
+          "native_key": {"$ref": "#/$defs/hash"},
+          "root": {
+            "type": "object",
+            "required": ["id", "spec", "public_root", "identity", "native", "versions", "synthetic", "native_verified", "native_reachable", "level"],
+            "properties": {
+              "level": {"const": "L0"},
+              "synthetic": {"const": true},
+              "native_verified": {"const": true},
+              "native_reachable": {"const": "unknown"}
+            }
+          },
+          "audit": {
+            "type": "object", "required": ["rebuilds"],
+            "properties": {"rebuilds": {"type": "array", "minItems": 2, "maxItems": 2}}
+          }
+        }
+      }
+    },
+    "label_record": {
+      "type": "object",
+      "required": ["id", "root_id", "case_id", "split", "policy", "versions", "implementation", "cap", "total_charged", "status", "level", "selected", "offline_oracle", "uses_hidden_rng"],
+      "properties": {
+        "id": {"$ref": "#/$defs/hash"},
+        "case_id": {"$ref": "#/$defs/hash"},
+        "split": {"$ref": "#/$defs/split"},
+        "policy": {"enum": ["f3b", "f4"]},
+        "level": {"enum": ["L0", "L2", "L3"]},
+        "offline_oracle": {"const": true},
+        "uses_hidden_rng": {"const": true},
+        "implementation": {"$ref": "#/$defs/hash"},
+        "cap": {"type": "integer", "minimum": 1},
+        "total_charged": {"type": "integer", "minimum": 0}
+      },
+      "if": {"properties": {"policy": {"const": "f3b"}}},
+      "then": {"required": ["cell", "trials"]},
+      "else": {"required": ["control_label"]}
+    },
+    "artifact": {
+      "type": "object",
+      "required": ["sha256", "record"],
+      "properties": {
+        "sha256": {"$ref": "#/$defs/hash"},
+        "record": {"oneOf": [{"$ref": "#/$defs/root_record"}, {"$ref": "#/$defs/label_record"}]}
+      }
+    }
+  }
+}

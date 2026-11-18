@@ -15,9 +15,9 @@ ROOT = HERE.parents[1]
 
 
 @contextmanager
-def native_neutralize(output, root):
+def native_neutralize(output, root, *, restore=synth.rebuild):
     """Use the native OnPlay in every phase, and preserve the original live root."""
-    with synth.rebuild(output, root) as (game, state):
+    with restore(output, root) as (game, state):
         before = game.request("f1_audit")
         reply = game.request("f1_unpatch_neutralize")
         f3a.equal("known F2 Neutralize patch", {"type": "f2_unpatched", "method": "NeutralizePrefix"}, reply)

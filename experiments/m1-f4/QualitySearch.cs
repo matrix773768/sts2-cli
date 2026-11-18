@@ -19,6 +19,7 @@ internal sealed partial class FirstWin
         if (_potions || seed.Length is < 1 or > ActionLimit || stamps.Length != seed.Length)
             throw new ArgumentException("Expected a bounded dry incumbent and its exact stamps");
 
+        bool history = request.TryGetProperty("include_history", out var include) && include.GetBoolean();
         var attempts = new List<object>();
         var wins = new List<QualityWin>();
         int seedTransitions = 0;
@@ -59,7 +60,7 @@ internal sealed partial class FirstWin
             seed_transitions = seedTransitions, cap = _cap, root_stamp = rootBefore, root_unchanged = true,
             hot_ms = _watch.Elapsed.TotalMilliseconds, peak_working_set_bytes = _process.PeakWorkingSet64,
             reused_prefix_transitions = _reused, candidates = wins, attempts,
-            transition_faults = _transitionFaults,
+            transition_faults = _transitionFaults, history = history ? _history : null,
         };
     }
 

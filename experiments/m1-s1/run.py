@@ -61,8 +61,8 @@ def new_session(output):
     return bank.Session(output, monotonic() + 35, Event())
 
 
-def sample(output, spec, versions, actions=0):
-    with new_session(output) as game:
+def sample(output, spec, versions, actions=0, *, session=new_session):
+    with session(output) as game:
         surfaces, timing = capture(game, spec)
         root = dict(surfaces, id="synthetic-" + bank.stamp([spec, versions, surfaces["identity"]["live"]]),
                     spec=spec, versions=versions, source=ROOT_KIND, synthetic=True,
@@ -83,9 +83,9 @@ def sample(output, spec, versions, actions=0):
     return root, timing, frames
 
 
-def verified_variant(output, spec, versions, actions=0):
-    first, time_a, frames_a = sample(output, spec, versions, actions)
-    second, time_b, frames_b = sample(output, spec, versions, actions)
+def verified_variant(output, spec, versions, actions=0, *, session=new_session):
+    first, time_a, frames_a = sample(output, spec, versions, actions, session=session)
+    second, time_b, frames_b = sample(output, spec, versions, actions, session=session)
     f3a.equal("independent synthetic root", first, second)
     f3a.equal("native legal action differential", frames_a, frames_b)
     f3a.equal("legal action coverage", actions, len(frames_a))
@@ -94,12 +94,12 @@ def verified_variant(output, spec, versions, actions=0):
 
 
 @contextmanager
-def rebuild(output, root):
+def rebuild(output, root, *, session=new_session):
     if root["source"] != ROOT_KIND or not root["native_verified"] or root["native_reachable"] not in (False, "unknown"):
         raise ValueError("Expected an independently verified synthetic root")
     if bank.f1.digest(bank.f1.DLL.read_bytes()) != root["versions"]["headless_sha256"]:
         raise ValueError("Synthetic host binary differs from the recorded root")
-    with new_session(output) as game:
+    with session(output) as game:
         surfaces, _ = capture(game, root["spec"])
         f3a.equal("reconstructed source", {key: root[key] for key in surfaces}, surfaces)
         yield game, surfaces["public_root"]
