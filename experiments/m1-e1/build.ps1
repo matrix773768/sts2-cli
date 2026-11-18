@@ -1,4 +1,4 @@
-param([switch]$Repair, [switch]$TerminalParity, [switch]$TargetedSearch)
+param([switch]$Repair, [switch]$TerminalParity, [switch]$TargetedSearch, [switch]$CrossMechanism)
 $ErrorActionPreference = 'Stop'
 $base=(Resolve-Path CombatSolver-m1-cs1).Path
 $src="$base/CombatSolver-78e4545e825e58c3d999354b1ffcd54241b1d2cf"
@@ -10,6 +10,10 @@ if ($TerminalParity) {
 if ($TargetedSearch) {
     if (!$TerminalParity) { throw 'Targeted search uses the terminal parity harness' }
     $target = 'CombatSolver-m1-q5/repair'
+}
+if ($CrossMechanism) {
+    if (!$TargetedSearch) { throw 'Cross-mechanism search uses the targeted search harness' }
+    $target = 'CombatSolver-m1-q6/repair'
 }
 $work=(New-Item -ItemType Directory $target -Force).FullName
 $probe="$work/OfflineSearchHarness"
@@ -105,6 +109,16 @@ if ($TargetedSearch) {
     Instrument '        route.Finish(status);' '        route.Finish(status);
         route.RunTargetedSearch();
         File.WriteAllText(Path.Combine(output, "risk.json"), JsonSerializer.Serialize(risk.Events, UnattendedTestFiles.JsonOptions));'
+}
+if ($CrossMechanism) {
+    Copy-Item "$PSScriptRoot/../m1-q6/CrossMechanism.cs" $probe
+    $searchSource = [IO.File]::ReadAllText("$probe/TargetedSearch.cs").Replace(
+        'private const int PrefixLength = 18;',
+        'private static int PrefixLength => Environment.GetEnvironmentVariable("M1Q6_CASE") == "regent" ? 8 : 18;').Replace(
+        '_combat.Enemies.SelectMany(e => e.Powers.Select(p =>',
+        '_combat.Enemies.Where(e => e.CurrentHp > 0 && e.IsHittable).SelectMany(e => e.Powers.Select(p =>')
+    [IO.File]::WriteAllText("$probe/TargetedSearch.cs",$searchSource)
+    Instrument '        route.RunTargetedSearch();' '        route.RunCrossMechanism();'
 }
 [IO.File]::WriteAllText("$probe/FastCombat.cs",$fast)
 $p="$probe/Program.cs"

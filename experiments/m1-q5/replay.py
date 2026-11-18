@@ -21,12 +21,12 @@ def save(path, obj):
     path.write_text(json.dumps(obj, indent=2) + "\n", encoding="utf-8")
 
 
-def execute(folder, source, actions, decisions=None):
+def execute(folder, source, actions, decisions=None, *, case=BOSS, prefix=PREFIX, cross_mechanism=None):
     folder.mkdir(parents=True)
     plan = folder / "input.json"
     save(plan, actions)
-    request = e2.load(e2.FIXTURES / f"{BOSS}.json")
-    request["generatedScenarioPath"] = str(e2.FIXTURES / f"{BOSS}-scenario.json")
+    request = e2.load(e2.FIXTURES / f"{case}.json")
+    request["generatedScenarioPath"] = str(e2.FIXTURES / f"{case}-scenario.json")
     request_path = folder / "request.json"
     save(request_path, request)
     env = dict(os.environ, OFFLINE_HARNESS_COMBATSOLVER_DLL=str(e2.BASELINE),
@@ -39,7 +39,11 @@ def execute(folder, source, actions, decisions=None):
         expected = folder / "expected.json"
         save(expected, decisions)
         env.update(M1Q5_SEARCH="0", M1Q5_EXPECTED=str(expected))
-    harness = e2.WORKSPACE / "CombatSolver-m1-q5/repair/bin/OfflineSearchHarness.dll"
+    env.pop("M1Q6_CASE", None)
+    milestone = "q5" if cross_mechanism is None else "q6"
+    if cross_mechanism is not None:
+        env["M1Q6_CASE"] = cross_mechanism
+    harness = e2.WORKSPACE / f"CombatSolver-m1-{milestone}/repair/bin/OfflineSearchHarness.dll"
     command = [str(e2.DOTNET), "--fx-version", "9.0.7", str(harness), "--request", str(request_path),
                "--out", str(folder), "--workspace", str(folder), "--milestone", "M1",
                "--profile", "Custom", "--beam", "24", "--nodes", "2400", "--budget-ms", "15000",
@@ -51,8 +55,10 @@ def execute(folder, source, actions, decisions=None):
     wall = 1000 * (time.monotonic() - start)
     native = e2.load(folder / "fast.json")
     assert (native["root"], native["live"]) == (source["root"], source["live"])
-    assert len(native["steps"]) >= PREFIX
-    for actual, expected in zip(native["steps"][:PREFIX], source["trajectory"][:PREFIX], strict=True):
+    audited_prefix = min(prefix, len(native["steps"]))
+    if cross_mechanism is None or decisions is not None:
+        assert audited_prefix == prefix
+    for actual, expected in zip(native["steps"][:audited_prefix], source["trajectory"][:audited_prefix], strict=True):
         for key in ("turn", "selected", "before", "after"):
             assert actual[key] == expected[key], (folder.name, key)
     audit = e2.load(folder / "audit.json")
@@ -63,7 +69,7 @@ def execute(folder, source, actions, decisions=None):
         "planned": len(actions), "auditStatus": audit["status"], "nativeStatus": native["status"],
         "nativeEndTurn": native["endTurn"], "nativeOutcome": native["outcome"],
         "nativeExecuteMs": sum(step["executeMs"] for step in native["steps"]),
-        "nativeSuffixExecuteMs": sum(step["executeMs"] for step in native["steps"][PREFIX:]),
+        "nativeSuffixExecuteMs": sum(step["executeMs"] for step in native["steps"][prefix:]),
         "nativeLifecycleSemantic": terminal["semantic"], "nativeRisk": e2.load(folder / "risk.json"),
         "publicChecks": [] if decisions is None else e2.load(folder / "public.json"),
         "firstDifference": None if not difference else {
@@ -71,7 +77,7 @@ def execute(folder, source, actions, decisions=None):
             "boundary": difference.get("boundaryReason"),
         },
         "forecastSetupMs": {key: audit[key] for key in ("rootCaptureMs", "solverAdapterMs", "rootForkAndSnapshotMs")},
-        "prefixPredictionMs": sum(step["predictionMs"] for step in audit["steps"][:PREFIX]),
+        "prefixPredictionMs": sum(step["predictionMs"] for step in audit["steps"][:prefix]),
         "compareMs": audit["compareMs"],
         "peakWorkingSetBytes": audit["peakWorkingSetBytes"],
     }
