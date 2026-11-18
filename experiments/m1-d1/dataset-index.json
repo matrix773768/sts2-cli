@@ -1,0 +1,5726 @@
+{
+  "schema": 1,
+  "versions": {
+    "sampler": "m1-d1-v1",
+    "policy": "M1-F2-discard-v1",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "solver_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13",
+    "solver": "0.51.5/78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+    "headless_sha256": "f4dc5c008da2ca6ba7b6210272bbc1ffc817496538162fdb0fd67db679686cba",
+    "coreclr": "9.0.7",
+    "native_identity": "66254c280dbf12075c826fb4d2184e73e603808a56a4e2fe76a1e60dc6f06e0d",
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3"
+  },
+  "metrics": {
+    "roots": 45,
+    "act2_plus": 5,
+    "histories": 8,
+    "act2_plus_histories": 1,
+    "available_roots": 45,
+    "seeds": 8,
+    "attempted_histories": 8,
+    "partitions": {
+      "development": 17,
+      "test": 8,
+      "validation": 20
+    },
+    "partitions_histories": {
+      "development": 3,
+      "test": 1,
+      "validation": 4
+    },
+    "run_status": {
+      "death": 8,
+      "unsupported": 2
+    },
+    "act2_runs": 3,
+    "unassisted_act2_runs": 0,
+    "characters": {
+      "Ironclad": 28,
+      "Silent": 17
+    },
+    "acts": {
+      "1": 40,
+      "2": 5
+    },
+    "rooms": {
+      "Boss": 1,
+      "Elite": 5,
+      "Monster": 39
+    },
+    "encounters": {
+      "BOWLBUGS_WEAK": 3,
+      "BYRDONIS_ELITE": 3,
+      "CUBEX_CONSTRUCT_NORMAL": 1,
+      "FUZZY_WURM_CRAWLER_WEAK": 7,
+      "INKLETS_NORMAL": 3,
+      "MAWLER_NORMAL": 1,
+      "NIBBITS_WEAK": 4,
+      "OVERGROWTH_CRAWLERS": 1,
+      "PHROG_PARASITE_ELITE": 2,
+      "RUBY_RAIDERS_NORMAL": 2,
+      "SHRINKER_BEETLE_WEAK": 5,
+      "SLIMES_NORMAL": 2,
+      "SLIMES_WEAK": 5,
+      "SNAPPING_JAXFRUIT_NORMAL": 2,
+      "THE_KIN_BOSS": 1,
+      "TUNNELER_WEAK": 2,
+      "VINE_SHAMBLER_NORMAL": 1
+    },
+    "mechanisms": {
+      "discard": 17,
+      "draw": 9,
+      "energy_or_cost": 6,
+      "hp_spend": 4,
+      "in_combat_scaling": 5,
+      "permanent_growth": 5,
+      "topdeck": 14
+    },
+    "validation_status": {
+      "pass": 46
+    },
+    "duplicates": 1,
+    "candidates": 46,
+    "seconds": 62.8834786999505,
+    "levels": {
+      "L1": 43,
+      "L3": 2
+    },
+    "evaluation_status": {
+      "hand": {
+        "death": 11,
+        "win": 37
+      },
+      "q1": {
+        "death": 9,
+        "unsupported": 2,
+        "win": 37
+      }
+    },
+    "strict_per_minute": 42.93655592565246,
+    "act2_plus_per_minute": 4.770728436183607,
+    "candidates_per_minute": 43.89070161288918,
+    "terminal_runs_per_minute": 7.633165497893771,
+    "victories_per_minute": 0.0
+  },
+  "roots": [
+    {
+      "id": "f468050d88e48d5d65ed93d4d6fe4611d98415916cac5d311b86e1dea73c9b93",
+      "run_id": "archive-west",
+      "history": "709e01f1854bf74fce4778e26c3785588ddc11b30485f6fe3d02d7dd0f623b6c",
+      "partition": "development",
+      "seed": "run_1",
+      "character": "Ironclad",
+      "ascension": 0,
+      "context": {
+        "act": 2,
+        "act_name": "HIVE.title",
+        "floor": 2,
+        "room_type": "Monster",
+        "boss": {
+          "id": "KNOWLEDGE_DEMON_BOSS",
+          "name": "KNOWLEDGE_DEMON.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "TUNNELER.name"
+        ],
+        "deck_size": 28,
+        "upgrades": 0,
+        "hp": 93,
+        "potions": [
+          null,
+          "DEXTERITY_POTION",
+          "FLEX_POTION"
+        ],
+        "mechanisms": [
+          "draw",
+          "energy_or_cost",
+          "hp_spend",
+          "in_combat_scaling",
+          "permanent_growth",
+          "topdeck"
+        ]
+      },
+      "offline_teacher_assisted": true,
+      "checkpoint_sha256": "680cccad0ddfb7f587d1926714bb83aa32ac369ae444be69901e700902fc5051",
+      "checkpoint_available": true,
+      "live": "61aa29b03d9e1ad0829605359d94c1648da64ed6350038ea9dceb3592d0d3a64",
+      "encounter": "TUNNELER_WEAK",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "922145bb16334084b690fe9a7748033f",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 93,
+            "final_hp": 23,
+            "hp_lost": 70,
+            "hp_healed": 0,
+            "self_damage": 6,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 38,
+          "rounds": 10,
+          "elapsed_ms": 3402.0026000216603
+        },
+        {
+          "id": "88a74f5c62bf412a816b249a129bd736",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 93,
+            "final_hp": 11,
+            "hp_lost": 82,
+            "hp_healed": 0,
+            "self_damage": 8,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 37,
+          "rounds": 11,
+          "elapsed_ms": 3419.777400093153
+        }
+      ]
+    },
+    {
+      "id": "cc2b306131b2a987661524c5d33e4ada8d5522b6df56229520e03eb8ee6e4ecd",
+      "run_id": "archive-west",
+      "history": "709e01f1854bf74fce4778e26c3785588ddc11b30485f6fe3d02d7dd0f623b6c",
+      "partition": "development",
+      "seed": "run_1",
+      "character": "Ironclad",
+      "ascension": 0,
+      "context": {
+        "act": 2,
+        "act_name": "HIVE.title",
+        "floor": 3,
+        "room_type": "Monster",
+        "boss": {
+          "id": "KNOWLEDGE_DEMON_BOSS",
+          "name": "KNOWLEDGE_DEMON.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "BOWLBUG_ROCK.name",
+          "BOWLBUG_EGG.name"
+        ],
+        "deck_size": 29,
+        "upgrades": 1,
+        "hp": 17,
+        "potions": [
+          "BLESSING_OF_THE_FORGE",
+          "DEXTERITY_POTION",
+          "FLEX_POTION"
+        ],
+        "mechanisms": [
+          "draw",
+          "energy_or_cost",
+          "hp_spend",
+          "in_combat_scaling",
+          "permanent_growth",
+          "topdeck"
+        ]
+      },
+      "offline_teacher_assisted": true,
+      "checkpoint_sha256": "85ca27a2cbe3044ae060a94d18eb4607f7152d32dcfd1ca99941fdb6b8b8d2b7",
+      "checkpoint_available": true,
+      "live": "efa9e92eee3d3ef44371bc756c01dfc779f639aa488aa1fa89be293f6353c7bb",
+      "encounter": "BOWLBUGS_WEAK",
+      "level": "L3",
+      "evaluations": [
+        {
+          "id": "dd4e612f90934fe4ae355fbd8ad015a6",
+          "policy": "hand",
+          "status": "death",
+          "outcome": {
+            "initial_hp": 17,
+            "final_hp": 0,
+            "hp_lost": 17,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": false,
+            "survived": false,
+            "final_enemy_hp": 56,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 4,
+          "rounds": 1,
+          "elapsed_ms": 3115.7808999996632
+        },
+        {
+          "id": "0b39bb22559545d88af9ca21e600a90b",
+          "policy": "q1",
+          "status": "death",
+          "outcome": {
+            "initial_hp": 17,
+            "final_hp": 0,
+            "hp_lost": 17,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": false,
+            "survived": false,
+            "final_enemy_hp": 22,
+            "potions": [],
+            "unattributed_hp_loss": 3
+          },
+          "action_count": 8,
+          "rounds": 2,
+          "elapsed_ms": 3101.183199789375
+        },
+        {
+          "id": "bdafbf13b9824d61b681b42891b27eda",
+          "policy": "hand",
+          "status": "death",
+          "outcome": {
+            "initial_hp": 17,
+            "final_hp": 0,
+            "hp_lost": 17,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": false,
+            "survived": false,
+            "final_enemy_hp": 56,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 4,
+          "rounds": 1,
+          "elapsed_ms": 1789.2922000028193
+        },
+        {
+          "id": "71598ac629994dd79904bf1ca4d4b959",
+          "policy": "q1",
+          "status": "death",
+          "outcome": {
+            "initial_hp": 17,
+            "final_hp": 0,
+            "hp_lost": 17,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": false,
+            "survived": false,
+            "final_enemy_hp": 22,
+            "potions": [],
+            "unattributed_hp_loss": 3
+          },
+          "action_count": 8,
+          "rounds": 2,
+          "elapsed_ms": 1938.02100000903
+        }
+      ]
+    },
+    {
+      "id": "26d03ad6bd396d01641c4bcd29d6484462594f7ee128eaafe2e695df6f1f470e",
+      "run_id": "archive-east",
+      "history": "709e01f1854bf74fce4778e26c3785588ddc11b30485f6fe3d02d7dd0f623b6c",
+      "partition": "development",
+      "seed": "run_1",
+      "character": "Ironclad",
+      "ascension": 0,
+      "context": {
+        "act": 2,
+        "act_name": "HIVE.title",
+        "floor": 6,
+        "room_type": "Monster",
+        "boss": {
+          "id": "KNOWLEDGE_DEMON_BOSS",
+          "name": "KNOWLEDGE_DEMON.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "BOWLBUG_ROCK.name",
+          "BOWLBUG_NECTAR.name"
+        ],
+        "deck_size": 29,
+        "upgrades": 1,
+        "hp": 17,
+        "potions": [
+          "BLESSING_OF_THE_FORGE",
+          "DEXTERITY_POTION",
+          "FLEX_POTION"
+        ],
+        "mechanisms": [
+          "draw",
+          "energy_or_cost",
+          "hp_spend",
+          "in_combat_scaling",
+          "permanent_growth",
+          "topdeck"
+        ]
+      },
+      "offline_teacher_assisted": true,
+      "checkpoint_sha256": "a713c1e80b8dbf3a833153d2760a2ea0c0d0b59591149d95b9cfaef1ae308d0f",
+      "checkpoint_available": true,
+      "live": "af1f8ef845f6b59760a93d1969ac3af2620fd747c07ee06f002dac615796d6a7",
+      "encounter": "BOWLBUGS_WEAK",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "97ce20ca924348f0a14fd4ee3b240922",
+          "policy": "hand",
+          "status": "death",
+          "outcome": {
+            "initial_hp": 17,
+            "final_hp": 0,
+            "hp_lost": 17,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": false,
+            "survived": false,
+            "final_enemy_hp": 52,
+            "potions": [],
+            "unattributed_hp_loss": 4
+          },
+          "action_count": 8,
+          "rounds": 2,
+          "elapsed_ms": 3019.845899892971
+        },
+        {
+          "id": "b43f1c5788214f92b073a080a86f319e",
+          "policy": "q1",
+          "status": "death",
+          "outcome": {
+            "initial_hp": 17,
+            "final_hp": 0,
+            "hp_lost": 17,
+            "hp_healed": 0,
+            "self_damage": 6,
+            "combat_ended": false,
+            "survived": false,
+            "final_enemy_hp": 38,
+            "potions": [],
+            "unattributed_hp_loss": 1
+          },
+          "action_count": 10,
+          "rounds": 3,
+          "elapsed_ms": 3107.70839988254
+        }
+      ]
+    },
+    {
+      "id": "514b8947bc78164d08f85f109920daacea77acf298c34205708d5b2cbbc2d0e2",
+      "run_id": "archive-middle",
+      "history": "709e01f1854bf74fce4778e26c3785588ddc11b30485f6fe3d02d7dd0f623b6c",
+      "partition": "development",
+      "seed": "run_1",
+      "character": "Ironclad",
+      "ascension": 0,
+      "context": {
+        "act": 2,
+        "act_name": "HIVE.title",
+        "floor": 2,
+        "room_type": "Monster",
+        "boss": {
+          "id": "KNOWLEDGE_DEMON_BOSS",
+          "name": "KNOWLEDGE_DEMON.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "TUNNELER.name"
+        ],
+        "deck_size": 27,
+        "upgrades": 0,
+        "hp": 93,
+        "potions": [
+          null,
+          "DEXTERITY_POTION",
+          "FLEX_POTION"
+        ],
+        "mechanisms": [
+          "draw",
+          "in_combat_scaling",
+          "permanent_growth",
+          "topdeck"
+        ]
+      },
+      "offline_teacher_assisted": true,
+      "checkpoint_sha256": "47b789095519b3d10a7a268c0cf825b43b77302d8d31c519ae630332e0b43c6f",
+      "checkpoint_available": true,
+      "live": "3ea05592d1887452948a43eb266331db79af65b6aeefd1e431022217cf8e1131",
+      "encounter": "TUNNELER_WEAK",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "f70f7eccccb34e69b95063afbcaa5a98",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 93,
+            "final_hp": 11,
+            "hp_lost": 82,
+            "hp_healed": 0,
+            "self_damage": 4,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 37,
+          "rounds": 11,
+          "elapsed_ms": 2785.072600003332
+        },
+        {
+          "id": "60dca2d1a547456fb209a38696a07648",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 93,
+            "final_hp": 16,
+            "hp_lost": 77,
+            "hp_healed": 0,
+            "self_damage": 4,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 45,
+          "rounds": 14,
+          "elapsed_ms": 3462.5526000745595
+        }
+      ]
+    },
+    {
+      "id": "cbb20f193dca08a16711281a57fa4863942defcaee91130a516dd05f9bcc8a5a",
+      "run_id": "archive-middle",
+      "history": "709e01f1854bf74fce4778e26c3785588ddc11b30485f6fe3d02d7dd0f623b6c",
+      "partition": "development",
+      "seed": "run_1",
+      "character": "Ironclad",
+      "ascension": 0,
+      "context": {
+        "act": 2,
+        "act_name": "HIVE.title",
+        "floor": 5,
+        "room_type": "Monster",
+        "boss": {
+          "id": "KNOWLEDGE_DEMON_BOSS",
+          "name": "KNOWLEDGE_DEMON.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "BOWLBUG_ROCK.name",
+          "BOWLBUG_NECTAR.name"
+        ],
+        "deck_size": 27,
+        "upgrades": 1,
+        "hp": 22,
+        "potions": [
+          "BLESSING_OF_THE_FORGE",
+          "DEXTERITY_POTION",
+          "FLEX_POTION"
+        ],
+        "mechanisms": [
+          "draw",
+          "hp_spend",
+          "in_combat_scaling",
+          "permanent_growth",
+          "topdeck"
+        ]
+      },
+      "offline_teacher_assisted": true,
+      "checkpoint_sha256": "92550480e3fc9333fd5791653c31faf0c5512ccc4e090e3a60381d5cb0fc2494",
+      "checkpoint_available": true,
+      "live": "70e2953ec59fb65d51e603af7896218fc12bb7ba107eca7cf7a630fae897993e",
+      "encounter": "BOWLBUGS_WEAK",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "721a1a6eee13489b9d9d3c2eab612955",
+          "policy": "hand",
+          "status": "death",
+          "outcome": {
+            "initial_hp": 22,
+            "final_hp": 0,
+            "hp_lost": 22,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": false,
+            "survived": false,
+            "final_enemy_hp": 45,
+            "potions": [],
+            "unattributed_hp_loss": 1
+          },
+          "action_count": 11,
+          "rounds": 3,
+          "elapsed_ms": 3244.674199959263
+        },
+        {
+          "id": "b9b6d6adaad34d9985e131a0e91e60bd",
+          "policy": "q1",
+          "status": "death",
+          "outcome": {
+            "initial_hp": 22,
+            "final_hp": 0,
+            "hp_lost": 22,
+            "hp_healed": 0,
+            "self_damage": 2,
+            "combat_ended": false,
+            "survived": false,
+            "final_enemy_hp": 34,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 13,
+          "rounds": 4,
+          "elapsed_ms": 3289.842299884185
+        }
+      ]
+    },
+    {
+      "id": "b01e6136fa2ee285d0844aa2a69817fe2e70bd4b6f16074a3ba4eb83bfe79d55",
+      "run_id": "iron-2",
+      "history": "5a8cb8d8a967cde59041730b2c845afe4fcf86f2606b854d78cad8a0ab50e68d",
+      "partition": "validation",
+      "seed": "run_2",
+      "character": "Ironclad",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 2,
+        "room_type": "Monster",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "NIBBIT.name"
+        ],
+        "deck_size": 11,
+        "upgrades": 0,
+        "hp": 80,
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "mechanisms": []
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "1793c05ab48e9adc62ee3fd8e484abb9b7cd436f196a243ab6769136adda3f0d",
+      "checkpoint_available": true,
+      "live": "6ce61c780c82dab3c58b2d857c223b8258b1fbf39e33082ba02c2574d6a3ec97",
+      "encounter": "NIBBITS_WEAK",
+      "level": "L3",
+      "evaluations": [
+        {
+          "id": "ff454c58c8e145909dea6722c327b60d",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 80,
+            "final_hp": 58,
+            "hp_lost": 22,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 17,
+          "rounds": 5,
+          "elapsed_ms": 3024.898400064558
+        },
+        {
+          "id": "4a342d3d7ffb4a99bc80bacf8d539e01",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 80,
+            "final_hp": 68,
+            "hp_lost": 12,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 14,
+          "rounds": 5,
+          "elapsed_ms": 3232.346900040284
+        },
+        {
+          "id": "b55391901d2d410abdb490327af78e33",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 80,
+            "final_hp": 58,
+            "hp_lost": 22,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 17,
+          "rounds": 5,
+          "elapsed_ms": 2100.5282001569867
+        },
+        {
+          "id": "f54595cbe1004235a61fc140ce529d10",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 80,
+            "final_hp": 68,
+            "hp_lost": 12,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 14,
+          "rounds": 5,
+          "elapsed_ms": 1859.7613999154419
+        }
+      ]
+    },
+    {
+      "id": "3b671ae5d240039b3f4439e3539f0b7c377ae3fc59352875f47fb4912dd5a6fe",
+      "run_id": "iron-2",
+      "history": "5a8cb8d8a967cde59041730b2c845afe4fcf86f2606b854d78cad8a0ab50e68d",
+      "partition": "validation",
+      "seed": "run_2",
+      "character": "Ironclad",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 3,
+        "room_type": "Monster",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "TWIG_SLIME_S.name",
+          "TWIG_SLIME_M.name",
+          "LEAF_SLIME_S.name"
+        ],
+        "deck_size": 12,
+        "upgrades": 0,
+        "hp": 74,
+        "potions": [
+          "ASHWATER",
+          null,
+          null
+        ],
+        "mechanisms": [
+          "topdeck"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "0fb5fc3b030b036fe2c128d9c736e14fd6e81e97a164f2c3fbb0ca0e228649af",
+      "checkpoint_available": true,
+      "live": "13ceda0f1763a06784ff96e0c7e0ebd871ddc7c54a4ec3d55e749ed640edc865",
+      "encounter": "SLIMES_WEAK",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "52390e0bede744b9ad086caf898db1f2",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 74,
+            "final_hp": 54,
+            "hp_lost": 20,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 25,
+          "rounds": 7,
+          "elapsed_ms": 3175.074700033292
+        },
+        {
+          "id": "e33d0261b57c48aea15572d933e19f7f",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 74,
+            "final_hp": 60,
+            "hp_lost": 14,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 11,
+          "rounds": 4,
+          "elapsed_ms": 2948.3277001418173
+        }
+      ]
+    },
+    {
+      "id": "0f61f188fc5dadf0a57ca7054ca12c5a8bfc3f9797b182cd5d78bfe238adfd3f",
+      "run_id": "iron-2",
+      "history": "5a8cb8d8a967cde59041730b2c845afe4fcf86f2606b854d78cad8a0ab50e68d",
+      "partition": "validation",
+      "seed": "run_2",
+      "character": "Ironclad",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 5,
+        "room_type": "Monster",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "FUZZY_WURM_CRAWLER.name"
+        ],
+        "deck_size": 13,
+        "upgrades": 0,
+        "hp": 66,
+        "potions": [
+          "ASHWATER",
+          "COLORLESS_POTION",
+          null
+        ],
+        "mechanisms": [
+          "draw",
+          "topdeck"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "ffca70f207724d08969115affa349159373668a1b9608761c4dcbec18c142a99",
+      "checkpoint_available": true,
+      "live": "cefad043da90c0f36039481e10b5d572fb96c90c28d38ac1908f556af18c82f7",
+      "encounter": "FUZZY_WURM_CRAWLER_WEAK",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "3585383bbf6b44fdb82be103f99a2737",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 66,
+            "final_hp": 50,
+            "hp_lost": 16,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 19,
+          "rounds": 6,
+          "elapsed_ms": 3301.0796001181006
+        },
+        {
+          "id": "f3f239d385bc475d8ec3954cddedc707",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 66,
+            "final_hp": 60,
+            "hp_lost": 6,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 16,
+          "rounds": 5,
+          "elapsed_ms": 3161.9567000307143
+        }
+      ]
+    },
+    {
+      "id": "649ce0e6ebe9f0e9287534ec7cc2661b86aeec3c00b2598b5b364eda734da2fd",
+      "run_id": "iron-2",
+      "history": "5a8cb8d8a967cde59041730b2c845afe4fcf86f2606b854d78cad8a0ab50e68d",
+      "partition": "validation",
+      "seed": "run_2",
+      "character": "Ironclad",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 6,
+        "room_type": "Monster",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "CUBEX_CONSTRUCT.name"
+        ],
+        "deck_size": 14,
+        "upgrades": 0,
+        "hp": 66,
+        "potions": [
+          "ASHWATER",
+          "COLORLESS_POTION",
+          null
+        ],
+        "mechanisms": [
+          "draw",
+          "topdeck"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "85b1d448b5cede914eb6e54467a9e13f4923b1847834e8376d3351d2d4c6da13",
+      "checkpoint_available": true,
+      "live": "d3ea9dde27a17c9eac3b028a5b7a47318f331d29473ad8ad68dd0871e567db9a",
+      "encounter": "CUBEX_CONSTRUCT_NORMAL",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "e829e1efd7674f249eb63e391ba7a8b5",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 66,
+            "final_hp": 15,
+            "hp_lost": 51,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 24,
+          "rounds": 7,
+          "elapsed_ms": 3165.9142998978496
+        },
+        {
+          "id": "0f41e1fdeec344aa8ae128eff95c95ef",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 66,
+            "final_hp": 55,
+            "hp_lost": 11,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 14,
+          "rounds": 4,
+          "elapsed_ms": 2846.981900045648
+        }
+      ]
+    },
+    {
+      "id": "01d5b90e8808b1c14538d3795b9ae64c0f8006a05e0d917b913ae9e6b512e41a",
+      "run_id": "iron-2",
+      "history": "5a8cb8d8a967cde59041730b2c845afe4fcf86f2606b854d78cad8a0ab50e68d",
+      "partition": "validation",
+      "seed": "run_2",
+      "character": "Ironclad",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 7,
+        "room_type": "Monster",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "SNAPPING_JAXFRUIT.name",
+          "FLYCONID.name"
+        ],
+        "deck_size": 15,
+        "upgrades": 0,
+        "hp": 61,
+        "potions": [
+          "ASHWATER",
+          "COLORLESS_POTION",
+          "VULNERABLE_POTION"
+        ],
+        "mechanisms": [
+          "draw",
+          "topdeck"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "b9c202a30cad9b82e5060f27fbc1d7c7facf3a1c954e5589e395b7b368e577b4",
+      "checkpoint_available": true,
+      "live": "5c8b21fe509b48a6ab62dedc6d10b3615c77152ffdaa71ec7f3644c489fcc868",
+      "encounter": "SNAPPING_JAXFRUIT_NORMAL",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "970d42b98ff04f25a4dac8b95487a850",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 61,
+            "final_hp": 23,
+            "hp_lost": 38,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 27,
+          "rounds": 8,
+          "elapsed_ms": 3096.1365001276135
+        },
+        {
+          "id": "f33ba97efb9044698e922cfb45a2db74",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 61,
+            "final_hp": 18,
+            "hp_lost": 43,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 17,
+          "rounds": 6,
+          "elapsed_ms": 3039.5547000225633
+        }
+      ]
+    },
+    {
+      "id": "f94ff381c5f1d926c04a9c151add4eadeba789c5390507dbe4f02d2d5edd4a18",
+      "run_id": "iron-2",
+      "history": "5a8cb8d8a967cde59041730b2c845afe4fcf86f2606b854d78cad8a0ab50e68d",
+      "partition": "validation",
+      "seed": "run_2",
+      "character": "Ironclad",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 9,
+        "room_type": "Elite",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "classification": {
+        "room": "Elite",
+        "enemies": [
+          "PHROG_PARASITE.name"
+        ],
+        "deck_size": 16,
+        "upgrades": 0,
+        "hp": 48,
+        "potions": [
+          "ASHWATER",
+          "COLORLESS_POTION",
+          "VULNERABLE_POTION"
+        ],
+        "mechanisms": [
+          "draw",
+          "topdeck"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "dfcbe042352c6f8bca1dc9d81677cc6e375d83dbe4f22ff2dffb8cc14d694c19",
+      "checkpoint_available": true,
+      "live": "de7edcaa3d420046e725f81f6f22ab87c34632e0eb721cf9cccce58c5b84c110",
+      "encounter": "PHROG_PARASITE_ELITE",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "163a632ce2b144098af581ed8c4cd50b",
+          "policy": "hand",
+          "status": "death",
+          "outcome": {
+            "initial_hp": 48,
+            "final_hp": 0,
+            "hp_lost": 48,
+            "hp_healed": 0,
+            "self_damage": 10,
+            "combat_ended": false,
+            "survived": false,
+            "final_enemy_hp": 63,
+            "potions": [],
+            "unattributed_hp_loss": 3
+          },
+          "action_count": 30,
+          "rounds": 8,
+          "elapsed_ms": 3136.4843999035656
+        },
+        {
+          "id": "c5a658e98b4c41bba6db1074c22fb713",
+          "policy": "q1",
+          "status": "death",
+          "outcome": {
+            "initial_hp": 48,
+            "final_hp": 0,
+            "hp_lost": 48,
+            "hp_healed": 0,
+            "self_damage": 6,
+            "combat_ended": false,
+            "survived": false,
+            "final_enemy_hp": 61,
+            "potions": [],
+            "unattributed_hp_loss": 2
+          },
+          "action_count": 26,
+          "rounds": 8,
+          "elapsed_ms": 3029.560700058937
+        }
+      ]
+    },
+    {
+      "id": "ff5982329dbce2d79c8f2c1f7f6232891ad35cb24972fbbd6bedf763915238f1",
+      "run_id": "silent-3",
+      "history": "dfe2aa64eb251b5d724a7c2bfee64f2011994f66cf8741a51bb63f8325db5326",
+      "partition": "validation",
+      "seed": "run_3",
+      "character": "Silent",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 2,
+        "room_type": "Monster",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "LEAF_SLIME_S.name",
+          "LEAF_SLIME_M.name",
+          "TWIG_SLIME_S.name"
+        ],
+        "deck_size": 13,
+        "upgrades": 0,
+        "hp": 70,
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "mechanisms": [
+          "discard"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "6084aaadfc87c887bf84fd235392da53c1840276083daa472a3eb072b13a4b7d",
+      "checkpoint_available": true,
+      "live": "af39494b84f5a20313887d60bb7773712c4ebd9c57ee2f3500a189c4a3718549",
+      "encounter": "SLIMES_WEAK",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "15c8cc3caaa84d56b7bd249df49af12a",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 70,
+            "final_hp": 66,
+            "hp_lost": 4,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 32,
+          "rounds": 7,
+          "elapsed_ms": 3201.889800140634
+        },
+        {
+          "id": "7e0dc6aafa6b4a3d99c65ebe05b2a64c",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 70,
+            "final_hp": 67,
+            "hp_lost": 3,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 16,
+          "rounds": 5,
+          "elapsed_ms": 3303.3458997961134
+        }
+      ]
+    },
+    {
+      "id": "f8f8fe347f2931548173fd3c52c02f409efade34e054bb052c7347bcdeae71c3",
+      "run_id": "silent-3",
+      "history": "dfe2aa64eb251b5d724a7c2bfee64f2011994f66cf8741a51bb63f8325db5326",
+      "partition": "validation",
+      "seed": "run_3",
+      "character": "Silent",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 4,
+        "room_type": "Monster",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "FUZZY_WURM_CRAWLER.name"
+        ],
+        "deck_size": 15,
+        "upgrades": 0,
+        "hp": 67,
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "mechanisms": [
+          "discard"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "493b64aeea878be4227f4dac8fa57ad6a58b2613ac86a0caee800b8e6b427bae",
+      "checkpoint_available": true,
+      "live": "39b48c9e55b7325d1669209a10f446954e10022d8b29f1b3b2991fbb604c3f85",
+      "encounter": "FUZZY_WURM_CRAWLER_WEAK",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "750e9079d9484290a9f5948d75674278",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 67,
+            "final_hp": 60,
+            "hp_lost": 7,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 19,
+          "rounds": 5,
+          "elapsed_ms": 3161.6372999269515
+        },
+        {
+          "id": "2b1f7d6209e7454da1193ff63d052a18",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 67,
+            "final_hp": 56,
+            "hp_lost": 11,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 28,
+          "rounds": 8,
+          "elapsed_ms": 2426.6089000739157
+        }
+      ]
+    },
+    {
+      "id": "877cb28f558a1624d28339185aa48ac09ea4eeffe4298da77399f7087da52b9b",
+      "run_id": "silent-3",
+      "history": "dfe2aa64eb251b5d724a7c2bfee64f2011994f66cf8741a51bb63f8325db5326",
+      "partition": "validation",
+      "seed": "run_3",
+      "character": "Silent",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 6,
+        "room_type": "Monster",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "SHRINKER_BEETLE.name"
+        ],
+        "deck_size": 16,
+        "upgrades": 0,
+        "hp": 56,
+        "potions": [
+          "FIRE_POTION",
+          null,
+          null
+        ],
+        "mechanisms": [
+          "discard"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "d5abcfd25ad77c352594eff675b50fa7685e15a08ff29825418e08fc04e6ea17",
+      "checkpoint_available": true,
+      "live": "1200f64b6ab48873b8c7d1bc58f70ddba8b8c79d7618d4ba95a6cf7910bbafeb",
+      "encounter": "SHRINKER_BEETLE_WEAK",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "0ac597f838e14482ab07cfa98663e15c",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 56,
+            "final_hp": 52,
+            "hp_lost": 4,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 18,
+          "rounds": 4,
+          "elapsed_ms": 3263.4461000561714
+        },
+        {
+          "id": "1a6b765a46cf4a41bdd994448ca2fb64",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 56,
+            "final_hp": 52,
+            "hp_lost": 4,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 14,
+          "rounds": 4,
+          "elapsed_ms": 2909.718600101769
+        }
+      ]
+    },
+    {
+      "id": "762bfbfeac5de69a9c223c434394c71f5e8a9cd12e58eb27bc6e8c1488aa2c2a",
+      "run_id": "silent-3",
+      "history": "dfe2aa64eb251b5d724a7c2bfee64f2011994f66cf8741a51bb63f8325db5326",
+      "partition": "validation",
+      "seed": "run_3",
+      "character": "Silent",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 7,
+        "room_type": "Elite",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "classification": {
+        "room": "Elite",
+        "enemies": [
+          "BYRDONIS.name"
+        ],
+        "deck_size": 17,
+        "upgrades": 0,
+        "hp": 52,
+        "potions": [
+          "FIRE_POTION",
+          null,
+          null
+        ],
+        "mechanisms": [
+          "discard"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "91e743e646536431c14518880af09871c8362c3eabe8bf49a3a28660c1a31d95",
+      "checkpoint_available": true,
+      "live": "fce490811e39f04fe6ffb6368099827b5e01dcfe585e56562dcf2ce70413583d",
+      "encounter": "BYRDONIS_ELITE",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "0fbf4873dd3f434a9452f7967dbdc5e8",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 52,
+            "final_hp": 14,
+            "hp_lost": 38,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 27,
+          "rounds": 6,
+          "elapsed_ms": 3054.0456001181155
+        },
+        {
+          "id": "36d4aad372ee4cb2ac6eb646e149d477",
+          "policy": "q1",
+          "status": "unsupported",
+          "outcome": {
+            "initial_hp": 52,
+            "final_hp": 50,
+            "hp_lost": 2,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": false,
+            "survived": true,
+            "final_enemy_hp": 71,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 8,
+          "rounds": 2,
+          "elapsed_ms": 2165.5081000644714
+        }
+      ]
+    },
+    {
+      "id": "42f00598b0e8cbc4c2605e7a836666f4477b6a484565f0fc6f1ad94c5ab6aa9b",
+      "run_id": "iron-4",
+      "history": "978653cf5be8e7535df28dc203b1c65adcb410e4c585129b33d74b55da7ec42b",
+      "partition": "validation",
+      "seed": "run_4",
+      "character": "Ironclad",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 2,
+        "room_type": "Monster",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "NIBBIT.name"
+        ],
+        "deck_size": 11,
+        "upgrades": 0,
+        "hp": 80,
+        "potions": [
+          "BLOOD_POTION",
+          null,
+          null
+        ],
+        "mechanisms": []
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "bce58626b49a53dc9d4e351dcf6e9267bab693405403751825710180280c6ec0",
+      "checkpoint_available": true,
+      "live": "3815041cba148bc86a0785e2c3325abfa6d1ad0c109793c794d904ccda8634cb",
+      "encounter": "NIBBITS_WEAK",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "4e730afb51b94490a3010c6c65dfc457",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 80,
+            "final_hp": 67,
+            "hp_lost": 13,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 12,
+          "rounds": 4,
+          "elapsed_ms": 2817.2001999337226
+        },
+        {
+          "id": "19d7f1d960d24530ac1010a3c3231a52",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 80,
+            "final_hp": 77,
+            "hp_lost": 3,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 13,
+          "rounds": 4,
+          "elapsed_ms": 2936.1562998965383
+        }
+      ]
+    },
+    {
+      "id": "ef8f9bcc904232811389045af2b5b0d9f90fe9336fe2c4ba9b90cfa65af512a0",
+      "run_id": "iron-4",
+      "history": "978653cf5be8e7535df28dc203b1c65adcb410e4c585129b33d74b55da7ec42b",
+      "partition": "validation",
+      "seed": "run_4",
+      "character": "Ironclad",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 5,
+        "room_type": "Monster",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "FUZZY_WURM_CRAWLER.name"
+        ],
+        "deck_size": 13,
+        "upgrades": 0,
+        "hp": 80,
+        "potions": [
+          "BLOOD_POTION",
+          null,
+          null
+        ],
+        "mechanisms": []
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "d2c7fe04918394fd84ed83b1f91c3769026d990bdf0b9bc5c03a269d89b0a708",
+      "checkpoint_available": true,
+      "live": "6a8b4f08d6c7ca5caa2c409376d49658a39a0a7a3f6cd0e5a95c1418e12d59c2",
+      "encounter": "FUZZY_WURM_CRAWLER_WEAK",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "14fbc53b87b24711a30f0074b89c71b5",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 80,
+            "final_hp": 69,
+            "hp_lost": 11,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 14,
+          "rounds": 4,
+          "elapsed_ms": 3201.066799927503
+        },
+        {
+          "id": "43a14c93e5634096accf0eaaa4a20d21",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 80,
+            "final_hp": 75,
+            "hp_lost": 5,
+            "hp_healed": 0,
+            "self_damage": 1,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 9,
+          "rounds": 3,
+          "elapsed_ms": 2299.530299846083
+        }
+      ]
+    },
+    {
+      "id": "ed626a176a399949e3306e9c6d5ad0990a93ce71473809fd284645a8a5d971b2",
+      "run_id": "iron-4",
+      "history": "978653cf5be8e7535df28dc203b1c65adcb410e4c585129b33d74b55da7ec42b",
+      "partition": "validation",
+      "seed": "run_4",
+      "character": "Ironclad",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 6,
+        "room_type": "Monster",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "SHRINKER_BEETLE.name"
+        ],
+        "deck_size": 14,
+        "upgrades": 0,
+        "hp": 80,
+        "potions": [
+          "BLOOD_POTION",
+          "SKILL_POTION",
+          null
+        ],
+        "mechanisms": []
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "fd30a6ede4142ca7c8bf0c3ca27446b9e0d39300e6fb9e191a72b724b200bd84",
+      "checkpoint_available": true,
+      "live": "1512d56d0d6f391549784fd7f25c74fd909eae7d44a3130b4758e50e6bc206fc",
+      "encounter": "SHRINKER_BEETLE_WEAK",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "ed748f913b8e4adbb0e28c9a41ec71e5",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 80,
+            "final_hp": 66,
+            "hp_lost": 14,
+            "hp_healed": 0,
+            "self_damage": 6,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 17,
+          "rounds": 5,
+          "elapsed_ms": 1933.5874000098556
+        },
+        {
+          "id": "65f47fa8dbae4c61bec7342723e2be43",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 80,
+            "final_hp": 67,
+            "hp_lost": 13,
+            "hp_healed": 0,
+            "self_damage": 5,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 14,
+          "rounds": 5,
+          "elapsed_ms": 2111.9759001303464
+        }
+      ]
+    },
+    {
+      "id": "4ec3113f3b4494c9fcaef1ee2d14416e8868e0ee31273d13db1b4a4d517ced74",
+      "run_id": "iron-4",
+      "history": "978653cf5be8e7535df28dc203b1c65adcb410e4c585129b33d74b55da7ec42b",
+      "partition": "validation",
+      "seed": "run_4",
+      "character": "Ironclad",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 7,
+        "room_type": "Monster",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "TWIG_SLIME_M.name",
+          "LEAF_SLIME_M.name",
+          "LEAF_SLIME_S.name",
+          "TWIG_SLIME_S.name"
+        ],
+        "deck_size": 15,
+        "upgrades": 0,
+        "hp": 73,
+        "potions": [
+          "BLOOD_POTION",
+          "SKILL_POTION",
+          null
+        ],
+        "mechanisms": []
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "ba299f6fb133cd286f821a8b69043312bbd80fa1ec9263c7f5461c4196ef9dd9",
+      "checkpoint_available": true,
+      "live": "d3547c32235caf1133a607bc4ff65eb6bdaad6c49a0276933e96f4da2d50db4e",
+      "encounter": "SLIMES_NORMAL",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "fd1f1369542e4a98ab7a6c6c61047601",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 73,
+            "final_hp": 43,
+            "hp_lost": 30,
+            "hp_healed": 0,
+            "self_damage": 5,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 31,
+          "rounds": 9,
+          "elapsed_ms": 1970.3548999968916
+        },
+        {
+          "id": "5f050b4ec7d0444fb2d4b8ca2d73c0c8",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 73,
+            "final_hp": 59,
+            "hp_lost": 14,
+            "hp_healed": 0,
+            "self_damage": 2,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 21,
+          "rounds": 6,
+          "elapsed_ms": 2000.7501000072807
+        }
+      ]
+    },
+    {
+      "id": "64845eaca5d995038dc479c1f9daee0968467d1da0008c4b915c77e947f7664d",
+      "run_id": "iron-4",
+      "history": "978653cf5be8e7535df28dc203b1c65adcb410e4c585129b33d74b55da7ec42b",
+      "partition": "validation",
+      "seed": "run_4",
+      "character": "Ironclad",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 8,
+        "room_type": "Monster",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "INKLET.name",
+          "INKLET.name",
+          "INKLET.name"
+        ],
+        "deck_size": 16,
+        "upgrades": 0,
+        "hp": 65,
+        "potions": [
+          "BLOOD_POTION",
+          "SKILL_POTION",
+          null
+        ],
+        "mechanisms": []
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "4997e443171455d97fdaaafb1ee61d53140d280aae9d2148f88f4c874b66b7e7",
+      "checkpoint_available": true,
+      "live": "dad60c1be6e37f466159f583e199ade7a90d76c679e71626ff7219270d276ba9",
+      "encounter": "INKLETS_NORMAL",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "66c7fae3a1154ebaba7fbd61a9dd5923",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 65,
+            "final_hp": 33,
+            "hp_lost": 32,
+            "hp_healed": 0,
+            "self_damage": 1,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 21,
+          "rounds": 6,
+          "elapsed_ms": 2109.9543999880552
+        },
+        {
+          "id": "5670d40e892f4715aede7a02da25bdb3",
+          "policy": "q1",
+          "status": "unsupported",
+          "outcome": {
+            "initial_hp": 65,
+            "final_hp": 58,
+            "hp_lost": 7,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": false,
+            "survived": true,
+            "final_enemy_hp": 37,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 6,
+          "rounds": 2,
+          "elapsed_ms": 2054.4841000810266
+        }
+      ]
+    },
+    {
+      "id": "b11be3ff58fc0b3a0c0f3834e102d7ab590b1dc826edd1df754674260582d7aa",
+      "run_id": "silent-5",
+      "history": "c49347ae77ac8cd0441f15714044b37e14f84689c5920eaa7c5c6473ac7a6a97",
+      "partition": "test",
+      "seed": "run_5",
+      "character": "Silent",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 2,
+        "room_type": "Monster",
+        "boss": {
+          "id": "THE_KIN_BOSS",
+          "name": "KIN_PRIEST.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "TWIG_SLIME_S.name",
+          "LEAF_SLIME_M.name",
+          "LEAF_SLIME_S.name"
+        ],
+        "deck_size": 12,
+        "upgrades": 0,
+        "hp": 70,
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "mechanisms": [
+          "discard"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "e543d2f65b8fdfccd47e244e81e5ab96ae2d7e958c1a43622cf766e8fee99424",
+      "checkpoint_available": true,
+      "live": "0a08c225ed3e84161086af4e8abfa0f60385c6e51d23e2e97ea46df5a9e9bbb9",
+      "encounter": "SLIMES_WEAK",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "c8d19a53bb8b4e1794a3826202a98937",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 70,
+            "final_hp": 64,
+            "hp_lost": 6,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 27,
+          "rounds": 7,
+          "elapsed_ms": 2039.1766000539064
+        },
+        {
+          "id": "3bbd930446114e41b4a340dfeebf7917",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 70,
+            "final_hp": 69,
+            "hp_lost": 1,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 24,
+          "rounds": 6,
+          "elapsed_ms": 1995.551500003785
+        },
+        {
+          "id": "ae5a7460152d45dea9d310f8139fea2a",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 70,
+            "final_hp": 64,
+            "hp_lost": 6,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 27,
+          "rounds": 7,
+          "elapsed_ms": 1973.3629000838846
+        },
+        {
+          "id": "d5cc10b3f8704f8daf50dd1adfe34a97",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 70,
+            "final_hp": 69,
+            "hp_lost": 1,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 24,
+          "rounds": 6,
+          "elapsed_ms": 1988.5301999747753
+        }
+      ]
+    },
+    {
+      "id": "0628cf3fe3eb1333803266bb61aec22c6596128844602178f1515fae74eaa2e7",
+      "run_id": "silent-5",
+      "history": "c49347ae77ac8cd0441f15714044b37e14f84689c5920eaa7c5c6473ac7a6a97",
+      "partition": "test",
+      "seed": "run_5",
+      "character": "Silent",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 5,
+        "room_type": "Monster",
+        "boss": {
+          "id": "THE_KIN_BOSS",
+          "name": "KIN_PRIEST.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "SHRINKER_BEETLE.name"
+        ],
+        "deck_size": 14,
+        "upgrades": 0,
+        "hp": 69,
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "mechanisms": [
+          "discard"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "48c7e2d70d1b265fa22edb0573f3ee4f2592e3129a64de6117056e764d9e8b08",
+      "checkpoint_available": true,
+      "live": "31dc6e214d8b6fe28f8fb92b080f9163d20a2b528b80a899c2f6d9065060fb17",
+      "encounter": "SHRINKER_BEETLE_WEAK",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "0b357d7251cf40c183a34d7b0f633bd7",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 69,
+            "final_hp": 56,
+            "hp_lost": 13,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 25,
+          "rounds": 5,
+          "elapsed_ms": 1994.6836000308394
+        },
+        {
+          "id": "8d4841562c1c48dbb580a0afef27d715",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 69,
+            "final_hp": 64,
+            "hp_lost": 5,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 20,
+          "rounds": 5,
+          "elapsed_ms": 1944.2459999118
+        }
+      ]
+    },
+    {
+      "id": "e5ad2a048e657035d11ce214055ae7dbff2b3da1e0f294d5f900589854dbc893",
+      "run_id": "silent-5",
+      "history": "c49347ae77ac8cd0441f15714044b37e14f84689c5920eaa7c5c6473ac7a6a97",
+      "partition": "test",
+      "seed": "run_5",
+      "character": "Silent",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 7,
+        "room_type": "Monster",
+        "boss": {
+          "id": "THE_KIN_BOSS",
+          "name": "KIN_PRIEST.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "FUZZY_WURM_CRAWLER.name"
+        ],
+        "deck_size": 14,
+        "upgrades": 0,
+        "hp": 71,
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "mechanisms": [
+          "discard"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "e1047a2a20dc66e287f28b00cabfe828b4c60b1ffd401dd20c4ca5565a477b84",
+      "checkpoint_available": true,
+      "live": "c11f918557c9080fd8a4e61817840d954a4d91f4a68eac0329ebee17dad90ea6",
+      "encounter": "FUZZY_WURM_CRAWLER_WEAK",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "b3b45d82fd574186b062d81a409f3068",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 71,
+            "final_hp": 68,
+            "hp_lost": 3,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 20,
+          "rounds": 5,
+          "elapsed_ms": 1936.187099898234
+        },
+        {
+          "id": "bb218f486c4c493c9e049ab5b695ca03",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 71,
+            "final_hp": 71,
+            "hp_lost": 0,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 21,
+          "rounds": 6,
+          "elapsed_ms": 2107.037500012666
+        }
+      ]
+    },
+    {
+      "id": "7d8e45d410ab13f9568ade12e7d217d831c9a5034a39f6851107b24030522670",
+      "run_id": "silent-5",
+      "history": "c49347ae77ac8cd0441f15714044b37e14f84689c5920eaa7c5c6473ac7a6a97",
+      "partition": "test",
+      "seed": "run_5",
+      "character": "Silent",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 8,
+        "room_type": "Monster",
+        "boss": {
+          "id": "THE_KIN_BOSS",
+          "name": "KIN_PRIEST.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "INKLET.name",
+          "INKLET.name",
+          "INKLET.name"
+        ],
+        "deck_size": 14,
+        "upgrades": 0,
+        "hp": 71,
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "mechanisms": [
+          "discard"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "d23abdb124b9fc07239c67c0ef5a1aae78d8f329a5fbb7d6906b4690808245ac",
+      "checkpoint_available": true,
+      "live": "69145f610515309b0103dd51a1c786c7bd18df53033b1d4edc84d3d5a237f088",
+      "encounter": "INKLETS_NORMAL",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "d41ed3d3f9b24dc1a3458b20b46b051b",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 71,
+            "final_hp": 54,
+            "hp_lost": 17,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 24,
+          "rounds": 6,
+          "elapsed_ms": 2259.8604999948293
+        },
+        {
+          "id": "69ace51626ee45f4bfeebc38247fbbdf",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 71,
+            "final_hp": 60,
+            "hp_lost": 11,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 29,
+          "rounds": 7,
+          "elapsed_ms": 3277.1379998885095
+        }
+      ]
+    },
+    {
+      "id": "8f062e1bd7eca0adec1d344e5fbf785bf60609dc9441ddb79e0212d6765c8af6",
+      "run_id": "silent-5",
+      "history": "c49347ae77ac8cd0441f15714044b37e14f84689c5920eaa7c5c6473ac7a6a97",
+      "partition": "test",
+      "seed": "run_5",
+      "character": "Silent",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 9,
+        "room_type": "Elite",
+        "boss": {
+          "id": "THE_KIN_BOSS",
+          "name": "KIN_PRIEST.name"
+        }
+      },
+      "classification": {
+        "room": "Elite",
+        "enemies": [
+          "BYRDONIS.name"
+        ],
+        "deck_size": 14,
+        "upgrades": 0,
+        "hp": 60,
+        "potions": [
+          "ENERGY_POTION",
+          null,
+          null
+        ],
+        "mechanisms": [
+          "discard"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "b1229b46cd84476d4c7195c4fd312b45d8be54b8aa5d68d0fa50c43d520d98e5",
+      "checkpoint_available": true,
+      "live": "f2c6a02dc6250d466be3d576e89d1859d9ead07283b85b00426e91b9371aca52",
+      "encounter": "BYRDONIS_ELITE",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "49a64dd14bab48e1be2c1dd7187f006a",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 60,
+            "final_hp": 28,
+            "hp_lost": 32,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 27,
+          "rounds": 6,
+          "elapsed_ms": 2699.949699919671
+        },
+        {
+          "id": "ba1238c35f70468baac7518770412315",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 60,
+            "final_hp": 14,
+            "hp_lost": 46,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 46,
+          "rounds": 10,
+          "elapsed_ms": 2607.651599915698
+        }
+      ]
+    },
+    {
+      "id": "af5d16d6eec327347a359cf3fee7b9c5f927909029a95e10f34bdf18c21bd4e8",
+      "run_id": "silent-5",
+      "history": "c49347ae77ac8cd0441f15714044b37e14f84689c5920eaa7c5c6473ac7a6a97",
+      "partition": "test",
+      "seed": "run_5",
+      "character": "Silent",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 11,
+        "room_type": "Monster",
+        "boss": {
+          "id": "THE_KIN_BOSS",
+          "name": "KIN_PRIEST.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "BRUTE_RUBY_RAIDER.name",
+          "TRACKER_RUBY_RAIDER.name",
+          "AXE_RUBY_RAIDER.name"
+        ],
+        "deck_size": 14,
+        "upgrades": 0,
+        "hp": 14,
+        "potions": [
+          "ENERGY_POTION",
+          "SKILL_POTION",
+          null
+        ],
+        "mechanisms": [
+          "discard",
+          "energy_or_cost"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "eb36f986f33d6d6884602e749bf02171ee140f6483b4e2d73dafdaee277d40e0",
+      "checkpoint_available": true,
+      "live": "f0aaec22f03fca9eb183e8ec76d0521d352363725b67d9dfd859cc332d25a88d",
+      "encounter": "RUBY_RAIDERS_NORMAL",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "dc36409a05d04f2693a28966e25a1350",
+          "policy": "hand",
+          "status": "death",
+          "outcome": {
+            "initial_hp": 14,
+            "final_hp": 0,
+            "hp_lost": 14,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": false,
+            "survived": false,
+            "final_enemy_hp": 55,
+            "potions": [],
+            "unattributed_hp_loss": 5
+          },
+          "action_count": 15,
+          "rounds": 3,
+          "elapsed_ms": 3172.370000043884
+        },
+        {
+          "id": "954a3e3d7e6a44d496df93f932442e77",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 14,
+            "final_hp": 3,
+            "hp_lost": 11,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 36,
+          "rounds": 8,
+          "elapsed_ms": 3004.8781000077724
+        }
+      ]
+    },
+    {
+      "id": "7db3517c0d14a4ee8b08e05d7e3575b36fdaa9b889dffd6a46e39a6ff16b634f",
+      "run_id": "silent-5",
+      "history": "c49347ae77ac8cd0441f15714044b37e14f84689c5920eaa7c5c6473ac7a6a97",
+      "partition": "test",
+      "seed": "run_5",
+      "character": "Silent",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 12,
+        "room_type": "Monster",
+        "boss": {
+          "id": "THE_KIN_BOSS",
+          "name": "KIN_PRIEST.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "TWIG_SLIME_M.name",
+          "LEAF_SLIME_M.name",
+          "TWIG_SLIME_S.name",
+          "LEAF_SLIME_S.name"
+        ],
+        "deck_size": 14,
+        "upgrades": 0,
+        "hp": 3,
+        "potions": [
+          "ENERGY_POTION",
+          "SKILL_POTION",
+          "BLOCK_POTION"
+        ],
+        "mechanisms": [
+          "discard",
+          "energy_or_cost"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "fa3572f84e8ebbc714a8079ce5f318ad38f2fbc90285341459901fb1abf134bc",
+      "checkpoint_available": true,
+      "live": "dfbe1ae8d88309d6e45e91305c5bd2647d591f8efa31f8811d56ed9023853bfb",
+      "encounter": "SLIMES_NORMAL",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "87fa7d8b2d3e409a8b20ed84f73c725b",
+          "policy": "hand",
+          "status": "death",
+          "outcome": {
+            "initial_hp": 3,
+            "final_hp": 0,
+            "hp_lost": 3,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": false,
+            "survived": false,
+            "final_enemy_hp": 31,
+            "potions": [],
+            "unattributed_hp_loss": 1
+          },
+          "action_count": 38,
+          "rounds": 8,
+          "elapsed_ms": 3226.025499869138
+        },
+        {
+          "id": "e08d3ec420584283ac1ab5ba5f4d3cff",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 3,
+            "final_hp": 1,
+            "hp_lost": 2,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 50,
+          "rounds": 11,
+          "elapsed_ms": 3421.123799867928
+        }
+      ]
+    },
+    {
+      "id": "a2217e8f10cd9807748b487b73d8497cc73b68f64fe51947144fa4d613d154ad",
+      "run_id": "silent-5",
+      "history": "c49347ae77ac8cd0441f15714044b37e14f84689c5920eaa7c5c6473ac7a6a97",
+      "partition": "test",
+      "seed": "run_5",
+      "character": "Silent",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 17,
+        "room_type": "Boss",
+        "boss": {
+          "id": "THE_KIN_BOSS",
+          "name": "KIN_PRIEST.name"
+        }
+      },
+      "classification": {
+        "room": "Boss",
+        "enemies": [
+          "KIN_FOLLOWER.name",
+          "KIN_FOLLOWER.name",
+          "KIN_PRIEST.name"
+        ],
+        "deck_size": 15,
+        "upgrades": 0,
+        "hp": 47,
+        "potions": [
+          "ENERGY_POTION",
+          "SKILL_POTION",
+          "BLOCK_POTION"
+        ],
+        "mechanisms": [
+          "discard",
+          "energy_or_cost"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "e169c3123d887bf1971828cf8904f40a7b6754ea7f1c4b7827b0bd1a597d6a6e",
+      "checkpoint_available": true,
+      "live": "176361bc19bbb764c0a3a0702618ee58f002fdb83f3b0a3618b7d122a9acefbb",
+      "encounter": "THE_KIN_BOSS",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "f940f5381b8247daaaf78816d99da806",
+          "policy": "hand",
+          "status": "death",
+          "outcome": {
+            "initial_hp": 47,
+            "final_hp": 0,
+            "hp_lost": 47,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": false,
+            "survived": false,
+            "final_enemy_hp": 190,
+            "potions": [],
+            "unattributed_hp_loss": 1
+          },
+          "action_count": 47,
+          "rounds": 10,
+          "elapsed_ms": 2532.3864000383765
+        },
+        {
+          "id": "783e0046d4ce43448745b120fdfe79ed",
+          "policy": "q1",
+          "status": "death",
+          "outcome": {
+            "initial_hp": 47,
+            "final_hp": 0,
+            "hp_lost": 47,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": false,
+            "survived": false,
+            "final_enemy_hp": 226,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 50,
+          "rounds": 10,
+          "elapsed_ms": 3301.463299896568
+        }
+      ]
+    },
+    {
+      "id": "269ef6a56e5e3f69efb78aa9c0f4cb1c7f7d02088cb734265037758aef79c9da",
+      "run_id": "iron-6-a2",
+      "history": "4d4cd07d489963dae0f05ca9035757debb72b633a36b37c92c0ea060f686f550",
+      "partition": "development",
+      "seed": "run_6",
+      "character": "Ironclad",
+      "ascension": 2,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 2,
+        "room_type": "Monster",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "FUZZY_WURM_CRAWLER.name"
+        ],
+        "deck_size": 10,
+        "upgrades": 0,
+        "hp": 64,
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "mechanisms": []
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "bdb87e7cdad06b179b9c11f644f34a83c360843c7f98e8b784dd5fee0c944070",
+      "checkpoint_available": true,
+      "live": "853d6c9fe460e14d79b269a27adcf57990c11549f6d6b4f1f6fc0221483b126b",
+      "encounter": "FUZZY_WURM_CRAWLER_WEAK",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "bd688d78c37a495ca22b4ee13cabdd81",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 64,
+            "final_hp": 62,
+            "hp_lost": 2,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 20,
+          "rounds": 6,
+          "elapsed_ms": 2161.597399972379
+        },
+        {
+          "id": "cccb2c86a880489da2d717e9add1bdcb",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 64,
+            "final_hp": 59,
+            "hp_lost": 5,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 12,
+          "rounds": 4,
+          "elapsed_ms": 3366.2374999839813
+        }
+      ]
+    },
+    {
+      "id": "e9f9eb633b7b56fe43b9b2604216bbd10497858e16f1e63860c625e127dd9bb0",
+      "run_id": "iron-6-a2",
+      "history": "4d4cd07d489963dae0f05ca9035757debb72b633a36b37c92c0ea060f686f550",
+      "partition": "development",
+      "seed": "run_6",
+      "character": "Ironclad",
+      "ascension": 2,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 4,
+        "room_type": "Monster",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "SHRINKER_BEETLE.name"
+        ],
+        "deck_size": 12,
+        "upgrades": 0,
+        "hp": 65,
+        "potions": [
+          "SKILL_POTION",
+          null,
+          null
+        ],
+        "mechanisms": []
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "cdf9e87b71cd1d26d36db15fdd45055f3e01bd047b94b86c18ac37dbe51799b3",
+      "checkpoint_available": true,
+      "live": "2615cf11927753cac4c7f9ecbc8312c9f7c2a93aee06f46b4c212939739787ed",
+      "encounter": "SHRINKER_BEETLE_WEAK",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "2b4c854f6e7c49f8b4f6047b77c8b48c",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 65,
+            "final_hp": 53,
+            "hp_lost": 12,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 15,
+          "rounds": 5,
+          "elapsed_ms": 2846.733800135553
+        },
+        {
+          "id": "543dc4033023400abb7a3bd57e82ecae",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 65,
+            "final_hp": 60,
+            "hp_lost": 5,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 14,
+          "rounds": 4,
+          "elapsed_ms": 3132.461000001058
+        }
+      ]
+    },
+    {
+      "id": "8d076286b4bbd44bc817b0a11651ac8606a96db44018dcaf08527f19afdf999c",
+      "run_id": "iron-6-a2",
+      "history": "4d4cd07d489963dae0f05ca9035757debb72b633a36b37c92c0ea060f686f550",
+      "partition": "development",
+      "seed": "run_6",
+      "character": "Ironclad",
+      "ascension": 2,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 6,
+        "room_type": "Monster",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "TWIG_SLIME_S.name",
+          "TWIG_SLIME_M.name",
+          "LEAF_SLIME_S.name"
+        ],
+        "deck_size": 13,
+        "upgrades": 0,
+        "hp": 66,
+        "potions": [
+          "SKILL_POTION",
+          "FIRE_POTION",
+          "ASHWATER"
+        ],
+        "mechanisms": []
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "dabff1ad66fe11f85fed5ce4fb2f78b0406d797437b302e8a7a95f2a812de29c",
+      "checkpoint_available": true,
+      "live": "20ecfb61e33a19d745d467b7956e60ccce14b2aa3ec7c8aadf4fb5b07c981ee8",
+      "encounter": "SLIMES_WEAK",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "f55cc8e7e78a4467979af951a6c19349",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 66,
+            "final_hp": 54,
+            "hp_lost": 12,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 22,
+          "rounds": 6,
+          "elapsed_ms": 2631.228700047359
+        },
+        {
+          "id": "3f2bcb22756a4433b3ac57cb4b5baa0f",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 66,
+            "final_hp": 60,
+            "hp_lost": 6,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 15,
+          "rounds": 5,
+          "elapsed_ms": 2548.547600163147
+        }
+      ]
+    },
+    {
+      "id": "e9211cf755aa8463f9b3a8055dff8df0aa54e21fa201174406e6c769a4d92ee9",
+      "run_id": "iron-6-a2",
+      "history": "4d4cd07d489963dae0f05ca9035757debb72b633a36b37c92c0ea060f686f550",
+      "partition": "development",
+      "seed": "run_6",
+      "character": "Ironclad",
+      "ascension": 2,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 7,
+        "room_type": "Monster",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "MAWLER.name"
+        ],
+        "deck_size": 14,
+        "upgrades": 0,
+        "hp": 66,
+        "potions": [
+          "SKILL_POTION",
+          "FIRE_POTION",
+          "ASHWATER"
+        ],
+        "mechanisms": [
+          "topdeck"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "e0d1cf7c40f95a405206e21375f6169a0d1ec30aceb8875b5b66c3c9f071aef2",
+      "checkpoint_available": true,
+      "live": "01ee259c1d7146145bcccb222487933a30b557e3bc2d5fd249481171199729d7",
+      "encounter": "MAWLER_NORMAL",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "55953765e9e2485a93fb11d67dc43476",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 66,
+            "final_hp": 41,
+            "hp_lost": 25,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 20,
+          "rounds": 6,
+          "elapsed_ms": 3135.1807999890298
+        },
+        {
+          "id": "76c0af768ef9457db091594c1bc2c03d",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 66,
+            "final_hp": 54,
+            "hp_lost": 12,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 12,
+          "rounds": 4,
+          "elapsed_ms": 3253.6796000786126
+        }
+      ]
+    },
+    {
+      "id": "2168a6a85d0ff16a8e96f87e51479fefef3a925159ce4a5ee89565f649b8019b",
+      "run_id": "iron-6-a2",
+      "history": "4d4cd07d489963dae0f05ca9035757debb72b633a36b37c92c0ea060f686f550",
+      "partition": "development",
+      "seed": "run_6",
+      "character": "Ironclad",
+      "ascension": 2,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 8,
+        "room_type": "Monster",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "SHRINKER_BEETLE.name",
+          "FUZZY_WURM_CRAWLER.name"
+        ],
+        "deck_size": 15,
+        "upgrades": 0,
+        "hp": 60,
+        "potions": [
+          "SKILL_POTION",
+          "FIRE_POTION",
+          "ASHWATER"
+        ],
+        "mechanisms": [
+          "topdeck"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "291147ea6c4e6ebebeb19ea783d76c80618244abdd8ed116f0322e6275d47271",
+      "checkpoint_available": true,
+      "live": "c299dc5ebfdf6f3a40ca1bf708c3066f3bd59b85fe8434f1924dd73b294d16f1",
+      "encounter": "OVERGROWTH_CRAWLERS",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "c66731d22110435791914b703e10d355",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 60,
+            "final_hp": 24,
+            "hp_lost": 36,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 25,
+          "rounds": 7,
+          "elapsed_ms": 3046.9306998420507
+        },
+        {
+          "id": "c0e2e17a98b34daab3494fe5fdc10067",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 60,
+            "final_hp": 17,
+            "hp_lost": 43,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 27,
+          "rounds": 8,
+          "elapsed_ms": 3495.089399861172
+        }
+      ]
+    },
+    {
+      "id": "27943dfd62b3b09bac30d243100e8f7aee767bb234b8f0f135287c14983ba628",
+      "run_id": "iron-6-a2",
+      "history": "4d4cd07d489963dae0f05ca9035757debb72b633a36b37c92c0ea060f686f550",
+      "partition": "development",
+      "seed": "run_6",
+      "character": "Ironclad",
+      "ascension": 2,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 11,
+        "room_type": "Monster",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "ASSASSIN_RUBY_RAIDER.name",
+          "TRACKER_RUBY_RAIDER.name",
+          "CROSSBOW_RUBY_RAIDER.name"
+        ],
+        "deck_size": 16,
+        "upgrades": 0,
+        "hp": 15,
+        "potions": [
+          "SKILL_POTION",
+          "FIRE_POTION",
+          "ASHWATER"
+        ],
+        "mechanisms": [
+          "topdeck"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "91f3673f78d44d1b018d07c9a498911d79b87f475c506b14d7d433d818b921aa",
+      "checkpoint_available": true,
+      "live": "a77ce95ce432b48bb5faedbd6891907058f2ddd1dec112f6aaa835e999116184",
+      "encounter": "RUBY_RAIDERS_NORMAL",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "35b3dde8bacd46c6915730947c90a9a5",
+          "policy": "hand",
+          "status": "death",
+          "outcome": {
+            "initial_hp": 15,
+            "final_hp": 0,
+            "hp_lost": 15,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": false,
+            "survived": false,
+            "final_enemy_hp": 35,
+            "potions": [],
+            "unattributed_hp_loss": 4
+          },
+          "action_count": 9,
+          "rounds": 2,
+          "elapsed_ms": 2813.227199949324
+        },
+        {
+          "id": "a4fbb914f1e1439ea2d06aeb1ffaafd8",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 15,
+            "final_hp": 7,
+            "hp_lost": 8,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 11,
+          "rounds": 4,
+          "elapsed_ms": 3145.1639998704195
+        }
+      ]
+    },
+    {
+      "id": "d293c9253b77f5fe853d5ba2c83e12e808e488ca4974b8a7940547d8dd94f49f",
+      "run_id": "iron-6-a2",
+      "history": "4d4cd07d489963dae0f05ca9035757debb72b633a36b37c92c0ea060f686f550",
+      "partition": "development",
+      "seed": "run_6",
+      "character": "Ironclad",
+      "ascension": 2,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 12,
+        "room_type": "Monster",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "INKLET.name",
+          "INKLET.name",
+          "INKLET.name"
+        ],
+        "deck_size": 17,
+        "upgrades": 0,
+        "hp": 13,
+        "potions": [
+          "SKILL_POTION",
+          "FIRE_POTION",
+          "ASHWATER"
+        ],
+        "mechanisms": [
+          "topdeck"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "ad0fbb70bb6a84e072d9afc0966c4dc3ca0ea77233c347412229a753cff2589b",
+      "checkpoint_available": true,
+      "live": "4d10e28611aa5d203beee7f24366d60e37d989fb0935c7c107b3c107422983cb",
+      "encounter": "INKLETS_NORMAL",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "8189734631cc43a2bbece10a1ab1d345",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 13,
+            "final_hp": 2,
+            "hp_lost": 11,
+            "hp_healed": 0,
+            "self_damage": 1,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 13,
+          "rounds": 4,
+          "elapsed_ms": 2654.274599859491
+        },
+        {
+          "id": "45fd7e8414d1418d890509b8a1ecc302",
+          "policy": "q1",
+          "status": "death",
+          "outcome": {
+            "initial_hp": 13,
+            "final_hp": 0,
+            "hp_lost": 13,
+            "hp_healed": 0,
+            "self_damage": 1,
+            "combat_ended": false,
+            "survived": false,
+            "final_enemy_hp": 9,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 3,
+          "rounds": 1,
+          "elapsed_ms": 1828.5484998486936
+        }
+      ]
+    },
+    {
+      "id": "734876c7bdc6b3af791181c769b7ac32201cac6dfa030f60b136e14dc75123a3",
+      "run_id": "iron-7",
+      "history": "85e7664f5ce243ce9cd60d3b9983dbf5c4e46bb41db7596abaf6bd655ce5b847",
+      "partition": "validation",
+      "seed": "run_7",
+      "character": "Ironclad",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 2,
+        "room_type": "Monster",
+        "boss": {
+          "id": "CEREMONIAL_BEAST_BOSS",
+          "name": "CEREMONIAL_BEAST.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "NIBBIT.name"
+        ],
+        "deck_size": 10,
+        "upgrades": 0,
+        "hp": 91,
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "mechanisms": []
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "4b1137ea1e7c569a30dc70778d8069e6522148fc94747d8487cd9403b3b4abda",
+      "checkpoint_available": true,
+      "live": "28639fd25924973e5720c39648e28bf12e814b5e014cffd5403a7cf8e1d4591c",
+      "encounter": "NIBBITS_WEAK",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "7386a000ba5e41ab8bb7d5d12512d5f7",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 91,
+            "final_hp": 77,
+            "hp_lost": 14,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 26,
+          "rounds": 7,
+          "elapsed_ms": 1875.1549997832626
+        },
+        {
+          "id": "61a8df511dd24391b48d59f5a4f0bea3",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 91,
+            "final_hp": 88,
+            "hp_lost": 3,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 12,
+          "rounds": 4,
+          "elapsed_ms": 1858.3429001737386
+        }
+      ]
+    },
+    {
+      "id": "f34ab022b020b4a1771250c2826469b5bea196dad7f0fa3395cff564fab4b855",
+      "run_id": "iron-7",
+      "history": "85e7664f5ce243ce9cd60d3b9983dbf5c4e46bb41db7596abaf6bd655ce5b847",
+      "partition": "validation",
+      "seed": "run_7",
+      "character": "Ironclad",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 5,
+        "room_type": "Monster",
+        "boss": {
+          "id": "CEREMONIAL_BEAST_BOSS",
+          "name": "CEREMONIAL_BEAST.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "FUZZY_WURM_CRAWLER.name"
+        ],
+        "deck_size": 10,
+        "upgrades": 0,
+        "hp": 91,
+        "potions": [
+          "STRENGTH_POTION",
+          "BOTTLED_POTENTIAL",
+          null
+        ],
+        "mechanisms": []
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "22010799e48904be065d3620b287ef43eff392c090ef07d2a9dbf27529fa960e",
+      "checkpoint_available": true,
+      "live": "d974f5e91ce1ee68eb4511c4d6a73e81f27f75a3258d21bf2d3258be344484a4",
+      "encounter": "FUZZY_WURM_CRAWLER_WEAK",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "8d1ccc2dd9724f85b37deb7f0939d74c",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 91,
+            "final_hp": 81,
+            "hp_lost": 10,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 13,
+          "rounds": 4,
+          "elapsed_ms": 1910.8007000759244
+        },
+        {
+          "id": "32acfc0c6b4d4b5aa17d922578d2f40d",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 91,
+            "final_hp": 86,
+            "hp_lost": 5,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 12,
+          "rounds": 4,
+          "elapsed_ms": 1923.2171000912786
+        }
+      ]
+    },
+    {
+      "id": "d84e617ca82ad624f6ab6f46214c2d081c5f94a5362a8fda896df48261c81f34",
+      "run_id": "iron-7",
+      "history": "85e7664f5ce243ce9cd60d3b9983dbf5c4e46bb41db7596abaf6bd655ce5b847",
+      "partition": "validation",
+      "seed": "run_7",
+      "character": "Ironclad",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 7,
+        "room_type": "Monster",
+        "boss": {
+          "id": "CEREMONIAL_BEAST_BOSS",
+          "name": "CEREMONIAL_BEAST.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "TWIG_SLIME_S.name",
+          "TWIG_SLIME_M.name",
+          "LEAF_SLIME_S.name"
+        ],
+        "deck_size": 10,
+        "upgrades": 0,
+        "hp": 91,
+        "potions": [
+          "STRENGTH_POTION",
+          "BOTTLED_POTENTIAL",
+          null
+        ],
+        "mechanisms": []
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "1c22964fcbc990659d49af2d88623efe6c6e129a2c1e0535383f8715f83e602b",
+      "checkpoint_available": true,
+      "live": "8b378a73ae72f0da48dea30f5f9d1d9203fa811fcdfb69c4efd40d260ef9bed6",
+      "encounter": "SLIMES_WEAK",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "5bc039159d344317aa365b8044e29593",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 91,
+            "final_hp": 71,
+            "hp_lost": 20,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 21,
+          "rounds": 6,
+          "elapsed_ms": 1903.8269000593573
+        },
+        {
+          "id": "ea4803f66661400393b531e3a2257c5f",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 91,
+            "final_hp": 74,
+            "hp_lost": 17,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 19,
+          "rounds": 6,
+          "elapsed_ms": 2052.3472998756915
+        }
+      ]
+    },
+    {
+      "id": "cd5164ea684a2856c9c3dc67a2f6a4a057b4bdda922166e9500cdef76531d88c",
+      "run_id": "iron-7",
+      "history": "85e7664f5ce243ce9cd60d3b9983dbf5c4e46bb41db7596abaf6bd655ce5b847",
+      "partition": "validation",
+      "seed": "run_7",
+      "character": "Ironclad",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 8,
+        "room_type": "Monster",
+        "boss": {
+          "id": "CEREMONIAL_BEAST_BOSS",
+          "name": "CEREMONIAL_BEAST.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "SNAPPING_JAXFRUIT.name",
+          "FLYCONID.name"
+        ],
+        "deck_size": 10,
+        "upgrades": 0,
+        "hp": 80,
+        "potions": [
+          "STRENGTH_POTION",
+          "BOTTLED_POTENTIAL",
+          null
+        ],
+        "mechanisms": []
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "77c28dc2e3e59e8aafd071a6edf9e528dc607b94b00d75094b1e345973869da7",
+      "checkpoint_available": true,
+      "live": "ac1377b977dba7dd6bd93b2ba848eb26346ff19cf38b2309911bfd024ffbadd6",
+      "encounter": "SNAPPING_JAXFRUIT_NORMAL",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "34555fc8c4e14a8aa1dc319720728a36",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 80,
+            "final_hp": 37,
+            "hp_lost": 43,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 24,
+          "rounds": 7,
+          "elapsed_ms": 2364.0552000142634
+        },
+        {
+          "id": "166c1a49cd8a4d96b52bfd45b5d7eefc",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 80,
+            "final_hp": 42,
+            "hp_lost": 38,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 21,
+          "rounds": 7,
+          "elapsed_ms": 2052.2313001565635
+        }
+      ]
+    },
+    {
+      "id": "29d40d7bfbff5f057d20d2a51ee05810989cc129d9d4d422f06e71517d687826",
+      "run_id": "iron-7",
+      "history": "85e7664f5ce243ce9cd60d3b9983dbf5c4e46bb41db7596abaf6bd655ce5b847",
+      "partition": "validation",
+      "seed": "run_7",
+      "character": "Ironclad",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 9,
+        "room_type": "Elite",
+        "boss": {
+          "id": "CEREMONIAL_BEAST_BOSS",
+          "name": "CEREMONIAL_BEAST.name"
+        }
+      },
+      "classification": {
+        "room": "Elite",
+        "enemies": [
+          "BYRDONIS.name"
+        ],
+        "deck_size": 10,
+        "upgrades": 0,
+        "hp": 48,
+        "potions": [
+          "STRENGTH_POTION",
+          "BOTTLED_POTENTIAL",
+          "SPEED_POTION"
+        ],
+        "mechanisms": []
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "82f6c0e08feb586b75026bf8da42e83f6899f2f08767c9b72c57c686414e1cdd",
+      "checkpoint_available": true,
+      "live": "553438372726a1313b41d2db1034db1d78f5917745c777d4e3612b21aca3ab5c",
+      "encounter": "BYRDONIS_ELITE",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "1430d03f0fa1432ca646d631ac87fa67",
+          "policy": "hand",
+          "status": "death",
+          "outcome": {
+            "initial_hp": 48,
+            "final_hp": 0,
+            "hp_lost": 48,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": false,
+            "survived": false,
+            "final_enemy_hp": 34,
+            "potions": [],
+            "unattributed_hp_loss": 4
+          },
+          "action_count": 19,
+          "rounds": 5,
+          "elapsed_ms": 1951.201100135222
+        },
+        {
+          "id": "efd1cd1e850a4a868df932e2e4266176",
+          "policy": "q1",
+          "status": "death",
+          "outcome": {
+            "initial_hp": 48,
+            "final_hp": 0,
+            "hp_lost": 48,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": false,
+            "survived": false,
+            "final_enemy_hp": 42,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 24,
+          "rounds": 6,
+          "elapsed_ms": 1890.2451999019831
+        }
+      ]
+    },
+    {
+      "id": "5e88eb7e0fafe6459c624595c3e5ff9aa9fcc378324770aa66d7010895b3338f",
+      "run_id": "silent-8",
+      "history": "955434e845ef78c40bbfe20a9f13b59f584cfef16e4ec3f9353f0468dbc9a2c3",
+      "partition": "development",
+      "seed": "run_8",
+      "character": "Silent",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 2,
+        "room_type": "Monster",
+        "boss": {
+          "id": "THE_KIN_BOSS",
+          "name": "KIN_PRIEST.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "FUZZY_WURM_CRAWLER.name"
+        ],
+        "deck_size": 12,
+        "upgrades": 0,
+        "hp": 70,
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "mechanisms": [
+          "discard"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "fa52fb99a15c739a91dbcaa9075c77574d25490e0ab4276f74ff4eb703c8cf54",
+      "checkpoint_available": true,
+      "live": "0d7e391635a8240b9a24ddd23437a17a1f73dd45ba2c45b3f93616a6926bdc05",
+      "encounter": "FUZZY_WURM_CRAWLER_WEAK",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "c3f0d4c8a2984e83a3f995a3d54597d1",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 70,
+            "final_hp": 54,
+            "hp_lost": 16,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 30,
+          "rounds": 7,
+          "elapsed_ms": 1930.5829999502748
+        },
+        {
+          "id": "3c3b50d6909a4d449af1b5e8db544288",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 70,
+            "final_hp": 70,
+            "hp_lost": 0,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 23,
+          "rounds": 6,
+          "elapsed_ms": 1929.7936998773366
+        }
+      ]
+    },
+    {
+      "id": "588db2465a0514fb413e1b8de3f73945e68056d34f469c0c702910c9baf69bad",
+      "run_id": "silent-8",
+      "history": "955434e845ef78c40bbfe20a9f13b59f584cfef16e4ec3f9353f0468dbc9a2c3",
+      "partition": "development",
+      "seed": "run_8",
+      "character": "Silent",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 8,
+        "room_type": "Monster",
+        "boss": {
+          "id": "THE_KIN_BOSS",
+          "name": "KIN_PRIEST.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "NIBBIT.name"
+        ],
+        "deck_size": 15,
+        "upgrades": 0,
+        "hp": 70,
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "mechanisms": [
+          "discard"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "f135ace5eb77db908f59a0057e52bd0d4deec65b89418c9da7a12eae4925eaf2",
+      "checkpoint_available": true,
+      "live": "cdcca9317d76bc639bf703b46da451da47aa81a2682eaaad73b2a230e8b938ce",
+      "encounter": "NIBBITS_WEAK",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "210976f9534445b59659c705b5ae5b50",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 70,
+            "final_hp": 66,
+            "hp_lost": 4,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 40,
+          "rounds": 8,
+          "elapsed_ms": 2012.2723998501897
+        },
+        {
+          "id": "5f0630e60413411985f63d3b1d205340",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 70,
+            "final_hp": 69,
+            "hp_lost": 1,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 23,
+          "rounds": 5,
+          "elapsed_ms": 2267.809299984947
+        }
+      ]
+    },
+    {
+      "id": "9782c680ab572a97bb7b4d15e0d2a1a824d7522fe21b8aa70332759f6325c371",
+      "run_id": "silent-8",
+      "history": "955434e845ef78c40bbfe20a9f13b59f584cfef16e4ec3f9353f0468dbc9a2c3",
+      "partition": "development",
+      "seed": "run_8",
+      "character": "Silent",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 9,
+        "room_type": "Monster",
+        "boss": {
+          "id": "THE_KIN_BOSS",
+          "name": "KIN_PRIEST.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "SHRINKER_BEETLE.name"
+        ],
+        "deck_size": 16,
+        "upgrades": 0,
+        "hp": 69,
+        "potions": [
+          "FLEX_POTION",
+          null,
+          null
+        ],
+        "mechanisms": [
+          "discard"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "9913fac50978dd2b6d92b62eaf1f2620cc9e19e6fa7bdf63970a3e071586cae0",
+      "checkpoint_available": true,
+      "live": "c757c7b0f1263b5994aae7246a414de2853677af4dc712d988f8854de694fb40",
+      "encounter": "SHRINKER_BEETLE_WEAK",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "3354602953744272b290df4c5010c4e5",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 69,
+            "final_hp": 69,
+            "hp_lost": 0,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 18,
+          "rounds": 4,
+          "elapsed_ms": 2536.561599932611
+        },
+        {
+          "id": "2ba7a0522073492981750860379fe336",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 69,
+            "final_hp": 62,
+            "hp_lost": 7,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 17,
+          "rounds": 5,
+          "elapsed_ms": 3052.9853999614716
+        }
+      ]
+    },
+    {
+      "id": "4d4ecc3d2d4b8195da74b1364fe3a1efc30c1f1b3b156810b7b92dc762e2babb",
+      "run_id": "silent-8",
+      "history": "955434e845ef78c40bbfe20a9f13b59f584cfef16e4ec3f9353f0468dbc9a2c3",
+      "partition": "development",
+      "seed": "run_8",
+      "character": "Silent",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 11,
+        "room_type": "Monster",
+        "boss": {
+          "id": "THE_KIN_BOSS",
+          "name": "KIN_PRIEST.name"
+        }
+      },
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "VINE_SHAMBLER.name"
+        ],
+        "deck_size": 17,
+        "upgrades": 0,
+        "hp": 62,
+        "potions": [
+          "FLEX_POTION",
+          null,
+          null
+        ],
+        "mechanisms": [
+          "discard"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "9a4dc2d705cabf217c2f796d776b07b9df99151169eb757107a62dfda7b87e1d",
+      "checkpoint_available": true,
+      "live": "7e812cf759851b6807977beff876bf0678cead559c14973844a08058be7fa7ed",
+      "encounter": "VINE_SHAMBLER_NORMAL",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "e7635c7d6f334b198372833a6036ca90",
+          "policy": "hand",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 62,
+            "final_hp": 35,
+            "hp_lost": 27,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 19,
+          "rounds": 5,
+          "elapsed_ms": 3751.671099802479
+        },
+        {
+          "id": "0685b3f4dc904154a40d5ca266ce210b",
+          "policy": "q1",
+          "status": "win",
+          "outcome": {
+            "initial_hp": 62,
+            "final_hp": 32,
+            "hp_lost": 30,
+            "hp_healed": 0,
+            "self_damage": 0,
+            "combat_ended": true,
+            "survived": true,
+            "final_enemy_hp": 0,
+            "potions": [],
+            "unattributed_hp_loss": 0
+          },
+          "action_count": 16,
+          "rounds": 5,
+          "elapsed_ms": 3386.5431000012904
+        }
+      ]
+    },
+    {
+      "id": "752437e4ce84142b64203e609020a53290c0cf02052a32e6cdcc6f7e227b20ab",
+      "run_id": "silent-8",
+      "history": "955434e845ef78c40bbfe20a9f13b59f584cfef16e4ec3f9353f0468dbc9a2c3",
+      "partition": "development",
+      "seed": "run_8",
+      "character": "Silent",
+      "ascension": 0,
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 12,
+        "room_type": "Elite",
+        "boss": {
+          "id": "THE_KIN_BOSS",
+          "name": "KIN_PRIEST.name"
+        }
+      },
+      "classification": {
+        "room": "Elite",
+        "enemies": [
+          "PHROG_PARASITE.name"
+        ],
+        "deck_size": 18,
+        "upgrades": 0,
+        "hp": 32,
+        "potions": [
+          "FLEX_POTION",
+          "POISON_POTION",
+          null
+        ],
+        "mechanisms": [
+          "discard"
+        ]
+      },
+      "offline_teacher_assisted": false,
+      "checkpoint_sha256": "04776a5073c8d910b364ef67213e1fe6bd072d485bb6c12a7de70b7c4e0401f8",
+      "checkpoint_available": true,
+      "live": "bcb95eb7166efa895041a3b586ea2b853599e453ff91b72c5ae9e2a7d3a651c1",
+      "encounter": "PHROG_PARASITE_ELITE",
+      "level": "L1",
+      "evaluations": [
+        {
+          "id": "a840c0ce2f2643bda45fec1a59ebd93b",
+          "policy": "hand",
+          "status": "death",
+          "outcome": {
+            "initial_hp": 32,
+            "final_hp": 0,
+            "hp_lost": 32,
+            "hp_healed": 0,
+            "self_damage": 9,
+            "combat_ended": false,
+            "survived": false,
+            "final_enemy_hp": 58,
+            "potions": [],
+            "unattributed_hp_loss": 3
+          },
+          "action_count": 30,
+          "rounds": 7,
+          "elapsed_ms": 3095.9671000018716
+        },
+        {
+          "id": "37da02be15ba48528b218e011d5e0d88",
+          "policy": "q1",
+          "status": "death",
+          "outcome": {
+            "initial_hp": 32,
+            "final_hp": 0,
+            "hp_lost": 32,
+            "hp_healed": 0,
+            "self_damage": 21,
+            "combat_ended": false,
+            "survived": false,
+            "final_enemy_hp": 58,
+            "potions": [],
+            "unattributed_hp_loss": 3
+          },
+          "action_count": 31,
+          "rounds": 8,
+          "elapsed_ms": 3502.8560999780893
+        }
+      ]
+    }
+  ],
+  "searches": [
+    {
+      "id": "3eff41cd78604d75b1dfa108ee685ea6",
+      "root_id": "b01e6136fa2ee285d0844aa2a69817fe2e70bd4b6f16074a3ba4eb83bfe79d55",
+      "cap": 128,
+      "arm": "C",
+      "potions": false,
+      "uses_hidden_rng": true,
+      "policy_version": "M1-F3B-v1",
+      "status": "native_win",
+      "used": 14,
+      "first_prediction": 14,
+      "first_native": 14,
+      "wall_ms": 6863.669999875128,
+      "hot_ms": 207.5428,
+      "cpu_ms": 203.125
+    },
+    {
+      "id": "7c90911352514eb186392473021e3557",
+      "root_id": "cc2b306131b2a987661524c5d33e4ada8d5522b6df56229520e03eb8ee6e4ecd",
+      "cap": 128,
+      "arm": "C",
+      "potions": true,
+      "uses_hidden_rng": true,
+      "policy_version": "M1-F3B-v1",
+      "status": "native_win",
+      "used": 24,
+      "first_prediction": 24,
+      "first_native": 24,
+      "wall_ms": 6925.958100007847,
+      "hot_ms": 259.2101,
+      "cpu_ms": 265.625
+    }
+  ],
+  "runs": [
+    {
+      "id": "archive-west",
+      "history": "709e01f1854bf74fce4778e26c3785588ddc11b30485f6fe3d02d7dd0f623b6c",
+      "partition": "development",
+      "spec": {
+        "character": "Ironclad",
+        "ascension": 0,
+        "map": "west",
+        "reward": "first",
+        "shop": "leave",
+        "id": "archive-west",
+        "seed": "run_1",
+        "policy_seed": "run_1-act2",
+        "archive": "offering"
+      },
+      "status": "death",
+      "max_act": 2,
+      "candidates": 2,
+      "offline_teacher_assisted": true,
+      "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+      "startup_ms": 151.8102998379618,
+      "last_context": {
+        "act": 2,
+        "act_name": "HIVE.title",
+        "floor": 3,
+        "room_type": "Monster",
+        "boss": {
+          "id": "KNOWLEDGE_DEMON_BOSS",
+          "name": "KNOWLEDGE_DEMON.name"
+        }
+      },
+      "elapsed_ms": 8088.062399998307,
+      "combat_timing_ms": {
+        "observe_ms": 42.06780000000001,
+        "decision_ms": 1.458,
+        "execute_ms": 167.25090000000003,
+        "f1_step_rpc_ms": 293.5020006261766
+      },
+      "actions": 281,
+      "rpc_ms": {
+        "start_run": 1142.1364000998437,
+        "action": 2410.7498987577856,
+        "get_map": 6.711099995300174,
+        "write_continue_save": 158.91950018703938,
+        "f1_begin": 88.74769997783005,
+        "f1_step": 295.2364000957459
+      },
+      "peak_working_set_bytes": 131063808
+    },
+    {
+      "id": "archive-east",
+      "history": "709e01f1854bf74fce4778e26c3785588ddc11b30485f6fe3d02d7dd0f623b6c",
+      "partition": "development",
+      "spec": {
+        "character": "Ironclad",
+        "ascension": 0,
+        "map": "east",
+        "reward": "first",
+        "shop": "leave",
+        "id": "archive-east",
+        "seed": "run_1",
+        "policy_seed": "run_1-act2",
+        "archive": "offering"
+      },
+      "status": "death",
+      "max_act": 2,
+      "candidates": 2,
+      "offline_teacher_assisted": true,
+      "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+      "startup_ms": 151.37860015965998,
+      "last_context": {
+        "act": 2,
+        "act_name": "HIVE.title",
+        "floor": 6,
+        "room_type": "Monster",
+        "boss": {
+          "id": "KNOWLEDGE_DEMON_BOSS",
+          "name": "KNOWLEDGE_DEMON.name"
+        }
+      },
+      "elapsed_ms": 8129.366100067273,
+      "combat_timing_ms": {
+        "observe_ms": 41.8996,
+        "decision_ms": 1.3945000000000007,
+        "execute_ms": 150.8405,
+        "f1_step_rpc_ms": 281.3923000358045
+      },
+      "actions": 289,
+      "rpc_ms": {
+        "start_run": 1146.3391000870615,
+        "action": 2448.7476013600826,
+        "get_map": 10.550999315455556,
+        "write_continue_save": 165.76540004462004,
+        "f1_begin": 75.32320008613169,
+        "f1_step": 283.4461007732898
+      },
+      "peak_working_set_bytes": 127496192
+    },
+    {
+      "id": "archive-middle",
+      "history": "709e01f1854bf74fce4778e26c3785588ddc11b30485f6fe3d02d7dd0f623b6c",
+      "partition": "development",
+      "spec": {
+        "character": "Ironclad",
+        "ascension": 0,
+        "map": "middle",
+        "reward": "first",
+        "shop": "leave",
+        "id": "archive-middle",
+        "seed": "run_1",
+        "policy_seed": "run_1-act2",
+        "archive": "skip"
+      },
+      "status": "death",
+      "max_act": 2,
+      "candidates": 2,
+      "offline_teacher_assisted": true,
+      "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+      "startup_ms": 134.62399994023144,
+      "last_context": {
+        "act": 2,
+        "act_name": "HIVE.title",
+        "floor": 5,
+        "room_type": "Monster",
+        "boss": {
+          "id": "KNOWLEDGE_DEMON_BOSS",
+          "name": "KNOWLEDGE_DEMON.name"
+        }
+      },
+      "elapsed_ms": 7754.071099916473,
+      "combat_timing_ms": {
+        "observe_ms": 48.51939999999998,
+        "decision_ms": 1.4206000000000008,
+        "execute_ms": 175.36620000000005,
+        "f1_step_rpc_ms": 326.22630009427667
+      },
+      "actions": 297,
+      "rpc_ms": {
+        "start_run": 1122.5811999756843,
+        "action": 2282.573401927948,
+        "get_map": 8.784899953752756,
+        "write_continue_save": 161.46780014969409,
+        "f1_begin": 75.02319989725947,
+        "f1_step": 328.4741989336908
+      },
+      "peak_working_set_bytes": 131051520
+    },
+    {
+      "id": "iron-2",
+      "history": "5a8cb8d8a967cde59041730b2c845afe4fcf86f2606b854d78cad8a0ab50e68d",
+      "partition": "validation",
+      "spec": {
+        "character": "Ironclad",
+        "ascension": 0,
+        "map": "random",
+        "reward": "first",
+        "shop": "buy_cheapest",
+        "id": "iron-2",
+        "seed": "run_2"
+      },
+      "status": "death",
+      "max_act": 1,
+      "candidates": 6,
+      "offline_teacher_assisted": false,
+      "startup_ms": 135.18119999207556,
+      "last_context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 9,
+        "room_type": "Elite",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "elapsed_ms": 13068.322699982673,
+      "combat_timing_ms": {
+        "observe_ms": 34.27700000000001,
+        "decision_ms": 1.4024000000000008,
+        "execute_ms": 283.36789999999985,
+        "f1_step_rpc_ms": 429.65519963763654
+      },
+      "actions": 112,
+      "rpc_ms": {
+        "start_run": 1207.9914999194443,
+        "action": 403.0702996533364,
+        "get_map": 11.682600248605013,
+        "write_continue_save": 176.67459975928068,
+        "f1_begin": 74.09409945830703,
+        "f1_step": 432.6502000913024
+      },
+      "peak_working_set_bytes": 126062592
+    },
+    {
+      "id": "silent-3",
+      "history": "dfe2aa64eb251b5d724a7c2bfee64f2011994f66cf8741a51bb63f8325db5326",
+      "partition": "validation",
+      "spec": {
+        "character": "Silent",
+        "ascension": 0,
+        "map": "east",
+        "reward": "first",
+        "shop": "leave",
+        "id": "silent-3",
+        "seed": "run_3"
+      },
+      "status": "unsupported",
+      "max_act": 1,
+      "candidates": 4,
+      "offline_teacher_assisted": false,
+      "startup_ms": 156.37469990178943,
+      "last_context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 7,
+        "room_type": "Elite",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "error_type": "StopRun",
+      "elapsed_ms": 10065.349500160664,
+      "combat_timing_ms": {
+        "observe_ms": 39.018,
+        "decision_ms": 2.5601000000000007,
+        "execute_ms": 280.36680000000007,
+        "f1_step_rpc_ms": 422.5854994729161
+      },
+      "actions": 73,
+      "rpc_ms": {
+        "start_run": 1472.0703000202775,
+        "action": 214.63719941675663,
+        "get_map": 10.529600316658616,
+        "write_continue_save": 201.77370007149875,
+        "f1_begin": 88.37020001374185,
+        "f1_step": 424.9597005546093
+      },
+      "peak_working_set_bytes": 127430656
+    },
+    {
+      "id": "iron-4",
+      "history": "978653cf5be8e7535df28dc203b1c65adcb410e4c585129b33d74b55da7ec42b",
+      "partition": "validation",
+      "spec": {
+        "character": "Ironclad",
+        "ascension": 0,
+        "map": "middle",
+        "reward": "first",
+        "shop": "leave",
+        "id": "iron-4",
+        "seed": "run_4"
+      },
+      "status": "unsupported",
+      "max_act": 1,
+      "candidates": 5,
+      "offline_teacher_assisted": false,
+      "startup_ms": 137.50780001282692,
+      "last_context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 8,
+        "room_type": "Monster",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "error_type": "StopRun",
+      "elapsed_ms": 11378.782699815929,
+      "combat_timing_ms": {
+        "observe_ms": 22.380800000000004,
+        "decision_ms": 1.3985000000000005,
+        "execute_ms": 231.31629999999996,
+        "f1_step_rpc_ms": 335.27779881842434
+      },
+      "actions": 78,
+      "rpc_ms": {
+        "start_run": 1283.2355999853462,
+        "action": 294.14159967564046,
+        "get_map": 16.62739971652627,
+        "write_continue_save": 204.1130003053695,
+        "f1_begin": 71.01630023680627,
+        "f1_step": 337.36240048892796
+      },
+      "peak_working_set_bytes": 127324160
+    },
+    {
+      "id": "silent-5",
+      "history": "c49347ae77ac8cd0441f15714044b37e14f84689c5920eaa7c5c6473ac7a6a97",
+      "partition": "test",
+      "spec": {
+        "character": "Silent",
+        "ascension": 0,
+        "map": "random",
+        "reward": "skip",
+        "shop": "leave",
+        "id": "silent-5",
+        "seed": "run_5"
+      },
+      "status": "death",
+      "max_act": 1,
+      "candidates": 8,
+      "offline_teacher_assisted": false,
+      "startup_ms": 131.7886000033468,
+      "last_context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 17,
+        "room_type": "Boss",
+        "boss": {
+          "id": "THE_KIN_BOSS",
+          "name": "KIN_PRIEST.name"
+        }
+      },
+      "elapsed_ms": 17637.061299989,
+      "combat_timing_ms": {
+        "observe_ms": 95.29060000000003,
+        "decision_ms": 2.4310999999999963,
+        "execute_ms": 443.37780000000015,
+        "f1_step_rpc_ms": 793.1699033360928
+      },
+      "actions": 295,
+      "rpc_ms": {
+        "start_run": 1244.9819999746978,
+        "action": 747.48839950189,
+        "get_map": 20.831500180065632,
+        "write_continue_save": 190.06810011342168,
+        "f1_begin": 69.45739989168942,
+        "f1_step": 800.1913998741657
+      },
+      "peak_working_set_bytes": 127578112
+    },
+    {
+      "id": "iron-6-a2",
+      "history": "4d4cd07d489963dae0f05ca9035757debb72b633a36b37c92c0ea060f686f550",
+      "partition": "development",
+      "spec": {
+        "character": "Ironclad",
+        "ascension": 2,
+        "map": "east",
+        "reward": "first",
+        "shop": "buy_cheapest",
+        "id": "iron-6-a2",
+        "seed": "run_6"
+      },
+      "status": "death",
+      "max_act": 1,
+      "candidates": 7,
+      "offline_teacher_assisted": false,
+      "startup_ms": 147.18069997616112,
+      "last_context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 12,
+        "room_type": "Monster",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "elapsed_ms": 14882.994999876246,
+      "combat_timing_ms": {
+        "observe_ms": 33.9968,
+        "decision_ms": 1.5150000000000012,
+        "execute_ms": 288.4734000000002,
+        "f1_step_rpc_ms": 448.3753000386059
+      },
+      "actions": 113,
+      "rpc_ms": {
+        "start_run": 1109.3947000335902,
+        "action": 192.27239955216646,
+        "get_map": 15.15250001102686,
+        "write_continue_save": 180.04809971898794,
+        "f1_begin": 62.540399841964245,
+        "f1_step": 451.623500790447
+      },
+      "peak_working_set_bytes": 125038592
+    },
+    {
+      "id": "iron-7",
+      "history": "85e7664f5ce243ce9cd60d3b9983dbf5c4e46bb41db7596abaf6bd655ce5b847",
+      "partition": "validation",
+      "spec": {
+        "character": "Ironclad",
+        "ascension": 0,
+        "map": "west",
+        "reward": "skip",
+        "shop": "buy_cheapest",
+        "id": "iron-7",
+        "seed": "run_7"
+      },
+      "status": "death",
+      "max_act": 1,
+      "candidates": 5,
+      "offline_teacher_assisted": false,
+      "startup_ms": 181.60589993931353,
+      "last_context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 9,
+        "room_type": "Elite",
+        "boss": {
+          "id": "CEREMONIAL_BEAST_BOSS",
+          "name": "CEREMONIAL_BEAST.name"
+        }
+      },
+      "elapsed_ms": 11496.002800064161,
+      "combat_timing_ms": {
+        "observe_ms": 26.922,
+        "decision_ms": 1.483099999999998,
+        "execute_ms": 232.39589999999998,
+        "f1_step_rpc_ms": 349.62469968013465
+      },
+      "actions": 105,
+      "rpc_ms": {
+        "start_run": 1069.9679001700133,
+        "action": 418.49519964307547,
+        "get_map": 12.056100415065885,
+        "write_continue_save": 172.04229976050556,
+        "f1_begin": 64.55649994313717,
+        "f1_step": 352.0206012763083
+      },
+      "peak_working_set_bytes": 122310656
+    },
+    {
+      "id": "silent-8",
+      "history": "955434e845ef78c40bbfe20a9f13b59f584cfef16e4ec3f9353f0468dbc9a2c3",
+      "partition": "development",
+      "spec": {
+        "character": "Silent",
+        "ascension": 0,
+        "map": "middle",
+        "reward": "first",
+        "shop": "leave",
+        "id": "silent-8",
+        "seed": "run_8"
+      },
+      "status": "death",
+      "max_act": 1,
+      "candidates": 5,
+      "offline_teacher_assisted": false,
+      "startup_ms": 167.6887997891754,
+      "last_context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 12,
+        "room_type": "Elite",
+        "boss": {
+          "id": "THE_KIN_BOSS",
+          "name": "KIN_PRIEST.name"
+        }
+      },
+      "elapsed_ms": 15029.373300028965,
+      "combat_timing_ms": {
+        "observe_ms": 41.5223,
+        "decision_ms": 1.5766000000000011,
+        "execute_ms": 326.5431999999999,
+        "f1_step_rpc_ms": 514.3973999656737
+      },
+      "actions": 124,
+      "rpc_ms": {
+        "start_run": 1893.5024999082088,
+        "action": 478.4524003043771,
+        "get_map": 16.614800319075584,
+        "write_continue_save": 204.622300574556,
+        "f1_begin": 62.035900074988604,
+        "f1_step": 518.1279999669641
+      },
+      "peak_working_set_bytes": 134037504
+    }
+  ],
+  "occurrences": [
+    {
+      "root_id": "f468050d88e48d5d65ed93d4d6fe4611d98415916cac5d311b86e1dea73c9b93",
+      "run_id": "archive-west",
+      "duplicate": false,
+      "prefix_length": 236
+    },
+    {
+      "root_id": "cc2b306131b2a987661524c5d33e4ada8d5522b6df56229520e03eb8ee6e4ecd",
+      "run_id": "archive-west",
+      "duplicate": false,
+      "prefix_length": 275
+    },
+    {
+      "root_id": "f468050d88e48d5d65ed93d4d6fe4611d98415916cac5d311b86e1dea73c9b93",
+      "run_id": "archive-east",
+      "duplicate": true,
+      "prefix_length": 236
+    },
+    {
+      "root_id": "26d03ad6bd396d01641c4bcd29d6484462594f7ee128eaafe2e695df6f1f470e",
+      "run_id": "archive-east",
+      "duplicate": false,
+      "prefix_length": 281
+    },
+    {
+      "root_id": "514b8947bc78164d08f85f109920daacea77acf298c34205708d5b2cbbc2d0e2",
+      "run_id": "archive-middle",
+      "duplicate": false,
+      "prefix_length": 236
+    },
+    {
+      "root_id": "cbb20f193dca08a16711281a57fa4863942defcaee91130a516dd05f9bcc8a5a",
+      "run_id": "archive-middle",
+      "duplicate": false,
+      "prefix_length": 286
+    },
+    {
+      "root_id": "b01e6136fa2ee285d0844aa2a69817fe2e70bd4b6f16074a3ba4eb83bfe79d55",
+      "run_id": "iron-2",
+      "duplicate": false,
+      "prefix_length": 3
+    },
+    {
+      "root_id": "3b671ae5d240039b3f4439e3539f0b7c377ae3fc59352875f47fb4912dd5a6fe",
+      "run_id": "iron-2",
+      "duplicate": false,
+      "prefix_length": 19
+    },
+    {
+      "root_id": "0f61f188fc5dadf0a57ca7054ca12c5a8bfc3f9797b182cd5d78bfe238adfd3f",
+      "run_id": "iron-2",
+      "duplicate": false,
+      "prefix_length": 35
+    },
+    {
+      "root_id": "649ce0e6ebe9f0e9287534ec7cc2661b86aeec3c00b2598b5b364eda734da2fd",
+      "run_id": "iron-2",
+      "duplicate": false,
+      "prefix_length": 51
+    },
+    {
+      "root_id": "01d5b90e8808b1c14538d3795b9ae64c0f8006a05e0d917b913ae9e6b512e41a",
+      "run_id": "iron-2",
+      "duplicate": false,
+      "prefix_length": 67
+    },
+    {
+      "root_id": "f94ff381c5f1d926c04a9c151add4eadeba789c5390507dbe4f02d2d5edd4a18",
+      "run_id": "iron-2",
+      "duplicate": false,
+      "prefix_length": 88
+    },
+    {
+      "root_id": "ff5982329dbce2d79c8f2c1f7f6232891ad35cb24972fbbd6bedf763915238f1",
+      "run_id": "silent-3",
+      "duplicate": false,
+      "prefix_length": 3
+    },
+    {
+      "root_id": "f8f8fe347f2931548173fd3c52c02f409efade34e054bb052c7347bcdeae71c3",
+      "run_id": "silent-3",
+      "duplicate": false,
+      "prefix_length": 23
+    },
+    {
+      "root_id": "877cb28f558a1624d28339185aa48ac09ea4eeffe4298da77399f7087da52b9b",
+      "run_id": "silent-3",
+      "duplicate": false,
+      "prefix_length": 53
+    },
+    {
+      "root_id": "762bfbfeac5de69a9c223c434394c71f5e8a9cd12e58eb27bc6e8c1488aa2c2a",
+      "run_id": "silent-3",
+      "duplicate": false,
+      "prefix_length": 68
+    },
+    {
+      "root_id": "42f00598b0e8cbc4c2605e7a836666f4477b6a484565f0fc6f1ad94c5ab6aa9b",
+      "run_id": "iron-4",
+      "duplicate": false,
+      "prefix_length": 4
+    },
+    {
+      "root_id": "ef8f9bcc904232811389045af2b5b0d9f90fe9336fe2c4ba9b90cfa65af512a0",
+      "run_id": "iron-4",
+      "duplicate": false,
+      "prefix_length": 24
+    },
+    {
+      "root_id": "ed626a176a399949e3306e9c6d5ad0990a93ce71473809fd284645a8a5d971b2",
+      "run_id": "iron-4",
+      "duplicate": false,
+      "prefix_length": 35
+    },
+    {
+      "root_id": "4ec3113f3b4494c9fcaef1ee2d14416e8868e0ee31273d13db1b4a4d517ced74",
+      "run_id": "iron-4",
+      "duplicate": false,
+      "prefix_length": 51
+    },
+    {
+      "root_id": "64845eaca5d995038dc479c1f9daee0968467d1da0008c4b915c77e947f7664d",
+      "run_id": "iron-4",
+      "duplicate": false,
+      "prefix_length": 74
+    },
+    {
+      "root_id": "b11be3ff58fc0b3a0c0f3834e102d7ab590b1dc826edd1df754674260582d7aa",
+      "run_id": "silent-5",
+      "duplicate": false,
+      "prefix_length": 4
+    },
+    {
+      "root_id": "0628cf3fe3eb1333803266bb61aec22c6596128844602178f1515fae74eaa2e7",
+      "run_id": "silent-5",
+      "duplicate": false,
+      "prefix_length": 34
+    },
+    {
+      "root_id": "e5ad2a048e657035d11ce214055ae7dbff2b3da1e0f294d5f900589854dbc893",
+      "run_id": "silent-5",
+      "duplicate": false,
+      "prefix_length": 58
+    },
+    {
+      "root_id": "7d8e45d410ab13f9568ade12e7d217d831c9a5034a39f6851107b24030522670",
+      "run_id": "silent-5",
+      "duplicate": false,
+      "prefix_length": 80
+    },
+    {
+      "root_id": "8f062e1bd7eca0adec1d344e5fbf785bf60609dc9441ddb79e0212d6765c8af6",
+      "run_id": "silent-5",
+      "duplicate": false,
+      "prefix_length": 110
+    },
+    {
+      "root_id": "af5d16d6eec327347a359cf3fee7b9c5f927909029a95e10f34bdf18c21bd4e8",
+      "run_id": "silent-5",
+      "duplicate": false,
+      "prefix_length": 156
+    },
+    {
+      "root_id": "7db3517c0d14a4ee8b08e05d7e3575b36fdaa9b889dffd6a46e39a6ff16b634f",
+      "run_id": "silent-5",
+      "duplicate": false,
+      "prefix_length": 193
+    },
+    {
+      "root_id": "a2217e8f10cd9807748b487b73d8497cc73b68f64fe51947144fa4d613d154ad",
+      "run_id": "silent-5",
+      "duplicate": false,
+      "prefix_length": 250
+    },
+    {
+      "root_id": "269ef6a56e5e3f69efb78aa9c0f4cb1c7f7d02088cb734265037758aef79c9da",
+      "run_id": "iron-6-a2",
+      "duplicate": false,
+      "prefix_length": 3
+    },
+    {
+      "root_id": "e9f9eb633b7b56fe43b9b2604216bbd10497858e16f1e63860c625e127dd9bb0",
+      "run_id": "iron-6-a2",
+      "duplicate": false,
+      "prefix_length": 19
+    },
+    {
+      "root_id": "8d076286b4bbd44bc817b0a11651ac8606a96db44018dcaf08527f19afdf999c",
+      "run_id": "iron-6-a2",
+      "duplicate": false,
+      "prefix_length": 37
+    },
+    {
+      "root_id": "e9211cf755aa8463f9b3a8055dff8df0aa54e21fa201174406e6c769a4d92ee9",
+      "run_id": "iron-6-a2",
+      "duplicate": false,
+      "prefix_length": 54
+    },
+    {
+      "root_id": "2168a6a85d0ff16a8e96f87e51479fefef3a925159ce4a5ee89565f649b8019b",
+      "run_id": "iron-6-a2",
+      "duplicate": false,
+      "prefix_length": 68
+    },
+    {
+      "root_id": "27943dfd62b3b09bac30d243100e8f7aee767bb234b8f0f135287c14983ba628",
+      "run_id": "iron-6-a2",
+      "duplicate": false,
+      "prefix_length": 98
+    },
+    {
+      "root_id": "d293c9253b77f5fe853d5ba2c83e12e808e488ca4974b8a7940547d8dd94f49f",
+      "run_id": "iron-6-a2",
+      "duplicate": false,
+      "prefix_length": 111
+    },
+    {
+      "root_id": "734876c7bdc6b3af791181c769b7ac32201cac6dfa030f60b136e14dc75123a3",
+      "run_id": "iron-7",
+      "duplicate": false,
+      "prefix_length": 3
+    },
+    {
+      "root_id": "f34ab022b020b4a1771250c2826469b5bea196dad7f0fa3395cff564fab4b855",
+      "run_id": "iron-7",
+      "duplicate": false,
+      "prefix_length": 22
+    },
+    {
+      "root_id": "d84e617ca82ad624f6ab6f46214c2d081c5f94a5362a8fda896df48261c81f34",
+      "run_id": "iron-7",
+      "duplicate": false,
+      "prefix_length": 38
+    },
+    {
+      "root_id": "cd5164ea684a2856c9c3dc67a2f6a4a057b4bdda922166e9500cdef76531d88c",
+      "run_id": "iron-7",
+      "duplicate": false,
+      "prefix_length": 59
+    },
+    {
+      "root_id": "29d40d7bfbff5f057d20d2a51ee05810989cc129d9d4d422f06e71517d687826",
+      "run_id": "iron-7",
+      "duplicate": false,
+      "prefix_length": 82
+    },
+    {
+      "root_id": "5e88eb7e0fafe6459c624595c3e5ff9aa9fcc378324770aa66d7010895b3338f",
+      "run_id": "silent-8",
+      "duplicate": false,
+      "prefix_length": 4
+    },
+    {
+      "root_id": "588db2465a0514fb413e1b8de3f73945e68056d34f469c0c702910c9baf69bad",
+      "run_id": "silent-8",
+      "duplicate": false,
+      "prefix_length": 39
+    },
+    {
+      "root_id": "9782c680ab572a97bb7b4d15e0d2a1a824d7522fe21b8aa70332759f6325c371",
+      "run_id": "silent-8",
+      "duplicate": false,
+      "prefix_length": 60
+    },
+    {
+      "root_id": "4d4ecc3d2d4b8195da74b1364fe3a1efc30c1f1b3b156810b7b92dc762e2babb",
+      "run_id": "silent-8",
+      "duplicate": false,
+      "prefix_length": 79
+    },
+    {
+      "root_id": "752437e4ce84142b64203e609020a53290c0cf02052a32e6cdcc6f7e227b20ab",
+      "run_id": "silent-8",
+      "duplicate": false,
+      "prefix_length": 96
+    }
+  ],
+  "collection_batches": [
+    {
+      "workers": 2,
+      "seconds": 62.8834786999505,
+      "runs": 10,
+      "peak_working_set_bytes": 476422144,
+      "memory_samples": 2100
+    }
+  ],
+  "validations": [
+    {
+      "kind": "native_root_restore",
+      "root_id": "f468050d88e48d5d65ed93d4d6fe4611d98415916cac5d311b86e1dea73c9b93",
+      "checkpoint_sha256": "680cccad0ddfb7f587d1926714bb83aa32ac369ae444be69901e700902fc5051",
+      "status": "pass",
+      "startup_ms": 143.91610003076494,
+      "rpc_ms": {
+        "load_save": 1492.3575997818261,
+        "get_map": 4.713700152933598,
+        "action": 122.84740014001727,
+        "f1_begin": 71.09689991921186
+      },
+      "peak_working_set_bytes": 113594368,
+      "elapsed_ms": 1862.8619001246989,
+      "run_id": "archive-west",
+      "occurrence": 236
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "cc2b306131b2a987661524c5d33e4ada8d5522b6df56229520e03eb8ee6e4ecd",
+      "checkpoint_sha256": "85ca27a2cbe3044ae060a94d18eb4607f7152d32dcfd1ca99941fdb6b8b8d2b7",
+      "status": "pass",
+      "startup_ms": 137.0296000968665,
+      "rpc_ms": {
+        "load_save": 1491.5062999352813,
+        "get_map": 4.030399955809116,
+        "action": 131.4407999161631,
+        "f1_begin": 63.807299826294184
+      },
+      "peak_working_set_bytes": 113168384,
+      "elapsed_ms": 1855.3687001112849,
+      "run_id": "archive-west",
+      "occurrence": 275
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "f468050d88e48d5d65ed93d4d6fe4611d98415916cac5d311b86e1dea73c9b93",
+      "checkpoint_sha256": "680cccad0ddfb7f587d1926714bb83aa32ac369ae444be69901e700902fc5051",
+      "status": "pass",
+      "startup_ms": 143.84279982186854,
+      "rpc_ms": {
+        "load_save": 1557.5727000832558,
+        "get_map": 4.866200033575296,
+        "action": 124.19050000607967,
+        "f1_begin": 72.66539987176657
+      },
+      "peak_working_set_bytes": 113692672,
+      "elapsed_ms": 1949.3118999525905,
+      "run_id": "archive-east",
+      "occurrence": 236
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "26d03ad6bd396d01641c4bcd29d6484462594f7ee128eaafe2e695df6f1f470e",
+      "checkpoint_sha256": "a713c1e80b8dbf3a833153d2760a2ea0c0d0b59591149d95b9cfaef1ae308d0f",
+      "status": "pass",
+      "startup_ms": 139.6860999520868,
+      "rpc_ms": {
+        "load_save": 1434.7497001290321,
+        "get_map": 4.532800056040287,
+        "action": 138.06500006467104,
+        "f1_begin": 64.92639984935522
+      },
+      "peak_working_set_bytes": 113270784,
+      "elapsed_ms": 1809.5532997976989,
+      "run_id": "archive-east",
+      "occurrence": 281
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "514b8947bc78164d08f85f109920daacea77acf298c34205708d5b2cbbc2d0e2",
+      "checkpoint_sha256": "47b789095519b3d10a7a268c0cf825b43b77302d8d31c519ae630332e0b43c6f",
+      "status": "pass",
+      "startup_ms": 135.9512999188155,
+      "rpc_ms": {
+        "load_save": 1335.7167998328805,
+        "get_map": 3.8167000748217106,
+        "action": 112.75080009363592,
+        "f1_begin": 66.50259997695684
+      },
+      "peak_working_set_bytes": 113647616,
+      "elapsed_ms": 1682.759900111705,
+      "run_id": "archive-middle",
+      "occurrence": 236
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "cbb20f193dca08a16711281a57fa4863942defcaee91130a516dd05f9bcc8a5a",
+      "checkpoint_sha256": "92550480e3fc9333fd5791653c31faf0c5512ccc4e090e3a60381d5cb0fc2494",
+      "status": "pass",
+      "startup_ms": 131.24270015396178,
+      "rpc_ms": {
+        "load_save": 1328.5931998398155,
+        "get_map": 3.557099960744381,
+        "action": 123.13750013709068,
+        "f1_begin": 64.47120010852814
+      },
+      "peak_working_set_bytes": 113295360,
+      "elapsed_ms": 1677.505400031805,
+      "run_id": "archive-middle",
+      "occurrence": 286
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "b01e6136fa2ee285d0844aa2a69817fe2e70bd4b6f16074a3ba4eb83bfe79d55",
+      "checkpoint_sha256": "1793c05ab48e9adc62ee3fd8e484abb9b7cd436f196a243ab6769136adda3f0d",
+      "status": "pass",
+      "startup_ms": 163.5203999467194,
+      "rpc_ms": {
+        "load_save": 1363.6698999907821,
+        "get_map": 3.959599882364273,
+        "action": 106.27779993228614,
+        "f1_begin": 54.16429997421801
+      },
+      "peak_working_set_bytes": 112345088,
+      "elapsed_ms": 1731.3067999202758,
+      "run_id": "iron-2",
+      "occurrence": 3
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "3b671ae5d240039b3f4439e3539f0b7c377ae3fc59352875f47fb4912dd5a6fe",
+      "checkpoint_sha256": "0fb5fc3b030b036fe2c128d9c736e14fd6e81e97a164f2c3fbb0ca0e228649af",
+      "status": "pass",
+      "startup_ms": 153.07269990444183,
+      "rpc_ms": {
+        "load_save": 1314.9902999866754,
+        "get_map": 3.833400085568428,
+        "action": 107.76070016436279,
+        "f1_begin": 55.58249983005226
+      },
+      "peak_working_set_bytes": 112750592,
+      "elapsed_ms": 1660.354500170797,
+      "run_id": "iron-2",
+      "occurrence": 19
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "0f61f188fc5dadf0a57ca7054ca12c5a8bfc3f9797b182cd5d78bfe238adfd3f",
+      "checkpoint_sha256": "ffca70f207724d08969115affa349159373668a1b9608761c4dcbec18c142a99",
+      "status": "pass",
+      "startup_ms": 142.4636000301689,
+      "rpc_ms": {
+        "load_save": 1391.5608001407236,
+        "get_map": 4.207500023767352,
+        "action": 108.28900011256337,
+        "f1_begin": 54.402200039476156
+      },
+      "peak_working_set_bytes": 112660480,
+      "elapsed_ms": 1725.4524999298155,
+      "run_id": "iron-2",
+      "occurrence": 35
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "649ce0e6ebe9f0e9287534ec7cc2661b86aeec3c00b2598b5b364eda734da2fd",
+      "checkpoint_sha256": "85b1d448b5cede914eb6e54467a9e13f4923b1847834e8376d3351d2d4c6da13",
+      "status": "pass",
+      "startup_ms": 133.26529995538294,
+      "rpc_ms": {
+        "load_save": 1314.2472999170423,
+        "get_map": 4.002099856734276,
+        "action": 130.73309999890625,
+        "f1_begin": 67.41579994559288
+      },
+      "peak_working_set_bytes": 112742400,
+      "elapsed_ms": 1689.3539000302553,
+      "run_id": "iron-2",
+      "occurrence": 51
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "01d5b90e8808b1c14538d3795b9ae64c0f8006a05e0d917b913ae9e6b512e41a",
+      "checkpoint_sha256": "b9c202a30cad9b82e5060f27fbc1d7c7facf3a1c954e5589e395b7b368e577b4",
+      "status": "pass",
+      "startup_ms": 129.6009998768568,
+      "rpc_ms": {
+        "load_save": 1351.4054999686778,
+        "get_map": 4.595200065523386,
+        "action": 135.5343998875469,
+        "f1_begin": 60.87010004557669
+      },
+      "peak_working_set_bytes": 112926720,
+      "elapsed_ms": 1713.8662999495864,
+      "run_id": "iron-2",
+      "occurrence": 67
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "f94ff381c5f1d926c04a9c151add4eadeba789c5390507dbe4f02d2d5edd4a18",
+      "checkpoint_sha256": "dfcbe042352c6f8bca1dc9d81677cc6e375d83dbe4f22ff2dffb8cc14d694c19",
+      "status": "pass",
+      "startup_ms": 145.05970012396574,
+      "rpc_ms": {
+        "load_save": 1493.2999999728054,
+        "get_map": 5.163399968296289,
+        "action": 126.6359998844564,
+        "f1_begin": 69.41350013948977
+      },
+      "peak_working_set_bytes": 112795648,
+      "elapsed_ms": 1870.5029000993818,
+      "run_id": "iron-2",
+      "occurrence": 88
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "ff5982329dbce2d79c8f2c1f7f6232891ad35cb24972fbbd6bedf763915238f1",
+      "checkpoint_sha256": "6084aaadfc87c887bf84fd235392da53c1840276083daa472a3eb072b13a4b7d",
+      "status": "pass",
+      "startup_ms": 148.625300033018,
+      "rpc_ms": {
+        "load_save": 1330.656799953431,
+        "get_map": 4.1554998606443405,
+        "action": 117.64560011215508,
+        "f1_begin": 58.165600057691336
+      },
+      "peak_working_set_bytes": 112787456,
+      "elapsed_ms": 1687.3395999427885,
+      "run_id": "silent-3",
+      "occurrence": 3
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "f8f8fe347f2931548173fd3c52c02f409efade34e054bb052c7347bcdeae71c3",
+      "checkpoint_sha256": "493b64aeea878be4227f4dac8fa57ad6a58b2613ac86a0caee800b8e6b427bae",
+      "status": "pass",
+      "startup_ms": 144.85460007563233,
+      "rpc_ms": {
+        "load_save": 1456.2496999278665,
+        "get_map": 5.57669997215271,
+        "action": 130.1200999878347,
+        "f1_begin": 78.84819991886616
+      },
+      "peak_working_set_bytes": 112607232,
+      "elapsed_ms": 1870.2851999551058,
+      "run_id": "silent-3",
+      "occurrence": 23
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "877cb28f558a1624d28339185aa48ac09ea4eeffe4298da77399f7087da52b9b",
+      "checkpoint_sha256": "d5abcfd25ad77c352594eff675b50fa7685e15a08ff29825418e08fc04e6ea17",
+      "status": "pass",
+      "startup_ms": 143.03150004707277,
+      "rpc_ms": {
+        "load_save": 1476.136300014332,
+        "get_map": 6.131400121375918,
+        "action": 125.93459989875555,
+        "f1_begin": 73.03149998188019
+      },
+      "peak_working_set_bytes": 112492544,
+      "elapsed_ms": 1860.7115000486374,
+      "run_id": "silent-3",
+      "occurrence": 53
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "762bfbfeac5de69a9c223c434394c71f5e8a9cd12e58eb27bc6e8c1488aa2c2a",
+      "checkpoint_sha256": "91e743e646536431c14518880af09871c8362c3eabe8bf49a3a28660c1a31d95",
+      "status": "pass",
+      "startup_ms": 145.03949997015297,
+      "rpc_ms": {
+        "load_save": 1351.908299839124,
+        "get_map": 3.979400033131242,
+        "action": 138.27540003694594,
+        "f1_begin": 68.22520005516708
+      },
+      "peak_working_set_bytes": 112402432,
+      "elapsed_ms": 1740.6081999652088,
+      "run_id": "silent-3",
+      "occurrence": 68
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "42f00598b0e8cbc4c2605e7a836666f4477b6a484565f0fc6f1ad94c5ab6aa9b",
+      "checkpoint_sha256": "bce58626b49a53dc9d4e351dcf6e9267bab693405403751825710180280c6ec0",
+      "status": "pass",
+      "startup_ms": 142.58950017392635,
+      "rpc_ms": {
+        "load_save": 1437.4609000515193,
+        "get_map": 5.020599812269211,
+        "action": 124.13679994642735,
+        "f1_begin": 70.20980003289878
+      },
+      "peak_working_set_bytes": 112345088,
+      "elapsed_ms": 1820.5321000423282,
+      "run_id": "iron-4",
+      "occurrence": 4
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "ef8f9bcc904232811389045af2b5b0d9f90fe9336fe2c4ba9b90cfa65af512a0",
+      "checkpoint_sha256": "d2c7fe04918394fd84ed83b1f91c3769026d990bdf0b9bc5c03a269d89b0a708",
+      "status": "pass",
+      "startup_ms": 135.45960001647472,
+      "rpc_ms": {
+        "load_save": 1352.9982999898493,
+        "get_map": 4.557200009003282,
+        "action": 126.88590004108846,
+        "f1_begin": 62.55449983291328
+      },
+      "peak_working_set_bytes": 112992256,
+      "elapsed_ms": 1709.605900105089,
+      "run_id": "iron-4",
+      "occurrence": 24
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "ed626a176a399949e3306e9c6d5ad0990a93ce71473809fd284645a8a5d971b2",
+      "checkpoint_sha256": "fd30a6ede4142ca7c8bf0c3ca27446b9e0d39300e6fb9e191a72b724b200bd84",
+      "status": "pass",
+      "startup_ms": 131.15229993127286,
+      "rpc_ms": {
+        "load_save": 1361.3332000095397,
+        "get_map": 4.486100049689412,
+        "action": 120.58129999786615,
+        "f1_begin": 65.7430998980999
+      },
+      "peak_working_set_bytes": 113049600,
+      "elapsed_ms": 1710.6985000427812,
+      "run_id": "iron-4",
+      "occurrence": 35
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "4ec3113f3b4494c9fcaef1ee2d14416e8868e0ee31273d13db1b4a4d517ced74",
+      "checkpoint_sha256": "ba299f6fb133cd286f821a8b69043312bbd80fa1ec9263c7f5461c4196ef9dd9",
+      "status": "pass",
+      "startup_ms": 145.37409995682538,
+      "rpc_ms": {
+        "load_save": 1323.3091000001878,
+        "get_map": 3.756399964913726,
+        "action": 115.86810019798577,
+        "f1_begin": 57.8722998034209
+      },
+      "peak_working_set_bytes": 113016832,
+      "elapsed_ms": 1675.6252001505345,
+      "run_id": "iron-4",
+      "occurrence": 51
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "64845eaca5d995038dc479c1f9daee0968467d1da0008c4b915c77e947f7664d",
+      "checkpoint_sha256": "4997e443171455d97fdaaafb1ee61d53140d280aae9d2148f88f4c874b66b7e7",
+      "status": "pass",
+      "startup_ms": 143.24879995547235,
+      "rpc_ms": {
+        "load_save": 1360.9020998701453,
+        "get_map": 3.795300144702196,
+        "action": 117.65399994328618,
+        "f1_begin": 56.542100152000785
+      },
+      "peak_working_set_bytes": 112857088,
+      "elapsed_ms": 1708.321399986744,
+      "run_id": "iron-4",
+      "occurrence": 74
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "b11be3ff58fc0b3a0c0f3834e102d7ab590b1dc826edd1df754674260582d7aa",
+      "checkpoint_sha256": "e543d2f65b8fdfccd47e244e81e5ab96ae2d7e958c1a43622cf766e8fee99424",
+      "status": "pass",
+      "startup_ms": 138.89990001916885,
+      "rpc_ms": {
+        "load_save": 1347.9544001165777,
+        "get_map": 4.508799873292446,
+        "action": 115.65300007350743,
+        "f1_begin": 58.075099950656295
+      },
+      "peak_working_set_bytes": 112496640,
+      "elapsed_ms": 1704.949100036174,
+      "run_id": "silent-5",
+      "occurrence": 4
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "0628cf3fe3eb1333803266bb61aec22c6596128844602178f1515fae74eaa2e7",
+      "checkpoint_sha256": "48c7e2d70d1b265fa22edb0573f3ee4f2592e3129a64de6117056e764d9e8b08",
+      "status": "pass",
+      "startup_ms": 139.06600000336766,
+      "rpc_ms": {
+        "load_save": 1280.777599895373,
+        "get_map": 3.827200038358569,
+        "action": 109.30110001936555,
+        "f1_begin": 58.481300016865134
+      },
+      "peak_working_set_bytes": 112521216,
+      "elapsed_ms": 1616.2744001485407,
+      "run_id": "silent-5",
+      "occurrence": 34
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "e5ad2a048e657035d11ce214055ae7dbff2b3da1e0f294d5f900589854dbc893",
+      "checkpoint_sha256": "e1047a2a20dc66e287f28b00cabfe828b4c60b1ffd401dd20c4ca5565a477b84",
+      "status": "pass",
+      "startup_ms": 172.62189998291433,
+      "rpc_ms": {
+        "load_save": 1357.6928998809308,
+        "get_map": 4.154499853029847,
+        "action": 116.60180008038878,
+        "f1_begin": 56.53619999065995
+      },
+      "peak_working_set_bytes": 112730112,
+      "elapsed_ms": 1736.4062999840826,
+      "run_id": "silent-5",
+      "occurrence": 58
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "7d8e45d410ab13f9568ade12e7d217d831c9a5034a39f6851107b24030522670",
+      "checkpoint_sha256": "d23abdb124b9fc07239c67c0ef5a1aae78d8f329a5fbb7d6906b4690808245ac",
+      "status": "pass",
+      "startup_ms": 153.39370002038777,
+      "rpc_ms": {
+        "load_save": 1323.8368998281658,
+        "get_map": 3.973799990490079,
+        "action": 113.09400014579296,
+        "f1_begin": 54.5588000677526
+      },
+      "peak_working_set_bytes": 112939008,
+      "elapsed_ms": 1674.3040001019835,
+      "run_id": "silent-5",
+      "occurrence": 80
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "8f062e1bd7eca0adec1d344e5fbf785bf60609dc9441ddb79e0212d6765c8af6",
+      "checkpoint_sha256": "b1229b46cd84476d4c7195c4fd312b45d8be54b8aa5d68d0fa50c43d520d98e5",
+      "status": "pass",
+      "startup_ms": 132.29919993318617,
+      "rpc_ms": {
+        "load_save": 1363.7624001130462,
+        "get_map": 4.6531998086720705,
+        "action": 133.28199996612966,
+        "f1_begin": 56.63120001554489
+      },
+      "peak_working_set_bytes": 112971776,
+      "elapsed_ms": 1715.7576000317931,
+      "run_id": "silent-5",
+      "occurrence": 110
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "af5d16d6eec327347a359cf3fee7b9c5f927909029a95e10f34bdf18c21bd4e8",
+      "checkpoint_sha256": "eb36f986f33d6d6884602e749bf02171ee140f6483b4e2d73dafdaee277d40e0",
+      "status": "pass",
+      "startup_ms": 138.41490005142987,
+      "rpc_ms": {
+        "load_save": 1323.4285998623818,
+        "get_map": 5.012799985706806,
+        "action": 121.44290003925562,
+        "f1_begin": 64.76019998081028
+      },
+      "peak_working_set_bytes": 112979968,
+      "elapsed_ms": 1684.2908000107855,
+      "run_id": "silent-5",
+      "occurrence": 156
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "7db3517c0d14a4ee8b08e05d7e3575b36fdaa9b889dffd6a46e39a6ff16b634f",
+      "checkpoint_sha256": "fa3572f84e8ebbc714a8079ce5f318ad38f2fbc90285341459901fb1abf134bc",
+      "status": "pass",
+      "startup_ms": 129.2950001079589,
+      "rpc_ms": {
+        "load_save": 1369.363300036639,
+        "get_map": 4.42839995957911,
+        "action": 128.1765999738127,
+        "f1_begin": 60.78099994920194
+      },
+      "peak_working_set_bytes": 113446912,
+      "elapsed_ms": 1720.817199908197,
+      "run_id": "silent-5",
+      "occurrence": 193
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "a2217e8f10cd9807748b487b73d8497cc73b68f64fe51947144fa4d613d154ad",
+      "checkpoint_sha256": "e169c3123d887bf1971828cf8904f40a7b6754ea7f1c4b7827b0bd1a597d6a6e",
+      "status": "pass",
+      "startup_ms": 198.71399994008243,
+      "rpc_ms": {
+        "load_save": 1295.0471001677215,
+        "get_map": 3.9341000374406576,
+        "action": 118.97299997508526,
+        "f1_begin": 54.76930015720427
+      },
+      "peak_working_set_bytes": 113184768,
+      "elapsed_ms": 1696.140700019896,
+      "run_id": "silent-5",
+      "occurrence": 250
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "269ef6a56e5e3f69efb78aa9c0f4cb1c7f7d02088cb734265037758aef79c9da",
+      "checkpoint_sha256": "bdb87e7cdad06b179b9c11f644f34a83c360843c7f98e8b784dd5fee0c944070",
+      "status": "pass",
+      "startup_ms": 142.946399981156,
+      "rpc_ms": {
+        "load_save": 1374.9609999358654,
+        "get_map": 5.6172998156398535,
+        "action": 116.10109987668693,
+        "f1_begin": 60.07610005326569
+      },
+      "peak_working_set_bytes": 112685056,
+      "elapsed_ms": 1726.9772998988628,
+      "run_id": "iron-6-a2",
+      "occurrence": 3
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "e9f9eb633b7b56fe43b9b2604216bbd10497858e16f1e63860c625e127dd9bb0",
+      "checkpoint_sha256": "cdf9e87b71cd1d26d36db15fdd45055f3e01bd047b94b86c18ac37dbe51799b3",
+      "status": "pass",
+      "startup_ms": 144.2575000692159,
+      "rpc_ms": {
+        "load_save": 1348.7931999843568,
+        "get_map": 4.452999914065003,
+        "action": 129.1541000828147,
+        "f1_begin": 63.51690017618239
+      },
+      "peak_working_set_bytes": 112709632,
+      "elapsed_ms": 1716.9182999059558,
+      "run_id": "iron-6-a2",
+      "occurrence": 19
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "8d076286b4bbd44bc817b0a11651ac8606a96db44018dcaf08527f19afdf999c",
+      "checkpoint_sha256": "dabff1ad66fe11f85fed5ce4fb2f78b0406d797437b302e8a7a95f2a812de29c",
+      "status": "pass",
+      "startup_ms": 130.5061001330614,
+      "rpc_ms": {
+        "load_save": 1284.163999836892,
+        "get_map": 4.581599961966276,
+        "action": 119.8843999300152,
+        "f1_begin": 62.1030000038445
+      },
+      "peak_working_set_bytes": 112578560,
+      "elapsed_ms": 1629.964399849996,
+      "run_id": "iron-6-a2",
+      "occurrence": 37
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "e9211cf755aa8463f9b3a8055dff8df0aa54e21fa201174406e6c769a4d92ee9",
+      "checkpoint_sha256": "e0d1cf7c40f95a405206e21375f6169a0d1ec30aceb8875b5b66c3c9f071aef2",
+      "status": "pass",
+      "startup_ms": 148.4370999969542,
+      "rpc_ms": {
+        "load_save": 1496.3789000175893,
+        "get_map": 9.05420002527535,
+        "action": 169.76370010524988,
+        "f1_begin": 62.43339995853603
+      },
+      "peak_working_set_bytes": 112939008,
+      "elapsed_ms": 1920.3866000752896,
+      "run_id": "iron-6-a2",
+      "occurrence": 54
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "2168a6a85d0ff16a8e96f87e51479fefef3a925159ce4a5ee89565f649b8019b",
+      "checkpoint_sha256": "291147ea6c4e6ebebeb19ea783d76c80618244abdd8ed116f0322e6275d47271",
+      "status": "pass",
+      "startup_ms": 132.9741000663489,
+      "rpc_ms": {
+        "load_save": 1334.9325999151915,
+        "get_map": 4.146500024944544,
+        "action": 135.16089995391667,
+        "f1_begin": 73.2595999725163
+      },
+      "peak_working_set_bytes": 113045504,
+      "elapsed_ms": 1727.9674999881536,
+      "run_id": "iron-6-a2",
+      "occurrence": 68
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "27943dfd62b3b09bac30d243100e8f7aee767bb234b8f0f135287c14983ba628",
+      "checkpoint_sha256": "91f3673f78d44d1b018d07c9a498911d79b87f475c506b14d7d433d818b921aa",
+      "status": "pass",
+      "startup_ms": 142.20549981109798,
+      "rpc_ms": {
+        "load_save": 1301.0352000128478,
+        "get_map": 4.3842000886797905,
+        "action": 122.00800003483891,
+        "f1_begin": 61.40860007144511
+      },
+      "peak_working_set_bytes": 112971776,
+      "elapsed_ms": 1664.543200051412,
+      "run_id": "iron-6-a2",
+      "occurrence": 98
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "d293c9253b77f5fe853d5ba2c83e12e808e488ca4974b8a7940547d8dd94f49f",
+      "checkpoint_sha256": "ad0fbb70bb6a84e072d9afc0966c4dc3ca0ea77233c347412229a753cff2589b",
+      "status": "pass",
+      "startup_ms": 165.55759985931218,
+      "rpc_ms": {
+        "load_save": 1333.9362000115216,
+        "get_map": 3.991799894720316,
+        "action": 130.16810012049973,
+        "f1_begin": 59.53969992697239
+      },
+      "peak_working_set_bytes": 113242112,
+      "elapsed_ms": 1736.9265998713672,
+      "run_id": "iron-6-a2",
+      "occurrence": 111
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "734876c7bdc6b3af791181c769b7ac32201cac6dfa030f60b136e14dc75123a3",
+      "checkpoint_sha256": "4b1137ea1e7c569a30dc70778d8069e6522148fc94747d8487cd9403b3b4abda",
+      "status": "pass",
+      "startup_ms": 141.91970019601285,
+      "rpc_ms": {
+        "load_save": 1350.1809001900256,
+        "get_map": 5.099600180983543,
+        "action": 114.71060011535883,
+        "f1_begin": 60.2468999568373
+      },
+      "peak_working_set_bytes": 112615424,
+      "elapsed_ms": 1701.3852999079973,
+      "run_id": "iron-7",
+      "occurrence": 3
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "f34ab022b020b4a1771250c2826469b5bea196dad7f0fa3395cff564fab4b855",
+      "checkpoint_sha256": "22010799e48904be065d3620b287ef43eff392c090ef07d2a9dbf27529fa960e",
+      "status": "pass",
+      "startup_ms": 140.2174001559615,
+      "rpc_ms": {
+        "load_save": 1388.3632000070065,
+        "get_map": 4.568499978631735,
+        "action": 113.41660004109144,
+        "f1_begin": 53.78650012426078
+      },
+      "peak_working_set_bytes": 112640000,
+      "elapsed_ms": 1726.9487001467496,
+      "run_id": "iron-7",
+      "occurrence": 22
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "d84e617ca82ad624f6ab6f46214c2d081c5f94a5362a8fda896df48261c81f34",
+      "checkpoint_sha256": "1c22964fcbc990659d49af2d88623efe6c6e129a2c1e0535383f8715f83e602b",
+      "status": "pass",
+      "startup_ms": 155.27410013601184,
+      "rpc_ms": {
+        "load_save": 1302.4738000240177,
+        "get_map": 4.00319998152554,
+        "action": 114.06700010411441,
+        "f1_begin": 55.212900042533875
+      },
+      "peak_working_set_bytes": 112828416,
+      "elapsed_ms": 1655.486200004816,
+      "run_id": "iron-7",
+      "occurrence": 38
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "cd5164ea684a2856c9c3dc67a2f6a4a057b4bdda922166e9500cdef76531d88c",
+      "checkpoint_sha256": "77c28dc2e3e59e8aafd071a6edf9e528dc607b94b00d75094b1e345973869da7",
+      "status": "pass",
+      "startup_ms": 134.18060005642474,
+      "rpc_ms": {
+        "load_save": 1379.3242999818176,
+        "get_map": 4.5958999544382095,
+        "action": 125.64300000667572,
+        "f1_begin": 54.67880005016923
+      },
+      "peak_working_set_bytes": 112951296,
+      "elapsed_ms": 1739.3155999016017,
+      "run_id": "iron-7",
+      "occurrence": 59
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "29d40d7bfbff5f057d20d2a51ee05810989cc129d9d4d422f06e71517d687826",
+      "checkpoint_sha256": "82f6c0e08feb586b75026bf8da42e83f6899f2f08767c9b72c57c686414e1cdd",
+      "status": "pass",
+      "startup_ms": 134.03950002975762,
+      "rpc_ms": {
+        "load_save": 1352.8599001001567,
+        "get_map": 4.678400000557303,
+        "action": 136.10580004751682,
+        "f1_begin": 60.90819998644292
+      },
+      "peak_working_set_bytes": 111517696,
+      "elapsed_ms": 1713.576199952513,
+      "run_id": "iron-7",
+      "occurrence": 82
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "5e88eb7e0fafe6459c624595c3e5ff9aa9fcc378324770aa66d7010895b3338f",
+      "checkpoint_sha256": "fa52fb99a15c739a91dbcaa9075c77574d25490e0ab4276f74ff4eb703c8cf54",
+      "status": "pass",
+      "startup_ms": 128.98769997991621,
+      "rpc_ms": {
+        "load_save": 1335.8211999293417,
+        "get_map": 4.570499993860722,
+        "action": 116.23100005090237,
+        "f1_begin": 58.1838998477906
+      },
+      "peak_working_set_bytes": 112676864,
+      "elapsed_ms": 1672.557800076902,
+      "run_id": "silent-8",
+      "occurrence": 4
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "588db2465a0514fb413e1b8de3f73945e68056d34f469c0c702910c9baf69bad",
+      "checkpoint_sha256": "f135ace5eb77db908f59a0057e52bd0d4deec65b89418c9da7a12eae4925eaf2",
+      "status": "pass",
+      "startup_ms": 149.0288998465985,
+      "rpc_ms": {
+        "load_save": 1354.6711998060346,
+        "get_map": 3.951400052756071,
+        "action": 121.4410001412034,
+        "f1_begin": 54.861299926415086
+      },
+      "peak_working_set_bytes": 112816128,
+      "elapsed_ms": 1709.1469001024961,
+      "run_id": "silent-8",
+      "occurrence": 39
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "9782c680ab572a97bb7b4d15e0d2a1a824d7522fe21b8aa70332759f6325c371",
+      "checkpoint_sha256": "9913fac50978dd2b6d92b62eaf1f2620cc9e19e6fa7bdf63970a3e071586cae0",
+      "status": "pass",
+      "startup_ms": 153.61049980856478,
+      "rpc_ms": {
+        "load_save": 1618.5132001992315,
+        "get_map": 4.553900100290775,
+        "action": 115.42570008896291,
+        "f1_begin": 75.34759980626404
+      },
+      "peak_working_set_bytes": 113000448,
+      "elapsed_ms": 2008.9936000294983,
+      "run_id": "silent-8",
+      "occurrence": 60
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "4d4ecc3d2d4b8195da74b1364fe3a1efc30c1f1b3b156810b7b92dc762e2babb",
+      "checkpoint_sha256": "9a4dc2d705cabf217c2f796d776b07b9df99151169eb757107a62dfda7b87e1d",
+      "status": "pass",
+      "startup_ms": 166.62709997035563,
+      "rpc_ms": {
+        "load_save": 1903.2690001185983,
+        "get_map": 7.727100048214197,
+        "action": 169.03940006159246,
+        "f1_begin": 78.0205000191927
+      },
+      "peak_working_set_bytes": 113000448,
+      "elapsed_ms": 2395.1872000470757,
+      "run_id": "silent-8",
+      "occurrence": 79
+    },
+    {
+      "kind": "native_root_restore",
+      "root_id": "752437e4ce84142b64203e609020a53290c0cf02052a32e6cdcc6f7e227b20ab",
+      "checkpoint_sha256": "04776a5073c8d910b364ef67213e1fe6bd072d485bb6c12a7de70b7c4e0401f8",
+      "status": "pass",
+      "startup_ms": 226.21820005588233,
+      "rpc_ms": {
+        "load_save": 2315.036800224334,
+        "get_map": 4.285900155082345,
+        "action": 182.36480001360178,
+        "f1_begin": 113.24410000815988
+      },
+      "peak_working_set_bytes": 113180672,
+      "elapsed_ms": 2888.0000000353903,
+      "run_id": "silent-8",
+      "occurrence": 96
+    },
+    {
+      "kind": "repeat_root_restore",
+      "root_id": "cc2b306131b2a987661524c5d33e4ada8d5522b6df56229520e03eb8ee6e4ecd",
+      "checkpoint_sha256": "85ca27a2cbe3044ae060a94d18eb4607f7152d32dcfd1ca99941fdb6b8b8d2b7",
+      "status": "pass",
+      "startup_ms": 143.8861999195069,
+      "rpc_ms": {
+        "load_save": 1394.5060998667032,
+        "get_map": 4.134299932047725,
+        "action": 115.00140000134706,
+        "f1_begin": 54.5010999776423
+      },
+      "peak_working_set_bytes": 113127424,
+      "elapsed_ms": 1749.886600067839,
+      "id": "039f407037d0411cb93f414e8c3b7b84"
+    },
+    {
+      "kind": "repeat_root_restore",
+      "root_id": "b01e6136fa2ee285d0844aa2a69817fe2e70bd4b6f16074a3ba4eb83bfe79d55",
+      "checkpoint_sha256": "1793c05ab48e9adc62ee3fd8e484abb9b7cd436f196a243ab6769136adda3f0d",
+      "status": "pass",
+      "startup_ms": 178.73010016046464,
+      "rpc_ms": {
+        "load_save": 1294.53569999896,
+        "get_map": 4.785299999639392,
+        "action": 107.44539997540414,
+        "f1_begin": 56.00899993441999
+      },
+      "peak_working_set_bytes": 112414720,
+      "elapsed_ms": 1680.988600011915,
+      "id": "f902ac78830b4762bd2185c4cb75e12f"
+    },
+    {
+      "kind": "repeat_root_restore",
+      "root_id": "b11be3ff58fc0b3a0c0f3834e102d7ab590b1dc826edd1df754674260582d7aa",
+      "checkpoint_sha256": "e543d2f65b8fdfccd47e244e81e5ab96ae2d7e958c1a43622cf766e8fee99424",
+      "status": "pass",
+      "startup_ms": 158.06739986874163,
+      "rpc_ms": {
+        "load_save": 1321.5702997986227,
+        "get_map": 4.871099954470992,
+        "action": 111.39749991707504,
+        "f1_begin": 54.95860008522868
+      },
+      "peak_working_set_bytes": 112771072,
+      "elapsed_ms": 1701.8604001495987,
+      "id": "26e29580a2c64851b227c301250203a8"
+    },
+    {
+      "kind": "native_policy_repeat",
+      "root_id": "cc2b306131b2a987661524c5d33e4ada8d5522b6df56229520e03eb8ee6e4ecd",
+      "expected_evaluation_id": "dd4e612f90934fe4ae355fbd8ad015a6",
+      "evaluation_id": "bdafbf13b9824d61b681b42891b27eda",
+      "status": "pass"
+    },
+    {
+      "kind": "native_policy_repeat",
+      "root_id": "cc2b306131b2a987661524c5d33e4ada8d5522b6df56229520e03eb8ee6e4ecd",
+      "expected_evaluation_id": "0b39bb22559545d88af9ca21e600a90b",
+      "evaluation_id": "71598ac629994dd79904bf1ca4d4b959",
+      "status": "pass"
+    },
+    {
+      "kind": "native_policy_repeat",
+      "root_id": "b01e6136fa2ee285d0844aa2a69817fe2e70bd4b6f16074a3ba4eb83bfe79d55",
+      "expected_evaluation_id": "ff454c58c8e145909dea6722c327b60d",
+      "evaluation_id": "b55391901d2d410abdb490327af78e33",
+      "status": "pass"
+    },
+    {
+      "kind": "native_policy_repeat",
+      "root_id": "b01e6136fa2ee285d0844aa2a69817fe2e70bd4b6f16074a3ba4eb83bfe79d55",
+      "expected_evaluation_id": "4a342d3d7ffb4a99bc80bacf8d539e01",
+      "evaluation_id": "f54595cbe1004235a61fc140ce529d10",
+      "status": "pass"
+    },
+    {
+      "kind": "native_policy_repeat",
+      "root_id": "b11be3ff58fc0b3a0c0f3834e102d7ab590b1dc826edd1df754674260582d7aa",
+      "expected_evaluation_id": "c8d19a53bb8b4e1794a3826202a98937",
+      "evaluation_id": "ae5a7460152d45dea9d310f8139fea2a",
+      "status": "pass"
+    },
+    {
+      "kind": "native_policy_repeat",
+      "root_id": "b11be3ff58fc0b3a0c0f3834e102d7ab590b1dc826edd1df754674260582d7aa",
+      "expected_evaluation_id": "3bbd930446114e41b4a340dfeebf7917",
+      "evaluation_id": "d5cc10b3f8704f8daf50dd1adfe34a97",
+      "status": "pass"
+    },
+    {
+      "id": "3d3f91934035488ba27e8479e3bb5eb6",
+      "kind": "solver_native_replay",
+      "root_id": "b01e6136fa2ee285d0844aa2a69817fe2e70bd4b6f16074a3ba4eb83bfe79d55",
+      "route_id": "e0a6b57e8a8c41b1be33e45feb1730a6",
+      "status": "win"
+    },
+    {
+      "id": "09b48369913f44488988ee8fce413795",
+      "kind": "solver_native_replay",
+      "root_id": "cc2b306131b2a987661524c5d33e4ada8d5522b6df56229520e03eb8ee6e4ecd",
+      "route_id": "a04c29be90764a188105568f1a0f9f22",
+      "status": "win"
+    }
+  ]
+}

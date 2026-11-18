@@ -1,0 +1,339 @@
+{
+  "schema": 1,
+  "serial": {
+    "batches": [
+      {
+        "workers": 1,
+        "seconds": 171.7124864999205,
+        "runs": 10,
+        "peak_working_set_bytes": 244424704,
+        "memory_samples": 5797
+      }
+    ],
+    "metrics": {
+      "roots": 45,
+      "act2_plus": 5,
+      "histories": 8,
+      "act2_plus_histories": 1,
+      "available_roots": 45,
+      "seeds": 8,
+      "attempted_histories": 8,
+      "partitions": {
+        "development": 17,
+        "test": 8,
+        "validation": 20
+      },
+      "partitions_histories": {
+        "development": 3,
+        "test": 1,
+        "validation": 4
+      },
+      "run_status": {
+        "death": 8,
+        "unsupported": 2
+      },
+      "act2_runs": 3,
+      "unassisted_act2_runs": 0,
+      "characters": {
+        "Ironclad": 28,
+        "Silent": 17
+      },
+      "acts": {
+        "1": 40,
+        "2": 5
+      },
+      "rooms": {
+        "Boss": 1,
+        "Elite": 5,
+        "Monster": 39
+      },
+      "encounters": {
+        "BOWLBUGS_WEAK": 3,
+        "BYRDONIS_ELITE": 3,
+        "CUBEX_CONSTRUCT_NORMAL": 1,
+        "FUZZY_WURM_CRAWLER_WEAK": 7,
+        "INKLETS_NORMAL": 3,
+        "MAWLER_NORMAL": 1,
+        "NIBBITS_WEAK": 4,
+        "OVERGROWTH_CRAWLERS": 1,
+        "PHROG_PARASITE_ELITE": 2,
+        "RUBY_RAIDERS_NORMAL": 2,
+        "SHRINKER_BEETLE_WEAK": 5,
+        "SLIMES_NORMAL": 2,
+        "SLIMES_WEAK": 5,
+        "SNAPPING_JAXFRUIT_NORMAL": 2,
+        "THE_KIN_BOSS": 1,
+        "TUNNELER_WEAK": 2,
+        "VINE_SHAMBLER_NORMAL": 1
+      },
+      "mechanisms": {
+        "discard": 17,
+        "draw": 9,
+        "energy_or_cost": 6,
+        "hp_spend": 4,
+        "in_combat_scaling": 5,
+        "permanent_growth": 5,
+        "topdeck": 14
+      },
+      "validation_status": {
+        "pass": 46
+      },
+      "duplicates": 1,
+      "candidates": 46,
+      "seconds": 171.7124864999205,
+      "levels": {
+        "L0": 44,
+        "L3": 1
+      },
+      "evaluation_status": {
+        "hand": {},
+        "q1": {}
+      },
+      "strict_per_minute": 15.723958432115827,
+      "act2_plus_per_minute": 1.7471064924573143,
+      "candidates_per_minute": 16.07337973060729,
+      "terminal_runs_per_minute": 2.795370387931703,
+      "victories_per_minute": 0.0
+    },
+    "aggregate_combat_ms": {
+      "observe_ms": 610.4853,
+      "decision_ms": 22.955399999999997,
+      "execute_ms": 4242.553199999999,
+      "f1_step_rpc_ms": 6636.872400762513,
+      "f1_step_rpc_residual_ms": 1760.8785007625138
+    },
+    "aggregate_run_action_rpc_ms": 13882.405000505969,
+    "median_run_handshake_ms": 245.17114995978773,
+    "median_cold_audit_ms": 2486.596899922006,
+    "median_load_rpc_ms": 1958.1810500239953,
+    "median_audit_handshake_ms": 214.84760008752346
+  },
+  "parallel": {
+    "batches": [
+      {
+        "workers": 2,
+        "seconds": 62.8834786999505,
+        "runs": 10,
+        "peak_working_set_bytes": 476422144,
+        "memory_samples": 2100
+      }
+    ],
+    "metrics": {
+      "roots": 45,
+      "act2_plus": 5,
+      "histories": 8,
+      "act2_plus_histories": 1,
+      "available_roots": 45,
+      "seeds": 8,
+      "attempted_histories": 8,
+      "partitions": {
+        "development": 17,
+        "test": 8,
+        "validation": 20
+      },
+      "partitions_histories": {
+        "development": 3,
+        "test": 1,
+        "validation": 4
+      },
+      "run_status": {
+        "death": 8,
+        "unsupported": 2
+      },
+      "act2_runs": 3,
+      "unassisted_act2_runs": 0,
+      "characters": {
+        "Ironclad": 28,
+        "Silent": 17
+      },
+      "acts": {
+        "1": 40,
+        "2": 5
+      },
+      "rooms": {
+        "Boss": 1,
+        "Elite": 5,
+        "Monster": 39
+      },
+      "encounters": {
+        "BOWLBUGS_WEAK": 3,
+        "BYRDONIS_ELITE": 3,
+        "CUBEX_CONSTRUCT_NORMAL": 1,
+        "FUZZY_WURM_CRAWLER_WEAK": 7,
+        "INKLETS_NORMAL": 3,
+        "MAWLER_NORMAL": 1,
+        "NIBBITS_WEAK": 4,
+        "OVERGROWTH_CRAWLERS": 1,
+        "PHROG_PARASITE_ELITE": 2,
+        "RUBY_RAIDERS_NORMAL": 2,
+        "SHRINKER_BEETLE_WEAK": 5,
+        "SLIMES_NORMAL": 2,
+        "SLIMES_WEAK": 5,
+        "SNAPPING_JAXFRUIT_NORMAL": 2,
+        "THE_KIN_BOSS": 1,
+        "TUNNELER_WEAK": 2,
+        "VINE_SHAMBLER_NORMAL": 1
+      },
+      "mechanisms": {
+        "discard": 17,
+        "draw": 9,
+        "energy_or_cost": 6,
+        "hp_spend": 4,
+        "in_combat_scaling": 5,
+        "permanent_growth": 5,
+        "topdeck": 14
+      },
+      "validation_status": {
+        "pass": 46
+      },
+      "duplicates": 1,
+      "candidates": 46,
+      "seconds": 62.8834786999505,
+      "levels": {
+        "L1": 43,
+        "L3": 2
+      },
+      "evaluation_status": {
+        "hand": {
+          "death": 11,
+          "win": 37
+        },
+        "q1": {
+          "death": 9,
+          "unsupported": 2,
+          "win": 37
+        }
+      },
+      "strict_per_minute": 42.93655592565246,
+      "act2_plus_per_minute": 4.770728436183607,
+      "candidates_per_minute": 43.89070161288918,
+      "terminal_runs_per_minute": 7.633165497893771,
+      "victories_per_minute": 0.0
+    },
+    "aggregate_combat_ms": {
+      "observe_ms": 425.89430000000004,
+      "decision_ms": 16.6399,
+      "execute_ms": 2579.2989000000002,
+      "f1_step_rpc_ms": 4194.206401705742,
+      "f1_step_rpc_residual_ms": 1172.3733017057416
+    },
+    "aggregate_run_action_rpc_ms": 9890.628399793059,
+    "median_run_handshake_ms": 149.27965006791055,
+    "median_cold_audit_ms": 1716.3379499688745,
+    "median_load_rpc_ms": 1353.834749897942,
+    "median_audit_handshake_ms": 142.76795007754117
+  },
+  "fixed_boundary_probe": {
+    "probe_sha256": "6365481915ebeb3e7bfd61b0984102d4e84416c8bcbab78b4ed0a22fc369eed6",
+    "comparisons": 12,
+    "discarded": [
+      "error",
+      "mismatch",
+      "pending_selection",
+      "timeout"
+    ],
+    "fixed_boundary": {
+      "cold": {
+        "samples": 6,
+        "median_wall_ms": 1885.3305500745773,
+        "median_recover_ms": 1450.7344501018524,
+        "peak_working_set_bytes": 113356800
+      },
+      "hot": {
+        "samples": 6,
+        "median_wall_ms": 217.84994995594025,
+        "median_recover_ms": 19.70519995689392,
+        "peak_working_set_bytes": 118120448
+      },
+      "batch": {
+        "samples": 6,
+        "median_wall_ms": 134.90464985370636,
+        "median_recover_ms": 14.547900080680847,
+        "peak_working_set_bytes": 123666432
+      }
+    }
+  },
+  "serial_parallel_equal": true,
+  "first_evaluations": {
+    "q1": {
+      "status": {
+        "win": 35,
+        "death": 8,
+        "unsupported": 2
+      },
+      "elapsed_ms": 123193.05949937552,
+      "median_wall_ms": 2948.3277001418173,
+      "median_cold_root_ms": 2497.284400044009
+    },
+    "hand": {
+      "status": {
+        "win": 35,
+        "death": 10
+      },
+      "elapsed_ms": 121662.05329936929,
+      "median_wall_ms": 2817.2001999337226,
+      "median_cold_root_ms": 2470.002399990335
+    }
+  },
+  "metered_pilot": {
+    "roots": 6,
+    "headless_sha256": "b3a29857f5c0a52860f1a2dff89347c6453e08c1b9d9a0c2e571ac0e3023191d",
+    "matches_uninstrumented_roots": true,
+    "commands": {
+      "start_run": {
+        "samples": 3,
+        "dispatch_ms": 4986.5189,
+        "public_combat_ms": 0.0,
+        "response_json_ms": 22.5717,
+        "stdout_flush_ms": 0.1962,
+        "rpc_ms": 5019.064899766818,
+        "rpc_residual_ms": 9.77809976681766
+      },
+      "load_save": {
+        "samples": 9,
+        "dispatch_ms": 13553.9921,
+        "public_combat_ms": 0.0,
+        "response_json_ms": 64.7941,
+        "stdout_flush_ms": 1.1628,
+        "rpc_ms": 13664.74619996734,
+        "rpc_residual_ms": 44.797199967340156
+      },
+      "action": {
+        "samples": 259,
+        "dispatch_ms": 5284.029199999997,
+        "public_combat_ms": 676.8058000000002,
+        "response_json_ms": 84.07490000000006,
+        "stdout_flush_ms": 94.01140000000008,
+        "rpc_ms": 5839.255301747471,
+        "rpc_residual_ms": 377.1398017474737
+      },
+      "f1_step": {
+        "samples": 80,
+        "dispatch_ms": 1726.8247999999992,
+        "public_combat_ms": 347.89480000000003,
+        "response_json_ms": 164.67459999999997,
+        "stdout_flush_ms": 31.608699999999992,
+        "rpc_ms": 2057.302599772811,
+        "rpc_residual_ms": 134.19449977281178
+      },
+      "get_map": {
+        "samples": 19,
+        "dispatch_ms": 43.4231,
+        "public_combat_ms": 0.0,
+        "response_json_ms": 11.4168,
+        "stdout_flush_ms": 3.6083000000000003,
+        "rpc_ms": 129.03469894081354,
+        "rpc_residual_ms": 70.58649894081354
+      },
+      "f1_begin": {
+        "samples": 16,
+        "dispatch_ms": 886.7805,
+        "public_combat_ms": 0.0,
+        "response_json_ms": 44.494,
+        "stdout_flush_ms": 1.0562,
+        "rpc_ms": 954.5376994647086,
+        "rpc_residual_ms": 22.206999464708606
+      }
+    }
+  }
+}

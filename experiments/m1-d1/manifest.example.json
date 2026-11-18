@@ -1,0 +1,1141 @@
+{
+  "schema": 1,
+  "config": {
+    "limits": {
+      "run_seconds": 90,
+      "batch_seconds": 300,
+      "audit_seconds": 14,
+      "combat_seconds": 20,
+      "run_actions": 450,
+      "combat_actions": 140,
+      "roots_per_run": 9,
+      "max_runs": 12,
+      "disk_mib": 768,
+      "min_act": 1
+    },
+    "defaults": {
+      "character": "Ironclad",
+      "ascension": 0,
+      "map": "west",
+      "reward": "first",
+      "shop": "leave"
+    },
+    "runs": [
+      {
+        "id": "iron-2",
+        "seed": "run_2",
+        "map": "random",
+        "shop": "buy_cheapest"
+      }
+    ]
+  },
+  "versions": {
+    "sampler": "m1-d1-v1",
+    "policy": "M1-F2-discard-v1",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "solver_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13",
+    "solver": "0.51.5/78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+    "headless_sha256": "f4dc5c008da2ca6ba7b6210272bbc1ffc817496538162fdb0fd67db679686cba",
+    "coreclr": "9.0.7",
+    "native_identity": "66254c280dbf12075c826fb4d2184e73e603808a56a4e2fe76a1e60dc6f06e0d",
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3"
+  },
+  "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+  "solver_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13",
+  "runs": [
+    {
+      "id": "iron-2",
+      "history": "5a8cb8d8a967cde59041730b2c845afe4fcf86f2606b854d78cad8a0ab50e68d",
+      "partition": "validation",
+      "spec": {
+        "character": "Ironclad",
+        "ascension": 0,
+        "map": "random",
+        "reward": "first",
+        "shop": "buy_cheapest",
+        "id": "iron-2",
+        "seed": "run_2"
+      },
+      "commands": [
+        {
+          "cmd": "start_run",
+          "character": "Ironclad",
+          "ascension": 0,
+          "seed": "run_2",
+          "lang": "en"
+        },
+        {
+          "cmd": "action",
+          "action": "choose_option",
+          "args": {
+            "option_index": 0
+          }
+        },
+        {
+          "cmd": "action",
+          "action": "select_map_node",
+          "args": {
+            "col": 0,
+            "row": 1
+          }
+        }
+      ],
+      "status": "example_prefix",
+      "max_act": 1,
+      "candidates": 1,
+      "offline_teacher_assisted": false,
+      "startup_ms": 135.18119999207556,
+      "last_context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 9,
+        "room_type": "Elite",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "elapsed_ms": 13068.322699982673,
+      "combat_timing_ms": {
+        "observe_ms": 34.27700000000001,
+        "decision_ms": 1.4024000000000008,
+        "execute_ms": 283.36789999999985,
+        "f1_step_rpc_ms": 429.65519963763654
+      },
+      "actions": 112,
+      "rpc_ms": {
+        "start_run": 1207.9914999194443,
+        "action": 403.0702996533364,
+        "get_map": 11.682600248605013,
+        "write_continue_save": 176.67459975928068,
+        "f1_begin": 74.09409945830703,
+        "f1_step": 432.6502000913024
+      },
+      "peak_working_set_bytes": 126062592
+    }
+  ],
+  "roots": [
+    {
+      "id": "b01e6136fa2ee285d0844aa2a69817fe2e70bd4b6f16074a3ba4eb83bfe79d55",
+      "run_id": "iron-2",
+      "history": "5a8cb8d8a967cde59041730b2c845afe4fcf86f2606b854d78cad8a0ab50e68d",
+      "partition": "validation",
+      "offline_teacher_assisted": false,
+      "character": "Ironclad",
+      "ascension": 0,
+      "seed": "run_2",
+      "context": {
+        "act": 1,
+        "act_name": "OVERGROWTH.title",
+        "floor": 2,
+        "room_type": "Monster",
+        "boss": {
+          "id": "VANTOM_BOSS",
+          "name": "VANTOM.name"
+        }
+      },
+      "identity": {
+        "type": "f1_root",
+        "encounter": "NIBBITS_WEAK",
+        "live": "6ce61c780c82dab3c58b2d857c223b8258b1fbf39e33082ba02c2574d6a3ec97",
+        "resources": {
+          "hp": 80,
+          "max_hp": 80,
+          "gold": 99,
+          "deck": [
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BARRICADE+0|energy=False:3|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "relics": [
+            "BURNING_BLOOD",
+            "ARCANE_SCROLL"
+          ]
+        }
+      },
+      "public_root": {
+        "type": "decision",
+        "decision": "combat_play",
+        "context": {
+          "act": 1,
+          "act_name": "OVERGROWTH.title",
+          "floor": 2,
+          "room_type": "Monster",
+          "boss": {
+            "id": "VANTOM_BOSS",
+            "name": "VANTOM.name"
+          }
+        },
+        "round": 1,
+        "energy": 3,
+        "max_energy": 3,
+        "hand": [
+          {
+            "index": 0,
+            "id": "CARD.STRIKE_IRONCLAD",
+            "name": "STRIKE_IRONCLAD.title",
+            "cost": 1,
+            "type": "Attack",
+            "rarity": "Basic",
+            "can_play": true,
+            "target_type": "AnyEnemy",
+            "stats": {
+              "damage": 6
+            },
+            "description": "STRIKE_IRONCLAD.description",
+            "damage_by_target": [
+              {
+                "target_index": 0,
+                "name": "NIBBIT.name",
+                "damage": 6
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "id": "CARD.DEFEND_IRONCLAD",
+            "name": "DEFEND_IRONCLAD.title",
+            "cost": 1,
+            "type": "Skill",
+            "rarity": "Basic",
+            "can_play": true,
+            "target_type": "Self",
+            "stats": {
+              "block": 5
+            },
+            "description": "DEFEND_IRONCLAD.description"
+          },
+          {
+            "index": 2,
+            "id": "CARD.STRIKE_IRONCLAD",
+            "name": "STRIKE_IRONCLAD.title",
+            "cost": 1,
+            "type": "Attack",
+            "rarity": "Basic",
+            "can_play": true,
+            "target_type": "AnyEnemy",
+            "stats": {
+              "damage": 6
+            },
+            "description": "STRIKE_IRONCLAD.description",
+            "damage_by_target": [
+              {
+                "target_index": 0,
+                "name": "NIBBIT.name",
+                "damage": 6
+              }
+            ]
+          },
+          {
+            "index": 3,
+            "id": "CARD.BARRICADE",
+            "name": "BARRICADE.title",
+            "cost": 3,
+            "type": "Power",
+            "rarity": "Rare",
+            "can_play": true,
+            "target_type": "Self",
+            "stats": null,
+            "description": "BARRICADE.description"
+          },
+          {
+            "index": 4,
+            "id": "CARD.DEFEND_IRONCLAD",
+            "name": "DEFEND_IRONCLAD.title",
+            "cost": 1,
+            "type": "Skill",
+            "rarity": "Basic",
+            "can_play": true,
+            "target_type": "Self",
+            "stats": {
+              "block": 5
+            },
+            "description": "DEFEND_IRONCLAD.description"
+          }
+        ],
+        "enemies": [
+          {
+            "index": 0,
+            "name": "NIBBIT.name",
+            "hp": 44,
+            "max_hp": 44,
+            "block": 0,
+            "intents": [
+              {
+                "type": "Attack",
+                "damage": 12
+              }
+            ],
+            "intends_attack": true,
+            "powers": null
+          }
+        ],
+        "player": {
+          "name": "IRONCLAD.title",
+          "hp": 80,
+          "max_hp": 80,
+          "block": 0,
+          "gold": 99,
+          "relics": [
+            {
+              "name": "BURNING_BLOOD.title",
+              "description": "BURNING_BLOOD.description",
+              "vars": {
+                "Heal": 6
+              }
+            },
+            {
+              "name": "ARCANE_SCROLL.title",
+              "description": "ARCANE_SCROLL.description",
+              "vars": {
+                "Cards": 1
+              }
+            }
+          ],
+          "potions": [],
+          "deck_size": 11,
+          "deck": [
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.STRIKE_IRONCLAD",
+              "name": "STRIKE_IRONCLAD.title",
+              "cost": 1,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "STRIKE_IRONCLAD.description",
+              "stats": {
+                "damage": 6
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "damage": 9
+                },
+                "description": "STRIKE_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.DEFEND_IRONCLAD",
+              "name": "DEFEND_IRONCLAD.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "DEFEND_IRONCLAD.description",
+              "stats": {
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 8
+                },
+                "description": "DEFEND_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.DEFEND_IRONCLAD",
+              "name": "DEFEND_IRONCLAD.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "DEFEND_IRONCLAD.description",
+              "stats": {
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 8
+                },
+                "description": "DEFEND_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.DEFEND_IRONCLAD",
+              "name": "DEFEND_IRONCLAD.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "DEFEND_IRONCLAD.description",
+              "stats": {
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 8
+                },
+                "description": "DEFEND_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.DEFEND_IRONCLAD",
+              "name": "DEFEND_IRONCLAD.title",
+              "cost": 1,
+              "type": "Skill",
+              "upgraded": false,
+              "description": "DEFEND_IRONCLAD.description",
+              "stats": {
+                "block": 5
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 1,
+                "stats": {
+                  "block": 8
+                },
+                "description": "DEFEND_IRONCLAD.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.BASH",
+              "name": "BASH.title",
+              "cost": 2,
+              "type": "Attack",
+              "upgraded": false,
+              "description": "BASH.description",
+              "stats": {
+                "damage": 8,
+                "vulnerablepower": 2
+              },
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": {
+                  "damage": 10,
+                  "vulnerablepower": 3
+                },
+                "description": "BASH.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            },
+            {
+              "id": "CARD.BARRICADE",
+              "name": "BARRICADE.title",
+              "cost": 3,
+              "type": "Power",
+              "upgraded": false,
+              "description": "BARRICADE.description",
+              "stats": null,
+              "keywords": null,
+              "after_upgrade": {
+                "cost": 2,
+                "stats": null,
+                "description": "BARRICADE.description",
+                "added_keywords": null,
+                "removed_keywords": null
+              }
+            }
+          ]
+        },
+        "player_powers": null,
+        "draw_pile_count": 6,
+        "discard_pile_count": 0
+      },
+      "checkpoint": "d1-e715c515bd1e4aee99de083f28983fb3.save.json",
+      "checkpoint_sha256": "1793c05ab48e9adc62ee3fd8e484abb9b7cd436f196a243ab6769136adda3f0d",
+      "entry": {
+        "action": "select_map_node",
+        "args": {
+          "col": 0,
+          "row": 1
+        }
+      },
+      "entry_command_index": 3,
+      "versions": {
+        "sampler": "m1-d1-v1",
+        "policy": "M1-F2-discard-v1",
+        "game": "0.113.1/26660232",
+        "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+        "solver_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13",
+        "solver": "0.51.5/78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+        "headless_sha256": "f4dc5c008da2ca6ba7b6210272bbc1ffc817496538162fdb0fd67db679686cba",
+        "coreclr": "9.0.7",
+        "native_identity": "66254c280dbf12075c826fb4d2184e73e603808a56a4e2fe76a1e60dc6f06e0d",
+        "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3"
+      },
+      "map_public_sha256": "57d594d5a3b31f88215eb4fe54dec6aa2d4aafb5b351eadef53d979af2d7a09a",
+      "map_edges_sha256": "ddbabc4ebfe8e5bb43cac47f644aa9bd13285e2ddcc7db71746091cec09d1a77",
+      "classification": {
+        "room": "Monster",
+        "enemies": [
+          "NIBBIT.name"
+        ],
+        "deck_size": 11,
+        "upgrades": 0,
+        "hp": 80,
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "mechanisms": []
+      }
+    }
+  ],
+  "evaluations": [
+    {
+      "id": "ff454c58c8e145909dea6722c327b60d",
+      "root_id": "b01e6136fa2ee285d0844aa2a69817fe2e70bd4b6f16074a3ba4eb83bfe79d55",
+      "policy": "hand",
+      "policy_version": "M1-F2-discard-v1",
+      "uses_hidden_rng": false,
+      "resources_before": {
+        "hp": 80,
+        "max_hp": 80,
+        "gold": 99,
+        "deck": [
+          "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "BARRICADE+0|energy=False:3|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+        ],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "relics": [
+          "BURNING_BLOOD",
+          "ARCANE_SCROLL"
+        ]
+      },
+      "root_verified": true,
+      "cold_root_ms": 2654.0988001506776,
+      "status": "win",
+      "rpc_ms": {
+        "load_save": 2170.6964999902993,
+        "get_map": 7.731399964541197,
+        "action": 446.47970027290285,
+        "f1_begin": 108.79749990999699,
+        "f1_final": 23.879999993368983
+      },
+      "startup_ms": 216.65799990296364,
+      "peak_working_set_bytes": 117059584,
+      "action_count": 17,
+      "rounds": 5,
+      "elapsed_ms": 3024.898400064558,
+      "timing_ms": {
+        "observe_ms": 0,
+        "decision_ms": 0.13760034926235676,
+        "execute_ms": 0,
+        "execute_wall_ms": 296.9808999914676,
+        "choice_observation_ms": 0,
+        "choice_decision_ms": 0
+      },
+      "outcome": {
+        "initial_hp": 80,
+        "final_hp": 58,
+        "hp_lost": 22,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "resources_after": {
+        "hp": 64,
+        "max_hp": 80,
+        "gold": 111,
+        "deck": [
+          "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "BARRICADE+0|energy=False:3|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+        ],
+        "potions": [
+          "ASHWATER",
+          null,
+          null
+        ],
+        "relics": [
+          "BURNING_BLOOD",
+          "ARCANE_SCROLL"
+        ]
+      },
+      "terminal_callback": true,
+      "choice_requests": [],
+      "choice_checks": []
+    },
+    {
+      "id": "4a342d3d7ffb4a99bc80bacf8d539e01",
+      "root_id": "b01e6136fa2ee285d0844aa2a69817fe2e70bd4b6f16074a3ba4eb83bfe79d55",
+      "policy": "q1",
+      "policy_version": "M1-F2-discard-v1",
+      "uses_hidden_rng": false,
+      "resources_before": {
+        "hp": 80,
+        "max_hp": 80,
+        "gold": 99,
+        "deck": [
+          "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "BARRICADE+0|energy=False:3|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+        ],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "relics": [
+          "BURNING_BLOOD",
+          "ARCANE_SCROLL"
+        ]
+      },
+      "root_verified": true,
+      "cold_root_ms": 2674.722099909559,
+      "status": "win",
+      "rpc_ms": {
+        "load_save": 2177.1148999687284,
+        "get_map": 6.336000049486756,
+        "action": 168.2705997955054,
+        "f1_begin": 91.22189995832741,
+        "f1_step": 498.6803000792861,
+        "f1_final": 5.575199844315648
+      },
+      "startup_ms": 230.17600015737116,
+      "peak_working_set_bytes": 117198848,
+      "action_count": 14,
+      "rounds": 5,
+      "elapsed_ms": 3232.346900040284,
+      "timing_ms": {
+        "observe_ms": 57.1142,
+        "decision_ms": 2.0182999999999995,
+        "execute_ms": 369.5729999999999,
+        "execute_wall_ms": 497.73309961892664,
+        "choice_observation_ms": 0,
+        "choice_decision_ms": 0
+      },
+      "outcome": {
+        "initial_hp": 80,
+        "final_hp": 68,
+        "hp_lost": 12,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "resources_after": {
+        "hp": 74,
+        "max_hp": 80,
+        "gold": 111,
+        "deck": [
+          "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+          "BARRICADE+0|energy=False:3|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+        ],
+        "potions": [
+          "ASHWATER",
+          null,
+          null
+        ],
+        "relics": [
+          "BURNING_BLOOD",
+          "ARCANE_SCROLL"
+        ]
+      },
+      "terminal_callback": true,
+      "choice_requests": [],
+      "choice_checks": []
+    }
+  ],
+  "collection_batches": [],
+  "occurrences": [
+    {
+      "root_id": "b01e6136fa2ee285d0844aa2a69817fe2e70bd4b6f16074a3ba4eb83bfe79d55",
+      "run_id": "iron-2",
+      "duplicate": false,
+      "prefix_length": 3
+    }
+  ],
+  "routes": [
+    {
+      "root_id": "b01e6136fa2ee285d0844aa2a69817fe2e70bd4b6f16074a3ba4eb83bfe79d55",
+      "evaluation_id": "ff454c58c8e145909dea6722c327b60d",
+      "kind": "native_policy_trace",
+      "actions": [
+        {
+          "action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 0,
+              "target_index": 0
+            }
+          },
+          "round": 1
+        },
+        {
+          "action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 0
+            }
+          },
+          "round": 1
+        },
+        {
+          "action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 0,
+              "target_index": 0
+            }
+          },
+          "round": 1
+        },
+        {
+          "action": {
+            "action": "end_turn",
+            "args": {}
+          },
+          "round": 1
+        },
+        {
+          "action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 0,
+              "target_index": 0
+            }
+          },
+          "round": 2
+        },
+        {
+          "action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 0,
+              "target_index": 0
+            }
+          },
+          "round": 2
+        },
+        {
+          "action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 0,
+              "target_index": 0
+            }
+          },
+          "round": 2
+        },
+        {
+          "action": {
+            "action": "end_turn",
+            "args": {}
+          },
+          "round": 2
+        },
+        {
+          "action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 0
+            }
+          },
+          "round": 3
+        },
+        {
+          "action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 1,
+              "target_index": 0
+            }
+          },
+          "round": 3
+        },
+        {
+          "action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 1
+            }
+          },
+          "round": 3
+        },
+        {
+          "action": {
+            "action": "end_turn",
+            "args": {}
+          },
+          "round": 3
+        },
+        {
+          "action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 0,
+              "target_index": 0
+            }
+          },
+          "round": 4
+        },
+        {
+          "action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 0
+            }
+          },
+          "round": 4
+        },
+        {
+          "action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 0,
+              "target_index": 0
+            }
+          },
+          "round": 4
+        },
+        {
+          "action": {
+            "action": "end_turn",
+            "args": {}
+          },
+          "round": 4
+        },
+        {
+          "action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 0,
+              "target_index": 0
+            }
+          },
+          "round": 5
+        }
+      ],
+      "complete": true
+    },
+    {
+      "root_id": "b01e6136fa2ee285d0844aa2a69817fe2e70bd4b6f16074a3ba4eb83bfe79d55",
+      "evaluation_id": "4a342d3d7ffb4a99bc80bacf8d539e01",
+      "kind": "native_policy_trace",
+      "actions": [
+        {
+          "action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 1
+            }
+          },
+          "round": 1,
+          "choice_requests": [],
+          "choice_checks": []
+        },
+        {
+          "action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 3
+            }
+          },
+          "round": 1,
+          "choice_requests": [],
+          "choice_checks": []
+        },
+        {
+          "action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 0,
+              "target_index": 0
+            }
+          },
+          "round": 1,
+          "choice_requests": [],
+          "choice_checks": []
+        },
+        {
+          "action": {
+            "action": "end_turn",
+            "args": {}
+          },
+          "round": 1,
+          "choice_requests": [],
+          "choice_checks": []
+        },
+        {
+          "action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 4
+            }
+          },
+          "round": 2,
+          "choice_requests": [],
+          "choice_checks": []
+        },
+        {
+          "action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 3,
+              "target_index": 0
+            }
+          },
+          "round": 2,
+          "choice_requests": [],
+          "choice_checks": []
+        },
+        {
+          "action": {
+            "action": "end_turn",
+            "args": {}
+          },
+          "round": 2,
+          "choice_requests": [],
+          "choice_checks": []
+        },
+        {
+          "action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 2,
+              "target_index": 0
+            }
+          },
+          "round": 3,
+          "choice_requests": [],
+          "choice_checks": []
+        },
+        {
+          "action": {
+            "action": "end_turn",
+            "args": {}
+          },
+          "round": 3,
+          "choice_requests": [],
+          "choice_checks": []
+        },
+        {
+          "action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 1
+            }
+          },
+          "round": 4,
+          "choice_requests": [],
+          "choice_checks": []
+        },
+        {
+          "action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 3,
+              "target_index": 0
+            }
+          },
+          "round": 4,
+          "choice_requests": [],
+          "choice_checks": []
+        },
+        {
+          "action": {
+            "action": "end_turn",
+            "args": {}
+          },
+          "round": 4,
+          "choice_requests": [],
+          "choice_checks": []
+        },
+        {
+          "action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 0,
+              "target_index": 0
+            }
+          },
+          "round": 5,
+          "choice_requests": [],
+          "choice_checks": []
+        },
+        {
+          "action": {
+            "action": "play_card",
+            "args": {
+              "card_index": 2,
+              "target_index": 0
+            }
+          },
+          "round": 5,
+          "choice_requests": [],
+          "choice_checks": []
+        }
+      ],
+      "complete": true
+    }
+  ],
+  "validations": [
+    {
+      "kind": "native_root_restore",
+      "root_id": "b01e6136fa2ee285d0844aa2a69817fe2e70bd4b6f16074a3ba4eb83bfe79d55",
+      "checkpoint_sha256": "1793c05ab48e9adc62ee3fd8e484abb9b7cd436f196a243ab6769136adda3f0d",
+      "status": "pass",
+      "startup_ms": 163.5203999467194,
+      "rpc_ms": {
+        "load_save": 1363.6698999907821,
+        "get_map": 3.959599882364273,
+        "action": 106.27779993228614,
+        "f1_begin": 54.16429997421801
+      },
+      "peak_working_set_bytes": 112345088,
+      "elapsed_ms": 1731.3067999202758,
+      "run_id": "iron-2",
+      "occurrence": 3
+    }
+  ]
+}

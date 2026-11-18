@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Native Combat Bank v1 local manifest",
+  "type": "object",
+  "required": ["schema", "config", "versions", "game_sha256", "solver_sha256", "runs", "roots", "occurrences", "evaluations", "routes", "validations", "collection_batches"],
+  "properties": {
+    "schema": {"const": 1},
+    "config": {"type": "object", "required": ["defaults", "limits", "runs"]},
+    "versions": {"$ref": "#/$defs/Versions"},
+    "game_sha256": {"$ref": "#/$defs/Sha256"},
+    "solver_sha256": {"$ref": "#/$defs/Sha256"},
+    "runs": {"type": "array", "items": {"$ref": "#/$defs/RunRecord"}},
+    "roots": {"type": "array", "items": {"$ref": "#/$defs/CombatRoot"}},
+    "occurrences": {"type": "array", "items": {"$ref": "#/$defs/Occurrence"}},
+    "evaluations": {"type": "array", "items": {"$ref": "#/$defs/EvaluationRecord"}},
+    "routes": {"type": "array", "items": {"$ref": "#/$defs/RouteRecord"}},
+    "validations": {"type": "array", "items": {"$ref": "#/$defs/ValidationRecord"}},
+    "searches": {"type": "array", "items": {"type": "object", "required": ["id", "root_id", "cap", "uses_hidden_rng", "status"]}},
+    "collection_batches": {"type": "array", "items": {"type": "object", "required": ["workers", "seconds", "runs"]}}
+  },
+  "$defs": {
+    "Sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "Partition": {"enum": ["development", "validation", "test"]},
+    "Versions": {
+      "type": "object",
+      "required": ["sampler", "policy", "game", "game_sha256", "solver", "solver_sha256", "headless_sha256", "coreclr", "native_identity", "archive_sha256"],
+      "properties": {
+        "sampler": {"type": "string"},
+        "policy": {"type": "string"},
+        "game": {"type": "string"},
+        "game_sha256": {"$ref": "#/$defs/Sha256"},
+        "solver": {"type": "string"},
+        "solver_sha256": {"$ref": "#/$defs/Sha256"},
+        "headless_sha256": {"$ref": "#/$defs/Sha256"},
+        "coreclr": {"type": "string"},
+        "native_identity": {"$ref": "#/$defs/Sha256"},
+        "archive_sha256": {"$ref": "#/$defs/Sha256"}
+      }
+    },
+    "RunRecord": {
+      "type": "object",
+      "required": ["id", "history", "partition", "spec", "commands", "status", "max_act", "candidates", "offline_teacher_assisted"],
+      "properties": {
+        "id": {"type": "string"},
+        "history": {"$ref": "#/$defs/Sha256"},
+        "partition": {"$ref": "#/$defs/Partition"},
+        "spec": {"type": "object", "required": ["id", "character", "ascension", "seed", "map", "reward", "shop"]},
+        "commands": {"type": "array", "items": {"type": "object", "required": ["cmd"]}},
+        "status": {"type": "string"},
+        "max_act": {"type": "integer", "minimum": 0},
+        "candidates": {"type": "integer", "minimum": 0},
+        "offline_teacher_assisted": {"type": "boolean"},
+        "parent": {"type": "object", "required": ["run_id", "root_id", "prefix_length"]}
+      }
+    },
+    "CombatRoot": {
+      "type": "object",
+      "required": ["id", "run_id", "history", "partition", "offline_teacher_assisted", "character", "ascension", "seed", "context", "public_root", "identity", "classification", "checkpoint", "checkpoint_sha256", "entry", "entry_command_index", "versions", "map_public_sha256", "map_edges_sha256"],
+      "properties": {
+        "id": {"$ref": "#/$defs/Sha256"},
+        "run_id": {"type": "string"},
+        "history": {"$ref": "#/$defs/Sha256"},
+        "partition": {"$ref": "#/$defs/Partition"},
+        "offline_teacher_assisted": {"type": "boolean"},
+        "character": {"type": "string"},
+        "ascension": {"type": "integer"},
+        "seed": {"type": "string"},
+        "context": {"type": "object", "required": ["act", "floor", "room_type"]},
+        "public_root": {"type": "object", "required": ["decision", "player", "enemies", "hand"], "properties": {"decision": {"const": "combat_play"}}},
+        "identity": {
+          "type": "object", "required": ["live", "encounter", "resources"],
+          "properties": {
+            "live": {"$ref": "#/$defs/Sha256"},
+            "resources": {"type": "object", "required": ["hp", "max_hp", "gold", "deck", "potions", "relics"]}
+          }
+        },
+        "classification": {"type": "object", "required": ["room", "enemies", "deck_size", "upgrades", "hp", "potions", "mechanisms"]},
+        "checkpoint": {"type": "string", "pattern": "^d1-[0-9a-f]{32}\\.save\\.json$"},
+        "checkpoint_sha256": {"$ref": "#/$defs/Sha256"},
+        "entry": {
+          "type": "object", "required": ["action", "args"],
+          "properties": {
+            "action": {"const": "select_map_node"},
+            "args": {"type": "object", "required": ["col", "row"], "properties": {
+              "col": {"type": "integer"}, "row": {"type": "integer"}
+            }}
+          }
+        },
+        "entry_command_index": {"type": "integer", "minimum": 1},
+        "versions": {"$ref": "#/$defs/Versions"},
+        "map_public_sha256": {"$ref": "#/$defs/Sha256"},
+        "map_edges_sha256": {"$ref": "#/$defs/Sha256"}
+      }
+    },
+    "Occurrence": {
+      "type": "object", "required": ["root_id", "run_id", "duplicate", "prefix_length"],
+      "properties": {
+        "root_id": {"$ref": "#/$defs/Sha256"}, "run_id": {"type": "string"},
+        "duplicate": {"type": "boolean"}, "prefix_length": {"type": "integer", "minimum": 1}
+      }
+    },
+    "EvaluationRecord": {
+      "type": "object",
+      "required": ["id", "root_id", "policy", "policy_version", "status", "uses_hidden_rng", "action_count", "rounds", "timing_ms", "elapsed_ms", "resources_before"],
+      "properties": {
+        "id": {"type": "string"}, "root_id": {"$ref": "#/$defs/Sha256"},
+        "policy": {"enum": ["hand", "q1"]}, "policy_version": {"type": "string"},
+        "status": {"type": "string"}, "uses_hidden_rng": {"const": false},
+        "action_count": {"type": "integer", "minimum": 0},
+        "rounds": {"type": ["integer", "null"]}, "elapsed_ms": {"type": "number"},
+        "outcome": {"type": "object"}, "timing_ms": {"type": "object"},
+        "resources_before": {"type": "object"}, "resources_after": {"type": "object"}
+      }
+    },
+    "RouteRecord": {
+      "type": "object", "required": ["root_id", "kind", "complete", "actions"],
+      "properties": {
+        "root_id": {"$ref": "#/$defs/Sha256"},
+        "kind": {"enum": ["native_policy_trace", "solver_prediction"]},
+        "complete": {"type": "boolean"}, "actions": {"type": "array"}
+      },
+      "allOf": [
+        {"if": {"properties": {"kind": {"const": "native_policy_trace"}}}, "then": {"required": ["evaluation_id"]}},
+        {"if": {"properties": {"kind": {"const": "solver_prediction"}}}, "then": {"required": ["id", "search_id", "uses_hidden_rng", "policy_version", "stamps"]}}
+      ]
+    },
+    "ValidationRecord": {
+      "type": "object", "required": ["root_id", "kind", "status"],
+      "properties": {
+        "root_id": {"$ref": "#/$defs/Sha256"}, "status": {"type": "string"},
+        "kind": {"enum": ["native_root_restore", "repeat_root_restore", "native_policy_repeat", "solver_native_replay", "native_counterfactual"]}
+      },
+      "allOf": [{
+        "if": {"properties": {"kind": {"const": "native_counterfactual"}}},
+        "then": {"required": ["baseline_route_id", "variant_route_id", "comparison_key", "intervention"]}
+      }]
+    }
+  }
+}

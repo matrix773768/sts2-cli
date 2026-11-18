@@ -1,0 +1,51 @@
+{
+  "limits": {
+    "run_seconds": 90,
+    "batch_seconds": 100,
+    "audit_seconds": 14,
+    "combat_seconds": 20,
+    "run_actions": 450,
+    "combat_actions": 140,
+    "roots_per_run": 2,
+    "max_runs": 4,
+    "disk_mib": 768,
+    "min_act": 1
+  },
+  "defaults": {
+    "character": "Ironclad",
+    "ascension": 0,
+    "map": "west",
+    "reward": "first",
+    "shop": "leave"
+  },
+  "runs": [
+    {
+      "id": "archive-west",
+      "seed": "run_1",
+      "policy_seed": "run_1-act2",
+      "archive": "offering"
+    },
+    {
+      "id": "iron-2",
+      "seed": "run_2",
+      "map": "random",
+      "shop": "buy_cheapest"
+    },
+    {
+      "id": "silent-3",
+      "character": "Silent",
+      "seed": "run_3",
+      "map": "east"
+    },
+    {
+      "id": "iron-2-continue",
+      "seed": "run_2",
+      "resume": {
+        "run": "iron-2",
+        "combat": 1
+      },
+      "map": "random",
+      "policy_seed": "continuation-v1"
+    }
+  ]
+}
