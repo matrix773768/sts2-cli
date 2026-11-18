@@ -1,4 +1,4 @@
-param([switch]$Repair, [switch]$TerminalParity)
+param([switch]$Repair, [switch]$TerminalParity, [switch]$TargetedSearch)
 $ErrorActionPreference = 'Stop'
 $base=(Resolve-Path CombatSolver-m1-cs1).Path
 $src="$base/CombatSolver-78e4545e825e58c3d999354b1ffcd54241b1d2cf"
@@ -6,6 +6,10 @@ $target = if ($Repair) { "CombatSolver-m1-e1/repair" } else { "CombatSolver-m1-e
 if ($TerminalParity) {
     if (!$Repair) { throw 'Terminal parity uses the Q3 repair harness' }
     $target = 'CombatSolver-m1-e2/repair'
+}
+if ($TargetedSearch) {
+    if (!$TerminalParity) { throw 'Targeted search uses the terminal parity harness' }
+    $target = 'CombatSolver-m1-q5/repair'
 }
 $work=(New-Item -ItemType Directory $target -Force).FullName
 $probe="$work/OfflineSearchHarness"
@@ -76,6 +80,31 @@ if ($TerminalParity) {
 '@
     Instrument '            selector.Begin(i + 1, selected?.Id);' '            route.BeforeAction(i + 1);
             selector.Begin(i + 1, selected?.Id);'
+}
+if ($TargetedSearch) {
+    Copy-Item "$PSScriptRoot/../m1-q5/TargetedSearch.cs" $probe
+    Copy-Item "$PSScriptRoot/../m1-q4/RiskAudit.cs" $probe
+    $routeSource = [IO.File]::ReadAllText("$probe/RouteProbe.cs").Replace(
+        'var benchmark = _matched > 0 ? Benchmark() : null; FinishTerminal(nativeStatus, complete);',
+        'FinishTerminal(nativeStatus, complete); var benchmark = (object?)null;')
+    [IO.File]::WriteAllText("$probe/RouteProbe.cs",$routeSource)
+    Instrument 'private sealed record Enemy' 'internal sealed record Enemy'
+    Instrument 'private sealed record Move' 'internal sealed record Move'
+    Instrument 'private sealed record Observation' 'internal sealed record Observation'
+    Instrument 'private static Observation Observe' 'internal static Observation Observe'
+    Instrument 'private static Move? Decide' 'internal static Move? Decide'
+    Instrument '        using var lifecycle = route.InstallLifecycle();' '        using var lifecycle = route.InstallLifecycle();
+        var risk = new RiskAudit(combat, player);
+        risk.Install();'
+    Instrument '            var expected = route.Inputs[i].Selected;' '            var expected = route.Inputs[i].Selected;
+            if (!route.VerifyPublic(i, visible)) { status = "public_mapping_difference"; break; }'
+    Instrument '            route.BeforeAction(i + 1);' '            route.BeforeAction(i + 1);
+            risk.Step = i + 1;'
+    Instrument '            if (!selector.Requested && status != "execution_timeout" && !route.Compare(i + 1)) break;' '            if (!selector.Requested && status != "execution_timeout"
+                && (!route.Compare(i + 1) || !route.VerifyGenerated(i))) break;'
+    Instrument '        route.Finish(status);' '        route.Finish(status);
+        route.RunTargetedSearch();
+        File.WriteAllText(Path.Combine(output, "risk.json"), JsonSerializer.Serialize(risk.Events, UnattendedTestFiles.JsonOptions));'
 }
 [IO.File]::WriteAllText("$probe/FastCombat.cs",$fast)
 $p="$probe/Program.cs"

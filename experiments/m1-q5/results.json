@@ -1,0 +1,4200 @@
+{
+  "matrices": [
+    {
+      "parent": {
+        "processMs": 6952.999999979511,
+        "root": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+        "live": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+        "matched": 18,
+        "planned": 18,
+        "auditStatus": "native_incomplete",
+        "nativeStatus": "limit",
+        "nativeEndTurn": 5,
+        "nativeOutcome": {
+          "initialHp": 75,
+          "finalHp": 65,
+          "hpLost": 10,
+          "hpHealed": 0,
+          "selfDamage": 0,
+          "combatEnded": false,
+          "survived": true,
+          "finalEnemyHp": 260,
+          "potions": [],
+          "unattributedHpLoss": 0
+        },
+        "nativeExecuteMs": 220.15349999999998,
+        "nativeSuffixExecuteMs": 0,
+        "nativeLifecycleSemantic": false,
+        "nativeRisk": [],
+        "publicChecks": [],
+        "firstDifference": null,
+        "forecastSetupMs": {
+          "rootCaptureMs": 10.7266,
+          "solverAdapterMs": 116.9831,
+          "rootForkAndSnapshotMs": 53.0421
+        },
+        "prefixPredictionMs": 302.8058,
+        "compareMs": 153.56659999999994,
+        "peakWorkingSetBytes": 180813824
+      },
+      "search": {
+        "publicParentEqual": true,
+        "initial": {
+          "menu": {
+            "block": 0,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 260,
+                "block": 0,
+                "incoming": 24
+              }
+            ],
+            "moves": [
+              {
+                "handIndex": 0,
+                "id": "FRANTIC_ESCAPE",
+                "target": null,
+                "damage": 0,
+                "block": 0,
+                "draw": 0,
+                "energy": 1,
+                "power": false
+              },
+              {
+                "handIndex": 1,
+                "id": "SPINNER",
+                "target": null,
+                "damage": 0,
+                "block": 0,
+                "draw": 0,
+                "energy": 1,
+                "power": true
+              },
+              {
+                "handIndex": 2,
+                "id": "COMPACT",
+                "target": null,
+                "damage": 0,
+                "block": 7,
+                "draw": 0,
+                "energy": 1,
+                "power": false
+              },
+              {
+                "handIndex": 3,
+                "id": "MOMENTUM_STRIKE",
+                "target": 1,
+                "damage": 15,
+                "block": 0,
+                "draw": 0,
+                "energy": 1,
+                "power": false
+              },
+              {
+                "handIndex": 4,
+                "id": "SKIM",
+                "target": null,
+                "damage": 0,
+                "block": 0,
+                "draw": 4,
+                "energy": 1,
+                "power": false
+              }
+            ]
+          },
+          "hp": 65,
+          "energy": 3,
+          "sandpit": 1,
+          "hand": [
+            "FRANTIC_ESCAPE+0",
+            "SPINNER+1",
+            "COMPACT+1",
+            "MOMENTUM_STRIKE+1",
+            "SKIM+1"
+          ],
+          "powers": [],
+          "enemyPowers": [
+            "1:SANDPIT_POWER:1",
+            "1:STRENGTH_POWER:3"
+          ]
+        },
+        "parentUnchanged": true,
+        "parentHash": "3D1EEE05C2A8359D398D2A75EA5CB012A0197FCAF10032D3D56A782828030C6E",
+        "visitedDistinctSuccessors": 38,
+        "candidates": [
+          {
+            "name": "escape_first",
+            "decisions": [
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 0,
+                    "id": "FRANTIC_ESCAPE",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "FFBAAEBC77AD571DF485203F76C742E1C5F75B05A7D0C737FCD6FF3A08904E01",
+                "sandpitBefore": 1,
+                "energyBefore": 3
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "MOMENTUM_STRIKE",
+                    "target": 1
+                  },
+                  "pick": null
+                },
+                "successorHash": "119BC4AC6D536C54BD1A181B195CB8FD281E06C277203FFCA32ED5F1C71FFEF3",
+                "sandpitBefore": 2,
+                "energyBefore": 2
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 1,
+                    "id": "COMPACT",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "6A32EE32D274BA8AAB7E3E1BBBAC1310976461129B45046109DC9CFDE7F1CC4B",
+                "sandpitBefore": 2,
+                "energyBefore": 1
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": null,
+                  "pick": null
+                },
+                "successorHash": "51DE38216450C85C9253BA40319483F2C2397644B51B83F250AF0FB749F63323",
+                "sandpitBefore": 2,
+                "energyBefore": 0
+              }
+            ],
+            "endpoint": {
+              "turn": 6,
+              "hp": 50,
+              "block": 0,
+              "energy": 3,
+              "incoming": 24,
+              "enemyHp": 239,
+              "sandpit": 1,
+              "playerDead": false,
+              "allEnemiesDead": false,
+              "escapeEnergy": 1,
+              "escapePlays": 1,
+              "specialRisk": null
+            },
+            "stop": "one_player_round",
+            "transitions": 4,
+            "advanceMs": 8.285400000000001,
+            "observeMs": 0.39220000000000005,
+            "policyMs": 1.4505000000000001,
+            "evaluateMs": 0.9884,
+            "detail": null
+          },
+          {
+            "name": "frozen_q1",
+            "decisions": [
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 3,
+                    "id": "MOMENTUM_STRIKE",
+                    "target": 1
+                  },
+                  "pick": null
+                },
+                "successorHash": "4D9A559C2A6826061F0DE8D1DD60264034EF6F90EFFAADE2936C39BB5B192AE0",
+                "sandpitBefore": 1,
+                "energyBefore": 3
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "COMPACT",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "FB6E40B25C3B1C56B17263DDB6C51F9B9CD01EA6C40D98546CBABF68D1F79F23",
+                "sandpitBefore": 1,
+                "energyBefore": 2
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "SKIM",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "3E5A83B77ACCA0F7D29FEE9495E8552236A0A105FF0F3681189CC574772A8E9E",
+                "sandpitBefore": 1,
+                "energyBefore": 1
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 4,
+                    "id": "FINESSE",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "2DAFF26CAE8AD1C560F0BDDA703DA06E5EFB623CCE5438704D87474953CB61F5",
+                "sandpitBefore": 1,
+                "energyBefore": 0
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 0,
+                    "id": "FUEL",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "3332FD624426433EEFE0F2819FFC94D289637F2CF35B2F7FFFD8D7A7A56E58C5",
+                "sandpitBefore": 1,
+                "energyBefore": 0
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "STRIKE_DEFECT",
+                    "target": 1
+                  },
+                  "pick": null
+                },
+                "successorHash": "93A11A63016A59BEBF1DBA367B080E48A6B88E6E68FF291950C56587B708128C",
+                "sandpitBefore": 1,
+                "energyBefore": 2
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 0,
+                    "id": "SPINNER",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "65A653C7BAF9EB2F943F782216F7FD6AC9DAAF62CB2845F2AD9902C23D01ED33",
+                "sandpitBefore": 1,
+                "energyBefore": 1
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": null,
+                  "pick": null
+                },
+                "successorHash": "7A5C641FE7A9D1224565E74DDAB1987E81C7EFDBC5E9C6A24150E09A173FA247",
+                "sandpitBefore": 1,
+                "energyBefore": 0
+              }
+            ],
+            "endpoint": {
+              "turn": 5,
+              "hp": 0,
+              "block": 15,
+              "energy": 0,
+              "incoming": -1,
+              "enemyHp": 211,
+              "sandpit": null,
+              "playerDead": true,
+              "allEnemiesDead": false,
+              "escapeEnergy": 0,
+              "escapePlays": 0,
+              "specialRisk": "sandpit_at_one_before_end_turn"
+            },
+            "stop": "death",
+            "transitions": 8,
+            "advanceMs": 17.7102,
+            "observeMs": 1.026,
+            "policyMs": 0.117,
+            "evaluateMs": 0.006,
+            "detail": null
+          },
+          {
+            "name": "end_now",
+            "decisions": [
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": null,
+                  "pick": null
+                },
+                "successorHash": "D3B472CD45808794B0A6935A3F253C777A485DB4E56B64001D9886CE32B56EBE",
+                "sandpitBefore": 1,
+                "energyBefore": 3
+              }
+            ],
+            "endpoint": {
+              "turn": 5,
+              "hp": 0,
+              "block": 5,
+              "energy": 3,
+              "incoming": -1,
+              "enemyHp": 254,
+              "sandpit": null,
+              "playerDead": true,
+              "allEnemiesDead": false,
+              "escapeEnergy": 0,
+              "escapePlays": 0,
+              "specialRisk": "sandpit_at_one_before_end_turn"
+            },
+            "stop": "death",
+            "transitions": 1,
+            "advanceMs": 0.7422,
+            "observeMs": 0.1248,
+            "policyMs": 0.0009,
+            "evaluateMs": 0.0038,
+            "detail": null
+          },
+          {
+            "name": "block_first",
+            "decisions": [
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "COMPACT",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "47253074A110CFB82FCAC453D6A5A23F353870079313D337B878735A9C7762B8",
+                "sandpitBefore": 1,
+                "energyBefore": 3
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "MOMENTUM_STRIKE",
+                    "target": 1
+                  },
+                  "pick": null
+                },
+                "successorHash": "DC0E969B2EFFC6B081389E9F5FD4C6A51558F4EAFBFD937E1A0CFDDA6A286AF9",
+                "sandpitBefore": 1,
+                "energyBefore": 2
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "SKIM",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "C22C5DEDE76C285463BB70EAEB4B484CAF367A7BA18E1D7FDAFD194BD4F6E129",
+                "sandpitBefore": 1,
+                "energyBefore": 1
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 4,
+                    "id": "FINESSE",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "2E5F4B3DC8606C548BBB75AA2125078CEA066A77A052343E98AC025591F8FC40",
+                "sandpitBefore": 1,
+                "energyBefore": 0
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 0,
+                    "id": "FUEL",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "4688709488CB73F7611AAB3CD54A04B6DB03B71FC47BA1DA9D778DAD847ACC71",
+                "sandpitBefore": 1,
+                "energyBefore": 0
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "STRIKE_DEFECT",
+                    "target": 1
+                  },
+                  "pick": null
+                },
+                "successorHash": "230CC44B9A2863A29BE38973260FB414C3C7586DF049C3868FD777AFDC77C3CF",
+                "sandpitBefore": 1,
+                "energyBefore": 2
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 0,
+                    "id": "SPINNER",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "51CF6F95737F56F5CC034E32A590E1542294E3A72BD791895862176EAEE3F49C",
+                "sandpitBefore": 1,
+                "energyBefore": 1
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": null,
+                  "pick": null
+                },
+                "successorHash": "12E9D76B39E78F860000C4D77AB7EA838D55601295D9E9BA748EEBE269FE8126",
+                "sandpitBefore": 1,
+                "energyBefore": 0
+              }
+            ],
+            "endpoint": {
+              "turn": 5,
+              "hp": 0,
+              "block": 15,
+              "energy": 0,
+              "incoming": -1,
+              "enemyHp": 211,
+              "sandpit": null,
+              "playerDead": true,
+              "allEnemiesDead": false,
+              "escapeEnergy": 0,
+              "escapePlays": 0,
+              "specialRisk": "sandpit_at_one_before_end_turn"
+            },
+            "stop": "death",
+            "transitions": 8,
+            "advanceMs": 4.614,
+            "observeMs": 6.3674,
+            "policyMs": 0.08169999999999998,
+            "evaluateMs": 0.0039,
+            "detail": null
+          },
+          {
+            "name": "draw_first",
+            "decisions": [
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 4,
+                    "id": "SKIM",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "D56BF76A75C83A98E1E65332DE147A79E569CAEDA8D246C7A0008CB0851D929C",
+                "sandpitBefore": 1,
+                "energyBefore": 3
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 3,
+                    "id": "MOMENTUM_STRIKE",
+                    "target": 1
+                  },
+                  "pick": null
+                },
+                "successorHash": "B5851139FA03BB0DCBBC41E27A8E8A48F2F5B0BC5BD28F67B6D8C21DB7948362",
+                "sandpitBefore": 1,
+                "energyBefore": 2
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "COMPACT",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "2332A664E3AE61ECDFF5898537069D3AE638EF20C1EA86758917C6523A3F10FA",
+                "sandpitBefore": 1,
+                "energyBefore": 1
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 5,
+                    "id": "FINESSE",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "C60A22693C56A518566C2F5B5655FC0A79455CC2923A21C60500BA7C917C7C6B",
+                "sandpitBefore": 1,
+                "energyBefore": 0
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 0,
+                    "id": "FUEL",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "C4A03DEDF7A29C6F5FF29DF1F4E50F8F455884046DDC7F06B3D574056AA31A61",
+                "sandpitBefore": 1,
+                "energyBefore": 0
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "STRIKE_DEFECT",
+                    "target": 1
+                  },
+                  "pick": null
+                },
+                "successorHash": "B9A1FC9EA8BB69C792D3AFB70C23D81991B26636F0F445D78C95E4F33F4C3593",
+                "sandpitBefore": 1,
+                "energyBefore": 2
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 0,
+                    "id": "SPINNER",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "FCC1BB5622325A0EAED8E66E2BE06E41D55231B4360D8E185568BEF8D1280BC5",
+                "sandpitBefore": 1,
+                "energyBefore": 1
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 1,
+                    "id": "FUEL",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "DEEFF190B6A1BD3C6652B99AC06D650BC253F36E746A837E045618EA0E35E4D8",
+                "sandpitBefore": 1,
+                "energyBefore": 0
+              }
+            ],
+            "endpoint": {
+              "turn": 5,
+              "hp": 65,
+              "block": 11,
+              "energy": 2,
+              "incoming": 24,
+              "enemyHp": 221,
+              "sandpit": 1,
+              "playerDead": false,
+              "allEnemiesDead": false,
+              "escapeEnergy": 0,
+              "escapePlays": 0,
+              "specialRisk": null
+            },
+            "stop": "action_cap",
+            "transitions": 8,
+            "advanceMs": 6.8682,
+            "observeMs": 1.1284,
+            "policyMs": 0.19010000000000002,
+            "evaluateMs": 0.0937,
+            "detail": null
+          },
+          {
+            "name": "power_first",
+            "decisions": [
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 1,
+                    "id": "SPINNER",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "93A83BC32C7B07BE44445C47A5B78A4E51BDBE032CBF1483B02D6062DE3573BE",
+                "sandpitBefore": 1,
+                "energyBefore": 3
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "MOMENTUM_STRIKE",
+                    "target": 1
+                  },
+                  "pick": null
+                },
+                "successorHash": "3A2EE3506E781850A00007A2E9156BF141C7EB44DFA55AEDD71A3DE3A8490948",
+                "sandpitBefore": 1,
+                "energyBefore": 2
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 1,
+                    "id": "COMPACT",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "F233202D80C14A09D59A2371F01FE8D1CC6682B1CD49DCD68DFEE1521BD710FA",
+                "sandpitBefore": 1,
+                "energyBefore": 1
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 0,
+                    "id": "FUEL",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "9AE62FEFF98D710863981176146490E175994F8DF34F58032047A626F6C97132",
+                "sandpitBefore": 1,
+                "energyBefore": 0
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 0,
+                    "id": "SKIM",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "F2893E1175DF51123D7BAE012A8D31656E02B16FD4A468B6DBF51B3620300296",
+                "sandpitBefore": 1,
+                "energyBefore": 2
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "FINESSE",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "5CEBCACB676AA11F93468501EC2A453C3A32F5D9BE7E65B2679DBFBA32EE9ED5",
+                "sandpitBefore": 1,
+                "energyBefore": 1
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 1,
+                    "id": "STRIKE_DEFECT",
+                    "target": 1
+                  },
+                  "pick": null
+                },
+                "successorHash": "65A653C7BAF9EB2F943F782216F7FD6AC9DAAF62CB2845F2AD9902C23D01ED33",
+                "sandpitBefore": 1,
+                "energyBefore": 1
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": null,
+                  "pick": null
+                },
+                "successorHash": "7A5C641FE7A9D1224565E74DDAB1987E81C7EFDBC5E9C6A24150E09A173FA247",
+                "sandpitBefore": 1,
+                "energyBefore": 0
+              }
+            ],
+            "endpoint": {
+              "turn": 5,
+              "hp": 0,
+              "block": 15,
+              "energy": 0,
+              "incoming": -1,
+              "enemyHp": 211,
+              "sandpit": null,
+              "playerDead": true,
+              "allEnemiesDead": false,
+              "escapeEnergy": 0,
+              "escapePlays": 0,
+              "specialRisk": "sandpit_at_one_before_end_turn"
+            },
+            "stop": "death",
+            "transitions": 8,
+            "advanceMs": 5.870699999999999,
+            "observeMs": 0.9657,
+            "policyMs": 0.07,
+            "evaluateMs": 0.0045,
+            "detail": null
+          },
+          {
+            "name": "attack_then_escape",
+            "decisions": [
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 3,
+                    "id": "MOMENTUM_STRIKE",
+                    "target": 1
+                  },
+                  "pick": null
+                },
+                "successorHash": "4D9A559C2A6826061F0DE8D1DD60264034EF6F90EFFAADE2936C39BB5B192AE0",
+                "sandpitBefore": 1,
+                "energyBefore": 3
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 0,
+                    "id": "FRANTIC_ESCAPE",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "15FD6EECCA6643EBAE035AE4F7396DBEC941A56133D2C306B36BE25725AFEE9E",
+                "sandpitBefore": 1,
+                "energyBefore": 2
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 1,
+                    "id": "COMPACT",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "93563D2E5268920EF9739A5535A234A60BD1873FBDE84C3B097A7E120354EA2E",
+                "sandpitBefore": 2,
+                "energyBefore": 1
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": null,
+                  "pick": null
+                },
+                "successorHash": "E1268A970CD7FBF27A7A94D0EC76FB529227CEF9EE6F28DB940C13C5FE106B27",
+                "sandpitBefore": 2,
+                "energyBefore": 0
+              }
+            ],
+            "endpoint": {
+              "turn": 6,
+              "hp": 50,
+              "block": 0,
+              "energy": 3,
+              "incoming": 24,
+              "enemyHp": 239,
+              "sandpit": 1,
+              "playerDead": false,
+              "allEnemiesDead": false,
+              "escapeEnergy": 1,
+              "escapePlays": 1,
+              "specialRisk": null
+            },
+            "stop": "one_player_round",
+            "transitions": 4,
+            "advanceMs": 2.5703,
+            "observeMs": 0.40459999999999996,
+            "policyMs": 0.02,
+            "evaluateMs": 0.1084,
+            "detail": null
+          },
+          {
+            "name": "block_then_escape",
+            "decisions": [
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "COMPACT",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "47253074A110CFB82FCAC453D6A5A23F353870079313D337B878735A9C7762B8",
+                "sandpitBefore": 1,
+                "energyBefore": 3
+              }
+            ],
+            "endpoint": {
+              "turn": 5,
+              "hp": 65,
+              "block": 7,
+              "energy": 2,
+              "incoming": -1,
+              "enemyHp": 260,
+              "sandpit": 1,
+              "playerDead": false,
+              "allEnemiesDead": false,
+              "escapeEnergy": 0,
+              "escapePlays": 0,
+              "specialRisk": null
+            },
+            "stop": "required_action_unavailable",
+            "transitions": 1,
+            "advanceMs": 0.5463,
+            "observeMs": 0.1464,
+            "policyMs": 0.0061,
+            "evaluateMs": 0.0036,
+            "detail": null
+          }
+        ],
+        "selection": [
+          {
+            "budget": 2,
+            "selected": "escape_first",
+            "distinctSuccessors": 12
+          },
+          {
+            "budget": 4,
+            "selected": "escape_first",
+            "distinctSuccessors": 21
+          },
+          {
+            "budget": 8,
+            "selected": "escape_first",
+            "distinctSuccessors": 38
+          }
+        ],
+        "samples": [
+          {
+            "budget": 1,
+            "ms": 11.4227,
+            "bytes": 295160,
+            "generationMs": 0.165,
+            "selectionMs": 4.7976,
+            "selected": null,
+            "transitions": 8,
+            "observeMs": 0.8685,
+            "policyMs": 0.16599999999999998,
+            "advanceMs": 5.2965,
+            "evaluateMs": 0.0046
+          },
+          {
+            "budget": 1,
+            "ms": 8.2734,
+            "bytes": 278392,
+            "generationMs": 0.0087,
+            "selectionMs": 0.0246,
+            "selected": null,
+            "transitions": 8,
+            "observeMs": 1.5018,
+            "policyMs": 0.11209999999999999,
+            "advanceMs": 6.5822,
+            "evaluateMs": 0.0059
+          },
+          {
+            "budget": 1,
+            "ms": 6.2264,
+            "bytes": 278424,
+            "generationMs": 0.0052,
+            "selectionMs": 0.0081,
+            "selected": null,
+            "transitions": 8,
+            "observeMs": 0.8723,
+            "policyMs": 0.08549999999999999,
+            "advanceMs": 5.232799999999999,
+            "evaluateMs": 0.0051
+          },
+          {
+            "budget": 1,
+            "ms": 5.903,
+            "bytes": 278392,
+            "generationMs": 0.0044,
+            "selectionMs": 0.007,
+            "selected": null,
+            "transitions": 8,
+            "observeMs": 0.8208000000000001,
+            "policyMs": 0.08379999999999999,
+            "advanceMs": 4.9700999999999995,
+            "evaluateMs": 0.0037
+          },
+          {
+            "budget": 1,
+            "ms": 6.1196,
+            "bytes": 278424,
+            "generationMs": 0.0033,
+            "selectionMs": 0.0124,
+            "selected": null,
+            "transitions": 8,
+            "observeMs": 0.8638000000000001,
+            "policyMs": 0.06989999999999999,
+            "advanceMs": 5.1488000000000005,
+            "evaluateMs": 0.0041
+          },
+          {
+            "budget": 1,
+            "ms": 5.2686,
+            "bytes": 278392,
+            "generationMs": 0.0043,
+            "selectionMs": 0.008,
+            "selected": null,
+            "transitions": 8,
+            "observeMs": 0.6716,
+            "policyMs": 0.0686,
+            "advanceMs": 4.4971,
+            "evaluateMs": 0.0048
+          },
+          {
+            "budget": 1,
+            "ms": 6.4641,
+            "bytes": 278424,
+            "generationMs": 0.0038,
+            "selectionMs": 0.0101,
+            "selected": null,
+            "transitions": 8,
+            "observeMs": 0.8898,
+            "policyMs": 0.08430000000000001,
+            "advanceMs": 5.4549,
+            "evaluateMs": 0.005
+          },
+          {
+            "budget": 2,
+            "ms": 15.7561,
+            "bytes": 437760,
+            "generationMs": 0.0098,
+            "selectionMs": 0.8671,
+            "selected": "escape_first",
+            "transitions": 12,
+            "observeMs": 2.0953,
+            "policyMs": 0.1681,
+            "advanceMs": 12.415700000000001,
+            "evaluateMs": 0.1535
+          },
+          {
+            "budget": 2,
+            "ms": 12.6594,
+            "bytes": 430776,
+            "generationMs": 0.0062,
+            "selectionMs": 0.0152,
+            "selected": "escape_first",
+            "transitions": 12,
+            "observeMs": 1.6067,
+            "policyMs": 0.1673,
+            "advanceMs": 10.5013,
+            "evaluateMs": 0.30889999999999995
+          },
+          {
+            "budget": 2,
+            "ms": 12.7421,
+            "bytes": 430808,
+            "generationMs": 0.0043,
+            "selectionMs": 0.0136,
+            "selected": "escape_first",
+            "transitions": 12,
+            "observeMs": 1.7174999999999998,
+            "policyMs": 0.1434,
+            "advanceMs": 10.678899999999999,
+            "evaluateMs": 0.1514
+          },
+          {
+            "budget": 2,
+            "ms": 13.9123,
+            "bytes": 431752,
+            "generationMs": 0.0037,
+            "selectionMs": 0.0201,
+            "selected": "escape_first",
+            "transitions": 12,
+            "observeMs": 1.5511,
+            "policyMs": 0.1619,
+            "advanceMs": 11.9907,
+            "evaluateMs": 0.15109999999999998
+          },
+          {
+            "budget": 2,
+            "ms": 7.7438,
+            "bytes": 430808,
+            "generationMs": 0.0033,
+            "selectionMs": 0.0077,
+            "selected": "escape_first",
+            "transitions": 12,
+            "observeMs": 1.028,
+            "policyMs": 0.088,
+            "advanceMs": 6.497400000000001,
+            "evaluateMs": 0.09899999999999999
+          },
+          {
+            "budget": 2,
+            "ms": 6.1262,
+            "bytes": 436000,
+            "generationMs": 0.0023,
+            "selectionMs": 0.0087,
+            "selected": "escape_first",
+            "transitions": 12,
+            "observeMs": 0.7564000000000001,
+            "policyMs": 0.0625,
+            "advanceMs": 5.2099,
+            "evaluateMs": 0.0729
+          },
+          {
+            "budget": 2,
+            "ms": 7.4003,
+            "bytes": 430808,
+            "generationMs": 0.0024,
+            "selectionMs": 0.0087,
+            "selected": "escape_first",
+            "transitions": 12,
+            "observeMs": 0.9853,
+            "policyMs": 0.07999999999999999,
+            "advanceMs": 6.1843,
+            "evaluateMs": 0.12150000000000001
+          },
+          {
+            "budget": 4,
+            "ms": 11.1971,
+            "bytes": 743616,
+            "generationMs": 0.0023,
+            "selectionMs": 0.0117,
+            "selected": "escape_first",
+            "transitions": 21,
+            "observeMs": 1.4449,
+            "policyMs": 0.1281,
+            "advanceMs": 9.4898,
+            "evaluateMs": 0.0919
+          },
+          {
+            "budget": 4,
+            "ms": 13.4189,
+            "bytes": 744456,
+            "generationMs": 0.0027,
+            "selectionMs": 0.01,
+            "selected": "escape_first",
+            "transitions": 21,
+            "observeMs": 1.6908,
+            "policyMs": 0.1502,
+            "advanceMs": 11.4235,
+            "evaluateMs": 0.107
+          },
+          {
+            "budget": 4,
+            "ms": 12.5951,
+            "bytes": 744424,
+            "generationMs": 0.0169,
+            "selectionMs": 0.0092,
+            "selected": "escape_first",
+            "transitions": 21,
+            "observeMs": 1.6737000000000002,
+            "policyMs": 0.1641,
+            "advanceMs": 10.6067,
+            "evaluateMs": 0.0892
+          },
+          {
+            "budget": 4,
+            "ms": 15.7545,
+            "bytes": 744424,
+            "generationMs": 0.0025,
+            "selectionMs": 0.0098,
+            "selected": "escape_first",
+            "transitions": 21,
+            "observeMs": 1.9922,
+            "policyMs": 0.1686,
+            "advanceMs": 13.4464,
+            "evaluateMs": 0.09580000000000001
+          },
+          {
+            "budget": 4,
+            "ms": 18.7452,
+            "bytes": 744456,
+            "generationMs": 0.0027,
+            "selectionMs": 0.0145,
+            "selected": "escape_first",
+            "transitions": 21,
+            "observeMs": 2.4081,
+            "policyMs": 0.22659999999999997,
+            "advanceMs": 15.915499999999998,
+            "evaluateMs": 0.1299
+          },
+          {
+            "budget": 4,
+            "ms": 28.734,
+            "bytes": 754768,
+            "generationMs": 0.0043,
+            "selectionMs": 0.0109,
+            "selected": "escape_first",
+            "transitions": 21,
+            "observeMs": 2.5082,
+            "policyMs": 0.2622,
+            "advanceMs": 25.722699999999996,
+            "evaluateMs": 0.1621
+          },
+          {
+            "budget": 4,
+            "ms": 12.7851,
+            "bytes": 744424,
+            "generationMs": 0.0025,
+            "selectionMs": 0.0102,
+            "selected": "escape_first",
+            "transitions": 21,
+            "observeMs": 1.5041,
+            "policyMs": 0.1839,
+            "advanceMs": 10.9177,
+            "evaluateMs": 0.1264
+          },
+          {
+            "budget": 8,
+            "ms": 20.2113,
+            "bytes": 1520544,
+            "generationMs": 0.0024,
+            "selectionMs": 0.5651,
+            "selected": "escape_first",
+            "transitions": 42,
+            "observeMs": 2.5849,
+            "policyMs": 0.2666,
+            "advanceMs": 16.5419,
+            "evaluateMs": 0.19820000000000002
+          },
+          {
+            "budget": 8,
+            "ms": 20.0875,
+            "bytes": 1520752,
+            "generationMs": 0.0026,
+            "selectionMs": 0.075,
+            "selected": "escape_first",
+            "transitions": 42,
+            "observeMs": 2.3699,
+            "policyMs": 0.2502,
+            "advanceMs": 17.1654,
+            "evaluateMs": 0.1822
+          },
+          {
+            "budget": 8,
+            "ms": 18.9588,
+            "bytes": 1519776,
+            "generationMs": 0.0023,
+            "selectionMs": 0.0197,
+            "selected": "escape_first",
+            "transitions": 42,
+            "observeMs": 2.4754,
+            "policyMs": 0.24689999999999998,
+            "advanceMs": 15.956599999999998,
+            "evaluateMs": 0.2111
+          },
+          {
+            "budget": 8,
+            "ms": 26.8742,
+            "bytes": 1519808,
+            "generationMs": 0.0025,
+            "selectionMs": 0.0259,
+            "selected": "escape_first",
+            "transitions": 42,
+            "observeMs": 3.3495,
+            "policyMs": 0.33520000000000005,
+            "advanceMs": 22.780899999999995,
+            "evaluateMs": 0.3114
+          },
+          {
+            "budget": 8,
+            "ms": 36.9405,
+            "bytes": 1530120,
+            "generationMs": 0.0036,
+            "selectionMs": 0.0141,
+            "selected": "escape_first",
+            "transitions": 42,
+            "observeMs": 4.6548,
+            "policyMs": 0.4658,
+            "advanceMs": 31.2784,
+            "evaluateMs": 0.4229
+          },
+          {
+            "budget": 8,
+            "ms": 44.7534,
+            "bytes": 1519808,
+            "generationMs": 0.0026,
+            "selectionMs": 0.0211,
+            "selected": "escape_first",
+            "transitions": 42,
+            "observeMs": 5.9556,
+            "policyMs": 0.7492000000000001,
+            "advanceMs": 37.5445,
+            "evaluateMs": 0.3474
+          },
+          {
+            "budget": 8,
+            "ms": 35.1417,
+            "bytes": 1519808,
+            "generationMs": 0.0042,
+            "selectionMs": 0.0184,
+            "selected": "escape_first",
+            "transitions": 42,
+            "observeMs": 4.400799999999999,
+            "policyMs": 0.4625,
+            "advanceMs": 29.748600000000003,
+            "evaluateMs": 0.41529999999999995
+          }
+        ],
+        "peakWorkingSetBytes": 183603200
+      },
+      "validation": {
+        "escape_first": {
+          "processMs": 6297.000000020489,
+          "root": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "live": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "matched": 22,
+          "planned": 22,
+          "auditStatus": "native_incomplete",
+          "nativeStatus": "limit",
+          "nativeEndTurn": 6,
+          "nativeOutcome": {
+            "initialHp": 75,
+            "finalHp": 50,
+            "hpLost": 25,
+            "hpHealed": 0,
+            "selfDamage": 0,
+            "combatEnded": false,
+            "survived": true,
+            "finalEnemyHp": 239,
+            "potions": [],
+            "unattributedHpLoss": 0
+          },
+          "nativeExecuteMs": 241.6671,
+          "nativeSuffixExecuteMs": 38.1614,
+          "nativeLifecycleSemantic": false,
+          "nativeRisk": [],
+          "publicChecks": {
+            "observations": [
+              {
+                "step": 19,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 20,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 21,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 22,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              }
+            ],
+            "successors": [
+              {
+                "step": 19,
+                "equal": true,
+                "expected": "FFBAAEBC77AD571DF485203F76C742E1C5F75B05A7D0C737FCD6FF3A08904E01",
+                "actual": "FFBAAEBC77AD571DF485203F76C742E1C5F75B05A7D0C737FCD6FF3A08904E01"
+              },
+              {
+                "step": 20,
+                "equal": true,
+                "expected": "119BC4AC6D536C54BD1A181B195CB8FD281E06C277203FFCA32ED5F1C71FFEF3",
+                "actual": "119BC4AC6D536C54BD1A181B195CB8FD281E06C277203FFCA32ED5F1C71FFEF3"
+              },
+              {
+                "step": 21,
+                "equal": true,
+                "expected": "6A32EE32D274BA8AAB7E3E1BBBAC1310976461129B45046109DC9CFDE7F1CC4B",
+                "actual": "6A32EE32D274BA8AAB7E3E1BBBAC1310976461129B45046109DC9CFDE7F1CC4B"
+              },
+              {
+                "step": 22,
+                "equal": true,
+                "expected": "51DE38216450C85C9253BA40319483F2C2397644B51B83F250AF0FB749F63323",
+                "actual": "51DE38216450C85C9253BA40319483F2C2397644B51B83F250AF0FB749F63323"
+              }
+            ]
+          },
+          "firstDifference": null,
+          "forecastSetupMs": {
+            "rootCaptureMs": 26.5224,
+            "solverAdapterMs": 225.0871,
+            "rootForkAndSnapshotMs": 75.8166
+          },
+          "prefixPredictionMs": 331.60990000000004,
+          "compareMs": 219.1263,
+          "peakWorkingSetBytes": 179998720,
+          "permanentResourcesUnchanged": true
+        },
+        "frozen_q1": {
+          "processMs": 6406.999999890104,
+          "root": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "live": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "matched": 26,
+          "planned": 26,
+          "auditStatus": "pass",
+          "nativeStatus": "death",
+          "nativeEndTurn": 5,
+          "nativeOutcome": {
+            "initialHp": 75,
+            "finalHp": 0,
+            "hpLost": 75,
+            "hpHealed": 0,
+            "selfDamage": 0,
+            "combatEnded": false,
+            "survived": false,
+            "finalEnemyHp": 211,
+            "potions": [],
+            "unattributedHpLoss": 65
+          },
+          "nativeExecuteMs": 280.5991,
+          "nativeSuffixExecuteMs": 49.646899999999995,
+          "nativeLifecycleSemantic": true,
+          "nativeRisk": [
+            {
+              "step": 26,
+              "cause": "SANDPIT_POWER",
+              "hpBeforeKill": 65,
+              "turn": 5
+            }
+          ],
+          "publicChecks": {
+            "observations": [
+              {
+                "step": 19,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 20,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 21,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 22,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 23,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 24,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 25,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 26,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              }
+            ],
+            "successors": [
+              {
+                "step": 19,
+                "equal": true,
+                "expected": "4D9A559C2A6826061F0DE8D1DD60264034EF6F90EFFAADE2936C39BB5B192AE0",
+                "actual": "4D9A559C2A6826061F0DE8D1DD60264034EF6F90EFFAADE2936C39BB5B192AE0"
+              },
+              {
+                "step": 20,
+                "equal": true,
+                "expected": "FB6E40B25C3B1C56B17263DDB6C51F9B9CD01EA6C40D98546CBABF68D1F79F23",
+                "actual": "FB6E40B25C3B1C56B17263DDB6C51F9B9CD01EA6C40D98546CBABF68D1F79F23"
+              },
+              {
+                "step": 21,
+                "equal": true,
+                "expected": "3E5A83B77ACCA0F7D29FEE9495E8552236A0A105FF0F3681189CC574772A8E9E",
+                "actual": "3E5A83B77ACCA0F7D29FEE9495E8552236A0A105FF0F3681189CC574772A8E9E"
+              },
+              {
+                "step": 22,
+                "equal": true,
+                "expected": "2DAFF26CAE8AD1C560F0BDDA703DA06E5EFB623CCE5438704D87474953CB61F5",
+                "actual": "2DAFF26CAE8AD1C560F0BDDA703DA06E5EFB623CCE5438704D87474953CB61F5"
+              },
+              {
+                "step": 23,
+                "equal": true,
+                "expected": "3332FD624426433EEFE0F2819FFC94D289637F2CF35B2F7FFFD8D7A7A56E58C5",
+                "actual": "3332FD624426433EEFE0F2819FFC94D289637F2CF35B2F7FFFD8D7A7A56E58C5"
+              },
+              {
+                "step": 24,
+                "equal": true,
+                "expected": "93A11A63016A59BEBF1DBA367B080E48A6B88E6E68FF291950C56587B708128C",
+                "actual": "93A11A63016A59BEBF1DBA367B080E48A6B88E6E68FF291950C56587B708128C"
+              },
+              {
+                "step": 25,
+                "equal": true,
+                "expected": "65A653C7BAF9EB2F943F782216F7FD6AC9DAAF62CB2845F2AD9902C23D01ED33",
+                "actual": "65A653C7BAF9EB2F943F782216F7FD6AC9DAAF62CB2845F2AD9902C23D01ED33"
+              },
+              {
+                "step": 26,
+                "equal": true,
+                "expected": "7A5C641FE7A9D1224565E74DDAB1987E81C7EFDBC5E9C6A24150E09A173FA247",
+                "actual": "7A5C641FE7A9D1224565E74DDAB1987E81C7EFDBC5E9C6A24150E09A173FA247"
+              }
+            ]
+          },
+          "firstDifference": null,
+          "forecastSetupMs": {
+            "rootCaptureMs": 21.2121,
+            "solverAdapterMs": 182.0787,
+            "rootForkAndSnapshotMs": 94.1645
+          },
+          "prefixPredictionMs": 369.8365,
+          "compareMs": 213.67480000000003,
+          "peakWorkingSetBytes": 182595584,
+          "permanentResourcesUnchanged": true
+        },
+        "end_now": {
+          "processMs": 6015.999999828637,
+          "root": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "live": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "matched": 19,
+          "planned": 19,
+          "auditStatus": "pass",
+          "nativeStatus": "death",
+          "nativeEndTurn": 5,
+          "nativeOutcome": {
+            "initialHp": 75,
+            "finalHp": 0,
+            "hpLost": 75,
+            "hpHealed": 0,
+            "selfDamage": 0,
+            "combatEnded": false,
+            "survived": false,
+            "finalEnemyHp": 254,
+            "potions": [],
+            "unattributedHpLoss": 65
+          },
+          "nativeExecuteMs": 216.45300000000003,
+          "nativeSuffixExecuteMs": 28.0522,
+          "nativeLifecycleSemantic": true,
+          "nativeRisk": [
+            {
+              "step": 19,
+              "cause": "SANDPIT_POWER",
+              "hpBeforeKill": 65,
+              "turn": 5
+            }
+          ],
+          "publicChecks": {
+            "observations": [
+              {
+                "step": 19,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              }
+            ],
+            "successors": [
+              {
+                "step": 19,
+                "equal": true,
+                "expected": "D3B472CD45808794B0A6935A3F253C777A485DB4E56B64001D9886CE32B56EBE",
+                "actual": "D3B472CD45808794B0A6935A3F253C777A485DB4E56B64001D9886CE32B56EBE"
+              }
+            ]
+          },
+          "firstDifference": null,
+          "forecastSetupMs": {
+            "rootCaptureMs": 14.8452,
+            "solverAdapterMs": 134.2175,
+            "rootForkAndSnapshotMs": 80.7786
+          },
+          "prefixPredictionMs": 398.0681,
+          "compareMs": 157.87760000000006,
+          "peakWorkingSetBytes": 180076544,
+          "permanentResourcesUnchanged": true
+        },
+        "block_first": {
+          "processMs": 6530.999999959022,
+          "root": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "live": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "matched": 26,
+          "planned": 26,
+          "auditStatus": "pass",
+          "nativeStatus": "death",
+          "nativeEndTurn": 5,
+          "nativeOutcome": {
+            "initialHp": 75,
+            "finalHp": 0,
+            "hpLost": 75,
+            "hpHealed": 0,
+            "selfDamage": 0,
+            "combatEnded": false,
+            "survived": false,
+            "finalEnemyHp": 211,
+            "potions": [],
+            "unattributedHpLoss": 65
+          },
+          "nativeExecuteMs": 275.507,
+          "nativeSuffixExecuteMs": 76.6103,
+          "nativeLifecycleSemantic": true,
+          "nativeRisk": [
+            {
+              "step": 26,
+              "cause": "SANDPIT_POWER",
+              "hpBeforeKill": 65,
+              "turn": 5
+            }
+          ],
+          "publicChecks": {
+            "observations": [
+              {
+                "step": 19,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 20,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 21,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 22,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 23,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 24,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 25,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 26,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              }
+            ],
+            "successors": [
+              {
+                "step": 19,
+                "equal": true,
+                "expected": "47253074A110CFB82FCAC453D6A5A23F353870079313D337B878735A9C7762B8",
+                "actual": "47253074A110CFB82FCAC453D6A5A23F353870079313D337B878735A9C7762B8"
+              },
+              {
+                "step": 20,
+                "equal": true,
+                "expected": "DC0E969B2EFFC6B081389E9F5FD4C6A51558F4EAFBFD937E1A0CFDDA6A286AF9",
+                "actual": "DC0E969B2EFFC6B081389E9F5FD4C6A51558F4EAFBFD937E1A0CFDDA6A286AF9"
+              },
+              {
+                "step": 21,
+                "equal": true,
+                "expected": "C22C5DEDE76C285463BB70EAEB4B484CAF367A7BA18E1D7FDAFD194BD4F6E129",
+                "actual": "C22C5DEDE76C285463BB70EAEB4B484CAF367A7BA18E1D7FDAFD194BD4F6E129"
+              },
+              {
+                "step": 22,
+                "equal": true,
+                "expected": "2E5F4B3DC8606C548BBB75AA2125078CEA066A77A052343E98AC025591F8FC40",
+                "actual": "2E5F4B3DC8606C548BBB75AA2125078CEA066A77A052343E98AC025591F8FC40"
+              },
+              {
+                "step": 23,
+                "equal": true,
+                "expected": "4688709488CB73F7611AAB3CD54A04B6DB03B71FC47BA1DA9D778DAD847ACC71",
+                "actual": "4688709488CB73F7611AAB3CD54A04B6DB03B71FC47BA1DA9D778DAD847ACC71"
+              },
+              {
+                "step": 24,
+                "equal": true,
+                "expected": "230CC44B9A2863A29BE38973260FB414C3C7586DF049C3868FD777AFDC77C3CF",
+                "actual": "230CC44B9A2863A29BE38973260FB414C3C7586DF049C3868FD777AFDC77C3CF"
+              },
+              {
+                "step": 25,
+                "equal": true,
+                "expected": "51CF6F95737F56F5CC034E32A590E1542294E3A72BD791895862176EAEE3F49C",
+                "actual": "51CF6F95737F56F5CC034E32A590E1542294E3A72BD791895862176EAEE3F49C"
+              },
+              {
+                "step": 26,
+                "equal": true,
+                "expected": "12E9D76B39E78F860000C4D77AB7EA838D55601295D9E9BA748EEBE269FE8126",
+                "actual": "12E9D76B39E78F860000C4D77AB7EA838D55601295D9E9BA748EEBE269FE8126"
+              }
+            ]
+          },
+          "firstDifference": null,
+          "forecastSetupMs": {
+            "rootCaptureMs": 13.6344,
+            "solverAdapterMs": 188.3546,
+            "rootForkAndSnapshotMs": 71.159
+          },
+          "prefixPredictionMs": 297.5863,
+          "compareMs": 269.13829999999996,
+          "peakWorkingSetBytes": 180404224,
+          "permanentResourcesUnchanged": true
+        },
+        "draw_first": {
+          "processMs": 6468.999999808148,
+          "root": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "live": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "matched": 26,
+          "planned": 26,
+          "auditStatus": "native_incomplete",
+          "nativeStatus": "limit",
+          "nativeEndTurn": 5,
+          "nativeOutcome": {
+            "initialHp": 75,
+            "finalHp": 65,
+            "hpLost": 10,
+            "hpHealed": 0,
+            "selfDamage": 0,
+            "combatEnded": false,
+            "survived": true,
+            "finalEnemyHp": 221,
+            "potions": [],
+            "unattributedHpLoss": 0
+          },
+          "nativeExecuteMs": 222.95919999999995,
+          "nativeSuffixExecuteMs": 33.3297,
+          "nativeLifecycleSemantic": false,
+          "nativeRisk": [],
+          "publicChecks": {
+            "observations": [
+              {
+                "step": 19,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 20,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 21,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 22,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 23,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 24,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 25,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 26,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              }
+            ],
+            "successors": [
+              {
+                "step": 19,
+                "equal": true,
+                "expected": "D56BF76A75C83A98E1E65332DE147A79E569CAEDA8D246C7A0008CB0851D929C",
+                "actual": "D56BF76A75C83A98E1E65332DE147A79E569CAEDA8D246C7A0008CB0851D929C"
+              },
+              {
+                "step": 20,
+                "equal": true,
+                "expected": "B5851139FA03BB0DCBBC41E27A8E8A48F2F5B0BC5BD28F67B6D8C21DB7948362",
+                "actual": "B5851139FA03BB0DCBBC41E27A8E8A48F2F5B0BC5BD28F67B6D8C21DB7948362"
+              },
+              {
+                "step": 21,
+                "equal": true,
+                "expected": "2332A664E3AE61ECDFF5898537069D3AE638EF20C1EA86758917C6523A3F10FA",
+                "actual": "2332A664E3AE61ECDFF5898537069D3AE638EF20C1EA86758917C6523A3F10FA"
+              },
+              {
+                "step": 22,
+                "equal": true,
+                "expected": "C60A22693C56A518566C2F5B5655FC0A79455CC2923A21C60500BA7C917C7C6B",
+                "actual": "C60A22693C56A518566C2F5B5655FC0A79455CC2923A21C60500BA7C917C7C6B"
+              },
+              {
+                "step": 23,
+                "equal": true,
+                "expected": "C4A03DEDF7A29C6F5FF29DF1F4E50F8F455884046DDC7F06B3D574056AA31A61",
+                "actual": "C4A03DEDF7A29C6F5FF29DF1F4E50F8F455884046DDC7F06B3D574056AA31A61"
+              },
+              {
+                "step": 24,
+                "equal": true,
+                "expected": "B9A1FC9EA8BB69C792D3AFB70C23D81991B26636F0F445D78C95E4F33F4C3593",
+                "actual": "B9A1FC9EA8BB69C792D3AFB70C23D81991B26636F0F445D78C95E4F33F4C3593"
+              },
+              {
+                "step": 25,
+                "equal": true,
+                "expected": "FCC1BB5622325A0EAED8E66E2BE06E41D55231B4360D8E185568BEF8D1280BC5",
+                "actual": "FCC1BB5622325A0EAED8E66E2BE06E41D55231B4360D8E185568BEF8D1280BC5"
+              },
+              {
+                "step": 26,
+                "equal": true,
+                "expected": "DEEFF190B6A1BD3C6652B99AC06D650BC253F36E746A837E045618EA0E35E4D8",
+                "actual": "DEEFF190B6A1BD3C6652B99AC06D650BC253F36E746A837E045618EA0E35E4D8"
+              }
+            ]
+          },
+          "firstDifference": null,
+          "forecastSetupMs": {
+            "rootCaptureMs": 7.501,
+            "solverAdapterMs": 120.4909,
+            "rootForkAndSnapshotMs": 100.5235
+          },
+          "prefixPredictionMs": 295.22099999999995,
+          "compareMs": 219.8439,
+          "peakWorkingSetBytes": 183611392,
+          "permanentResourcesUnchanged": true
+        },
+        "power_first": {
+          "processMs": 6735.0000001024455,
+          "root": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "live": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "matched": 26,
+          "planned": 26,
+          "auditStatus": "pass",
+          "nativeStatus": "death",
+          "nativeEndTurn": 5,
+          "nativeOutcome": {
+            "initialHp": 75,
+            "finalHp": 0,
+            "hpLost": 75,
+            "hpHealed": 0,
+            "selfDamage": 0,
+            "combatEnded": false,
+            "survived": false,
+            "finalEnemyHp": 211,
+            "potions": [],
+            "unattributedHpLoss": 65
+          },
+          "nativeExecuteMs": 228.99599999999998,
+          "nativeSuffixExecuteMs": 52.5771,
+          "nativeLifecycleSemantic": true,
+          "nativeRisk": [
+            {
+              "step": 26,
+              "cause": "SANDPIT_POWER",
+              "hpBeforeKill": 65,
+              "turn": 5
+            }
+          ],
+          "publicChecks": {
+            "observations": [
+              {
+                "step": 19,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 20,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 21,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 22,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 23,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 24,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 25,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 26,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              }
+            ],
+            "successors": [
+              {
+                "step": 19,
+                "equal": true,
+                "expected": "93A83BC32C7B07BE44445C47A5B78A4E51BDBE032CBF1483B02D6062DE3573BE",
+                "actual": "93A83BC32C7B07BE44445C47A5B78A4E51BDBE032CBF1483B02D6062DE3573BE"
+              },
+              {
+                "step": 20,
+                "equal": true,
+                "expected": "3A2EE3506E781850A00007A2E9156BF141C7EB44DFA55AEDD71A3DE3A8490948",
+                "actual": "3A2EE3506E781850A00007A2E9156BF141C7EB44DFA55AEDD71A3DE3A8490948"
+              },
+              {
+                "step": 21,
+                "equal": true,
+                "expected": "F233202D80C14A09D59A2371F01FE8D1CC6682B1CD49DCD68DFEE1521BD710FA",
+                "actual": "F233202D80C14A09D59A2371F01FE8D1CC6682B1CD49DCD68DFEE1521BD710FA"
+              },
+              {
+                "step": 22,
+                "equal": true,
+                "expected": "9AE62FEFF98D710863981176146490E175994F8DF34F58032047A626F6C97132",
+                "actual": "9AE62FEFF98D710863981176146490E175994F8DF34F58032047A626F6C97132"
+              },
+              {
+                "step": 23,
+                "equal": true,
+                "expected": "F2893E1175DF51123D7BAE012A8D31656E02B16FD4A468B6DBF51B3620300296",
+                "actual": "F2893E1175DF51123D7BAE012A8D31656E02B16FD4A468B6DBF51B3620300296"
+              },
+              {
+                "step": 24,
+                "equal": true,
+                "expected": "5CEBCACB676AA11F93468501EC2A453C3A32F5D9BE7E65B2679DBFBA32EE9ED5",
+                "actual": "5CEBCACB676AA11F93468501EC2A453C3A32F5D9BE7E65B2679DBFBA32EE9ED5"
+              },
+              {
+                "step": 25,
+                "equal": true,
+                "expected": "65A653C7BAF9EB2F943F782216F7FD6AC9DAAF62CB2845F2AD9902C23D01ED33",
+                "actual": "65A653C7BAF9EB2F943F782216F7FD6AC9DAAF62CB2845F2AD9902C23D01ED33"
+              },
+              {
+                "step": 26,
+                "equal": true,
+                "expected": "7A5C641FE7A9D1224565E74DDAB1987E81C7EFDBC5E9C6A24150E09A173FA247",
+                "actual": "7A5C641FE7A9D1224565E74DDAB1987E81C7EFDBC5E9C6A24150E09A173FA247"
+              }
+            ]
+          },
+          "firstDifference": null,
+          "forecastSetupMs": {
+            "rootCaptureMs": 8.0686,
+            "solverAdapterMs": 205.2946,
+            "rootForkAndSnapshotMs": 95.5003
+          },
+          "prefixPredictionMs": 305.24320000000006,
+          "compareMs": 226.41799999999998,
+          "peakWorkingSetBytes": 178655232,
+          "permanentResourcesUnchanged": true
+        },
+        "attack_then_escape": {
+          "processMs": 6235.0000001024455,
+          "root": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "live": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "matched": 22,
+          "planned": 22,
+          "auditStatus": "native_incomplete",
+          "nativeStatus": "limit",
+          "nativeEndTurn": 6,
+          "nativeOutcome": {
+            "initialHp": 75,
+            "finalHp": 50,
+            "hpLost": 25,
+            "hpHealed": 0,
+            "selfDamage": 0,
+            "combatEnded": false,
+            "survived": true,
+            "finalEnemyHp": 239,
+            "potions": [],
+            "unattributedHpLoss": 0
+          },
+          "nativeExecuteMs": 212.04439999999997,
+          "nativeSuffixExecuteMs": 23.2434,
+          "nativeLifecycleSemantic": false,
+          "nativeRisk": [],
+          "publicChecks": {
+            "observations": [
+              {
+                "step": 19,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 20,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 21,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 22,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              }
+            ],
+            "successors": [
+              {
+                "step": 19,
+                "equal": true,
+                "expected": "4D9A559C2A6826061F0DE8D1DD60264034EF6F90EFFAADE2936C39BB5B192AE0",
+                "actual": "4D9A559C2A6826061F0DE8D1DD60264034EF6F90EFFAADE2936C39BB5B192AE0"
+              },
+              {
+                "step": 20,
+                "equal": true,
+                "expected": "15FD6EECCA6643EBAE035AE4F7396DBEC941A56133D2C306B36BE25725AFEE9E",
+                "actual": "15FD6EECCA6643EBAE035AE4F7396DBEC941A56133D2C306B36BE25725AFEE9E"
+              },
+              {
+                "step": 21,
+                "equal": true,
+                "expected": "93563D2E5268920EF9739A5535A234A60BD1873FBDE84C3B097A7E120354EA2E",
+                "actual": "93563D2E5268920EF9739A5535A234A60BD1873FBDE84C3B097A7E120354EA2E"
+              },
+              {
+                "step": 22,
+                "equal": true,
+                "expected": "E1268A970CD7FBF27A7A94D0EC76FB529227CEF9EE6F28DB940C13C5FE106B27",
+                "actual": "E1268A970CD7FBF27A7A94D0EC76FB529227CEF9EE6F28DB940C13C5FE106B27"
+              }
+            ]
+          },
+          "firstDifference": null,
+          "forecastSetupMs": {
+            "rootCaptureMs": 7.7096,
+            "solverAdapterMs": 174.8113,
+            "rootForkAndSnapshotMs": 81.1191
+          },
+          "prefixPredictionMs": 404.85360000000003,
+          "compareMs": 178.87050000000005,
+          "peakWorkingSetBytes": 180924416,
+          "permanentResourcesUnchanged": true
+        }
+      }
+    },
+    {
+      "parent": {
+        "processMs": 6969.000000040978,
+        "root": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+        "live": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+        "matched": 18,
+        "planned": 18,
+        "auditStatus": "native_incomplete",
+        "nativeStatus": "limit",
+        "nativeEndTurn": 5,
+        "nativeOutcome": {
+          "initialHp": 75,
+          "finalHp": 65,
+          "hpLost": 10,
+          "hpHealed": 0,
+          "selfDamage": 0,
+          "combatEnded": false,
+          "survived": true,
+          "finalEnemyHp": 260,
+          "potions": [],
+          "unattributedHpLoss": 0
+        },
+        "nativeExecuteMs": 205.73009999999996,
+        "nativeSuffixExecuteMs": 0,
+        "nativeLifecycleSemantic": false,
+        "nativeRisk": [],
+        "publicChecks": [],
+        "firstDifference": null,
+        "forecastSetupMs": {
+          "rootCaptureMs": 13.0774,
+          "solverAdapterMs": 154.43,
+          "rootForkAndSnapshotMs": 61.4358
+        },
+        "prefixPredictionMs": 288.0299,
+        "compareMs": 132.9653,
+        "peakWorkingSetBytes": 181014528
+      },
+      "search": {
+        "publicParentEqual": true,
+        "initial": {
+          "menu": {
+            "block": 0,
+            "enemies": [
+              {
+                "id": 1,
+                "hp": 260,
+                "block": 0,
+                "incoming": 24
+              }
+            ],
+            "moves": [
+              {
+                "handIndex": 0,
+                "id": "FRANTIC_ESCAPE",
+                "target": null,
+                "damage": 0,
+                "block": 0,
+                "draw": 0,
+                "energy": 1,
+                "power": false
+              },
+              {
+                "handIndex": 1,
+                "id": "SPINNER",
+                "target": null,
+                "damage": 0,
+                "block": 0,
+                "draw": 0,
+                "energy": 1,
+                "power": true
+              },
+              {
+                "handIndex": 2,
+                "id": "COMPACT",
+                "target": null,
+                "damage": 0,
+                "block": 7,
+                "draw": 0,
+                "energy": 1,
+                "power": false
+              },
+              {
+                "handIndex": 3,
+                "id": "MOMENTUM_STRIKE",
+                "target": 1,
+                "damage": 15,
+                "block": 0,
+                "draw": 0,
+                "energy": 1,
+                "power": false
+              },
+              {
+                "handIndex": 4,
+                "id": "SKIM",
+                "target": null,
+                "damage": 0,
+                "block": 0,
+                "draw": 4,
+                "energy": 1,
+                "power": false
+              }
+            ]
+          },
+          "hp": 65,
+          "energy": 3,
+          "sandpit": 1,
+          "hand": [
+            "FRANTIC_ESCAPE+0",
+            "SPINNER+1",
+            "COMPACT+1",
+            "MOMENTUM_STRIKE+1",
+            "SKIM+1"
+          ],
+          "powers": [],
+          "enemyPowers": [
+            "1:SANDPIT_POWER:1",
+            "1:STRENGTH_POWER:3"
+          ]
+        },
+        "parentUnchanged": true,
+        "parentHash": "3D1EEE05C2A8359D398D2A75EA5CB012A0197FCAF10032D3D56A782828030C6E",
+        "visitedDistinctSuccessors": 38,
+        "candidates": [
+          {
+            "name": "escape_first",
+            "decisions": [
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 0,
+                    "id": "FRANTIC_ESCAPE",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "FFBAAEBC77AD571DF485203F76C742E1C5F75B05A7D0C737FCD6FF3A08904E01",
+                "sandpitBefore": 1,
+                "energyBefore": 3
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "MOMENTUM_STRIKE",
+                    "target": 1
+                  },
+                  "pick": null
+                },
+                "successorHash": "119BC4AC6D536C54BD1A181B195CB8FD281E06C277203FFCA32ED5F1C71FFEF3",
+                "sandpitBefore": 2,
+                "energyBefore": 2
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 1,
+                    "id": "COMPACT",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "6A32EE32D274BA8AAB7E3E1BBBAC1310976461129B45046109DC9CFDE7F1CC4B",
+                "sandpitBefore": 2,
+                "energyBefore": 1
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": null,
+                  "pick": null
+                },
+                "successorHash": "51DE38216450C85C9253BA40319483F2C2397644B51B83F250AF0FB749F63323",
+                "sandpitBefore": 2,
+                "energyBefore": 0
+              }
+            ],
+            "endpoint": {
+              "turn": 6,
+              "hp": 50,
+              "block": 0,
+              "energy": 3,
+              "incoming": 24,
+              "enemyHp": 239,
+              "sandpit": 1,
+              "playerDead": false,
+              "allEnemiesDead": false,
+              "escapeEnergy": 1,
+              "escapePlays": 1,
+              "specialRisk": null
+            },
+            "stop": "one_player_round",
+            "transitions": 4,
+            "advanceMs": 12.9571,
+            "observeMs": 0.5336,
+            "policyMs": 2.8199,
+            "evaluateMs": 0.848,
+            "detail": null
+          },
+          {
+            "name": "frozen_q1",
+            "decisions": [
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 3,
+                    "id": "MOMENTUM_STRIKE",
+                    "target": 1
+                  },
+                  "pick": null
+                },
+                "successorHash": "4D9A559C2A6826061F0DE8D1DD60264034EF6F90EFFAADE2936C39BB5B192AE0",
+                "sandpitBefore": 1,
+                "energyBefore": 3
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "COMPACT",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "FB6E40B25C3B1C56B17263DDB6C51F9B9CD01EA6C40D98546CBABF68D1F79F23",
+                "sandpitBefore": 1,
+                "energyBefore": 2
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "SKIM",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "3E5A83B77ACCA0F7D29FEE9495E8552236A0A105FF0F3681189CC574772A8E9E",
+                "sandpitBefore": 1,
+                "energyBefore": 1
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 4,
+                    "id": "FINESSE",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "2DAFF26CAE8AD1C560F0BDDA703DA06E5EFB623CCE5438704D87474953CB61F5",
+                "sandpitBefore": 1,
+                "energyBefore": 0
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 0,
+                    "id": "FUEL",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "3332FD624426433EEFE0F2819FFC94D289637F2CF35B2F7FFFD8D7A7A56E58C5",
+                "sandpitBefore": 1,
+                "energyBefore": 0
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "STRIKE_DEFECT",
+                    "target": 1
+                  },
+                  "pick": null
+                },
+                "successorHash": "93A11A63016A59BEBF1DBA367B080E48A6B88E6E68FF291950C56587B708128C",
+                "sandpitBefore": 1,
+                "energyBefore": 2
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 0,
+                    "id": "SPINNER",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "65A653C7BAF9EB2F943F782216F7FD6AC9DAAF62CB2845F2AD9902C23D01ED33",
+                "sandpitBefore": 1,
+                "energyBefore": 1
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": null,
+                  "pick": null
+                },
+                "successorHash": "7A5C641FE7A9D1224565E74DDAB1987E81C7EFDBC5E9C6A24150E09A173FA247",
+                "sandpitBefore": 1,
+                "energyBefore": 0
+              }
+            ],
+            "endpoint": {
+              "turn": 5,
+              "hp": 0,
+              "block": 15,
+              "energy": 0,
+              "incoming": -1,
+              "enemyHp": 211,
+              "sandpit": null,
+              "playerDead": true,
+              "allEnemiesDead": false,
+              "escapeEnergy": 0,
+              "escapePlays": 0,
+              "specialRisk": "sandpit_at_one_before_end_turn"
+            },
+            "stop": "death",
+            "transitions": 8,
+            "advanceMs": 25.542299999999997,
+            "observeMs": 1.5173,
+            "policyMs": 0.18889999999999998,
+            "evaluateMs": 0.0126,
+            "detail": null
+          },
+          {
+            "name": "end_now",
+            "decisions": [
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": null,
+                  "pick": null
+                },
+                "successorHash": "D3B472CD45808794B0A6935A3F253C777A485DB4E56B64001D9886CE32B56EBE",
+                "sandpitBefore": 1,
+                "energyBefore": 3
+              }
+            ],
+            "endpoint": {
+              "turn": 5,
+              "hp": 0,
+              "block": 5,
+              "energy": 3,
+              "incoming": -1,
+              "enemyHp": 254,
+              "sandpit": null,
+              "playerDead": true,
+              "allEnemiesDead": false,
+              "escapeEnergy": 0,
+              "escapePlays": 0,
+              "specialRisk": "sandpit_at_one_before_end_turn"
+            },
+            "stop": "death",
+            "transitions": 1,
+            "advanceMs": 0.9328,
+            "observeMs": 0.1923,
+            "policyMs": 0.0014,
+            "evaluateMs": 0.0057,
+            "detail": null
+          },
+          {
+            "name": "block_first",
+            "decisions": [
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "COMPACT",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "47253074A110CFB82FCAC453D6A5A23F353870079313D337B878735A9C7762B8",
+                "sandpitBefore": 1,
+                "energyBefore": 3
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "MOMENTUM_STRIKE",
+                    "target": 1
+                  },
+                  "pick": null
+                },
+                "successorHash": "DC0E969B2EFFC6B081389E9F5FD4C6A51558F4EAFBFD937E1A0CFDDA6A286AF9",
+                "sandpitBefore": 1,
+                "energyBefore": 2
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "SKIM",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "C22C5DEDE76C285463BB70EAEB4B484CAF367A7BA18E1D7FDAFD194BD4F6E129",
+                "sandpitBefore": 1,
+                "energyBefore": 1
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 4,
+                    "id": "FINESSE",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "2E5F4B3DC8606C548BBB75AA2125078CEA066A77A052343E98AC025591F8FC40",
+                "sandpitBefore": 1,
+                "energyBefore": 0
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 0,
+                    "id": "FUEL",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "4688709488CB73F7611AAB3CD54A04B6DB03B71FC47BA1DA9D778DAD847ACC71",
+                "sandpitBefore": 1,
+                "energyBefore": 0
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "STRIKE_DEFECT",
+                    "target": 1
+                  },
+                  "pick": null
+                },
+                "successorHash": "230CC44B9A2863A29BE38973260FB414C3C7586DF049C3868FD777AFDC77C3CF",
+                "sandpitBefore": 1,
+                "energyBefore": 2
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 0,
+                    "id": "SPINNER",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "51CF6F95737F56F5CC034E32A590E1542294E3A72BD791895862176EAEE3F49C",
+                "sandpitBefore": 1,
+                "energyBefore": 1
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": null,
+                  "pick": null
+                },
+                "successorHash": "12E9D76B39E78F860000C4D77AB7EA838D55601295D9E9BA748EEBE269FE8126",
+                "sandpitBefore": 1,
+                "energyBefore": 0
+              }
+            ],
+            "endpoint": {
+              "turn": 5,
+              "hp": 0,
+              "block": 15,
+              "energy": 0,
+              "incoming": -1,
+              "enemyHp": 211,
+              "sandpit": null,
+              "playerDead": true,
+              "allEnemiesDead": false,
+              "escapeEnergy": 0,
+              "escapePlays": 0,
+              "specialRisk": "sandpit_at_one_before_end_turn"
+            },
+            "stop": "death",
+            "transitions": 8,
+            "advanceMs": 7.1999,
+            "observeMs": 1.3147000000000002,
+            "policyMs": 0.11160000000000002,
+            "evaluateMs": 0.0127,
+            "detail": null
+          },
+          {
+            "name": "draw_first",
+            "decisions": [
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 4,
+                    "id": "SKIM",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "D56BF76A75C83A98E1E65332DE147A79E569CAEDA8D246C7A0008CB0851D929C",
+                "sandpitBefore": 1,
+                "energyBefore": 3
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 3,
+                    "id": "MOMENTUM_STRIKE",
+                    "target": 1
+                  },
+                  "pick": null
+                },
+                "successorHash": "B5851139FA03BB0DCBBC41E27A8E8A48F2F5B0BC5BD28F67B6D8C21DB7948362",
+                "sandpitBefore": 1,
+                "energyBefore": 2
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "COMPACT",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "2332A664E3AE61ECDFF5898537069D3AE638EF20C1EA86758917C6523A3F10FA",
+                "sandpitBefore": 1,
+                "energyBefore": 1
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 5,
+                    "id": "FINESSE",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "C60A22693C56A518566C2F5B5655FC0A79455CC2923A21C60500BA7C917C7C6B",
+                "sandpitBefore": 1,
+                "energyBefore": 0
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 0,
+                    "id": "FUEL",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "C4A03DEDF7A29C6F5FF29DF1F4E50F8F455884046DDC7F06B3D574056AA31A61",
+                "sandpitBefore": 1,
+                "energyBefore": 0
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "STRIKE_DEFECT",
+                    "target": 1
+                  },
+                  "pick": null
+                },
+                "successorHash": "B9A1FC9EA8BB69C792D3AFB70C23D81991B26636F0F445D78C95E4F33F4C3593",
+                "sandpitBefore": 1,
+                "energyBefore": 2
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 0,
+                    "id": "SPINNER",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "FCC1BB5622325A0EAED8E66E2BE06E41D55231B4360D8E185568BEF8D1280BC5",
+                "sandpitBefore": 1,
+                "energyBefore": 1
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 1,
+                    "id": "FUEL",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "DEEFF190B6A1BD3C6652B99AC06D650BC253F36E746A837E045618EA0E35E4D8",
+                "sandpitBefore": 1,
+                "energyBefore": 0
+              }
+            ],
+            "endpoint": {
+              "turn": 5,
+              "hp": 65,
+              "block": 11,
+              "energy": 2,
+              "incoming": 24,
+              "enemyHp": 221,
+              "sandpit": 1,
+              "playerDead": false,
+              "allEnemiesDead": false,
+              "escapeEnergy": 0,
+              "escapePlays": 0,
+              "specialRisk": null
+            },
+            "stop": "action_cap",
+            "transitions": 8,
+            "advanceMs": 8.169199999999998,
+            "observeMs": 1.3657000000000001,
+            "policyMs": 0.1538,
+            "evaluateMs": 0.1233,
+            "detail": null
+          },
+          {
+            "name": "power_first",
+            "decisions": [
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 1,
+                    "id": "SPINNER",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "93A83BC32C7B07BE44445C47A5B78A4E51BDBE032CBF1483B02D6062DE3573BE",
+                "sandpitBefore": 1,
+                "energyBefore": 3
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "MOMENTUM_STRIKE",
+                    "target": 1
+                  },
+                  "pick": null
+                },
+                "successorHash": "3A2EE3506E781850A00007A2E9156BF141C7EB44DFA55AEDD71A3DE3A8490948",
+                "sandpitBefore": 1,
+                "energyBefore": 2
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 1,
+                    "id": "COMPACT",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "F233202D80C14A09D59A2371F01FE8D1CC6682B1CD49DCD68DFEE1521BD710FA",
+                "sandpitBefore": 1,
+                "energyBefore": 1
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 0,
+                    "id": "FUEL",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "9AE62FEFF98D710863981176146490E175994F8DF34F58032047A626F6C97132",
+                "sandpitBefore": 1,
+                "energyBefore": 0
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 0,
+                    "id": "SKIM",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "F2893E1175DF51123D7BAE012A8D31656E02B16FD4A468B6DBF51B3620300296",
+                "sandpitBefore": 1,
+                "energyBefore": 2
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "FINESSE",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "5CEBCACB676AA11F93468501EC2A453C3A32F5D9BE7E65B2679DBFBA32EE9ED5",
+                "sandpitBefore": 1,
+                "energyBefore": 1
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 1,
+                    "id": "STRIKE_DEFECT",
+                    "target": 1
+                  },
+                  "pick": null
+                },
+                "successorHash": "65A653C7BAF9EB2F943F782216F7FD6AC9DAAF62CB2845F2AD9902C23D01ED33",
+                "sandpitBefore": 1,
+                "energyBefore": 1
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": null,
+                  "pick": null
+                },
+                "successorHash": "7A5C641FE7A9D1224565E74DDAB1987E81C7EFDBC5E9C6A24150E09A173FA247",
+                "sandpitBefore": 1,
+                "energyBefore": 0
+              }
+            ],
+            "endpoint": {
+              "turn": 5,
+              "hp": 0,
+              "block": 15,
+              "energy": 0,
+              "incoming": -1,
+              "enemyHp": 211,
+              "sandpit": null,
+              "playerDead": true,
+              "allEnemiesDead": false,
+              "escapeEnergy": 0,
+              "escapePlays": 0,
+              "specialRisk": "sandpit_at_one_before_end_turn"
+            },
+            "stop": "death",
+            "transitions": 8,
+            "advanceMs": 7.3701,
+            "observeMs": 1.1675,
+            "policyMs": 0.09790000000000001,
+            "evaluateMs": 0.0052,
+            "detail": null
+          },
+          {
+            "name": "attack_then_escape",
+            "decisions": [
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 3,
+                    "id": "MOMENTUM_STRIKE",
+                    "target": 1
+                  },
+                  "pick": null
+                },
+                "successorHash": "4D9A559C2A6826061F0DE8D1DD60264034EF6F90EFFAADE2936C39BB5B192AE0",
+                "sandpitBefore": 1,
+                "energyBefore": 3
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 0,
+                    "id": "FRANTIC_ESCAPE",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "15FD6EECCA6643EBAE035AE4F7396DBEC941A56133D2C306B36BE25725AFEE9E",
+                "sandpitBefore": 1,
+                "energyBefore": 2
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 1,
+                    "id": "COMPACT",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "93563D2E5268920EF9739A5535A234A60BD1873FBDE84C3B097A7E120354EA2E",
+                "sandpitBefore": 2,
+                "energyBefore": 1
+              },
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": null,
+                  "pick": null
+                },
+                "successorHash": "E1268A970CD7FBF27A7A94D0EC76FB529227CEF9EE6F28DB940C13C5FE106B27",
+                "sandpitBefore": 2,
+                "energyBefore": 0
+              }
+            ],
+            "endpoint": {
+              "turn": 6,
+              "hp": 50,
+              "block": 0,
+              "energy": 3,
+              "incoming": 24,
+              "enemyHp": 239,
+              "sandpit": 1,
+              "playerDead": false,
+              "allEnemiesDead": false,
+              "escapeEnergy": 1,
+              "escapePlays": 1,
+              "specialRisk": null
+            },
+            "stop": "one_player_round",
+            "transitions": 4,
+            "advanceMs": 3.5695,
+            "observeMs": 0.4724,
+            "policyMs": 0.027,
+            "evaluateMs": 0.1475,
+            "detail": null
+          },
+          {
+            "name": "block_then_escape",
+            "decisions": [
+              {
+                "input": {
+                  "turn": 5,
+                  "selected": {
+                    "handIndex": 2,
+                    "id": "COMPACT",
+                    "target": null
+                  },
+                  "pick": null
+                },
+                "successorHash": "47253074A110CFB82FCAC453D6A5A23F353870079313D337B878735A9C7762B8",
+                "sandpitBefore": 1,
+                "energyBefore": 3
+              }
+            ],
+            "endpoint": {
+              "turn": 5,
+              "hp": 65,
+              "block": 7,
+              "energy": 2,
+              "incoming": -1,
+              "enemyHp": 260,
+              "sandpit": 1,
+              "playerDead": false,
+              "allEnemiesDead": false,
+              "escapeEnergy": 0,
+              "escapePlays": 0,
+              "specialRisk": null
+            },
+            "stop": "required_action_unavailable",
+            "transitions": 1,
+            "advanceMs": 0.754,
+            "observeMs": 0.19440000000000002,
+            "policyMs": 0.0082,
+            "evaluateMs": 0.004,
+            "detail": null
+          }
+        ],
+        "selection": [
+          {
+            "budget": 2,
+            "selected": "escape_first",
+            "distinctSuccessors": 12
+          },
+          {
+            "budget": 4,
+            "selected": "escape_first",
+            "distinctSuccessors": 21
+          },
+          {
+            "budget": 8,
+            "selected": "escape_first",
+            "distinctSuccessors": 38
+          }
+        ],
+        "samples": [
+          {
+            "budget": 1,
+            "ms": 11.3571,
+            "bytes": 295160,
+            "generationMs": 0.2059,
+            "selectionMs": 4.3574,
+            "selected": null,
+            "transitions": 8,
+            "observeMs": 0.9117000000000001,
+            "policyMs": 0.09580000000000001,
+            "advanceMs": 5.6246,
+            "evaluateMs": 0.0044
+          },
+          {
+            "budget": 1,
+            "ms": 8.5234,
+            "bytes": 278392,
+            "generationMs": 0.0075,
+            "selectionMs": 0.027,
+            "selected": null,
+            "transitions": 8,
+            "observeMs": 1.1269,
+            "policyMs": 0.1222,
+            "advanceMs": 7.211599999999999,
+            "evaluateMs": 0.006
+          },
+          {
+            "budget": 1,
+            "ms": 6.7165,
+            "bytes": 278424,
+            "generationMs": 0.0041,
+            "selectionMs": 0.0164,
+            "selected": null,
+            "transitions": 8,
+            "observeMs": 0.9533,
+            "policyMs": 0.08599999999999998,
+            "advanceMs": 5.6346,
+            "evaluateMs": 0.0045
+          },
+          {
+            "budget": 1,
+            "ms": 7.0805,
+            "bytes": 278392,
+            "generationMs": 0.0038,
+            "selectionMs": 0.0102,
+            "selected": null,
+            "transitions": 8,
+            "observeMs": 0.9579000000000001,
+            "policyMs": 0.10610000000000003,
+            "advanceMs": 5.9741,
+            "evaluateMs": 0.0045
+          },
+          {
+            "budget": 1,
+            "ms": 7.8433,
+            "bytes": 278424,
+            "generationMs": 0.0039,
+            "selectionMs": 0.0121,
+            "selected": null,
+            "transitions": 8,
+            "observeMs": 1.0706,
+            "policyMs": 0.1371,
+            "advanceMs": 6.5925,
+            "evaluateMs": 0.0053
+          },
+          {
+            "budget": 1,
+            "ms": 8.317,
+            "bytes": 278392,
+            "generationMs": 0.004,
+            "selectionMs": 0.0108,
+            "selected": null,
+            "transitions": 8,
+            "observeMs": 1.4714999999999998,
+            "policyMs": 0.14130000000000004,
+            "advanceMs": 6.661200000000001,
+            "evaluateMs": 0.0055
+          },
+          {
+            "budget": 1,
+            "ms": 7.6216,
+            "bytes": 278424,
+            "generationMs": 0.0043,
+            "selectionMs": 0.0094,
+            "selected": null,
+            "transitions": 8,
+            "observeMs": 1.0061,
+            "policyMs": 0.1034,
+            "advanceMs": 6.4731,
+            "evaluateMs": 0.0044
+          },
+          {
+            "budget": 2,
+            "ms": 12.5728,
+            "bytes": 437760,
+            "generationMs": 0.0088,
+            "selectionMs": 1.1675,
+            "selected": "escape_first",
+            "transitions": 12,
+            "observeMs": 1.4607999999999999,
+            "policyMs": 0.1558,
+            "advanceMs": 9.6076,
+            "evaluateMs": 0.1397
+          },
+          {
+            "budget": 2,
+            "ms": 11.7035,
+            "bytes": 430776,
+            "generationMs": 0.0053,
+            "selectionMs": 0.0137,
+            "selected": "escape_first",
+            "transitions": 12,
+            "observeMs": 1.4416999999999998,
+            "policyMs": 0.12419999999999999,
+            "advanceMs": 9.950299999999999,
+            "evaluateMs": 0.1299
+          },
+          {
+            "budget": 2,
+            "ms": 9.9778,
+            "bytes": 430808,
+            "generationMs": 0.0035,
+            "selectionMs": 0.0086,
+            "selected": "escape_first",
+            "transitions": 12,
+            "observeMs": 1.2831,
+            "policyMs": 0.12050000000000002,
+            "advanceMs": 8.1869,
+            "evaluateMs": 0.2804
+          },
+          {
+            "budget": 2,
+            "ms": 8.3459,
+            "bytes": 431752,
+            "generationMs": 0.0025,
+            "selectionMs": 0.0108,
+            "selected": "escape_first",
+            "transitions": 12,
+            "observeMs": 0.9029,
+            "policyMs": 0.10369999999999999,
+            "advanceMs": 7.231200000000001,
+            "evaluateMs": 0.075
+          },
+          {
+            "budget": 2,
+            "ms": 9.925,
+            "bytes": 430808,
+            "generationMs": 0.003,
+            "selectionMs": 0.0104,
+            "selected": "escape_first",
+            "transitions": 12,
+            "observeMs": 1.1889,
+            "policyMs": 0.1308,
+            "advanceMs": 8.3763,
+            "evaluateMs": 0.1887
+          },
+          {
+            "budget": 2,
+            "ms": 6.542,
+            "bytes": 436000,
+            "generationMs": 0.0025,
+            "selectionMs": 0.0067,
+            "selected": "escape_first",
+            "transitions": 12,
+            "observeMs": 0.8139000000000001,
+            "policyMs": 0.07469999999999999,
+            "advanceMs": 5.546100000000001,
+            "evaluateMs": 0.079
+          },
+          {
+            "budget": 2,
+            "ms": 5.7292,
+            "bytes": 430808,
+            "generationMs": 0.0016,
+            "selectionMs": 0.0063,
+            "selected": "escape_first",
+            "transitions": 12,
+            "observeMs": 0.6994,
+            "policyMs": 0.06799999999999999,
+            "advanceMs": 4.862299999999999,
+            "evaluateMs": 0.0761
+          },
+          {
+            "budget": 4,
+            "ms": 13.5376,
+            "bytes": 743616,
+            "generationMs": 0.002,
+            "selectionMs": 0.0115,
+            "selected": "escape_first",
+            "transitions": 21,
+            "observeMs": 1.8135000000000003,
+            "policyMs": 0.2075,
+            "advanceMs": 11.3845,
+            "evaluateMs": 0.0811
+          },
+          {
+            "budget": 4,
+            "ms": 18.4964,
+            "bytes": 744456,
+            "generationMs": 0.0034,
+            "selectionMs": 0.0145,
+            "selected": "escape_first",
+            "transitions": 21,
+            "observeMs": 2.2278000000000002,
+            "policyMs": 0.27860000000000007,
+            "advanceMs": 15.7762,
+            "evaluateMs": 0.14439999999999997
+          },
+          {
+            "budget": 4,
+            "ms": 18.1274,
+            "bytes": 744424,
+            "generationMs": 0.0035,
+            "selectionMs": 0.0145,
+            "selected": "escape_first",
+            "transitions": 21,
+            "observeMs": 2.2938,
+            "policyMs": 0.22309999999999997,
+            "advanceMs": 15.412199999999999,
+            "evaluateMs": 0.1285
+          },
+          {
+            "budget": 4,
+            "ms": 19.1438,
+            "bytes": 744424,
+            "generationMs": 0.0034,
+            "selectionMs": 0.0148,
+            "selected": "escape_first",
+            "transitions": 21,
+            "observeMs": 2.451,
+            "policyMs": 0.2284,
+            "advanceMs": 16.2275,
+            "evaluateMs": 0.16029999999999997
+          },
+          {
+            "budget": 4,
+            "ms": 17.8169,
+            "bytes": 744456,
+            "generationMs": 0.0033,
+            "selectionMs": 0.0136,
+            "selected": "escape_first",
+            "transitions": 21,
+            "observeMs": 2.2089999999999996,
+            "policyMs": 0.20420000000000002,
+            "advanceMs": 15.1982,
+            "evaluateMs": 0.1418
+          },
+          {
+            "budget": 4,
+            "ms": 27.3137,
+            "bytes": 754768,
+            "generationMs": 0.0036,
+            "selectionMs": 0.0163,
+            "selected": "escape_first",
+            "transitions": 21,
+            "observeMs": 2.4524999999999997,
+            "policyMs": 0.23809999999999995,
+            "advanceMs": 24.419800000000002,
+            "evaluateMs": 0.11320000000000001
+          },
+          {
+            "budget": 4,
+            "ms": 22.6448,
+            "bytes": 744424,
+            "generationMs": 0.0049,
+            "selectionMs": 0.0177,
+            "selected": "escape_first",
+            "transitions": 21,
+            "observeMs": 2.9966,
+            "policyMs": 0.31120000000000003,
+            "advanceMs": 19.065800000000003,
+            "evaluateMs": 0.16629999999999998
+          },
+          {
+            "budget": 8,
+            "ms": 50.423,
+            "bytes": 1520544,
+            "generationMs": 0.0037,
+            "selectionMs": 0.6338,
+            "selected": "escape_first",
+            "transitions": 42,
+            "observeMs": 6.1876,
+            "policyMs": 0.6533999999999999,
+            "advanceMs": 42.187,
+            "evaluateMs": 0.5866
+          },
+          {
+            "budget": 8,
+            "ms": 38.8943,
+            "bytes": 1520752,
+            "generationMs": 0.0042,
+            "selectionMs": 0.0355,
+            "selected": "escape_first",
+            "transitions": 42,
+            "observeMs": 8.4228,
+            "policyMs": 0.5411,
+            "advanceMs": 29.398200000000003,
+            "evaluateMs": 0.36600000000000005
+          },
+          {
+            "budget": 8,
+            "ms": 26.5037,
+            "bytes": 1519776,
+            "generationMs": 0.002,
+            "selectionMs": 0.0183,
+            "selected": "escape_first",
+            "transitions": 42,
+            "observeMs": 3.4576000000000002,
+            "policyMs": 0.3933,
+            "advanceMs": 22.2649,
+            "evaluateMs": 0.26380000000000003
+          },
+          {
+            "budget": 8,
+            "ms": 32.8446,
+            "bytes": 1519808,
+            "generationMs": 0.0036,
+            "selectionMs": 0.016,
+            "selected": "escape_first",
+            "transitions": 42,
+            "observeMs": 4.427899999999999,
+            "policyMs": 0.46659999999999996,
+            "advanceMs": 27.4506,
+            "evaluateMs": 0.35600000000000004
+          },
+          {
+            "budget": 8,
+            "ms": 35.9068,
+            "bytes": 1530120,
+            "generationMs": 0.0031,
+            "selectionMs": 0.0176,
+            "selected": "escape_first",
+            "transitions": 42,
+            "observeMs": 4.944599999999999,
+            "policyMs": 0.48619999999999997,
+            "advanceMs": 29.987800000000004,
+            "evaluateMs": 0.3346
+          },
+          {
+            "budget": 8,
+            "ms": 29.5952,
+            "bytes": 1519808,
+            "generationMs": 0.0035,
+            "selectionMs": 0.0197,
+            "selected": "escape_first",
+            "transitions": 42,
+            "observeMs": 3.2444,
+            "policyMs": 0.6618999999999999,
+            "advanceMs": 25.3646,
+            "evaluateMs": 0.2202
+          },
+          {
+            "budget": 8,
+            "ms": 23.1599,
+            "bytes": 1519808,
+            "generationMs": 0.0028,
+            "selectionMs": 0.0177,
+            "selected": "escape_first",
+            "transitions": 42,
+            "observeMs": 2.7772,
+            "policyMs": 0.32680000000000003,
+            "advanceMs": 19.716199999999997,
+            "evaluateMs": 0.24539999999999998
+          }
+        ],
+        "peakWorkingSetBytes": 183934976
+      },
+      "validation": {
+        "escape_first": {
+          "processMs": 6812.000000150874,
+          "root": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "live": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "matched": 22,
+          "planned": 22,
+          "auditStatus": "native_incomplete",
+          "nativeStatus": "limit",
+          "nativeEndTurn": 6,
+          "nativeOutcome": {
+            "initialHp": 75,
+            "finalHp": 50,
+            "hpLost": 25,
+            "hpHealed": 0,
+            "selfDamage": 0,
+            "combatEnded": false,
+            "survived": true,
+            "finalEnemyHp": 239,
+            "potions": [],
+            "unattributedHpLoss": 0
+          },
+          "nativeExecuteMs": 271.9801,
+          "nativeSuffixExecuteMs": 26.5275,
+          "nativeLifecycleSemantic": false,
+          "nativeRisk": [],
+          "publicChecks": {
+            "observations": [
+              {
+                "step": 19,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 20,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 21,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 22,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              }
+            ],
+            "successors": [
+              {
+                "step": 19,
+                "equal": true,
+                "expected": "FFBAAEBC77AD571DF485203F76C742E1C5F75B05A7D0C737FCD6FF3A08904E01",
+                "actual": "FFBAAEBC77AD571DF485203F76C742E1C5F75B05A7D0C737FCD6FF3A08904E01"
+              },
+              {
+                "step": 20,
+                "equal": true,
+                "expected": "119BC4AC6D536C54BD1A181B195CB8FD281E06C277203FFCA32ED5F1C71FFEF3",
+                "actual": "119BC4AC6D536C54BD1A181B195CB8FD281E06C277203FFCA32ED5F1C71FFEF3"
+              },
+              {
+                "step": 21,
+                "equal": true,
+                "expected": "6A32EE32D274BA8AAB7E3E1BBBAC1310976461129B45046109DC9CFDE7F1CC4B",
+                "actual": "6A32EE32D274BA8AAB7E3E1BBBAC1310976461129B45046109DC9CFDE7F1CC4B"
+              },
+              {
+                "step": 22,
+                "equal": true,
+                "expected": "51DE38216450C85C9253BA40319483F2C2397644B51B83F250AF0FB749F63323",
+                "actual": "51DE38216450C85C9253BA40319483F2C2397644B51B83F250AF0FB749F63323"
+              }
+            ]
+          },
+          "firstDifference": null,
+          "forecastSetupMs": {
+            "rootCaptureMs": 9.5016,
+            "solverAdapterMs": 180.8481,
+            "rootForkAndSnapshotMs": 107.8205
+          },
+          "prefixPredictionMs": 349.35499999999996,
+          "compareMs": 201.163,
+          "peakWorkingSetBytes": 182702080,
+          "permanentResourcesUnchanged": true
+        },
+        "frozen_q1": {
+          "processMs": 6797.000000020489,
+          "root": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "live": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "matched": 26,
+          "planned": 26,
+          "auditStatus": "pass",
+          "nativeStatus": "death",
+          "nativeEndTurn": 5,
+          "nativeOutcome": {
+            "initialHp": 75,
+            "finalHp": 0,
+            "hpLost": 75,
+            "hpHealed": 0,
+            "selfDamage": 0,
+            "combatEnded": false,
+            "survived": false,
+            "finalEnemyHp": 211,
+            "potions": [],
+            "unattributedHpLoss": 65
+          },
+          "nativeExecuteMs": 295.7123,
+          "nativeSuffixExecuteMs": 60.2889,
+          "nativeLifecycleSemantic": true,
+          "nativeRisk": [
+            {
+              "step": 26,
+              "cause": "SANDPIT_POWER",
+              "hpBeforeKill": 65,
+              "turn": 5
+            }
+          ],
+          "publicChecks": {
+            "observations": [
+              {
+                "step": 19,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 20,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 21,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 22,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 23,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 24,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 25,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 26,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              }
+            ],
+            "successors": [
+              {
+                "step": 19,
+                "equal": true,
+                "expected": "4D9A559C2A6826061F0DE8D1DD60264034EF6F90EFFAADE2936C39BB5B192AE0",
+                "actual": "4D9A559C2A6826061F0DE8D1DD60264034EF6F90EFFAADE2936C39BB5B192AE0"
+              },
+              {
+                "step": 20,
+                "equal": true,
+                "expected": "FB6E40B25C3B1C56B17263DDB6C51F9B9CD01EA6C40D98546CBABF68D1F79F23",
+                "actual": "FB6E40B25C3B1C56B17263DDB6C51F9B9CD01EA6C40D98546CBABF68D1F79F23"
+              },
+              {
+                "step": 21,
+                "equal": true,
+                "expected": "3E5A83B77ACCA0F7D29FEE9495E8552236A0A105FF0F3681189CC574772A8E9E",
+                "actual": "3E5A83B77ACCA0F7D29FEE9495E8552236A0A105FF0F3681189CC574772A8E9E"
+              },
+              {
+                "step": 22,
+                "equal": true,
+                "expected": "2DAFF26CAE8AD1C560F0BDDA703DA06E5EFB623CCE5438704D87474953CB61F5",
+                "actual": "2DAFF26CAE8AD1C560F0BDDA703DA06E5EFB623CCE5438704D87474953CB61F5"
+              },
+              {
+                "step": 23,
+                "equal": true,
+                "expected": "3332FD624426433EEFE0F2819FFC94D289637F2CF35B2F7FFFD8D7A7A56E58C5",
+                "actual": "3332FD624426433EEFE0F2819FFC94D289637F2CF35B2F7FFFD8D7A7A56E58C5"
+              },
+              {
+                "step": 24,
+                "equal": true,
+                "expected": "93A11A63016A59BEBF1DBA367B080E48A6B88E6E68FF291950C56587B708128C",
+                "actual": "93A11A63016A59BEBF1DBA367B080E48A6B88E6E68FF291950C56587B708128C"
+              },
+              {
+                "step": 25,
+                "equal": true,
+                "expected": "65A653C7BAF9EB2F943F782216F7FD6AC9DAAF62CB2845F2AD9902C23D01ED33",
+                "actual": "65A653C7BAF9EB2F943F782216F7FD6AC9DAAF62CB2845F2AD9902C23D01ED33"
+              },
+              {
+                "step": 26,
+                "equal": true,
+                "expected": "7A5C641FE7A9D1224565E74DDAB1987E81C7EFDBC5E9C6A24150E09A173FA247",
+                "actual": "7A5C641FE7A9D1224565E74DDAB1987E81C7EFDBC5E9C6A24150E09A173FA247"
+              }
+            ]
+          },
+          "firstDifference": null,
+          "forecastSetupMs": {
+            "rootCaptureMs": 15.1341,
+            "solverAdapterMs": 145.5192,
+            "rootForkAndSnapshotMs": 89.3761
+          },
+          "prefixPredictionMs": 393.16610000000014,
+          "compareMs": 257.9103999999999,
+          "peakWorkingSetBytes": 181432320,
+          "permanentResourcesUnchanged": true
+        },
+        "end_now": {
+          "processMs": 5562.999999849126,
+          "root": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "live": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "matched": 19,
+          "planned": 19,
+          "auditStatus": "pass",
+          "nativeStatus": "death",
+          "nativeEndTurn": 5,
+          "nativeOutcome": {
+            "initialHp": 75,
+            "finalHp": 0,
+            "hpLost": 75,
+            "hpHealed": 0,
+            "selfDamage": 0,
+            "combatEnded": false,
+            "survived": false,
+            "finalEnemyHp": 254,
+            "potions": [],
+            "unattributedHpLoss": 65
+          },
+          "nativeExecuteMs": 107.97940000000001,
+          "nativeSuffixExecuteMs": 11.0111,
+          "nativeLifecycleSemantic": true,
+          "nativeRisk": [
+            {
+              "step": 19,
+              "cause": "SANDPIT_POWER",
+              "hpBeforeKill": 65,
+              "turn": 5
+            }
+          ],
+          "publicChecks": {
+            "observations": [
+              {
+                "step": 19,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              }
+            ],
+            "successors": [
+              {
+                "step": 19,
+                "equal": true,
+                "expected": "D3B472CD45808794B0A6935A3F253C777A485DB4E56B64001D9886CE32B56EBE",
+                "actual": "D3B472CD45808794B0A6935A3F253C777A485DB4E56B64001D9886CE32B56EBE"
+              }
+            ]
+          },
+          "firstDifference": null,
+          "forecastSetupMs": {
+            "rootCaptureMs": 11.9004,
+            "solverAdapterMs": 203.7036,
+            "rootForkAndSnapshotMs": 66.6191
+          },
+          "prefixPredictionMs": 145.37990000000002,
+          "compareMs": 77.07039999999999,
+          "peakWorkingSetBytes": 181960704,
+          "permanentResourcesUnchanged": true
+        },
+        "block_first": {
+          "processMs": 7125.0,
+          "root": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "live": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "matched": 26,
+          "planned": 26,
+          "auditStatus": "pass",
+          "nativeStatus": "death",
+          "nativeEndTurn": 5,
+          "nativeOutcome": {
+            "initialHp": 75,
+            "finalHp": 0,
+            "hpLost": 75,
+            "hpHealed": 0,
+            "selfDamage": 0,
+            "combatEnded": false,
+            "survived": false,
+            "finalEnemyHp": 211,
+            "potions": [],
+            "unattributedHpLoss": 65
+          },
+          "nativeExecuteMs": 397.60269999999997,
+          "nativeSuffixExecuteMs": 94.4607,
+          "nativeLifecycleSemantic": true,
+          "nativeRisk": [
+            {
+              "step": 26,
+              "cause": "SANDPIT_POWER",
+              "hpBeforeKill": 65,
+              "turn": 5
+            }
+          ],
+          "publicChecks": {
+            "observations": [
+              {
+                "step": 19,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 20,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 21,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 22,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 23,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 24,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 25,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 26,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              }
+            ],
+            "successors": [
+              {
+                "step": 19,
+                "equal": true,
+                "expected": "47253074A110CFB82FCAC453D6A5A23F353870079313D337B878735A9C7762B8",
+                "actual": "47253074A110CFB82FCAC453D6A5A23F353870079313D337B878735A9C7762B8"
+              },
+              {
+                "step": 20,
+                "equal": true,
+                "expected": "DC0E969B2EFFC6B081389E9F5FD4C6A51558F4EAFBFD937E1A0CFDDA6A286AF9",
+                "actual": "DC0E969B2EFFC6B081389E9F5FD4C6A51558F4EAFBFD937E1A0CFDDA6A286AF9"
+              },
+              {
+                "step": 21,
+                "equal": true,
+                "expected": "C22C5DEDE76C285463BB70EAEB4B484CAF367A7BA18E1D7FDAFD194BD4F6E129",
+                "actual": "C22C5DEDE76C285463BB70EAEB4B484CAF367A7BA18E1D7FDAFD194BD4F6E129"
+              },
+              {
+                "step": 22,
+                "equal": true,
+                "expected": "2E5F4B3DC8606C548BBB75AA2125078CEA066A77A052343E98AC025591F8FC40",
+                "actual": "2E5F4B3DC8606C548BBB75AA2125078CEA066A77A052343E98AC025591F8FC40"
+              },
+              {
+                "step": 23,
+                "equal": true,
+                "expected": "4688709488CB73F7611AAB3CD54A04B6DB03B71FC47BA1DA9D778DAD847ACC71",
+                "actual": "4688709488CB73F7611AAB3CD54A04B6DB03B71FC47BA1DA9D778DAD847ACC71"
+              },
+              {
+                "step": 24,
+                "equal": true,
+                "expected": "230CC44B9A2863A29BE38973260FB414C3C7586DF049C3868FD777AFDC77C3CF",
+                "actual": "230CC44B9A2863A29BE38973260FB414C3C7586DF049C3868FD777AFDC77C3CF"
+              },
+              {
+                "step": 25,
+                "equal": true,
+                "expected": "51CF6F95737F56F5CC034E32A590E1542294E3A72BD791895862176EAEE3F49C",
+                "actual": "51CF6F95737F56F5CC034E32A590E1542294E3A72BD791895862176EAEE3F49C"
+              },
+              {
+                "step": 26,
+                "equal": true,
+                "expected": "12E9D76B39E78F860000C4D77AB7EA838D55601295D9E9BA748EEBE269FE8126",
+                "actual": "12E9D76B39E78F860000C4D77AB7EA838D55601295D9E9BA748EEBE269FE8126"
+              }
+            ]
+          },
+          "firstDifference": null,
+          "forecastSetupMs": {
+            "rootCaptureMs": 16.9123,
+            "solverAdapterMs": 288.9818,
+            "rootForkAndSnapshotMs": 113.0216
+          },
+          "prefixPredictionMs": 519.5518,
+          "compareMs": 371.47360000000003,
+          "peakWorkingSetBytes": 179159040,
+          "permanentResourcesUnchanged": true
+        },
+        "draw_first": {
+          "processMs": 7422.000000020489,
+          "root": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "live": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "matched": 26,
+          "planned": 26,
+          "auditStatus": "native_incomplete",
+          "nativeStatus": "limit",
+          "nativeEndTurn": 5,
+          "nativeOutcome": {
+            "initialHp": 75,
+            "finalHp": 65,
+            "hpLost": 10,
+            "hpHealed": 0,
+            "selfDamage": 0,
+            "combatEnded": false,
+            "survived": true,
+            "finalEnemyHp": 221,
+            "potions": [],
+            "unattributedHpLoss": 0
+          },
+          "nativeExecuteMs": 169.5681,
+          "nativeSuffixExecuteMs": 32.0934,
+          "nativeLifecycleSemantic": false,
+          "nativeRisk": [],
+          "publicChecks": {
+            "observations": [
+              {
+                "step": 19,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 20,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 21,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 22,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 23,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 24,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 25,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 26,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              }
+            ],
+            "successors": [
+              {
+                "step": 19,
+                "equal": true,
+                "expected": "D56BF76A75C83A98E1E65332DE147A79E569CAEDA8D246C7A0008CB0851D929C",
+                "actual": "D56BF76A75C83A98E1E65332DE147A79E569CAEDA8D246C7A0008CB0851D929C"
+              },
+              {
+                "step": 20,
+                "equal": true,
+                "expected": "B5851139FA03BB0DCBBC41E27A8E8A48F2F5B0BC5BD28F67B6D8C21DB7948362",
+                "actual": "B5851139FA03BB0DCBBC41E27A8E8A48F2F5B0BC5BD28F67B6D8C21DB7948362"
+              },
+              {
+                "step": 21,
+                "equal": true,
+                "expected": "2332A664E3AE61ECDFF5898537069D3AE638EF20C1EA86758917C6523A3F10FA",
+                "actual": "2332A664E3AE61ECDFF5898537069D3AE638EF20C1EA86758917C6523A3F10FA"
+              },
+              {
+                "step": 22,
+                "equal": true,
+                "expected": "C60A22693C56A518566C2F5B5655FC0A79455CC2923A21C60500BA7C917C7C6B",
+                "actual": "C60A22693C56A518566C2F5B5655FC0A79455CC2923A21C60500BA7C917C7C6B"
+              },
+              {
+                "step": 23,
+                "equal": true,
+                "expected": "C4A03DEDF7A29C6F5FF29DF1F4E50F8F455884046DDC7F06B3D574056AA31A61",
+                "actual": "C4A03DEDF7A29C6F5FF29DF1F4E50F8F455884046DDC7F06B3D574056AA31A61"
+              },
+              {
+                "step": 24,
+                "equal": true,
+                "expected": "B9A1FC9EA8BB69C792D3AFB70C23D81991B26636F0F445D78C95E4F33F4C3593",
+                "actual": "B9A1FC9EA8BB69C792D3AFB70C23D81991B26636F0F445D78C95E4F33F4C3593"
+              },
+              {
+                "step": 25,
+                "equal": true,
+                "expected": "FCC1BB5622325A0EAED8E66E2BE06E41D55231B4360D8E185568BEF8D1280BC5",
+                "actual": "FCC1BB5622325A0EAED8E66E2BE06E41D55231B4360D8E185568BEF8D1280BC5"
+              },
+              {
+                "step": 26,
+                "equal": true,
+                "expected": "DEEFF190B6A1BD3C6652B99AC06D650BC253F36E746A837E045618EA0E35E4D8",
+                "actual": "DEEFF190B6A1BD3C6652B99AC06D650BC253F36E746A837E045618EA0E35E4D8"
+              }
+            ]
+          },
+          "firstDifference": null,
+          "forecastSetupMs": {
+            "rootCaptureMs": 15.8267,
+            "solverAdapterMs": 336.3365,
+            "rootForkAndSnapshotMs": 131.3612
+          },
+          "prefixPredictionMs": 325.63570000000004,
+          "compareMs": 259.5371,
+          "peakWorkingSetBytes": 182960128,
+          "permanentResourcesUnchanged": true
+        },
+        "power_first": {
+          "processMs": 6530.999999959022,
+          "root": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "live": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "matched": 26,
+          "planned": 26,
+          "auditStatus": "pass",
+          "nativeStatus": "death",
+          "nativeEndTurn": 5,
+          "nativeOutcome": {
+            "initialHp": 75,
+            "finalHp": 0,
+            "hpLost": 75,
+            "hpHealed": 0,
+            "selfDamage": 0,
+            "combatEnded": false,
+            "survived": false,
+            "finalEnemyHp": 211,
+            "potions": [],
+            "unattributedHpLoss": 65
+          },
+          "nativeExecuteMs": 277.0698999999999,
+          "nativeSuffixExecuteMs": 80.2356,
+          "nativeLifecycleSemantic": true,
+          "nativeRisk": [
+            {
+              "step": 26,
+              "cause": "SANDPIT_POWER",
+              "hpBeforeKill": 65,
+              "turn": 5
+            }
+          ],
+          "publicChecks": {
+            "observations": [
+              {
+                "step": 19,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 20,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 21,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 22,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 23,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 24,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 25,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 26,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              }
+            ],
+            "successors": [
+              {
+                "step": 19,
+                "equal": true,
+                "expected": "93A83BC32C7B07BE44445C47A5B78A4E51BDBE032CBF1483B02D6062DE3573BE",
+                "actual": "93A83BC32C7B07BE44445C47A5B78A4E51BDBE032CBF1483B02D6062DE3573BE"
+              },
+              {
+                "step": 20,
+                "equal": true,
+                "expected": "3A2EE3506E781850A00007A2E9156BF141C7EB44DFA55AEDD71A3DE3A8490948",
+                "actual": "3A2EE3506E781850A00007A2E9156BF141C7EB44DFA55AEDD71A3DE3A8490948"
+              },
+              {
+                "step": 21,
+                "equal": true,
+                "expected": "F233202D80C14A09D59A2371F01FE8D1CC6682B1CD49DCD68DFEE1521BD710FA",
+                "actual": "F233202D80C14A09D59A2371F01FE8D1CC6682B1CD49DCD68DFEE1521BD710FA"
+              },
+              {
+                "step": 22,
+                "equal": true,
+                "expected": "9AE62FEFF98D710863981176146490E175994F8DF34F58032047A626F6C97132",
+                "actual": "9AE62FEFF98D710863981176146490E175994F8DF34F58032047A626F6C97132"
+              },
+              {
+                "step": 23,
+                "equal": true,
+                "expected": "F2893E1175DF51123D7BAE012A8D31656E02B16FD4A468B6DBF51B3620300296",
+                "actual": "F2893E1175DF51123D7BAE012A8D31656E02B16FD4A468B6DBF51B3620300296"
+              },
+              {
+                "step": 24,
+                "equal": true,
+                "expected": "5CEBCACB676AA11F93468501EC2A453C3A32F5D9BE7E65B2679DBFBA32EE9ED5",
+                "actual": "5CEBCACB676AA11F93468501EC2A453C3A32F5D9BE7E65B2679DBFBA32EE9ED5"
+              },
+              {
+                "step": 25,
+                "equal": true,
+                "expected": "65A653C7BAF9EB2F943F782216F7FD6AC9DAAF62CB2845F2AD9902C23D01ED33",
+                "actual": "65A653C7BAF9EB2F943F782216F7FD6AC9DAAF62CB2845F2AD9902C23D01ED33"
+              },
+              {
+                "step": 26,
+                "equal": true,
+                "expected": "7A5C641FE7A9D1224565E74DDAB1987E81C7EFDBC5E9C6A24150E09A173FA247",
+                "actual": "7A5C641FE7A9D1224565E74DDAB1987E81C7EFDBC5E9C6A24150E09A173FA247"
+              }
+            ]
+          },
+          "firstDifference": null,
+          "forecastSetupMs": {
+            "rootCaptureMs": 12.3507,
+            "solverAdapterMs": 146.596,
+            "rootForkAndSnapshotMs": 123.369
+          },
+          "prefixPredictionMs": 318.2017000000001,
+          "compareMs": 243.87099999999995,
+          "peakWorkingSetBytes": 179044352,
+          "permanentResourcesUnchanged": true
+        },
+        "attack_then_escape": {
+          "processMs": 6891.000000061467,
+          "root": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "live": "d6c2957fe8849c3e2f8ecb314368357cef45b31d9a6a09ebf8bf0e6c30584fbb",
+          "matched": 22,
+          "planned": 22,
+          "auditStatus": "native_incomplete",
+          "nativeStatus": "limit",
+          "nativeEndTurn": 6,
+          "nativeOutcome": {
+            "initialHp": 75,
+            "finalHp": 50,
+            "hpLost": 25,
+            "hpHealed": 0,
+            "selfDamage": 0,
+            "combatEnded": false,
+            "survived": true,
+            "finalEnemyHp": 239,
+            "potions": [],
+            "unattributedHpLoss": 0
+          },
+          "nativeExecuteMs": 275.8681,
+          "nativeSuffixExecuteMs": 21.660200000000003,
+          "nativeLifecycleSemantic": false,
+          "nativeRisk": [],
+          "publicChecks": {
+            "observations": [
+              {
+                "step": 19,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 20,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 21,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              },
+              {
+                "step": 22,
+                "equal": true,
+                "actual": null,
+                "expected": null
+              }
+            ],
+            "successors": [
+              {
+                "step": 19,
+                "equal": true,
+                "expected": "4D9A559C2A6826061F0DE8D1DD60264034EF6F90EFFAADE2936C39BB5B192AE0",
+                "actual": "4D9A559C2A6826061F0DE8D1DD60264034EF6F90EFFAADE2936C39BB5B192AE0"
+              },
+              {
+                "step": 20,
+                "equal": true,
+                "expected": "15FD6EECCA6643EBAE035AE4F7396DBEC941A56133D2C306B36BE25725AFEE9E",
+                "actual": "15FD6EECCA6643EBAE035AE4F7396DBEC941A56133D2C306B36BE25725AFEE9E"
+              },
+              {
+                "step": 21,
+                "equal": true,
+                "expected": "93563D2E5268920EF9739A5535A234A60BD1873FBDE84C3B097A7E120354EA2E",
+                "actual": "93563D2E5268920EF9739A5535A234A60BD1873FBDE84C3B097A7E120354EA2E"
+              },
+              {
+                "step": 22,
+                "equal": true,
+                "expected": "E1268A970CD7FBF27A7A94D0EC76FB529227CEF9EE6F28DB940C13C5FE106B27",
+                "actual": "E1268A970CD7FBF27A7A94D0EC76FB529227CEF9EE6F28DB940C13C5FE106B27"
+              }
+            ]
+          },
+          "firstDifference": null,
+          "forecastSetupMs": {
+            "rootCaptureMs": 21.1411,
+            "solverAdapterMs": 228.3139,
+            "rootForkAndSnapshotMs": 147.4032
+          },
+          "prefixPredictionMs": 337.0528999999999,
+          "compareMs": 210.44910000000007,
+          "peakWorkingSetBytes": 180899840,
+          "permanentResourcesUnchanged": true
+        }
+      }
+    }
+  ]
+}
