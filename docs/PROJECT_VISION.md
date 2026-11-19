@@ -129,6 +129,7 @@ P_\mu(D,S' \mid S=s,A=a),
 - **[PROJECT_VISION.md](PROJECT_VISION.md)（本文）：** 稳定的长期目标与设计取舍；修改重大原则须有明确讨论和说明。
 - **[research-direction-and-value-model.md](research-direction-and-value-model.md)：** 正常 SL、风险分布、Bellman 价值及学习设计的深入研究备忘录。它写于本纲领之前，涉及“必须以高预算强 Solver 为教师”等旧阶段侧重时，以本纲领的最新决策为准。
 - **[research-nosl-policy-learning-roadmap.md](research-nosl-policy-learning-roadmap.md)：** 2026-11-19 NOSL 初始出牌策略与无动作标签强化学习研究路线；明确 N1→N2→N3 阶段实验与正常 SL 信息边界。属于待验证假设，不是已完成的训练成果。
+- **[research-shared-card-mechanism-architecture.md](research-shared-card-mechanism-architecture.md)：** 战斗和局外选牌共享卡牌机制语义的研究架构，区分静态规则、公开动态效果、条件战斗价值与完整跑局长期价值；记录 N2E→N2F→N2G 及局外学习的候选阶段和验证红线。属于待验证的实施路线，不代表模型已经训练或上线。
 - **[PROJECT_STATUS.md](PROJECT_STATUS.md)：** 当前分支、实证状态、里程碑、验收及下一步交接；不再承担长篇复述项目理念的职责。
 - **各 M1 报告和 experiments：** 具体实验设计、实现限制、原始数据和复现依据。
 - **[CLAUDE.md](../CLAUDE.md)：** 工程与测试约定。以上纲领不得替代代码、游戏实测或测试断言。
