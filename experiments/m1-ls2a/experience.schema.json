@@ -1,0 +1,588 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LS2A public and label projection",
+  "description": "Only input is consumed by models. Root and partition are linkage fields. Audit and source history are retained in the campaign.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "root",
+    "split",
+    "input",
+    "encoding",
+    "labels"
+  ],
+  "properties": {
+    "schema": {
+      "const": "sts2.m1-ls2a.public-experience.v1"
+    },
+    "root": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "split": {
+      "enum": [
+        "train",
+        "selection",
+        "test",
+        "development"
+      ]
+    },
+    "input": {
+      "$ref": "#/$defs/public"
+    },
+    "encoding": {
+      "enum": [
+        "described",
+        "partial"
+      ]
+    },
+    "labels": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/label"
+      }
+    }
+  },
+  "$defs": {
+    "power": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "amount"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "integer"
+        }
+      }
+    },
+    "resources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "hp",
+        "max_hp",
+        "gold",
+        "potions",
+        "hp_lost"
+      ],
+      "properties": {
+        "hp": {
+          "type": "integer"
+        },
+        "max_hp": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "gold": {
+          "type": "integer"
+        },
+        "potions": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "hp_lost": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "deck": {
+      "type": "object",
+      "required": [
+        "schema",
+        "character",
+        "mode",
+        "complete",
+        "cards",
+        "content_sha256",
+        "source"
+      ],
+      "properties": {
+        "schema": {
+          "const": "sts2.card-semantics.v1"
+        },
+        "character": {
+          "type": "string"
+        },
+        "mode": {
+          "enum": [
+            "identity",
+            "mechanics"
+          ]
+        },
+        "complete": {
+          "type": "boolean"
+        },
+        "cards": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "card",
+              "count"
+            ],
+            "properties": {
+              "card": {
+                "type": "object"
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        },
+        "content_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "source": {
+          "const": "visible_deck"
+        }
+      }
+    },
+    "public": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "character",
+        "player",
+        "act",
+        "round",
+        "energy",
+        "max_energy",
+        "draw_count",
+        "discard_count",
+        "player_powers",
+        "relics",
+        "potions",
+        "inventory_known",
+        "enemies",
+        "hand",
+        "identity_deck",
+        "mechanics_deck",
+        "native_card_metadata",
+        "candidates"
+      ],
+      "properties": {
+        "character": {
+          "type": "string"
+        },
+        "player": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "hp",
+            "max_hp",
+            "block",
+            "gold"
+          ],
+          "properties": {
+            "hp": {
+              "type": "integer"
+            },
+            "max_hp": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "block": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "gold": {
+              "type": "integer"
+            }
+          }
+        },
+        "act": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "round": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "energy": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "max_energy": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "draw_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "discard_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "player_powers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/power"
+          }
+        },
+        "relics": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "potions": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "inventory_known": {
+          "type": "boolean"
+        },
+        "enemies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "hp",
+              "max_hp",
+              "block",
+              "id",
+              "powers",
+              "intents"
+            ],
+            "properties": {
+              "hp": {
+                "type": "integer"
+              },
+              "max_hp": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "block": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "id": {
+                "type": "string"
+              },
+              "powers": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/power"
+                }
+              },
+              "intents": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "type"
+                  ],
+                  "properties": {
+                    "type": {
+                      "type": "string"
+                    },
+                    "damage": {
+                      "type": "integer"
+                    },
+                    "hits": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "total_damage": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "hand": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "cost",
+              "type",
+              "can_play",
+              "target_type"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "cost": {
+                "type": "integer"
+              },
+              "type": {
+                "type": "string"
+              },
+              "can_play": {
+                "type": "boolean"
+              },
+              "target_type": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "identity_deck": {
+          "$ref": "#/$defs/deck"
+        },
+        "mechanics_deck": {
+          "$ref": "#/$defs/deck"
+        },
+        "native_card_metadata": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "type",
+              "rarity",
+              "upgradable",
+              "target_type",
+              "keywords",
+              "variables"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "rarity": {
+                "type": "string"
+              },
+              "upgradable": {
+                "type": "boolean"
+              },
+              "target_type": {
+                "type": "string"
+              },
+              "keywords": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "variables": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "candidates": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "strategy",
+              "action_limit",
+              "active_potions"
+            ],
+            "properties": {
+              "strategy": {
+                "type": "string"
+              },
+              "action_limit": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "active_potions": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      }
+    },
+    "attempt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "strategy",
+        "status",
+        "detail",
+        "transitions",
+        "allocated_limit",
+        "verified_win",
+        "locked",
+        "first_cost"
+      ],
+      "properties": {
+        "strategy": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "detail": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "transitions": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "allocated_limit": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "verified_win": {
+          "type": "boolean"
+        },
+        "locked": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/resources"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "first_cost": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "label": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tier",
+        "policy",
+        "cap",
+        "status",
+        "evidence",
+        "transitions",
+        "first_transitions",
+        "locked",
+        "route_risks",
+        "attempts"
+      ],
+      "properties": {
+        "tier": {
+          "enum": [
+            "low",
+            "standard",
+            "quality",
+            "candidate"
+          ]
+        },
+        "policy": {
+          "type": "string"
+        },
+        "cap": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "status": {
+          "type": "string"
+        },
+        "evidence": {
+          "enum": [
+            "prediction_executed",
+            "prediction_fixed_replay",
+            "prediction_search",
+            "unqualified"
+          ]
+        },
+        "transitions": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "first_transitions": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "locked": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/resources"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "route_risks": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "attempts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/attempt"
+          }
+        }
+      }
+    }
+  }
+}

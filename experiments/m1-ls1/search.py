@@ -15,8 +15,8 @@ F3A = ROOT / "logs/m1-f3a-formal"
 RESOURCES = ("hp", "max_hp", "gold", "potions")
 
 
-def setup(output, frozen=False):
-    host = "m1-s3a-build" if frozen else "m1-ls1-build"
+def setup(output, frozen=False, *, host=None):
+    host = host or ("m1-s3a-build" if frozen else "m1-ls1-build")
     bind.__globals__["HOST"] = host
     adapter = file_hash(HERE / "build.py", True)
     # Formatting-only change with identical staged C# preserves the frozen adapter identity.
@@ -81,7 +81,7 @@ def terminal(route):
     return {k: route[k] for k in RESOURCES} | {"hp_lost": route["hp_lost"]}
 
 
-def search(game, first_cap, total_cap, *, order=None, teacher=None, ordering_ms=0, model_ms=0):
+def search(game, first_cap, total_cap, *, order=None, teacher=None, ordering_ms=0, model_ms=0, refine=True):
     before = game.request("f1_audit")
     start = perf_counter()
     extra = {}
@@ -120,7 +120,7 @@ def search(game, first_cap, total_cap, *, order=None, teacher=None, ordering_ms=
         # The frozen F4 rebuild checks every legal action and continuation stamp.
         # Exactly length transitions locks the candidate without a refinement rollout.
         verify_started = perf_counter()
-        quality = request(game, "i1_f4", length if teacher else remaining,
+        quality = request(game, "i1_f4", remaining if refine and not teacher else length,
                           seed_actions=actions, seed_stamps=first["stamps"], include_history=False)
         if "root_stamp" in quality and quality["root_stamp"] != first["root_stamp"]:
             raise ValueError("F4 reconstructed a different prediction root")

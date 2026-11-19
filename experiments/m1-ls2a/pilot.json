@@ -1,0 +1,23 @@
+{
+  "protocol": "ls2a-search-v1",
+  "namespace": "ls2a-pilot-20261119",
+  "synthetic_roots": 20,
+  "acts": [1, 2, 3],
+  "rooms": ["Monster", "Elite", "Boss"],
+  "card_rarities": ["Common", "Uncommon", "Rare"],
+  "deck_size": [11, 22],
+  "starter_count": [3, 7],
+  "max_added_copies": 3,
+  "upgrade_max_by_act": {"1": 3, "2": 6, "3": 9},
+  "hp_percent": [[35, 55], [56, 75], [76, 100]],
+  "starter_relic_probability": 0.75,
+  "potion_probability": 0.4,
+  "ascension": [0, 2, 6, 10],
+  "split_percent": [70, 15, 15],
+  "standard_percent": 60,
+  "quality_percent": 15,
+  "candidate_percent": 20,
+  "hard_escalation_percent": 25,
+  "profiles": {"low": 48, "standard": 128, "quality": 256, "candidate": 96},
+  "limits": {"wall_seconds": 240, "root_seconds": 65, "workers": 4, "engine_rss_mib": 1600, "disk_mib": 400, "transitions": 18000, "attempts_per_root": 2}
+}

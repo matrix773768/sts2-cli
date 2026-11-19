@@ -1,0 +1,9 @@
+{
+  "protocol": "ls2a-search-v1",
+  "basis": "20 corrected roots matched exact fingerprints and semantic results across isolated serial and four-worker runs",
+  "pilot": {"roots": 20, "serial_seconds": 66.5, "parallel_seconds": 10.859, "parallel_charge": 1029, "aggregate_engine_rss_bytes": 518598656, "disk_bytes": 3107069},
+  "formal": {"config": "config.json", "synthetic_planned": 1000, "native_planned": 45,
+             "workers": 4, "wall_seconds": 1200, "transition_limit_with_retries": 225000,
+             "engine_rss_mib": 1300, "disk_mib": 650, "attempts_per_root": 2,
+             "initial_dispatch_limit_for_resume_check": 32}
+}
