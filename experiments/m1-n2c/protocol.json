@@ -1,0 +1,15 @@
+{
+  "n2b_commit": "e7257370a85672bae3f0deff9060c98ec92fb8ba",
+  "optimizer_seeds": {"r2": 462719, "r3": 823011},
+  "untrained_seed": 370993,
+  "untrained_draws": 2,
+  "report_domain": "STS2-N2C-OPEN-REPORT-V1",
+  "report_encounters": ["BOWLBUGS_WEAK", "CHOMPERS_NORMAL"],
+  "report_arms": ["new_seed", "deck_variant"],
+  "variant": {"remove": "STRIKE", "add": {"Ironclad": "SHRUG_IT_OFF", "Silent": "BACKFLIP"}},
+  "exclusion": "None by performance; preserve distinct abnormal stops, abort per inherited N2B rule",
+  "training_order": "share one root worker across both seeds; optimizer state is independent per seed",
+  "selection": "model champions only use same 24 N2B selection roots; zero controls do not participate",
+  "statistics": "root pairs; descriptive by arm, encounter and build; no significance claims",
+  "train_budget": 2304
+}
