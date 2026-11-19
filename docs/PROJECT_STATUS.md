@@ -1,7 +1,7 @@
 # STS2 AI — 项目状态与交接（PROJECT_STATUS）
 
 > 更新日期：2026-11-19（Asia/Shanghai）
-> 当前主线：M1-LS 学习驱动的战斗搜索。M1-LS2A 已完成规模化研究侧搜索经验生产。
+> 当前主线：M1-LS 学习驱动的战斗搜索。LS1 闭环与 LS2A 规模化生产已完成；下一步 LS2B 结构化、可组合的战略生成与失败修复。
 > 本文件描述 **matrix773768/sts2-cli** 的 `port/v0.113.1` 分支，不代表上游 `wuhao21/sts2-cli` 或 `main` 的支持情况。
 > M0 最后一次业务代码提交：`bc48ac58aeca80c2c7b9249cbf98f316ae99a27b` — Restore native Ancient healing and act-start travel rules。
 > 本文件是交接摘要；具体实现、测试断言、原生 IL 及日志以当前仓库和本机实际文件为准。不要将历史总结当成新的测试结果。
@@ -9,6 +9,9 @@
 **项目长期目标、极速 Combat Solver 的定位、阶段性质量门槛及研究取舍，以 [PROJECT_VISION.md](PROJECT_VISION.md) 为准。** 本文件继续保留工程状态与历史验收记录；局外价值建模详见 [research-direction-and-value-model.md](research-direction-and-value-model.md)。
 
 ## 本阶段交接
+
+**下一阶段 M1-LS2B（计划中，尚未实施）：** 建立机器可读、可组合且可执行的 StrategySpec，支持基于公开卡组机制及战斗状态生成战略假设、阶段切换、资源与风险约束、路线搜索验证、失败位置诊断及战略编辑／重新生成。Q1、AGGRO、DEFENSIVE、ENGINE 四种固定战略仅作为旧求解器回归／性能基线，**不再是新学习器的四分类输出空间**。复用 LS1/LS2A 模拟、搜索和经验存储；预测不支持与研究侧隐藏 RNG/正式 SL 合法性边界保持显式。详见 [研究主线](research-learning-guided-combat-search.md)。
+
 
 **M1-LS2A 已完成规模化搜索经验生产。** 原生目录驱动的采样和 SQLite 事务调度产出 1,031 个去重根，其中 986 个合成、45 个原生冷恢复，覆盖五角色、三幕和 79/80 个遭遇。44 个根有可比较候选，5 根出现胜路分歧。已通过 LS1 Card ID 与带缺失标记的 N2E 训练接口。530 条低成本轨迹触及预测不支持边界，原生局史目前到第一幕。下一阶段优先扩大可信终局和多预算反馈覆盖。见 [M1-LS2A 实测、证据与复现](m1-ls2a-scalable-search-experience.md)。
 
