@@ -1,0 +1,104 @@
+{
+  "action_cap": 96,
+  "audit_roots": 4,
+  "catalog_sha256": "5c769c2102e7d9ae6c0543facf301180898732592dbbfa96f3b6beedb674af72",
+  "domain": "STS2-N2FA-OPEN-SYNTHETIC-V1",
+  "execution_budget": 576,
+  "input_context": [
+    "hp",
+    "max_hp",
+    "character",
+    "encounter",
+    "ascension",
+    "act",
+    "relics",
+    "potions"
+  ],
+  "input_deck": {
+    "identity": "ID, upgrade and counts",
+    "mechanics": "ordered node kind, amount, count, target, power, duration, family, qualification",
+    "statistics": "counts, upgrades, mean cost, aggregate immediate node amounts"
+  },
+  "manifest_sha256": "ad4a636e3460bf37fc8788c8a8e804b72bc95960cfc9db32e49a9aadd79100ee",
+  "metrics": [
+    "Brier",
+    "log loss",
+    "calibration bins",
+    "paired factorial contrast",
+    "group bootstrap",
+    "P50/P95 inference",
+    "coverage",
+    "winning locked HP descriptive"
+  ],
+  "policy": {
+    "id": "initial-mean",
+    "weights": [
+      0.85,
+      1.1,
+      1.6,
+      0.6,
+      1.0,
+      0.35,
+      -0.4,
+      0.85,
+      -0.25,
+      0.0,
+      -0.6,
+      -0.8,
+      -0.2,
+      -0.5,
+      -0.5
+    ]
+  },
+  "potions": false,
+  "source_hashes": {
+    "experiments\\m1-n2b\\policy.py": "f1798c728b37e4172c07c0d7961b85491ddd54ae87e07c9548c51cb9c2a9f678",
+    "experiments\\m1-n2c\\models.json": "4e9145ca7369300e9d55a7a9830be272fb7ffaf9afca31edf118635fb77951a0",
+    "experiments\\m1-n2e\\cards.json": "76b9226712a55ed9506656c90b74651ba1928d47b2108ac636e7e7577c8e77f8",
+    "experiments\\m1-n2e\\schema.json": "365f4082f08c6d3c5cb1119cdcf3a43878dbefc877306c51a4bddfb7194ae1ec",
+    "experiments\\m1-n2e\\semantics.py": "07474edeae6278ff515aafb002a38388c180af7285fc6587b28dd406e5506f0e",
+    "experiments\\m1-n2f-a\\study_design.py": "da551d88a274f8cf0d3d1bc98f5ff1d40bd938ec20bd4e0f1de4fb0210f970a1"
+  },
+  "split_counts": {
+    "report": 124,
+    "selection": 128,
+    "train": 320
+  },
+  "stop": {
+    "audit": "first train D00 and D11 per family, first encounter, seed 0",
+    "known_major_label_mismatch": "stop before model fit",
+    "min_class_fraction": 0.1,
+    "min_train_coverage": 0.85,
+    "no_replays": true
+  },
+  "training": {
+    "card_dim": 128,
+    "engine": "NumPy CPU full-batch Adam",
+    "epochs": [
+      30,
+      90,
+      180
+    ],
+    "hidden": 12,
+    "l2": 0.002,
+    "learning_rate": 0.015,
+    "seeds": [
+      17,
+      43,
+      101
+    ],
+    "selection": "Brier on selection groups, then shorter epoch; average three seeds",
+    "subsample_groups": [
+      2,
+      4,
+      10
+    ],
+    "training_wall_limit_seconds": 120
+  },
+  "versions": {
+    "coreclr": "9.0.7",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "headless_sha256": "95bea3a1d28a6a11c71e5cc3b87d7c378c9787a29b5b089b1b50fced05be98c6",
+    "solver_sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c"
+  }
+}
