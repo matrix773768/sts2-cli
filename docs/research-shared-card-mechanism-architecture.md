@@ -4,7 +4,9 @@
 > 文档性质：**研究架构与分阶段实施计划**，不代表模块已经实现、模型已训练或完整跑局效果已验证。
 > 研究基线：M1-N2D 完成后的 port/v0.113.1，提交 ba36decc623c6b6499e7f1b6c34a2663f0953341。M1-N2E 已在 port/v0.113.1 以 af6a1a6799e38f1f59ae014e179a6a157d46f8be 提交；本文不替代其实际代码、资格与验收报告。
 
-本文补充 [PROJECT_VISION.md](PROJECT_VISION.md)、[research-direction-and-value-model.md](research-direction-and-value-model.md) 和 [research-nosl-policy-learning-roadmap.md](research-nosl-policy-learning-roadmap.md)。**最终目标仍是在正常 Save/Load（SL）规则、明确算力预算与未见种子下，提高完整跑局通关胜率**；共享卡牌表示是服务该目标的一种待验证架构，并不替代高性能 CombatSolver、局内合法搜索或局外规划。
+本文补充 [PROJECT_VISION.md](PROJECT_VISION.md)、[research-direction-and-value-model.md](research-direction-and-value-model.md) 和 [research-nosl-policy-learning-roadmap.md](research-nosl-policy-learning-roadmap.md)。
+
+> **路线更新（2026-11-19）：** 新的实施优先级以 [学习驱动战斗搜索主线](research-learning-guided-combat-search.md) 为准。N2F-A 和 N2F-A.2 已完成但未验证机制模型稳定优于简单统计；旧的“固定 initial-mean 的卡组战斗结果预测→战斗策略学习→搜索接入”仅作为历史研究设计保留，**不再构成后续研发门槛**。优先建立 N2E 机制表示 + 搜索经验 + 学习排序 + F3B/F4 可关闭接入 + 端到端质量成本对照。**最终目标仍是在正常 Save/Load（SL）规则、明确算力预算与未见种子下，提高完整跑局通关胜率**；共享卡牌表示是服务该目标的一种待验证架构，并不替代高性能 CombatSolver、局内合法搜索或局外规划。
 
 ## 1. 问题重构：战斗出牌和局外加牌并非独立任务
 
@@ -185,6 +187,6 @@ N2E 首版已交付静态规则与动态公开信息分离的 CardSpec、CardIns
 - 已有 F3B/F4 的高质量合法 SL 搜索仍是可用参考与后续训练/评估基础；NOSL 低成本单线策略可用于候选生成，但不能用单线成绩冒充合法 SL 最优性。
 - 强 Solver 的高预算路线不是在线 NOSL 正确动作标签；可用于受控诊断，不能把隐藏 RNG 的全知策略直接蒸馏为信息受限的在线真值。
 - 训练目标层次依次为**可核实机制 → 固定策略条件战斗价值 → 战斗决策质量 → 局外完整跑局长期价值**；各层可复用表示但必须分别验证。
-- M1-N2E 已完成并进入开发分支。本文继续作为独立研究文档保存，待审核后以独立文档变更合入；N2F 的训练尚未批准或实施。
+- M1-N2E 已完成并进入开发分支；N2F-A 因 61 条 Shiv 截断而按资格门槛停止，N2F-A.2 完成离线三分类训练但机制编码未稳定超越简单统计。新的工程重点改为 M1-LS 学习指导搜索闭环；不追溯改写这些实验的原始结论。
 
 **核心原则：让模型学习“卡牌机制在不同状态和组合下如何产生价值”，而不仅是记住“某张卡通常强不强”。**
