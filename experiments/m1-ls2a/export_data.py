@@ -191,6 +191,15 @@ def summarize(manifest, cases, batches, native):
                 initialize_ms=describe(r["root_timing"]["initialize_ms"] for _, r in data)), data
 
 
+def write_shard(path, rows):
+    """Write an immutable, deterministic JSONL shard and return its byte checksum."""
+    with path.open("xb") as raw:
+        with gzip.GzipFile(filename="", fileobj=raw, mode="wb", mtime=0, compresslevel=3) as stream:
+            for row in rows:
+                stream.write((serialize(row) + "\n").encode("utf-8"))
+    return sha256(path.read_bytes()).hexdigest()
+
+
 def export(directory, name, destination, shard_size):
     with closing(store.open_store(directory / "search.sqlite")) as db:
         rows = source_rows(db, name)
@@ -213,11 +222,7 @@ def export(directory, name, destination, shard_size):
         part = 0
         while chunk := list(itertools.islice(rows, shard_size)):
             path = destination / f"{split}-{part:05d}.jsonl.gz"
-            with path.open("xb") as raw:
-                with gzip.GzipFile(filename="", fileobj=raw, mode="wb", mtime=0, compresslevel=3) as stream:
-                    for row in chunk:
-                        stream.write((serialize(row) + "\n").encode("utf-8"))
-            shard_hashes[path.name] = sha256(path.read_bytes()).hexdigest()
+            shard_hashes[path.name] = write_shard(path, chunk)
             counts[split] += len(chunk)
             part += 1
     compatibility = {}

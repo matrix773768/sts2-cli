@@ -1,0 +1,70 @@
+{
+  "namespace": "ls2b-formal-v1",
+  "pool": 360,
+  "counts": {
+    "development": 50,
+    "report": 40
+  },
+  "sampling": {
+    "acts": [
+      1,
+      2,
+      3
+    ],
+    "rooms": [
+      "Monster",
+      "Elite"
+    ],
+    "room_weights": {
+      "Monster": 6,
+      "Elite": 1
+    },
+    "starter_count": [
+      5,
+      8
+    ],
+    "deck_size": [
+      11,
+      18
+    ],
+    "split_percent": [
+      60,
+      0,
+      40
+    ]
+  },
+  "probes": 4,
+  "probe_cap": 192,
+  "budgets": [
+    128,
+    256
+  ],
+  "limits": {
+    "workers": 4,
+    "wall_seconds": 480,
+    "root_seconds": 75,
+    "attempts_per_root": 1,
+    "engine_rss_mib": 1400,
+    "disk_mib": 600,
+    "transitions": 69120
+  },
+  "protocol": {
+    "max_repair_depth": 1,
+    "positive": "F4 seed verified, hp >= 1, seed and locked last action free of E3 enemy-side terminal risk",
+    "development_reservations": 38400,
+    "report_reservations": 69120,
+    "report_controls": "four legacy single trajectories x48 diagnostic only; exclude from portfolio scores",
+    "learning": "root-balanced ridge lambda=0.5, 48-action qualified probes and deaths/action cuts, missing/risk excluded",
+    "sampling": "first qualifying LS2A stratum indices per character, disjoint encounter train/test; no report tuning",
+    "pilot": {
+      "roots": 10,
+      "wall_seconds": 14.828,
+      "replay": 3764,
+      "attempts": 252,
+      "repairs": 11,
+      "mean_generation_ms": 0.842,
+      "mean_spec_rpc_ms": 47.276,
+      "mean_repaired_spec_rpc_ms": 32.118
+    }
+  }
+}

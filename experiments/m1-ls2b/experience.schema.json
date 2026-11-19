@@ -1,0 +1,253 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LS2B grouped public experience. Traces and exact manifests are separate audit records.",
+  "type": "object",
+  "required": [
+    "schema",
+    "group",
+    "split",
+    "source",
+    "natural_reachability",
+    "public_context",
+    "encoding_gaps",
+    "evidence_level",
+    "cells"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": "ls2b.experience.v1"
+    },
+    "group": {
+      "type": "string"
+    },
+    "split": {
+      "enum": [
+        "pilot",
+        "development",
+        "report"
+      ]
+    },
+    "source": {
+      "enum": [
+        "synthetic",
+        "native"
+      ]
+    },
+    "natural_reachability": {
+      "type": "string"
+    },
+    "public_context": {
+      "type": "object",
+      "required": [
+        "character",
+        "player",
+        "act",
+        "round",
+        "energy",
+        "max_energy",
+        "draw_count",
+        "discard_count",
+        "player_powers",
+        "relics",
+        "potions",
+        "inventory_known",
+        "enemies",
+        "hand",
+        "identity_deck",
+        "mechanics_deck",
+        "native_card_metadata"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "character": {},
+        "player": {},
+        "act": {},
+        "round": {},
+        "energy": {},
+        "max_energy": {},
+        "draw_count": {},
+        "discard_count": {},
+        "player_powers": {},
+        "relics": {},
+        "potions": {},
+        "inventory_known": {},
+        "enemies": {},
+        "hand": {},
+        "identity_deck": {},
+        "mechanics_deck": {},
+        "native_card_metadata": {}
+      }
+    },
+    "encoding_gaps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_level": {
+      "const": "research_exact_prediction"
+    },
+    "cells": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "profile",
+          "attempts",
+          "outcome"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "profile": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "attempts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "input",
+                "strategy_hash",
+                "parent_strategy",
+                "repair_operation",
+                "repair_depth",
+                "generator_version",
+                "search_budget",
+                "label"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "input": {
+                  "type": "object",
+                  "required": [
+                    "strategy_spec"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "strategy_spec": {
+                      "$ref": "strategy.schema.json"
+                    }
+                  }
+                },
+                "strategy_hash": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "parent_strategy": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "pattern": "^[a-f0-9]{64}$"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "repair_operation": {
+                  "enum": [
+                    null,
+                    "accelerate_finish",
+                    "raise_reserve",
+                    "retarget"
+                  ]
+                },
+                "repair_depth": {
+                  "enum": [
+                    0,
+                    1
+                  ]
+                },
+                "generator_version": {
+                  "const": "composition.v1"
+                },
+                "search_budget": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 48
+                },
+                "label": {
+                  "type": "object",
+                  "required": [
+                    "status",
+                    "resource",
+                    "failure_feedback",
+                    "transitions",
+                    "remaining",
+                    "initial_enemy_hp",
+                    "verification",
+                    "risks"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "resource": {
+                      "type": "object"
+                    },
+                    "failure_feedback": {
+                      "type": [
+                        "object",
+                        "null"
+                      ]
+                    },
+                    "transitions": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "remaining": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "initial_enemy_hp": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "verification": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ]
+                    },
+                    "risks": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "outcome": {
+            "type": "object",
+            "required": [
+              "status",
+              "first_replays",
+              "first_ms",
+              "locked",
+              "risks",
+              "transitions",
+              "wall_ms"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "status": {},
+              "first_replays": {},
+              "first_ms": {},
+              "locked": {},
+              "risks": {},
+              "transitions": {},
+              "wall_ms": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}

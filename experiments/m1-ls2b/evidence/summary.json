@@ -1,0 +1,1677 @@
+{
+  "pilot": {
+    "requests": 10,
+    "complete": 10,
+    "source": {
+      "synthetic": 10
+    },
+    "roles": {
+      "Defect": 2,
+      "Ironclad": 2,
+      "Necrobinder": 2,
+      "Regent": 2,
+      "Silent": 2
+    },
+    "builds": 10,
+    "encounters": 8,
+    "cards": 85,
+    "acts": {
+      "3": 3,
+      "1": 3,
+      "2": 4
+    },
+    "partial": 10,
+    "manifest_sha": "62e6bb03dc474bf2d0a8cce56ab1cd2e00b71672be288546bc5e955d62abf666",
+    "budget": 11520,
+    "versions": {
+      "sampler": "m1-d1-v1",
+      "policy": "M1-F2-discard-v1",
+      "game": "0.113.1/26660232",
+      "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+      "solver_sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+      "solver": "0.51.5-e3f.1",
+      "headless_sha256": "b6bec22566a1b2ce4223382cdc1a54ebdfacc66aafa81687be55257097259a8a",
+      "coreclr": "9.0.7",
+      "native_identity": "cbd15bf1577af85c73d49e310423fbe30299463d27b851491d9cf31df2555cd8",
+      "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+      "adapter": "4f988fc822bce55f8234a1ca1ee86971c44941d8a947b9ef528b56a560339fd1",
+      "f3b_first_win": "1dbd8345510af1dd8b85a491fe9eecbbafbabc1203353322618f494d939d81bb",
+      "f3b_route_search": "054eb9083b17f306f5e11db878950e72bfa3660d84996bde805648e81f7e17c9",
+      "f4_quality": "a6a0ee35a74c91c2e99127d8d637fcdc3712d29e692dbb6ec32f85c52318a053",
+      "preprocess": "ca28fa952c3dfb1a9b90ee7c02027317a6b91a681e88d995fabc84463e5634ea",
+      "catalog": "e3f637b27c674eba88317c0c2432cc8feb5b35d6e483519f6846043f80158948",
+      "strategy": "ls2b.spec.v1",
+      "generator": "composition.v1",
+      "implementation": "5e326a53bf5d3eed6a6834465a656a9a11956f133ed1a14afe25e65e5af4c046"
+    },
+    "attempts_status": {
+      "complete": 10
+    },
+    "batches": [
+      {
+        "dispatched": 10,
+        "cached": 0,
+        "recovered": 0,
+        "completed": 10,
+        "reason": "queue_exhausted",
+        "wall_seconds": 14.827999999979511,
+        "workers": 3,
+        "aggregate_engine_rss_bytes": 408371200,
+        "memory_samples": 508,
+        "max_engine_peak_bytes": 143691776,
+        "disk_bytes": 5700140,
+        "charged": 3764
+      }
+    ],
+    "arms": {
+      "baseline-128": {
+        "cells": 10,
+        "wins": 1,
+        "status": {
+          "exhausted": 6,
+          "transition_cap": 3,
+          "qualified_win": 1
+        },
+        "first_replays": {
+          "n": 1,
+          "mean": 58,
+          "p50": 58,
+          "total": 58
+        },
+        "first_ms": {
+          "n": 1,
+          "mean": 64.82640005000829,
+          "p50": 64.82640005000829,
+          "total": 64.82640005000829
+        },
+        "replays": {
+          "n": 10,
+          "mean": 42.8,
+          "p50": 30.5,
+          "total": 428
+        },
+        "wall_ms": {
+          "n": 10,
+          "mean": 310.28704000636935,
+          "p50": 174.25165011081845,
+          "total": 3102.8704000636935
+        },
+        "hp": {
+          "n": 1,
+          "mean": 22,
+          "p50": 22,
+          "total": 22
+        },
+        "gold": {
+          "n": 1,
+          "mean": 99,
+          "p50": 99,
+          "total": 99
+        },
+        "potions": {
+          "n": 1,
+          "mean": 0,
+          "p50": 0,
+          "total": 0
+        },
+        "risk_wins": 0,
+        "generated": 0,
+        "duplicates": 0,
+        "generation_ms": {
+          "n": 10,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "inference_ms": {
+          "n": 10,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "repair_ms": {
+          "n": 10,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "attempts": 0,
+        "attempt_status": {},
+        "repairs": 0,
+        "repair_wins": 0,
+        "repair_path_changed": 0,
+        "repair_nonempty_pairs": 0,
+        "shared_prefix_actions": 0,
+        "completed_actions": 0,
+        "equivalent_terminal_paths": 0,
+        "terminal_paths": 0,
+        "switches": 0
+      },
+      "baseline-256": {
+        "cells": 10,
+        "wins": 1,
+        "status": {
+          "exhausted": 6,
+          "transition_cap": 3,
+          "qualified_win": 1
+        },
+        "first_replays": {
+          "n": 1,
+          "mean": 58,
+          "p50": 58,
+          "total": 58
+        },
+        "first_ms": {
+          "n": 1,
+          "mean": 104.72199999209344,
+          "p50": 104.72199999209344,
+          "total": 104.72199999209344
+        },
+        "replays": {
+          "n": 10,
+          "mean": 74.8,
+          "p50": 30.5,
+          "total": 748
+        },
+        "wall_ms": {
+          "n": 10,
+          "mean": 148.918669950217,
+          "p50": 113.66709996946156,
+          "total": 1489.18669950217
+        },
+        "hp": {
+          "n": 1,
+          "mean": 22,
+          "p50": 22,
+          "total": 22
+        },
+        "gold": {
+          "n": 1,
+          "mean": 99,
+          "p50": 99,
+          "total": 99
+        },
+        "potions": {
+          "n": 1,
+          "mean": 0,
+          "p50": 0,
+          "total": 0
+        },
+        "risk_wins": 0,
+        "generated": 0,
+        "duplicates": 0,
+        "generation_ms": {
+          "n": 10,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "inference_ms": {
+          "n": 10,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "repair_ms": {
+          "n": 10,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "attempts": 0,
+        "attempt_status": {},
+        "repairs": 0,
+        "repair_wins": 0,
+        "repair_path_changed": 0,
+        "repair_nonempty_pairs": 0,
+        "shared_prefix_actions": 0,
+        "completed_actions": 0,
+        "equivalent_terminal_paths": 0,
+        "terminal_paths": 0,
+        "switches": 0
+      },
+      "generated-128": {
+        "cells": 10,
+        "wins": 1,
+        "status": {
+          "proposals_exhausted": 5,
+          "search_budget": 4,
+          "qualified_win": 1
+        },
+        "first_replays": {
+          "n": 1,
+          "mean": 72,
+          "p50": 72,
+          "total": 72
+        },
+        "first_ms": {
+          "n": 1,
+          "mean": 80.11699978319704,
+          "p50": 80.11699978319704,
+          "total": 80.11699978319704
+        },
+        "replays": {
+          "n": 10,
+          "mean": 47.4,
+          "p50": 52.0,
+          "total": 474
+        },
+        "wall_ms": {
+          "n": 10,
+          "mean": 196.49281012825668,
+          "p50": 126.94085016846657,
+          "total": 1964.9281012825668
+        },
+        "hp": {
+          "n": 1,
+          "mean": 20,
+          "p50": 20,
+          "total": 20
+        },
+        "gold": {
+          "n": 1,
+          "mean": 99,
+          "p50": 99,
+          "total": 99
+        },
+        "potions": {
+          "n": 1,
+          "mean": 0,
+          "p50": 0,
+          "total": 0
+        },
+        "risk_wins": 0,
+        "generated": 108,
+        "duplicates": 0,
+        "generation_ms": {
+          "n": 10,
+          "mean": 0.847480003722012,
+          "p50": 0.7134000770747662,
+          "total": 8.47480003722012
+        },
+        "inference_ms": {
+          "n": 10,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "repair_ms": {
+          "n": 10,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "attempts": 56,
+        "attempt_status": {
+          "unsupported": 45,
+          "death": 7,
+          "transition_cap": 3,
+          "qualified_win": 1
+        },
+        "repairs": 0,
+        "repair_wins": 0,
+        "repair_path_changed": 0,
+        "repair_nonempty_pairs": 0,
+        "shared_prefix_actions": 176,
+        "completed_actions": 382,
+        "equivalent_terminal_paths": 2,
+        "terminal_paths": 8,
+        "switches": 15
+      },
+      "generated-256": {
+        "cells": 10,
+        "wins": 1,
+        "status": {
+          "proposals_exhausted": 6,
+          "search_budget": 3,
+          "qualified_win": 1
+        },
+        "first_replays": {
+          "n": 1,
+          "mean": 72,
+          "p50": 72,
+          "total": 72
+        },
+        "first_ms": {
+          "n": 1,
+          "mean": 103.73279993799628,
+          "p50": 103.73279993799628,
+          "total": 103.73279993799628
+        },
+        "replays": {
+          "n": 10,
+          "mean": 82,
+          "p50": 65.0,
+          "total": 820
+        },
+        "wall_ms": {
+          "n": 10,
+          "mean": 459.1142400400713,
+          "p50": 291.4785499451682,
+          "total": 4591.142400400713
+        },
+        "hp": {
+          "n": 1,
+          "mean": 20,
+          "p50": 20,
+          "total": 20
+        },
+        "gold": {
+          "n": 1,
+          "mean": 99,
+          "p50": 99,
+          "total": 99
+        },
+        "potions": {
+          "n": 1,
+          "mean": 0,
+          "p50": 0,
+          "total": 0
+        },
+        "risk_wins": 0,
+        "generated": 108,
+        "duplicates": 0,
+        "generation_ms": {
+          "n": 10,
+          "mean": 0.8562900125980377,
+          "p50": 0.5667000077664852,
+          "total": 8.562900125980377
+        },
+        "inference_ms": {
+          "n": 10,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "repair_ms": {
+          "n": 10,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "attempts": 70,
+        "attempt_status": {
+          "unsupported": 53,
+          "death": 14,
+          "transition_cap": 2,
+          "qualified_win": 1
+        },
+        "repairs": 0,
+        "repair_wins": 0,
+        "repair_path_changed": 0,
+        "repair_nonempty_pairs": 0,
+        "shared_prefix_actions": 337,
+        "completed_actions": 600,
+        "equivalent_terminal_paths": 8,
+        "terminal_paths": 15,
+        "switches": 30
+      },
+      "repair-128": {
+        "cells": 10,
+        "wins": 1,
+        "status": {
+          "proposals_exhausted": 5,
+          "search_budget": 4,
+          "qualified_win": 1
+        },
+        "first_replays": {
+          "n": 1,
+          "mean": 72,
+          "p50": 72,
+          "total": 72
+        },
+        "first_ms": {
+          "n": 1,
+          "mean": 88.24929993975461,
+          "p50": 88.24929993975461,
+          "total": 88.24929993975461
+        },
+        "replays": {
+          "n": 10,
+          "mean": 47.4,
+          "p50": 52.0,
+          "total": 474
+        },
+        "wall_ms": {
+          "n": 10,
+          "mean": 196.69568007811904,
+          "p50": 121.33345007896423,
+          "total": 1966.9568007811904
+        },
+        "hp": {
+          "n": 1,
+          "mean": 20,
+          "p50": 20,
+          "total": 20
+        },
+        "gold": {
+          "n": 1,
+          "mean": 99,
+          "p50": 99,
+          "total": 99
+        },
+        "potions": {
+          "n": 1,
+          "mean": 0,
+          "p50": 0,
+          "total": 0
+        },
+        "risk_wins": 0,
+        "generated": 126,
+        "duplicates": 6,
+        "generation_ms": {
+          "n": 10,
+          "mean": 0.909519987180829,
+          "p50": 0.7726999465376139,
+          "total": 9.09519987180829
+        },
+        "inference_ms": {
+          "n": 10,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "repair_ms": {
+          "n": 10,
+          "mean": 0.2347098197788,
+          "p50": 0.04229974001646042,
+          "total": 2.347098197788
+        },
+        "attempts": 56,
+        "attempt_status": {
+          "unsupported": 45,
+          "death": 7,
+          "transition_cap": 3,
+          "qualified_win": 1
+        },
+        "repairs": 4,
+        "repair_wins": 0,
+        "repair_path_changed": 1,
+        "repair_nonempty_pairs": 4,
+        "shared_prefix_actions": 191,
+        "completed_actions": 382,
+        "equivalent_terminal_paths": 3,
+        "terminal_paths": 8,
+        "switches": 13
+      },
+      "repair-256": {
+        "cells": 10,
+        "wins": 1,
+        "status": {
+          "proposals_exhausted": 6,
+          "search_budget": 3,
+          "qualified_win": 1
+        },
+        "first_replays": {
+          "n": 1,
+          "mean": 72,
+          "p50": 72,
+          "total": 72
+        },
+        "first_ms": {
+          "n": 1,
+          "mean": 711.2729000105619,
+          "p50": 711.2729000105619,
+          "total": 711.2729000105619
+        },
+        "replays": {
+          "n": 10,
+          "mean": 82,
+          "p50": 65.0,
+          "total": 820
+        },
+        "wall_ms": {
+          "n": 10,
+          "mean": 434.5555500127375,
+          "p50": 230.07185000460595,
+          "total": 4345.555500127375
+        },
+        "hp": {
+          "n": 1,
+          "mean": 20,
+          "p50": 20,
+          "total": 20
+        },
+        "gold": {
+          "n": 1,
+          "mean": 99,
+          "p50": 99,
+          "total": 99
+        },
+        "potions": {
+          "n": 1,
+          "mean": 0,
+          "p50": 0,
+          "total": 0
+        },
+        "risk_wins": 0,
+        "generated": 135,
+        "duplicates": 9,
+        "generation_ms": {
+          "n": 10,
+          "mean": 0.7543300045654178,
+          "p50": 0.6442000158131123,
+          "total": 7.543300045654178
+        },
+        "inference_ms": {
+          "n": 10,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "repair_ms": {
+          "n": 10,
+          "mean": 0.3841700265184045,
+          "p50": 0.04160008393228054,
+          "total": 3.841700265184045
+        },
+        "attempts": 70,
+        "attempt_status": {
+          "unsupported": 53,
+          "death": 14,
+          "transition_cap": 2,
+          "qualified_win": 1
+        },
+        "repairs": 7,
+        "repair_wins": 0,
+        "repair_path_changed": 3,
+        "repair_nonempty_pairs": 7,
+        "shared_prefix_actions": 333,
+        "completed_actions": 600,
+        "equivalent_terminal_paths": 7,
+        "terminal_paths": 15,
+        "switches": 26
+      }
+    },
+    "exported_attempts": 252
+  },
+  "development": {
+    "requests": 50,
+    "complete": 50,
+    "source": {
+      "synthetic": 50
+    },
+    "roles": {
+      "Defect": 10,
+      "Ironclad": 10,
+      "Necrobinder": 10,
+      "Regent": 10,
+      "Silent": 10
+    },
+    "builds": 50,
+    "encounters": 26,
+    "cards": 267,
+    "acts": {
+      "3": 20,
+      "1": 15,
+      "2": 15
+    },
+    "partial": 50,
+    "manifest_sha": "dda95ec3cc1abf6e88fa2d21ad45cabbe4a777c259e041ed07fc25b15c6fc0b9",
+    "budget": 38400,
+    "versions": {
+      "sampler": "m1-d1-v1",
+      "policy": "M1-F2-discard-v1",
+      "game": "0.113.1/26660232",
+      "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+      "solver_sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+      "solver": "0.51.5-e3f.1",
+      "headless_sha256": "b6bec22566a1b2ce4223382cdc1a54ebdfacc66aafa81687be55257097259a8a",
+      "coreclr": "9.0.7",
+      "native_identity": "cbd15bf1577af85c73d49e310423fbe30299463d27b851491d9cf31df2555cd8",
+      "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+      "adapter": "4f988fc822bce55f8234a1ca1ee86971c44941d8a947b9ef528b56a560339fd1",
+      "f3b_first_win": "1dbd8345510af1dd8b85a491fe9eecbbafbabc1203353322618f494d939d81bb",
+      "f3b_route_search": "054eb9083b17f306f5e11db878950e72bfa3660d84996bde805648e81f7e17c9",
+      "f4_quality": "a6a0ee35a74c91c2e99127d8d637fcdc3712d29e692dbb6ec32f85c52318a053",
+      "preprocess": "ca28fa952c3dfb1a9b90ee7c02027317a6b91a681e88d995fabc84463e5634ea",
+      "catalog": "e3f637b27c674eba88317c0c2432cc8feb5b35d6e483519f6846043f80158948",
+      "strategy": "ls2b.spec.v1",
+      "generator": "composition.v1",
+      "implementation": "9bf6cab18731acbcbcb40d70fd7ca364ce3f58f1596922c15a060958593f5276"
+    },
+    "attempts_status": {
+      "complete": 50
+    },
+    "batches": [
+      {
+        "dispatched": 50,
+        "cached": 0,
+        "recovered": 0,
+        "completed": 50,
+        "reason": "queue_exhausted",
+        "wall_seconds": 31.811999999918044,
+        "workers": 4,
+        "aggregate_engine_rss_bytes": 535474176,
+        "memory_samples": 1099,
+        "max_engine_peak_bytes": 144031744,
+        "disk_bytes": 21492321,
+        "charged": 12571
+      }
+    ],
+    "arms": {
+      "probe-192": {
+        "cells": 200,
+        "wins": 39,
+        "status": {
+          "proposals_exhausted": 149,
+          "qualified_win": 51
+        },
+        "first_replays": {
+          "n": 39,
+          "mean": 39.58974358974359,
+          "p50": 30,
+          "total": 1544
+        },
+        "first_ms": {
+          "n": 39,
+          "mean": 234.4058615917354,
+          "p50": 66.62640007888675,
+          "total": 9141.828602077678
+        },
+        "replays": {
+          "n": 200,
+          "mean": 62.855,
+          "p50": 33.0,
+          "total": 12571
+        },
+        "wall_ms": {
+          "n": 200,
+          "mean": 255.34891951829195,
+          "p50": 82.81744993291795,
+          "total": 51069.78390365839
+        },
+        "hp": {
+          "n": 39,
+          "mean": 32.256410256410255,
+          "p50": 29,
+          "total": 1258
+        },
+        "gold": {
+          "n": 39,
+          "mean": 99,
+          "p50": 99,
+          "total": 3861
+        },
+        "potions": {
+          "n": 39,
+          "mean": 0.41025641025641024,
+          "p50": 0,
+          "total": 16
+        },
+        "risk_wins": 12,
+        "generated": 2339,
+        "duplicates": 31,
+        "generation_ms": {
+          "n": 200,
+          "mean": 0.8059759996831417,
+          "p50": 0.5810000002384186,
+          "total": 161.19519993662834
+        },
+        "inference_ms": {
+          "n": 200,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "repair_ms": {
+          "n": 200,
+          "mean": 0.12464050087146461,
+          "p50": 0.005999929271638393,
+          "total": 24.928100174292922
+        },
+        "attempts": 274,
+        "attempt_status": {
+          "unsupported": 78,
+          "death": 145,
+          "qualified_win": 51
+        },
+        "repairs": 74,
+        "repair_wins": 0,
+        "repair_path_changed": 39,
+        "repair_nonempty_pairs": 74,
+        "shared_prefix_actions": 702,
+        "completed_actions": 4366,
+        "equivalent_terminal_paths": 35,
+        "terminal_paths": 196,
+        "switches": 202
+      }
+    },
+    "exported_attempts": 274
+  },
+  "report": {
+    "requests": 40,
+    "complete": 40,
+    "source": {
+      "synthetic": 40
+    },
+    "roles": {
+      "Defect": 8,
+      "Ironclad": 8,
+      "Necrobinder": 8,
+      "Regent": 8,
+      "Silent": 8
+    },
+    "builds": 40,
+    "encounters": 22,
+    "cards": 235,
+    "acts": {
+      "2": 18,
+      "1": 12,
+      "3": 10
+    },
+    "partial": 40,
+    "manifest_sha": "0b5a53773986f63c7baa67ba8eb5475260fc0195e7513f073dd4d28d2237c46f",
+    "budget": 69120,
+    "versions": {
+      "sampler": "m1-d1-v1",
+      "policy": "M1-F2-discard-v1",
+      "game": "0.113.1/26660232",
+      "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+      "solver_sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+      "solver": "0.51.5-e3f.1",
+      "headless_sha256": "b6bec22566a1b2ce4223382cdc1a54ebdfacc66aafa81687be55257097259a8a",
+      "coreclr": "9.0.7",
+      "native_identity": "cbd15bf1577af85c73d49e310423fbe30299463d27b851491d9cf31df2555cd8",
+      "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+      "adapter": "4f988fc822bce55f8234a1ca1ee86971c44941d8a947b9ef528b56a560339fd1",
+      "f3b_first_win": "1dbd8345510af1dd8b85a491fe9eecbbafbabc1203353322618f494d939d81bb",
+      "f3b_route_search": "054eb9083b17f306f5e11db878950e72bfa3660d84996bde805648e81f7e17c9",
+      "f4_quality": "a6a0ee35a74c91c2e99127d8d637fcdc3712d29e692dbb6ec32f85c52318a053",
+      "preprocess": "ca28fa952c3dfb1a9b90ee7c02027317a6b91a681e88d995fabc84463e5634ea",
+      "catalog": "e3f637b27c674eba88317c0c2432cc8feb5b35d6e483519f6846043f80158948",
+      "strategy": "ls2b.spec.v1",
+      "generator": "composition.v1",
+      "implementation": "9bf6cab18731acbcbcb40d70fd7ca364ce3f58f1596922c15a060958593f5276"
+    },
+    "attempts_status": {
+      "complete": 40
+    },
+    "batches": [
+      {
+        "dispatched": 40,
+        "cached": 0,
+        "recovered": 0,
+        "completed": 40,
+        "reason": "queue_exhausted",
+        "wall_seconds": 52.39100000006147,
+        "workers": 4,
+        "aggregate_engine_rss_bytes": 557617152,
+        "memory_samples": 1864,
+        "max_engine_peak_bytes": 146259968,
+        "disk_bytes": 58135503,
+        "charged": 30024
+      }
+    ],
+    "arms": {
+      "baseline-128": {
+        "cells": 40,
+        "wins": 6,
+        "status": {
+          "transition_cap": 17,
+          "exhausted": 15,
+          "qualified_win": 8
+        },
+        "first_replays": {
+          "n": 6,
+          "mean": 45.833333333333336,
+          "p50": 44.0,
+          "total": 275
+        },
+        "first_ms": {
+          "n": 6,
+          "mean": 404.8683333024542,
+          "p50": 259.6654999069631,
+          "total": 2429.209999814725
+        },
+        "replays": {
+          "n": 40,
+          "mean": 59.1,
+          "p50": 64.0,
+          "total": 2364
+        },
+        "wall_ms": {
+          "n": 40,
+          "mean": 245.47412251704372,
+          "p50": 148.56499992311,
+          "total": 9818.964900681749
+        },
+        "hp": {
+          "n": 6,
+          "mean": 24.333333333333332,
+          "p50": 25.5,
+          "total": 146
+        },
+        "gold": {
+          "n": 6,
+          "mean": 99,
+          "p50": 99.0,
+          "total": 594
+        },
+        "potions": {
+          "n": 6,
+          "mean": 0.6666666666666666,
+          "p50": 1.0,
+          "total": 4
+        },
+        "risk_wins": 2,
+        "generated": 0,
+        "duplicates": 0,
+        "generation_ms": {
+          "n": 40,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "inference_ms": {
+          "n": 40,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "repair_ms": {
+          "n": 40,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "attempts": 0,
+        "attempt_status": {},
+        "repairs": 0,
+        "repair_wins": 0,
+        "repair_path_changed": 0,
+        "repair_nonempty_pairs": 0,
+        "shared_prefix_actions": 0,
+        "completed_actions": 0,
+        "equivalent_terminal_paths": 0,
+        "terminal_paths": 0,
+        "switches": 0
+      },
+      "baseline-256": {
+        "cells": 40,
+        "wins": 7,
+        "status": {
+          "transition_cap": 16,
+          "qualified_win": 9,
+          "exhausted": 15
+        },
+        "first_replays": {
+          "n": 7,
+          "mean": 55.285714285714285,
+          "p50": 46,
+          "total": 387
+        },
+        "first_ms": {
+          "n": 7,
+          "mean": 125.4418142685145,
+          "p50": 157.39780003857314,
+          "total": 878.0926998796016
+        },
+        "replays": {
+          "n": 40,
+          "mean": 113.075,
+          "p50": 128.0,
+          "total": 4523
+        },
+        "wall_ms": {
+          "n": 40,
+          "mean": 318.30532999010757,
+          "p50": 222.55399997811764,
+          "total": 12732.213199604303
+        },
+        "hp": {
+          "n": 7,
+          "mean": 22.428571428571427,
+          "p50": 25,
+          "total": 157
+        },
+        "gold": {
+          "n": 7,
+          "mean": 99,
+          "p50": 99,
+          "total": 693
+        },
+        "potions": {
+          "n": 7,
+          "mean": 0.5714285714285714,
+          "p50": 1,
+          "total": 4
+        },
+        "risk_wins": 2,
+        "generated": 0,
+        "duplicates": 0,
+        "generation_ms": {
+          "n": 40,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "inference_ms": {
+          "n": 40,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "repair_ms": {
+          "n": 40,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "attempts": 0,
+        "attempt_status": {},
+        "repairs": 0,
+        "repair_wins": 0,
+        "repair_path_changed": 0,
+        "repair_nonempty_pairs": 0,
+        "shared_prefix_actions": 0,
+        "completed_actions": 0,
+        "equivalent_terminal_paths": 0,
+        "terminal_paths": 0,
+        "switches": 0
+      },
+      "generated-128": {
+        "cells": 40,
+        "wins": 5,
+        "status": {
+          "qualified_win": 6,
+          "search_budget": 22,
+          "proposals_exhausted": 12
+        },
+        "first_replays": {
+          "n": 5,
+          "mean": 41.6,
+          "p50": 38,
+          "total": 208
+        },
+        "first_ms": {
+          "n": 5,
+          "mean": 75.58140006331563,
+          "p50": 75.16590012122691,
+          "total": 377.9070003165781
+        },
+        "replays": {
+          "n": 40,
+          "mean": 62.95,
+          "p50": 64.0,
+          "total": 2518
+        },
+        "wall_ms": {
+          "n": 40,
+          "mean": 271.1084824812133,
+          "p50": 211.4338498795405,
+          "total": 10844.339299248531
+        },
+        "hp": {
+          "n": 5,
+          "mean": 31,
+          "p50": 31,
+          "total": 155
+        },
+        "gold": {
+          "n": 5,
+          "mean": 99,
+          "p50": 99,
+          "total": 495
+        },
+        "potions": {
+          "n": 5,
+          "mean": 0.6,
+          "p50": 1,
+          "total": 3
+        },
+        "risk_wins": 1,
+        "generated": 408,
+        "duplicates": 0,
+        "generation_ms": {
+          "n": 40,
+          "mean": 0.8046025002840906,
+          "p50": 0.6145999068394303,
+          "total": 32.184100011363626
+        },
+        "inference_ms": {
+          "n": 40,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "repair_ms": {
+          "n": 40,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "attempts": 234,
+        "attempt_status": {
+          "qualified_win": 6,
+          "unsupported": 156,
+          "transition_cap": 22,
+          "death": 49,
+          "action_cap": 1
+        },
+        "repairs": 0,
+        "repair_wins": 0,
+        "repair_path_changed": 0,
+        "repair_nonempty_pairs": 0,
+        "shared_prefix_actions": 902,
+        "completed_actions": 1878,
+        "equivalent_terminal_paths": 20,
+        "terminal_paths": 55,
+        "switches": 127
+      },
+      "generated-256": {
+        "cells": 40,
+        "wins": 6,
+        "status": {
+          "qualified_win": 7,
+          "search_budget": 10,
+          "proposals_exhausted": 23
+        },
+        "first_replays": {
+          "n": 6,
+          "mean": 52.666666666666664,
+          "p50": 44.0,
+          "total": 316
+        },
+        "first_ms": {
+          "n": 6,
+          "mean": 164.66519999488742,
+          "p50": 103.2046499748364,
+          "total": 987.9911999693245
+        },
+        "replays": {
+          "n": 40,
+          "mean": 108.3,
+          "p50": 90.0,
+          "total": 4332
+        },
+        "wall_ms": {
+          "n": 40,
+          "mean": 391.03802498430014,
+          "p50": 292.25059994496405,
+          "total": 15641.520999372005
+        },
+        "hp": {
+          "n": 6,
+          "mean": 31.666666666666668,
+          "p50": 35.5,
+          "total": 190
+        },
+        "gold": {
+          "n": 6,
+          "mean": 99,
+          "p50": 99.0,
+          "total": 594
+        },
+        "potions": {
+          "n": 6,
+          "mean": 0.6666666666666666,
+          "p50": 1.0,
+          "total": 4
+        },
+        "risk_wins": 1,
+        "generated": 408,
+        "duplicates": 0,
+        "generation_ms": {
+          "n": 40,
+          "mean": 0.720479991286993,
+          "p50": 0.5591000663116574,
+          "total": 28.81919965147972
+        },
+        "inference_ms": {
+          "n": 40,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "repair_ms": {
+          "n": 40,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "attempts": 290,
+        "attempt_status": {
+          "qualified_win": 7,
+          "unsupported": 182,
+          "transition_cap": 10,
+          "death": 90,
+          "action_cap": 1
+        },
+        "repairs": 0,
+        "repair_wins": 0,
+        "repair_path_changed": 0,
+        "repair_nonempty_pairs": 0,
+        "shared_prefix_actions": 1451,
+        "completed_actions": 2746,
+        "equivalent_terminal_paths": 45,
+        "terminal_paths": 97,
+        "switches": 171
+      },
+      "learned-128": {
+        "cells": 40,
+        "wins": 6,
+        "status": {
+          "qualified_win": 7,
+          "search_budget": 22,
+          "proposals_exhausted": 11
+        },
+        "first_replays": {
+          "n": 6,
+          "mean": 44.666666666666664,
+          "p50": 47.0,
+          "total": 268
+        },
+        "first_ms": {
+          "n": 6,
+          "mean": 225.50111671301772,
+          "p50": 84.50774999553114,
+          "total": 1353.006700278106
+        },
+        "replays": {
+          "n": 40,
+          "mean": 64.8,
+          "p50": 64.0,
+          "total": 2592
+        },
+        "wall_ms": {
+          "n": 40,
+          "mean": 349.19107749010436,
+          "p50": 208.292449824512,
+          "total": 13967.643099604174
+        },
+        "hp": {
+          "n": 6,
+          "mean": 26.166666666666668,
+          "p50": 29.0,
+          "total": 157
+        },
+        "gold": {
+          "n": 6,
+          "mean": 99,
+          "p50": 99.0,
+          "total": 594
+        },
+        "potions": {
+          "n": 6,
+          "mean": 0.6666666666666666,
+          "p50": 1.0,
+          "total": 4
+        },
+        "risk_wins": 1,
+        "generated": 514,
+        "duplicates": 27,
+        "generation_ms": {
+          "n": 40,
+          "mean": 0.6768274819478393,
+          "p50": 0.5722499918192625,
+          "total": 27.07309927791357
+        },
+        "inference_ms": {
+          "n": 40,
+          "mean": 0.5754625075496733,
+          "p50": 0.46859984286129475,
+          "total": 23.018500301986933
+        },
+        "repair_ms": {
+          "n": 40,
+          "mean": 0.5143001209944487,
+          "p50": 0.33980037551373243,
+          "total": 20.572004839777946
+        },
+        "attempts": 235,
+        "attempt_status": {
+          "qualified_win": 7,
+          "unsupported": 157,
+          "transition_cap": 21,
+          "death": 50
+        },
+        "repairs": 28,
+        "repair_wins": 0,
+        "repair_path_changed": 11,
+        "repair_nonempty_pairs": 28,
+        "shared_prefix_actions": 911,
+        "completed_actions": 1851,
+        "equivalent_terminal_paths": 16,
+        "terminal_paths": 57,
+        "switches": 127
+      },
+      "learned-256": {
+        "cells": 40,
+        "wins": 7,
+        "status": {
+          "qualified_win": 8,
+          "search_budget": 13,
+          "proposals_exhausted": 19
+        },
+        "first_replays": {
+          "n": 7,
+          "mean": 58.57142857142857,
+          "p50": 50,
+          "total": 410
+        },
+        "first_ms": {
+          "n": 7,
+          "mean": 240.02094286548112,
+          "p50": 114.99620021793245,
+          "total": 1680.146600058368
+        },
+        "replays": {
+          "n": 40,
+          "mean": 115.5,
+          "p50": 128.0,
+          "total": 4620
+        },
+        "wall_ms": {
+          "n": 40,
+          "mean": 471.6806224780157,
+          "p50": 420.6705499673262,
+          "total": 18867.22489912063
+        },
+        "hp": {
+          "n": 7,
+          "mean": 25.428571428571427,
+          "p50": 30,
+          "total": 178
+        },
+        "gold": {
+          "n": 7,
+          "mean": 99,
+          "p50": 99,
+          "total": 693
+        },
+        "potions": {
+          "n": 7,
+          "mean": 0.7142857142857143,
+          "p50": 1,
+          "total": 5
+        },
+        "risk_wins": 1,
+        "generated": 560,
+        "duplicates": 42,
+        "generation_ms": {
+          "n": 40,
+          "mean": 0.7620699994731694,
+          "p50": 0.5880499957129359,
+          "total": 30.482799978926778
+        },
+        "inference_ms": {
+          "n": 40,
+          "mean": 0.7433800550643355,
+          "p50": 0.6217000773176551,
+          "total": 29.73520220257342
+        },
+        "repair_ms": {
+          "n": 40,
+          "mean": 0.8306925010401756,
+          "p50": 0.06815011147409678,
+          "total": 33.22770004160702
+        },
+        "attempts": 302,
+        "attempt_status": {
+          "qualified_win": 8,
+          "unsupported": 180,
+          "death": 101,
+          "transition_cap": 13
+        },
+        "repairs": 54,
+        "repair_wins": 1,
+        "repair_path_changed": 27,
+        "repair_nonempty_pairs": 54,
+        "shared_prefix_actions": 1588,
+        "completed_actions": 2838,
+        "equivalent_terminal_paths": 50,
+        "terminal_paths": 109,
+        "switches": 173
+      },
+      "repair-128": {
+        "cells": 40,
+        "wins": 5,
+        "status": {
+          "qualified_win": 6,
+          "search_budget": 23,
+          "proposals_exhausted": 11
+        },
+        "first_replays": {
+          "n": 5,
+          "mean": 41.6,
+          "p50": 38,
+          "total": 208
+        },
+        "first_ms": {
+          "n": 5,
+          "mean": 67.5737600234425,
+          "p50": 64.39369995106459,
+          "total": 337.8688001172126
+        },
+        "replays": {
+          "n": 40,
+          "mean": 63.2,
+          "p50": 64.0,
+          "total": 2528
+        },
+        "wall_ms": {
+          "n": 40,
+          "mean": 277.935694984626,
+          "p50": 210.47255001030862,
+          "total": 11117.427799385041
+        },
+        "hp": {
+          "n": 5,
+          "mean": 31,
+          "p50": 31,
+          "total": 155
+        },
+        "gold": {
+          "n": 5,
+          "mean": 99,
+          "p50": 99,
+          "total": 495
+        },
+        "potions": {
+          "n": 5,
+          "mean": 0.6,
+          "p50": 1,
+          "total": 3
+        },
+        "risk_wins": 1,
+        "generated": 517,
+        "duplicates": 21,
+        "generation_ms": {
+          "n": 40,
+          "mean": 0.7039249932859093,
+          "p50": 0.5276500014588237,
+          "total": 28.156999731436372
+        },
+        "inference_ms": {
+          "n": 40,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "repair_ms": {
+          "n": 40,
+          "mean": 0.3422099456656724,
+          "p50": 0.2637499710544944,
+          "total": 13.688397826626897
+        },
+        "attempts": 235,
+        "attempt_status": {
+          "qualified_win": 6,
+          "unsupported": 156,
+          "transition_cap": 23,
+          "death": 49,
+          "action_cap": 1
+        },
+        "repairs": 29,
+        "repair_wins": 0,
+        "repair_path_changed": 7,
+        "repair_nonempty_pairs": 29,
+        "shared_prefix_actions": 939,
+        "completed_actions": 1888,
+        "equivalent_terminal_paths": 23,
+        "terminal_paths": 55,
+        "switches": 125
+      },
+      "repair-256": {
+        "cells": 40,
+        "wins": 6,
+        "status": {
+          "qualified_win": 7,
+          "search_budget": 14,
+          "proposals_exhausted": 19
+        },
+        "first_replays": {
+          "n": 6,
+          "mean": 60.666666666666664,
+          "p50": 44.0,
+          "total": 364
+        },
+        "first_ms": {
+          "n": 6,
+          "mean": 151.17253336477478,
+          "p50": 95.60585008310527,
+          "total": 907.0352001886488
+        },
+        "replays": {
+          "n": 40,
+          "mean": 112.3,
+          "p50": 128.0,
+          "total": 4492
+        },
+        "wall_ms": {
+          "n": 40,
+          "mean": 426.0657524864655,
+          "p50": 293.3127998840064,
+          "total": 17042.63009945862
+        },
+        "hp": {
+          "n": 6,
+          "mean": 31.666666666666668,
+          "p50": 35.5,
+          "total": 190
+        },
+        "gold": {
+          "n": 6,
+          "mean": 99,
+          "p50": 99.0,
+          "total": 594
+        },
+        "potions": {
+          "n": 6,
+          "mean": 0.6666666666666666,
+          "p50": 1.0,
+          "total": 4
+        },
+        "risk_wins": 1,
+        "generated": 563,
+        "duplicates": 29,
+        "generation_ms": {
+          "n": 40,
+          "mean": 0.7369350059889257,
+          "p50": 0.5961500573903322,
+          "total": 29.477400239557028
+        },
+        "inference_ms": {
+          "n": 40,
+          "mean": 0.0,
+          "p50": 0.0,
+          "total": 0.0
+        },
+        "repair_ms": {
+          "n": 40,
+          "mean": 0.4901175096165389,
+          "p50": 0.09265041444450617,
+          "total": 19.604700384661555
+        },
+        "attempts": 307,
+        "attempt_status": {
+          "qualified_win": 7,
+          "unsupported": 182,
+          "transition_cap": 14,
+          "death": 102,
+          "action_cap": 2
+        },
+        "repairs": 55,
+        "repair_wins": 0,
+        "repair_path_changed": 19,
+        "repair_nonempty_pairs": 55,
+        "shared_prefix_actions": 1729,
+        "completed_actions": 2954,
+        "equivalent_terminal_paths": 61,
+        "terminal_paths": 109,
+        "switches": 174
+      }
+    },
+    "exported_attempts": 1603
+  },
+  "paired": {
+    "generated-128": {
+      "counts": {
+        "only_new": 1,
+        "attempts_distinct_from_all_four": 128,
+        "attempts_compared_to_four": 234,
+        "root_distinct_from_all_four": 32,
+        "distinct_winning_first_route": 5,
+        "neither": 33,
+        "only_baseline": 2,
+        "both": 4,
+        "different_first_route": 4
+      },
+      "learned_first_action_sequence_changed": 0,
+      "learned_first_pairs": 0,
+      "common_hp_delta": {
+        "n": 4,
+        "mean": 3.75,
+        "p50": -1.0,
+        "total": 15
+      },
+      "witnesses": {
+        "only_new": "f31b74dd32fe667860ec",
+        "distinct_win": "f31b74dd32fe667860ec"
+      }
+    },
+    "generated-256": {
+      "counts": {
+        "only_new": 2,
+        "attempts_distinct_from_all_four": 177,
+        "attempts_compared_to_four": 290,
+        "root_distinct_from_all_four": 32,
+        "distinct_winning_first_route": 6,
+        "only_baseline": 3,
+        "neither": 31,
+        "both": 4,
+        "different_first_route": 4
+      },
+      "learned_first_action_sequence_changed": 0,
+      "learned_first_pairs": 0,
+      "common_hp_delta": {
+        "n": 4,
+        "mean": 6.25,
+        "p50": 4.5,
+        "total": 25
+      },
+      "witnesses": {
+        "only_new": "f31b74dd32fe667860ec",
+        "distinct_win": "f31b74dd32fe667860ec"
+      }
+    },
+    "repair-128": {
+      "counts": {
+        "only_new": 1,
+        "attempts_distinct_from_all_four": 124,
+        "attempts_compared_to_four": 235,
+        "root_distinct_from_all_four": 32,
+        "distinct_winning_first_route": 5,
+        "neither": 33,
+        "only_baseline": 2,
+        "both": 4,
+        "different_first_route": 4
+      },
+      "learned_first_action_sequence_changed": 0,
+      "learned_first_pairs": 0,
+      "common_hp_delta": {
+        "n": 4,
+        "mean": 3.75,
+        "p50": -1.0,
+        "total": 15
+      },
+      "witnesses": {
+        "only_new": "f31b74dd32fe667860ec",
+        "distinct_win": "f31b74dd32fe667860ec"
+      }
+    },
+    "repair-256": {
+      "counts": {
+        "only_new": 2,
+        "attempts_distinct_from_all_four": 187,
+        "attempts_compared_to_four": 307,
+        "root_distinct_from_all_four": 32,
+        "distinct_winning_first_route": 6,
+        "only_baseline": 3,
+        "neither": 31,
+        "both": 4,
+        "different_first_route": 4
+      },
+      "learned_first_action_sequence_changed": 0,
+      "learned_first_pairs": 0,
+      "common_hp_delta": {
+        "n": 4,
+        "mean": 6.25,
+        "p50": 4.5,
+        "total": 25
+      },
+      "witnesses": {
+        "only_new": "f31b74dd32fe667860ec",
+        "distinct_win": "f31b74dd32fe667860ec"
+      }
+    },
+    "learned-128": {
+      "counts": {
+        "only_new": 2,
+        "attempts_distinct_from_all_four": 126,
+        "attempts_compared_to_four": 235,
+        "root_distinct_from_all_four": 32,
+        "distinct_winning_first_route": 6,
+        "first_spec_changed": 38,
+        "neither": 32,
+        "only_baseline": 2,
+        "both": 4,
+        "different_first_route": 4
+      },
+      "learned_first_action_sequence_changed": 17,
+      "learned_first_pairs": 40,
+      "common_hp_delta": {
+        "n": 4,
+        "mean": 0.5,
+        "p50": -0.5,
+        "total": 2
+      },
+      "witnesses": {
+        "only_new": "f31b74dd32fe667860ec",
+        "distinct_win": "f31b74dd32fe667860ec"
+      }
+    },
+    "learned-256": {
+      "counts": {
+        "only_new": 3,
+        "attempts_distinct_from_all_four": 181,
+        "attempts_compared_to_four": 302,
+        "root_distinct_from_all_four": 32,
+        "distinct_winning_first_route": 7,
+        "first_spec_changed": 38,
+        "only_baseline": 3,
+        "neither": 30,
+        "both": 4,
+        "different_first_route": 4
+      },
+      "learned_first_action_sequence_changed": 17,
+      "learned_first_pairs": 40,
+      "common_hp_delta": {
+        "n": 4,
+        "mean": 1.25,
+        "p50": 1.5,
+        "total": 5
+      },
+      "witnesses": {
+        "only_new": "f31b74dd32fe667860ec",
+        "distinct_win": "f31b74dd32fe667860ec"
+      }
+    }
+  },
+  "higher_budget_only": {
+    "baseline": 1,
+    "generated": 1,
+    "repair": 1,
+    "learned": 1
+  },
+  "model": "1233d37e66378586a9f5b5c941601cae0f8260086f4d4802a5b070275c7e1e98",
+  "shards": {
+    "pilot-public.jsonl.gz": "36e7b5a60d142c262b6ca335ad37f7bc304832e0404a10f73c5c703b33942d13",
+    "pilot-audit.jsonl.gz": "eca7d52571dea895d9168677c3b00cff0e49e41c052e0bddc6082c5ab248a529",
+    "development-public.jsonl.gz": "21510ebf231c0ff2c20530b007d1da8dca3d475f8af2b2d78fbe001c68faf07a",
+    "development-audit.jsonl.gz": "5d1f82369f8f2cdddfdbb5ee15fc3d56f22922e3f678844ae80efa2e2f2b8cec",
+    "report-public.jsonl.gz": "68dcb720eda5b8dd5e9189d3c813e8f5f6d990b1f283e3bfefbfe42bc838f45d",
+    "report-audit.jsonl.gz": "a0233db3438c87036675f160ecb6a636aaa548f4e43548025f60345b8283b8ad"
+  }
+}

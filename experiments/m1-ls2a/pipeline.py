@@ -91,7 +91,7 @@ def disk_bytes(directory):
     return size
 
 
-def run(db, directory, manifest, catalog, workers, max_new=None):
+def run(db, directory, manifest, catalog, workers, max_new=None, *, execute=engine.execute):
     name, config, versions = (manifest[k] for k in ("name", "config", "versions"))
     limits = config["limits"]
     if not 1 <= workers <= limits["workers"]:
@@ -136,7 +136,7 @@ def run(db, directory, manifest, catalog, workers, max_new=None):
                 else:
                     attempt = store.reserve(db, name, id_, cap)
                     job = jobs[id_]
-                    future = pool.submit(engine.execute, directory, job["case"], config,
+                    future = pool.submit(execute, directory, job["case"], config,
                                          job["case"]["schedule"]["profiles"], versions, static,
                                          min(deadline, monotonic() + limits["root_seconds"]), cancelled, memory)
                     active[future] = job, attempt

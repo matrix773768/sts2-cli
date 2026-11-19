@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LS2B StrategySpec",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "objective",
+    "potion_policy",
+    "opening",
+    "finish",
+    "setup_turns",
+    "finish_pct",
+    "reserve_pct",
+    "target"
+  ],
+  "properties": {
+    "version": {
+      "const": "ls2b.spec.v1"
+    },
+    "objective": {
+      "const": "surviving_victory"
+    },
+    "potion_policy": {
+      "const": "preserve"
+    },
+    "opening": {
+      "$ref": "#/$defs/preferences"
+    },
+    "finish": {
+      "$ref": "#/$defs/preferences"
+    },
+    "setup_turns": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 5
+    },
+    "finish_pct": {
+      "type": "integer",
+      "minimum": 10,
+      "maximum": 90
+    },
+    "reserve_pct": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 80
+    },
+    "target": {
+      "enum": [
+        "weakest",
+        "threat",
+        "largest"
+      ]
+    }
+  },
+  "$defs": {
+    "preferences": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "damage",
+        "block",
+        "power",
+        "draw",
+        "unscored"
+      ],
+      "properties": {
+        "damage": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 12
+        },
+        "block": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 12
+        },
+        "power": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 60
+        },
+        "draw": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 40
+        },
+        "unscored": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 24
+        }
+      }
+    }
+  }
+}

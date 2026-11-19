@@ -1,0 +1,48 @@
+{
+  "namespace": "ls2b-pilot-01",
+  "pool": 140,
+  "counts": {
+    "pilot": 10
+  },
+  "sampling": {
+    "acts": [
+      1,
+      2,
+      3
+    ],
+    "rooms": [
+      "Monster",
+      "Elite"
+    ],
+    "room_weights": {
+      "Monster": 6,
+      "Elite": 1
+    },
+    "starter_count": [
+      5,
+      8
+    ],
+    "deck_size": [
+      11,
+      18
+    ],
+    "split_percent": [
+      60,
+      0,
+      40
+    ]
+  },
+  "budgets": [
+    128,
+    256
+  ],
+  "limits": {
+    "workers": 3,
+    "wall_seconds": 240,
+    "root_seconds": 65,
+    "attempts_per_root": 1,
+    "engine_rss_mib": 1300,
+    "disk_mib": 500,
+    "transitions": 11520
+  }
+}
