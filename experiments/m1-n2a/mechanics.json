@@ -1,0 +1,397 @@
+{
+  "input": {
+    "case": {
+      "id": "n2a-cost-01",
+      "split": "development",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 1,
+        "act_variant": "OVERGROWTH",
+        "encounter": "SHRINKER_BEETLE_WEAK",
+        "seed": "N2ACOST00001",
+        "hp": 70,
+        "max_hp": 80,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STOMP",
+            "upgrade": 0
+          },
+          {
+            "id": "STOMP",
+            "upgrade": 0
+          },
+          {
+            "id": "STOMP",
+            "upgrade": 0
+          },
+          {
+            "id": "STOMP",
+            "upgrade": 0
+          }
+        ]
+      }
+    },
+    "synthetic": true,
+    "natural_reachability": "unknown"
+  },
+  "versions": {
+    "sampler": "m1-d1-v1",
+    "policy": "M1-F2-discard-v1",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "solver_sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+    "solver": "0.51.5-e3f.1",
+    "headless_sha256": "4c39f9b5148d88687ab8827ce9abada65ca86bbbc29ae8f7f8776123425d17c1",
+    "coreclr": "9.0.7",
+    "native_identity": "15cad967b2dd2432a84b0d28d739f823c68e1cbe12221c3938d010e49860f0c1",
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3"
+  },
+  "lifecycle": [
+    {
+      "id": "n2a-cost-01",
+      "root_sha256": "14730390707ae35dd573b00c7cc8c36d3a28fb0d1aa7994b95dd9d82ecf62b32",
+      "loaded": {
+        "type": "solver_identity",
+        "version": "0.51.5-e3f.1+3b3fd97556a5b32d7fdb20efd4294cd07cc6ce6b",
+        "sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+        "mode": "offline-teacher",
+        "schema_version": 1,
+        "peak_working_set_bytes": 47951872
+      },
+      "launch_ms": 144.68310005031526,
+      "build": {
+        "handshake_ms": 99.27839995361865,
+        "initialize_ms": 759.9553000181913,
+        "snapshot_ms": 48.86729991994798,
+        "root_ms": 908.100999891758,
+        "peak_working_set_bytes": 107724800
+      },
+      "recycle_ms": 70.49879990518093
+    },
+    {
+      "id": "n2a-cost-01",
+      "root_sha256": "14730390707ae35dd573b00c7cc8c36d3a28fb0d1aa7994b95dd9d82ecf62b32",
+      "loaded": {
+        "type": "solver_identity",
+        "version": "0.51.5-e3f.1+3b3fd97556a5b32d7fdb20efd4294cd07cc6ce6b",
+        "sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+        "mode": "offline-teacher",
+        "schema_version": 1,
+        "peak_working_set_bytes": 48025600
+      },
+      "launch_ms": 301.5084001235664,
+      "build": {
+        "handshake_ms": 223.95789995789528,
+        "initialize_ms": 1644.3735999055207,
+        "snapshot_ms": 153.82910007610917,
+        "root_ms": 2022.1605999395251,
+        "peak_working_set_bytes": 109039616
+      },
+      "recycle_ms": 41.287500178441405
+    }
+  ],
+  "rejections": [
+    "ArgumentException: Stale action position",
+    "ArgumentException: Action index outside current menu"
+  ],
+  "wire": {
+    "turn": 1,
+    "hp": 70,
+    "block": 0,
+    "energy": 3,
+    "draw_count": 3,
+    "hand": [
+      {
+        "index": 0,
+        "id": "STOMP",
+        "upgrade": 0
+      },
+      {
+        "index": 1,
+        "id": "STOMP",
+        "upgrade": 0
+      },
+      {
+        "index": 2,
+        "id": "STOMP",
+        "upgrade": 0
+      },
+      {
+        "index": 3,
+        "id": "STOMP",
+        "upgrade": 0
+      },
+      {
+        "index": 4,
+        "id": "STRIKE_IRONCLAD",
+        "upgrade": 0
+      }
+    ],
+    "enemies": [
+      {
+        "index": 0,
+        "hp": 39,
+        "block": 0
+      }
+    ],
+    "actions": [
+      {
+        "index": 0,
+        "card": 0,
+        "cost": 3
+      },
+      {
+        "index": 1,
+        "card": 1,
+        "cost": 3
+      },
+      {
+        "index": 2,
+        "card": 2,
+        "cost": 3
+      },
+      {
+        "index": 3,
+        "card": 3,
+        "cost": 3
+      },
+      {
+        "index": 4,
+        "card": 4,
+        "target": 0,
+        "cost": 1
+      },
+      {
+        "index": 5
+      }
+    ]
+  },
+  "before": {
+    "turn": 1,
+    "hp": 70,
+    "block": 0,
+    "energy": 3,
+    "draw_count": 3,
+    "hand": [
+      {
+        "index": 0,
+        "id": "STOMP",
+        "upgrade": 0
+      },
+      {
+        "index": 1,
+        "id": "STOMP",
+        "upgrade": 0
+      },
+      {
+        "index": 2,
+        "id": "STOMP",
+        "upgrade": 0
+      },
+      {
+        "index": 3,
+        "id": "STOMP",
+        "upgrade": 0
+      },
+      {
+        "index": 4,
+        "id": "STRIKE_IRONCLAD",
+        "upgrade": 0
+      }
+    ],
+    "enemies": [
+      {
+        "index": 0,
+        "hp": 39,
+        "block": 0
+      }
+    ],
+    "actions": [
+      {
+        "index": 0,
+        "card": 0,
+        "target": null,
+        "cost": 3
+      },
+      {
+        "index": 1,
+        "card": 1,
+        "target": null,
+        "cost": 3
+      },
+      {
+        "index": 2,
+        "card": 2,
+        "target": null,
+        "cost": 3
+      },
+      {
+        "index": 3,
+        "card": 3,
+        "target": null,
+        "cost": 3
+      },
+      {
+        "index": 4,
+        "card": 4,
+        "target": 0,
+        "cost": 1
+      },
+      {
+        "index": 5,
+        "card": null,
+        "target": null,
+        "cost": null
+      }
+    ]
+  },
+  "after": {
+    "turn": 1,
+    "hp": 70,
+    "block": 0,
+    "energy": 2,
+    "draw_count": 3,
+    "hand": [
+      {
+        "index": 0,
+        "id": "STOMP",
+        "upgrade": 0
+      },
+      {
+        "index": 1,
+        "id": "STOMP",
+        "upgrade": 0
+      },
+      {
+        "index": 2,
+        "id": "STOMP",
+        "upgrade": 0
+      },
+      {
+        "index": 3,
+        "id": "STOMP",
+        "upgrade": 0
+      }
+    ],
+    "enemies": [
+      {
+        "index": 0,
+        "hp": 33,
+        "block": 0
+      }
+    ],
+    "actions": [
+      {
+        "index": 0,
+        "card": 0,
+        "target": null,
+        "cost": 2
+      },
+      {
+        "index": 1,
+        "card": 1,
+        "target": null,
+        "cost": 2
+      },
+      {
+        "index": 2,
+        "card": 2,
+        "target": null,
+        "cost": 2
+      },
+      {
+        "index": 3,
+        "card": 3,
+        "target": null,
+        "cost": 2
+      },
+      {
+        "index": 4,
+        "card": null,
+        "target": null,
+        "cost": null
+      }
+    ]
+  },
+  "action": {
+    "action": "play_card",
+    "args": {
+      "card_index": 4,
+      "target_index": 0
+    }
+  },
+  "before_diff": {},
+  "after_diff": {},
+  "native": [
+    {
+      "decision": "combat_play",
+      "hand": [
+        [
+          "CARD.STOMP",
+          3
+        ],
+        [
+          "CARD.STOMP",
+          3
+        ],
+        [
+          "CARD.STOMP",
+          3
+        ],
+        [
+          "CARD.STOMP",
+          3
+        ],
+        [
+          "CARD.STRIKE_IRONCLAD",
+          1
+        ]
+      ]
+    },
+    {
+      "decision": "combat_play",
+      "hand": [
+        [
+          "CARD.STOMP",
+          2
+        ],
+        [
+          "CARD.STOMP",
+          2
+        ],
+        [
+          "CARD.STOMP",
+          2
+        ],
+        [
+          "CARD.STOMP",
+          2
+        ]
+      ]
+    }
+  ]
+}

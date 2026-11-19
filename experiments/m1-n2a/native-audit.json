@@ -1,0 +1,241 @@
+{
+  "versions": {
+    "sampler": "m1-d1-v1",
+    "policy": "M1-F2-discard-v1",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "solver_sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+    "solver": "0.51.5-e3f.1",
+    "headless_sha256": "4c39f9b5148d88687ab8827ce9abada65ca86bbbc29ae8f7f8776123425d17c1",
+    "coreclr": "9.0.7",
+    "native_identity": "15cad967b2dd2432a84b0d28d739f823c68e1cbe12221c3938d010e49860f0c1",
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3"
+  },
+  "lifecycle": [
+    {
+      "id": "e1343abeef1ac5726fd9be0aad902b4d7d1df11c0b8adaeadf93c9853019feff",
+      "root_sha256": "65c9a24a4b543429025c2c2fa93086a50048e0460624b377d00a15b42e941d8f",
+      "loaded": {
+        "type": "solver_identity",
+        "version": "0.51.5-e3f.1+3b3fd97556a5b32d7fdb20efd4294cd07cc6ce6b",
+        "sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+        "mode": "offline-teacher",
+        "schema_version": 1,
+        "peak_working_set_bytes": 48242688
+      },
+      "launch_ms": 405.544999986887,
+      "build": {
+        "handshake_ms": 285.5082000605762,
+        "initialize_ms": 1585.6675999239087,
+        "snapshot_ms": 118.58489993028343,
+        "root_ms": 1989.7606999147683,
+        "peak_working_set_bytes": 109240320
+      },
+      "recycle_ms": 31.718499958515167
+    },
+    {
+      "id": "15f2becb2fabf4e886ac059ae08b8ad8a97199933da73fb5bb5d3d550bd86eeb",
+      "root_sha256": "187c27a6ee747b40742688d61d75ca5d7fab96b8a8766e890ba841ef4c285044",
+      "loaded": {
+        "type": "solver_identity",
+        "version": "0.51.5-e3f.1+3b3fd97556a5b32d7fdb20efd4294cd07cc6ce6b",
+        "sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+        "mode": "offline-teacher",
+        "schema_version": 1,
+        "peak_working_set_bytes": 48099328
+      },
+      "launch_ms": 296.93079995922744,
+      "build": {
+        "handshake_ms": 216.03989996947348,
+        "initialize_ms": 1874.915499938652,
+        "snapshot_ms": 119.8575000744313,
+        "root_ms": 2210.8128999825567,
+        "peak_working_set_bytes": 109449216
+      },
+      "recycle_ms": 42.847400065511465
+    },
+    {
+      "id": "f2f29fd990637955",
+      "root_sha256": "6e953bc8018a6a6b35dcd553baf60b11e28a24363dfc8d12398d71030c7c8632",
+      "loaded": {
+        "type": "solver_identity",
+        "version": "0.51.5-e3f.1+3b3fd97556a5b32d7fdb20efd4294cd07cc6ce6b",
+        "sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+        "mode": "offline-teacher",
+        "schema_version": 1,
+        "peak_working_set_bytes": 48062464
+      },
+      "launch_ms": 431.5942001994699,
+      "build": {
+        "handshake_ms": 324.2409999947995,
+        "initialize_ms": 1470.438500167802,
+        "snapshot_ms": 69.06679994426668,
+        "root_ms": 1863.7463001068681,
+        "peak_working_set_bytes": 108253184
+      },
+      "recycle_ms": 36.554599879309535
+    },
+    {
+      "id": "69df6f1761f490c55d325a428b2927fe9fb08752f2043361e92f180f13e1702f",
+      "root_sha256": "ac599d8627b790ff0cb59ca935e48443a5210c57dc82a2c291e12c5dca3cb7fb",
+      "loaded": {
+        "type": "solver_identity",
+        "version": "0.51.5-e3f.1+3b3fd97556a5b32d7fdb20efd4294cd07cc6ce6b",
+        "sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+        "mode": "offline-teacher",
+        "schema_version": 1,
+        "peak_working_set_bytes": 48164864
+      },
+      "launch_ms": 248.3648001216352,
+      "build": {
+        "handshake_ms": 185.1576000917703,
+        "initialize_ms": 1061.2240999471396,
+        "snapshot_ms": 67.62089999392629,
+        "root_ms": 1314.0026000328362,
+        "peak_working_set_bytes": 108318720
+      },
+      "recycle_ms": 25.64919996075332
+    }
+  ],
+  "rows": [
+    {
+      "id": "e1343abeef1ac5726fd9be0aad902b4d7d1df11c0b8adaeadf93c9853019feff",
+      "elapsed_ms": 2537.759499857202,
+      "status": "terminal_difference",
+      "checked": 8,
+      "expected": {
+        "status": "predicted_win",
+        "hp": 63,
+        "gold": 99,
+        "max_hp": 80,
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "hp_lost": 7
+      },
+      "native": {
+        "status": "predicted_win",
+        "hp": 63,
+        "gold": 113,
+        "max_hp": 80,
+        "potions": [
+          "ASHWATER",
+          null,
+          null
+        ],
+        "hp_lost": 7
+      },
+      "evidence": "public_diff_only"
+    },
+    {
+      "id": "15f2becb2fabf4e886ac059ae08b8ad8a97199933da73fb5bb5d3d550bd86eeb",
+      "elapsed_ms": 2656.0745001770556,
+      "status": "terminal_difference",
+      "checked": 15,
+      "expected": {
+        "status": "predicted_win",
+        "hp": 47,
+        "gold": 99,
+        "max_hp": 70,
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "hp_lost": 8
+      },
+      "native": {
+        "status": "predicted_win",
+        "hp": 47,
+        "gold": 118,
+        "max_hp": 70,
+        "potions": [
+          "WEAK_POTION",
+          null,
+          null
+        ],
+        "hp_lost": 8
+      },
+      "evidence": "public_diff_only"
+    },
+    {
+      "id": "f2f29fd990637955",
+      "elapsed_ms": 2188.6197000276297,
+      "status": "public_and_outcome_match",
+      "checked": 11,
+      "expected": {
+        "status": "death",
+        "hp": 0,
+        "gold": 99,
+        "max_hp": 80,
+        "potions": [
+          "FLEX_POTION",
+          null,
+          null
+        ],
+        "hp_lost": 49
+      },
+      "native": {
+        "status": "death",
+        "hp": 0,
+        "gold": 99,
+        "max_hp": 80,
+        "potions": [
+          "FLEX_POTION",
+          null,
+          null
+        ],
+        "hp_lost": 49
+      },
+      "evidence": "public_diff_only"
+    },
+    {
+      "id": "69df6f1761f490c55d325a428b2927fe9fb08752f2043361e92f180f13e1702f",
+      "elapsed_ms": 1525.2139999065548,
+      "status": "prediction_boundary",
+      "checked": 8,
+      "native": "combat_play",
+      "predicted": {
+        "status": "unsupported",
+        "transitions": 8,
+        "actions": 8,
+        "observe_ms": 4.699100000000001,
+        "replay_ms": 248.42759999999998,
+        "advance_ms": 253.0342,
+        "result": {
+          "hp": 49,
+          "cumulative_loss": 0,
+          "boundary": "PendingChoice",
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "energy": 0,
+          "max_hp": 70,
+          "gold": 99,
+          "gaps": [
+            "DODGE_AND_ROLL.OnPlay: MethodMirrorIncomplete",
+            "SLICE.OnPlay: MethodMirrorIncomplete",
+            "SURVIVOR.OnPlay: MethodMirrorIncomplete"
+          ],
+          "evidence": "prediction_only"
+        }
+      },
+      "outcome": {
+        "initial_hp": 49,
+        "final_hp": 49,
+        "hp_lost": 0,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": false,
+        "survived": true,
+        "final_enemy_hp": 35,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      }
+    }
+  ]
+}
