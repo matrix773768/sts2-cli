@@ -6,7 +6,7 @@
 
 本文补充 [PROJECT_VISION.md](PROJECT_VISION.md)、[research-direction-and-value-model.md](research-direction-and-value-model.md) 和 [research-nosl-policy-learning-roadmap.md](research-nosl-policy-learning-roadmap.md)。
 
-> **路线更新（2026-11-19）：** 新的实施优先级以 [学习驱动战斗搜索主线](research-learning-guided-combat-search.md) 为准。N2F-A 和 N2F-A.2 已完成但未验证机制模型稳定优于简单统计；旧的“固定 initial-mean 的卡组战斗结果预测→战斗策略学习→搜索接入”仅作为历史研究设计保留，**不再构成后续研发门槛**。优先建立 N2E 机制表示 + 搜索经验 + 学习排序 + F3B/F4 可关闭接入 + 端到端质量成本对照。**最终目标仍是在正常 Save/Load（SL）规则、明确算力预算与未见种子下，提高完整跑局通关胜率**；共享卡牌表示是服务该目标的一种待验证架构，并不替代高性能 CombatSolver、局内合法搜索或局外规划。
+> **最新架构共识（2026-11-19，LS2B 后）：** 以 [端口驱动 NOSL–SL 双层决策架构](research-port-aware-nosl-sl-architecture.md) 为长期学习架构依据。模型应学习卡牌机制的条件组合、先后顺序与行动长期价值；输出/防御/运转是可解释的时序归纳偏置，不强制把游戏压缩成三个分数；NOSL 直接基于合法公开历史与动作菜单决策，SL 使用相同策略引导合法试探、修复与质量优化。LS1/LS2A/LS2B 的排序、规模化采样和 StrategySpec 工程均已完成首轮，**但不能据此认为旧四战略或结构化脚本是最终模型必经层**。本文早期 N2E→N2F→N2G 的固定策略评价顺序保留为历史假设，不再是前置门槛。最终目标仍是正常 SL、固定成本、独立完整跑局表现；当前不宣称已训练该新 NOSL 网络。
 
 ## 1. 问题重构：战斗出牌和局外加牌并非独立任务
 
