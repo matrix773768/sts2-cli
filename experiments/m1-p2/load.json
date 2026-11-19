@@ -1,0 +1,830 @@
+{
+  "versions": {
+    "sampler": "m1-d1-v1",
+    "policy": "M1-F2-discard-v1",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "solver_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13",
+    "solver": "0.51.5/78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+    "headless_sha256": "30536764e5a0b1893ab784d91b155655f1fe6b790cdbd0b05b2f53ed15de8ff8",
+    "coreclr": "9.0.7",
+    "native_identity": "8e6e7ba85dc8104687fc85d05a0eb604a2298989d8ba8b2a5fb256b59dfdc0f0",
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+    "synthetic_spec": 2,
+    "initializer": "m1-s2a-v1"
+  },
+  "cases": [
+    "7f4b207728e6090c3cbdac41c7fcf1762b220c83dcb717aa23638e630b42697d",
+    "1704146a4590e98927a96b51420f3536ae950dba443e9c5005ab05358e6eea1f",
+    "2f816c5a296fbefdd9c0fb388a885da4f6fcc1a8fa1751153571dd8cd4f831c8",
+    "0348b72e4ff6847b037dc470777b74d7e2682e764f0c8e4351b40e9656f9534e",
+    "1d7d206a30c9503ea6db49813ba16f46a07401a4da26ae0b43afe659387d63e5",
+    "489913d399a20a7b4c53c3a6146ac3f571a642eb11b3d72b35500953db655369"
+  ],
+  "batches": [
+    {
+      "workers": 1,
+      "rows": [
+        {
+          "root_id": "synthetic-fccb9ab0d691a7826f4c365bc4d2a1f3f8e6c4a0806e3f691cea504bcc7c2e27",
+          "phase": "complete",
+          "pid": 37604,
+          "root": {
+            "handshake_ms": 240.13860011473298,
+            "initialize_ms": 1663.7699999846518,
+            "snapshot_ms": 130.59589988552034,
+            "root_ms": 2034.5044999849051,
+            "peak_working_set_bytes": 99815424
+          },
+          "prediction_prepare_ms": 555.8153,
+          "hot_ms": 310.5322,
+          "cpu_ms": 281.25,
+          "transitions": 5,
+          "peak_working_set_bytes": 118771712,
+          "status": "predicted_win",
+          "release_ms": 24.199699983000755,
+          "elapsed_ms": 3042.43309982121,
+          "request_ms": {
+            "synthetic_start": 1663.7639000546187,
+            "synthetic_snapshot": 116.27070000395179,
+            "f1_begin": 14.31540003977716,
+            "f1_audit": 7.904999889433384,
+            "i1_f3b": 947.0994998700917
+          },
+          "exit_code": 0,
+          "prediction_difference": [],
+          "root_stamp": "fba0764b00dfa3bbef09558318621be2dfe2a08463ade3059f96a63c73468273",
+          "winner_key": "3dfa34f7225e4d1ebf63d8befcbe74066e55c0129101b8708a848db217bd769d",
+          "route_and_frames_sha256": "929ed83944c39735042d63ba0d38bdd48a3f4b0a3fe73e644ee5d2bef9e7af48"
+        },
+        {
+          "root_id": "synthetic-e4f7df7651595bd90f947f981e455ecb8b033273ec82ba6222af2cf5441dbb74",
+          "phase": "complete",
+          "pid": 21720,
+          "root": {
+            "handshake_ms": 244.57779992371798,
+            "initialize_ms": 1670.6932000815868,
+            "snapshot_ms": 143.0889000184834,
+            "root_ms": 2058.359900023788,
+            "peak_working_set_bytes": 99946496
+          },
+          "prediction_prepare_ms": 534.0279,
+          "hot_ms": 360.8064,
+          "cpu_ms": 328.125,
+          "transitions": 11,
+          "peak_working_set_bytes": 122449920,
+          "status": "predicted_win",
+          "release_ms": 3066.8191998265684,
+          "elapsed_ms": 3149.98700004071,
+          "request_ms": {
+            "synthetic_start": 1670.684800017625,
+            "synthetic_snapshot": 135.2534000761807,
+            "f1_begin": 11.954700108617544,
+            "f1_unpatch_neutralize": 20.086299860849977,
+            "f1_audit": 7.3148999363183975,
+            "i1_f3b": 998.3000999782234
+          },
+          "exit_code": 0,
+          "prediction_difference": [],
+          "root_stamp": "85c3082e1e072d1888fea2db94f90da0b10ce75538c1a08de0bf1f81c0f59089",
+          "winner_key": "b9df69e327426214e958040942aea81a255352995dc2e62b76e2c3d4f76a06cb",
+          "route_and_frames_sha256": "a85025079b48c00404eb8834c9cd70a3a0452b3edd00103f73a1c4067c83d7ba"
+        },
+        {
+          "root_id": "synthetic-ab3bb70ac5181db6eefa99f3a8dd70b2f64324c0d43517a2d153b5b4bda3deb5",
+          "phase": "complete",
+          "pid": 27532,
+          "root": {
+            "handshake_ms": 216.01830003783107,
+            "initialize_ms": 1673.980199964717,
+            "snapshot_ms": 121.14230007864535,
+            "root_ms": 2011.1408000811934,
+            "peak_working_set_bytes": 100118528
+          },
+          "prediction_prepare_ms": 534.8954,
+          "hot_ms": 522.3696,
+          "cpu_ms": 421.875,
+          "transitions": 7,
+          "peak_working_set_bytes": 119382016,
+          "status": "predicted_win",
+          "release_ms": 6217.465800000355,
+          "elapsed_ms": 3275.683900108561,
+          "request_ms": {
+            "synthetic_start": 1673.9743000362068,
+            "synthetic_snapshot": 108.96559990942478,
+            "f1_begin": 12.161500053480268,
+            "f1_audit": 9.39609995111823,
+            "i1_f3b": 1168.7715000007302
+          },
+          "exit_code": 0,
+          "prediction_difference": [],
+          "root_stamp": "90b2478e72b6956a59f776bb368c5c5d1d736f95e926af4e808f7165dc63aa68",
+          "winner_key": "0688551daea7c9c7fda40e1a0fb0733e6bd553faecbc8128bc15ccbdde19cdc1",
+          "route_and_frames_sha256": "18443f703573d45aa80e5a5bfb3efff2797397361c0144cdff2c5ea1fb5ecd11"
+        },
+        {
+          "root_id": "synthetic-6d25d8ee799a621edaf69ab5202b258d77b2f88d294b1815b765fafa8830d36e",
+          "phase": "complete",
+          "pid": 31856,
+          "root": {
+            "handshake_ms": 228.6531999707222,
+            "initialize_ms": 1780.1735999528319,
+            "snapshot_ms": 103.23840007185936,
+            "root_ms": 2112.0651999954134,
+            "peak_working_set_bytes": 100470784
+          },
+          "prediction_prepare_ms": 745.3947,
+          "hot_ms": 472.6748,
+          "cpu_ms": 468.75,
+          "transitions": 17,
+          "peak_working_set_bytes": 123506688,
+          "status": "predicted_win",
+          "release_ms": 9493.280799826607,
+          "elapsed_ms": 3542.8396000061184,
+          "request_ms": {
+            "synthetic_start": 1780.1667000167072,
+            "synthetic_snapshot": 92.1282998751849,
+            "f1_begin": 11.097599985077977,
+            "f1_audit": 8.426400134339929,
+            "i1_f3b": 1327.265900094062
+          },
+          "exit_code": 0,
+          "prediction_difference": [],
+          "root_stamp": "6af0cfe0a262b582aa11133dddfe684b1fcccfdee5fa4db098140e9118012714",
+          "winner_key": "3b4fc1f1f77226db11cd56ee95fe5adff0356f500697a85c389adcbd70482f0b",
+          "route_and_frames_sha256": "f0acb9c455ecb4e1d9506b4072dfff048cf1faa44dd1c44c269bb40fc290989c"
+        },
+        {
+          "root_id": "synthetic-6037aa7346c05bb30d91d3fd93bfde20dc67bf726c50c1c16276549bbd7a54a3",
+          "phase": "complete",
+          "pid": 43252,
+          "root": {
+            "handshake_ms": 274.09379999153316,
+            "initialize_ms": 1910.9813999384642,
+            "snapshot_ms": 123.06519993580878,
+            "root_ms": 2308.140399865806,
+            "peak_working_set_bytes": 101056512
+          },
+          "prediction_prepare_ms": 666.2053,
+          "hot_ms": 782.611,
+          "cpu_ms": 703.125,
+          "transitions": 21,
+          "peak_working_set_bytes": 124039168,
+          "status": "predicted_win",
+          "release_ms": 13036.26889991574,
+          "elapsed_ms": 4019.801199901849,
+          "request_ms": {
+            "synthetic_start": 1910.975300008431,
+            "synthetic_snapshot": 111.69699998572469,
+            "f1_begin": 11.356999864801764,
+            "f1_audit": 7.147499825805426,
+            "i1_f3b": 1620.6096999812871
+          },
+          "exit_code": 0,
+          "prediction_difference": [],
+          "root_stamp": "026e5624eaf2f7ffc7251656e501ffc49c5838428b4c6c0074a2baec91a03640",
+          "winner_key": "81ebb50854196a316d449ffa2773317f2a0630f7f80856ba058976f53219d510",
+          "route_and_frames_sha256": "faced74af374e82ae20c9e2433474fdf26af0fdf649d752f3a1b94cce8590af0"
+        },
+        {
+          "root_id": "synthetic-bc9e7d0028fdc66632c803f66ea9ce4b3a36fa3d6887cb410f863750cba1bc1c",
+          "phase": "complete",
+          "pid": 36484,
+          "root": {
+            "handshake_ms": 244.04720007441938,
+            "initialize_ms": 1662.3566001653671,
+            "snapshot_ms": 158.40239985845983,
+            "root_ms": 2064.8062000982463,
+            "peak_working_set_bytes": 100376576
+          },
+          "prediction_prepare_ms": 570.7668,
+          "hot_ms": 641.6789,
+          "cpu_ms": 437.5,
+          "transitions": 40,
+          "peak_working_set_bytes": 123375616,
+          "status": "predicted_win",
+          "release_ms": 17056.226499844342,
+          "elapsed_ms": 3517.516499850899,
+          "request_ms": {
+            "synthetic_start": 1662.349499994889,
+            "synthetic_snapshot": 144.62699997238815,
+            "f1_begin": 13.764000032097101,
+            "f1_audit": 9.415399981662631,
+            "i1_f3b": 1322.73850007914
+          },
+          "exit_code": 0,
+          "prediction_difference": [],
+          "root_stamp": "e4b432bfe069b80cdcdb76f8e32ac839299a9a8084cd3eaf953962623e425f5f",
+          "winner_key": "051b2e04a3af0037b6d293884db853071a87151007116612fea46ad3903f62eb",
+          "route_and_frames_sha256": "d48c47b758902e63c29eb4d2a70ae95529ac6a0cc35665f2d9cc9392ad505af2"
+        }
+      ],
+      "elapsed_ms": 20588.844100013375,
+      "peak_working_set_bytes": 125853696,
+      "samples": 712
+    },
+    {
+      "workers": 6,
+      "rows": [
+        {
+          "root_id": "synthetic-fccb9ab0d691a7826f4c365bc4d2a1f3f8e6c4a0806e3f691cea504bcc7c2e27",
+          "phase": "complete",
+          "pid": 36032,
+          "root": {
+            "handshake_ms": 331.6164000425488,
+            "initialize_ms": 1997.417600126937,
+            "snapshot_ms": 131.14989991299808,
+            "root_ms": 2460.183900082484,
+            "peak_working_set_bytes": 99966976
+          },
+          "prediction_prepare_ms": 727.5333,
+          "hot_ms": 699.2911,
+          "cpu_ms": 593.75,
+          "transitions": 5,
+          "peak_working_set_bytes": 118796288,
+          "status": "predicted_win",
+          "release_ms": 9.753999998793006,
+          "elapsed_ms": 4097.468399908394,
+          "request_ms": {
+            "synthetic_start": 1997.408000053838,
+            "synthetic_snapshot": 112.77679982595146,
+            "f1_begin": 18.357899971306324,
+            "f1_audit": 10.51799999549985,
+            "i1_f3b": 1564.443500014022
+          },
+          "exit_code": 0,
+          "prediction_difference": [],
+          "root_stamp": "fba0764b00dfa3bbef09558318621be2dfe2a08463ade3059f96a63c73468273",
+          "winner_key": "3dfa34f7225e4d1ebf63d8befcbe74066e55c0129101b8708a848db217bd769d",
+          "route_and_frames_sha256": "929ed83944c39735042d63ba0d38bdd48a3f4b0a3fe73e644ee5d2bef9e7af48"
+        },
+        {
+          "root_id": "synthetic-e4f7df7651595bd90f947f981e455ecb8b033273ec82ba6222af2cf5441dbb74",
+          "phase": "complete",
+          "pid": 18028,
+          "root": {
+            "handshake_ms": 329.3429999612272,
+            "initialize_ms": 2097.6947001181543,
+            "snapshot_ms": 167.86299995146692,
+            "root_ms": 2594.9007000308484,
+            "peak_working_set_bytes": 100356096
+          },
+          "prediction_prepare_ms": 904.0192,
+          "hot_ms": 712.8678,
+          "cpu_ms": 671.875,
+          "transitions": 11,
+          "peak_working_set_bytes": 121946112,
+          "status": "predicted_win",
+          "release_ms": 14.90250020287931,
+          "elapsed_ms": 4498.332600109279,
+          "request_ms": {
+            "synthetic_start": 2097.6845000404865,
+            "synthetic_snapshot": 130.33349998295307,
+            "f1_begin": 42.959799990057945,
+            "f1_unpatch_neutralize": 56.37550004757941,
+            "f1_audit": 8.761100005358458,
+            "i1_f3b": 1766.8560999445617
+          },
+          "exit_code": 0,
+          "prediction_difference": [],
+          "root_stamp": "85c3082e1e072d1888fea2db94f90da0b10ce75538c1a08de0bf1f81c0f59089",
+          "winner_key": "b9df69e327426214e958040942aea81a255352995dc2e62b76e2c3d4f76a06cb",
+          "route_and_frames_sha256": "a85025079b48c00404eb8834c9cd70a3a0452b3edd00103f73a1c4067c83d7ba"
+        },
+        {
+          "root_id": "synthetic-ab3bb70ac5181db6eefa99f3a8dd70b2f64324c0d43517a2d153b5b4bda3deb5",
+          "phase": "complete",
+          "pid": 39016,
+          "root": {
+            "handshake_ms": 445.32359996810555,
+            "initialize_ms": 1970.3801001887769,
+            "snapshot_ms": 143.03030003793538,
+            "root_ms": 2558.734000194818,
+            "peak_working_set_bytes": 100610048
+          },
+          "prediction_prepare_ms": 843.9218,
+          "hot_ms": 657.5967,
+          "cpu_ms": 593.75,
+          "transitions": 7,
+          "peak_working_set_bytes": 119877632,
+          "status": "predicted_win",
+          "release_ms": 10.040700202807784,
+          "elapsed_ms": 4280.85509990342,
+          "request_ms": {
+            "synthetic_start": 1970.3691001050174,
+            "synthetic_snapshot": 125.9958001319319,
+            "f1_begin": 17.020799918100238,
+            "f1_audit": 35.02690000459552,
+            "i1_f3b": 1623.2352000661194
+          },
+          "exit_code": 0,
+          "prediction_difference": [],
+          "root_stamp": "90b2478e72b6956a59f776bb368c5c5d1d736f95e926af4e808f7165dc63aa68",
+          "winner_key": "0688551daea7c9c7fda40e1a0fb0733e6bd553faecbc8128bc15ccbdde19cdc1",
+          "route_and_frames_sha256": "18443f703573d45aa80e5a5bfb3efff2797397361c0144cdff2c5ea1fb5ecd11"
+        },
+        {
+          "root_id": "synthetic-6d25d8ee799a621edaf69ab5202b258d77b2f88d294b1815b765fafa8830d36e",
+          "phase": "complete",
+          "pid": 12428,
+          "root": {
+            "handshake_ms": 331.1075000092387,
+            "initialize_ms": 2047.1856000367552,
+            "snapshot_ms": 146.68499981053174,
+            "root_ms": 2524.9780998565257,
+            "peak_working_set_bytes": 100413440
+          },
+          "prediction_prepare_ms": 875.7994,
+          "hot_ms": 735.1456,
+          "cpu_ms": 671.875,
+          "transitions": 17,
+          "peak_working_set_bytes": 123273216,
+          "status": "predicted_win",
+          "release_ms": 13.748100027441978,
+          "elapsed_ms": 4346.551300026476,
+          "request_ms": {
+            "synthetic_start": 2047.1765000838786,
+            "synthetic_snapshot": 117.93849989771843,
+            "f1_begin": 28.73130002990365,
+            "f1_audit": 9.444999974220991,
+            "i1_f3b": 1750.7154999766499
+          },
+          "exit_code": 0,
+          "prediction_difference": [],
+          "root_stamp": "6af0cfe0a262b582aa11133dddfe684b1fcccfdee5fa4db098140e9118012714",
+          "winner_key": "3b4fc1f1f77226db11cd56ee95fe5adff0356f500697a85c389adcbd70482f0b",
+          "route_and_frames_sha256": "f0acb9c455ecb4e1d9506b4072dfff048cf1faa44dd1c44c269bb40fc290989c"
+        },
+        {
+          "root_id": "synthetic-6037aa7346c05bb30d91d3fd93bfde20dc67bf726c50c1c16276549bbd7a54a3",
+          "phase": "complete",
+          "pid": 34944,
+          "root": {
+            "handshake_ms": 331.254499964416,
+            "initialize_ms": 1961.1066000070423,
+            "snapshot_ms": 148.11700000427663,
+            "root_ms": 2440.478099975735,
+            "peak_working_set_bytes": 100519936
+          },
+          "prediction_prepare_ms": 824.4555,
+          "hot_ms": 765.0602,
+          "cpu_ms": 703.125,
+          "transitions": 21,
+          "peak_working_set_bytes": 123596800,
+          "status": "predicted_win",
+          "release_ms": 15.751500148326159,
+          "elapsed_ms": 4243.159599835053,
+          "request_ms": {
+            "synthetic_start": 1961.09710005112,
+            "synthetic_snapshot": 126.67059991508722,
+            "f1_begin": 21.429399959743023,
+            "f1_audit": 15.697000082582235,
+            "i1_f3b": 1725.2702000550926
+          },
+          "exit_code": 0,
+          "prediction_difference": [],
+          "root_stamp": "026e5624eaf2f7ffc7251656e501ffc49c5838428b4c6c0074a2baec91a03640",
+          "winner_key": "81ebb50854196a316d449ffa2773317f2a0630f7f80856ba058976f53219d510",
+          "route_and_frames_sha256": "faced74af374e82ae20c9e2433474fdf26af0fdf649d752f3a1b94cce8590af0"
+        },
+        {
+          "root_id": "synthetic-bc9e7d0028fdc66632c803f66ea9ce4b3a36fa3d6887cb410f863750cba1bc1c",
+          "phase": "complete",
+          "pid": 30028,
+          "root": {
+            "handshake_ms": 458.2855999469757,
+            "initialize_ms": 1855.2316999994218,
+            "snapshot_ms": 158.3065998274833,
+            "root_ms": 2471.823899773881,
+            "peak_working_set_bytes": 100257792
+          },
+          "prediction_prepare_ms": 772.5619,
+          "hot_ms": 840.1163,
+          "cpu_ms": 734.375,
+          "transitions": 40,
+          "peak_working_set_bytes": 123400192,
+          "status": "predicted_win",
+          "release_ms": 9.200400207191706,
+          "elapsed_ms": 4341.907100053504,
+          "request_ms": {
+            "synthetic_start": 1855.2192999050021,
+            "synthetic_snapshot": 127.17840005643666,
+            "f1_begin": 31.11240011639893,
+            "f1_audit": 12.406599940732121,
+            "i1_f3b": 1765.790699981153
+          },
+          "exit_code": 0,
+          "prediction_difference": [],
+          "root_stamp": "e4b432bfe069b80cdcdb76f8e32ac839299a9a8084cd3eaf953962623e425f5f",
+          "winner_key": "051b2e04a3af0037b6d293884db853071a87151007116612fea46ad3903f62eb",
+          "route_and_frames_sha256": "d48c47b758902e63c29eb4d2a70ae95529ac6a0cc35665f2d9cc9392ad505af2"
+        }
+      ],
+      "elapsed_ms": 4530.879900092259,
+      "peak_working_set_bytes": 726036480,
+      "samples": 137
+    },
+    {
+      "workers": 2,
+      "rows": [
+        {
+          "root_id": "synthetic-fccb9ab0d691a7826f4c365bc4d2a1f3f8e6c4a0806e3f691cea504bcc7c2e27",
+          "phase": "complete",
+          "pid": 8672,
+          "root": {
+            "handshake_ms": 227.54059988074005,
+            "initialize_ms": 1730.8101998642087,
+            "snapshot_ms": 124.85899985767901,
+            "root_ms": 2083.2097996026278,
+            "peak_working_set_bytes": 99893248
+          },
+          "prediction_prepare_ms": 548.8195,
+          "hot_ms": 390.1442,
+          "cpu_ms": 359.375,
+          "transitions": 5,
+          "peak_working_set_bytes": 118861824,
+          "status": "predicted_win",
+          "release_ms": 3.8351998664438725,
+          "elapsed_ms": 3207.8028998803347,
+          "request_ms": {
+            "synthetic_start": 1730.8023001533002,
+            "synthetic_snapshot": 114.50199992395937,
+            "f1_begin": 10.34579984843731,
+            "f1_audit": 6.446699844673276,
+            "i1_f3b": 1061.1572000198066
+          },
+          "exit_code": 0,
+          "prediction_difference": [],
+          "root_stamp": "fba0764b00dfa3bbef09558318621be2dfe2a08463ade3059f96a63c73468273",
+          "winner_key": "3dfa34f7225e4d1ebf63d8befcbe74066e55c0129101b8708a848db217bd769d",
+          "route_and_frames_sha256": "929ed83944c39735042d63ba0d38bdd48a3f4b0a3fe73e644ee5d2bef9e7af48"
+        },
+        {
+          "root_id": "synthetic-e4f7df7651595bd90f947f981e455ecb8b033273ec82ba6222af2cf5441dbb74",
+          "phase": "complete",
+          "pid": 31660,
+          "root": {
+            "handshake_ms": 221.2197999469936,
+            "initialize_ms": 1795.9008999168873,
+            "snapshot_ms": 121.87990010716021,
+            "root_ms": 2139.000599971041,
+            "peak_working_set_bytes": 100184064
+          },
+          "prediction_prepare_ms": 569.8393,
+          "hot_ms": 489.2881,
+          "cpu_ms": 484.375,
+          "transitions": 11,
+          "peak_working_set_bytes": 122417152,
+          "status": "predicted_win",
+          "release_ms": 3.4042000770568848,
+          "elapsed_ms": 3424.0947999060154,
+          "request_ms": {
+            "synthetic_start": 1795.8937999792397,
+            "synthetic_snapshot": 114.60279999300838,
+            "f1_begin": 11.206700000911951,
+            "f1_unpatch_neutralize": 17.94199994765222,
+            "f1_audit": 6.983799859881401,
+            "i1_f3b": 1196.718699997291
+          },
+          "exit_code": 0,
+          "prediction_difference": [],
+          "root_stamp": "85c3082e1e072d1888fea2db94f90da0b10ce75538c1a08de0bf1f81c0f59089",
+          "winner_key": "b9df69e327426214e958040942aea81a255352995dc2e62b76e2c3d4f76a06cb",
+          "route_and_frames_sha256": "a85025079b48c00404eb8834c9cd70a3a0452b3edd00103f73a1c4067c83d7ba"
+        },
+        {
+          "root_id": "synthetic-ab3bb70ac5181db6eefa99f3a8dd70b2f64324c0d43517a2d153b5b4bda3deb5",
+          "phase": "complete",
+          "pid": 21788,
+          "root": {
+            "handshake_ms": 223.90479990281165,
+            "initialize_ms": 1844.8321998585016,
+            "snapshot_ms": 134.20720002613962,
+            "root_ms": 2202.944199787453,
+            "peak_working_set_bytes": 100356096
+          },
+          "prediction_prepare_ms": 676.793,
+          "hot_ms": 638.8756,
+          "cpu_ms": 531.25,
+          "transitions": 7,
+          "peak_working_set_bytes": 119672832,
+          "status": "predicted_win",
+          "release_ms": 3428.0439999420196,
+          "elapsed_ms": 3709.45919980295,
+          "request_ms": {
+            "synthetic_start": 1844.8255001567304,
+            "synthetic_snapshot": 121.68250000104308,
+            "f1_begin": 12.514699948951602,
+            "f1_audit": 8.645200170576572,
+            "i1_f3b": 1439.0769000165164
+          },
+          "exit_code": 0,
+          "prediction_difference": [],
+          "root_stamp": "90b2478e72b6956a59f776bb368c5c5d1d736f95e926af4e808f7165dc63aa68",
+          "winner_key": "0688551daea7c9c7fda40e1a0fb0733e6bd553faecbc8128bc15ccbdde19cdc1",
+          "route_and_frames_sha256": "18443f703573d45aa80e5a5bfb3efff2797397361c0144cdff2c5ea1fb5ecd11"
+        },
+        {
+          "root_id": "synthetic-6d25d8ee799a621edaf69ab5202b258d77b2f88d294b1815b765fafa8830d36e",
+          "phase": "complete",
+          "pid": 8384,
+          "root": {
+            "handshake_ms": 228.615399915725,
+            "initialize_ms": 1840.5253000091761,
+            "snapshot_ms": 129.88989986479282,
+            "root_ms": 2199.030599789694,
+            "peak_working_set_bytes": 100642816
+          },
+          "prediction_prepare_ms": 721.4894,
+          "hot_ms": 718.1667,
+          "cpu_ms": 562.5,
+          "transitions": 17,
+          "peak_working_set_bytes": 123412480,
+          "status": "predicted_win",
+          "release_ms": 3427.6618000585586,
+          "elapsed_ms": 3815.896699903533,
+          "request_ms": {
+            "synthetic_start": 1840.5140999238938,
+            "synthetic_snapshot": 116.01919983513653,
+            "f1_begin": 13.858099933713675,
+            "f1_audit": 7.195600075647235,
+            "i1_f3b": 1540.4209999833256
+          },
+          "exit_code": 0,
+          "prediction_difference": [],
+          "root_stamp": "6af0cfe0a262b582aa11133dddfe684b1fcccfdee5fa4db098140e9118012714",
+          "winner_key": "3b4fc1f1f77226db11cd56ee95fe5adff0356f500697a85c389adcbd70482f0b",
+          "route_and_frames_sha256": "f0acb9c455ecb4e1d9506b4072dfff048cf1faa44dd1c44c269bb40fc290989c"
+        },
+        {
+          "root_id": "synthetic-6037aa7346c05bb30d91d3fd93bfde20dc67bf726c50c1c16276549bbd7a54a3",
+          "phase": "complete",
+          "pid": 36000,
+          "root": {
+            "handshake_ms": 227.24759997799993,
+            "initialize_ms": 1657.2104999795556,
+            "snapshot_ms": 99.09669985063374,
+            "root_ms": 1983.5547998081893,
+            "peak_working_set_bytes": 100610048
+          },
+          "prediction_prepare_ms": 684.6409,
+          "hot_ms": 552.3888,
+          "cpu_ms": 468.75,
+          "transitions": 21,
+          "peak_working_set_bytes": 123686912,
+          "status": "predicted_win",
+          "release_ms": 7244.056999916211,
+          "elapsed_ms": 3413.60990004614,
+          "request_ms": {
+            "synthetic_start": 1657.2014999110252,
+            "synthetic_snapshot": 88.54390005581081,
+            "f1_begin": 10.542199946939945,
+            "f1_audit": 6.659799953922629,
+            "i1_f3b": 1369.8109001852572
+          },
+          "exit_code": 0,
+          "prediction_difference": [],
+          "root_stamp": "026e5624eaf2f7ffc7251656e501ffc49c5838428b4c6c0074a2baec91a03640",
+          "winner_key": "81ebb50854196a316d449ffa2773317f2a0630f7f80856ba058976f53219d510",
+          "route_and_frames_sha256": "faced74af374e82ae20c9e2433474fdf26af0fdf649d752f3a1b94cce8590af0"
+        },
+        {
+          "root_id": "synthetic-bc9e7d0028fdc66632c803f66ea9ce4b3a36fa3d6887cb410f863750cba1bc1c",
+          "phase": "complete",
+          "pid": 26244,
+          "root": {
+            "handshake_ms": 226.53200011700392,
+            "initialize_ms": 1658.3555000834167,
+            "snapshot_ms": 99.87240005284548,
+            "root_ms": 1984.759900253266,
+            "peak_working_set_bytes": 100532224
+          },
+          "prediction_prepare_ms": 683.8794,
+          "hot_ms": 671.4437,
+          "cpu_ms": 562.5,
+          "transitions": 40,
+          "peak_working_set_bytes": 123842560,
+          "status": "predicted_win",
+          "release_ms": 7243.7000998761505,
+          "elapsed_ms": 3553.688800195232,
+          "request_ms": {
+            "synthetic_start": 1658.3481000270694,
+            "synthetic_snapshot": 89.77800002321601,
+            "f1_begin": 10.084399953484535,
+            "f1_audit": 7.295999908819795,
+            "i1_f3b": 1471.107800025493
+          },
+          "exit_code": 0,
+          "prediction_difference": [],
+          "root_stamp": "e4b432bfe069b80cdcdb76f8e32ac839299a9a8084cd3eaf953962623e425f5f",
+          "winner_key": "051b2e04a3af0037b6d293884db853071a87151007116612fea46ad3903f62eb",
+          "route_and_frames_sha256": "d48c47b758902e63c29eb4d2a70ae95529ac6a0cc35665f2d9cc9392ad505af2"
+        }
+      ],
+      "elapsed_ms": 10818.78269999288,
+      "peak_working_set_bytes": 249634816,
+      "samples": 391
+    },
+    {
+      "workers": 6,
+      "rows": [
+        {
+          "root_id": "synthetic-fccb9ab0d691a7826f4c365bc4d2a1f3f8e6c4a0806e3f691cea504bcc7c2e27",
+          "phase": "complete",
+          "pid": 38240,
+          "root": {
+            "handshake_ms": 504.1998000815511,
+            "initialize_ms": 2098.719900008291,
+            "snapshot_ms": 105.07300007157028,
+            "root_ms": 2707.9927001614124,
+            "peak_working_set_bytes": 99934208
+          },
+          "prediction_prepare_ms": 1225.6634,
+          "hot_ms": 695.9973,
+          "cpu_ms": 640.625,
+          "transitions": 5,
+          "peak_working_set_bytes": 119197696,
+          "status": "predicted_win",
+          "release_ms": 8.54320009239018,
+          "elapsed_ms": 4849.291499936953,
+          "request_ms": {
+            "synthetic_start": 2098.71150017716,
+            "synthetic_snapshot": 92.7834000904113,
+            "f1_begin": 12.27479986846447,
+            "f1_audit": 8.047499926760793,
+            "i1_f3b": 2057.1382001508027
+          },
+          "exit_code": 0,
+          "prediction_difference": [],
+          "root_stamp": "fba0764b00dfa3bbef09558318621be2dfe2a08463ade3059f96a63c73468273",
+          "winner_key": "3dfa34f7225e4d1ebf63d8befcbe74066e55c0129101b8708a848db217bd769d",
+          "route_and_frames_sha256": "929ed83944c39735042d63ba0d38bdd48a3f4b0a3fe73e644ee5d2bef9e7af48"
+        },
+        {
+          "root_id": "synthetic-e4f7df7651595bd90f947f981e455ecb8b033273ec82ba6222af2cf5441dbb74",
+          "phase": "complete",
+          "pid": 18892,
+          "root": {
+            "handshake_ms": 507.7182000968605,
+            "initialize_ms": 2503.0920999124646,
+            "snapshot_ms": 311.79700000211596,
+            "root_ms": 3322.607300011441,
+            "peak_working_set_bytes": 101298176
+          },
+          "prediction_prepare_ms": 1284.8494,
+          "hot_ms": 658.1002,
+          "cpu_ms": 656.25,
+          "transitions": 11,
+          "peak_working_set_bytes": 123355136,
+          "status": "predicted_win",
+          "release_ms": 11.391300009563565,
+          "elapsed_ms": 5515.725399833173,
+          "request_ms": {
+            "synthetic_start": 2503.0815000645816,
+            "synthetic_snapshot": 199.44230001419783,
+            "f1_begin": 119.50189992785454,
+            "f1_unpatch_neutralize": 39.72200001589954,
+            "f1_audit": 11.001999955624342,
+            "i1_f3b": 2081.2362001743168
+          },
+          "exit_code": 0,
+          "prediction_difference": [],
+          "root_stamp": "85c3082e1e072d1888fea2db94f90da0b10ce75538c1a08de0bf1f81c0f59089",
+          "winner_key": "b9df69e327426214e958040942aea81a255352995dc2e62b76e2c3d4f76a06cb",
+          "route_and_frames_sha256": "a85025079b48c00404eb8834c9cd70a3a0452b3edd00103f73a1c4067c83d7ba"
+        },
+        {
+          "root_id": "synthetic-ab3bb70ac5181db6eefa99f3a8dd70b2f64324c0d43517a2d153b5b4bda3deb5",
+          "phase": "complete",
+          "pid": 4424,
+          "root": {
+            "handshake_ms": 602.0521000027657,
+            "initialize_ms": 2008.3300000987947,
+            "snapshot_ms": 125.09900005534291,
+            "root_ms": 2735.4811001569033,
+            "peak_working_set_bytes": 100216832
+          },
+          "prediction_prepare_ms": 1269.0904,
+          "hot_ms": 696.631,
+          "cpu_ms": 671.875,
+          "transitions": 7,
+          "peak_working_set_bytes": 119590912,
+          "status": "predicted_win",
+          "release_ms": 9.398100199177861,
+          "elapsed_ms": 4911.420600023121,
+          "request_ms": {
+            "synthetic_start": 2008.3210999146104,
+            "synthetic_snapshot": 111.94870015606284,
+            "f1_begin": 13.13620014116168,
+            "f1_audit": 7.817199919372797,
+            "i1_f3b": 2106.383499922231
+          },
+          "exit_code": 0,
+          "prediction_difference": [],
+          "root_stamp": "90b2478e72b6956a59f776bb368c5c5d1d736f95e926af4e808f7165dc63aa68",
+          "winner_key": "0688551daea7c9c7fda40e1a0fb0733e6bd553faecbc8128bc15ccbdde19cdc1",
+          "route_and_frames_sha256": "18443f703573d45aa80e5a5bfb3efff2797397361c0144cdff2c5ea1fb5ecd11"
+        },
+        {
+          "root_id": "synthetic-6d25d8ee799a621edaf69ab5202b258d77b2f88d294b1815b765fafa8830d36e",
+          "phase": "complete",
+          "pid": 6852,
+          "root": {
+            "handshake_ms": 517.7339999936521,
+            "initialize_ms": 2186.4657001569867,
+            "snapshot_ms": 116.2721998989582,
+            "root_ms": 2820.471900049597,
+            "peak_working_set_bytes": 100605952
+          },
+          "prediction_prepare_ms": 1290.4908,
+          "hot_ms": 744.7779,
+          "cpu_ms": 703.125,
+          "transitions": 17,
+          "peak_working_set_bytes": 123768832,
+          "status": "predicted_win",
+          "release_ms": 12.697200058028102,
+          "elapsed_ms": 5064.910100074485,
+          "request_ms": {
+            "synthetic_start": 2186.4581999834627,
+            "synthetic_snapshot": 100.04849988035858,
+            "f1_begin": 16.20910014025867,
+            "f1_audit": 14.376900158822536,
+            "i1_f3b": 2166.718600085005
+          },
+          "exit_code": 0,
+          "prediction_difference": [],
+          "root_stamp": "6af0cfe0a262b582aa11133dddfe684b1fcccfdee5fa4db098140e9118012714",
+          "winner_key": "3b4fc1f1f77226db11cd56ee95fe5adff0356f500697a85c389adcbd70482f0b",
+          "route_and_frames_sha256": "f0acb9c455ecb4e1d9506b4072dfff048cf1faa44dd1c44c269bb40fc290989c"
+        },
+        {
+          "root_id": "synthetic-6037aa7346c05bb30d91d3fd93bfde20dc67bf726c50c1c16276549bbd7a54a3",
+          "phase": "complete",
+          "pid": 14104,
+          "root": {
+            "handshake_ms": 496.9870001077652,
+            "initialize_ms": 2267.4324000254273,
+            "snapshot_ms": 128.1865001656115,
+            "root_ms": 2892.605900298804,
+            "peak_working_set_bytes": 100835328
+          },
+          "prediction_prepare_ms": 1403.7267,
+          "hot_ms": 740.3911,
+          "cpu_ms": 671.875,
+          "transitions": 21,
+          "peak_working_set_bytes": 123916288,
+          "status": "predicted_win",
+          "release_ms": 10.658200131729245,
+          "elapsed_ms": 5297.680699964985,
+          "request_ms": {
+            "synthetic_start": 2267.4237999599427,
+            "synthetic_snapshot": 109.95649988763034,
+            "f1_begin": 18.21479992941022,
+            "f1_audit": 72.60359986685216,
+            "i1_f3b": 2273.1618001125753
+          },
+          "exit_code": 0,
+          "prediction_difference": [],
+          "root_stamp": "026e5624eaf2f7ffc7251656e501ffc49c5838428b4c6c0074a2baec91a03640",
+          "winner_key": "81ebb50854196a316d449ffa2773317f2a0630f7f80856ba058976f53219d510",
+          "route_and_frames_sha256": "faced74af374e82ae20c9e2433474fdf26af0fdf649d752f3a1b94cce8590af0"
+        },
+        {
+          "root_id": "synthetic-bc9e7d0028fdc66632c803f66ea9ce4b3a36fa3d6887cb410f863750cba1bc1c",
+          "phase": "complete",
+          "pid": 44928,
+          "root": {
+            "handshake_ms": 512.5674000009894,
+            "initialize_ms": 2205.294999992475,
+            "snapshot_ms": 127.33260006643832,
+            "root_ms": 2845.1950000599027,
+            "peak_working_set_bytes": 100515840
+          },
+          "prediction_prepare_ms": 1407.469,
+          "hot_ms": 840.2712,
+          "cpu_ms": 796.875,
+          "transitions": 40,
+          "peak_working_set_bytes": 123600896,
+          "status": "predicted_win",
+          "release_ms": 6.986600114032626,
+          "elapsed_ms": 5304.054500069469,
+          "request_ms": {
+            "synthetic_start": 2205.2861000411212,
+            "synthetic_snapshot": 114.40930003300309,
+            "f1_begin": 12.909199809655547,
+            "f1_audit": 11.08059985563159,
+            "i1_f3b": 2393.376300111413
+          },
+          "exit_code": 0,
+          "prediction_difference": [],
+          "root_stamp": "e4b432bfe069b80cdcdb76f8e32ac839299a9a8084cd3eaf953962623e425f5f",
+          "winner_key": "051b2e04a3af0037b6d293884db853071a87151007116612fea46ad3903f62eb",
+          "route_and_frames_sha256": "d48c47b758902e63c29eb4d2a70ae95529ac6a0cc35665f2d9cc9392ad505af2"
+        }
+      ],
+      "elapsed_ms": 5540.4976001009345,
+      "peak_working_set_bytes": 721256448,
+      "samples": 167
+    }
+  ]
+}

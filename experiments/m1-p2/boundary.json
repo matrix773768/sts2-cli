@@ -1,0 +1,161 @@
+{
+  "versions": {
+    "sampler": "m1-d1-v1",
+    "policy": "M1-F2-discard-v1",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "solver_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13",
+    "solver": "0.51.5/78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+    "headless_sha256": "93c15cebb5fa3aa1b5a6e34ac759bec3de6d752e0fd6ad4e04a19d7491e5e25f",
+    "coreclr": "9.0.7",
+    "native_identity": "08361eb6158b869bc749117980b15c5cbbdc024f40e14bf66b720cb0e4590c7a",
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3"
+  },
+  "cases": [
+    {
+      "id": "12a8a7493d3e3b9ff2290af9c58795c2c921309e3780a20d1a3e8f4150719e0f",
+      "root_id": "synthetic-7124822c39c6d29554e043ee0f052b12779b14ef12604affdb0ee8dac85f46a7",
+      "live": "0fecef01618b48358376c870ec1ae5001e6796d3415d7c883256287bb1ca06f6",
+      "spec_sha256": "eaa0c15d9b188c2b511d2fa10260557f2c466e6d87451ee97b43606aa7edb04d",
+      "split": "development",
+      "rule": "strength",
+      "character": "Ironclad",
+      "act": 2,
+      "act_variant": "HIVE",
+      "encounter": "BOWLBUGS_WEAK",
+      "profile": "hive-stocked",
+      "seed": "ECB8BDAC3FE4",
+      "hp": 67
+    },
+    {
+      "id": "24a989ab51ccd32cb28a6c9957859263e475f92a8c41fe6475f0fd06e3c4f1cd",
+      "root_id": "synthetic-cb04158b35a1ad7347ef9bf393da89b3b888e39eff19a6058eab25b6ef75d3c1",
+      "live": "41f54c1c68572298fd0d71d0933e6a192b2e43c59b80c3702f839b25979c8e63",
+      "spec_sha256": "b445695662fe37de683ed980c2561e9c6ea3f96fcde137fcb85e73ab5b1785bb",
+      "split": "development",
+      "rule": "self-hp",
+      "character": "Ironclad",
+      "act": 1,
+      "act_variant": "UNDERDOCKS",
+      "encounter": "CORPSE_SLUGS_WEAK",
+      "profile": "hive-stocked",
+      "seed": "751ED7A13DE0",
+      "hp": 69
+    }
+  ],
+  "exports": [
+    {
+      "root_id": "synthetic-7124822c39c6d29554e043ee0f052b12779b14ef12604affdb0ee8dac85f46a7",
+      "pid": 34800,
+      "continuation_sha256": "0fecef01618b48358376c870ec1ae5001e6796d3415d7c883256287bb1ca06f6",
+      "timing": {
+        "handshake_ms": 197.13969994336367,
+        "initialize_ms": 1745.3040999826044,
+        "snapshot_ms": 118.24130010791123,
+        "root_ms": 2060.6851000338793,
+        "peak_working_set_bytes": 100315136
+      },
+      "observation": {
+        "type": "p2_boundary",
+        "live_combat": true,
+        "native_in_progress": true,
+        "capture_ms": 231.253,
+        "two_forks_ms": 14.2693,
+        "matches_projection": true,
+        "live_unchanged": true,
+        "player_is_live_reference": true,
+        "enemy_is_live_reference": true,
+        "fork_player_state_isolated": true,
+        "fork_rng_isolated": true,
+        "root_public_constructors": 0,
+        "root_retains_private_simulator": true,
+        "root_export_error": "InvalidOperationException: This card is not an ancient card.",
+        "mode": "offline-teacher",
+        "schema_version": 1,
+        "peak_working_set_bytes": 115617792
+      }
+    },
+    {
+      "root_id": "synthetic-cb04158b35a1ad7347ef9bf393da89b3b888e39eff19a6058eab25b6ef75d3c1",
+      "pid": 15648,
+      "continuation_sha256": "41f54c1c68572298fd0d71d0933e6a192b2e43c59b80c3702f839b25979c8e63",
+      "timing": {
+        "handshake_ms": 282.0902999956161,
+        "initialize_ms": 1769.453200045973,
+        "snapshot_ms": 140.92539995908737,
+        "root_ms": 2192.4689000006765,
+        "peak_working_set_bytes": 100286464
+      },
+      "observation": {
+        "type": "p2_boundary",
+        "live_combat": true,
+        "native_in_progress": true,
+        "capture_ms": 289.7382,
+        "two_forks_ms": 15.0048,
+        "matches_projection": true,
+        "live_unchanged": true,
+        "player_is_live_reference": true,
+        "enemy_is_live_reference": true,
+        "fork_player_state_isolated": true,
+        "fork_rng_isolated": true,
+        "root_public_constructors": 0,
+        "root_retains_private_simulator": true,
+        "root_export_error": "InvalidOperationException: This card is not an ancient card.",
+        "mode": "offline-teacher",
+        "schema_version": 1,
+        "peak_working_set_bytes": 115367936
+      }
+    }
+  ],
+  "import_handshake_ms": 293.2471998501569,
+  "imports": [
+    {
+      "root_id": "synthetic-7124822c39c6d29554e043ee0f052b12779b14ef12604affdb0ee8dac85f46a7",
+      "pid": 43632,
+      "continuation_sha256": "0fecef01618b48358376c870ec1ae5001e6796d3415d7c883256287bb1ca06f6",
+      "observation": {
+        "type": "p2_boundary",
+        "live_combat": false,
+        "native_in_progress": false,
+        "stamp_roundtrip": true,
+        "root_import_error": "Deserialization of types without a parameterless constructor, a singular parameterized constructor, or a parameterized constructor annotated with 'JsonConstructorAttribute' is not supported. Type 'CombatSolver.CombatRootSnapshot'. Path: $ | LineNumber: 0 | BytePositionInLine: 1.",
+        "mode": "offline-teacher",
+        "schema_version": 1,
+        "peak_working_set_bytes": 52973568
+      },
+      "request_ms": 379.2175999842584
+    },
+    {
+      "root_id": "synthetic-cb04158b35a1ad7347ef9bf393da89b3b888e39eff19a6058eab25b6ef75d3c1",
+      "pid": 43632,
+      "continuation_sha256": "41f54c1c68572298fd0d71d0933e6a192b2e43c59b80c3702f839b25979c8e63",
+      "observation": {
+        "type": "p2_boundary",
+        "live_combat": false,
+        "native_in_progress": false,
+        "stamp_roundtrip": true,
+        "root_import_error": "Deserialization of types without a parameterless constructor, a singular parameterized constructor, or a parameterized constructor annotated with 'JsonConstructorAttribute' is not supported. Type 'CombatSolver.CombatRootSnapshot'. Path: $ | LineNumber: 0 | BytePositionInLine: 1.",
+        "mode": "offline-teacher",
+        "schema_version": 1,
+        "peak_working_set_bytes": 52994048
+      },
+      "request_ms": 2.579400083050132
+    },
+    {
+      "root_id": "synthetic-7124822c39c6d29554e043ee0f052b12779b14ef12604affdb0ee8dac85f46a7",
+      "pid": 43632,
+      "continuation_sha256": "0fecef01618b48358376c870ec1ae5001e6796d3415d7c883256287bb1ca06f6",
+      "observation": {
+        "type": "p2_boundary",
+        "live_combat": false,
+        "native_in_progress": false,
+        "stamp_roundtrip": true,
+        "root_import_error": "Deserialization of types without a parameterless constructor, a singular parameterized constructor, or a parameterized constructor annotated with 'JsonConstructorAttribute' is not supported. Type 'CombatSolver.CombatRootSnapshot'. Path: $ | LineNumber: 0 | BytePositionInLine: 1.",
+        "mode": "offline-teacher",
+        "schema_version": 1,
+        "peak_working_set_bytes": 52994048
+      },
+      "request_ms": 2.0063999108970165
+    }
+  ]
+}
