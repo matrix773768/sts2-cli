@@ -1,0 +1,274 @@
+{
+  "versions": {
+    "sampler": "m1-d1-v1",
+    "policy": "M1-F2-discard-v1",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "solver_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13",
+    "solver": "0.51.5/78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+    "headless_sha256": "30536764e5a0b1893ab784d91b155655f1fe6b790cdbd0b05b2f53ed15de8ff8",
+    "coreclr": "9.0.7",
+    "native_identity": "8e6e7ba85dc8104687fc85d05a0eb604a2298989d8ba8b2a5fb256b59dfdc0f0",
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+    "synthetic_spec": 2,
+    "initializer": "m1-s2a-v1"
+  },
+  "cases": [
+    {
+      "id": "12a8a7493d3e3b9ff2290af9c58795c2c921309e3780a20d1a3e8f4150719e0f",
+      "root_id": "synthetic-7124822c39c6d29554e043ee0f052b12779b14ef12604affdb0ee8dac85f46a7",
+      "live": "0fecef01618b48358376c870ec1ae5001e6796d3415d7c883256287bb1ca06f6",
+      "spec_sha256": "eaa0c15d9b188c2b511d2fa10260557f2c466e6d87451ee97b43606aa7edb04d",
+      "split": "development",
+      "rule": "strength",
+      "character": "Ironclad",
+      "act": 2,
+      "act_variant": "HIVE",
+      "encounter": "BOWLBUGS_WEAK",
+      "profile": "hive-stocked",
+      "seed": "ECB8BDAC3FE4",
+      "hp": 67
+    },
+    {
+      "id": "24a989ab51ccd32cb28a6c9957859263e475f92a8c41fe6475f0fd06e3c4f1cd",
+      "root_id": "synthetic-cb04158b35a1ad7347ef9bf393da89b3b888e39eff19a6058eab25b6ef75d3c1",
+      "live": "41f54c1c68572298fd0d71d0933e6a192b2e43c59b80c3702f839b25979c8e63",
+      "spec_sha256": "b445695662fe37de683ed980c2561e9c6ea3f96fcde137fcb85e73ab5b1785bb",
+      "split": "development",
+      "rule": "self-hp",
+      "character": "Ironclad",
+      "act": 1,
+      "act_variant": "UNDERDOCKS",
+      "encounter": "CORPSE_SLUGS_WEAK",
+      "profile": "hive-stocked",
+      "seed": "751ED7A13DE0",
+      "hp": 69
+    }
+  ],
+  "batches": [
+    {
+      "resident": false,
+      "rows": [
+        {
+          "root_id": "synthetic-7124822c39c6d29554e043ee0f052b12779b14ef12604affdb0ee8dac85f46a7",
+          "position": 0,
+          "handshake_ms": 224.73259991966188,
+          "initialize_ms": 1891.1514000501484,
+          "snapshot_ms": 112.97849984839559,
+          "prediction_prepare_ms": 695.1863,
+          "hot_ms": 561.1464,
+          "cpu_ms": 468.75,
+          "rpc_residual_ms": 64.94100010130114,
+          "transitions": 19,
+          "peak_working_set_bytes": 124223488,
+          "difference": [],
+          "status": "predicted_win",
+          "request_ms": {
+            "synthetic_start": 1891.1425000987947,
+            "synthetic_snapshot": 100.78940005041659,
+            "f1_begin": 12.179599842056632,
+            "f1_audit": 6.524800090119243,
+            "i1_f3b": 1321.273700101301
+          }
+        },
+        {
+          "root_id": "synthetic-cb04158b35a1ad7347ef9bf393da89b3b888e39eff19a6058eab25b6ef75d3c1",
+          "position": 1,
+          "handshake_ms": 231.57329997047782,
+          "initialize_ms": 2142.339700134471,
+          "snapshot_ms": 147.94019982218742,
+          "prediction_prepare_ms": 872.9098,
+          "hot_ms": 379.527,
+          "cpu_ms": 375,
+          "rpc_residual_ms": 92.55370001613795,
+          "transitions": 7,
+          "peak_working_set_bytes": 124301312,
+          "difference": [],
+          "status": "predicted_win",
+          "request_ms": {
+            "synthetic_start": 2142.3302001785487,
+            "synthetic_snapshot": 125.30270009301603,
+            "f1_begin": 22.627400001510978,
+            "f1_audit": 7.491600001230836,
+            "i1_f3b": 1344.990500016138
+          }
+        },
+        {
+          "root_id": "synthetic-7124822c39c6d29554e043ee0f052b12779b14ef12604affdb0ee8dac85f46a7",
+          "position": 2,
+          "handshake_ms": 211.48640010505915,
+          "initialize_ms": 1827.932700049132,
+          "snapshot_ms": 144.3990000989288,
+          "prediction_prepare_ms": 876.2545,
+          "hot_ms": 491.6754,
+          "cpu_ms": 468.75,
+          "rpc_residual_ms": 78.95739988411066,
+          "transitions": 19,
+          "peak_working_set_bytes": 123895808,
+          "difference": [],
+          "status": "predicted_win",
+          "request_ms": {
+            "synthetic_start": 1827.9245998710394,
+            "synthetic_snapshot": 125.81579992547631,
+            "f1_begin": 18.571099964901805,
+            "f1_audit": 9.674200089648366,
+            "i1_f3b": 1446.8872998841107
+          }
+        }
+      ],
+      "elapsed_ms": 11224.870500154793,
+      "repeat_difference": []
+    },
+    {
+      "resident": true,
+      "rows": [
+        {
+          "root_id": "synthetic-7124822c39c6d29554e043ee0f052b12779b14ef12604affdb0ee8dac85f46a7",
+          "position": 0,
+          "handshake_ms": 293.4085999149829,
+          "initialize_ms": 2131.960499798879,
+          "snapshot_ms": 225.77270003966987,
+          "prediction_prepare_ms": 861.6285,
+          "hot_ms": 475.1743,
+          "cpu_ms": 421.875,
+          "rpc_residual_ms": 109.12299989694054,
+          "transitions": 19,
+          "peak_working_set_bytes": 124235776,
+          "difference": [],
+          "status": "predicted_win",
+          "request_ms": {
+            "synthetic_start": 2131.951800081879,
+            "synthetic_snapshot": 186.92090013064444,
+            "f1_begin": 38.83829992264509,
+            "f1_audit": 11.036500101909041,
+            "i1_f3b": 1445.9257998969406
+          }
+        },
+        {
+          "root_id": "synthetic-cb04158b35a1ad7347ef9bf393da89b3b888e39eff19a6058eab25b6ef75d3c1",
+          "position": 1,
+          "handshake_ms": 0,
+          "status": "execution_fault",
+          "error_type": "StopRun",
+          "detail": "Synthetic combat requires a fresh process",
+          "request_ms": {
+            "synthetic_start": 1.6354001127183437
+          }
+        }
+      ],
+      "elapsed_ms": 4198.2242001686245
+    },
+    {
+      "resident": false,
+      "rows": [
+        {
+          "root_id": "synthetic-7124822c39c6d29554e043ee0f052b12779b14ef12604affdb0ee8dac85f46a7",
+          "position": 0,
+          "handshake_ms": 275.4893000237644,
+          "initialize_ms": 2232.8206000383943,
+          "snapshot_ms": 160.7647999189794,
+          "prediction_prepare_ms": 830.242,
+          "hot_ms": 495.9146,
+          "cpu_ms": 453.125,
+          "rpc_residual_ms": 87.63330001976493,
+          "transitions": 19,
+          "peak_working_set_bytes": 124190720,
+          "difference": [],
+          "status": "predicted_win",
+          "request_ms": {
+            "synthetic_start": 2232.8126998618245,
+            "synthetic_snapshot": 143.0921999271959,
+            "f1_begin": 17.6614997908473,
+            "f1_audit": 9.134599938988686,
+            "i1_f3b": 1413.789900019765
+          }
+        },
+        {
+          "root_id": "synthetic-cb04158b35a1ad7347ef9bf393da89b3b888e39eff19a6058eab25b6ef75d3c1",
+          "position": 1,
+          "handshake_ms": 253.55740007944405,
+          "initialize_ms": 2194.2229999694973,
+          "snapshot_ms": 186.90739991143346,
+          "prediction_prepare_ms": 874.1206,
+          "hot_ms": 381.2514,
+          "cpu_ms": 359.375,
+          "rpc_residual_ms": 94.8811000413001,
+          "transitions": 7,
+          "peak_working_set_bytes": 123949056,
+          "difference": [],
+          "status": "predicted_win",
+          "request_ms": {
+            "synthetic_start": 2194.213999900967,
+            "synthetic_snapshot": 175.9073999710381,
+            "f1_begin": 10.990400100126863,
+            "f1_audit": 5.884499987587333,
+            "i1_f3b": 1350.2531000413
+          }
+        },
+        {
+          "root_id": "synthetic-7124822c39c6d29554e043ee0f052b12779b14ef12604affdb0ee8dac85f46a7",
+          "position": 2,
+          "handshake_ms": 201.92649983800948,
+          "initialize_ms": 1725.056900177151,
+          "snapshot_ms": 128.09960008598864,
+          "prediction_prepare_ms": 680.2642,
+          "hot_ms": 375.7324,
+          "cpu_ms": 359.375,
+          "rpc_residual_ms": 67.92479993608003,
+          "transitions": 19,
+          "peak_working_set_bytes": 123924480,
+          "difference": [],
+          "status": "predicted_win",
+          "request_ms": {
+            "synthetic_start": 1725.049400003627,
+            "synthetic_snapshot": 116.11810000613332,
+            "f1_begin": 11.972400126978755,
+            "f1_audit": 6.25260011292994,
+            "i1_f3b": 1123.92139993608
+          }
+        }
+      ],
+      "elapsed_ms": 11452.400899957865,
+      "repeat_difference": []
+    },
+    {
+      "resident": true,
+      "rows": [
+        {
+          "root_id": "synthetic-7124822c39c6d29554e043ee0f052b12779b14ef12604affdb0ee8dac85f46a7",
+          "position": 0,
+          "handshake_ms": 233.82680001668632,
+          "initialize_ms": 1748.6383998766541,
+          "snapshot_ms": 121.58389994874597,
+          "prediction_prepare_ms": 674.5794,
+          "hot_ms": 385.6058,
+          "cpu_ms": 343.75,
+          "rpc_residual_ms": 65.037299947995,
+          "transitions": 19,
+          "peak_working_set_bytes": 124014592,
+          "difference": [],
+          "status": "predicted_win",
+          "request_ms": {
+            "synthetic_start": 1748.6304000485688,
+            "synthetic_snapshot": 110.53519998677075,
+            "f1_begin": 11.039000004529953,
+            "f1_audit": 5.806900095194578,
+            "i1_f3b": 1125.222499947995
+          }
+        },
+        {
+          "root_id": "synthetic-cb04158b35a1ad7347ef9bf393da89b3b888e39eff19a6058eab25b6ef75d3c1",
+          "position": 1,
+          "handshake_ms": 0,
+          "status": "execution_fault",
+          "error_type": "StopRun",
+          "detail": "Synthetic combat requires a fresh process",
+          "request_ms": {
+            "synthetic_start": 1.1661001481115818
+          }
+        }
+      ],
+      "elapsed_ms": 3282.337100012228
+    }
+  ]
+}
