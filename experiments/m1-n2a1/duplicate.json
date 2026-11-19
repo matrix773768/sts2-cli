@@ -1,0 +1,1627 @@
+{
+  "input": {
+    "cohort": "S2B-early",
+    "case": {
+      "case": "shiv-early",
+      "generator": "m1-s2b-v1",
+      "generator_seed": 260219,
+      "rule": "shiv",
+      "profile": "early",
+      "case_seed": 14986421914083847239,
+      "tags": [
+        "shiv",
+        "scaling"
+      ],
+      "parameters": {
+        "deck_size": 13,
+        "upgrades": 0,
+        "hp_percent": 79,
+        "starter_relic": true,
+        "potion": null
+      },
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 1,
+        "act_variant": "OVERGROWTH",
+        "encounter": "NIBBITS_WEAK",
+        "seed": "BEF9D0D65B5D",
+        "hp": 55,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "DAGGER_SPRAY",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "DODGE_AND_ROLL",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "SURVIVOR",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "spec_sha256": "a06accb571842a4f8439320c5f837fb4b5731219a8b8a6a73b11dd4fd57418eb",
+      "id": "15f2becb2fabf4e886ac059ae08b8ad8a97199933da73fb5bb5d3d550bd86eeb",
+      "replica": 0,
+      "synthetic": true,
+      "native_reachable": "unknown",
+      "split": "development",
+      "family": [
+        "Silent",
+        "shiv",
+        "NIBBITS_WEAK"
+      ]
+    },
+    "synthetic": true,
+    "natural_reachability": "unknown"
+  },
+  "versions": {
+    "sampler": "m1-d1-v1",
+    "policy": "M1-F2-discard-v1",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "solver_sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+    "solver": "0.51.5-e3f.1",
+    "headless_sha256": "7d8d8951f0647306e8f3f18479c1f1d74e6dd69179b623178a6e31ccc35abe19",
+    "coreclr": "9.0.7",
+    "native_identity": "898aed29b77efa81263099cb721e82247b020abc21f1c5a723a6b5eebe727bd0",
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3"
+  },
+  "lifecycle": [
+    {
+      "id": "15f2becb2fabf4e886ac059ae08b8ad8a97199933da73fb5bb5d3d550bd86eeb",
+      "root_sha256": "187c27a6ee747b40742688d61d75ca5d7fab96b8a8766e890ba841ef4c285044",
+      "loaded": {
+        "type": "solver_identity",
+        "version": "0.51.5-e3f.1+3b3fd97556a5b32d7fdb20efd4294cd07cc6ce6b",
+        "sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+        "mode": "offline-teacher",
+        "schema_version": 1,
+        "peak_working_set_bytes": 47955968
+      },
+      "launch_ms": 315.59690018184483,
+      "build": {
+        "handshake_ms": 234.40230009146035,
+        "initialize_ms": 1543.9660002011806,
+        "snapshot_ms": 122.20670003443956,
+        "root_ms": 1900.5750003270805,
+        "peak_working_set_bytes": 109137920
+      },
+      "recycle_ms": 67.3038000240922
+    },
+    {
+      "id": "15f2becb2fabf4e886ac059ae08b8ad8a97199933da73fb5bb5d3d550bd86eeb",
+      "root_sha256": "187c27a6ee747b40742688d61d75ca5d7fab96b8a8766e890ba841ef4c285044",
+      "loaded": {
+        "type": "solver_identity",
+        "version": "0.51.5-e3f.1+3b3fd97556a5b32d7fdb20efd4294cd07cc6ce6b",
+        "sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+        "mode": "offline-teacher",
+        "schema_version": 1,
+        "peak_working_set_bytes": 48001024
+      },
+      "launch_ms": 275.6914999336004,
+      "build": {
+        "handshake_ms": 202.46600010432303,
+        "initialize_ms": 1366.728400113061,
+        "snapshot_ms": 92.33079990372062,
+        "root_ms": 1661.5252001211047,
+        "peak_working_set_bytes": 107991040
+      },
+      "recycle_ms": 30.74879990890622
+    },
+    {
+      "id": "15f2becb2fabf4e886ac059ae08b8ad8a97199933da73fb5bb5d3d550bd86eeb",
+      "root_sha256": "187c27a6ee747b40742688d61d75ca5d7fab96b8a8766e890ba841ef4c285044",
+      "loaded": {
+        "type": "solver_identity",
+        "version": "0.51.5-e3f.1+3b3fd97556a5b32d7fdb20efd4294cd07cc6ce6b",
+        "sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+        "mode": "offline-teacher",
+        "schema_version": 1,
+        "peak_working_set_bytes": 47976448
+      },
+      "launch_ms": 307.9494000412524,
+      "build": {
+        "handshake_ms": 223.53400010615587,
+        "initialize_ms": 1536.6958000231534,
+        "snapshot_ms": 105.57339992374182,
+        "root_ms": 1865.8032000530511,
+        "peak_working_set_bytes": 109387776
+      },
+      "recycle_ms": 78.99049995467067
+    }
+  ],
+  "native": [
+    {
+      "status": "unsupported",
+      "checked": 1,
+      "diffs": [
+        {
+          "step": 1,
+          "field": "player_powers",
+          "predicted": [],
+          "native": []
+        },
+        {
+          "step": 1,
+          "field": "intents",
+          "slot": 0,
+          "predicted": [
+            "Attack"
+          ],
+          "native": [
+            "Attack"
+          ]
+        },
+        {
+          "step": 1,
+          "field": "powers",
+          "slot": 0,
+          "predicted": [],
+          "native": []
+        },
+        {
+          "step": 1,
+          "field": "attack_hits",
+          "slot": 0,
+          "predicted": [
+            12
+          ],
+          "native": [
+            12
+          ]
+        }
+      ],
+      "choices": [
+        {
+          "step": 1,
+          "selected": 2,
+          "native_index": 2,
+          "source_index": 2,
+          "native_menu": [
+            "DODGE_AND_ROLL+0",
+            "DAGGER_SPRAY+0",
+            "STRIKE_SILENT+0",
+            "BLADE_DANCE+0",
+            "SLICE+0",
+            "STRIKE_SILENT+0"
+          ],
+          "predicted_menu": [
+            "DODGE_AND_ROLL+0",
+            "DAGGER_SPRAY+0",
+            "STRIKE_SILENT+0",
+            "BLADE_DANCE+0",
+            "SLICE+0",
+            "STRIKE_SILENT+0"
+          ],
+          "verified": true,
+          "state_match": true
+        }
+      ],
+      "predicted_terminal": null,
+      "native_outcome": {
+        "initial_hp": 55,
+        "final_hp": 55,
+        "hp_lost": 0,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": false,
+        "survived": true,
+        "final_enemy_hp": 42,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "native_locked": {},
+      "native_after_combat": {
+        "decision": "combat_play",
+        "resources": {
+          "hp": 55,
+          "max_hp": 70,
+          "gold": 99,
+          "deck": [
+            "DAGGER_SPRAY+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=4;HitCount=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "ACCURACY+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=AccuracyPower=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DODGE_AND_ROLL+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BLADE_DANCE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Cards=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SLICE+0|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SURVIVOR+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "CLOAK_AND_DAGGER+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=6;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "relics": [
+            "RING_OF_THE_SNAKE"
+          ]
+        },
+        "reward_action_executed": false
+      },
+      "strict_terminal_stamp_match": null,
+      "evidence": "public_and_choice_audit"
+    },
+    {
+      "status": "unsupported",
+      "checked": 1,
+      "diffs": [
+        {
+          "step": 1,
+          "field": "player_powers",
+          "predicted": [],
+          "native": []
+        },
+        {
+          "step": 1,
+          "field": "intents",
+          "slot": 0,
+          "predicted": [
+            "Attack"
+          ],
+          "native": [
+            "Attack"
+          ]
+        },
+        {
+          "step": 1,
+          "field": "powers",
+          "slot": 0,
+          "predicted": [],
+          "native": []
+        },
+        {
+          "step": 1,
+          "field": "attack_hits",
+          "slot": 0,
+          "predicted": [
+            12
+          ],
+          "native": [
+            12
+          ]
+        }
+      ],
+      "choices": [
+        {
+          "step": 1,
+          "selected": 5,
+          "native_index": 5,
+          "source_index": 5,
+          "native_menu": [
+            "DODGE_AND_ROLL+0",
+            "DAGGER_SPRAY+0",
+            "STRIKE_SILENT+0",
+            "BLADE_DANCE+0",
+            "SLICE+0",
+            "STRIKE_SILENT+0"
+          ],
+          "predicted_menu": [
+            "DODGE_AND_ROLL+0",
+            "DAGGER_SPRAY+0",
+            "STRIKE_SILENT+0",
+            "BLADE_DANCE+0",
+            "SLICE+0",
+            "STRIKE_SILENT+0"
+          ],
+          "verified": true,
+          "state_match": true
+        }
+      ],
+      "predicted_terminal": null,
+      "native_outcome": {
+        "initial_hp": 55,
+        "final_hp": 55,
+        "hp_lost": 0,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": false,
+        "survived": true,
+        "final_enemy_hp": 42,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "native_locked": {},
+      "native_after_combat": {
+        "decision": "combat_play",
+        "resources": {
+          "hp": 55,
+          "max_hp": 70,
+          "gold": 99,
+          "deck": [
+            "DAGGER_SPRAY+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=4;HitCount=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "ACCURACY+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=AccuracyPower=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DODGE_AND_ROLL+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=4|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BLADE_DANCE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=Exhaust|vars=Cards=3|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SLICE+0|energy=False:0|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SURVIVOR+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "CLOAK_AND_DAGGER+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=6;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "relics": [
+            "RING_OF_THE_SNAKE"
+          ]
+        },
+        "reward_action_executed": false
+      },
+      "strict_terminal_stamp_match": null,
+      "evidence": "public_and_choice_audit"
+    }
+  ],
+  "variants": [
+    {
+      "variant": 0,
+      "observation": {
+        "turn": 1,
+        "hp": 55,
+        "block": 0,
+        "energy": 3,
+        "draw_count": 6,
+        "hand": [
+          {
+            "index": 0,
+            "id": "DODGE_AND_ROLL",
+            "upgrade": 0
+          },
+          {
+            "index": 1,
+            "id": "DAGGER_SPRAY",
+            "upgrade": 0
+          },
+          {
+            "index": 2,
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "index": 3,
+            "id": "SURVIVOR",
+            "upgrade": 0
+          },
+          {
+            "index": 4,
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "index": 5,
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "index": 6,
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          }
+        ],
+        "enemies": [
+          {
+            "index": 0,
+            "hp": 42,
+            "block": 0,
+            "attack_hits": [
+              12
+            ],
+            "intents": [
+              "Attack"
+            ],
+            "powers": []
+          }
+        ],
+        "actions": [
+          {
+            "index": 0,
+            "card": 0,
+            "target": null,
+            "cost": 1,
+            "choice": null,
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 4,
+              "draw": null
+            }
+          },
+          {
+            "index": 1,
+            "card": 1,
+            "target": null,
+            "cost": 1,
+            "choice": null,
+            "preview": null
+          },
+          {
+            "index": 2,
+            "card": 2,
+            "target": 0,
+            "cost": 1,
+            "choice": null,
+            "preview": {
+              "damage_per_hit": 6,
+              "hits": 1,
+              "block": null,
+              "draw": null
+            }
+          },
+          {
+            "index": 3,
+            "card": 3,
+            "target": null,
+            "cost": 1,
+            "choice": {
+              "index": 0,
+              "id": "DODGE_AND_ROLL",
+              "upgrade": 0
+            },
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 8,
+              "draw": null
+            }
+          },
+          {
+            "index": 4,
+            "card": 3,
+            "target": null,
+            "cost": 1,
+            "choice": {
+              "index": 1,
+              "id": "DAGGER_SPRAY",
+              "upgrade": 0
+            },
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 8,
+              "draw": null
+            }
+          },
+          {
+            "index": 5,
+            "card": 3,
+            "target": null,
+            "cost": 1,
+            "choice": {
+              "index": 2,
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 8,
+              "draw": null
+            }
+          },
+          {
+            "index": 6,
+            "card": 3,
+            "target": null,
+            "cost": 1,
+            "choice": {
+              "index": 3,
+              "id": "BLADE_DANCE",
+              "upgrade": 0
+            },
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 8,
+              "draw": null
+            }
+          },
+          {
+            "index": 7,
+            "card": 3,
+            "target": null,
+            "cost": 1,
+            "choice": {
+              "index": 4,
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 8,
+              "draw": null
+            }
+          },
+          {
+            "index": 8,
+            "card": 3,
+            "target": null,
+            "cost": 1,
+            "choice": {
+              "index": 5,
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 8,
+              "draw": null
+            }
+          },
+          {
+            "index": 9,
+            "card": 4,
+            "target": null,
+            "cost": 1,
+            "choice": null,
+            "preview": null
+          },
+          {
+            "index": 10,
+            "card": 5,
+            "target": 0,
+            "cost": 0,
+            "choice": null,
+            "preview": {
+              "damage_per_hit": 6,
+              "hits": 1,
+              "block": null,
+              "draw": null
+            }
+          },
+          {
+            "index": 11,
+            "card": 6,
+            "target": 0,
+            "cost": 1,
+            "choice": null,
+            "preview": {
+              "damage_per_hit": 6,
+              "hits": 1,
+              "block": null,
+              "draw": null
+            }
+          },
+          {
+            "index": 12,
+            "card": null,
+            "target": null,
+            "cost": null,
+            "choice": null,
+            "preview": null
+          }
+        ],
+        "powers": []
+      },
+      "after": {
+        "turn": 1,
+        "hp": 55,
+        "block": 8,
+        "energy": 2,
+        "draw_count": 6,
+        "hand": [
+          {
+            "index": 0,
+            "id": "DODGE_AND_ROLL",
+            "upgrade": 0
+          },
+          {
+            "index": 1,
+            "id": "DAGGER_SPRAY",
+            "upgrade": 0
+          },
+          {
+            "index": 2,
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "index": 3,
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "index": 4,
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          }
+        ],
+        "enemies": [
+          {
+            "index": 0,
+            "hp": 42,
+            "block": 0,
+            "attack_hits": [
+              12
+            ],
+            "intents": [
+              "Attack"
+            ],
+            "powers": []
+          }
+        ],
+        "actions": [
+          {
+            "index": 0,
+            "card": 0,
+            "target": null,
+            "cost": 1,
+            "choice": null,
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 4,
+              "draw": null
+            }
+          },
+          {
+            "index": 1,
+            "card": 1,
+            "target": null,
+            "cost": 1,
+            "choice": null,
+            "preview": null
+          },
+          {
+            "index": 2,
+            "card": 2,
+            "target": null,
+            "cost": 1,
+            "choice": null,
+            "preview": null
+          },
+          {
+            "index": 3,
+            "card": 3,
+            "target": 0,
+            "cost": 0,
+            "choice": null,
+            "preview": {
+              "damage_per_hit": 6,
+              "hits": 1,
+              "block": null,
+              "draw": null
+            }
+          },
+          {
+            "index": 4,
+            "card": 4,
+            "target": 0,
+            "cost": 1,
+            "choice": null,
+            "preview": {
+              "damage_per_hit": 6,
+              "hits": 1,
+              "block": null,
+              "draw": null
+            }
+          },
+          {
+            "index": 5,
+            "card": null,
+            "target": null,
+            "cost": null,
+            "choice": null,
+            "preview": null
+          }
+        ],
+        "powers": []
+      },
+      "selected": {
+        "action": "play_card",
+        "args": {
+          "card_index": 3
+        },
+        "choice_index": 2
+      },
+      "plan": {
+        "kind": 0,
+        "turn": 1,
+        "card_id": "SURVIVOR",
+        "card_occurrence": 0,
+        "target_index": -1,
+        "card_title": "",
+        "target_name": "",
+        "choice": {
+          "effect": 2,
+          "source_pile": 2,
+          "cards": [
+            {
+              "card_id": "STRIKE_SILENT",
+              "upgrade_level": 0,
+              "state_key": "STRIKE_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "source_occurrence": 0,
+              "option_occurrence": 0,
+              "title": "STRIKE_SILENT.title"
+            }
+          ],
+          "source_id": "",
+          "context_id": "",
+          "timing": 0
+        },
+        "nested_choices_before_primary": 0,
+        "potion_slot": -1,
+        "potion_id": "",
+        "potion_title": "",
+        "replay_count": 0,
+        "card_state_key": "SURVIVOR+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=8|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+        "card_state_occurrence": 0,
+        "ends_player_turn": false,
+        "card_upgrade_level": 0,
+        "card_enchantment_id": "",
+        "is_executable": true,
+        "action_title": ""
+      },
+      "stamp": "46198b043f72df8ae18e341860f6b6f13d5b6e42bb623e6f402fcdd750732e7d"
+    },
+    {
+      "variant": 1,
+      "observation": {
+        "turn": 1,
+        "hp": 55,
+        "block": 0,
+        "energy": 3,
+        "draw_count": 6,
+        "hand": [
+          {
+            "index": 0,
+            "id": "DODGE_AND_ROLL",
+            "upgrade": 0
+          },
+          {
+            "index": 1,
+            "id": "DAGGER_SPRAY",
+            "upgrade": 0
+          },
+          {
+            "index": 2,
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "index": 3,
+            "id": "SURVIVOR",
+            "upgrade": 0
+          },
+          {
+            "index": 4,
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "index": 5,
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "index": 6,
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          }
+        ],
+        "enemies": [
+          {
+            "index": 0,
+            "hp": 42,
+            "block": 0,
+            "attack_hits": [
+              12
+            ],
+            "intents": [
+              "Attack"
+            ],
+            "powers": []
+          }
+        ],
+        "actions": [
+          {
+            "index": 0,
+            "card": 0,
+            "target": null,
+            "cost": 1,
+            "choice": null,
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 4,
+              "draw": null
+            }
+          },
+          {
+            "index": 1,
+            "card": 1,
+            "target": null,
+            "cost": 1,
+            "choice": null,
+            "preview": null
+          },
+          {
+            "index": 2,
+            "card": 2,
+            "target": 0,
+            "cost": 1,
+            "choice": null,
+            "preview": {
+              "damage_per_hit": 6,
+              "hits": 1,
+              "block": null,
+              "draw": null
+            }
+          },
+          {
+            "index": 3,
+            "card": 3,
+            "target": null,
+            "cost": 1,
+            "choice": {
+              "index": 0,
+              "id": "DODGE_AND_ROLL",
+              "upgrade": 0
+            },
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 8,
+              "draw": null
+            }
+          },
+          {
+            "index": 4,
+            "card": 3,
+            "target": null,
+            "cost": 1,
+            "choice": {
+              "index": 1,
+              "id": "DAGGER_SPRAY",
+              "upgrade": 0
+            },
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 8,
+              "draw": null
+            }
+          },
+          {
+            "index": 5,
+            "card": 3,
+            "target": null,
+            "cost": 1,
+            "choice": {
+              "index": 2,
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 8,
+              "draw": null
+            }
+          },
+          {
+            "index": 6,
+            "card": 3,
+            "target": null,
+            "cost": 1,
+            "choice": {
+              "index": 3,
+              "id": "BLADE_DANCE",
+              "upgrade": 0
+            },
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 8,
+              "draw": null
+            }
+          },
+          {
+            "index": 7,
+            "card": 3,
+            "target": null,
+            "cost": 1,
+            "choice": {
+              "index": 4,
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 8,
+              "draw": null
+            }
+          },
+          {
+            "index": 8,
+            "card": 3,
+            "target": null,
+            "cost": 1,
+            "choice": {
+              "index": 5,
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 8,
+              "draw": null
+            }
+          },
+          {
+            "index": 9,
+            "card": 4,
+            "target": null,
+            "cost": 1,
+            "choice": null,
+            "preview": null
+          },
+          {
+            "index": 10,
+            "card": 5,
+            "target": 0,
+            "cost": 0,
+            "choice": null,
+            "preview": {
+              "damage_per_hit": 6,
+              "hits": 1,
+              "block": null,
+              "draw": null
+            }
+          },
+          {
+            "index": 11,
+            "card": 6,
+            "target": 0,
+            "cost": 1,
+            "choice": null,
+            "preview": {
+              "damage_per_hit": 6,
+              "hits": 1,
+              "block": null,
+              "draw": null
+            }
+          },
+          {
+            "index": 12,
+            "card": null,
+            "target": null,
+            "cost": null,
+            "choice": null,
+            "preview": null
+          }
+        ],
+        "powers": []
+      },
+      "after": {
+        "turn": 1,
+        "hp": 55,
+        "block": 8,
+        "energy": 2,
+        "draw_count": 6,
+        "hand": [
+          {
+            "index": 0,
+            "id": "DODGE_AND_ROLL",
+            "upgrade": 0
+          },
+          {
+            "index": 1,
+            "id": "DAGGER_SPRAY",
+            "upgrade": 0
+          },
+          {
+            "index": 2,
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "index": 3,
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "index": 4,
+            "id": "SLICE",
+            "upgrade": 0
+          }
+        ],
+        "enemies": [
+          {
+            "index": 0,
+            "hp": 42,
+            "block": 0,
+            "attack_hits": [
+              12
+            ],
+            "intents": [
+              "Attack"
+            ],
+            "powers": []
+          }
+        ],
+        "actions": [
+          {
+            "index": 0,
+            "card": 0,
+            "target": null,
+            "cost": 1,
+            "choice": null,
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 4,
+              "draw": null
+            }
+          },
+          {
+            "index": 1,
+            "card": 1,
+            "target": null,
+            "cost": 1,
+            "choice": null,
+            "preview": null
+          },
+          {
+            "index": 2,
+            "card": 2,
+            "target": 0,
+            "cost": 1,
+            "choice": null,
+            "preview": {
+              "damage_per_hit": 6,
+              "hits": 1,
+              "block": null,
+              "draw": null
+            }
+          },
+          {
+            "index": 3,
+            "card": 3,
+            "target": null,
+            "cost": 1,
+            "choice": null,
+            "preview": null
+          },
+          {
+            "index": 4,
+            "card": 4,
+            "target": 0,
+            "cost": 0,
+            "choice": null,
+            "preview": {
+              "damage_per_hit": 6,
+              "hits": 1,
+              "block": null,
+              "draw": null
+            }
+          },
+          {
+            "index": 5,
+            "card": null,
+            "target": null,
+            "cost": null,
+            "choice": null,
+            "preview": null
+          }
+        ],
+        "powers": []
+      },
+      "selected": {
+        "action": "play_card",
+        "args": {
+          "card_index": 3
+        },
+        "choice_index": 5
+      },
+      "plan": {
+        "kind": 0,
+        "turn": 1,
+        "card_id": "SURVIVOR",
+        "card_occurrence": 0,
+        "target_index": -1,
+        "card_title": "",
+        "target_name": "",
+        "choice": {
+          "effect": 2,
+          "source_pile": 2,
+          "cards": [
+            {
+              "card_id": "STRIKE_SILENT",
+              "upgrade_level": 0,
+              "state_key": "STRIKE_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "source_occurrence": 1,
+              "option_occurrence": 1,
+              "title": "STRIKE_SILENT.title"
+            }
+          ],
+          "source_id": "",
+          "context_id": "",
+          "timing": 0
+        },
+        "nested_choices_before_primary": 0,
+        "potion_slot": -1,
+        "potion_id": "",
+        "potion_title": "",
+        "replay_count": 0,
+        "card_state_key": "SURVIVOR+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=8|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+        "card_state_occurrence": 0,
+        "ends_player_turn": false,
+        "card_upgrade_level": 0,
+        "card_enchantment_id": "",
+        "is_executable": true,
+        "action_title": ""
+      },
+      "stamp": "835009dd9b725a2efdcfe22880b13de295ea792517492ea5da759ced64b72363"
+    },
+    {
+      "variant": 0,
+      "observation": {
+        "turn": 1,
+        "hp": 55,
+        "block": 0,
+        "energy": 3,
+        "draw_count": 6,
+        "hand": [
+          {
+            "index": 0,
+            "id": "DODGE_AND_ROLL",
+            "upgrade": 0
+          },
+          {
+            "index": 1,
+            "id": "DAGGER_SPRAY",
+            "upgrade": 0
+          },
+          {
+            "index": 2,
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "index": 3,
+            "id": "SURVIVOR",
+            "upgrade": 0
+          },
+          {
+            "index": 4,
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "index": 5,
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "index": 6,
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          }
+        ],
+        "enemies": [
+          {
+            "index": 0,
+            "hp": 42,
+            "block": 0,
+            "attack_hits": [
+              12
+            ],
+            "intents": [
+              "Attack"
+            ],
+            "powers": []
+          }
+        ],
+        "actions": [
+          {
+            "index": 0,
+            "card": 0,
+            "target": null,
+            "cost": 1,
+            "choice": null,
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 4,
+              "draw": null
+            }
+          },
+          {
+            "index": 1,
+            "card": 1,
+            "target": null,
+            "cost": 1,
+            "choice": null,
+            "preview": null
+          },
+          {
+            "index": 2,
+            "card": 2,
+            "target": 0,
+            "cost": 1,
+            "choice": null,
+            "preview": {
+              "damage_per_hit": 6,
+              "hits": 1,
+              "block": null,
+              "draw": null
+            }
+          },
+          {
+            "index": 3,
+            "card": 3,
+            "target": null,
+            "cost": 1,
+            "choice": {
+              "index": 0,
+              "id": "DODGE_AND_ROLL",
+              "upgrade": 0
+            },
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 8,
+              "draw": null
+            }
+          },
+          {
+            "index": 4,
+            "card": 3,
+            "target": null,
+            "cost": 1,
+            "choice": {
+              "index": 1,
+              "id": "DAGGER_SPRAY",
+              "upgrade": 0
+            },
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 8,
+              "draw": null
+            }
+          },
+          {
+            "index": 5,
+            "card": 3,
+            "target": null,
+            "cost": 1,
+            "choice": {
+              "index": 2,
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 8,
+              "draw": null
+            }
+          },
+          {
+            "index": 6,
+            "card": 3,
+            "target": null,
+            "cost": 1,
+            "choice": {
+              "index": 3,
+              "id": "BLADE_DANCE",
+              "upgrade": 0
+            },
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 8,
+              "draw": null
+            }
+          },
+          {
+            "index": 7,
+            "card": 3,
+            "target": null,
+            "cost": 1,
+            "choice": {
+              "index": 4,
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 8,
+              "draw": null
+            }
+          },
+          {
+            "index": 8,
+            "card": 3,
+            "target": null,
+            "cost": 1,
+            "choice": {
+              "index": 5,
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 8,
+              "draw": null
+            }
+          },
+          {
+            "index": 9,
+            "card": 4,
+            "target": null,
+            "cost": 1,
+            "choice": null,
+            "preview": null
+          },
+          {
+            "index": 10,
+            "card": 5,
+            "target": 0,
+            "cost": 0,
+            "choice": null,
+            "preview": {
+              "damage_per_hit": 6,
+              "hits": 1,
+              "block": null,
+              "draw": null
+            }
+          },
+          {
+            "index": 11,
+            "card": 6,
+            "target": 0,
+            "cost": 1,
+            "choice": null,
+            "preview": {
+              "damage_per_hit": 6,
+              "hits": 1,
+              "block": null,
+              "draw": null
+            }
+          },
+          {
+            "index": 12,
+            "card": null,
+            "target": null,
+            "cost": null,
+            "choice": null,
+            "preview": null
+          }
+        ],
+        "powers": []
+      },
+      "after": {
+        "turn": 1,
+        "hp": 55,
+        "block": 8,
+        "energy": 2,
+        "draw_count": 6,
+        "hand": [
+          {
+            "index": 0,
+            "id": "DODGE_AND_ROLL",
+            "upgrade": 0
+          },
+          {
+            "index": 1,
+            "id": "DAGGER_SPRAY",
+            "upgrade": 0
+          },
+          {
+            "index": 2,
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "index": 3,
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "index": 4,
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          }
+        ],
+        "enemies": [
+          {
+            "index": 0,
+            "hp": 42,
+            "block": 0,
+            "attack_hits": [
+              12
+            ],
+            "intents": [
+              "Attack"
+            ],
+            "powers": []
+          }
+        ],
+        "actions": [
+          {
+            "index": 0,
+            "card": 0,
+            "target": null,
+            "cost": 1,
+            "choice": null,
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 4,
+              "draw": null
+            }
+          },
+          {
+            "index": 1,
+            "card": 1,
+            "target": null,
+            "cost": 1,
+            "choice": null,
+            "preview": null
+          },
+          {
+            "index": 2,
+            "card": 2,
+            "target": null,
+            "cost": 1,
+            "choice": null,
+            "preview": null
+          },
+          {
+            "index": 3,
+            "card": 3,
+            "target": 0,
+            "cost": 0,
+            "choice": null,
+            "preview": {
+              "damage_per_hit": 6,
+              "hits": 1,
+              "block": null,
+              "draw": null
+            }
+          },
+          {
+            "index": 4,
+            "card": 4,
+            "target": 0,
+            "cost": 1,
+            "choice": null,
+            "preview": {
+              "damage_per_hit": 6,
+              "hits": 1,
+              "block": null,
+              "draw": null
+            }
+          },
+          {
+            "index": 5,
+            "card": null,
+            "target": null,
+            "cost": null,
+            "choice": null,
+            "preview": null
+          }
+        ],
+        "powers": []
+      },
+      "selected": {
+        "action": "play_card",
+        "args": {
+          "card_index": 3
+        },
+        "choice_index": 2
+      },
+      "plan": {
+        "kind": 0,
+        "turn": 1,
+        "card_id": "SURVIVOR",
+        "card_occurrence": 0,
+        "target_index": -1,
+        "card_title": "",
+        "target_name": "",
+        "choice": {
+          "effect": 2,
+          "source_pile": 2,
+          "cards": [
+            {
+              "card_id": "STRIKE_SILENT",
+              "upgrade_level": 0,
+              "state_key": "STRIKE_SILENT+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "source_occurrence": 0,
+              "option_occurrence": 0,
+              "title": "STRIKE_SILENT.title"
+            }
+          ],
+          "source_id": "",
+          "context_id": "",
+          "timing": 0
+        },
+        "nested_choices_before_primary": 0,
+        "potion_slot": -1,
+        "potion_id": "",
+        "potion_title": "",
+        "replay_count": 0,
+        "card_state_key": "SURVIVOR+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Block=8|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+        "card_state_occurrence": 0,
+        "ends_player_turn": false,
+        "card_upgrade_level": 0,
+        "card_enchantment_id": "",
+        "is_executable": true,
+        "action_title": ""
+      },
+      "stamp": "46198b043f72df8ae18e341860f6b6f13d5b6e42bb623e6f402fcdd750732e7d"
+    }
+  ]
+}

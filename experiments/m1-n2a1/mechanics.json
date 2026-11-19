@@ -1,0 +1,304 @@
+{
+  "input": {
+    "case": {
+      "id": "n2a-cost-01",
+      "split": "development",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 1,
+        "act_variant": "OVERGROWTH",
+        "encounter": "SHRINKER_BEETLE_WEAK",
+        "seed": "N2ACOST00001",
+        "hp": 70,
+        "max_hp": 80,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STOMP",
+            "upgrade": 0
+          },
+          {
+            "id": "STOMP",
+            "upgrade": 0
+          },
+          {
+            "id": "STOMP",
+            "upgrade": 0
+          },
+          {
+            "id": "STOMP",
+            "upgrade": 0
+          }
+        ]
+      }
+    },
+    "synthetic": true,
+    "natural_reachability": "unknown"
+  },
+  "lifecycle": [
+    {
+      "id": "n2a-cost-01",
+      "root_sha256": "14730390707ae35dd573b00c7cc8c36d3a28fb0d1aa7994b95dd9d82ecf62b32",
+      "loaded": {
+        "type": "solver_identity",
+        "version": "0.51.5-e3f.1+3b3fd97556a5b32d7fdb20efd4294cd07cc6ce6b",
+        "sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+        "mode": "offline-teacher",
+        "schema_version": 1,
+        "peak_working_set_bytes": 47960064
+      },
+      "launch_ms": 354.99550006352365,
+      "build": {
+        "handshake_ms": 261.08530000783503,
+        "initialize_ms": 1556.931700091809,
+        "snapshot_ms": 132.35320011153817,
+        "root_ms": 1950.3702002111822,
+        "peak_working_set_bytes": 109068288
+      },
+      "recycle_ms": 54.30230009369552
+    },
+    {
+      "id": "n2a-cost-01",
+      "root_sha256": "14730390707ae35dd573b00c7cc8c36d3a28fb0d1aa7994b95dd9d82ecf62b32",
+      "loaded": {
+        "type": "solver_identity",
+        "version": "0.51.5-e3f.1+3b3fd97556a5b32d7fdb20efd4294cd07cc6ce6b",
+        "sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+        "mode": "offline-teacher",
+        "schema_version": 1,
+        "peak_working_set_bytes": 48111616
+      },
+      "launch_ms": 287.67460002563894,
+      "build": {
+        "handshake_ms": 201.09680015593767,
+        "initialize_ms": 1726.5516000334173,
+        "snapshot_ms": 130.2233999595046,
+        "root_ms": 2057.8718001488596,
+        "peak_working_set_bytes": 109137920
+      },
+      "recycle_ms": 39.22070004045963
+    }
+  ],
+  "versions": {
+    "sampler": "m1-d1-v1",
+    "policy": "M1-F2-discard-v1",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "solver_sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+    "solver": "0.51.5-e3f.1",
+    "headless_sha256": "7d8d8951f0647306e8f3f18479c1f1d74e6dd69179b623178a6e31ccc35abe19",
+    "coreclr": "9.0.7",
+    "native_identity": "898aed29b77efa81263099cb721e82247b020abc21f1c5a723a6b5eebe727bd0",
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3"
+  },
+  "before": {
+    "turn": 1,
+    "hp": 70,
+    "block": 0,
+    "energy": 3,
+    "draw_count": 3,
+    "hand": [
+      {
+        "index": 0,
+        "id": "STOMP",
+        "upgrade": 0
+      },
+      {
+        "index": 1,
+        "id": "STOMP",
+        "upgrade": 0
+      },
+      {
+        "index": 2,
+        "id": "STOMP",
+        "upgrade": 0
+      },
+      {
+        "index": 3,
+        "id": "STOMP",
+        "upgrade": 0
+      },
+      {
+        "index": 4,
+        "id": "STRIKE_IRONCLAD",
+        "upgrade": 0
+      }
+    ],
+    "enemies": [
+      {
+        "index": 0,
+        "hp": 39,
+        "block": 0,
+        "attack_hits": [],
+        "intents": [
+          "DebuffStrong"
+        ],
+        "powers": []
+      }
+    ],
+    "actions": [
+      {
+        "index": 0,
+        "card": 0,
+        "target": null,
+        "cost": 3,
+        "choice": null,
+        "preview": null
+      },
+      {
+        "index": 1,
+        "card": 1,
+        "target": null,
+        "cost": 3,
+        "choice": null,
+        "preview": null
+      },
+      {
+        "index": 2,
+        "card": 2,
+        "target": null,
+        "cost": 3,
+        "choice": null,
+        "preview": null
+      },
+      {
+        "index": 3,
+        "card": 3,
+        "target": null,
+        "cost": 3,
+        "choice": null,
+        "preview": null
+      },
+      {
+        "index": 4,
+        "card": 4,
+        "target": 0,
+        "cost": 1,
+        "choice": null,
+        "preview": {
+          "damage_per_hit": 6,
+          "hits": 1,
+          "block": null,
+          "draw": null
+        }
+      },
+      {
+        "index": 5,
+        "card": null,
+        "target": null,
+        "cost": null,
+        "choice": null,
+        "preview": null
+      }
+    ],
+    "powers": []
+  },
+  "after": {
+    "turn": 1,
+    "hp": 70,
+    "block": 0,
+    "energy": 2,
+    "draw_count": 3,
+    "hand": [
+      {
+        "index": 0,
+        "id": "STOMP",
+        "upgrade": 0
+      },
+      {
+        "index": 1,
+        "id": "STOMP",
+        "upgrade": 0
+      },
+      {
+        "index": 2,
+        "id": "STOMP",
+        "upgrade": 0
+      },
+      {
+        "index": 3,
+        "id": "STOMP",
+        "upgrade": 0
+      }
+    ],
+    "enemies": [
+      {
+        "index": 0,
+        "hp": 33,
+        "block": 0,
+        "attack_hits": [],
+        "intents": [
+          "DebuffStrong"
+        ],
+        "powers": []
+      }
+    ],
+    "actions": [
+      {
+        "index": 0,
+        "card": 0,
+        "target": null,
+        "cost": 2,
+        "choice": null,
+        "preview": null
+      },
+      {
+        "index": 1,
+        "card": 1,
+        "target": null,
+        "cost": 2,
+        "choice": null,
+        "preview": null
+      },
+      {
+        "index": 2,
+        "card": 2,
+        "target": null,
+        "cost": 2,
+        "choice": null,
+        "preview": null
+      },
+      {
+        "index": 3,
+        "card": 3,
+        "target": null,
+        "cost": 2,
+        "choice": null,
+        "preview": null
+      },
+      {
+        "index": 4,
+        "card": null,
+        "target": null,
+        "cost": null,
+        "choice": null,
+        "preview": null
+      }
+    ],
+    "powers": []
+  },
+  "diffs": []
+}
