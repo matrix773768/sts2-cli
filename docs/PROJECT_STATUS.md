@@ -6,6 +6,8 @@
 > M0 最后一次业务代码提交：`bc48ac58aeca80c2c7b9249cbf98f316ae99a27b` — Restore native Ancient healing and act-start travel rules。
 > 本文件是交接摘要；具体实现、测试断言、原生 IL 及日志以当前仓库和本机实际文件为准。不要将历史总结当成新的测试结果。
 
+**项目长期目标、极速 Combat Solver 的定位、阶段性质量门槛及研究取舍，以 [PROJECT_VISION.md](PROJECT_VISION.md) 为准。** 本文件继续保留工程状态与历史验收记录；局外价值建模详见 [research-direction-and-value-model.md](research-direction-and-value-model.md)。
+
 ## 本阶段交接
 
 M1-S2C 固定 32 个开发根、16 个验证根，F3B C 和 F4 在统一 512 次预算下均取得 48/48 L3。F4 改善 13 个开发根及 12 个验证根的战后 HP。9 次候选验收被严格拒绝，分为猎杀者致死后的抽牌效果和敌方侧胜利回调计数，两类差分均独立重放复现。试批与正式的 8 个重复单元一致。S2C 未打开测试根归档或标签。见 [M1-S2C 基准、失配审计与复现](m1-s2c-cross-root-benchmark.md)。
