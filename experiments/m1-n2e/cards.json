@@ -1,0 +1,1367 @@
+{
+  "cards": [
+    {
+      "card_family": null,
+      "character": "Ironclad",
+      "id": "STRIKE_IRONCLAD",
+      "qualification": "static_described",
+      "sources": {
+        "native": "static-evidence.json",
+        "rule_text": "STRIKE_IRONCLAD.description"
+      },
+      "variants": [
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 6,
+              "hits": 1,
+              "kind": "Damage",
+              "modifiers": [
+                "strength_per_hit"
+              ],
+              "target": "selected_enemy"
+            }
+          ],
+          "keywords": [],
+          "level": 0,
+          "rarity": "Basic",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 9,
+              "hits": 1,
+              "kind": "Damage",
+              "modifiers": [
+                "strength_per_hit"
+              ],
+              "target": "selected_enemy"
+            }
+          ],
+          "keywords": [],
+          "level": 1,
+          "rarity": "Basic",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "card_family": null,
+      "character": "Ironclad",
+      "id": "DEFEND_IRONCLAD",
+      "qualification": "static_described",
+      "sources": {
+        "native": "static-evidence.json",
+        "rule_text": "DEFEND_IRONCLAD.description"
+      },
+      "variants": [
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 5,
+              "kind": "Block",
+              "modifiers": [
+                "dexterity"
+              ],
+              "target": "self"
+            }
+          ],
+          "keywords": [],
+          "level": 0,
+          "rarity": "Basic",
+          "targeting": "Self",
+          "type": "Skill",
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 8,
+              "kind": "Block",
+              "modifiers": [
+                "dexterity"
+              ],
+              "target": "self"
+            }
+          ],
+          "keywords": [],
+          "level": 1,
+          "rarity": "Basic",
+          "targeting": "Self",
+          "type": "Skill",
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "card_family": null,
+      "character": "Ironclad",
+      "id": "BASH",
+      "qualification": "static_described",
+      "sources": {
+        "native": "static-evidence.json",
+        "rule_text": "BASH.description"
+      },
+      "variants": [
+        {
+          "cost": 2,
+          "effects": [
+            {
+              "amount": 8,
+              "hits": 1,
+              "kind": "Damage",
+              "modifiers": [
+                "strength_per_hit"
+              ],
+              "target": "selected_enemy"
+            },
+            {
+              "amount": 2,
+              "duration": "power_stacks",
+              "kind": "ApplyPower",
+              "power": "vulnerable",
+              "target": "selected_enemy"
+            }
+          ],
+          "keywords": [],
+          "level": 0,
+          "rarity": "Basic",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "x_cost": false
+        },
+        {
+          "cost": 2,
+          "effects": [
+            {
+              "amount": 10,
+              "hits": 1,
+              "kind": "Damage",
+              "modifiers": [
+                "strength_per_hit"
+              ],
+              "target": "selected_enemy"
+            },
+            {
+              "amount": 3,
+              "duration": "power_stacks",
+              "kind": "ApplyPower",
+              "power": "vulnerable",
+              "target": "selected_enemy"
+            }
+          ],
+          "keywords": [],
+          "level": 1,
+          "rarity": "Basic",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "card_family": null,
+      "character": "Ironclad",
+      "id": "INFLAME",
+      "qualification": "static_described",
+      "sources": {
+        "native": "static-evidence.json",
+        "rule_text": "INFLAME.description"
+      },
+      "variants": [
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 2,
+              "duration": "combat",
+              "kind": "GainPower",
+              "power": "strength",
+              "target": "self"
+            }
+          ],
+          "keywords": [],
+          "level": 0,
+          "rarity": "Uncommon",
+          "targeting": "Self",
+          "type": "Power",
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 3,
+              "duration": "combat",
+              "kind": "GainPower",
+              "power": "strength",
+              "target": "self"
+            }
+          ],
+          "keywords": [],
+          "level": 1,
+          "rarity": "Uncommon",
+          "targeting": "Self",
+          "type": "Power",
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "card_family": null,
+      "character": "Ironclad",
+      "id": "TWIN_STRIKE",
+      "qualification": "static_described",
+      "sources": {
+        "native": "static-evidence.json",
+        "rule_text": "TWIN_STRIKE.description"
+      },
+      "variants": [
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 5,
+              "hits": 2,
+              "kind": "Damage",
+              "modifiers": [
+                "strength_per_hit"
+              ],
+              "target": "selected_enemy"
+            }
+          ],
+          "keywords": [],
+          "level": 0,
+          "rarity": "Common",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 7,
+              "hits": 2,
+              "kind": "Damage",
+              "modifiers": [
+                "strength_per_hit"
+              ],
+              "target": "selected_enemy"
+            }
+          ],
+          "keywords": [],
+          "level": 1,
+          "rarity": "Common",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "card_family": null,
+      "character": "Ironclad",
+      "id": "POMMEL_STRIKE",
+      "qualification": "static_described",
+      "sources": {
+        "native": "static-evidence.json",
+        "rule_text": "POMMEL_STRIKE.description"
+      },
+      "variants": [
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 9,
+              "hits": 1,
+              "kind": "Damage",
+              "modifiers": [
+                "strength_per_hit"
+              ],
+              "target": "selected_enemy"
+            },
+            {
+              "count": 1,
+              "kind": "Draw",
+              "source_zone": "draw_pile",
+              "target": "self"
+            }
+          ],
+          "keywords": [],
+          "level": 0,
+          "rarity": "Common",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 10,
+              "hits": 1,
+              "kind": "Damage",
+              "modifiers": [
+                "strength_per_hit"
+              ],
+              "target": "selected_enemy"
+            },
+            {
+              "count": 2,
+              "kind": "Draw",
+              "source_zone": "draw_pile",
+              "target": "self"
+            }
+          ],
+          "keywords": [],
+          "level": 1,
+          "rarity": "Common",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "card_family": null,
+      "character": "Ironclad",
+      "id": "SHRUG_IT_OFF",
+      "qualification": "static_described",
+      "sources": {
+        "native": "static-evidence.json",
+        "rule_text": "SHRUG_IT_OFF.description"
+      },
+      "variants": [
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 8,
+              "kind": "Block",
+              "modifiers": [
+                "dexterity"
+              ],
+              "target": "self"
+            },
+            {
+              "count": 1,
+              "kind": "Draw",
+              "source_zone": "draw_pile",
+              "target": "self"
+            }
+          ],
+          "keywords": [],
+          "level": 0,
+          "rarity": "Common",
+          "targeting": "Self",
+          "type": "Skill",
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 11,
+              "kind": "Block",
+              "modifiers": [
+                "dexterity"
+              ],
+              "target": "self"
+            },
+            {
+              "count": 1,
+              "kind": "Draw",
+              "source_zone": "draw_pile",
+              "target": "self"
+            }
+          ],
+          "keywords": [],
+          "level": 1,
+          "rarity": "Common",
+          "targeting": "Self",
+          "type": "Skill",
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "card_family": null,
+      "character": "Ironclad",
+      "id": "FLAME_BARRIER",
+      "qualification": "static_partial",
+      "sources": {
+        "native": "static-evidence.json",
+        "rule_text": "FLAME_BARRIER.description"
+      },
+      "variants": [
+        {
+          "cost": 2,
+          "effects": [
+            {
+              "amount": 12,
+              "kind": "Block",
+              "modifiers": [
+                "dexterity"
+              ],
+              "target": "self"
+            },
+            {
+              "duration": "current_turn",
+              "effects": [
+                {
+                  "amount": 4,
+                  "hits": 1,
+                  "kind": "Damage",
+                  "target": "attacker"
+                }
+              ],
+              "event": "when_attacked",
+              "kind": "TriggeredEffect"
+            },
+            {
+              "kind": "UnsupportedEffect",
+              "reason": "retaliation_hook_details"
+            }
+          ],
+          "keywords": [],
+          "level": 0,
+          "rarity": "Uncommon",
+          "targeting": "Self",
+          "type": "Skill",
+          "x_cost": false
+        },
+        {
+          "cost": 2,
+          "effects": [
+            {
+              "amount": 16,
+              "kind": "Block",
+              "modifiers": [
+                "dexterity"
+              ],
+              "target": "self"
+            },
+            {
+              "duration": "current_turn",
+              "effects": [
+                {
+                  "amount": 6,
+                  "hits": 1,
+                  "kind": "Damage",
+                  "target": "attacker"
+                }
+              ],
+              "event": "when_attacked",
+              "kind": "TriggeredEffect"
+            },
+            {
+              "kind": "UnsupportedEffect",
+              "reason": "retaliation_hook_details"
+            }
+          ],
+          "keywords": [],
+          "level": 1,
+          "rarity": "Uncommon",
+          "targeting": "Self",
+          "type": "Skill",
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "card_family": null,
+      "character": "Ironclad",
+      "id": "IRON_WAVE",
+      "qualification": "static_described",
+      "sources": {
+        "native": "static-evidence.json",
+        "rule_text": "IRON_WAVE.description"
+      },
+      "variants": [
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 5,
+              "kind": "Block",
+              "modifiers": [
+                "dexterity"
+              ],
+              "target": "self"
+            },
+            {
+              "amount": 5,
+              "hits": 1,
+              "kind": "Damage",
+              "modifiers": [
+                "strength_per_hit"
+              ],
+              "target": "selected_enemy"
+            }
+          ],
+          "keywords": [],
+          "level": 0,
+          "rarity": "Common",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 7,
+              "kind": "Block",
+              "modifiers": [
+                "dexterity"
+              ],
+              "target": "self"
+            },
+            {
+              "amount": 7,
+              "hits": 1,
+              "kind": "Damage",
+              "modifiers": [
+                "strength_per_hit"
+              ],
+              "target": "selected_enemy"
+            }
+          ],
+          "keywords": [],
+          "level": 1,
+          "rarity": "Common",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "card_family": null,
+      "character": "Silent",
+      "id": "STRIKE_SILENT",
+      "qualification": "static_described",
+      "sources": {
+        "native": "static-evidence.json",
+        "rule_text": "STRIKE_SILENT.description"
+      },
+      "variants": [
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 6,
+              "hits": 1,
+              "kind": "Damage",
+              "modifiers": [
+                "strength_per_hit"
+              ],
+              "target": "selected_enemy"
+            }
+          ],
+          "keywords": [],
+          "level": 0,
+          "rarity": "Basic",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 9,
+              "hits": 1,
+              "kind": "Damage",
+              "modifiers": [
+                "strength_per_hit"
+              ],
+              "target": "selected_enemy"
+            }
+          ],
+          "keywords": [],
+          "level": 1,
+          "rarity": "Basic",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "card_family": null,
+      "character": "Silent",
+      "id": "DEFEND_SILENT",
+      "qualification": "static_described",
+      "sources": {
+        "native": "static-evidence.json",
+        "rule_text": "DEFEND_SILENT.description"
+      },
+      "variants": [
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 5,
+              "kind": "Block",
+              "modifiers": [
+                "dexterity"
+              ],
+              "target": "self"
+            }
+          ],
+          "keywords": [],
+          "level": 0,
+          "rarity": "Basic",
+          "targeting": "Self",
+          "type": "Skill",
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 8,
+              "kind": "Block",
+              "modifiers": [
+                "dexterity"
+              ],
+              "target": "self"
+            }
+          ],
+          "keywords": [],
+          "level": 1,
+          "rarity": "Basic",
+          "targeting": "Self",
+          "type": "Skill",
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "card_family": null,
+      "character": "Silent",
+      "id": "SURVIVOR",
+      "qualification": "static_partial",
+      "sources": {
+        "native": "static-evidence.json",
+        "rule_text": "SURVIVOR.description"
+      },
+      "variants": [
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 8,
+              "kind": "Block",
+              "modifiers": [
+                "dexterity"
+              ],
+              "target": "self"
+            },
+            {
+              "count": 1,
+              "kind": "Discard",
+              "selection": "player_choice",
+              "source_zone": "hand",
+              "target": "self"
+            },
+            {
+              "kind": "UnsupportedEffect",
+              "reason": "choice_edge_cases"
+            }
+          ],
+          "keywords": [],
+          "level": 0,
+          "rarity": "Basic",
+          "targeting": "Self",
+          "type": "Skill",
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 11,
+              "kind": "Block",
+              "modifiers": [
+                "dexterity"
+              ],
+              "target": "self"
+            },
+            {
+              "count": 1,
+              "kind": "Discard",
+              "selection": "player_choice",
+              "source_zone": "hand",
+              "target": "self"
+            },
+            {
+              "kind": "UnsupportedEffect",
+              "reason": "choice_edge_cases"
+            }
+          ],
+          "keywords": [],
+          "level": 1,
+          "rarity": "Basic",
+          "targeting": "Self",
+          "type": "Skill",
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "card_family": null,
+      "character": "Silent",
+      "id": "BLADE_DANCE",
+      "qualification": "static_described",
+      "sources": {
+        "native": "static-evidence.json",
+        "rule_text": "BLADE_DANCE.description"
+      },
+      "variants": [
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "card_family": "shiv",
+              "count": 3,
+              "destination_zone": "hand",
+              "kind": "GenerateCard",
+              "target": "self"
+            },
+            {
+              "event": "on_play_cleanup",
+              "kind": "Exhaust",
+              "target": "played_card"
+            }
+          ],
+          "keywords": [
+            "Exhaust"
+          ],
+          "level": 0,
+          "rarity": "Common",
+          "targeting": "Self",
+          "type": "Skill",
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "card_family": "shiv",
+              "count": 4,
+              "destination_zone": "hand",
+              "kind": "GenerateCard",
+              "target": "self"
+            },
+            {
+              "event": "on_play_cleanup",
+              "kind": "Exhaust",
+              "target": "played_card"
+            }
+          ],
+          "keywords": [
+            "Exhaust"
+          ],
+          "level": 1,
+          "rarity": "Common",
+          "targeting": "Self",
+          "type": "Skill",
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "card_family": null,
+      "character": "Silent",
+      "id": "ACCURACY",
+      "qualification": "static_described",
+      "sources": {
+        "native": "static-evidence.json",
+        "rule_text": "ACCURACY.description"
+      },
+      "variants": [
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 4,
+              "card_family": "shiv",
+              "duration": "combat",
+              "kind": "GainPower",
+              "power": "accuracy",
+              "target": "self"
+            }
+          ],
+          "keywords": [],
+          "level": 0,
+          "rarity": "Uncommon",
+          "targeting": "Self",
+          "type": "Power",
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 6,
+              "card_family": "shiv",
+              "duration": "combat",
+              "kind": "GainPower",
+              "power": "accuracy",
+              "target": "self"
+            }
+          ],
+          "keywords": [],
+          "level": 1,
+          "rarity": "Uncommon",
+          "targeting": "Self",
+          "type": "Power",
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "card_family": null,
+      "character": "Silent",
+      "id": "FOOTWORK",
+      "qualification": "static_described",
+      "sources": {
+        "native": "static-evidence.json",
+        "rule_text": "FOOTWORK.description"
+      },
+      "variants": [
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 2,
+              "duration": "combat",
+              "kind": "GainPower",
+              "power": "dexterity",
+              "target": "self"
+            }
+          ],
+          "keywords": [],
+          "level": 0,
+          "rarity": "Uncommon",
+          "targeting": "Self",
+          "type": "Power",
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 3,
+              "duration": "combat",
+              "kind": "GainPower",
+              "power": "dexterity",
+              "target": "self"
+            }
+          ],
+          "keywords": [],
+          "level": 1,
+          "rarity": "Uncommon",
+          "targeting": "Self",
+          "type": "Power",
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "card_family": null,
+      "character": "Silent",
+      "id": "DODGE_AND_ROLL",
+      "qualification": "static_partial",
+      "sources": {
+        "native": "static-evidence.json",
+        "rule_text": "DODGE_AND_ROLL.description"
+      },
+      "variants": [
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 4,
+              "kind": "Block",
+              "modifiers": [
+                "dexterity"
+              ],
+              "target": "self"
+            },
+            {
+              "duration": "once",
+              "effects": [
+                {
+                  "amount": 4,
+                  "kind": "Block",
+                  "modifiers": [
+                    "dexterity"
+                  ],
+                  "target": "self"
+                }
+              ],
+              "event": "next_turn",
+              "kind": "TriggeredEffect"
+            },
+            {
+              "kind": "UnsupportedEffect",
+              "reason": "delayed_block_snapshot_and_hook_details"
+            }
+          ],
+          "keywords": [],
+          "level": 0,
+          "rarity": "Common",
+          "targeting": "Self",
+          "type": "Skill",
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 6,
+              "kind": "Block",
+              "modifiers": [
+                "dexterity"
+              ],
+              "target": "self"
+            },
+            {
+              "duration": "once",
+              "effects": [
+                {
+                  "amount": 6,
+                  "kind": "Block",
+                  "modifiers": [
+                    "dexterity"
+                  ],
+                  "target": "self"
+                }
+              ],
+              "event": "next_turn",
+              "kind": "TriggeredEffect"
+            },
+            {
+              "kind": "UnsupportedEffect",
+              "reason": "delayed_block_snapshot_and_hook_details"
+            }
+          ],
+          "keywords": [],
+          "level": 1,
+          "rarity": "Common",
+          "targeting": "Self",
+          "type": "Skill",
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "card_family": null,
+      "character": "Silent",
+      "id": "BACKFLIP",
+      "qualification": "static_described",
+      "sources": {
+        "native": "static-evidence.json",
+        "rule_text": "BACKFLIP.description"
+      },
+      "variants": [
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 5,
+              "kind": "Block",
+              "modifiers": [
+                "dexterity"
+              ],
+              "target": "self"
+            },
+            {
+              "count": 2,
+              "kind": "Draw",
+              "source_zone": "draw_pile",
+              "target": "self"
+            }
+          ],
+          "keywords": [],
+          "level": 0,
+          "rarity": "Common",
+          "targeting": "Self",
+          "type": "Skill",
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 8,
+              "kind": "Block",
+              "modifiers": [
+                "dexterity"
+              ],
+              "target": "self"
+            },
+            {
+              "count": 2,
+              "kind": "Draw",
+              "source_zone": "draw_pile",
+              "target": "self"
+            }
+          ],
+          "keywords": [],
+          "level": 1,
+          "rarity": "Common",
+          "targeting": "Self",
+          "type": "Skill",
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "card_family": null,
+      "character": "Silent",
+      "id": "CLOAK_AND_DAGGER",
+      "qualification": "static_described",
+      "sources": {
+        "native": "static-evidence.json",
+        "rule_text": "CLOAK_AND_DAGGER.description"
+      },
+      "variants": [
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 6,
+              "kind": "Block",
+              "modifiers": [
+                "dexterity"
+              ],
+              "target": "self"
+            },
+            {
+              "card_family": "shiv",
+              "count": 1,
+              "destination_zone": "hand",
+              "kind": "GenerateCard",
+              "target": "self"
+            }
+          ],
+          "keywords": [],
+          "level": 0,
+          "rarity": "Common",
+          "targeting": "Self",
+          "type": "Skill",
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 6,
+              "kind": "Block",
+              "modifiers": [
+                "dexterity"
+              ],
+              "target": "self"
+            },
+            {
+              "card_family": "shiv",
+              "count": 2,
+              "destination_zone": "hand",
+              "kind": "GenerateCard",
+              "target": "self"
+            }
+          ],
+          "keywords": [],
+          "level": 1,
+          "rarity": "Common",
+          "targeting": "Self",
+          "type": "Skill",
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "card_family": null,
+      "character": "Silent",
+      "id": "PREDATOR",
+      "qualification": "static_partial",
+      "sources": {
+        "native": "static-evidence.json",
+        "rule_text": "PREDATOR.description"
+      },
+      "variants": [
+        {
+          "cost": 2,
+          "effects": [
+            {
+              "amount": 15,
+              "hits": 1,
+              "kind": "Damage",
+              "modifiers": [
+                "strength_per_hit"
+              ],
+              "target": "selected_enemy"
+            },
+            {
+              "duration": "once",
+              "effects": [
+                {
+                  "count": 2,
+                  "kind": "Draw",
+                  "source_zone": "draw_pile",
+                  "target": "self"
+                }
+              ],
+              "event": "next_turn",
+              "kind": "TriggeredEffect"
+            },
+            {
+              "kind": "UnsupportedEffect",
+              "reason": "lethal_terminal_continuation_mismatch"
+            }
+          ],
+          "keywords": [],
+          "level": 0,
+          "rarity": "Common",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "x_cost": false
+        },
+        {
+          "cost": 2,
+          "effects": [
+            {
+              "amount": 20,
+              "hits": 1,
+              "kind": "Damage",
+              "modifiers": [
+                "strength_per_hit"
+              ],
+              "target": "selected_enemy"
+            },
+            {
+              "duration": "once",
+              "effects": [
+                {
+                  "count": 2,
+                  "kind": "Draw",
+                  "source_zone": "draw_pile",
+                  "target": "self"
+                }
+              ],
+              "event": "next_turn",
+              "kind": "TriggeredEffect"
+            },
+            {
+              "kind": "UnsupportedEffect",
+              "reason": "lethal_terminal_continuation_mismatch"
+            }
+          ],
+          "keywords": [],
+          "level": 1,
+          "rarity": "Common",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "card_family": null,
+      "character": "Silent",
+      "id": "SLICE",
+      "qualification": "static_described",
+      "sources": {
+        "native": "static-evidence.json",
+        "rule_text": "SLICE.description"
+      },
+      "variants": [
+        {
+          "cost": 0,
+          "effects": [
+            {
+              "amount": 6,
+              "hits": 1,
+              "kind": "Damage",
+              "modifiers": [
+                "strength_per_hit"
+              ],
+              "target": "selected_enemy"
+            }
+          ],
+          "keywords": [],
+          "level": 0,
+          "rarity": "Common",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "x_cost": false
+        },
+        {
+          "cost": 0,
+          "effects": [
+            {
+              "amount": 9,
+              "hits": 1,
+              "kind": "Damage",
+              "modifiers": [
+                "strength_per_hit"
+              ],
+              "target": "selected_enemy"
+            }
+          ],
+          "keywords": [],
+          "level": 1,
+          "rarity": "Common",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "card_family": null,
+      "character": "Silent",
+      "id": "LEG_SWEEP",
+      "qualification": "static_described",
+      "sources": {
+        "native": "static-evidence.json",
+        "rule_text": "LEG_SWEEP.description"
+      },
+      "variants": [
+        {
+          "cost": 2,
+          "effects": [
+            {
+              "amount": 2,
+              "duration": "power_stacks",
+              "kind": "ApplyPower",
+              "power": "weak",
+              "target": "selected_enemy"
+            },
+            {
+              "amount": 11,
+              "kind": "Block",
+              "modifiers": [
+                "dexterity"
+              ],
+              "target": "self"
+            }
+          ],
+          "keywords": [],
+          "level": 0,
+          "rarity": "Uncommon",
+          "targeting": "AnyEnemy",
+          "type": "Skill",
+          "x_cost": false
+        },
+        {
+          "cost": 2,
+          "effects": [
+            {
+              "amount": 3,
+              "duration": "power_stacks",
+              "kind": "ApplyPower",
+              "power": "weak",
+              "target": "selected_enemy"
+            },
+            {
+              "amount": 14,
+              "kind": "Block",
+              "modifiers": [
+                "dexterity"
+              ],
+              "target": "self"
+            }
+          ],
+          "keywords": [],
+          "level": 1,
+          "rarity": "Uncommon",
+          "targeting": "AnyEnemy",
+          "type": "Skill",
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "card_family": "shiv",
+      "character": "Silent",
+      "id": "SHIV",
+      "qualification": "static_described",
+      "sources": {
+        "native": "static-evidence.json",
+        "rule_text": "SHIV.description"
+      },
+      "variants": [
+        {
+          "cost": 0,
+          "effects": [
+            {
+              "amount": 4,
+              "hits": 1,
+              "kind": "Damage",
+              "modifiers": [
+                "strength_per_hit"
+              ],
+              "target": "selected_enemy"
+            },
+            {
+              "event": "on_play_cleanup",
+              "kind": "Exhaust",
+              "target": "played_card"
+            }
+          ],
+          "keywords": [
+            "Exhaust"
+          ],
+          "level": 0,
+          "rarity": "Token",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "x_cost": false
+        },
+        {
+          "cost": 0,
+          "effects": [
+            {
+              "amount": 6,
+              "hits": 1,
+              "kind": "Damage",
+              "modifiers": [
+                "strength_per_hit"
+              ],
+              "target": "selected_enemy"
+            },
+            {
+              "event": "on_play_cleanup",
+              "kind": "Exhaust",
+              "target": "played_card"
+            }
+          ],
+          "keywords": [
+            "Exhaust"
+          ],
+          "level": 1,
+          "rarity": "Token",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "x_cost": false
+        }
+      ]
+    }
+  ],
+  "game_dll_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+}

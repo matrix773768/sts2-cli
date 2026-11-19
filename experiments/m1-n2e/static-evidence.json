@@ -1,0 +1,669 @@
+{
+  "cards": [
+    {
+      "id": "STRIKE_IRONCLAD",
+      "variants": [
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 0,
+          "rarity": "Basic",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "variables": {
+            "Damage": 6
+          },
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 1,
+          "rarity": "Basic",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "variables": {
+            "Damage": 9
+          },
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "id": "DEFEND_IRONCLAD",
+      "variants": [
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 0,
+          "rarity": "Basic",
+          "targeting": "Self",
+          "type": "Skill",
+          "variables": {
+            "Block": 5
+          },
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 1,
+          "rarity": "Basic",
+          "targeting": "Self",
+          "type": "Skill",
+          "variables": {
+            "Block": 8
+          },
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "id": "BASH",
+      "variants": [
+        {
+          "cost": 2,
+          "keywords": [],
+          "level": 0,
+          "rarity": "Basic",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "variables": {
+            "Damage": 8,
+            "VulnerablePower": 2
+          },
+          "x_cost": false
+        },
+        {
+          "cost": 2,
+          "keywords": [],
+          "level": 1,
+          "rarity": "Basic",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "variables": {
+            "Damage": 10,
+            "VulnerablePower": 3
+          },
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "id": "INFLAME",
+      "variants": [
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 0,
+          "rarity": "Uncommon",
+          "targeting": "Self",
+          "type": "Power",
+          "variables": {
+            "StrengthPower": 2
+          },
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 1,
+          "rarity": "Uncommon",
+          "targeting": "Self",
+          "type": "Power",
+          "variables": {
+            "StrengthPower": 3
+          },
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "id": "TWIN_STRIKE",
+      "variants": [
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 0,
+          "rarity": "Common",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "variables": {
+            "Damage": 5,
+            "HitCount": 2
+          },
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 1,
+          "rarity": "Common",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "variables": {
+            "Damage": 7,
+            "HitCount": 2
+          },
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "id": "POMMEL_STRIKE",
+      "variants": [
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 0,
+          "rarity": "Common",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "variables": {
+            "Cards": 1,
+            "Damage": 9
+          },
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 1,
+          "rarity": "Common",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "variables": {
+            "Cards": 2,
+            "Damage": 10
+          },
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "id": "SHRUG_IT_OFF",
+      "variants": [
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 0,
+          "rarity": "Common",
+          "targeting": "Self",
+          "type": "Skill",
+          "variables": {
+            "Block": 8,
+            "Cards": 1
+          },
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 1,
+          "rarity": "Common",
+          "targeting": "Self",
+          "type": "Skill",
+          "variables": {
+            "Block": 11,
+            "Cards": 1
+          },
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "id": "FLAME_BARRIER",
+      "variants": [
+        {
+          "cost": 2,
+          "keywords": [],
+          "level": 0,
+          "rarity": "Uncommon",
+          "targeting": "Self",
+          "type": "Skill",
+          "variables": {
+            "Block": 12,
+            "DamageBack": 4
+          },
+          "x_cost": false
+        },
+        {
+          "cost": 2,
+          "keywords": [],
+          "level": 1,
+          "rarity": "Uncommon",
+          "targeting": "Self",
+          "type": "Skill",
+          "variables": {
+            "Block": 16,
+            "DamageBack": 6
+          },
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "id": "IRON_WAVE",
+      "variants": [
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 0,
+          "rarity": "Common",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "variables": {
+            "Block": 5,
+            "Damage": 5
+          },
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 1,
+          "rarity": "Common",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "variables": {
+            "Block": 7,
+            "Damage": 7
+          },
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "id": "STRIKE_SILENT",
+      "variants": [
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 0,
+          "rarity": "Basic",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "variables": {
+            "Damage": 6
+          },
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 1,
+          "rarity": "Basic",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "variables": {
+            "Damage": 9
+          },
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "id": "DEFEND_SILENT",
+      "variants": [
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 0,
+          "rarity": "Basic",
+          "targeting": "Self",
+          "type": "Skill",
+          "variables": {
+            "Block": 5
+          },
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 1,
+          "rarity": "Basic",
+          "targeting": "Self",
+          "type": "Skill",
+          "variables": {
+            "Block": 8
+          },
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "id": "SURVIVOR",
+      "variants": [
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 0,
+          "rarity": "Basic",
+          "targeting": "Self",
+          "type": "Skill",
+          "variables": {
+            "Block": 8
+          },
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 1,
+          "rarity": "Basic",
+          "targeting": "Self",
+          "type": "Skill",
+          "variables": {
+            "Block": 11
+          },
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "id": "BLADE_DANCE",
+      "variants": [
+        {
+          "cost": 1,
+          "keywords": [
+            "Exhaust"
+          ],
+          "level": 0,
+          "rarity": "Common",
+          "targeting": "Self",
+          "type": "Skill",
+          "variables": {
+            "Cards": 3
+          },
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "keywords": [
+            "Exhaust"
+          ],
+          "level": 1,
+          "rarity": "Common",
+          "targeting": "Self",
+          "type": "Skill",
+          "variables": {
+            "Cards": 4
+          },
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "id": "ACCURACY",
+      "variants": [
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 0,
+          "rarity": "Uncommon",
+          "targeting": "Self",
+          "type": "Power",
+          "variables": {
+            "AccuracyPower": 4
+          },
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 1,
+          "rarity": "Uncommon",
+          "targeting": "Self",
+          "type": "Power",
+          "variables": {
+            "AccuracyPower": 6
+          },
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "id": "FOOTWORK",
+      "variants": [
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 0,
+          "rarity": "Uncommon",
+          "targeting": "Self",
+          "type": "Power",
+          "variables": {
+            "DexterityPower": 2
+          },
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 1,
+          "rarity": "Uncommon",
+          "targeting": "Self",
+          "type": "Power",
+          "variables": {
+            "DexterityPower": 3
+          },
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "id": "DODGE_AND_ROLL",
+      "variants": [
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 0,
+          "rarity": "Common",
+          "targeting": "Self",
+          "type": "Skill",
+          "variables": {
+            "Block": 4
+          },
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 1,
+          "rarity": "Common",
+          "targeting": "Self",
+          "type": "Skill",
+          "variables": {
+            "Block": 6
+          },
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "id": "BACKFLIP",
+      "variants": [
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 0,
+          "rarity": "Common",
+          "targeting": "Self",
+          "type": "Skill",
+          "variables": {
+            "Block": 5,
+            "Cards": 2
+          },
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 1,
+          "rarity": "Common",
+          "targeting": "Self",
+          "type": "Skill",
+          "variables": {
+            "Block": 8,
+            "Cards": 2
+          },
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "id": "CLOAK_AND_DAGGER",
+      "variants": [
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 0,
+          "rarity": "Common",
+          "targeting": "Self",
+          "type": "Skill",
+          "variables": {
+            "Block": 6,
+            "Cards": 1
+          },
+          "x_cost": false
+        },
+        {
+          "cost": 1,
+          "keywords": [],
+          "level": 1,
+          "rarity": "Common",
+          "targeting": "Self",
+          "type": "Skill",
+          "variables": {
+            "Block": 6,
+            "Cards": 2
+          },
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "id": "PREDATOR",
+      "variants": [
+        {
+          "cost": 2,
+          "keywords": [],
+          "level": 0,
+          "rarity": "Common",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "variables": {
+            "Damage": 15
+          },
+          "x_cost": false
+        },
+        {
+          "cost": 2,
+          "keywords": [],
+          "level": 1,
+          "rarity": "Common",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "variables": {
+            "Damage": 20
+          },
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "id": "SLICE",
+      "variants": [
+        {
+          "cost": 0,
+          "keywords": [],
+          "level": 0,
+          "rarity": "Common",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "variables": {
+            "Damage": 6
+          },
+          "x_cost": false
+        },
+        {
+          "cost": 0,
+          "keywords": [],
+          "level": 1,
+          "rarity": "Common",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "variables": {
+            "Damage": 9
+          },
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "id": "LEG_SWEEP",
+      "variants": [
+        {
+          "cost": 2,
+          "keywords": [],
+          "level": 0,
+          "rarity": "Uncommon",
+          "targeting": "AnyEnemy",
+          "type": "Skill",
+          "variables": {
+            "Block": 11,
+            "WeakPower": 2
+          },
+          "x_cost": false
+        },
+        {
+          "cost": 2,
+          "keywords": [],
+          "level": 1,
+          "rarity": "Uncommon",
+          "targeting": "AnyEnemy",
+          "type": "Skill",
+          "variables": {
+            "Block": 14,
+            "WeakPower": 3
+          },
+          "x_cost": false
+        }
+      ]
+    },
+    {
+      "id": "SHIV",
+      "variants": [
+        {
+          "cost": 0,
+          "keywords": [
+            "Exhaust"
+          ],
+          "level": 0,
+          "rarity": "Token",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "variables": {
+            "Damage": 4
+          },
+          "x_cost": false
+        },
+        {
+          "cost": 0,
+          "keywords": [
+            "Exhaust"
+          ],
+          "level": 1,
+          "rarity": "Token",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "variables": {
+            "Damage": 6
+          },
+          "x_cost": false
+        }
+      ]
+    }
+  ],
+  "game_dll_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+}

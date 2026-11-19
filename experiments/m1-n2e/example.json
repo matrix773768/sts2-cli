@@ -1,0 +1,379 @@
+{
+  "card_spec": {
+    "schema": "sts2.card-semantics.v1",
+    "rule_version": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "card_family": null,
+    "character": "Ironclad",
+    "id": "TWIN_STRIKE",
+    "qualification": "static_described",
+    "sources": {
+      "native": "static-evidence.json",
+      "rule_text": "TWIN_STRIKE.description"
+    },
+    "variants": [
+      {
+        "cost": 1,
+        "effects": [
+          {
+            "amount": 5,
+            "hits": 2,
+            "kind": "Damage",
+            "modifiers": [
+              "strength_per_hit"
+            ],
+            "target": "selected_enemy"
+          }
+        ],
+        "keywords": [],
+        "level": 0,
+        "rarity": "Common",
+        "targeting": "AnyEnemy",
+        "type": "Attack",
+        "x_cost": false
+      },
+      {
+        "cost": 1,
+        "effects": [
+          {
+            "amount": 7,
+            "hits": 2,
+            "kind": "Damage",
+            "modifiers": [
+              "strength_per_hit"
+            ],
+            "target": "selected_enemy"
+          }
+        ],
+        "keywords": [],
+        "level": 1,
+        "rarity": "Common",
+        "targeting": "AnyEnemy",
+        "type": "Attack",
+        "x_cost": false
+      }
+    ]
+  },
+  "identity_deck": {
+    "schema": "sts2.card-semantics.v1",
+    "rule_version": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "catalog_sha256": "5c769c2102e7d9ae6c0543facf301180898732592dbbfa96f3b6beedb674af72",
+    "mode": "identity",
+    "character": "Ironclad",
+    "complete": true,
+    "cards": [
+      {
+        "card": {
+          "permanent_modifiers": [],
+          "public_modifiers": [],
+          "spec_ref": "DEFEND_IRONCLAD",
+          "upgrade_level": 0
+        },
+        "count": 1
+      },
+      {
+        "card": {
+          "permanent_modifiers": [],
+          "public_modifiers": [],
+          "spec_ref": "INFLAME",
+          "upgrade_level": 0
+        },
+        "count": 1
+      },
+      {
+        "card": {
+          "permanent_modifiers": [],
+          "public_modifiers": [],
+          "spec_ref": "STRIKE_IRONCLAD",
+          "upgrade_level": 0
+        },
+        "count": 2
+      },
+      {
+        "card": {
+          "permanent_modifiers": [],
+          "public_modifiers": [],
+          "spec_ref": "STRIKE_IRONCLAD",
+          "upgrade_level": 1
+        },
+        "count": 1
+      },
+      {
+        "card": {
+          "permanent_modifiers": [],
+          "public_modifiers": [],
+          "spec_ref": "TWIN_STRIKE",
+          "upgrade_level": 1
+        },
+        "count": 1
+      }
+    ],
+    "content_sha256": "155ee9b58cda97c0a3b61e19ca6928c9bee37774a6ef786ec9405872fcb36c63",
+    "source": "offline_root"
+  },
+  "mechanics_deck": {
+    "schema": "sts2.card-semantics.v1",
+    "rule_version": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "catalog_sha256": "5c769c2102e7d9ae6c0543facf301180898732592dbbfa96f3b6beedb674af72",
+    "mode": "mechanics",
+    "character": "Ironclad",
+    "complete": true,
+    "cards": [
+      {
+        "card": {
+          "card_family": null,
+          "character": "Ironclad",
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 2,
+              "duration": "combat",
+              "kind": "GainPower",
+              "power": "strength",
+              "target": "self"
+            }
+          ],
+          "keywords": [],
+          "permanent_modifiers": [],
+          "public_modifiers": [],
+          "qualification": "static_described",
+          "rarity": "Uncommon",
+          "targeting": "Self",
+          "type": "Power",
+          "upgrade_level": 0,
+          "x_cost": false
+        },
+        "count": 1
+      },
+      {
+        "card": {
+          "card_family": null,
+          "character": "Ironclad",
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 5,
+              "kind": "Block",
+              "modifiers": [
+                "dexterity"
+              ],
+              "target": "self"
+            }
+          ],
+          "keywords": [],
+          "permanent_modifiers": [],
+          "public_modifiers": [],
+          "qualification": "static_described",
+          "rarity": "Basic",
+          "targeting": "Self",
+          "type": "Skill",
+          "upgrade_level": 0,
+          "x_cost": false
+        },
+        "count": 1
+      },
+      {
+        "card": {
+          "card_family": null,
+          "character": "Ironclad",
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 6,
+              "hits": 1,
+              "kind": "Damage",
+              "modifiers": [
+                "strength_per_hit"
+              ],
+              "target": "selected_enemy"
+            }
+          ],
+          "keywords": [],
+          "permanent_modifiers": [],
+          "public_modifiers": [],
+          "qualification": "static_described",
+          "rarity": "Basic",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "upgrade_level": 0,
+          "x_cost": false
+        },
+        "count": 2
+      },
+      {
+        "card": {
+          "card_family": null,
+          "character": "Ironclad",
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 7,
+              "hits": 2,
+              "kind": "Damage",
+              "modifiers": [
+                "strength_per_hit"
+              ],
+              "target": "selected_enemy"
+            }
+          ],
+          "keywords": [],
+          "permanent_modifiers": [],
+          "public_modifiers": [],
+          "qualification": "static_described",
+          "rarity": "Common",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "upgrade_level": 1,
+          "x_cost": false
+        },
+        "count": 1
+      },
+      {
+        "card": {
+          "card_family": null,
+          "character": "Ironclad",
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 9,
+              "hits": 1,
+              "kind": "Damage",
+              "modifiers": [
+                "strength_per_hit"
+              ],
+              "target": "selected_enemy"
+            }
+          ],
+          "keywords": [],
+          "permanent_modifiers": [],
+          "public_modifiers": [],
+          "qualification": "static_described",
+          "rarity": "Basic",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "upgrade_level": 1,
+          "x_cost": false
+        },
+        "count": 1
+      }
+    ],
+    "content_sha256": "155ee9b58cda97c0a3b61e19ca6928c9bee37774a6ef786ec9405872fcb36c63",
+    "source": "offline_root"
+  },
+  "context": {
+    "schema": "sts2.card-semantics.v1",
+    "rule_version": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "catalog_sha256": "5c769c2102e7d9ae6c0543facf301180898732592dbbfa96f3b6beedb674af72",
+    "mode": "mechanics",
+    "preview_source": "n2a1_public_allowlist",
+    "turn": 2,
+    "hp": 32,
+    "block": 0,
+    "energy": 1,
+    "draw_count": 3,
+    "powers": [
+      {
+        "id": "STRENGTH_POWER",
+        "amount": 2
+      }
+    ],
+    "actions": [
+      {
+        "kind": "end_turn"
+      },
+      {
+        "kind": "play_card",
+        "card": {
+          "upgrade_level": 1,
+          "permanent_modifiers": [],
+          "public_modifiers": [],
+          "cost": 1,
+          "effects": [
+            {
+              "amount": 7,
+              "hits": 2,
+              "kind": "Damage",
+              "modifiers": [
+                "strength_per_hit"
+              ],
+              "target": "selected_enemy"
+            }
+          ],
+          "keywords": [],
+          "rarity": "Common",
+          "targeting": "AnyEnemy",
+          "type": "Attack",
+          "x_cost": false,
+          "character": "Ironclad",
+          "card_family": null,
+          "qualification": "static_described"
+        },
+        "choice": null,
+        "current_public_cost": 1,
+        "valid_targets": [
+          0
+        ],
+        "target": {
+          "hp": 30,
+          "block": 0,
+          "attack_hits": [
+            10
+          ],
+          "powers": []
+        },
+        "preview": {
+          "damage_per_hit": 9,
+          "hits": 2,
+          "block": null,
+          "draw": null
+        },
+        "missing_fields": [
+          "block",
+          "draw",
+          "instance_modifiers"
+        ],
+        "preview_qualification": "allowlisted_fields"
+      }
+    ],
+    "hand": [
+      {
+        "upgrade_level": 1,
+        "permanent_modifiers": [],
+        "public_modifiers": [],
+        "cost": 1,
+        "effects": [
+          {
+            "amount": 7,
+            "hits": 2,
+            "kind": "Damage",
+            "modifiers": [
+              "strength_per_hit"
+            ],
+            "target": "selected_enemy"
+          }
+        ],
+        "keywords": [],
+        "rarity": "Common",
+        "targeting": "AnyEnemy",
+        "type": "Attack",
+        "x_cost": false,
+        "character": "Ironclad",
+        "card_family": null,
+        "qualification": "static_described"
+      }
+    ]
+  },
+  "bindings": [
+    {
+      "action_index": 0,
+      "hand_index": null,
+      "target_index": null,
+      "choice_index": null
+    },
+    {
+      "action_index": 1,
+      "hand_index": 0,
+      "target_index": 0,
+      "choice_index": null
+    }
+  ]
+}

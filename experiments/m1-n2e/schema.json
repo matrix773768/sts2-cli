@@ -1,0 +1,1086 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "STS2 N2E card semantics",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/card_spec"
+    },
+    {
+      "$ref": "#/$defs/instance"
+    },
+    {
+      "$ref": "#/$defs/deck"
+    },
+    {
+      "$ref": "#/$defs/context"
+    },
+    {
+      "$ref": "#/$defs/binding"
+    }
+  ],
+  "$defs": {
+    "card_spec": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "const": "sts2.card-semantics.v1"
+        },
+        "rule_version": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "id": {
+          "type": "string"
+        },
+        "character": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "card_family": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "qualification": {
+          "enum": [
+            "unknown",
+            "static_partial",
+            "static_described"
+          ]
+        },
+        "variants": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "level": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "cost": {
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "x_cost": {
+                "anyOf": [
+                  {
+                    "type": "boolean"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "type": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "rarity": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "targeting": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "keywords": {
+                "anyOf": [
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "effects": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/effect"
+                }
+              }
+            },
+            "required": [
+              "level",
+              "cost",
+              "x_cost",
+              "type",
+              "rarity",
+              "targeting",
+              "keywords",
+              "effects"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "sources": {
+          "type": "object",
+          "properties": {
+            "native": {
+              "type": "string"
+            },
+            "rule_text": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "native",
+            "rule_text"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schema",
+        "rule_version",
+        "id",
+        "character",
+        "card_family",
+        "qualification",
+        "variants"
+      ],
+      "additionalProperties": false
+    },
+    "effect": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "Damage"
+            },
+            "target": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "hits": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "kind",
+            "target",
+            "amount",
+            "hits"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "Block"
+            },
+            "target": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "kind",
+            "target",
+            "amount"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "Draw"
+            },
+            "target": {
+              "type": "string"
+            },
+            "count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "source_zone": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "kind",
+            "target",
+            "count",
+            "source_zone"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "Discard"
+            },
+            "target": {
+              "type": "string"
+            },
+            "count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "source_zone": {
+              "type": "string"
+            },
+            "selection": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "kind",
+            "target",
+            "count",
+            "source_zone",
+            "selection"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "GenerateCard"
+            },
+            "target": {
+              "type": "string"
+            },
+            "count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "card_family": {
+              "type": "string"
+            },
+            "destination_zone": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "kind",
+            "target",
+            "count",
+            "card_family",
+            "destination_zone"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "GainEnergy"
+            },
+            "target": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "kind",
+            "target",
+            "amount"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "GainPower"
+            },
+            "target": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "power": {
+              "type": "string"
+            },
+            "duration": {
+              "type": "string"
+            },
+            "card_family": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "kind",
+            "target",
+            "amount",
+            "power",
+            "duration"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "ApplyPower"
+            },
+            "target": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "power": {
+              "type": "string"
+            },
+            "duration": {
+              "type": "string"
+            },
+            "card_family": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "kind",
+            "target",
+            "amount",
+            "power",
+            "duration"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "Exhaust"
+            },
+            "target": {
+              "type": "string"
+            },
+            "event": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "kind",
+            "target",
+            "event"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "TriggeredEffect"
+            },
+            "event": {
+              "type": "string"
+            },
+            "duration": {
+              "type": "string"
+            },
+            "effects": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/effect"
+              }
+            }
+          },
+          "required": [
+            "kind",
+            "event",
+            "duration",
+            "effects"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "ConditionalEffect"
+            },
+            "condition": {
+              "type": "string"
+            },
+            "effects": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/effect"
+              }
+            }
+          },
+          "required": [
+            "kind",
+            "condition",
+            "effects"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "UnsupportedEffect"
+            },
+            "reason": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "kind",
+            "reason"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "modifier": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "kind",
+        "id",
+        "amount"
+      ],
+      "additionalProperties": false
+    },
+    "instance": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "spec_ref": {
+              "type": "string"
+            },
+            "upgrade_level": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "permanent_modifiers": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/modifier"
+              }
+            },
+            "public_modifiers": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/modifier"
+              }
+            }
+          },
+          "required": [
+            "spec_ref",
+            "upgrade_level",
+            "permanent_modifiers",
+            "public_modifiers"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "upgrade_level": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "permanent_modifiers": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/modifier"
+              }
+            },
+            "public_modifiers": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/modifier"
+              }
+            },
+            "cost": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "x_cost": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "type": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "rarity": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "targeting": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "keywords": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "effects": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/effect"
+              }
+            },
+            "character": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "card_family": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "qualification": {
+              "enum": [
+                "unknown",
+                "static_partial",
+                "static_described"
+              ]
+            }
+          },
+          "required": [
+            "upgrade_level",
+            "permanent_modifiers",
+            "public_modifiers",
+            "cost",
+            "x_cost",
+            "type",
+            "rarity",
+            "targeting",
+            "keywords",
+            "effects",
+            "character",
+            "card_family",
+            "qualification"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "deck": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "const": "sts2.card-semantics.v1"
+        },
+        "rule_version": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "catalog_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "mode": {
+          "enum": [
+            "mechanics",
+            "identity"
+          ]
+        },
+        "character": {
+          "type": "string"
+        },
+        "complete": {
+          "type": "boolean"
+        },
+        "cards": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "card": {
+                "$ref": "#/$defs/instance"
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "required": [
+              "card",
+              "count"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "source": {
+          "enum": [
+            "offline_root",
+            "visible_deck",
+            "public_history"
+          ]
+        },
+        "content_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "schema",
+        "rule_version",
+        "catalog_sha256",
+        "mode",
+        "character",
+        "complete",
+        "cards",
+        "source",
+        "content_sha256"
+      ],
+      "additionalProperties": false
+    },
+    "preview": {
+      "type": "object",
+      "properties": {
+        "damage_per_hit": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "hits": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "block": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "draw": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "damage_per_hit",
+        "hits",
+        "block",
+        "draw"
+      ],
+      "additionalProperties": false
+    },
+    "power": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "amount"
+      ],
+      "additionalProperties": false
+    },
+    "target": {
+      "type": "object",
+      "properties": {
+        "hp": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "block": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "attack_hits": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "powers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/power"
+          }
+        }
+      },
+      "required": [
+        "hp",
+        "block",
+        "attack_hits",
+        "powers"
+      ],
+      "additionalProperties": false
+    },
+    "action": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "end_turn"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "play_card"
+            },
+            "card": {
+              "$ref": "#/$defs/instance"
+            },
+            "choice": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/instance"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "current_public_cost": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "valid_targets": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "target": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/target"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "preview": {
+              "$ref": "#/$defs/preview"
+            },
+            "missing_fields": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "preview_qualification": {
+              "enum": [
+                "allowlisted_fields",
+                "unavailable"
+              ]
+            }
+          },
+          "required": [
+            "kind",
+            "card",
+            "choice",
+            "current_public_cost",
+            "valid_targets",
+            "target",
+            "preview",
+            "missing_fields",
+            "preview_qualification"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "context": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "const": "sts2.card-semantics.v1"
+        },
+        "rule_version": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "catalog_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "mode": {
+          "enum": [
+            "mechanics",
+            "identity"
+          ]
+        },
+        "preview_source": {
+          "const": "n2a1_public_allowlist"
+        },
+        "turn": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "hp": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "block": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "energy": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "draw_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "powers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/power"
+          }
+        },
+        "hand": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/instance"
+          }
+        },
+        "actions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/action"
+          }
+        }
+      },
+      "required": [
+        "schema",
+        "rule_version",
+        "catalog_sha256",
+        "mode",
+        "preview_source",
+        "turn",
+        "hp",
+        "block",
+        "energy",
+        "draw_count",
+        "powers",
+        "hand",
+        "actions"
+      ],
+      "additionalProperties": false
+    },
+    "binding": {
+      "type": "object",
+      "properties": {
+        "action_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "hand_index": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "target_index": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "choice_index": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "action_index",
+        "hand_index",
+        "target_index",
+        "choice_index"
+      ],
+      "additionalProperties": false
+    }
+  }
+}
