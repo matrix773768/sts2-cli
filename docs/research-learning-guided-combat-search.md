@@ -1,5 +1,7 @@
 # STS2 AI：学习驱动极速战斗搜索主线（2026-11-19）
 
+> **数学模型实施规范已补充：** [NOSL v0.1 直接策略与多输出价值数学模型](research-nosl-mathematical-model-v0.1.md)；后续新的 NOSL 训练实验以该模型的合法信息、动作及数据资格合同为起点，历史 LS1/LS2A/LS2B 证据不变。
+>
 > **历史工程主线：LS1 研究闭环、LS2A 数据生产、LS2B 可组合战略实验均已完成。** 当前长期学习方向已升级为 [机制感知、端口驱动 NOSL 直接策略 + SL 搜索增强](research-port-aware-nosl-sl-architecture.md)。本文件保留各阶段工程来历；其中“战略优先级生成”不再是未来 NOSL 的强制中间层。正常 SL 在线资格仍待验证。 [项目纲领](PROJECT_VISION.md)
 >
 > 当前实证：M1-LS1 提交 5872cf24c6fdb6d27965f4190e512c2c47932d07；原先 N2F-B 暂缓，N2E 机制合同继续复用。以 [PROJECT_STATUS.md](PROJECT_STATUS.md) 为准核对实时进度。
