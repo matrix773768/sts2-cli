@@ -4,6 +4,8 @@
 > **地位：长期优先研究架构与可证伪假设；不是已实现模型、正式正常 SL 资格或战斗胜率承诺。**
 > 上位目标及工程信任取舍见 [PROJECT_VISION.md](PROJECT_VISION.md)；当前实施状态见 [PROJECT_STATUS.md](PROJECT_STATUS.md)。现有 [LS1](m1-ls1-learning-guided-search-loop.md)、[LS2A](m1-ls2a-scalable-search-experience.md)、[LS2B](m1-ls2b-compositional-strategy-search.md) 的冻结报告和代码验收不因本文而改写。
 
+> **数学模型实施细则：** [机制感知 NOSL 直接策略——数学模型与首轮实施规范 v0.1](research-nosl-mathematical-model-v0.1.md) 独立定义 POMDP 历史与合法动作、身份/机制双通道、分层卡组/手牌/敌人编码、多输出价值、效用选择、on-policy 训练及逐动作数据合同。本文主要负责长期系统架构；未来 Codex 实作 NOSL 时优先阅读数学规范，网络大小和训练算法仍可经消融调整。
+
 ## 0. 一句话共识与设计边界
 
 **让共享卡牌机制编码器学习“卡牌在当前卡组和战斗条件下怎样组合、怎样排序才能兑现潜力”，以输出／防御／运转（端口化）作为可解释的归纳偏置，训练一个仅根据合法公开历史直接选择动作的 NOSL 策略；SL 在该策略产生的路线之上进行合法试探、失败修复与胜路资源优化；两者产生的有资格经验继续改进策略，并最终迁移到局外长期价值模型。**
