@@ -1,0 +1,1701 @@
+{
+  "development": {
+    "n": 96,
+    "built": 96,
+    "outcomes": {
+      "exhausted": 58,
+      "transition_cap": 31,
+      "predicted_win": 7
+    },
+    "branch_stops": {
+      "death": 6976,
+      "predicted_win": 7,
+      "unsupported": 78,
+      "truncated": 20
+    },
+    "first_failed_rollout": {
+      "death": 91,
+      "unsupported": 2
+    },
+    "first_failure_hypotheses": {
+      "damage_progress": 91,
+      "survival": 75,
+      "threat_alive_at_death": 90,
+      "engine_not_started_in_first_four_actions": 26,
+      "unused_legal_energy": 1
+    },
+    "first_hot_ms": {
+      "n": 96,
+      "p50": 678.9615,
+      "p90": 1042.21685
+    },
+    "transitions": {
+      "n": 96,
+      "p50": 404.0,
+      "p90": 512.0
+    },
+    "winners_hp": {
+      "n": 7,
+      "p50": 8,
+      "p90": 25.6
+    },
+    "winners_wounds": {
+      "n": 7,
+      "p50": 34,
+      "p90": 43.8
+    }
+  },
+  "production72": {
+    "elapsed_ms": 229358.8044999633,
+    "n": 72,
+    "records_per_second": 0.31391862264442316,
+    "cold": 69,
+    "warm": 3,
+    "resets_due_to_failure": 68,
+    "extra_cold_launch_ms": 19753.90619970858,
+    "extra_cold_model_ms": 72364.87310000001,
+    "peak_working_set_bytes": 142254080,
+    "longest_worker_positions": 2,
+    "root_wall_ms": {
+      "n": 72,
+      "p50": 3109.71770004835,
+      "p90": 3940.4206201666966
+    }
+  },
+  "diagnostics": {
+    "groups": {
+      "exhausted": {
+        "n": 6,
+        "result": {
+          "solvability_unknown": 5,
+          "predicted_witness": 1
+        }
+      },
+      "capped": {
+        "n": 5,
+        "result": {
+          "solvability_unknown": 3,
+          "predicted_witness": 2
+        }
+      }
+    },
+    "methods": {
+      "beam_b": {
+        "n": 11,
+        "outcomes": {
+          "exhausted": 7,
+          "transition_cap": 4
+        },
+        "hot_ms": {
+          "n": 11,
+          "p50": 608.6418,
+          "p90": 810.4205
+        },
+        "transitions": {
+          "n": 11,
+          "p50": 404,
+          "p90": 512.0
+        },
+        "elapsed_ms": {
+          "n": 11,
+          "p50": 3050.218799849972,
+          "p90": 3528.201699955389
+        }
+      },
+      "full_solver": {
+        "n": 11,
+        "outcomes": {
+          "no_complete_win": 8,
+          "complete_win": 3
+        },
+        "hot_ms": {
+          "n": 11,
+          "p50": 2539.2216,
+          "p90": 5204.8028
+        },
+        "transitions": {
+          "n": 11,
+          "p50": 2559,
+          "p90": 3891.0
+        },
+        "elapsed_ms": {
+          "n": 11,
+          "p50": 5052.546899998561,
+          "p90": 7299.955899827182
+        }
+      },
+      "c_extended": {
+        "n": 5,
+        "outcomes": {
+          "exhausted": 5
+        },
+        "hot_ms": {
+          "n": 5,
+          "p50": 1497.8476,
+          "p90": 1896.2443199999998
+        },
+        "transitions": {
+          "n": 5,
+          "p50": 716,
+          "p90": 843.2
+        },
+        "elapsed_ms": {
+          "n": 5,
+          "p50": 4253.842599922791,
+          "p90": 4833.813700033352
+        }
+      }
+    },
+    "native": {
+      "win": 2,
+      "strict_difference": 1
+    },
+    "perturbations": {
+      "transition_cap": 1,
+      "exhausted": 2
+    }
+  },
+  "groups": {
+    "character": {
+      "Ironclad": {
+        "n": 48,
+        "built": 48,
+        "outcomes": {
+          "exhausted": 31,
+          "predicted_win": 3,
+          "transition_cap": 14
+        },
+        "branch_stops": {
+          "death": 3505,
+          "predicted_win": 3,
+          "truncated": 8
+        },
+        "first_failed_rollout": {
+          "death": 46
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 46,
+          "survival": 38,
+          "threat_alive_at_death": 46,
+          "engine_not_started_in_first_four_actions": 15
+        },
+        "first_hot_ms": {
+          "n": 48,
+          "p50": 649.3209999999999,
+          "p90": 927.1561800000002
+        },
+        "transitions": {
+          "n": 48,
+          "p50": 439.0,
+          "p90": 512.0
+        },
+        "winners_hp": {
+          "n": 3,
+          "p50": 8,
+          "p90": 24.0
+        },
+        "winners_wounds": {
+          "n": 3,
+          "p50": 34,
+          "p90": 34.0
+        }
+      },
+      "Silent": {
+        "n": 48,
+        "built": 48,
+        "outcomes": {
+          "transition_cap": 17,
+          "exhausted": 27,
+          "predicted_win": 4
+        },
+        "branch_stops": {
+          "death": 3471,
+          "predicted_win": 4,
+          "unsupported": 78,
+          "truncated": 12
+        },
+        "first_failed_rollout": {
+          "death": 45,
+          "unsupported": 2
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 45,
+          "survival": 37,
+          "threat_alive_at_death": 44,
+          "engine_not_started_in_first_four_actions": 11,
+          "unused_legal_energy": 1
+        },
+        "first_hot_ms": {
+          "n": 48,
+          "p50": 741.6397999999999,
+          "p90": 1101.3648300000002
+        },
+        "transitions": {
+          "n": 48,
+          "p50": 400.5,
+          "p90": 512.0
+        },
+        "winners_hp": {
+          "n": 4,
+          "p50": 7.5,
+          "p90": 20.1
+        },
+        "winners_wounds": {
+          "n": 4,
+          "p50": 42.0,
+          "p90": 44.4
+        }
+      }
+    },
+    "encounter": {
+      "BOWLBUGS_NORMAL": {
+        "n": 24,
+        "built": 24,
+        "outcomes": {
+          "exhausted": 17,
+          "transition_cap": 5,
+          "predicted_win": 2
+        },
+        "branch_stops": {
+          "death": 1830,
+          "predicted_win": 2,
+          "unsupported": 3,
+          "truncated": 3
+        },
+        "first_failed_rollout": {
+          "death": 24
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 24,
+          "survival": 24,
+          "threat_alive_at_death": 24,
+          "engine_not_started_in_first_four_actions": 7
+        },
+        "first_hot_ms": {
+          "n": 24,
+          "p50": 648.9718,
+          "p90": 909.21922
+        },
+        "transitions": {
+          "n": 24,
+          "p50": 368.5,
+          "p90": 512.0
+        },
+        "winners_hp": {
+          "n": 2,
+          "p50": 14.0,
+          "p90": 22.0
+        },
+        "winners_wounds": {
+          "n": 2,
+          "p50": 35.5,
+          "p90": 43.1
+        }
+      },
+      "EXOSKELETONS_NORMAL": {
+        "n": 24,
+        "built": 24,
+        "outcomes": {
+          "exhausted": 13,
+          "predicted_win": 2,
+          "transition_cap": 9
+        },
+        "branch_stops": {
+          "death": 1730,
+          "predicted_win": 2,
+          "unsupported": 12,
+          "truncated": 7
+        },
+        "first_failed_rollout": {
+          "death": 23
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 23,
+          "survival": 23,
+          "threat_alive_at_death": 23,
+          "engine_not_started_in_first_four_actions": 7
+        },
+        "first_hot_ms": {
+          "n": 24,
+          "p50": 652.7022999999999,
+          "p90": 1065.33
+        },
+        "transitions": {
+          "n": 24,
+          "p50": 423.5,
+          "p90": 512.0
+        },
+        "winners_hp": {
+          "n": 2,
+          "p50": 15.5,
+          "p90": 25.5
+        },
+        "winners_wounds": {
+          "n": 2,
+          "p50": 24.0,
+          "p90": 32.0
+        }
+      },
+      "MYTES_NORMAL": {
+        "n": 24,
+        "built": 24,
+        "outcomes": {
+          "exhausted": 16,
+          "transition_cap": 8
+        },
+        "branch_stops": {
+          "death": 2064,
+          "unsupported": 11,
+          "truncated": 5
+        },
+        "first_failed_rollout": {
+          "death": 23,
+          "unsupported": 1
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 23,
+          "survival": 7,
+          "threat_alive_at_death": 22,
+          "engine_not_started_in_first_four_actions": 8
+        },
+        "first_hot_ms": {
+          "n": 24,
+          "p50": 772.8598,
+          "p90": 1182.44072
+        },
+        "transitions": {
+          "n": 24,
+          "p50": 461.0,
+          "p90": 512.0
+        },
+        "winners_hp": null,
+        "winners_wounds": null
+      },
+      "CHOMPERS_NORMAL": {
+        "n": 24,
+        "built": 24,
+        "outcomes": {
+          "exhausted": 12,
+          "transition_cap": 9,
+          "predicted_win": 3
+        },
+        "branch_stops": {
+          "death": 1352,
+          "unsupported": 52,
+          "predicted_win": 3,
+          "truncated": 5
+        },
+        "first_failed_rollout": {
+          "death": 21,
+          "unsupported": 1
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 21,
+          "survival": 21,
+          "threat_alive_at_death": 21,
+          "engine_not_started_in_first_four_actions": 4,
+          "unused_legal_energy": 1
+        },
+        "first_hot_ms": {
+          "n": 24,
+          "p50": 647.2629,
+          "p90": 883.08544
+        },
+        "transitions": {
+          "n": 24,
+          "p50": 385.5,
+          "p90": 512.0
+        },
+        "winners_hp": {
+          "n": 3,
+          "p50": 8,
+          "p90": 10.4
+        },
+        "winners_wounds": {
+          "n": 3,
+          "p50": 41,
+          "p90": 42.6
+        }
+      }
+    },
+    "template": {
+      "growth": {
+        "n": 16,
+        "built": 16,
+        "outcomes": {
+          "exhausted": 13,
+          "transition_cap": 2,
+          "predicted_win": 1
+        },
+        "branch_stops": {
+          "death": 1089,
+          "truncated": 2,
+          "predicted_win": 1
+        },
+        "first_failed_rollout": {
+          "death": 15
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 15,
+          "survival": 13,
+          "threat_alive_at_death": 15,
+          "engine_not_started_in_first_four_actions": 2
+        },
+        "first_hot_ms": {
+          "n": 16,
+          "p50": 485.24295,
+          "p90": 833.0808
+        },
+        "transitions": {
+          "n": 16,
+          "p50": 372.0,
+          "p90": 511.5
+        },
+        "winners_hp": {
+          "n": 1,
+          "p50": 8,
+          "p90": 8.0
+        },
+        "winners_wounds": {
+          "n": 1,
+          "p50": 34,
+          "p90": 34.0
+        }
+      },
+      "strength": {
+        "n": 16,
+        "built": 16,
+        "outcomes": {
+          "exhausted": 13,
+          "predicted_win": 1,
+          "transition_cap": 2
+        },
+        "branch_stops": {
+          "death": 905,
+          "predicted_win": 1,
+          "truncated": 1
+        },
+        "first_failed_rollout": {
+          "death": 16
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 16,
+          "survival": 13,
+          "threat_alive_at_death": 16,
+          "engine_not_started_in_first_four_actions": 13
+        },
+        "first_hot_ms": {
+          "n": 16,
+          "p50": 608.6356499999999,
+          "p90": 931.4174
+        },
+        "transitions": {
+          "n": 16,
+          "p50": 331.0,
+          "p90": 502.0
+        },
+        "winners_hp": {
+          "n": 1,
+          "p50": 3,
+          "p90": 3.0
+        },
+        "winners_wounds": {
+          "n": 1,
+          "p50": 34,
+          "p90": 34.0
+        }
+      },
+      "special_defense": {
+        "n": 16,
+        "built": 16,
+        "outcomes": {
+          "exhausted": 5,
+          "transition_cap": 10,
+          "predicted_win": 1
+        },
+        "branch_stops": {
+          "death": 1511,
+          "truncated": 5,
+          "predicted_win": 1
+        },
+        "first_failed_rollout": {
+          "death": 15
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 15,
+          "survival": 12,
+          "threat_alive_at_death": 15
+        },
+        "first_hot_ms": {
+          "n": 16,
+          "p50": 753.9678,
+          "p90": 934.2791
+        },
+        "transitions": {
+          "n": 16,
+          "p50": 512.0,
+          "p90": 512.0
+        },
+        "winners_hp": {
+          "n": 1,
+          "p50": 28,
+          "p90": 28.0
+        },
+        "winners_wounds": {
+          "n": 1,
+          "p50": 14,
+          "p90": 14.0
+        }
+      },
+      "cycle": {
+        "n": 16,
+        "built": 16,
+        "outcomes": {
+          "transition_cap": 3,
+          "exhausted": 12,
+          "predicted_win": 1
+        },
+        "branch_stops": {
+          "death": 1039,
+          "unsupported": 78,
+          "predicted_win": 1,
+          "truncated": 2
+        },
+        "first_failed_rollout": {
+          "death": 14,
+          "unsupported": 2
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 14,
+          "survival": 11,
+          "threat_alive_at_death": 14
+        },
+        "first_hot_ms": {
+          "n": 16,
+          "p50": 678.9546,
+          "p90": 949.5815
+        },
+        "transitions": {
+          "n": 16,
+          "p50": 345.5,
+          "p90": 512.0
+        },
+        "winners_hp": {
+          "n": 1,
+          "p50": 4,
+          "p90": 4.0
+        },
+        "winners_wounds": {
+          "n": 1,
+          "p50": 45,
+          "p90": 45.0
+        }
+      },
+      "poison": {
+        "n": 16,
+        "built": 16,
+        "outcomes": {
+          "exhausted": 10,
+          "transition_cap": 6
+        },
+        "branch_stops": {
+          "death": 1256,
+          "truncated": 5
+        },
+        "first_failed_rollout": {
+          "death": 16
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 16,
+          "survival": 13,
+          "threat_alive_at_death": 16,
+          "engine_not_started_in_first_four_actions": 11,
+          "unused_legal_energy": 1
+        },
+        "first_hot_ms": {
+          "n": 16,
+          "p50": 737.3757,
+          "p90": 1151.62595
+        },
+        "transitions": {
+          "n": 16,
+          "p50": 398.5,
+          "p90": 512.0
+        },
+        "winners_hp": null,
+        "winners_wounds": null
+      },
+      "opening": {
+        "n": 16,
+        "built": 16,
+        "outcomes": {
+          "predicted_win": 3,
+          "exhausted": 5,
+          "transition_cap": 8
+        },
+        "branch_stops": {
+          "death": 1176,
+          "predicted_win": 3,
+          "truncated": 5
+        },
+        "first_failed_rollout": {
+          "death": 15
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 15,
+          "survival": 13,
+          "threat_alive_at_death": 14
+        },
+        "first_hot_ms": {
+          "n": 16,
+          "p50": 813.58915,
+          "p90": 1243.2586999999999
+        },
+        "transitions": {
+          "n": 16,
+          "p50": 485.0,
+          "p90": 512.0
+        },
+        "winners_hp": {
+          "n": 3,
+          "p50": 11,
+          "p90": 21.4
+        },
+        "winners_wounds": {
+          "n": 3,
+          "p50": 41,
+          "p90": 42.6
+        }
+      }
+    },
+    "pressure": {
+      "critical": {
+        "n": 32,
+        "built": 32,
+        "outcomes": {
+          "exhausted": 22,
+          "transition_cap": 10
+        },
+        "branch_stops": {
+          "death": 2359,
+          "unsupported": 46,
+          "truncated": 6
+        },
+        "first_failed_rollout": {
+          "death": 32
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 32,
+          "survival": 25,
+          "threat_alive_at_death": 32,
+          "engine_not_started_in_first_four_actions": 7
+        },
+        "first_hot_ms": {
+          "n": 32,
+          "p50": 642.6447000000001,
+          "p90": 1053.7478500000002
+        },
+        "transitions": {
+          "n": 32,
+          "p50": 349.0,
+          "p90": 512.0
+        },
+        "winners_hp": null,
+        "winners_wounds": null
+      },
+      "lean": {
+        "n": 32,
+        "built": 32,
+        "outcomes": {
+          "exhausted": 25,
+          "transition_cap": 7
+        },
+        "branch_stops": {
+          "death": 2702,
+          "unsupported": 17,
+          "truncated": 2
+        },
+        "first_failed_rollout": {
+          "death": 31,
+          "unsupported": 1
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 31,
+          "survival": 27,
+          "threat_alive_at_death": 31,
+          "engine_not_started_in_first_four_actions": 10,
+          "unused_legal_energy": 1
+        },
+        "first_hot_ms": {
+          "n": 32,
+          "p50": 649.0297,
+          "p90": 910.59614
+        },
+        "transitions": {
+          "n": 32,
+          "p50": 404.0,
+          "p90": 512.0
+        },
+        "winners_hp": null,
+        "winners_wounds": null
+      },
+      "control": {
+        "n": 32,
+        "built": 32,
+        "outcomes": {
+          "exhausted": 11,
+          "predicted_win": 7,
+          "transition_cap": 14
+        },
+        "branch_stops": {
+          "death": 1915,
+          "predicted_win": 7,
+          "truncated": 12,
+          "unsupported": 15
+        },
+        "first_failed_rollout": {
+          "death": 28,
+          "unsupported": 1
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 28,
+          "survival": 23,
+          "threat_alive_at_death": 27,
+          "engine_not_started_in_first_four_actions": 9
+        },
+        "first_hot_ms": {
+          "n": 32,
+          "p50": 802.49425,
+          "p90": 1211.7865800000004
+        },
+        "transitions": {
+          "n": 32,
+          "p50": 487.0,
+          "p90": 512.0
+        },
+        "winners_hp": {
+          "n": 7,
+          "p50": 8,
+          "p90": 25.6
+        },
+        "winners_wounds": {
+          "n": 7,
+          "p50": 34,
+          "p90": 43.8
+        }
+      }
+    },
+    "resources": {
+      "empty": {
+        "n": 64,
+        "built": 64,
+        "outcomes": {
+          "exhausted": 47,
+          "transition_cap": 17
+        },
+        "branch_stops": {
+          "death": 5061,
+          "unsupported": 63,
+          "truncated": 8
+        },
+        "first_failed_rollout": {
+          "death": 63,
+          "unsupported": 1
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 63,
+          "survival": 52,
+          "threat_alive_at_death": 63,
+          "engine_not_started_in_first_four_actions": 17,
+          "unused_legal_energy": 1
+        },
+        "first_hot_ms": {
+          "n": 64,
+          "p50": 647.8402,
+          "p90": 950.2907000000001
+        },
+        "transitions": {
+          "n": 64,
+          "p50": 392.5,
+          "p90": 512.0
+        },
+        "winners_hp": null,
+        "winners_wounds": null
+      },
+      "starter_relic_and_potion": {
+        "n": 32,
+        "built": 32,
+        "outcomes": {
+          "exhausted": 11,
+          "predicted_win": 7,
+          "transition_cap": 14
+        },
+        "branch_stops": {
+          "death": 1915,
+          "predicted_win": 7,
+          "truncated": 12,
+          "unsupported": 15
+        },
+        "first_failed_rollout": {
+          "death": 28,
+          "unsupported": 1
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 28,
+          "survival": 23,
+          "threat_alive_at_death": 27,
+          "engine_not_started_in_first_four_actions": 9
+        },
+        "first_hot_ms": {
+          "n": 32,
+          "p50": 802.49425,
+          "p90": 1211.7865800000004
+        },
+        "transitions": {
+          "n": 32,
+          "p50": 487.0,
+          "p90": 512.0
+        },
+        "winners_hp": {
+          "n": 7,
+          "p50": 8,
+          "p90": 25.6
+        },
+        "winners_wounds": {
+          "n": 7,
+          "p50": 34,
+          "p90": 43.8
+        }
+      }
+    },
+    "template_encounter": {
+      "growth/BOWLBUGS_NORMAL": {
+        "n": 4,
+        "built": 4,
+        "outcomes": {
+          "exhausted": 4
+        },
+        "branch_stops": {
+          "death": 288
+        },
+        "first_failed_rollout": {
+          "death": 4
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 4,
+          "survival": 4,
+          "threat_alive_at_death": 4
+        },
+        "first_hot_ms": {
+          "n": 4,
+          "p50": 436.30264999999997,
+          "p90": 724.77386
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 362.5,
+          "p90": 467.20000000000005
+        },
+        "winners_hp": null,
+        "winners_wounds": null
+      },
+      "strength/BOWLBUGS_NORMAL": {
+        "n": 4,
+        "built": 4,
+        "outcomes": {
+          "exhausted": 4
+        },
+        "branch_stops": {
+          "death": 180
+        },
+        "first_failed_rollout": {
+          "death": 4
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 4,
+          "survival": 4,
+          "threat_alive_at_death": 4,
+          "engine_not_started_in_first_four_actions": 3
+        },
+        "first_hot_ms": {
+          "n": 4,
+          "p50": 357.73585,
+          "p90": 608.1631600000001
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 146.0,
+          "p90": 312.5
+        },
+        "winners_hp": null,
+        "winners_wounds": null
+      },
+      "special_defense/BOWLBUGS_NORMAL": {
+        "n": 4,
+        "built": 4,
+        "outcomes": {
+          "exhausted": 3,
+          "transition_cap": 1
+        },
+        "branch_stops": {
+          "death": 421
+        },
+        "first_failed_rollout": {
+          "death": 4
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 4,
+          "survival": 4,
+          "threat_alive_at_death": 4
+        },
+        "first_hot_ms": {
+          "n": 4,
+          "p50": 743.84355,
+          "p90": 817.40035
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 487.0,
+          "p90": 504.8
+        },
+        "winners_hp": null,
+        "winners_wounds": null
+      },
+      "cycle/BOWLBUGS_NORMAL": {
+        "n": 4,
+        "built": 4,
+        "outcomes": {
+          "transition_cap": 1,
+          "exhausted": 2,
+          "predicted_win": 1
+        },
+        "branch_stops": {
+          "death": 269,
+          "unsupported": 3,
+          "predicted_win": 1
+        },
+        "first_failed_rollout": {
+          "death": 4
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 4,
+          "survival": 4,
+          "threat_alive_at_death": 4
+        },
+        "first_hot_ms": {
+          "n": 4,
+          "p50": 530.49505,
+          "p90": 684.07772
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 313.0,
+          "p90": 493.40000000000003
+        },
+        "winners_hp": {
+          "n": 1,
+          "p50": 4,
+          "p90": 4.0
+        },
+        "winners_wounds": {
+          "n": 1,
+          "p50": 45,
+          "p90": 45.0
+        }
+      },
+      "poison/BOWLBUGS_NORMAL": {
+        "n": 4,
+        "built": 4,
+        "outcomes": {
+          "exhausted": 3,
+          "transition_cap": 1
+        },
+        "branch_stops": {
+          "death": 351,
+          "truncated": 1
+        },
+        "first_failed_rollout": {
+          "death": 4
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 4,
+          "survival": 4,
+          "threat_alive_at_death": 4,
+          "engine_not_started_in_first_four_actions": 4
+        },
+        "first_hot_ms": {
+          "n": 4,
+          "p50": 771.5407,
+          "p90": 1136.95326
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 345.0,
+          "p90": 479.6
+        },
+        "winners_hp": null,
+        "winners_wounds": null
+      },
+      "opening/BOWLBUGS_NORMAL": {
+        "n": 4,
+        "built": 4,
+        "outcomes": {
+          "predicted_win": 1,
+          "exhausted": 1,
+          "transition_cap": 2
+        },
+        "branch_stops": {
+          "death": 321,
+          "predicted_win": 1,
+          "truncated": 2
+        },
+        "first_failed_rollout": {
+          "death": 4
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 4,
+          "survival": 4,
+          "threat_alive_at_death": 4
+        },
+        "first_hot_ms": {
+          "n": 4,
+          "p50": 893.4864,
+          "p90": 1217.40577
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 476.5,
+          "p90": 512.0
+        },
+        "winners_hp": {
+          "n": 1,
+          "p50": 24,
+          "p90": 24.0
+        },
+        "winners_wounds": {
+          "n": 1,
+          "p50": 26,
+          "p90": 26.0
+        }
+      },
+      "growth/EXOSKELETONS_NORMAL": {
+        "n": 4,
+        "built": 4,
+        "outcomes": {
+          "exhausted": 3,
+          "transition_cap": 1
+        },
+        "branch_stops": {
+          "death": 321,
+          "truncated": 1
+        },
+        "first_failed_rollout": {
+          "death": 4
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 4,
+          "survival": 4,
+          "threat_alive_at_death": 4,
+          "engine_not_started_in_first_four_actions": 1
+        },
+        "first_hot_ms": {
+          "n": 4,
+          "p50": 542.1461,
+          "p90": 745.8512000000001
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 449.5,
+          "p90": 510.8
+        },
+        "winners_hp": null,
+        "winners_wounds": null
+      },
+      "strength/EXOSKELETONS_NORMAL": {
+        "n": 4,
+        "built": 4,
+        "outcomes": {
+          "predicted_win": 1,
+          "exhausted": 2,
+          "transition_cap": 1
+        },
+        "branch_stops": {
+          "death": 183,
+          "predicted_win": 1,
+          "truncated": 1
+        },
+        "first_failed_rollout": {
+          "death": 4
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 4,
+          "survival": 4,
+          "threat_alive_at_death": 4,
+          "engine_not_started_in_first_four_actions": 3
+        },
+        "first_hot_ms": {
+          "n": 4,
+          "p50": 480.54774999999995,
+          "p90": 787.4688100000001
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 221.0,
+          "p90": 465.20000000000005
+        },
+        "winners_hp": {
+          "n": 1,
+          "p50": 3,
+          "p90": 3.0
+        },
+        "winners_wounds": {
+          "n": 1,
+          "p50": 34,
+          "p90": 34.0
+        }
+      },
+      "special_defense/EXOSKELETONS_NORMAL": {
+        "n": 4,
+        "built": 4,
+        "outcomes": {
+          "transition_cap": 2,
+          "exhausted": 1,
+          "predicted_win": 1
+        },
+        "branch_stops": {
+          "death": 344,
+          "predicted_win": 1
+        },
+        "first_failed_rollout": {
+          "death": 3
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 3,
+          "survival": 3,
+          "threat_alive_at_death": 3
+        },
+        "first_hot_ms": {
+          "n": 4,
+          "p50": 702.60835,
+          "p90": 804.12046
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 477.5,
+          "p90": 512.0
+        },
+        "winners_hp": {
+          "n": 1,
+          "p50": 28,
+          "p90": 28.0
+        },
+        "winners_wounds": {
+          "n": 1,
+          "p50": 14,
+          "p90": 14.0
+        }
+      },
+      "cycle/EXOSKELETONS_NORMAL": {
+        "n": 4,
+        "built": 4,
+        "outcomes": {
+          "exhausted": 3,
+          "transition_cap": 1
+        },
+        "branch_stops": {
+          "death": 254,
+          "unsupported": 12,
+          "truncated": 1
+        },
+        "first_failed_rollout": {
+          "death": 4
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 4,
+          "survival": 4,
+          "threat_alive_at_death": 4
+        },
+        "first_hot_ms": {
+          "n": 4,
+          "p50": 811.5708500000001,
+          "p90": 1016.78931
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 401.5,
+          "p90": 499.7
+        },
+        "winners_hp": null,
+        "winners_wounds": null
+      },
+      "poison/EXOSKELETONS_NORMAL": {
+        "n": 4,
+        "built": 4,
+        "outcomes": {
+          "transition_cap": 2,
+          "exhausted": 2
+        },
+        "branch_stops": {
+          "death": 336,
+          "truncated": 2
+        },
+        "first_failed_rollout": {
+          "death": 4
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 4,
+          "survival": 4,
+          "threat_alive_at_death": 4,
+          "engine_not_started_in_first_four_actions": 3
+        },
+        "first_hot_ms": {
+          "n": 4,
+          "p50": 828.48705,
+          "p90": 1396.37442
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 458.0,
+          "p90": 512.0
+        },
+        "winners_hp": null,
+        "winners_wounds": null
+      },
+      "opening/EXOSKELETONS_NORMAL": {
+        "n": 4,
+        "built": 4,
+        "outcomes": {
+          "exhausted": 2,
+          "transition_cap": 2
+        },
+        "branch_stops": {
+          "death": 292,
+          "truncated": 2
+        },
+        "first_failed_rollout": {
+          "death": 4
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 4,
+          "survival": 4,
+          "threat_alive_at_death": 4
+        },
+        "first_hot_ms": {
+          "n": 4,
+          "p50": 817.87615,
+          "p90": 1505.5742100000002
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 447.5,
+          "p90": 512.0
+        },
+        "winners_hp": null,
+        "winners_wounds": null
+      },
+      "growth/MYTES_NORMAL": {
+        "n": 4,
+        "built": 4,
+        "outcomes": {
+          "exhausted": 3,
+          "transition_cap": 1
+        },
+        "branch_stops": {
+          "death": 315,
+          "truncated": 1
+        },
+        "first_failed_rollout": {
+          "death": 4
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 4,
+          "survival": 2,
+          "threat_alive_at_death": 4,
+          "engine_not_started_in_first_four_actions": 1
+        },
+        "first_hot_ms": {
+          "n": 4,
+          "p50": 738.5708,
+          "p90": 1209.5890100000001
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 465.0,
+          "p90": 498.2
+        },
+        "winners_hp": null,
+        "winners_wounds": null
+      },
+      "strength/MYTES_NORMAL": {
+        "n": 4,
+        "built": 4,
+        "outcomes": {
+          "exhausted": 4
+        },
+        "branch_stops": {
+          "death": 285
+        },
+        "first_failed_rollout": {
+          "death": 4
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 4,
+          "survival": 1,
+          "threat_alive_at_death": 4,
+          "engine_not_started_in_first_four_actions": 4
+        },
+        "first_hot_ms": {
+          "n": 4,
+          "p50": 845.98505,
+          "p90": 1133.8356800000001
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 417.0,
+          "p90": 460.2
+        },
+        "winners_hp": null,
+        "winners_wounds": null
+      },
+      "special_defense/MYTES_NORMAL": {
+        "n": 4,
+        "built": 4,
+        "outcomes": {
+          "exhausted": 1,
+          "transition_cap": 3
+        },
+        "branch_stops": {
+          "death": 490,
+          "truncated": 3
+        },
+        "first_failed_rollout": {
+          "death": 4
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 4,
+          "threat_alive_at_death": 4,
+          "survival": 1
+        },
+        "first_hot_ms": {
+          "n": 4,
+          "p50": 712.96775,
+          "p90": 1300.5758500000002
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 512.0,
+          "p90": 512.0
+        },
+        "winners_hp": null,
+        "winners_wounds": null
+      },
+      "cycle/MYTES_NORMAL": {
+        "n": 4,
+        "built": 4,
+        "outcomes": {
+          "exhausted": 4
+        },
+        "branch_stops": {
+          "death": 337,
+          "unsupported": 11
+        },
+        "first_failed_rollout": {
+          "death": 3,
+          "unsupported": 1
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 3,
+          "threat_alive_at_death": 3
+        },
+        "first_hot_ms": {
+          "n": 4,
+          "p50": 720.5922,
+          "p90": 929.6458500000001
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 345.5,
+          "p90": 411.1
+        },
+        "winners_hp": null,
+        "winners_wounds": null
+      },
+      "poison/MYTES_NORMAL": {
+        "n": 4,
+        "built": 4,
+        "outcomes": {
+          "exhausted": 2,
+          "transition_cap": 2
+        },
+        "branch_stops": {
+          "death": 267,
+          "truncated": 1
+        },
+        "first_failed_rollout": {
+          "death": 4
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 4,
+          "threat_alive_at_death": 4,
+          "engine_not_started_in_first_four_actions": 3,
+          "survival": 1
+        },
+        "first_hot_ms": {
+          "n": 4,
+          "p50": 772.8598,
+          "p90": 982.79602
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 439.5,
+          "p90": 512.0
+        },
+        "winners_hp": null,
+        "winners_wounds": null
+      },
+      "opening/MYTES_NORMAL": {
+        "n": 4,
+        "built": 4,
+        "outcomes": {
+          "transition_cap": 2,
+          "exhausted": 2
+        },
+        "branch_stops": {
+          "death": 370
+        },
+        "first_failed_rollout": {
+          "death": 4
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 4,
+          "survival": 2,
+          "threat_alive_at_death": 3
+        },
+        "first_hot_ms": {
+          "n": 4,
+          "p50": 893.3847000000001,
+          "p90": 1084.57869
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 485.0,
+          "p90": 512.0
+        },
+        "winners_hp": null,
+        "winners_wounds": null
+      },
+      "growth/CHOMPERS_NORMAL": {
+        "n": 4,
+        "built": 4,
+        "outcomes": {
+          "exhausted": 3,
+          "predicted_win": 1
+        },
+        "branch_stops": {
+          "death": 165,
+          "predicted_win": 1
+        },
+        "first_failed_rollout": {
+          "death": 3
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 3,
+          "survival": 3,
+          "threat_alive_at_death": 3
+        },
+        "first_hot_ms": {
+          "n": 4,
+          "p50": 390.5985,
+          "p90": 542.14663
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 183.0,
+          "p90": 351.1
+        },
+        "winners_hp": {
+          "n": 1,
+          "p50": 8,
+          "p90": 8.0
+        },
+        "winners_wounds": {
+          "n": 1,
+          "p50": 34,
+          "p90": 34.0
+        }
+      },
+      "strength/CHOMPERS_NORMAL": {
+        "n": 4,
+        "built": 4,
+        "outcomes": {
+          "exhausted": 3,
+          "transition_cap": 1
+        },
+        "branch_stops": {
+          "death": 257
+        },
+        "first_failed_rollout": {
+          "death": 4
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 4,
+          "survival": 4,
+          "threat_alive_at_death": 4,
+          "engine_not_started_in_first_four_actions": 3
+        },
+        "first_hot_ms": {
+          "n": 4,
+          "p50": 676.9956,
+          "p90": 777.76033
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 399.0,
+          "p90": 506.0
+        },
+        "winners_hp": null,
+        "winners_wounds": null
+      },
+      "special_defense/CHOMPERS_NORMAL": {
+        "n": 4,
+        "built": 4,
+        "outcomes": {
+          "transition_cap": 4
+        },
+        "branch_stops": {
+          "death": 256,
+          "truncated": 2
+        },
+        "first_failed_rollout": {
+          "death": 4
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 4,
+          "survival": 4,
+          "threat_alive_at_death": 4
+        },
+        "first_hot_ms": {
+          "n": 4,
+          "p50": 858.1015500000001,
+          "p90": 941.40202
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 512.0,
+          "p90": 512.0
+        },
+        "winners_hp": null,
+        "winners_wounds": null
+      },
+      "cycle/CHOMPERS_NORMAL": {
+        "n": 4,
+        "built": 4,
+        "outcomes": {
+          "exhausted": 3,
+          "transition_cap": 1
+        },
+        "branch_stops": {
+          "death": 179,
+          "unsupported": 52,
+          "truncated": 1
+        },
+        "first_failed_rollout": {
+          "death": 3,
+          "unsupported": 1
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 3,
+          "survival": 3,
+          "threat_alive_at_death": 3
+        },
+        "first_hot_ms": {
+          "n": 4,
+          "p50": 679.0577000000001,
+          "p90": 864.62563
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 353.5,
+          "p90": 476.0
+        },
+        "winners_hp": null,
+        "winners_wounds": null
+      },
+      "poison/CHOMPERS_NORMAL": {
+        "n": 4,
+        "built": 4,
+        "outcomes": {
+          "exhausted": 3,
+          "transition_cap": 1
+        },
+        "branch_stops": {
+          "death": 302,
+          "truncated": 1
+        },
+        "first_failed_rollout": {
+          "death": 4
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 4,
+          "survival": 4,
+          "threat_alive_at_death": 4,
+          "engine_not_started_in_first_four_actions": 1,
+          "unused_legal_energy": 1
+        },
+        "first_hot_ms": {
+          "n": 4,
+          "p50": 679.7856999999999,
+          "p90": 739.04678
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 376.5,
+          "p90": 476.3
+        },
+        "winners_hp": null,
+        "winners_wounds": null
+      },
+      "opening/CHOMPERS_NORMAL": {
+        "n": 4,
+        "built": 4,
+        "outcomes": {
+          "predicted_win": 2,
+          "transition_cap": 2
+        },
+        "branch_stops": {
+          "death": 193,
+          "predicted_win": 2,
+          "truncated": 1
+        },
+        "first_failed_rollout": {
+          "death": 3
+        },
+        "first_failure_hypotheses": {
+          "damage_progress": 3,
+          "survival": 3,
+          "threat_alive_at_death": 3
+        },
+        "first_hot_ms": {
+          "n": 4,
+          "p50": 539.7995,
+          "p90": 759.9784900000001
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 311.5,
+          "p90": 512.0
+        },
+        "winners_hp": {
+          "n": 2,
+          "p50": 7.0,
+          "p90": 10.2
+        },
+        "winners_wounds": {
+          "n": 2,
+          "p50": 42.0,
+          "p90": 42.8
+        }
+      }
+    }
+  }
+}
