@@ -1,0 +1,32 @@
+--- a/src/Prediction/CardEffectSpecRegistry.cs
++++ b/src/Prediction/CardEffectSpecRegistry.cs
+@@ -139,6 +139,9 @@
+             applied = true;
+             foreach (CardPowerEffect effect in effects)
+             {
++                // Keep the effect in the coverage registry; the card sink applies it after death effects.
++                if (card is Predator && effect.PowerType == typeof(DrawCardsNextTurnPower))
++                    continue;
+                 int amount = effect.Amount(card);
+                 Creature owner = ownerCreature;
+                 switch (effect.Target)
+--- a/src/Prediction/CorePowerSupport.cs
++++ b/src/Prediction/CorePowerSupport.cs
+@@ -51,8 +51,15 @@
+                 combat.KnownEnemies,
+                 processedEnemyDeaths))
+         {
+-            return false;
+-        }
++            if (card is Predator)
++                throw new PredictionUnsupportedException("Predator death effects require a pending choice.");
++            return false;
++        }
++
++        // Predator awaits the attack and death effects before PowerCmd.Apply checks IsEnding.
++        if (card is Predator && !simulator.IsEnding)
++            combat.Apply<DrawCardsNextTurnPower>(owner, 2, owner);
++
+         combat.ResolveMonologues(owner, pendingMonologues);
+         combat.SynchronizePanacheState(simulator, owner);
+         if (card is Armaments && card.IsUpgraded)
