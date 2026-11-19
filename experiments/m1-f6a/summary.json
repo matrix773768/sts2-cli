@@ -1,0 +1,1381 @@
+{
+  "paired": {
+    "frozen": {
+      "batches": [
+        {
+          "elapsed_ms": 10203.877399908379,
+          "n": 12,
+          "throughput": 1.1760235378864654
+        },
+        {
+          "elapsed_ms": 12078.438500175253,
+          "n": 12,
+          "throughput": 0.9935059072268229
+        }
+      ],
+      "first": {
+        "quality_hot_ms": {
+          "n": 2,
+          "p50": 152.1596,
+          "p90": 169.23448
+        },
+        "quality_preparation_ms": {
+          "n": 2,
+          "p50": 14.716099999999999,
+          "p90": 16.5657
+        },
+        "quality_rpc_ms": {
+          "n": 2,
+          "p50": 191.32800016086549,
+          "p90": 215.47792011406273
+        },
+        "first_hot_ms": {
+          "n": 2,
+          "p50": 227.89520000000002,
+          "p90": 250.54256000000004
+        },
+        "retirement_ms": {
+          "n": 2,
+          "p50": 283.70294987689704,
+          "p90": 309.71322988625616
+        },
+        "root_wall_ms": {
+          "n": 2,
+          "p50": 2663.1071000592783,
+          "p90": 2698.1759000802413
+        },
+        "quality_transitions": {
+          "n": 2,
+          "p50": 146.0,
+          "p90": 146.0
+        },
+        "quality_thread_allocated_bytes": {
+          "n": 2,
+          "p50": 14681288.0,
+          "p90": 14683899.2
+        },
+        "quality_gc_pause_ms": {
+          "n": 2,
+          "p50": 4.033500000000004,
+          "p90": 4.270700000000005
+        },
+        "working_set_bytes": {
+          "n": 2,
+          "p50": 129380352.0,
+          "p90": 129757184.0
+        },
+        "peak_working_set_bytes": {
+          "n": 2,
+          "p50": 129380352.0,
+          "p90": 129757184.0
+        }
+      },
+      "warm": {
+        "quality_hot_ms": {
+          "n": 22,
+          "p50": 239.9766,
+          "p90": 905.96184
+        },
+        "quality_preparation_ms": {
+          "n": 22,
+          "p50": 31.7934,
+          "p90": 40.16715
+        },
+        "quality_rpc_ms": {
+          "n": 22,
+          "p50": 296.9992000143975,
+          "p90": 980.8989999815823
+        },
+        "first_hot_ms": {
+          "n": 22,
+          "p50": 15.00405,
+          "p90": 37.823740000000015
+        },
+        "retirement_ms": {
+          "n": 22,
+          "p50": 130.3918499033898,
+          "p90": 316.8025500373915
+        },
+        "root_wall_ms": {
+          "n": 22,
+          "p50": 535.7489499729127,
+          "p90": 1522.4135798402133
+        },
+        "quality_transitions": {
+          "n": 22,
+          "p50": 167.0,
+          "p90": 496.0
+        },
+        "quality_thread_allocated_bytes": {
+          "n": 22,
+          "p50": 14270428.0,
+          "p90": 49632248.8
+        },
+        "quality_gc_pause_ms": {
+          "n": 22,
+          "p50": 9.324500000000015,
+          "p90": 30.2439
+        },
+        "working_set_bytes": {
+          "n": 22,
+          "p50": 143835136.0,
+          "p90": 148733132.8
+        },
+        "peak_working_set_bytes": {
+          "n": 22,
+          "p50": 144723968.0,
+          "p90": 148752384.0
+        }
+      },
+      "groups": {
+        "simple": {
+          "quality_hot_ms": {
+            "n": 10,
+            "p50": 172.24425000000002,
+            "p90": 304.74258
+          },
+          "quality_preparation_ms": {
+            "n": 10,
+            "p50": 31.427799999999998,
+            "p90": 38.77619
+          },
+          "quality_rpc_ms": {
+            "n": 10,
+            "p50": 222.92065003421158,
+            "p90": 364.870509901084
+          },
+          "first_hot_ms": {
+            "n": 10,
+            "p50": 13.25635,
+            "p90": 23.332059999999995
+          },
+          "retirement_ms": {
+            "n": 10,
+            "p50": 109.75679999683052,
+            "p90": 158.2115699071437
+          },
+          "root_wall_ms": {
+            "n": 10,
+            "p50": 445.16875001136214,
+            "p90": 590.2216801187024
+          },
+          "quality_transitions": {
+            "n": 10,
+            "p50": 146.0,
+            "p90": 167.0
+          },
+          "quality_thread_allocated_bytes": {
+            "n": 10,
+            "p50": 13861960.0,
+            "p90": 14607481.6
+          },
+          "quality_gc_pause_ms": {
+            "n": 10,
+            "p50": 5.8700000000000045,
+            "p90": 11.5086
+          },
+          "working_set_bytes": {
+            "n": 10,
+            "p50": 144097280.0,
+            "p90": 148851507.2
+          },
+          "peak_working_set_bytes": {
+            "n": 10,
+            "p50": 144723968.0,
+            "p90": 148851507.2
+          }
+        },
+        "complex": {
+          "quality_hot_ms": {
+            "n": 12,
+            "p50": 711.98505,
+            "p90": 937.2283
+          },
+          "quality_preparation_ms": {
+            "n": 12,
+            "p50": 31.7934,
+            "p90": 40.80516
+          },
+          "quality_rpc_ms": {
+            "n": 12,
+            "p50": 785.7236998388544,
+            "p90": 1018.7853200361133
+          },
+          "first_hot_ms": {
+            "n": 12,
+            "p50": 18.7177,
+            "p90": 59.16166000000001
+          },
+          "retirement_ms": {
+            "n": 12,
+            "p50": 258.8484500302002,
+            "p90": 326.28290008287877
+          },
+          "root_wall_ms": {
+            "n": 12,
+            "p50": 1161.0697999130934,
+            "p90": 1554.9188000150025
+          },
+          "quality_transitions": {
+            "n": 12,
+            "p50": 493.0,
+            "p90": 496.0
+          },
+          "quality_thread_allocated_bytes": {
+            "n": 12,
+            "p50": 47885304.0,
+            "p90": 49771486.4
+          },
+          "quality_gc_pause_ms": {
+            "n": 12,
+            "p50": 23.17450000000001,
+            "p90": 32.970600000000005
+          },
+          "working_set_bytes": {
+            "n": 12,
+            "p50": 142848000.0,
+            "p90": 146962841.6
+          },
+          "peak_working_set_bytes": {
+            "n": 12,
+            "p50": 146477056.0,
+            "p90": 148733952.0
+          }
+        }
+      },
+      "total_warm_heat_ms": 9010.008600000001,
+      "total_warm_root_ms": 16462.231300072744,
+      "total_warm_allocated_bytes": 537331960,
+      "total_warm_gc": [
+        58,
+        10,
+        2
+      ],
+      "total_warm_gc_pause_ms": 326.6510000000002
+    },
+    "lean": {
+      "batches": [
+        {
+          "elapsed_ms": 12501.863799989223,
+          "n": 12,
+          "throughput": 0.9598568815003683
+        },
+        {
+          "elapsed_ms": 10276.89729980193,
+          "n": 12,
+          "throughput": 1.1676675994642156
+        }
+      ],
+      "first": {
+        "quality_hot_ms": {
+          "n": 2,
+          "p50": 172.66415,
+          "p90": 210.35163
+        },
+        "quality_preparation_ms": {
+          "n": 2,
+          "p50": 17.9223,
+          "p90": 22.59606
+        },
+        "quality_rpc_ms": {
+          "n": 2,
+          "p50": 215.84374993108213,
+          "p90": 264.36546980403364
+        },
+        "first_hot_ms": {
+          "n": 2,
+          "p50": 225.8616,
+          "p90": 237.7816
+        },
+        "retirement_ms": {
+          "n": 2,
+          "p50": 349.0922499913722,
+          "p90": 410.9150900039822
+        },
+        "root_wall_ms": {
+          "n": 2,
+          "p50": 2872.490099980496,
+          "p90": 3133.7917000753805
+        },
+        "quality_transitions": {
+          "n": 2,
+          "p50": 146.0,
+          "p90": 146.0
+        },
+        "quality_thread_allocated_bytes": {
+          "n": 2,
+          "p50": 13739012.0,
+          "p90": 13741498.4
+        },
+        "quality_gc_pause_ms": {
+          "n": 2,
+          "p50": 6.172000000000001,
+          "p90": 8.186399999999999
+        },
+        "working_set_bytes": {
+          "n": 2,
+          "p50": 128004096.0,
+          "p90": 129029734.4
+        },
+        "peak_working_set_bytes": {
+          "n": 2,
+          "p50": 128018432.0,
+          "p90": 129032601.6
+        }
+      },
+      "warm": {
+        "quality_hot_ms": {
+          "n": 22,
+          "p50": 231.72555,
+          "p90": 900.3433800000001
+        },
+        "quality_preparation_ms": {
+          "n": 22,
+          "p50": 32.9189,
+          "p90": 43.015800000000006
+        },
+        "quality_rpc_ms": {
+          "n": 22,
+          "p50": 288.5204500053078,
+          "p90": 960.9832001151518
+        },
+        "first_hot_ms": {
+          "n": 22,
+          "p50": 20.1,
+          "p90": 43.29891000000002
+        },
+        "retirement_ms": {
+          "n": 22,
+          "p50": 129.27509984001517,
+          "p90": 343.9683399163187
+        },
+        "root_wall_ms": {
+          "n": 22,
+          "p50": 539.3146499991417,
+          "p90": 1406.152379908599
+        },
+        "quality_transitions": {
+          "n": 22,
+          "p50": 167.0,
+          "p90": 496.0
+        },
+        "quality_thread_allocated_bytes": {
+          "n": 22,
+          "p50": 13287492.0,
+          "p90": 46035105.6
+        },
+        "quality_gc_pause_ms": {
+          "n": 22,
+          "p50": 5.709499999999991,
+          "p90": 20.36040000000001
+        },
+        "working_set_bytes": {
+          "n": 22,
+          "p50": 137998336.0,
+          "p90": 153082675.2
+        },
+        "peak_working_set_bytes": {
+          "n": 22,
+          "p50": 143171584.0,
+          "p90": 153083084.8
+        }
+      },
+      "groups": {
+        "simple": {
+          "quality_hot_ms": {
+            "n": 10,
+            "p50": 175.73245,
+            "p90": 263.51595999999995
+          },
+          "quality_preparation_ms": {
+            "n": 10,
+            "p50": 31.9405,
+            "p90": 40.68997
+          },
+          "quality_rpc_ms": {
+            "n": 10,
+            "p50": 219.25990004092455,
+            "p90": 325.4787700716406
+          },
+          "first_hot_ms": {
+            "n": 10,
+            "p50": 11.62205,
+            "p90": 29.10680999999999
+          },
+          "retirement_ms": {
+            "n": 10,
+            "p50": 105.0709499977529,
+            "p90": 157.27723005693406
+          },
+          "root_wall_ms": {
+            "n": 10,
+            "p50": 418.4940999839455,
+            "p90": 612.4751101713628
+          },
+          "quality_transitions": {
+            "n": 10,
+            "p50": 146.0,
+            "p90": 167.0
+          },
+          "quality_thread_allocated_bytes": {
+            "n": 10,
+            "p50": 12904564.0,
+            "p90": 13577377.6
+          },
+          "quality_gc_pause_ms": {
+            "n": 10,
+            "p50": 4.4964999999999975,
+            "p90": 6.643299999999994
+          },
+          "working_set_bytes": {
+            "n": 10,
+            "p50": 137394176.0,
+            "p90": 154087424.0
+          },
+          "peak_working_set_bytes": {
+            "n": 10,
+            "p50": 143171584.0,
+            "p90": 154087424.0
+          }
+        },
+        "complex": {
+          "quality_hot_ms": {
+            "n": 12,
+            "p50": 645.21865,
+            "p90": 908.34089
+          },
+          "quality_preparation_ms": {
+            "n": 12,
+            "p50": 36.238,
+            "p90": 43.005559999999996
+          },
+          "quality_rpc_ms": {
+            "n": 12,
+            "p50": 700.6192499538884,
+            "p90": 981.694560078904
+          },
+          "first_hot_ms": {
+            "n": 12,
+            "p50": 24.0038,
+            "p90": 43.29891
+          },
+          "retirement_ms": {
+            "n": 12,
+            "p50": 275.2918000333011,
+            "p90": 371.93803982809186
+          },
+          "root_wall_ms": {
+            "n": 12,
+            "p50": 1129.9428000347689,
+            "p90": 1446.5868799947202
+          },
+          "quality_transitions": {
+            "n": 12,
+            "p50": 493.0,
+            "p90": 496.0
+          },
+          "quality_thread_allocated_bytes": {
+            "n": 12,
+            "p50": 44597156.0,
+            "p90": 46387036.8
+          },
+          "quality_gc_pause_ms": {
+            "n": 12,
+            "p50": 16.96900000000001,
+            "p90": 21.407399999999985
+          },
+          "working_set_bytes": {
+            "n": 12,
+            "p50": 141107200.0,
+            "p90": 151954227.2
+          },
+          "peak_working_set_bytes": {
+            "n": 12,
+            "p50": 143521792.0,
+            "p90": 151960371.2
+          }
+        }
+      },
+      "total_warm_heat_ms": 8583.2982,
+      "total_warm_root_ms": 16484.205399639904,
+      "total_warm_allocated_bytes": 500071776,
+      "total_warm_gc": [
+        56,
+        7,
+        1
+      ],
+      "total_warm_gc_pause_ms": 218.07399999999993
+    }
+  },
+  "profile": {
+    "frozen": {
+      "first": {
+        "root_count": 1,
+        "adapter": {
+          "digest": {
+            "ms": 21.2161,
+            "allocated_bytes": 6868184.0,
+            "count": 148.0,
+            "us_per_call": 143.35202702702705
+          },
+          "record": {
+            "ms": 25.2371,
+            "allocated_bytes": 7303352.0,
+            "count": 147.0,
+            "us_per_call": 171.6809523809524
+          },
+          "menu_build": {
+            "ms": 16.6555,
+            "allocated_bytes": 922240.0,
+            "count": 128.0,
+            "us_per_call": 130.12109375
+          },
+          "seed_action_match": {
+            "ms": 0.5085,
+            "allocated_bytes": 62312.0,
+            "count": 7.0,
+            "us_per_call": 72.64285714285714
+          },
+          "replay": {
+            "ms": 97.8618,
+            "allocated_bytes": 5342152.0,
+            "count": 146.0,
+            "us_per_call": 670.286301369863
+          },
+          "seed": {
+            "ms": 6.7088,
+            "allocated_bytes": 739904.0,
+            "count": 1.0,
+            "us_per_call": 6708.8
+          },
+          "anchor_layout": {
+            "ms": 2.0567,
+            "allocated_bytes": 12176.0,
+            "count": 1.0,
+            "us_per_call": 2056.7000000000003
+          },
+          "retain": {
+            "ms": 0.3352,
+            "allocated_bytes": 13952.0,
+            "count": 19.0,
+            "us_per_call": 17.642105263157895
+          },
+          "menu_hit": {
+            "ms": 0.0142,
+            "allocated_bytes": 0.0,
+            "count": 63.0,
+            "us_per_call": 0.2253968253968254
+          },
+          "replacement": {
+            "ms": 3.5371,
+            "allocated_bytes": 95624.0,
+            "count": 28.0,
+            "us_per_call": 126.325
+          },
+          "candidate_attempt": {
+            "ms": 147.889,
+            "allocated_bytes": 13697024.0,
+            "count": 28.0,
+            "us_per_call": 5281.75
+          },
+          "rollout": {
+            "ms": 141.7812,
+            "allocated_bytes": 13192624.0,
+            "count": 18.0,
+            "us_per_call": 7876.733333333334
+          },
+          "win_dedup_and_output": {
+            "ms": 1.9679,
+            "allocated_bytes": 384000.0,
+            "count": 18.0,
+            "us_per_call": 109.32777777777778
+          },
+          "improve": {
+            "ms": 150.7235,
+            "allocated_bytes": 13731120.0,
+            "count": 1.0,
+            "us_per_call": 150723.5
+          }
+        },
+        "solver": {
+          "Fork": {
+            "ms": 9.182,
+            "allocated_bytes": 1348664.0,
+            "count": 146.0,
+            "us_per_call": 62.89041095890411
+          },
+          "Action": {
+            "ms": 2.3919,
+            "allocated_bytes": 45304.0
+          },
+          "CardExecution": {
+            "ms": 30.8496,
+            "allocated_bytes": 2060888.0
+          },
+          "ExecutionChoiceResume": {
+            "ms": 0.0,
+            "allocated_bytes": 0.0
+          },
+          "CardPostProcessing": {
+            "ms": 0.723,
+            "allocated_bytes": 8064.0
+          },
+          "PotionExecution": {
+            "ms": 0.0,
+            "allocated_bytes": 0.0
+          },
+          "RoundAdvance": {
+            "ms": 0.2957,
+            "allocated_bytes": 6800.0
+          },
+          "RoundPlayerEnd": {
+            "ms": 0.4304,
+            "allocated_bytes": 5016.0
+          },
+          "RoundEndSimulation": {
+            "ms": 0.8977,
+            "allocated_bytes": 39440.0
+          },
+          "RoundFlush": {
+            "ms": 0.5807,
+            "allocated_bytes": 18536.0
+          },
+          "RoundPlayerEndPowers": {
+            "ms": 1.6539,
+            "allocated_bytes": 76520.0
+          },
+          "RoundEnemyTurn": {
+            "ms": 0.5749,
+            "allocated_bytes": 26584.0
+          },
+          "RoundEnemyStart": {
+            "ms": 1.1034,
+            "allocated_bytes": 58648.0
+          },
+          "RoundEnemyMoves": {
+            "ms": 5.0256,
+            "allocated_bytes": 167704.0
+          },
+          "RoundEnemyEndPowers": {
+            "ms": 1.1025,
+            "allocated_bytes": 70120.0
+          },
+          "RoundPlayerStart": {
+            "ms": 2.6687,
+            "allocated_bytes": 176944.0
+          },
+          "RoundDraw": {
+            "ms": 3.5172,
+            "allocated_bytes": 153224.0
+          },
+          "Snapshot": {
+            "ms": 15.61,
+            "allocated_bytes": 343592.0
+          },
+          "ThreatProjection": {
+            "ms": 3.1499,
+            "allocated_bytes": 113792.0
+          },
+          "Fingerprint": {
+            "ms": 1.9904,
+            "allocated_bytes": 47400.0
+          },
+          "ProjectedShuffle": {
+            "ms": 7.2546,
+            "allocated_bytes": 375728.0
+          },
+          "PileFingerprint": {
+            "ms": 0.5578,
+            "allocated_bytes": 9280.0
+          },
+          "PileFingerprintMiss": {
+            "ms": 0.2923,
+            "allocated_bytes": 416.0
+          },
+          "CardFingerprintMiss": {
+            "ms": 0.9156,
+            "allocated_bytes": 68952.0
+          },
+          "CombatFingerprint": {
+            "ms": 4.6554,
+            "allocated_bytes": 54136.0
+          },
+          "Prune": {
+            "ms": 0.0,
+            "allocated_bytes": 0.0
+          },
+          "FinalSelection": {
+            "ms": 0.0,
+            "allocated_bytes": 0.0
+          }
+        },
+        "wire": {
+          "serialize_ms": 8.7091,
+          "write_ms": 1.9213,
+          "chars": 120954.0,
+          "count": 1.0
+        },
+        "duplicate_winning_routes": 3,
+        "charged": 146,
+        "reused_prefix_transitions": 54,
+        "heat_ms": 158.8745
+      },
+      "warm": {
+        "root_count": 11,
+        "adapter": {
+          "digest": {
+            "ms": 647.1533000000002,
+            "allocated_bytes": 136293144.0,
+            "count": 2868.0,
+            "us_per_call": 225.64619944212
+          },
+          "record": {
+            "ms": 718.6245999999999,
+            "allocated_bytes": 144592864.0,
+            "count": 2857.0,
+            "us_per_call": 251.53118655932792
+          },
+          "menu_build": {
+            "ms": 343.7344,
+            "allocated_bytes": 18005808.0,
+            "count": 2558.0,
+            "us_per_call": 134.3762314308053
+          },
+          "seed_action_match": {
+            "ms": 15.9637,
+            "allocated_bytes": 1015208.0,
+            "count": 127.0,
+            "us_per_call": 125.69842519685038
+          },
+          "replay": {
+            "ms": 1965.2959,
+            "allocated_bytes": 84984680.0,
+            "count": 2846.0,
+            "us_per_call": 690.5466971187632
+          },
+          "seed": {
+            "ms": 164.62219999999996,
+            "allocated_bytes": 12460856.0,
+            "count": 11.0,
+            "us_per_call": 14965.654545454541
+          },
+          "anchor_layout": {
+            "ms": 0.8471,
+            "allocated_bytes": 24040.0,
+            "count": 11.0,
+            "us_per_call": 77.0090909090909
+          },
+          "retain": {
+            "ms": 5.8558,
+            "allocated_bytes": 341648.0,
+            "count": 299.0,
+            "us_per_call": 19.584615384615386
+          },
+          "menu_hit": {
+            "ms": 0.2612,
+            "allocated_bytes": 0.0,
+            "count": 949.0,
+            "us_per_call": 0.27523709167544785
+          },
+          "replacement": {
+            "ms": 8.437999999999999,
+            "allocated_bytes": 1018496.0,
+            "count": 418.0,
+            "us_per_call": 20.18660287081339
+          },
+          "candidate_attempt": {
+            "ms": 3133.4251,
+            "allocated_bytes": 252805864.0,
+            "count": 418.0,
+            "us_per_call": 7496.232296650718
+          },
+          "rollout": {
+            "ms": 3062.5018999999998,
+            "allocated_bytes": 242745176.0,
+            "count": 288.0,
+            "us_per_call": 10633.687152777777
+          },
+          "win_dedup_and_output": {
+            "ms": 55.40950000000001,
+            "allocated_bytes": 8544400.0,
+            "count": 284.0,
+            "us_per_call": 195.10387323943664
+          },
+          "improve": {
+            "ms": 3141.6605,
+            "allocated_bytes": 253153792.0,
+            "count": 11.0,
+            "us_per_call": 285605.5
+          }
+        },
+        "solver": {
+          "Fork": {
+            "ms": 192.11379999999997,
+            "allocated_bytes": 23577920.0,
+            "count": 2846.0,
+            "us_per_call": 67.50309205903021
+          },
+          "Action": {
+            "ms": 47.4801,
+            "allocated_bytes": 777760.0
+          },
+          "CardExecution": {
+            "ms": 547.2433,
+            "allocated_bytes": 26016096.0
+          },
+          "ExecutionChoiceResume": {
+            "ms": 0.0,
+            "allocated_bytes": 0.0
+          },
+          "CardPostProcessing": {
+            "ms": 25.4098,
+            "allocated_bytes": 285584.0
+          },
+          "PotionExecution": {
+            "ms": 0.0,
+            "allocated_bytes": 0.0
+          },
+          "RoundAdvance": {
+            "ms": 7.696699999999999,
+            "allocated_bytes": 122832.0
+          },
+          "RoundPlayerEnd": {
+            "ms": 9.573599999999999,
+            "allocated_bytes": 79560.0
+          },
+          "RoundEndSimulation": {
+            "ms": 21.370700000000003,
+            "allocated_bytes": 713872.0
+          },
+          "RoundFlush": {
+            "ms": 15.0151,
+            "allocated_bytes": 360776.0
+          },
+          "RoundPlayerEndPowers": {
+            "ms": 33.1112,
+            "allocated_bytes": 1427576.0
+          },
+          "RoundEnemyTurn": {
+            "ms": 12.549800000000003,
+            "allocated_bytes": 455288.0
+          },
+          "RoundEnemyStart": {
+            "ms": 31.0608,
+            "allocated_bytes": 1082184.0
+          },
+          "RoundEnemyMoves": {
+            "ms": 61.55019999999998,
+            "allocated_bytes": 2639496.0
+          },
+          "RoundEnemyEndPowers": {
+            "ms": 27.897799999999997,
+            "allocated_bytes": 1191096.0
+          },
+          "RoundPlayerStart": {
+            "ms": 72.8962,
+            "allocated_bytes": 3259168.0
+          },
+          "RoundDraw": {
+            "ms": 75.8344,
+            "allocated_bytes": 3058304.0
+          },
+          "Snapshot": {
+            "ms": 248.27309999999997,
+            "allocated_bytes": 5516584.0
+          },
+          "ThreatProjection": {
+            "ms": 65.4469,
+            "allocated_bytes": 2496072.0
+          },
+          "Fingerprint": {
+            "ms": 48.940799999999996,
+            "allocated_bytes": 930920.0
+          },
+          "ProjectedShuffle": {
+            "ms": 192.4617,
+            "allocated_bytes": 7130320.0
+          },
+          "PileFingerprint": {
+            "ms": 13.9548,
+            "allocated_bytes": 159040.0
+          },
+          "PileFingerprintMiss": {
+            "ms": 7.3334,
+            "allocated_bytes": 0.0
+          },
+          "CardFingerprintMiss": {
+            "ms": 24.030700000000003,
+            "allocated_bytes": 1172376.0
+          },
+          "CombatFingerprint": {
+            "ms": 107.7567,
+            "allocated_bytes": 1011984.0
+          },
+          "Prune": {
+            "ms": 0.0,
+            "allocated_bytes": 0.0
+          },
+          "FinalSelection": {
+            "ms": 0.0,
+            "allocated_bytes": 0.0
+          }
+        },
+        "wire": {
+          "serialize_ms": 32.7608,
+          "write_ms": 36.5477,
+          "chars": 2734423.0,
+          "count": 11.0
+        },
+        "duplicate_winning_routes": 25,
+        "charged": 2846,
+        "reused_prefix_transitions": 1680,
+        "heat_ms": 3306.3522
+      }
+    },
+    "lean": {
+      "first": {
+        "root_count": 1,
+        "adapter": {
+          "digest": {
+            "ms": 18.7347,
+            "allocated_bytes": 6233912.0,
+            "count": 148.0,
+            "us_per_call": 126.58581081081081
+          },
+          "record": {
+            "ms": 20.7468,
+            "allocated_bytes": 6369232.0,
+            "count": 147.0,
+            "us_per_call": 141.13469387755103
+          },
+          "menu_build": {
+            "ms": 9.4605,
+            "allocated_bytes": 922240.0,
+            "count": 128.0,
+            "us_per_call": 73.91015625
+          },
+          "seed_action_match": {
+            "ms": 0.6353,
+            "allocated_bytes": 62312.0,
+            "count": 7.0,
+            "us_per_call": 90.75714285714285
+          },
+          "replay": {
+            "ms": 79.1144,
+            "allocated_bytes": 5342152.0,
+            "count": 146.0,
+            "us_per_call": 541.8794520547946
+          },
+          "seed": {
+            "ms": 8.9598,
+            "allocated_bytes": 695640.0,
+            "count": 1.0,
+            "us_per_call": 8959.8
+          },
+          "anchor_layout": {
+            "ms": 2.8267,
+            "allocated_bytes": 12176.0,
+            "count": 1.0,
+            "us_per_call": 2826.7000000000003
+          },
+          "retain": {
+            "ms": 0.2073,
+            "allocated_bytes": 6352.0,
+            "count": 19.0,
+            "us_per_call": 10.910526315789474
+          },
+          "menu_hit": {
+            "ms": 0.0137,
+            "allocated_bytes": 0.0,
+            "count": 63.0,
+            "us_per_call": 0.21746031746031746
+          },
+          "replacement": {
+            "ms": 7.1522,
+            "allocated_bytes": 95712.0,
+            "count": 28.0,
+            "us_per_call": 255.43571428571428
+          },
+          "candidate_attempt": {
+            "ms": 116.7119,
+            "allocated_bytes": 12804856.0,
+            "count": 28.0,
+            "us_per_call": 4168.282142857142
+          },
+          "rollout": {
+            "ms": 107.3995,
+            "allocated_bytes": 12308720.0,
+            "count": 18.0,
+            "us_per_call": 5966.638888888889
+          },
+          "win_dedup_and_output": {
+            "ms": 1.6935,
+            "allocated_bytes": 384000.0,
+            "count": 18.0,
+            "us_per_call": 94.08333333333333
+          },
+          "improve": {
+            "ms": 120.3111,
+            "allocated_bytes": 12838952.0,
+            "count": 1.0,
+            "us_per_call": 120311.09999999999
+          }
+        },
+        "solver": {
+          "Fork": {
+            "ms": 7.656,
+            "allocated_bytes": 1348664.0,
+            "count": 146.0,
+            "us_per_call": 52.43835616438356
+          },
+          "Action": {
+            "ms": 2.1889,
+            "allocated_bytes": 45304.0
+          },
+          "CardExecution": {
+            "ms": 25.1698,
+            "allocated_bytes": 2060888.0
+          },
+          "ExecutionChoiceResume": {
+            "ms": 0.0,
+            "allocated_bytes": 0.0
+          },
+          "CardPostProcessing": {
+            "ms": 0.6312,
+            "allocated_bytes": 8064.0
+          },
+          "PotionExecution": {
+            "ms": 0.0,
+            "allocated_bytes": 0.0
+          },
+          "RoundAdvance": {
+            "ms": 0.225,
+            "allocated_bytes": 6800.0
+          },
+          "RoundPlayerEnd": {
+            "ms": 0.3136,
+            "allocated_bytes": 5016.0
+          },
+          "RoundEndSimulation": {
+            "ms": 0.7,
+            "allocated_bytes": 39440.0
+          },
+          "RoundFlush": {
+            "ms": 0.4595,
+            "allocated_bytes": 18536.0
+          },
+          "RoundPlayerEndPowers": {
+            "ms": 1.0891,
+            "allocated_bytes": 76520.0
+          },
+          "RoundEnemyTurn": {
+            "ms": 0.3697,
+            "allocated_bytes": 26584.0
+          },
+          "RoundEnemyStart": {
+            "ms": 0.8827,
+            "allocated_bytes": 58648.0
+          },
+          "RoundEnemyMoves": {
+            "ms": 3.478,
+            "allocated_bytes": 167704.0
+          },
+          "RoundEnemyEndPowers": {
+            "ms": 0.8591,
+            "allocated_bytes": 70120.0
+          },
+          "RoundPlayerStart": {
+            "ms": 2.0826,
+            "allocated_bytes": 176944.0
+          },
+          "RoundDraw": {
+            "ms": 2.5621,
+            "allocated_bytes": 153224.0
+          },
+          "Snapshot": {
+            "ms": 12.1364,
+            "allocated_bytes": 343592.0
+          },
+          "ThreatProjection": {
+            "ms": 2.7759,
+            "allocated_bytes": 113792.0
+          },
+          "Fingerprint": {
+            "ms": 1.7469,
+            "allocated_bytes": 47400.0
+          },
+          "ProjectedShuffle": {
+            "ms": 6.43,
+            "allocated_bytes": 375728.0
+          },
+          "PileFingerprint": {
+            "ms": 0.4512,
+            "allocated_bytes": 9280.0
+          },
+          "PileFingerprintMiss": {
+            "ms": 0.2616,
+            "allocated_bytes": 416.0
+          },
+          "CardFingerprintMiss": {
+            "ms": 0.8412,
+            "allocated_bytes": 68952.0
+          },
+          "CombatFingerprint": {
+            "ms": 4.0452,
+            "allocated_bytes": 54136.0
+          },
+          "Prune": {
+            "ms": 0.0,
+            "allocated_bytes": 0.0
+          },
+          "FinalSelection": {
+            "ms": 0.0,
+            "allocated_bytes": 0.0
+          }
+        },
+        "wire": {
+          "serialize_ms": 13.1832,
+          "write_ms": 1.4573,
+          "chars": 120947.0,
+          "count": 1.0
+        },
+        "duplicate_winning_routes": 3,
+        "charged": 146,
+        "reused_prefix_transitions": 54,
+        "heat_ms": 130.725
+      },
+      "warm": {
+        "root_count": 11,
+        "adapter": {
+          "digest": {
+            "ms": 828.8892,
+            "allocated_bytes": 120422168.0,
+            "count": 2868.0,
+            "us_per_call": 289.01297071129704
+          },
+          "record": {
+            "ms": 882.1793,
+            "allocated_bytes": 122828024.0,
+            "count": 2857.0,
+            "us_per_call": 308.7781939096955
+          },
+          "menu_build": {
+            "ms": 376.12050000000005,
+            "allocated_bytes": 17987056.0,
+            "count": 2558.0,
+            "us_per_call": 147.03694292415952
+          },
+          "seed_action_match": {
+            "ms": 23.601400000000005,
+            "allocated_bytes": 1015208.0,
+            "count": 127.0,
+            "us_per_call": 185.8377952755906
+          },
+          "replay": {
+            "ms": 2413.4143,
+            "allocated_bytes": 84809648.0,
+            "count": 2846.0,
+            "us_per_call": 848.0022136331693
+          },
+          "seed": {
+            "ms": 222.1376,
+            "allocated_bytes": 11561824.0,
+            "count": 11.0,
+            "us_per_call": 20194.327272727274
+          },
+          "anchor_layout": {
+            "ms": 1.1699,
+            "allocated_bytes": 24040.0,
+            "count": 11.0,
+            "us_per_call": 106.35454545454544
+          },
+          "retain": {
+            "ms": 4.3315,
+            "allocated_bytes": 77136.0,
+            "count": 299.0,
+            "us_per_call": 14.486622073578594
+          },
+          "menu_hit": {
+            "ms": 0.40590000000000004,
+            "allocated_bytes": 0.0,
+            "count": 949.0,
+            "us_per_call": 0.4277133825079031
+          },
+          "replacement": {
+            "ms": 11.2006,
+            "allocated_bytes": 1018496.0,
+            "count": 418.0,
+            "us_per_call": 26.79569377990431
+          },
+          "candidate_attempt": {
+            "ms": 3800.2484,
+            "allocated_bytes": 231578224.0,
+            "count": 418.0,
+            "us_per_call": 9091.503349282297
+          },
+          "rollout": {
+            "ms": 3702.6171,
+            "allocated_bytes": 221792144.0,
+            "count": 288.0,
+            "us_per_call": 12856.309375
+          },
+          "win_dedup_and_output": {
+            "ms": 80.5176,
+            "allocated_bytes": 8544400.0,
+            "count": 284.0,
+            "us_per_call": 283.512676056338
+          },
+          "improve": {
+            "ms": 3810.9455999999996,
+            "allocated_bytes": 231927496.0,
+            "count": 11.0,
+            "us_per_call": 346449.6
+          }
+        },
+        "solver": {
+          "Fork": {
+            "ms": 243.30370000000002,
+            "allocated_bytes": 23577920.0,
+            "count": 2846.0,
+            "us_per_call": 85.48970484891076
+          },
+          "Action": {
+            "ms": 58.52839999999999,
+            "allocated_bytes": 777760.0
+          },
+          "CardExecution": {
+            "ms": 686.8329,
+            "allocated_bytes": 25955008.0
+          },
+          "ExecutionChoiceResume": {
+            "ms": 0.0,
+            "allocated_bytes": 0.0
+          },
+          "CardPostProcessing": {
+            "ms": 30.936800000000005,
+            "allocated_bytes": 284328.0
+          },
+          "PotionExecution": {
+            "ms": 0.0,
+            "allocated_bytes": 0.0
+          },
+          "RoundAdvance": {
+            "ms": 9.6769,
+            "allocated_bytes": 122832.0
+          },
+          "RoundPlayerEnd": {
+            "ms": 12.328899999999999,
+            "allocated_bytes": 80400.0
+          },
+          "RoundEndSimulation": {
+            "ms": 25.1667,
+            "allocated_bytes": 713872.0
+          },
+          "RoundFlush": {
+            "ms": 19.1753,
+            "allocated_bytes": 360776.0
+          },
+          "RoundPlayerEndPowers": {
+            "ms": 41.32730000000001,
+            "allocated_bytes": 1427576.0
+          },
+          "RoundEnemyTurn": {
+            "ms": 14.883599999999998,
+            "allocated_bytes": 455288.0
+          },
+          "RoundEnemyStart": {
+            "ms": 36.5367,
+            "allocated_bytes": 1082184.0
+          },
+          "RoundEnemyMoves": {
+            "ms": 75.903,
+            "allocated_bytes": 2639496.0
+          },
+          "RoundEnemyEndPowers": {
+            "ms": 34.501400000000004,
+            "allocated_bytes": 1191096.0
+          },
+          "RoundPlayerStart": {
+            "ms": 87.38199999999999,
+            "allocated_bytes": 3259384.0
+          },
+          "RoundDraw": {
+            "ms": 94.60260000000001,
+            "allocated_bytes": 3058720.0
+          },
+          "Snapshot": {
+            "ms": 301.94770000000005,
+            "allocated_bytes": 5516584.0
+          },
+          "ThreatProjection": {
+            "ms": 76.30919999999999,
+            "allocated_bytes": 2496072.0
+          },
+          "Fingerprint": {
+            "ms": 61.4914,
+            "allocated_bytes": 930920.0
+          },
+          "ProjectedShuffle": {
+            "ms": 213.0985,
+            "allocated_bytes": 7130320.0
+          },
+          "PileFingerprint": {
+            "ms": 19.252499999999998,
+            "allocated_bytes": 159040.0
+          },
+          "PileFingerprintMiss": {
+            "ms": 8.0791,
+            "allocated_bytes": 0.0
+          },
+          "CardFingerprintMiss": {
+            "ms": 31.795200000000005,
+            "allocated_bytes": 1054008.0
+          },
+          "CombatFingerprint": {
+            "ms": 136.8264,
+            "allocated_bytes": 1011008.0
+          },
+          "Prune": {
+            "ms": 0.0,
+            "allocated_bytes": 0.0
+          },
+          "FinalSelection": {
+            "ms": 0.0,
+            "allocated_bytes": 0.0
+          }
+        },
+        "wire": {
+          "serialize_ms": 48.4013,
+          "write_ms": 52.82549999999999,
+          "chars": 2734435.0,
+          "count": 11.0
+        },
+        "duplicate_winning_routes": 25,
+        "charged": 2846,
+        "reused_prefix_transitions": 1680,
+        "heat_ms": 4033.1677999999993
+      }
+    }
+  },
+  "same_source": {
+    "frozen": {
+      "n": 11,
+      "p50": 203.5477,
+      "p90": 899.308
+    },
+    "lean": {
+      "n": 11,
+      "p50": 244.4471,
+      "p90": 897.9658
+    },
+    "paired_ms_saved": {
+      "n": 11,
+      "p50": -5.674799999999998,
+      "p90": 12.685400000000016
+    },
+    "total_heat_ms": {
+      "frozen": 3943.4047,
+      "lean": 4021.8034
+    }
+  }
+}
