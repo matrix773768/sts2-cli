@@ -1,0 +1,11 @@
+{
+  "domain": "STS2-N2D-OPEN-FACTORIAL-V1",
+  "source": "m1-n2a2 frozen report recipes",
+  "encounters": ["BOWLBUGS_WEAK", "CHOMPERS_NORMAL"],
+  "pressures": ["mid_hp", "stocked"],
+  "models": ["initial-mean", "r2-random-4-6", "random-4-12", "fixed-attack"],
+  "replacement": {"Ironclad": "SHRUG_IT_OFF", "Silent": "BACKFLIP"},
+  "split_rule": "checkerboard by encounter, template and pressure; all four cells stay together",
+  "diagnostics": "Only diagnosis conditions feed trajectory selection; report conditions use frozen aggregate statistics",
+  "budget": 96
+}

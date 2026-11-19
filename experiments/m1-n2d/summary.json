@@ -1,0 +1,5122 @@
+{
+  "models": {
+    "initial-mean": {
+      "total": {
+        "n": 64,
+        "stops": {
+          "predicted_win": 51,
+          "death": 13
+        },
+        "complete": 64,
+        "coverage": 1.0,
+        "unconditional_win": 0.796875,
+        "conditional_win": 0.796875,
+        "hp_p50": 22,
+        "normalized_hp_p50": 0.3142857142857143,
+        "loss_p50": 39.0,
+        "actions_p50": 37.0,
+        "transitions_p50": 37.0
+      },
+      "factorial": {
+        "cells": {
+          "S0D0": {
+            "n": 16,
+            "stops": {
+              "predicted_win": 12,
+              "death": 4
+            },
+            "complete": 16,
+            "coverage": 1.0,
+            "unconditional_win": 0.75,
+            "conditional_win": 0.75,
+            "hp_p50": 16.0,
+            "normalized_hp_p50": 0.22142857142857142,
+            "loss_p50": 41.5,
+            "actions_p50": 36.0,
+            "transitions_p50": 36.0
+          },
+          "S0D1": {
+            "n": 16,
+            "stops": {
+              "predicted_win": 14,
+              "death": 2
+            },
+            "complete": 16,
+            "coverage": 1.0,
+            "unconditional_win": 0.875,
+            "conditional_win": 0.875,
+            "hp_p50": 23.5,
+            "normalized_hp_p50": 0.29375,
+            "loss_p50": 36.5,
+            "actions_p50": 41.0,
+            "transitions_p50": 41.0
+          },
+          "S1D0": {
+            "n": 16,
+            "stops": {
+              "predicted_win": 12,
+              "death": 4
+            },
+            "complete": 16,
+            "coverage": 1.0,
+            "unconditional_win": 0.75,
+            "conditional_win": 0.75,
+            "hp_p50": 18.5,
+            "normalized_hp_p50": 0.2571428571428571,
+            "loss_p50": 42.0,
+            "actions_p50": 28.5,
+            "transitions_p50": 28.5
+          },
+          "S1D1": {
+            "n": 16,
+            "stops": {
+              "predicted_win": 13,
+              "death": 3
+            },
+            "complete": 16,
+            "coverage": 1.0,
+            "unconditional_win": 0.8125,
+            "conditional_win": 0.8125,
+            "hp_p50": 31,
+            "normalized_hp_p50": 0.4,
+            "loss_p50": 31.0,
+            "actions_p50": 38.5,
+            "transitions_p50": 38.5
+          }
+        },
+        "contrasts": {
+          "seed_D0": {
+            "counts": {
+              "win\u2192win": 10,
+              "win\u2192death": 2,
+              "death\u2192win": 2,
+              "death\u2192death": 2
+            },
+            "hp_delta_p50": 0.01874999999999999
+          },
+          "seed_D1": {
+            "counts": {
+              "win\u2192win": 12,
+              "win\u2192death": 2,
+              "death\u2192win": 1,
+              "death\u2192death": 1
+            },
+            "hp_delta_p50": 0.07499999999999998
+          },
+          "deck_S0": {
+            "counts": {
+              "win\u2192win": 12,
+              "death\u2192win": 2,
+              "death\u2192death": 2
+            },
+            "hp_delta_p50": 0.026785714285714288
+          },
+          "deck_S1": {
+            "counts": {
+              "win\u2192win": 11,
+              "death\u2192win": 2,
+              "death\u2192death": 2,
+              "win\u2192death": 1
+            },
+            "hp_delta_p50": 0.042857142857142816
+          },
+          "joint": {
+            "counts": {
+              "win\u2192win": 11,
+              "win\u2192death": 1,
+              "death\u2192death": 2,
+              "death\u2192win": 2
+            },
+            "hp_delta_p50": 0.17142857142857143
+          }
+        },
+        "interactions": {
+          "0": 12,
+          "1": 2,
+          "-2": 1,
+          "-1": 1
+        }
+      },
+      "dimensions": {
+        "split": {
+          "diagnosis": {
+            "cells": {
+              "S0D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 6,
+                  "death": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 16.0,
+                "normalized_hp_p50": 0.2142857142857143,
+                "loss_p50": 44.5,
+                "actions_p50": 36.0,
+                "transitions_p50": 36.0
+              },
+              "S0D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 6,
+                  "death": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 14.0,
+                "normalized_hp_p50": 0.18214285714285713,
+                "loss_p50": 44.0,
+                "actions_p50": 35.0,
+                "transitions_p50": 35.0
+              },
+              "S1D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 6,
+                  "death": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 29.5,
+                "normalized_hp_p50": 0.41964285714285715,
+                "loss_p50": 36.0,
+                "actions_p50": 31.0,
+                "transitions_p50": 31.0
+              },
+              "S1D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 7,
+                  "death": 1
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.875,
+                "conditional_win": 0.875,
+                "hp_p50": 32,
+                "normalized_hp_p50": 0.44285714285714284,
+                "loss_p50": 25.5,
+                "actions_p50": 42.0,
+                "transitions_p50": 42.0
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": 0.021428571428571436
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "death\u2192win": 1,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.2392857142857143
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": 0.014285714285714284
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "death\u2192win": 1,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.10178571428571426
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "death\u2192win": 1,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.20625000000000002
+              }
+            },
+            "interactions": {
+              "0": 7,
+              "1": 1
+            }
+          },
+          "report": {
+            "cells": {
+              "S0D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 6,
+                  "death": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 19.0,
+                "normalized_hp_p50": 0.2714285714285714,
+                "loss_p50": 37.5,
+                "actions_p50": 40.5,
+                "transitions_p50": 40.5
+              },
+              "S0D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 8
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 27.0,
+                "normalized_hp_p50": 0.3616071428571429,
+                "loss_p50": 26.0,
+                "actions_p50": 47.5,
+                "transitions_p50": 47.5
+              },
+              "S1D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 6,
+                  "death": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 13.5,
+                "normalized_hp_p50": 0.18125000000000002,
+                "loss_p50": 45.0,
+                "actions_p50": 28.0,
+                "transitions_p50": 28.0
+              },
+              "S1D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 6,
+                  "death": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 21.5,
+                "normalized_hp_p50": 0.2794642857142857,
+                "loss_p50": 45.5,
+                "actions_p50": 32.0,
+                "transitions_p50": 32.0
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 4,
+                  "win\u2192death": 2,
+                  "death\u2192win": 2
+                },
+                "hp_delta_p50": 0.004464285714285705
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "win\u2192death": 2
+                },
+                "hp_delta_p50": -0.1
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "death\u2192win": 2
+                },
+                "hp_delta_p50": 0.08750000000000002
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 5,
+                  "death\u2192win": 1,
+                  "death\u2192death": 1,
+                  "win\u2192death": 1
+                },
+                "hp_delta_p50": 0.0
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 5,
+                  "win\u2192death": 1,
+                  "death\u2192death": 1,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": -0.04999999999999999
+              }
+            },
+            "interactions": {
+              "0": 5,
+              "1": 1,
+              "-2": 1,
+              "-1": 1
+            }
+          }
+        },
+        "template": {
+          "strength": {
+            "cells": {
+              "S0D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 16,
+                "normalized_hp_p50": 0.2,
+                "loss_p50": 39.0,
+                "actions_p50": 19.0,
+                "transitions_p50": 19.0
+              },
+              "S0D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 4
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 23.5,
+                "normalized_hp_p50": 0.29375,
+                "loss_p50": 26.0,
+                "actions_p50": 21.5,
+                "transitions_p50": 21.5
+              },
+              "S1D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 4
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 14.5,
+                "normalized_hp_p50": 0.18125,
+                "loss_p50": 38.0,
+                "actions_p50": 21.5,
+                "transitions_p50": 21.5
+              },
+              "S1D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 31,
+                "normalized_hp_p50": 0.3875,
+                "loss_p50": 30.5,
+                "actions_p50": 21.5,
+                "transitions_p50": 21.5
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": -0.012500000000000011
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "win\u2192death": 1
+                },
+                "hp_delta_p50": 0.04999999999999999
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.15000000000000002
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "win\u2192death": 1
+                },
+                "hp_delta_p50": 0.21250000000000002
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.2
+              }
+            },
+            "interactions": {
+              "0": 3,
+              "-2": 1
+            }
+          },
+          "barrier": {
+            "cells": {
+              "S0D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 32,
+                "normalized_hp_p50": 0.4,
+                "loss_p50": 31.5,
+                "actions_p50": 32.5,
+                "transitions_p50": 32.5
+              },
+              "S0D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 27,
+                "normalized_hp_p50": 0.3375,
+                "loss_p50": 32.5,
+                "actions_p50": 35.0,
+                "transitions_p50": 35.0
+              },
+              "S1D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 35,
+                "normalized_hp_p50": 0.4375,
+                "loss_p50": 33.0,
+                "actions_p50": 30.5,
+                "transitions_p50": 30.5
+              },
+              "S1D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 4
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 33.5,
+                "normalized_hp_p50": 0.41875,
+                "loss_p50": 22.0,
+                "actions_p50": 43.0,
+                "transitions_p50": 43.0
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.03749999999999998
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.09999999999999998
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.0
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.07499999999999996
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.03749999999999998
+              }
+            },
+            "interactions": {
+              "0": 3,
+              "1": 1
+            }
+          },
+          "shiv": {
+            "cells": {
+              "S0D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 4
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 14.5,
+                "normalized_hp_p50": 0.20714285714285713,
+                "loss_p50": 39.5,
+                "actions_p50": 40.5,
+                "transitions_p50": 40.5
+              },
+              "S0D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 4
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 8.0,
+                "normalized_hp_p50": 0.11428571428571428,
+                "loss_p50": 41.5,
+                "actions_p50": 44.5,
+                "transitions_p50": 44.5
+              },
+              "S1D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 22,
+                "normalized_hp_p50": 0.3142857142857143,
+                "loss_p50": 39.0,
+                "actions_p50": 48.5,
+                "transitions_p50": 48.5
+              },
+              "S1D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 4
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 18.5,
+                "normalized_hp_p50": 0.2642857142857143,
+                "loss_p50": 38.0,
+                "actions_p50": 48.0,
+                "transitions_p50": 48.0
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "win\u2192death": 1
+                },
+                "hp_delta_p50": 0.04285714285714287
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 4
+                },
+                "hp_delta_p50": 0.16428571428571428
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 4
+                },
+                "hp_delta_p50": -0.049999999999999996
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.042857142857142816
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 4
+                },
+                "hp_delta_p50": 0.021428571428571436
+              }
+            },
+            "interactions": {
+              "0": 3,
+              "1": 1
+            }
+          },
+          "dexterity": {
+            "cells": {
+              "S0D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 2,
+                  "death": 2
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 15.5,
+                "normalized_hp_p50": 0.22142857142857142,
+                "loss_p50": 46.0,
+                "actions_p50": 59.0,
+                "transitions_p50": 59.0
+              },
+              "S0D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 27,
+                "normalized_hp_p50": 0.38571428571428573,
+                "loss_p50": 40.5,
+                "actions_p50": 72.0,
+                "transitions_p50": 72.0
+              },
+              "S1D0": {
+                "n": 4,
+                "stops": {
+                  "death": 2,
+                  "predicted_win": 2
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 27.5,
+                "normalized_hp_p50": 0.3928571428571429,
+                "loss_p50": 46.0,
+                "actions_p50": 42.0,
+                "transitions_p50": 42.0
+              },
+              "S1D1": {
+                "n": 4,
+                "stops": {
+                  "death": 2,
+                  "predicted_win": 2
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 26.5,
+                "normalized_hp_p50": 0.37857142857142856,
+                "loss_p50": 46.0,
+                "actions_p50": 47.5,
+                "transitions_p50": 47.5
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192death": 1,
+                  "win\u2192win": 1,
+                  "death\u2192death": 1,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.3571428571428572
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192death": 1,
+                  "win\u2192win": 2,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.1642857142857143
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 2,
+                  "death\u2192death": 1,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.09999999999999998
+              },
+              "deck_S1": {
+                "counts": {
+                  "death\u2192death": 2,
+                  "win\u2192win": 2
+                },
+                "hp_delta_p50": -0.01428571428571429
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192death": 1,
+                  "win\u2192win": 1,
+                  "death\u2192death": 1,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.3571428571428572
+              }
+            },
+            "interactions": {
+              "0": 3,
+              "-1": 1
+            }
+          }
+        },
+        "pressure": {
+          "mid_hp": {
+            "cells": {
+              "S0D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 5,
+                  "death": 3
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.625,
+                "conditional_win": 0.625,
+                "hp_p50": 14,
+                "normalized_hp_p50": 0.175,
+                "loss_p50": 38.0,
+                "actions_p50": 36.0,
+                "transitions_p50": 36.0
+              },
+              "S0D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 6,
+                  "death": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 20.0,
+                "normalized_hp_p50": 0.25,
+                "loss_p50": 35.5,
+                "actions_p50": 37.0,
+                "transitions_p50": 37.0
+              },
+              "S1D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 5,
+                  "death": 3
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.625,
+                "conditional_win": 0.625,
+                "hp_p50": 14,
+                "normalized_hp_p50": 0.175,
+                "loss_p50": 41.0,
+                "actions_p50": 28.5,
+                "transitions_p50": 28.5
+              },
+              "S1D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 5,
+                  "death": 3
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.625,
+                "conditional_win": 0.625,
+                "hp_p50": 31,
+                "normalized_hp_p50": 0.3875,
+                "loss_p50": 42.0,
+                "actions_p50": 33.0,
+                "transitions_p50": 33.0
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 4,
+                  "win\u2192death": 1,
+                  "death\u2192win": 1,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": 0.01874999999999999
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 4,
+                  "win\u2192death": 2,
+                  "death\u2192win": 1,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.07499999999999998
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 5,
+                  "death\u2192win": 1,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": 0.028571428571428567
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 4,
+                  "death\u2192death": 2,
+                  "win\u2192death": 1,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.021428571428571408
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 4,
+                  "win\u2192death": 1,
+                  "death\u2192death": 2,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.125
+              }
+            },
+            "interactions": {
+              "0": 6,
+              "-2": 1,
+              "1": 1
+            }
+          },
+          "stocked": {
+            "cells": {
+              "S0D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 7,
+                  "death": 1
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.875,
+                "conditional_win": 0.875,
+                "hp_p50": 19,
+                "normalized_hp_p50": 0.2714285714285714,
+                "loss_p50": 44.5,
+                "actions_p50": 38.5,
+                "transitions_p50": 38.5
+              },
+              "S0D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 8
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 23.5,
+                "normalized_hp_p50": 0.31785714285714284,
+                "loss_p50": 38.5,
+                "actions_p50": 45.5,
+                "transitions_p50": 45.5
+              },
+              "S1D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 7,
+                  "death": 1
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.875,
+                "conditional_win": 0.875,
+                "hp_p50": 22,
+                "normalized_hp_p50": 0.3142857142857143,
+                "loss_p50": 43.5,
+                "actions_p50": 35.5,
+                "transitions_p50": 35.5
+              },
+              "S1D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 8
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 31.5,
+                "normalized_hp_p50": 0.4,
+                "loss_p50": 30.5,
+                "actions_p50": 43.5,
+                "transitions_p50": 43.5
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "win\u2192death": 1,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.01517857142857143
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 8
+                },
+                "hp_delta_p50": 0.09375
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 7,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.02500000000000001
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 7,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.07499999999999996
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 7,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.17142857142857143
+              }
+            },
+            "interactions": {
+              "0": 6,
+              "1": 1,
+              "-1": 1
+            }
+          }
+        },
+        "encounter": {
+          "BOWLBUGS_WEAK": {
+            "cells": {
+              "S0D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 8
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 19.5,
+                "normalized_hp_p50": 0.2785714285714286,
+                "loss_p50": 31.5,
+                "actions_p50": 32.5,
+                "transitions_p50": 32.5
+              },
+              "S0D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 8
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 34.5,
+                "normalized_hp_p50": 0.45,
+                "loss_p50": 18.0,
+                "actions_p50": 34.0,
+                "transitions_p50": 34.0
+              },
+              "S1D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 6,
+                  "death": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 36.0,
+                "normalized_hp_p50": 0.48125,
+                "loss_p50": 26.5,
+                "actions_p50": 26.5,
+                "transitions_p50": 26.5
+              },
+              "S1D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 7,
+                  "death": 1
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.875,
+                "conditional_win": 0.875,
+                "hp_p50": 35,
+                "normalized_hp_p50": 0.4375,
+                "loss_p50": 18.0,
+                "actions_p50": 31.5,
+                "transitions_p50": 31.5
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "win\u2192death": 2
+                },
+                "hp_delta_p50": 0.01874999999999999
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 7,
+                  "win\u2192death": 1
+                },
+                "hp_delta_p50": 0.04999999999999999
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 8
+                },
+                "hp_delta_p50": 0.0892857142857143
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "death\u2192win": 1,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.027678571428571414
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 7,
+                  "win\u2192death": 1
+                },
+                "hp_delta_p50": 0.03749999999999998
+              }
+            },
+            "interactions": {
+              "0": 7,
+              "1": 1
+            }
+          },
+          "CHOMPERS_NORMAL": {
+            "cells": {
+              "S0D0": {
+                "n": 8,
+                "stops": {
+                  "death": 4,
+                  "predicted_win": 4
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 13.0,
+                "normalized_hp_p50": 0.17142857142857143,
+                "loss_p50": 46.0,
+                "actions_p50": 43.0,
+                "transitions_p50": 43.0
+              },
+              "S0D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 6,
+                  "death": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 12.0,
+                "normalized_hp_p50": 0.15000000000000002,
+                "loss_p50": 45.5,
+                "actions_p50": 52.0,
+                "transitions_p50": 52.0
+              },
+              "S1D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 6,
+                  "death": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 13.5,
+                "normalized_hp_p50": 0.175,
+                "loss_p50": 46.0,
+                "actions_p50": 39.0,
+                "transitions_p50": 39.0
+              },
+              "S1D1": {
+                "n": 8,
+                "stops": {
+                  "death": 2,
+                  "predicted_win": 6
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 21.5,
+                "normalized_hp_p50": 0.2857142857142857,
+                "loss_p50": 42.0,
+                "actions_p50": 46.5,
+                "transitions_p50": 46.5
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "death\u2192win": 2,
+                  "win\u2192win": 4,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": 0.01517857142857143
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192death": 1,
+                  "win\u2192win": 5,
+                  "death\u2192win": 1,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.15000000000000002
+              },
+              "deck_S0": {
+                "counts": {
+                  "death\u2192win": 2,
+                  "win\u2192win": 4,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": -0.051785714285714275
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192death": 1,
+                  "win\u2192win": 5,
+                  "death\u2192win": 1,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.12857142857142856
+              },
+              "joint": {
+                "counts": {
+                  "death\u2192death": 2,
+                  "win\u2192win": 4,
+                  "death\u2192win": 2
+                },
+                "hp_delta_p50": 0.18571428571428572
+              }
+            },
+            "interactions": {
+              "-2": 1,
+              "0": 5,
+              "1": 1,
+              "-1": 1
+            }
+          }
+        }
+      },
+      "score_us": 69.13317323928538
+    },
+    "r2-random-4-6": {
+      "total": {
+        "n": 64,
+        "stops": {
+          "predicted_win": 49,
+          "death": 15
+        },
+        "complete": 64,
+        "coverage": 1.0,
+        "unconditional_win": 0.765625,
+        "conditional_win": 0.765625,
+        "hp_p50": 24,
+        "normalized_hp_p50": 0.32857142857142857,
+        "loss_p50": 39.0,
+        "actions_p50": 40.0,
+        "transitions_p50": 40.0
+      },
+      "factorial": {
+        "cells": {
+          "S0D0": {
+            "n": 16,
+            "stops": {
+              "predicted_win": 10,
+              "death": 6
+            },
+            "complete": 16,
+            "coverage": 1.0,
+            "unconditional_win": 0.625,
+            "conditional_win": 0.625,
+            "hp_p50": 28.0,
+            "normalized_hp_p50": 0.35178571428571426,
+            "loss_p50": 39.0,
+            "actions_p50": 36.0,
+            "transitions_p50": 36.0
+          },
+          "S0D1": {
+            "n": 16,
+            "stops": {
+              "predicted_win": 12,
+              "death": 4
+            },
+            "complete": 16,
+            "coverage": 1.0,
+            "unconditional_win": 0.75,
+            "conditional_win": 0.75,
+            "hp_p50": 27.5,
+            "normalized_hp_p50": 0.3464285714285714,
+            "loss_p50": 35.0,
+            "actions_p50": 43.0,
+            "transitions_p50": 43.0
+          },
+          "S1D0": {
+            "n": 16,
+            "stops": {
+              "predicted_win": 11,
+              "death": 5
+            },
+            "complete": 16,
+            "coverage": 1.0,
+            "unconditional_win": 0.6875,
+            "conditional_win": 0.6875,
+            "hp_p50": 22,
+            "normalized_hp_p50": 0.275,
+            "loss_p50": 41.0,
+            "actions_p50": 31.5,
+            "transitions_p50": 31.5
+          },
+          "S1D1": {
+            "n": 16,
+            "stops": {
+              "predicted_win": 16
+            },
+            "complete": 16,
+            "coverage": 1.0,
+            "unconditional_win": 1.0,
+            "conditional_win": 1.0,
+            "hp_p50": 11.0,
+            "normalized_hp_p50": 0.14017857142857143,
+            "loss_p50": 39.5,
+            "actions_p50": 54.0,
+            "transitions_p50": 54.0
+          }
+        },
+        "contrasts": {
+          "seed_D0": {
+            "counts": {
+              "win\u2192win": 8,
+              "death\u2192win": 3,
+              "win\u2192death": 2,
+              "death\u2192death": 3
+            },
+            "hp_delta_p50": 0.06071428571428575
+          },
+          "seed_D1": {
+            "counts": {
+              "win\u2192win": 12,
+              "death\u2192win": 4
+            },
+            "hp_delta_p50": -0.07410714285714284
+          },
+          "deck_S0": {
+            "counts": {
+              "win\u2192win": 10,
+              "death\u2192win": 2,
+              "death\u2192death": 4
+            },
+            "hp_delta_p50": 0.01428571428571429
+          },
+          "deck_S1": {
+            "counts": {
+              "win\u2192win": 11,
+              "death\u2192win": 5
+            },
+            "hp_delta_p50": -0.01428571428571429
+          },
+          "joint": {
+            "counts": {
+              "win\u2192win": 10,
+              "death\u2192win": 6
+            },
+            "hp_delta_p50": 0.04285714285714286
+          }
+        },
+        "interactions": {
+          "0": 11,
+          "-1": 1,
+          "1": 4
+        }
+      },
+      "dimensions": {
+        "split": {
+          "diagnosis": {
+            "cells": {
+              "S0D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 6,
+                  "death": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 28.0,
+                "normalized_hp_p50": 0.35178571428571426,
+                "loss_p50": 32.0,
+                "actions_p50": 36.5,
+                "transitions_p50": 36.5
+              },
+              "S0D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 6,
+                  "death": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 25.5,
+                "normalized_hp_p50": 0.34017857142857144,
+                "loss_p50": 36.5,
+                "actions_p50": 39.0,
+                "transitions_p50": 39.0
+              },
+              "S1D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 7,
+                  "death": 1
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.875,
+                "conditional_win": 0.875,
+                "hp_p50": 20,
+                "normalized_hp_p50": 0.25,
+                "loss_p50": 35.0,
+                "actions_p50": 31.0,
+                "transitions_p50": 31.0
+              },
+              "S1D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 8
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 13.5,
+                "normalized_hp_p50": 0.1830357142857143,
+                "loss_p50": 37.5,
+                "actions_p50": 54.0,
+                "transitions_p50": 54.0
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "death\u2192death": 1,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.11071428571428571
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "death\u2192win": 2
+                },
+                "hp_delta_p50": -0.04285714285714286
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": 0.01339285714285715
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 7,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": -0.01428571428571429
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "death\u2192win": 2
+                },
+                "hp_delta_p50": -0.01696428571428571
+              }
+            },
+            "interactions": {
+              "0": 7,
+              "1": 1
+            }
+          },
+          "report": {
+            "cells": {
+              "S0D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 4,
+                  "death": 4
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 35.0,
+                "normalized_hp_p50": 0.4580357142857143,
+                "loss_p50": 46.0,
+                "actions_p50": 35.0,
+                "transitions_p50": 35.0
+              },
+              "S0D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 6,
+                  "death": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 33.0,
+                "normalized_hp_p50": 0.44375,
+                "loss_p50": 25.5,
+                "actions_p50": 46.5,
+                "transitions_p50": 46.5
+              },
+              "S1D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 4,
+                  "death": 4
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 32.0,
+                "normalized_hp_p50": 0.4,
+                "loss_p50": 43.0,
+                "actions_p50": 31.5,
+                "transitions_p50": 31.5
+              },
+              "S1D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 8
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 8.5,
+                "normalized_hp_p50": 0.11517857142857142,
+                "loss_p50": 40.0,
+                "actions_p50": 53.5,
+                "transitions_p50": 53.5
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 2,
+                  "death\u2192win": 2,
+                  "win\u2192death": 2,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": 0.004464285714285754
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "death\u2192win": 2
+                },
+                "hp_delta_p50": -0.07410714285714284
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 4,
+                  "death\u2192win": 2,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": 0.1142857142857143
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 4,
+                  "death\u2192win": 4
+                },
+                "hp_delta_p50": -0.05
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 4,
+                  "death\u2192win": 4
+                },
+                "hp_delta_p50": 0.06428571428571432
+              }
+            },
+            "interactions": {
+              "0": 4,
+              "-1": 1,
+              "1": 3
+            }
+          }
+        },
+        "template": {
+          "strength": {
+            "cells": {
+              "S0D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 26,
+                "normalized_hp_p50": 0.325,
+                "loss_p50": 33.0,
+                "actions_p50": 22.0,
+                "transitions_p50": 22.0
+              },
+              "S0D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 4
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 25.0,
+                "normalized_hp_p50": 0.3125,
+                "loss_p50": 27.5,
+                "actions_p50": 28.5,
+                "transitions_p50": 28.5
+              },
+              "S1D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 20,
+                "normalized_hp_p50": 0.25,
+                "loss_p50": 35.0,
+                "actions_p50": 27.5,
+                "transitions_p50": 27.5
+              },
+              "S1D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 4
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 11.0,
+                "normalized_hp_p50": 0.1375,
+                "loss_p50": 37.0,
+                "actions_p50": 40.5,
+                "transitions_p50": 40.5
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": -0.0625
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 4
+                },
+                "hp_delta_p50": -0.10624999999999998
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.012500000000000011
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": -0.0875
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": -0.0625
+              }
+            },
+            "interactions": {
+              "0": 4
+            }
+          },
+          "barrier": {
+            "cells": {
+              "S0D0": {
+                "n": 4,
+                "stops": {
+                  "death": 3,
+                  "predicted_win": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.25,
+                "conditional_win": 0.25,
+                "hp_p50": 30,
+                "normalized_hp_p50": 0.375,
+                "loss_p50": 46.0,
+                "actions_p50": 32.0,
+                "transitions_p50": 32.0
+              },
+              "S0D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 2,
+                  "death": 2
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 29.5,
+                "normalized_hp_p50": 0.36875,
+                "loss_p50": 40.0,
+                "actions_p50": 48.5,
+                "transitions_p50": 48.5
+              },
+              "S1D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 22,
+                "normalized_hp_p50": 0.275,
+                "loss_p50": 36.5,
+                "actions_p50": 31.5,
+                "transitions_p50": 31.5
+              },
+              "S1D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 4
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 6.0,
+                "normalized_hp_p50": 0.075,
+                "loss_p50": 43.0,
+                "actions_p50": 54.5,
+                "transitions_p50": 54.5
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "death\u2192win": 2,
+                  "win\u2192win": 1,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.26249999999999996
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 2,
+                  "death\u2192win": 2
+                },
+                "hp_delta_p50": -0.018750000000000017
+              },
+              "deck_S0": {
+                "counts": {
+                  "death\u2192win": 1,
+                  "win\u2192win": 1,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": -0.025000000000000022
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": -0.1
+              },
+              "joint": {
+                "counts": {
+                  "death\u2192win": 3,
+                  "win\u2192win": 1
+                },
+                "hp_delta_p50": 0.26249999999999996
+              }
+            },
+            "interactions": {
+              "-1": 1,
+              "0": 2,
+              "1": 1
+            }
+          },
+          "shiv": {
+            "cells": {
+              "S0D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 35,
+                "normalized_hp_p50": 0.5,
+                "loss_p50": 25.0,
+                "actions_p50": 36.5,
+                "transitions_p50": 36.5
+              },
+              "S0D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 24,
+                "normalized_hp_p50": 0.34285714285714286,
+                "loss_p50": 30.5,
+                "actions_p50": 41.5,
+                "transitions_p50": 41.5
+              },
+              "S1D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 35,
+                "normalized_hp_p50": 0.5,
+                "loss_p50": 28.0,
+                "actions_p50": 37.0,
+                "transitions_p50": 37.0
+              },
+              "S1D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 4
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 26.0,
+                "normalized_hp_p50": 0.3714285714285714,
+                "loss_p50": 26.0,
+                "actions_p50": 43.0,
+                "transitions_p50": 43.0
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.07142857142857151
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.014285714285714346
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.01428571428571429
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.0
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.07142857142857151
+              }
+            },
+            "interactions": {
+              "0": 3,
+              "1": 1
+            }
+          },
+          "dexterity": {
+            "cells": {
+              "S0D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 23,
+                "normalized_hp_p50": 0.32857142857142857,
+                "loss_p50": 39.0,
+                "actions_p50": 51.5,
+                "transitions_p50": 51.5
+              },
+              "S0D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 31,
+                "normalized_hp_p50": 0.44285714285714284,
+                "loss_p50": 37.0,
+                "actions_p50": 56.5,
+                "transitions_p50": 56.5
+              },
+              "S1D0": {
+                "n": 4,
+                "stops": {
+                  "death": 2,
+                  "predicted_win": 2
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 21.5,
+                "normalized_hp_p50": 0.3071428571428571,
+                "loss_p50": 45.5,
+                "actions_p50": 43.0,
+                "transitions_p50": 43.0
+              },
+              "S1D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 4
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 19.5,
+                "normalized_hp_p50": 0.2785714285714286,
+                "loss_p50": 35.0,
+                "actions_p50": 61.0,
+                "transitions_p50": 61.0
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192death": 2,
+                  "win\u2192win": 1,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.17142857142857143
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": -0.08571428571428569
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.17142857142857143
+              },
+              "deck_S1": {
+                "counts": {
+                  "death\u2192win": 2,
+                  "win\u2192win": 2
+                },
+                "hp_delta_p50": -0.03571428571428571
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.057142857142857134
+              }
+            },
+            "interactions": {
+              "1": 2,
+              "0": 2
+            }
+          }
+        },
+        "pressure": {
+          "mid_hp": {
+            "cells": {
+              "S0D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 5
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.375,
+                "conditional_win": 0.375,
+                "hp_p50": 23,
+                "normalized_hp_p50": 0.32857142857142857,
+                "loss_p50": 46.0,
+                "actions_p50": 34.5,
+                "transitions_p50": 34.5
+              },
+              "S0D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 5,
+                  "death": 3
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.625,
+                "conditional_win": 0.625,
+                "hp_p50": 27,
+                "normalized_hp_p50": 0.34285714285714286,
+                "loss_p50": 29.0,
+                "actions_p50": 37.5,
+                "transitions_p50": 37.5
+              },
+              "S1D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 4,
+                  "death": 4
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 15.5,
+                "normalized_hp_p50": 0.19375,
+                "loss_p50": 45.5,
+                "actions_p50": 30.0,
+                "transitions_p50": 30.0
+              },
+              "S1D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 8
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 6.5,
+                "normalized_hp_p50": 0.08660714285714285,
+                "loss_p50": 39.5,
+                "actions_p50": 54.5,
+                "transitions_p50": 54.5
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 2,
+                  "death\u2192win": 2,
+                  "win\u2192death": 1,
+                  "death\u2192death": 3
+                },
+                "hp_delta_p50": 0.03571428571428571
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 5,
+                  "death\u2192win": 3
+                },
+                "hp_delta_p50": -0.08571428571428569
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192win": 2,
+                  "death\u2192death": 3
+                },
+                "hp_delta_p50": 0.01428571428571429
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 4,
+                  "death\u2192win": 4
+                },
+                "hp_delta_p50": -0.03660714285714288
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192win": 5
+                },
+                "hp_delta_p50": 0.08571428571428574
+              }
+            },
+            "interactions": {
+              "0": 4,
+              "-1": 1,
+              "1": 3
+            }
+          },
+          "stocked": {
+            "cells": {
+              "S0D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 7,
+                  "death": 1
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.875,
+                "conditional_win": 0.875,
+                "hp_p50": 30,
+                "normalized_hp_p50": 0.42857142857142855,
+                "loss_p50": 32.0,
+                "actions_p50": 36.0,
+                "transitions_p50": 36.0
+              },
+              "S0D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 7,
+                  "death": 1
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.875,
+                "conditional_win": 0.875,
+                "hp_p50": 28,
+                "normalized_hp_p50": 0.35,
+                "loss_p50": 36.5,
+                "actions_p50": 46.0,
+                "transitions_p50": 46.0
+              },
+              "S1D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 7,
+                  "death": 1
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.875,
+                "conditional_win": 0.875,
+                "hp_p50": 42,
+                "normalized_hp_p50": 0.525,
+                "loss_p50": 30.0,
+                "actions_p50": 36.0,
+                "transitions_p50": 36.0
+              },
+              "S1D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 8
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 24.0,
+                "normalized_hp_p50": 0.34285714285714286,
+                "loss_p50": 38.0,
+                "actions_p50": 53.0,
+                "transitions_p50": 53.0
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "death\u2192win": 1,
+                  "win\u2192death": 1
+                },
+                "hp_delta_p50": 0.06071428571428575
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 7,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": -0.0625
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 7,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.01428571428571429
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 7,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": -0.01428571428571429
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 7,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.02857142857142858
+              }
+            },
+            "interactions": {
+              "0": 7,
+              "1": 1
+            }
+          }
+        },
+        "encounter": {
+          "BOWLBUGS_WEAK": {
+            "cells": {
+              "S0D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 7,
+                  "death": 1
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.875,
+                "conditional_win": 0.875,
+                "hp_p50": 30,
+                "normalized_hp_p50": 0.375,
+                "loss_p50": 23.0,
+                "actions_p50": 25.5,
+                "transitions_p50": 25.5
+              },
+              "S0D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 8
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 31.0,
+                "normalized_hp_p50": 0.4151785714285714,
+                "loss_p50": 17.0,
+                "actions_p50": 44.0,
+                "transitions_p50": 44.0
+              },
+              "S1D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 7,
+                  "death": 1
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.875,
+                "conditional_win": 0.875,
+                "hp_p50": 42,
+                "normalized_hp_p50": 0.525,
+                "loss_p50": 20.0,
+                "actions_p50": 29.0,
+                "transitions_p50": 29.0
+              },
+              "S1D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 8
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 34.0,
+                "normalized_hp_p50": 0.48571428571428565,
+                "loss_p50": 18.5,
+                "actions_p50": 48.0,
+                "transitions_p50": 48.0
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "death\u2192win": 1,
+                  "win\u2192death": 1
+                },
+                "hp_delta_p50": 0.12142857142857147
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 8
+                },
+                "hp_delta_p50": -0.024107142857142855
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 7,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.01428571428571429
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 7,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.0
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 7,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.07142857142857151
+              }
+            },
+            "interactions": {
+              "0": 6,
+              "-1": 1,
+              "1": 1
+            }
+          },
+          "CHOMPERS_NORMAL": {
+            "cells": {
+              "S0D0": {
+                "n": 8,
+                "stops": {
+                  "death": 5,
+                  "predicted_win": 3
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.375,
+                "conditional_win": 0.375,
+                "hp_p50": 16,
+                "normalized_hp_p50": 0.2,
+                "loss_p50": 46.0,
+                "actions_p50": 41.0,
+                "transitions_p50": 41.0
+              },
+              "S0D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 4,
+                  "death": 4
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 21.0,
+                "normalized_hp_p50": 0.2794642857142857,
+                "loss_p50": 44.5,
+                "actions_p50": 43.0,
+                "transitions_p50": 43.0
+              },
+              "S1D0": {
+                "n": 8,
+                "stops": {
+                  "death": 4,
+                  "predicted_win": 4
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 18.5,
+                "normalized_hp_p50": 0.24642857142857144,
+                "loss_p50": 45.5,
+                "actions_p50": 44.0,
+                "transitions_p50": 44.0
+              },
+              "S1D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 8
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 7.0,
+                "normalized_hp_p50": 0.0875,
+                "loss_p50": 45.5,
+                "actions_p50": 54.5,
+                "transitions_p50": 54.5
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "death\u2192death": 3,
+                  "win\u2192win": 2,
+                  "death\u2192win": 2,
+                  "win\u2192death": 1
+                },
+                "hp_delta_p50": -0.10357142857142856
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 4,
+                  "death\u2192win": 4
+                },
+                "hp_delta_p50": -0.11428571428571428
+              },
+              "deck_S0": {
+                "counts": {
+                  "death\u2192win": 1,
+                  "win\u2192win": 3,
+                  "death\u2192death": 4
+                },
+                "hp_delta_p50": 0.08749999999999997
+              },
+              "deck_S1": {
+                "counts": {
+                  "death\u2192win": 4,
+                  "win\u2192win": 4
+                },
+                "hp_delta_p50": -0.06339285714285714
+              },
+              "joint": {
+                "counts": {
+                  "death\u2192win": 5,
+                  "win\u2192win": 3
+                },
+                "hp_delta_p50": -0.0625
+              }
+            },
+            "interactions": {
+              "0": 5,
+              "1": 3
+            }
+          }
+        }
+      },
+      "score_us": 73.07897153354827
+    },
+    "random-4-12": {
+      "total": {
+        "n": 64,
+        "stops": {
+          "predicted_win": 49,
+          "death": 15
+        },
+        "complete": 64,
+        "coverage": 1.0,
+        "unconditional_win": 0.765625,
+        "conditional_win": 0.765625,
+        "hp_p50": 26,
+        "normalized_hp_p50": 0.32857142857142857,
+        "loss_p50": 36.5,
+        "actions_p50": 29.5,
+        "transitions_p50": 29.5
+      },
+      "factorial": {
+        "cells": {
+          "S0D0": {
+            "n": 16,
+            "stops": {
+              "predicted_win": 11,
+              "death": 5
+            },
+            "complete": 16,
+            "coverage": 1.0,
+            "unconditional_win": 0.6875,
+            "conditional_win": 0.6875,
+            "hp_p50": 22,
+            "normalized_hp_p50": 0.3125,
+            "loss_p50": 45.5,
+            "actions_p50": 31.0,
+            "transitions_p50": 31.0
+          },
+          "S0D1": {
+            "n": 16,
+            "stops": {
+              "predicted_win": 14,
+              "death": 2
+            },
+            "complete": 16,
+            "coverage": 1.0,
+            "unconditional_win": 0.875,
+            "conditional_win": 0.875,
+            "hp_p50": 24.5,
+            "normalized_hp_p50": 0.35,
+            "loss_p50": 34.5,
+            "actions_p50": 32.0,
+            "transitions_p50": 32.0
+          },
+          "S1D0": {
+            "n": 16,
+            "stops": {
+              "predicted_win": 10,
+              "death": 6
+            },
+            "complete": 16,
+            "coverage": 1.0,
+            "unconditional_win": 0.625,
+            "conditional_win": 0.625,
+            "hp_p50": 30.0,
+            "normalized_hp_p50": 0.41160714285714284,
+            "loss_p50": 40.5,
+            "actions_p50": 26.0,
+            "transitions_p50": 26.0
+          },
+          "S1D1": {
+            "n": 16,
+            "stops": {
+              "predicted_win": 14,
+              "death": 2
+            },
+            "complete": 16,
+            "coverage": 1.0,
+            "unconditional_win": 0.875,
+            "conditional_win": 0.875,
+            "hp_p50": 29.0,
+            "normalized_hp_p50": 0.38125,
+            "loss_p50": 31.0,
+            "actions_p50": 30.5,
+            "transitions_p50": 30.5
+          }
+        },
+        "contrasts": {
+          "seed_D0": {
+            "counts": {
+              "win\u2192win": 8,
+              "death\u2192win": 2,
+              "win\u2192death": 3,
+              "death\u2192death": 3
+            },
+            "hp_delta_p50": 0.0062500000000000056
+          },
+          "seed_D1": {
+            "counts": {
+              "win\u2192win": 14,
+              "death\u2192death": 2
+            },
+            "hp_delta_p50": 0.006249999999999978
+          },
+          "deck_S0": {
+            "counts": {
+              "win\u2192win": 11,
+              "death\u2192win": 3,
+              "death\u2192death": 2
+            },
+            "hp_delta_p50": 0.012500000000000011
+          },
+          "deck_S1": {
+            "counts": {
+              "win\u2192win": 10,
+              "death\u2192win": 4,
+              "death\u2192death": 2
+            },
+            "hp_delta_p50": 0.0357142857142857
+          },
+          "joint": {
+            "counts": {
+              "win\u2192win": 11,
+              "death\u2192win": 3,
+              "death\u2192death": 2
+            },
+            "hp_delta_p50": 0.03749999999999998
+          }
+        },
+        "interactions": {
+          "0": 11,
+          "-1": 2,
+          "1": 3
+        }
+      },
+      "dimensions": {
+        "split": {
+          "diagnosis": {
+            "cells": {
+              "S0D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 6,
+                  "death": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 14.5,
+                "normalized_hp_p50": 0.19285714285714287,
+                "loss_p50": 45.5,
+                "actions_p50": 34.0,
+                "transitions_p50": 34.0
+              },
+              "S0D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 8
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 13.0,
+                "normalized_hp_p50": 0.1705357142857143,
+                "loss_p50": 36.5,
+                "actions_p50": 33.5,
+                "transitions_p50": 33.5
+              },
+              "S1D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 5,
+                  "death": 3
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.625,
+                "conditional_win": 0.625,
+                "hp_p50": 33,
+                "normalized_hp_p50": 0.4714285714285714,
+                "loss_p50": 38.0,
+                "actions_p50": 26.0,
+                "transitions_p50": 26.0
+              },
+              "S1D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 8
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 29.5,
+                "normalized_hp_p50": 0.39821428571428574,
+                "loss_p50": 24.5,
+                "actions_p50": 30.5,
+                "transitions_p50": 30.5
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 4,
+                  "death\u2192win": 1,
+                  "win\u2192death": 2,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.0062500000000000056
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 8
+                },
+                "hp_delta_p50": 0.0857142857142857
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "death\u2192win": 2
+                },
+                "hp_delta_p50": 0.031249999999999993
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 5,
+                  "death\u2192win": 3
+                },
+                "hp_delta_p50": 0.07499999999999996
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "death\u2192win": 2
+                },
+                "hp_delta_p50": 0.09107142857142857
+              }
+            },
+            "interactions": {
+              "0": 5,
+              "-1": 1,
+              "1": 2
+            }
+          },
+          "report": {
+            "cells": {
+              "S0D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 5,
+                  "death": 3
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.625,
+                "conditional_win": 0.625,
+                "hp_p50": 25,
+                "normalized_hp_p50": 0.32857142857142857,
+                "loss_p50": 42.5,
+                "actions_p50": 28.5,
+                "transitions_p50": 28.5
+              },
+              "S0D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 6,
+                  "death": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 40.5,
+                "normalized_hp_p50": 0.525,
+                "loss_p50": 20.5,
+                "actions_p50": 29.0,
+                "transitions_p50": 29.0
+              },
+              "S1D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 5,
+                  "death": 3
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.625,
+                "conditional_win": 0.625,
+                "hp_p50": 27,
+                "normalized_hp_p50": 0.38571428571428573,
+                "loss_p50": 40.5,
+                "actions_p50": 27.5,
+                "transitions_p50": 27.5
+              },
+              "S1D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 6,
+                  "death": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 29.0,
+                "normalized_hp_p50": 0.38125,
+                "loss_p50": 34.0,
+                "actions_p50": 31.0,
+                "transitions_p50": 31.0
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 4,
+                  "win\u2192death": 1,
+                  "death\u2192death": 2,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.006249999999999992
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": -0.15
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 5,
+                  "death\u2192death": 2,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.012500000000000011
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 5,
+                  "death\u2192win": 1,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": 0.0
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 5,
+                  "death\u2192death": 2,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": -0.012500000000000011
+              }
+            },
+            "interactions": {
+              "0": 6,
+              "1": 1,
+              "-1": 1
+            }
+          }
+        },
+        "template": {
+          "strength": {
+            "cells": {
+              "S0D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 16,
+                "normalized_hp_p50": 0.2,
+                "loss_p50": 41.5,
+                "actions_p50": 17.5,
+                "transitions_p50": 17.5
+              },
+              "S0D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 17,
+                "normalized_hp_p50": 0.2125,
+                "loss_p50": 37.5,
+                "actions_p50": 13.5,
+                "transitions_p50": 13.5
+              },
+              "S1D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 16,
+                "normalized_hp_p50": 0.2,
+                "loss_p50": 38.0,
+                "actions_p50": 18.0,
+                "transitions_p50": 18.0
+              },
+              "S1D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 26,
+                "normalized_hp_p50": 0.325,
+                "loss_p50": 29.0,
+                "actions_p50": 18.5,
+                "transitions_p50": 18.5
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.012500000000000011
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.11250000000000002
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.012499999999999983
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.125
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.125
+              }
+            },
+            "interactions": {
+              "0": 4
+            }
+          },
+          "barrier": {
+            "cells": {
+              "S0D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 4
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 24.0,
+                "normalized_hp_p50": 0.3,
+                "loss_p50": 31.0,
+                "actions_p50": 28.0,
+                "transitions_p50": 28.0
+              },
+              "S0D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 4
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 24.5,
+                "normalized_hp_p50": 0.30625,
+                "loss_p50": 29.0,
+                "actions_p50": 28.0,
+                "transitions_p50": 28.0
+              },
+              "S1D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 35,
+                "normalized_hp_p50": 0.4375,
+                "loss_p50": 33.0,
+                "actions_p50": 26.5,
+                "transitions_p50": 26.5
+              },
+              "S1D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 4
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 36.0,
+                "normalized_hp_p50": 0.45,
+                "loss_p50": 19.5,
+                "actions_p50": 33.5,
+                "transitions_p50": 33.5
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "win\u2192death": 1
+                },
+                "hp_delta_p50": -0.012500000000000011
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 4
+                },
+                "hp_delta_p50": 0.006249999999999978
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 4
+                },
+                "hp_delta_p50": 0.0062500000000000056
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.07499999999999996
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 4
+                },
+                "hp_delta_p50": 0.024999999999999988
+              }
+            },
+            "interactions": {
+              "0": 3,
+              "1": 1
+            }
+          },
+          "shiv": {
+            "cells": {
+              "S0D0": {
+                "n": 4,
+                "stops": {
+                  "death": 2,
+                  "predicted_win": 2
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 18.0,
+                "normalized_hp_p50": 0.2571428571428571,
+                "loss_p50": 46.0,
+                "actions_p50": 32.0,
+                "transitions_p50": 32.0
+              },
+              "S0D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 26,
+                "normalized_hp_p50": 0.37142857142857144,
+                "loss_p50": 36.5,
+                "actions_p50": 39.0,
+                "transitions_p50": 39.0
+              },
+              "S1D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 1,
+                  "death": 3
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.25,
+                "conditional_win": 0.25,
+                "hp_p50": 33,
+                "normalized_hp_p50": 0.4714285714285714,
+                "loss_p50": 54.0,
+                "actions_p50": 35.0,
+                "transitions_p50": 35.0
+              },
+              "S1D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 17,
+                "normalized_hp_p50": 0.24285714285714285,
+                "loss_p50": 45.5,
+                "actions_p50": 37.0,
+                "transitions_p50": 37.0
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "death\u2192win": 1,
+                  "win\u2192death": 2,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": null
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": -0.1285714285714286
+              },
+              "deck_S0": {
+                "counts": {
+                  "death\u2192win": 1,
+                  "win\u2192win": 2,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.24285714285714285
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 1,
+                  "death\u2192win": 2,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.0
+              },
+              "joint": {
+                "counts": {
+                  "death\u2192win": 1,
+                  "win\u2192win": 2,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": -0.10714285714285714
+              }
+            },
+            "interactions": {
+              "-1": 1,
+              "1": 2,
+              "0": 1
+            }
+          },
+          "dexterity": {
+            "cells": {
+              "S0D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 2,
+                  "death": 2
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 26.0,
+                "normalized_hp_p50": 0.37142857142857144,
+                "loss_p50": 43.0,
+                "actions_p50": 39.0,
+                "transitions_p50": 39.0
+              },
+              "S0D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 4
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 26.0,
+                "normalized_hp_p50": 0.37142857142857144,
+                "loss_p50": 28.0,
+                "actions_p50": 39.5,
+                "transitions_p50": 39.5
+              },
+              "S1D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 27,
+                "normalized_hp_p50": 0.38571428571428573,
+                "loss_p50": 33.5,
+                "actions_p50": 26.5,
+                "transitions_p50": 26.5
+              },
+              "S1D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 4
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 23.0,
+                "normalized_hp_p50": 0.32857142857142857,
+                "loss_p50": 31.0,
+                "actions_p50": 36.0,
+                "transitions_p50": 36.0
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 2,
+                  "death\u2192death": 1,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.02857142857142858
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 4
+                },
+                "hp_delta_p50": -0.021428571428571436
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 2,
+                  "death\u2192win": 2
+                },
+                "hp_delta_p50": 2.7755575615628914e-17
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.0
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 2,
+                  "death\u2192win": 2
+                },
+                "hp_delta_p50": -0.021428571428571408
+              }
+            },
+            "interactions": {
+              "0": 3,
+              "-1": 1
+            }
+          }
+        },
+        "pressure": {
+          "mid_hp": {
+            "cells": {
+              "S0D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 4,
+                  "death": 4
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 23.0,
+                "normalized_hp_p50": 0.3142857142857143,
+                "loss_p50": 45.5,
+                "actions_p50": 25.0,
+                "transitions_p50": 25.0
+              },
+              "S0D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 6,
+                  "death": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 13.0,
+                "normalized_hp_p50": 0.1705357142857143,
+                "loss_p50": 38.0,
+                "actions_p50": 27.0,
+                "transitions_p50": 27.0
+              },
+              "S1D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 4,
+                  "death": 4
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 24.5,
+                "normalized_hp_p50": 0.31875,
+                "loss_p50": 39.0,
+                "actions_p50": 26.0,
+                "transitions_p50": 26.0
+              },
+              "S1D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 6,
+                  "death": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 20.0,
+                "normalized_hp_p50": 0.2625,
+                "loss_p50": 32.5,
+                "actions_p50": 30.0,
+                "transitions_p50": 30.0
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192win": 1,
+                  "death\u2192death": 3,
+                  "win\u2192death": 1
+                },
+                "hp_delta_p50": -0.012500000000000011
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": 0.030357142857142846
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 4,
+                  "death\u2192win": 2,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": 0.012499999999999997
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 4,
+                  "death\u2192death": 2,
+                  "death\u2192win": 2
+                },
+                "hp_delta_p50": 0.0
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 4,
+                  "death\u2192win": 2,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": -5.204170427930421e-18
+              }
+            },
+            "interactions": {
+              "0": 6,
+              "-1": 1,
+              "1": 1
+            }
+          },
+          "stocked": {
+            "cells": {
+              "S0D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 7,
+                  "death": 1
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.875,
+                "conditional_win": 0.875,
+                "hp_p50": 22,
+                "normalized_hp_p50": 0.3125,
+                "loss_p50": 44.5,
+                "actions_p50": 33.5,
+                "transitions_p50": 33.5
+              },
+              "S0D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 8
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 36.5,
+                "normalized_hp_p50": 0.4883928571428572,
+                "loss_p50": 25.5,
+                "actions_p50": 33.0,
+                "transitions_p50": 33.0
+              },
+              "S1D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 6,
+                  "death": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 33.5,
+                "normalized_hp_p50": 0.44285714285714284,
+                "loss_p50": 41.5,
+                "actions_p50": 27.5,
+                "transitions_p50": 27.5
+              },
+              "S1D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 8
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 33.5,
+                "normalized_hp_p50": 0.4598214285714286,
+                "loss_p50": 28.5,
+                "actions_p50": 31.5,
+                "transitions_p50": 31.5
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 5,
+                  "win\u2192death": 2,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.024999999999999994
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 8
+                },
+                "hp_delta_p50": -0.045535714285714304
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 7,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.10000000000000003
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "death\u2192win": 2
+                },
+                "hp_delta_p50": 0.07321428571428568
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 7,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.057142857142857134
+              }
+            },
+            "interactions": {
+              "0": 5,
+              "1": 2,
+              "-1": 1
+            }
+          }
+        },
+        "encounter": {
+          "BOWLBUGS_WEAK": {
+            "cells": {
+              "S0D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 7,
+                  "death": 1
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.875,
+                "conditional_win": 0.875,
+                "hp_p50": 25,
+                "normalized_hp_p50": 0.32857142857142857,
+                "loss_p50": 33.5,
+                "actions_p50": 22.0,
+                "transitions_p50": 22.0
+              },
+              "S0D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 8
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 33.0,
+                "normalized_hp_p50": 0.43839285714285714,
+                "loss_p50": 20.5,
+                "actions_p50": 24.0,
+                "transitions_p50": 24.0
+              },
+              "S1D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 7,
+                  "death": 1
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.875,
+                "conditional_win": 0.875,
+                "hp_p50": 35,
+                "normalized_hp_p50": 0.4714285714285714,
+                "loss_p50": 21.0,
+                "actions_p50": 22.5,
+                "transitions_p50": 22.5
+              },
+              "S1D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 8
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 29.5,
+                "normalized_hp_p50": 0.38125,
+                "loss_p50": 23.5,
+                "actions_p50": 23.5,
+                "transitions_p50": 23.5
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "death\u2192win": 1,
+                  "win\u2192death": 1
+                },
+                "hp_delta_p50": -0.0062500000000000056
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 8
+                },
+                "hp_delta_p50": 0.006249999999999978
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 7,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.012500000000000011
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 7,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.0
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 7,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.012500000000000011
+              }
+            },
+            "interactions": {
+              "0": 6,
+              "-1": 1,
+              "1": 1
+            }
+          },
+          "CHOMPERS_NORMAL": {
+            "cells": {
+              "S0D0": {
+                "n": 8,
+                "stops": {
+                  "death": 4,
+                  "predicted_win": 4
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 12.0,
+                "normalized_hp_p50": 0.15,
+                "loss_p50": 47.5,
+                "actions_p50": 37.0,
+                "transitions_p50": 37.0
+              },
+              "S0D1": {
+                "n": 8,
+                "stops": {
+                  "death": 2,
+                  "predicted_win": 6
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 10.0,
+                "normalized_hp_p50": 0.125,
+                "loss_p50": 43.5,
+                "actions_p50": 42.0,
+                "transitions_p50": 42.0
+              },
+              "S1D0": {
+                "n": 8,
+                "stops": {
+                  "death": 5,
+                  "predicted_win": 3
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.375,
+                "conditional_win": 0.375,
+                "hp_p50": 14,
+                "normalized_hp_p50": 0.175,
+                "loss_p50": 46.0,
+                "actions_p50": 36.5,
+                "transitions_p50": 36.5
+              },
+              "S1D1": {
+                "n": 8,
+                "stops": {
+                  "death": 2,
+                  "predicted_win": 6
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 24.5,
+                "normalized_hp_p50": 0.35,
+                "loss_p50": 38.5,
+                "actions_p50": 41.0,
+                "transitions_p50": 41.0
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "death\u2192death": 3,
+                  "win\u2192win": 2,
+                  "win\u2192death": 2,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.018750000000000003
+              },
+              "seed_D1": {
+                "counts": {
+                  "death\u2192death": 2,
+                  "win\u2192win": 6
+                },
+                "hp_delta_p50": 0.024107142857142858
+              },
+              "deck_S0": {
+                "counts": {
+                  "death\u2192death": 2,
+                  "win\u2192win": 4,
+                  "death\u2192win": 2
+                },
+                "hp_delta_p50": 0.025
+              },
+              "deck_S1": {
+                "counts": {
+                  "death\u2192death": 2,
+                  "win\u2192win": 3,
+                  "death\u2192win": 3
+                },
+                "hp_delta_p50": 0.28750000000000003
+              },
+              "joint": {
+                "counts": {
+                  "death\u2192death": 2,
+                  "win\u2192win": 4,
+                  "death\u2192win": 2
+                },
+                "hp_delta_p50": 0.18482142857142858
+              }
+            },
+            "interactions": {
+              "0": 5,
+              "1": 2,
+              "-1": 1
+            }
+          }
+        }
+      },
+      "score_us": 66.89232716235742
+    },
+    "fixed-attack": {
+      "total": {
+        "n": 64,
+        "stops": {
+          "predicted_win": 35,
+          "death": 29
+        },
+        "complete": 64,
+        "coverage": 1.0,
+        "unconditional_win": 0.546875,
+        "conditional_win": 0.546875,
+        "hp_p50": 18,
+        "normalized_hp_p50": 0.2571428571428571,
+        "loss_p50": 46.0,
+        "actions_p50": 22.0,
+        "transitions_p50": 22.0
+      },
+      "factorial": {
+        "cells": {
+          "S0D0": {
+            "n": 16,
+            "stops": {
+              "predicted_win": 8,
+              "death": 8
+            },
+            "complete": 16,
+            "coverage": 1.0,
+            "unconditional_win": 0.5,
+            "conditional_win": 0.5,
+            "hp_p50": 22.0,
+            "normalized_hp_p50": 0.3142857142857143,
+            "loss_p50": 46.0,
+            "actions_p50": 22.5,
+            "transitions_p50": 22.5
+          },
+          "S0D1": {
+            "n": 16,
+            "stops": {
+              "predicted_win": 10,
+              "death": 6
+            },
+            "complete": 16,
+            "coverage": 1.0,
+            "unconditional_win": 0.625,
+            "conditional_win": 0.625,
+            "hp_p50": 19.5,
+            "normalized_hp_p50": 0.2625,
+            "loss_p50": 44.5,
+            "actions_p50": 31.0,
+            "transitions_p50": 31.0
+          },
+          "S1D0": {
+            "n": 16,
+            "stops": {
+              "death": 7,
+              "predicted_win": 9
+            },
+            "complete": 16,
+            "coverage": 1.0,
+            "unconditional_win": 0.5625,
+            "conditional_win": 0.5625,
+            "hp_p50": 15,
+            "normalized_hp_p50": 0.21428571428571427,
+            "loss_p50": 46.0,
+            "actions_p50": 20.0,
+            "transitions_p50": 20.0
+          },
+          "S1D1": {
+            "n": 16,
+            "stops": {
+              "death": 8,
+              "predicted_win": 8
+            },
+            "complete": 16,
+            "coverage": 1.0,
+            "unconditional_win": 0.5,
+            "conditional_win": 0.5,
+            "hp_p50": 19.0,
+            "normalized_hp_p50": 0.2714285714285714,
+            "loss_p50": 46.0,
+            "actions_p50": 24.0,
+            "transitions_p50": 24.0
+          }
+        },
+        "contrasts": {
+          "seed_D0": {
+            "counts": {
+              "win\u2192death": 2,
+              "win\u2192win": 6,
+              "death\u2192win": 3,
+              "death\u2192death": 5
+            },
+            "hp_delta_p50": 0.03035714285714286
+          },
+          "seed_D1": {
+            "counts": {
+              "win\u2192death": 3,
+              "win\u2192win": 7,
+              "death\u2192win": 1,
+              "death\u2192death": 5
+            },
+            "hp_delta_p50": 0.0625
+          },
+          "deck_S0": {
+            "counts": {
+              "win\u2192win": 8,
+              "death\u2192death": 6,
+              "death\u2192win": 2
+            },
+            "hp_delta_p50": -0.03571428571428572
+          },
+          "deck_S1": {
+            "counts": {
+              "death\u2192death": 7,
+              "win\u2192win": 8,
+              "win\u2192death": 1
+            },
+            "hp_delta_p50": 0.026785714285714288
+          },
+          "joint": {
+            "counts": {
+              "win\u2192death": 2,
+              "win\u2192win": 6,
+              "death\u2192win": 2,
+              "death\u2192death": 6
+            },
+            "hp_delta_p50": 0.01607142857142857
+          }
+        },
+        "interactions": {
+          "0": 13,
+          "-1": 3
+        }
+      },
+      "dimensions": {
+        "split": {
+          "diagnosis": {
+            "cells": {
+              "S0D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 4,
+                  "death": 4
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 17.5,
+                "normalized_hp_p50": 0.25,
+                "loss_p50": 46.0,
+                "actions_p50": 22.5,
+                "transitions_p50": 22.5
+              },
+              "S0D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 5,
+                  "death": 3
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.625,
+                "conditional_win": 0.625,
+                "hp_p50": 8,
+                "normalized_hp_p50": 0.11428571428571428,
+                "loss_p50": 46.0,
+                "actions_p50": 31.0,
+                "transitions_p50": 31.0
+              },
+              "S1D0": {
+                "n": 8,
+                "stops": {
+                  "death": 4,
+                  "predicted_win": 4
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 13.5,
+                "normalized_hp_p50": 0.18214285714285713,
+                "loss_p50": 46.0,
+                "actions_p50": 20.5,
+                "transitions_p50": 20.5
+              },
+              "S1D1": {
+                "n": 8,
+                "stops": {
+                  "death": 4,
+                  "predicted_win": 4
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 16.0,
+                "normalized_hp_p50": 0.21607142857142855,
+                "loss_p50": 46.0,
+                "actions_p50": 27.0,
+                "transitions_p50": 27.0
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192death": 1,
+                  "death\u2192win": 1,
+                  "win\u2192win": 3,
+                  "death\u2192death": 3
+                },
+                "hp_delta_p50": -0.15714285714285717
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192death": 1,
+                  "win\u2192win": 4,
+                  "death\u2192death": 3
+                },
+                "hp_delta_p50": 0.10446428571428569
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 4,
+                  "death\u2192win": 1,
+                  "death\u2192death": 3
+                },
+                "hp_delta_p50": -0.07232142857142856
+              },
+              "deck_S1": {
+                "counts": {
+                  "death\u2192death": 4,
+                  "win\u2192win": 4
+                },
+                "hp_delta_p50": 0.03392857142857143
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192death": 1,
+                  "death\u2192win": 1,
+                  "win\u2192win": 3,
+                  "death\u2192death": 3
+                },
+                "hp_delta_p50": 0.057142857142857106
+              }
+            },
+            "interactions": {
+              "0": 7,
+              "-1": 1
+            }
+          },
+          "report": {
+            "cells": {
+              "S0D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 4,
+                  "death": 4
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 27.0,
+                "normalized_hp_p50": 0.35624999999999996,
+                "loss_p50": 46.0,
+                "actions_p50": 23.5,
+                "transitions_p50": 23.5
+              },
+              "S0D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 5,
+                  "death": 3
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.625,
+                "conditional_win": 0.625,
+                "hp_p50": 28,
+                "normalized_hp_p50": 0.4,
+                "loss_p50": 39.0,
+                "actions_p50": 26.0,
+                "transitions_p50": 26.0
+              },
+              "S1D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 5,
+                  "death": 3
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.625,
+                "conditional_win": 0.625,
+                "hp_p50": 18,
+                "normalized_hp_p50": 0.2571428571428571,
+                "loss_p50": 45.0,
+                "actions_p50": 18.5,
+                "transitions_p50": 18.5
+              },
+              "S1D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 4,
+                  "death": 4
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 25.5,
+                "normalized_hp_p50": 0.3366071428571429,
+                "loss_p50": 44.0,
+                "actions_p50": 19.0,
+                "transitions_p50": 19.0
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192win": 2,
+                  "win\u2192death": 1,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": 0.09999999999999998
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192win": 1,
+                  "win\u2192death": 2,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": -0.17142857142857143
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 4,
+                  "death\u2192death": 3,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.1
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 4,
+                  "death\u2192death": 3,
+                  "win\u2192death": 1
+                },
+                "hp_delta_p50": 0.01428571428571429
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192win": 1,
+                  "win\u2192death": 1,
+                  "death\u2192death": 3
+                },
+                "hp_delta_p50": -0.024999999999999967
+              }
+            },
+            "interactions": {
+              "0": 6,
+              "-1": 2
+            }
+          }
+        },
+        "template": {
+          "strength": {
+            "cells": {
+              "S0D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 2,
+                  "death": 2
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 21.5,
+                "normalized_hp_p50": 0.26875,
+                "loss_p50": 41.0,
+                "actions_p50": 13.5,
+                "transitions_p50": 13.5
+              },
+              "S0D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 2,
+                  "death": 2
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 14.5,
+                "normalized_hp_p50": 0.18125,
+                "loss_p50": 44.5,
+                "actions_p50": 14.0,
+                "transitions_p50": 14.0
+              },
+              "S1D0": {
+                "n": 4,
+                "stops": {
+                  "death": 3,
+                  "predicted_win": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.25,
+                "conditional_win": 0.25,
+                "hp_p50": 31,
+                "normalized_hp_p50": 0.3875,
+                "loss_p50": 46.0,
+                "actions_p50": 13.5,
+                "transitions_p50": 13.5
+              },
+              "S1D1": {
+                "n": 4,
+                "stops": {
+                  "death": 3,
+                  "predicted_win": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.25,
+                "conditional_win": 0.25,
+                "hp_p50": 31,
+                "normalized_hp_p50": 0.3875,
+                "loss_p50": 46.0,
+                "actions_p50": 14.5,
+                "transitions_p50": 14.5
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192death": 1,
+                  "win\u2192win": 1,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": -0.024999999999999967
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192death": 1,
+                  "win\u2192win": 1,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": 0.0625
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 2,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": -0.08749999999999998
+              },
+              "deck_S1": {
+                "counts": {
+                  "death\u2192death": 3,
+                  "win\u2192win": 1
+                },
+                "hp_delta_p50": 0.0
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192death": 1,
+                  "win\u2192win": 1,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": -0.024999999999999967
+              }
+            },
+            "interactions": {
+              "0": 4
+            }
+          },
+          "barrier": {
+            "cells": {
+              "S0D0": {
+                "n": 4,
+                "stops": {
+                  "death": 4
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.0,
+                "conditional_win": 0.0,
+                "hp_p50": null,
+                "normalized_hp_p50": null,
+                "loss_p50": 54.0,
+                "actions_p50": 20.5,
+                "transitions_p50": 20.5
+              },
+              "S0D1": {
+                "n": 4,
+                "stops": {
+                  "death": 3,
+                  "predicted_win": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.25,
+                "conditional_win": 0.25,
+                "hp_p50": 3,
+                "normalized_hp_p50": 0.0375,
+                "loss_p50": 52.5,
+                "actions_p50": 26.0,
+                "transitions_p50": 26.0
+              },
+              "S1D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 7,
+                "normalized_hp_p50": 0.0875,
+                "loss_p50": 48.0,
+                "actions_p50": 18.5,
+                "transitions_p50": 18.5
+              },
+              "S1D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 2,
+                  "death": 2
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 16.0,
+                "normalized_hp_p50": 0.2,
+                "loss_p50": 47.0,
+                "actions_p50": 24.5,
+                "transitions_p50": 24.5
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "death\u2192win": 3,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": null
+              },
+              "seed_D1": {
+                "counts": {
+                  "death\u2192win": 1,
+                  "win\u2192win": 1,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": 0.13749999999999998
+              },
+              "deck_S0": {
+                "counts": {
+                  "death\u2192death": 3,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": null
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 2,
+                  "death\u2192death": 1,
+                  "win\u2192death": 1
+                },
+                "hp_delta_p50": 0.08125
+              },
+              "joint": {
+                "counts": {
+                  "death\u2192win": 2,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": null
+              }
+            },
+            "interactions": {
+              "0": 2,
+              "-1": 2
+            }
+          },
+          "shiv": {
+            "cells": {
+              "S0D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 26,
+                "normalized_hp_p50": 0.37142857142857144,
+                "loss_p50": 30.5,
+                "actions_p50": 26.5,
+                "transitions_p50": 26.5
+              },
+              "S0D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 4
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 1.0,
+                "conditional_win": 1.0,
+                "hp_p50": 19.5,
+                "normalized_hp_p50": 0.2785714285714286,
+                "loss_p50": 34.5,
+                "actions_p50": 32.5,
+                "transitions_p50": 32.5
+              },
+              "S1D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 15,
+                "normalized_hp_p50": 0.21428571428571427,
+                "loss_p50": 41.5,
+                "actions_p50": 31.0,
+                "transitions_p50": 31.0
+              },
+              "S1D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 30,
+                "normalized_hp_p50": 0.42857142857142855,
+                "loss_p50": 33.0,
+                "actions_p50": 35.5,
+                "transitions_p50": 35.5
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": -0.15714285714285717
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "win\u2192death": 1
+                },
+                "hp_delta_p50": -0.02857142857142858
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": -0.01428571428571429
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.04285714285714287
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": -0.08571428571428574
+              }
+            },
+            "interactions": {
+              "0": 3,
+              "-1": 1
+            }
+          },
+          "dexterity": {
+            "cells": {
+              "S0D0": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 12,
+                "normalized_hp_p50": 0.17142857142857143,
+                "loss_p50": 48.0,
+                "actions_p50": 32.0,
+                "transitions_p50": 32.0
+              },
+              "S0D1": {
+                "n": 4,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 1
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 28,
+                "normalized_hp_p50": 0.4,
+                "loss_p50": 38.0,
+                "actions_p50": 36.5,
+                "transitions_p50": 36.5
+              },
+              "S1D0": {
+                "n": 4,
+                "stops": {
+                  "death": 2,
+                  "predicted_win": 2
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 18.0,
+                "normalized_hp_p50": 0.2571428571428571,
+                "loss_p50": 45.0,
+                "actions_p50": 20.0,
+                "transitions_p50": 20.0
+              },
+              "S1D1": {
+                "n": 4,
+                "stops": {
+                  "death": 2,
+                  "predicted_win": 2
+                },
+                "complete": 4,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 19.0,
+                "normalized_hp_p50": 0.2714285714285714,
+                "loss_p50": 45.0,
+                "actions_p50": 28.0,
+                "transitions_p50": 28.0
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192death": 1,
+                  "win\u2192win": 2,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.1214285714285714
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192death": 1,
+                  "win\u2192win": 2,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": -0.01428571428571429
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.10000000000000003
+              },
+              "deck_S1": {
+                "counts": {
+                  "death\u2192death": 2,
+                  "win\u2192win": 2
+                },
+                "hp_delta_p50": 0.01428571428571429
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192death": 1,
+                  "win\u2192win": 2,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.13571428571428568
+              }
+            },
+            "interactions": {
+              "0": 4
+            }
+          }
+        },
+        "pressure": {
+          "mid_hp": {
+            "cells": {
+              "S0D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 3,
+                  "death": 5
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.375,
+                "conditional_win": 0.375,
+                "hp_p50": 21,
+                "normalized_hp_p50": 0.3,
+                "loss_p50": 46.0,
+                "actions_p50": 20.5,
+                "transitions_p50": 20.5
+              },
+              "S0D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 4,
+                  "death": 4
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.5,
+                "conditional_win": 0.5,
+                "hp_p50": 9.0,
+                "normalized_hp_p50": 0.1285714285714286,
+                "loss_p50": 44.5,
+                "actions_p50": 34.5,
+                "transitions_p50": 34.5
+              },
+              "S1D0": {
+                "n": 8,
+                "stops": {
+                  "death": 6,
+                  "predicted_win": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.25,
+                "conditional_win": 0.25,
+                "hp_p50": 8.0,
+                "normalized_hp_p50": 0.10803571428571428,
+                "loss_p50": 46.0,
+                "actions_p50": 16.0,
+                "transitions_p50": 16.0
+              },
+              "S1D1": {
+                "n": 8,
+                "stops": {
+                  "death": 6,
+                  "predicted_win": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.25,
+                "conditional_win": 0.25,
+                "hp_p50": 15.0,
+                "normalized_hp_p50": 0.19821428571428573,
+                "loss_p50": 46.0,
+                "actions_p50": 22.0,
+                "transitions_p50": 22.0
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192death": 2,
+                  "death\u2192win": 1,
+                  "win\u2192win": 1,
+                  "death\u2192death": 4
+                },
+                "hp_delta_p50": -0.2
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192death": 3,
+                  "death\u2192win": 1,
+                  "win\u2192win": 1,
+                  "death\u2192death": 3
+                },
+                "hp_delta_p50": -0.02857142857142858
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 3,
+                  "death\u2192death": 4,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": -0.0875
+              },
+              "deck_S1": {
+                "counts": {
+                  "death\u2192death": 6,
+                  "win\u2192win": 2
+                },
+                "hp_delta_p50": 0.09017857142857144
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192death": 2,
+                  "death\u2192win": 1,
+                  "win\u2192win": 1,
+                  "death\u2192death": 4
+                },
+                "hp_delta_p50": -0.15714285714285714
+              }
+            },
+            "interactions": {
+              "0": 7,
+              "-1": 1
+            }
+          },
+          "stocked": {
+            "cells": {
+              "S0D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 5,
+                  "death": 3
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.625,
+                "conditional_win": 0.625,
+                "hp_p50": 26,
+                "normalized_hp_p50": 0.37142857142857144,
+                "loss_p50": 52.5,
+                "actions_p50": 24.5,
+                "transitions_p50": 24.5
+              },
+              "S0D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 6,
+                  "death": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 25.5,
+                "normalized_hp_p50": 0.3410714285714286,
+                "loss_p50": 45.5,
+                "actions_p50": 28.5,
+                "transitions_p50": 28.5
+              },
+              "S1D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 7,
+                  "death": 1
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.875,
+                "conditional_win": 0.875,
+                "hp_p50": 18,
+                "normalized_hp_p50": 0.2571428571428571,
+                "loss_p50": 45.5,
+                "actions_p50": 20.5,
+                "transitions_p50": 20.5
+              },
+              "S1D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 6,
+                  "death": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 25.0,
+                "normalized_hp_p50": 0.3366071428571429,
+                "loss_p50": 43.0,
+                "actions_p50": 24.0,
+                "transitions_p50": 24.0
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192win": 5,
+                  "death\u2192win": 2,
+                  "death\u2192death": 1
+                },
+                "hp_delta_p50": 0.08571428571428569
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": 0.0669642857142857
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 5,
+                  "death\u2192win": 1,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": -0.01428571428571429
+              },
+              "deck_S1": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "death\u2192death": 1,
+                  "win\u2192death": 1
+                },
+                "hp_delta_p50": 0.012499999999999997
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192win": 5,
+                  "death\u2192win": 1,
+                  "death\u2192death": 2
+                },
+                "hp_delta_p50": 0.057142857142857106
+              }
+            },
+            "interactions": {
+              "0": 6,
+              "-1": 2
+            }
+          }
+        },
+        "encounter": {
+          "BOWLBUGS_WEAK": {
+            "cells": {
+              "S0D0": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 6,
+                  "death": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 22.0,
+                "normalized_hp_p50": 0.3142857142857143,
+                "loss_p50": 32.5,
+                "actions_p50": 19.0,
+                "transitions_p50": 19.0
+              },
+              "S0D1": {
+                "n": 8,
+                "stops": {
+                  "predicted_win": 7,
+                  "death": 1
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.875,
+                "conditional_win": 0.875,
+                "hp_p50": 14,
+                "normalized_hp_p50": 0.2,
+                "loss_p50": 39.5,
+                "actions_p50": 20.0,
+                "transitions_p50": 20.0
+              },
+              "S1D0": {
+                "n": 8,
+                "stops": {
+                  "death": 2,
+                  "predicted_win": 6
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 15.0,
+                "normalized_hp_p50": 0.20357142857142857,
+                "loss_p50": 41.5,
+                "actions_p50": 17.5,
+                "transitions_p50": 17.5
+              },
+              "S1D1": {
+                "n": 8,
+                "stops": {
+                  "death": 2,
+                  "predicted_win": 6
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.75,
+                "conditional_win": 0.75,
+                "hp_p50": 18.0,
+                "normalized_hp_p50": 0.24107142857142855,
+                "loss_p50": 39.0,
+                "actions_p50": 18.5,
+                "transitions_p50": 18.5
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "win\u2192death": 2,
+                  "win\u2192win": 4,
+                  "death\u2192win": 2
+                },
+                "hp_delta_p50": 0.03035714285714286
+              },
+              "seed_D1": {
+                "counts": {
+                  "win\u2192death": 2,
+                  "win\u2192win": 5,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": 0.0625
+              },
+              "deck_S0": {
+                "counts": {
+                  "win\u2192win": 6,
+                  "death\u2192death": 1,
+                  "death\u2192win": 1
+                },
+                "hp_delta_p50": -0.07232142857142856
+              },
+              "deck_S1": {
+                "counts": {
+                  "death\u2192death": 2,
+                  "win\u2192win": 6
+                },
+                "hp_delta_p50": 0.012499999999999997
+              },
+              "joint": {
+                "counts": {
+                  "win\u2192death": 2,
+                  "win\u2192win": 4,
+                  "death\u2192win": 2
+                },
+                "hp_delta_p50": -0.055357142857142855
+              }
+            },
+            "interactions": {
+              "0": 7,
+              "-1": 1
+            }
+          },
+          "CHOMPERS_NORMAL": {
+            "cells": {
+              "S0D0": {
+                "n": 8,
+                "stops": {
+                  "death": 6,
+                  "predicted_win": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.25,
+                "conditional_win": 0.25,
+                "hp_p50": 16.5,
+                "normalized_hp_p50": 0.2357142857142857,
+                "loss_p50": 46.0,
+                "actions_p50": 29.0,
+                "transitions_p50": 29.0
+              },
+              "S0D1": {
+                "n": 8,
+                "stops": {
+                  "death": 5,
+                  "predicted_win": 3
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.375,
+                "conditional_win": 0.375,
+                "hp_p50": 25,
+                "normalized_hp_p50": 0.35714285714285715,
+                "loss_p50": 46.0,
+                "actions_p50": 34.0,
+                "transitions_p50": 34.0
+              },
+              "S1D0": {
+                "n": 8,
+                "stops": {
+                  "death": 5,
+                  "predicted_win": 3
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.375,
+                "conditional_win": 0.375,
+                "hp_p50": 15,
+                "normalized_hp_p50": 0.21428571428571427,
+                "loss_p50": 46.0,
+                "actions_p50": 27.0,
+                "transitions_p50": 27.0
+              },
+              "S1D1": {
+                "n": 8,
+                "stops": {
+                  "death": 6,
+                  "predicted_win": 2
+                },
+                "complete": 8,
+                "coverage": 1.0,
+                "unconditional_win": 0.25,
+                "conditional_win": 0.25,
+                "hp_p50": 25.0,
+                "normalized_hp_p50": 0.3571428571428571,
+                "loss_p50": 46.0,
+                "actions_p50": 32.0,
+                "transitions_p50": 32.0
+              }
+            },
+            "contrasts": {
+              "seed_D0": {
+                "counts": {
+                  "death\u2192death": 5,
+                  "death\u2192win": 1,
+                  "win\u2192win": 2
+                },
+                "hp_delta_p50": -2.7755575615628914e-17
+              },
+              "seed_D1": {
+                "counts": {
+                  "death\u2192death": 5,
+                  "win\u2192death": 1,
+                  "win\u2192win": 2
+                },
+                "hp_delta_p50": -0.05000000000000002
+              },
+              "deck_S0": {
+                "counts": {
+                  "death\u2192death": 5,
+                  "death\u2192win": 1,
+                  "win\u2192win": 2
+                },
+                "hp_delta_p50": 0.1714285714285714
+              },
+              "deck_S1": {
+                "counts": {
+                  "death\u2192death": 5,
+                  "win\u2192death": 1,
+                  "win\u2192win": 2
+                },
+                "hp_delta_p50": 0.12142857142857143
+              },
+              "joint": {
+                "counts": {
+                  "death\u2192death": 6,
+                  "win\u2192win": 2
+                },
+                "hp_delta_p50": 0.1214285714285714
+              }
+            },
+            "interactions": {
+              "0": 6,
+              "-1": 2
+            }
+          }
+        }
+      },
+      "score_us": 19.19329201120027
+    }
+  },
+  "versus_mean": {
+    "r2-random-4-6": {
+      "all": {
+        "counts": {
+          "both_win": 43,
+          "right_only_win": 8,
+          "left_only_win": 6,
+          "both_dead": 7
+        },
+        "joint_win_normalized_hp_delta_median": 0.03749999999999998
+      },
+      "diagnosis": {
+        "counts": {
+          "left_only_win": 2,
+          "both_win": 25,
+          "both_dead": 5
+        },
+        "joint_win_normalized_hp_delta_median": 0.014285714285714235
+      },
+      "report": {
+        "counts": {
+          "both_win": 18,
+          "right_only_win": 8,
+          "both_dead": 2,
+          "left_only_win": 4
+        },
+        "joint_win_normalized_hp_delta_median": 0.04642857142857142
+      }
+    },
+    "random-4-12": {
+      "all": {
+        "counts": {
+          "both_win": 43,
+          "right_only_win": 8,
+          "left_only_win": 6,
+          "both_dead": 7
+        },
+        "joint_win_normalized_hp_delta_median": 0.0
+      },
+      "diagnosis": {
+        "counts": {
+          "left_only_win": 4,
+          "both_win": 23,
+          "both_dead": 3,
+          "right_only_win": 2
+        },
+        "joint_win_normalized_hp_delta_median": 0.0
+      },
+      "report": {
+        "counts": {
+          "both_win": 20,
+          "right_only_win": 6,
+          "left_only_win": 2,
+          "both_dead": 4
+        },
+        "joint_win_normalized_hp_delta_median": 0.012499999999999983
+      }
+    },
+    "fixed-attack": {
+      "all": {
+        "counts": {
+          "both_win": 33,
+          "right_only_win": 18,
+          "both_dead": 11,
+          "left_only_win": 2
+        },
+        "joint_win_normalized_hp_delta_median": -0.042857142857142816
+      },
+      "diagnosis": {
+        "counts": {
+          "both_dead": 7,
+          "both_win": 17,
+          "right_only_win": 8
+        },
+        "joint_win_normalized_hp_delta_median": -0.1
+      },
+      "report": {
+        "counts": {
+          "both_win": 16,
+          "right_only_win": 10,
+          "both_dead": 4,
+          "left_only_win": 2
+        },
+        "joint_win_normalized_hp_delta_median": 0.0062500000000000056
+      }
+    }
+  },
+  "rng": {
+    "n": 32,
+    "differences": {
+      "opening_hand_changed": 14
+    }
+  },
+  "timing": {
+    "n": 256,
+    "complete": 256,
+    "wall_ms": 397653.19330012426,
+    "feedback_per_s": 0.6437770507397558,
+    "prepare_ms_p50": 47.2339,
+    "cold_init_ms_p50": 1379.1663500014693,
+    "recycle_ms_p50": 62.34505004249513,
+    "peak_bytes": 139624448
+  }
+}

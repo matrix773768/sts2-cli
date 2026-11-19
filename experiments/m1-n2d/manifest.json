@@ -1,0 +1,5987 @@
+{
+  "protocol": {
+    "domain": "STS2-N2D-OPEN-FACTORIAL-V1",
+    "source": "m1-n2a2 frozen report recipes",
+    "encounters": [
+      "BOWLBUGS_WEAK",
+      "CHOMPERS_NORMAL"
+    ],
+    "pressures": [
+      "mid_hp",
+      "stocked"
+    ],
+    "models": [
+      "initial-mean",
+      "r2-random-4-6",
+      "random-4-12",
+      "fixed-attack"
+    ],
+    "replacement": {
+      "Ironclad": "SHRUG_IT_OFF",
+      "Silent": "BACKFLIP"
+    },
+    "split_rule": "checkerboard by encounter, template and pressure; all four cells stay together",
+    "diagnostics": "Only diagnosis conditions feed trajectory selection; report conditions use frozen aggregate statistics",
+    "budget": 96
+  },
+  "prior_lock": "ab56c78d258eb85df6eace4d62d9f646abb8349bdcacc5b76d1581f666815180",
+  "cases": [
+    {
+      "case": {
+        "id": "af66a54a0f8713b6",
+        "spec_sha256": "d9712cb1155efa6f3de220e348a95ebf4a4beb7843899afe6403b7a3a9686067",
+        "split": "development",
+        "cohort": "report",
+        "template": "strength",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "6AA0F87ACFD5",
+          "hp": 46,
+          "max_hp": 80,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "POMMEL_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "INFLAME",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "286185b2939f9c1d",
+        "seed_index": 0,
+        "deck_index": 0,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "1edf3998bb6cf35b",
+        "spec_sha256": "74f7056cb0c2275b4b408179d4408a223c92349ec432bd44b5e202311656f8b3",
+        "split": "development",
+        "cohort": "report",
+        "template": "strength",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "6AA0F87ACFD5",
+          "hp": 46,
+          "max_hp": 80,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "POMMEL_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "INFLAME",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "286185b2939f9c1d",
+        "seed_index": 0,
+        "deck_index": 1,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "675a22a4d20711c5",
+        "spec_sha256": "e58628169f312bd5bb69c549992f272568926e1a4eb10c6573ddccc64e654589",
+        "split": "development",
+        "cohort": "report",
+        "template": "strength",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "3AF353968D17",
+          "hp": 46,
+          "max_hp": 80,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "POMMEL_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "INFLAME",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "286185b2939f9c1d",
+        "seed_index": 1,
+        "deck_index": 0,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "3f490a5859466723",
+        "spec_sha256": "381fe29076dd913a9a7273701ed73a718c372e1944c1411e663fecd43ca86557",
+        "split": "development",
+        "cohort": "report",
+        "template": "strength",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "3AF353968D17",
+          "hp": 46,
+          "max_hp": 80,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "POMMEL_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "INFLAME",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "286185b2939f9c1d",
+        "seed_index": 1,
+        "deck_index": 1,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "37f3e5002d4379c2",
+        "spec_sha256": "1300c7f3b5da83e096dbb8c319ff3db080f8bbd09ce442e7127f633295e490a9",
+        "split": "development",
+        "cohort": "report",
+        "template": "strength",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "2B631716A98E",
+          "hp": 62,
+          "max_hp": 80,
+          "relics": [
+            "BURNING_BLOOD"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "POMMEL_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "INFLAME",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "78dbe111be540d24",
+        "seed_index": 0,
+        "deck_index": 0,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "5db0d43ad950c327",
+        "spec_sha256": "6cd61ac3743d932ad5e0a78ca7b660c4d626e4e3a8664ab10655990e5c6f2334",
+        "split": "development",
+        "cohort": "report",
+        "template": "strength",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "2B631716A98E",
+          "hp": 62,
+          "max_hp": 80,
+          "relics": [
+            "BURNING_BLOOD"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "POMMEL_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "INFLAME",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "78dbe111be540d24",
+        "seed_index": 0,
+        "deck_index": 1,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "c18f0729323e7227",
+        "spec_sha256": "754252d2ea1ec71b858a2f2bc992c5b47fda1a3874156f35c7a938e502acfdb2",
+        "split": "development",
+        "cohort": "report",
+        "template": "strength",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "2DD25752287F",
+          "hp": 62,
+          "max_hp": 80,
+          "relics": [
+            "BURNING_BLOOD"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "POMMEL_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "INFLAME",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "78dbe111be540d24",
+        "seed_index": 1,
+        "deck_index": 0,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "0b9226a3f031078c",
+        "spec_sha256": "8768640eb80b94ac9d187c894cec1c796c7309a2d00bc7407742abe850efc376",
+        "split": "development",
+        "cohort": "report",
+        "template": "strength",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "2DD25752287F",
+          "hp": 62,
+          "max_hp": 80,
+          "relics": [
+            "BURNING_BLOOD"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "POMMEL_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "INFLAME",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "78dbe111be540d24",
+        "seed_index": 1,
+        "deck_index": 1,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "3839124e2be36cf7",
+        "spec_sha256": "8c2e4c77e6234ddf579eb8d505b662bb20d2a35777359b4412f93420dab3832b",
+        "split": "development",
+        "cohort": "report",
+        "template": "barrier",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "51B99C89AA98",
+          "hp": 46,
+          "max_hp": 80,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 1
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "IRON_WAVE",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "67efccc94545ff72",
+        "seed_index": 0,
+        "deck_index": 0,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "1fa0892c54b8bc43",
+        "spec_sha256": "a3ae1fdda9dac9de3432ba4c10337c66435ca78fdf4ea1d63bdc4d2e51b6e600",
+        "split": "development",
+        "cohort": "report",
+        "template": "barrier",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "51B99C89AA98",
+          "hp": 46,
+          "max_hp": 80,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 1
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "IRON_WAVE",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "67efccc94545ff72",
+        "seed_index": 0,
+        "deck_index": 1,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "dfd61570c3755430",
+        "spec_sha256": "6037203fde00a894fbc6bd50955d196dcfb0972c2bb36d3584291e37fc7b3f13",
+        "split": "development",
+        "cohort": "report",
+        "template": "barrier",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "F25AB9980F3D",
+          "hp": 46,
+          "max_hp": 80,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 1
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "IRON_WAVE",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "67efccc94545ff72",
+        "seed_index": 1,
+        "deck_index": 0,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "044791b1910d0838",
+        "spec_sha256": "f026a8e2dcac2bb4e4ea84e77400a8c8dd805fd75675c289c2e3fa7163ba6e09",
+        "split": "development",
+        "cohort": "report",
+        "template": "barrier",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "F25AB9980F3D",
+          "hp": 46,
+          "max_hp": 80,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 1
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "IRON_WAVE",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "67efccc94545ff72",
+        "seed_index": 1,
+        "deck_index": 1,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "47349cbbdfcb0918",
+        "spec_sha256": "50c34927be2d09cdcd370ef420ca267f31d921e560f984174032081f9ca1336a",
+        "split": "development",
+        "cohort": "report",
+        "template": "barrier",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "463DD8E36659",
+          "hp": 62,
+          "max_hp": 80,
+          "relics": [
+            "BURNING_BLOOD"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "IRON_WAVE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 1
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "c26a65ff22746521",
+        "seed_index": 0,
+        "deck_index": 0,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "44ec65d53d3ccc93",
+        "spec_sha256": "0a53470f2384bdd16d5decffaa8abd24c05573ae213ff251844aeb7b88ad31ff",
+        "split": "development",
+        "cohort": "report",
+        "template": "barrier",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "463DD8E36659",
+          "hp": 62,
+          "max_hp": 80,
+          "relics": [
+            "BURNING_BLOOD"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "IRON_WAVE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 1
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "c26a65ff22746521",
+        "seed_index": 0,
+        "deck_index": 1,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "c2209fa8d9c4288b",
+        "spec_sha256": "819c72dcb764561adb543f2a630b3b08846b285b1fcc46a91e7bd81e4593e0f9",
+        "split": "development",
+        "cohort": "report",
+        "template": "barrier",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "91E7EED90DD3",
+          "hp": 62,
+          "max_hp": 80,
+          "relics": [
+            "BURNING_BLOOD"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "IRON_WAVE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 1
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "c26a65ff22746521",
+        "seed_index": 1,
+        "deck_index": 0,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "7e43494a21a1e568",
+        "spec_sha256": "9f52eb36b619efab5b36314776adc91744d72c06aba6dbb41e69fc501a82313b",
+        "split": "development",
+        "cohort": "report",
+        "template": "barrier",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "91E7EED90DD3",
+          "hp": 62,
+          "max_hp": 80,
+          "relics": [
+            "BURNING_BLOOD"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "IRON_WAVE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 1
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "c26a65ff22746521",
+        "seed_index": 1,
+        "deck_index": 1,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "958d526a36f656cc",
+        "spec_sha256": "e7e2567847cbc77534d96e4b55fa63b5aa8f9e19ed1762475470c85ec66df3eb",
+        "split": "development",
+        "cohort": "report",
+        "template": "shiv",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "68E23AC868DF",
+          "hp": 46,
+          "max_hp": 70,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "CLOAK_AND_DAGGER",
+              "upgrade": 0
+            },
+            {
+              "id": "ACCURACY",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "792a9d884ce416b3",
+        "seed_index": 0,
+        "deck_index": 0,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "ba208ad259f48f27",
+        "spec_sha256": "addc2badf9e1593d4181e94a7142f0cb27e2ca91e6445172d66c4e7ad7297a2a",
+        "split": "development",
+        "cohort": "report",
+        "template": "shiv",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "68E23AC868DF",
+          "hp": 46,
+          "max_hp": 70,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "CLOAK_AND_DAGGER",
+              "upgrade": 0
+            },
+            {
+              "id": "ACCURACY",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "BACKFLIP",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "792a9d884ce416b3",
+        "seed_index": 0,
+        "deck_index": 1,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "ed06271f7c870411",
+        "spec_sha256": "bf964112b93f08afcb35c75c1aded15131013935ca3a66d2b135f4b945798246",
+        "split": "development",
+        "cohort": "report",
+        "template": "shiv",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "52CBA8729FCD",
+          "hp": 46,
+          "max_hp": 70,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "CLOAK_AND_DAGGER",
+              "upgrade": 0
+            },
+            {
+              "id": "ACCURACY",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "792a9d884ce416b3",
+        "seed_index": 1,
+        "deck_index": 0,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "d5c03ee195327706",
+        "spec_sha256": "084e47861beae411717a8cbbaa62808d3652650f8d8ef752d57eea0589f1d17c",
+        "split": "development",
+        "cohort": "report",
+        "template": "shiv",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "52CBA8729FCD",
+          "hp": 46,
+          "max_hp": 70,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "CLOAK_AND_DAGGER",
+              "upgrade": 0
+            },
+            {
+              "id": "ACCURACY",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "BACKFLIP",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "792a9d884ce416b3",
+        "seed_index": 1,
+        "deck_index": 1,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "251bd3eb1ad758cd",
+        "spec_sha256": "c135d68c3fea119bf1411d5801089a751387a33a650d3690f0b1d86fb284e221",
+        "split": "development",
+        "cohort": "report",
+        "template": "shiv",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "A28E86580FFA",
+          "hp": 62,
+          "max_hp": 70,
+          "relics": [
+            "RING_OF_THE_SNAKE"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "CLOAK_AND_DAGGER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "ACCURACY",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 1
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "87da29604db4906b",
+        "seed_index": 0,
+        "deck_index": 0,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "3fba17cafc05e580",
+        "spec_sha256": "ef4f2d5b5e77456e44f5bd84b565352b6cddc312fa57de03cbfc112b48dc533b",
+        "split": "development",
+        "cohort": "report",
+        "template": "shiv",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "A28E86580FFA",
+          "hp": 62,
+          "max_hp": 70,
+          "relics": [
+            "RING_OF_THE_SNAKE"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "BACKFLIP",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "CLOAK_AND_DAGGER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "ACCURACY",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 1
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "87da29604db4906b",
+        "seed_index": 0,
+        "deck_index": 1,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "736f3e951252ec4a",
+        "spec_sha256": "2de0c50467e61cb3fd56421639dfaadfea287918e6848f0f3705450f103d471e",
+        "split": "development",
+        "cohort": "report",
+        "template": "shiv",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "B7D159C4EE4D",
+          "hp": 62,
+          "max_hp": 70,
+          "relics": [
+            "RING_OF_THE_SNAKE"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "CLOAK_AND_DAGGER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "ACCURACY",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 1
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "87da29604db4906b",
+        "seed_index": 1,
+        "deck_index": 0,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "67df9c47781d381f",
+        "spec_sha256": "81b41de402c7477a656eb52adfdf18a0ea41db11d08ea86e26204b823312991c",
+        "split": "development",
+        "cohort": "report",
+        "template": "shiv",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "B7D159C4EE4D",
+          "hp": 62,
+          "max_hp": 70,
+          "relics": [
+            "RING_OF_THE_SNAKE"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "BACKFLIP",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "CLOAK_AND_DAGGER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "ACCURACY",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 1
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "87da29604db4906b",
+        "seed_index": 1,
+        "deck_index": 1,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "7b95d9ae7a09b3db",
+        "spec_sha256": "1f5389be8d92cec7b130f7790a66b6f9b2e4e49813171eab155abfccc3ccbd05",
+        "split": "development",
+        "cohort": "report",
+        "template": "dexterity",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "D19C32A5BB82",
+          "hp": 46,
+          "max_hp": 70,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "PREDATOR",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "DODGE_AND_ROLL",
+              "upgrade": 1
+            },
+            {
+              "id": "FOOTWORK",
+              "upgrade": 0
+            },
+            {
+              "id": "LEG_SWEEP",
+              "upgrade": 0
+            },
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "fdb74f8d0fbf9f77",
+        "seed_index": 0,
+        "deck_index": 0,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "efcaa40d52e40a00",
+        "spec_sha256": "7c75ccc5543c510a69d5240fa435a47e69425814fbfbdc1433253d3ee7973bc5",
+        "split": "development",
+        "cohort": "report",
+        "template": "dexterity",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "D19C32A5BB82",
+          "hp": 46,
+          "max_hp": 70,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "PREDATOR",
+              "upgrade": 0
+            },
+            {
+              "id": "BACKFLIP",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "DODGE_AND_ROLL",
+              "upgrade": 1
+            },
+            {
+              "id": "FOOTWORK",
+              "upgrade": 0
+            },
+            {
+              "id": "LEG_SWEEP",
+              "upgrade": 0
+            },
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "fdb74f8d0fbf9f77",
+        "seed_index": 0,
+        "deck_index": 1,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "0c48adc94e39c62b",
+        "spec_sha256": "9e78e22a75d0e39dba89edb0984abd08b20e4ac4cc2416c34d650a610c4197d2",
+        "split": "development",
+        "cohort": "report",
+        "template": "dexterity",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "B640C85F3EBF",
+          "hp": 46,
+          "max_hp": 70,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "PREDATOR",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "DODGE_AND_ROLL",
+              "upgrade": 1
+            },
+            {
+              "id": "FOOTWORK",
+              "upgrade": 0
+            },
+            {
+              "id": "LEG_SWEEP",
+              "upgrade": 0
+            },
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "fdb74f8d0fbf9f77",
+        "seed_index": 1,
+        "deck_index": 0,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "2f2d58cf41586a60",
+        "spec_sha256": "8bb5c66716e2abc5cff15aafa11dfe94d3cfc378646cda54f2f7d9c7a7158f9b",
+        "split": "development",
+        "cohort": "report",
+        "template": "dexterity",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "B640C85F3EBF",
+          "hp": 46,
+          "max_hp": 70,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "PREDATOR",
+              "upgrade": 0
+            },
+            {
+              "id": "BACKFLIP",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "DODGE_AND_ROLL",
+              "upgrade": 1
+            },
+            {
+              "id": "FOOTWORK",
+              "upgrade": 0
+            },
+            {
+              "id": "LEG_SWEEP",
+              "upgrade": 0
+            },
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "fdb74f8d0fbf9f77",
+        "seed_index": 1,
+        "deck_index": 1,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "dc0fd706037617c6",
+        "spec_sha256": "41c3ff4ac293b7890f18244498b630c65908faccd82eef86f7a05bdb086f985b",
+        "split": "development",
+        "cohort": "report",
+        "template": "dexterity",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "B146F01E2A70",
+          "hp": 62,
+          "max_hp": 70,
+          "relics": [
+            "RING_OF_THE_SNAKE"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "PREDATOR",
+              "upgrade": 0
+            },
+            {
+              "id": "DODGE_AND_ROLL",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "LEG_SWEEP",
+              "upgrade": 0
+            },
+            {
+              "id": "FOOTWORK",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "f5f5f0f6f8ed5ffb",
+        "seed_index": 0,
+        "deck_index": 0,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "5ac00ed41d74fb1b",
+        "spec_sha256": "6bbe309e3c53ec2206b95803ce571c59b6c90d84e266c6bbef843d9d701e08b8",
+        "split": "development",
+        "cohort": "report",
+        "template": "dexterity",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "B146F01E2A70",
+          "hp": 62,
+          "max_hp": 70,
+          "relics": [
+            "RING_OF_THE_SNAKE"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "BACKFLIP",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "PREDATOR",
+              "upgrade": 0
+            },
+            {
+              "id": "DODGE_AND_ROLL",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "LEG_SWEEP",
+              "upgrade": 0
+            },
+            {
+              "id": "FOOTWORK",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "f5f5f0f6f8ed5ffb",
+        "seed_index": 0,
+        "deck_index": 1,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "db87ba3262cd94d7",
+        "spec_sha256": "dbe2967909a3304ec5ec355fe126fbe757624730102a6cb070a94bc0d6319c5f",
+        "split": "development",
+        "cohort": "report",
+        "template": "dexterity",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "8F63AC6CA021",
+          "hp": 62,
+          "max_hp": 70,
+          "relics": [
+            "RING_OF_THE_SNAKE"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "PREDATOR",
+              "upgrade": 0
+            },
+            {
+              "id": "DODGE_AND_ROLL",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "LEG_SWEEP",
+              "upgrade": 0
+            },
+            {
+              "id": "FOOTWORK",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "f5f5f0f6f8ed5ffb",
+        "seed_index": 1,
+        "deck_index": 0,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "22772ae3dd26cf5b",
+        "spec_sha256": "752f8ecbc214519494aa5689babebf3a35612522054b59a42bc41e842d0be04d",
+        "split": "development",
+        "cohort": "report",
+        "template": "dexterity",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "BOWLBUGS_WEAK",
+          "seed": "8F63AC6CA021",
+          "hp": 62,
+          "max_hp": 70,
+          "relics": [
+            "RING_OF_THE_SNAKE"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "BACKFLIP",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "PREDATOR",
+              "upgrade": 0
+            },
+            {
+              "id": "DODGE_AND_ROLL",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "LEG_SWEEP",
+              "upgrade": 0
+            },
+            {
+              "id": "FOOTWORK",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "f5f5f0f6f8ed5ffb",
+        "seed_index": 1,
+        "deck_index": 1,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "1ba592193b4c0d18",
+        "spec_sha256": "c9cd94f9df78167e63ebce95da270d357013a91996f956065a05b8548127362d",
+        "split": "development",
+        "cohort": "report",
+        "template": "strength",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "106839A8A223",
+          "hp": 46,
+          "max_hp": 80,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "POMMEL_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 1
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "INFLAME",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "dc7593246ab53292",
+        "seed_index": 0,
+        "deck_index": 0,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "a26b4006d9ad415e",
+        "spec_sha256": "6c7662d36c0181a51263298f653b6476525b5780445145b5b3cd21212ce4e302",
+        "split": "development",
+        "cohort": "report",
+        "template": "strength",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "106839A8A223",
+          "hp": 46,
+          "max_hp": 80,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "POMMEL_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 1
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "INFLAME",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "dc7593246ab53292",
+        "seed_index": 0,
+        "deck_index": 1,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "049322bf149e8860",
+        "spec_sha256": "f319b9f316b89ff2e8429ec28c1cdd989a1dbfa6a3b0143d643ec60c66686417",
+        "split": "development",
+        "cohort": "report",
+        "template": "strength",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "D3773308926D",
+          "hp": 46,
+          "max_hp": 80,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "POMMEL_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 1
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "INFLAME",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "dc7593246ab53292",
+        "seed_index": 1,
+        "deck_index": 0,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "a74cbd26d3aea28b",
+        "spec_sha256": "45391d3c8dc5c00528041835e8dff0c398bf62c9aef21c793cd6850fcd539451",
+        "split": "development",
+        "cohort": "report",
+        "template": "strength",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "D3773308926D",
+          "hp": 46,
+          "max_hp": 80,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "POMMEL_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 1
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "INFLAME",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "dc7593246ab53292",
+        "seed_index": 1,
+        "deck_index": 1,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "1f02b50e6883eedf",
+        "spec_sha256": "55ca39ba486b1bb4f870865a0d73db3393b9b86e9eaaab1d003db98204566752",
+        "split": "development",
+        "cohort": "report",
+        "template": "strength",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "17480580355C",
+          "hp": 62,
+          "max_hp": 80,
+          "relics": [
+            "BURNING_BLOOD"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "INFLAME",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "POMMEL_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 1
+            }
+          ]
+        },
+        "source_id": "5776a7e2123c04d6",
+        "seed_index": 0,
+        "deck_index": 0,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "c1dd253ca8d44556",
+        "spec_sha256": "b1c2cb10bd3bc6facd28486bb3a7e3b256e4d5b9b986ed7ad4f316d8460fa9e1",
+        "split": "development",
+        "cohort": "report",
+        "template": "strength",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "17480580355C",
+          "hp": 62,
+          "max_hp": 80,
+          "relics": [
+            "BURNING_BLOOD"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "INFLAME",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "POMMEL_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 1
+            }
+          ]
+        },
+        "source_id": "5776a7e2123c04d6",
+        "seed_index": 0,
+        "deck_index": 1,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "ecee12186b7d113e",
+        "spec_sha256": "db3cd8a10303a2c17268ed4f2d3790b59c0fb7b6ab0877934ed42d652067d281",
+        "split": "development",
+        "cohort": "report",
+        "template": "strength",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "9153542C88B9",
+          "hp": 62,
+          "max_hp": 80,
+          "relics": [
+            "BURNING_BLOOD"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "INFLAME",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "POMMEL_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 1
+            }
+          ]
+        },
+        "source_id": "5776a7e2123c04d6",
+        "seed_index": 1,
+        "deck_index": 0,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "de8a66bdbec89248",
+        "spec_sha256": "da147d0d78ef6149cc4b72d66770058ecd7e9fe4ee5b55e6bc88b038445a61c0",
+        "split": "development",
+        "cohort": "report",
+        "template": "strength",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "9153542C88B9",
+          "hp": 62,
+          "max_hp": 80,
+          "relics": [
+            "BURNING_BLOOD"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "INFLAME",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "POMMEL_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 1
+            }
+          ]
+        },
+        "source_id": "5776a7e2123c04d6",
+        "seed_index": 1,
+        "deck_index": 1,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "85665a7dbcba62a9",
+        "spec_sha256": "0f9078cf167fde87d575842d7221acc38acd8de5118ceecd3009e83f3a773221",
+        "split": "development",
+        "cohort": "report",
+        "template": "barrier",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "4ED095823794",
+          "hp": 46,
+          "max_hp": 80,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "IRON_WAVE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 1
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "d9be70fdf1f831b4",
+        "seed_index": 0,
+        "deck_index": 0,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "3912ace3b3dceaac",
+        "spec_sha256": "9e1fa3da13f4e7962bd751959c51b8c66167e397e65fb9ada11d6ff0ec9f3994",
+        "split": "development",
+        "cohort": "report",
+        "template": "barrier",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "4ED095823794",
+          "hp": 46,
+          "max_hp": 80,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "IRON_WAVE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 1
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "d9be70fdf1f831b4",
+        "seed_index": 0,
+        "deck_index": 1,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "a55eb5eab8f24053",
+        "spec_sha256": "54d9c4a76830a9ecd2c2e07ef9d9eb83fc7c9e05ae1c96f9f211fe2ae07d1a6b",
+        "split": "development",
+        "cohort": "report",
+        "template": "barrier",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "7D32BD825B92",
+          "hp": 46,
+          "max_hp": 80,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "IRON_WAVE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 1
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "d9be70fdf1f831b4",
+        "seed_index": 1,
+        "deck_index": 0,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "8630e330d680bd60",
+        "spec_sha256": "e7e3853ef232b0842b7c9c27486dc32505b8f04ac420b7f20b70a24733714ff6",
+        "split": "development",
+        "cohort": "report",
+        "template": "barrier",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "7D32BD825B92",
+          "hp": 46,
+          "max_hp": 80,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "IRON_WAVE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 1
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "d9be70fdf1f831b4",
+        "seed_index": 1,
+        "deck_index": 1,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "c836703e18201662",
+        "spec_sha256": "396646aacc7d131bbb15e6d59ab8a27f23c55fb8e8bb451fefe2325b6fddcdc0",
+        "split": "development",
+        "cohort": "report",
+        "template": "barrier",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "BD1A9AA23A06",
+          "hp": 62,
+          "max_hp": 80,
+          "relics": [
+            "BURNING_BLOOD"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "IRON_WAVE",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 1
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "d0a8aa893ccaefc4",
+        "seed_index": 0,
+        "deck_index": 0,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "f25b62a5b455acb1",
+        "spec_sha256": "b5212b7bb7c156b625ae44090cad554c58d0534bf36328910ddd5031bd538b2f",
+        "split": "development",
+        "cohort": "report",
+        "template": "barrier",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "BD1A9AA23A06",
+          "hp": 62,
+          "max_hp": 80,
+          "relics": [
+            "BURNING_BLOOD"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "IRON_WAVE",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 1
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "d0a8aa893ccaefc4",
+        "seed_index": 0,
+        "deck_index": 1,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "c3a86c40a12c29e1",
+        "spec_sha256": "90c6368d6a56a3ff978373f0cc47860eb946792dfce3656d1c1963078193771a",
+        "split": "development",
+        "cohort": "report",
+        "template": "barrier",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "91C6FBC6B2F8",
+          "hp": 62,
+          "max_hp": 80,
+          "relics": [
+            "BURNING_BLOOD"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "IRON_WAVE",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 1
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "d0a8aa893ccaefc4",
+        "seed_index": 1,
+        "deck_index": 0,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "4e658ca8f7cba6d1",
+        "spec_sha256": "39dde45780ac6e2abc20d4a9131322d3d4f9562716ca19b9e929ee3931c995ee",
+        "split": "development",
+        "cohort": "report",
+        "template": "barrier",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Ironclad",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "91C6FBC6B2F8",
+          "hp": 62,
+          "max_hp": 80,
+          "relics": [
+            "BURNING_BLOOD"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "BASH",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "SHRUG_IT_OFF",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "IRON_WAVE",
+              "upgrade": 0
+            },
+            {
+              "id": "FLAME_BARRIER",
+              "upgrade": 1
+            },
+            {
+              "id": "TWIN_STRIKE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "d0a8aa893ccaefc4",
+        "seed_index": 1,
+        "deck_index": 1,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "869b77426ea45f7e",
+        "spec_sha256": "3e02259b6bc10847dd0fb870b183242230d53f9f809cead1361915553236113f",
+        "split": "development",
+        "cohort": "report",
+        "template": "shiv",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "BA7540A0B268",
+          "hp": 46,
+          "max_hp": 70,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "ACCURACY",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 1
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 0
+            },
+            {
+              "id": "CLOAK_AND_DAGGER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "db13bc58b7066d1c",
+        "seed_index": 0,
+        "deck_index": 0,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "80ad3b495c84614b",
+        "spec_sha256": "6669c0d64617a5ba687dbfbdbd491ffb55def71871a2d6264db5153442a6b39c",
+        "split": "development",
+        "cohort": "report",
+        "template": "shiv",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "BA7540A0B268",
+          "hp": 46,
+          "max_hp": 70,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "BACKFLIP",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "ACCURACY",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 1
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 0
+            },
+            {
+              "id": "CLOAK_AND_DAGGER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "db13bc58b7066d1c",
+        "seed_index": 0,
+        "deck_index": 1,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "96beebe2c987de0d",
+        "spec_sha256": "af020992c4798098ae32a4b7a1326333f4593ff7fd0aba4627139d1912a048db",
+        "split": "development",
+        "cohort": "report",
+        "template": "shiv",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "AAA1ED2F287C",
+          "hp": 46,
+          "max_hp": 70,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "ACCURACY",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 1
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 0
+            },
+            {
+              "id": "CLOAK_AND_DAGGER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "db13bc58b7066d1c",
+        "seed_index": 1,
+        "deck_index": 0,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "9c928938c4d6c1fa",
+        "spec_sha256": "938b3dd5e632834d7414d8d9fef3e7eee37584e82c266b53961f74a0186ef0c5",
+        "split": "development",
+        "cohort": "report",
+        "template": "shiv",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "AAA1ED2F287C",
+          "hp": 46,
+          "max_hp": 70,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "BACKFLIP",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "ACCURACY",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 1
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 0
+            },
+            {
+              "id": "CLOAK_AND_DAGGER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "db13bc58b7066d1c",
+        "seed_index": 1,
+        "deck_index": 1,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "d3602d9600f921cc",
+        "spec_sha256": "ae835b91703ea991f437883b82405bcc32a94d4eeaa14b87d6a61c180f55d9b9",
+        "split": "development",
+        "cohort": "report",
+        "template": "shiv",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "ABCAB3DB372A",
+          "hp": 62,
+          "max_hp": 70,
+          "relics": [
+            "RING_OF_THE_SNAKE"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "CLOAK_AND_DAGGER",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 1
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "ACCURACY",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "b20679523623def9",
+        "seed_index": 0,
+        "deck_index": 0,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "9fe63df49b9a0b56",
+        "spec_sha256": "a76e5eeca2e2ba394abadafdc3521397ca8e719d9db0141815a2bf80c18ea482",
+        "split": "development",
+        "cohort": "report",
+        "template": "shiv",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "ABCAB3DB372A",
+          "hp": 62,
+          "max_hp": 70,
+          "relics": [
+            "RING_OF_THE_SNAKE"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "CLOAK_AND_DAGGER",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 1
+            },
+            {
+              "id": "BACKFLIP",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "ACCURACY",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "b20679523623def9",
+        "seed_index": 0,
+        "deck_index": 1,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "d71651d876479130",
+        "spec_sha256": "de6dd135dc85720122f2d97556ac51796a384a24e82e86fd3d67f18fb5a326e4",
+        "split": "development",
+        "cohort": "report",
+        "template": "shiv",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "5F602E7175C9",
+          "hp": 62,
+          "max_hp": 70,
+          "relics": [
+            "RING_OF_THE_SNAKE"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "CLOAK_AND_DAGGER",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 1
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "ACCURACY",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "b20679523623def9",
+        "seed_index": 1,
+        "deck_index": 0,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "3db5cb60f632ab24",
+        "spec_sha256": "1ac63776813bf0aeb58c748b37ea518602d7154a1b14865bffd097e9b0abfd6a",
+        "split": "development",
+        "cohort": "report",
+        "template": "shiv",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "5F602E7175C9",
+          "hp": 62,
+          "max_hp": 70,
+          "relics": [
+            "RING_OF_THE_SNAKE"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "CLOAK_AND_DAGGER",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 1
+            },
+            {
+              "id": "BACKFLIP",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "ACCURACY",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "BLADE_DANCE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "b20679523623def9",
+        "seed_index": 1,
+        "deck_index": 1,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "593294a0de1f788b",
+        "spec_sha256": "d3fde3961ca6e48410a1915318c76931009d3a5e31c61187bfe7b5ee546ce4bb",
+        "split": "development",
+        "cohort": "report",
+        "template": "dexterity",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "80D4C3368D49",
+          "hp": 46,
+          "max_hp": 70,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "DODGE_AND_ROLL",
+              "upgrade": 1
+            },
+            {
+              "id": "LEG_SWEEP",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "PREDATOR",
+              "upgrade": 0
+            },
+            {
+              "id": "FOOTWORK",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "31adf80303117a7d",
+        "seed_index": 0,
+        "deck_index": 0,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "d7fb13e69b138dd4",
+        "spec_sha256": "57fe8f53041ee8bd54578436c280d348dfa21f33bc356ca84cea4e86b7627dbf",
+        "split": "development",
+        "cohort": "report",
+        "template": "dexterity",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "80D4C3368D49",
+          "hp": 46,
+          "max_hp": 70,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "DODGE_AND_ROLL",
+              "upgrade": 1
+            },
+            {
+              "id": "LEG_SWEEP",
+              "upgrade": 0
+            },
+            {
+              "id": "BACKFLIP",
+              "upgrade": 0
+            },
+            {
+              "id": "PREDATOR",
+              "upgrade": 0
+            },
+            {
+              "id": "FOOTWORK",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "31adf80303117a7d",
+        "seed_index": 0,
+        "deck_index": 1,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "c0384c4457939707",
+        "spec_sha256": "73220524029c06225a2460869beeda13cb228c6ec32a6ba0a9d0e6ca852b2810",
+        "split": "development",
+        "cohort": "report",
+        "template": "dexterity",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "F38F7AF6C3EA",
+          "hp": 46,
+          "max_hp": 70,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "DODGE_AND_ROLL",
+              "upgrade": 1
+            },
+            {
+              "id": "LEG_SWEEP",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "PREDATOR",
+              "upgrade": 0
+            },
+            {
+              "id": "FOOTWORK",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "31adf80303117a7d",
+        "seed_index": 1,
+        "deck_index": 0,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "0a36bcdb33a20a33",
+        "spec_sha256": "df4befac84418fdbd30f81cb9ef2d388725f01c2587f8d3944b9e255e22848cc",
+        "split": "development",
+        "cohort": "report",
+        "template": "dexterity",
+        "complexity": "mid_hp",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "F38F7AF6C3EA",
+          "hp": 46,
+          "max_hp": 70,
+          "relics": [],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "DODGE_AND_ROLL",
+              "upgrade": 1
+            },
+            {
+              "id": "LEG_SWEEP",
+              "upgrade": 0
+            },
+            {
+              "id": "BACKFLIP",
+              "upgrade": 0
+            },
+            {
+              "id": "PREDATOR",
+              "upgrade": 0
+            },
+            {
+              "id": "FOOTWORK",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "31adf80303117a7d",
+        "seed_index": 1,
+        "deck_index": 1,
+        "diagnostic_split": "diagnosis"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "799a578a213951b2",
+        "spec_sha256": "b8fff213eed4ab83d62810dd470f921ce31aa0526e382ba8402ef1b3bac63670",
+        "split": "development",
+        "cohort": "report",
+        "template": "dexterity",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "45BAF9154A90",
+          "hp": 62,
+          "max_hp": 70,
+          "relics": [
+            "RING_OF_THE_SNAKE"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "FOOTWORK",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "PREDATOR",
+              "upgrade": 0
+            },
+            {
+              "id": "DODGE_AND_ROLL",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "LEG_SWEEP",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "c8090ec0dd184b0b",
+        "seed_index": 0,
+        "deck_index": 0,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "9678d38951692714",
+        "spec_sha256": "08b55e2924641007123b19cfbec9b9750ac18fad44c8dc4aef3fe15e8d58f829",
+        "split": "development",
+        "cohort": "report",
+        "template": "dexterity",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "45BAF9154A90",
+          "hp": 62,
+          "max_hp": 70,
+          "relics": [
+            "RING_OF_THE_SNAKE"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "BACKFLIP",
+              "upgrade": 0
+            },
+            {
+              "id": "FOOTWORK",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "PREDATOR",
+              "upgrade": 0
+            },
+            {
+              "id": "DODGE_AND_ROLL",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "LEG_SWEEP",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "c8090ec0dd184b0b",
+        "seed_index": 0,
+        "deck_index": 1,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "253c08f652681d15",
+        "spec_sha256": "b8d682be2b9db3491dc64a8b4b6ab3f1f99e123127b6f5ff0d1134597ab0ff24",
+        "split": "development",
+        "cohort": "report",
+        "template": "dexterity",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "A03ED6AF4517",
+          "hp": 62,
+          "max_hp": 70,
+          "relics": [
+            "RING_OF_THE_SNAKE"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "FOOTWORK",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "PREDATOR",
+              "upgrade": 0
+            },
+            {
+              "id": "DODGE_AND_ROLL",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "LEG_SWEEP",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "c8090ec0dd184b0b",
+        "seed_index": 1,
+        "deck_index": 0,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    },
+    {
+      "case": {
+        "id": "b7e64d1b3c31f00f",
+        "spec_sha256": "278e6c6b2714de4fffcf5ed4c86afb19e6aa6056f5f1edb6015311f6b2a4daa3",
+        "split": "development",
+        "cohort": "report",
+        "template": "dexterity",
+        "complexity": "stocked",
+        "spec": {
+          "schema": 2,
+          "character": "Silent",
+          "ascension": 0,
+          "act": 2,
+          "act_variant": "HIVE",
+          "encounter": "CHOMPERS_NORMAL",
+          "seed": "A03ED6AF4517",
+          "hp": 62,
+          "max_hp": 70,
+          "relics": [
+            "RING_OF_THE_SNAKE"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "deck": [
+            {
+              "id": "BACKFLIP",
+              "upgrade": 0
+            },
+            {
+              "id": "FOOTWORK",
+              "upgrade": 0
+            },
+            {
+              "id": "SLICE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "PREDATOR",
+              "upgrade": 0
+            },
+            {
+              "id": "DODGE_AND_ROLL",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "SURVIVOR",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "LEG_SWEEP",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_SILENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_SILENT",
+              "upgrade": 0
+            }
+          ]
+        },
+        "source_id": "c8090ec0dd184b0b",
+        "seed_index": 1,
+        "deck_index": 1,
+        "diagnostic_split": "report"
+      },
+      "synthetic": true,
+      "natural_reachability": "unknown"
+    }
+  ],
+  "models": [
+    {
+      "id": "initial-mean",
+      "weights": [
+        0.85,
+        1.1,
+        1.6,
+        0.6,
+        1.0,
+        0.35,
+        -0.4,
+        0.85,
+        -0.25,
+        0.0,
+        -0.6,
+        -0.8,
+        -0.2,
+        -0.5,
+        -0.5
+      ]
+    },
+    {
+      "id": "r2-random-4-6",
+      "method": "random",
+      "repeat": "r2",
+      "weights": [
+        1.290323993884029,
+        1.1520143272964904,
+        1.7002758973618186,
+        0.2688545021214596,
+        1.3977869239879612,
+        0.685180059431964,
+        -0.5171277400901401,
+        1.2307469135604256,
+        -0.675176181759719,
+        0.592884976699989,
+        -0.5911714930589276,
+        -0.7434596333399421,
+        0.02432693268396066,
+        -0.7459572011649321,
+        -0.03690104391659749
+      ]
+    },
+    {
+      "id": "random-4-12",
+      "method": "random",
+      "weights": [
+        1.3612472057554459,
+        0.8121055363230192,
+        1.2941307522924717,
+        1.0101251738536208,
+        1.0299442644946077,
+        0.5329743931613036,
+        0.05056294875758632,
+        1.0096266814998678,
+        -0.031379972761050756,
+        0.43625190648845136,
+        -0.47213020696429575,
+        -0.24879006244417057,
+        0.4795812390135277,
+        -0.9868501566331249,
+        -0.28590824843419826
+      ]
+    },
+    {
+      "id": "fixed-attack",
+      "defense_first": false
+    }
+  ]
+}
