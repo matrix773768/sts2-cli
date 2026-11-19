@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "generator_seed": 533017,
+  "seed_namespace": "STS2-S3A-V1",
+  "variant": "HIVE",
+  "act": 2,
+  "ascension": [0, 2],
+  "splits": {
+    "development": ["BOWLBUGS_NORMAL", "EXOSKELETONS_NORMAL", "MYTES_NORMAL", "CHOMPERS_NORMAL"],
+    "validation": ["OVICOPTER_NORMAL"],
+    "test": ["HUNTER_KILLER_NORMAL"]
+  },
+  "replicates_per_template_encounter": 4,
+  "pressure": {
+    "critical": [6, 14],
+    "lean": [15, 27],
+    "control": [36, 52]
+  },
+  "deck_size": [12, 15],
+  "upgrade_max": 2,
+  "pilot_replicate": 0,
+  "planned_total": 144
+}

@@ -1,0 +1,309 @@
+{
+  "frozen-pair": {
+    "samples": 7,
+    "elapsed_ms": 6405.468099983409,
+    "records_per_second": 1.0928163079944353,
+    "root_valid": 7,
+    "wins": 7,
+    "status": {
+      "predicted_win": 7
+    },
+    "branch_stops": {
+      "predicted_win": 7
+    },
+    "recycle_causes": {},
+    "cold": 1,
+    "warm": 6,
+    "recovery_launch_ms": 0,
+    "recovery_model_ms": 0,
+    "f4_completed": 7,
+    "peak_working_set_bytes": 142782464,
+    "groups": {
+      "complex": {
+        "status": {
+          "predicted_win": 3
+        },
+        "elapsed_ms": {
+          "n": 3,
+          "p50": 740.8428001217544,
+          "p90": 916.9784001074731
+        },
+        "hot_ms": {
+          "n": 3,
+          "p50": 29.4913,
+          "p90": 35.58762
+        },
+        "transitions": {
+          "n": 3,
+          "p50": 16,
+          "p90": 18.4
+        }
+      },
+      "simple": {
+        "status": {
+          "predicted_win": 4
+        },
+        "elapsed_ms": {
+          "n": 4,
+          "p50": 324.2028000531718,
+          "p90": 2503.963540052064
+        },
+        "hot_ms": {
+          "n": 4,
+          "p50": 15.0748,
+          "p90": 274.9826800000001
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 7.0,
+          "p90": 9.8
+        }
+      }
+    }
+  },
+  "fixed-pair": {
+    "samples": 7,
+    "elapsed_ms": 7087.7409998793155,
+    "records_per_second": 0.9876207384156942,
+    "root_valid": 7,
+    "wins": 7,
+    "status": {
+      "predicted_win": 7
+    },
+    "branch_stops": {
+      "predicted_win": 7
+    },
+    "recycle_causes": {},
+    "cold": 1,
+    "warm": 6,
+    "recovery_launch_ms": 0,
+    "recovery_model_ms": 0,
+    "f4_completed": 7,
+    "peak_working_set_bytes": 143556608,
+    "groups": {
+      "complex": {
+        "status": {
+          "predicted_win": 3
+        },
+        "elapsed_ms": {
+          "n": 3,
+          "p50": 854.21929997392,
+          "p90": 872.6401001680642
+        },
+        "hot_ms": {
+          "n": 3,
+          "p50": 19.9064,
+          "p90": 34.17968
+        },
+        "transitions": {
+          "n": 3,
+          "p50": 16,
+          "p90": 18.4
+        }
+      },
+      "simple": {
+        "status": {
+          "predicted_win": 4
+        },
+        "elapsed_ms": {
+          "n": 4,
+          "p50": 360.51629995927215,
+          "p90": 2812.4743798514833
+        },
+        "hot_ms": {
+          "n": 4,
+          "p50": 16.633,
+          "p90": 279.52511000000004
+        },
+        "transitions": {
+          "n": 4,
+          "p50": 7.0,
+          "p90": 9.8
+        }
+      }
+    }
+  },
+  "hard": {
+    "samples": 24,
+    "elapsed_ms": 83757.84790003672,
+    "records_per_second": 0.28654031355537585,
+    "root_valid": 24,
+    "wins": 3,
+    "status": {
+      "exhausted": 16,
+      "transition_cap": 5,
+      "predicted_win": 3
+    },
+    "branch_stops": {
+      "death": 1718,
+      "predicted_win": 3,
+      "unsupported": 37,
+      "truncated": 1
+    },
+    "recycle_causes": {
+      "no_predicted_retirement_route": 21
+    },
+    "cold": 22,
+    "warm": 2,
+    "recovery_launch_ms": 6881.389100570232,
+    "recovery_model_ms": 26474.2219,
+    "f4_completed": 1,
+    "peak_working_set_bytes": 142123008,
+    "groups": {
+      "control": {
+        "status": {
+          "exhausted": 3,
+          "predicted_win": 3,
+          "transition_cap": 2
+        },
+        "elapsed_ms": {
+          "n": 8,
+          "p50": 3902.5589500088245,
+          "p90": 4351.877909945324
+        },
+        "hot_ms": {
+          "n": 8,
+          "p50": 812.0225,
+          "p90": 945.98532
+        },
+        "transitions": {
+          "n": 8,
+          "p50": 453.5,
+          "p90": 512.0
+        }
+      },
+      "critical": {
+        "status": {
+          "exhausted": 6,
+          "transition_cap": 2
+        },
+        "elapsed_ms": {
+          "n": 8,
+          "p50": 3331.777800107375,
+          "p90": 3674.527569953352
+        },
+        "hot_ms": {
+          "n": 8,
+          "p50": 673.32825,
+          "p90": 851.0767
+        },
+        "transitions": {
+          "n": 8,
+          "p50": 339.0,
+          "p90": 512.0
+        }
+      },
+      "lean": {
+        "status": {
+          "exhausted": 7,
+          "transition_cap": 1
+        },
+        "elapsed_ms": {
+          "n": 8,
+          "p50": 3593.7674500746652,
+          "p90": 3738.921169983223
+        },
+        "hot_ms": {
+          "n": 8,
+          "p50": 670.7402,
+          "p90": 887.23581
+        },
+        "transitions": {
+          "n": 8,
+          "p50": 362.5,
+          "p90": 509.2
+        }
+      }
+    }
+  },
+  "budget128": {
+    "samples": 6,
+    "elapsed_ms": 17101.79420001805,
+    "records_per_second": 0.35084038141411317,
+    "root_valid": 6,
+    "wins": 1,
+    "status": {
+      "exhausted": 1,
+      "transition_cap": 4,
+      "predicted_win": 1
+    },
+    "branch_stops": {
+      "death": 138,
+      "predicted_win": 1,
+      "truncated": 2,
+      "unsupported": 7
+    },
+    "recycle_causes": {
+      "no_predicted_retirement_route": 5
+    },
+    "cold": 5,
+    "warm": 1,
+    "recovery_launch_ms": 1218.8512000720948,
+    "recovery_model_ms": 4618.3613000000005,
+    "f4_completed": 0,
+    "peak_working_set_bytes": 139526144,
+    "groups": {
+      "control": {
+        "status": {
+          "predicted_win": 1
+        },
+        "elapsed_ms": {
+          "n": 1,
+          "p50": 3781.9827999919653,
+          "p90": 3781.9827999919653
+        },
+        "hot_ms": {
+          "n": 1,
+          "p50": 582.2971,
+          "p90": 582.2971
+        },
+        "transitions": {
+          "n": 1,
+          "p50": 40,
+          "p90": 40.0
+        }
+      },
+      "critical": {
+        "status": {
+          "exhausted": 1,
+          "transition_cap": 2
+        },
+        "elapsed_ms": {
+          "n": 3,
+          "p50": 2795.5328000243753,
+          "p90": 3339.4152799155563
+        },
+        "hot_ms": {
+          "n": 3,
+          "p50": 482.8043,
+          "p90": 506.81606
+        },
+        "transitions": {
+          "n": 3,
+          "p50": 128,
+          "p90": 128.0
+        }
+      },
+      "lean": {
+        "status": {
+          "transition_cap": 2
+        },
+        "elapsed_ms": {
+          "n": 2,
+          "p50": 3234.7408999921754,
+          "p90": 3245.352900051512
+        },
+        "hot_ms": {
+          "n": 2,
+          "p50": 511.77745000000004,
+          "p90": 541.9966900000001
+        },
+        "transitions": {
+          "n": 2,
+          "p50": 128.0,
+          "p90": 128.0
+        }
+      }
+    }
+  }
+}

@@ -51,11 +51,11 @@ def first_win(game, adaptive):
     return result
 
 
-def refine(game, seed, adaptive):
-    if "winner" not in seed or seed["transitions"] == CAP:
+def refine(game, seed, adaptive, *, cap=CAP):
+    if "winner" not in seed or seed["transitions"] == cap:
         return None
     winner = seed["winner"]
-    result = timed_request(game, "i1_f4", cap=CAP - seed["transitions"], f5b_adaptive=adaptive,
+    result = timed_request(game, "i1_f4", cap=cap - seed["transitions"], f5b_adaptive=adaptive,
                            seed_actions=[f3b.action_for_wire(a) for a in winner["actions"]],
                            seed_stamps=winner["stamps"], include_history=False)
     result.pop("history", None)

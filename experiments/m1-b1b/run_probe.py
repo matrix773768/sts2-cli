@@ -55,8 +55,8 @@ def validate(spec):
         raise ValueError("Unsupported relic or potion slot")
 
 
-def search(game, record):
-    first = f5b.timed_request(game, "i1_f3b", cap=CAP)
+def search(game, record, *, cap=CAP, refine_quality=True, predator_fixed=False):
+    first = f5b.timed_request(game, "i1_f3b", cap=cap)
     history = first.pop("history", [])
     record["first"] = first
     if first["status"] != "predicted_win":
@@ -66,16 +66,16 @@ def search(game, record):
                 max_hp=frame["max_hp"], gold=frame["gold"], potions=frame["potions"],
                 actions=first["actions"], stamps=first["stamps"], at=0)
     first["winner"] = seed
-    quality = f5b.refine(game, first, False)
+    quality = f5b.refine(game, first, False, cap=cap) if refine_quality else None
     record["quality"] = quality
     if quality is not None and (quality.get("transitions") is None
                                 or quality.get("seed_transitions") != len(seed["actions"])):
         record["quality_incomplete"] = True
     candidates = [c for c in (quality or {}).get("candidates", []) if c["potions"] == seed["potions"]]
     record["selected"] = max([seed, *candidates], key=lambda c: (c["hp"], -c["at"]))
-    if f5b.terminal_risk(record["selected"]["actions"]):
+    if not predator_fixed and f5b.terminal_risk(record["selected"]["actions"]):
         record["risks"].append("E3_PREDATOR_TERMINAL")
-    if f5b.terminal_risk(seed["actions"]):
+    if not predator_fixed and f5b.terminal_risk(seed["actions"]):
         record["risks"].append("E3_PREDATOR_FIRST_WIN")
     record["outcome"] = "predicted_win"
 
@@ -94,7 +94,7 @@ def semantic(record):
         "root_sha256", "first", "quality", "selected", "outcome", "risks")}))
 
 
-def execute(game, case, reference):
+def execute(game, case, reference, *, search_root=search):
     start = perf_counter()
     record = dict(record_schema=1, input=case, synthetic=True, natural_reachability="unknown",
                   evidence_level="prediction_only", pid=game.engine.proc.pid, outcome="unresolved", risks=[])
@@ -110,7 +110,7 @@ def execute(game, case, reference):
         profile.pop("unique_id", None)
         record["root_profile_sha256"] = bank.stamp(profile)
         baseline = game.request("b1b_initial_profile")["value"]
-        search(game, record)
+        search_root(game, record)
         record["predict_ms"] = bank.elapsed(start)
         record["semantic_sha256"] = semantic(record)
         if record["outcome"] != "predicted_win":
@@ -204,6 +204,13 @@ def faults(output, spec):
 
 
 def main():
+    import sys
+
+    if sys.argv[1:2] == ["produce"]:
+        if "--legacy" not in sys.argv[2:]:
+            load("s3a_production", HERE.parent / "m1-s3a/produce.py").main()
+            return
+        sys.argv.remove("--legacy")
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("mode", choices=("pilot", "sequence", "faults", "produce"))
     parser.add_argument("output", type=Path)

@@ -55,7 +55,7 @@ python -X utf8 experiments/m1-b1b/build_probe.py
 python -X utf8 experiments/m1-b1b/run_probe.py pilot logs/m1-b1b/pilot-repro
 python -X utf8 experiments/m1-b1b/run_probe.py sequence logs/m1-b1b/sequence-repro
 python -X utf8 experiments/m1-b1b/run_probe.py faults logs/m1-b1b/faults-repro
-python -X utf8 experiments/m1-b1b/run_probe.py produce logs/m1-b1b/production-repro --input experiments/m1-b1b/inputs.json
+python -X utf8 experiments/m1-b1b/run_probe.py produce logs/m1-b1b/production-repro --legacy --input experiments/m1-b1b/inputs.json
 python -X utf8 experiments/m1-b1b/summarize.py logs/m1-b1b/sequence-repro/results.json logs/m1-b1b/summary-repro.json
 python -X utf8 -m pytest experiments/m1-b1b/test_resident_production.py experiments/m1-b1a/test_evidence.py experiments/m1-s1/test_synthetic.py -q
 ```
