@@ -1,0 +1,3442 @@
+[
+  {
+    "case": "strength-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "strength",
+    "profile": "early",
+    "case_seed": 12715323200413000083,
+    "tags": [
+      "strength",
+      "multi_hit"
+    ],
+    "parameters": {
+      "deck_size": 14,
+      "upgrades": 0,
+      "hp_percent": 88,
+      "starter_relic": true,
+      "potion": null
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Ironclad",
+      "ascension": 0,
+      "act": 1,
+      "act_variant": "OVERGROWTH",
+      "encounter": "SHRINKER_BEETLE_WEAK",
+      "seed": "8C094735698E",
+      "hp": 70,
+      "max_hp": 80,
+      "relics": [
+        "BURNING_BLOOD"
+      ],
+      "potions": [
+        null,
+        null,
+        null
+      ],
+      "deck": [
+        {
+          "id": "TWIN_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "TWIN_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "IRON_WAVE",
+          "upgrade": 0
+        },
+        {
+          "id": "POMMEL_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "BASH",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "FLAME_BARRIER",
+          "upgrade": 0
+        },
+        {
+          "id": "POMMEL_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "INFLAME",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "9242f9e902c0227a2324dcfd385f200d6282c35b41935da4dfa4d91f0fa93a03",
+    "id": "e1343abeef1ac5726fd9be0aad902b4d7d1df11c0b8adaeadf93c9853019feff",
+    "replica": 0,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Ironclad",
+      "strength",
+      "SHRINKER_BEETLE_WEAK"
+    ]
+  },
+  {
+    "case": "block-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "block",
+    "profile": "early",
+    "case_seed": 5138593554985814763,
+    "tags": [
+      "block",
+      "block_to_damage"
+    ],
+    "parameters": {
+      "deck_size": 15,
+      "upgrades": 0,
+      "hp_percent": 80,
+      "starter_relic": true,
+      "potion": "FLEX_POTION"
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Ironclad",
+      "ascension": 0,
+      "act": 2,
+      "act_variant": "HIVE",
+      "encounter": "BOWLBUGS_WEAK",
+      "seed": "1AF436D873BA",
+      "hp": 64,
+      "max_hp": 80,
+      "relics": [
+        "BURNING_BLOOD"
+      ],
+      "potions": [
+        "FLEX_POTION",
+        null,
+        null
+      ],
+      "deck": [
+        {
+          "id": "FLAME_BARRIER",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "SHRUG_IT_OFF",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "IRON_WAVE",
+          "upgrade": 0
+        },
+        {
+          "id": "BODY_SLAM",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "BODY_SLAM",
+          "upgrade": 0
+        },
+        {
+          "id": "FLAME_BARRIER",
+          "upgrade": 0
+        },
+        {
+          "id": "POMMEL_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "BASH",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "b499728e0da83a400842a0fd3340836e9f1c27b45b0020bcfef865a61a95aa0c",
+    "id": "539f9e19ac72cadabf3efa8bb824ea534cc29ebf31b24e18fb481f351bcc4a3a",
+    "replica": 0,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Ironclad",
+      "block",
+      "BOWLBUGS_WEAK"
+    ]
+  },
+  {
+    "case": "poison-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "poison",
+    "profile": "early",
+    "case_seed": 15244583755662311219,
+    "tags": [
+      "poison"
+    ],
+    "parameters": {
+      "deck_size": 14,
+      "upgrades": 1,
+      "hp_percent": 78,
+      "starter_relic": true,
+      "potion": null
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Silent",
+      "ascension": 0,
+      "act": 1,
+      "act_variant": "UNDERDOCKS",
+      "encounter": "CORPSE_SLUGS_WEAK",
+      "seed": "90DD6EC10039",
+      "hp": 54,
+      "max_hp": 70,
+      "relics": [
+        "RING_OF_THE_SNAKE"
+      ],
+      "potions": [
+        null,
+        null,
+        null
+      ],
+      "deck": [
+        {
+          "id": "POISONED_STAB",
+          "upgrade": 1
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "BACKFLIP",
+          "upgrade": 0
+        },
+        {
+          "id": "POISONED_STAB",
+          "upgrade": 0
+        },
+        {
+          "id": "DEADLY_POISON",
+          "upgrade": 0
+        },
+        {
+          "id": "BACKFLIP",
+          "upgrade": 0
+        },
+        {
+          "id": "SURVIVOR",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "BOUNCING_FLASK",
+          "upgrade": 0
+        },
+        {
+          "id": "NEUTRALIZE",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DAGGER_SPRAY",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "8eb72535fac3ea8a7db0f6d013ebec8d9a9e808e92b75439a1c560ba703aa6f3",
+    "id": "f591cc9e526d941f59ed228c7902c2ae0f74cdbe81fb9813a2523f739adac224",
+    "replica": 0,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Silent",
+      "poison",
+      "CORPSE_SLUGS_WEAK"
+    ]
+  },
+  {
+    "case": "shiv-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "shiv",
+    "profile": "early",
+    "case_seed": 14986421914083847239,
+    "tags": [
+      "shiv",
+      "scaling"
+    ],
+    "parameters": {
+      "deck_size": 13,
+      "upgrades": 0,
+      "hp_percent": 79,
+      "starter_relic": true,
+      "potion": null
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Silent",
+      "ascension": 0,
+      "act": 1,
+      "act_variant": "OVERGROWTH",
+      "encounter": "NIBBITS_WEAK",
+      "seed": "BEF9D0D65B5D",
+      "hp": 55,
+      "max_hp": 70,
+      "relics": [
+        "RING_OF_THE_SNAKE"
+      ],
+      "potions": [
+        null,
+        null,
+        null
+      ],
+      "deck": [
+        {
+          "id": "DAGGER_SPRAY",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "ACCURACY",
+          "upgrade": 0
+        },
+        {
+          "id": "DODGE_AND_ROLL",
+          "upgrade": 0
+        },
+        {
+          "id": "BLADE_DANCE",
+          "upgrade": 0
+        },
+        {
+          "id": "SLICE",
+          "upgrade": 0
+        },
+        {
+          "id": "SURVIVOR",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "CLOAK_AND_DAGGER",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "a06accb571842a4f8439320c5f837fb4b5731219a8b8a6a73b11dd4fd57418eb",
+    "id": "15f2becb2fabf4e886ac059ae08b8ad8a97199933da73fb5bb5d3d550bd86eeb",
+    "replica": 0,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Silent",
+      "shiv",
+      "NIBBITS_WEAK"
+    ]
+  },
+  {
+    "case": "vulnerable-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "vulnerable",
+    "profile": "early",
+    "case_seed": 8611577685646431991,
+    "tags": [
+      "vulnerable",
+      "area_damage"
+    ],
+    "parameters": {
+      "deck_size": 13,
+      "upgrades": 1,
+      "hp_percent": 72,
+      "starter_relic": true,
+      "potion": null
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Ironclad",
+      "ascension": 0,
+      "act": 1,
+      "act_variant": "OVERGROWTH",
+      "encounter": "SHRINKER_BEETLE_WEAK",
+      "seed": "A8549DAF06BE",
+      "hp": 57,
+      "max_hp": 80,
+      "relics": [
+        "BURNING_BLOOD"
+      ],
+      "potions": [
+        null,
+        null,
+        null
+      ],
+      "deck": [
+        {
+          "id": "BASH",
+          "upgrade": 0
+        },
+        {
+          "id": "THUNDERCLAP",
+          "upgrade": 0
+        },
+        {
+          "id": "SHRUG_IT_OFF",
+          "upgrade": 0
+        },
+        {
+          "id": "POMMEL_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "IRON_WAVE",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 1
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "UPPERCUT",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "THUNDERCLAP",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "9615d4e2ba17ec44591084a2b4588f4f212ffcecadb203c2f898c2783ade5db3",
+    "id": "556aea86d3de514fa02505f23c98204a377ed97eac0873f3d380f02412fbdf5e",
+    "replica": 0,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Ironclad",
+      "vulnerable",
+      "SHRINKER_BEETLE_WEAK"
+    ]
+  },
+  {
+    "case": "self-hp-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "self-hp",
+    "profile": "early",
+    "case_seed": 7621555134328157214,
+    "tags": [
+      "self_damage",
+      "strength"
+    ],
+    "parameters": {
+      "deck_size": 15,
+      "upgrades": 1,
+      "hp_percent": 71,
+      "starter_relic": true,
+      "potion": "FLEX_POTION"
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Ironclad",
+      "ascension": 0,
+      "act": 2,
+      "act_variant": "HIVE",
+      "encounter": "BOWLBUGS_WEAK",
+      "seed": "F6F88AB17CBD",
+      "hp": 56,
+      "max_hp": 80,
+      "relics": [
+        "BURNING_BLOOD"
+      ],
+      "potions": [
+        "FLEX_POTION",
+        null,
+        null
+      ],
+      "deck": [
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "TWIN_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "BLOOD_WALL",
+          "upgrade": 0
+        },
+        {
+          "id": "HEMOKINESIS",
+          "upgrade": 0
+        },
+        {
+          "id": "HEMOKINESIS",
+          "upgrade": 1
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "RUPTURE",
+          "upgrade": 0
+        },
+        {
+          "id": "BLOOD_WALL",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "TWIN_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "BASH",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "7f344eb745f80f1fd8cea036712a2f1c3d4467458922fbfb1a012f339095edbd",
+    "id": "23491ef71f8c39a6ea914ea6bcdb12e4d3e4abd18a829e2434cf934f154653fd",
+    "replica": 0,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Ironclad",
+      "self-hp",
+      "BOWLBUGS_WEAK"
+    ]
+  },
+  {
+    "case": "dexterity-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "dexterity",
+    "profile": "early",
+    "case_seed": 13968041940067341090,
+    "tags": [
+      "dexterity",
+      "block"
+    ],
+    "parameters": {
+      "deck_size": 14,
+      "upgrades": 0,
+      "hp_percent": 71,
+      "starter_relic": true,
+      "potion": null
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Silent",
+      "ascension": 0,
+      "act": 1,
+      "act_variant": "UNDERDOCKS",
+      "encounter": "CORPSE_SLUGS_WEAK",
+      "seed": "F76210CE5D71",
+      "hp": 49,
+      "max_hp": 70,
+      "relics": [
+        "RING_OF_THE_SNAKE"
+      ],
+      "potions": [
+        null,
+        null,
+        null
+      ],
+      "deck": [
+        {
+          "id": "PREDATOR",
+          "upgrade": 0
+        },
+        {
+          "id": "DODGE_AND_ROLL",
+          "upgrade": 0
+        },
+        {
+          "id": "DODGE_AND_ROLL",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "FOOTWORK",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "SURVIVOR",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "PREDATOR",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "SLICE",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "LEG_SWEEP",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "9b2c79299e4895e3de0960fb2ec7e80a29b2748c989eb44e5e8f3fe4362e6ab0",
+    "id": "69df6f1761f490c55d325a428b2927fe9fb08752f2043361e92f180f13e1702f",
+    "replica": 0,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Silent",
+      "dexterity",
+      "CORPSE_SLUGS_WEAK"
+    ]
+  },
+  {
+    "case": "opening-burst-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "opening-burst",
+    "profile": "early",
+    "case_seed": 18043329972791397861,
+    "tags": [
+      "opening_damage",
+      "draw"
+    ],
+    "parameters": {
+      "deck_size": 13,
+      "upgrades": 0,
+      "hp_percent": 78,
+      "starter_relic": true,
+      "potion": "FLEX_POTION"
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Silent",
+      "ascension": 0,
+      "act": 1,
+      "act_variant": "OVERGROWTH",
+      "encounter": "NIBBITS_WEAK",
+      "seed": "CB843C746937",
+      "hp": 54,
+      "max_hp": 70,
+      "relics": [
+        "RING_OF_THE_SNAKE"
+      ],
+      "potions": [
+        null,
+        "FLEX_POTION",
+        null
+      ],
+      "deck": [
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "BACKSTAB",
+          "upgrade": 0
+        },
+        {
+          "id": "PREDATOR",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFLECT",
+          "upgrade": 0
+        },
+        {
+          "id": "DAGGER_SPRAY",
+          "upgrade": 0
+        },
+        {
+          "id": "BACKSTAB",
+          "upgrade": 0
+        },
+        {
+          "id": "DODGE_AND_ROLL",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "SURVIVOR",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "37c1a34d403cf712386cd5e7bb44a59bfdd3b81aec84eacf67611db2cf378b4a",
+    "id": "fd98ba4eaaba5b2b9cb0c7c2024f6509e4de2214c7b7cfb57bc2d9c19b44e230",
+    "replica": 0,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Silent",
+      "opening-burst",
+      "NIBBITS_WEAK"
+    ]
+  },
+  {
+    "case": "strength-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "strength",
+    "profile": "early",
+    "case_seed": 7092066023740731406,
+    "tags": [
+      "strength",
+      "multi_hit"
+    ],
+    "parameters": {
+      "deck_size": 13,
+      "upgrades": 0,
+      "hp_percent": 86,
+      "starter_relic": true,
+      "potion": "FLEX_POTION"
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Ironclad",
+      "ascension": 0,
+      "act": 1,
+      "act_variant": "OVERGROWTH",
+      "encounter": "SHRINKER_BEETLE_WEAK",
+      "seed": "3B483F803975",
+      "hp": 68,
+      "max_hp": 80,
+      "relics": [
+        "BURNING_BLOOD"
+      ],
+      "potions": [
+        "FLEX_POTION",
+        null,
+        null
+      ],
+      "deck": [
+        {
+          "id": "IRON_WAVE",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "FLAME_BARRIER",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "INFLAME",
+          "upgrade": 0
+        },
+        {
+          "id": "SWORD_BOOMERANG",
+          "upgrade": 0
+        },
+        {
+          "id": "BASH",
+          "upgrade": 0
+        },
+        {
+          "id": "TWIN_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "POMMEL_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "f69992c0ebf65d3617733ab35ba37887d368e72b135dd780bc3092ca634a0738",
+    "id": "2c61a161b15466e63df776ee6150a4124f8edc5e153edc19f8b8b1da2ed0b8b9",
+    "replica": 1,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Ironclad",
+      "strength",
+      "SHRINKER_BEETLE_WEAK"
+    ]
+  },
+  {
+    "case": "block-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "block",
+    "profile": "early",
+    "case_seed": 14236091222838477201,
+    "tags": [
+      "block",
+      "block_to_damage"
+    ],
+    "parameters": {
+      "deck_size": 15,
+      "upgrades": 1,
+      "hp_percent": 83,
+      "starter_relic": true,
+      "potion": "FLEX_POTION"
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Ironclad",
+      "ascension": 0,
+      "act": 2,
+      "act_variant": "HIVE",
+      "encounter": "BOWLBUGS_WEAK",
+      "seed": "926B65C13187",
+      "hp": 66,
+      "max_hp": 80,
+      "relics": [
+        "BURNING_BLOOD"
+      ],
+      "potions": [
+        null,
+        "FLEX_POTION",
+        null
+      ],
+      "deck": [
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "BODY_SLAM",
+          "upgrade": 0
+        },
+        {
+          "id": "POMMEL_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "BODY_SLAM",
+          "upgrade": 1
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "BASH",
+          "upgrade": 0
+        },
+        {
+          "id": "SHRUG_IT_OFF",
+          "upgrade": 0
+        },
+        {
+          "id": "SHRUG_IT_OFF",
+          "upgrade": 0
+        },
+        {
+          "id": "IRON_WAVE",
+          "upgrade": 0
+        },
+        {
+          "id": "FLAME_BARRIER",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "1901e34e50771ff3e2cc8c88c2cc3702052bc40956ebc2c1ade579fdd73df658",
+    "id": "a14a7bb88a825100681c1296daac069db4eaa278c24e47e23464d3716d557d4a",
+    "replica": 1,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Ironclad",
+      "block",
+      "BOWLBUGS_WEAK"
+    ]
+  },
+  {
+    "case": "poison-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "poison",
+    "profile": "early",
+    "case_seed": 17026372907078603968,
+    "tags": [
+      "poison"
+    ],
+    "parameters": {
+      "deck_size": 15,
+      "upgrades": 1,
+      "hp_percent": 70,
+      "starter_relic": true,
+      "potion": null
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Silent",
+      "ascension": 0,
+      "act": 1,
+      "act_variant": "UNDERDOCKS",
+      "encounter": "CORPSE_SLUGS_WEAK",
+      "seed": "04DAE38CFB1D",
+      "hp": 49,
+      "max_hp": 70,
+      "relics": [
+        "RING_OF_THE_SNAKE"
+      ],
+      "potions": [
+        null,
+        null,
+        null
+      ],
+      "deck": [
+        {
+          "id": "BACKFLIP",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DAGGER_SPRAY",
+          "upgrade": 1
+        },
+        {
+          "id": "POISONED_STAB",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "SURVIVOR",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFLECT",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "POISONED_STAB",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "BOUNCING_FLASK",
+          "upgrade": 0
+        },
+        {
+          "id": "NEUTRALIZE",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DEADLY_POISON",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "9d9fbee58807409e667f2962d99108b1cbed84fe7f4ae5e80727cce6f6d29d47",
+    "id": "bee80ffd4bcf64cad12c9bff3ac01ca436278c1816798edd5e9238fe054869a0",
+    "replica": 1,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Silent",
+      "poison",
+      "CORPSE_SLUGS_WEAK"
+    ]
+  },
+  {
+    "case": "shiv-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "shiv",
+    "profile": "early",
+    "case_seed": 15866870852831307156,
+    "tags": [
+      "shiv",
+      "scaling"
+    ],
+    "parameters": {
+      "deck_size": 15,
+      "upgrades": 0,
+      "hp_percent": 83,
+      "starter_relic": true,
+      "potion": null
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Silent",
+      "ascension": 0,
+      "act": 1,
+      "act_variant": "OVERGROWTH",
+      "encounter": "NIBBITS_WEAK",
+      "seed": "3B859A1860BD",
+      "hp": 58,
+      "max_hp": 70,
+      "relics": [
+        "RING_OF_THE_SNAKE"
+      ],
+      "potions": [
+        null,
+        null,
+        null
+      ],
+      "deck": [
+        {
+          "id": "DODGE_AND_ROLL",
+          "upgrade": 0
+        },
+        {
+          "id": "BLADE_DANCE",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DAGGER_SPRAY",
+          "upgrade": 0
+        },
+        {
+          "id": "SURVIVOR",
+          "upgrade": 0
+        },
+        {
+          "id": "SLICE",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DAGGER_SPRAY",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "CLOAK_AND_DAGGER",
+          "upgrade": 0
+        },
+        {
+          "id": "ACCURACY",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "d352a604e351b63e3a5f22f4b2b1ea5daed63ff7df2c17fd1b67ebe0357b2a15",
+    "id": "1a556245d62ac0530fff8cb8e38af7b5961cb3edbb838e25c011bf43370c35a6",
+    "replica": 1,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Silent",
+      "shiv",
+      "NIBBITS_WEAK"
+    ]
+  },
+  {
+    "case": "vulnerable-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "vulnerable",
+    "profile": "early",
+    "case_seed": 8585519221136499004,
+    "tags": [
+      "vulnerable",
+      "area_damage"
+    ],
+    "parameters": {
+      "deck_size": 15,
+      "upgrades": 0,
+      "hp_percent": 71,
+      "starter_relic": true,
+      "potion": "FLEX_POTION"
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Ironclad",
+      "ascension": 0,
+      "act": 1,
+      "act_variant": "OVERGROWTH",
+      "encounter": "SHRINKER_BEETLE_WEAK",
+      "seed": "F4679DD8F742",
+      "hp": 56,
+      "max_hp": 80,
+      "relics": [
+        "BURNING_BLOOD"
+      ],
+      "potions": [
+        null,
+        null,
+        "FLEX_POTION"
+      ],
+      "deck": [
+        {
+          "id": "BASH",
+          "upgrade": 0
+        },
+        {
+          "id": "THUNDERCLAP",
+          "upgrade": 0
+        },
+        {
+          "id": "UPPERCUT",
+          "upgrade": 0
+        },
+        {
+          "id": "SHRUG_IT_OFF",
+          "upgrade": 0
+        },
+        {
+          "id": "POMMEL_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "UPPERCUT",
+          "upgrade": 0
+        },
+        {
+          "id": "THUNDERCLAP",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "FLAME_BARRIER",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "89c3dfb174f39cc46e84d42481e8f8f9bd5d9ac510bc455fbbdf881490e69073",
+    "id": "073fa6cba188270a4cede3a28d75f17b5b7f50d817c32fd098d6f3e63f875495",
+    "replica": 1,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Ironclad",
+      "vulnerable",
+      "SHRINKER_BEETLE_WEAK"
+    ]
+  },
+  {
+    "case": "self-hp-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "self-hp",
+    "profile": "early",
+    "case_seed": 733002780022408333,
+    "tags": [
+      "self_damage",
+      "strength"
+    ],
+    "parameters": {
+      "deck_size": 14,
+      "upgrades": 1,
+      "hp_percent": 84,
+      "starter_relic": true,
+      "potion": null
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Ironclad",
+      "ascension": 0,
+      "act": 2,
+      "act_variant": "HIVE",
+      "encounter": "BOWLBUGS_WEAK",
+      "seed": "129F7584FD86",
+      "hp": 67,
+      "max_hp": 80,
+      "relics": [
+        "BURNING_BLOOD"
+      ],
+      "potions": [
+        null,
+        null,
+        null
+      ],
+      "deck": [
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "RUPTURE",
+          "upgrade": 0
+        },
+        {
+          "id": "BLOOD_WALL",
+          "upgrade": 0
+        },
+        {
+          "id": "SHRUG_IT_OFF",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "POMMEL_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 1
+        },
+        {
+          "id": "BASH",
+          "upgrade": 0
+        },
+        {
+          "id": "TWIN_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "HEMOKINESIS",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "TWIN_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "5da166ad701e7e3115db8150ec650e9787ebd651032df42b6d9173105c57109b",
+    "id": "18c60abefad6cb14ae173f1adeb9a6fd695cf2def1f7860e07ab1e76abe1981a",
+    "replica": 1,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Ironclad",
+      "self-hp",
+      "BOWLBUGS_WEAK"
+    ]
+  },
+  {
+    "case": "dexterity-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "dexterity",
+    "profile": "early",
+    "case_seed": 1587056439995390980,
+    "tags": [
+      "dexterity",
+      "block"
+    ],
+    "parameters": {
+      "deck_size": 13,
+      "upgrades": 0,
+      "hp_percent": 82,
+      "starter_relic": true,
+      "potion": null
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Silent",
+      "ascension": 0,
+      "act": 1,
+      "act_variant": "UNDERDOCKS",
+      "encounter": "CORPSE_SLUGS_WEAK",
+      "seed": "63E9DF254B01",
+      "hp": 57,
+      "max_hp": 70,
+      "relics": [
+        "RING_OF_THE_SNAKE"
+      ],
+      "potions": [
+        null,
+        null,
+        null
+      ],
+      "deck": [
+        {
+          "id": "SURVIVOR",
+          "upgrade": 0
+        },
+        {
+          "id": "BACKFLIP",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "LEG_SWEEP",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "LEG_SWEEP",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "FOOTWORK",
+          "upgrade": 0
+        },
+        {
+          "id": "SLICE",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "SLICE",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "e9821a089d8ef210960369c5711e250b008d822ca82e0b6658a65d7757a5fe7c",
+    "id": "1fb6ba0118af60f3d339ed2284bd9c7e83390d2395127c5179903487c9350c65",
+    "replica": 1,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Silent",
+      "dexterity",
+      "CORPSE_SLUGS_WEAK"
+    ]
+  },
+  {
+    "case": "opening-burst-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "opening-burst",
+    "profile": "early",
+    "case_seed": 12266891654366579428,
+    "tags": [
+      "opening_damage",
+      "draw"
+    ],
+    "parameters": {
+      "deck_size": 14,
+      "upgrades": 0,
+      "hp_percent": 71,
+      "starter_relic": true,
+      "potion": null
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Silent",
+      "ascension": 0,
+      "act": 1,
+      "act_variant": "OVERGROWTH",
+      "encounter": "NIBBITS_WEAK",
+      "seed": "3A6456D6E0C7",
+      "hp": 49,
+      "max_hp": 70,
+      "relics": [
+        "RING_OF_THE_SNAKE"
+      ],
+      "potions": [
+        null,
+        null,
+        null
+      ],
+      "deck": [
+        {
+          "id": "DAGGER_SPRAY",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "BACKSTAB",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "BACKSTAB",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DODGE_AND_ROLL",
+          "upgrade": 0
+        },
+        {
+          "id": "SURVIVOR",
+          "upgrade": 0
+        },
+        {
+          "id": "DODGE_AND_ROLL",
+          "upgrade": 0
+        },
+        {
+          "id": "PREDATOR",
+          "upgrade": 0
+        },
+        {
+          "id": "PREDATOR",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "f890765558a8a8934e504cdb72ce518ee2f712d522f64b7f3d4fcdd3b34b696d",
+    "id": "762c94fe76519a6f0f697bf58f93af4d2be32b65ab752b87f87107da798b819e",
+    "replica": 1,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Silent",
+      "opening-burst",
+      "NIBBITS_WEAK"
+    ]
+  },
+  {
+    "case": "strength-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "strength",
+    "profile": "early",
+    "case_seed": 10619957621966650589,
+    "tags": [
+      "strength",
+      "multi_hit"
+    ],
+    "parameters": {
+      "deck_size": 15,
+      "upgrades": 0,
+      "hp_percent": 85,
+      "starter_relic": true,
+      "potion": "FLEX_POTION"
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Ironclad",
+      "ascension": 0,
+      "act": 2,
+      "act_variant": "HIVE",
+      "encounter": "BOWLBUGS_WEAK",
+      "seed": "0234EC966B33",
+      "hp": 68,
+      "max_hp": 80,
+      "relics": [
+        "BURNING_BLOOD"
+      ],
+      "potions": [
+        null,
+        null,
+        "FLEX_POTION"
+      ],
+      "deck": [
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "SWORD_BOOMERANG",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "INFLAME",
+          "upgrade": 0
+        },
+        {
+          "id": "IRON_WAVE",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "BASH",
+          "upgrade": 0
+        },
+        {
+          "id": "TWIN_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "TWIN_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "SWORD_BOOMERANG",
+          "upgrade": 0
+        },
+        {
+          "id": "SHRUG_IT_OFF",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "49294721abfe6be23f56913a36e554a24a459a5be45de9273dc0fea5ed5c946e",
+    "id": "66b04260224f8c11d0d85f2fc9f9136e8328da6cadc31eb0401431e2d7a3623e",
+    "replica": 2,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Ironclad",
+      "strength",
+      "BOWLBUGS_WEAK"
+    ]
+  },
+  {
+    "case": "block-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "block",
+    "profile": "early",
+    "case_seed": 3737849083907578508,
+    "tags": [
+      "block",
+      "block_to_damage"
+    ],
+    "parameters": {
+      "deck_size": 13,
+      "upgrades": 1,
+      "hp_percent": 74,
+      "starter_relic": true,
+      "potion": "FLEX_POTION"
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Ironclad",
+      "ascension": 0,
+      "act": 1,
+      "act_variant": "UNDERDOCKS",
+      "encounter": "CORPSE_SLUGS_WEAK",
+      "seed": "23D1D8184DAF",
+      "hp": 59,
+      "max_hp": 80,
+      "relics": [
+        "BURNING_BLOOD"
+      ],
+      "potions": [
+        null,
+        "FLEX_POTION",
+        null
+      ],
+      "deck": [
+        {
+          "id": "FLAME_BARRIER",
+          "upgrade": 0
+        },
+        {
+          "id": "IRON_WAVE",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "POMMEL_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "BODY_SLAM",
+          "upgrade": 0
+        },
+        {
+          "id": "SHRUG_IT_OFF",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "BASH",
+          "upgrade": 0
+        },
+        {
+          "id": "IRON_WAVE",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 1
+        }
+      ]
+    },
+    "spec_sha256": "b9b9593ee57d4cd8d81886e19a5fc0cf4b491c3a727ec51ad22e4dcb29dff42b",
+    "id": "895811db25745a596ef4101eddb538ed95b582089d181b1a4e364960a29db9e4",
+    "replica": 2,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Ironclad",
+      "block",
+      "CORPSE_SLUGS_WEAK"
+    ]
+  },
+  {
+    "case": "poison-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "poison",
+    "profile": "early",
+    "case_seed": 15110846601911844869,
+    "tags": [
+      "poison"
+    ],
+    "parameters": {
+      "deck_size": 15,
+      "upgrades": 1,
+      "hp_percent": 80,
+      "starter_relic": true,
+      "potion": null
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Silent",
+      "ascension": 0,
+      "act": 1,
+      "act_variant": "OVERGROWTH",
+      "encounter": "NIBBITS_WEAK",
+      "seed": "383F694887F7",
+      "hp": 56,
+      "max_hp": 70,
+      "relics": [
+        "RING_OF_THE_SNAKE"
+      ],
+      "potions": [
+        null,
+        null,
+        null
+      ],
+      "deck": [
+        {
+          "id": "NEUTRALIZE",
+          "upgrade": 0
+        },
+        {
+          "id": "BOUNCING_FLASK",
+          "upgrade": 0
+        },
+        {
+          "id": "DAGGER_SPRAY",
+          "upgrade": 0
+        },
+        {
+          "id": "BACKFLIP",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "POISONED_STAB",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DEADLY_POISON",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "POISONED_STAB",
+          "upgrade": 1
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "SURVIVOR",
+          "upgrade": 0
+        },
+        {
+          "id": "DODGE_AND_ROLL",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "69ce1e4b123a5002b1920ea354b6a5930426d941f0e52e9880fa3b86586c00c4",
+    "id": "a85bf9f7e504cb280c8ccebae816a2bb6446326ca28bacca9c9bfa813f3bd520",
+    "replica": 2,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Silent",
+      "poison",
+      "NIBBITS_WEAK"
+    ]
+  },
+  {
+    "case": "shiv-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "shiv",
+    "profile": "early",
+    "case_seed": 12295212941957651606,
+    "tags": [
+      "shiv",
+      "scaling"
+    ],
+    "parameters": {
+      "deck_size": 15,
+      "upgrades": 0,
+      "hp_percent": 74,
+      "starter_relic": true,
+      "potion": null
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Silent",
+      "ascension": 0,
+      "act": 1,
+      "act_variant": "OVERGROWTH",
+      "encounter": "SHRINKER_BEETLE_WEAK",
+      "seed": "E4EE5C61087A",
+      "hp": 51,
+      "max_hp": 70,
+      "relics": [
+        "RING_OF_THE_SNAKE"
+      ],
+      "potions": [
+        null,
+        null,
+        null
+      ],
+      "deck": [
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "BACKFLIP",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DAGGER_SPRAY",
+          "upgrade": 0
+        },
+        {
+          "id": "ACCURACY",
+          "upgrade": 0
+        },
+        {
+          "id": "SURVIVOR",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "SLICE",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "SLICE",
+          "upgrade": 0
+        },
+        {
+          "id": "BLADE_DANCE",
+          "upgrade": 0
+        },
+        {
+          "id": "DODGE_AND_ROLL",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "d0a1be8e167629f58b2288a1386772abc6a8b7b242fd94d9c7c2cec89343c730",
+    "id": "76815565447b2628cae5f7973f5bfb225de5c8d9c6f823a8b6424fab5d2a4471",
+    "replica": 2,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Silent",
+      "shiv",
+      "SHRINKER_BEETLE_WEAK"
+    ]
+  },
+  {
+    "case": "vulnerable-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "vulnerable",
+    "profile": "early",
+    "case_seed": 7240942871167857490,
+    "tags": [
+      "vulnerable",
+      "area_damage"
+    ],
+    "parameters": {
+      "deck_size": 13,
+      "upgrades": 1,
+      "hp_percent": 77,
+      "starter_relic": true,
+      "potion": "FLEX_POTION"
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Ironclad",
+      "ascension": 0,
+      "act": 2,
+      "act_variant": "HIVE",
+      "encounter": "BOWLBUGS_WEAK",
+      "seed": "EC9F28DBD453",
+      "hp": 61,
+      "max_hp": 80,
+      "relics": [
+        "BURNING_BLOOD"
+      ],
+      "potions": [
+        null,
+        null,
+        "FLEX_POTION"
+      ],
+      "deck": [
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "THUNDERCLAP",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "FLAME_BARRIER",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "SHRUG_IT_OFF",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 1
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "THUNDERCLAP",
+          "upgrade": 0
+        },
+        {
+          "id": "UPPERCUT",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "POMMEL_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "BASH",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "ec49f1e96f603fa3d5278e8a740b18186dcc4e3d252bc7383f595e3e65576090",
+    "id": "5143d28b6b3df050a8d7a79a7e45ff55fab7fb5a4502990c96317763e449385c",
+    "replica": 2,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Ironclad",
+      "vulnerable",
+      "BOWLBUGS_WEAK"
+    ]
+  },
+  {
+    "case": "self-hp-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "self-hp",
+    "profile": "early",
+    "case_seed": 17711548851893646808,
+    "tags": [
+      "self_damage",
+      "strength"
+    ],
+    "parameters": {
+      "deck_size": 15,
+      "upgrades": 1,
+      "hp_percent": 85,
+      "starter_relic": true,
+      "potion": null
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Ironclad",
+      "ascension": 0,
+      "act": 1,
+      "act_variant": "UNDERDOCKS",
+      "encounter": "CORPSE_SLUGS_WEAK",
+      "seed": "7E42401A12AB",
+      "hp": 68,
+      "max_hp": 80,
+      "relics": [
+        "BURNING_BLOOD"
+      ],
+      "potions": [
+        null,
+        null,
+        null
+      ],
+      "deck": [
+        {
+          "id": "BASH",
+          "upgrade": 0
+        },
+        {
+          "id": "BLOOD_WALL",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "HEMOKINESIS",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "TWIN_STRIKE",
+          "upgrade": 1
+        },
+        {
+          "id": "TWIN_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "HEMOKINESIS",
+          "upgrade": 0
+        },
+        {
+          "id": "IRON_WAVE",
+          "upgrade": 0
+        },
+        {
+          "id": "RUPTURE",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "a244fa98a7793d2ece38d70a6904967820944b233300150e80f4b99e5dfa5814",
+    "id": "26653743e04f9abab431cbc1a90f5f4b00e55403cfcf6d34ac208bfb52ba01ff",
+    "replica": 2,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Ironclad",
+      "self-hp",
+      "CORPSE_SLUGS_WEAK"
+    ]
+  },
+  {
+    "case": "dexterity-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "dexterity",
+    "profile": "early",
+    "case_seed": 14001640455453341977,
+    "tags": [
+      "dexterity",
+      "block"
+    ],
+    "parameters": {
+      "deck_size": 15,
+      "upgrades": 1,
+      "hp_percent": 71,
+      "starter_relic": true,
+      "potion": null
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Silent",
+      "ascension": 0,
+      "act": 1,
+      "act_variant": "OVERGROWTH",
+      "encounter": "NIBBITS_WEAK",
+      "seed": "4B4E18FE17B1",
+      "hp": 49,
+      "max_hp": 70,
+      "relics": [
+        "RING_OF_THE_SNAKE"
+      ],
+      "potions": [
+        null,
+        null,
+        null
+      ],
+      "deck": [
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "SLICE",
+          "upgrade": 0
+        },
+        {
+          "id": "DAGGER_SPRAY",
+          "upgrade": 0
+        },
+        {
+          "id": "PREDATOR",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 1
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "LEG_SWEEP",
+          "upgrade": 0
+        },
+        {
+          "id": "SURVIVOR",
+          "upgrade": 0
+        },
+        {
+          "id": "BACKFLIP",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "FOOTWORK",
+          "upgrade": 0
+        },
+        {
+          "id": "BACKFLIP",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "32d31e3ad10bbd5c87cbd46f6433b1b25acd348061c8a07ab119919b2817ab62",
+    "id": "f13b99eb1705915790ae2b756510c7b757541e571175f5556f93d5a782e8311b",
+    "replica": 2,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Silent",
+      "dexterity",
+      "NIBBITS_WEAK"
+    ]
+  },
+  {
+    "case": "opening-burst-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "opening-burst",
+    "profile": "early",
+    "case_seed": 6743025286850903022,
+    "tags": [
+      "opening_damage",
+      "draw"
+    ],
+    "parameters": {
+      "deck_size": 15,
+      "upgrades": 1,
+      "hp_percent": 73,
+      "starter_relic": true,
+      "potion": "FLEX_POTION"
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Silent",
+      "ascension": 0,
+      "act": 1,
+      "act_variant": "OVERGROWTH",
+      "encounter": "SHRINKER_BEETLE_WEAK",
+      "seed": "A1B517E1DB33",
+      "hp": 51,
+      "max_hp": 70,
+      "relics": [
+        "RING_OF_THE_SNAKE"
+      ],
+      "potions": [
+        null,
+        null,
+        "FLEX_POTION"
+      ],
+      "deck": [
+        {
+          "id": "DAGGER_SPRAY",
+          "upgrade": 0
+        },
+        {
+          "id": "BACKFLIP",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 1
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "BACKSTAB",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "BACKSTAB",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFLECT",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "PREDATOR",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "PREDATOR",
+          "upgrade": 0
+        },
+        {
+          "id": "SURVIVOR",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "1b824869bd481d4ee4419f3b315817e1464d8958f1657b228f78e27cfa98f27f",
+    "id": "abed3a4dea93a3439af998e4bfb8bf4d3f5ecfd6db79fa3b26151eaf8c716899",
+    "replica": 2,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Silent",
+      "opening-burst",
+      "SHRINKER_BEETLE_WEAK"
+    ]
+  },
+  {
+    "case": "strength-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "strength",
+    "profile": "early",
+    "case_seed": 8862868851183743988,
+    "tags": [
+      "strength",
+      "multi_hit"
+    ],
+    "parameters": {
+      "deck_size": 15,
+      "upgrades": 0,
+      "hp_percent": 83,
+      "starter_relic": true,
+      "potion": null
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Ironclad",
+      "ascension": 0,
+      "act": 2,
+      "act_variant": "HIVE",
+      "encounter": "BOWLBUGS_WEAK",
+      "seed": "5B066B92F097",
+      "hp": 66,
+      "max_hp": 80,
+      "relics": [
+        "BURNING_BLOOD"
+      ],
+      "potions": [
+        null,
+        null,
+        null
+      ],
+      "deck": [
+        {
+          "id": "SHRUG_IT_OFF",
+          "upgrade": 0
+        },
+        {
+          "id": "TWIN_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "IRON_WAVE",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "BASH",
+          "upgrade": 0
+        },
+        {
+          "id": "POMMEL_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "INFLAME",
+          "upgrade": 0
+        },
+        {
+          "id": "TWIN_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "SWORD_BOOMERANG",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "0d916ab889cb61f35244be5f03b581a86065b85084e0d74ace0b7ab4faa82cf6",
+    "id": "f91718271b620ab52462e90e9964dcc5a26ffcb81b1684854591d10e6e2be837",
+    "replica": 3,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Ironclad",
+      "strength",
+      "BOWLBUGS_WEAK"
+    ]
+  },
+  {
+    "case": "block-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "block",
+    "profile": "early",
+    "case_seed": 18425252806140205065,
+    "tags": [
+      "block",
+      "block_to_damage"
+    ],
+    "parameters": {
+      "deck_size": 13,
+      "upgrades": 0,
+      "hp_percent": 73,
+      "starter_relic": true,
+      "potion": "FLEX_POTION"
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Ironclad",
+      "ascension": 0,
+      "act": 1,
+      "act_variant": "UNDERDOCKS",
+      "encounter": "CORPSE_SLUGS_WEAK",
+      "seed": "6C3EC384B38D",
+      "hp": 58,
+      "max_hp": 80,
+      "relics": [
+        "BURNING_BLOOD"
+      ],
+      "potions": [
+        null,
+        "FLEX_POTION",
+        null
+      ],
+      "deck": [
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "SHRUG_IT_OFF",
+          "upgrade": 0
+        },
+        {
+          "id": "BASH",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "BODY_SLAM",
+          "upgrade": 0
+        },
+        {
+          "id": "SHRUG_IT_OFF",
+          "upgrade": 0
+        },
+        {
+          "id": "FLAME_BARRIER",
+          "upgrade": 0
+        },
+        {
+          "id": "BODY_SLAM",
+          "upgrade": 0
+        },
+        {
+          "id": "POMMEL_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "0c285a25ea65841e236a595ceb4ddc2c9c880bd9acb858eaaae82e160a372e8a",
+    "id": "cd4d916a90fdc566a4aff4d6f593dc37be6f48787adae7c409039b2b7da76aeb",
+    "replica": 3,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Ironclad",
+      "block",
+      "CORPSE_SLUGS_WEAK"
+    ]
+  },
+  {
+    "case": "poison-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "poison",
+    "profile": "early",
+    "case_seed": 3140619996995159266,
+    "tags": [
+      "poison"
+    ],
+    "parameters": {
+      "deck_size": 15,
+      "upgrades": 0,
+      "hp_percent": 85,
+      "starter_relic": true,
+      "potion": null
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Silent",
+      "ascension": 0,
+      "act": 1,
+      "act_variant": "OVERGROWTH",
+      "encounter": "NIBBITS_WEAK",
+      "seed": "BF3BDFA87881",
+      "hp": 59,
+      "max_hp": 70,
+      "relics": [
+        "RING_OF_THE_SNAKE"
+      ],
+      "potions": [
+        null,
+        null,
+        null
+      ],
+      "deck": [
+        {
+          "id": "DAGGER_SPRAY",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "SURVIVOR",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFLECT",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "POISONED_STAB",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFLECT",
+          "upgrade": 0
+        },
+        {
+          "id": "BOUNCING_FLASK",
+          "upgrade": 0
+        },
+        {
+          "id": "NEUTRALIZE",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DEADLY_POISON",
+          "upgrade": 0
+        },
+        {
+          "id": "DAGGER_SPRAY",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "7321f981de65d51391c99df8e96bd389447b22866106b5fbfb0378402d75fd80",
+    "id": "458fb6785d27e736776628bb7ca727ddc9df7eaeed1e1621f13c5b1b3227d6cf",
+    "replica": 3,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Silent",
+      "poison",
+      "NIBBITS_WEAK"
+    ]
+  },
+  {
+    "case": "shiv-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "shiv",
+    "profile": "early",
+    "case_seed": 4500503466540468194,
+    "tags": [
+      "shiv",
+      "scaling"
+    ],
+    "parameters": {
+      "deck_size": 13,
+      "upgrades": 1,
+      "hp_percent": 84,
+      "starter_relic": true,
+      "potion": "FLEX_POTION"
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Silent",
+      "ascension": 0,
+      "act": 1,
+      "act_variant": "OVERGROWTH",
+      "encounter": "SHRINKER_BEETLE_WEAK",
+      "seed": "821B1FECED2F",
+      "hp": 58,
+      "max_hp": 70,
+      "relics": [
+        "RING_OF_THE_SNAKE"
+      ],
+      "potions": [
+        null,
+        "FLEX_POTION",
+        null
+      ],
+      "deck": [
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DODGE_AND_ROLL",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 1
+        },
+        {
+          "id": "ACCURACY",
+          "upgrade": 0
+        },
+        {
+          "id": "SURVIVOR",
+          "upgrade": 0
+        },
+        {
+          "id": "DAGGER_SPRAY",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "SLICE",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "BLADE_DANCE",
+          "upgrade": 0
+        },
+        {
+          "id": "DODGE_AND_ROLL",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "0b41c04b30562f585acabe431760c2e3af63f68a27d0f37d92bad3ae6d0502b8",
+    "id": "bb078080cd6c05a6c0eeace58100ebee916e2ca535623c680e11942e087d1586",
+    "replica": 3,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Silent",
+      "shiv",
+      "SHRINKER_BEETLE_WEAK"
+    ]
+  },
+  {
+    "case": "vulnerable-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "vulnerable",
+    "profile": "early",
+    "case_seed": 8311341145025375603,
+    "tags": [
+      "vulnerable",
+      "area_damage"
+    ],
+    "parameters": {
+      "deck_size": 13,
+      "upgrades": 0,
+      "hp_percent": 78,
+      "starter_relic": true,
+      "potion": "FLEX_POTION"
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Ironclad",
+      "ascension": 0,
+      "act": 2,
+      "act_variant": "HIVE",
+      "encounter": "BOWLBUGS_WEAK",
+      "seed": "5BC6FBE25D7A",
+      "hp": 62,
+      "max_hp": 80,
+      "relics": [
+        "BURNING_BLOOD"
+      ],
+      "potions": [
+        "FLEX_POTION",
+        null,
+        null
+      ],
+      "deck": [
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "THUNDERCLAP",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "BASH",
+          "upgrade": 0
+        },
+        {
+          "id": "UPPERCUT",
+          "upgrade": 0
+        },
+        {
+          "id": "FLAME_BARRIER",
+          "upgrade": 0
+        },
+        {
+          "id": "IRON_WAVE",
+          "upgrade": 0
+        },
+        {
+          "id": "UPPERCUT",
+          "upgrade": 0
+        },
+        {
+          "id": "POMMEL_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "b0a40ec096c938004f5ed19be1b9bb37d2693db70fbb37289554120fcc5c6262",
+    "id": "fd6fd37fbc0bb00e6ba522dd8060cabe214eff8079e8a5206ce45ba720b79d1d",
+    "replica": 3,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Ironclad",
+      "vulnerable",
+      "BOWLBUGS_WEAK"
+    ]
+  },
+  {
+    "case": "self-hp-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "self-hp",
+    "profile": "early",
+    "case_seed": 13515188425969023509,
+    "tags": [
+      "self_damage",
+      "strength"
+    ],
+    "parameters": {
+      "deck_size": 15,
+      "upgrades": 1,
+      "hp_percent": 75,
+      "starter_relic": true,
+      "potion": null
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Ironclad",
+      "ascension": 0,
+      "act": 1,
+      "act_variant": "UNDERDOCKS",
+      "encounter": "CORPSE_SLUGS_WEAK",
+      "seed": "3923E640DF03",
+      "hp": 60,
+      "max_hp": 80,
+      "relics": [
+        "BURNING_BLOOD"
+      ],
+      "potions": [
+        null,
+        null,
+        null
+      ],
+      "deck": [
+        {
+          "id": "BLOOD_WALL",
+          "upgrade": 1
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "SHRUG_IT_OFF",
+          "upgrade": 0
+        },
+        {
+          "id": "TWIN_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "HEMOKINESIS",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "RUPTURE",
+          "upgrade": 0
+        },
+        {
+          "id": "HEMOKINESIS",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "BASH",
+          "upgrade": 0
+        },
+        {
+          "id": "TWIN_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "9b3458851525466cca2a1d168d74ca318aa6dd3aae1a635b25b3fc0e27b91748",
+    "id": "c5cb77422a3717f9551546391d22126984edd4b886effb56feab025dd66dee79",
+    "replica": 3,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Ironclad",
+      "self-hp",
+      "CORPSE_SLUGS_WEAK"
+    ]
+  },
+  {
+    "case": "dexterity-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "dexterity",
+    "profile": "early",
+    "case_seed": 7406233361037261254,
+    "tags": [
+      "dexterity",
+      "block"
+    ],
+    "parameters": {
+      "deck_size": 14,
+      "upgrades": 0,
+      "hp_percent": 81,
+      "starter_relic": true,
+      "potion": null
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Silent",
+      "ascension": 0,
+      "act": 1,
+      "act_variant": "OVERGROWTH",
+      "encounter": "NIBBITS_WEAK",
+      "seed": "1C53CCA11E16",
+      "hp": 56,
+      "max_hp": 70,
+      "relics": [
+        "RING_OF_THE_SNAKE"
+      ],
+      "potions": [
+        null,
+        null,
+        null
+      ],
+      "deck": [
+        {
+          "id": "FOOTWORK",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "LEG_SWEEP",
+          "upgrade": 0
+        },
+        {
+          "id": "PREDATOR",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFLECT",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "LEG_SWEEP",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "SLICE",
+          "upgrade": 0
+        },
+        {
+          "id": "SURVIVOR",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DAGGER_SPRAY",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "f55f495d1b09e3f9c73e5433c1fea5e395a8d6facbe621e9aa37b0f84d866a88",
+    "id": "e0cc37f66dcfd4ae85c7a7d6938a4ebbfbbda6371c5da2cb1b265297b69cfd8b",
+    "replica": 3,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Silent",
+      "dexterity",
+      "NIBBITS_WEAK"
+    ]
+  },
+  {
+    "case": "opening-burst-early",
+    "generator": "m1-s2b-v1",
+    "generator_seed": 260219,
+    "rule": "opening-burst",
+    "profile": "early",
+    "case_seed": 13433706323636386933,
+    "tags": [
+      "opening_damage",
+      "draw"
+    ],
+    "parameters": {
+      "deck_size": 14,
+      "upgrades": 1,
+      "hp_percent": 72,
+      "starter_relic": true,
+      "potion": "FLEX_POTION"
+    },
+    "spec": {
+      "schema": 2,
+      "character": "Silent",
+      "ascension": 0,
+      "act": 1,
+      "act_variant": "OVERGROWTH",
+      "encounter": "SHRINKER_BEETLE_WEAK",
+      "seed": "5E1CF43816D0",
+      "hp": 50,
+      "max_hp": 70,
+      "relics": [
+        "RING_OF_THE_SNAKE"
+      ],
+      "potions": [
+        null,
+        "FLEX_POTION",
+        null
+      ],
+      "deck": [
+        {
+          "id": "DODGE_AND_ROLL",
+          "upgrade": 0
+        },
+        {
+          "id": "BACKSTAB",
+          "upgrade": 0
+        },
+        {
+          "id": "SURVIVOR",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DAGGER_SPRAY",
+          "upgrade": 0
+        },
+        {
+          "id": "PREDATOR",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "BACKFLIP",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "BACKSTAB",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "PREDATOR",
+          "upgrade": 1
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_SILENT",
+          "upgrade": 0
+        }
+      ]
+    },
+    "spec_sha256": "2e3aac6bcadb0729cefc6e11cd00acf2218bbc51ab971eacf89998b901db5b91",
+    "id": "2f816c5a296fbefdd9c0fb388a885da4f6fcc1a8fa1751153571dd8cd4f831c8",
+    "replica": 3,
+    "synthetic": true,
+    "native_reachable": "unknown",
+    "split": "development",
+    "family": [
+      "Silent",
+      "opening-burst",
+      "SHRINKER_BEETLE_WEAK"
+    ]
+  }
+]
