@@ -1,0 +1,1346 @@
+{
+  "generations": [
+    {
+      "phase": "generation-1",
+      "methods": {
+        "cem": {
+          "id": "cem-1-5",
+          "training": {
+            "n": 12,
+            "missing": 0,
+            "wins": 8,
+            "hp_sum": 4.4875,
+            "stops": {
+              "predicted_win": 8,
+              "death": 4
+            }
+          },
+          "selection": {
+            "n": 24,
+            "missing": 0,
+            "wins": 19,
+            "hp_sum": 8.198214285714286,
+            "stops": {
+              "predicted_win": 19,
+              "death": 5
+            }
+          },
+          "survival_champion": "cem-1-5",
+          "changed_ranks": 8,
+          "totals": {
+            "predicted_win": 85,
+            "death": 59
+          }
+        },
+        "random": {
+          "id": "random-1-5",
+          "training": {
+            "n": 12,
+            "missing": 0,
+            "wins": 8,
+            "hp_sum": 4.4875,
+            "stops": {
+              "predicted_win": 8,
+              "death": 4
+            }
+          },
+          "selection": {
+            "n": 24,
+            "missing": 0,
+            "wins": 19,
+            "hp_sum": 8.198214285714286,
+            "stops": {
+              "predicted_win": 19,
+              "death": 5
+            }
+          },
+          "survival_champion": "random-1-5",
+          "changed_ranks": 8,
+          "totals": {
+            "predicted_win": 85,
+            "death": 59
+          }
+        }
+      },
+      "archived_fixed": {
+        "False": {
+          "n": 12,
+          "stops": {
+            "predicted_win": 7,
+            "death": 5
+          },
+          "complete": 12,
+          "coverage": 1.0,
+          "unconditional_win": 0.5833333333333334,
+          "conditional_win": 0.5833333333333334,
+          "hp_p50": 53,
+          "normalized_hp_p50": 0.6625,
+          "loss_p50": 19.5,
+          "actions_p50": 18.0,
+          "transitions_p50": 18.0
+        },
+        "True": {
+          "n": 12,
+          "stops": {
+            "predicted_win": 6,
+            "death": 6
+          },
+          "complete": 12,
+          "coverage": 1.0,
+          "unconditional_win": 0.5,
+          "conditional_win": 0.5,
+          "hp_p50": 47.5,
+          "normalized_hp_p50": 0.59375,
+          "loss_p50": 23.0,
+          "actions_p50": 25.5,
+          "transitions_p50": 25.5
+        }
+      }
+    },
+    {
+      "phase": "generation-2",
+      "methods": {
+        "cem": {
+          "id": "cem-2-9",
+          "training": {
+            "n": 12,
+            "missing": 0,
+            "wins": 7,
+            "hp_sum": 3.8107142857142855,
+            "stops": {
+              "death": 5,
+              "predicted_win": 7
+            }
+          },
+          "selection": {
+            "n": 24,
+            "missing": 0,
+            "wins": 18,
+            "hp_sum": 8.10892857142857,
+            "stops": {
+              "predicted_win": 18,
+              "death": 6
+            }
+          },
+          "survival_champion": "cem-2-8",
+          "changed_ranks": 12,
+          "totals": {
+            "death": 69,
+            "predicted_win": 75
+          }
+        },
+        "random": {
+          "id": "random-2-12",
+          "training": {
+            "n": 12,
+            "missing": 0,
+            "wins": 7,
+            "hp_sum": 3.8232142857142857,
+            "stops": {
+              "death": 5,
+              "predicted_win": 7
+            }
+          },
+          "selection": {
+            "n": 24,
+            "missing": 0,
+            "wins": 19,
+            "hp_sum": 8.482142857142858,
+            "stops": {
+              "predicted_win": 19,
+              "death": 5
+            }
+          },
+          "survival_champion": "random-2-11",
+          "changed_ranks": 10,
+          "totals": {
+            "death": 70,
+            "predicted_win": 74
+          }
+        }
+      },
+      "archived_fixed": {
+        "False": {
+          "n": 12,
+          "stops": {
+            "predicted_win": 7,
+            "death": 5
+          },
+          "complete": 12,
+          "coverage": 1.0,
+          "unconditional_win": 0.5833333333333334,
+          "conditional_win": 0.5833333333333334,
+          "hp_p50": 39,
+          "normalized_hp_p50": 0.5,
+          "loss_p50": 22.0,
+          "actions_p50": 14.0,
+          "transitions_p50": 14.0
+        },
+        "True": {
+          "n": 12,
+          "stops": {
+            "predicted_win": 6,
+            "death": 6
+          },
+          "complete": 12,
+          "coverage": 1.0,
+          "unconditional_win": 0.5,
+          "conditional_win": 0.5,
+          "hp_p50": 41.0,
+          "normalized_hp_p50": 0.5464285714285715,
+          "loss_p50": 20.5,
+          "actions_p50": 25.0,
+          "transitions_p50": 25.0
+        }
+      }
+    },
+    {
+      "phase": "generation-3",
+      "methods": {
+        "cem": {
+          "id": "cem-3-7",
+          "training": {
+            "n": 12,
+            "missing": 0,
+            "wins": 8,
+            "hp_sum": 3.564285714285714,
+            "stops": {
+              "predicted_win": 8,
+              "death": 4
+            }
+          },
+          "selection": {
+            "n": 24,
+            "missing": 0,
+            "wins": 19,
+            "hp_sum": 8.423214285714286,
+            "stops": {
+              "predicted_win": 19,
+              "death": 5
+            }
+          },
+          "survival_champion": "cem-3-1",
+          "changed_ranks": 8,
+          "totals": {
+            "predicted_win": 89,
+            "death": 55
+          }
+        },
+        "random": {
+          "id": "random-3-7",
+          "training": {
+            "n": 12,
+            "missing": 0,
+            "wins": 8,
+            "hp_sum": 3.4892857142857143,
+            "stops": {
+              "predicted_win": 8,
+              "death": 4
+            }
+          },
+          "selection": {
+            "n": 24,
+            "missing": 0,
+            "wins": 19,
+            "hp_sum": 8.073214285714286,
+            "stops": {
+              "predicted_win": 19,
+              "death": 5
+            }
+          },
+          "survival_champion": "random-3-7",
+          "changed_ranks": 11,
+          "totals": {
+            "death": 61,
+            "predicted_win": 83
+          }
+        }
+      },
+      "archived_fixed": {
+        "False": {
+          "n": 12,
+          "stops": {
+            "death": 6,
+            "predicted_win": 6
+          },
+          "complete": 12,
+          "coverage": 1.0,
+          "unconditional_win": 0.5,
+          "conditional_win": 0.5,
+          "hp_p50": 35.0,
+          "normalized_hp_p50": 0.5,
+          "loss_p50": 21.5,
+          "actions_p50": 15.5,
+          "transitions_p50": 15.5
+        },
+        "True": {
+          "n": 12,
+          "stops": {
+            "death": 4,
+            "predicted_win": 8
+          },
+          "complete": 12,
+          "coverage": 1.0,
+          "unconditional_win": 0.6666666666666666,
+          "conditional_win": 0.6666666666666666,
+          "hp_p50": 34.5,
+          "normalized_hp_p50": 0.46785714285714286,
+          "loss_p50": 11.0,
+          "actions_p50": 29.5,
+          "transitions_p50": 29.5
+        }
+      }
+    },
+    {
+      "phase": "generation-4",
+      "methods": {
+        "cem": {
+          "id": "cem-4-11",
+          "training": {
+            "n": 12,
+            "missing": 0,
+            "wins": 7,
+            "hp_sum": 2.930357142857143,
+            "stops": {
+              "predicted_win": 7,
+              "death": 5
+            }
+          },
+          "selection": {
+            "n": 24,
+            "missing": 0,
+            "wins": 19,
+            "hp_sum": 8.557142857142857,
+            "stops": {
+              "predicted_win": 19,
+              "death": 5
+            }
+          },
+          "survival_champion": "cem-4-11",
+          "changed_ranks": 11,
+          "totals": {
+            "death": 71,
+            "predicted_win": 73
+          }
+        },
+        "random": {
+          "id": "random-4-12",
+          "training": {
+            "n": 12,
+            "missing": 0,
+            "wins": 7,
+            "hp_sum": 2.7303571428571427,
+            "stops": {
+              "predicted_win": 7,
+              "death": 5
+            }
+          },
+          "selection": {
+            "n": 24,
+            "missing": 0,
+            "wins": 19,
+            "hp_sum": 8.553571428571429,
+            "stops": {
+              "predicted_win": 19,
+              "death": 5
+            }
+          },
+          "survival_champion": "random-4-12",
+          "changed_ranks": 11,
+          "totals": {
+            "death": 71,
+            "predicted_win": 73
+          }
+        }
+      },
+      "archived_fixed": {
+        "False": {
+          "n": 12,
+          "stops": {
+            "predicted_win": 6,
+            "death": 6
+          },
+          "complete": 12,
+          "coverage": 1.0,
+          "unconditional_win": 0.5,
+          "conditional_win": 0.5,
+          "hp_p50": 31.5,
+          "normalized_hp_p50": 0.42857142857142855,
+          "loss_p50": 22.0,
+          "actions_p50": 12.0,
+          "transitions_p50": 12.0
+        },
+        "True": {
+          "n": 12,
+          "stops": {
+            "predicted_win": 6,
+            "death": 6
+          },
+          "complete": 12,
+          "coverage": 1.0,
+          "unconditional_win": 0.5,
+          "conditional_win": 0.5,
+          "hp_p50": 30.0,
+          "normalized_hp_p50": 0.3991071428571429,
+          "loss_p50": 21.5,
+          "actions_p50": 25.5,
+          "transitions_p50": 25.5
+        }
+      }
+    }
+  ],
+  "performance": {
+    "generation-1": {
+      "n": 288,
+      "complete": 288,
+      "wall_ms": 75332.87109993398,
+      "complete_per_second": 3.82303230707813,
+      "total_policy_ms": 410.20460054278374,
+      "total_episode_ms": 50963.188900379464,
+      "policy_us_per_action": 71.56395682881782,
+      "peak_worker_bytes": 151691264,
+      "root_launch_ms": 3545.5521000549197,
+      "root_init_ms": 16140.265899710357,
+      "root_recycle_ms": 747.9268005117774
+    },
+    "generation-2": {
+      "n": 288,
+      "complete": 288,
+      "wall_ms": 81944.52139991336,
+      "complete_per_second": 3.514572970589154,
+      "total_policy_ms": 457.663806155324,
+      "total_episode_ms": 55693.93620011397,
+      "policy_us_per_action": 77.38650763532702,
+      "peak_worker_bytes": 144105472,
+      "root_launch_ms": 3331.8668997380883,
+      "root_init_ms": 16960.099800489843,
+      "root_recycle_ms": 766.3221994880587
+    },
+    "generation-3": {
+      "n": 288,
+      "complete": 288,
+      "wall_ms": 80413.13869995065,
+      "complete_per_second": 3.581504274750772,
+      "total_policy_ms": 422.93910682201385,
+      "total_episode_ms": 52773.700198857114,
+      "policy_us_per_action": 69.53947826734854,
+      "peak_worker_bytes": 139546624,
+      "root_launch_ms": 3625.8926999289542,
+      "root_init_ms": 17520.40660008788,
+      "root_recycle_ms": 759.5637000631541
+    },
+    "generation-4": {
+      "n": 288,
+      "complete": 288,
+      "wall_ms": 82747.46119999327,
+      "complete_per_second": 3.4804693198251675,
+      "total_policy_ms": 444.69670858234167,
+      "total_episode_ms": 54505.336499074474,
+      "policy_us_per_action": 78.20905884318356,
+      "peak_worker_bytes": 137609216,
+      "root_launch_ms": 3729.4642999768257,
+      "root_init_ms": 16679.108399432153,
+      "root_recycle_ms": 768.9366003032774
+    },
+    "selection": {
+      "n": 240,
+      "complete": 240,
+      "wall_ms": 113273.70089991018,
+      "complete_per_second": 2.1187618846502287,
+      "total_policy_ms": 374.71489422023296,
+      "total_episode_ms": 59608.65500057116,
+      "policy_us_per_action": 66.21574380990157,
+      "peak_worker_bytes": 140689408,
+      "root_launch_ms": 6714.196000713855,
+      "root_init_ms": 32616.856599459425,
+      "root_recycle_ms": 1541.8418999761343
+    },
+    "report": {
+      "n": 96,
+      "complete": 96,
+      "wall_ms": 108328.50389997475,
+      "complete_per_second": 0.8861933521083399,
+      "total_policy_ms": 105.92469666153193,
+      "total_episode_ms": 35786.807301454246,
+      "policy_us_per_action": 39.12992119007459,
+      "peak_worker_bytes": 137801728,
+      "root_launch_ms": 6945.004499517381,
+      "root_init_ms": 30776.574900140986,
+      "root_recycle_ms": 1463.8808004092425
+    }
+  },
+  "selection": {
+    "cem-1-5": {
+      "n": 24,
+      "missing": 0,
+      "wins": 19,
+      "hp_sum": 8.198214285714286,
+      "stops": {
+        "predicted_win": 19,
+        "death": 5
+      }
+    },
+    "random-1-5": {
+      "n": 24,
+      "missing": 0,
+      "wins": 19,
+      "hp_sum": 8.198214285714286,
+      "stops": {
+        "predicted_win": 19,
+        "death": 5
+      }
+    },
+    "cem-2-9": {
+      "n": 24,
+      "missing": 0,
+      "wins": 18,
+      "hp_sum": 8.10892857142857,
+      "stops": {
+        "predicted_win": 18,
+        "death": 6
+      }
+    },
+    "random-2-12": {
+      "n": 24,
+      "missing": 0,
+      "wins": 19,
+      "hp_sum": 8.482142857142858,
+      "stops": {
+        "predicted_win": 19,
+        "death": 5
+      }
+    },
+    "cem-3-7": {
+      "n": 24,
+      "missing": 0,
+      "wins": 19,
+      "hp_sum": 8.423214285714286,
+      "stops": {
+        "predicted_win": 19,
+        "death": 5
+      }
+    },
+    "random-3-7": {
+      "n": 24,
+      "missing": 0,
+      "wins": 19,
+      "hp_sum": 8.073214285714286,
+      "stops": {
+        "predicted_win": 19,
+        "death": 5
+      }
+    },
+    "cem-4-11": {
+      "n": 24,
+      "missing": 0,
+      "wins": 19,
+      "hp_sum": 8.557142857142857,
+      "stops": {
+        "predicted_win": 19,
+        "death": 5
+      }
+    },
+    "random-4-12": {
+      "n": 24,
+      "missing": 0,
+      "wins": 19,
+      "hp_sum": 8.553571428571429,
+      "stops": {
+        "predicted_win": 19,
+        "death": 5
+      }
+    },
+    "fixed-attack": {
+      "n": 24,
+      "missing": 0,
+      "wins": 17,
+      "hp_sum": 7.201785714285714,
+      "stops": {
+        "predicted_win": 17,
+        "death": 7
+      }
+    },
+    "fixed-defense": {
+      "n": 24,
+      "missing": 0,
+      "wins": 15,
+      "hp_sum": 6.4660714285714285,
+      "stops": {
+        "predicted_win": 15,
+        "death": 9
+      }
+    }
+  },
+  "deviations": {
+    "cem-4-11": {
+      "play": -0.031651360568433984,
+      "damage": -0.4631701468899916,
+      "lethal": 0.6243944520317428,
+      "removed_attack": -1.4500830620996403,
+      "block": 0.37547279212982176,
+      "draw": -0.02834173234256515,
+      "cost": -0.3227987537102561,
+      "growth": -0.21604997032190565,
+      "target_hp": 0.17006855569492843,
+      "missing_damage": 0.19062886006258767,
+      "end_turn": -0.5951786635236597,
+      "uncovered": -0.007318500374781434,
+      "discard_defense": -0.23558235034792635,
+      "discard_upgrade": 0.13524035095365333,
+      "discard_growth": -0.620846142384778
+    },
+    "random-4-12": {
+      "play": 0.5112472057554459,
+      "damage": -0.2878944636769809,
+      "lethal": -0.30586924770752844,
+      "removed_attack": 0.4101251738536208,
+      "block": 0.029944264494607742,
+      "draw": 0.1829743931613036,
+      "cost": 0.45056294875758635,
+      "growth": 0.1596266814998678,
+      "target_hp": 0.21862002723894924,
+      "missing_damage": 0.43625190648845136,
+      "end_turn": 0.12786979303570423,
+      "uncovered": 0.5512099375558295,
+      "discard_defense": 0.6795812390135277,
+      "discard_upgrade": -0.4868501566331249,
+      "discard_growth": 0.21409175156580174
+    }
+  },
+  "report": {
+    "cem-4-11": {
+      "overall": {
+        "n": 24,
+        "stops": {
+          "death": 9,
+          "predicted_win": 15
+        },
+        "complete": 24,
+        "coverage": 1.0,
+        "unconditional_win": 0.625,
+        "conditional_win": 0.625,
+        "hp_p50": 17,
+        "normalized_hp_p50": 0.21428571428571427,
+        "loss_p50": 30.0,
+        "actions_p50": 27.5,
+        "transitions_p50": 27.5
+      },
+      "strata": {
+        "build": {
+          "strength": {
+            "n": 6,
+            "stops": {
+              "death": 2,
+              "predicted_win": 4
+            },
+            "complete": 6,
+            "coverage": 1.0,
+            "unconditional_win": 0.6666666666666666,
+            "conditional_win": 0.6666666666666666,
+            "hp_p50": 14.5,
+            "normalized_hp_p50": 0.18125,
+            "loss_p50": 30.0,
+            "actions_p50": 17.0,
+            "transitions_p50": 17.0
+          },
+          "barrier": {
+            "n": 6,
+            "stops": {
+              "predicted_win": 5,
+              "death": 1
+            },
+            "complete": 6,
+            "coverage": 1.0,
+            "unconditional_win": 0.8333333333333334,
+            "conditional_win": 0.8333333333333334,
+            "hp_p50": 26,
+            "normalized_hp_p50": 0.325,
+            "loss_p50": 27.5,
+            "actions_p50": 29.0,
+            "transitions_p50": 29.0
+          },
+          "shiv": {
+            "n": 6,
+            "stops": {
+              "death": 3,
+              "predicted_win": 3
+            },
+            "complete": 6,
+            "coverage": 1.0,
+            "unconditional_win": 0.5,
+            "conditional_win": 0.5,
+            "hp_p50": 13,
+            "normalized_hp_p50": 0.18571428571428572,
+            "loss_p50": 32.0,
+            "actions_p50": 27.5,
+            "transitions_p50": 27.5
+          },
+          "dexterity": {
+            "n": 6,
+            "stops": {
+              "death": 3,
+              "predicted_win": 3
+            },
+            "complete": 6,
+            "coverage": 1.0,
+            "unconditional_win": 0.5,
+            "conditional_win": 0.5,
+            "hp_p50": 17,
+            "normalized_hp_p50": 0.24285714285714285,
+            "loss_p50": 30.0,
+            "actions_p50": 41.0,
+            "transitions_p50": 41.0
+          }
+        },
+        "encounter": {
+          "BOWLBUGS_WEAK": {
+            "n": 12,
+            "stops": {
+              "death": 4,
+              "predicted_win": 8
+            },
+            "complete": 12,
+            "coverage": 1.0,
+            "unconditional_win": 0.6666666666666666,
+            "conditional_win": 0.6666666666666666,
+            "hp_p50": 22.0,
+            "normalized_hp_p50": 0.2839285714285714,
+            "loss_p50": 29.5,
+            "actions_p50": 24.0,
+            "transitions_p50": 24.0
+          },
+          "CHOMPERS_NORMAL": {
+            "n": 12,
+            "stops": {
+              "death": 5,
+              "predicted_win": 7
+            },
+            "complete": 12,
+            "coverage": 1.0,
+            "unconditional_win": 0.5833333333333334,
+            "conditional_win": 0.5833333333333334,
+            "hp_p50": 11,
+            "normalized_hp_p50": 0.15,
+            "loss_p50": 34.0,
+            "actions_p50": 32.5,
+            "transitions_p50": 32.5
+          }
+        },
+        "character": {
+          "Ironclad": {
+            "n": 12,
+            "stops": {
+              "death": 3,
+              "predicted_win": 9
+            },
+            "complete": 12,
+            "coverage": 1.0,
+            "unconditional_win": 0.75,
+            "conditional_win": 0.75,
+            "hp_p50": 18,
+            "normalized_hp_p50": 0.225,
+            "loss_p50": 30.0,
+            "actions_p50": 24.0,
+            "transitions_p50": 24.0
+          },
+          "Silent": {
+            "n": 12,
+            "stops": {
+              "death": 6,
+              "predicted_win": 6
+            },
+            "complete": 12,
+            "coverage": 1.0,
+            "unconditional_win": 0.5,
+            "conditional_win": 0.5,
+            "hp_p50": 14.0,
+            "normalized_hp_p50": 0.2,
+            "loss_p50": 30.5,
+            "actions_p50": 33.0,
+            "transitions_p50": 33.0
+          }
+        }
+      },
+      "behavior": {
+        "play_card": 564,
+        "growth": 18,
+        "defense_card": 286,
+        "explicit_discard": 31,
+        "end_turn": 186,
+        "multitarget_play": 149,
+        "multitarget_nonfirst": 32
+      },
+      "length_buckets": {
+        "1-24": 9,
+        "25-48": 13,
+        "49-72": 1,
+        "73-96": 1
+      },
+      "longest": 84
+    },
+    "random-4-12": {
+      "overall": {
+        "n": 24,
+        "stops": {
+          "death": 8,
+          "predicted_win": 16
+        },
+        "complete": 24,
+        "coverage": 1.0,
+        "unconditional_win": 0.6666666666666666,
+        "conditional_win": 0.6666666666666666,
+        "hp_p50": 17.0,
+        "normalized_hp_p50": 0.22857142857142856,
+        "loss_p50": 30.0,
+        "actions_p50": 23.5,
+        "transitions_p50": 23.5
+      },
+      "strata": {
+        "build": {
+          "strength": {
+            "n": 6,
+            "stops": {
+              "death": 2,
+              "predicted_win": 4
+            },
+            "complete": 6,
+            "coverage": 1.0,
+            "unconditional_win": 0.6666666666666666,
+            "conditional_win": 0.6666666666666666,
+            "hp_p50": 13.5,
+            "normalized_hp_p50": 0.16875,
+            "loss_p50": 33.0,
+            "actions_p50": 13.0,
+            "transitions_p50": 13.0
+          },
+          "barrier": {
+            "n": 6,
+            "stops": {
+              "predicted_win": 5,
+              "death": 1
+            },
+            "complete": 6,
+            "coverage": 1.0,
+            "unconditional_win": 0.8333333333333334,
+            "conditional_win": 0.8333333333333334,
+            "hp_p50": 26,
+            "normalized_hp_p50": 0.325,
+            "loss_p50": 24.0,
+            "actions_p50": 25.0,
+            "transitions_p50": 25.0
+          },
+          "shiv": {
+            "n": 6,
+            "stops": {
+              "death": 2,
+              "predicted_win": 4
+            },
+            "complete": 6,
+            "coverage": 1.0,
+            "unconditional_win": 0.6666666666666666,
+            "conditional_win": 0.6666666666666666,
+            "hp_p50": 9.0,
+            "normalized_hp_p50": 0.12857142857142856,
+            "loss_p50": 38.0,
+            "actions_p50": 29.5,
+            "transitions_p50": 29.5
+          },
+          "dexterity": {
+            "n": 6,
+            "stops": {
+              "death": 3,
+              "predicted_win": 3
+            },
+            "complete": 6,
+            "coverage": 1.0,
+            "unconditional_win": 0.5,
+            "conditional_win": 0.5,
+            "hp_p50": 16,
+            "normalized_hp_p50": 0.22857142857142856,
+            "loss_p50": 30.0,
+            "actions_p50": 28.0,
+            "transitions_p50": 28.0
+          }
+        },
+        "encounter": {
+          "BOWLBUGS_WEAK": {
+            "n": 12,
+            "stops": {
+              "death": 3,
+              "predicted_win": 9
+            },
+            "complete": 12,
+            "coverage": 1.0,
+            "unconditional_win": 0.75,
+            "conditional_win": 0.75,
+            "hp_p50": 21,
+            "normalized_hp_p50": 0.2625,
+            "loss_p50": 30.0,
+            "actions_p50": 22.5,
+            "transitions_p50": 22.5
+          },
+          "CHOMPERS_NORMAL": {
+            "n": 12,
+            "stops": {
+              "death": 5,
+              "predicted_win": 7
+            },
+            "complete": 12,
+            "coverage": 1.0,
+            "unconditional_win": 0.5833333333333334,
+            "conditional_win": 0.5833333333333334,
+            "hp_p50": 14,
+            "normalized_hp_p50": 0.175,
+            "loss_p50": 31.0,
+            "actions_p50": 28.0,
+            "transitions_p50": 28.0
+          }
+        },
+        "character": {
+          "Ironclad": {
+            "n": 12,
+            "stops": {
+              "death": 3,
+              "predicted_win": 9
+            },
+            "complete": 12,
+            "coverage": 1.0,
+            "unconditional_win": 0.75,
+            "conditional_win": 0.75,
+            "hp_p50": 21,
+            "normalized_hp_p50": 0.2625,
+            "loss_p50": 30.0,
+            "actions_p50": 22.0,
+            "transitions_p50": 22.0
+          },
+          "Silent": {
+            "n": 12,
+            "stops": {
+              "death": 5,
+              "predicted_win": 7
+            },
+            "complete": 12,
+            "coverage": 1.0,
+            "unconditional_win": 0.5833333333333334,
+            "conditional_win": 0.5833333333333334,
+            "hp_p50": 16,
+            "normalized_hp_p50": 0.22857142857142856,
+            "loss_p50": 34.0,
+            "actions_p50": 29.5,
+            "transitions_p50": 29.5
+          }
+        }
+      },
+      "behavior": {
+        "play_card": 439,
+        "growth": 18,
+        "defense_card": 170,
+        "explicit_discard": 23,
+        "multitarget_play": 153,
+        "multitarget_nonfirst": 38,
+        "end_turn": 143
+      },
+      "length_buckets": {
+        "1-24": 13,
+        "25-48": 11,
+        "49-72": 0,
+        "73-96": 0
+      },
+      "longest": 41
+    },
+    "fixed-attack": {
+      "overall": {
+        "n": 24,
+        "stops": {
+          "death": 15,
+          "predicted_win": 9
+        },
+        "complete": 24,
+        "coverage": 1.0,
+        "unconditional_win": 0.375,
+        "conditional_win": 0.375,
+        "hp_p50": 14,
+        "normalized_hp_p50": 0.2,
+        "loss_p50": 42.0,
+        "actions_p50": 21.5,
+        "transitions_p50": 21.5
+      },
+      "strata": {
+        "build": {
+          "strength": {
+            "n": 6,
+            "stops": {
+              "death": 4,
+              "predicted_win": 2
+            },
+            "complete": 6,
+            "coverage": 1.0,
+            "unconditional_win": 0.3333333333333333,
+            "conditional_win": 0.3333333333333333,
+            "hp_p50": 12.5,
+            "normalized_hp_p50": 0.15625,
+            "loss_p50": 44.5,
+            "actions_p50": 13.0,
+            "transitions_p50": 13.0
+          },
+          "barrier": {
+            "n": 6,
+            "stops": {
+              "predicted_win": 1,
+              "death": 5
+            },
+            "complete": 6,
+            "coverage": 1.0,
+            "unconditional_win": 0.16666666666666666,
+            "conditional_win": 0.16666666666666666,
+            "hp_p50": 2,
+            "normalized_hp_p50": 0.025,
+            "loss_p50": 46.0,
+            "actions_p50": 23.0,
+            "transitions_p50": 23.0
+          },
+          "shiv": {
+            "n": 6,
+            "stops": {
+              "death": 3,
+              "predicted_win": 3
+            },
+            "complete": 6,
+            "coverage": 1.0,
+            "unconditional_win": 0.5,
+            "conditional_win": 0.5,
+            "hp_p50": 22,
+            "normalized_hp_p50": 0.3142857142857143,
+            "loss_p50": 30.0,
+            "actions_p50": 22.0,
+            "transitions_p50": 22.0
+          },
+          "dexterity": {
+            "n": 6,
+            "stops": {
+              "death": 3,
+              "predicted_win": 3
+            },
+            "complete": 6,
+            "coverage": 1.0,
+            "unconditional_win": 0.5,
+            "conditional_win": 0.5,
+            "hp_p50": 14,
+            "normalized_hp_p50": 0.2,
+            "loss_p50": 36.5,
+            "actions_p50": 26.0,
+            "transitions_p50": 26.0
+          }
+        },
+        "encounter": {
+          "BOWLBUGS_WEAK": {
+            "n": 12,
+            "stops": {
+              "death": 6,
+              "predicted_win": 6
+            },
+            "complete": 12,
+            "coverage": 1.0,
+            "unconditional_win": 0.5,
+            "conditional_win": 0.5,
+            "hp_p50": 16.5,
+            "normalized_hp_p50": 0.21875,
+            "loss_p50": 31.0,
+            "actions_p50": 18.5,
+            "transitions_p50": 18.5
+          },
+          "CHOMPERS_NORMAL": {
+            "n": 12,
+            "stops": {
+              "death": 9,
+              "predicted_win": 3
+            },
+            "complete": 12,
+            "coverage": 1.0,
+            "unconditional_win": 0.25,
+            "conditional_win": 0.25,
+            "hp_p50": 14,
+            "normalized_hp_p50": 0.2,
+            "loss_p50": 46.0,
+            "actions_p50": 25.5,
+            "transitions_p50": 25.5
+          }
+        },
+        "character": {
+          "Ironclad": {
+            "n": 12,
+            "stops": {
+              "death": 9,
+              "predicted_win": 3
+            },
+            "complete": 12,
+            "coverage": 1.0,
+            "unconditional_win": 0.25,
+            "conditional_win": 0.25,
+            "hp_p50": 6,
+            "normalized_hp_p50": 0.075,
+            "loss_p50": 46.0,
+            "actions_p50": 18.5,
+            "transitions_p50": 18.5
+          },
+          "Silent": {
+            "n": 12,
+            "stops": {
+              "death": 6,
+              "predicted_win": 6
+            },
+            "complete": 12,
+            "coverage": 1.0,
+            "unconditional_win": 0.5,
+            "conditional_win": 0.5,
+            "hp_p50": 17.5,
+            "normalized_hp_p50": 0.25,
+            "loss_p50": 31.0,
+            "actions_p50": 25.5,
+            "transitions_p50": 25.5
+          }
+        }
+      },
+      "behavior": {
+        "play_card": 399,
+        "growth": 16,
+        "defense_card": 89,
+        "explicit_discard": 7,
+        "multitarget_play": 184,
+        "multitarget_nonfirst": 0,
+        "end_turn": 119
+      },
+      "length_buckets": {
+        "1-24": 15,
+        "25-48": 9,
+        "49-72": 0,
+        "73-96": 0
+      },
+      "longest": 42
+    },
+    "fixed-defense": {
+      "overall": {
+        "n": 24,
+        "stops": {
+          "death": 14,
+          "predicted_win": 10
+        },
+        "complete": 24,
+        "coverage": 1.0,
+        "unconditional_win": 0.4166666666666667,
+        "conditional_win": 0.4166666666666667,
+        "hp_p50": 8.0,
+        "normalized_hp_p50": 0.10714285714285715,
+        "loss_p50": 39.0,
+        "actions_p50": 28.0,
+        "transitions_p50": 28.0
+      },
+      "strata": {
+        "build": {
+          "strength": {
+            "n": 6,
+            "stops": {
+              "death": 2,
+              "predicted_win": 4
+            },
+            "complete": 6,
+            "coverage": 1.0,
+            "unconditional_win": 0.6666666666666666,
+            "conditional_win": 0.6666666666666666,
+            "hp_p50": 8.5,
+            "normalized_hp_p50": 0.10625,
+            "loss_p50": 34.5,
+            "actions_p50": 27.5,
+            "transitions_p50": 27.5
+          },
+          "barrier": {
+            "n": 6,
+            "stops": {
+              "predicted_win": 2,
+              "death": 4
+            },
+            "complete": 6,
+            "coverage": 1.0,
+            "unconditional_win": 0.3333333333333333,
+            "conditional_win": 0.3333333333333333,
+            "hp_p50": 5.5,
+            "normalized_hp_p50": 0.06875,
+            "loss_p50": 42.0,
+            "actions_p50": 26.0,
+            "transitions_p50": 26.0
+          },
+          "shiv": {
+            "n": 6,
+            "stops": {
+              "death": 4,
+              "predicted_win": 2
+            },
+            "complete": 6,
+            "coverage": 1.0,
+            "unconditional_win": 0.3333333333333333,
+            "conditional_win": 0.3333333333333333,
+            "hp_p50": 14.0,
+            "normalized_hp_p50": 0.2,
+            "loss_p50": 40.0,
+            "actions_p50": 42.5,
+            "transitions_p50": 42.5
+          },
+          "dexterity": {
+            "n": 6,
+            "stops": {
+              "death": 4,
+              "predicted_win": 2
+            },
+            "complete": 6,
+            "coverage": 1.0,
+            "unconditional_win": 0.3333333333333333,
+            "conditional_win": 0.3333333333333333,
+            "hp_p50": 14.0,
+            "normalized_hp_p50": 0.19999999999999998,
+            "loss_p50": 40.0,
+            "actions_p50": 40.0,
+            "transitions_p50": 40.0
+          }
+        },
+        "encounter": {
+          "BOWLBUGS_WEAK": {
+            "n": 12,
+            "stops": {
+              "death": 5,
+              "predicted_win": 7
+            },
+            "complete": 12,
+            "coverage": 1.0,
+            "unconditional_win": 0.5833333333333334,
+            "conditional_win": 0.5833333333333334,
+            "hp_p50": 8,
+            "normalized_hp_p50": 0.11428571428571428,
+            "loss_p50": 38.5,
+            "actions_p50": 27.5,
+            "transitions_p50": 27.5
+          },
+          "CHOMPERS_NORMAL": {
+            "n": 12,
+            "stops": {
+              "death": 9,
+              "predicted_win": 3
+            },
+            "complete": 12,
+            "coverage": 1.0,
+            "unconditional_win": 0.25,
+            "conditional_win": 0.25,
+            "hp_p50": 8,
+            "normalized_hp_p50": 0.1,
+            "loss_p50": 42.5,
+            "actions_p50": 29.5,
+            "transitions_p50": 29.5
+          }
+        },
+        "character": {
+          "Ironclad": {
+            "n": 12,
+            "stops": {
+              "death": 6,
+              "predicted_win": 6
+            },
+            "complete": 12,
+            "coverage": 1.0,
+            "unconditional_win": 0.5,
+            "conditional_win": 0.5,
+            "hp_p50": 7.5,
+            "normalized_hp_p50": 0.09375,
+            "loss_p50": 38.5,
+            "actions_p50": 27.5,
+            "transitions_p50": 27.5
+          },
+          "Silent": {
+            "n": 12,
+            "stops": {
+              "death": 8,
+              "predicted_win": 4
+            },
+            "complete": 12,
+            "coverage": 1.0,
+            "unconditional_win": 0.3333333333333333,
+            "conditional_win": 0.3333333333333333,
+            "hp_p50": 14.0,
+            "normalized_hp_p50": 0.19999999999999998,
+            "loss_p50": 40.0,
+            "actions_p50": 42.5,
+            "transitions_p50": 42.5
+          }
+        }
+      },
+      "behavior": {
+        "play_card": 650,
+        "growth": 15,
+        "defense_card": 362,
+        "explicit_discard": 36,
+        "end_turn": 207,
+        "multitarget_play": 168,
+        "multitarget_nonfirst": 0
+      },
+      "length_buckets": {
+        "1-24": 8,
+        "25-48": 10,
+        "49-72": 4,
+        "73-96": 2
+      },
+      "longest": 84
+    }
+  },
+  "paired": {
+    "cem-4-11/random-4-12": {
+      "counts": {
+        "both_win": 15,
+        "both_dead": 8,
+        "right_only_win": 1
+      },
+      "joint_win_normalized_hp_delta_median": 0.0
+    },
+    "cem-4-11/fixed-attack": {
+      "counts": {
+        "left_only_win": 7,
+        "both_dead": 8,
+        "both_win": 8,
+        "right_only_win": 1
+      },
+      "joint_win_normalized_hp_delta_median": 0.05892857142857142
+    },
+    "cem-4-11/fixed-defense": {
+      "counts": {
+        "both_win": 9,
+        "both_dead": 8,
+        "left_only_win": 6,
+        "right_only_win": 1
+      },
+      "joint_win_normalized_hp_delta_median": 0.08571428571428572
+    },
+    "random-4-12/fixed-attack": {
+      "counts": {
+        "left_only_win": 7,
+        "both_dead": 8,
+        "both_win": 9
+      },
+      "joint_win_normalized_hp_delta_median": 0.025000000000000022
+    },
+    "random-4-12/fixed-defense": {
+      "counts": {
+        "both_win": 10,
+        "both_dead": 8,
+        "left_only_win": 6
+      },
+      "joint_win_normalized_hp_delta_median": 0.09375
+    },
+    "fixed-attack/fixed-defense": {
+      "counts": {
+        "right_only_win": 3,
+        "both_dead": 12,
+        "both_win": 7,
+        "left_only_win": 2
+      },
+      "joint_win_normalized_hp_delta_median": -0.012499999999999997
+    }
+  },
+  "elapsed_ms": 546047.022400191
+}

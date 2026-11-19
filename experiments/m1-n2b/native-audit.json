@@ -1,0 +1,408 @@
+{
+  "versions": {
+    "sampler": "m1-d1-v1",
+    "policy": "M1-F2-discard-v1",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "solver_sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+    "solver": "0.51.5-e3f.1",
+    "headless_sha256": "95bea3a1d28a6a11c71e5cc3b87d7c378c9787a29b5b089b1b50fced05be98c6",
+    "coreclr": "9.0.7",
+    "native_identity": "4c51d80177485598c844404b08f210f98f475d32028d37a9ec1f2f25ce53cd2b",
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3"
+  },
+  "locked_sha256": "5c4d80d6dc922422227c97740f0caf2ec5701da97e130adb6b3ede17c92133b1",
+  "checks": [
+    {
+      "id": "286185b2939f9c1d",
+      "model": "cem-4-11",
+      "status": "win",
+      "checked": 17,
+      "diffs": [],
+      "choices": [],
+      "predicted_terminal": {
+        "hp": 17,
+        "cumulative_loss": 29,
+        "boundary": "None",
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "energy": 2,
+        "max_hp": 80,
+        "gold": 99,
+        "gaps": [
+          "INFLAME.OnPlay: MethodNotMirrored"
+        ],
+        "evidence": "prediction_only"
+      },
+      "native_outcome": {
+        "initial_hp": 46,
+        "final_hp": 17,
+        "hp_lost": 29,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "native_locked": {
+        "player_hp": 17,
+        "player_max_hp": 80,
+        "player_gold": 99,
+        "player_potions": "-,-,-"
+      },
+      "native_after_combat": {
+        "decision": "card_reward",
+        "resources": {
+          "hp": 17,
+          "max_hp": 80,
+          "gold": 109,
+          "deck": [
+            "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TWIN_STRIKE+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=7;HitCount=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TWIN_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=5;HitCount=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "INFLAME+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=StrengthPower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+          ],
+          "potions": [
+            "BLOOD_POTION",
+            null,
+            null
+          ],
+          "relics": []
+        },
+        "reward_action_executed": false
+      },
+      "strict_terminal_stamp_match": true,
+      "evidence": "public_and_choice_audit"
+    },
+    {
+      "id": "286185b2939f9c1d",
+      "model": "random-4-12",
+      "status": "win",
+      "checked": 13,
+      "diffs": [],
+      "choices": [],
+      "predicted_terminal": {
+        "hp": 12,
+        "cumulative_loss": 34,
+        "boundary": "None",
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "energy": 2,
+        "max_hp": 80,
+        "gold": 99,
+        "gaps": [
+          "INFLAME.OnPlay: MethodNotMirrored"
+        ],
+        "evidence": "prediction_only"
+      },
+      "native_outcome": {
+        "initial_hp": 46,
+        "final_hp": 12,
+        "hp_lost": 34,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "native_locked": {
+        "player_hp": 12,
+        "player_max_hp": 80,
+        "player_gold": 99,
+        "player_potions": "-,-,-"
+      },
+      "native_after_combat": {
+        "decision": "card_reward",
+        "resources": {
+          "hp": 12,
+          "max_hp": 80,
+          "gold": 109,
+          "deck": [
+            "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TWIN_STRIKE+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=7;HitCount=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TWIN_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=5;HitCount=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "INFLAME+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=StrengthPower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+          ],
+          "potions": [
+            "BLOOD_POTION",
+            null,
+            null
+          ],
+          "relics": []
+        },
+        "reward_action_executed": false
+      },
+      "strict_terminal_stamp_match": true,
+      "evidence": "public_and_choice_audit"
+    },
+    {
+      "id": "dc7593246ab53292",
+      "model": "cem-4-11",
+      "status": "win",
+      "checked": 28,
+      "diffs": [],
+      "choices": [],
+      "predicted_terminal": {
+        "hp": 7,
+        "cumulative_loss": 39,
+        "boundary": "None",
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "energy": 2,
+        "max_hp": 80,
+        "gold": 99,
+        "gaps": [
+          "INFLAME.OnPlay: MethodNotMirrored"
+        ],
+        "evidence": "prediction_only"
+      },
+      "native_outcome": {
+        "initial_hp": 46,
+        "final_hp": 7,
+        "hp_lost": 39,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "native_locked": {
+        "player_hp": 7,
+        "player_max_hp": 80,
+        "player_gold": 99,
+        "player_potions": "-,-,-"
+      },
+      "native_after_combat": {
+        "decision": "card_reward",
+        "resources": {
+          "hp": 7,
+          "max_hp": 80,
+          "gold": 112,
+          "deck": [
+            "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TWIN_STRIKE+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=7;HitCount=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TWIN_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=5;HitCount=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "INFLAME+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=StrengthPower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "relics": []
+        },
+        "reward_action_executed": false
+      },
+      "strict_terminal_stamp_match": true,
+      "evidence": "public_and_choice_audit"
+    },
+    {
+      "id": "dc7593246ab53292",
+      "model": "random-4-12",
+      "status": "win",
+      "checked": 21,
+      "diffs": [],
+      "choices": [],
+      "predicted_terminal": {
+        "hp": 14,
+        "cumulative_loss": 32,
+        "boundary": "None",
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "energy": 0,
+        "max_hp": 80,
+        "gold": 99,
+        "gaps": [
+          "BASH.OnPlay: MethodMirrorIncomplete",
+          "INFLAME.OnPlay: MethodNotMirrored"
+        ],
+        "evidence": "prediction_only"
+      },
+      "native_outcome": {
+        "initial_hp": 46,
+        "final_hp": 14,
+        "hp_lost": 32,
+        "hp_healed": 0,
+        "self_damage": 0,
+        "combat_ended": true,
+        "survived": true,
+        "final_enemy_hp": 0,
+        "potions": [],
+        "unattributed_hp_loss": 0
+      },
+      "native_locked": {
+        "player_hp": 14,
+        "player_max_hp": 80,
+        "player_gold": 99,
+        "player_potions": "-,-,-"
+      },
+      "native_after_combat": {
+        "decision": "card_reward",
+        "resources": {
+          "hp": 14,
+          "max_hp": 80,
+          "gold": 112,
+          "deck": [
+            "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "BASH+0|energy=False:2|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=8;VulnerablePower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TWIN_STRIKE+1|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=7;HitCount=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "TWIN_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=5;HitCount=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "STRIKE_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Damage=6|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "INFLAME+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=StrengthPower=2|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "SHRUG_IT_OFF+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=8;Cards=1|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+            "DEFEND_IRONCLAD+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=False|keywords=|vars=Block=5|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False"
+          ],
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "relics": []
+        },
+        "reward_action_executed": false
+      },
+      "strict_terminal_stamp_match": true,
+      "evidence": "public_and_choice_audit"
+    }
+  ],
+  "lifecycle": [
+    {
+      "id": "286185b2939f9c1d",
+      "root_sha256": "d5e07da18be3aef48c7f5a42d7b9906643864fc78f37c106a0522448da2117e8",
+      "loaded": {
+        "type": "solver_identity",
+        "version": "0.51.5-e3f.1+3b3fd97556a5b32d7fdb20efd4294cd07cc6ce6b",
+        "sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+        "mode": "offline-teacher",
+        "schema_version": 1,
+        "peak_working_set_bytes": 48082944
+      },
+      "launch_ms": 309.1525000054389,
+      "build": {
+        "handshake_ms": 227.92960004881024,
+        "initialize_ms": 1267.0640998985618,
+        "snapshot_ms": 95.39170004427433,
+        "root_ms": 1590.3853999916464,
+        "peak_working_set_bytes": 109428736
+      },
+      "recycle_ms": 42.14700008742511
+    },
+    {
+      "id": "286185b2939f9c1d",
+      "root_sha256": "d5e07da18be3aef48c7f5a42d7b9906643864fc78f37c106a0522448da2117e8",
+      "loaded": {
+        "type": "solver_identity",
+        "version": "0.51.5-e3f.1+3b3fd97556a5b32d7fdb20efd4294cd07cc6ce6b",
+        "sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+        "mode": "offline-teacher",
+        "schema_version": 1,
+        "peak_working_set_bytes": 47968256
+      },
+      "launch_ms": 220.917500089854,
+      "build": {
+        "handshake_ms": 171.4822999201715,
+        "initialize_ms": 1186.6035000421107,
+        "snapshot_ms": 97.39520004950464,
+        "root_ms": 1455.4810000117868,
+        "peak_working_set_bytes": 108113920
+      },
+      "recycle_ms": 39.41510012373328
+    },
+    {
+      "id": "dc7593246ab53292",
+      "root_sha256": "21c498286db4b714d147fcdcc73e5c7738e827b3423fe383c644e011c75705ca",
+      "loaded": {
+        "type": "solver_identity",
+        "version": "0.51.5-e3f.1+3b3fd97556a5b32d7fdb20efd4294cd07cc6ce6b",
+        "sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+        "mode": "offline-teacher",
+        "schema_version": 1,
+        "peak_working_set_bytes": 48099328
+      },
+      "launch_ms": 287.894899956882,
+      "build": {
+        "handshake_ms": 210.9531001187861,
+        "initialize_ms": 1283.3784001413733,
+        "snapshot_ms": 104.7396999783814,
+        "root_ms": 1599.0712002385408,
+        "peak_working_set_bytes": 109387776
+      },
+      "recycle_ms": 35.884999902918935
+    },
+    {
+      "id": "dc7593246ab53292",
+      "root_sha256": "21c498286db4b714d147fcdcc73e5c7738e827b3423fe383c644e011c75705ca",
+      "loaded": {
+        "type": "solver_identity",
+        "version": "0.51.5-e3f.1+3b3fd97556a5b32d7fdb20efd4294cd07cc6ce6b",
+        "sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+        "mode": "offline-teacher",
+        "schema_version": 1,
+        "peak_working_set_bytes": 48005120
+      },
+      "launch_ms": 287.8711000084877,
+      "build": {
+        "handshake_ms": 210.71060001850128,
+        "initialize_ms": 1376.115799881518,
+        "snapshot_ms": 81.30459999665618,
+        "root_ms": 1668.1309998966753,
+        "peak_working_set_bytes": 108191744
+      },
+      "recycle_ms": 38.27310004271567
+    }
+  ]
+}

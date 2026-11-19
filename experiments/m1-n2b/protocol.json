@@ -1,0 +1,17 @@
+{
+  "candidates": 12,
+  "generations": 4,
+  "roots_per_encounter": 3,
+  "budget": 96,
+  "elite": 4,
+  "blend": 0.6,
+  "sd_floor": 0.18,
+  "bounds": [-4.0, 4.0],
+  "initial_mean": [0.85, 1.1, 1.6, 0.6, 1.0, 0.35, -0.4, 0.85, -0.25, 0.0, -0.6, -0.8, -0.2, -0.5, -0.5],
+  "initial_sd": 0.4,
+  "sampling_seed": 271902,
+  "schedule_seed": 189277,
+  "missing_abort_fraction": 0.25,
+  "selection": "one champion per generation per method, plus both fixed baselines",
+  "ranking": "fewer missing, then more wins, then larger sum of normalized HP over wins, then earlier index"
+}
