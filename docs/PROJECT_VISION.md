@@ -36,6 +36,8 @@
 
 ## 4. 既有战略驱动求解器与新的 NOSL–SL 分工
 
+> **数学设计跟进：** [NOSL 数学模型 v0.1](research-nosl-mathematical-model-v0.1.md) 已将上述直接策略具体化为 POMDP 信息历史、卡牌/状态/动作编码及多输出价值与交互训练目标。该文是规划规格而非代码完成声明。
+>
 > **2026-11-19 架构升级：** 已确认的长期主线是 [机制感知、端口驱动的 NOSL–SL 双层决策架构](research-port-aware-nosl-sl-architecture.md)。共享卡牌机制与条件组合关系提供知识，输出／防御／运转提供可解释归纳偏置；NOSL 直接策略基于合法公开历史对合法实例动作评分，不需要在线显式树搜索；正常 SL 使用该策略作为基础，增加当前节点合法试探、路线修复和战后资源优化。**旧四战略和 LS2B StrategySpec 都是可复用的基线/解释/数据生成工具，不是最终 NOSL 模型的必经输出空间。**
 >
 > 下述 F3B/F4 两阶段描述保留**既有战略搜索实现及其有效工程思想**，不应解读为每一次 NOSL 出牌都必须先生成完整战略计划。两阶段“先找到合格完整胜路，再改善资源”主要约束 SL 搜索，NOSL 单次轨迹直接由策略逐步产生。详细的信息边界、策略与价值函数、端口辅助、训练和消融均以新架构文档为准。
@@ -138,6 +140,7 @@ P_\mu(D,S' \mid S=s,A=a),
 - **[research-direction-and-value-model.md](research-direction-and-value-model.md)：** 正常 SL、风险分布、Bellman 价值及学习设计的深入研究备忘录。它写于本纲领之前，涉及“必须以高预算强 Solver 为教师”等旧阶段侧重时，以本纲领的最新决策为准。
 - **[research-nosl-policy-learning-roadmap.md](research-nosl-policy-learning-roadmap.md)：** 2026-11-19 NOSL 初始出牌策略与无动作标签强化学习研究路线；明确 N1→N2→N3 阶段实验与正常 SL 信息边界。属于待验证假设，不是已完成的训练成果。
 - **[research-shared-card-mechanism-architecture.md](research-shared-card-mechanism-architecture.md)：** 战斗和局外选牌共享卡牌机制语义的研究架构，区分静态规则、公开动态效果、条件战斗价值与完整跑局长期价值；记录 N2E→N2F→N2G 及局外学习的候选阶段和验证红线。属于待验证的实施路线，不代表模型已经训练或上线。
+- **[research-nosl-mathematical-model-v0.1.md](research-nosl-mathematical-model-v0.1.md)：** NOSL 直接策略的独立数学模型与首轮工程数据合同：部分可观察历史、条件卡牌关系、合法实例动作评分、胜率/资源联合价值的可训练近似、on-policy 策略迭代、模型输入审计与评价消融。它固定数学对象和合法性原则，不强制锁定网络类型/参数或 RL 算法。
 - **[research-port-aware-nosl-sl-architecture.md](research-port-aware-nosl-sl-architecture.md)：** 最新长期战斗学习架构：条件卡牌组合、端口辅助、NOSL 直接策略/价值、SL 合法增强、训练目标与可证伪消融；若与旧阶段实现顺序冲突，以此文的架构原则为准，现有工程实证仍以各报告为准。
 - **[research-learning-guided-combat-search.md](research-learning-guided-combat-search.md)：** 2026-11-19 最新学习工程主线，以共享卡牌机制指导 F3B/F4 搜索，在可复现的完整搜索反馈和相同预算质量—成本评估上构建闭环；替代旧路线中“固定弱策略卡组胜率预测必须先成功”的阶段门槛。
 - **[PROJECT_STATUS.md](PROJECT_STATUS.md)：** 当前分支、实证状态、里程碑、验收及下一步交接；不再承担长篇复述项目理念的职责。
