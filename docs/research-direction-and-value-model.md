@@ -4,6 +4,8 @@
 >
 > **性质：研究方向与建模原则，不是已验证的最优算法或产品能力声明。**
 >
+> **2026-11-19 决策更新：** 长期目标与极速 Combat Solver 的阶段性质量/速度取舍，以 [PROJECT_VISION.md](PROJECT_VISION.md) 为准；本备忘录侧重 SL 信息边界与局外建模推导。尤其不再把“逼近强 Solver 的最优战损”或“强 Solver 必须逐样本当教师”作为初期局外学习的门槛。
+>
 > 本文记录项目讨论形成的共识、待检验假设和近期工程优先级。现有代码能力与实测证据以 [PROJECT_STATUS.md](PROJECT_STATUS.md)、[M1-P0](m1-p0-performance-research.md) 和 [M1-P1](m1-p1-hot-worker-experiment.md) 为准。
 
 ## 1. 目标与评价标准
