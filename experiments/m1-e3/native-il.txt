@@ -1,0 +1,257 @@
+STS2 0.113.1 / Build 26660232
+sts2.dll SHA-256 62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3
+IL branch operands are relative offsets, as reported by the local reflection reader.
+
+Predator.OnPlay state machine
+  0073 callvirt MegaCrit.Sts2.Core.Commands.Builders.AttackCommand::System.Threading.Tasks.Task`1[MegaCrit.Sts2.Core.Commands.Builders.AttackCommand] Execute(MegaCrit.Sts2.Core.GameActions.Multiplayer.PlayerChoiceContext)
+  0078 callvirt System.Threading.Tasks.Task`1[MegaCrit.Sts2.Core.Commands.Builders.AttackCommand]::System.Runtime.CompilerServices.TaskAwaiter`1[MegaCrit.Sts2.Core.Commands.Builders.AttackCommand] GetAwaiter()
+  007d stloc.2
+  007e ldloca.s 2
+  0080 call System.Runtime.CompilerServices.TaskAwaiter`1[MegaCrit.Sts2.Core.Commands.Builders.AttackCommand]::Boolean get_IsCompleted()
+  0085 brtrue.s 63
+  0087 ldarg.0
+  0088 ldc.i4.0
+  0089 dup
+  008a stloc.0
+  008b stfld MegaCrit.Sts2.Core.Models.Cards.Predator+<OnPlay>d__3::Int32 <>1__state
+  0090 ldarg.0
+  0091 ldloc.2
+  0092 stfld MegaCrit.Sts2.Core.Models.Cards.Predator+<OnPlay>d__3::System.Runtime.CompilerServices.TaskAwaiter`1[MegaCrit.Sts2.Core.Commands.Builders.AttackCommand] <>u__1
+  0097 ldarg.0
+  0098 ldflda MegaCrit.Sts2.Core.Models.Cards.Predator+<OnPlay>d__3::System.Runtime.CompilerServices.AsyncTaskMethodBuilder <>t__builder
+  009d ldloca.s 2
+  009f ldarg.0
+  00a0 call System.Runtime.CompilerServices.AsyncTaskMethodBuilder::Void AwaitUnsafeOnCompleted[TaskAwaiter`1,<OnPlay>d__3](System.Runtime.CompilerServices.TaskAwaiter`1[MegaCrit.Sts2.Core.Commands.Builders.AttackCommand] ByRef, <OnPlay>d__3 ByRef)
+  00a5 leave 206
+  00aa ldarg.0
+  00ab ldfld MegaCrit.Sts2.Core.Models.Cards.Predator+<OnPlay>d__3::System.Runtime.CompilerServices.TaskAwaiter`1[MegaCrit.Sts2.Core.Commands.Builders.AttackCommand] <>u__1
+  00b0 stloc.2
+  00b1 ldarg.0
+  00b2 ldflda MegaCrit.Sts2.Core.Models.Cards.Predator+<OnPlay>d__3::System.Runtime.CompilerServices.TaskAwaiter`1[MegaCrit.Sts2.Core.Commands.Builders.AttackCommand] <>u__1
+  00b7 initobj ::System.Runtime.CompilerServices.TaskAwaiter`1[MegaCrit.Sts2.Core.Commands.Builders.AttackCommand]
+  00bd ldarg.0
+  00be ldc.i4.m1
+  00bf dup
+  00c0 stloc.0
+  00c1 stfld MegaCrit.Sts2.Core.Models.Cards.Predator+<OnPlay>d__3::Int32 <>1__state
+  00c6 ldloca.s 2
+  00c8 call System.Runtime.CompilerServices.TaskAwaiter`1[MegaCrit.Sts2.Core.Commands.Builders.AttackCommand]::MegaCrit.Sts2.Core.Commands.Builders.AttackCommand GetResult()
+  00cd pop
+  00ce ldarg.0
+  00cf ldfld MegaCrit.Sts2.Core.Models.Cards.Predator+<OnPlay>d__3::MegaCrit.Sts2.Core.GameActions.Multiplayer.PlayerChoiceContext choiceContext
+  00d4 ldloc.1
+  00d5 call MegaCrit.Sts2.Core.Models.CardModel::MegaCrit.Sts2.Core.Entities.Players.Player get_Owner()
+  00da callvirt MegaCrit.Sts2.Core.Entities.Players.Player::MegaCrit.Sts2.Core.Entities.Creatures.Creature get_Creature()
+  00df ldc.i4.2
+  00e0 newobj System.Decimal::Void .ctor(Int32)
+  00e5 ldloc.1
+  00e6 call MegaCrit.Sts2.Core.Models.CardModel::MegaCrit.Sts2.Core.Entities.Players.Player get_Owner()
+  00eb callvirt MegaCrit.Sts2.Core.Entities.Players.Player::MegaCrit.Sts2.Core.Entities.Creatures.Creature get_Creature()
+  00f0 ldloc.1
+  00f1 ldc.i4.0
+  00f2 call MegaCrit.Sts2.Core.Commands.PowerCmd::System.Threading.Tasks.Task`1[MegaCrit.Sts2.Core.Models.Powers.DrawCardsNextTurnPower] Apply[DrawCardsNextTurnPower](MegaCrit.Sts2.Core.GameActions.Multiplayer.PlayerChoiceContext, MegaCrit.Sts2.Core.Entities.Creatures.Creature, System.Decimal, MegaCrit.Sts2.Core.Entities.Creatures.Creature, MegaCrit.Sts2.Core.Models.CardModel, Boolean)
+  00f7 callvirt System.Threading.Tasks.Task`1[MegaCrit.Sts2.Core.Models.Powers.DrawCardsNextTurnPower]::System.Runtime.CompilerServices.TaskAwaiter`1[MegaCrit.Sts2.Core.Models.Powers.DrawCardsNextTurnPower] GetAwaiter()
+  00fc stloc.3
+  00fd ldloca.s 3
+  00ff call System.Runtime.CompilerServices.TaskAwaiter`1[MegaCrit.Sts2.Core.Models.Powers.DrawCardsNextTurnPower]::Boolean get_IsCompleted()
+  0104 brtrue.s 60
+  0106 ldarg.0
+  0107 ldc.i4.1
+  0108 dup
+  0109 stloc.0
+  010a stfld MegaCrit.Sts2.Core.Models.Cards.Predator+<OnPlay>d__3::Int32 <>1__state
+  010f ldarg.0
+  0110 ldloc.3
+  0111 stfld MegaCrit.Sts2.Core.Models.Cards.Predator+<OnPlay>d__3::System.Runtime.CompilerServices.TaskAwaiter`1[MegaCrit.Sts2.Core.Models.Powers.DrawCardsNextTurnPower] <>u__2
+  0116 ldarg.0
+  0117 ldflda MegaCrit.Sts2.Core.Models.Cards.Predator+<OnPlay>d__3::System.Runtime.CompilerServices.AsyncTaskMethodBuilder <>t__builder
+  011c ldloca.s 3
+  011e ldarg.0
+  011f call System.Runtime.CompilerServices.AsyncTaskMethodBuilder::Void AwaitUnsafeOnCompleted[TaskAwaiter`1,<OnPlay>d__3](System.Runtime.CompilerServices.TaskAwaiter`1[MegaCrit.Sts2.Core.Models.Powers.DrawCardsNextTurnPower] ByRef, <OnPlay>d__3 ByRef)
+  0124 leave.s 82
+  0126 ldarg.0
+  0127 ldfld MegaCrit.Sts2.Core.Models.Cards.Predator+<OnPlay>d__3::System.Runtime.CompilerServices.TaskAwaiter`1[MegaCrit.Sts2.Core.Models.Powers.DrawCardsNextTurnPower] <>u__2
+  012c stloc.3
+  012d ldarg.0
+  012e ldflda MegaCrit.Sts2.Core.Models.Cards.Predator+<OnPlay>d__3::System.Runtime.CompilerServices.TaskAwaiter`1[MegaCrit.Sts2.Core.Models.Powers.DrawCardsNextTurnPower] <>u__2
+  0133 initobj ::System.Runtime.CompilerServices.TaskAwaiter`1[MegaCrit.Sts2.Core.Models.Powers.DrawCardsNextTurnPower]
+  0139 ldarg.0
+  013a ldc.i4.m1
+  013b dup
+  013c stloc.0
+  013d stfld MegaCrit.Sts2.Core.Models.Cards.Predator+<OnPlay>d__3::Int32 <>1__state
+  0142 ldloca.s 3
+  0144 call System.Runtime.CompilerServices.TaskAwaiter`1[MegaCrit.Sts2.Core.Models.Powers.DrawCardsNextTurnPower]::MegaCrit.Sts2.Core.Models.Powers.DrawCardsNextTurnPower GetResult()
+
+PowerCmd.Apply<T> single-target d__1 (first matching block after type)
+  0014 call MegaCrit.Sts2.Core.Combat.CombatManager::MegaCrit.Sts2.Core.Combat.CombatManager get_Instance()
+  0019 callvirt MegaCrit.Sts2.Core.Combat.CombatManager::Boolean get_IsEnding()
+  001e brfalse.s 13
+  0020 ldloca.s 1
+  0022 initobj 452984864
+  0028 leave 419
+  002d ldarg.0
+  002e ldfld 167783995
+  0033 callvirt MegaCrit.Sts2.Core.Entities.Creatures.Creature::Boolean get_CanReceivePowers()
+  0038 brtrue.s 13
+  003a ldloca.s 1
+  003c initobj 452984864
+  0042 leave 393
+  0047 call 721426406
+
+CombatManager.IsCombatEnding
+  0000 ldarg.1
+  0001 callvirt MegaCrit.Sts2.Core.Combat.CombatTurnState::Boolean get_IsInProgress()
+  0006 brtrue.s 2
+  0008 ldc.i4.0
+  0009 ret
+  000a ldarg.1
+  000b callvirt MegaCrit.Sts2.Core.Combat.CombatTurnState::MegaCrit.Sts2.Core.Combat.PendingLossState get_PendingLoss()
+  0010 ldnull
+  0011 call MegaCrit.Sts2.Core.Combat.PendingLossState::Boolean op_Inequality(MegaCrit.Sts2.Core.Combat.PendingLossState, MegaCrit.Sts2.Core.Combat.PendingLossState)
+  0016 brfalse.s 2
+  0018 ldc.i4.1
+  0019 ret
+  001a ldarg.1
+  001b callvirt MegaCrit.Sts2.Core.Combat.CombatTurnState::MegaCrit.Sts2.Core.Combat.CombatState get_State()
+  0020 callvirt MegaCrit.Sts2.Core.Combat.CombatState::System.Collections.Generic.IReadOnlyList`1[MegaCrit.Sts2.Core.Entities.Creatures.Creature] get_Enemies()
+  0025 ldsfld MegaCrit.Sts2.Core.Combat.CombatManager+<>c::System.Func`2[MegaCrit.Sts2.Core.Entities.Creatures.Creature,System.Boolean] <>9__82_0
+  002a dup
+  002b brtrue.s 23
+  002d pop
+  002e ldsfld MegaCrit.Sts2.Core.Combat.CombatManager+<>c::<>c <>9
+  0033 ldftn MegaCrit.Sts2.Core.Combat.CombatManager+<>c::Boolean <IsCombatEnding>b__82_0(MegaCrit.Sts2.Core.Entities.Creatures.Creature)
+  0039 newobj System.Func`2[MegaCrit.Sts2.Core.Entities.Creatures.Creature,System.Boolean]::Void .ctor(System.Object, IntPtr)
+  003e dup
+  003f stsfld MegaCrit.Sts2.Core.Combat.CombatManager+<>c::System.Func`2[MegaCrit.Sts2.Core.Entities.Creatures.Creature,System.Boolean] <>9__82_0
+  0044 call System.Linq.Enumerable::Boolean Any[Creature](System.Collections.Generic.IEnumerable`1[MegaCrit.Sts2.Core.Entities.Creatures.Creature], System.Func`2[MegaCrit.Sts2.Core.Entities.Creatures.Creature,System.Boolean])
+  0049 brfalse.s 2
+  004b ldc.i4.0
+  004c ret
+  004d ldarg.1
+  004e callvirt MegaCrit.Sts2.Core.Combat.CombatTurnState::MegaCrit.Sts2.Core.Combat.CombatState get_State()
+  0053 call MegaCrit.Sts2.Core.Hooks.Hook::Boolean ShouldStopCombatFromEnding(MegaCrit.Sts2.Core.Combat.ICombatState)
+  0058 brfalse.s 2
+  005a ldc.i4.0
+  005b ret
+  005c ldc.i4.1
+  005d ret
+
+IsCombatEnding predicate
+  0000 ldarg.1
+  0001 brfalse.s 15
+  0003 ldarg.1
+  0004 callvirt MegaCrit.Sts2.Core.Entities.Creatures.Creature::Boolean get_IsAlive()
+  0009 brfalse.s 7
+  000b ldarg.1
+  000c callvirt MegaCrit.Sts2.Core.Entities.Creatures.Creature::Boolean get_IsPrimaryEnemy()
+  0011 ret
+  0012 ldc.i4.0
+  0013 ret
+
+CombatManager.SwitchSides
+  0000 ldarg.1
+  0001 callvirt MegaCrit.Sts2.Core.Combat.CombatTurnState::System.Threading.CancellationToken get_Ct()
+  0006 stloc.1
+  0007 ldloca.s 1
+  0009 call System.Threading.CancellationToken::Boolean get_IsCancellationRequested()
+  000e brfalse.s 1
+  0010 ret
+  0011 ldarg.1
+  0012 callvirt MegaCrit.Sts2.Core.Combat.CombatTurnState::System.Threading.Lock get_ReadyLock()
+  0017 callvirt System.Threading.Lock::Scope EnterScope()
+  001c stloc.2
+  001d ldarg.1
+  001e callvirt MegaCrit.Sts2.Core.Combat.CombatTurnState::System.Collections.Generic.List`1[MegaCrit.Sts2.Core.Entities.Players.Player] get_PlayersTakingExtraTurn()
+  0023 callvirt System.Collections.Generic.List`1[MegaCrit.Sts2.Core.Entities.Players.Player]::Int32 get_Count()
+  0028 ldc.i4.0
+  0029 cgt
+  002b stloc.0
+  002c leave.s 8
+  002e ldloca.s 2
+  0030 call System.Threading.Lock+Scope::Void Dispose()
+  0035 endfinally
+  0036 ldarg.1
+  0037 callvirt MegaCrit.Sts2.Core.Combat.CombatTurnState::MegaCrit.Sts2.Core.Combat.CombatState get_State()
+  003c callvirt MegaCrit.Sts2.Core.Combat.CombatState::MegaCrit.Sts2.Core.Combat.CombatSide get_CurrentSide()
+  0041 ldc.i4.1
+  0042 bne.un.s 17
+  0044 ldloc.0
+  0045 brtrue.s 14
+  0047 ldarg.1
+  0048 callvirt MegaCrit.Sts2.Core.Combat.CombatTurnState::MegaCrit.Sts2.Core.Combat.CombatState get_State()
+  004d ldc.i4.2
+  004e callvirt MegaCrit.Sts2.Core.Combat.CombatState::Void set_CurrentSide(MegaCrit.Sts2.Core.Combat.CombatSide)
+  0053 br.s 113
+  0055 ldarg.1
+  0056 callvirt MegaCrit.Sts2.Core.Combat.CombatTurnState::MegaCrit.Sts2.Core.Combat.CombatState get_State()
+  005b ldc.i4.1
+  005c callvirt MegaCrit.Sts2.Core.Combat.CombatState::Void set_CurrentSide(MegaCrit.Sts2.Core.Combat.CombatSide)
+  0061 ldloc.0
+  0062 brfalse.s 9
+  0064 ldarg.1
+  0065 callvirt MegaCrit.Sts2.Core.Combat.CombatTurnState::System.Collections.Generic.List`1[MegaCrit.Sts2.Core.Entities.Players.Player] get_PlayersTakingExtraTurn()
+  006a stloc.3
+  006b br.s 35
+  006d ldarg.1
+  006e callvirt MegaCrit.Sts2.Core.Combat.CombatTurnState::MegaCrit.Sts2.Core.Combat.CombatState get_State()
+  0073 callvirt MegaCrit.Sts2.Core.Combat.CombatState::System.Collections.Generic.IReadOnlyList`1[MegaCrit.Sts2.Core.Entities.Players.Player] get_Players()
+  0078 stloc.3
+  0079 ldarg.1
+  007a callvirt MegaCrit.Sts2.Core.Combat.CombatTurnState::MegaCrit.Sts2.Core.Combat.CombatState get_State()
+  007f dup
+  0080 callvirt MegaCrit.Sts2.Core.Combat.CombatState::Int32 get_RoundNumber()
+  0085 stloc.s 4
+  0087 ldloc.s 4
+  0089 ldc.i4.1
+  008a add
+  008b callvirt MegaCrit.Sts2.Core.Combat.CombatState::Void set_RoundNumber(Int32)
+  0090 ldloc.3
+  0091 callvirt System.Collections.Generic.IEnumerable`1[MegaCrit.Sts2.Core.Entities.Players.Player]::System.Collections.Generic.IEnumerator`1[MegaCrit.Sts2.Core.Entities.Players.Player] GetEnumerator()
+  0096 stloc.s 5
+  0098 br.s 21
+  009a ldloc.s 5
+  009c callvirt System.Collections.Generic.IEnumerator`1[MegaCrit.Sts2.Core.Entities.Players.Player]::MegaCrit.Sts2.Core.Entities.Players.Player get_Current()
+  00a1 stloc.s 6
+  00a3 ldloc.s 6
+  00a5 callvirt MegaCrit.Sts2.Core.Entities.Players.Player::MegaCrit.Sts2.Core.Entities.Players.PlayerCombatState get_PlayerCombatState()
+  00aa callvirt MegaCrit.Sts2.Core.Entities.Players.PlayerCombatState::Void IncrementTurnNumber()
+  00af ldloc.s 5
+  00b1 callvirt System.Collections.IEnumerator::Boolean MoveNext()
+  00b6 brtrue.s -30
+  00b8 leave.s 12
+  00ba ldloc.s 5
+  00bc brfalse.s 7
+  00be ldloc.s 5
+  00c0 callvirt System.IDisposable::Void Dispose()
+  00c5 endfinally
+  00c6 ldarg.1
+  00c7 callvirt MegaCrit.Sts2.Core.Combat.CombatTurnState::MegaCrit.Sts2.Core.Combat.CombatState get_State()
+  00cc callvirt MegaCrit.Sts2.Core.Combat.CombatState::System.Collections.Generic.IReadOnlyList`1[MegaCrit.Sts2.Core.Entities.Creatures.Creature] get_Creatures()
+  00d1 callvirt System.Collections.Generic.IEnumerable`1[MegaCrit.Sts2.Core.Entities.Creatures.Creature]::System.Collections.Generic.IEnumerator`1[MegaCrit.Sts2.Core.Entities.Creatures.Creature] GetEnumerator()
+  00d6 stloc.s 7
+  00d8 br.s 16
+  00da ldloc.s 7
+  00dc callvirt System.Collections.Generic.IEnumerator`1[MegaCrit.Sts2.Core.Entities.Creatures.Creature]::MegaCrit.Sts2.Core.Entities.Creatures.Creature get_Current()
+  00e1 stloc.s 8
+  00e3 ldloc.s 8
+  00e5 callvirt MegaCrit.Sts2.Core.Entities.Creatures.Creature::Void OnSideSwitch()
+  00ea ldloc.s 7
+  00ec callvirt System.Collections.IEnumerator::Boolean MoveNext()
+  00f1 brtrue.s -25
+  00f3 leave.s 12
+  00f5 ldloc.s 7
+  00f7 brfalse.s 7
+  00f9 ldloc.s 7
+  00fb callvirt System.IDisposable::Void Dispose()
+  0100 endfinally
+  0101 ldarg.0
+  0102 ldfld MegaCrit.Sts2.Core.Combat.CombatManager::System.Action`1[MegaCrit.Sts2.Core.Combat.CombatState] TurnEnded
+  0107 dup
+  0108 brtrue.s 2
+  010a pop
+  010b ret
+  010c ldarg.1
+  010d callvirt MegaCrit.Sts2.Core.Combat.CombatTurnState::MegaCrit.Sts2.Core.Combat.CombatState get_State()
+  0112 callvirt System.Action`1[MegaCrit.Sts2.Core.Combat.CombatState]::Void Invoke(MegaCrit.Sts2.Core.Combat.CombatState)
+  0117 ret
