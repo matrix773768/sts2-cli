@@ -1,0 +1,877 @@
+{
+  "versions": {
+    "sampler": "m1-d1-v1",
+    "policy": "M1-F2-discard-v1",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "solver_sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+    "solver": "0.51.5-e3f.1",
+    "headless_sha256": "c962aaa1b5ee31134cc73f36ae762624c5426f2f79e7d19bbf0ab07acc46318f",
+    "coreclr": "9.0.7",
+    "native_identity": "2b12e46c05db6711344952059979d786ff05ba61e11a4d54ec7402033e1fa07c",
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+    "f3b_first_win": "1dbd8345510af1dd8b85a491fe9eecbbafbabc1203353322618f494d939d81bb",
+    "f3b_route_search": "054eb9083b17f306f5e11db878950e72bfa3660d84996bde805648e81f7e17c9",
+    "f4_quality": "a6a0ee35a74c91c2e99127d8d637fcdc3712d29e692dbb6ec32f85c52318a053",
+    "preprocess": "ca28fa952c3dfb1a9b90ee7c02027317a6b91a681e88d995fabc84463e5634ea",
+    "catalog": "e3f637b27c674eba88317c0c2432cc8feb5b35d6e483519f6846043f80158948"
+  },
+  "rows": [
+    {
+      "id": "7d8d2337aeb2c630",
+      "result": {
+        "first_cap": 32,
+        "cap": 64,
+        "status": "transition_cap",
+        "search_status": "transition_cap",
+        "transitions": 32,
+        "first_transitions": null,
+        "first_key": null,
+        "locked_key": null,
+        "first_path_size": null,
+        "first_locked": null,
+        "locked": null,
+        "verification_transitions": 0,
+        "quality_transitions": 0,
+        "quality_status": null,
+        "lock_at": null,
+        "route_risks": [],
+        "planned": [
+          "Q1",
+          "AGGRO",
+          "DEFENSIVE",
+          "ENGINE"
+        ],
+        "executed_initial": [
+          "Q1",
+          "AGGRO",
+          "DEFENSIVE",
+          "ENGINE"
+        ],
+        "root_stamp": "1b134e2e6cea8e6dadd077398031d2a1c6832279e28ed6af69c3b60368d66338",
+        "attempts": [
+          {
+            "strategy": "Q1",
+            "kind": "initial_strategy",
+            "status": "death",
+            "detail": null,
+            "transitions": 10,
+            "at": 10
+          },
+          {
+            "strategy": "AGGRO",
+            "kind": "initial_strategy",
+            "status": "death",
+            "detail": null,
+            "transitions": 10,
+            "at": 20
+          },
+          {
+            "strategy": "DEFENSIVE",
+            "kind": "initial_strategy",
+            "status": "death",
+            "detail": null,
+            "transitions": 11,
+            "at": 31
+          },
+          {
+            "strategy": "ENGINE",
+            "kind": "initial_strategy",
+            "status": "truncated",
+            "detail": "transition_cap",
+            "transitions": 1,
+            "at": 32
+          }
+        ]
+      }
+    },
+    {
+      "id": "7d8d2337aeb2c630",
+      "result": {
+        "first_cap": 64,
+        "cap": 128,
+        "status": "transition_cap",
+        "search_status": "transition_cap",
+        "transitions": 64,
+        "first_transitions": null,
+        "first_key": null,
+        "locked_key": null,
+        "first_path_size": null,
+        "first_locked": null,
+        "locked": null,
+        "verification_transitions": 0,
+        "quality_transitions": 0,
+        "quality_status": null,
+        "lock_at": null,
+        "route_risks": [],
+        "planned": [
+          "Q1",
+          "AGGRO",
+          "DEFENSIVE",
+          "ENGINE"
+        ],
+        "executed_initial": [
+          "Q1",
+          "AGGRO",
+          "DEFENSIVE",
+          "ENGINE"
+        ],
+        "root_stamp": "1b134e2e6cea8e6dadd077398031d2a1c6832279e28ed6af69c3b60368d66338",
+        "attempts": [
+          {
+            "strategy": "Q1",
+            "kind": "initial_strategy",
+            "status": "death",
+            "detail": null,
+            "transitions": 10,
+            "at": 10
+          },
+          {
+            "strategy": "AGGRO",
+            "kind": "initial_strategy",
+            "status": "death",
+            "detail": null,
+            "transitions": 10,
+            "at": 20
+          },
+          {
+            "strategy": "DEFENSIVE",
+            "kind": "initial_strategy",
+            "status": "death",
+            "detail": null,
+            "transitions": 11,
+            "at": 31
+          },
+          {
+            "strategy": "ENGINE",
+            "kind": "initial_strategy",
+            "status": "death",
+            "detail": null,
+            "transitions": 14,
+            "at": 45
+          },
+          {
+            "strategy": "Q1",
+            "kind": "late_alternative",
+            "status": "death",
+            "detail": null,
+            "transitions": 4,
+            "at": 49
+          },
+          {
+            "strategy": "Q1",
+            "kind": "turn_window",
+            "status": "death",
+            "detail": null,
+            "transitions": 4,
+            "at": 53
+          },
+          {
+            "strategy": "Q1",
+            "kind": "early_strategy_switch",
+            "status": "death",
+            "detail": null,
+            "transitions": 11,
+            "at": 64
+          }
+        ]
+      }
+    },
+    {
+      "id": "7d8d2337aeb2c630",
+      "result": {
+        "first_cap": 128,
+        "cap": 256,
+        "status": "transition_cap",
+        "search_status": "transition_cap",
+        "transitions": 128,
+        "first_transitions": null,
+        "first_key": null,
+        "locked_key": null,
+        "first_path_size": null,
+        "first_locked": null,
+        "locked": null,
+        "verification_transitions": 0,
+        "quality_transitions": 0,
+        "quality_status": null,
+        "lock_at": null,
+        "route_risks": [],
+        "planned": [
+          "Q1",
+          "AGGRO",
+          "DEFENSIVE",
+          "ENGINE"
+        ],
+        "executed_initial": [
+          "Q1",
+          "AGGRO",
+          "DEFENSIVE",
+          "ENGINE"
+        ],
+        "root_stamp": "1b134e2e6cea8e6dadd077398031d2a1c6832279e28ed6af69c3b60368d66338",
+        "attempts": [
+          {
+            "strategy": "Q1",
+            "kind": "initial_strategy",
+            "status": "death",
+            "detail": null,
+            "transitions": 10,
+            "at": 10
+          },
+          {
+            "strategy": "AGGRO",
+            "kind": "initial_strategy",
+            "status": "death",
+            "detail": null,
+            "transitions": 10,
+            "at": 20
+          },
+          {
+            "strategy": "DEFENSIVE",
+            "kind": "initial_strategy",
+            "status": "death",
+            "detail": null,
+            "transitions": 11,
+            "at": 31
+          },
+          {
+            "strategy": "ENGINE",
+            "kind": "initial_strategy",
+            "status": "death",
+            "detail": null,
+            "transitions": 14,
+            "at": 45
+          },
+          {
+            "strategy": "Q1",
+            "kind": "late_alternative",
+            "status": "death",
+            "detail": null,
+            "transitions": 4,
+            "at": 49
+          },
+          {
+            "strategy": "Q1",
+            "kind": "turn_window",
+            "status": "death",
+            "detail": null,
+            "transitions": 4,
+            "at": 53
+          },
+          {
+            "strategy": "Q1",
+            "kind": "early_strategy_switch",
+            "status": "death",
+            "detail": null,
+            "transitions": 11,
+            "at": 64
+          },
+          {
+            "strategy": "Q1",
+            "kind": "undirected",
+            "status": "death",
+            "detail": null,
+            "transitions": 9,
+            "at": 73
+          },
+          {
+            "strategy": "AGGRO",
+            "kind": "late_alternative",
+            "status": "death",
+            "detail": null,
+            "transitions": 4,
+            "at": 77
+          },
+          {
+            "strategy": "AGGRO",
+            "kind": "turn_window",
+            "status": "death",
+            "detail": null,
+            "transitions": 4,
+            "at": 81
+          },
+          {
+            "strategy": "AGGRO",
+            "kind": "early_strategy_switch",
+            "status": "death",
+            "detail": null,
+            "transitions": 11,
+            "at": 92
+          },
+          {
+            "strategy": "AGGRO",
+            "kind": "undirected",
+            "status": "death",
+            "detail": null,
+            "transitions": 8,
+            "at": 100
+          },
+          {
+            "strategy": "DEFENSIVE",
+            "kind": "late_alternative",
+            "status": "death",
+            "detail": null,
+            "transitions": 4,
+            "at": 104
+          },
+          {
+            "strategy": "DEFENSIVE",
+            "kind": "turn_window",
+            "status": "death",
+            "detail": null,
+            "transitions": 4,
+            "at": 108
+          },
+          {
+            "strategy": "DEFENSIVE",
+            "kind": "early_strategy_switch",
+            "status": "death",
+            "detail": null,
+            "transitions": 14,
+            "at": 122
+          },
+          {
+            "strategy": "DEFENSIVE",
+            "kind": "undirected",
+            "status": "truncated",
+            "detail": "transition_cap",
+            "transitions": 6,
+            "at": 128
+          }
+        ]
+      }
+    },
+    {
+      "id": "458711adf546b659",
+      "result": {
+        "first_cap": 32,
+        "cap": 64,
+        "status": "transition_cap",
+        "search_status": "transition_cap",
+        "transitions": 32,
+        "first_transitions": null,
+        "first_key": null,
+        "locked_key": null,
+        "first_path_size": null,
+        "first_locked": null,
+        "locked": null,
+        "verification_transitions": 0,
+        "quality_transitions": 0,
+        "quality_status": null,
+        "lock_at": null,
+        "route_risks": [],
+        "planned": [
+          "Q1",
+          "AGGRO",
+          "DEFENSIVE",
+          "ENGINE"
+        ],
+        "executed_initial": [
+          "Q1",
+          "AGGRO"
+        ],
+        "root_stamp": "1631191dd4ac5eed921055f214b2a312ed35c8f440dc1563f6ef248fa883c1ac",
+        "attempts": [
+          {
+            "strategy": "Q1",
+            "kind": "initial_strategy",
+            "status": "death",
+            "detail": null,
+            "transitions": 28,
+            "at": 28
+          },
+          {
+            "strategy": "AGGRO",
+            "kind": "initial_strategy",
+            "status": "truncated",
+            "detail": "transition_cap",
+            "transitions": 4,
+            "at": 32
+          }
+        ]
+      }
+    },
+    {
+      "id": "458711adf546b659",
+      "result": {
+        "first_cap": 64,
+        "cap": 128,
+        "status": "transition_cap",
+        "search_status": "transition_cap",
+        "transitions": 64,
+        "first_transitions": null,
+        "first_key": null,
+        "locked_key": null,
+        "first_path_size": null,
+        "first_locked": null,
+        "locked": null,
+        "verification_transitions": 0,
+        "quality_transitions": 0,
+        "quality_status": null,
+        "lock_at": null,
+        "route_risks": [],
+        "planned": [
+          "Q1",
+          "AGGRO",
+          "DEFENSIVE",
+          "ENGINE"
+        ],
+        "executed_initial": [
+          "Q1",
+          "AGGRO",
+          "DEFENSIVE"
+        ],
+        "root_stamp": "1631191dd4ac5eed921055f214b2a312ed35c8f440dc1563f6ef248fa883c1ac",
+        "attempts": [
+          {
+            "strategy": "Q1",
+            "kind": "initial_strategy",
+            "status": "death",
+            "detail": null,
+            "transitions": 28,
+            "at": 28
+          },
+          {
+            "strategy": "AGGRO",
+            "kind": "initial_strategy",
+            "status": "death",
+            "detail": null,
+            "transitions": 13,
+            "at": 41
+          },
+          {
+            "strategy": "DEFENSIVE",
+            "kind": "initial_strategy",
+            "status": "truncated",
+            "detail": "transition_cap",
+            "transitions": 23,
+            "at": 64
+          }
+        ]
+      }
+    },
+    {
+      "id": "458711adf546b659",
+      "result": {
+        "first_cap": 128,
+        "cap": 256,
+        "status": "transition_cap",
+        "search_status": "transition_cap",
+        "transitions": 128,
+        "first_transitions": null,
+        "first_key": null,
+        "locked_key": null,
+        "first_path_size": null,
+        "first_locked": null,
+        "locked": null,
+        "verification_transitions": 0,
+        "quality_transitions": 0,
+        "quality_status": null,
+        "lock_at": null,
+        "route_risks": [],
+        "planned": [
+          "Q1",
+          "AGGRO",
+          "DEFENSIVE",
+          "ENGINE"
+        ],
+        "executed_initial": [
+          "Q1",
+          "AGGRO",
+          "DEFENSIVE",
+          "ENGINE"
+        ],
+        "root_stamp": "1631191dd4ac5eed921055f214b2a312ed35c8f440dc1563f6ef248fa883c1ac",
+        "attempts": [
+          {
+            "strategy": "Q1",
+            "kind": "initial_strategy",
+            "status": "death",
+            "detail": null,
+            "transitions": 28,
+            "at": 28
+          },
+          {
+            "strategy": "AGGRO",
+            "kind": "initial_strategy",
+            "status": "death",
+            "detail": null,
+            "transitions": 13,
+            "at": 41
+          },
+          {
+            "strategy": "DEFENSIVE",
+            "kind": "initial_strategy",
+            "status": "death",
+            "detail": null,
+            "transitions": 40,
+            "at": 81
+          },
+          {
+            "strategy": "ENGINE",
+            "kind": "initial_strategy",
+            "status": "death",
+            "detail": null,
+            "transitions": 25,
+            "at": 106
+          },
+          {
+            "strategy": "Q1",
+            "kind": "late_alternative",
+            "status": "death",
+            "detail": null,
+            "transitions": 4,
+            "at": 110
+          },
+          {
+            "strategy": "Q1",
+            "kind": "turn_window",
+            "status": "death",
+            "detail": null,
+            "transitions": 4,
+            "at": 114
+          },
+          {
+            "strategy": "Q1",
+            "kind": "early_strategy_switch",
+            "status": "truncated",
+            "detail": "transition_cap",
+            "transitions": 14,
+            "at": 128
+          }
+        ]
+      }
+    },
+    {
+      "id": "bc390290880c20ad",
+      "result": {
+        "first_cap": 32,
+        "cap": 64,
+        "status": "transition_cap",
+        "search_status": "transition_cap",
+        "transitions": 32,
+        "first_transitions": null,
+        "first_key": null,
+        "locked_key": null,
+        "first_path_size": null,
+        "first_locked": null,
+        "locked": null,
+        "verification_transitions": 0,
+        "quality_transitions": 0,
+        "quality_status": null,
+        "lock_at": null,
+        "route_risks": [],
+        "planned": [
+          "Q1",
+          "AGGRO",
+          "DEFENSIVE",
+          "ENGINE"
+        ],
+        "executed_initial": [
+          "Q1"
+        ],
+        "root_stamp": "43d74f61df94d40c948e7a9ee737820483e4194f7b723c4ceec97dea90ff9d7b",
+        "attempts": [
+          {
+            "strategy": "Q1",
+            "kind": "initial_strategy",
+            "status": "truncated",
+            "detail": "transition_cap",
+            "transitions": 32,
+            "at": 32
+          }
+        ]
+      }
+    },
+    {
+      "id": "bc390290880c20ad",
+      "result": {
+        "first_cap": 64,
+        "cap": 128,
+        "status": "qualified_win",
+        "search_status": "predicted_win",
+        "transitions": 128,
+        "first_transitions": 40,
+        "first_key": "849b323cfb89e5e793d5f1d5af6478b065cebc6e8e974aa50e59d66841514a75",
+        "locked_key": "849b323cfb89e5e793d5f1d5af6478b065cebc6e8e974aa50e59d66841514a75",
+        "first_path_size": 40,
+        "first_locked": {
+          "hp": 7,
+          "max_hp": 70,
+          "gold": 99,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "hp_lost": 23
+        },
+        "locked": {
+          "hp": 7,
+          "max_hp": 70,
+          "gold": 99,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "hp_lost": 23
+        },
+        "verification_transitions": 40,
+        "quality_transitions": 48,
+        "quality_status": "transition_cap",
+        "lock_at": 80,
+        "route_risks": [],
+        "planned": [
+          "Q1",
+          "AGGRO",
+          "DEFENSIVE",
+          "ENGINE"
+        ],
+        "executed_initial": [
+          "Q1"
+        ],
+        "root_stamp": "43d74f61df94d40c948e7a9ee737820483e4194f7b723c4ceec97dea90ff9d7b",
+        "attempts": [
+          {
+            "strategy": "Q1",
+            "kind": "initial_strategy",
+            "status": "predicted_win",
+            "detail": null,
+            "transitions": 40,
+            "at": 40
+          }
+        ]
+      }
+    },
+    {
+      "id": "bc390290880c20ad",
+      "result": {
+        "first_cap": 128,
+        "cap": 256,
+        "status": "qualified_win",
+        "search_status": "predicted_win",
+        "transitions": 256,
+        "first_transitions": 40,
+        "first_key": "849b323cfb89e5e793d5f1d5af6478b065cebc6e8e974aa50e59d66841514a75",
+        "locked_key": "d42b0bcafd9cd9ab48f08cd486f097133d756f2bedaf85e775dddde0dd43ad57",
+        "first_path_size": 40,
+        "first_locked": {
+          "hp": 7,
+          "max_hp": 70,
+          "gold": 99,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "hp_lost": 23
+        },
+        "locked": {
+          "hp": 8,
+          "max_hp": 70,
+          "gold": 99,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "hp_lost": 22
+        },
+        "verification_transitions": 40,
+        "quality_transitions": 176,
+        "quality_status": "transition_cap",
+        "lock_at": 191,
+        "route_risks": [],
+        "planned": [
+          "Q1",
+          "AGGRO",
+          "DEFENSIVE",
+          "ENGINE"
+        ],
+        "executed_initial": [
+          "Q1"
+        ],
+        "root_stamp": "43d74f61df94d40c948e7a9ee737820483e4194f7b723c4ceec97dea90ff9d7b",
+        "attempts": [
+          {
+            "strategy": "Q1",
+            "kind": "initial_strategy",
+            "status": "predicted_win",
+            "detail": null,
+            "transitions": 40,
+            "at": 40
+          }
+        ]
+      }
+    },
+    {
+      "id": "f996bf7ee4d96e9b",
+      "result": {
+        "first_cap": 32,
+        "cap": 64,
+        "status": "transition_cap",
+        "search_status": "transition_cap",
+        "transitions": 32,
+        "first_transitions": null,
+        "first_key": null,
+        "locked_key": null,
+        "first_path_size": null,
+        "first_locked": null,
+        "locked": null,
+        "verification_transitions": 0,
+        "quality_transitions": 0,
+        "quality_status": null,
+        "lock_at": null,
+        "route_risks": [],
+        "planned": [
+          "Q1",
+          "AGGRO",
+          "DEFENSIVE",
+          "ENGINE"
+        ],
+        "executed_initial": [
+          "Q1"
+        ],
+        "root_stamp": "43cd41e109c8c309554bc25b3548cf76b5a68d50c5d8d6530270cc8edc31a16b",
+        "attempts": [
+          {
+            "strategy": "Q1",
+            "kind": "initial_strategy",
+            "status": "truncated",
+            "detail": "transition_cap",
+            "transitions": 32,
+            "at": 32
+          }
+        ]
+      }
+    },
+    {
+      "id": "f996bf7ee4d96e9b",
+      "result": {
+        "first_cap": 64,
+        "cap": 128,
+        "status": "transition_cap",
+        "search_status": "transition_cap",
+        "transitions": 64,
+        "first_transitions": null,
+        "first_key": null,
+        "locked_key": null,
+        "first_path_size": null,
+        "first_locked": null,
+        "locked": null,
+        "verification_transitions": 0,
+        "quality_transitions": 0,
+        "quality_status": null,
+        "lock_at": null,
+        "route_risks": [],
+        "planned": [
+          "Q1",
+          "AGGRO",
+          "DEFENSIVE",
+          "ENGINE"
+        ],
+        "executed_initial": [
+          "Q1",
+          "AGGRO",
+          "DEFENSIVE"
+        ],
+        "root_stamp": "43cd41e109c8c309554bc25b3548cf76b5a68d50c5d8d6530270cc8edc31a16b",
+        "attempts": [
+          {
+            "strategy": "Q1",
+            "kind": "initial_strategy",
+            "status": "death",
+            "detail": null,
+            "transitions": 36,
+            "at": 36
+          },
+          {
+            "strategy": "AGGRO",
+            "kind": "initial_strategy",
+            "status": "death",
+            "detail": null,
+            "transitions": 18,
+            "at": 54
+          },
+          {
+            "strategy": "DEFENSIVE",
+            "kind": "initial_strategy",
+            "status": "truncated",
+            "detail": "transition_cap",
+            "transitions": 10,
+            "at": 64
+          }
+        ]
+      }
+    },
+    {
+      "id": "f996bf7ee4d96e9b",
+      "result": {
+        "first_cap": 128,
+        "cap": 256,
+        "status": "transition_cap",
+        "search_status": "transition_cap",
+        "transitions": 128,
+        "first_transitions": null,
+        "first_key": null,
+        "locked_key": null,
+        "first_path_size": null,
+        "first_locked": null,
+        "locked": null,
+        "verification_transitions": 0,
+        "quality_transitions": 0,
+        "quality_status": null,
+        "lock_at": null,
+        "route_risks": [],
+        "planned": [
+          "Q1",
+          "AGGRO",
+          "DEFENSIVE",
+          "ENGINE"
+        ],
+        "executed_initial": [
+          "Q1",
+          "AGGRO",
+          "DEFENSIVE",
+          "ENGINE"
+        ],
+        "root_stamp": "43cd41e109c8c309554bc25b3548cf76b5a68d50c5d8d6530270cc8edc31a16b",
+        "attempts": [
+          {
+            "strategy": "Q1",
+            "kind": "initial_strategy",
+            "status": "death",
+            "detail": null,
+            "transitions": 36,
+            "at": 36
+          },
+          {
+            "strategy": "AGGRO",
+            "kind": "initial_strategy",
+            "status": "death",
+            "detail": null,
+            "transitions": 18,
+            "at": 54
+          },
+          {
+            "strategy": "DEFENSIVE",
+            "kind": "initial_strategy",
+            "status": "death",
+            "detail": null,
+            "transitions": 38,
+            "at": 92
+          },
+          {
+            "strategy": "ENGINE",
+            "kind": "initial_strategy",
+            "status": "truncated",
+            "detail": "transition_cap",
+            "transitions": 36,
+            "at": 128
+          }
+        ]
+      }
+    }
+  ]
+}

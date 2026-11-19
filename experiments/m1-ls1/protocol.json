@@ -1,0 +1,16 @@
+{
+  "schema": "sts2.m1-ls1.v1",
+  "domain": "STS2-LS1-20261119-v1",
+  "baseline_commit": "51992cae60c94756146d94fe26d402b006a7c849",
+  "initial_strategies": ["Q1", "AGGRO", "DEFENSIVE", "ENGINE"],
+  "teacher_first_cap": 48,
+  "budgets": [64, 128, 256],
+  "first_win_fraction": 0.5,
+  "min_locked_hp": 1,
+  "active_potions": false,
+  "solver": "0.51.5-e3f.1",
+  "workers": 1,
+  "phase_wall_seconds": {"freeze": 120, "pilot": 180, "collect": 720, "train": 90, "report": 900, "feedback": 420},
+  "max_prediction_transitions": {"freeze": 1792, "pilot": 3328, "collect": 23040, "report": 57344, "feedback": 5632},
+  "training": {"epochs": [30, 60, 90], "seeds": [17, 43, 101], "hidden": 12, "card_dim": 128, "learning_rate": 0.015, "l2": 0.002}
+}

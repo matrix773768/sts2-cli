@@ -1,0 +1,888 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "M1-LS1 search experience",
+  "description": "One search invocation on one root. Candidate attempts are correlated. Transport/build failures without an experience live in a root ledger record.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "model_input",
+    "versions",
+    "audit",
+    "outcome"
+  ],
+  "properties": {
+    "schema": {
+      "const": "sts2.m1-ls1.experience.v1"
+    },
+    "model_input": {
+      "$ref": "#/$defs/public"
+    },
+    "versions": {
+      "$ref": "#/$defs/versions"
+    },
+    "audit": {
+      "$ref": "#/$defs/audit"
+    },
+    "outcome": {
+      "$ref": "#/$defs/outcome"
+    }
+  },
+  "$defs": {
+    "inventory": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      }
+    },
+    "power": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "amount"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "integer"
+        }
+      }
+    },
+    "route_resources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "hp",
+        "max_hp",
+        "gold",
+        "potions",
+        "hp_lost"
+      ],
+      "properties": {
+        "hp": {
+          "type": "integer"
+        },
+        "max_hp": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "gold": {
+          "type": "integer"
+        },
+        "potions": {
+          "$ref": "#/$defs/inventory"
+        },
+        "hp_lost": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "player": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "hp",
+        "max_hp",
+        "block",
+        "gold"
+      ],
+      "properties": {
+        "hp": {
+          "type": "integer"
+        },
+        "max_hp": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "block": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "gold": {
+          "type": "integer"
+        }
+      }
+    },
+    "hand": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "type",
+        "cost",
+        "can_play",
+        "target_type"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "cost": {
+          "type": "integer"
+        },
+        "can_play": {
+          "type": "boolean"
+        },
+        "target_type": {
+          "type": "string"
+        }
+      }
+    },
+    "intent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "damage": {
+          "type": "integer"
+        },
+        "hits": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "total_damage": {
+          "type": "integer"
+        }
+      }
+    },
+    "enemy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "hp",
+        "max_hp",
+        "block",
+        "powers",
+        "intents"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "hp": {
+          "type": "integer"
+        },
+        "max_hp": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "block": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "powers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/power"
+          }
+        },
+        "intents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/intent"
+          }
+        }
+      }
+    },
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "strategy",
+        "action_limit",
+        "active_potions"
+      ],
+      "properties": {
+        "strategy": {
+          "enum": [
+            "Q1",
+            "AGGRO",
+            "DEFENSIVE",
+            "ENGINE"
+          ]
+        },
+        "action_limit": {
+          "const": 48
+        },
+        "active_potions": {
+          "const": false
+        }
+      }
+    },
+    "public": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "character",
+        "player",
+        "act",
+        "round",
+        "energy",
+        "max_energy",
+        "draw_count",
+        "discard_count",
+        "player_powers",
+        "enemies",
+        "hand",
+        "relics",
+        "potions",
+        "identity_deck",
+        "mechanics_deck",
+        "candidates"
+      ],
+      "properties": {
+        "character": {
+          "enum": [
+            "Ironclad",
+            "Silent"
+          ]
+        },
+        "player": {
+          "$ref": "#/$defs/player"
+        },
+        "act": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "round": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "energy": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "max_energy": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "draw_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "discard_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "player_powers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/power"
+          }
+        },
+        "enemies": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/enemy"
+          }
+        },
+        "hand": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/hand"
+          }
+        },
+        "relics": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "potions": {
+          "$ref": "#/$defs/inventory"
+        },
+        "identity_deck": {
+          "$ref": "#/$defs/deck"
+        },
+        "mechanics_deck": {
+          "$ref": "#/$defs/deck"
+        },
+        "candidates": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/candidate"
+          },
+          "minItems": 4,
+          "maxItems": 4
+        }
+      }
+    },
+    "deck": {
+      "type": "object",
+      "required": [
+        "schema",
+        "character",
+        "mode",
+        "complete",
+        "cards",
+        "content_sha256",
+        "source"
+      ],
+      "properties": {
+        "schema": {
+          "const": "sts2.card-semantics.v1"
+        },
+        "character": {
+          "type": "string"
+        },
+        "mode": {
+          "enum": [
+            "identity",
+            "mechanics"
+          ]
+        },
+        "complete": {
+          "const": true
+        },
+        "cards": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "card",
+              "count"
+            ],
+            "properties": {
+              "card": {
+                "type": "object"
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        },
+        "content_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "source": {
+          "const": "visible_deck"
+        }
+      },
+      "description": "Canonical N2E DeckSpec (m1-n2e/schema.json). Audit envelope is ignored by the learner."
+    },
+    "versions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      },
+      "required": [
+        "game",
+        "game_sha256",
+        "solver",
+        "solver_sha256",
+        "coreclr",
+        "headless_sha256",
+        "adapter",
+        "f3b_first_win",
+        "f3b_route_search",
+        "f4_quality",
+        "preprocess",
+        "catalog",
+        "encoder"
+      ]
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "split",
+        "source",
+        "natural_reachability",
+        "family",
+        "pair",
+        "history",
+        "recipe",
+        "root_stamp",
+        "mode",
+        "model_sha256",
+        "root_spec_sha256",
+        "evidence",
+        "fallback",
+        "public_gaps"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "split": {
+          "enum": [
+            "pilot",
+            "train",
+            "selection",
+            "report",
+            "reachable",
+            "feedback"
+          ]
+        },
+        "source": {
+          "enum": [
+            "synthetic",
+            "F3A"
+          ]
+        },
+        "natural_reachability": {
+          "enum": [
+            "unknown",
+            "assisted_history"
+          ]
+        },
+        "family": {
+          "type": "string"
+        },
+        "pair": {
+          "type": "string"
+        },
+        "history": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "recipe": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "root_stamp": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "mode": {
+          "enum": [
+            "teacher",
+            "baseline_search",
+            "statistics",
+            "card_id",
+            "learned_search"
+          ]
+        },
+        "model_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "root_spec_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "evidence": {
+          "const": "research_prediction_hidden_rng"
+        },
+        "fallback": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "public_gaps": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "attempt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "strategy",
+        "kind",
+        "status",
+        "detail",
+        "transitions",
+        "at",
+        "rollout_ms",
+        "allocated_limit",
+        "verified_win",
+        "locked",
+        "first_cost"
+      ],
+      "properties": {
+        "strategy": {
+          "enum": [
+            "Q1",
+            "AGGRO",
+            "DEFENSIVE",
+            "ENGINE"
+          ]
+        },
+        "kind": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "predicted_win",
+            "death",
+            "truncated",
+            "unsupported",
+            "rejected_native_candidate"
+          ]
+        },
+        "detail": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "transitions": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2048
+        },
+        "at": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2048
+        },
+        "rollout_ms": {
+          "type": "number",
+          "minimum": 0
+        },
+        "allocated_limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2048
+        },
+        "verified_win": {
+          "type": "boolean"
+        },
+        "locked": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/route_resources"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "first_cost": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 2048
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "outcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "first_cap",
+        "cap",
+        "search_status",
+        "status",
+        "detail",
+        "transitions",
+        "first_ms",
+        "qualified_first_ms",
+        "ordering_ms",
+        "model_ms",
+        "first_transitions",
+        "attempts",
+        "planned",
+        "executed_initial",
+        "first_locked",
+        "locked",
+        "verification_transitions",
+        "quality_transitions",
+        "first_key",
+        "locked_key",
+        "first_path_size",
+        "route_risks",
+        "quality_status",
+        "lock_at",
+        "search_ms",
+        "order_changed",
+        "executed_order_changed",
+        "candidate_probe",
+        "public_prepare_ms"
+      ],
+      "properties": {
+        "first_cap": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2048
+        },
+        "cap": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2048
+        },
+        "search_status": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "detail": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "transitions": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2048
+        },
+        "first_ms": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "qualified_first_ms": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "ordering_ms": {
+          "type": "number",
+          "minimum": 0
+        },
+        "model_ms": {
+          "type": "number",
+          "minimum": 0
+        },
+        "first_transitions": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 2048
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "attempts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/attempt"
+          }
+        },
+        "planned": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "Q1",
+              "AGGRO",
+              "DEFENSIVE",
+              "ENGINE"
+            ]
+          },
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 4
+        },
+        "executed_initial": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "Q1",
+              "AGGRO",
+              "DEFENSIVE",
+              "ENGINE"
+            ]
+          },
+          "uniqueItems": true,
+          "maxItems": 4
+        },
+        "first_locked": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/route_resources"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "locked": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/route_resources"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "verification_transitions": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2048
+        },
+        "quality_transitions": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2048
+        },
+        "first_key": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "locked_key": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "first_path_size": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 2048
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "route_risks": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "quality_status": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "lock_at": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 2048
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "search_ms": {
+          "type": "number",
+          "minimum": 0
+        },
+        "order_changed": {
+          "type": "boolean"
+        },
+        "executed_order_changed": {
+          "type": "boolean"
+        },
+        "candidate_probe": {
+          "anyOf": [
+            {
+              "enum": [
+                "Q1",
+                "AGGRO",
+                "DEFENSIVE",
+                "ENGINE"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "public_prepare_ms": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7048 @@
+{
+  "protocol": {
+    "schema": "sts2.m1-ls1.v1",
+    "domain": "STS2-LS1-20261119-v1",
+    "baseline_commit": "51992cae60c94756146d94fe26d402b006a7c849",
+    "initial_strategies": [
+      "Q1",
+      "AGGRO",
+      "DEFENSIVE",
+      "ENGINE"
+    ],
+    "teacher_first_cap": 48,
+    "budgets": [
+      64,
+      128,
+      256
+    ],
+    "first_win_fraction": 0.5,
+    "min_locked_hp": 1,
+    "active_potions": false,
+    "solver": "0.51.5-e3f.1",
+    "workers": 1,
+    "phase_wall_seconds": {
+      "freeze": 120,
+      "pilot": 180,
+      "collect": 720,
+      "train": 90,
+      "report": 900,
+      "feedback": 420
+    },
+    "max_prediction_transitions": {
+      "freeze": 1792,
+      "pilot": 3328,
+      "collect": 23040,
+      "report": 57344,
+      "feedback": 5632
+    },
+    "training": {
+      "epochs": [
+        30,
+        60,
+        90
+      ],
+      "seeds": [
+        17,
+        43,
+        101
+      ],
+      "hidden": 12,
+      "card_dim": 128,
+      "learning_rate": 0.015,
+      "l2": 0.002
+    }
+  },
+  "versions": {
+    "sampler": "m1-d1-v1",
+    "policy": "M1-F2-discard-v1",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "solver_sha256": "cea50e9570edbed06c7f0502fdc5949ba3846ee64605f4891b32768b4ef3d51c",
+    "solver": "0.51.5-e3f.1",
+    "headless_sha256": "5b3f24d06adba910817b4e7d7fe8af9a6b7d4d83f304a578e2ffef91b390f541",
+    "coreclr": "9.0.7",
+    "native_identity": "4ab6118862180f6a6d4fd1fa642c248a38a22bac6b1c74414c4de419806227e7",
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+    "f3b_first_win": "1dbd8345510af1dd8b85a491fe9eecbbafbabc1203353322618f494d939d81bb",
+    "f3b_route_search": "054eb9083b17f306f5e11db878950e72bfa3660d84996bde805648e81f7e17c9",
+    "f4_quality": "a6a0ee35a74c91c2e99127d8d637fcdc3712d29e692dbb6ec32f85c52318a053",
+    "preprocess": "ca28fa952c3dfb1a9b90ee7c02027317a6b91a681e88d995fabc84463e5634ea",
+    "catalog": "e3f637b27c674eba88317c0c2432cc8feb5b35d6e483519f6846043f80158948",
+    "adapter": "4f988fc822bce55f8234a1ca1ee86971c44941d8a947b9ef528b56a560339fd1"
+  },
+  "manifest": [
+    {
+      "id": "b5cd8bc950170c06",
+      "split": "train",
+      "family": "faaad2d53b368cb4008cb35d1cefb46b06951295295fe8387cc83f443a6e6f48",
+      "pair": "b5cd8bc950170c060d4ead4420ad4942ec0d43bc9c28a4824d5e60ac54a8709b",
+      "history": null,
+      "seed": "B5CD8BC95017",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "B5CD8BC95017",
+        "hp": 30,
+        "max_hp": 80,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "1c9adb873aa790a1f8b13f3421e0a2f10cd433cf88118dc27294a5961e09bf78"
+    },
+    {
+      "id": "e0fe904a6aaddbf0",
+      "split": "train",
+      "family": "faaad2d53b368cb4008cb35d1cefb46b06951295295fe8387cc83f443a6e6f48",
+      "pair": "e0fe904a6aaddbf0e419e103d0abec433f1ad927dfef4a0da199685ec30c25a2",
+      "history": null,
+      "seed": "E0FE904A6AAD",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "E0FE904A6AAD",
+        "hp": 56,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 1
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "ba6e5a19e6b1ac70d3d5360608b645887e37fe627a3b9fe43d60daa6b85c40a5"
+    },
+    {
+      "id": "e0d5d85af0ed249e",
+      "split": "train",
+      "family": "faaad2d53b368cb4008cb35d1cefb46b06951295295fe8387cc83f443a6e6f48",
+      "pair": "e0d5d85af0ed249eec32e35f138b427ddb0da9aedf3d86e78e716b0d0b018b1a",
+      "history": null,
+      "seed": "E0D5D85AF0ED",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "E0D5D85AF0ED",
+        "hp": 40,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          null,
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 1
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "1b9d08a79f75f224562fec9cf33df1ff2cb6cd0c76e6f66823afc1bb3f6e6ed4"
+    },
+    {
+      "id": "d163c5be81922b27",
+      "split": "train",
+      "family": "faaad2d53b368cb4008cb35d1cefb46b06951295295fe8387cc83f443a6e6f48",
+      "pair": "d163c5be81922b27c38d238b762afc5a32a096d51aeb670c441a13c8cd146edf",
+      "history": null,
+      "seed": "D163C5BE8192",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "D163C5BE8192",
+        "hp": 64,
+        "max_hp": 80,
+        "relics": [],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "1be7dd4db0171ea36a869c354f9ab063de0a4f1d9835c90c5338caee1f49f5dc"
+    },
+    {
+      "id": "361412b51f65171a",
+      "split": "train",
+      "family": "faaad2d53b368cb4008cb35d1cefb46b06951295295fe8387cc83f443a6e6f48",
+      "pair": "361412b51f65171afe3300e1402cc6b8e70504e824d01cd84f5d9ff512943a24",
+      "history": null,
+      "seed": "361412B51F65",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "361412B51F65",
+        "hp": 34,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 1
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "1c2188bf2ebcca5d7bd69f960eb424e5d8ec93590f9228055738d676090caccf"
+    },
+    {
+      "id": "2dbdd903bf8d4d44",
+      "split": "train",
+      "family": "faaad2d53b368cb4008cb35d1cefb46b06951295295fe8387cc83f443a6e6f48",
+      "pair": "2dbdd903bf8d4d444bc257e302da466becf7fe0edd8db0fe7b5760acfeb1c5a5",
+      "history": null,
+      "seed": "2DBDD903BF8D",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "2DBDD903BF8D",
+        "hp": 49,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 1
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "ebdb1812ec097a8b71f2ea2a4be88139e0fe17db3ed4c2404886310e40113d19"
+    },
+    {
+      "id": "536353644d2b12fc",
+      "split": "train",
+      "family": "ce40ed4e7d220bc84a274ee3579b8ae053ac51dce4810758a085028796570e70",
+      "pair": "536353644d2b12fc202571ddc541750ac8d520484eda03fad3dba6b990c496a4",
+      "history": null,
+      "seed": "536353644D2B",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "536353644D2B",
+        "hp": 30,
+        "max_hp": 80,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "3a7266fd80b58ea6deebfb755c0f27c42333c0032c7e4a400fb07db7c1e11e05"
+    },
+    {
+      "id": "40f0bb2e4b0c085a",
+      "split": "train",
+      "family": "ce40ed4e7d220bc84a274ee3579b8ae053ac51dce4810758a085028796570e70",
+      "pair": "40f0bb2e4b0c085a107c57e3cbd07db8e88bf2abd1f92492bf72fbb0644880a8",
+      "history": null,
+      "seed": "40F0BB2E4B0C",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "40F0BB2E4B0C",
+        "hp": 56,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 1
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "b06e0c40ba28429fa9d15af9c4304c11eef6cd29552f3b2f384b5dc04d55a926"
+    },
+    {
+      "id": "75f7aea145b406a5",
+      "split": "train",
+      "family": "ce40ed4e7d220bc84a274ee3579b8ae053ac51dce4810758a085028796570e70",
+      "pair": "75f7aea145b406a522f234c39da3401c0e45df6198e46c5f583bc00442ccda73",
+      "history": null,
+      "seed": "75F7AEA145B4",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "75F7AEA145B4",
+        "hp": 40,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          null,
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 1
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "674b35289eb852a17294e7edd60dbfd1a0d571aeccb7380fb10fa706365f9be6"
+    },
+    {
+      "id": "bbc4057b45b9c2cb",
+      "split": "train",
+      "family": "ce40ed4e7d220bc84a274ee3579b8ae053ac51dce4810758a085028796570e70",
+      "pair": "bbc4057b45b9c2cb29e679c953c080d6c034e3722f71001b63600ff69d9edf9e",
+      "history": null,
+      "seed": "BBC4057B45B9",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "BBC4057B45B9",
+        "hp": 64,
+        "max_hp": 80,
+        "relics": [],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "480326b01ad5de02af6d19fce7e00d16581e610cc836dde86e77bd2a1838e3f5"
+    },
+    {
+      "id": "175e1a7ef833bd1a",
+      "split": "train",
+      "family": "ce40ed4e7d220bc84a274ee3579b8ae053ac51dce4810758a085028796570e70",
+      "pair": "175e1a7ef833bd1a9b8613f13933d4c95c26ebc5bec9326d8fa8cffe7c391636",
+      "history": null,
+      "seed": "175E1A7EF833",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "175E1A7EF833",
+        "hp": 34,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 1
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "58549e6eeb8dd7aa9744ed845d67a89bc5fb45a413271669cc9f4bf46509f718"
+    },
+    {
+      "id": "4fe89972977f6d7c",
+      "split": "train",
+      "family": "ce40ed4e7d220bc84a274ee3579b8ae053ac51dce4810758a085028796570e70",
+      "pair": "4fe89972977f6d7ce1c3e4c75ad4883cf53887f1120e9c60db4481b949f9e319",
+      "history": null,
+      "seed": "4FE89972977F",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "4FE89972977F",
+        "hp": 49,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 1
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "b8548603dded2adaec6d8611e919cb907845b724bd6b93170478b140da5fd19e"
+    },
+    {
+      "id": "c3d64f497674e29a",
+      "split": "train",
+      "family": "eb3b1a5acd2b0ad08b8d293c8a91142f79b495f58648381e48236d6d9233c4fa",
+      "pair": "c3d64f497674e29a48fa69806af4186f46b73c9bd49f48b9a64de1d301dc94f7",
+      "history": null,
+      "seed": "C3D64F497674",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "C3D64F497674",
+        "hp": 30,
+        "max_hp": 80,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "8935b2f77dab787a41f4e925658805c619cda66916dbc8139f9a7025b24b4001"
+    },
+    {
+      "id": "7fdda781c5aab2e1",
+      "split": "train",
+      "family": "eb3b1a5acd2b0ad08b8d293c8a91142f79b495f58648381e48236d6d9233c4fa",
+      "pair": "7fdda781c5aab2e13de0f885193200d09a88fe9f26a23439dc574d65d0be5ad5",
+      "history": null,
+      "seed": "7FDDA781C5AA",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "7FDDA781C5AA",
+        "hp": 56,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "INFLAME",
+            "upgrade": 1
+          },
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "46a163df58b692d42b9c52cb191f74a45e537e24fc2066490b9ecde9a2e33fff"
+    },
+    {
+      "id": "483a2282650719fe",
+      "split": "train",
+      "family": "eb3b1a5acd2b0ad08b8d293c8a91142f79b495f58648381e48236d6d9233c4fa",
+      "pair": "483a2282650719fec7bf41d92236cda3cb2057326274161ff7d7fc5202d1adde",
+      "history": null,
+      "seed": "483A22826507",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "483A22826507",
+        "hp": 40,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          null,
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "BASH",
+            "upgrade": 1
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "417aafc9f20bf01ef0c79715f97726e77c1b90247015526a6125614bf934ac5d"
+    },
+    {
+      "id": "89c0a08ef19b1bf1",
+      "split": "train",
+      "family": "eb3b1a5acd2b0ad08b8d293c8a91142f79b495f58648381e48236d6d9233c4fa",
+      "pair": "89c0a08ef19b1bf1ea2597a69ee3f2a26492da43be484164a8250ea75c1ac05a",
+      "history": null,
+      "seed": "89C0A08EF19B",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "89C0A08EF19B",
+        "hp": 64,
+        "max_hp": 80,
+        "relics": [],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "064f3e0b71af0b9fe203bff4680c6fe83f3a04023ba52d50d03727acd559c30e"
+    },
+    {
+      "id": "29e6d7345bdcb519",
+      "split": "train",
+      "family": "eb3b1a5acd2b0ad08b8d293c8a91142f79b495f58648381e48236d6d9233c4fa",
+      "pair": "29e6d7345bdcb5199dbd2421ebcbb7eeca46d59ecfd0f8b20a0663250f0dc31d",
+      "history": null,
+      "seed": "29E6D7345BDC",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "29E6D7345BDC",
+        "hp": 34,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 1
+          },
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "ce16d48cf844c2130277e37f6d69666f1d0007dfbbd35db3aa6e57b1c578bd3e"
+    },
+    {
+      "id": "67721added4f0c79",
+      "split": "train",
+      "family": "eb3b1a5acd2b0ad08b8d293c8a91142f79b495f58648381e48236d6d9233c4fa",
+      "pair": "67721added4f0c798b3c5e8165fd61a3e9b63d2ce868b33786fc6e004f6e1b9c",
+      "history": null,
+      "seed": "67721ADDED4F",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "67721ADDED4F",
+        "hp": 49,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "INFLAME",
+            "upgrade": 1
+          },
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "e251fb71622435b312012ef2758cb326170f63765007c2b00a9cbfe5b217df30"
+    },
+    {
+      "id": "ae985de47884d122",
+      "split": "train",
+      "family": "a14cc2efaec920d9a1b1368bc010f70072337d8e2f67129d4346e6cd079bb985",
+      "pair": "ae985de47884d12284894c3ed9e70fbaa189320a387f9a332c23f38185314181",
+      "history": null,
+      "seed": "AE985DE47884",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "AE985DE47884",
+        "hp": 30,
+        "max_hp": 80,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "3c364afc504fa26cad76ec63df5a580e3cccecc4e5741b7168196d3882a541d3"
+    },
+    {
+      "id": "42d93542fe10b07c",
+      "split": "train",
+      "family": "a14cc2efaec920d9a1b1368bc010f70072337d8e2f67129d4346e6cd079bb985",
+      "pair": "42d93542fe10b07ce8657b5462299d56a4589bb22cb0b83bf6acda7846561473",
+      "history": null,
+      "seed": "42D93542FE10",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "42D93542FE10",
+        "hp": 56,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "BASH",
+            "upgrade": 1
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "d24c6be6cec38674819cd314964e7c3a28526731e6e2e29bab5874e7362b3d61"
+    },
+    {
+      "id": "28fa367a02072d2b",
+      "split": "train",
+      "family": "a14cc2efaec920d9a1b1368bc010f70072337d8e2f67129d4346e6cd079bb985",
+      "pair": "28fa367a02072d2bc5934a82a2eb4ee2b15f2bf61d32b9773aff8f2a4d8b3b36",
+      "history": null,
+      "seed": "28FA367A0207",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "28FA367A0207",
+        "hp": 40,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          null,
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 1
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "d76f8182c1923ea043b9c6655a461a7b8067c25574607f7a4ac3aab7682fda53"
+    },
+    {
+      "id": "0916357e3f3c8c30",
+      "split": "train",
+      "family": "a14cc2efaec920d9a1b1368bc010f70072337d8e2f67129d4346e6cd079bb985",
+      "pair": "0916357e3f3c8c30abd3388038e163de535b5405119e8de0c38b89840764183b",
+      "history": null,
+      "seed": "0916357E3F3C",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "0916357E3F3C",
+        "hp": 64,
+        "max_hp": 80,
+        "relics": [],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "be1bf14a698bd9415c129a7a9ba6ceae2e62529aab3e7a98901250949b9543a5"
+    },
+    {
+      "id": "bb904e15ae1ccbac",
+      "split": "train",
+      "family": "a14cc2efaec920d9a1b1368bc010f70072337d8e2f67129d4346e6cd079bb985",
+      "pair": "bb904e15ae1ccbac8bd2558f75d392566304a7ea69bc25a85a463246622ffb0c",
+      "history": null,
+      "seed": "BB904E15AE1C",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "BB904E15AE1C",
+        "hp": 34,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "BASH",
+            "upgrade": 1
+          },
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "7755599ab8d9e7904984fa21a8a4104bda1207cc285ffa64fb872902e5909ca2"
+    },
+    {
+      "id": "c598934aca90e174",
+      "split": "train",
+      "family": "a14cc2efaec920d9a1b1368bc010f70072337d8e2f67129d4346e6cd079bb985",
+      "pair": "c598934aca90e174007b7c743f79d322ce7c79fc385b0ceb363c09c9086d1d6c",
+      "history": null,
+      "seed": "C598934ACA90",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "C598934ACA90",
+        "hp": 49,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "BASH",
+            "upgrade": 1
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "f084bb7bc16742e0faabad2dbb5dcbc8eef8a38adc4dbcef9d712b7943dda3f9"
+    },
+    {
+      "id": "dfa80a54887b68d3",
+      "split": "selection",
+      "family": "64affae8ef1dfb4f1094b6cc0bfda6d97a4090089b34ca6c8f705d732a21a94a",
+      "pair": "dfa80a54887b68d3d3e736da60cd22864c52dc8b421aa7be4f2b37997f95e765",
+      "history": null,
+      "seed": "DFA80A54887B",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "DFA80A54887B",
+        "hp": 30,
+        "max_hp": 80,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "cf00603bfc196b9e980ea4a0785ff5bcec2d116fad66932140639c5057c53dd4"
+    },
+    {
+      "id": "7ac18ca9e75dea3b",
+      "split": "selection",
+      "family": "64affae8ef1dfb4f1094b6cc0bfda6d97a4090089b34ca6c8f705d732a21a94a",
+      "pair": "7ac18ca9e75dea3b03f07e2a0e5933e44e519909c8e9abdcc09fc59981492397",
+      "history": null,
+      "seed": "7AC18CA9E75D",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "7AC18CA9E75D",
+        "hp": 56,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 1
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "f008626a2a8c4db934eeac565715ab80a0be67f558bee95082d1f9a38c9ed89b"
+    },
+    {
+      "id": "361278d3855bb258",
+      "split": "selection",
+      "family": "64affae8ef1dfb4f1094b6cc0bfda6d97a4090089b34ca6c8f705d732a21a94a",
+      "pair": "361278d3855bb258a3d98600248c67968d3dab52597a677c064877e7456d3ffc",
+      "history": null,
+      "seed": "361278D3855B",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "361278D3855B",
+        "hp": 40,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          null,
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 1
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "d9f0d4e7b4dc3e901d6ab96c8ff696a35c004ef5553bd8b0b81ce50a3b4e1bd2"
+    },
+    {
+      "id": "6337f74d5a2e7206",
+      "split": "selection",
+      "family": "64affae8ef1dfb4f1094b6cc0bfda6d97a4090089b34ca6c8f705d732a21a94a",
+      "pair": "6337f74d5a2e7206f6422342f0e7f93fb406e21e556e0573125a6a71dec702cd",
+      "history": null,
+      "seed": "6337F74D5A2E",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "6337F74D5A2E",
+        "hp": 64,
+        "max_hp": 80,
+        "relics": [],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "921ca88dfdde2bab87d7c5d393da70a7031d9d9ed0297aeedf523014653cd0fd"
+    },
+    {
+      "id": "7c9b132837fab5c8",
+      "split": "selection",
+      "family": "64affae8ef1dfb4f1094b6cc0bfda6d97a4090089b34ca6c8f705d732a21a94a",
+      "pair": "7c9b132837fab5c8befb55265783d7600bfaec0d1b45fbbdaf5dcc3b68fa01c2",
+      "history": null,
+      "seed": "7C9B132837FA",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "7C9B132837FA",
+        "hp": 34,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 1
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "bfc9a402aabb76e264dd0bb219954f672fc990bc63fda87ecec209537d057421"
+    },
+    {
+      "id": "e653659b4339aa04",
+      "split": "selection",
+      "family": "64affae8ef1dfb4f1094b6cc0bfda6d97a4090089b34ca6c8f705d732a21a94a",
+      "pair": "e653659b4339aa04d6f8645fb6f9f9bd4a86367b3f92a6e390aa5e9a6c754d6d",
+      "history": null,
+      "seed": "E653659B4339",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "E653659B4339",
+        "hp": 49,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 1
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "46f756afd7267e6f3e0de87f094bb92639efc1d1d030948c9215f37be8ba0cd3"
+    },
+    {
+      "id": "d91d009165f94d29",
+      "split": "report",
+      "family": "89d0bbb86452bc0c311e8dbce3c555bf4d623e4afd7b7bbd0340df007237ff74",
+      "pair": "d91d009165f94d29add0b9fea324c939b579089f5eebc1d8b7ea841f6f8e6133",
+      "history": null,
+      "seed": "D91D009165F9",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "D91D009165F9",
+        "hp": 30,
+        "max_hp": 80,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "769b678ae06d578f1e6dda531291463835c6b454c11261e8f0428577ea023402"
+    },
+    {
+      "id": "2e30f236e717989d",
+      "split": "report",
+      "family": "89d0bbb86452bc0c311e8dbce3c555bf4d623e4afd7b7bbd0340df007237ff74",
+      "pair": "2e30f236e717989de696df207d4ca3639db3207c9aafb11dfbf6b13f72f1f6a8",
+      "history": null,
+      "seed": "2E30F236E717",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "2E30F236E717",
+        "hp": 56,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 1
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "06862cb1e65da30c6ab89bf4a69fc1ba499363e9f1c7e2cc7f791b4dd9d77462"
+    },
+    {
+      "id": "5f3e563866cc5e78",
+      "split": "report",
+      "family": "89d0bbb86452bc0c311e8dbce3c555bf4d623e4afd7b7bbd0340df007237ff74",
+      "pair": "5f3e563866cc5e781e47e895beaf04fa2d6c33fb39d4adf3749faf832604bcb7",
+      "history": null,
+      "seed": "5F3E563866CC",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "TUNNELER_WEAK",
+        "seed": "5F3E563866CC",
+        "hp": 40,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          null,
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 1
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "16814caf4474f3128a1aa8e7626051f9146b710d053f4ff20cd583d5462b0b41"
+    },
+    {
+      "id": "7b43711ad696b198",
+      "split": "report",
+      "family": "89d0bbb86452bc0c311e8dbce3c555bf4d623e4afd7b7bbd0340df007237ff74",
+      "pair": "7b43711ad696b1983ca6738a91e9dbf12943b97c3fcc4e0414c7e924e61f4f3a",
+      "history": null,
+      "seed": "7B43711AD696",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "EXOSKELETONS_WEAK",
+        "seed": "7B43711AD696",
+        "hp": 64,
+        "max_hp": 80,
+        "relics": [],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "6e958a9f066b6453371fada4b0715d69af5c691dc209e2e07a2e2cc606c5319c"
+    },
+    {
+      "id": "f5a60e1b1ef06a09",
+      "split": "report",
+      "family": "777b8d6e11384a1420b11b7abc77172b1012ed36a84674cb7dcf38b8c7abc711",
+      "pair": "f5a60e1b1ef06a092b1b32958db91cab5d450f5d4f94b3297ed07e7497e7d268",
+      "history": null,
+      "seed": "F5A60E1B1EF0",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "F5A60E1B1EF0",
+        "hp": 30,
+        "max_hp": 80,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "4a8af6e923c282d7adf3e996584b14f0306c00b6ddcdbb354dfe17a8a35f8f6f"
+    },
+    {
+      "id": "37fa26938ba431ce",
+      "split": "report",
+      "family": "777b8d6e11384a1420b11b7abc77172b1012ed36a84674cb7dcf38b8c7abc711",
+      "pair": "37fa26938ba431ce4b28b2bfc057993f26cb77a1e4ca4e0bd51962e61ee375a0",
+      "history": null,
+      "seed": "37FA26938BA4",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "37FA26938BA4",
+        "hp": 56,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "INFLAME",
+            "upgrade": 1
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "1bd2ae76477bfbc0f9bd42d011dc0ec4ac8131b8d9a9308d8bf699a6c81fe321"
+    },
+    {
+      "id": "cd0f16b0fb43e54d",
+      "split": "report",
+      "family": "777b8d6e11384a1420b11b7abc77172b1012ed36a84674cb7dcf38b8c7abc711",
+      "pair": "cd0f16b0fb43e54deaaf8f4561a87a2f9bf69b0367406a9fb6a190128b52e621",
+      "history": null,
+      "seed": "CD0F16B0FB43",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "TUNNELER_WEAK",
+        "seed": "CD0F16B0FB43",
+        "hp": 40,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          null,
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 1
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "1374cefa1855e7882caff76a6bb3f306e6a383cd6197bf5d53528709b2136743"
+    },
+    {
+      "id": "0f053d15a71fec53",
+      "split": "report",
+      "family": "777b8d6e11384a1420b11b7abc77172b1012ed36a84674cb7dcf38b8c7abc711",
+      "pair": "0f053d15a71fec53287d338c7ddfb8d7f99cc3c667798a56b31d3ea58660e661",
+      "history": null,
+      "seed": "0F053D15A71F",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "EXOSKELETONS_WEAK",
+        "seed": "0F053D15A71F",
+        "hp": 64,
+        "max_hp": 80,
+        "relics": [],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "a2eb917a9313e4f1c79b5d9508727214dd4310299653665b16a652501bf27c1d"
+    },
+    {
+      "id": "35690b6303621e39",
+      "split": "report",
+      "family": "9dc8ccea2b7064130c6f62a8529265c8a7a9aab9aae5b277e07a775a75dc53a1",
+      "pair": "35690b6303621e39a02940f6e09f30a0c1e8e9cf915f1598beb953335d39796f",
+      "history": null,
+      "seed": "35690B630362",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "35690B630362",
+        "hp": 30,
+        "max_hp": 80,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "87e481505d2ae64bd0a5d89b302382e824a90c844ae95f6216f46276aac0154c"
+    },
+    {
+      "id": "98b1b5e917ba3313",
+      "split": "report",
+      "family": "9dc8ccea2b7064130c6f62a8529265c8a7a9aab9aae5b277e07a775a75dc53a1",
+      "pair": "98b1b5e917ba33137408caac0683adc4bff1ce1f19cc9bcc1092198d89e717a1",
+      "history": null,
+      "seed": "98B1B5E917BA",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "98B1B5E917BA",
+        "hp": 56,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 1
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "a8ec2eb608fbaf7bfdf5a0f0842f5d8dda161195844acc045441e0a09c675e3e"
+    },
+    {
+      "id": "8e1f0fd76f404c63",
+      "split": "report",
+      "family": "9dc8ccea2b7064130c6f62a8529265c8a7a9aab9aae5b277e07a775a75dc53a1",
+      "pair": "8e1f0fd76f404c639d6f26cf2e8c0c619fa57a85cbc64f134a813e55ef1e5599",
+      "history": null,
+      "seed": "8E1F0FD76F40",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "TUNNELER_WEAK",
+        "seed": "8E1F0FD76F40",
+        "hp": 40,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          null,
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 1
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "0d172af2c101bae5badb6bdd917bc5c1c3312c39c795629628ada2d0096f9db9"
+    },
+    {
+      "id": "b8951fc1078bb78f",
+      "split": "report",
+      "family": "9dc8ccea2b7064130c6f62a8529265c8a7a9aab9aae5b277e07a775a75dc53a1",
+      "pair": "b8951fc1078bb78f9e88fa848e9b39b010ad7ad2bb31586e5e0e6c39c3330644",
+      "history": null,
+      "seed": "B8951FC1078B",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "EXOSKELETONS_WEAK",
+        "seed": "B8951FC1078B",
+        "hp": 64,
+        "max_hp": 80,
+        "relics": [],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "629960250443216d391c629cb033d7c3e70e41947cf626885f7dcd48780ac91e"
+    },
+    {
+      "id": "3dd903bc8911cb36",
+      "split": "feedback",
+      "family": "9b8044ec7029ed43a139c226701c873dad8ed905ea5daa869448b2e13f1d9179",
+      "pair": "3dd903bc8911cb3655fa050cdafc80c549431a6719eda2aa94cc1874df457d49",
+      "history": null,
+      "seed": "3DD903BC8911",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "3DD903BC8911",
+        "hp": 30,
+        "max_hp": 80,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "fdcf2b9416ad7d74e38ccdc3fd1f7800a854154d6b9e48aa8e2ea796aaa8a61c"
+    },
+    {
+      "id": "8a41890f22c6c83c",
+      "split": "feedback",
+      "family": "9b8044ec7029ed43a139c226701c873dad8ed905ea5daa869448b2e13f1d9179",
+      "pair": "8a41890f22c6c83c6b87c6a0ddcd421d034512cf189afef35a76126f120af8b2",
+      "history": null,
+      "seed": "8A41890F22C6",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "8A41890F22C6",
+        "hp": 56,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 1
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "b0f1a553b0c234eadcec5006bbbdd86cbebc0e24882f5cace50b2296ed4d35ba"
+    },
+    {
+      "id": "b963eac6333f952a",
+      "split": "feedback",
+      "family": "9b8044ec7029ed43a139c226701c873dad8ed905ea5daa869448b2e13f1d9179",
+      "pair": "b963eac6333f952ab32f2a05a4d451b4870cd8a1da3a8d36c39380d1d987f019",
+      "history": null,
+      "seed": "B963EAC6333F",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "TUNNELER_WEAK",
+        "seed": "B963EAC6333F",
+        "hp": 40,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          null,
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 1
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "2f68edc0a39a564d7dbf27c8758dac5a49f53828e4dc030773a73164eb06f28f"
+    },
+    {
+      "id": "6905f19c24967580",
+      "split": "feedback",
+      "family": "9b8044ec7029ed43a139c226701c873dad8ed905ea5daa869448b2e13f1d9179",
+      "pair": "6905f19c2496758032234513a2dd8fbb61fdd7e1224ddc4fa8b98134addd0eab",
+      "history": null,
+      "seed": "6905F19C2496",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "EXOSKELETONS_WEAK",
+        "seed": "6905F19C2496",
+        "hp": 64,
+        "max_hp": 80,
+        "relics": [],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "d2bd0978b6742dae80d35c59174d5787adb3066579d74a6cf9171e2eba45c27a"
+    },
+    {
+      "id": "7d8d2337aeb2c630",
+      "split": "pilot",
+      "family": "9a7aa1e521ea2913b07daad2aa6141e6f80373cc45035df0ec0f72003ecff49c",
+      "pair": "7d8d2337aeb2c6300f1d360a6e785296dc8929595aab48b83e0e28d988304ce2",
+      "history": null,
+      "seed": "7D8D2337AEB2",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "7D8D2337AEB2",
+        "hp": 30,
+        "max_hp": 80,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "7ef2cfbcbf113868888369b735f776949c440a13a84f2cc09b3b98e5881cf704"
+    },
+    {
+      "id": "458711adf546b659",
+      "split": "pilot",
+      "family": "9a7aa1e521ea2913b07daad2aa6141e6f80373cc45035df0ec0f72003ecff49c",
+      "pair": "458711adf546b659e66d975fb29f0961bbee75691f4f4c0d2aa6f358b4cf81ad",
+      "history": null,
+      "seed": "458711ADF546",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Ironclad",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "458711ADF546",
+        "hp": 56,
+        "max_hp": 80,
+        "relics": [
+          "BURNING_BLOOD"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "INFLAME",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 1
+          },
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "SHRUG_IT_OFF",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "85246662c68933bf6d24ee1f6f8a6d24318d43750d46fd62f1e967763a82d321"
+    },
+    {
+      "id": "0189a56cf7c5c744",
+      "split": "train",
+      "family": "159fdb8a4b45189edc9e1c283cc46e808b73137040facb9f89558c974020a9b7",
+      "pair": "0189a56cf7c5c744023c780f1c193fc2eea00ffa6674959c9090e8575306ab03",
+      "history": null,
+      "seed": "0189A56CF7C5",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "0189A56CF7C5",
+        "hp": 30,
+        "max_hp": 70,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "2bf9fefa5faf7537323bf6284b205c16cf89a0572762f50559e9c742fe520af5"
+    },
+    {
+      "id": "af0cbd8bcf12d03f",
+      "split": "train",
+      "family": "159fdb8a4b45189edc9e1c283cc46e808b73137040facb9f89558c974020a9b7",
+      "pair": "af0cbd8bcf12d03fdeaf37ed135031b74035c285ab868b5c46b98a124237aa3b",
+      "history": null,
+      "seed": "AF0CBD8BCF12",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "AF0CBD8BCF12",
+        "hp": 56,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 1
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "0a3ba5660b45844b680da4420382ef13881501d09475e69b6247a57640ca5c91"
+    },
+    {
+      "id": "f80af8b4ae26e40a",
+      "split": "train",
+      "family": "159fdb8a4b45189edc9e1c283cc46e808b73137040facb9f89558c974020a9b7",
+      "pair": "f80af8b4ae26e40aa2d7da3248b4db58a6b4ab8ff00942a2d048854f9bed9d19",
+      "history": null,
+      "seed": "F80AF8B4AE26",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "F80AF8B4AE26",
+        "hp": 40,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          null,
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 1
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "bba73f8a45b84799a78cd352dc336dafeda1a997933e183bc5af3ffd2613fe98"
+    },
+    {
+      "id": "85107d2c3f2d87c2",
+      "split": "train",
+      "family": "159fdb8a4b45189edc9e1c283cc46e808b73137040facb9f89558c974020a9b7",
+      "pair": "85107d2c3f2d87c28b6191f1a0d440a4d0af2897effc7fa9c4f5db1efdbcd294",
+      "history": null,
+      "seed": "85107D2C3F2D",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "85107D2C3F2D",
+        "hp": 64,
+        "max_hp": 70,
+        "relics": [],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "9d0e2121087d05386f6c61f0668b8219408d64c59db79ce9c020aa9583aa5294"
+    },
+    {
+      "id": "caa6407bc647e298",
+      "split": "train",
+      "family": "159fdb8a4b45189edc9e1c283cc46e808b73137040facb9f89558c974020a9b7",
+      "pair": "caa6407bc647e2984f4786154bf7d0d73663317a8e2c004865165560e5c7655f",
+      "history": null,
+      "seed": "CAA6407BC647",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "CAA6407BC647",
+        "hp": 34,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 1
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "80eea34447bbe510081b93bde586fea507426df9d813fe1a883c960d963ee974"
+    },
+    {
+      "id": "831ccbec23074a84",
+      "split": "train",
+      "family": "159fdb8a4b45189edc9e1c283cc46e808b73137040facb9f89558c974020a9b7",
+      "pair": "831ccbec23074a8416037c3daa5cab438a8d58daab060c57895a3ce16c1e1fda",
+      "history": null,
+      "seed": "831CCBEC2307",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "831CCBEC2307",
+        "hp": 49,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 1
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "46315b42a17fba653e9d16b56f2bce8570b673b68beaf9ea8c970ff818b085a1"
+    },
+    {
+      "id": "16e9839a9ab17f5e",
+      "split": "train",
+      "family": "07a1b77b8824665e7b36154708ca0cf3d9d1aa37fe5a97603fe29eaff344b971",
+      "pair": "16e9839a9ab17f5e7e11c584da3600e6219c7bf5af69867f7ec2d7494d227683",
+      "history": null,
+      "seed": "16E9839A9AB1",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "16E9839A9AB1",
+        "hp": 30,
+        "max_hp": 70,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "dcad8e7488b8cf8743ed4a773602bfecb322206148e8ec5103a481fa48437524"
+    },
+    {
+      "id": "a34c9848f201e7ea",
+      "split": "train",
+      "family": "07a1b77b8824665e7b36154708ca0cf3d9d1aa37fe5a97603fe29eaff344b971",
+      "pair": "a34c9848f201e7eadf9df735836820cd1fe1704786118d9c8091c4087af92c7c",
+      "history": null,
+      "seed": "A34C9848F201",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "A34C9848F201",
+        "hp": 56,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 1
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "44b8e2767b6cddb227a458185e064d2e853034a900b61e6ac3ab3e0ecefb35aa"
+    },
+    {
+      "id": "c1bf8c7215d5c3d8",
+      "split": "train",
+      "family": "07a1b77b8824665e7b36154708ca0cf3d9d1aa37fe5a97603fe29eaff344b971",
+      "pair": "c1bf8c7215d5c3d8c0fec2eb0a6d5ad1774aee93c5c6d23678dbd88810bc7ba1",
+      "history": null,
+      "seed": "C1BF8C7215D5",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "C1BF8C7215D5",
+        "hp": 40,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          null,
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 1
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "6c2c06cde4b37c8573d3daf8767fac540d0bceeb676246f696f078828837de32"
+    },
+    {
+      "id": "15460427b083df69",
+      "split": "train",
+      "family": "07a1b77b8824665e7b36154708ca0cf3d9d1aa37fe5a97603fe29eaff344b971",
+      "pair": "15460427b083df694f5e70d6a463d6e05beff00be7571f0d01cdc42b73b2771a",
+      "history": null,
+      "seed": "15460427B083",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "15460427B083",
+        "hp": 64,
+        "max_hp": 70,
+        "relics": [],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "c4c3dbe074daa2817a8ac8a59b55fb2518a47fbb2aee89fbd0951bea07ca26b9"
+    },
+    {
+      "id": "c1a782f037492490",
+      "split": "train",
+      "family": "07a1b77b8824665e7b36154708ca0cf3d9d1aa37fe5a97603fe29eaff344b971",
+      "pair": "c1a782f037492490a1c313f3810571bbcb5e8a38cccdda39617a34a1dfa8221d",
+      "history": null,
+      "seed": "C1A782F03749",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "C1A782F03749",
+        "hp": 34,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 1
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "4b8bff65608a21dbcb3cd944ff88298463db6f1c656ebb776054828edfeff3e8"
+    },
+    {
+      "id": "e25240d9d26414eb",
+      "split": "train",
+      "family": "07a1b77b8824665e7b36154708ca0cf3d9d1aa37fe5a97603fe29eaff344b971",
+      "pair": "e25240d9d26414eb0c50e0287ab2c1955cd68db11e202bdbf9d3c0477277ac57",
+      "history": null,
+      "seed": "E25240D9D264",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "E25240D9D264",
+        "hp": 49,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 1
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "620925955927ec4ccc78df78b4d85535afa1c0c3c09a5c8f49a50166297290b1"
+    },
+    {
+      "id": "990e91e0090ed502",
+      "split": "train",
+      "family": "5fe80ee86fd73240b8c389250515d96e7aa4ae7a02f0676788bab312ab15fbcd",
+      "pair": "990e91e0090ed502ff8117bbd405e924961d14bd849bdf6672bd0b390d290589",
+      "history": null,
+      "seed": "990E91E0090E",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "990E91E0090E",
+        "hp": 30,
+        "max_hp": 70,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "14f0c05e73950db0654faa4ef40018cfb4ff0b5dc98dec5cf5937c59aaedeb61"
+    },
+    {
+      "id": "bc78b5ed978c1cdc",
+      "split": "train",
+      "family": "5fe80ee86fd73240b8c389250515d96e7aa4ae7a02f0676788bab312ab15fbcd",
+      "pair": "bc78b5ed978c1cdcf70af51b7aab8e627179c7677c200581571dc6c9c34f252c",
+      "history": null,
+      "seed": "BC78B5ED978C",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "BC78B5ED978C",
+        "hp": 56,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 1
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "4ca588927b2092e628245bbfe3f72d910c5945ab37eb0e2baaed256735926b84"
+    },
+    {
+      "id": "ae08358fba0ec7ec",
+      "split": "train",
+      "family": "5fe80ee86fd73240b8c389250515d96e7aa4ae7a02f0676788bab312ab15fbcd",
+      "pair": "ae08358fba0ec7ece355cc755417ca00efb2525646778ec38e142f3ee50722bf",
+      "history": null,
+      "seed": "AE08358FBA0E",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "AE08358FBA0E",
+        "hp": 40,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          null,
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 1
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "88c2d1f6a97c2c35a454a3c9ee58d653b3015780c1647b8d6e75ecf0cda202b6"
+    },
+    {
+      "id": "d2a6bdfeed73578a",
+      "split": "train",
+      "family": "5fe80ee86fd73240b8c389250515d96e7aa4ae7a02f0676788bab312ab15fbcd",
+      "pair": "d2a6bdfeed73578a6279fe77060275b2d991bc6aafcad358c71e344bdbfe9f6b",
+      "history": null,
+      "seed": "D2A6BDFEED73",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "D2A6BDFEED73",
+        "hp": 64,
+        "max_hp": 70,
+        "relics": [],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "9a42e244a5abf919a9ec74fe71468c4f3aa8b705c0021f0d0df1a43600405405"
+    },
+    {
+      "id": "e9d24157f7d7bd84",
+      "split": "train",
+      "family": "5fe80ee86fd73240b8c389250515d96e7aa4ae7a02f0676788bab312ab15fbcd",
+      "pair": "e9d24157f7d7bd8447a00c5b34b999ea8a5158879ff76c0b2c6caf1e58fb8229",
+      "history": null,
+      "seed": "E9D24157F7D7",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "E9D24157F7D7",
+        "hp": 34,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 1
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "f9d1d2a7456ed89514c45b9c903f9bd9c916865e5ff6322ca7a3246b7deabde7"
+    },
+    {
+      "id": "fe0ea360ec102414",
+      "split": "train",
+      "family": "5fe80ee86fd73240b8c389250515d96e7aa4ae7a02f0676788bab312ab15fbcd",
+      "pair": "fe0ea360ec1024149a630e6f1fb99f4c8b0fed7c1cdc374528088126fa68ddd5",
+      "history": null,
+      "seed": "FE0EA360EC10",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "FE0EA360EC10",
+        "hp": 49,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 1
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "24803fcf21328ee1431b3c063b16dcce2dc5c44eabbc3742422cb7a2b3675bfc"
+    },
+    {
+      "id": "5f1a78d167fe14a5",
+      "split": "train",
+      "family": "351ed99c03fa0f5845537f54ce81548d2bcc750ddb0fc65e3f77bdad0123c1b2",
+      "pair": "5f1a78d167fe14a56628698028393c191ecd8cb3269569b4df7da9c0493ce18e",
+      "history": null,
+      "seed": "5F1A78D167FE",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "5F1A78D167FE",
+        "hp": 30,
+        "max_hp": 70,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "FOOTWORK",
+            "upgrade": 0
+          },
+          {
+            "id": "FOOTWORK",
+            "upgrade": 0
+          },
+          {
+            "id": "LEG_SWEEP",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "d1b6cc87c22e14e9307ad0945ef59ebb06e1efce8a06dd38edd34ea4b01960de"
+    },
+    {
+      "id": "a6852e3b2bbdf4ea",
+      "split": "train",
+      "family": "351ed99c03fa0f5845537f54ce81548d2bcc750ddb0fc65e3f77bdad0123c1b2",
+      "pair": "a6852e3b2bbdf4eac3df020a3fc4c21838a46383d2d32515f2ff917eb598fb8b",
+      "history": null,
+      "seed": "A6852E3B2BBD",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "A6852E3B2BBD",
+        "hp": 56,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "FOOTWORK",
+            "upgrade": 0
+          },
+          {
+            "id": "FOOTWORK",
+            "upgrade": 1
+          },
+          {
+            "id": "LEG_SWEEP",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "0c6c5b7e920bd235bfa8757fb8e698e84123717d522a276a607ad23629322da9"
+    },
+    {
+      "id": "d7c2d345df02542b",
+      "split": "train",
+      "family": "351ed99c03fa0f5845537f54ce81548d2bcc750ddb0fc65e3f77bdad0123c1b2",
+      "pair": "d7c2d345df02542b8ce229851c9a0626c4f2f15aa8c78bfc466996aabd532eb7",
+      "history": null,
+      "seed": "D7C2D345DF02",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "D7C2D345DF02",
+        "hp": 40,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          null,
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "FOOTWORK",
+            "upgrade": 0
+          },
+          {
+            "id": "FOOTWORK",
+            "upgrade": 0
+          },
+          {
+            "id": "LEG_SWEEP",
+            "upgrade": 1
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "7360aeb175ca9b4bff4865d7186ca073a0c1f3e1b9ab90dcfb39649b530baa8b"
+    },
+    {
+      "id": "dd6276d15ab37269",
+      "split": "train",
+      "family": "351ed99c03fa0f5845537f54ce81548d2bcc750ddb0fc65e3f77bdad0123c1b2",
+      "pair": "dd6276d15ab37269bce032458a6d04ee9c84bf44b409f484549c7e5448c95c24",
+      "history": null,
+      "seed": "DD6276D15AB3",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "DD6276D15AB3",
+        "hp": 64,
+        "max_hp": 70,
+        "relics": [],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "FOOTWORK",
+            "upgrade": 0
+          },
+          {
+            "id": "FOOTWORK",
+            "upgrade": 0
+          },
+          {
+            "id": "LEG_SWEEP",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "f985f8f51a1798a9e750b83fa322f86743ca8746365f57c26cf37f2f3b92c858"
+    },
+    {
+      "id": "90461b8a2ca3499a",
+      "split": "train",
+      "family": "351ed99c03fa0f5845537f54ce81548d2bcc750ddb0fc65e3f77bdad0123c1b2",
+      "pair": "90461b8a2ca3499ae1dd165369aff8bbde0503ff6812e1f5d04d3b6aa7978df6",
+      "history": null,
+      "seed": "90461B8A2CA3",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "90461B8A2CA3",
+        "hp": 34,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "FOOTWORK",
+            "upgrade": 1
+          },
+          {
+            "id": "FOOTWORK",
+            "upgrade": 0
+          },
+          {
+            "id": "LEG_SWEEP",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "c10e485723456935d4573055676ef5fffe9754437d253254e41dca63faff6ee4"
+    },
+    {
+      "id": "96eaa6549bce49a5",
+      "split": "train",
+      "family": "351ed99c03fa0f5845537f54ce81548d2bcc750ddb0fc65e3f77bdad0123c1b2",
+      "pair": "96eaa6549bce49a5c0ebbe59b139671358be3b5a6744635ac3890ae9f166841c",
+      "history": null,
+      "seed": "96EAA6549BCE",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "96EAA6549BCE",
+        "hp": 49,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "FOOTWORK",
+            "upgrade": 0
+          },
+          {
+            "id": "FOOTWORK",
+            "upgrade": 1
+          },
+          {
+            "id": "LEG_SWEEP",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "5bbe7d1961dc399d525fe9a2e51f420f3c70d2e44782eb845e792dbab63a8e66"
+    },
+    {
+      "id": "c8510a3ed918c136",
+      "split": "selection",
+      "family": "0a3bd86b9b477a6874dcf26afea0a516ed1dd33b2096b222e29cba912d39c908",
+      "pair": "c8510a3ed918c136418e1fc77f6cf1353fa376fe1e31d560792d8ea1ec5d7695",
+      "history": null,
+      "seed": "C8510A3ED918",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "C8510A3ED918",
+        "hp": 30,
+        "max_hp": 70,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "a8f4879c64cf44b2b8c4c0df86aa6b2a0db676b341ef56308aa7cb551ef2e5fb"
+    },
+    {
+      "id": "46f0789192118089",
+      "split": "selection",
+      "family": "0a3bd86b9b477a6874dcf26afea0a516ed1dd33b2096b222e29cba912d39c908",
+      "pair": "46f0789192118089d8a3a95a46975d15bd8f215b3c04b90e0918236d72eca257",
+      "history": null,
+      "seed": "46F078919211",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "46F078919211",
+        "hp": 56,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "ACCURACY",
+            "upgrade": 1
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "6188eef4e207e721ab2dcb7eecc3ee570d4590530f59a4806c4dfe564f1049ba"
+    },
+    {
+      "id": "1d2daf221dbf1e5f",
+      "split": "selection",
+      "family": "0a3bd86b9b477a6874dcf26afea0a516ed1dd33b2096b222e29cba912d39c908",
+      "pair": "1d2daf221dbf1e5fc49101b766c2ffb4bde734cb6fdea40505cf1d6ff5ab6152",
+      "history": null,
+      "seed": "1D2DAF221DBF",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "1D2DAF221DBF",
+        "hp": 40,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          null,
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 1
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "40183e4073526234e43a3fc73a387e7a9267e2b2ab701aea87ab9b3db9bfde47"
+    },
+    {
+      "id": "d3a320ee48fe63af",
+      "split": "selection",
+      "family": "0a3bd86b9b477a6874dcf26afea0a516ed1dd33b2096b222e29cba912d39c908",
+      "pair": "d3a320ee48fe63af5e997d963a2ca6639d323de7bc10f2a3120ef163bd86c9b8",
+      "history": null,
+      "seed": "D3A320EE48FE",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "D3A320EE48FE",
+        "hp": 64,
+        "max_hp": 70,
+        "relics": [],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "75b211b8216c76553a3e4055c8134c1eef8712bccda1a79a00d5201f42185205"
+    },
+    {
+      "id": "018c7deb5eeae0a9",
+      "split": "selection",
+      "family": "0a3bd86b9b477a6874dcf26afea0a516ed1dd33b2096b222e29cba912d39c908",
+      "pair": "018c7deb5eeae0a95c24f3c4c18acaca33a14d9659d96b4583ba9b79ee0aefbc",
+      "history": null,
+      "seed": "018C7DEB5EEA",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "018C7DEB5EEA",
+        "hp": 34,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 1
+          },
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "413f9d7d4dacef49a345a423e14b1e7574deb288f343a5f47a10110e30bda72e"
+    },
+    {
+      "id": "e1677f629a8c58ff",
+      "split": "selection",
+      "family": "0a3bd86b9b477a6874dcf26afea0a516ed1dd33b2096b222e29cba912d39c908",
+      "pair": "e1677f629a8c58ff3d0d83123cb0e2fd5f8a8d8a7b430373ccc6de101362f062",
+      "history": null,
+      "seed": "E1677F629A8C",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "E1677F629A8C",
+        "hp": 49,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "ACCURACY",
+            "upgrade": 1
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "d6bcab2b5edf76344554289e2b061d6da07c5650e1afb6d6d37c51344c9fa112"
+    },
+    {
+      "id": "4e57121e5ab7c675",
+      "split": "report",
+      "family": "ea6f40bb098a7bff1e57576afbf43a2e9c8466fcddbacd9674042a41b2fcad01",
+      "pair": "4e57121e5ab7c675d6771ea1bcf845248e9899abb775b2cfd1f3fdbb6334571d",
+      "history": null,
+      "seed": "4E57121E5AB7",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "4E57121E5AB7",
+        "hp": 30,
+        "max_hp": 70,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "6be6e06ee7f0b2f3d03f452adf1d7687d1c4b40c850e25853517077ffea70a53"
+    },
+    {
+      "id": "52fbab24c70723d9",
+      "split": "report",
+      "family": "ea6f40bb098a7bff1e57576afbf43a2e9c8466fcddbacd9674042a41b2fcad01",
+      "pair": "52fbab24c70723d9c7534248eb3d1306b6c80188f42e802a80ea5e09129eaffe",
+      "history": null,
+      "seed": "52FBAB24C707",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "52FBAB24C707",
+        "hp": 56,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 1
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "cb7e804c480a2611a9ddb56a0008c74782e360d21b555b281ebd3d5a1fe20e6a"
+    },
+    {
+      "id": "83f2dfb00f050311",
+      "split": "report",
+      "family": "ea6f40bb098a7bff1e57576afbf43a2e9c8466fcddbacd9674042a41b2fcad01",
+      "pair": "83f2dfb00f0503119d45457a784777c6a201a806bb26c5a5dfb08267c8c79128",
+      "history": null,
+      "seed": "83F2DFB00F05",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "TUNNELER_WEAK",
+        "seed": "83F2DFB00F05",
+        "hp": 40,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          null,
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 1
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "fa6d1f4727ff05e4b121e49796fd11205ef3ec9be636c2df70e9c1ee2159e115"
+    },
+    {
+      "id": "eb76c2cbb2079634",
+      "split": "report",
+      "family": "ea6f40bb098a7bff1e57576afbf43a2e9c8466fcddbacd9674042a41b2fcad01",
+      "pair": "eb76c2cbb2079634e378155d6ebbc6180b97d829e99cc6224421217f9cdc274d",
+      "history": null,
+      "seed": "EB76C2CBB207",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "EXOSKELETONS_WEAK",
+        "seed": "EB76C2CBB207",
+        "hp": 64,
+        "max_hp": 70,
+        "relics": [],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "74adafa1e51008bd3729c02280433d75d4025e37a73130da1c4cea9965dbf178"
+    },
+    {
+      "id": "090848e0a222fe35",
+      "split": "report",
+      "family": "5ffe9e7366e8ca10b204564d6f9e4451ed2a0c44f22aa557b753b757ddbb1b39",
+      "pair": "090848e0a222fe35589f7f26a444cef548db49d631d72377962a4872c07726fc",
+      "history": null,
+      "seed": "090848E0A222",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "090848E0A222",
+        "hp": 30,
+        "max_hp": 70,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "LEG_SWEEP",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "3d6c3e2711b696baee9c86d222d23ad2d0e5fa76af906435179f4aa1372fe5d0"
+    },
+    {
+      "id": "3f3e9c4f84695ca0",
+      "split": "report",
+      "family": "5ffe9e7366e8ca10b204564d6f9e4451ed2a0c44f22aa557b753b757ddbb1b39",
+      "pair": "3f3e9c4f84695ca092c5e33eb4b3d6a0369483bdc3377ffad5a08ec70ad5088c",
+      "history": null,
+      "seed": "3F3E9C4F8469",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "3F3E9C4F8469",
+        "hp": 56,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "ACCURACY",
+            "upgrade": 1
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "LEG_SWEEP",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "292b0d24956d15104e15cf035832e1283c3ceef89a9476d927bc51368a30fced"
+    },
+    {
+      "id": "e609f1c4fc9d0f37",
+      "split": "report",
+      "family": "5ffe9e7366e8ca10b204564d6f9e4451ed2a0c44f22aa557b753b757ddbb1b39",
+      "pair": "e609f1c4fc9d0f379dd0cb965ea5cd7aa30d5ff191be0b9381439076c0ca5d83",
+      "history": null,
+      "seed": "E609F1C4FC9D",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "TUNNELER_WEAK",
+        "seed": "E609F1C4FC9D",
+        "hp": 40,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          null,
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 1
+          },
+          {
+            "id": "LEG_SWEEP",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "2d519084284ba712e51797d3ed421622407bfbe59dcd361483b863fffac5d3d1"
+    },
+    {
+      "id": "98c7b261bc156f85",
+      "split": "report",
+      "family": "5ffe9e7366e8ca10b204564d6f9e4451ed2a0c44f22aa557b753b757ddbb1b39",
+      "pair": "98c7b261bc156f8502a14f138877541ab6a13fd87f9625c7ec3a8ae3d778031b",
+      "history": null,
+      "seed": "98C7B261BC15",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "EXOSKELETONS_WEAK",
+        "seed": "98C7B261BC15",
+        "hp": 64,
+        "max_hp": 70,
+        "relics": [],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "LEG_SWEEP",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "5bdf82e001bec20fe87ed03558f44ffd55cbfd389b49353563d28b1c68e11d45"
+    },
+    {
+      "id": "a3c0506d609298ad",
+      "split": "report",
+      "family": "6a402890b899de166eddc9ca19215817543a472f2ce6a7de19e797d6e9e9040e",
+      "pair": "a3c0506d609298ad6c731c92ea29f4aa58b709c77215fbcdec567d04331fb945",
+      "history": null,
+      "seed": "A3C0506D6092",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "A3C0506D6092",
+        "hp": 30,
+        "max_hp": 70,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "FOOTWORK",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "LEG_SWEEP",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "db58ffaa9e9c9d5b9ba53091c0cf8fb62735db4d5d808f4be5009869e0c992f9"
+    },
+    {
+      "id": "e89126b5828ed3f9",
+      "split": "report",
+      "family": "6a402890b899de166eddc9ca19215817543a472f2ce6a7de19e797d6e9e9040e",
+      "pair": "e89126b5828ed3f93de13a6f2331e13ad965dd177066f1c6c77774c65bd2d0d5",
+      "history": null,
+      "seed": "E89126B5828E",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "E89126B5828E",
+        "hp": 56,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "FOOTWORK",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 1
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "LEG_SWEEP",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "dcef90a17cebaff29ff060a6a039d8130b008a2fcd942ec081798e328ddbe8e1"
+    },
+    {
+      "id": "db7b7c49d2fb52ea",
+      "split": "report",
+      "family": "6a402890b899de166eddc9ca19215817543a472f2ce6a7de19e797d6e9e9040e",
+      "pair": "db7b7c49d2fb52ea4130c8fc506e5502636b59200042850d8b6df505130aad2d",
+      "history": null,
+      "seed": "DB7B7C49D2FB",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "TUNNELER_WEAK",
+        "seed": "DB7B7C49D2FB",
+        "hp": 40,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          null,
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "FOOTWORK",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 1
+          },
+          {
+            "id": "LEG_SWEEP",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "499db724d97d050374906428b75d238fb4ff1c49585fd3f09e5e41948e6915da"
+    },
+    {
+      "id": "fe90c1499d642969",
+      "split": "report",
+      "family": "6a402890b899de166eddc9ca19215817543a472f2ce6a7de19e797d6e9e9040e",
+      "pair": "fe90c1499d64296989b5238f6b87266a3f9cfe45aa529181139cc75ee7d9bc7d",
+      "history": null,
+      "seed": "FE90C1499D64",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "EXOSKELETONS_WEAK",
+        "seed": "FE90C1499D64",
+        "hp": 64,
+        "max_hp": 70,
+        "relics": [],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "FOOTWORK",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "LEG_SWEEP",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "84df1e594d294ac05417bb0dfa16278f099111e89896bc8a12d27d60e6b56c25"
+    },
+    {
+      "id": "84111eb14858d5c6",
+      "split": "feedback",
+      "family": "11703b46439f771f8d9f03276a23f7ff08e10b75d189016e2b057ee89b21d7d7",
+      "pair": "84111eb14858d5c6f7cec8494635c1541e9d9e8ecabb91f3f77895d7134df43f",
+      "history": null,
+      "seed": "84111EB14858",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "84111EB14858",
+        "hp": 30,
+        "max_hp": 70,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "7be1e8db8e69af205091659cf4acc2deabcd05d95859aeccea125d3961f513f1"
+    },
+    {
+      "id": "e618cfa807fd8bed",
+      "split": "feedback",
+      "family": "11703b46439f771f8d9f03276a23f7ff08e10b75d189016e2b057ee89b21d7d7",
+      "pair": "e618cfa807fd8bed295b80beb1e01091416d29b9b8f8419622b7f5029002d073",
+      "history": null,
+      "seed": "E618CFA807FD",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "E618CFA807FD",
+        "hp": 56,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 1
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "a539ac166b1165f6ccc2c28f7eb844d62ae38b82e6a014823203fb2323492b37"
+    },
+    {
+      "id": "b230423a8e8fb73c",
+      "split": "feedback",
+      "family": "11703b46439f771f8d9f03276a23f7ff08e10b75d189016e2b057ee89b21d7d7",
+      "pair": "b230423a8e8fb73c0bd71ad96f9f29004da62101af9aa99a1786ae96d6be81f4",
+      "history": null,
+      "seed": "B230423A8E8F",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "TUNNELER_WEAK",
+        "seed": "B230423A8E8F",
+        "hp": 40,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          null,
+          "DEXTERITY_POTION"
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 1
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "85e2678e4256fd23b7b6803e8d584b6540343ae8ccce2b1666d14bef33c074c3"
+    },
+    {
+      "id": "3016e671e67d4265",
+      "split": "feedback",
+      "family": "11703b46439f771f8d9f03276a23f7ff08e10b75d189016e2b057ee89b21d7d7",
+      "pair": "3016e671e67d4265b9de650f36da58d970aa13eaa6565f27d44a71edf6410c1e",
+      "history": null,
+      "seed": "3016E671E67D",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "EXOSKELETONS_WEAK",
+        "seed": "3016E671E67D",
+        "hp": 64,
+        "max_hp": 70,
+        "relics": [],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "SLICE",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "9b7c583c491399bcb88fed6f6388cd09428d64d025283f2c701818317a763839"
+    },
+    {
+      "id": "bc390290880c20ad",
+      "split": "pilot",
+      "family": "73fb34f8f570d535fc0da6f9f52ad52e086a38a36e23b8acc56d9ffe2bf53ced",
+      "pair": "bc390290880c20ad9b458481b71aff944679a166cdca964f6fd1a72eb19553bf",
+      "history": null,
+      "seed": "BC390290880C",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "BOWLBUGS_WEAK",
+        "seed": "BC390290880C",
+        "hp": 30,
+        "max_hp": 70,
+        "relics": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 0
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "487c72306e770871cfd29f143bcf900e15af563c9bd15226e6b8830e10ff08b4"
+    },
+    {
+      "id": "f996bf7ee4d96e9b",
+      "split": "pilot",
+      "family": "73fb34f8f570d535fc0da6f9f52ad52e086a38a36e23b8acc56d9ffe2bf53ced",
+      "pair": "f996bf7ee4d96e9b5847cb6df41e84e9d0ffbc17c2d6e7a0545cab45532ff0c9",
+      "history": null,
+      "seed": "F996BF7EE4D9",
+      "source": "synthetic",
+      "natural_reachability": "unknown",
+      "spec": {
+        "schema": 2,
+        "character": "Silent",
+        "ascension": 0,
+        "act": 2,
+        "act_variant": "HIVE",
+        "encounter": "CHOMPERS_NORMAL",
+        "seed": "F996BF7EE4D9",
+        "hp": 56,
+        "max_hp": 70,
+        "relics": [
+          "RING_OF_THE_SNAKE"
+        ],
+        "potions": [
+          null,
+          "FLEX_POTION",
+          null
+        ],
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "BLADE_DANCE",
+            "upgrade": 1
+          },
+          {
+            "id": "CLOAK_AND_DAGGER",
+            "upgrade": 0
+          },
+          {
+            "id": "BACKFLIP",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_SILENT",
+            "upgrade": 0
+          }
+        ]
+      },
+      "recipe": "e9973c1e7bf4add33bcd3557e329f8363c413357a950cb0173100e9ba8ad0939"
+    },
+    {
+      "id": "run1-offering-west-a2f02",
+      "split": "reachable",
+      "family": "boss_reward_run_1",
+      "pair": "run_1",
+      "history": "boss_reward_run_1",
+      "seed": "run_1",
+      "source": "F3A",
+      "natural_reachability": "assisted_history",
+      "checkpoint_sha256": "c623b2d43e3b0986db6e3a4dfa1e06adffede573f268a8ffe079170fba1e82ce",
+      "recipe": "43032faf082072ad3b8c2e1e40c1d3043cea8248edf78269fe76be069df73e22"
+    },
+    {
+      "id": "run1-offering-west-a2f03",
+      "split": "reachable",
+      "family": "boss_reward_run_1",
+      "pair": "run_1",
+      "history": "boss_reward_run_1",
+      "seed": "run_1",
+      "source": "F3A",
+      "natural_reachability": "assisted_history",
+      "checkpoint_sha256": "e765f3874c4b8cfc720e98b61f672bedb0939cdcd00a57cf926b7353f1643e17",
+      "recipe": "5afa91c0d6f1140a58752b43d15d99bb7cfd387e3394db5b4b9a2d350cd7cc53"
+    }
+  ],
+  "encoder": "ad3cdd9297f2aa15ee4b437ac0572de0c3875be83d80229f54c9e3c6b8078f34"
+}
