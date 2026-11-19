@@ -1,0 +1,103 @@
+{
+  "schema": "sts2.nosl3a.experiment.v1",
+  "domain": "STS2-NOSL3A-FORMAL-20261119-V1",
+  "initialization_seed": 5391,
+  "training_rounds": 2,
+  "reps_per_family": 4,
+  "report_reps_per_family": 3,
+  "action_cap": 96,
+  "learning_rate": 0.006,
+  "critic_weight": 1,
+  "entropy_weight": 0.008,
+  "grad_clip": 3,
+  "hp_weight": 0.12,
+  "potion_weight": 0.03,
+  "evaluation": "sample",
+  "train": [
+    [
+      "strength",
+      "Ironclad",
+      "OVERGROWTH",
+      "SHRINKER_BEETLE_WEAK",
+      75,
+      "INFLAME TWIN_STRIKE TWIN_STRIKE TWIN_STRIKE POMMEL_STRIKE POMMEL_STRIKE STRIKE_IRONCLAD SHRUG_IT_OFF DEFEND_IRONCLAD DEFEND_IRONCLAD",
+      true
+    ],
+    [
+      "bash",
+      "Ironclad",
+      "UNDERDOCKS",
+      "CORPSE_SLUGS_WEAK",
+      70,
+      "BASH BASH TWIN_STRIKE TWIN_STRIKE POMMEL_STRIKE POMMEL_STRIKE STRIKE_IRONCLAD STRIKE_IRONCLAD DEFEND_IRONCLAD SHRUG_IT_OFF",
+      false
+    ],
+    [
+      "shiv",
+      "Silent",
+      "OVERGROWTH",
+      "SHRINKER_BEETLE_WEAK",
+      69,
+      "SURVIVOR BLADE_DANCE BLADE_DANCE ACCURACY SLICE SLICE STRIKE_SILENT STRIKE_SILENT DEFEND_SILENT DEFEND_SILENT",
+      true
+    ],
+    [
+      "quick",
+      "Silent",
+      "UNDERDOCKS",
+      "CORPSE_SLUGS_WEAK",
+      61,
+      "SURVIVOR SLICE SLICE SLICE BLADE_DANCE BLADE_DANCE STRIKE_SILENT STRIKE_SILENT DODGE_AND_ROLL DEFEND_SILENT",
+      false
+    ]
+  ],
+  "report": [
+    [
+      "strength-barrier",
+      "Ironclad",
+      "OVERGROWTH",
+      "NIBBITS_WEAK",
+      67,
+      "INFLAME FLAME_BARRIER TWIN_STRIKE TWIN_STRIKE BASH STRIKE_IRONCLAD POMMEL_STRIKE SHRUG_IT_OFF DEFEND_IRONCLAD DEFEND_IRONCLAD",
+      true
+    ],
+    [
+      "wave-strength",
+      "Ironclad",
+      "UNDERDOCKS",
+      "CORPSE_SLUGS_WEAK",
+      80,
+      "INFLAME TWIN_STRIKE TWIN_STRIKE IRON_WAVE IRON_WAVE IRON_WAVE STRIKE_IRONCLAD POMMEL_STRIKE SHRUG_IT_OFF DEFEND_IRONCLAD",
+      false
+    ],
+    [
+      "shiv-footwork",
+      "Silent",
+      "OVERGROWTH",
+      "NIBBITS_WEAK",
+      65,
+      "SURVIVOR FOOTWORK BLADE_DANCE BLADE_DANCE ACCURACY SLICE SLICE STRIKE_SILENT DEFEND_SILENT DODGE_AND_ROLL",
+      true
+    ],
+    [
+      "cloak-slice",
+      "Silent",
+      "UNDERDOCKS",
+      "CORPSE_SLUGS_WEAK",
+      55,
+      "SURVIVOR CLOAK_AND_DAGGER CLOAK_AND_DAGGER BLADE_DANCE SLICE SLICE SLICE STRIKE_SILENT DEFEND_SILENT DODGE_AND_ROLL",
+      false
+    ]
+  ],
+  "train_hp_offsets": [
+    0,
+    -20,
+    -38,
+    -50
+  ],
+  "report_hp_offsets": [
+    0,
+    -24,
+    -44
+  ]
+}

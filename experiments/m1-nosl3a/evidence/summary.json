@@ -1,0 +1,5549 @@
+{
+  "config": {
+    "action_cap": 96,
+    "critic_weight": 1,
+    "domain": "STS2-NOSL3A-FORMAL-20261119-V1",
+    "entropy_weight": 0.008,
+    "evaluation": "sample",
+    "grad_clip": 3,
+    "hp_weight": 0.12,
+    "initialization_seed": 5391,
+    "learning_rate": 0.006,
+    "potion_weight": 0.03,
+    "report": [
+      [
+        "strength-barrier",
+        "Ironclad",
+        "OVERGROWTH",
+        "NIBBITS_WEAK",
+        67,
+        "INFLAME FLAME_BARRIER TWIN_STRIKE TWIN_STRIKE BASH STRIKE_IRONCLAD POMMEL_STRIKE SHRUG_IT_OFF DEFEND_IRONCLAD DEFEND_IRONCLAD",
+        true
+      ],
+      [
+        "wave-strength",
+        "Ironclad",
+        "UNDERDOCKS",
+        "CORPSE_SLUGS_WEAK",
+        80,
+        "INFLAME TWIN_STRIKE TWIN_STRIKE IRON_WAVE IRON_WAVE IRON_WAVE STRIKE_IRONCLAD POMMEL_STRIKE SHRUG_IT_OFF DEFEND_IRONCLAD",
+        false
+      ],
+      [
+        "shiv-footwork",
+        "Silent",
+        "OVERGROWTH",
+        "NIBBITS_WEAK",
+        65,
+        "SURVIVOR FOOTWORK BLADE_DANCE BLADE_DANCE ACCURACY SLICE SLICE STRIKE_SILENT DEFEND_SILENT DODGE_AND_ROLL",
+        true
+      ],
+      [
+        "cloak-slice",
+        "Silent",
+        "UNDERDOCKS",
+        "CORPSE_SLUGS_WEAK",
+        55,
+        "SURVIVOR CLOAK_AND_DAGGER CLOAK_AND_DAGGER BLADE_DANCE SLICE SLICE SLICE STRIKE_SILENT DEFEND_SILENT DODGE_AND_ROLL",
+        false
+      ]
+    ],
+    "report_hp_offsets": [
+      0,
+      -24,
+      -44
+    ],
+    "report_reps_per_family": 3,
+    "reps_per_family": 4,
+    "schema": "sts2.nosl3a.experiment.v1",
+    "train": [
+      [
+        "strength",
+        "Ironclad",
+        "OVERGROWTH",
+        "SHRINKER_BEETLE_WEAK",
+        75,
+        "INFLAME TWIN_STRIKE TWIN_STRIKE TWIN_STRIKE POMMEL_STRIKE POMMEL_STRIKE STRIKE_IRONCLAD SHRUG_IT_OFF DEFEND_IRONCLAD DEFEND_IRONCLAD",
+        true
+      ],
+      [
+        "bash",
+        "Ironclad",
+        "UNDERDOCKS",
+        "CORPSE_SLUGS_WEAK",
+        70,
+        "BASH BASH TWIN_STRIKE TWIN_STRIKE POMMEL_STRIKE POMMEL_STRIKE STRIKE_IRONCLAD STRIKE_IRONCLAD DEFEND_IRONCLAD SHRUG_IT_OFF",
+        false
+      ],
+      [
+        "shiv",
+        "Silent",
+        "OVERGROWTH",
+        "SHRINKER_BEETLE_WEAK",
+        69,
+        "SURVIVOR BLADE_DANCE BLADE_DANCE ACCURACY SLICE SLICE STRIKE_SILENT STRIKE_SILENT DEFEND_SILENT DEFEND_SILENT",
+        true
+      ],
+      [
+        "quick",
+        "Silent",
+        "UNDERDOCKS",
+        "CORPSE_SLUGS_WEAK",
+        61,
+        "SURVIVOR SLICE SLICE SLICE BLADE_DANCE BLADE_DANCE STRIKE_SILENT STRIKE_SILENT DODGE_AND_ROLL DEFEND_SILENT",
+        false
+      ]
+    ],
+    "train_hp_offsets": [
+      0,
+      -20,
+      -38,
+      -50
+    ],
+    "training_rounds": 2
+  },
+  "config_sha256": "237389a13d4f60aed323c0763a155f83604d6bb07dc5536d3c155c0a85a2e933",
+  "engine": {
+    "adapter": "c1ca6417dcf03dc9e080a39d2da5b922a9ca70ae1d4d97e0ef10d24038b0b17a",
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+    "catalog": "5c769c2102e7d9ae6c0543facf301180898732592dbbfa96f3b6beedb674af72",
+    "coreclr": "9.0.7",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "headless_sha256": "1aac824fbf159d5e0a57315a808ccbad9dc692d77acbfefdb2a1d50d92182f41",
+    "model": "nosl3a.actor-critic.v1",
+    "native_identity": "739e9ff1860a96f2d5d794faf1ccb4937035acff7c7ea53a52557a75656cc6bb",
+    "observation": "sts2.nosl_observation.v1",
+    "policy": "M1-F2-discard-v1",
+    "sampler": "m1-d1-v1",
+    "solver": "0.51.5",
+    "solver_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13",
+    "torch": "2.12.0+cpu"
+  },
+  "evaluation": {
+    "frozen_q1": {
+      "actions": {
+        "n": 12,
+        "p50": 15.0,
+        "p95": 19
+      },
+      "attempts": 12,
+      "eligible": 12,
+      "episodes_with_solver_notes": 12,
+      "hp_and_potions": [
+        {
+          "hp": 60,
+          "max_hp": 80,
+          "potions": [
+            "FLEX_POTION",
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 41,
+          "max_hp": 80,
+          "potions": [
+            "FLEX_POTION",
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 23,
+          "max_hp": 80,
+          "potions": [
+            "FLEX_POTION",
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 76,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 45,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 36,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 57,
+          "max_hp": 70,
+          "potions": [
+            "FLEX_POTION",
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 37,
+          "max_hp": 70,
+          "potions": [
+            "FLEX_POTION",
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 18,
+          "max_hp": 70,
+          "potions": [
+            "FLEX_POTION",
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 55,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 29,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 11,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        }
+      ],
+      "inference_ms": null,
+      "normal_hp": [
+        11,
+        18,
+        23,
+        29,
+        36,
+        37,
+        41,
+        45,
+        55,
+        57,
+        60,
+        76
+      ],
+      "reasons": {},
+      "replays": {
+        "n": 12,
+        "p50": 15.0,
+        "p95": 19
+      },
+      "rollout_ms": null,
+      "statuses": {
+        "predicted_win": 12
+      },
+      "total_ms": {
+        "n": 12,
+        "p50": 2202.4013999616727,
+        "p95": 2577.288399916142
+      },
+      "win_hp": [
+        11,
+        18,
+        23,
+        29,
+        36,
+        37,
+        41,
+        45,
+        55,
+        57,
+        60,
+        76
+      ],
+      "win_per_attempt": 1.0,
+      "win_per_eligible": 1.0,
+      "win_potions": {
+        "-,-,-": 6,
+        "FLEX_POTION,-,-": 6
+      }
+    },
+    "id_initial": {
+      "actions": {
+        "n": 12,
+        "p50": 14.0,
+        "p95": 29
+      },
+      "attempts": 12,
+      "eligible": 12,
+      "episodes_with_solver_notes": 12,
+      "hp_and_potions": [
+        {
+          "hp": 54,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 27,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 10,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 74,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 45,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 16,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 55,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 4,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 5,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 48,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 0,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "death"
+        },
+        {
+          "hp": 0,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "death"
+        }
+      ],
+      "inference_ms": {
+        "n": 173,
+        "p50": 2.7328000869601965,
+        "p95": 4.556300118565559
+      },
+      "normal_hp": [
+        0,
+        0,
+        4,
+        5,
+        10,
+        16,
+        27,
+        45,
+        48,
+        54,
+        55,
+        74
+      ],
+      "reasons": {},
+      "replays": {
+        "n": 12,
+        "p50": 14.0,
+        "p95": 29
+      },
+      "rollout_ms": {
+        "n": 12,
+        "p50": 118.03799995686859,
+        "p95": 250.28360006399453
+      },
+      "statuses": {
+        "death": 2,
+        "predicted_win": 10
+      },
+      "total_ms": {
+        "n": 12,
+        "p50": 2255.559799610637,
+        "p95": 2633.790299994871
+      },
+      "win_hp": [
+        4,
+        5,
+        10,
+        16,
+        27,
+        45,
+        48,
+        54,
+        55,
+        74
+      ],
+      "win_per_attempt": 0.8333333333333334,
+      "win_per_eligible": 0.8333333333333334,
+      "win_potions": {
+        "-,-,-": 10
+      }
+    },
+    "id_trained": {
+      "actions": {
+        "n": 12,
+        "p50": 14.0,
+        "p95": 30
+      },
+      "attempts": 12,
+      "eligible": 12,
+      "episodes_with_solver_notes": 12,
+      "hp_and_potions": [
+        {
+          "hp": 54,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 27,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 10,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 72,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 45,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 28,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 55,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 4,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 5,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 48,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 5,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 0,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "death"
+        }
+      ],
+      "inference_ms": {
+        "n": 193,
+        "p50": 2.665699925273657,
+        "p95": 4.624299937859178
+      },
+      "normal_hp": [
+        0,
+        4,
+        5,
+        5,
+        10,
+        27,
+        28,
+        45,
+        48,
+        54,
+        55,
+        72
+      ],
+      "reasons": {},
+      "replays": {
+        "n": 12,
+        "p50": 14.0,
+        "p95": 30
+      },
+      "rollout_ms": {
+        "n": 12,
+        "p50": 108.3408499835059,
+        "p95": 298.2552999164909
+      },
+      "statuses": {
+        "death": 1,
+        "predicted_win": 11
+      },
+      "total_ms": {
+        "n": 12,
+        "p50": 2261.1643999116495,
+        "p95": 2603.5897999536246
+      },
+      "win_hp": [
+        4,
+        5,
+        5,
+        10,
+        27,
+        28,
+        45,
+        48,
+        54,
+        55,
+        72
+      ],
+      "win_per_attempt": 0.9166666666666666,
+      "win_per_eligible": 0.9166666666666666,
+      "win_potions": {
+        "-,-,-": 11
+      }
+    },
+    "mechanism_initial": {
+      "actions": {
+        "n": 12,
+        "p50": 14.0,
+        "p95": 29
+      },
+      "attempts": 12,
+      "eligible": 12,
+      "episodes_with_solver_notes": 12,
+      "hp_and_potions": [
+        {
+          "hp": 54,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 27,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 10,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 74,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 45,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 16,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 55,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 4,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 5,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 48,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 0,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "death"
+        },
+        {
+          "hp": 0,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "death"
+        }
+      ],
+      "inference_ms": {
+        "n": 173,
+        "p50": 2.772000152617693,
+        "p95": 4.45799995213747
+      },
+      "normal_hp": [
+        0,
+        0,
+        4,
+        5,
+        10,
+        16,
+        27,
+        45,
+        48,
+        54,
+        55,
+        74
+      ],
+      "reasons": {},
+      "replays": {
+        "n": 12,
+        "p50": 14.0,
+        "p95": 29
+      },
+      "rollout_ms": {
+        "n": 12,
+        "p50": 1208.7152999592945,
+        "p95": 1400.433000177145
+      },
+      "statuses": {
+        "death": 2,
+        "predicted_win": 10
+      },
+      "total_ms": {
+        "n": 12,
+        "p50": 3360.8571499353275,
+        "p95": 3650.0343999359757
+      },
+      "win_hp": [
+        4,
+        5,
+        10,
+        16,
+        27,
+        45,
+        48,
+        54,
+        55,
+        74
+      ],
+      "win_per_attempt": 0.8333333333333334,
+      "win_per_eligible": 0.8333333333333334,
+      "win_potions": {
+        "-,-,-": 10
+      }
+    },
+    "mechanism_trained": {
+      "actions": {
+        "n": 12,
+        "p50": 14.5,
+        "p95": 30
+      },
+      "attempts": 12,
+      "eligible": 12,
+      "episodes_with_solver_notes": 12,
+      "hp_and_potions": [
+        {
+          "hp": 54,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 27,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 10,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 72,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 45,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 28,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 57,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 14,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 5,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 48,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 5,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 0,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "death"
+        }
+      ],
+      "inference_ms": {
+        "n": 194,
+        "p50": 2.736650058068335,
+        "p95": 4.75419987924397
+      },
+      "normal_hp": [
+        0,
+        5,
+        5,
+        10,
+        14,
+        27,
+        28,
+        45,
+        48,
+        54,
+        57,
+        72
+      ],
+      "reasons": {},
+      "replays": {
+        "n": 12,
+        "p50": 14.5,
+        "p95": 30
+      },
+      "rollout_ms": {
+        "n": 12,
+        "p50": 154.27239995915443,
+        "p95": 283.1099000759423
+      },
+      "statuses": {
+        "death": 1,
+        "predicted_win": 11
+      },
+      "total_ms": {
+        "n": 12,
+        "p50": 2255.3067500703037,
+        "p95": 2637.762299971655
+      },
+      "win_hp": [
+        5,
+        5,
+        10,
+        14,
+        27,
+        28,
+        45,
+        48,
+        54,
+        57,
+        72
+      ],
+      "win_per_attempt": 0.9166666666666666,
+      "win_per_eligible": 0.9166666666666666,
+      "win_potions": {
+        "-,-,-": 11
+      }
+    },
+    "no_relation_initial": {
+      "actions": {
+        "n": 12,
+        "p50": 14.0,
+        "p95": 29
+      },
+      "attempts": 12,
+      "eligible": 12,
+      "episodes_with_solver_notes": 12,
+      "hp_and_potions": [
+        {
+          "hp": 54,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 27,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 10,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 74,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 45,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 16,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 55,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 4,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 5,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 48,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 0,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "death"
+        },
+        {
+          "hp": 0,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "death"
+        }
+      ],
+      "inference_ms": {
+        "n": 173,
+        "p50": 2.0163999870419502,
+        "p95": 3.001200035214424
+      },
+      "normal_hp": [
+        0,
+        0,
+        4,
+        5,
+        10,
+        16,
+        27,
+        45,
+        48,
+        54,
+        55,
+        74
+      ],
+      "reasons": {},
+      "replays": {
+        "n": 12,
+        "p50": 14.0,
+        "p95": 29
+      },
+      "rollout_ms": {
+        "n": 12,
+        "p50": 101.72639996744692,
+        "p95": 195.9532001055777
+      },
+      "statuses": {
+        "death": 2,
+        "predicted_win": 10
+      },
+      "total_ms": {
+        "n": 12,
+        "p50": 2216.3981997873634,
+        "p95": 2591.5490000043064
+      },
+      "win_hp": [
+        4,
+        5,
+        10,
+        16,
+        27,
+        45,
+        48,
+        54,
+        55,
+        74
+      ],
+      "win_per_attempt": 0.8333333333333334,
+      "win_per_eligible": 0.8333333333333334,
+      "win_potions": {
+        "-,-,-": 10
+      }
+    },
+    "no_relation_trained": {
+      "actions": {
+        "n": 12,
+        "p50": 13.0,
+        "p95": 29
+      },
+      "attempts": 12,
+      "eligible": 12,
+      "episodes_with_solver_notes": 12,
+      "hp_and_potions": [
+        {
+          "hp": 54,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 27,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 10,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 74,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 45,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 28,
+          "max_hp": 80,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 55,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 4,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 5,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 48,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "predicted_win"
+        },
+        {
+          "hp": 0,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "death"
+        },
+        {
+          "hp": 0,
+          "max_hp": 70,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "status": "death"
+        }
+      ],
+      "inference_ms": {
+        "n": 172,
+        "p50": 2.0808499539270997,
+        "p95": 3.5345000214874744
+      },
+      "normal_hp": [
+        0,
+        0,
+        4,
+        5,
+        10,
+        27,
+        28,
+        45,
+        48,
+        54,
+        55,
+        74
+      ],
+      "reasons": {},
+      "replays": {
+        "n": 12,
+        "p50": 13.0,
+        "p95": 29
+      },
+      "rollout_ms": {
+        "n": 12,
+        "p50": 102.76265011634678,
+        "p95": 179.14500017650425
+      },
+      "statuses": {
+        "death": 2,
+        "predicted_win": 10
+      },
+      "total_ms": {
+        "n": 12,
+        "p50": 2256.4730999292806,
+        "p95": 2611.86940013431
+      },
+      "win_hp": [
+        4,
+        5,
+        10,
+        27,
+        28,
+        45,
+        48,
+        54,
+        55,
+        74
+      ],
+      "win_per_attempt": 0.8333333333333334,
+      "win_per_eligible": 0.8333333333333334,
+      "win_potions": {
+        "-,-,-": 10
+      }
+    }
+  },
+  "evaluation_by_family": {
+    "frozen_q1": {
+      "cloak-slice": {
+        "actions": {
+          "n": 3,
+          "p50": 17,
+          "p95": 18
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 55,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 29,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 11,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          }
+        ],
+        "inference_ms": null,
+        "normal_hp": [
+          11,
+          29,
+          55
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 17,
+          "p95": 18
+        },
+        "rollout_ms": null,
+        "statuses": {
+          "predicted_win": 3
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 2218.9426000695676,
+          "p95": 2274.8308998998255
+        },
+        "win_hp": [
+          11,
+          29,
+          55
+        ],
+        "win_per_attempt": 1.0,
+        "win_per_eligible": 1.0,
+        "win_potions": {
+          "-,-,-": 3
+        }
+      },
+      "shiv-footwork": {
+        "actions": {
+          "n": 3,
+          "p50": 15,
+          "p95": 19
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 57,
+            "max_hp": 70,
+            "potions": [
+              "FLEX_POTION",
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 37,
+            "max_hp": 70,
+            "potions": [
+              "FLEX_POTION",
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 18,
+            "max_hp": 70,
+            "potions": [
+              "FLEX_POTION",
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          }
+        ],
+        "inference_ms": null,
+        "normal_hp": [
+          18,
+          37,
+          57
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 15,
+          "p95": 19
+        },
+        "rollout_ms": null,
+        "statuses": {
+          "predicted_win": 3
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 2303.219700232148,
+          "p95": 2380.0605998840183
+        },
+        "win_hp": [
+          18,
+          37,
+          57
+        ],
+        "win_per_attempt": 1.0,
+        "win_per_eligible": 1.0,
+        "win_potions": {
+          "FLEX_POTION,-,-": 3
+        }
+      },
+      "strength-barrier": {
+        "actions": {
+          "n": 3,
+          "p50": 9,
+          "p95": 12
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 60,
+            "max_hp": 80,
+            "potions": [
+              "FLEX_POTION",
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 41,
+            "max_hp": 80,
+            "potions": [
+              "FLEX_POTION",
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 23,
+            "max_hp": 80,
+            "potions": [
+              "FLEX_POTION",
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          }
+        ],
+        "inference_ms": null,
+        "normal_hp": [
+          23,
+          41,
+          60
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 9,
+          "p95": 12
+        },
+        "rollout_ms": null,
+        "statuses": {
+          "predicted_win": 3
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 2029.5656996313483,
+          "p95": 2255.2638000342995
+        },
+        "win_hp": [
+          23,
+          41,
+          60
+        ],
+        "win_per_attempt": 1.0,
+        "win_per_eligible": 1.0,
+        "win_potions": {
+          "FLEX_POTION,-,-": 3
+        }
+      },
+      "wave-strength": {
+        "actions": {
+          "n": 3,
+          "p50": 11,
+          "p95": 15
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 76,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 45,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 36,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          }
+        ],
+        "inference_ms": null,
+        "normal_hp": [
+          36,
+          45,
+          76
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 11,
+          "p95": 15
+        },
+        "rollout_ms": null,
+        "statuses": {
+          "predicted_win": 3
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 2185.860199853778,
+          "p95": 2577.288399916142
+        },
+        "win_hp": [
+          36,
+          45,
+          76
+        ],
+        "win_per_attempt": 1.0,
+        "win_per_eligible": 1.0,
+        "win_potions": {
+          "-,-,-": 3
+        }
+      }
+    },
+    "id_initial": {
+      "cloak-slice": {
+        "actions": {
+          "n": 3,
+          "p50": 7,
+          "p95": 20
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 48,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 0,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "death"
+          },
+          {
+            "hp": 0,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "death"
+          }
+        ],
+        "inference_ms": {
+          "n": 32,
+          "p50": 3.244949970394373,
+          "p95": 6.146700121462345
+        },
+        "normal_hp": [
+          0,
+          0,
+          48
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 7,
+          "p95": 20
+        },
+        "rollout_ms": {
+          "n": 3,
+          "p50": 74.81429981999099,
+          "p95": 202.57740002125502
+        },
+        "statuses": {
+          "death": 2,
+          "predicted_win": 1
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 2279.3832996394485,
+          "p95": 2280.4889001417905
+        },
+        "win_hp": [
+          48
+        ],
+        "win_per_attempt": 0.3333333333333333,
+        "win_per_eligible": 0.3333333333333333,
+        "win_potions": {
+          "-,-,-": 1
+        }
+      },
+      "shiv-footwork": {
+        "actions": {
+          "n": 3,
+          "p50": 19,
+          "p95": 29
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 55,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 4,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 5,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          }
+        ],
+        "inference_ms": {
+          "n": 63,
+          "p50": 2.6151000056415796,
+          "p95": 4.085199907422066
+        },
+        "normal_hp": [
+          4,
+          5,
+          55
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 19,
+          "p95": 29
+        },
+        "rollout_ms": {
+          "n": 3,
+          "p50": 156.2843001447618,
+          "p95": 250.28360006399453
+        },
+        "statuses": {
+          "predicted_win": 3
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 2344.6744000539184,
+          "p95": 2541.33789986372
+        },
+        "win_hp": [
+          4,
+          5,
+          55
+        ],
+        "win_per_attempt": 1.0,
+        "win_per_eligible": 1.0,
+        "win_potions": {
+          "-,-,-": 3
+        }
+      },
+      "strength-barrier": {
+        "actions": {
+          "n": 3,
+          "p50": 13,
+          "p95": 15
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 54,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 27,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 10,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          }
+        ],
+        "inference_ms": {
+          "n": 40,
+          "p50": 2.940350095741451,
+          "p95": 4.257400054484606
+        },
+        "normal_hp": [
+          10,
+          27,
+          54
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 13,
+          "p95": 15
+        },
+        "rollout_ms": {
+          "n": 3,
+          "p50": 114.99839997850358,
+          "p95": 137.5732000451535
+        },
+        "statuses": {
+          "predicted_win": 3
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 2128.3022998832166,
+          "p95": 2290.0237997528166
+        },
+        "win_hp": [
+          10,
+          27,
+          54
+        ],
+        "win_per_attempt": 1.0,
+        "win_per_eligible": 1.0,
+        "win_potions": {
+          "-,-,-": 3
+        }
+      },
+      "wave-strength": {
+        "actions": {
+          "n": 3,
+          "p50": 13,
+          "p95": 15
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 74,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 45,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 16,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          }
+        ],
+        "inference_ms": {
+          "n": 38,
+          "p50": 2.7771000750362873,
+          "p95": 5.248799920082092
+        },
+        "normal_hp": [
+          16,
+          45,
+          74
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 13,
+          "p95": 15
+        },
+        "rollout_ms": {
+          "n": 3,
+          "p50": 121.0775999352336,
+          "p95": 153.05720013566315
+        },
+        "statuses": {
+          "predicted_win": 3
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 2231.7362995818257,
+          "p95": 2633.790299994871
+        },
+        "win_hp": [
+          16,
+          45,
+          74
+        ],
+        "win_per_attempt": 1.0,
+        "win_per_eligible": 1.0,
+        "win_potions": {
+          "-,-,-": 3
+        }
+      }
+    },
+    "id_trained": {
+      "cloak-slice": {
+        "actions": {
+          "n": 3,
+          "p50": 21,
+          "p95": 30
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 48,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 5,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 0,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "death"
+          }
+        ],
+        "inference_ms": {
+          "n": 56,
+          "p50": 3.322150092571974,
+          "p95": 5.08500006981194
+        },
+        "normal_hp": [
+          0,
+          5,
+          48
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 21,
+          "p95": 30
+        },
+        "rollout_ms": {
+          "n": 3,
+          "p50": 203.15239997580647,
+          "p95": 298.2552999164909
+        },
+        "statuses": {
+          "death": 1,
+          "predicted_win": 2
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 2280.949499923736,
+          "p95": 2503.142299829051
+        },
+        "win_hp": [
+          5,
+          48
+        ],
+        "win_per_attempt": 0.6666666666666666,
+        "win_per_eligible": 0.6666666666666666,
+        "win_potions": {
+          "-,-,-": 2
+        }
+      },
+      "shiv-footwork": {
+        "actions": {
+          "n": 3,
+          "p50": 19,
+          "p95": 29
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 55,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 4,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 5,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          }
+        ],
+        "inference_ms": {
+          "n": 63,
+          "p50": 2.443999983370304,
+          "p95": 3.701400011777878
+        },
+        "normal_hp": [
+          4,
+          5,
+          55
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 19,
+          "p95": 29
+        },
+        "rollout_ms": {
+          "n": 3,
+          "p50": 151.31259988993406,
+          "p95": 238.58599993400276
+        },
+        "statuses": {
+          "predicted_win": 3
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 2330.8800999075174,
+          "p95": 2529.702299972996
+        },
+        "win_hp": [
+          4,
+          5,
+          55
+        ],
+        "win_per_attempt": 1.0,
+        "win_per_eligible": 1.0,
+        "win_potions": {
+          "-,-,-": 3
+        }
+      },
+      "strength-barrier": {
+        "actions": {
+          "n": 3,
+          "p50": 13,
+          "p95": 15
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 54,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 27,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 10,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          }
+        ],
+        "inference_ms": {
+          "n": 38,
+          "p50": 2.269799937494099,
+          "p95": 3.306799801066518
+        },
+        "normal_hp": [
+          10,
+          27,
+          54
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 13,
+          "p95": 15
+        },
+        "rollout_ms": {
+          "n": 3,
+          "p50": 107.23649989813566,
+          "p95": 121.16670003160834
+        },
+        "statuses": {
+          "predicted_win": 3
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 2111.901699565351,
+          "p95": 2285.141299944371
+        },
+        "win_hp": [
+          10,
+          27,
+          54
+        ],
+        "win_per_attempt": 1.0,
+        "win_per_eligible": 1.0,
+        "win_potions": {
+          "-,-,-": 3
+        }
+      },
+      "wave-strength": {
+        "actions": {
+          "n": 3,
+          "p50": 13,
+          "p95": 13
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 72,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 45,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 28,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          }
+        ],
+        "inference_ms": {
+          "n": 36,
+          "p50": 2.452949993312359,
+          "p95": 3.7064000498503447
+        },
+        "normal_hp": [
+          28,
+          45,
+          72
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 13,
+          "p95": 13
+        },
+        "rollout_ms": {
+          "n": 3,
+          "p50": 104.85509992577136,
+          "p95": 109.44520006887615
+        },
+        "statuses": {
+          "predicted_win": 3
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 2241.379299899563,
+          "p95": 2603.5897999536246
+        },
+        "win_hp": [
+          28,
+          45,
+          72
+        ],
+        "win_per_attempt": 1.0,
+        "win_per_eligible": 1.0,
+        "win_potions": {
+          "-,-,-": 3
+        }
+      }
+    },
+    "mechanism_initial": {
+      "cloak-slice": {
+        "actions": {
+          "n": 3,
+          "p50": 7,
+          "p95": 20
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 48,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 0,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "death"
+          },
+          {
+            "hp": 0,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "death"
+          }
+        ],
+        "inference_ms": {
+          "n": 32,
+          "p50": 2.774900058284402,
+          "p95": 5.12490002438426
+        },
+        "normal_hp": [
+          0,
+          0,
+          48
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 7,
+          "p95": 20
+        },
+        "rollout_ms": {
+          "n": 3,
+          "p50": 1208.1810000818223,
+          "p95": 1400.433000177145
+        },
+        "statuses": {
+          "death": 2,
+          "predicted_win": 1
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 3412.7430997323245,
+          "p95": 3478.190500056371
+        },
+        "win_hp": [
+          48
+        ],
+        "win_per_attempt": 0.3333333333333333,
+        "win_per_eligible": 0.3333333333333333,
+        "win_potions": {
+          "-,-,-": 1
+        }
+      },
+      "shiv-footwork": {
+        "actions": {
+          "n": 3,
+          "p50": 19,
+          "p95": 29
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 55,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 4,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 5,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          }
+        ],
+        "inference_ms": {
+          "n": 63,
+          "p50": 2.773100044578314,
+          "p95": 4.032399971038103
+        },
+        "normal_hp": [
+          4,
+          5,
+          55
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 19,
+          "p95": 29
+        },
+        "rollout_ms": {
+          "n": 3,
+          "p50": 1282.863800181076,
+          "p95": 1358.9880999643356
+        },
+        "statuses": {
+          "predicted_win": 3
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 3517.8968000691384,
+          "p95": 3650.0343999359757
+        },
+        "win_hp": [
+          4,
+          5,
+          55
+        ],
+        "win_per_attempt": 1.0,
+        "win_per_eligible": 1.0,
+        "win_potions": {
+          "-,-,-": 3
+        }
+      },
+      "strength-barrier": {
+        "actions": {
+          "n": 3,
+          "p50": 13,
+          "p95": 15
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 54,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 27,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 10,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          }
+        ],
+        "inference_ms": {
+          "n": 40,
+          "p50": 2.838200074620545,
+          "p95": 4.850700031965971
+        },
+        "normal_hp": [
+          10,
+          27,
+          54
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 13,
+          "p95": 15
+        },
+        "rollout_ms": {
+          "n": 3,
+          "p50": 1167.784399818629,
+          "p95": 1274.045499972999
+        },
+        "statuses": {
+          "predicted_win": 3
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 3175.442500039935,
+          "p95": 3375.897099962458
+        },
+        "win_hp": [
+          10,
+          27,
+          54
+        ],
+        "win_per_attempt": 1.0,
+        "win_per_eligible": 1.0,
+        "win_potions": {
+          "-,-,-": 3
+        }
+      },
+      "wave-strength": {
+        "actions": {
+          "n": 3,
+          "p50": 13,
+          "p95": 15
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 74,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 45,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 16,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          }
+        ],
+        "inference_ms": {
+          "n": 38,
+          "p50": 2.600400010123849,
+          "p95": 3.6963000893592834
+        },
+        "normal_hp": [
+          16,
+          45,
+          74
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 13,
+          "p95": 15
+        },
+        "rollout_ms": {
+          "n": 3,
+          "p50": 1209.2495998367667,
+          "p95": 1230.643399991095
+        },
+        "statuses": {
+          "predicted_win": 3
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 3345.817199908197,
+          "p95": 3640.9088000655174
+        },
+        "win_hp": [
+          16,
+          45,
+          74
+        ],
+        "win_per_attempt": 1.0,
+        "win_per_eligible": 1.0,
+        "win_potions": {
+          "-,-,-": 3
+        }
+      }
+    },
+    "mechanism_trained": {
+      "cloak-slice": {
+        "actions": {
+          "n": 3,
+          "p50": 21,
+          "p95": 30
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 48,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 5,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 0,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "death"
+          }
+        ],
+        "inference_ms": {
+          "n": 56,
+          "p50": 2.6268999790772796,
+          "p95": 3.962400136515498
+        },
+        "normal_hp": [
+          0,
+          5,
+          48
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 21,
+          "p95": 30
+        },
+        "rollout_ms": {
+          "n": 3,
+          "p50": 186.03960005566478,
+          "p95": 283.1099000759423
+        },
+        "statuses": {
+          "death": 1,
+          "predicted_win": 2
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 2263.7934000231326,
+          "p95": 2487.7746996935457
+        },
+        "win_hp": [
+          5,
+          48
+        ],
+        "win_per_attempt": 0.6666666666666666,
+        "win_per_eligible": 0.6666666666666666,
+        "win_potions": {
+          "-,-,-": 2
+        }
+      },
+      "shiv-footwork": {
+        "actions": {
+          "n": 3,
+          "p50": 22,
+          "p95": 22
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 57,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 14,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 5,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          }
+        ],
+        "inference_ms": {
+          "n": 63,
+          "p50": 2.7384001296013594,
+          "p95": 4.206700017675757
+        },
+        "normal_hp": [
+          5,
+          14,
+          57
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 22,
+          "p95": 22
+        },
+        "rollout_ms": {
+          "n": 3,
+          "p50": 176.50049994699657,
+          "p95": 178.2486999873072
+        },
+        "statuses": {
+          "predicted_win": 3
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 2402.0972000434995,
+          "p95": 2469.2746999207884
+        },
+        "win_hp": [
+          5,
+          14,
+          57
+        ],
+        "win_per_attempt": 1.0,
+        "win_per_eligible": 1.0,
+        "win_potions": {
+          "-,-,-": 3
+        }
+      },
+      "strength-barrier": {
+        "actions": {
+          "n": 3,
+          "p50": 14,
+          "p95": 15
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 54,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 27,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 10,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          }
+        ],
+        "inference_ms": {
+          "n": 39,
+          "p50": 3.1875998247414827,
+          "p95": 5.947300000116229
+        },
+        "normal_hp": [
+          10,
+          27,
+          54
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 14,
+          "p95": 15
+        },
+        "rollout_ms": {
+          "n": 3,
+          "p50": 146.48819994181395,
+          "p95": 162.0565999764949
+        },
+        "statuses": {
+          "predicted_win": 3
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 2137.228899868205,
+          "p95": 2280.1357000134885
+        },
+        "win_hp": [
+          10,
+          27,
+          54
+        ],
+        "win_per_attempt": 1.0,
+        "win_per_eligible": 1.0,
+        "win_potions": {
+          "-,-,-": 3
+        }
+      },
+      "wave-strength": {
+        "actions": {
+          "n": 3,
+          "p50": 13,
+          "p95": 13
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 72,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 45,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 28,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          }
+        ],
+        "inference_ms": {
+          "n": 36,
+          "p50": 2.6040500961244106,
+          "p95": 4.75419987924397
+        },
+        "normal_hp": [
+          28,
+          45,
+          72
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 13,
+          "p95": 13
+        },
+        "rollout_ms": {
+          "n": 3,
+          "p50": 110.30689999461174,
+          "p95": 124.98930003494024
+        },
+        "statuses": {
+          "predicted_win": 3
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 2246.820100117475,
+          "p95": 2637.762299971655
+        },
+        "win_hp": [
+          28,
+          45,
+          72
+        ],
+        "win_per_attempt": 1.0,
+        "win_per_eligible": 1.0,
+        "win_potions": {
+          "-,-,-": 3
+        }
+      }
+    },
+    "no_relation_initial": {
+      "cloak-slice": {
+        "actions": {
+          "n": 3,
+          "p50": 7,
+          "p95": 20
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 48,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 0,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "death"
+          },
+          {
+            "hp": 0,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "death"
+          }
+        ],
+        "inference_ms": {
+          "n": 32,
+          "p50": 2.1845499286428094,
+          "p95": 2.7534998953342438
+        },
+        "normal_hp": [
+          0,
+          0,
+          48
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 7,
+          "p95": 20
+        },
+        "rollout_ms": {
+          "n": 3,
+          "p50": 67.38949986174703,
+          "p95": 132.27730011567473
+        },
+        "statuses": {
+          "death": 2,
+          "predicted_win": 1
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 2210.048499982804,
+          "p95": 2271.955699659884
+        },
+        "win_hp": [
+          48
+        ],
+        "win_per_attempt": 0.3333333333333333,
+        "win_per_eligible": 0.3333333333333333,
+        "win_potions": {
+          "-,-,-": 1
+        }
+      },
+      "shiv-footwork": {
+        "actions": {
+          "n": 3,
+          "p50": 19,
+          "p95": 29
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 55,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 4,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 5,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          }
+        ],
+        "inference_ms": {
+          "n": 63,
+          "p50": 2.0256000570952892,
+          "p95": 3.23150004260242
+        },
+        "normal_hp": [
+          4,
+          5,
+          55
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 19,
+          "p95": 29
+        },
+        "rollout_ms": {
+          "n": 3,
+          "p50": 132.32479989528656,
+          "p95": 195.9532001055777
+        },
+        "statuses": {
+          "predicted_win": 3
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 2343.188700033352,
+          "p95": 2487.0196999982
+        },
+        "win_hp": [
+          4,
+          5,
+          55
+        ],
+        "win_per_attempt": 1.0,
+        "win_per_eligible": 1.0,
+        "win_potions": {
+          "-,-,-": 3
+        }
+      },
+      "strength-barrier": {
+        "actions": {
+          "n": 3,
+          "p50": 13,
+          "p95": 15
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 54,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 27,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 10,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          }
+        ],
+        "inference_ms": {
+          "n": 40,
+          "p50": 1.8955499399453402,
+          "p95": 2.6911001186817884
+        },
+        "normal_hp": [
+          10,
+          27,
+          54
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 13,
+          "p95": 15
+        },
+        "rollout_ms": {
+          "n": 3,
+          "p50": 98.02550007589161,
+          "p95": 105.42729985900223
+        },
+        "statuses": {
+          "predicted_win": 3
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 2096.2430997751653,
+          "p95": 2284.848499810323
+        },
+        "win_hp": [
+          10,
+          27,
+          54
+        ],
+        "win_per_attempt": 1.0,
+        "win_per_eligible": 1.0,
+        "win_potions": {
+          "-,-,-": 3
+        }
+      },
+      "wave-strength": {
+        "actions": {
+          "n": 3,
+          "p50": 13,
+          "p95": 15
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 74,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 45,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 16,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          }
+        ],
+        "inference_ms": {
+          "n": 38,
+          "p50": 1.9991499138996005,
+          "p95": 3.45960003323853
+        },
+        "normal_hp": [
+          16,
+          45,
+          74
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 13,
+          "p95": 15
+        },
+        "rollout_ms": {
+          "n": 3,
+          "p50": 84.74229997955263,
+          "p95": 132.83820007927716
+        },
+        "statuses": {
+          "predicted_win": 3
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 2221.277199918404,
+          "p95": 2591.5490000043064
+        },
+        "win_hp": [
+          16,
+          45,
+          74
+        ],
+        "win_per_attempt": 1.0,
+        "win_per_eligible": 1.0,
+        "win_potions": {
+          "-,-,-": 3
+        }
+      }
+    },
+    "no_relation_trained": {
+      "cloak-slice": {
+        "actions": {
+          "n": 3,
+          "p50": 10,
+          "p95": 20
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 48,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 0,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "death"
+          },
+          {
+            "hp": 0,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "death"
+          }
+        ],
+        "inference_ms": {
+          "n": 35,
+          "p50": 2.2646000143140554,
+          "p95": 4.5454001519829035
+        },
+        "normal_hp": [
+          0,
+          0,
+          48
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 10,
+          "p95": 20
+        },
+        "rollout_ms": {
+          "n": 3,
+          "p50": 90.18360008485615,
+          "p95": 172.2075000870973
+        },
+        "statuses": {
+          "death": 2,
+          "predicted_win": 1
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 2250.002499902621,
+          "p95": 2294.754699571058
+        },
+        "win_hp": [
+          48
+        ],
+        "win_per_attempt": 0.3333333333333333,
+        "win_per_eligible": 0.3333333333333333,
+        "win_potions": {
+          "-,-,-": 1
+        }
+      },
+      "shiv-footwork": {
+        "actions": {
+          "n": 3,
+          "p50": 19,
+          "p95": 29
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 55,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 4,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 5,
+            "max_hp": 70,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          }
+        ],
+        "inference_ms": {
+          "n": 63,
+          "p50": 2.081899903714657,
+          "p95": 3.1431999523192644
+        },
+        "normal_hp": [
+          4,
+          5,
+          55
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 19,
+          "p95": 29
+        },
+        "rollout_ms": {
+          "n": 3,
+          "p50": 140.4812999535352,
+          "p95": 179.14500017650425
+        },
+        "statuses": {
+          "predicted_win": 3
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 2341.61280002445,
+          "p95": 2470.1814998406917
+        },
+        "win_hp": [
+          4,
+          5,
+          55
+        ],
+        "win_per_attempt": 1.0,
+        "win_per_eligible": 1.0,
+        "win_potions": {
+          "-,-,-": 3
+        }
+      },
+      "strength-barrier": {
+        "actions": {
+          "n": 3,
+          "p50": 13,
+          "p95": 15
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 54,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 27,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 10,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          }
+        ],
+        "inference_ms": {
+          "n": 38,
+          "p50": 1.8862498691305518,
+          "p95": 3.210300114005804
+        },
+        "normal_hp": [
+          10,
+          27,
+          54
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 13,
+          "p95": 15
+        },
+        "rollout_ms": {
+          "n": 3,
+          "p50": 76.61290001124144,
+          "p95": 113.06060012429953
+        },
+        "statuses": {
+          "predicted_win": 3
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 2103.796999901533,
+          "p95": 2275.1633999869227
+        },
+        "win_hp": [
+          10,
+          27,
+          54
+        ],
+        "win_per_attempt": 1.0,
+        "win_per_eligible": 1.0,
+        "win_potions": {
+          "-,-,-": 3
+        }
+      },
+      "wave-strength": {
+        "actions": {
+          "n": 3,
+          "p50": 13,
+          "p95": 13
+        },
+        "attempts": 3,
+        "eligible": 3,
+        "episodes_with_solver_notes": 3,
+        "hp_and_potions": [
+          {
+            "hp": 74,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 45,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          },
+          {
+            "hp": 28,
+            "max_hp": 80,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "status": "predicted_win"
+          }
+        ],
+        "inference_ms": {
+          "n": 36,
+          "p50": 2.117549884133041,
+          "p95": 4.019899992272258
+        },
+        "normal_hp": [
+          28,
+          45,
+          74
+        ],
+        "reasons": {},
+        "replays": {
+          "n": 3,
+          "p50": 13,
+          "p95": 13
+        },
+        "rollout_ms": {
+          "n": 3,
+          "p50": 99.02640013024211,
+          "p95": 126.39319989830256
+        },
+        "statuses": {
+          "predicted_win": 3
+        },
+        "total_ms": {
+          "n": 3,
+          "p50": 2262.9436999559402,
+          "p95": 2611.86940013431
+        },
+        "win_hp": [
+          28,
+          45,
+          74
+        ],
+        "win_per_attempt": 1.0,
+        "win_per_eligible": 1.0,
+        "win_potions": {
+          "-,-,-": 3
+        }
+      }
+    }
+  },
+  "evaluation_resume_seconds": 52.650834899861366,
+  "initial": {
+    "id": "6fa84950848f9ce09db015870392a6a605dc55193bcbc1133a71387dd05496c9",
+    "mechanism": "0894c2115ecb9fa9160981e6528ff4285bfc245d205330102797b84da62cf923",
+    "no_relation": "31ec9ac7f3449ae07be93dc002baddffb0a6ac2b05ce8ece6b72396c7d0abdca"
+  },
+  "pilot": false,
+  "public_ledger": {
+    "rows": 180,
+    "sha256": "0802f52eb8858dae9cb0adc178a2d9f2831fa00e157ef5a50b78ad7823403c31"
+  },
+  "trained": {
+    "id": "a5cb8e0a4e1e6be5617e89bf9eb5cbab92c80777b9fba001cc655610a65faea3",
+    "mechanism": "68878cb40dc93fcadfeb6a97643811e0b5d45c129e7f27c3ea696146463bd2ef",
+    "no_relation": "36b09c6f57c145d9b5225846b803dae5cc0cf593116c1c23edd8604c6c67cb6c"
+  },
+  "training": [
+    {
+      "collection_seconds": 64.58753519994207,
+      "optimizer_seconds": 4.245067400159314,
+      "round": 0,
+      "samples": {
+        "id": {
+          "actions": {
+            "n": 16,
+            "p50": 16.5,
+            "p95": 26
+          },
+          "attempts": 16,
+          "eligible": 16,
+          "episodes_with_solver_notes": 16,
+          "hp_and_potions": [
+            {
+              "hp": 72,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 48,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 27,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 8,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 56,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 22,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 0,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "death"
+            },
+            {
+              "hp": 0,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "death"
+            },
+            {
+              "hp": 65,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 26,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 0,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "death"
+            },
+            {
+              "hp": 19,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 32,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 18,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 9,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 0,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "death"
+            }
+          ],
+          "inference_ms": {
+            "n": 257,
+            "p50": 2.8329999186098576,
+            "p95": 4.734300076961517
+          },
+          "normal_hp": [
+            0,
+            0,
+            0,
+            0,
+            8,
+            9,
+            18,
+            19,
+            22,
+            26,
+            27,
+            32,
+            48,
+            56,
+            65,
+            72
+          ],
+          "reasons": {},
+          "replays": {
+            "n": 16,
+            "p50": 16.5,
+            "p95": 26
+          },
+          "rollout_ms": {
+            "n": 16,
+            "p50": 152.27280010003597,
+            "p95": 255.5624998640269
+          },
+          "statuses": {
+            "death": 4,
+            "predicted_win": 12
+          },
+          "total_ms": {
+            "n": 16,
+            "p50": 2303.033500094898,
+            "p95": 2646.72870002687
+          },
+          "win_hp": [
+            8,
+            9,
+            18,
+            19,
+            22,
+            26,
+            27,
+            32,
+            48,
+            56,
+            65,
+            72
+          ],
+          "win_per_attempt": 0.75,
+          "win_per_eligible": 0.75,
+          "win_potions": {
+            "-,-,-": 12
+          }
+        },
+        "mechanism": {
+          "actions": {
+            "n": 16,
+            "p50": 16.5,
+            "p95": 26
+          },
+          "attempts": 16,
+          "eligible": 16,
+          "episodes_with_solver_notes": 16,
+          "hp_and_potions": [
+            {
+              "hp": 72,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 48,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 27,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 8,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 56,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 22,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 0,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "death"
+            },
+            {
+              "hp": 0,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "death"
+            },
+            {
+              "hp": 65,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 26,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 0,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "death"
+            },
+            {
+              "hp": 19,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 32,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 18,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 9,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 0,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "death"
+            }
+          ],
+          "inference_ms": {
+            "n": 257,
+            "p50": 2.7151000685989857,
+            "p95": 5.511699942871928
+          },
+          "normal_hp": [
+            0,
+            0,
+            0,
+            0,
+            8,
+            9,
+            18,
+            19,
+            22,
+            26,
+            27,
+            32,
+            48,
+            56,
+            65,
+            72
+          ],
+          "reasons": {},
+          "replays": {
+            "n": 16,
+            "p50": 16.5,
+            "p95": 26
+          },
+          "rollout_ms": {
+            "n": 16,
+            "p50": 1290.0354500161484,
+            "p95": 1899.397499859333
+          },
+          "statuses": {
+            "death": 4,
+            "predicted_win": 12
+          },
+          "total_ms": {
+            "n": 16,
+            "p50": 3462.114199763164,
+            "p95": 4359.512199880555
+          },
+          "win_hp": [
+            8,
+            9,
+            18,
+            19,
+            22,
+            26,
+            27,
+            32,
+            48,
+            56,
+            65,
+            72
+          ],
+          "win_per_attempt": 0.75,
+          "win_per_eligible": 0.75,
+          "win_potions": {
+            "-,-,-": 12
+          }
+        },
+        "no_relation": {
+          "actions": {
+            "n": 16,
+            "p50": 16.5,
+            "p95": 26
+          },
+          "attempts": 16,
+          "eligible": 16,
+          "episodes_with_solver_notes": 16,
+          "hp_and_potions": [
+            {
+              "hp": 72,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 48,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 27,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 8,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 56,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 22,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 0,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "death"
+            },
+            {
+              "hp": 0,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "death"
+            },
+            {
+              "hp": 65,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 26,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 0,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "death"
+            },
+            {
+              "hp": 0,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "death"
+            },
+            {
+              "hp": 32,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 18,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 9,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 0,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "death"
+            }
+          ],
+          "inference_ms": {
+            "n": 260,
+            "p50": 2.390700043179095,
+            "p95": 3.8617998361587524
+          },
+          "normal_hp": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            9,
+            18,
+            22,
+            26,
+            27,
+            32,
+            48,
+            56,
+            65,
+            72
+          ],
+          "reasons": {},
+          "replays": {
+            "n": 16,
+            "p50": 16.5,
+            "p95": 26
+          },
+          "rollout_ms": {
+            "n": 16,
+            "p50": 138.22760013863444,
+            "p95": 211.95110003463924
+          },
+          "statuses": {
+            "death": 5,
+            "predicted_win": 11
+          },
+          "total_ms": {
+            "n": 16,
+            "p50": 2306.407999712974,
+            "p95": 2662.8419999033213
+          },
+          "win_hp": [
+            8,
+            9,
+            18,
+            22,
+            26,
+            27,
+            32,
+            48,
+            56,
+            65,
+            72
+          ],
+          "win_per_attempt": 0.6875,
+          "win_per_eligible": 0.6875,
+          "win_potions": {
+            "-,-,-": 11
+          }
+        }
+      },
+      "updates": {
+        "id": {
+          "actor_loss": 7.540056735277176,
+          "behavior_logp_error": 0.0,
+          "critic_loss": 0.8454068973660469,
+          "decisions": 257,
+          "entropy": 25.946957170963287,
+          "gradient": 0.3135768473148346,
+          "head_gradients": {
+            "actor": 0.08960780501365662,
+            "critic": 0.2729997932910919
+          },
+          "parameter_deltas": {
+            "action.0.bias": 0.005999952554702759,
+            "action.0.weight": 0.00599999725818634,
+            "action.2.bias": 0.005999967455863953,
+            "action.2.weight": 0.00599999725818634,
+            "actor.0.0.bias": 0.005999937653541565,
+            "actor.0.0.weight": 0.00599999725818634,
+            "actor.0.2.bias": 0.005999904125928879,
+            "actor.0.2.weight": 0.005999989807605743,
+            "actor.1.bias": 0.0026069898158311844,
+            "actor.1.weight": 0.00599999725818634,
+            "card.0.bias": 0.005999986082315445,
+            "card.0.weight": 0.005999986082315445,
+            "card.2.bias": 0.005999989807605743,
+            "card.2.weight": 0.005999967455863953,
+            "critic.0.0.bias": 0.00599999725818634,
+            "critic.0.0.weight": 0.00599999725818634,
+            "critic.0.2.bias": 0.00599999725818634,
+            "critic.0.2.weight": 0.00599999725818634,
+            "critic.1.bias": 0.0059999991208314896,
+            "critic.1.weight": 0.005999997723847628,
+            "enemy.0.bias": 0.00599994882941246,
+            "enemy.0.weight": 0.005999960005283356,
+            "enemy.2.bias": 0.005999978631734848,
+            "enemy.2.weight": 0.005999952554702759,
+            "history.bias_hh": 0.005999922752380371,
+            "history.bias_ih": 0.005999963730573654,
+            "history.weight_hh": 0.0059997886419296265,
+            "history.weight_ih": 0.005999848246574402,
+            "ids.weight": 0.005999863147735596,
+            "relation.0.bias": 0.005999986082315445,
+            "relation.0.weight": 0.00599999725818634,
+            "relation.2.bias": 0.005999989807605743,
+            "relation.2.weight": 0.005999989807605743,
+            "rules.weight": 0.0,
+            "state.0.bias": 0.005999993532896042,
+            "state.0.weight": 0.005999993532896042,
+            "state.2.bias": 0.00599999725818634,
+            "state.2.weight": 0.0059999823570251465
+          },
+          "policy_gradient": 0.08964528143405914,
+          "qualified": 16,
+          "restore_exact": true,
+          "updated": true,
+          "witness": {
+            "after": 0.1387273073196411,
+            "before": 0.1420811116695404,
+            "value_after": [
+              0.5508863925933838,
+              0.2695797085762024,
+              0.27461105585098267
+            ],
+            "value_before": [
+              0.5131320357322693,
+              0.24217519164085388,
+              0.2625407576560974
+            ]
+          }
+        },
+        "mechanism": {
+          "actor_loss": 7.577387303113937,
+          "behavior_logp_error": 0.0,
+          "critic_loss": 0.8460178412497044,
+          "decisions": 257,
+          "entropy": 25.94669419527054,
+          "gradient": 0.3252183496952057,
+          "head_gradients": {
+            "actor": 0.0988013744354248,
+            "critic": 0.2758319675922394
+          },
+          "parameter_deltas": {
+            "action.0.bias": 0.005999945104122162,
+            "action.0.weight": 0.00599999725818634,
+            "action.2.bias": 0.005999967455863953,
+            "action.2.weight": 0.00599999725818634,
+            "actor.0.0.bias": 0.005999937653541565,
+            "actor.0.0.weight": 0.00599999725818634,
+            "actor.0.2.bias": 0.005999937653541565,
+            "actor.0.2.weight": 0.00599999725818634,
+            "actor.1.bias": 0.003285950981080532,
+            "actor.1.weight": 0.00599999725818634,
+            "card.0.bias": 0.005999986082315445,
+            "card.0.weight": 0.005999991670250893,
+            "card.2.bias": 0.005999989807605743,
+            "card.2.weight": 0.0059999823570251465,
+            "critic.0.0.bias": 0.00599999725818634,
+            "critic.0.0.weight": 0.00599999725818634,
+            "critic.0.2.bias": 0.00599999725818634,
+            "critic.0.2.weight": 0.00599999725818634,
+            "critic.1.bias": 0.0059999991208314896,
+            "critic.1.weight": 0.005999998189508915,
+            "enemy.0.bias": 0.00599994882941246,
+            "enemy.0.weight": 0.005999960005283356,
+            "enemy.2.bias": 0.005999978631734848,
+            "enemy.2.weight": 0.005999952554702759,
+            "history.bias_hh": 0.005999922752380371,
+            "history.bias_ih": 0.005999963730573654,
+            "history.weight_hh": 0.0059997886419296265,
+            "history.weight_ih": 0.005999866873025894,
+            "ids.weight": 0.005999863147735596,
+            "relation.0.bias": 0.0059999870136380196,
+            "relation.0.weight": 0.00599999725818634,
+            "relation.2.bias": 0.005999989807605743,
+            "relation.2.weight": 0.005999987944960594,
+            "rules.weight": 0.005999922752380371,
+            "state.0.bias": 0.005999993532896042,
+            "state.0.weight": 0.005999993532896042,
+            "state.2.bias": 0.00599999725818634,
+            "state.2.weight": 0.0059999823570251465
+          },
+          "policy_gradient": 0.09885207563638687,
+          "qualified": 16,
+          "restore_exact": true,
+          "updated": true,
+          "witness": {
+            "after": 0.1357611119747162,
+            "before": 0.14114129543304443,
+            "value_after": [
+              0.5545549392700195,
+              0.27302512526512146,
+              0.2786467969417572
+            ],
+            "value_before": [
+              0.5121532082557678,
+              0.24210971593856812,
+              0.26177456974983215
+            ]
+          }
+        },
+        "no_relation": {
+          "actor_loss": 6.079549133777618,
+          "behavior_logp_error": 0.0,
+          "critic_loss": 0.8533230014145374,
+          "decisions": 260,
+          "entropy": 26.261483371257782,
+          "gradient": 0.22886741161346436,
+          "head_gradients": {
+            "actor": 0.06306718289852142,
+            "critic": 0.19374723732471466
+          },
+          "parameter_deltas": {
+            "action.0.bias": 0.005999913439154625,
+            "action.0.weight": 0.00599999725818634,
+            "action.2.bias": 0.005999915301799774,
+            "action.2.weight": 0.00599999725818634,
+            "actor.0.0.bias": 0.005999866873025894,
+            "actor.0.0.weight": 0.005999993532896042,
+            "actor.0.2.bias": 0.005999818444252014,
+            "actor.0.2.weight": 0.0059999823570251465,
+            "actor.1.bias": 0.0027767466381192207,
+            "actor.1.weight": 0.00599999725818634,
+            "card.0.bias": 0.005999980494379997,
+            "card.0.weight": 0.005999989807605743,
+            "card.2.bias": 0.0059999823570251465,
+            "card.2.weight": 0.0059999749064445496,
+            "critic.0.0.bias": 0.00599999725818634,
+            "critic.0.0.weight": 0.005999989807605743,
+            "critic.0.2.bias": 0.00599999725818634,
+            "critic.0.2.weight": 0.00599999725818634,
+            "critic.1.bias": 0.0059999991208314896,
+            "critic.1.weight": 0.00599999725818634,
+            "enemy.0.bias": 0.005999930202960968,
+            "enemy.0.weight": 0.005999945104122162,
+            "enemy.2.bias": 0.005999971181154251,
+            "enemy.2.weight": 0.005999937653541565,
+            "history.bias_hh": 0.005999892950057983,
+            "history.bias_ih": 0.005999945104122162,
+            "history.weight_hh": 0.005999714136123657,
+            "history.weight_ih": 0.005999807268381119,
+            "ids.weight": 0.005999654531478882,
+            "relation.0.bias": 0.0,
+            "relation.0.weight": 0.0,
+            "relation.2.bias": 0.0,
+            "relation.2.weight": 0.0,
+            "rules.weight": 0.00599980354309082,
+            "state.0.bias": 0.005999989807605743,
+            "state.0.weight": 0.005999993532896042,
+            "state.2.bias": 0.00599999725818634,
+            "state.2.weight": 0.0059999749064445496
+          },
+          "policy_gradient": 0.06307600438594818,
+          "qualified": 16,
+          "restore_exact": true,
+          "updated": true,
+          "witness": {
+            "after": 0.14070038497447968,
+            "before": 0.14248089492321014,
+            "value_after": [
+              0.5502305626869202,
+              0.271081805229187,
+              0.27126577496528625
+            ],
+            "value_before": [
+              0.5121532082557678,
+              0.24210971593856812,
+              0.26177456974983215
+            ]
+          }
+        }
+      }
+    },
+    {
+      "collection_seconds": 63.0918908000458,
+      "optimizer_seconds": 4.1188509000930935,
+      "round": 1,
+      "samples": {
+        "id": {
+          "actions": {
+            "n": 16,
+            "p50": 14.0,
+            "p95": 23
+          },
+          "attempts": 16,
+          "eligible": 16,
+          "episodes_with_solver_notes": 16,
+          "hp_and_potions": [
+            {
+              "hp": 68,
+              "max_hp": 80,
+              "potions": [
+                "FLEX_POTION",
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 46,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 27,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 0,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "death"
+            },
+            {
+              "hp": 55,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 30,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 0,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "death"
+            },
+            {
+              "hp": 0,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "death"
+            },
+            {
+              "hp": 67,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 42,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 16,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 19,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 47,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 27,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 21,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 8,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            }
+          ],
+          "inference_ms": {
+            "n": 230,
+            "p50": 3.042450058273971,
+            "p95": 5.034700036048889
+          },
+          "normal_hp": [
+            0,
+            0,
+            0,
+            8,
+            16,
+            19,
+            21,
+            27,
+            27,
+            30,
+            42,
+            46,
+            47,
+            55,
+            67,
+            68
+          ],
+          "reasons": {},
+          "replays": {
+            "n": 16,
+            "p50": 14.0,
+            "p95": 23
+          },
+          "rollout_ms": {
+            "n": 16,
+            "p50": 139.0978000126779,
+            "p95": 243.840100010857
+          },
+          "statuses": {
+            "death": 3,
+            "predicted_win": 13
+          },
+          "total_ms": {
+            "n": 16,
+            "p50": 2291.869700187817,
+            "p95": 2360.599000006914
+          },
+          "win_hp": [
+            8,
+            16,
+            19,
+            21,
+            27,
+            27,
+            30,
+            42,
+            46,
+            47,
+            55,
+            67,
+            68
+          ],
+          "win_per_attempt": 0.8125,
+          "win_per_eligible": 0.8125,
+          "win_potions": {
+            "-,-,-": 12,
+            "FLEX_POTION,-,-": 1
+          }
+        },
+        "mechanism": {
+          "actions": {
+            "n": 16,
+            "p50": 14.0,
+            "p95": 23
+          },
+          "attempts": 16,
+          "eligible": 16,
+          "episodes_with_solver_notes": 16,
+          "hp_and_potions": [
+            {
+              "hp": 68,
+              "max_hp": 80,
+              "potions": [
+                "FLEX_POTION",
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 46,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 27,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 0,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "death"
+            },
+            {
+              "hp": 55,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 30,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 0,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "death"
+            },
+            {
+              "hp": 0,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "death"
+            },
+            {
+              "hp": 67,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 42,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 16,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 19,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 51,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 27,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 13,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 8,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            }
+          ],
+          "inference_ms": {
+            "n": 232,
+            "p50": 2.6973499916493893,
+            "p95": 4.512999905273318
+          },
+          "normal_hp": [
+            0,
+            0,
+            0,
+            8,
+            13,
+            16,
+            19,
+            27,
+            27,
+            30,
+            42,
+            46,
+            51,
+            55,
+            67,
+            68
+          ],
+          "reasons": {},
+          "replays": {
+            "n": 16,
+            "p50": 14.0,
+            "p95": 23
+          },
+          "rollout_ms": {
+            "n": 16,
+            "p50": 1306.9495499366894,
+            "p95": 1375.847299816087
+          },
+          "statuses": {
+            "death": 3,
+            "predicted_win": 13
+          },
+          "total_ms": {
+            "n": 16,
+            "p50": 3426.414600224234,
+            "p95": 3570.0848000124097
+          },
+          "win_hp": [
+            8,
+            13,
+            16,
+            19,
+            27,
+            27,
+            30,
+            42,
+            46,
+            51,
+            55,
+            67,
+            68
+          ],
+          "win_per_attempt": 0.8125,
+          "win_per_eligible": 0.8125,
+          "win_potions": {
+            "-,-,-": 12,
+            "FLEX_POTION,-,-": 1
+          }
+        },
+        "no_relation": {
+          "actions": {
+            "n": 16,
+            "p50": 14.0,
+            "p95": 25
+          },
+          "attempts": 16,
+          "eligible": 16,
+          "episodes_with_solver_notes": 16,
+          "hp_and_potions": [
+            {
+              "hp": 68,
+              "max_hp": 80,
+              "potions": [
+                "FLEX_POTION",
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 46,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 27,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 0,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "death"
+            },
+            {
+              "hp": 55,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 30,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 0,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "death"
+            },
+            {
+              "hp": 0,
+              "max_hp": 80,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "death"
+            },
+            {
+              "hp": 67,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 42,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 0,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "death"
+            },
+            {
+              "hp": 19,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 47,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 27,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 13,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            },
+            {
+              "hp": 8,
+              "max_hp": 70,
+              "potions": [
+                null,
+                null,
+                null
+              ],
+              "status": "predicted_win"
+            }
+          ],
+          "inference_ms": {
+            "n": 240,
+            "p50": 2.4247999535873532,
+            "p95": 4.475100198760629
+          },
+          "normal_hp": [
+            0,
+            0,
+            0,
+            0,
+            8,
+            13,
+            19,
+            27,
+            27,
+            30,
+            42,
+            46,
+            47,
+            55,
+            67,
+            68
+          ],
+          "reasons": {},
+          "replays": {
+            "n": 16,
+            "p50": 14.0,
+            "p95": 25
+          },
+          "rollout_ms": {
+            "n": 16,
+            "p50": 125.34400005824864,
+            "p95": 226.26599995419383
+          },
+          "statuses": {
+            "death": 4,
+            "predicted_win": 12
+          },
+          "total_ms": {
+            "n": 16,
+            "p50": 2281.1725500505418,
+            "p95": 2409.528600051999
+          },
+          "win_hp": [
+            8,
+            13,
+            19,
+            27,
+            27,
+            30,
+            42,
+            46,
+            47,
+            55,
+            67,
+            68
+          ],
+          "win_per_attempt": 0.75,
+          "win_per_eligible": 0.75,
+          "win_potions": {
+            "-,-,-": 11,
+            "FLEX_POTION,-,-": 1
+          }
+        }
+      },
+      "updates": {
+        "id": {
+          "actor_loss": 7.970487654209137,
+          "behavior_logp_error": 0.0,
+          "critic_loss": 0.800747886300087,
+          "decisions": 230,
+          "entropy": 23.963939249515533,
+          "gradient": 0.39365822076797485,
+          "head_gradients": {
+            "actor": 0.12887819111347198,
+            "critic": 0.3318241834640503
+          },
+          "parameter_deltas": {
+            "action.0.bias": 0.005962081253528595,
+            "action.0.weight": 0.006008131429553032,
+            "action.2.bias": 0.00600336492061615,
+            "action.2.weight": 0.006008028984069824,
+            "actor.0.0.bias": 0.005976635962724686,
+            "actor.0.0.weight": 0.006008118391036987,
+            "actor.0.2.bias": 0.006006583571434021,
+            "actor.0.2.weight": 0.0060081034898757935,
+            "actor.1.bias": 0.0035848505795001984,
+            "actor.1.weight": 0.005998775362968445,
+            "card.0.bias": 0.006007988005876541,
+            "card.0.weight": 0.006007795222103596,
+            "card.2.bias": 0.00599262909963727,
+            "card.2.weight": 0.006007835268974304,
+            "critic.0.0.bias": 0.00600685179233551,
+            "critic.0.0.weight": 0.006008107215166092,
+            "critic.0.2.bias": 0.006008140742778778,
+            "critic.0.2.weight": 0.006008140742778778,
+            "critic.1.bias": 0.006005078088492155,
+            "critic.1.weight": 0.0060079051181674,
+            "enemy.0.bias": 0.00600794330239296,
+            "enemy.0.weight": 0.00600789487361908,
+            "enemy.2.bias": 0.006007567048072815,
+            "enemy.2.weight": 0.006008043885231018,
+            "history.bias_hh": 0.00600801408290863,
+            "history.bias_ih": 0.006007462739944458,
+            "history.weight_hh": 0.006007770076394081,
+            "history.weight_ih": 0.006007865071296692,
+            "ids.weight": 0.006007343530654907,
+            "relation.0.bias": 0.0060080885887146,
+            "relation.0.weight": 0.006008010357618332,
+            "relation.2.bias": 0.006003916263580322,
+            "relation.2.weight": 0.006008043885231018,
+            "rules.weight": 0.0,
+            "state.0.bias": 0.006008113734424114,
+            "state.0.weight": 0.006008131429553032,
+            "state.2.bias": 0.006006930023431778,
+            "state.2.weight": 0.006007492542266846
+          },
+          "policy_gradient": 0.12922026216983795,
+          "qualified": 16,
+          "restore_exact": true,
+          "updated": true,
+          "witness": {
+            "after": 0.14886154234409332,
+            "before": 0.14509034156799316,
+            "value_after": [
+              0.5913558006286621,
+              0.30117666721343994,
+              0.28665003180503845
+            ],
+            "value_before": [
+              0.551429808139801,
+              0.26986756920814514,
+              0.27518850564956665
+            ]
+          }
+        },
+        "mechanism": {
+          "actor_loss": 7.867335557937622,
+          "behavior_logp_error": 0.0,
+          "critic_loss": 0.8026535138487816,
+          "decisions": 232,
+          "entropy": 24.230708479881287,
+          "gradient": 0.4190775156021118,
+          "head_gradients": {
+            "actor": 0.16497156023979187,
+            "critic": 0.3249349892139435
+          },
+          "parameter_deltas": {
+            "action.0.bias": 0.006001237779855728,
+            "action.0.weight": 0.006008107215166092,
+            "action.2.bias": 0.005996286869049072,
+            "action.2.weight": 0.006007969379425049,
+            "actor.0.0.bias": 0.006005275994539261,
+            "actor.0.0.weight": 0.0060081034898757935,
+            "actor.0.2.bias": 0.0059545934200286865,
+            "actor.0.2.weight": 0.006007790565490723,
+            "actor.1.bias": 0.004157385788857937,
+            "actor.1.weight": 0.006007194519042969,
+            "card.0.bias": 0.006004666443914175,
+            "card.0.weight": 0.006008122116327286,
+            "card.2.bias": 0.006005734205245972,
+            "card.2.weight": 0.006008081138134003,
+            "critic.0.0.bias": 0.006006956100463867,
+            "critic.0.0.weight": 0.006007976830005646,
+            "critic.0.2.bias": 0.0060081034898757935,
+            "critic.0.2.weight": 0.006008103024214506,
+            "critic.1.bias": 0.006007177755236626,
+            "critic.1.weight": 0.00600704550743103,
+            "enemy.0.bias": 0.006007522344589233,
+            "enemy.0.weight": 0.006007686257362366,
+            "enemy.2.bias": 0.006007850170135498,
+            "enemy.2.weight": 0.006007649004459381,
+            "history.bias_hh": 0.006007522344589233,
+            "history.bias_ih": 0.0060069262981414795,
+            "history.weight_hh": 0.006007462739944458,
+            "history.weight_ih": 0.006007865071296692,
+            "ids.weight": 0.006003916263580322,
+            "relation.0.bias": 0.00600789487361908,
+            "relation.0.weight": 0.00600810581818223,
+            "relation.2.bias": 0.006004273891448975,
+            "relation.2.weight": 0.0060081034898757935,
+            "rules.weight": 0.006006419658660889,
+            "state.0.bias": 0.005997132509946823,
+            "state.0.weight": 0.006008114665746689,
+            "state.2.bias": 0.00600813701748848,
+            "state.2.weight": 0.006008073687553406
+          },
+          "policy_gradient": 0.1654108613729477,
+          "qualified": 16,
+          "restore_exact": true,
+          "updated": true,
+          "witness": {
+            "after": 0.1516323685646057,
+            "before": 0.14579153060913086,
+            "value_after": [
+              0.6021910309791565,
+              0.30897781252861023,
+              0.2966253161430359
+            ],
+            "value_before": [
+              0.5558875203132629,
+              0.2735140323638916,
+              0.28152257204055786
+            ]
+          }
+        },
+        "no_relation": {
+          "actor_loss": 5.721903622150421,
+          "behavior_logp_error": 0.0,
+          "critic_loss": 0.819550409913063,
+          "decisions": 240,
+          "entropy": 24.901566982269287,
+          "gradient": 0.30807873606681824,
+          "head_gradients": {
+            "actor": 0.10036918520927429,
+            "critic": 0.25114911794662476
+          },
+          "parameter_deltas": {
+            "action.0.bias": 0.006004653871059418,
+            "action.0.weight": 0.006008133292198181,
+            "action.2.bias": 0.006007678806781769,
+            "action.2.weight": 0.0060080885887146,
+            "actor.0.0.bias": 0.005977407097816467,
+            "actor.0.0.weight": 0.006008066236972809,
+            "actor.0.2.bias": 0.005924105644226074,
+            "actor.0.2.weight": 0.0060080885887146,
+            "actor.1.bias": 0.001524539664387703,
+            "actor.1.weight": 0.005937248468399048,
+            "card.0.bias": 0.005987219512462616,
+            "card.0.weight": 0.006007848307490349,
+            "card.2.bias": 0.006006598472595215,
+            "card.2.weight": 0.006008066236972809,
+            "critic.0.0.bias": 0.0060080960392951965,
+            "critic.0.0.weight": 0.006008066236972809,
+            "critic.0.2.bias": 0.006008142605423927,
+            "critic.0.2.weight": 0.006008133292198181,
+            "critic.1.bias": 0.006002614740282297,
+            "critic.1.weight": 0.006008125841617584,
+            "enemy.0.bias": 0.006005123257637024,
+            "enemy.0.weight": 0.006006855517625809,
+            "enemy.2.bias": 0.00600646436214447,
+            "enemy.2.weight": 0.00600782036781311,
+            "history.bias_hh": 0.006007924675941467,
+            "history.bias_ih": 0.00600779801607132,
+            "history.weight_hh": 0.0060072243213653564,
+            "history.weight_ih": 0.006007671356201172,
+            "ids.weight": 0.006004631519317627,
+            "relation.0.bias": 0.0,
+            "relation.0.weight": 0.0,
+            "relation.2.bias": 0.0,
+            "relation.2.weight": 0.0,
+            "rules.weight": 0.006003320217132568,
+            "state.0.bias": 0.006007559597492218,
+            "state.0.weight": 0.006008125841617584,
+            "state.2.bias": 0.006008125841617584,
+            "state.2.weight": 0.006008042022585869
+          },
+          "policy_gradient": 0.10049130022525787,
+          "qualified": 16,
+          "restore_exact": true,
+          "updated": true,
+          "witness": {
+            "after": 0.14589211344718933,
+            "before": 0.1436215490102768,
+            "value_after": [
+              0.5949252247810364,
+              0.30589553713798523,
+              0.28523361682891846
+            ],
+            "value_before": [
+              0.5525755882263184,
+              0.27204808592796326,
+              0.2752096652984619
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
