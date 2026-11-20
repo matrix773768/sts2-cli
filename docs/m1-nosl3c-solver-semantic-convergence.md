@@ -41,3 +41,38 @@ python "$f/verify/risk_original.py" logs/iih-risk @l --solver logs/m1-nosl3c-iig
 固定 65 条路线逐条核对，全部分类保持。原有 34 条认证现在全部精确匹配，其中 16 胜、18 死。五条实质差异和八条预测风险保持原分类。未重跑旧独立 16/60 根、未采集新 60 根、未做候选构建的 v4 训练验收。
 
 复现时先用 `python experiments/m1-nosl3c-iih/build_solver.py logs/m1-nosl3c-iih-candidate` 构建，将上文的 `$s` 改为新输出目录，再执行归档和终局窗口复放。可用 II-G Completion 的 `probe_prefix.py` 对照最终精确戳，E3 个案为 II-C `0:15` 与 `0:6`、II-D `0:0`、II-E `1:4`。
+
+## II-H.2 的 Power 生命周期与原生领奖
+
+`0.51.5-iig.2` 是初始隔离对照，`0.51.5-iih.1` 修复历史窗口，`0.51.5-iih.2` 另外修复敌方回合结束的持续时间更新。三个构建分别保留。
+
+原生 IL 中，`DoomPower.AfterSideTurnEnd` 调用 `DoomKill`，后者通过 `CreatureCmd.Kill` 执行死亡。原生 `Hook.AfterSideTurnEnd` 仍分派监听器。Frail 的监听器调用 `PowerCmd.TickDownDuration`，先消费跳过标记；正常减层经过 `PowerCmd.ModifyAmount`，在 `CombatManager.IsEnding` 时返回零。II-H.2 将该条件传入共享持续时间逻辑，保留跳过标记消费和监听器调度。II-C `0:6` 为最小归档反例，修复前终局唯一差异是 Frail 原生 3、预测 2，修复后整份终局续体精确匹配。
+
+四条路线各用两个独立原生进程重建。审计宿主允许领取奖励卡并读取原生运行 RNG、玩家 RNG 和公开持久资源。每条的前置稳定续体、最终战斗续体、重复结束回合后的奖励面、完整奖励选项、领奖后的牌组与地图决策均通过检查。两个原生进程在各采样点的 RNG 状态一致。最终行动前到奖励面之间的 RNG 变化同时包含终局战斗与奖励，因此单凭此采样无法逐条归因到监听器和奖励命令。构建使用的合成遭遇无独立的真实地图转移对照。
+
+Solver 的终局预测停在奖励生成前。原生对原生的领奖一致提供了可重复性证据，仍缺 Solver 对奖励 RNG 消费、奖励结果和持久状态的独立预测。四条 E3 保持原隔离，完整严格准入为 0/4。完整战斗续体精确匹配由 3/4 增至 4/4。
+
+- 65 条冻结尝试逐条分类一致。原有 34 条全部保持精确认证，五条实质差异、八条预测风险和十四条历史动作不完整的分类均保持。
+- 相同输入的旧独立 16 根为 8/16，旧 60 根为 41/60，其中正常 HP 22/30、999 HP 19/30。76 条逐根状态均与旧快照相同。这两组使用同根策略重跑。
+- 两次 v4 更新已执行，中断恢复与冷跑的 SQLite 快照 payload 逐字节相同。两批合计三胜三死，均精确认证。第二次更新的 logp 最大复算误差为 `1.1920928955078125e-07`。奖励探针只用于独立审计，未接入策略观察或优化器。
+
+[逐根对照、构建哈希和训练身份](../experiments/m1-nosl3c-iih/duration-evidence.json) · [原生奖励和 RNG 证据](../experiments/m1-nosl3c-iih/native-rewards-evidence.json.gz)
+
+沿用上文的 `$env:STS2_DOTNET`、`$env:STS2_DOTNET_VERSION`、`$env:PYTHONUTF8` 和账本数组 `$l`。
+
+```powershell
+$s = 'logs/m1-nosl3c-iih2-candidate'
+$f = 'experiments/m1-nosl3c-iig-completion'
+python experiments/m1-nosl3c-iih/build_solver.py $s
+python experiments/m1-nosl3c-iih/build_reward_host.py
+python experiments/m1-nosl3c-iih/verify_rewards.py logs/iih2-rewards @l --solver $s
+python "$f/verify/terminal_windows.py" logs/iih2-e3 @l --solver $s
+python "$f/replay_archive.py" logs/iih2-archive @l --solver $s
+python "$f/train_completion.py" logs/iih2-pair16 --solver $s --suite pair16 --mode semantic
+python "$f/train_completion.py" logs/iih2-holdout --solver $s --suite holdout --mode semantic
+python "$f/train_completion.py" logs/iih2-integration --solver $s --suite integration --mode semantic --through-update 1
+python "$f/train_completion.py" logs/iih2-integration --solver $s --suite integration --mode semantic
+python "$f/train_completion.py" logs/iih2-cold --solver $s --suite integration --mode semantic
+```
+
+同一 II-C `0:6` 另提供进行中对照。一个存有 10 层 Doom 的非终局回合，Frail 由 2 降至 1。最终敌方回合中 Doom 敌人消失，Frail 保持 3 层。该见证的两次独立原生执行均记录了这些 Power 边界。

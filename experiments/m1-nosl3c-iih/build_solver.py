@@ -6,7 +6,7 @@ from types import FunctionType, SimpleNamespace
 HERE = Path(__file__).resolve().parent
 BASE = runpy.run_path(str(HERE.parent / "m1-nosl3c-iig-completion/build_solver.py"))
 edit = BASE["edit"]
-VERSION = "0.51.5-iih.1"
+VERSION = "0.51.5-iih.2"
 
 
 def history_window(source):
@@ -66,12 +66,32 @@ def history_window(source):
          "combat.AppendPredictedTurnCardHistory(text, player, simulator.History);")
 
 
+def duration_lifecycle(source):
+    powers = source / "Search/SimulatedCombatState.cs"
+    edit(powers, "public void TickDuration<T>(Creature target) where T : PowerModel",
+         "public void TickDuration<T>(Creature target, bool combatEnding = false) where T : PowerModel")
+    edit(powers, "        if (amount > 0)\n            SetAmount<T>(target, amount - 1);",
+         """        // TickDownDuration still consumes its skip flag during the listener.
+        // Its decrement goes through PowerCmd.ModifyAmount, which rejects IsEnding.
+        if (!combatEnding && amount > 0)
+            SetAmount<T>(target, amount - 1);""")
+    support = source / "Prediction/CorePowerSupport.cs"
+    edit(support, "        TickDurations(combat);", "        TickDurations(combat, simulator.IsEnding);")
+    edit(support, "public static void TickDurations(SimulatedCombatState combat)",
+         "public static void TickDurations(SimulatedCombatState combat, bool combatEnding = false)")
+    for power in ("Weak", "Vulnerable", "Frail", "Intangible"):
+        edit(support, f"Tick<{power}Power>(combat, creature);",
+             f"combat.TickDuration<{power}Power>(creature, combatEnding);")
+
+
 def stage(command, **kwargs):
     iig = BASE["IIG"]
     iid = iig["IID"]["stage"]
 
     def compile_staged(args, **options):
-        history_window(Path(args[2]).parent / "src")
+        source = Path(args[2]).parent / "src"
+        history_window(source)
+        duration_lifecycle(source)
         iid(args, **options)
 
     completion = BASE["stage"]
