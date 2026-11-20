@@ -1,0 +1,535 @@
+{
+  "schema": "sts2.nosl.iih.history-window.evidence.v1",
+  "build": {
+    "version": "0.51.5-iih.1",
+    "source_revision": "78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+    "patched_sha256": "2db203a4cbc933b89164d98096093e688b5f0f14da7ccc4a4bf484b70e19786b",
+    "bridge_sha256": "529790e64614f2fbf0b48374eb80f1c6672511e706aa5bcde219f4f8f2bb4165",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "frozen_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13"
+  },
+  "sources": {
+    "Engine/InCombat/Simulation/CombatPredictionHistory.CardContinuation.cs": "52c4f31564dd1284ae7a8d54f0d3206019768e93ac30407551f17716950d6526",
+    "Engine/InCombat/Simulation/CombatPredictionHistory.ExecutionContinuation.cs": "56f060d224b9293bd24b1bde27797290be6f3848710c4b114571d7e348937d98",
+    "Engine/InCombat/Simulation/CombatPredictionHistory.cs": "ddb1f539a480b85300fcd366830cb1e8f2b5c78ca45bfee51ac0ad9202e39f9f",
+    "Engine/InCombat/Simulation/CombatPredictionHistoryEntry.cs": "033d1313230cb44e736d76b5f228e7ca6a5ad5dd40891bb7c71bdabd29e87eb5",
+    "Engine/InCombat/Simulation/CombatPredictionSimulator.CardExecutionContinuation.cs": "40b81b610781148276b145fee2e590d59983a578f4c60d5205b26fb62784e36c",
+    "Engine/InCombat/Simulation/CombatPredictionSimulator.CardPile.cs": "2c94d2d44b21e253fcc0d7398fab4dac9fe45463c52cce740dec7d2a03fe7c0c",
+    "Runtime/ContinuationStamp.cs": "165eca429442809de10a389a9bc9dedd1e29a4847880493bb6ae79e5c4f0bb5a",
+    "Search/SimulatedCombatState.CardEventHistory.cs": "84e94cbe14407c7947ed71cd77013ce444c03b926e8150d9d96e7b01280de615"
+  },
+  "history": {
+    "ledgers": {
+      "nosl3c-iic-random-final": {
+        "attempts": 20,
+        "statuses": {
+          "certified_death": 5,
+          "certified_win": 3,
+          "prefix_only": 5,
+          "route_not_reconstructible": 3,
+          "rule_risk": 2,
+          "semantic_mismatch": 1,
+          "solver_execution_risk": 1
+        }
+      },
+      "nosl3c-iid-release-independent": {
+        "attempts": 30,
+        "statuses": {
+          "certified_death": 11,
+          "certified_win": 9,
+          "engine_failure": 1,
+          "prefix_only": 2,
+          "rule_risk": 1,
+          "semantic_mismatch": 2,
+          "solver_execution_risk": 4
+        }
+      },
+      "nosl3c-iie-broad": {
+        "attempts": 15,
+        "statuses": {
+          "certified_death": 2,
+          "certified_win": 4,
+          "prefix_only": 3,
+          "rule_risk": 1,
+          "semantic_mismatch": 2,
+          "solver_execution_risk": 3
+        }
+      }
+    },
+    "versions": {
+      "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+      "coreclr": "9.0.7",
+      "game": "0.113.1/26660232",
+      "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+      "headless_sha256": "eebea65dcd2a3ad424261077e1f25c807a7c133ceb81ddc41740a6039e4d025c",
+      "native_identity": "16f014cb40a904c2b366e43f9e08c19fbff64ab88141159800a5346ad4518d13",
+      "policy": "M1-F2-discard-v1",
+      "sampler": "m1-d1-v1",
+      "solver": "0.51.5-iih.1",
+      "solver_sha256": "2db203a4cbc933b89164d98096093e688b5f0f14da7ccc4a4bf484b70e19786b"
+    }
+  },
+  "e3": {
+    "engine": {
+      "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+      "coreclr": "9.0.7",
+      "game": "0.113.1/26660232",
+      "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+      "headless_sha256": "eebea65dcd2a3ad424261077e1f25c807a7c133ceb81ddc41740a6039e4d025c",
+      "native_identity": "16f014cb40a904c2b366e43f9e08c19fbff64ab88141159800a5346ad4518d13",
+      "policy": "M1-F2-discard-v1",
+      "sampler": "m1-d1-v1",
+      "solver": "0.51.5-iih.1",
+      "solver_sha256": "2db203a4cbc933b89164d98096093e688b5f0f14da7ccc4a4bf484b70e19786b"
+    },
+    "results": [
+      {
+        "fields": {
+          "P": {
+            "native": "0:FRAIL_POWER=3/0[],0:STRENGTH_POWER=-2/0[],0:NECRO_MASTERY_POWER=1/0[],3:DIE_FOR_YOU_POWER=1/0[],",
+            "prediction": "0:FRAIL_POWER=2/0[],0:STRENGTH_POWER=-2/0[],0:NECRO_MASTERY_POWER=1/0[],3:DIE_FOR_YOU_POWER=1/0[],"
+          }
+        },
+        "initial_position": 13,
+        "ledger": "nosl3c-iic-random-final",
+        "root": "000006",
+        "status": "continuation_difference",
+        "step": 0,
+        "windows": [
+          {
+            "before": {
+              "card_draws": 25,
+              "card_plays": 9,
+              "enemy_hp": 35,
+              "plays_in_window": 4,
+              "round": 5,
+              "side": "Player"
+            },
+            "locked": {
+              "card_draws": 25,
+              "card_plays": 9,
+              "enemy_hp": 0,
+              "plays_in_window": 0,
+              "round": 5,
+              "side": "Enemy"
+            },
+            "locked_resources": {
+              "player_gold": 99,
+              "player_hp": 38,
+              "player_max_hp": 66,
+              "player_potions": "-,-,-"
+            },
+            "locked_state_unchanged": true,
+            "native_decision": "card_reward",
+            "repeat_decision": "card_reward"
+          }
+        ],
+        "terminal_replay": {
+          "position": 13,
+          "stamp": null,
+          "previous_exact_stamp": "6f2791e4e4021d2f85cff0d3b9f32a965b494edf4e46ec4500a37945c4d695d1"
+        }
+      },
+      {
+        "fields": null,
+        "initial_position": null,
+        "ledger": "nosl3c-iic-random-final",
+        "root": "000015",
+        "status": "predicted_win",
+        "step": 0,
+        "windows": [
+          {
+            "before": {
+              "card_draws": 21,
+              "card_plays": 7,
+              "enemy_hp": 2,
+              "plays_in_window": 1,
+              "round": 5,
+              "side": "Player"
+            },
+            "locked": {
+              "card_draws": 21,
+              "card_plays": 7,
+              "enemy_hp": 0,
+              "plays_in_window": 0,
+              "round": 5,
+              "side": "Enemy"
+            },
+            "locked_resources": {
+              "player_gold": 99,
+              "player_hp": 49,
+              "player_max_hp": 70,
+              "player_potions": "-,-,-"
+            },
+            "locked_state_unchanged": true,
+            "native_decision": "card_reward",
+            "repeat_decision": "card_reward"
+          }
+        ],
+        "terminal_replay": {
+          "position": 10,
+          "stamp": "08f3c58b95b2cef84a15ca95b0d483575823e2e7cde3c1b8923a0958c5ddc798",
+          "previous_exact_stamp": "2a6d823d93fc78732b8da289bf84fba7fd57700b936b623b42c628dcdfac5793"
+        }
+      },
+      {
+        "fields": null,
+        "initial_position": null,
+        "ledger": "nosl3c-iid-release-independent",
+        "root": "000000",
+        "status": "predicted_win",
+        "step": 0,
+        "windows": [
+          {
+            "before": {
+              "card_draws": 25,
+              "card_plays": 6,
+              "enemy_hp": 4,
+              "plays_in_window": 1,
+              "round": 5,
+              "side": "Player"
+            },
+            "locked": {
+              "card_draws": 25,
+              "card_plays": 6,
+              "enemy_hp": 0,
+              "plays_in_window": 0,
+              "round": 5,
+              "side": "Enemy"
+            },
+            "locked_resources": {
+              "player_gold": 99,
+              "player_hp": 30,
+              "player_max_hp": 66,
+              "player_potions": "-,-,-"
+            },
+            "locked_state_unchanged": true,
+            "native_decision": "card_reward",
+            "repeat_decision": "card_reward"
+          }
+        ],
+        "terminal_replay": {
+          "position": 10,
+          "stamp": "053a94bc6767f6a17b78b210e1c15aa87c81b708cc7c00f985b22430ea31e240",
+          "previous_exact_stamp": "6bd4a9ca5f2f47f40db68fe69672e668e4c7bd23b7b08ef2680129fe4e5e4562"
+        }
+      },
+      {
+        "fields": null,
+        "initial_position": null,
+        "ledger": "nosl3c-iie-broad",
+        "root": "000004",
+        "status": "predicted_win",
+        "step": 1,
+        "windows": [
+          {
+            "before": {
+              "card_draws": 32,
+              "card_plays": 24,
+              "enemy_hp": 8,
+              "plays_in_window": 4,
+              "round": 6,
+              "side": "Player"
+            },
+            "locked": {
+              "card_draws": 32,
+              "card_plays": 24,
+              "enemy_hp": 0,
+              "plays_in_window": 0,
+              "round": 6,
+              "side": "Enemy"
+            },
+            "locked_resources": {
+              "player_gold": 99,
+              "player_hp": 120,
+              "player_max_hp": 200,
+              "player_potions": "-,-,-"
+            },
+            "locked_state_unchanged": true,
+            "native_decision": "card_reward",
+            "repeat_decision": "card_reward"
+          }
+        ],
+        "terminal_replay": {
+          "position": 29,
+          "stamp": "f41d9bc0f6f1366699a795f7c5b0f34a76381657cbe92a31ba00ea51521fd90a",
+          "previous_exact_stamp": "375fe6c2f7a871fc1f269be2fbd6b28f0c82830bf45ecacef72b6da401805a24"
+        }
+      }
+    ]
+  },
+  "certified": [
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000002",
+      "outcome": "certified_death",
+      "before": "semantic_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000005",
+      "outcome": "certified_win",
+      "before": "exact_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000008",
+      "outcome": "certified_death",
+      "before": "semantic_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000010",
+      "outcome": "certified_death",
+      "before": "semantic_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000013",
+      "outcome": "certified_win",
+      "before": "exact_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000014",
+      "outcome": "certified_death",
+      "before": "semantic_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000017",
+      "outcome": "certified_death",
+      "before": "semantic_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000018",
+      "outcome": "certified_win",
+      "before": "exact_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000001",
+      "outcome": "certified_death",
+      "before": "semantic_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000003",
+      "outcome": "certified_death",
+      "before": "semantic_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000004",
+      "outcome": "certified_death",
+      "before": "semantic_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000005",
+      "outcome": "certified_death",
+      "before": "exact_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000006",
+      "outcome": "certified_death",
+      "before": "semantic_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000007",
+      "outcome": "certified_win",
+      "before": "exact_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000008",
+      "outcome": "certified_death",
+      "before": "semantic_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000011",
+      "outcome": "certified_win",
+      "before": "exact_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000012",
+      "outcome": "certified_death",
+      "before": "exact_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000013",
+      "outcome": "certified_death",
+      "before": "exact_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000015",
+      "outcome": "certified_win",
+      "before": "exact_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000016",
+      "outcome": "certified_win",
+      "before": "exact_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000017",
+      "outcome": "certified_win",
+      "before": "exact_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000018",
+      "outcome": "certified_win",
+      "before": "exact_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000020",
+      "outcome": "certified_death",
+      "before": "exact_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000021",
+      "outcome": "certified_win",
+      "before": "exact_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000022",
+      "outcome": "certified_win",
+      "before": "exact_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000024",
+      "outcome": "certified_win",
+      "before": "exact_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000026",
+      "outcome": "certified_death",
+      "before": "semantic_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000029",
+      "outcome": "certified_death",
+      "before": "semantic_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 0,
+      "position": "000000",
+      "outcome": "certified_win",
+      "before": "exact_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 0,
+      "position": "000002",
+      "outcome": "certified_win",
+      "before": "exact_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 0,
+      "position": "000004",
+      "outcome": "certified_win",
+      "before": "exact_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 2,
+      "position": "000000",
+      "outcome": "certified_death",
+      "before": "semantic_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 2,
+      "position": "000002",
+      "outcome": "certified_win",
+      "before": "exact_native_match",
+      "after": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 2,
+      "position": "000003",
+      "outcome": "certified_death",
+      "before": "exact_native_match",
+      "after": "exact_native_match"
+    }
+  ]
+}

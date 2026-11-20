@@ -31,3 +31,13 @@ python "$f/verify/risk_original.py" logs/iih-risk @l --solver logs/m1-nosl3c-iig
 ## 待完成
 
 仍需追踪 E3 原生终局钩子与结算，定位五条实质差异及八条预测风险的共享机制，构建独立 II-H Solver，并用原生正负例重证。其后仍需同根补采、旧样本配对、新 60 根全卡池验证、指定回归和 v4 集成训练。本检查点保留现有准入规则，尚未建立开启大规模高 HP 训练所需的证据。
+
+## II-H Completion 的 Solver 修复
+
+隔离构建 `0.51.5-iih.1` 将预测抽牌与出牌开始事件标记为各自的阵营和回合，并在两种续体克隆中保留标记。敌方阶段的续体将原生根历史和同一窗口的预测事件合并，按原生 `HappenedThisTurn` 口径导出 Y 与 AttackStarts。玩家侧内部计数继续供卡牌和 Power 使用。修改由 [隔离构建脚本](../experiments/m1-nosl3c-iih/build_solver.py) 应用。
+
+三条纯历史窗口见证在原动作 `end_turn` 后精确匹配原生终局续体，原生重复结束回合仍停在奖励界面。II-C 000006 同时修复了窗口差异，但原生 Frail 为 3 层，预测为 2 层，仍为实质差异。当前线索是 `CorePowerSupport.TriggerEnemySideTurnEndEffects` 在 Doom 结算后继续执行 `TickDurations`，尚待原生监听器顺序验证。三条终局的战斗续体可精确比较，奖励生成与监听器尾部仍缺独立对照，四条路线继续保持 E3 隔离。
+
+固定 65 条路线逐条核对，全部分类保持。原有 34 条认证现在全部精确匹配，其中 16 胜、18 死。五条实质差异和八条预测风险保持原分类。未重跑旧独立 16/60 根、未采集新 60 根、未做候选构建的 v4 训练验收。
+
+复现时先用 `python experiments/m1-nosl3c-iih/build_solver.py logs/m1-nosl3c-iih-candidate` 构建，将上文的 `$s` 改为新输出目录，再执行归档和终局窗口复放。可用 II-G Completion 的 `probe_prefix.py` 对照最终精确戳，E3 个案为 II-C `0:15` 与 `0:6`、II-D `0:0`、II-E `1:4`。

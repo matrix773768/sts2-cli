@@ -10,6 +10,8 @@
 
 ## 本阶段交接
 
+**M1-NOSL3C-II-H 修复预测历史窗口。** 隔离 Solver 0.51.5-iih.1 上三条 E3 终局续体精确匹配，第四条仍差 Frail。65 条分类不变，原有 34 条现在均为精确认证。E3 奖励验证、其余规则修复和训练验收仍待完成。 [修复与复现](m1-nosl3c-solver-semantic-convergence.md)
+
 **M1-NOSL3C-II-H 诊断检查点。** 65 条冻结路线逐条复放，分类与归档一致。四条 E3 和八条原始 Solver 风险已重跑。统一诊断覆盖 17 条见证，Solver 修复与训练验收待完成。 [证据与复现](m1-nosl3c-solver-semantic-convergence.md)
 
 **M1-NOSL3C-II-G Completion 修复续体回放、抽牌堆公开选择及终局 Power 应用。** Tyranny 与 SURVIVOR 可从稳定动作前回放恢复，BRAND 的空选择由执行器完成。CLEANSE 已原生验证相同外观实例的独立绑定，Foregone Conclusion 通过回合开始的选择复放。65 条冻结路线中 34 条完整认证，新增 CASCADE 同路线精确胜。旧独立 16 根仍为 8 条准入，新增全卡池 60 根有 41 条准入。仍有真实模拟差异、E3、二次目标及随机子集重复实例等缺口。 [结果与复现](m1-nosl3c-interaction-completion.md)
