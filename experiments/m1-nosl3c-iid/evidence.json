@@ -1,0 +1,923 @@
+{
+  "schema": "sts2.nosl.iid.evidence.v1",
+  "build": {
+    "version": "0.51.5-iid.1",
+    "source_revision": "78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+    "patched_sha256": "6d36540518549768f66cc6f44bdf6c20ab44a7243158ba5c8abc3d7f13030293",
+    "bridge_sha256": "529790e64614f2fbf0b48374eb80f1c6672511e706aa5bcde219f4f8f2bb4165",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "frozen_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13"
+  },
+  "mirror_sources": {
+    "source_sha256": "2a9b915a446da404b7e97a513c96f85fe051f4031d4c542a180486da7cd91c9f",
+    "mirrors": {
+      "CardOnPlayMirrors.cs": "6bf60ec4aae35b57e1488d42850f0777f3cba373dae4920abd66988854417e27",
+      "CardDrawCardMirrors.cs": "15b3595b4e4020273ba16bad1d048bb7df9efe4f25a4f9bc24d1177523737422"
+    }
+  },
+  "target_probe": {
+    "results": [
+      {
+        "card": "ENERGY_SURGE",
+        "energy_after": 4,
+        "energy_before": 3,
+        "exact_match": true,
+        "moves": 1,
+        "target_type": "AllAllies"
+      },
+      {
+        "card": "LARGESSE",
+        "moves": 0,
+        "target_type": "AnyAlly"
+      }
+    ],
+    "versions": {
+      "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+      "coreclr": "9.0.7",
+      "game": "0.113.1/26660232",
+      "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+      "headless_sha256": "81b30f3f95a890dc563e198eceef698995260e7a3e78439d4f778a508681edc2",
+      "native_identity": "e77655befecb5ae06cf395c6c3348d1b8a5aa51c67734017593b0fd6bad50f96",
+      "policy": "M1-F2-discard-v1",
+      "sampler": "m1-d1-v1",
+      "solver": "0.51.5-iid.1",
+      "solver_sha256": "6d36540518549768f66cc6f44bdf6c20ab44a7243158ba5c8abc3d7f13030293"
+    }
+  },
+  "random_counts": {
+    "iic": {
+      "unsupported": 9,
+      "native_difference": 8,
+      "admissible_predicted_win": 1,
+      "rule_risk": 2
+    },
+    "frozen": {
+      "rule_risk": 4,
+      "native_difference": 8,
+      "unsupported": 4,
+      "admissible_predicted_win": 4
+    },
+    "independent": {
+      "rule_risk": 1,
+      "native_difference": 13,
+      "admissible_predicted_win": 9,
+      "unsupported": 6,
+      "engine_failure": 1
+    }
+  },
+  "clusters": {
+    "frozen": [
+      {
+        "status": "rule_risk",
+        "reason": "E3_ENEMY_SIDE_TERMINAL",
+        "action": null,
+        "card": null,
+        "target_type": null,
+        "effect": null,
+        "phase": null,
+        "count": 4
+      },
+      {
+        "status": "native_difference",
+        "reason": "enemy_stage_death_boundary",
+        "action": "end_turn",
+        "card": null,
+        "target_type": null,
+        "effect": null,
+        "phase": "combat",
+        "count": 7
+      },
+      {
+        "status": "unsupported",
+        "reason": "prediction_unsupported",
+        "action": null,
+        "card": null,
+        "target_type": null,
+        "effect": null,
+        "phase": null,
+        "count": 2
+      },
+      {
+        "status": "admissible_predicted_win",
+        "reason": null,
+        "action": null,
+        "card": null,
+        "target_type": null,
+        "effect": null,
+        "phase": null,
+        "count": 4
+      },
+      {
+        "status": "unsupported",
+        "reason": "PendingChoice",
+        "action": null,
+        "card": null,
+        "target_type": null,
+        "effect": null,
+        "phase": null,
+        "count": 2
+      },
+      {
+        "status": "native_difference",
+        "reason": "continuation_difference",
+        "action": "play_card",
+        "card": "CASCADE",
+        "target_type": "Self",
+        "effect": null,
+        "phase": "combat",
+        "count": 1
+      }
+    ],
+    "independent": [
+      {
+        "status": "rule_risk",
+        "reason": "E3_ENEMY_SIDE_TERMINAL",
+        "action": null,
+        "card": null,
+        "target_type": null,
+        "effect": null,
+        "phase": null,
+        "count": 1
+      },
+      {
+        "status": "native_difference",
+        "reason": "enemy_stage_death_boundary",
+        "action": "end_turn",
+        "card": null,
+        "target_type": null,
+        "effect": null,
+        "phase": "combat",
+        "count": 8
+      },
+      {
+        "status": "native_difference",
+        "reason": "terminal_not_locked",
+        "action": null,
+        "card": null,
+        "target_type": null,
+        "effect": null,
+        "phase": null,
+        "count": 4
+      },
+      {
+        "status": "admissible_predicted_win",
+        "reason": null,
+        "action": null,
+        "card": null,
+        "target_type": null,
+        "effect": null,
+        "phase": null,
+        "count": 9
+      },
+      {
+        "status": "unsupported",
+        "reason": "prediction_unsupported",
+        "action": null,
+        "card": null,
+        "target_type": null,
+        "effect": null,
+        "phase": null,
+        "count": 4
+      },
+      {
+        "status": "native_difference",
+        "reason": "menu_or_action_difference",
+        "action": "end_turn",
+        "card": null,
+        "target_type": null,
+        "effect": null,
+        "phase": "combat",
+        "count": 1
+      },
+      {
+        "status": "unsupported",
+        "reason": "PendingChoice",
+        "action": null,
+        "card": null,
+        "target_type": null,
+        "effect": null,
+        "phase": null,
+        "count": 2
+      },
+      {
+        "status": "engine_failure",
+        "reason": null,
+        "action": null,
+        "card": null,
+        "target_type": null,
+        "effect": null,
+        "phase": null,
+        "count": 1
+      }
+    ]
+  },
+  "original_differences": [
+    {
+      "position": "000002",
+      "baseline": "native_difference",
+      "spec": {
+        "act": 2,
+        "act_variant": "HIVE",
+        "ascension": 0,
+        "character": "Regent",
+        "deck": [
+          {
+            "id": "CLOAK_OF_STARS",
+            "upgrade": 0
+          },
+          {
+            "id": "VENERATE",
+            "upgrade": 0
+          },
+          {
+            "id": "ARSENAL",
+            "upgrade": 1
+          },
+          {
+            "id": "ROYALTIES",
+            "upgrade": 1
+          },
+          {
+            "id": "SHINING_STRIKE",
+            "upgrade": 0
+          }
+        ],
+        "encounter": "SPINY_TOAD_NORMAL",
+        "hp": 75,
+        "max_hp": 75,
+        "potions": [],
+        "relics": [],
+        "schema": 3,
+        "seed": "EF547A8D97444C20"
+      },
+      "result": {
+        "status": "native_difference",
+        "reason": "enemy_stage_death_boundary",
+        "route": "b98cc9876a143379d816c660ea39b32bd24520921088ae425cf85e850c8d1baf",
+        "root": "f8afb8a19d79a0f9d1535f81998a9d8fd5fac8f3559f0e3927e63fb0c7f3157d",
+        "first_failure": {
+          "action": "end_turn",
+          "card": null,
+          "effect": null,
+          "phase": "combat",
+          "position": 17,
+          "target_type": null
+        },
+        "terminal_verified": false,
+        "boundaries": 17,
+        "continuation_fields": {
+          "Y": {
+            "native": "0/0/0/0",
+            "prediction": "0/0/1/1"
+          }
+        },
+        "remapped_targets": []
+      }
+    },
+    {
+      "position": "000008",
+      "baseline": "native_difference",
+      "spec": {
+        "act": 1,
+        "act_variant": "UNDERDOCKS",
+        "ascension": 0,
+        "character": "Silent",
+        "deck": [
+          {
+            "id": "ACCURACY",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_SILENT",
+            "upgrade": 0
+          },
+          {
+            "id": "KNIFE_TRAP",
+            "upgrade": 0
+          },
+          {
+            "id": "ENVENOM",
+            "upgrade": 0
+          },
+          {
+            "id": "MEMENTO_MORI",
+            "upgrade": 0
+          },
+          {
+            "id": "WELL_LAID_PLANS",
+            "upgrade": 0
+          },
+          {
+            "id": "CALCULATED_GAMBLE",
+            "upgrade": 0
+          },
+          {
+            "id": "FOOTWORK",
+            "upgrade": 0
+          }
+        ],
+        "encounter": "LIVING_FOG_NORMAL",
+        "hp": 70,
+        "max_hp": 70,
+        "potions": [],
+        "relics": [],
+        "schema": 3,
+        "seed": "6073D6E15704B6E5"
+      },
+      "result": {
+        "status": "native_difference",
+        "reason": "enemy_stage_death_boundary",
+        "route": "a860e8348814f72a55b5f5e8a737c917f5e1a5d71b9c095da294a151a7469a76",
+        "root": "609b6f3cef7082001ad243be5504532a56d6812d50b3d88493b8fd9d97db99a6",
+        "first_failure": {
+          "action": "end_turn",
+          "card": null,
+          "effect": null,
+          "phase": "combat",
+          "position": 23,
+          "target_type": null
+        },
+        "terminal_verified": false,
+        "boundaries": 23,
+        "continuation_fields": {
+          "Y": {
+            "native": "0/0/0/0",
+            "prediction": "0/0/1/1"
+          }
+        },
+        "remapped_targets": [
+          {
+            "native_slot": 1,
+            "predicted_slot": 0,
+            "side": "enemy"
+          },
+          {
+            "native_slot": 0,
+            "predicted_slot": 1,
+            "side": "enemy"
+          },
+          {
+            "native_slot": 0,
+            "predicted_slot": 1,
+            "side": "enemy"
+          },
+          {
+            "native_slot": 1,
+            "predicted_slot": 0,
+            "side": "enemy"
+          },
+          {
+            "native_slot": 1,
+            "predicted_slot": 0,
+            "side": "enemy"
+          }
+        ]
+      }
+    },
+    {
+      "position": "000010",
+      "baseline": "native_difference",
+      "spec": {
+        "act": 1,
+        "act_variant": "OVERGROWTH",
+        "ascension": 0,
+        "character": "Necrobinder",
+        "deck": [
+          {
+            "id": "REAPER_FORM",
+            "upgrade": 0
+          },
+          {
+            "id": "BORROWED_TIME",
+            "upgrade": 1
+          },
+          {
+            "id": "MISERY",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_NECROBINDER",
+            "upgrade": 0
+          },
+          {
+            "id": "FORBIDDEN_GRIMOIRE",
+            "upgrade": 0
+          }
+        ],
+        "encounter": "SLITHERING_STRANGLER_NORMAL",
+        "hp": 66,
+        "max_hp": 66,
+        "potions": [],
+        "relics": [],
+        "schema": 3,
+        "seed": "2E24B4B256670DE2"
+      },
+      "result": {
+        "status": "native_difference",
+        "reason": "enemy_stage_death_boundary",
+        "route": "00a1cf6103e17048eedd8810e0cdbd1b7b899a951d4d9c19808379440c4bd2fc",
+        "root": "fda331411ae76428f4b3a615e8d864b98c867ac3286e54466ba51492744cb44d",
+        "first_failure": {
+          "action": "end_turn",
+          "card": null,
+          "effect": null,
+          "phase": "combat",
+          "position": 10,
+          "target_type": null
+        },
+        "terminal_verified": false,
+        "boundaries": 10,
+        "continuation_fields": {
+          "AttackStarts": {
+            "native": "0",
+            "prediction": "2"
+          },
+          "Y": {
+            "native": "0/0/0/0",
+            "prediction": "0/1/3/2"
+          }
+        },
+        "remapped_targets": []
+      }
+    },
+    {
+      "position": "000013",
+      "baseline": "native_difference",
+      "spec": {
+        "act": 1,
+        "act_variant": "UNDERDOCKS",
+        "ascension": 0,
+        "character": "Ironclad",
+        "deck": [
+          {
+            "id": "UNRELENTING",
+            "upgrade": 0
+          },
+          {
+            "id": "EVIL_EYE",
+            "upgrade": 1
+          },
+          {
+            "id": "AGGRESSION",
+            "upgrade": 1
+          },
+          {
+            "id": "CASCADE",
+            "upgrade": 0
+          },
+          {
+            "id": "OFFERING",
+            "upgrade": 1
+          }
+        ],
+        "encounter": "SEWER_CLAM_NORMAL",
+        "hp": 80,
+        "max_hp": 80,
+        "potions": [],
+        "relics": [],
+        "schema": 3,
+        "seed": "357BF69D3E7BB5E9"
+      },
+      "result": {
+        "status": "native_difference",
+        "reason": "continuation_difference",
+        "route": "0a7c67264ee7ed257061ba1779e38b29a6bb91b9f69eb7235f6ddeebd026e45f",
+        "root": "a537143cff92c9e5d3dd6805bbd3f8312ee2d038e43453200b23d6a1e2f0fc5a",
+        "first_failure": {
+          "action": "play_card",
+          "card": "CASCADE",
+          "effect": null,
+          "phase": "combat",
+          "position": 24,
+          "target_type": "Self"
+        },
+        "terminal_verified": false,
+        "boundaries": 24,
+        "continuation_fields": {
+          "P": {
+            "native": "0:AGGRESSION_POWER=1/0[],",
+            "prediction": "0:AGGRESSION_POWER=1/0[],0:FREE_ATTACK_POWER=1/0[],"
+          }
+        },
+        "remapped_targets": []
+      }
+    },
+    {
+      "position": "000014",
+      "baseline": "native_difference",
+      "spec": {
+        "act": 3,
+        "act_variant": "GLORY",
+        "ascension": 0,
+        "character": "Defect",
+        "deck": [
+          {
+            "id": "SUPERCRITICAL",
+            "upgrade": 0
+          },
+          {
+            "id": "LOOP",
+            "upgrade": 0
+          },
+          {
+            "id": "GENETIC_ALGORITHM",
+            "upgrade": 0
+          },
+          {
+            "id": "ZAP",
+            "upgrade": 1
+          },
+          {
+            "id": "FIGHT_THROUGH",
+            "upgrade": 0
+          },
+          {
+            "id": "SPINNER",
+            "upgrade": 1
+          },
+          {
+            "id": "DOUBLE_ENERGY",
+            "upgrade": 0
+          },
+          {
+            "id": "SHADOW_SHIELD",
+            "upgrade": 0
+          }
+        ],
+        "encounter": "DEVOTED_SCULPTOR_WEAK",
+        "hp": 75,
+        "max_hp": 75,
+        "potions": [],
+        "relics": [],
+        "schema": 3,
+        "seed": "6D943BD450C2EF49"
+      },
+      "result": {
+        "status": "native_difference",
+        "reason": "enemy_stage_death_boundary",
+        "route": "f9cb3c0ad8c544ee4a2d13980de4b5c34c25d469b2fba8c7bf8a32d4b0eb1182",
+        "root": "3b7e50ffc0dd714204f5f2a996154727c79e5719b74f96f4f5bdf974462a2d3c",
+        "first_failure": {
+          "action": "end_turn",
+          "card": null,
+          "effect": null,
+          "phase": "combat",
+          "position": 15,
+          "target_type": null
+        },
+        "terminal_verified": false,
+        "boundaries": 15,
+        "continuation_fields": {
+          "Y": {
+            "native": "0/0/0/0",
+            "prediction": "3/0/2/2"
+          }
+        },
+        "remapped_targets": []
+      }
+    },
+    {
+      "position": "000017",
+      "baseline": "native_difference",
+      "spec": {
+        "act": 3,
+        "act_variant": "GLORY",
+        "ascension": 0,
+        "character": "Ironclad",
+        "deck": [
+          {
+            "id": "STAMPEDE",
+            "upgrade": 0
+          },
+          {
+            "id": "SECOND_WIND",
+            "upgrade": 0
+          },
+          {
+            "id": "JUGGLING",
+            "upgrade": 0
+          },
+          {
+            "id": "JUGGERNAUT",
+            "upgrade": 0
+          },
+          {
+            "id": "TRUE_GRIT",
+            "upgrade": 0
+          },
+          {
+            "id": "EVIL_EYE",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          }
+        ],
+        "encounter": "THE_LOST_AND_FORGOTTEN_NORMAL",
+        "hp": 80,
+        "max_hp": 80,
+        "potions": [],
+        "relics": [],
+        "schema": 3,
+        "seed": "E0D9A0E3590184E0"
+      },
+      "result": {
+        "status": "native_difference",
+        "reason": "enemy_stage_death_boundary",
+        "route": "9a4c27a8a69c90402e5b2af9cb3b833a20dcc6840a2fe4bde84822a6cafa00b9",
+        "root": "dd6c88daa806d4864b7dfa23c269e8e4305b3a8b06990401e3173f52990918b1",
+        "first_failure": {
+          "action": "end_turn",
+          "card": null,
+          "effect": null,
+          "phase": "combat",
+          "position": 13,
+          "target_type": null
+        },
+        "terminal_verified": false,
+        "boundaries": 13,
+        "continuation_fields": {
+          "Y": {
+            "native": "0/0/0/0",
+            "prediction": "0/0/1/1"
+          }
+        },
+        "remapped_targets": []
+      }
+    },
+    {
+      "position": "000018",
+      "baseline": "native_difference",
+      "spec": {
+        "act": 1,
+        "act_variant": "OVERGROWTH",
+        "ascension": 0,
+        "character": "Ironclad",
+        "deck": [
+          {
+            "id": "DRUM_OF_BATTLE",
+            "upgrade": 0
+          },
+          {
+            "id": "TRUE_GRIT",
+            "upgrade": 0
+          },
+          {
+            "id": "FIGHT_ME",
+            "upgrade": 0
+          },
+          {
+            "id": "STONE_ARMOR",
+            "upgrade": 1
+          },
+          {
+            "id": "HEMOKINESIS",
+            "upgrade": 1
+          },
+          {
+            "id": "FIEND_FIRE",
+            "upgrade": 1
+          },
+          {
+            "id": "STOKE",
+            "upgrade": 1
+          },
+          {
+            "id": "DARK_EMBRACE",
+            "upgrade": 0
+          },
+          {
+            "id": "EVIL_EYE",
+            "upgrade": 0
+          },
+          {
+            "id": "SWORD_BOOMERANG",
+            "upgrade": 0
+          },
+          {
+            "id": "BLOOD_WALL",
+            "upgrade": 0
+          }
+        ],
+        "encounter": "FOGMOG_NORMAL",
+        "hp": 80,
+        "max_hp": 80,
+        "potions": [],
+        "relics": [],
+        "schema": 3,
+        "seed": "60EB2B1D3D716094"
+      },
+      "result": {
+        "status": "admissible_predicted_win",
+        "route": "c311559d483f47f85561809fad2c5bb49e5ee31442aa38b2568ae98365447aff",
+        "root": "99cb2bb200edf36f1d8c07c61fc787eab4cbcdc62d3c028e02c713d1ffbc0e0a",
+        "terminal_verified": true,
+        "boundaries": 21,
+        "remapped_targets": [
+          {
+            "native_slot": 1,
+            "predicted_slot": 0,
+            "side": "enemy"
+          },
+          {
+            "native_slot": 0,
+            "predicted_slot": 1,
+            "side": "enemy"
+          },
+          {
+            "native_slot": 1,
+            "predicted_slot": 0,
+            "side": "enemy"
+          },
+          {
+            "native_slot": 0,
+            "predicted_slot": 1,
+            "side": "enemy"
+          },
+          {
+            "native_slot": 1,
+            "predicted_slot": 0,
+            "side": "enemy"
+          }
+        ]
+      }
+    },
+    {
+      "position": "000019",
+      "baseline": "native_difference",
+      "spec": {
+        "act": 1,
+        "act_variant": "UNDERDOCKS",
+        "ascension": 0,
+        "character": "Necrobinder",
+        "deck": [
+          {
+            "id": "SQUEEZE",
+            "upgrade": 0
+          },
+          {
+            "id": "SNAP",
+            "upgrade": 0
+          },
+          {
+            "id": "DANSE_MACABRE",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFILE",
+            "upgrade": 1
+          },
+          {
+            "id": "ENFEEBLING_TOUCH",
+            "upgrade": 0
+          },
+          {
+            "id": "FEAR",
+            "upgrade": 1
+          },
+          {
+            "id": "WISP",
+            "upgrade": 0
+          },
+          {
+            "id": "SLEIGHT_OF_FLESH",
+            "upgrade": 0
+          },
+          {
+            "id": "UNLEASH",
+            "upgrade": 1
+          }
+        ],
+        "encounter": "LIVING_FOG_NORMAL",
+        "hp": 66,
+        "max_hp": 66,
+        "potions": [],
+        "relics": [],
+        "schema": 3,
+        "seed": "685072012309F3A1"
+      },
+      "result": {
+        "status": "native_difference",
+        "reason": "enemy_stage_death_boundary",
+        "route": "e1f2f9034e0997fc227edf72d3f135d48b9bc5a1e354cd057e9f02f67f4717b4",
+        "root": "f43a2c9e8ccb6048463687e3704f347e06aaf769b12cb22a1ae70d1dbf41cd48",
+        "first_failure": {
+          "action": "end_turn",
+          "card": null,
+          "effect": null,
+          "phase": "combat",
+          "position": 31,
+          "target_type": null
+        },
+        "terminal_verified": false,
+        "boundaries": 25,
+        "continuation_fields": {
+          "AI0": {
+            "native": "ADVANCED_GAS_MOVE,BLOAT_MOVE,SUPER_GAS_BLAST_MOVE,BLOAT_MOVE,SUPER_GAS_BLAST_MOVE,BLOAT_MOVE,SUPER_GAS_BLAST_MOVE,BLOAT_MOVE,SUPER_GAS_BLAST_MOVE",
+            "prediction": "EXPLODE_MOVE"
+          },
+          "AI1": {
+            "native": null,
+            "prediction": "ADVANCED_GAS_MOVE,BLOAT_MOVE,SUPER_GAS_BLAST_MOVE,BLOAT_MOVE,SUPER_GAS_BLAST_MOVE,BLOAT_MOVE,SUPER_GAS_BLAST_MOVE,BLOAT_MOVE,SUPER_GAS_BLAST_MOVE"
+          },
+          "AttackStarts": {
+            "native": "0",
+            "prediction": "2"
+          },
+          "E0": {
+            "native": "1/LIVING_FOG/livingFog/13/80/0/SUPER_GAS_BLAST_MOVE",
+            "prediction": "5/GAS_BOMB/bomb1/7/7/0/EXPLODE_MOVE"
+          },
+          "E1": {
+            "native": null,
+            "prediction": "1/LIVING_FOG/livingFog/13/80/0/SUPER_GAS_BLAST_MOVE"
+          },
+          "MS1": {
+            "native": null,
+            "prediction": "-/0"
+          },
+          "P": {
+            "native": "",
+            "prediction": "5:MINION_POWER=1/0[],"
+          },
+          "Y": {
+            "native": "0/0/0/0",
+            "prediction": "0/0/2/2"
+          }
+        },
+        "remapped_targets": [
+          {
+            "native_slot": 0,
+            "predicted_slot": 1,
+            "side": "enemy"
+          },
+          {
+            "native_slot": 0,
+            "predicted_slot": 1,
+            "side": "enemy"
+          },
+          {
+            "native_slot": 0,
+            "predicted_slot": 1,
+            "side": "enemy"
+          },
+          {
+            "native_slot": 0,
+            "predicted_slot": 1,
+            "side": "enemy"
+          },
+          {
+            "native_slot": 1,
+            "predicted_slot": 0,
+            "side": "enemy"
+          },
+          {
+            "native_slot": 0,
+            "predicted_slot": 1,
+            "side": "enemy"
+          }
+        ]
+      }
+    }
+  ],
+  "resume": {
+    "updates": 2,
+    "roots": 4,
+    "public_trajectories_match": true,
+    "model_adam_and_rng_match": true
+  },
+  "public_equivalence": {
+    "candidates": 7,
+    "pending_close_preserved_source": true,
+    "rng_differs": true,
+    "same_probabilities": true,
+    "same_public_history": true,
+    "seeds": [
+      "IIBEQUIV4",
+      "IIBEQUIV8"
+    ],
+    "versions": {
+      "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+      "coreclr": "9.0.7",
+      "game": "0.113.1/26660232",
+      "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+      "headless_sha256": "81b30f3f95a890dc563e198eceef698995260e7a3e78439d4f778a508681edc2",
+      "native_identity": "e77655befecb5ae06cf395c6c3348d1b8a5aa51c67734017593b0fd6bad50f96",
+      "policy": "M1-F2-discard-v1",
+      "sampler": "m1-d1-v1",
+      "solver": "0.51.5-iid.1",
+      "solver_sha256": "6d36540518549768f66cc6f44bdf6c20ab44a7243158ba5c8abc3d7f13030293"
+    }
+  },
+  "regression": {
+    "full_passed": 162,
+    "full_skipped": 1,
+    "standard_runs": 25,
+    "nosl_passed": 19,
+    "f4_passed": 6,
+    "ls2a_passed": 7,
+    "ls2b_passed": 5,
+    "iia_iib_iic_probes": true
+  }
+}
