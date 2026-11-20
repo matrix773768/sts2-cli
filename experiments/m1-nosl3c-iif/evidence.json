@@ -1,0 +1,321 @@
+{
+  "schema": "sts2.nosl.iif.evidence.v1",
+  "native": {
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+    "coreclr": "9.0.7",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "headless_sha256": "81b30f3f95a890dc563e198eceef698995260e7a3e78439d4f778a508681edc2",
+    "native_identity": "e77655befecb5ae06cf395c6c3348d1b8a5aa51c67734017593b0fd6bad50f96",
+    "policy": "M1-F2-discard-v1",
+    "sampler": "m1-d1-v1",
+    "solver": "0.51.5-iid.1",
+    "solver_sha256": "6d36540518549768f66cc6f44bdf6c20ab44a7243158ba5c8abc3d7f13030293"
+  },
+  "direct_solver": {
+    "nosl3c-iic-random-final": {
+      "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+      "coreclr": "9.0.7",
+      "game": "0.113.1/26660232",
+      "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+      "headless_sha256": "cbb5aacc57afcbe84d643a5af5163cf6d0ff1a777d928838ee474a16f019d927",
+      "native_identity": "88fdae3d2a97bdd54866232983891c75de1d40c5a81d6f9f76d18fab638239b1",
+      "policy": "M1-F2-discard-v1",
+      "sampler": "m1-d1-v1",
+      "solver": "0.51.5",
+      "solver_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13"
+    },
+    "nosl3c-iie-broad": {
+      "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+      "coreclr": "9.0.7",
+      "game": "0.113.1/26660232",
+      "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+      "headless_sha256": "cbb5aacc57afcbe84d643a5af5163cf6d0ff1a777d928838ee474a16f019d927",
+      "native_identity": "88fdae3d2a97bdd54866232983891c75de1d40c5a81d6f9f76d18fab638239b1",
+      "policy": "M1-F2-discard-v1",
+      "sampler": "m1-d1-v1",
+      "solver": "0.51.5",
+      "solver_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13"
+    }
+  },
+  "counts": {
+    "nosl3c-iic-random-final": {
+      "no_route": 3,
+      "semantic_native_match": 5,
+      "semantic_unverified": 8,
+      "exact_native_match": 2,
+      "semantic_mismatch": 2
+    },
+    "nosl3c-iid-release-independent": {
+      "semantic_unverified": 7,
+      "semantic_native_match": 7,
+      "semantic_mismatch": 2,
+      "exact_native_match": 13,
+      "no_route": 1
+    },
+    "nosl3c-iie-broad": {
+      "exact_native_match": 5,
+      "semantic_unverified": 7,
+      "semantic_mismatch": 2,
+      "semantic_native_match": 1
+    }
+  },
+  "modes": {
+    "semantic": {
+      "admissions": {
+        "admissible_death": 2,
+        "admissible_predicted_win": 1
+      },
+      "attempted": 3,
+      "attempts_per_second": 0.23348781925266787,
+      "audit_worker_seconds": 12.277441599871963,
+      "by_deck_card": [
+        {
+          "attempts": 1,
+          "card": "ACROBATICS",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "BURNING_PACT",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "DEFEND_SILENT",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_IRONCLAD",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_SILENT",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_SILENT",
+          "status": "admissible_predicted_win"
+        }
+      ],
+      "by_group": {
+        "Ironclad": {
+          "admissible_death": 1
+        },
+        "SHRINKER_BEETLE_WEAK": {
+          "admissible_death": 2,
+          "admissible_predicted_win": 1
+        },
+        "Silent": {
+          "admissible_death": 1,
+          "admissible_predicted_win": 1
+        }
+      },
+      "certification": {
+        "counts": {
+          "exact_native_match": 1,
+          "semantic_native_match": 2
+        },
+        "mode": "semantic",
+        "rule": "sts2.nosl.iif.enemy-death-window.v1"
+      },
+      "completed": 3,
+      "constructed": 3,
+      "optimizer": {
+        "actor_loss": -2264.4526138305664,
+        "critic_loss": 20399.324645996094,
+        "decisions": 68,
+        "entropy": 62.40129268169403,
+        "grad_norm": 37.73984146118164,
+        "logp_error": 1.1920928955078125e-07,
+        "model_sha256": "90488198be5563432a7e8cf5523b740a7681ee4b711cf942ce77c5a089020b2a",
+        "qualified": 3,
+        "return_max": 93.7437174893783,
+        "return_min": -94.64522437723423
+      },
+      "predictions": {
+        "death": 2,
+        "predicted_win": 1
+      },
+      "seconds": 12.848635999951512,
+      "update": 1
+    },
+    "exact": {
+      "admissions": {
+        "admissible_predicted_win": 1,
+        "native_difference": 2
+      },
+      "attempted": 3,
+      "attempts_per_second": 0.23639285495280724,
+      "audit_worker_seconds": 11.702734100166708,
+      "by_deck_card": [
+        {
+          "attempts": 1,
+          "card": "ACROBATICS",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "BURNING_PACT",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "DEFEND_SILENT",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_IRONCLAD",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_SILENT",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_SILENT",
+          "status": "native_difference"
+        }
+      ],
+      "by_group": {
+        "Ironclad": {
+          "native_difference": 1
+        },
+        "SHRINKER_BEETLE_WEAK": {
+          "admissible_predicted_win": 1,
+          "native_difference": 2
+        },
+        "Silent": {
+          "admissible_predicted_win": 1,
+          "native_difference": 1
+        }
+      },
+      "certification": {
+        "counts": {
+          "exact_native_match": 1,
+          "semantic_unverified": 2
+        },
+        "mode": "exact",
+        "rule": "sts2.nosl.iif.enemy-death-window.v1"
+      },
+      "completed": 3,
+      "constructed": 3,
+      "optimizer": {
+        "actor_loss": 1603.3560028076172,
+        "critic_loss": 8760.124450683594,
+        "decisions": 15,
+        "entropy": 17.13504910469055,
+        "grad_norm": 63.684967041015625,
+        "logp_error": 0.0,
+        "model_sha256": "092ed5995b7c063fb63f551a69ea048f50416a6af6dbbac45348701a531f1739",
+        "qualified": 1,
+        "return_max": 93.7437174893783,
+        "return_min": 93.7437174893783
+      },
+      "predictions": {
+        "death": 2,
+        "predicted_win": 1
+      },
+      "seconds": 12.690738899866119,
+      "update": 1
+    },
+    "diagnostic": {
+      "admissions": {
+        "admissible_predicted_win": 1,
+        "native_difference": 2
+      },
+      "attempted": 3,
+      "attempts_per_second": 0.1923745671330444,
+      "audit_worker_seconds": 13.182515799533576,
+      "by_deck_card": [
+        {
+          "attempts": 1,
+          "card": "ACROBATICS",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "BURNING_PACT",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "DEFEND_SILENT",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_IRONCLAD",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_SILENT",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_SILENT",
+          "status": "native_difference"
+        }
+      ],
+      "by_group": {
+        "Ironclad": {
+          "native_difference": 1
+        },
+        "SHRINKER_BEETLE_WEAK": {
+          "admissible_predicted_win": 1,
+          "native_difference": 2
+        },
+        "Silent": {
+          "admissible_predicted_win": 1,
+          "native_difference": 1
+        }
+      },
+      "certification": {
+        "counts": {
+          "exact_native_match": 1,
+          "semantic_native_match": 2
+        },
+        "mode": "diagnostic",
+        "rule": "sts2.nosl.iif.enemy-death-window.v1"
+      },
+      "completed": 3,
+      "constructed": 3,
+      "optimizer": {
+        "actor_loss": 1603.3560028076172,
+        "critic_loss": 8760.124450683594,
+        "decisions": 15,
+        "entropy": 17.13504910469055,
+        "grad_norm": 63.684967041015625,
+        "logp_error": 0.0,
+        "model_sha256": "092ed5995b7c063fb63f551a69ea048f50416a6af6dbbac45348701a531f1739",
+        "qualified": 1,
+        "return_max": 93.7437174893783,
+        "return_min": 93.7437174893783
+      },
+      "predictions": {
+        "death": 2,
+        "predicted_win": 1
+      },
+      "seconds": 15.594577000010759,
+      "update": 1
+    }
+  },
+  "regressions": {
+    "full": 162,
+    "skipped": 1,
+    "nosl": 19,
+    "f4": 6,
+    "ls2a": 7,
+    "ls2b": 5,
+    "iia_iib_iic_iid_iie": true
+  },
+  "archive_sha256": "27bbe41ac6f113a8305a7a7c5f9335e9e2b2b94b34c44cfbb915e34694adf7de"
+}
