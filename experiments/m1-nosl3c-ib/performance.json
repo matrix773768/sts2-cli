@@ -1,0 +1,16 @@
+{
+  "schema": "sts2.nosl3c-ib.performance.v1",
+  "baseline": "2d44a92",
+  "loss": {"atol": 0.00003, "rtol": 0.00003},
+  "gradient": {"atol": 0.000003, "rtol": 0.003, "relative_l2_max": 0.003},
+  "parameter": {"atol": 0.00003, "rtol": 0.0003},
+  "value_max_abs": 0.000002,
+  "probability_max_abs": 0.00002,
+  "behavior_logp_max_abs": 0.00002,
+  "default_microbatch": 16,
+  "short_updates": 3,
+  "large_roots": 64,
+  "worker_sweep": [4, 6, 8, 10, 12],
+  "optimizer_threads": [1, 2, 4],
+  "microbatch_sweep": [4, 8, 16, 32, 64]
+}
