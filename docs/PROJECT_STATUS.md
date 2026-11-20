@@ -1,6 +1,6 @@
 # STS2 AI — 项目状态与交接（PROJECT_STATUS）
 
-> 更新日期：2026-11-19（Asia/Shanghai）
+> 更新日期：2026-11-20（Asia/Shanghai）
 > 当前研究主线已升级为机制感知、端口驱动的 NOSL 直接策略 + SL 搜索增强。LS2B 已完成可组合 StrategySpec 研究侧实证，但不作为最终 NOSL 必经结构。
 > 本文件描述 **matrix773768/sts2-cli** 的 `port/v0.113.1` 分支，不代表上游 `wuhao21/sts2-cli` 或 `main` 的支持情况。
 > M0 最后一次业务代码提交：`bc48ac58aeca80c2c7b9249cbf98f316ae99a27b` — Restore native Ancient healing and act-start travel rules。
@@ -9,6 +9,8 @@
 **项目长期目标、极速 Combat Solver 的定位、阶段性质量门槛及研究取舍，以 [PROJECT_VISION.md](PROJECT_VISION.md) 为准。** 本文件继续保留工程状态与历史验收记录；局外价值建模详见 [research-direction-and-value-model.md](research-direction-and-value-model.md)。
 
 ## 本阶段交接
+
+**M1-NOSL3B 完成三种子、六次更新的学习效率实验。** 9 个模型各 48 场合格训练，共 432 场。机制 Sample 在 12 个独立合成报告根的配对尝试由 24/72 至 39/72，ID-only 同为 39/72，去关系层为 32/72。机制 Greedy 由 31/36 至 29/36，带药胜局留药仍为零。条件关系在组合留出的 Sample 有初步信号，未建立机制编码的跨部署收益。优先增加原生可达、资源压力和组合留出有辨识度的独立经验，再定位药水表示及 Greedy 迁移。 [报告与复现](m1-nosl3b-learning-efficiency.md)
 
 **M1-NOSL3A 已完成首轮机制感知 NOSL 学习闭环。** 隔离宿主从同版本 CombatSolver 获取公开观察和实例菜单，按新策略逐动作推进。Card ID 与 N2E 机制双通道、手牌条件关系和有序历史直接产生合法动作概率，并预测胜率、胜利加权 HP 和药水余量。三臂各用 32 场合格训练战斗做两次 on-policy 更新；机制臂和 ID-only 在 12 个独立合成报告根上均由 10 胜变为 11 胜，去关系层保持 10 胜，冻结 Q1 为 12 胜。实测验证了梯度、动作概率变化和权重恢复，未建立机制收益或真实跑局泛化。当前覆盖多敌目标、Survivor 弃牌、Flex Potion 和结束回合；复杂选择、其余药水、自然可达多幕根和更大规模配对评测待验证。 [研究报告与复现](m1-nosl3a-direct-policy.md) · [数学规范](research-nosl-mathematical-model-v0.1.md) · [NOSL–SL 架构](research-port-aware-nosl-sl-architecture.md)
 

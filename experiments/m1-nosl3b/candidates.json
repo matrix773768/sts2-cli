@@ -1,0 +1,292 @@
+{
+  "schema": "sts2.nosl3b.protocol.v1",
+  "domain": "STS2-NOSL3B-20261120-V1",
+  "baseline": "7b3ddeb428aaf8b0d4a395f1e5bc215262539286",
+  "initialization_seeds": [
+    5391,
+    17419,
+    32647
+  ],
+  "sample_replicates": 2,
+  "report_reps_per_family": 2,
+  "pressure": {
+    "easy": {
+      "Ironclad": 74,
+      "Silent": 66
+    },
+    "medium": {
+      "Ironclad": 37,
+      "Silent": 33
+    },
+    "hard": {
+      "Ironclad": 15,
+      "Silent": 13
+    }
+  },
+  "action_cap": 96,
+  "learning_rate": 0.006,
+  "critic_weight": 1,
+  "entropy_weight": 0.008,
+  "grad_clip": 3,
+  "hp_weight": 0.12,
+  "potion_weight": 0.03,
+  "train": [
+    {
+      "family": "strength-draw",
+      "character": "Ironclad",
+      "act": 1,
+      "zone": "OVERGROWTH",
+      "encounter": "SHRINKER_BEETLE_WEAK",
+      "cards": [
+        "INFLAME",
+        "TWIN_STRIKE",
+        "TWIN_STRIKE",
+        "POMMEL_STRIKE",
+        "POMMEL_STRIKE",
+        "SHRUG_IT_OFF",
+        "STRIKE_IRONCLAD",
+        "DEFEND_IRONCLAD",
+        "DEFEND_IRONCLAD"
+      ]
+    },
+    {
+      "family": "strength-target",
+      "character": "Ironclad",
+      "act": 1,
+      "zone": "UNDERDOCKS",
+      "encounter": "CORPSE_SLUGS_WEAK",
+      "cards": [
+        "INFLAME",
+        "BASH",
+        "TWIN_STRIKE",
+        "STRIKE_IRONCLAD",
+        "TWIN_STRIKE",
+        "STRIKE_IRONCLAD",
+        "DEFEND_IRONCLAD",
+        "DEFEND_IRONCLAD"
+      ]
+    },
+    {
+      "family": "barrier-wave",
+      "character": "Ironclad",
+      "act": 2,
+      "zone": "HIVE",
+      "encounter": "MYTES_NORMAL",
+      "cards": [
+        "BASH",
+        "FLAME_BARRIER",
+        "TWIN_STRIKE",
+        "IRON_WAVE",
+        "IRON_WAVE",
+        "STRIKE_IRONCLAD",
+        "DEFEND_IRONCLAD",
+        "DEFEND_IRONCLAD",
+        "SHRUG_IT_OFF"
+      ]
+    },
+    {
+      "family": "cost-draw",
+      "character": "Ironclad",
+      "act": 1,
+      "zone": "UNDERDOCKS",
+      "encounter": "CORPSE_SLUGS_WEAK",
+      "cards": [
+        "STOMP",
+        "POMMEL_STRIKE",
+        "POMMEL_STRIKE",
+        "BASH",
+        "SHRUG_IT_OFF",
+        "TWIN_STRIKE",
+        "STRIKE_IRONCLAD",
+        "STRIKE_IRONCLAD",
+        "DEFEND_IRONCLAD"
+      ]
+    },
+    {
+      "family": "accuracy-swift",
+      "character": "Silent",
+      "act": 1,
+      "zone": "OVERGROWTH",
+      "encounter": "SHRINKER_BEETLE_WEAK",
+      "cards": [
+        "BLADE_DANCE",
+        "BLADE_DANCE",
+        "ACCURACY",
+        "SLICE",
+        "SLICE",
+        "BACKFLIP",
+        "STRIKE_SILENT",
+        "DEFEND_SILENT"
+      ]
+    },
+    {
+      "family": "accuracy-defense",
+      "character": "Silent",
+      "act": 2,
+      "zone": "HIVE",
+      "encounter": "MYTES_NORMAL",
+      "cards": [
+        "SURVIVOR",
+        "ACCURACY",
+        "BLADE_DANCE",
+        "BLADE_DANCE",
+        "LEG_SWEEP",
+        "STRIKE_SILENT",
+        "SLICE",
+        "DEFEND_SILENT"
+      ]
+    },
+    {
+      "family": "cloak-footwork",
+      "character": "Silent",
+      "act": 1,
+      "zone": "UNDERDOCKS",
+      "encounter": "CORPSE_SLUGS_WEAK",
+      "cards": [
+        "CLOAK_AND_DAGGER",
+        "CLOAK_AND_DAGGER",
+        "FOOTWORK",
+        "BACKFLIP",
+        "SLICE",
+        "STRIKE_SILENT",
+        "STRIKE_SILENT",
+        "DEFEND_SILENT"
+      ]
+    },
+    {
+      "family": "cloak-draw",
+      "character": "Silent",
+      "act": 1,
+      "zone": "OVERGROWTH",
+      "encounter": "SHRINKER_BEETLE_WEAK",
+      "cards": [
+        "CLOAK_AND_DAGGER",
+        "BLADE_DANCE",
+        "SURVIVOR",
+        "SLICE",
+        "DODGE_AND_ROLL",
+        "BACKFLIP",
+        "STRIKE_SILENT",
+        "STRIKE_SILENT"
+      ]
+    }
+  ],
+  "regular": [
+    {
+      "family": "regular-draw",
+      "character": "Ironclad",
+      "act": 2,
+      "zone": "HIVE",
+      "encounter": "MYTES_NORMAL",
+      "cards": [
+        "INFLAME",
+        "TWIN_STRIKE",
+        "TWIN_STRIKE",
+        "POMMEL_STRIKE",
+        "STOMP",
+        "SHRUG_IT_OFF",
+        "BASH",
+        "DEFEND_IRONCLAD"
+      ]
+    },
+    {
+      "family": "regular-block",
+      "character": "Ironclad",
+      "act": 1,
+      "zone": "OVERGROWTH",
+      "encounter": "NIBBITS_WEAK",
+      "cards": [
+        "BASH",
+        "FLAME_BARRIER",
+        "SHRUG_IT_OFF",
+        "SHRUG_IT_OFF",
+        "IRON_WAVE",
+        "TWIN_STRIKE",
+        "STRIKE_IRONCLAD",
+        "DEFEND_IRONCLAD"
+      ]
+    },
+    {
+      "family": "regular-shiv",
+      "character": "Silent",
+      "act": 1,
+      "zone": "UNDERDOCKS",
+      "encounter": "CORPSE_SLUGS_WEAK",
+      "cards": [
+        "ACCURACY",
+        "BLADE_DANCE",
+        "BLADE_DANCE",
+        "BACKFLIP",
+        "LEG_SWEEP",
+        "SLICE",
+        "SLICE",
+        "DEFEND_SILENT"
+      ]
+    }
+  ],
+  "combination": [
+    {
+      "family": "held-strength-barrier",
+      "character": "Ironclad",
+      "act": 2,
+      "zone": "HIVE",
+      "encounter": "BOWLBUGS_WEAK",
+      "cards": [
+        "INFLAME",
+        "FLAME_BARRIER",
+        "FLAME_BARRIER",
+        "TWIN_STRIKE",
+        "TWIN_STRIKE",
+        "POMMEL_STRIKE",
+        "STRIKE_IRONCLAD",
+        "DEFEND_IRONCLAD"
+      ],
+      "pair": [
+        "INFLAME",
+        "FLAME_BARRIER"
+      ]
+    },
+    {
+      "family": "held-cloak-accuracy",
+      "character": "Silent",
+      "act": 1,
+      "zone": "OVERGROWTH",
+      "encounter": "NIBBITS_WEAK",
+      "cards": [
+        "CLOAK_AND_DAGGER",
+        "CLOAK_AND_DAGGER",
+        "ACCURACY",
+        "BLADE_DANCE",
+        "LEG_SWEEP",
+        "SLICE",
+        "STRIKE_SILENT",
+        "DEFEND_SILENT"
+      ],
+      "pair": [
+        "CLOAK_AND_DAGGER",
+        "ACCURACY"
+      ]
+    },
+    {
+      "family": "held-footwork-accuracy",
+      "character": "Silent",
+      "act": 2,
+      "zone": "HIVE",
+      "encounter": "BOWLBUGS_WEAK",
+      "cards": [
+        "FOOTWORK",
+        "ACCURACY",
+        "BLADE_DANCE",
+        "BLADE_DANCE",
+        "BACKFLIP",
+        "DODGE_AND_ROLL",
+        "SLICE",
+        "DEFEND_SILENT"
+      ],
+      "pair": [
+        "FOOTWORK",
+        "ACCURACY"
+      ]
+    }
+  ]
+}
