@@ -1,0 +1,2884 @@
+{
+  "build": {
+    "bridge_sha256": "529790e64614f2fbf0b48374eb80f1c6672511e706aa5bcde219f4f8f2bb4165",
+    "frozen_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "patched_sha256": "996082fb217c13a19a4bbd9eb712c0360c7deb6cad39b2f9a43f313ca7c33086",
+    "source_revision": "78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+    "version": "0.51.5-iig.1"
+  },
+  "generated_source_hashes": {
+    "CardChoiceSupport.cs": "bf8dfa9e2bacace694ac3bb26ac995502cd65f80efe78fcd645649dd3a1d0239",
+    "CombatBeamSolver.InteractiveCombat.cs": "fcc9d46e3f67bdedcb42b218947a96afe158b3fb1a3b136b43f888c756aec003"
+  },
+  "hidden_rng": {
+    "candidates": 7,
+    "pending_close_preserved_source": true,
+    "rng_differs": true,
+    "same_probabilities": true,
+    "same_public_history": true,
+    "seeds": [
+      "IIBEQUIV4",
+      "IIBEQUIV8"
+    ],
+    "versions": {
+      "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+      "coreclr": "9.0.7",
+      "game": "0.113.1/26660232",
+      "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+      "headless_sha256": "ae5a9ea4bd9cd023af5d1442c927f64bd4e8610dce8be77734865679f7a2d949",
+      "native_identity": "1a7920743debb25b7454511637dfa27528da42c8c275d67bfebd984924eaf3cb",
+      "policy": "M1-F2-discard-v1",
+      "sampler": "m1-d1-v1",
+      "solver": "0.51.5-iig.1",
+      "solver_sha256": "996082fb217c13a19a4bbd9eb712c0360c7deb6cad39b2f9a43f313ca7c33086"
+    }
+  },
+  "independent": {
+    "report": {
+      "admissions": {
+        "admissible_death": 1,
+        "admissible_predicted_win": 7,
+        "audit_failure": 1,
+        "error": 1,
+        "native_difference": 1,
+        "rule_risk": 3,
+        "unsupported": 2
+      },
+      "attempted": 16,
+      "attempts_per_second": 0.4514394256116763,
+      "audit_worker_seconds": 51.21826020046137,
+      "by_deck_card": [
+        {
+          "attempts": 1,
+          "card": "ACCELERANT",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "AFTERIMAGE",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "AGGRESSION",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "ALIGNMENT",
+          "status": "audit_failure"
+        },
+        {
+          "attempts": 1,
+          "card": "BACKSTAB",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "BACKSTAB",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "BALL_LIGHTNING",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "BIG_BANG",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "BLUR",
+          "status": "error"
+        },
+        {
+          "attempts": 1,
+          "card": "BLUR",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "BOOST_AWAY",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 2,
+          "card": "BULLY",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "BUNDLE_OF_JOY",
+          "status": "audit_failure"
+        },
+        {
+          "attempts": 1,
+          "card": "CALCULATED_GAMBLE",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "CAPACITOR",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "CHAOS",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "COLD_SNAP",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "CONCOCT",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "CONFLAGRATION",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "CONVERGENCE",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "COOLHEADED",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "CREATIVE_AI",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "CRUELTY",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "DAGGER_THROW",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "DARK_EMBRACE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "DEADLY_POISON",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "DELAY",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "DEMONIC_SHIELD",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "DEVOUR_LIFE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "DOMINATE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "DYING_STAR",
+          "status": "audit_failure"
+        },
+        {
+          "attempts": 1,
+          "card": "EIDOLON",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "EVIL_EYE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "EXPERTISE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "FADE",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 2,
+          "card": "FIGHT_ME",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "FTL",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "GENETIC_ALGORITHM",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "GLACIER",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "GLASSWORK",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "GRAND_FINALE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "GRAVEBLAST",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "HANG",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "HEMOKINESIS",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "HIDDEN_DAGGERS",
+          "status": "error"
+        },
+        {
+          "attempts": 1,
+          "card": "INFERNAL_BLADE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "INFERNO",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "INFLAME",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "INVOKE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "KNIFE_TRAP",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "LARGESSE",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "LEGION_OF_BONE",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "LEG_SWEEP",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "LIGHTNING_ROD",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "MACHINE_LEARNING",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "MANIFEST_AUTHORITY",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "MIRAGE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "NOXIOUS_FUMES",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "NULL",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "OUTBREAK",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "OUTRAGE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "PACTS_END",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "PHANTOM_BLADES",
+          "status": "error"
+        },
+        {
+          "attempts": 1,
+          "card": "PIERCING_WAIL",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "PINPOINT",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "PRIMAL_FORCE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "PROPHESIZE",
+          "status": "audit_failure"
+        },
+        {
+          "attempts": 1,
+          "card": "RAMPAGE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "RATTLE",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "RICOCHET",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "ROYALTIES",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "SEANCE",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "SERPENT_FORM",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "SHADOW_SHIELD",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 2,
+          "card": "SHRUG_IT_OFF",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "SIDESTEP",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "SIGNAL_BOOST",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "SKEWER",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "SLEIGHT_OF_FLESH",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "SNAKEBITE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "SNEAKY",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "SOUL_STORM",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "SOW",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "SPECTRUM_SHIFT",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "SPEEDSTER",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "SPUR",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "STARDUST",
+          "status": "audit_failure"
+        },
+        {
+          "attempts": 1,
+          "card": "STOKE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "STOMP",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_NECROBINDER",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "SUBROUTINE",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "SUCKER_PUNCH",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "SUMMON_FORTH",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "SUPPRESS",
+          "status": "error"
+        },
+        {
+          "attempts": 1,
+          "card": "SURVIVOR",
+          "status": "error"
+        },
+        {
+          "attempts": 1,
+          "card": "TAUNT",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "THE_HUNT",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "THE_SMITH",
+          "status": "audit_failure"
+        },
+        {
+          "attempts": 1,
+          "card": "TRASH_TO_TREASURE",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "TWIN_STRIKE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "UNDEATH",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "VOLTAIC",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "WHIRLWIND",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "WRAITH_FORM",
+          "status": "admissible_predicted_win"
+        }
+      ],
+      "by_group": {
+        "BOWLBUGS_WEAK": {
+          "admissible_predicted_win": 1
+        },
+        "CORPSE_SLUGS_NORMAL": {
+          "admissible_death": 1
+        },
+        "CORPSE_SLUGS_WEAK": {
+          "rule_risk": 1
+        },
+        "DEVOTED_SCULPTOR_WEAK": {
+          "admissible_predicted_win": 1
+        },
+        "Defect": {
+          "native_difference": 1,
+          "rule_risk": 2
+        },
+        "FOSSIL_STALKER_NORMAL": {
+          "admissible_predicted_win": 1
+        },
+        "HAUNTED_SHIP_NORMAL": {
+          "rule_risk": 1
+        },
+        "INKLETS_NORMAL": {
+          "audit_failure": 1
+        },
+        "Ironclad": {
+          "admissible_predicted_win": 4
+        },
+        "Necrobinder": {
+          "admissible_predicted_win": 1,
+          "unsupported": 1
+        },
+        "OVICOPTER_NORMAL": {
+          "error": 1
+        },
+        "OWL_MAGISTRATE_NORMAL": {
+          "native_difference": 1
+        },
+        "PUNCH_CONSTRUCT_NORMAL": {
+          "admissible_predicted_win": 1
+        },
+        "Regent": {
+          "admissible_death": 1,
+          "audit_failure": 1
+        },
+        "SCROLLS_OF_BITING_WEAK": {
+          "admissible_predicted_win": 1,
+          "unsupported": 1
+        },
+        "SEAPUNK_NORMAL": {
+          "rule_risk": 1
+        },
+        "SLIMES_NORMAL": {
+          "unsupported": 1
+        },
+        "SLITHERING_STRANGLER_NORMAL": {
+          "admissible_predicted_win": 1
+        },
+        "SPINY_TOAD_NORMAL": {
+          "admissible_predicted_win": 1
+        },
+        "Silent": {
+          "admissible_predicted_win": 2,
+          "error": 1,
+          "rule_risk": 1,
+          "unsupported": 1
+        }
+      },
+      "certification": {
+        "counts": {
+          "audit_failure": 1,
+          "exact_native_match": 7,
+          "semantic_mismatch": 1,
+          "semantic_native_match": 1,
+          "semantic_unverified": 6
+        },
+        "mode": "semantic",
+        "rule": "sts2.nosl.iig.enemy-death-window.v1"
+      },
+      "completed": 13,
+      "constructed": 16,
+      "optimizer": {},
+      "predictions": {
+        "death": 1,
+        "error": 1,
+        "predicted_win": 9,
+        "rule_risk": 3,
+        "unsupported": 2
+      },
+      "seconds": 35.442185800056905,
+      "update": 1
+    },
+    "seed": 718606
+  },
+  "previous_interim_mechanism_trials": {
+    "results": [
+      {
+        "card": "ACROBATICS",
+        "detail": null,
+        "difference": null,
+        "exact_boundaries": 15,
+        "native_terminal": true,
+        "steps": [
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 0,
+            "timing": null
+          },
+          {
+            "action": "select_candidate",
+            "automatic": [],
+            "candidate": 3,
+            "effect": "Discard",
+            "position": 1,
+            "timing": "Action"
+          },
+          {
+            "action": "confirm_selection",
+            "automatic": [],
+            "candidate": null,
+            "effect": "Discard",
+            "position": 2,
+            "timing": "Action"
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 3,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 4,
+            "timing": null
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 5,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 6,
+            "timing": null
+          },
+          {
+            "action": "select_candidate",
+            "automatic": [],
+            "candidate": 3,
+            "effect": "Discard",
+            "position": 7,
+            "timing": "Action"
+          },
+          {
+            "action": "confirm_selection",
+            "automatic": [],
+            "candidate": null,
+            "effect": "Discard",
+            "position": 8,
+            "timing": "Action"
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 9,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 10,
+            "timing": null
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 11,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 12,
+            "timing": null
+          },
+          {
+            "action": "select_candidate",
+            "automatic": [],
+            "candidate": 3,
+            "effect": "Discard",
+            "position": 13,
+            "timing": "Action"
+          },
+          {
+            "action": "confirm_selection",
+            "automatic": [],
+            "candidate": null,
+            "effect": "Discard",
+            "position": 14,
+            "timing": "Action"
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 15,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 16,
+            "timing": null
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 17,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 18,
+            "timing": null
+          },
+          {
+            "action": "select_candidate",
+            "automatic": [],
+            "candidate": 3,
+            "effect": "Discard",
+            "position": 19,
+            "timing": "Action"
+          },
+          {
+            "action": "confirm_selection",
+            "automatic": [],
+            "candidate": null,
+            "effect": "Discard",
+            "position": 20,
+            "timing": "Action"
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 21,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 22,
+            "timing": null
+          }
+        ],
+        "terminal": "predicted_win"
+      },
+      {
+        "card": "BURNING_PACT",
+        "detail": null,
+        "difference": {
+          "action": "end_turn",
+          "native_decision": "game_over",
+          "native_sha256": "4488b487a8d7e0d797bd92cbb8a29db6adac5ab6770e882237f7e45ab39d8be8",
+          "native_terminal": false,
+          "position": 28,
+          "predicted_sha256": "c1675441441acc080c52af2919c6494a039f9dbdef41bbce1f85f30da1d03ebf",
+          "predicted_status": "death"
+        },
+        "exact_boundaries": 22,
+        "native_terminal": false,
+        "steps": [
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 0,
+            "timing": null
+          },
+          {
+            "action": "select_candidate",
+            "automatic": [],
+            "candidate": 3,
+            "effect": "Exhaust",
+            "position": 1,
+            "timing": "Action"
+          },
+          {
+            "action": "confirm_selection",
+            "automatic": [],
+            "candidate": null,
+            "effect": "Exhaust",
+            "position": 2,
+            "timing": "Action"
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 3,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 4,
+            "timing": null
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 5,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 6,
+            "timing": null
+          },
+          {
+            "action": "select_candidate",
+            "automatic": [],
+            "candidate": 2,
+            "effect": "Exhaust",
+            "position": 7,
+            "timing": "Action"
+          },
+          {
+            "action": "confirm_selection",
+            "automatic": [],
+            "candidate": null,
+            "effect": "Exhaust",
+            "position": 8,
+            "timing": "Action"
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 9,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 10,
+            "timing": null
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 11,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 12,
+            "timing": null
+          },
+          {
+            "action": "select_candidate",
+            "automatic": [],
+            "candidate": 1,
+            "effect": "Exhaust",
+            "position": 13,
+            "timing": "Action"
+          },
+          {
+            "action": "confirm_selection",
+            "automatic": [],
+            "candidate": null,
+            "effect": "Exhaust",
+            "position": 14,
+            "timing": "Action"
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 15,
+            "timing": null
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 16,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [
+              "Exhaust"
+            ],
+            "candidate": null,
+            "effect": null,
+            "position": 17,
+            "timing": null
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 18,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 19,
+            "timing": null
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 20,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 21,
+            "timing": null
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 22,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 23,
+            "timing": null
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 24,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 25,
+            "timing": null
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 26,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 27,
+            "timing": null
+          }
+        ],
+        "terminal": "native_difference"
+      },
+      {
+        "card": "PREPARED",
+        "detail": null,
+        "difference": null,
+        "exact_boundaries": 9,
+        "native_terminal": true,
+        "steps": [
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 0,
+            "timing": null
+          },
+          {
+            "action": "select_candidate",
+            "automatic": [],
+            "candidate": 3,
+            "effect": "Discard",
+            "position": 1,
+            "timing": "Action"
+          },
+          {
+            "action": "confirm_selection",
+            "automatic": [],
+            "candidate": null,
+            "effect": "Discard",
+            "position": 2,
+            "timing": "Action"
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 3,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 4,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 5,
+            "timing": null
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 6,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 7,
+            "timing": null
+          },
+          {
+            "action": "select_candidate",
+            "automatic": [],
+            "candidate": 3,
+            "effect": "Discard",
+            "position": 8,
+            "timing": "Action"
+          },
+          {
+            "action": "confirm_selection",
+            "automatic": [],
+            "candidate": null,
+            "effect": "Discard",
+            "position": 9,
+            "timing": "Action"
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 10,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 11,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 12,
+            "timing": null
+          }
+        ],
+        "terminal": "predicted_win"
+      },
+      {
+        "card": "ARMAMENTS",
+        "detail": null,
+        "difference": null,
+        "exact_boundaries": 14,
+        "native_terminal": true,
+        "steps": [
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 0,
+            "timing": null
+          },
+          {
+            "action": "select_candidate",
+            "automatic": [],
+            "candidate": 1,
+            "effect": "Upgrade",
+            "position": 1,
+            "timing": "Action"
+          },
+          {
+            "action": "confirm_selection",
+            "automatic": [],
+            "candidate": null,
+            "effect": "Upgrade",
+            "position": 2,
+            "timing": "Action"
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 3,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 4,
+            "timing": null
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 5,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [
+              "Upgrade"
+            ],
+            "candidate": null,
+            "effect": null,
+            "position": 6,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 7,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 8,
+            "timing": null
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 9,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 10,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 11,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 12,
+            "timing": null
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 13,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 14,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 15,
+            "timing": null
+          }
+        ],
+        "terminal": "predicted_win"
+      },
+      {
+        "card": "TOOLS_OF_THE_TRADE",
+        "detail": null,
+        "difference": null,
+        "exact_boundaries": 13,
+        "native_terminal": true,
+        "steps": [
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 0,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 1,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 2,
+            "timing": null
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 3,
+            "timing": null
+          },
+          {
+            "action": "select_candidate",
+            "automatic": [],
+            "candidate": 3,
+            "effect": "Discard",
+            "position": 4,
+            "timing": "PlayerTurnStart"
+          },
+          {
+            "action": "confirm_selection",
+            "automatic": [],
+            "candidate": null,
+            "effect": "Discard",
+            "position": 5,
+            "timing": "PlayerTurnStart"
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 6,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 7,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 8,
+            "timing": null
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 9,
+            "timing": null
+          },
+          {
+            "action": "select_candidate",
+            "automatic": [],
+            "candidate": 3,
+            "effect": "Discard",
+            "position": 10,
+            "timing": "PlayerTurnStart"
+          },
+          {
+            "action": "confirm_selection",
+            "automatic": [],
+            "candidate": null,
+            "effect": "Discard",
+            "position": 11,
+            "timing": "PlayerTurnStart"
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 12,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 13,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 14,
+            "timing": null
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 15,
+            "timing": null
+          },
+          {
+            "action": "select_candidate",
+            "automatic": [],
+            "candidate": 3,
+            "effect": "Discard",
+            "position": 16,
+            "timing": "PlayerTurnStart"
+          },
+          {
+            "action": "confirm_selection",
+            "automatic": [],
+            "candidate": null,
+            "effect": "Discard",
+            "position": 17,
+            "timing": "PlayerTurnStart"
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 18,
+            "timing": null
+          }
+        ],
+        "terminal": "predicted_win"
+      },
+      {
+        "card": "DECISIONS_DECISIONS",
+        "detail": null,
+        "difference": {
+          "action": "end_turn",
+          "native_decision": "game_over",
+          "native_sha256": "a463eda23daf751cb0e590bb223f68e5d47c863d2ef58380b64f9888248a80a5",
+          "native_terminal": false,
+          "position": 46,
+          "predicted_sha256": "1a2aaadada6ac24a68b5b9641446dcdbf881add4093f889589b954535c0f93e4",
+          "predicted_status": "death"
+        },
+        "exact_boundaries": 36,
+        "native_terminal": false,
+        "steps": [
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 0,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 1,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 2,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 3,
+            "timing": null
+          },
+          {
+            "action": "select_candidate",
+            "automatic": [],
+            "candidate": 3,
+            "effect": "AutoPlayRepeated",
+            "position": 4,
+            "timing": "Action"
+          },
+          {
+            "action": "confirm_selection",
+            "automatic": [],
+            "candidate": null,
+            "effect": "AutoPlayRepeated",
+            "position": 5,
+            "timing": "Action"
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 6,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 7,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 8,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 9,
+            "timing": null
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 10,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 11,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 12,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 13,
+            "timing": null
+          },
+          {
+            "action": "select_candidate",
+            "automatic": [],
+            "candidate": 2,
+            "effect": "MoveToDrawTop",
+            "position": 14,
+            "timing": "Action"
+          },
+          {
+            "action": "confirm_selection",
+            "automatic": [],
+            "candidate": null,
+            "effect": "MoveToDrawTop",
+            "position": 15,
+            "timing": "Action"
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 16,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 17,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 18,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 19,
+            "timing": null
+          },
+          {
+            "action": "select_candidate",
+            "automatic": [],
+            "candidate": 2,
+            "effect": "MoveToDrawTop",
+            "position": 20,
+            "timing": "Action"
+          },
+          {
+            "action": "confirm_selection",
+            "automatic": [],
+            "candidate": null,
+            "effect": "MoveToDrawTop",
+            "position": 21,
+            "timing": "Action"
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 22,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 23,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 24,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 25,
+            "timing": null
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 26,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 27,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 28,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 29,
+            "timing": null
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 30,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 31,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 32,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 33,
+            "timing": null
+          },
+          {
+            "action": "select_candidate",
+            "automatic": [],
+            "candidate": 2,
+            "effect": "MoveToDrawTop",
+            "position": 34,
+            "timing": "Action"
+          },
+          {
+            "action": "confirm_selection",
+            "automatic": [],
+            "candidate": null,
+            "effect": "MoveToDrawTop",
+            "position": 35,
+            "timing": "Action"
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 36,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 37,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 38,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 39,
+            "timing": null
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 40,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 41,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 42,
+            "timing": null
+          },
+          {
+            "action": "select_candidate",
+            "automatic": [],
+            "candidate": 2,
+            "effect": "MoveToDrawTop",
+            "position": 43,
+            "timing": "Action"
+          },
+          {
+            "action": "confirm_selection",
+            "automatic": [],
+            "candidate": null,
+            "effect": "MoveToDrawTop",
+            "position": 44,
+            "timing": "Action"
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 45,
+            "timing": null
+          }
+        ],
+        "terminal": "native_difference"
+      },
+      {
+        "card": "QUASAR",
+        "detail": null,
+        "difference": null,
+        "exact_boundaries": 21,
+        "native_terminal": true,
+        "steps": [
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 0,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 1,
+            "timing": null
+          },
+          {
+            "action": "confirm_selection",
+            "automatic": [],
+            "candidate": null,
+            "effect": "GenerateToHand",
+            "position": 2,
+            "timing": "Action"
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 3,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 4,
+            "timing": null
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 5,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 6,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 7,
+            "timing": null
+          },
+          {
+            "action": "confirm_selection",
+            "automatic": [],
+            "candidate": null,
+            "effect": "GenerateToHand",
+            "position": 8,
+            "timing": "Action"
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 9,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 10,
+            "timing": null
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 11,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 12,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 13,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 14,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 15,
+            "timing": null
+          },
+          {
+            "action": "confirm_selection",
+            "automatic": [],
+            "candidate": null,
+            "effect": "GenerateToHand",
+            "position": 16,
+            "timing": "Action"
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 17,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 18,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 19,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 20,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 21,
+            "timing": null
+          },
+          {
+            "action": "confirm_selection",
+            "automatic": [],
+            "candidate": null,
+            "effect": "GenerateToHand",
+            "position": 22,
+            "timing": "Action"
+          },
+          {
+            "action": "end_turn",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 23,
+            "timing": null
+          },
+          {
+            "action": "play_card",
+            "automatic": [],
+            "candidate": null,
+            "effect": null,
+            "position": 24,
+            "timing": null
+          }
+        ],
+        "terminal": "predicted_win"
+      }
+    ],
+    "versions": {
+      "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+      "coreclr": "9.0.7",
+      "game": "0.113.1/26660232",
+      "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+      "headless_sha256": "ae5a9ea4bd9cd023af5d1442c927f64bd4e8610dce8be77734865679f7a2d949",
+      "native_identity": "1a7920743debb25b7454511637dfa27528da42c8c275d67bfebd984924eaf3cb",
+      "policy": "M1-F2-discard-v1",
+      "sampler": "m1-d1-v1",
+      "solver": "0.51.5-iig.1",
+      "solver_sha256": "368531dd1c2c3da945c83ea4dfb833553221bd50f344eeea44b633febb61e1ef"
+    }
+  },
+  "regressions": {
+    "f4": 6,
+    "ls2a": 7,
+    "ls2a_subtests": 6,
+    "ls2b": 5,
+    "native_files": [
+      "iia/qualification.json",
+      "iib/equivalence.json",
+      "iic/replay.json",
+      "iid/targets.json",
+      "iie/death.json",
+      "iie/negative.json",
+      "iif.log"
+    ],
+    "nosl3a": 6,
+    "nosl3b": 4,
+    "nosl3c": 5,
+    "nosl3c_ib": 4,
+    "pytest": {
+      "passed": 162,
+      "skipped": 1
+    }
+  },
+  "replay": {
+    "attempts": 65,
+    "breakdown": {
+      "checkpoint_unavailable": 3,
+      "incomplete_archived_route": 4,
+      "rule_risk": 4,
+      "solver_execution_risk": 8,
+      "visibility_unverified": 3
+    },
+    "by_ledger": {
+      "nosl3c-iic-random-final": {
+        "exact_native_match": 2,
+        "incomplete_archived_route": 7,
+        "rule_risk": 2,
+        "semantic_mismatch": 2,
+        "semantic_native_match": 5,
+        "solver_execution_risk": 1,
+        "visibility_unverified": 1
+      },
+      "nosl3c-iid-release-independent": {
+        "checkpoint_unavailable": 1,
+        "engine_failure": 1,
+        "exact_native_match": 13,
+        "rule_risk": 1,
+        "semantic_mismatch": 2,
+        "semantic_native_match": 7,
+        "solver_execution_risk": 4,
+        "visibility_unverified": 1
+      },
+      "nosl3c-iie-broad": {
+        "checkpoint_unavailable": 2,
+        "exact_native_match": 5,
+        "rule_risk": 1,
+        "semantic_mismatch": 2,
+        "semantic_native_match": 1,
+        "solver_execution_risk": 3,
+        "visibility_unverified": 1
+      }
+    },
+    "earlier_unverified": 22,
+    "new_same_route_terminal_among_unverified": 0,
+    "same_root_resampled": 0
+  },
+  "reveal": {
+    "ambiguous": {
+      "detail": "PendingChoice",
+      "difference": null,
+      "exact_boundaries": 1,
+      "native_terminal": false,
+      "steps": [
+        {
+          "action": "play_card",
+          "automatic": [],
+          "candidate": null,
+          "effect": null,
+          "position": 0,
+          "timing": null
+        },
+        {
+          "action": "select_candidate",
+          "automatic": [],
+          "candidate": 2,
+          "effect": "MoveToHand",
+          "position": 1,
+          "timing": "Action"
+        },
+        {
+          "action": "confirm_selection",
+          "automatic": [],
+          "candidate": null,
+          "effect": "MoveToHand",
+          "position": 2,
+          "timing": "Action"
+        },
+        {
+          "action": "play_card",
+          "automatic": [],
+          "candidate": null,
+          "effect": null,
+          "position": 3,
+          "timing": null
+        }
+      ],
+      "terminal": "unsupported"
+    },
+    "direct": {
+      "answered": {
+        "boundary": "None",
+        "death": false,
+        "gaps": [
+          "SEEKER_STRIKE.CardPlay: UnresolvedPlayerChoice"
+        ],
+        "hp": 80,
+        "powers": [],
+        "risk": true,
+        "win": false
+      },
+      "engine": {
+        "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+        "coreclr": "9.0.7",
+        "game": "0.113.1/26660232",
+        "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+        "headless_sha256": "ae5a9ea4bd9cd023af5d1442c927f64bd4e8610dce8be77734865679f7a2d949",
+        "native_identity": "1a7920743debb25b7454511637dfa27528da42c8c275d67bfebd984924eaf3cb",
+        "policy": "M1-F2-discard-v1",
+        "sampler": "m1-d1-v1",
+        "solver": "0.51.5",
+        "solver_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13"
+      },
+      "unanswered": {
+        "boundary": "PendingChoice",
+        "death": false,
+        "gaps": [
+          "SEEKER_STRIKE.CardPlay: UnresolvedPlayerChoice"
+        ],
+        "hp": 80,
+        "powers": [],
+        "risk": true,
+        "win": false
+      }
+    },
+    "full": {
+      "detail": null,
+      "difference": null,
+      "exact_boundaries": 10,
+      "native_terminal": true,
+      "spec": {
+        "act": 1,
+        "ascension": 0,
+        "character": "Ironclad",
+        "deck": [
+          {
+            "id": "SEEKER_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 1
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 1
+          },
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          }
+        ],
+        "encounter": "SHRINKER_BEETLE_WEAK",
+        "hp": 80,
+        "max_hp": 80,
+        "potions": [],
+        "relics": [],
+        "schema": 1,
+        "seed": "IIGFULL3"
+      },
+      "steps": [
+        {
+          "action": "play_card",
+          "automatic": [],
+          "candidate": null,
+          "effect": null,
+          "position": 0,
+          "timing": null
+        },
+        {
+          "action": "select_candidate",
+          "automatic": [],
+          "candidate": 2,
+          "effect": "MoveToHand",
+          "position": 1,
+          "timing": "Action"
+        },
+        {
+          "action": "confirm_selection",
+          "automatic": [],
+          "candidate": null,
+          "effect": "MoveToHand",
+          "position": 2,
+          "timing": "Action"
+        },
+        {
+          "action": "play_card",
+          "automatic": [],
+          "candidate": null,
+          "effect": null,
+          "position": 3,
+          "timing": null
+        },
+        {
+          "action": "play_card",
+          "automatic": [],
+          "candidate": null,
+          "effect": null,
+          "position": 4,
+          "timing": null
+        },
+        {
+          "action": "end_turn",
+          "automatic": [],
+          "candidate": null,
+          "effect": null,
+          "position": 5,
+          "timing": null
+        },
+        {
+          "action": "play_card",
+          "automatic": [],
+          "candidate": null,
+          "effect": null,
+          "position": 6,
+          "timing": null
+        },
+        {
+          "action": "play_card",
+          "automatic": [],
+          "candidate": null,
+          "effect": null,
+          "position": 7,
+          "timing": null
+        },
+        {
+          "action": "play_card",
+          "automatic": [],
+          "candidate": null,
+          "effect": null,
+          "position": 8,
+          "timing": null
+        },
+        {
+          "action": "end_turn",
+          "automatic": [],
+          "candidate": null,
+          "effect": null,
+          "position": 9,
+          "timing": null
+        },
+        {
+          "action": "play_card",
+          "automatic": [],
+          "candidate": null,
+          "effect": null,
+          "position": 10,
+          "timing": null
+        },
+        {
+          "action": "play_card",
+          "automatic": [],
+          "candidate": null,
+          "effect": null,
+          "position": 11,
+          "timing": null
+        }
+      ],
+      "terminal": "predicted_win"
+    },
+    "reveal": {
+      "after_sha256": "1d1038e3895ff5b582b52d95187f00594bdf8e89cbe33a53ff1b2d60afa71b7d",
+      "candidate": 2,
+      "candidates": [
+        {
+          "affliction": null,
+          "affliction_amount": null,
+          "cost": null,
+          "enchantment": null,
+          "enchantment_amount": null,
+          "id": "STRIKE_IRONCLAD",
+          "index": 0,
+          "upgrade": 0
+        },
+        {
+          "affliction": null,
+          "affliction_amount": null,
+          "cost": null,
+          "enchantment": null,
+          "enchantment_amount": null,
+          "id": "STRIKE_IRONCLAD",
+          "index": 1,
+          "upgrade": 1
+        },
+        {
+          "affliction": null,
+          "affliction_amount": null,
+          "cost": null,
+          "enchantment": null,
+          "enchantment_amount": null,
+          "id": "POMMEL_STRIKE",
+          "index": 2,
+          "upgrade": 0
+        }
+      ],
+      "hidden_draw_pair_equal": true,
+      "matched": true,
+      "pending_close_source_equal": true,
+      "private_plan": {
+        "action_title": "",
+        "card_enchantment_id": "",
+        "card_id": "SEEKER_STRIKE",
+        "card_occurrence": 0,
+        "card_state_key": "SEEKER_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Cards=3;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+        "card_state_occurrence": 0,
+        "card_title": "",
+        "card_upgrade_level": 0,
+        "choice": {
+          "cards": [
+            {
+              "card_id": "POMMEL_STRIKE",
+              "option_occurrence": 0,
+              "source_occurrence": 0,
+              "state_key": "POMMEL_STRIKE+0|energy=False:1|stars=False:-1|replay=0:0|exhaust=False|sly=False|retain=False|deck=True|keywords=|vars=Cards=1;Damage=9|-|:0|baselib=-|keywordsAdded=|keywordsRemoved=|dupe=False",
+              "title": "POMMEL_STRIKE.title",
+              "upgrade_level": 0
+            }
+          ],
+          "context_id": "seeker:1:STRIKE_IRONCLAD+0,STRIKE_IRONCLAD+1,POMMEL_STRIKE+0",
+          "effect": 0,
+          "source_id": "",
+          "source_pile": 1,
+          "timing": 0
+        },
+        "ends_player_turn": false,
+        "is_executable": true,
+        "kind": 0,
+        "nested_choices_before_primary": 0,
+        "potion_id": "",
+        "potion_slot": -1,
+        "potion_title": "",
+        "replay_count": 0,
+        "target_combat_id": 1,
+        "target_index": -1,
+        "target_name": "",
+        "turn": 1
+      },
+      "spec": {
+        "act": 1,
+        "ascension": 0,
+        "character": "Ironclad",
+        "deck": [
+          {
+            "id": "SEEKER_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "SEEKER_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "SEEKER_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "SEEKER_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "SEEKER_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 1
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 1
+          },
+          {
+            "id": "BASH",
+            "upgrade": 0
+          },
+          {
+            "id": "IRON_WAVE",
+            "upgrade": 0
+          },
+          {
+            "id": "POMMEL_STRIKE",
+            "upgrade": 0
+          },
+          {
+            "id": "TWIN_STRIKE",
+            "upgrade": 0
+          }
+        ],
+        "encounter": "SHRINKER_BEETLE_WEAK",
+        "hp": 80,
+        "max_hp": 80,
+        "potions": [],
+        "relics": [],
+        "schema": 1,
+        "seed": "IIGREVEAL"
+      },
+      "versions": {
+        "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+        "coreclr": "9.0.7",
+        "game": "0.113.1/26660232",
+        "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+        "headless_sha256": "ae5a9ea4bd9cd023af5d1442c927f64bd4e8610dce8be77734865679f7a2d949",
+        "native_identity": "1a7920743debb25b7454511637dfa27528da42c8c275d67bfebd984924eaf3cb",
+        "policy": "M1-F2-discard-v1",
+        "sampler": "m1-d1-v1",
+        "solver": "0.51.5-iig.1",
+        "solver_sha256": "996082fb217c13a19a4bbd9eb712c0360c7deb6cad39b2f9a43f313ca7c33086"
+      }
+    }
+  },
+  "schema": "sts2.nosl.iig.evidence.v1",
+  "targets": {
+    "results": [
+      {
+        "card": "ENERGY_SURGE",
+        "energy_after": 4,
+        "energy_before": 3,
+        "exact_match": true,
+        "moves": 1,
+        "target_type": "AllAllies"
+      },
+      {
+        "card": "LARGESSE",
+        "moves": 0,
+        "target_type": "AnyAlly"
+      }
+    ],
+    "versions": {
+      "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+      "coreclr": "9.0.7",
+      "game": "0.113.1/26660232",
+      "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+      "headless_sha256": "ae5a9ea4bd9cd023af5d1442c927f64bd4e8610dce8be77734865679f7a2d949",
+      "native_identity": "1a7920743debb25b7454511637dfa27528da42c8c275d67bfebd984924eaf3cb",
+      "policy": "M1-F2-discard-v1",
+      "sampler": "m1-d1-v1",
+      "solver": "0.51.5-iig.1",
+      "solver_sha256": "996082fb217c13a19a4bbd9eb712c0360c7deb6cad39b2f9a43f313ca7c33086"
+    }
+  },
+  "training": {
+    "branches": [
+      {
+        "decisions": {
+          "end_turn": 2,
+          "play_card": 5
+        },
+        "position": "000000",
+        "qualification": {
+          "certification": "semantic_native_match",
+          "mode": "semantic",
+          "route": "e0fe5050b5975d79f90e199b5a509566c006b2de11dd55486c5ad9cd27d36fb8",
+          "rule": "sts2.nosl.iig.enemy-death-window.v1"
+        },
+        "update": 1
+      },
+      {
+        "decisions": {
+          "confirm_selection": 2,
+          "end_turn": 2,
+          "play_card": 9,
+          "select_candidate": 2
+        },
+        "position": "000001",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "semantic",
+          "route": "39cb4f38521f9e598a511d0eb327554cb08446da18b1bf84a75e53053d127d85",
+          "rule": null
+        },
+        "update": 1
+      },
+      {
+        "decisions": {
+          "confirm_selection": 1,
+          "end_turn": 21,
+          "play_card": 23,
+          "select_candidate": 1
+        },
+        "position": "000002",
+        "qualification": {
+          "certification": "semantic_native_match",
+          "mode": "semantic",
+          "route": "046f9be85325302ae975f2547bed7580785ebb4ac9f6ad69523e2d8f0688f2ce",
+          "rule": "sts2.nosl.iig.enemy-death-window.v1"
+        },
+        "update": 1
+      },
+      {
+        "decisions": {
+          "end_turn": 2,
+          "play_card": 3
+        },
+        "position": "000000",
+        "qualification": {
+          "certification": "semantic_native_match",
+          "mode": "semantic",
+          "route": "aebd94156a2da32e31e9071a64de649eb1da4674176ff88e0855e34bb6aedfc4",
+          "rule": "sts2.nosl.iig.enemy-death-window.v1"
+        },
+        "update": 2
+      },
+      {
+        "decisions": {
+          "end_turn": 3,
+          "play_card": 7
+        },
+        "position": "000001",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "semantic",
+          "route": "36534cc6b4851adc0583b5566dfcbd1a2a83d1133d6d038d340b7d033c96ebcc",
+          "rule": null
+        },
+        "update": 2
+      },
+      {
+        "decisions": {
+          "confirm_selection": 2,
+          "end_turn": 5,
+          "play_card": 9,
+          "select_candidate": 2
+        },
+        "position": "000002",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "semantic",
+          "route": "f8098bf56913b21446a3dbfc4cc279087911e0b1f75ef7ce1e694ef261da4308",
+          "rule": null
+        },
+        "update": 2
+      }
+    ],
+    "comparison": {
+      "model_adam_and_rng_match": true,
+      "public_trajectories_match": true,
+      "roots": 6,
+      "updates": 2
+    },
+    "control_report": {
+      "admissions": {
+        "admissible_death": 1,
+        "admissible_predicted_win": 2
+      },
+      "attempted": 3,
+      "attempts_per_second": 0.23552696791912983,
+      "audit_worker_seconds": 11.842429700074717,
+      "by_deck_card": [
+        {
+          "attempts": 1,
+          "card": "ACROBATICS",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "BURNING_PACT",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "DEFEND_SILENT",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_IRONCLAD",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_SILENT",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_SILENT",
+          "status": "admissible_predicted_win"
+        }
+      ],
+      "by_group": {
+        "Ironclad": {
+          "admissible_predicted_win": 1
+        },
+        "SHRINKER_BEETLE_WEAK": {
+          "admissible_death": 1,
+          "admissible_predicted_win": 2
+        },
+        "Silent": {
+          "admissible_death": 1,
+          "admissible_predicted_win": 1
+        }
+      },
+      "certification": {
+        "counts": {
+          "exact_native_match": 2,
+          "semantic_native_match": 1
+        },
+        "mode": "semantic",
+        "rule": "sts2.nosl.iig.enemy-death-window.v1"
+      },
+      "completed": 3,
+      "constructed": 3,
+      "optimizer": {
+        "actor_loss": 2436.0194206237793,
+        "critic_loss": 16731.40902709961,
+        "decisions": 33,
+        "entropy": 42.47106754779816,
+        "grad_norm": 16.262489318847656,
+        "logp_error": 1.1920928955078125e-07,
+        "model_sha256": "6acb422902f1068e7d999b08b648002079e99134e295799fea2c070fab1ceb09",
+        "qualified": 3,
+        "return_max": 87.2138771133189,
+        "return_min": -51.403101798043245
+      },
+      "predictions": {
+        "death": 1,
+        "predicted_win": 2
+      },
+      "seconds": 12.73739490006119,
+      "update": 2
+    },
+    "resumed_report": {
+      "admissions": {
+        "admissible_death": 1,
+        "admissible_predicted_win": 2
+      },
+      "attempted": 3,
+      "attempts_per_second": 0.1656227647841877,
+      "audit_worker_seconds": 17.124438899802044,
+      "by_deck_card": [
+        {
+          "attempts": 1,
+          "card": "ACROBATICS",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "BURNING_PACT",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "DEFEND_SILENT",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_IRONCLAD",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_SILENT",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_SILENT",
+          "status": "admissible_predicted_win"
+        }
+      ],
+      "by_group": {
+        "Ironclad": {
+          "admissible_predicted_win": 1
+        },
+        "SHRINKER_BEETLE_WEAK": {
+          "admissible_death": 1,
+          "admissible_predicted_win": 2
+        },
+        "Silent": {
+          "admissible_death": 1,
+          "admissible_predicted_win": 1
+        }
+      },
+      "certification": {
+        "counts": {
+          "exact_native_match": 2,
+          "semantic_native_match": 1
+        },
+        "mode": "semantic",
+        "rule": "sts2.nosl.iig.enemy-death-window.v1"
+      },
+      "completed": 3,
+      "constructed": 3,
+      "optimizer": {
+        "actor_loss": 2436.0194206237793,
+        "critic_loss": 16731.40902709961,
+        "decisions": 33,
+        "entropy": 42.47106754779816,
+        "grad_norm": 16.262489318847656,
+        "logp_error": 1.1920928955078125e-07,
+        "model_sha256": "6acb422902f1068e7d999b08b648002079e99134e295799fea2c070fab1ceb09",
+        "qualified": 3,
+        "return_max": 87.2138771133189,
+        "return_min": -51.403101798043245
+      },
+      "predictions": {
+        "death": 1,
+        "predicted_win": 2
+      },
+      "seconds": 18.113451999844983,
+      "update": 2
+    }
+  }
+}
