@@ -10,6 +10,8 @@
 
 ## 本阶段交接
 
+**M1-NOSL3C-II-G Completion 修复续体回放、抽牌堆公开选择及终局 Power 应用。** Tyranny 与 SURVIVOR 可从稳定动作前回放恢复，BRAND 的空选择由执行器完成。CLEANSE 已原生验证相同外观实例的独立绑定，Foregone Conclusion 通过回合开始的选择复放。65 条冻结路线中 34 条完整认证，新增 CASCADE 同路线精确胜。旧独立 16 根仍为 8 条准入，新增全卡池 60 根有 41 条准入。仍有真实模拟差异、E3、二次目标及随机子集重复实例等缺口。 [结果与复现](m1-nosl3c-interaction-completion.md)
+
 **M1-NOSL3C-II-G 接通经原生核验的抽牌堆揭示续体。** 已验证 Seeker Strike 的公开菜单、实例选择和 10 个稳定边界的完整胜局。65 条冻结尝试仍为 20 精确、13 语义、6 实质差异，22 条原未确定路线已逐条归因。独立全卡池抽样 8/16 准入，含原生认证死亡。v4 两次更新通过中断恢复对照。其余抽牌堆选择、三个未捕获续体和二次目标仍待扩展。 [交互归因与复现](m1-nosl3c-interaction-gap-resolution.md)
 
 **M1-NOSL3C-II-F 引入版本化死亡窗口语义认证。** 冻结 65 根发现 20 条精确匹配和 13 条限定语义匹配，严格模式继续可复现。原始 Solver 直接复放确认自动打牌 Power 差异仍存在。 [适配层与语义认证报告](m1-nosl3c-solver-adapter-audit.md)
