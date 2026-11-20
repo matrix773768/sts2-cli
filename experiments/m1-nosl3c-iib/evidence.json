@@ -1,0 +1,105 @@
+{
+  "schema": "sts2.nosl.iib.evidence.v1",
+  "build": {
+    "version": "0.51.5-iib.1",
+    "source_revision": "78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+    "patched_sha256": "4d862cb88ea09bc9774c51f3125666f0f700d051e09dfa18acf9c8a580877eee",
+    "bridge_sha256": "529790e64614f2fbf0b48374eb80f1c6672511e706aa5bcde219f4f8f2bb4165",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "frozen_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13"
+  },
+  "resume": {
+    "updates": 2,
+    "roots": 4,
+    "public_trajectories_match": true,
+    "model_adam_and_rng_match": true
+  },
+  "updates": [
+    {
+      "engine": {
+        "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+        "coreclr": "9.0.7",
+        "game": "0.113.1/26660232",
+        "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+        "headless_sha256": "de7548b074795b741a52009984776bda4d64d611eff66208dfb43c3b4bd772bb",
+        "native_identity": "95d873313a1f0ae1d039ef49248134363d35fe47560a5d2f1e39501402603bd5",
+        "policy": "M1-F2-discard-v1",
+        "sampler": "m1-d1-v1",
+        "solver": "0.51.5-iib.1",
+        "solver_sha256": "4d862cb88ea09bc9774c51f3125666f0f700d051e09dfa18acf9c8a580877eee"
+      },
+      "model_sha256": "bd5c4c6b4f6d2fa476b989685f14c818a44fa316ad6452cdf7b677668c1faa6a",
+      "stats": {
+        "actor_gradient": 0.06400703638792038,
+        "actor_loss": 9.651850461959839,
+        "advantage": {
+          "deviation": 0.007439923286437999,
+          "maximum": 0.5357959121465683,
+          "mean": 0.5283559888601304,
+          "minimum": 0.5209160655736923,
+          "positive": 2
+        },
+        "choice_decisions": 8,
+        "critic_gradient_after_clip": 0.8113093972206116,
+        "critic_loss": 0.8533497750759125,
+        "entropy_sum_per_episode": 18.345227241516113,
+        "logp_error": 0.0,
+        "model_sha256": "bd5c4c6b4f6d2fa476b989685f14c818a44fa316ad6452cdf7b677668c1faa6a",
+        "parameter_delta": 0.006000041961669922,
+        "qualified": 2,
+        "steps": 32,
+        "terminal_counts": {
+          "predicted_win": 2
+        },
+        "total_gradient_before_clip": 0.8614166378974915
+      },
+      "update": 1
+    },
+    {
+      "engine": {
+        "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+        "coreclr": "9.0.7",
+        "game": "0.113.1/26660232",
+        "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+        "headless_sha256": "de7548b074795b741a52009984776bda4d64d611eff66208dfb43c3b4bd772bb",
+        "native_identity": "95d873313a1f0ae1d039ef49248134363d35fe47560a5d2f1e39501402603bd5",
+        "policy": "M1-F2-discard-v1",
+        "sampler": "m1-d1-v1",
+        "solver": "0.51.5-iib.1",
+        "solver_sha256": "4d862cb88ea09bc9774c51f3125666f0f700d051e09dfa18acf9c8a580877eee"
+      },
+      "model_sha256": "6ad57fb9dd5c52b75389152ab488b96a099c274b4649b70ad204754ae51a854f",
+      "stats": {
+        "actor_gradient": 0.08278468996286392,
+        "actor_loss": 7.864046335220337,
+        "advantage": {
+          "deviation": 0.003972847082398173,
+          "maximum": 0.48685909672216937,
+          "mean": 0.4828862496397712,
+          "minimum": 0.478913402557373,
+          "positive": 2
+        },
+        "choice_decisions": 0,
+        "critic_gradient_after_clip": 0.8583136200904846,
+        "critic_loss": 0.7964857518672943,
+        "entropy_sum_per_episode": 16.261178970336914,
+        "logp_error": 0.0,
+        "model_sha256": "6ad57fb9dd5c52b75389152ab488b96a099c274b4649b70ad204754ae51a854f",
+        "parameter_delta": 0.006008148193359375,
+        "qualified": 2,
+        "steps": 21,
+        "terminal_counts": {
+          "predicted_win": 2
+        },
+        "total_gradient_before_clip": 0.9216865301132202
+      },
+      "update": 2
+    }
+  ],
+  "regression": {
+    "passed": 162,
+    "skipped": 1,
+    "targeted_passed": 19,
+    "full_runs_completed": 25
+  }
+}
