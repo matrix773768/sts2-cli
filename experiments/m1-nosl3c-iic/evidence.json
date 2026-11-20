@@ -1,0 +1,1136 @@
+{
+  "schema": "sts2.nosl.iic.evidence.v1",
+  "engine": {
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+    "coreclr": "9.0.7",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "headless_sha256": "de7548b074795b741a52009984776bda4d64d611eff66208dfb43c3b4bd772bb",
+    "native_identity": "95d873313a1f0ae1d039ef49248134363d35fe47560a5d2f1e39501402603bd5",
+    "policy": "M1-F2-discard-v1",
+    "sampler": "m1-d1-v1",
+    "solver": "0.51.5-iib.1",
+    "solver_sha256": "4d862cb88ea09bc9774c51f3125666f0f700d051e09dfa18acf9c8a580877eee"
+  },
+  "random_audit": {
+    "admissions": {
+      "admissible_predicted_win": 1,
+      "native_difference": 8,
+      "rule_risk": 2,
+      "unsupported": 9
+    },
+    "attempted": 20,
+    "attempts_per_second": 0.5912942540749254,
+    "audit_worker_seconds": 37.49634070019238,
+    "by_deck_card": [
+      {
+        "attempts": 1,
+        "card": "ACCURACY",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "ADAPTIVE_STRIKE",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "AGGRESSION",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "ALL_FOR_ONE",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "ARSENAL",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "ASSASSINATE",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "ASTRAL_PULSE",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 3,
+        "card": "BALL_LIGHTNING",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "BANSHEES_CRY",
+        "status": "rule_risk"
+      },
+      {
+        "attempts": 1,
+        "card": "BARRAGE",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "BEAM_CELL",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "BLACK_HOLE",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "BLADE_SYMPHONY",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "BLOOD_WALL",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "BODYGUARD",
+        "status": "rule_risk"
+      },
+      {
+        "attempts": 1,
+        "card": "BOMBARDMENT",
+        "status": "admissible_predicted_win"
+      },
+      {
+        "attempts": 1,
+        "card": "BOOT_SEQUENCE",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "BORROWED_TIME",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "BOUNCING_FLASK",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "BULK_UP",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "BULWARK",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "BUNDLE_OF_JOY",
+        "status": "admissible_predicted_win"
+      },
+      {
+        "attempts": 1,
+        "card": "CALCULATED_GAMBLE",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "CALCULATED_GAMBLE",
+        "status": "rule_risk"
+      },
+      {
+        "attempts": 1,
+        "card": "CASCADE",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "CELESTIAL_MIGHT",
+        "status": "admissible_predicted_win"
+      },
+      {
+        "attempts": 1,
+        "card": "CLEANSE",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "CLOAK_OF_STARS",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "COMET",
+        "status": "admissible_predicted_win"
+      },
+      {
+        "attempts": 1,
+        "card": "COMPACT",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "COMPILE_DRIVER",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "CONQUEROR",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "CRUSH_UNDER",
+        "status": "admissible_predicted_win"
+      },
+      {
+        "attempts": 1,
+        "card": "CRUSH_UNDER",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "DAGGER_THROW",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "DANSE_MACABRE",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "DARKNESS",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "DARK_EMBRACE",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "DEFEND_DEFECT",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "DEFEND_REGENT",
+        "status": "admissible_predicted_win"
+      },
+      {
+        "attempts": 1,
+        "card": "DEFEND_REGENT",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "DEFILE",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "DOUBLE_ENERGY",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "DRUM_OF_BATTLE",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "DYING_STAR",
+        "status": "admissible_predicted_win"
+      },
+      {
+        "attempts": 1,
+        "card": "ECHO_FORM",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 2,
+        "card": "ENERGY_SURGE",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "ENFEEBLING_TOUCH",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "ENVENOM",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 3,
+        "card": "EVIL_EYE",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "FAN_OF_KNIVES",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "FEAR",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "FERAL",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "FIEND_FIRE",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "FIGHT_ME",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "FIGHT_THROUGH",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "FIGHT_THROUGH",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "FLATTEN",
+        "status": "rule_risk"
+      },
+      {
+        "attempts": 1,
+        "card": "FOOTWORK",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "FORBIDDEN_GRIMOIRE",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "FOREGONE_CONCLUSION",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "FTL",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "FUSION",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "GENETIC_ALGORITHM",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "GENETIC_ALGORITHM",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "GLIMMER",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "GLOW",
+        "status": "admissible_predicted_win"
+      },
+      {
+        "attempts": 1,
+        "card": "GRAVE_WARDEN",
+        "status": "rule_risk"
+      },
+      {
+        "attempts": 1,
+        "card": "GUARDS",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "GUIDING_STAR",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "HAMMER_TIME",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "HAND_TRICK",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "HELIX_DRILL",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "HEMOKINESIS",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "HIBERNATE",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "HIGH_FIVE",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 2,
+        "card": "HOTFIX",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 2,
+        "card": "IGNITION",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "IMITATION_LEARNING",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 2,
+        "card": "ITERATION",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "JUGGERNAUT",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "JUGGLING",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "KNIFE_TRAP",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "LARGESSE",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 2,
+        "card": "LEAP",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "LEGION_OF_BONE",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "LEG_SWEEP",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "LETHALITY",
+        "status": "rule_risk"
+      },
+      {
+        "attempts": 1,
+        "card": "LOOP",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 2,
+        "card": "LOOP",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "LUNAR_BLAST",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 2,
+        "card": "MACHINE_LEARNING",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "MANIFEST_AUTHORITY",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "MEMENTO_MORI",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "MISERY",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "MISERY",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "NECRO_MASTERY",
+        "status": "rule_risk"
+      },
+      {
+        "attempts": 1,
+        "card": "NO_ESCAPE",
+        "status": "rule_risk"
+      },
+      {
+        "attempts": 1,
+        "card": "OFFERING",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "OVERCLOCK",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "PALE_BLUE_DOT",
+        "status": "admissible_predicted_win"
+      },
+      {
+        "attempts": 1,
+        "card": "PARSE",
+        "status": "rule_risk"
+      },
+      {
+        "attempts": 1,
+        "card": "PATTER",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "PHOTON_CUT",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "POISONED_STAB",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "POKE",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "POMMEL_STRIKE",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "QUASAR",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "RATTLE",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "REAPER_FORM",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "REBOOT",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "REFRACT",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "RESONANCE",
+        "status": "admissible_predicted_win"
+      },
+      {
+        "attempts": 1,
+        "card": "RIGHT_HAND_HAND",
+        "status": "rule_risk"
+      },
+      {
+        "attempts": 1,
+        "card": "ROCKET_PUNCH",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "ROYALTIES",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "SECOND_WIND",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "SHADOW_SHIELD",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "SHARED_FATE",
+        "status": "rule_risk"
+      },
+      {
+        "attempts": 1,
+        "card": "SHINING_STRIKE",
+        "status": "admissible_predicted_win"
+      },
+      {
+        "attempts": 1,
+        "card": "SHINING_STRIKE",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "SLEIGHT_OF_FLESH",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "SLICE",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "SNAKEBITE",
+        "status": "rule_risk"
+      },
+      {
+        "attempts": 1,
+        "card": "SNAP",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "SOULBOUND",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "SPINNER",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "SPINNER",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "SQUEEZE",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "STAMPEDE",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "STARDUST",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "STOKE",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "STONE_ARMOR",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "STRIKE_DEFECT",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "STRIKE_NECROBINDER",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "STRIKE_REGENT",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "STRIKE_SILENT",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "SUBROUTINE",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "SUMMON_FORTH",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "SUNDER",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "SUPERCRITICAL",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "SUPERMASSIVE",
+        "status": "admissible_predicted_win"
+      },
+      {
+        "attempts": 1,
+        "card": "SUPERMASSIVE",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "SWORD_BOOMERANG",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "SYNTHESIS",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "TEMPEST",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "TERRAFORMING",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "THE_SEALED_THRONE",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "TRANSFIGURE",
+        "status": "rule_risk"
+      },
+      {
+        "attempts": 2,
+        "card": "TRUE_GRIT",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 2,
+        "card": "TURBO",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "TYRANNY",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "UNDEATH",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "UNLEASH",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "UNRELENTING",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "UNTOUCHABLE",
+        "status": "rule_risk"
+      },
+      {
+        "attempts": 1,
+        "card": "UP_MY_SLEEVE",
+        "status": "rule_risk"
+      },
+      {
+        "attempts": 1,
+        "card": "VENERATE",
+        "status": "admissible_predicted_win"
+      },
+      {
+        "attempts": 1,
+        "card": "VENERATE",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "VOLTAIC",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "WELL_LAID_PLANS",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "WHITE_NOISE",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "WISP",
+        "status": "native_difference"
+      },
+      {
+        "attempts": 1,
+        "card": "WRAITH_FORM",
+        "status": "rule_risk"
+      },
+      {
+        "attempts": 1,
+        "card": "WROUGHT_IN_WAR",
+        "status": "unsupported"
+      },
+      {
+        "attempts": 1,
+        "card": "ZAP",
+        "status": "native_difference"
+      }
+    ],
+    "by_group": {
+      "AXEBOTS_NORMAL": {
+        "unsupported": 1
+      },
+      "CORPSE_SLUGS_WEAK": {
+        "rule_risk": 1
+      },
+      "DEVOTED_SCULPTOR_WEAK": {
+        "native_difference": 1
+      },
+      "Defect": {
+        "native_difference": 1,
+        "unsupported": 4
+      },
+      "EXOSKELETONS_NORMAL": {
+        "unsupported": 1
+      },
+      "FLYCONID_NORMAL": {
+        "admissible_predicted_win": 1
+      },
+      "FOGMOG_NORMAL": {
+        "native_difference": 1,
+        "unsupported": 1
+      },
+      "Ironclad": {
+        "native_difference": 3
+      },
+      "LIVING_FOG_NORMAL": {
+        "native_difference": 2
+      },
+      "LOUSE_PROGENITOR_NORMAL": {
+        "unsupported": 1
+      },
+      "NIBBITS_WEAK": {
+        "rule_risk": 1,
+        "unsupported": 1
+      },
+      "Necrobinder": {
+        "native_difference": 2,
+        "rule_risk": 1,
+        "unsupported": 1
+      },
+      "Regent": {
+        "admissible_predicted_win": 1,
+        "native_difference": 1,
+        "unsupported": 3
+      },
+      "SEAPUNK_WEAK": {
+        "unsupported": 1
+      },
+      "SEWER_CLAM_NORMAL": {
+        "native_difference": 1,
+        "unsupported": 1
+      },
+      "SLITHERING_STRANGLER_NORMAL": {
+        "native_difference": 1
+      },
+      "SPINY_TOAD_NORMAL": {
+        "native_difference": 1
+      },
+      "Silent": {
+        "native_difference": 1,
+        "rule_risk": 1,
+        "unsupported": 1
+      },
+      "THE_LOST_AND_FORGOTTEN_NORMAL": {
+        "native_difference": 1
+      },
+      "TWO_TAILED_RATS_NORMAL": {
+        "unsupported": 1
+      },
+      "VINE_SHAMBLER_NORMAL": {
+        "unsupported": 1
+      }
+    },
+    "completed": 11,
+    "constructed": 20,
+    "optimizer": {},
+    "predictions": {
+      "death": 6,
+      "predicted_win": 3,
+      "rule_risk": 2,
+      "unsupported": 9
+    },
+    "seconds": 33.82410679990426,
+    "update": 1
+  },
+  "coverage_sha256": "1b31e88f113c10a5ba808326211c6e2507b16df0333ca36eefd5265fa1b76d73",
+  "reasons": {
+    "Unqualified card costs/target type: AllAllies, stars=0": 3,
+    "Unqualified card costs/target type: AnyAlly, stars=0": 4,
+    "enemy_stage_death_boundary": 4,
+    "None": 1,
+    "admissible_predicted_win": 1,
+    "E3_ENEMY_SIDE_TERMINAL": 2,
+    "continuation_difference": 4,
+    "PendingChoice": 1
+  },
+  "training_updates": [
+    {
+      "admissions": {
+        "admissible_predicted_win": 2
+      },
+      "attempted": 2,
+      "attempts_per_second": 0.24768048770783618,
+      "audit_worker_seconds": 9.77978129987605,
+      "by_deck_card": [
+        {
+          "attempts": 1,
+          "card": "ACROBATICS",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "BURNING_PACT",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_IRONCLAD",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_SILENT",
+          "status": "admissible_predicted_win"
+        }
+      ],
+      "by_group": {
+        "Ironclad": {
+          "admissible_predicted_win": 1
+        },
+        "SHRINKER_BEETLE_WEAK": {
+          "admissible_predicted_win": 2
+        },
+        "Silent": {
+          "admissible_predicted_win": 1
+        }
+      },
+      "completed": 2,
+      "constructed": 2,
+      "optimizer": {
+        "actor_gradient": 0.06400703638792038,
+        "actor_loss": 9.651850461959839,
+        "advantage": {
+          "deviation": 0.007439923286437999,
+          "maximum": 0.5357959121465683,
+          "mean": 0.5283559888601304,
+          "minimum": 0.5209160655736923,
+          "positive": 2
+        },
+        "critic_gradient_after_clip": 0.8113093972206116,
+        "critic_loss": 0.8533497750759125,
+        "entropy_sum_per_episode": 18.345227241516113,
+        "logp_error": 0.0,
+        "model_sha256": "bd5c4c6b4f6d2fa476b989685f14c818a44fa316ad6452cdf7b677668c1faa6a",
+        "parameter_delta": 0.006000041961669922,
+        "qualified": 2,
+        "seconds": 0.15342239988967776,
+        "steps": 32,
+        "total_gradient_before_clip": 0.8614166378974915
+      },
+      "predictions": {
+        "predicted_win": 2
+      },
+      "seconds": 8.074919500155374,
+      "update": 1
+    },
+    {
+      "admissions": {
+        "admissible_predicted_win": 2
+      },
+      "attempted": 2,
+      "attempts_per_second": 0.3301151834609314,
+      "audit_worker_seconds": 7.65218469989486,
+      "by_deck_card": [
+        {
+          "attempts": 1,
+          "card": "ARMAMENTS",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "PREPARED",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_IRONCLAD",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_SILENT",
+          "status": "admissible_predicted_win"
+        }
+      ],
+      "by_group": {
+        "Ironclad": {
+          "admissible_predicted_win": 1
+        },
+        "SHRINKER_BEETLE_WEAK": {
+          "admissible_predicted_win": 2
+        },
+        "Silent": {
+          "admissible_predicted_win": 1
+        }
+      },
+      "completed": 2,
+      "constructed": 2,
+      "optimizer": {
+        "actor_gradient": 0.08278468996286392,
+        "actor_loss": 7.864046335220337,
+        "advantage": {
+          "deviation": 0.003972847082398173,
+          "maximum": 0.48685909672216937,
+          "mean": 0.4828862496397712,
+          "minimum": 0.478913402557373,
+          "positive": 2
+        },
+        "critic_gradient_after_clip": 0.8583136200904846,
+        "critic_loss": 0.7964857518672943,
+        "entropy_sum_per_episode": 16.261178970336914,
+        "logp_error": 0.0,
+        "model_sha256": "6ad57fb9dd5c52b75389152ab488b96a099c274b4649b70ad204754ae51a854f",
+        "parameter_delta": 0.006008148193359375,
+        "qualified": 2,
+        "seconds": 0.07769919978454709,
+        "steps": 21,
+        "total_gradient_before_clip": 0.9216865301132202
+      },
+      "predictions": {
+        "predicted_win": 2
+      },
+      "seconds": 6.058491399977356,
+      "update": 2
+    }
+  ],
+  "resume": {
+    "updates": 2,
+    "roots": 4,
+    "public_trajectories_match": true,
+    "model_adam_and_rng_match": true
+  },
+  "death": {
+    "route": "828654263e39f2e1b4551ee030b3e14b85d90ef189dab366888e98fa6a3537ed",
+    "reason": "enemy_stage_death_boundary",
+    "position": 17,
+    "matched": 17,
+    "native_callback_locked": false,
+    "terminal_fields": {
+      "hp": {
+        "prediction": 0,
+        "native": 0
+      },
+      "max_hp": {
+        "prediction": 75,
+        "native": 75
+      },
+      "energy": {
+        "prediction": 2,
+        "native": 2
+      },
+      "block": {
+        "prediction": 0,
+        "native": 0
+      }
+    }
+  },
+  "regression": {
+    "full_passed": 162,
+    "full_skipped": 1,
+    "nosl_passed": 19,
+    "f4_passed": 6,
+    "ls2a_passed": 7,
+    "ls2b_passed": 5,
+    "iib_public_equivalence": true,
+    "iia_complete_routes": 2
+  }
+}

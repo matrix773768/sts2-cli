@@ -1,0 +1,20 @@
+{
+  "initialization_seed": 5391,
+  "policy_seed": 3826819,
+  "learning_rate": 0.006,
+  "critic_weight": 1,
+  "entropy_weight": 0.008,
+  "grad_clip": 3,
+  "hp_weight": 0.12,
+  "schema": "sts2.nosl3c.interactive.no-resources.v3",
+  "action_cap": 128,
+  "audit_only": true,
+  "random": {
+    "seed": 4301,
+    "count": 20,
+    "deck_min": 5,
+    "deck_max": 14,
+    "upgrade_rate": 0.25,
+    "hp": null
+  }
+}
