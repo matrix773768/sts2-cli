@@ -1,0 +1,159 @@
+{
+  "schema": "sts2.nosl.coverage.v1",
+  "baseline": "fceb4c6",
+  "mechanisms": [
+    {
+      "mechanism": "ordinary_play_dynamic_energy",
+      "native": "supported",
+      "solver": "supported",
+      "nosl": "inherited",
+      "native_differential": "inherited",
+      "terminal_qualification": "fixture_only",
+      "reason": "Expand dynamic cost and card mutation fixtures."
+    },
+    {
+      "mechanism": "single_enemy_and_duplicate_cards",
+      "native": "supported",
+      "solver": "supported",
+      "nosl": "inherited",
+      "native_differential": "inherited",
+      "terminal_qualification": "fixture_only",
+      "reason": "Retain native combat identity privately and use per-menu instance indices."
+    },
+    {
+      "mechanism": "all_random_and_special_targets",
+      "native": "supported",
+      "solver": "partial",
+      "nosl": "partial",
+      "native_differential": "unverified",
+      "terminal_qualification": "unqualified",
+      "reason": "Separate alive and hittable enemies, compare replacements and implicit targets."
+    },
+    {
+      "mechanism": "hand_discard",
+      "native": "supported",
+      "solver": "supported",
+      "nosl": "inherited",
+      "native_differential": "inherited",
+      "terminal_qualification": "fixture_only",
+      "reason": "Historical Survivor replay covers repeated instances and singleton."
+    },
+    {
+      "mechanism": "public_discard_to_draw_top",
+      "native": "supported",
+      "solver": "supported",
+      "nosl": "implemented",
+      "native_differential": "passed",
+      "terminal_qualification": "passed_fixture",
+      "reason": "Headbutt fixture covers candidate order, singleton and full win."
+    },
+    {
+      "mechanism": "hand_exhaust_retain_upgrade_duplicate",
+      "native": "supported",
+      "solver": "partial",
+      "nosl": "unsupported",
+      "native_differential": "unverified",
+      "terminal_qualification": "unqualified",
+      "reason": "Verify selection timing and destination with the native callback."
+    },
+    {
+      "mechanism": "draw_pile_selection",
+      "native": "supported",
+      "solver": "partial",
+      "nosl": "unsupported",
+      "native_differential": "unverified",
+      "terminal_qualification": "unqualified",
+      "reason": "Expose only candidates revealed by the engine at a selection boundary."
+    },
+    {
+      "mechanism": "post_play_sequential_nested_choices",
+      "native": "supported",
+      "solver": "partial",
+      "nosl": "unsupported",
+      "native_differential": "unverified",
+      "terminal_qualification": "unqualified",
+      "reason": "Solver execution continuation exists; no per-layer public adapter."
+    },
+    {
+      "mechanism": "energy_x",
+      "native": "supported",
+      "solver": "supported",
+      "nosl": "implemented",
+      "native_differential": "passed_fixture",
+      "terminal_qualification": "unqualified",
+      "reason": "Whirlwind uses current energy; exact continuation matches an independent native process."
+    },
+    {
+      "mechanism": "fixed_star_cost",
+      "native": "supported",
+      "solver": "supported",
+      "nosl": "implemented",
+      "native_differential": "passed_fixture",
+      "terminal_qualification": "unqualified",
+      "reason": "Matched native Regent star gain followed by a fixed star cost play."
+    },
+    {
+      "mechanism": "star_x_and_other_special_costs",
+      "native": "supported",
+      "solver": "partial",
+      "nosl": "implemented_star_x_only",
+      "native_differential": "unverified",
+      "terminal_qualification": "unqualified",
+      "reason": "Star-X wire fields and model inputs are implemented; still need native validation and probes for other special costs."
+    },
+    {
+      "mechanism": "generation_copy_mutation_upgrade_temporary_state",
+      "native": "supported",
+      "solver": "partial",
+      "nosl": "partial",
+      "native_differential": "unverified",
+      "terminal_qualification": "unqualified",
+      "reason": "Need public overlays and native differential fixtures for generated instances."
+    },
+    {
+      "mechanism": "variable_multi_hit_and_rng",
+      "native": "supported",
+      "solver": "partial",
+      "nosl": "partial",
+      "native_differential": "inherited_fixture_only",
+      "terminal_qualification": "unqualified",
+      "reason": "Use matched RNG streams and verify each realized result."
+    },
+    {
+      "mechanism": "enemy_hittability_replacement_summon_death_triggers",
+      "native": "supported",
+      "solver": "partial",
+      "nosl": "unsupported",
+      "native_differential": "unverified",
+      "terminal_qualification": "unqualified",
+      "reason": "Alive unhittable enemies still cause an explicit boundary."
+    },
+    {
+      "mechanism": "end_turn_and_normal_terminal",
+      "native": "supported",
+      "solver": "partial",
+      "nosl": "inherited",
+      "native_differential": "passed_fixture",
+      "terminal_qualification": "passed_fixture",
+      "reason": "Headbutt route matches native locked win; death qualification is inherited only."
+    },
+    {
+      "mechanism": "e3_enemy_side_terminal",
+      "native": "supported",
+      "solver": "known_difference",
+      "nosl": "rule_risk",
+      "native_differential": "historical_difference",
+      "terminal_qualification": "unqualified",
+      "reason": "Match native Y and AttackStarts counter windows."
+    },
+    {
+      "mechanism": "act3_five_roles_mixed_upgrades_41_cards",
+      "native": "constructed",
+      "solver": "unverified",
+      "nosl": "construction_only",
+      "native_differential": "root_only",
+      "terminal_qualification": "unqualified",
+      "reason": "Five native GLORY/AXEBOTS_NORMAL roots, no complete trajectories."
+    }
+  ]
+}

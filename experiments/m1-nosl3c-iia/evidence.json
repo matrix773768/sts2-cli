@@ -1,0 +1,197 @@
+{
+  "schema": "sts2.nosl.iia.qualification.v1",
+  "versions": {
+    "sampler": "m1-d1-v1",
+    "policy": "M1-F2-discard-v1",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "solver_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13",
+    "solver": "0.51.5",
+    "headless_sha256": "aebfcf0f0ec3c0a57a97be738b11dc14a9b70fc0b91f89a19509b71210c5833d",
+    "coreclr": "9.0.7",
+    "native_identity": "6fc1f629e237f45210eceb26f0bae527c77fe13bbaefb334940dae7f4987b174",
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3"
+  },
+  "complete_routes": [
+    {
+      "actions": 9,
+      "selected_discard_index": 0,
+      "matched_native_prefixes": 9,
+      "feedback": {
+        "status": "predicted_win",
+        "reason": null,
+        "evidence": "prediction_only",
+        "eligible": true,
+        "solver_gap_count": 2,
+        "actions": 9,
+        "replays": 9,
+        "observation": {
+          "turn": 3,
+          "hp": 73,
+          "max_hp": 80,
+          "block": 0,
+          "energy": 2,
+          "potions": [
+            null,
+            null,
+            null
+          ]
+        }
+      },
+      "native_gold": 99,
+      "native_gold_match": true,
+      "logp_replay_match": true
+    },
+    {
+      "actions": 9,
+      "selected_discard_index": 1,
+      "matched_native_prefixes": 9,
+      "feedback": {
+        "status": "predicted_win",
+        "reason": null,
+        "evidence": "prediction_only",
+        "eligible": true,
+        "solver_gap_count": 2,
+        "actions": 9,
+        "replays": 9,
+        "observation": {
+          "turn": 3,
+          "hp": 73,
+          "max_hp": 80,
+          "block": 0,
+          "energy": 2,
+          "potions": [
+            null,
+            null,
+            null
+          ]
+        }
+      },
+      "native_gold": 99,
+      "native_gold_match": true,
+      "logp_replay_match": true
+    }
+  ],
+  "cost_probes": [
+    {
+      "mechanism": "energy_x",
+      "steps": [
+        {
+          "card": "WHIRLWIND",
+          "action": {
+            "index": 3,
+            "kind": "play_card",
+            "card": 3,
+            "target": null,
+            "choice": null,
+            "potion": null,
+            "cost": 3,
+            "preview": null,
+            "choice_zone": null,
+            "star_cost": 0,
+            "energy_x": true,
+            "star_x": false
+          },
+          "stars_before": 0,
+          "native_stamp_match": true
+        }
+      ]
+    },
+    {
+      "mechanism": "fixed_stars",
+      "steps": [
+        {
+          "card": "VENERATE",
+          "action": {
+            "index": 3,
+            "kind": "play_card",
+            "card": 3,
+            "target": null,
+            "choice": null,
+            "potion": null,
+            "cost": 1,
+            "preview": null,
+            "choice_zone": null,
+            "star_cost": 0,
+            "energy_x": false,
+            "star_x": false
+          },
+          "stars_before": 0,
+          "native_stamp_match": true
+        },
+        {
+          "card": "FALLING_STAR",
+          "action": {
+            "index": 3,
+            "kind": "play_card",
+            "card": 3,
+            "target": 0,
+            "choice": null,
+            "potion": null,
+            "cost": 0,
+            "preview": null,
+            "choice_zone": null,
+            "star_cost": 2,
+            "energy_x": false,
+            "star_x": false
+          },
+          "stars_before": 2,
+          "native_stamp_match": true
+        }
+      ]
+    }
+  ],
+  "native_act3_construction": [
+    {
+      "character": "Ironclad",
+      "act": 3,
+      "act_variant": "GLORY",
+      "encounter": "AXEBOTS_NORMAL",
+      "deck_count": 41,
+      "native_constructed": true
+    },
+    {
+      "character": "Silent",
+      "act": 3,
+      "act_variant": "GLORY",
+      "encounter": "AXEBOTS_NORMAL",
+      "deck_count": 41,
+      "native_constructed": true
+    },
+    {
+      "character": "Defect",
+      "act": 3,
+      "act_variant": "GLORY",
+      "encounter": "AXEBOTS_NORMAL",
+      "deck_count": 41,
+      "native_constructed": true
+    },
+    {
+      "character": "Regent",
+      "act": 3,
+      "act_variant": "GLORY",
+      "encounter": "AXEBOTS_NORMAL",
+      "deck_count": 41,
+      "native_constructed": true
+    },
+    {
+      "character": "Necrobinder",
+      "act": 3,
+      "act_variant": "GLORY",
+      "encounter": "AXEBOTS_NORMAL",
+      "deck_count": 41,
+      "native_constructed": true
+    }
+  ],
+  "hidden_equivalence": {
+    "hidden_order_differs": true,
+    "observations_equal": true,
+    "probabilities_equal": true,
+    "legal_actions": 10
+  },
+  "raw_evidence_sha256": {
+    "qualification.json": "32ad2ae7b49981060877809cbfcf740ccae95834ff7de5de005637b6cb04c61a",
+    "roots.json": "f1af6dfe09bd3e75b234f05ce53cb70ddc94b818f36f5fdceb0b40664e01881d",
+    "costs.json": "c61c2254ff3c73294a4aa35658bebb772bf82be83daf000e7793403290380bd6"
+  }
+}
