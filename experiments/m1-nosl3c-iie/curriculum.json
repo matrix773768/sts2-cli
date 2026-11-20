@@ -1,0 +1,98 @@
+{
+  "workers": 2,
+  "microbatch": 4,
+  "initialization_seed": 5391,
+  "policy_seed": 3826819,
+  "learning_rate": 0.001,
+  "critic_weight": 0.1,
+  "entropy_weight": 0.008,
+  "grad_clip": 3,
+  "action_cap": 128,
+  "audit_mode": "strict",
+  "objective": {
+    "mode": "mixed",
+    "kappa": 10,
+    "linear_weight": 0.05,
+    "win_bonus": 100,
+    "death_penalty": 50,
+    "turn_cost": 0.2
+  },
+  "stages": [
+    {
+      "characters": [
+        "Ironclad",
+        "Silent",
+        "Defect",
+        "Regent",
+        "Necrobinder"
+      ],
+      "acts": [
+        1,
+        2,
+        3
+      ],
+      "updates": 12,
+      "trajectories_per_root": 1,
+      "distribution": {
+        "seed": 4301,
+        "count": 24,
+        "deck_min": 5,
+        "deck_max": 8,
+        "upgrade_rate": 0.4,
+        "hp": 999,
+        "max_hp": 999
+      }
+    },
+    {
+      "characters": [
+        "Ironclad",
+        "Silent",
+        "Defect",
+        "Regent",
+        "Necrobinder"
+      ],
+      "acts": [
+        1,
+        2,
+        3
+      ],
+      "updates": 12,
+      "trajectories_per_root": 1,
+      "distribution": {
+        "seed": 4302,
+        "count": 24,
+        "deck_min": 5,
+        "deck_max": 8,
+        "upgrade_rate": 0.4,
+        "hp": 200,
+        "max_hp": 200
+      }
+    },
+    {
+      "characters": [
+        "Ironclad",
+        "Silent",
+        "Defect",
+        "Regent",
+        "Necrobinder"
+      ],
+      "acts": [
+        1,
+        2,
+        3
+      ],
+      "updates": 12,
+      "trajectories_per_root": 1,
+      "distribution": {
+        "seed": 4303,
+        "count": 24,
+        "deck_min": 5,
+        "deck_max": 8,
+        "upgrade_rate": 0.4,
+        "hp": null,
+        "max_hp": null
+      }
+    }
+  ],
+  "resident_auditor_limit": 4
+}

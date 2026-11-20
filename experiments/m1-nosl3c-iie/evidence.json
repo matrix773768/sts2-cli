@@ -1,0 +1,1279 @@
+{
+  "schema": "sts2.nosl.iie.evidence.v1",
+  "death": {
+    "status": "admissible_death",
+    "boundaries": 2,
+    "native_terminal_stamp": "4201cb599681cdfaf06f3f1de85e7043a444838673465efd3fd78f2a2c576b1a",
+    "terminal_contract": "sts2.nosl.iie.exact-terminal.v1",
+    "versions": {
+      "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+      "coreclr": "9.0.7",
+      "game": "0.113.1/26660232",
+      "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+      "headless_sha256": "81b30f3f95a890dc563e198eceef698995260e7a3e78439d4f778a508681edc2",
+      "native_identity": "e77655befecb5ae06cf395c6c3348d1b8a5aa51c67734017593b0fd6bad50f96",
+      "policy": "M1-F2-discard-v1",
+      "sampler": "m1-d1-v1",
+      "solver": "0.51.5-iid.1",
+      "solver_sha256": "6d36540518549768f66cc6f44bdf6c20ab44a7243158ba5c8abc3d7f13030293"
+    },
+    "spec": {
+      "act": 1,
+      "act_variant": "OVERGROWTH",
+      "ascension": 0,
+      "character": "Ironclad",
+      "deck": [
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        }
+      ],
+      "encounter": "SHRINKER_BEETLE_WEAK",
+      "hp": 1,
+      "max_hp": 80,
+      "potions": [],
+      "relics": [],
+      "schema": 3,
+      "seed": "IIEDEATH"
+    },
+    "native_victory": false
+  },
+  "negative": {
+    "corrupted_prefix_status": "native_difference",
+    "resource_mismatch_rejected": true
+  },
+  "frozen_death": {
+    "status": "native_difference",
+    "reason": "enemy_stage_death_boundary",
+    "position": 17,
+    "boundaries": 17
+  },
+  "updates": [
+    {
+      "admissions": {
+        "admissible_predicted_win": 4,
+        "native_difference": 1
+      },
+      "attempted": 5,
+      "attempts_per_second": 0.24158782496234735,
+      "audit_worker_seconds": 19.140806099865586,
+      "by_deck_card": [
+        {
+          "attempts": 2,
+          "card": "DEFEND_DEFECT",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "DEFEND_IRONCLAD",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "DEFEND_REGENT",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "DEFEND_REGENT",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 2,
+          "card": "STRIKE_DEFECT",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_IRONCLAD",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_REGENT",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_REGENT",
+          "status": "native_difference"
+        }
+      ],
+      "by_group": {
+        "CULTISTS_NORMAL": {
+          "admissible_predicted_win": 1
+        },
+        "Defect": {
+          "admissible_predicted_win": 2
+        },
+        "Ironclad": {
+          "admissible_predicted_win": 1
+        },
+        "MAWLER_NORMAL": {
+          "admissible_predicted_win": 1
+        },
+        "MYTES_NORMAL": {
+          "admissible_predicted_win": 1
+        },
+        "NIBBITS_NORMAL": {
+          "native_difference": 1
+        },
+        "Regent": {
+          "admissible_predicted_win": 1,
+          "native_difference": 1
+        },
+        "SCROLLS_OF_BITING_WEAK": {
+          "admissible_predicted_win": 1
+        }
+      },
+      "by_max_hp": {
+        "999": {
+          "admissible_predicted_win": 4,
+          "attempted": 5,
+          "native_difference": 1,
+          "prediction_death": 1,
+          "prediction_predicted_win": 4
+        }
+      },
+      "cold_roots": 5,
+      "complete_per_second": 0.24158782496234735,
+      "completed": 5,
+      "constructed": 5,
+      "decisions": 286,
+      "decisions_per_second": 13.818823587846268,
+      "hot_roots": 0,
+      "optimizer": {
+        "actor_loss": 12554.341625213623,
+        "critic_loss": 12711.429445266724,
+        "decisions": 159,
+        "entropy": 247.6989016532898,
+        "grad_norm": 24.485952377319336,
+        "logp_error": 2.384185791015625e-07,
+        "model_sha256": "a62ee49b2923a13417d9e8cc7ceece7ec94ac913daae902633aefc029b563e79",
+        "qualified": 4,
+        "return_max": 74.77125651845654,
+        "return_min": 37.441595047499355,
+        "seconds": 0.4742498998530209
+      },
+      "predictions": {
+        "death": 1,
+        "predicted_win": 4
+      },
+      "resident_audits": 3,
+      "retirements": {
+        "closed": 1,
+        "settled": 4
+      },
+      "seconds": 20.696407200070098,
+      "strict_per_second": 0.19327025996987787,
+      "update": 1
+    },
+    {
+      "admissions": {
+        "admissible_predicted_win": 3,
+        "native_difference": 2
+      },
+      "attempted": 5,
+      "attempts_per_second": 0.24577317572009072,
+      "audit_worker_seconds": 19.7039502998814,
+      "by_deck_card": [
+        {
+          "attempts": 1,
+          "card": "DEFEND_IRONCLAD",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "DEFEND_NECROBINDER",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 2,
+          "card": "DEFEND_REGENT",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "DEFEND_SILENT",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_IRONCLAD",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_NECROBINDER",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 2,
+          "card": "STRIKE_REGENT",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_SILENT",
+          "status": "native_difference"
+        }
+      ],
+      "by_group": {
+        "Ironclad": {
+          "admissible_predicted_win": 1
+        },
+        "NIBBITS_NORMAL": {
+          "admissible_predicted_win": 1
+        },
+        "NIBBITS_WEAK": {
+          "admissible_predicted_win": 1
+        },
+        "Necrobinder": {
+          "native_difference": 1
+        },
+        "Regent": {
+          "admissible_predicted_win": 2
+        },
+        "SHRINKER_BEETLE_WEAK": {
+          "admissible_predicted_win": 1
+        },
+        "SLIMES_NORMAL": {
+          "native_difference": 1
+        },
+        "Silent": {
+          "native_difference": 1
+        },
+        "THE_OBSCURA_NORMAL": {
+          "native_difference": 1
+        }
+      },
+      "by_max_hp": {
+        "200": {
+          "admissible_predicted_win": 3,
+          "attempted": 5,
+          "native_difference": 2,
+          "prediction_death": 2,
+          "prediction_predicted_win": 3
+        }
+      },
+      "cold_roots": 5,
+      "complete_per_second": 0.24577317572009072,
+      "completed": 5,
+      "constructed": 5,
+      "decisions": 211,
+      "decisions_per_second": 10.371628015387827,
+      "hot_roots": 0,
+      "optimizer": {
+        "actor_loss": 10777.85929107666,
+        "critic_loss": 18776.556324005127,
+        "decisions": 110,
+        "entropy": 160.0916464328766,
+        "grad_norm": 44.35419464111328,
+        "logp_error": 1.1920928955078125e-07,
+        "model_sha256": "781e25ef4bc04fb8a68cd5c4957d61d5b964f545b5b75e36f24ef5ad9f975f07",
+        "qualified": 3,
+        "return_max": 95.63527763378788,
+        "return_min": 56.848949040891604,
+        "seconds": 0.49048479995690286
+      },
+      "predictions": {
+        "death": 2,
+        "predicted_win": 3
+      },
+      "resident_audits": 2,
+      "retirements": {
+        "closed": 2,
+        "settled": 3
+      },
+      "seconds": 20.34396139997989,
+      "strict_per_second": 0.14746390543205443,
+      "update": 2
+    },
+    {
+      "admissions": {
+        "admissible_death": 1,
+        "admissible_predicted_win": 2,
+        "native_difference": 2
+      },
+      "attempted": 5,
+      "attempts_per_second": 0.2590145856403361,
+      "audit_worker_seconds": 17.797067399835214,
+      "by_deck_card": [
+        {
+          "attempts": 1,
+          "card": "DEFEND_NECROBINDER",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "DEFEND_NECROBINDER",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "DEFEND_REGENT",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "DEFEND_SILENT",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "DEFEND_SILENT",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_NECROBINDER",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_NECROBINDER",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_REGENT",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_SILENT",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_SILENT",
+          "status": "native_difference"
+        }
+      ],
+      "by_group": {
+        "GREMLIN_MERC_NORMAL": {
+          "native_difference": 1
+        },
+        "MAWLER_NORMAL": {
+          "admissible_predicted_win": 1
+        },
+        "MYTES_NORMAL": {
+          "admissible_death": 1
+        },
+        "NIBBITS_WEAK": {
+          "admissible_predicted_win": 1
+        },
+        "Necrobinder": {
+          "admissible_predicted_win": 1,
+          "native_difference": 1
+        },
+        "PUNCH_CONSTRUCT_NORMAL": {
+          "native_difference": 1
+        },
+        "Regent": {
+          "admissible_predicted_win": 1
+        },
+        "Silent": {
+          "admissible_death": 1,
+          "native_difference": 1
+        }
+      },
+      "by_max_hp": {
+        "66": {
+          "admissible_predicted_win": 1,
+          "attempted": 2,
+          "native_difference": 1,
+          "prediction_death": 1,
+          "prediction_predicted_win": 1
+        },
+        "70": {
+          "admissible_death": 1,
+          "attempted": 2,
+          "native_difference": 1,
+          "prediction_death": 2
+        },
+        "75": {
+          "admissible_predicted_win": 1,
+          "attempted": 1,
+          "prediction_predicted_win": 1
+        }
+      },
+      "cold_roots": 5,
+      "complete_per_second": 0.2590145856403361,
+      "completed": 5,
+      "constructed": 5,
+      "decisions": 114,
+      "decisions_per_second": 5.905532552599663,
+      "hot_roots": 0,
+      "optimizer": {
+        "actor_loss": 847.9263000488281,
+        "critic_loss": 20523.026733398438,
+        "decisions": 48,
+        "entropy": 68.22114109992981,
+        "grad_norm": 27.19934844970703,
+        "logp_error": 2.384185791015625e-07,
+        "model_sha256": "4095f6fca7be4e1b93d86dc068ac8e13cbe933243e9aec2fcc3dd606fde0efb0",
+        "qualified": 3,
+        "return_max": 90.22090877064896,
+        "return_min": -75.49441541679836,
+        "seconds": 0.1286510000936687
+      },
+      "predictions": {
+        "death": 3,
+        "predicted_win": 2
+      },
+      "resident_audits": 2,
+      "retirements": {
+        "closed": 3,
+        "settled": 2
+      },
+      "seconds": 19.303932199953124,
+      "strict_per_second": 0.15540875138420165,
+      "update": 3
+    }
+  ],
+  "full_pool_audit": [
+    {
+      "admissions": {
+        "admissible_predicted_win": 3,
+        "native_difference": 1,
+        "unsupported": 1
+      },
+      "attempted": 5,
+      "attempts_per_second": 0.3453771980405742,
+      "audit_worker_seconds": 17.964076600037515,
+      "by_deck_card": [
+        {
+          "attempts": 1,
+          "card": "ACCELERANT",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "ANTICIPATE",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "BLADE_OF_INK",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "BULLET_TIME",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "BULLET_TIME",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "CELESTIAL_MIGHT",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "CHARGE",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 2,
+          "card": "CINDER",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "CLOAK_AND_DAGGER",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "COLOSSUS",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "CONFLAGRATION",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "DARK_EMBRACE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "DEMONIC_SHIELD",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "FIEND_FIRE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "FINISHER",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "FLICK_FLACK",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "FORGOTTEN_RITUAL",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "FURNACE",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "HAND_TRICK",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "HAVOC",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "HEADBUTT",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "HIDDEN_DAGGERS",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "INFERNAL_BLADE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "KNIFE_TRAP",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 2,
+          "card": "PERFECTED_STRIKE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "POISONED_STAB",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "PRIMAL_FORCE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "ROYALTIES",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "SPOILS_OF_BATTLE",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "STRANGLE",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "SURVIVOR",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "TRACKING",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "TYRANNY",
+          "status": "native_difference"
+        }
+      ],
+      "by_group": {
+        "BOWLBUGS_WEAK": {
+          "unsupported": 1
+        },
+        "Ironclad": {
+          "admissible_predicted_win": 2
+        },
+        "MYTES_NORMAL": {
+          "admissible_predicted_win": 1
+        },
+        "Regent": {
+          "native_difference": 1
+        },
+        "SHRINKER_BEETLE_WEAK": {
+          "admissible_predicted_win": 1
+        },
+        "Silent": {
+          "admissible_predicted_win": 1,
+          "unsupported": 1
+        },
+        "TURRET_OPERATOR_WEAK": {
+          "admissible_predicted_win": 1
+        },
+        "TWO_TAILED_RATS_NORMAL": {
+          "native_difference": 1
+        }
+      },
+      "by_max_hp": {
+        "999": {
+          "admissible_predicted_win": 3,
+          "attempted": 5,
+          "native_difference": 1,
+          "prediction_predicted_win": 4,
+          "prediction_unsupported": 1,
+          "unsupported": 1
+        }
+      },
+      "cold_roots": 5,
+      "complete_per_second": 0.2763017584324594,
+      "completed": 4,
+      "constructed": 5,
+      "decisions": 144,
+      "decisions_per_second": 9.946863303568538,
+      "hot_roots": 0,
+      "optimizer": {},
+      "predictions": {
+        "predicted_win": 4,
+        "unsupported": 1
+      },
+      "resident_audits": 0,
+      "retirements": {
+        "closed": 1,
+        "settled": 3
+      },
+      "seconds": 14.47692560008727,
+      "strict_per_second": 0.20722631882434453,
+      "update": 1
+    },
+    {
+      "admissions": {
+        "rule_risk": 1,
+        "unsupported": 4
+      },
+      "attempted": 5,
+      "attempts_per_second": 0.9478233303523044,
+      "audit_worker_seconds": 0.005747499642893672,
+      "by_deck_card": [
+        {
+          "attempts": 1,
+          "card": "ALIGNMENT",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "BEGONE",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "BIG_BANG",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "BUNDLE_OF_JOY",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "BURY",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "CALCIFY",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "CALCIFY",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "CAPTURE_SPIRIT",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "DEMESNE",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "DRAIN_POWER",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "FOREGONE_CONCLUSION",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "GLIMMER",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "GLIMPSE_BEYOND",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "HAMMER_TIME",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "HEIRLOOM_HAMMER",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "I_AM_INVINCIBLE",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "LARGESSE",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "MONARCHS_GAZE",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "MONOLOGUE",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "OBLIVION",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "PALE_BLUE_DOT",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "PARRY",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "PHOTON_CUT",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "PLOT",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "POKE",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "PULL_AGGRO",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "PULL_FROM_BELOW",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "PUTREFY",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "QUASAR",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "REAVE",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "REAVE",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "RESONANCE",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "SHROUD",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_REGENT",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "VOID_FORM",
+          "status": "unsupported"
+        }
+      ],
+      "by_group": {
+        "BOWLBUGS_NORMAL": {
+          "unsupported": 1
+        },
+        "EXOSKELETONS_WEAK": {
+          "rule_risk": 1
+        },
+        "LOUSE_PROGENITOR_NORMAL": {
+          "unsupported": 1
+        },
+        "Necrobinder": {
+          "rule_risk": 1,
+          "unsupported": 1
+        },
+        "Regent": {
+          "unsupported": 3
+        },
+        "SCROLLS_OF_BITING_WEAK": {
+          "unsupported": 1
+        },
+        "SLIMES_WEAK": {
+          "unsupported": 1
+        }
+      },
+      "by_max_hp": {
+        "200": {
+          "attempted": 5,
+          "prediction_rule_risk": 1,
+          "prediction_unsupported": 4,
+          "rule_risk": 1,
+          "unsupported": 4
+        }
+      },
+      "cold_roots": 5,
+      "complete_per_second": 0.18956466607046088,
+      "completed": 1,
+      "constructed": 5,
+      "decisions": 60,
+      "decisions_per_second": 11.373879964227653,
+      "hot_roots": 0,
+      "optimizer": {},
+      "predictions": {
+        "rule_risk": 1,
+        "unsupported": 4
+      },
+      "resident_audits": 0,
+      "retirements": {},
+      "seconds": 5.275244700023904,
+      "strict_per_second": 0.0,
+      "update": 2
+    },
+    {
+      "admissions": {
+        "admissible_death": 1,
+        "admissible_predicted_win": 1,
+        "native_difference": 2,
+        "unsupported": 1
+      },
+      "attempted": 5,
+      "attempts_per_second": 0.5629105700944125,
+      "audit_worker_seconds": 12.009240300627425,
+      "by_deck_card": [
+        {
+          "attempts": 1,
+          "card": "ANGER",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "BASH",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "BASH",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "BRAND",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "CHILD_OF_THE_STARS",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "CREATIVE_AI",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "CRUELTY",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "EVIL_EYE",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "EVIL_EYE",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "FUSION",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "HEMOKINESIS",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "INFERNAL_BLADE",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "LIGHTNING_ROD",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "MONOLOGUE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "PILLAR_OF_CREATION",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "RAGE",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "REFLECT",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "SECOND_WIND",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "SIGNAL_BOOST",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "SPINNER",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "SPITE",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "SPOILS_OF_BATTLE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_IRONCLAD",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_IRONCLAD",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "SWORD_BOOMERANG",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "SWORD_SAGE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "TAUNT",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "TEAR_ASUNDER",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "THUNDERCLAP",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "TREMBLE",
+          "status": "native_difference"
+        }
+      ],
+      "by_group": {
+        "BOWLBUGS_NORMAL": {
+          "native_difference": 1
+        },
+        "Defect": {
+          "native_difference": 1
+        },
+        "Ironclad": {
+          "admissible_death": 1,
+          "native_difference": 1,
+          "unsupported": 1
+        },
+        "LOUSE_PROGENITOR_NORMAL": {
+          "admissible_death": 1
+        },
+        "Regent": {
+          "admissible_predicted_win": 1
+        },
+        "SLUDGE_SPINNER_WEAK": {
+          "admissible_predicted_win": 1
+        },
+        "THIEVING_HOPPER_WEAK": {
+          "native_difference": 1,
+          "unsupported": 1
+        }
+      },
+      "by_max_hp": {
+        "75": {
+          "admissible_predicted_win": 1,
+          "attempted": 2,
+          "native_difference": 1,
+          "prediction_predicted_win": 2
+        },
+        "80": {
+          "admissible_death": 1,
+          "attempted": 3,
+          "native_difference": 1,
+          "prediction_death": 2,
+          "prediction_unsupported": 1,
+          "unsupported": 1
+        }
+      },
+      "cold_roots": 5,
+      "complete_per_second": 0.45032845607552996,
+      "completed": 4,
+      "constructed": 5,
+      "decisions": 69,
+      "decisions_per_second": 7.7681658673028915,
+      "hot_roots": 0,
+      "optimizer": {},
+      "predictions": {
+        "death": 2,
+        "predicted_win": 2,
+        "unsupported": 1
+      },
+      "resident_audits": 3,
+      "retirements": {
+        "closed": 3,
+        "settled": 1
+      },
+      "seconds": 8.882405599812046,
+      "strict_per_second": 0.22516422803776498,
+      "update": 3
+    }
+  ],
+  "choice_probe": [
+    {
+      "admissions": {
+        "admissible_predicted_win": 2
+      },
+      "attempted": 2,
+      "attempts_per_second": 0.3178967139663866,
+      "audit_worker_seconds": 7.7939117001369596,
+      "by_deck_card": [
+        {
+          "attempts": 1,
+          "card": "ACROBATICS",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "BURNING_PACT",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_IRONCLAD",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_SILENT",
+          "status": "admissible_predicted_win"
+        }
+      ],
+      "by_group": {
+        "Ironclad": {
+          "admissible_predicted_win": 1
+        },
+        "SHRINKER_BEETLE_WEAK": {
+          "admissible_predicted_win": 2
+        },
+        "Silent": {
+          "admissible_predicted_win": 1
+        }
+      },
+      "by_max_hp": {
+        "200": {
+          "admissible_predicted_win": 2,
+          "attempted": 2,
+          "prediction_predicted_win": 2
+        }
+      },
+      "cold_roots": 2,
+      "complete_per_second": 0.3178967139663866,
+      "completed": 2,
+      "constructed": 2,
+      "decisions": 32,
+      "decisions_per_second": 5.086347423462185,
+      "hot_roots": 0,
+      "optimizer": {
+        "actor_loss": 3132.4432678222656,
+        "critic_loss": 14707.871368408203,
+        "decisions": 32,
+        "entropy": 36.6904536485672,
+        "grad_norm": 30.552852630615234,
+        "logp_error": 1.1920928955078125e-07,
+        "model_sha256": "7b310011cb40e904ffcf019f9fadfce44ddd3f849a685ec1c763c881179e4cae",
+        "qualified": 2,
+        "return_max": 87.2138771133189,
+        "return_min": 84.56667180349821,
+        "seconds": 0.1188382999971509
+      },
+      "predictions": {
+        "predicted_win": 2
+      },
+      "resident_audits": 0,
+      "retirements": {
+        "settled": 2
+      },
+      "seconds": 6.291351599851623,
+      "strict_per_second": 0.3178967139663866,
+      "update": 1
+    }
+  ],
+  "choice_effects": {
+    "Discard": 6,
+    "Exhaust": 2
+  },
+  "numeric": {
+    "batched_logp_error": 2.384185791015625e-07,
+    "objectives": {
+      "actor_loss": 0.000102996826171875,
+      "critic_loss": 4.9591064453125e-05,
+      "entropy": 2.9802322387695312e-06,
+      "grad_norm": 0.0
+    },
+    "sample_probability_error": 1.4901161193847656e-08,
+    "sample_value_error": 1.4901161193847656e-08,
+    "scalar_logp_error": 0.0
+  },
+  "update_boundary_resume": {
+    "updates": 3,
+    "roots": 15,
+    "public_trajectories_match": true,
+    "model_adam_and_rng_match": true
+  },
+  "midbatch": {
+    "updates": 3,
+    "roots": 15,
+    "public_trajectories_match": true,
+    "model_adam_and_rng_match": true,
+    "committed_before_stop": 2,
+    "snapshot_before_stop": 0
+  },
+  "cold_control": {
+    "result": {
+      "updates": 3,
+      "roots": 15,
+      "public_trajectories_match": true,
+      "model_adam_and_rng_match": true
+    },
+    "wall_seconds": 65.27050570002757,
+    "parallel_resident_wall_seconds": 60.34430080000311,
+    "audit_worker_seconds": 65.76163160032593
+  },
+  "regressions": {
+    "full_passed": 162,
+    "full_skipped": 1,
+    "nosl": 19,
+    "f4": 6,
+    "ls2a": 7,
+    "ls2b": 5,
+    "independent_iia_iib_iic_iid": true
+  }
+}
