@@ -10,7 +10,9 @@
 
 ## 工程状态
 
-- 最新定向候选 `0.51.5-iii.4` 补全 Outrage 攻击后的同侧玩家克隆及弃牌堆落位。普通／升级正负例和三步冻结前缀均精确匹配。Outrage 风险消除，Battle Trance 原镜像缺口仍在。同根重采获严格败局，Underworld 回归通过。 [报告与复现](m1-nosl3c-iii4-outrage.md)
+- 最新定向候选 `0.51.5-iii.5` 补齐 Calcify。普通／升级的奥斯提伤害及玩家攻击对照精确匹配。两个冻结前缀均通过 Calcify，首个实际差异都在索引 12。Pull Aggro 旧提示保留。两根重采因 Legion of Bone／Glimpse Beyond 不支持拒绝，Outrage 回归通过。 [报告与复现](m1-nosl3c-iii5-calcify.md)
+
+- II-I.4 定向候选 `0.51.5-iii.4` 补全 Outrage 攻击后的同侧玩家克隆及弃牌堆落位。普通／升级正负例和三步冻结前缀均精确匹配。Outrage 风险消除，Battle Trance 原镜像缺口仍在。同根重采获严格败局，Underworld 回归通过。 [报告与复现](m1-nosl3c-iii4-outrage.md)
 
 - II-I.3 定向候选 `0.51.5-iii.3` 补齐 Underworld，普通／升级效果、伤害排除和敌侧回合清理精确匹配。II-D 两步冻结前缀通过，Underworld 风险消除，Sic ’Em 原镜像缺口仍在。同根重采获严格败局，Hibernate 回归通过。 [报告与复现](m1-nosl3c-iii3-underworld.md)
 

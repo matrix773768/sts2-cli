@@ -1,0 +1,2934 @@
+{
+  "build": {
+    "version": "0.51.5-iii.5",
+    "source_revision": "78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+    "patched_sha256": "346825435e88488a4f65e682ba2016e8d50ee9b9af16d8b103ee9b5bdaaba7d3",
+    "bridge_sha256": "529790e64614f2fbf0b48374eb80f1c6672511e706aa5bcde219f4f8f2bb4165",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "frozen_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13"
+  },
+  "engine": {
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+    "coreclr": "9.0.7",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "headless_sha256": "b3f8ce1d862bdb98000bfeb90d701239e50be17034739c5c2ed18e26716150f0",
+    "native_identity": "87baa84a2b2297eae588a6996727d719b6e299227d1770a44bef7836ebe8e06f",
+    "policy": "M1-F2-discard-v1",
+    "sampler": "m1-d1-v1",
+    "solver": "0.51.5-iii.5",
+    "solver_sha256": "346825435e88488a4f65e682ba2016e8d50ee9b9af16d8b103ee9b5bdaaba7d3"
+  },
+  "effects": {
+    "cases": [
+      {
+        "apply_calcify": false,
+        "frames": [
+          {
+            "action": "BODYGUARD",
+            "damage": 0,
+            "powers": "P=3:DIE_FOR_YOU_POWER=1/0[],",
+            "stamp": "da062beceba7031d06d077c82f91834f2165aa8eb4dbf047cc11967737e98b37"
+          },
+          {
+            "action": "POKE",
+            "damage": 6,
+            "powers": "P=3:DIE_FOR_YOU_POWER=1/0[],",
+            "stamp": "db6eaf3b73a048060d8795a9f37e1bf53955b7fa470981265a550a0b8ac97f46"
+          },
+          {
+            "action": "end_turn",
+            "damage": 0,
+            "powers": "P=3:DIE_FOR_YOU_POWER=1/0[],",
+            "stamp": "e49077ef209f1e372ba5419a021a3ab5b17131ef6f109793b50781e3ace48ccb"
+          },
+          {
+            "action": "STRIKE_NECROBINDER",
+            "damage": 6,
+            "powers": "P=3:DIE_FOR_YOU_POWER=1/0[],",
+            "stamp": "be5c9ee45d24e4e871b60ded5279058fee59d6d1f6a1eba565cc5595695c631a"
+          }
+        ],
+        "spec": {
+          "act": 1,
+          "act_variant": "OVERGROWTH",
+          "ascension": 0,
+          "character": "Necrobinder",
+          "deck": [
+            {
+              "id": "CALCIFY",
+              "upgrade": 0
+            },
+            {
+              "id": "BODYGUARD",
+              "upgrade": 0
+            },
+            {
+              "id": "POKE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_NECROBINDER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_NECROBINDER",
+              "upgrade": 0
+            }
+          ],
+          "encounter": "FLYCONID_NORMAL",
+          "hp": 75,
+          "max_hp": 75,
+          "potions": [],
+          "relics": [],
+          "schema": 3,
+          "seed": "III5_CALCIFY"
+        }
+      },
+      {
+        "apply_calcify": true,
+        "frames": [
+          {
+            "action": "BODYGUARD",
+            "damage": 0,
+            "powers": "P=3:DIE_FOR_YOU_POWER=1/0[],",
+            "stamp": "da062beceba7031d06d077c82f91834f2165aa8eb4dbf047cc11967737e98b37"
+          },
+          {
+            "action": "CALCIFY",
+            "damage": 0,
+            "powers": "P=0:CALCIFY_POWER=4/0[],3:DIE_FOR_YOU_POWER=1/0[],",
+            "stamp": "0b2c244c48b1a30a90510d3d0e4df18ad6acb91e19a82736399887dfcedca00f"
+          },
+          {
+            "action": "POKE",
+            "damage": 10,
+            "powers": "P=0:CALCIFY_POWER=4/0[],3:DIE_FOR_YOU_POWER=1/0[],",
+            "stamp": "b77d136723c8e610b3aebc63f135125c3488af1a7042469cac1b119ebebf1893"
+          },
+          {
+            "action": "end_turn",
+            "damage": 0,
+            "powers": "P=0:CALCIFY_POWER=4/0[],3:DIE_FOR_YOU_POWER=1/0[],",
+            "stamp": "9e8f7b972b78208145e5938a5ca156569f05e8082f2311d3ef8ad45f7cb3788c"
+          },
+          {
+            "action": "STRIKE_NECROBINDER",
+            "damage": 6,
+            "powers": "P=0:CALCIFY_POWER=4/0[],3:DIE_FOR_YOU_POWER=1/0[],",
+            "stamp": "90ef7e72b61156fc6b2efbae82f20b218a1b95288b3ace214915440e9e0fa6ba"
+          }
+        ],
+        "spec": {
+          "act": 1,
+          "act_variant": "OVERGROWTH",
+          "ascension": 0,
+          "character": "Necrobinder",
+          "deck": [
+            {
+              "id": "CALCIFY",
+              "upgrade": 0
+            },
+            {
+              "id": "BODYGUARD",
+              "upgrade": 0
+            },
+            {
+              "id": "POKE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_NECROBINDER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_NECROBINDER",
+              "upgrade": 0
+            }
+          ],
+          "encounter": "FLYCONID_NORMAL",
+          "hp": 75,
+          "max_hp": 75,
+          "potions": [],
+          "relics": [],
+          "schema": 3,
+          "seed": "III5_CALCIFY"
+        }
+      },
+      {
+        "apply_calcify": true,
+        "frames": [
+          {
+            "action": "BODYGUARD",
+            "damage": 0,
+            "powers": "P=3:DIE_FOR_YOU_POWER=1/0[],",
+            "stamp": "334d6537a90c02514e304a3f9318eb1a6bf83cafb5a29347cba038bc7599e39c"
+          },
+          {
+            "action": "CALCIFY",
+            "damage": 0,
+            "powers": "P=0:CALCIFY_POWER=6/0[],3:DIE_FOR_YOU_POWER=1/0[],",
+            "stamp": "2a86d0b56d877fabc863c248777afc060be3882facf61e07a3954cf7d1de1f37"
+          },
+          {
+            "action": "POKE",
+            "damage": 12,
+            "powers": "P=0:CALCIFY_POWER=6/0[],3:DIE_FOR_YOU_POWER=1/0[],",
+            "stamp": "f85399cbfcf5d4b00b7cccad100b12bb106afb7bab7ee3e7c56d28ef76a58d2c"
+          },
+          {
+            "action": "end_turn",
+            "damage": 0,
+            "powers": "P=0:CALCIFY_POWER=6/0[],3:DIE_FOR_YOU_POWER=1/0[],",
+            "stamp": "4f9d321a48c80d662dca4e89360d2eed1b8a3cc503bef6c21177ca42346ef89d"
+          },
+          {
+            "action": "STRIKE_NECROBINDER",
+            "damage": 6,
+            "powers": "P=0:CALCIFY_POWER=6/0[],3:DIE_FOR_YOU_POWER=1/0[],",
+            "stamp": "027e202214512e3068c430dfb08ae9d08376a1a1524093b0728d54c21db02775"
+          }
+        ],
+        "spec": {
+          "act": 1,
+          "act_variant": "OVERGROWTH",
+          "ascension": 0,
+          "character": "Necrobinder",
+          "deck": [
+            {
+              "id": "CALCIFY",
+              "upgrade": 1
+            },
+            {
+              "id": "BODYGUARD",
+              "upgrade": 0
+            },
+            {
+              "id": "POKE",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_NECROBINDER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_NECROBINDER",
+              "upgrade": 0
+            }
+          ],
+          "encounter": "FLYCONID_NORMAL",
+          "hp": 75,
+          "max_hp": 75,
+          "potions": [],
+          "relics": [],
+          "schema": 3,
+          "seed": "III5_CALCIFY"
+        }
+      }
+    ]
+  },
+  "frozen_prefix": {
+    "results": [
+      {
+        "differences": {
+          "osty": {
+            "native": "4/8/8",
+            "prediction": "4/0/4"
+          }
+        },
+        "ledger": "nosl3c-iid-release-independent",
+        "native_terminal": false,
+        "position": 12,
+        "predicted": "unsupported",
+        "root": "000027",
+        "status": "continuation_difference",
+        "step": 0,
+        "steps": [
+          {
+            "action": {
+              "card": 2,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 1,
+              "energy_x": false,
+              "index": 2,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": 0,
+              "target_side": "enemy",
+              "target_type": "AnyEnemy"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 0,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "f3fcef1567e048f4b05ea6ae9b8ec3ef328ed2f791b723676ced9189a38ab73b",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": null,
+              "choice": null,
+              "choice_zone": null,
+              "cost": null,
+              "energy_x": false,
+              "index": 3,
+              "kind": "end_turn",
+              "potion": null,
+              "preview": null,
+              "star_cost": null,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": null
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 1,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "66090bb58d29530a32a8c135dda27c00f4d6b4f63297065952e2ea00d14a8de6",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": 3,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 1,
+              "energy_x": false,
+              "index": 3,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "Self"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 2,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "21d7f01ee66adde3e664b491ffd0c9a28819cf30102f6cc41339ac8f9878749f",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": 3,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 2,
+              "energy_x": false,
+              "index": 2,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "Self"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 3,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "ae11e25d7d6f369a7036f8c0e38b665bedfef2c0340e0b1a9a80469e0d4f873f",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": null,
+              "choice": null,
+              "choice_zone": null,
+              "cost": null,
+              "energy_x": false,
+              "index": 0,
+              "kind": "end_turn",
+              "potion": null,
+              "preview": null,
+              "star_cost": null,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": null
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 4,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "5362a22030fe29702932d80d5ff316e1f7b9f0d3e15e2feb704075526dd93f32",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": 3,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 1,
+              "energy_x": false,
+              "index": 3,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "Self"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 5,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "8361d7f2f3c5975e851903188df8536316ba290d13ae9c6f4d031aac16c21b89",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": 1,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 0,
+              "energy_x": false,
+              "index": 1,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "Self"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 6,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "7e6a41216493296d5f93786ad145fb8c8629c145c781e25fef3de130e9604790",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": 4,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 2,
+              "energy_x": false,
+              "index": 4,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "Self"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 7,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "80eef2e65ed9fe9e9e0dff24aa4b1113918df22075f9559dd513045a329bbc5c",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": 2,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 0,
+              "energy_x": false,
+              "index": 2,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "Self"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 8,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "28fb1ffba9e1ed9654e5afbbe58be8ccae62bad3809f689c765e5b62857a8bbd",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": 0,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 0,
+              "energy_x": false,
+              "index": 0,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "Self"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 9,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "1bbbbd097a653a7803a6fc3be0ecf4dcf9fab9b28c1e4457bf8874e99c3c9ba4",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": 3,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 1,
+              "energy_x": false,
+              "index": 3,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": 1,
+              "target_side": "enemy",
+              "target_type": "AnyEnemy"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 10,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "b60ddfff8040c2d0ebee5a326fa86e6efe762ec57f4c5421acbfeacaebf64c5b",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": 4,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 2,
+              "energy_x": false,
+              "index": 3,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "Self"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 11,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "31fd4b088be3c5b69a840001be17ef985c4e80185801ae3eccdb98c5f518105e",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": 3,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 2,
+              "energy_x": false,
+              "index": 2,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "AllAllies"
+            },
+            "interaction": null,
+            "position": 12,
+            "public_choice": null,
+            "source": "archived",
+            "status": "unsupported"
+          }
+        ],
+        "root_sha256": "1594e7c75455f092f817d6f746a28a06e5ec88b14bb7974afcb0d131262e3c34"
+      },
+      {
+        "differences": {
+          "D": {
+            "native": "REAVE+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Cards=1,Damage=10,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,SOUL+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Cards=2,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Exhaust]/baselib=-,SOUL+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Cards=2,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Exhaust]/baselib=-,SOUL+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Cards=2,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Exhaust]/baselib=-,",
+            "prediction": "REAVE+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Cards=1,Damage=10,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+          },
+          "R": {
+            "native": "12:6380620204626991647:2593012611366868833:973385654180143516:14217498311253477851/0:1963864229800350177:14164953932299647654:14383947060844942700:3331195822532665552/0:16784179298957118955:4632775504918039657:947907360696824672:4186873520018263886/0:16634957867644802257:12634689201890471559:7539898738810730446:1360660223872799386/0:11770669681520897175:13537161441053973936:13580005675519876467:1941322432871372291/0:17954439075136307908:8618163574599651907:2097812636397733730:636564157257994366/0:8251777715066288140:3729019837784614750:16827682304978261968:10930634770535903857/9:14874717232658083063:11022615391191511102:206509863290454755:10147551740905261625/3:16604992587051961426:6678551955343854314:13860330726130407067:10055765060930800968",
+            "prediction": "9:17798001304513306110:2551198565950783310:11594892157497804219:11672141923068242691/0:1963864229800350177:14164953932299647654:14383947060844942700:3331195822532665552/0:16784179298957118955:4632775504918039657:947907360696824672:4186873520018263886/0:16634957867644802257:12634689201890471559:7539898738810730446:1360660223872799386/0:11770669681520897175:13537161441053973936:13580005675519876467:1941322432871372291/0:17954439075136307908:8618163574599651907:2097812636397733730:636564157257994366/0:8251777715066288140:3729019837784614750:16827682304978261968:10930634770535903857/9:14874717232658083063:11022615391191511102:206509863290454755:10147551740905261625/3:16604992587051961426:6678551955343854314:13860330726130407067:10055765060930800968"
+          }
+        },
+        "ledger": "nosl3c-iie-broad",
+        "native_terminal": false,
+        "position": 12,
+        "predicted": "unsupported",
+        "root": "000000",
+        "status": "continuation_difference",
+        "step": 1,
+        "steps": [
+          {
+            "action": {
+              "card": 1,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 1,
+              "energy_x": false,
+              "index": 5,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": 2,
+              "target_side": "enemy",
+              "target_type": "AnyEnemy"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 0,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "1d67e4ef297c1fd1b128839a7e3a469ef3c5bc764ed4a5f3f1d4065c0afe5762",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": 3,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 2,
+              "energy_x": false,
+              "index": 6,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "Self"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 1,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "409477e475b217469007facf850c31786e4d0f7519b11c782da986504d1a0150",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": null,
+              "choice": null,
+              "choice_zone": null,
+              "cost": null,
+              "energy_x": false,
+              "index": 0,
+              "kind": "end_turn",
+              "potion": null,
+              "preview": null,
+              "star_cost": null,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": null
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 2,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "74d23b2e3bd90f73e3d7aaee62b7d9a41acb62a3027da000639e15b9b1b0cade",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": 4,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 1,
+              "energy_x": false,
+              "index": 3,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": 0,
+              "target_side": "enemy",
+              "target_type": "AnyEnemy"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 3,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "8204dc2f9830becc0b5d6c69753aafca7f5b4f8d7a462820670f6e25146baa2e",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": null,
+              "choice": null,
+              "choice_zone": null,
+              "cost": null,
+              "energy_x": false,
+              "index": 3,
+              "kind": "end_turn",
+              "potion": null,
+              "preview": null,
+              "star_cost": null,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": null
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 4,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "a5f5cfa9301e8b935fb533674a9c12bfcecbc7db825dbd022f364e8dc426f1f2",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": 2,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 1,
+              "energy_x": false,
+              "index": 3,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": 0,
+              "target_side": "enemy",
+              "target_type": "AnyEnemy"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 5,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "25539b3859be54861aec0f0653f0fbfb5ef6e0e891ed6cf50ea1da7c494b3d1c",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": 3,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 1,
+              "energy_x": false,
+              "index": 4,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "None"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 6,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "7099999336a0f12b38fdfa5ddd14e0e205b46fdf51dc400614dbf635bacf126d",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": null,
+              "choice": null,
+              "choice_zone": null,
+              "cost": null,
+              "energy_x": false,
+              "index": 4,
+              "kind": "end_turn",
+              "potion": null,
+              "preview": null,
+              "star_cost": null,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": null
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 7,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "d37e18f3e4bc9a861f1a6d0ef29e336e74d06266adf6ae9a56af88bb40245365",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": 4,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 1,
+              "energy_x": false,
+              "index": 4,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "Self"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 8,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "99f3446421b268254a1eee3f92a31e87d8925967068927fb5b3c9a7bbf1e0444",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": 2,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 0,
+              "energy_x": false,
+              "index": 2,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "Self"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 9,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "bdf1470089f6aa4bc758c9cce46d964fa2b90beb75b729e4823ef71cea978460",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": 0,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 0,
+              "energy_x": false,
+              "index": 0,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "Self"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 10,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "fe0967f8c240ca0dfedc9235d767a639eca27d3dbfb035a1468a9911f6d213b7",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": null,
+              "choice": null,
+              "choice_zone": null,
+              "cost": null,
+              "energy_x": false,
+              "index": 5,
+              "kind": "end_turn",
+              "potion": null,
+              "preview": null,
+              "star_cost": null,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": null
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 11,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "fb0d56ccc7b987aa158253e11cf9a5ad223a571600eca4f58bdf6bcd4aeac2b0",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": 1,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 1,
+              "energy_x": false,
+              "index": 1,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "AllAllies"
+            },
+            "interaction": null,
+            "position": 12,
+            "public_choice": null,
+            "source": "archived",
+            "status": "unsupported"
+          }
+        ],
+        "root_sha256": "40712d46497386881db529b8dd0a66bf185e532cd3d65a3ec2b5c5b895328fc3"
+      }
+    ]
+  },
+  "direct_risk": {
+    "results": [
+      {
+        "after": [
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [],
+            "hp": 66,
+            "powers": [
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [],
+            "hp": 55,
+            "powers": [
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [],
+            "hp": 55,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 55,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 49,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "COUNTDOWN.OnPlay: MethodNotMirrored",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 49,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "COUNTDOWN_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "COUNTDOWN.OnPlay: MethodNotMirrored",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 49,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "COUNTDOWN_POWER"
+              },
+              {
+                "amount": 3,
+                "id": "NEUROSURGE_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "COUNTDOWN.OnPlay: MethodNotMirrored",
+              "DELAY.OnPlay: MethodMirrorIncomplete",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 49,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "COUNTDOWN_POWER"
+              },
+              {
+                "amount": 3,
+                "id": "NEUROSURGE_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "ENERGY_NEXT_TURN_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "COUNTDOWN.OnPlay: MethodNotMirrored",
+              "DELAY.OnPlay: MethodMirrorIncomplete",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 49,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "COUNTDOWN_POWER"
+              },
+              {
+                "amount": 6,
+                "id": "NEUROSURGE_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "ENERGY_NEXT_TURN_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "COUNTDOWN.OnPlay: MethodNotMirrored",
+              "DELAY.OnPlay: MethodMirrorIncomplete",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 49,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "COUNTDOWN_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "NEUROSURGE_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "ENERGY_NEXT_TURN_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "COUNTDOWN.OnPlay: MethodNotMirrored",
+              "DELAY.OnPlay: MethodMirrorIncomplete",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 49,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "COUNTDOWN_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "NEUROSURGE_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "ENERGY_NEXT_TURN_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "COUNTDOWN.OnPlay: MethodNotMirrored",
+              "DELAY.OnPlay: MethodMirrorIncomplete",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 49,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "COUNTDOWN_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "NEUROSURGE_POWER"
+              },
+              {
+                "amount": 4,
+                "id": "ENERGY_NEXT_TURN_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "COUNTDOWN.OnPlay: MethodNotMirrored",
+              "DELAY.OnPlay: MethodMirrorIncomplete",
+              "LEGION_OF_BONE.OnPlay: MethodNotMirrored",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 49,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "COUNTDOWN_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "NEUROSURGE_POWER"
+              },
+              {
+                "amount": 4,
+                "id": "ENERGY_NEXT_TURN_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": true,
+            "win": false
+          }
+        ],
+        "before": [
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [],
+            "hp": 66,
+            "powers": [
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [],
+            "hp": 55,
+            "powers": [
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CALCIFY.OnPlay: MethodNotMirrored"
+            ],
+            "hp": 55,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CALCIFY.OnPlay: MethodNotMirrored",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 55,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CALCIFY.OnPlay: MethodNotMirrored",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 49,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CALCIFY.OnPlay: MethodNotMirrored",
+              "COUNTDOWN.OnPlay: MethodNotMirrored",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 49,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "COUNTDOWN_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CALCIFY.OnPlay: MethodNotMirrored",
+              "COUNTDOWN.OnPlay: MethodNotMirrored",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 49,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "COUNTDOWN_POWER"
+              },
+              {
+                "amount": 3,
+                "id": "NEUROSURGE_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CALCIFY.OnPlay: MethodNotMirrored",
+              "COUNTDOWN.OnPlay: MethodNotMirrored",
+              "DELAY.OnPlay: MethodMirrorIncomplete",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 49,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "COUNTDOWN_POWER"
+              },
+              {
+                "amount": 3,
+                "id": "NEUROSURGE_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "ENERGY_NEXT_TURN_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CALCIFY.OnPlay: MethodNotMirrored",
+              "COUNTDOWN.OnPlay: MethodNotMirrored",
+              "DELAY.OnPlay: MethodMirrorIncomplete",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 49,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "COUNTDOWN_POWER"
+              },
+              {
+                "amount": 6,
+                "id": "NEUROSURGE_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "ENERGY_NEXT_TURN_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CALCIFY.OnPlay: MethodNotMirrored",
+              "COUNTDOWN.OnPlay: MethodNotMirrored",
+              "DELAY.OnPlay: MethodMirrorIncomplete",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 49,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "COUNTDOWN_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "NEUROSURGE_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "ENERGY_NEXT_TURN_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CALCIFY.OnPlay: MethodNotMirrored",
+              "COUNTDOWN.OnPlay: MethodNotMirrored",
+              "DELAY.OnPlay: MethodMirrorIncomplete",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 49,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "COUNTDOWN_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "NEUROSURGE_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "ENERGY_NEXT_TURN_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CALCIFY.OnPlay: MethodNotMirrored",
+              "COUNTDOWN.OnPlay: MethodNotMirrored",
+              "DELAY.OnPlay: MethodMirrorIncomplete",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 49,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "COUNTDOWN_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "NEUROSURGE_POWER"
+              },
+              {
+                "amount": 4,
+                "id": "ENERGY_NEXT_TURN_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CALCIFY.OnPlay: MethodNotMirrored",
+              "COUNTDOWN.OnPlay: MethodNotMirrored",
+              "DELAY.OnPlay: MethodMirrorIncomplete",
+              "LEGION_OF_BONE.OnPlay: MethodNotMirrored",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 49,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "COUNTDOWN_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "NEUROSURGE_POWER"
+              },
+              {
+                "amount": 4,
+                "id": "ENERGY_NEXT_TURN_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              },
+              {
+                "amount": 9,
+                "id": "HARD_TO_KILL_POWER"
+              },
+              {
+                "amount": 2,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": true,
+            "win": false
+          }
+        ],
+        "ledger": "nosl3c-iid-release-independent",
+        "root": "000027",
+        "step": 0
+      },
+      {
+        "after": [
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "REAVE.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 200,
+            "powers": [],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete",
+              "REAVE.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 200,
+            "powers": [
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete",
+              "REAVE.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 200,
+            "powers": [
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete",
+              "REAVE.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 200,
+            "powers": [
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete",
+              "REAVE.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 193,
+            "powers": [
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CAPTURE_SPIRIT.OnPlay: MethodNotMirrored",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete",
+              "REAVE.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 193,
+            "powers": [
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CAPTURE_SPIRIT.OnPlay: MethodNotMirrored",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete",
+              "REAVE.OnPlay: MethodMirrorIncomplete",
+              "SLIMED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 193,
+            "powers": [
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CAPTURE_SPIRIT.OnPlay: MethodNotMirrored",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete",
+              "REAVE.OnPlay: MethodMirrorIncomplete",
+              "SLIMED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 190,
+            "powers": [
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CAPTURE_SPIRIT.OnPlay: MethodNotMirrored",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete",
+              "REAVE.OnPlay: MethodMirrorIncomplete",
+              "SLIMED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 190,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CAPTURE_SPIRIT.OnPlay: MethodNotMirrored",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete",
+              "REAVE.OnPlay: MethodMirrorIncomplete",
+              "SLIMED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 190,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CAPTURE_SPIRIT.OnPlay: MethodNotMirrored",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete",
+              "REAVE.OnPlay: MethodMirrorIncomplete",
+              "SLIMED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 190,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CAPTURE_SPIRIT.OnPlay: MethodNotMirrored",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete",
+              "REAVE.OnPlay: MethodMirrorIncomplete",
+              "SLIMED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 179,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CAPTURE_SPIRIT.OnPlay: MethodNotMirrored",
+              "GLIMPSE_BEYOND.OnPlay: MethodNotMirrored",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete",
+              "REAVE.OnPlay: MethodMirrorIncomplete",
+              "SLIMED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 179,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              }
+            ],
+            "risk": true,
+            "win": false
+          }
+        ],
+        "before": [
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "REAVE.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 200,
+            "powers": [],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete",
+              "REAVE.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 200,
+            "powers": [
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete",
+              "REAVE.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 200,
+            "powers": [
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete",
+              "REAVE.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 200,
+            "powers": [
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete",
+              "REAVE.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 193,
+            "powers": [
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CAPTURE_SPIRIT.OnPlay: MethodNotMirrored",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete",
+              "REAVE.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 193,
+            "powers": [
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CAPTURE_SPIRIT.OnPlay: MethodNotMirrored",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete",
+              "REAVE.OnPlay: MethodMirrorIncomplete",
+              "SLIMED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 193,
+            "powers": [
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CAPTURE_SPIRIT.OnPlay: MethodNotMirrored",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete",
+              "REAVE.OnPlay: MethodMirrorIncomplete",
+              "SLIMED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 190,
+            "powers": [
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CALCIFY.OnPlay: MethodNotMirrored",
+              "CAPTURE_SPIRIT.OnPlay: MethodNotMirrored",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete",
+              "REAVE.OnPlay: MethodMirrorIncomplete",
+              "SLIMED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 190,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CALCIFY.OnPlay: MethodNotMirrored",
+              "CAPTURE_SPIRIT.OnPlay: MethodNotMirrored",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete",
+              "REAVE.OnPlay: MethodMirrorIncomplete",
+              "SLIMED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 190,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CALCIFY.OnPlay: MethodNotMirrored",
+              "CAPTURE_SPIRIT.OnPlay: MethodNotMirrored",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete",
+              "REAVE.OnPlay: MethodMirrorIncomplete",
+              "SLIMED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 190,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CALCIFY.OnPlay: MethodNotMirrored",
+              "CAPTURE_SPIRIT.OnPlay: MethodNotMirrored",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete",
+              "REAVE.OnPlay: MethodMirrorIncomplete",
+              "SLIMED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 179,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "CALCIFY.OnPlay: MethodNotMirrored",
+              "CAPTURE_SPIRIT.OnPlay: MethodNotMirrored",
+              "GLIMPSE_BEYOND.OnPlay: MethodNotMirrored",
+              "PULL_AGGRO.OnPlay: MethodMirrorIncomplete",
+              "REAVE.OnPlay: MethodMirrorIncomplete",
+              "SLIMED.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 179,
+            "powers": [
+              {
+                "amount": 4,
+                "id": "CALCIFY_POWER"
+              },
+              {
+                "amount": 1,
+                "id": "DIE_FOR_YOU_POWER"
+              }
+            ],
+            "risk": true,
+            "win": false
+          }
+        ],
+        "ledger": "nosl3c-iie-broad",
+        "root": "000000",
+        "step": 1
+      }
+    ]
+  },
+  "resampled": [
+    {
+      "root_sha256": "1594e7c75455f092f817d6f746a28a06e5ec88b14bb7974afcb0d131262e3c34",
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000027",
+      "last_card": "LEGION_OF_BONE",
+      "feedback": {
+        "actions": 3,
+        "eligible": false,
+        "evidence": "unqualified",
+        "observation": {
+          "block": 0,
+          "energy": 3,
+          "hp": 66,
+          "max_hp": 66,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "turn": 1
+        },
+        "reason": "prediction_unsupported",
+        "replays": 3,
+        "solver_gap_count": 1,
+        "status": "unsupported"
+      },
+      "proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      }
+    },
+    {
+      "root_sha256": "40712d46497386881db529b8dd0a66bf185e532cd3d65a3ec2b5c5b895328fc3",
+      "ledger": "nosl3c-iie-broad",
+      "step": 1,
+      "position": "000000",
+      "last_card": "GLIMPSE_BEYOND",
+      "feedback": {
+        "actions": 5,
+        "eligible": false,
+        "evidence": "unqualified",
+        "observation": {
+          "block": 0,
+          "energy": 2,
+          "hp": 197,
+          "max_hp": 200,
+          "potions": [
+            null,
+            null,
+            null
+          ],
+          "turn": 2
+        },
+        "reason": "prediction_unsupported",
+        "replays": 5,
+        "solver_gap_count": 3,
+        "status": "unsupported"
+      },
+      "proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      }
+    }
+  ],
+  "outrage_regression": {
+    "cases": [
+      {
+        "frames": [
+          {
+            "action": "OUTRAGE",
+            "count_after": 2,
+            "count_before": 1,
+            "enemy_hp_before": 39,
+            "outrage_fields": [
+              "C=OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "d1a7a19e90fb6c49db7dcf53d3cdd5364e0f8f8b71df149326254ea8aa717901",
+            "terminal": false
+          },
+          {
+            "action": "end_turn",
+            "count_after": 2,
+            "count_before": 2,
+            "enemy_hp_before": 30,
+            "outrage_fields": [
+              "H=OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "fd324e5adbb1338ab58c095728c8e696ab36fcb560b09843da49a472dbad3080",
+            "terminal": false
+          },
+          {
+            "action": "OUTRAGE",
+            "count_after": 3,
+            "count_before": 2,
+            "enemy_hp_before": 30,
+            "outrage_fields": [
+              "H=DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,",
+              "C=OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "52720668298b074fe4317f16b6cf2c850b733d9186879a296a6de7e0bc922c37",
+            "terminal": false
+          },
+          {
+            "action": "OUTRAGE",
+            "count_after": 4,
+            "count_before": 3,
+            "enemy_hp_before": 24,
+            "outrage_fields": [
+              "C=OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "22072f4b99d515d5418744fced1c3534acb99f8a73f425dc878c0cdd03fa5be5",
+            "terminal": false
+          },
+          {
+            "action": "end_turn",
+            "count_after": 4,
+            "count_before": 4,
+            "enemy_hp_before": 18,
+            "outrage_fields": [
+              "H=DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,",
+              "D=OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "4bf4c06505042cfb2d4fd69024e5eb2b24784428bf6dab7fd4fca71dff4a18a3",
+            "terminal": false
+          },
+          {
+            "action": "OUTRAGE",
+            "count_after": 5,
+            "count_before": 4,
+            "enemy_hp_before": 18,
+            "outrage_fields": [
+              "D=OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,",
+              "C=OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "f9dd16ad37e00a2538ee944f10b34201f756c3b31b79e4186f1184d701b248e9",
+            "terminal": false
+          },
+          {
+            "action": "end_turn",
+            "count_after": 5,
+            "count_before": 5,
+            "enemy_hp_before": 9,
+            "outrage_fields": [
+              "H=OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,",
+              "D=DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "3a541001157ed179e9bcab0932d0817e84301d9536b3126b26b4d013de3bf28b",
+            "terminal": false
+          },
+          {
+            "action": "OUTRAGE",
+            "count_after": 6,
+            "count_before": 5,
+            "enemy_hp_before": 9,
+            "outrage_fields": [
+              "H=OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,",
+              "D=DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,",
+              "C=OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "15e57da7e481ef5f5040c4abbe6600e58249496bcbbad7009f6bb97121292adc",
+            "terminal": false
+          },
+          {
+            "action": "OUTRAGE",
+            "count_after": 5,
+            "count_before": 6,
+            "enemy_hp_before": 3,
+            "outrage_fields": [
+              "H=OUTRAGE+0/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,",
+              "D=DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,",
+              "C=OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "92537464907c774c2fd8229e7ee09eed95132546111524ede940b392ecd8db16",
+            "terminal": true
+          }
+        ],
+        "spec": {
+          "act": 1,
+          "act_variant": "UNDERDOCKS",
+          "ascension": 0,
+          "character": "Ironclad",
+          "deck": [
+            {
+              "id": "OUTRAGE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            }
+          ],
+          "encounter": "SLUDGE_SPINNER_WEAK",
+          "hp": 75,
+          "max_hp": 75,
+          "potions": [],
+          "relics": [],
+          "schema": 3,
+          "seed": "III4_OUTRAGE"
+        }
+      },
+      {
+        "frames": [
+          {
+            "action": "OUTRAGE",
+            "count_after": 2,
+            "count_before": 1,
+            "enemy_hp_before": 39,
+            "outrage_fields": [
+              "C=OUTRAGE+1/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+1/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "afde153e038a4742942d21b931737cf966531c0920c426ad2649c6bf7119d802",
+            "terminal": false
+          },
+          {
+            "action": "end_turn",
+            "count_after": 2,
+            "count_before": 2,
+            "enemy_hp_before": 26,
+            "outrage_fields": [
+              "H=OUTRAGE+1/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+1/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "239de17e98eb3abb8c94a75b8e342dfbc040f6ab5c0509b7a1a2c241fc5f1e53",
+            "terminal": false
+          },
+          {
+            "action": "OUTRAGE",
+            "count_after": 3,
+            "count_before": 2,
+            "enemy_hp_before": 26,
+            "outrage_fields": [
+              "H=DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+1/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,",
+              "C=OUTRAGE+1/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+1/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "5ae06329b2ef0e3b81505f183e1031aaf6df8a69f7de8d5621cd986bcffaa556",
+            "terminal": false
+          },
+          {
+            "action": "OUTRAGE",
+            "count_after": 4,
+            "count_before": 3,
+            "enemy_hp_before": 17,
+            "outrage_fields": [
+              "C=OUTRAGE+1/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+1/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+1/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+1/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "334eab93395006d6cb63c87dcbd6b1db0c9ba4e1d93525d2e84012137de2dfaf",
+            "terminal": false
+          },
+          {
+            "action": "end_turn",
+            "count_after": 4,
+            "count_before": 4,
+            "enemy_hp_before": 8,
+            "outrage_fields": [
+              "H=DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+1/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,",
+              "D=OUTRAGE+1/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+1/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+1/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "3ed3b40fdb8562bed30ba7ff72a7f87bb834abce339e44921ba9a9a9382e1448",
+            "terminal": false
+          },
+          {
+            "action": "OUTRAGE",
+            "count_after": 3,
+            "count_before": 4,
+            "enemy_hp_before": 8,
+            "outrage_fields": [
+              "D=OUTRAGE+1/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+1/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+1/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "963b8e605a3eddc5323ec7bb9608347427f27f13bb6ef85a3c854a346ad98e4e",
+            "terminal": true
+          }
+        ],
+        "spec": {
+          "act": 1,
+          "act_variant": "UNDERDOCKS",
+          "ascension": 0,
+          "character": "Ironclad",
+          "deck": [
+            {
+              "id": "OUTRAGE",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            }
+          ],
+          "encounter": "SLUDGE_SPINNER_WEAK",
+          "hp": 75,
+          "max_hp": 75,
+          "potions": [],
+          "relics": [],
+          "schema": 3,
+          "seed": "III4_OUTRAGE"
+        }
+      }
+    ]
+  }
+}
