@@ -1,0 +1,915 @@
+{
+  "build": {
+    "version": "0.51.5-iii.1",
+    "source_revision": "78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+    "patched_sha256": "62daa2bcb3eda884a2f4de285cf7c4b1d571d02ab99eaad4abb8803cdea8aea4",
+    "bridge_sha256": "529790e64614f2fbf0b48374eb80f1c6672511e706aa5bcde219f4f8f2bb4165",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "frozen_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13"
+  },
+  "engine": {
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+    "coreclr": "9.0.7",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "headless_sha256": "b3f8ce1d862bdb98000bfeb90d701239e50be17034739c5c2ed18e26716150f0",
+    "native_identity": "87baa84a2b2297eae588a6996727d719b6e299227d1770a44bef7836ebe8e06f",
+    "policy": "M1-F2-discard-v1",
+    "sampler": "m1-d1-v1",
+    "solver": "0.51.5-iii.1",
+    "solver_sha256": "62daa2bcb3eda884a2f4de285cf7c4b1d571d02ab99eaad4abb8803cdea8aea4"
+  },
+  "effect": {
+    "cases": [
+      {
+        "frames": [
+          {
+            "blades": [],
+            "card": "HAMMER_TIME",
+            "cost": 2,
+            "powers": "P=0:HAMMER_TIME_POWER=1/0[],",
+            "stamp": "59565955be94dacb55fb2bd68dcea943b30b9db2806475fe9462719d9435f8f7"
+          },
+          {
+            "blades": [
+              "H=DEFEND_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,STRIKE_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=6,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=19,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,"
+            ],
+            "card": "SPOILS_OF_BATTLE",
+            "cost": 1,
+            "powers": "P=0:HAMMER_TIME_POWER=1/0[],",
+            "stamp": "2ddad35b74727cd18428cd52f1cdbbc7a511f64cfb11b6c1af55fc57fe0d4e23"
+          }
+        ],
+        "spec": {
+          "act": 1,
+          "act_variant": "UNDERDOCKS",
+          "ascension": 0,
+          "character": "Regent",
+          "deck": [
+            {
+              "id": "HAMMER_TIME",
+              "upgrade": 0
+            },
+            {
+              "id": "SPOILS_OF_BATTLE",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_REGENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_REGENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_REGENT",
+              "upgrade": 0
+            }
+          ],
+          "encounter": "TWO_TAILED_RATS_NORMAL",
+          "hp": 75,
+          "max_hp": 75,
+          "potions": [],
+          "relics": [],
+          "schema": 3,
+          "seed": "III1_HAMMER_FORGE"
+        }
+      },
+      {
+        "frames": [
+          {
+            "blades": [],
+            "card": "HAMMER_TIME",
+            "cost": 1,
+            "powers": "P=0:HAMMER_TIME_POWER=1/0[],",
+            "stamp": "3a5ac07ac40d78f247740f131e5537ac4ec673c82ebf71f5f453e5e8c96bad3e"
+          },
+          {
+            "blades": [
+              "H=DEFEND_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,STRIKE_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=6,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=19,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,"
+            ],
+            "card": "SPOILS_OF_BATTLE",
+            "cost": 1,
+            "powers": "P=0:HAMMER_TIME_POWER=1/0[],",
+            "stamp": "bc56dff21b57420819224ebde55c2c91d55d63d68682a8e2d6b30a63044a53f1"
+          }
+        ],
+        "spec": {
+          "act": 1,
+          "act_variant": "UNDERDOCKS",
+          "ascension": 0,
+          "character": "Regent",
+          "deck": [
+            {
+              "id": "HAMMER_TIME",
+              "upgrade": 1
+            },
+            {
+              "id": "SPOILS_OF_BATTLE",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_REGENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_REGENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_REGENT",
+              "upgrade": 0
+            }
+          ],
+          "encounter": "TWO_TAILED_RATS_NORMAL",
+          "hp": 75,
+          "max_hp": 75,
+          "potions": [],
+          "relics": [],
+          "schema": 3,
+          "seed": "III1_HAMMER_FORGE"
+        }
+      }
+    ]
+  },
+  "frozen_prefix": {
+    "results": [
+      {
+        "archived_actions": 7,
+        "comparison_reached": 7,
+        "interaction": null,
+        "last_stable": 6,
+        "ledger": "nosl3c-iic-random-final",
+        "native_decision": "combat_play",
+        "root": "000003",
+        "status": "active",
+        "step": 0,
+        "steps": [
+          {
+            "action": {
+              "card": null,
+              "choice": null,
+              "choice_zone": null,
+              "cost": null,
+              "energy_x": false,
+              "index": 3,
+              "kind": "end_turn",
+              "potion": null,
+              "preview": null,
+              "star_cost": null,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": null
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 0,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "0333e0232e1e82dceca2f5388052bf0d02c0cb182609f7bac438c8d20ffa694b",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": 1,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 1,
+              "energy_x": false,
+              "index": 0,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "Self"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 1,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "42e7529331b804162f6a68a6f5f4a67e48d038b496b2426bb6fe2f72c374bc1d",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": null,
+              "choice": null,
+              "choice_zone": null,
+              "cost": null,
+              "energy_x": false,
+              "index": 2,
+              "kind": "end_turn",
+              "potion": null,
+              "preview": null,
+              "star_cost": null,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": null
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 2,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "c6c49410ebc62c38af216651dbea29d76c7adcd94df9f4367e4950cb4187ee0f",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": 4,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 2,
+              "energy_x": false,
+              "index": 2,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "Self"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 3,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "2e6e7d7112325557b07e3b6b973c2d82f3e0574b68a73606616b861411bf9f6f",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": null,
+              "choice": null,
+              "choice_zone": null,
+              "cost": null,
+              "energy_x": false,
+              "index": 1,
+              "kind": "end_turn",
+              "potion": null,
+              "preview": null,
+              "star_cost": null,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": null
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 4,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "82c459cd95a05e2e90a9fdc4c133f2cf6ae27bbfe9a5be4be3af836ba4421264",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": null,
+              "choice": null,
+              "choice_zone": null,
+              "cost": null,
+              "energy_x": false,
+              "index": 3,
+              "kind": "end_turn",
+              "potion": null,
+              "preview": null,
+              "star_cost": null,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": null
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 5,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "d2ce709b6d86e0219aa177259036c13d12dd7e2e6584c4ca125b1f81d023643a",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": 1,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 2,
+              "energy_x": false,
+              "index": 1,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "Self"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 6,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "45c9156f6cb63ea324f4a5a91d5240319ab60c251841878170fe38da5a7c093d",
+            "status": "active"
+          }
+        ],
+        "root_sha256": "ab1cbddbad199d8df2fddbd796732d0a98169ef4211051d7e1450b4f8f4503a2"
+      },
+      {
+        "archived_actions": 1,
+        "comparison_reached": 1,
+        "interaction": null,
+        "last_stable": 0,
+        "ledger": "nosl3c-iie-broad",
+        "native_decision": "combat_play",
+        "root": "000002",
+        "status": "active",
+        "step": 1,
+        "steps": [
+          {
+            "action": {
+              "card": 4,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 1,
+              "energy_x": false,
+              "index": 3,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "Self"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 0,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "783680d45d945f6561934a87c36be8e0bc59274811628956184debef5f97aa98",
+            "status": "active"
+          }
+        ],
+        "root_sha256": "7243be6818f0ccbc5bbee929660ac6ca472fab7830d7d28b2254557c9aee6b3d"
+      }
+    ]
+  },
+  "direct_risk": {
+    "cases": [
+      {
+        "ledger": "nosl3c-iic-random-final",
+        "step": 0,
+        "root": "000003",
+        "before": [
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [],
+            "hp": 66,
+            "powers": [
+              {
+                "amount": 2,
+                "id": "FRAIL_POWER"
+              },
+              {
+                "amount": 14,
+                "id": "CURL_UP_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [],
+            "hp": 66,
+            "powers": [
+              {
+                "amount": 2,
+                "id": "FRAIL_POWER"
+              },
+              {
+                "amount": 14,
+                "id": "CURL_UP_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [],
+            "hp": 66,
+            "powers": [
+              {
+                "amount": 1,
+                "id": "FRAIL_POWER"
+              },
+              {
+                "amount": 14,
+                "id": "CURL_UP_POWER"
+              },
+              {
+                "amount": 5,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "BULWARK.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 66,
+            "powers": [
+              {
+                "amount": 1,
+                "id": "FRAIL_POWER"
+              },
+              {
+                "amount": 14,
+                "id": "CURL_UP_POWER"
+              },
+              {
+                "amount": 5,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "BULWARK.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 58,
+            "powers": [
+              {
+                "amount": 14,
+                "id": "CURL_UP_POWER"
+              },
+              {
+                "amount": 5,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "BULWARK.OnPlay: MethodMirrorIncomplete"
+            ],
+            "hp": 44,
+            "powers": [
+              {
+                "amount": 2,
+                "id": "FRAIL_POWER"
+              },
+              {
+                "amount": 14,
+                "id": "CURL_UP_POWER"
+              },
+              {
+                "amount": 5,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": false,
+            "win": false
+          },
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "BULWARK.OnPlay: MethodMirrorIncomplete",
+              "HAMMER_TIME.OnPlay: MethodNotMirrored"
+            ],
+            "hp": 44,
+            "powers": [
+              {
+                "amount": 2,
+                "id": "FRAIL_POWER"
+              },
+              {
+                "amount": 14,
+                "id": "CURL_UP_POWER"
+              },
+              {
+                "amount": 5,
+                "id": "STRENGTH_POWER"
+              }
+            ],
+            "risk": true,
+            "win": false
+          }
+        ],
+        "after": [
+          {
+            "boundary": "None",
+            "risk": false,
+            "death": false,
+            "win": false,
+            "hp": 66,
+            "gaps": [],
+            "powers": [
+              {
+                "id": "FRAIL_POWER",
+                "amount": 2
+              },
+              {
+                "id": "CURL_UP_POWER",
+                "amount": 14
+              }
+            ]
+          },
+          {
+            "boundary": "None",
+            "risk": false,
+            "death": false,
+            "win": false,
+            "hp": 66,
+            "gaps": [],
+            "powers": [
+              {
+                "id": "FRAIL_POWER",
+                "amount": 2
+              },
+              {
+                "id": "CURL_UP_POWER",
+                "amount": 14
+              }
+            ]
+          },
+          {
+            "boundary": "None",
+            "risk": false,
+            "death": false,
+            "win": false,
+            "hp": 66,
+            "gaps": [],
+            "powers": [
+              {
+                "id": "FRAIL_POWER",
+                "amount": 1
+              },
+              {
+                "id": "CURL_UP_POWER",
+                "amount": 14
+              },
+              {
+                "id": "STRENGTH_POWER",
+                "amount": 5
+              }
+            ]
+          },
+          {
+            "boundary": "None",
+            "risk": false,
+            "death": false,
+            "win": false,
+            "hp": 66,
+            "gaps": [
+              "BULWARK.OnPlay: MethodMirrorIncomplete"
+            ],
+            "powers": [
+              {
+                "id": "FRAIL_POWER",
+                "amount": 1
+              },
+              {
+                "id": "CURL_UP_POWER",
+                "amount": 14
+              },
+              {
+                "id": "STRENGTH_POWER",
+                "amount": 5
+              }
+            ]
+          },
+          {
+            "boundary": "None",
+            "risk": false,
+            "death": false,
+            "win": false,
+            "hp": 58,
+            "gaps": [
+              "BULWARK.OnPlay: MethodMirrorIncomplete"
+            ],
+            "powers": [
+              {
+                "id": "CURL_UP_POWER",
+                "amount": 14
+              },
+              {
+                "id": "STRENGTH_POWER",
+                "amount": 5
+              }
+            ]
+          },
+          {
+            "boundary": "None",
+            "risk": false,
+            "death": false,
+            "win": false,
+            "hp": 44,
+            "gaps": [
+              "BULWARK.OnPlay: MethodMirrorIncomplete"
+            ],
+            "powers": [
+              {
+                "id": "FRAIL_POWER",
+                "amount": 2
+              },
+              {
+                "id": "CURL_UP_POWER",
+                "amount": 14
+              },
+              {
+                "id": "STRENGTH_POWER",
+                "amount": 5
+              }
+            ]
+          },
+          {
+            "boundary": "None",
+            "risk": false,
+            "death": false,
+            "win": false,
+            "hp": 44,
+            "gaps": [
+              "BULWARK.OnPlay: MethodMirrorIncomplete"
+            ],
+            "powers": [
+              {
+                "id": "FRAIL_POWER",
+                "amount": 2
+              },
+              {
+                "id": "HAMMER_TIME_POWER",
+                "amount": 1
+              },
+              {
+                "id": "CURL_UP_POWER",
+                "amount": 14
+              },
+              {
+                "id": "STRENGTH_POWER",
+                "amount": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ledger": "nosl3c-iie-broad",
+        "step": 1,
+        "root": "000002",
+        "before": [
+          {
+            "boundary": "None",
+            "death": false,
+            "gaps": [
+              "HAMMER_TIME.OnPlay: MethodNotMirrored"
+            ],
+            "hp": 200,
+            "powers": [
+              {
+                "amount": 1,
+                "id": "IMBALANCED_POWER"
+              }
+            ],
+            "risk": true,
+            "win": false
+          }
+        ],
+        "after": [
+          {
+            "boundary": "None",
+            "risk": false,
+            "death": false,
+            "win": false,
+            "hp": 200,
+            "gaps": [],
+            "powers": [
+              {
+                "id": "HAMMER_TIME_POWER",
+                "amount": 1
+              },
+              {
+                "id": "IMBALANCED_POWER",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "resampled": [
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 1,
+      "position": "000002",
+      "root": "7243be6818f0ccbc5bbee929660ac6ca472fab7830d7d28b2254557c9aee6b3d",
+      "collected_actions": 43,
+      "eligible": false,
+      "proof": {
+        "status": "native_difference",
+        "certification": "semantic_mismatch",
+        "reason": "continuation_difference",
+        "first_failure": {
+          "action": "play_card",
+          "card": "SOVEREIGN_BLADE",
+          "effect": null,
+          "phase": "combat",
+          "position": 42,
+          "target_type": "AnyEnemy"
+        },
+        "continuation_fields": {
+          "P": {
+            "native": "0:PALE_BLUE_DOT_POWER=2/0[CardPlay=5,],0:HAMMER_TIME_POWER=1/0[],0:AUTOMATION_POWER=1/0[BaseCards=10,],0:MONARCHS_GAZE_POWER=1/0[],",
+            "prediction": "0:PALE_BLUE_DOT_POWER=2/0[CardPlay=5,],0:HAMMER_TIME_POWER=1/0[],0:AUTOMATION_POWER=1/0[BaseCards=10,],0:MONARCHS_GAZE_POWER=1/0[],0:DRAW_CARDS_NEXT_TURN_POWER=2/0[],"
+          }
+        },
+        "terminal_verified": false
+      }
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000003",
+      "root": "ab1cbddbad199d8df2fddbd796732d0a98169ef4211051d7e1450b4f8f4503a2",
+      "collected_actions": 16,
+      "eligible": true,
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "e31c5632f7ad8cb5fac475f59164996a2d7af81788de2d4bbfa16eb1839137f4"
+      }
+    }
+  ],
+  "forge_regression": {
+    "cases": [
+      {
+        "exhausted": "SOVEREIGN_BLADE",
+        "frames": [
+          {
+            "action": "SPOILS_OF_BATTLE",
+            "blade_fields": [
+              "H=TYRANNY+1/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Innate]/baselib=-,STRIKE_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=6,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,FURNACE+1/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Forge=7,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=19,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,"
+            ],
+            "stamp": "1ffb366196450598ec065d9e474f67f7eccca10fda8a94f30f0e1afe9713d22d"
+          },
+          {
+            "action": "TYRANNY",
+            "blade_fields": [
+              "H=STRIKE_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=6,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,FURNACE+1/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Forge=7,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=19,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,"
+            ],
+            "stamp": "6a6c4a09d8ba1d356fd3d3ddf2ff2d2976e135355c8cf4a30c6a7456ea4c37ca"
+          },
+          {
+            "action": "FURNACE",
+            "blade_fields": [
+              "H=STRIKE_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=6,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=19,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,"
+            ],
+            "stamp": "ace362b393dd4af99ae53815a17364ffb0c27600fb8612efbb2b1a5b4a9388e7"
+          },
+          {
+            "action": "confirm_selection",
+            "blade_fields": [
+              "H=SPOILS_OF_BATTLE+1/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Cards=2,Forge=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,STRIKE_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=6,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=17,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,",
+              "X=SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=26,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,"
+            ],
+            "stamp": "d33d3865477fa0ab582d38f3f63b68f328c36fc518a4eee101590c43164bff57"
+          }
+        ],
+        "spec": {
+          "act": 1,
+          "act_variant": "UNDERDOCKS",
+          "ascension": 0,
+          "character": "Regent",
+          "deck": [
+            {
+              "id": "SPOILS_OF_BATTLE",
+              "upgrade": 1
+            },
+            {
+              "id": "TYRANNY",
+              "upgrade": 1
+            },
+            {
+              "id": "FURNACE",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_REGENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_REGENT",
+              "upgrade": 0
+            }
+          ],
+          "encounter": "TWO_TAILED_RATS_NORMAL",
+          "hp": 75,
+          "max_hp": 75,
+          "potions": [],
+          "relics": [],
+          "schema": 3,
+          "seed": "IIH8_FORGE_ORDER"
+        }
+      },
+      {
+        "exhausted": "DEFEND_REGENT",
+        "frames": [
+          {
+            "action": "SPOILS_OF_BATTLE",
+            "blade_fields": [
+              "H=TYRANNY+1/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Innate]/baselib=-,STRIKE_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=6,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,FURNACE+1/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Forge=7,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=19,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,"
+            ],
+            "stamp": "1ffb366196450598ec065d9e474f67f7eccca10fda8a94f30f0e1afe9713d22d"
+          },
+          {
+            "action": "TYRANNY",
+            "blade_fields": [
+              "H=STRIKE_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=6,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,FURNACE+1/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Forge=7,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=19,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,"
+            ],
+            "stamp": "6a6c4a09d8ba1d356fd3d3ddf2ff2d2976e135355c8cf4a30c6a7456ea4c37ca"
+          },
+          {
+            "action": "FURNACE",
+            "blade_fields": [
+              "H=STRIKE_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=6,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=19,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,"
+            ],
+            "stamp": "ace362b393dd4af99ae53815a17364ffb0c27600fb8612efbb2b1a5b4a9388e7"
+          },
+          {
+            "action": "confirm_selection",
+            "blade_fields": [
+              "H=SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=26,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,SPOILS_OF_BATTLE+1/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Cards=2,Forge=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,STRIKE_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=6,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "01e6744630480d90efa8f8abe69a5743eaa3ea3da6461ad741fe60079dc10306"
+          }
+        ],
+        "spec": {
+          "act": 1,
+          "act_variant": "UNDERDOCKS",
+          "ascension": 0,
+          "character": "Regent",
+          "deck": [
+            {
+              "id": "SPOILS_OF_BATTLE",
+              "upgrade": 1
+            },
+            {
+              "id": "TYRANNY",
+              "upgrade": 1
+            },
+            {
+              "id": "FURNACE",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_REGENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_REGENT",
+              "upgrade": 0
+            }
+          ],
+          "encounter": "TWO_TAILED_RATS_NORMAL",
+          "hp": 75,
+          "max_hp": 75,
+          "potions": [],
+          "relics": [],
+          "schema": 3,
+          "seed": "IIH8_FORGE_ORDER"
+        }
+      }
+    ]
+  }
+}

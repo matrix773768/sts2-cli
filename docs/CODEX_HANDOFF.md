@@ -10,6 +10,8 @@
 
 ## 工程状态
 
+- II-I.1 定向候选 `0.51.5-iii.1` 已补齐 Hammer Time，普通与升级效果、两条冻结前缀及 Forge 正负例通过。II-C 原 Bulwark 风险仍在。同根重采一条严格败局，另一条因终局 Power 差异拒绝。II-H.9.1 保持为最近全量验收。 [报告与复现](m1-nosl3c-iii1-hammer-time.md)
+
 - II-H.9 候选集成验收在 `0.51.5-iih.8.1` 和 II-H.7 Headless 上得到冻结 42/65、独立 11/16 和 45/60，v4 冷跑与恢复一致。II-H.9.1 修正常规宿主的部署路径，原六项失败均通过，完整主测试 164 通过、1 跳过，完成全量验收。 [报告与复现](m1-nosl3c-iih9-integration.md)
 
 - II-H.8 隔离构建 `0.51.5-iih.8.1` 继承 II-H.4–H.7，复用 II-H.7 Headless。玩家回合准备先完成 Tyranny 选择及耗尽，再触发 Furnace。Sovereign Blade 的 29 个历史动作全部与原生精确对齐，牌区及实例正负例、四条历史回归和 Void Form 对照均通过。 [定向证据与复现](m1-nosl3c-iih8-sovereign-blade.md)
