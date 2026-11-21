@@ -1,6 +1,6 @@
 # STS2 AI — 项目状态与交接（PROJECT_STATUS）
 
-> 更新日期：2026-11-20（Asia/Shanghai）
+> 更新日期：2026-11-21（Asia/Shanghai）
 > 当前研究主线已升级为机制感知、端口驱动的 NOSL 直接策略 + SL 搜索增强。LS2B 已完成可组合 StrategySpec 研究侧实证，但不作为最终 NOSL 必经结构。
 > 本文件描述 **matrix773768/sts2-cli** 的 `port/v0.113.1` 分支，不代表上游 `wuhao21/sts2-cli` 或 `main` 的支持情况。
 > M0 最后一次业务代码提交：`bc48ac58aeca80c2c7b9249cbf98f316ae99a27b` — Restore native Ancient healing and act-start travel rules。
@@ -9,6 +9,8 @@
 **项目长期目标、极速 Combat Solver 的定位、阶段性质量门槛及研究取舍，以 [PROJECT_VISION.md](PROJECT_VISION.md) 为准。** 本文件继续保留工程状态与历史验收记录；局外价值建模详见 [research-direction-and-value-model.md](research-direction-and-value-model.md)。
 
 ## 本阶段交接
+
+**M1-NOSL3C-II-H.3 宿主稳定化。** 原生初始化探针 18 次全部成功回收。冻结 65 条重证为 38 条精确认证，旧独立 16 根保持 10/16，旧 60 根恢复至 44/60，v4 两次更新的冷跑和恢复快照逐字节一致。查阅 [阶段报告](m1-nosl3c-iih3-stabilization.md) 和 [Codex 短交接](CODEX_HANDOFF.md)。
 
 **M1-NOSL3C-II-H.3 接通 E3 严格战斗认证。** 四条冻结 E3 独立复放后全部获准，旧 Solver 四条拒绝。新资格实际进入 v4 参数更新。主测试 162 通过、1 跳过。 [合同、验证与复现](m1-nosl3c-solver-semantic-convergence.md)
 

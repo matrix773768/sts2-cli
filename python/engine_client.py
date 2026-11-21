@@ -53,6 +53,9 @@ class EngineClient:
         self._last_command = None
         self._last_response = None
         self._closed = False
+        self._phase = "launch"
+        self._launched_at = time.monotonic()
+        startup_end = self._launched_at + startup_timeout
         # Launch the built DLL directly so terminating this process also stops the engine.
         self._check_cancelled()
         if self._remaining(startup_timeout) <= 0:
@@ -73,13 +76,17 @@ class EngineClient:
             for thread in threads:
                 thread.start()
                 self._threads.append(thread)
-            startup_end = time.monotonic() + startup_timeout
-            self.ready = ready = self._read(self._remaining(startup_timeout))
+            self._phase = "ready"
+            self.ready = ready = self._read(self._remaining(max(0, startup_end - time.monotonic())))
             if ready.get("type") != "ready":
                 raise RuntimeError(self._diagnostic(f"Expected ready, got {ready!r}"))
+            self._phase = "runtime_attestation"
             self._runtime_ready.wait(self._remaining(max(0, startup_end - time.monotonic())))
-            if not self.runtime_version or not self.runtime_version.startswith("9."):
-                raise RuntimeError(self._diagnostic("Missing CoreCLR 9 runtime announcement"))
+            expected_runtime = env.get("STS2_DOTNET_VERSION")
+            if not self.runtime_version or not self.runtime_version.startswith("9.") or (
+                    expected_runtime and self.runtime_version != expected_runtime):
+                raise RuntimeError(self._diagnostic(f"Unexpected CoreCLR runtime: {self.runtime_version!r}"))
+            self._phase = "idle"
         except BaseException:
             self.close(graceful=False)
             raise
@@ -100,6 +107,8 @@ class EngineClient:
         finally:
             if stream is self.proc.stdout:
                 self._responses.put(None)
+            elif stream is self.proc.stderr:
+                self._runtime_ready.set()
 
     def _write_commands(self):
         try:
@@ -111,7 +120,8 @@ class EngineClient:
             self._responses.put(error)
 
     def _diagnostic(self, message):
-        detail = (f"{message}; last command={self._last_command!r}; "
+        detail = (f"{message}; phase={self._phase}; pid={self.proc.pid}; exit={self.proc.poll()}; "
+                  f"last command={self._last_command!r}; "
                   f"last response={self._last_response!r}; logs={self.log_dir}")
         try:
             (self.log_dir / "failure.txt").write_text(detail, encoding="utf-8")
@@ -171,9 +181,12 @@ class EngineClient:
         with (self.log_dir / "commands.jsonl").open("ab") as log:
             log.write(data)
         started = time.monotonic()
+        self._phase = cmd.get("cmd", "request")
         self._commands.put(data)
         try:
-            return self._read(self._remaining(self._command_timeout - (time.monotonic() - started)))
+            result = self._read(self._remaining(self._command_timeout - (time.monotonic() - started)))
+            self._phase = "idle"
+            return result
         except BaseException:
             self.close(graceful=False)
             raise
@@ -202,3 +215,12 @@ class EngineClient:
             self.proc.stdin.close()
             self.proc.stdout.close()
             self.proc.stderr.close()
+            lifecycle = dict(pid=self.proc.pid, exit_code=self.proc.returncode,
+                             runtime=self.runtime_version, last_phase=self._phase,
+                             graceful_requested=graceful,
+                             duration_seconds=round(time.monotonic() - self._launched_at, 3),
+                             io_threads_stopped=all(not thread.is_alive() for thread in self._threads))
+            try:
+                (self.log_dir / "lifecycle.json").write_text(json.dumps(lifecycle), encoding="utf-8")
+            except OSError:
+                pass
