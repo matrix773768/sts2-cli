@@ -1,0 +1,943 @@
+{
+  "build": {
+    "version": "0.51.5-iii.4",
+    "source_revision": "78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+    "patched_sha256": "3ae6a47246d496abbe6a5029bf807ab8b90930a11ae147f144804e8e8d31ad25",
+    "bridge_sha256": "529790e64614f2fbf0b48374eb80f1c6672511e706aa5bcde219f4f8f2bb4165",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "frozen_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13"
+  },
+  "engine": {
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+    "coreclr": "9.0.7",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "headless_sha256": "b3f8ce1d862bdb98000bfeb90d701239e50be17034739c5c2ed18e26716150f0",
+    "native_identity": "87baa84a2b2297eae588a6996727d719b6e299227d1770a44bef7836ebe8e06f",
+    "policy": "M1-F2-discard-v1",
+    "sampler": "m1-d1-v1",
+    "solver": "0.51.5-iii.4",
+    "solver_sha256": "3ae6a47246d496abbe6a5029bf807ab8b90930a11ae147f144804e8e8d31ad25"
+  },
+  "effects": {
+    "cases": [
+      {
+        "frames": [
+          {
+            "action": "OUTRAGE",
+            "count_after": 2,
+            "count_before": 1,
+            "enemy_hp_before": 39,
+            "outrage_fields": [
+              "C=OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "d1a7a19e90fb6c49db7dcf53d3cdd5364e0f8f8b71df149326254ea8aa717901",
+            "terminal": false
+          },
+          {
+            "action": "end_turn",
+            "count_after": 2,
+            "count_before": 2,
+            "enemy_hp_before": 30,
+            "outrage_fields": [
+              "H=OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "fd324e5adbb1338ab58c095728c8e696ab36fcb560b09843da49a472dbad3080",
+            "terminal": false
+          },
+          {
+            "action": "OUTRAGE",
+            "count_after": 3,
+            "count_before": 2,
+            "enemy_hp_before": 30,
+            "outrage_fields": [
+              "H=DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,",
+              "C=OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "52720668298b074fe4317f16b6cf2c850b733d9186879a296a6de7e0bc922c37",
+            "terminal": false
+          },
+          {
+            "action": "OUTRAGE",
+            "count_after": 4,
+            "count_before": 3,
+            "enemy_hp_before": 24,
+            "outrage_fields": [
+              "C=OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "22072f4b99d515d5418744fced1c3534acb99f8a73f425dc878c0cdd03fa5be5",
+            "terminal": false
+          },
+          {
+            "action": "end_turn",
+            "count_after": 4,
+            "count_before": 4,
+            "enemy_hp_before": 18,
+            "outrage_fields": [
+              "H=DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,",
+              "D=OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "4bf4c06505042cfb2d4fd69024e5eb2b24784428bf6dab7fd4fca71dff4a18a3",
+            "terminal": false
+          },
+          {
+            "action": "OUTRAGE",
+            "count_after": 5,
+            "count_before": 4,
+            "enemy_hp_before": 18,
+            "outrage_fields": [
+              "D=OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,",
+              "C=OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "f9dd16ad37e00a2538ee944f10b34201f756c3b31b79e4186f1184d701b248e9",
+            "terminal": false
+          },
+          {
+            "action": "end_turn",
+            "count_after": 5,
+            "count_before": 5,
+            "enemy_hp_before": 9,
+            "outrage_fields": [
+              "H=OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,",
+              "D=DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "3a541001157ed179e9bcab0932d0817e84301d9536b3126b26b4d013de3bf28b",
+            "terminal": false
+          },
+          {
+            "action": "OUTRAGE",
+            "count_after": 6,
+            "count_before": 5,
+            "enemy_hp_before": 9,
+            "outrage_fields": [
+              "H=OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,",
+              "D=DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,",
+              "C=OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "15e57da7e481ef5f5040c4abbe6600e58249496bcbbad7009f6bb97121292adc",
+            "terminal": false
+          },
+          {
+            "action": "OUTRAGE",
+            "count_after": 5,
+            "count_before": 6,
+            "enemy_hp_before": 3,
+            "outrage_fields": [
+              "H=OUTRAGE+0/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,",
+              "D=DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,",
+              "C=OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+0/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "92537464907c774c2fd8229e7ee09eed95132546111524ede940b392ecd8db16",
+            "terminal": true
+          }
+        ],
+        "spec": {
+          "act": 1,
+          "act_variant": "UNDERDOCKS",
+          "ascension": 0,
+          "character": "Ironclad",
+          "deck": [
+            {
+              "id": "OUTRAGE",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            }
+          ],
+          "encounter": "SLUDGE_SPINNER_WEAK",
+          "hp": 75,
+          "max_hp": 75,
+          "potions": [],
+          "relics": [],
+          "schema": 3,
+          "seed": "III4_OUTRAGE"
+        }
+      },
+      {
+        "frames": [
+          {
+            "action": "OUTRAGE",
+            "count_after": 2,
+            "count_before": 1,
+            "enemy_hp_before": 39,
+            "outrage_fields": [
+              "C=OUTRAGE+1/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+1/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "afde153e038a4742942d21b931737cf966531c0920c426ad2649c6bf7119d802",
+            "terminal": false
+          },
+          {
+            "action": "end_turn",
+            "count_after": 2,
+            "count_before": 2,
+            "enemy_hp_before": 26,
+            "outrage_fields": [
+              "H=OUTRAGE+1/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+1/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "239de17e98eb3abb8c94a75b8e342dfbc040f6ab5c0509b7a1a2c241fc5f1e53",
+            "terminal": false
+          },
+          {
+            "action": "OUTRAGE",
+            "count_after": 3,
+            "count_before": 2,
+            "enemy_hp_before": 26,
+            "outrage_fields": [
+              "H=DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+1/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,",
+              "C=OUTRAGE+1/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+1/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "5ae06329b2ef0e3b81505f183e1031aaf6df8a69f7de8d5621cd986bcffaa556",
+            "terminal": false
+          },
+          {
+            "action": "OUTRAGE",
+            "count_after": 4,
+            "count_before": 3,
+            "enemy_hp_before": 17,
+            "outrage_fields": [
+              "C=OUTRAGE+1/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+1/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+1/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+1/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "334eab93395006d6cb63c87dcbd6b1db0c9ba4e1d93525d2e84012137de2dfaf",
+            "terminal": false
+          },
+          {
+            "action": "end_turn",
+            "count_after": 4,
+            "count_before": 4,
+            "enemy_hp_before": 8,
+            "outrage_fields": [
+              "H=DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+1/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_IRONCLAD+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,",
+              "D=OUTRAGE+1/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+1/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+1/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "3ed3b40fdb8562bed30ba7ff72a7f87bb834abce339e44921ba9a9a9382e1448",
+            "terminal": false
+          },
+          {
+            "action": "OUTRAGE",
+            "count_after": 3,
+            "count_before": 4,
+            "enemy_hp_before": 8,
+            "outrage_fields": [
+              "D=OUTRAGE+1/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+1/False:0/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,OUTRAGE+1/False:0/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=13,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+            ],
+            "stamp": "963b8e605a3eddc5323ec7bb9608347427f27f13bb6ef85a3c854a346ad98e4e",
+            "terminal": true
+          }
+        ],
+        "spec": {
+          "act": 1,
+          "act_variant": "UNDERDOCKS",
+          "ascension": 0,
+          "character": "Ironclad",
+          "deck": [
+            {
+              "id": "OUTRAGE",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            }
+          ],
+          "encounter": "SLUDGE_SPINNER_WEAK",
+          "hp": 75,
+          "max_hp": 75,
+          "potions": [],
+          "relics": [],
+          "schema": 3,
+          "seed": "III4_OUTRAGE"
+        }
+      }
+    ]
+  },
+  "frozen_prefix": {
+    "results": [
+      {
+        "archived_actions": 3,
+        "comparison_reached": 3,
+        "interaction": null,
+        "last_stable": 2,
+        "ledger": "nosl3c-iid-release-independent",
+        "native_decision": "combat_play",
+        "root": "000028",
+        "status": "active",
+        "step": 0,
+        "steps": [
+          {
+            "action": {
+              "card": 3,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 0,
+              "energy_x": false,
+              "index": 4,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "Self"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 0,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "addb0cbd27c3eb066e908ebcdd1cccb99900ce666fd301b2e720b14828889772",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": null,
+              "choice": null,
+              "choice_zone": null,
+              "cost": null,
+              "energy_x": false,
+              "index": 14,
+              "kind": "end_turn",
+              "potion": null,
+              "preview": null,
+              "star_cost": null,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": null
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 1,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "45b690ca6c73fe506578084dc963ff0e87e68a213486eefa1f38f77b0479e4ab",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": 2,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 0,
+              "energy_x": false,
+              "index": 3,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": 0,
+              "target_side": "enemy",
+              "target_type": "AnyEnemy"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 2,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "a6cb4aa810474eb76619348d7b33273b3acbd4d636cb4e9cf41cde0719c0bb59",
+            "status": "active"
+          }
+        ],
+        "root_sha256": "a101781a88008d19bfbb97299552aaae62dc04ad21df97abc365e3aa2e25a66b",
+        "first_actual_difference": null
+      }
+    ]
+  },
+  "direct_risk": {
+    "after": [
+      {
+        "boundary": "None",
+        "death": false,
+        "gaps": [
+          "BATTLE_TRANCE.OnPlay: MethodMirrorIncomplete"
+        ],
+        "hp": 80,
+        "powers": [
+          {
+            "amount": 1,
+            "id": "NO_DRAW_POWER"
+          }
+        ],
+        "risk": false,
+        "win": false
+      },
+      {
+        "boundary": "None",
+        "death": false,
+        "gaps": [
+          "BATTLE_TRANCE.OnPlay: MethodMirrorIncomplete"
+        ],
+        "hp": 77,
+        "powers": [
+          {
+            "amount": 3,
+            "id": "CONSTRICT_POWER"
+          },
+          {
+            "amount": 2,
+            "id": "STRENGTH_POWER"
+          }
+        ],
+        "risk": false,
+        "win": false
+      },
+      {
+        "boundary": "None",
+        "death": false,
+        "gaps": [
+          "BATTLE_TRANCE.OnPlay: MethodMirrorIncomplete"
+        ],
+        "hp": 77,
+        "powers": [
+          {
+            "amount": 3,
+            "id": "CONSTRICT_POWER"
+          },
+          {
+            "amount": 2,
+            "id": "STRENGTH_POWER"
+          }
+        ],
+        "risk": false,
+        "win": false
+      }
+    ],
+    "before": [
+      {
+        "boundary": "None",
+        "death": false,
+        "gaps": [
+          "BATTLE_TRANCE.OnPlay: MethodMirrorIncomplete"
+        ],
+        "hp": 80,
+        "powers": [
+          {
+            "amount": 1,
+            "id": "NO_DRAW_POWER"
+          }
+        ],
+        "risk": false,
+        "win": false
+      },
+      {
+        "boundary": "None",
+        "death": false,
+        "gaps": [
+          "BATTLE_TRANCE.OnPlay: MethodMirrorIncomplete"
+        ],
+        "hp": 77,
+        "powers": [
+          {
+            "amount": 3,
+            "id": "CONSTRICT_POWER"
+          },
+          {
+            "amount": 2,
+            "id": "STRENGTH_POWER"
+          }
+        ],
+        "risk": false,
+        "win": false
+      },
+      {
+        "boundary": "None",
+        "death": false,
+        "gaps": [
+          "BATTLE_TRANCE.OnPlay: MethodMirrorIncomplete",
+          "OUTRAGE.OnPlay: MethodMirrorIncomplete"
+        ],
+        "hp": 77,
+        "powers": [
+          {
+            "amount": 3,
+            "id": "CONSTRICT_POWER"
+          },
+          {
+            "amount": 2,
+            "id": "STRENGTH_POWER"
+          }
+        ],
+        "risk": true,
+        "win": false
+      }
+    ]
+  },
+  "resampled": {
+    "root_sha256": "a101781a88008d19bfbb97299552aaae62dc04ad21df97abc365e3aa2e25a66b",
+    "spec": {
+      "act": 1,
+      "act_variant": "OVERGROWTH",
+      "ascension": 0,
+      "character": "Ironclad",
+      "deck": [
+        {
+          "id": "TEAR_ASUNDER",
+          "upgrade": 1
+        },
+        {
+          "id": "SETUP_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "BATTLE_TRANCE",
+          "upgrade": 1
+        },
+        {
+          "id": "POMMEL_STRIKE",
+          "upgrade": 1
+        },
+        {
+          "id": "JUGGLING",
+          "upgrade": 1
+        },
+        {
+          "id": "FIEND_FIRE",
+          "upgrade": 0
+        },
+        {
+          "id": "OUTRAGE",
+          "upgrade": 0
+        },
+        {
+          "id": "IRON_WAVE",
+          "upgrade": 0
+        },
+        {
+          "id": "BLOOD_WALL",
+          "upgrade": 1
+        }
+      ],
+      "encounter": "SLITHERING_STRANGLER_NORMAL",
+      "hp": 80,
+      "max_hp": 80,
+      "potions": [],
+      "relics": [],
+      "schema": 3,
+      "seed": "C2CFDDD1263286FB"
+    },
+    "actions": 12,
+    "eligible": true,
+    "proof": {
+      "status": "admissible_death",
+      "certification": "exact_native_match",
+      "boundaries": 12,
+      "terminal_verified": true,
+      "native_terminal_stamp": "291c3c24751a8b5e9decc9b7f05386a8580e5418c9c7384acc54efc375a38345"
+    }
+  },
+  "underworld_regression": {
+    "cases": [
+      {
+        "frames": [
+          {
+            "action": "UNDERWORLD",
+            "enemies": [
+              {
+                "block": 0,
+                "hp": 34,
+                "index": 0,
+                "intends_attack": false,
+                "intents": [
+                  {
+                    "type": "StatusCard"
+                  }
+                ],
+                "max_hp": 34,
+                "name": "LEAF_SLIME_M.name",
+                "powers": null
+              },
+              {
+                "block": 0,
+                "hp": 48,
+                "index": 1,
+                "intends_attack": true,
+                "intents": [
+                  {
+                    "damage": 11,
+                    "type": "Attack"
+                  }
+                ],
+                "max_hp": 48,
+                "name": "FLYCONID.name",
+                "powers": null
+              }
+            ],
+            "hp": 75,
+            "powers": "P=0:UNDERWORLD_POWER=1/0[],",
+            "stamp": "c01d3fee4900a8d9cb78ee2e4258ad002483b4226305a23217ba5aa0c878ad7b"
+          },
+          {
+            "action": "STRIKE_NECROBINDER",
+            "enemies": [
+              {
+                "block": 0,
+                "hp": 28,
+                "index": 0,
+                "intends_attack": false,
+                "intents": [
+                  {
+                    "type": "StatusCard"
+                  }
+                ],
+                "max_hp": 34,
+                "name": "LEAF_SLIME_M.name",
+                "powers": null
+              },
+              {
+                "block": 0,
+                "hp": 48,
+                "index": 1,
+                "intends_attack": true,
+                "intents": [
+                  {
+                    "damage": 11,
+                    "type": "Attack"
+                  }
+                ],
+                "max_hp": 48,
+                "name": "FLYCONID.name",
+                "powers": null
+              }
+            ],
+            "hp": 75,
+            "powers": "P=0:UNDERWORLD_POWER=1/0[],",
+            "stamp": "7ecf8d4c8acb2f526cda2ecbfc5889dc6c555950a7411bf6bbd11f8b5bb0f0f5"
+          },
+          {
+            "action": "end_turn",
+            "enemies": [
+              {
+                "block": 0,
+                "hp": 28,
+                "index": 0,
+                "intends_attack": true,
+                "intents": [
+                  {
+                    "damage": 8,
+                    "type": "Attack"
+                  }
+                ],
+                "max_hp": 34,
+                "name": "LEAF_SLIME_M.name",
+                "powers": null
+              },
+              {
+                "block": 0,
+                "hp": 48,
+                "index": 1,
+                "intends_attack": true,
+                "intents": [
+                  {
+                    "damage": 8,
+                    "type": "Attack"
+                  },
+                  {
+                    "type": "Debuff"
+                  }
+                ],
+                "max_hp": 48,
+                "name": "FLYCONID.name",
+                "powers": null
+              }
+            ],
+            "hp": 64,
+            "powers": "P=",
+            "stamp": "a81918a909c0b7ff47e6323ec6071ef9c5bd055e626604cc4315954006f79626"
+          },
+          {
+            "action": "end_turn",
+            "enemies": [
+              {
+                "block": 0,
+                "hp": 28,
+                "index": 0,
+                "intends_attack": false,
+                "intents": [
+                  {
+                    "type": "StatusCard"
+                  }
+                ],
+                "max_hp": 34,
+                "name": "LEAF_SLIME_M.name",
+                "powers": null
+              },
+              {
+                "block": 0,
+                "hp": 48,
+                "index": 1,
+                "intends_attack": false,
+                "intents": [
+                  {
+                    "type": "Debuff"
+                  }
+                ],
+                "max_hp": 48,
+                "name": "FLYCONID.name",
+                "powers": null
+              }
+            ],
+            "hp": 48,
+            "powers": "P=0:FRAIL_POWER=2/0[],",
+            "stamp": "f7cc4f40a8fd008edad6fa7dd65774f00a0276039ff9c9ddb27be4882c854b6e"
+          }
+        ],
+        "opening_keywords": [
+          "Exhaust"
+        ],
+        "spec": {
+          "act": 1,
+          "act_variant": "OVERGROWTH",
+          "ascension": 0,
+          "character": "Necrobinder",
+          "deck": [
+            {
+              "id": "UNDERWORLD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_NECROBINDER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_NECROBINDER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_NECROBINDER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_NECROBINDER",
+              "upgrade": 0
+            }
+          ],
+          "encounter": "FLYCONID_NORMAL",
+          "hp": 75,
+          "max_hp": 75,
+          "potions": [],
+          "relics": [],
+          "schema": 3,
+          "seed": "III3_UNDERWORLD"
+        }
+      },
+      {
+        "frames": [
+          {
+            "action": "UNDERWORLD",
+            "enemies": [
+              {
+                "block": 0,
+                "hp": 34,
+                "index": 0,
+                "intends_attack": false,
+                "intents": [
+                  {
+                    "type": "StatusCard"
+                  }
+                ],
+                "max_hp": 34,
+                "name": "LEAF_SLIME_M.name",
+                "powers": null
+              },
+              {
+                "block": 0,
+                "hp": 48,
+                "index": 1,
+                "intends_attack": true,
+                "intents": [
+                  {
+                    "damage": 11,
+                    "type": "Attack"
+                  }
+                ],
+                "max_hp": 48,
+                "name": "FLYCONID.name",
+                "powers": null
+              }
+            ],
+            "hp": 75,
+            "powers": "P=0:UNDERWORLD_POWER=1/0[],",
+            "stamp": "2bed8a1322cfc402819314a6035d3cb781f30c4abd6bdd1bad0b9669526f4f0a"
+          },
+          {
+            "action": "STRIKE_NECROBINDER",
+            "enemies": [
+              {
+                "block": 0,
+                "hp": 28,
+                "index": 0,
+                "intends_attack": false,
+                "intents": [
+                  {
+                    "type": "StatusCard"
+                  }
+                ],
+                "max_hp": 34,
+                "name": "LEAF_SLIME_M.name",
+                "powers": null
+              },
+              {
+                "block": 0,
+                "hp": 48,
+                "index": 1,
+                "intends_attack": true,
+                "intents": [
+                  {
+                    "damage": 11,
+                    "type": "Attack"
+                  }
+                ],
+                "max_hp": 48,
+                "name": "FLYCONID.name",
+                "powers": null
+              }
+            ],
+            "hp": 75,
+            "powers": "P=0:UNDERWORLD_POWER=1/0[],",
+            "stamp": "acb6f42328f61423437d1a99a9b4125e581a4c32a1ecd4a1d49cddcf13e9935d"
+          },
+          {
+            "action": "end_turn",
+            "enemies": [
+              {
+                "block": 0,
+                "hp": 28,
+                "index": 0,
+                "intends_attack": true,
+                "intents": [
+                  {
+                    "damage": 8,
+                    "type": "Attack"
+                  }
+                ],
+                "max_hp": 34,
+                "name": "LEAF_SLIME_M.name",
+                "powers": null
+              },
+              {
+                "block": 0,
+                "hp": 48,
+                "index": 1,
+                "intends_attack": true,
+                "intents": [
+                  {
+                    "damage": 8,
+                    "type": "Attack"
+                  },
+                  {
+                    "type": "Debuff"
+                  }
+                ],
+                "max_hp": 48,
+                "name": "FLYCONID.name",
+                "powers": null
+              }
+            ],
+            "hp": 64,
+            "powers": "P=",
+            "stamp": "fcd898fee9dec349418593a0ffe49bebc616a52fa56234a9d68b7727a3310847"
+          },
+          {
+            "action": "end_turn",
+            "enemies": [
+              {
+                "block": 0,
+                "hp": 28,
+                "index": 0,
+                "intends_attack": false,
+                "intents": [
+                  {
+                    "type": "StatusCard"
+                  }
+                ],
+                "max_hp": 34,
+                "name": "LEAF_SLIME_M.name",
+                "powers": null
+              },
+              {
+                "block": 0,
+                "hp": 48,
+                "index": 1,
+                "intends_attack": false,
+                "intents": [
+                  {
+                    "type": "Debuff"
+                  }
+                ],
+                "max_hp": 48,
+                "name": "FLYCONID.name",
+                "powers": null
+              }
+            ],
+            "hp": 48,
+            "powers": "P=0:FRAIL_POWER=2/0[],",
+            "stamp": "7d2560528809fe6eaeb9a941f67b9b86e70884df948e4b4a4859de38762ac81b"
+          }
+        ],
+        "opening_keywords": [],
+        "spec": {
+          "act": 1,
+          "act_variant": "OVERGROWTH",
+          "ascension": 0,
+          "character": "Necrobinder",
+          "deck": [
+            {
+              "id": "UNDERWORLD",
+              "upgrade": 1
+            },
+            {
+              "id": "STRIKE_NECROBINDER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_NECROBINDER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_NECROBINDER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_NECROBINDER",
+              "upgrade": 0
+            }
+          ],
+          "encounter": "FLYCONID_NORMAL",
+          "hp": 75,
+          "max_hp": 75,
+          "potions": [],
+          "relics": [],
+          "schema": 3,
+          "seed": "III3_UNDERWORLD"
+        }
+      }
+    ]
+  }
+}

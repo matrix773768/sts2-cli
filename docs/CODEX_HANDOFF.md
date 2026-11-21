@@ -10,7 +10,9 @@
 
 ## 工程状态
 
-- 最新定向候选 `0.51.5-iii.3` 补齐 Underworld，普通／升级效果、伤害排除和敌侧回合清理精确匹配。II-D 两步冻结前缀通过，Underworld 风险消除，Sic ’Em 原镜像缺口仍在。同根重采获严格败局，Hibernate 回归通过。 [报告与复现](m1-nosl3c-iii3-underworld.md)
+- 最新定向候选 `0.51.5-iii.4` 补全 Outrage 攻击后的同侧玩家克隆及弃牌堆落位。普通／升级正负例和三步冻结前缀均精确匹配。Outrage 风险消除，Battle Trance 原镜像缺口仍在。同根重采获严格败局，Underworld 回归通过。 [报告与复现](m1-nosl3c-iii4-outrage.md)
+
+- II-I.3 定向候选 `0.51.5-iii.3` 补齐 Underworld，普通／升级效果、伤害排除和敌侧回合清理精确匹配。II-D 两步冻结前缀通过，Underworld 风险消除，Sic ’Em 原镜像缺口仍在。同根重采获严格败局，Hibernate 回归通过。 [报告与复现](m1-nosl3c-iii3-underworld.md)
 
 - II-I.2 定向候选 `0.51.5-iii.2` 补齐 Hibernate，普通／升级效果和冰霜球触发、清理边界精确匹配。II-D 冻结首步风险消除，同根重采获严格胜局，Hammer Time 回归通过。全量验收基线仍为 II-H.9.1。 [报告与复现](m1-nosl3c-iii2-hibernate.md)
 
