@@ -10,7 +10,9 @@
 
 ## 工程状态
 
-- 最新定向候选 `0.51.5-iii.7` 补齐 Glimpse Beyond。普通、升级和未打出对照通过。II-E `1:000000` 的 13 步冻结前缀精确匹配，同根重采获严格胜局，Legion of Bone 回归通过。下一根为 Regent II-E `1:000003`。 [报告与复现](m1-nosl3c-iii7-glimpse-beyond.md)
+- 最新定向候选 `0.51.5-iii.8` 补齐 Plot。II-E `1:000003` 的八步冻结前缀精确匹配，最后一条原始阻断风险消除。普通／升级延迟抽牌及 Glimpse Beyond、Void Form 回归通过。同根重采遇到独立 Quasar 生成选牌确认缺陷，未获严格认证。 [报告与复现](m1-nosl3c-iii8-plot.md)
+
+- II-I.7 定向候选 `0.51.5-iii.7` 补齐 Glimpse Beyond。普通、升级和未打出对照通过。II-E `1:000000` 的 13 步冻结前缀精确匹配，同根重采获严格胜局，Legion of Bone 回归通过。[报告与复现](m1-nosl3c-iii7-glimpse-beyond.md)
 
 - II-I.6 定向候选 `0.51.5-iii.6` 补齐 Legion of Bone。普通／升级创建及存活增血原生夹具通过。II-D 的 13 步全精确匹配，复活差异及 Legion 风险消除；同根重采获严格败局，Calcify 回归通过。 [报告与复现](m1-nosl3c-iii6-legion-of-bone.md)
 
