@@ -1,0 +1,403 @@
+{
+  "build": {
+    "version": "0.51.5-iii.2",
+    "source_revision": "78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+    "patched_sha256": "f8b1bf241b70b0c2b20a1f0ebc8888104202a5e5f64d225cc01571d0c347c2fd",
+    "bridge_sha256": "529790e64614f2fbf0b48374eb80f1c6672511e706aa5bcde219f4f8f2bb4165",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "frozen_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13"
+  },
+  "engine": {
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+    "coreclr": "9.0.7",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "headless_sha256": "b3f8ce1d862bdb98000bfeb90d701239e50be17034739c5c2ed18e26716150f0",
+    "native_identity": "87baa84a2b2297eae588a6996727d719b6e299227d1770a44bef7836ebe8e06f",
+    "policy": "M1-F2-discard-v1",
+    "sampler": "m1-d1-v1",
+    "solver": "0.51.5-iii.2",
+    "solver_sha256": "f8b1bf241b70b0c2b20a1f0ebc8888104202a5e5f64d225cc01571d0c347c2fd"
+  },
+  "effects": {
+    "cases": [
+      {
+        "frames": [
+          {
+            "action": "COOLHEADED",
+            "block": 0,
+            "hp": 75,
+            "orbs": "O=3:FROST_ORB[2/5],",
+            "powers": "P=",
+            "stamp": "1ea29d9391273db7e1cca5d70bd2490f2e8359c42fbf4ed5367a2e56dafbe523"
+          },
+          {
+            "action": "HIBERNATE",
+            "block": 0,
+            "hp": 75,
+            "orbs": "O=3:FROST_ORB[2/5],FROST_ORB[2/5],FROST_ORB[2/5],",
+            "powers": "P=0:HIBERNATE_POWER=1/0[],",
+            "stamp": "652f500e830aa1091e694eef445f6be8f8f7198cf6b743ff850dcaf22a2066e0"
+          },
+          {
+            "action": "end_turn",
+            "block": 0,
+            "hp": 73,
+            "orbs": "O=3:FROST_ORB[2/5],FROST_ORB[2/5],FROST_ORB[2/5],",
+            "powers": "P=0:WEAK_POWER=1/0[DamageDecrease=0.75,],",
+            "stamp": "23f6df8d8c0f96e47c04a0c03ad5b6df7d211169d930207c627b8fdd3adf105a"
+          },
+          {
+            "action": "end_turn",
+            "block": 0,
+            "hp": 68,
+            "orbs": "O=3:FROST_ORB[2/5],FROST_ORB[2/5],FROST_ORB[2/5],",
+            "powers": "P=",
+            "stamp": "9699f276064df1815dbc9420938d6f0734e9f28b542437af03002486376ac480"
+          }
+        ],
+        "spec": {
+          "act": 1,
+          "act_variant": "UNDERDOCKS",
+          "ascension": 0,
+          "character": "Defect",
+          "deck": [
+            {
+              "id": "HIBERNATE",
+              "upgrade": 0
+            },
+            {
+              "id": "COOLHEADED",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_DEFECT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_DEFECT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_DEFECT",
+              "upgrade": 0
+            }
+          ],
+          "encounter": "SLUDGE_SPINNER_WEAK",
+          "hp": 75,
+          "max_hp": 75,
+          "potions": [],
+          "relics": [],
+          "schema": 3,
+          "seed": "III2_HIBERNATE"
+        }
+      },
+      {
+        "frames": [
+          {
+            "action": "COOLHEADED",
+            "block": 0,
+            "hp": 75,
+            "orbs": "O=3:FROST_ORB[2/5],",
+            "powers": "P=",
+            "stamp": "647ea57371c9456d9363d9fbdd2d6eb6a999c27efe0fcc43fddc947d2b9b5835"
+          },
+          {
+            "action": "HIBERNATE",
+            "block": 5,
+            "hp": 75,
+            "orbs": "O=3:FROST_ORB[2/5],FROST_ORB[2/5],FROST_ORB[2/5],",
+            "powers": "P=0:HIBERNATE_POWER=1/0[],",
+            "stamp": "c80f8988f283c51ad7fa796564e339a191241a472e15333df61ece9e3748d4a9"
+          },
+          {
+            "action": "end_turn",
+            "block": 0,
+            "hp": 75,
+            "orbs": "O=3:FROST_ORB[2/5],FROST_ORB[2/5],FROST_ORB[2/5],",
+            "powers": "P=0:WEAK_POWER=1/0[DamageDecrease=0.75,],",
+            "stamp": "76ce5a111736463e3c00803c9a97594c4b82073b9420fdcdb20f964b57b04486"
+          },
+          {
+            "action": "end_turn",
+            "block": 0,
+            "hp": 70,
+            "orbs": "O=3:FROST_ORB[2/5],FROST_ORB[2/5],FROST_ORB[2/5],",
+            "powers": "P=",
+            "stamp": "19e45a5c930bf93869ea4434307c11a4589031fae829864026b143211eaff660"
+          }
+        ],
+        "spec": {
+          "act": 1,
+          "act_variant": "UNDERDOCKS",
+          "ascension": 0,
+          "character": "Defect",
+          "deck": [
+            {
+              "id": "HIBERNATE",
+              "upgrade": 1
+            },
+            {
+              "id": "COOLHEADED",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_DEFECT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_DEFECT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_DEFECT",
+              "upgrade": 0
+            }
+          ],
+          "encounter": "SLUDGE_SPINNER_WEAK",
+          "hp": 75,
+          "max_hp": 75,
+          "potions": [],
+          "relics": [],
+          "schema": 3,
+          "seed": "III2_HIBERNATE"
+        }
+      }
+    ]
+  },
+  "frozen_prefix": {
+    "results": [
+      {
+        "archived_actions": 1,
+        "comparison_reached": 1,
+        "interaction": null,
+        "last_stable": 0,
+        "ledger": "nosl3c-iid-release-independent",
+        "native_decision": "combat_play",
+        "root": "000009",
+        "status": "active",
+        "step": 0,
+        "steps": [
+          {
+            "action": {
+              "card": 2,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 2,
+              "energy_x": false,
+              "index": 2,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "Self"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 0,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "695d18fe6810071f370070f6fbaaeab4c209095476a07ba62bf93eafb003a3e0",
+            "status": "active"
+          }
+        ],
+        "root_sha256": "8c4c528c646f0d50a353700bd378c3a5b5b593f779b5154a356be4946671b24b"
+      }
+    ]
+  },
+  "direct_risk": {
+    "after": [
+      {
+        "boundary": "None",
+        "death": false,
+        "gaps": [],
+        "hp": 75,
+        "powers": [
+          {
+            "amount": 1,
+            "id": "HIBERNATE_POWER"
+          }
+        ],
+        "risk": false,
+        "win": false
+      }
+    ],
+    "before": [
+      {
+        "boundary": "None",
+        "death": false,
+        "gaps": [
+          "HIBERNATE.OnPlay: MethodNotMirrored"
+        ],
+        "hp": 75,
+        "powers": [],
+        "risk": true,
+        "win": false
+      }
+    ]
+  },
+  "resampled": {
+    "root_sha256": "8c4c528c646f0d50a353700bd378c3a5b5b593f779b5154a356be4946671b24b",
+    "spec": {
+      "act": 1,
+      "act_variant": "UNDERDOCKS",
+      "ascension": 0,
+      "character": "Defect",
+      "deck": [
+        {
+          "id": "HIBERNATE",
+          "upgrade": 0
+        },
+        {
+          "id": "TRASH_TO_TREASURE",
+          "upgrade": 0
+        },
+        {
+          "id": "SYNTHESIS",
+          "upgrade": 1
+        },
+        {
+          "id": "SCAVENGE",
+          "upgrade": 1
+        },
+        {
+          "id": "BOOST_AWAY",
+          "upgrade": 0
+        }
+      ],
+      "encounter": "SLUDGE_SPINNER_WEAK",
+      "hp": 75,
+      "max_hp": 75,
+      "potions": [],
+      "relics": [],
+      "schema": 3,
+      "seed": "2C5D1EE725A5A909"
+    },
+    "actions": 14,
+    "eligible": true,
+    "proof": {
+      "status": "admissible_predicted_win",
+      "certification": "exact_native_match",
+      "boundaries": 10,
+      "terminal_verified": true,
+      "native_terminal_stamp": "714404680e7ba9cffee7c2c09f18fabded761f02602eecee2b18a21eeba33dd3"
+    }
+  },
+  "hammer_regression": {
+    "cases": [
+      {
+        "frames": [
+          {
+            "blades": [],
+            "card": "HAMMER_TIME",
+            "cost": 2,
+            "powers": "P=0:HAMMER_TIME_POWER=1/0[],",
+            "stamp": "59565955be94dacb55fb2bd68dcea943b30b9db2806475fe9462719d9435f8f7"
+          },
+          {
+            "blades": [
+              "H=DEFEND_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,STRIKE_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=6,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=19,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,"
+            ],
+            "card": "SPOILS_OF_BATTLE",
+            "cost": 1,
+            "powers": "P=0:HAMMER_TIME_POWER=1/0[],",
+            "stamp": "2ddad35b74727cd18428cd52f1cdbbc7a511f64cfb11b6c1af55fc57fe0d4e23"
+          }
+        ],
+        "spec": {
+          "act": 1,
+          "act_variant": "UNDERDOCKS",
+          "ascension": 0,
+          "character": "Regent",
+          "deck": [
+            {
+              "id": "HAMMER_TIME",
+              "upgrade": 0
+            },
+            {
+              "id": "SPOILS_OF_BATTLE",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_REGENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_REGENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_REGENT",
+              "upgrade": 0
+            }
+          ],
+          "encounter": "TWO_TAILED_RATS_NORMAL",
+          "hp": 75,
+          "max_hp": 75,
+          "potions": [],
+          "relics": [],
+          "schema": 3,
+          "seed": "III1_HAMMER_FORGE"
+        }
+      },
+      {
+        "frames": [
+          {
+            "blades": [],
+            "card": "HAMMER_TIME",
+            "cost": 1,
+            "powers": "P=0:HAMMER_TIME_POWER=1/0[],",
+            "stamp": "3a5ac07ac40d78f247740f131e5537ac4ec673c82ebf71f5f453e5e8c96bad3e"
+          },
+          {
+            "blades": [
+              "H=DEFEND_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,STRIKE_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=6,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=19,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,"
+            ],
+            "card": "SPOILS_OF_BATTLE",
+            "cost": 1,
+            "powers": "P=0:HAMMER_TIME_POWER=1/0[],",
+            "stamp": "bc56dff21b57420819224ebde55c2c91d55d63d68682a8e2d6b30a63044a53f1"
+          }
+        ],
+        "spec": {
+          "act": 1,
+          "act_variant": "UNDERDOCKS",
+          "ascension": 0,
+          "character": "Regent",
+          "deck": [
+            {
+              "id": "HAMMER_TIME",
+              "upgrade": 1
+            },
+            {
+              "id": "SPOILS_OF_BATTLE",
+              "upgrade": 1
+            },
+            {
+              "id": "DEFEND_REGENT",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_REGENT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_REGENT",
+              "upgrade": 0
+            }
+          ],
+          "encounter": "TWO_TAILED_RATS_NORMAL",
+          "hp": 75,
+          "max_hp": 75,
+          "potions": [],
+          "relics": [],
+          "schema": 3,
+          "seed": "III1_HAMMER_FORGE"
+        }
+      }
+    ]
+  }
+}
