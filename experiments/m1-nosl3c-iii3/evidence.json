@@ -1,0 +1,767 @@
+{
+  "build": {
+    "version": "0.51.5-iii.3",
+    "source_revision": "78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+    "patched_sha256": "247ccd78968ddad3618a5a576bab67f21f86020d1ee21894c09ba51752af3af5",
+    "bridge_sha256": "529790e64614f2fbf0b48374eb80f1c6672511e706aa5bcde219f4f8f2bb4165",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "frozen_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13"
+  },
+  "engine": {
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+    "coreclr": "9.0.7",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "headless_sha256": "b3f8ce1d862bdb98000bfeb90d701239e50be17034739c5c2ed18e26716150f0",
+    "native_identity": "87baa84a2b2297eae588a6996727d719b6e299227d1770a44bef7836ebe8e06f",
+    "policy": "M1-F2-discard-v1",
+    "sampler": "m1-d1-v1",
+    "solver": "0.51.5-iii.3",
+    "solver_sha256": "247ccd78968ddad3618a5a576bab67f21f86020d1ee21894c09ba51752af3af5"
+  },
+  "effects": {
+    "cases": [
+      {
+        "frames": [
+          {
+            "action": "UNDERWORLD",
+            "enemies": [
+              {
+                "block": 0,
+                "hp": 34,
+                "index": 0,
+                "intends_attack": false,
+                "intents": [
+                  {
+                    "type": "StatusCard"
+                  }
+                ],
+                "max_hp": 34,
+                "name": "LEAF_SLIME_M.name",
+                "powers": null
+              },
+              {
+                "block": 0,
+                "hp": 48,
+                "index": 1,
+                "intends_attack": true,
+                "intents": [
+                  {
+                    "damage": 11,
+                    "type": "Attack"
+                  }
+                ],
+                "max_hp": 48,
+                "name": "FLYCONID.name",
+                "powers": null
+              }
+            ],
+            "hp": 75,
+            "powers": "P=0:UNDERWORLD_POWER=1/0[],",
+            "stamp": "c01d3fee4900a8d9cb78ee2e4258ad002483b4226305a23217ba5aa0c878ad7b"
+          },
+          {
+            "action": "STRIKE_NECROBINDER",
+            "enemies": [
+              {
+                "block": 0,
+                "hp": 28,
+                "index": 0,
+                "intends_attack": false,
+                "intents": [
+                  {
+                    "type": "StatusCard"
+                  }
+                ],
+                "max_hp": 34,
+                "name": "LEAF_SLIME_M.name",
+                "powers": null
+              },
+              {
+                "block": 0,
+                "hp": 48,
+                "index": 1,
+                "intends_attack": true,
+                "intents": [
+                  {
+                    "damage": 11,
+                    "type": "Attack"
+                  }
+                ],
+                "max_hp": 48,
+                "name": "FLYCONID.name",
+                "powers": null
+              }
+            ],
+            "hp": 75,
+            "powers": "P=0:UNDERWORLD_POWER=1/0[],",
+            "stamp": "7ecf8d4c8acb2f526cda2ecbfc5889dc6c555950a7411bf6bbd11f8b5bb0f0f5"
+          },
+          {
+            "action": "end_turn",
+            "enemies": [
+              {
+                "block": 0,
+                "hp": 28,
+                "index": 0,
+                "intends_attack": true,
+                "intents": [
+                  {
+                    "damage": 8,
+                    "type": "Attack"
+                  }
+                ],
+                "max_hp": 34,
+                "name": "LEAF_SLIME_M.name",
+                "powers": null
+              },
+              {
+                "block": 0,
+                "hp": 48,
+                "index": 1,
+                "intends_attack": true,
+                "intents": [
+                  {
+                    "damage": 8,
+                    "type": "Attack"
+                  },
+                  {
+                    "type": "Debuff"
+                  }
+                ],
+                "max_hp": 48,
+                "name": "FLYCONID.name",
+                "powers": null
+              }
+            ],
+            "hp": 64,
+            "powers": "P=",
+            "stamp": "a81918a909c0b7ff47e6323ec6071ef9c5bd055e626604cc4315954006f79626"
+          },
+          {
+            "action": "end_turn",
+            "enemies": [
+              {
+                "block": 0,
+                "hp": 28,
+                "index": 0,
+                "intends_attack": false,
+                "intents": [
+                  {
+                    "type": "StatusCard"
+                  }
+                ],
+                "max_hp": 34,
+                "name": "LEAF_SLIME_M.name",
+                "powers": null
+              },
+              {
+                "block": 0,
+                "hp": 48,
+                "index": 1,
+                "intends_attack": false,
+                "intents": [
+                  {
+                    "type": "Debuff"
+                  }
+                ],
+                "max_hp": 48,
+                "name": "FLYCONID.name",
+                "powers": null
+              }
+            ],
+            "hp": 48,
+            "powers": "P=0:FRAIL_POWER=2/0[],",
+            "stamp": "f7cc4f40a8fd008edad6fa7dd65774f00a0276039ff9c9ddb27be4882c854b6e"
+          }
+        ],
+        "opening_keywords": [
+          "Exhaust"
+        ],
+        "spec": {
+          "act": 1,
+          "act_variant": "OVERGROWTH",
+          "ascension": 0,
+          "character": "Necrobinder",
+          "deck": [
+            {
+              "id": "UNDERWORLD",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_NECROBINDER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_NECROBINDER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_NECROBINDER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_NECROBINDER",
+              "upgrade": 0
+            }
+          ],
+          "encounter": "FLYCONID_NORMAL",
+          "hp": 75,
+          "max_hp": 75,
+          "potions": [],
+          "relics": [],
+          "schema": 3,
+          "seed": "III3_UNDERWORLD"
+        }
+      },
+      {
+        "frames": [
+          {
+            "action": "UNDERWORLD",
+            "enemies": [
+              {
+                "block": 0,
+                "hp": 34,
+                "index": 0,
+                "intends_attack": false,
+                "intents": [
+                  {
+                    "type": "StatusCard"
+                  }
+                ],
+                "max_hp": 34,
+                "name": "LEAF_SLIME_M.name",
+                "powers": null
+              },
+              {
+                "block": 0,
+                "hp": 48,
+                "index": 1,
+                "intends_attack": true,
+                "intents": [
+                  {
+                    "damage": 11,
+                    "type": "Attack"
+                  }
+                ],
+                "max_hp": 48,
+                "name": "FLYCONID.name",
+                "powers": null
+              }
+            ],
+            "hp": 75,
+            "powers": "P=0:UNDERWORLD_POWER=1/0[],",
+            "stamp": "2bed8a1322cfc402819314a6035d3cb781f30c4abd6bdd1bad0b9669526f4f0a"
+          },
+          {
+            "action": "STRIKE_NECROBINDER",
+            "enemies": [
+              {
+                "block": 0,
+                "hp": 28,
+                "index": 0,
+                "intends_attack": false,
+                "intents": [
+                  {
+                    "type": "StatusCard"
+                  }
+                ],
+                "max_hp": 34,
+                "name": "LEAF_SLIME_M.name",
+                "powers": null
+              },
+              {
+                "block": 0,
+                "hp": 48,
+                "index": 1,
+                "intends_attack": true,
+                "intents": [
+                  {
+                    "damage": 11,
+                    "type": "Attack"
+                  }
+                ],
+                "max_hp": 48,
+                "name": "FLYCONID.name",
+                "powers": null
+              }
+            ],
+            "hp": 75,
+            "powers": "P=0:UNDERWORLD_POWER=1/0[],",
+            "stamp": "acb6f42328f61423437d1a99a9b4125e581a4c32a1ecd4a1d49cddcf13e9935d"
+          },
+          {
+            "action": "end_turn",
+            "enemies": [
+              {
+                "block": 0,
+                "hp": 28,
+                "index": 0,
+                "intends_attack": true,
+                "intents": [
+                  {
+                    "damage": 8,
+                    "type": "Attack"
+                  }
+                ],
+                "max_hp": 34,
+                "name": "LEAF_SLIME_M.name",
+                "powers": null
+              },
+              {
+                "block": 0,
+                "hp": 48,
+                "index": 1,
+                "intends_attack": true,
+                "intents": [
+                  {
+                    "damage": 8,
+                    "type": "Attack"
+                  },
+                  {
+                    "type": "Debuff"
+                  }
+                ],
+                "max_hp": 48,
+                "name": "FLYCONID.name",
+                "powers": null
+              }
+            ],
+            "hp": 64,
+            "powers": "P=",
+            "stamp": "fcd898fee9dec349418593a0ffe49bebc616a52fa56234a9d68b7727a3310847"
+          },
+          {
+            "action": "end_turn",
+            "enemies": [
+              {
+                "block": 0,
+                "hp": 28,
+                "index": 0,
+                "intends_attack": false,
+                "intents": [
+                  {
+                    "type": "StatusCard"
+                  }
+                ],
+                "max_hp": 34,
+                "name": "LEAF_SLIME_M.name",
+                "powers": null
+              },
+              {
+                "block": 0,
+                "hp": 48,
+                "index": 1,
+                "intends_attack": false,
+                "intents": [
+                  {
+                    "type": "Debuff"
+                  }
+                ],
+                "max_hp": 48,
+                "name": "FLYCONID.name",
+                "powers": null
+              }
+            ],
+            "hp": 48,
+            "powers": "P=0:FRAIL_POWER=2/0[],",
+            "stamp": "7d2560528809fe6eaeb9a941f67b9b86e70884df948e4b4a4859de38762ac81b"
+          }
+        ],
+        "opening_keywords": [],
+        "spec": {
+          "act": 1,
+          "act_variant": "OVERGROWTH",
+          "ascension": 0,
+          "character": "Necrobinder",
+          "deck": [
+            {
+              "id": "UNDERWORLD",
+              "upgrade": 1
+            },
+            {
+              "id": "STRIKE_NECROBINDER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_NECROBINDER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_NECROBINDER",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_NECROBINDER",
+              "upgrade": 0
+            }
+          ],
+          "encounter": "FLYCONID_NORMAL",
+          "hp": 75,
+          "max_hp": 75,
+          "potions": [],
+          "relics": [],
+          "schema": 3,
+          "seed": "III3_UNDERWORLD"
+        }
+      }
+    ]
+  },
+  "frozen_prefix": {
+    "results": [
+      {
+        "archived_actions": 2,
+        "comparison_reached": 2,
+        "interaction": null,
+        "last_stable": 1,
+        "ledger": "nosl3c-iid-release-independent",
+        "native_decision": "combat_play",
+        "root": "000025",
+        "status": "active",
+        "step": 0,
+        "steps": [
+          {
+            "action": {
+              "card": 4,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 1,
+              "energy_x": false,
+              "index": 5,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": 0,
+              "target_side": "enemy",
+              "target_type": "AnyEnemy"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 0,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "efee8a23a840e14a68e0b7729d42ba9da2a55facc3dadb0cf124cdcab17252e3",
+            "status": "active"
+          },
+          {
+            "action": {
+              "card": 3,
+              "choice": null,
+              "choice_zone": null,
+              "cost": 2,
+              "energy_x": false,
+              "index": 2,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "Self"
+            },
+            "interaction": null,
+            "native_terminal": false,
+            "position": 1,
+            "public_choice": null,
+            "source": "archived",
+            "stamp": "630f0cd201eabb1d77932de13b503f9f60cce22494f42f2ef630188ff88d82f6",
+            "status": "active"
+          }
+        ],
+        "root_sha256": "4d69ccb086d5841e6dcb47818050dc206a1e2dcf5acc8da023e0312971ff390f",
+        "first_actual_difference": null
+      }
+    ]
+  },
+  "direct_risk": {
+    "after": [
+      {
+        "boundary": "None",
+        "death": false,
+        "gaps": [
+          "SIC_EM.OnPlay: MethodMirrorIncomplete"
+        ],
+        "hp": 66,
+        "powers": [
+          {
+            "amount": 3,
+            "id": "SIC_EM_POWER"
+          }
+        ],
+        "risk": false,
+        "win": false
+      },
+      {
+        "boundary": "None",
+        "death": false,
+        "gaps": [
+          "SIC_EM.OnPlay: MethodMirrorIncomplete"
+        ],
+        "hp": 66,
+        "powers": [
+          {
+            "amount": 1,
+            "id": "UNDERWORLD_POWER"
+          },
+          {
+            "amount": 3,
+            "id": "SIC_EM_POWER"
+          }
+        ],
+        "risk": false,
+        "win": false
+      }
+    ],
+    "before": [
+      {
+        "boundary": "None",
+        "death": false,
+        "gaps": [
+          "SIC_EM.OnPlay: MethodMirrorIncomplete"
+        ],
+        "hp": 66,
+        "powers": [
+          {
+            "amount": 3,
+            "id": "SIC_EM_POWER"
+          }
+        ],
+        "risk": false,
+        "win": false
+      },
+      {
+        "boundary": "None",
+        "death": false,
+        "gaps": [
+          "SIC_EM.OnPlay: MethodMirrorIncomplete",
+          "UNDERWORLD.OnPlay: MethodNotMirrored"
+        ],
+        "hp": 66,
+        "powers": [
+          {
+            "amount": 3,
+            "id": "SIC_EM_POWER"
+          }
+        ],
+        "risk": true,
+        "win": false
+      }
+    ]
+  },
+  "resampled": {
+    "root_sha256": "4d69ccb086d5841e6dcb47818050dc206a1e2dcf5acc8da023e0312971ff390f",
+    "spec": {
+      "act": 1,
+      "act_variant": "OVERGROWTH",
+      "ascension": 0,
+      "character": "Necrobinder",
+      "deck": [
+        {
+          "id": "SQUEEZE",
+          "upgrade": 0
+        },
+        {
+          "id": "GRAVEBLAST",
+          "upgrade": 0
+        },
+        {
+          "id": "HAUNT",
+          "upgrade": 0
+        },
+        {
+          "id": "TRANSFIGURE",
+          "upgrade": 1
+        },
+        {
+          "id": "SIC_EM",
+          "upgrade": 0
+        },
+        {
+          "id": "FRIENDSHIP",
+          "upgrade": 1
+        },
+        {
+          "id": "PUTREFY",
+          "upgrade": 0
+        },
+        {
+          "id": "TRANSFIGURE",
+          "upgrade": 0
+        },
+        {
+          "id": "SCULPTING_STRIKE",
+          "upgrade": 0
+        },
+        {
+          "id": "UNDERWORLD",
+          "upgrade": 0
+        }
+      ],
+      "encounter": "FLYCONID_NORMAL",
+      "hp": 66,
+      "max_hp": 66,
+      "potions": [],
+      "relics": [],
+      "schema": 3,
+      "seed": "00D560009BC6D2D7"
+    },
+    "actions": 24,
+    "eligible": true,
+    "proof": {
+      "status": "admissible_death",
+      "certification": "exact_native_match",
+      "boundaries": 16,
+      "terminal_verified": true,
+      "native_terminal_stamp": "8b294bf33960a9648bbceb852b08c138acafacca352b28109212495aecc025c0"
+    }
+  },
+  "hibernate_regression": {
+    "cases": [
+      {
+        "frames": [
+          {
+            "action": "COOLHEADED",
+            "block": 0,
+            "hp": 75,
+            "orbs": "O=3:FROST_ORB[2/5],",
+            "powers": "P=",
+            "stamp": "1ea29d9391273db7e1cca5d70bd2490f2e8359c42fbf4ed5367a2e56dafbe523"
+          },
+          {
+            "action": "HIBERNATE",
+            "block": 0,
+            "hp": 75,
+            "orbs": "O=3:FROST_ORB[2/5],FROST_ORB[2/5],FROST_ORB[2/5],",
+            "powers": "P=0:HIBERNATE_POWER=1/0[],",
+            "stamp": "652f500e830aa1091e694eef445f6be8f8f7198cf6b743ff850dcaf22a2066e0"
+          },
+          {
+            "action": "end_turn",
+            "block": 0,
+            "hp": 73,
+            "orbs": "O=3:FROST_ORB[2/5],FROST_ORB[2/5],FROST_ORB[2/5],",
+            "powers": "P=0:WEAK_POWER=1/0[DamageDecrease=0.75,],",
+            "stamp": "23f6df8d8c0f96e47c04a0c03ad5b6df7d211169d930207c627b8fdd3adf105a"
+          },
+          {
+            "action": "end_turn",
+            "block": 0,
+            "hp": 68,
+            "orbs": "O=3:FROST_ORB[2/5],FROST_ORB[2/5],FROST_ORB[2/5],",
+            "powers": "P=",
+            "stamp": "9699f276064df1815dbc9420938d6f0734e9f28b542437af03002486376ac480"
+          }
+        ],
+        "spec": {
+          "act": 1,
+          "act_variant": "UNDERDOCKS",
+          "ascension": 0,
+          "character": "Defect",
+          "deck": [
+            {
+              "id": "HIBERNATE",
+              "upgrade": 0
+            },
+            {
+              "id": "COOLHEADED",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_DEFECT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_DEFECT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_DEFECT",
+              "upgrade": 0
+            }
+          ],
+          "encounter": "SLUDGE_SPINNER_WEAK",
+          "hp": 75,
+          "max_hp": 75,
+          "potions": [],
+          "relics": [],
+          "schema": 3,
+          "seed": "III2_HIBERNATE"
+        }
+      },
+      {
+        "frames": [
+          {
+            "action": "COOLHEADED",
+            "block": 0,
+            "hp": 75,
+            "orbs": "O=3:FROST_ORB[2/5],",
+            "powers": "P=",
+            "stamp": "647ea57371c9456d9363d9fbdd2d6eb6a999c27efe0fcc43fddc947d2b9b5835"
+          },
+          {
+            "action": "HIBERNATE",
+            "block": 5,
+            "hp": 75,
+            "orbs": "O=3:FROST_ORB[2/5],FROST_ORB[2/5],FROST_ORB[2/5],",
+            "powers": "P=0:HIBERNATE_POWER=1/0[],",
+            "stamp": "c80f8988f283c51ad7fa796564e339a191241a472e15333df61ece9e3748d4a9"
+          },
+          {
+            "action": "end_turn",
+            "block": 0,
+            "hp": 75,
+            "orbs": "O=3:FROST_ORB[2/5],FROST_ORB[2/5],FROST_ORB[2/5],",
+            "powers": "P=0:WEAK_POWER=1/0[DamageDecrease=0.75,],",
+            "stamp": "76ce5a111736463e3c00803c9a97594c4b82073b9420fdcdb20f964b57b04486"
+          },
+          {
+            "action": "end_turn",
+            "block": 0,
+            "hp": 70,
+            "orbs": "O=3:FROST_ORB[2/5],FROST_ORB[2/5],FROST_ORB[2/5],",
+            "powers": "P=",
+            "stamp": "19e45a5c930bf93869ea4434307c11a4589031fae829864026b143211eaff660"
+          }
+        ],
+        "spec": {
+          "act": 1,
+          "act_variant": "UNDERDOCKS",
+          "ascension": 0,
+          "character": "Defect",
+          "deck": [
+            {
+              "id": "HIBERNATE",
+              "upgrade": 1
+            },
+            {
+              "id": "COOLHEADED",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_DEFECT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_DEFECT",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_DEFECT",
+              "upgrade": 0
+            }
+          ],
+          "encounter": "SLUDGE_SPINNER_WEAK",
+          "hp": 75,
+          "max_hp": 75,
+          "potions": [],
+          "relics": [],
+          "schema": 3,
+          "seed": "III2_HIBERNATE"
+        }
+      }
+    ]
+  }
+}

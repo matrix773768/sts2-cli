@@ -10,7 +10,9 @@
 
 ## 工程状态
 
-- 最新定向候选 `0.51.5-iii.2` 补齐 Hibernate，普通／升级效果和冰霜球触发、清理边界精确匹配。II-D 冻结首步风险消除，同根重采获严格胜局，Hammer Time 回归通过。全量验收基线仍为 II-H.9.1。 [报告与复现](m1-nosl3c-iii2-hibernate.md)
+- 最新定向候选 `0.51.5-iii.3` 补齐 Underworld，普通／升级效果、伤害排除和敌侧回合清理精确匹配。II-D 两步冻结前缀通过，Underworld 风险消除，Sic ’Em 原镜像缺口仍在。同根重采获严格败局，Hibernate 回归通过。 [报告与复现](m1-nosl3c-iii3-underworld.md)
+
+- II-I.2 定向候选 `0.51.5-iii.2` 补齐 Hibernate，普通／升级效果和冰霜球触发、清理边界精确匹配。II-D 冻结首步风险消除，同根重采获严格胜局，Hammer Time 回归通过。全量验收基线仍为 II-H.9.1。 [报告与复现](m1-nosl3c-iii2-hibernate.md)
 
 - II-I.1 定向候选 `0.51.5-iii.1` 已补齐 Hammer Time，普通与升级效果、两条冻结前缀及 Forge 正负例通过。II-C 原 Bulwark 风险仍在。同根重采一条严格败局，另一条因终局 Power 差异拒绝。II-H.9.1 保持为最近全量验收。 [报告与复现](m1-nosl3c-iii1-hammer-time.md)
 
