@@ -1,0 +1,46 @@
+{
+  "base_commit": "4d16e9ef17045408b9d6855c268bc1af66df4f1b",
+  "reused_evidence": "experiments/m1-nosl3c-iih9/evidence.json",
+  "reused_evidence_sha256": "90bd8fa9cd864b304d66df0c01e16ef47509efa9db1dfad489ae86d32bd228f0",
+  "engine": {
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+    "coreclr": "9.0.7",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "headless_sha256": "b3f8ce1d862bdb98000bfeb90d701239e50be17034739c5c2ed18e26716150f0",
+    "native_identity": "87baa84a2b2297eae588a6996727d719b6e299227d1770a44bef7836ebe8e06f",
+    "policy": "M1-F2-discard-v1",
+    "sampler": "m1-d1-v1",
+    "solver": "0.51.5-iih.8.1",
+    "solver_sha256": "509eece4ef6a2be9e098e2b78d27e25736964e5c4ae5f7aa0d557c8680d77181"
+  },
+  "regular_headless": {
+    "path": "logs/iih9-main-host/bin/Debug/net9.0/Sts2Headless.dll",
+    "sha256": "870674119125fa806128896e671d56ded10b76cd00ea0f53485f4a2246768668",
+    "prior_binary_identical": true,
+    "localization_root": "repository root, five parents above the DLL directory"
+  },
+  "prior_failure_log": "logs/iih9-main-pytest.log",
+  "targeted": {
+    "passed": 7,
+    "log": "logs/iih91-targeted-pass.log",
+    "junit": "logs/iih91-targeted-pass.xml",
+    "tests": [
+      "tests.test_ancient_healing::test_native_ancient_healing_and_act_start_reload",
+      "tests.test_boss_reward_gate::test_boss_reward_blocks_early_transition[claim]",
+      "tests.test_boss_reward_gate::test_boss_reward_blocks_early_transition[skip]",
+      "tests.test_event.TestNeowEvent::test_neow_is_first_event",
+      "tests.test_lang.TestLanguage::test_lang_en_returns_english",
+      "tests.test_lang.TestLanguage::test_lang_zh_returns_chinese",
+      "tests.test_lang.TestLanguage::test_default_lang_is_english"
+    ]
+  },
+  "main": {
+    "passed": 164,
+    "failed": 0,
+    "skipped": 1,
+    "log": "logs/iih91-main.log",
+    "junit": "logs/iih91-main.xml"
+  },
+  "acceptance": "passed"
+}

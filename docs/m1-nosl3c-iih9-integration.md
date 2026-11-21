@@ -25,7 +25,13 @@ II-E `0:000003` Sovereign Blade 在归档索引 28 仍是 `public_prefix_differe
 
 六组定向原生验证全部通过，覆盖吞噬暗影非致死、Gas Bomb、Fogmog Power、Void Form 菜单、Tyranny/Furnace 正负例和 Sovereign Blade 历史路线。
 
-主测试为 **158 通过、6 失败、1 跳过**。常规 Headless 被构建到较浅的隔离输出目录，`LocLookup` 从 DLL 目录上溯五级后未找到本地化资源。首个失败在正常到达 Boss 奖励后用英文名查找 Offering 时抛出 `StopIteration`。其余失败也依赖本地化的 Offering、Neow 或 Strike 名称。此前误将主测试连到仅支持合成战斗的宿主，常规游戏命令被拒。两份输出分别保留在 `logs/iih9-pytest-final.log` 和 `logs/iih9-main-pytest.log`。主测试未通过，II-H.2 保留为全量验收基线。
+II-H.9 首次主测试为 **158 通过、6 失败、1 跳过**。常规 Headless 被构建到较浅的隔离输出目录，`LocLookup` 从 DLL 目录上溯五级后未找到本地化资源。首个失败在正常到达 Boss 奖励后用英文名查找 Offering 时抛出 `StopIteration`。其余失败也依赖本地化的 Offering、Neow 或 Strike 名称。此前误将主测试连到仅支持合成战斗的宿主，常规游戏命令被拒。两份输出分别保留在 `logs/iih9-pytest-final.log` 和 `logs/iih9-main-pytest.log`。截至 II-H.9 首次提交，全量验收基线仍为 II-H.2。
+
+## II-H.9.1 正式收尾
+
+原常规 Headless 产物逐文件复制到 `logs/iih9-main-host/bin/Debug/net9.0`，DLL SHA-256 与首次测试相同。部署目录上溯五级到达仓库根，LocLookup 成功加载中英资源。原失败的六项全部通过，连同默认语言测试共七项通过。随后一次完整主测试结果为 **164 通过、1 跳过、0 失败**。
+
+Solver、II-H.7 战斗宿主和 CoreCLR 9.0.7 保持原验收身份，直接复用 II-H.9 战斗、重采与训练证据。最新全量验收基线提升为 Solver `0.51.5-iih.8.1`、II-H.7 战斗宿主及上述常规宿主部署。 [收尾通过证据](../experiments/m1-nosl3c-iih9/main-tests-followup.json)
 
 ## 最小复现
 
@@ -61,8 +67,11 @@ $env:PYTHONPATH = (Resolve-Path logs/iig-completion-test-deps).Path
 $env:DOTNET_CLI_HOME = (Resolve-Path logs/dotnet-home).Path
 $env:NUGET_PACKAGES = (Resolve-Path logs/nuget-packages).Path
 $env:PATH = (Resolve-Path logs/m1-review-dotnet).Path + [IO.Path]::PathSeparator + $env:PATH
-dotnet build src/Sts2Headless/Sts2Headless.csproj -o logs/iih9-main-host -p:NuGetAudit=false
-python -c "from pathlib import Path; import sys; sys.path.insert(0, 'python'); import headless_runtime, pytest; headless_runtime.ENGINE = Path('logs/iih9-main-host/Sts2Headless.dll').resolve(); raise SystemExit(pytest.main(['-q', 'tests']))"
+$source = (Resolve-Path logs/iih9-main-host).Path
+$dest = Join-Path $source 'bin/Debug/net9.0'
+New-Item -ItemType Directory -Path $dest | Out-Null
+Get-ChildItem -LiteralPath $source -File | Copy-Item -Destination $dest
+python -c "from pathlib import Path; import sys; sys.path.insert(0, 'python'); import headless_runtime, pytest; headless_runtime.ENGINE = Path('logs/iih9-main-host/bin/Debug/net9.0/Sts2Headless.dll').resolve(); raise SystemExit(pytest.main(['-q', 'tests']))"
 ```
 
-若要验证正常本地化加载，常规宿主可部署到同样隔离且与仓库相隔五级的目录，例如 `logs/iih9-main-host/bin/Debug/net9.0`，并同步调整测试启动路径。本轮保留实测结果。
+已部署时可直接执行测试命令。若缺少常规宿主的源产物，可用 `dotnet build src/Sts2Headless/Sts2Headless.csproj -o logs/iih9-main-host -p:NuGetAudit=false` 构建后再部署。
