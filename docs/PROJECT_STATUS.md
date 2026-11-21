@@ -10,6 +10,8 @@
 
 ## 本阶段交接
 
+**M1-NOSL3C-II-H.3 接通 E3 严格战斗认证。** 四条冻结 E3 独立复放后全部获准，旧 Solver 四条拒绝。新资格实际进入 v4 参数更新。主测试 162 通过、1 跳过。 [合同、验证与复现](m1-nosl3c-solver-semantic-convergence.md)
+
 **M1-NOSL3C-II-H.2 修复终局持续时间减层。** 四条 E3 均精确匹配战斗续体，八次独立原生复放的领奖与 RNG 可复现。现有 34 条保持精确认证，旧独立 16/60 根逐条分类一致，v4 恢复与冷跑快照一致。Solver 的奖励预测仍待补齐，E3 严格准入保持 0/4。 [修复与复现](m1-nosl3c-solver-semantic-convergence.md)
 
 **M1-NOSL3C-II-H 修复预测历史窗口。** 隔离 Solver 0.51.5-iih.1 上三条 E3 终局续体精确匹配，第四条仍差 Frail。65 条分类不变，原有 34 条现在均为精确认证。E3 奖励验证、其余规则修复和训练验收仍待完成。 [修复与复现](m1-nosl3c-solver-semantic-convergence.md)

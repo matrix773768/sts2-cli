@@ -6,6 +6,7 @@ import subprocess
 import pytest
 
 from conftest import DOTNET
+from headless_runtime import headless_command
 
 ROOT = Path(__file__).resolve().parents[1]
 PROBE = ROOT / "tests" / "EngineProbe" / "EngineProbe.csproj"
@@ -21,7 +22,7 @@ def engine_probe():
 
     def run(scenario):
         result = subprocess.run(
-            [DOTNET, str(PROBE.parent / "bin/Debug/net9.0/EngineProbe.dll"), str(ROOT), scenario],
+            [*headless_command()[:-1], str(PROBE.parent / "bin/Debug/net9.0/EngineProbe.dll"), str(ROOT), scenario],
             capture_output=True, text=True, cwd=ROOT, timeout=30,
         )
         assert result.returncode == 0, result.stdout + result.stderr

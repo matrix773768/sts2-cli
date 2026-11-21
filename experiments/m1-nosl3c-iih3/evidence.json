@@ -1,0 +1,3074 @@
+{
+  "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1",
+  "versions": {
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+    "coreclr": "9.0.7",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "headless_sha256": "46e219d54cfe74ba6a4dffa4b74a04cb738981f76445654266a06ec1ee7533fa",
+    "native_identity": "2a2a357bb5ccc7cfec12695ca2f14cf3070b030397a01ee29a4761820ce70a45",
+    "policy": "M1-F2-discard-v1",
+    "sampler": "m1-d1-v1",
+    "solver": "0.51.5-iih.2",
+    "solver_sha256": "d15ba0e66d2bf54dd1d00714c39f7b8ecc26b9a5b35b79ceb64277d4fd4a54dd"
+  },
+  "cases": [
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000006",
+      "proof": {
+        "boundaries": 14,
+        "certification": "exact_native_match",
+        "contract": "strict_combat",
+        "equivalence_version": "sts2.nosl.iif.enemy-death-window.v1",
+        "exact_status": "admissible_predicted_win",
+        "mode": "semantic",
+        "model": "nosl3c.interactive-actor-critic.v3",
+        "native_no_progress": true,
+        "native_terminal_stamp": "41803d1033ba573030fd808cb1f796624e3294b7d5500ffefdb86f9f9a02acd9",
+        "observation": "sts2.nosl_observation.v3",
+        "path": [
+          {
+            "card": "FLATTEN",
+            "effect": null,
+            "kind": "play_card",
+            "target": 1,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": "NO_ESCAPE",
+            "effect": null,
+            "kind": "play_card",
+            "target": 0,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": null,
+            "effect": null,
+            "kind": "end_turn",
+            "target": null,
+            "target_type": null
+          },
+          {
+            "card": null,
+            "effect": null,
+            "kind": "end_turn",
+            "target": null,
+            "target_type": null
+          },
+          {
+            "card": null,
+            "effect": null,
+            "kind": "end_turn",
+            "target": null,
+            "target_type": null
+          },
+          {
+            "card": "SHARED_FATE",
+            "effect": null,
+            "kind": "play_card",
+            "target": 1,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": "FLATTEN",
+            "effect": null,
+            "kind": "play_card",
+            "target": 1,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": "BODYGUARD",
+            "effect": null,
+            "kind": "play_card",
+            "target": null,
+            "target_type": "Self"
+          },
+          {
+            "card": null,
+            "effect": null,
+            "kind": "end_turn",
+            "target": null,
+            "target_type": null
+          },
+          {
+            "card": "NO_ESCAPE",
+            "effect": null,
+            "kind": "play_card",
+            "target": 0,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": "NECRO_MASTERY",
+            "effect": null,
+            "kind": "play_card",
+            "target": null,
+            "target_type": "Self"
+          },
+          {
+            "card": "RIGHT_HAND_HAND",
+            "effect": null,
+            "kind": "play_card",
+            "target": 1,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": "FLATTEN",
+            "effect": null,
+            "kind": "play_card",
+            "target": 1,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": null,
+            "effect": null,
+            "kind": "end_turn",
+            "target": null,
+            "target_type": null
+          }
+        ],
+        "rebound_indices": 0,
+        "remapped_targets": [],
+        "root": "416dd0d61a6bf68a04102b1c6d77b10f78c1d5de98920e50f0fd302c5fc0d81f",
+        "root_state_sha256": "718a1291cebd8b245f7ad8f3331aee840192c2138808371940aa4fc674c8d1cf",
+        "route": "77de6bc8c0e29793cd6a7ed91b767543b94b23014e37a6c527bfd1e5b1e59611",
+        "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1",
+        "schema": "sts2.nosl.admission.exact-route.v1",
+        "solver_terminal_status": "predicted_win",
+        "status": "admissible_predicted_win",
+        "terminal_contract": "sts2.nosl.iie.exact-terminal.v1",
+        "terminal_verified": true,
+        "versions": {
+          "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+          "coreclr": "9.0.7",
+          "game": "0.113.1/26660232",
+          "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+          "headless_sha256": "46e219d54cfe74ba6a4dffa4b74a04cb738981f76445654266a06ec1ee7533fa",
+          "native_identity": "2a2a357bb5ccc7cfec12695ca2f14cf3070b030397a01ee29a4761820ce70a45",
+          "policy": "M1-F2-discard-v1",
+          "sampler": "m1-d1-v1",
+          "solver": "0.51.5-iih.2",
+          "solver_sha256": "d15ba0e66d2bf54dd1d00714c39f7b8ecc26b9a5b35b79ceb64277d4fd4a54dd"
+        }
+      },
+      "old_solver": {
+        "certification": "semantic_unverified",
+        "mode": "semantic",
+        "reason": "e3_unattested_build",
+        "rebound_indices": 0,
+        "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1",
+        "status": "rule_risk",
+        "terminal_verified": false
+      }
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000015",
+      "proof": {
+        "boundaries": 11,
+        "certification": "exact_native_match",
+        "contract": "strict_combat",
+        "equivalence_version": "sts2.nosl.iif.enemy-death-window.v1",
+        "exact_status": "admissible_predicted_win",
+        "mode": "semantic",
+        "model": "nosl3c.interactive-actor-critic.v3",
+        "native_no_progress": true,
+        "native_terminal_stamp": "08f3c58b95b2cef84a15ca95b0d483575823e2e7cde3c1b8923a0958c5ddc798",
+        "observation": "sts2.nosl_observation.v3",
+        "path": [
+          {
+            "card": "CALCULATED_GAMBLE",
+            "effect": null,
+            "kind": "play_card",
+            "target": null,
+            "target_type": "Self"
+          },
+          {
+            "card": "SNAKEBITE",
+            "effect": null,
+            "kind": "play_card",
+            "target": 0,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": null,
+            "effect": null,
+            "kind": "end_turn",
+            "target": null,
+            "target_type": null
+          },
+          {
+            "card": "WRAITH_FORM",
+            "effect": null,
+            "kind": "play_card",
+            "target": null,
+            "target_type": "Self"
+          },
+          {
+            "card": null,
+            "effect": null,
+            "kind": "end_turn",
+            "target": null,
+            "target_type": null
+          },
+          {
+            "card": "SNAKEBITE",
+            "effect": null,
+            "kind": "play_card",
+            "target": 0,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": null,
+            "effect": null,
+            "kind": "end_turn",
+            "target": null,
+            "target_type": null
+          },
+          {
+            "card": "SNAKEBITE",
+            "effect": null,
+            "kind": "play_card",
+            "target": 0,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": null,
+            "effect": null,
+            "kind": "end_turn",
+            "target": null,
+            "target_type": null
+          },
+          {
+            "card": "SNAKEBITE",
+            "effect": null,
+            "kind": "play_card",
+            "target": 0,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": null,
+            "effect": null,
+            "kind": "end_turn",
+            "target": null,
+            "target_type": null
+          }
+        ],
+        "rebound_indices": 0,
+        "remapped_targets": [],
+        "root": "573ff359603de27b1e31e38593ed791e7469d1191deef27a6437e138d5be8f42",
+        "root_state_sha256": "c363c4a96802ed3bafa16cb1e3ac19044c61f36ea786a3e4a326ce26926f5ebf",
+        "route": "bdc874b4cac47e35aaaa504b45b1e2fe7482a47b6ba60b3f4e63a352d9a4c404",
+        "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1",
+        "schema": "sts2.nosl.admission.exact-route.v1",
+        "solver_terminal_status": "predicted_win",
+        "status": "admissible_predicted_win",
+        "terminal_contract": "sts2.nosl.iie.exact-terminal.v1",
+        "terminal_verified": true,
+        "versions": {
+          "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+          "coreclr": "9.0.7",
+          "game": "0.113.1/26660232",
+          "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+          "headless_sha256": "46e219d54cfe74ba6a4dffa4b74a04cb738981f76445654266a06ec1ee7533fa",
+          "native_identity": "2a2a357bb5ccc7cfec12695ca2f14cf3070b030397a01ee29a4761820ce70a45",
+          "policy": "M1-F2-discard-v1",
+          "sampler": "m1-d1-v1",
+          "solver": "0.51.5-iih.2",
+          "solver_sha256": "d15ba0e66d2bf54dd1d00714c39f7b8ecc26b9a5b35b79ceb64277d4fd4a54dd"
+        }
+      },
+      "old_solver": {
+        "certification": "semantic_unverified",
+        "mode": "semantic",
+        "reason": "e3_unattested_build",
+        "rebound_indices": 0,
+        "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1",
+        "status": "rule_risk",
+        "terminal_verified": false
+      }
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000000",
+      "proof": {
+        "boundaries": 11,
+        "certification": "exact_native_match",
+        "contract": "strict_combat",
+        "equivalence_version": "sts2.nosl.iif.enemy-death-window.v1",
+        "exact_status": "admissible_predicted_win",
+        "mode": "semantic",
+        "model": "nosl3c.interactive-actor-critic.v3",
+        "native_no_progress": true,
+        "native_terminal_stamp": "053a94bc6767f6a17b78b210e1c15aa87c81b708cc7c00f985b22430ea31e240",
+        "observation": "sts2.nosl_observation.v3",
+        "path": [
+          {
+            "card": "STRIKE_NECROBINDER",
+            "effect": null,
+            "kind": "play_card",
+            "target": 0,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": "LETHALITY",
+            "effect": null,
+            "kind": "play_card",
+            "target": null,
+            "target_type": "Self"
+          },
+          {
+            "card": null,
+            "effect": null,
+            "kind": "end_turn",
+            "target": null,
+            "target_type": null
+          },
+          {
+            "card": "DEATHBRINGER",
+            "effect": null,
+            "kind": "play_card",
+            "target": null,
+            "target_type": "AllEnemies"
+          },
+          {
+            "card": "HANG",
+            "effect": null,
+            "kind": "play_card",
+            "target": 0,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": null,
+            "effect": null,
+            "kind": "end_turn",
+            "target": null,
+            "target_type": null
+          },
+          {
+            "card": null,
+            "effect": null,
+            "kind": "end_turn",
+            "target": null,
+            "target_type": null
+          },
+          {
+            "card": "SLEIGHT_OF_FLESH",
+            "effect": null,
+            "kind": "play_card",
+            "target": null,
+            "target_type": "Self"
+          },
+          {
+            "card": null,
+            "effect": null,
+            "kind": "end_turn",
+            "target": null,
+            "target_type": null
+          },
+          {
+            "card": "DEATHBRINGER",
+            "effect": null,
+            "kind": "play_card",
+            "target": null,
+            "target_type": "AllEnemies"
+          },
+          {
+            "card": null,
+            "effect": null,
+            "kind": "end_turn",
+            "target": null,
+            "target_type": null
+          }
+        ],
+        "rebound_indices": 0,
+        "remapped_targets": [],
+        "root": "18028538b34921370d159be4fba1bd0ddbbb78f53a7a1e51da15ab1cc2a2e798",
+        "root_state_sha256": "ee162cd29efad31f3b14cda3c4ae3302529cbba101cb610c60b0fa6369fa154c",
+        "route": "b20893673c4b7aa86304fec121cb5ab9bc41406d5a2b7414f96c8cafe1027cf4",
+        "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1",
+        "schema": "sts2.nosl.admission.exact-route.v1",
+        "solver_terminal_status": "predicted_win",
+        "status": "admissible_predicted_win",
+        "terminal_contract": "sts2.nosl.iie.exact-terminal.v1",
+        "terminal_verified": true,
+        "versions": {
+          "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+          "coreclr": "9.0.7",
+          "game": "0.113.1/26660232",
+          "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+          "headless_sha256": "46e219d54cfe74ba6a4dffa4b74a04cb738981f76445654266a06ec1ee7533fa",
+          "native_identity": "2a2a357bb5ccc7cfec12695ca2f14cf3070b030397a01ee29a4761820ce70a45",
+          "policy": "M1-F2-discard-v1",
+          "sampler": "m1-d1-v1",
+          "solver": "0.51.5-iih.2",
+          "solver_sha256": "d15ba0e66d2bf54dd1d00714c39f7b8ecc26b9a5b35b79ceb64277d4fd4a54dd"
+        }
+      },
+      "old_solver": {
+        "certification": "semantic_unverified",
+        "mode": "semantic",
+        "reason": "e3_unattested_build",
+        "rebound_indices": 0,
+        "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1",
+        "status": "rule_risk",
+        "terminal_verified": false
+      }
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 1,
+      "position": "000004",
+      "proof": {
+        "boundaries": 30,
+        "certification": "exact_native_match",
+        "contract": "strict_combat",
+        "equivalence_version": "sts2.nosl.iif.enemy-death-window.v1",
+        "exact_status": "admissible_predicted_win",
+        "mode": "semantic",
+        "model": "nosl3c.interactive-actor-critic.v3",
+        "native_no_progress": true,
+        "native_terminal_stamp": "f41d9bc0f6f1366699a795f7c5b0f34a76381657cbe92a31ba00ea51521fd90a",
+        "observation": "sts2.nosl_observation.v3",
+        "path": [
+          {
+            "card": "OBLIVION",
+            "effect": null,
+            "kind": "play_card",
+            "target": 0,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": "CALCIFY",
+            "effect": null,
+            "kind": "play_card",
+            "target": null,
+            "target_type": "Self"
+          },
+          {
+            "card": "PUTREFY",
+            "effect": null,
+            "kind": "play_card",
+            "target": 0,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": "POKE",
+            "effect": null,
+            "kind": "play_card",
+            "target": 1,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": null,
+            "effect": null,
+            "kind": "end_turn",
+            "target": null,
+            "target_type": null
+          },
+          {
+            "card": "OBLIVION",
+            "effect": null,
+            "kind": "play_card",
+            "target": 2,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": "DRAIN_POWER",
+            "effect": null,
+            "kind": "play_card",
+            "target": 1,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": "REAVE",
+            "effect": null,
+            "kind": "play_card",
+            "target": 2,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": "SHROUD",
+            "effect": null,
+            "kind": "play_card",
+            "target": null,
+            "target_type": "Self"
+          },
+          {
+            "card": null,
+            "effect": null,
+            "kind": "end_turn",
+            "target": null,
+            "target_type": null
+          },
+          {
+            "card": "DRAIN_POWER",
+            "effect": null,
+            "kind": "play_card",
+            "target": 1,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": "SOUL",
+            "effect": null,
+            "kind": "play_card",
+            "target": null,
+            "target_type": "Self"
+          },
+          {
+            "card": "POKE",
+            "effect": null,
+            "kind": "play_card",
+            "target": 1,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": null,
+            "effect": null,
+            "kind": "end_turn",
+            "target": null,
+            "target_type": null
+          },
+          {
+            "card": "DRAIN_POWER",
+            "effect": null,
+            "kind": "play_card",
+            "target": 1,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": "REAVE",
+            "effect": null,
+            "kind": "play_card",
+            "target": 0,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": "OBLIVION",
+            "effect": null,
+            "kind": "play_card",
+            "target": 2,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": null,
+            "effect": null,
+            "kind": "end_turn",
+            "target": null,
+            "target_type": null
+          },
+          {
+            "card": "POKE",
+            "effect": null,
+            "kind": "play_card",
+            "target": 1,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": "OBLIVION",
+            "effect": null,
+            "kind": "play_card",
+            "target": 0,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": "DRAIN_POWER",
+            "effect": null,
+            "kind": "play_card",
+            "target": 0,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": "SOUL",
+            "effect": null,
+            "kind": "play_card",
+            "target": null,
+            "target_type": "Self"
+          },
+          {
+            "card": "DRAIN_POWER",
+            "effect": null,
+            "kind": "play_card",
+            "target": 0,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": "OBLIVION",
+            "effect": null,
+            "kind": "play_card",
+            "target": 1,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": null,
+            "effect": null,
+            "kind": "end_turn",
+            "target": null,
+            "target_type": null
+          },
+          {
+            "card": "POKE",
+            "effect": null,
+            "kind": "play_card",
+            "target": 0,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": "REAVE",
+            "effect": null,
+            "kind": "play_card",
+            "target": 1,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": "OBLIVION",
+            "effect": null,
+            "kind": "play_card",
+            "target": 1,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": "DRAIN_POWER",
+            "effect": null,
+            "kind": "play_card",
+            "target": 0,
+            "target_type": "AnyEnemy"
+          },
+          {
+            "card": null,
+            "effect": null,
+            "kind": "end_turn",
+            "target": null,
+            "target_type": null
+          }
+        ],
+        "rebound_indices": 0,
+        "remapped_targets": [],
+        "root": "1cc94e5973f7887801d9023b4e219ea8d01012b4187347f1a261f25a8718ce73",
+        "root_state_sha256": "2bcd9e3e482ddba0dd7639c407c5fd5e6f0d6bb6ef477dad858ddcb462aad6cf",
+        "route": "6ed8f34aff7f595cab35f4c78e2d6e7caf2cf082401dfe73121a01e2583ca592",
+        "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1",
+        "schema": "sts2.nosl.admission.exact-route.v1",
+        "solver_terminal_status": "predicted_win",
+        "status": "admissible_predicted_win",
+        "terminal_contract": "sts2.nosl.iie.exact-terminal.v1",
+        "terminal_verified": true,
+        "versions": {
+          "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+          "coreclr": "9.0.7",
+          "game": "0.113.1/26660232",
+          "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+          "headless_sha256": "46e219d54cfe74ba6a4dffa4b74a04cb738981f76445654266a06ec1ee7533fa",
+          "native_identity": "2a2a357bb5ccc7cfec12695ca2f14cf3070b030397a01ee29a4761820ce70a45",
+          "policy": "M1-F2-discard-v1",
+          "sampler": "m1-d1-v1",
+          "solver": "0.51.5-iih.2",
+          "solver_sha256": "d15ba0e66d2bf54dd1d00714c39f7b8ecc26b9a5b35b79ceb64277d4fd4a54dd"
+        }
+      },
+      "old_solver": {
+        "certification": "semantic_unverified",
+        "mode": "semantic",
+        "reason": "e3_unattested_build",
+        "rebound_indices": 0,
+        "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1",
+        "status": "rule_risk",
+        "terminal_verified": false
+      }
+    }
+  ],
+  "history": [
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000000",
+      "before": "route_not_reconstructible",
+      "after": "route_not_reconstructible",
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000001",
+      "before": "route_not_reconstructible",
+      "after": "route_not_reconstructible",
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000002",
+      "before": "certified_death",
+      "after": "certified_death",
+      "certification": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000003",
+      "before": "solver_execution_risk",
+      "after": "solver_execution_risk",
+      "certification": "semantic_unverified"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000004",
+      "before": "prefix_only",
+      "after": "prefix_only",
+      "certification": "semantic_unverified"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000005",
+      "before": "certified_win",
+      "after": "certified_win",
+      "certification": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000006",
+      "before": "rule_risk",
+      "after": "certified_win",
+      "certification": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000007",
+      "before": "prefix_only",
+      "after": "prefix_only",
+      "certification": "semantic_unverified"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000008",
+      "before": "certified_death",
+      "after": "certified_death",
+      "certification": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000009",
+      "before": "prefix_only",
+      "after": "prefix_only",
+      "certification": "semantic_unverified"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000010",
+      "before": "certified_death",
+      "after": "certified_death",
+      "certification": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000011",
+      "before": "prefix_only",
+      "after": "prefix_only",
+      "certification": "semantic_unverified"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000012",
+      "before": "prefix_only",
+      "after": "prefix_only",
+      "certification": "semantic_unverified"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000013",
+      "before": "certified_win",
+      "after": "certified_win",
+      "certification": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000014",
+      "before": "certified_death",
+      "after": "certified_death",
+      "certification": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000015",
+      "before": "rule_risk",
+      "after": "certified_win",
+      "certification": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000016",
+      "before": "route_not_reconstructible",
+      "after": "route_not_reconstructible",
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000017",
+      "before": "certified_death",
+      "after": "certified_death",
+      "certification": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000018",
+      "before": "certified_win",
+      "after": "certified_win",
+      "certification": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000019",
+      "before": "semantic_mismatch",
+      "after": "semantic_mismatch",
+      "certification": "semantic_mismatch"
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000000",
+      "before": "rule_risk",
+      "after": "certified_win",
+      "certification": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000001",
+      "before": "certified_death",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000002",
+      "before": "semantic_mismatch",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000003",
+      "before": "certified_death",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000004",
+      "before": "certified_death",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000005",
+      "before": "certified_death",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000006",
+      "before": "certified_death",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000007",
+      "before": "certified_win",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000008",
+      "before": "certified_death",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000009",
+      "before": "solver_execution_risk",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000010",
+      "before": "semantic_mismatch",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000011",
+      "before": "certified_win",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000012",
+      "before": "certified_death",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000013",
+      "before": "certified_death",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000014",
+      "before": "prefix_only",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000015",
+      "before": "certified_win",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000016",
+      "before": "certified_win",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000017",
+      "before": "certified_win",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000018",
+      "before": "certified_win",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000019",
+      "before": "engine_failure",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000020",
+      "before": "certified_death",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000021",
+      "before": "certified_win",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000022",
+      "before": "certified_win",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000023",
+      "before": "prefix_only",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000024",
+      "before": "certified_win",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000025",
+      "before": "solver_execution_risk",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000026",
+      "before": "certified_death",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000027",
+      "before": "solver_execution_risk",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000028",
+      "before": "solver_execution_risk",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000029",
+      "before": "certified_death",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 0,
+      "position": "000000",
+      "before": "certified_win",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 0,
+      "position": "000001",
+      "before": "prefix_only",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 0,
+      "position": "000002",
+      "before": "certified_win",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 0,
+      "position": "000003",
+      "before": "semantic_mismatch",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 0,
+      "position": "000004",
+      "before": "certified_win",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 1,
+      "position": "000000",
+      "before": "solver_execution_risk",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 1,
+      "position": "000001",
+      "before": "prefix_only",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 1,
+      "position": "000002",
+      "before": "solver_execution_risk",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 1,
+      "position": "000003",
+      "before": "solver_execution_risk",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 1,
+      "position": "000004",
+      "before": "rule_risk",
+      "after": "certified_win",
+      "certification": "exact_native_match"
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 2,
+      "position": "000000",
+      "before": "certified_death",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 2,
+      "position": "000001",
+      "before": "semantic_mismatch",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 2,
+      "position": "000002",
+      "before": "certified_win",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 2,
+      "position": "000003",
+      "before": "certified_death",
+      "after": null,
+      "certification": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 2,
+      "position": "000004",
+      "before": "prefix_only",
+      "after": null,
+      "certification": null
+    }
+  ],
+  "independent": {
+    "pair16": [
+      {
+        "step": 0,
+        "root": "000000",
+        "hp": 999,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "164ba5688d2880b11a70b629ac539804ee4b259eeffa4a2710ba0ff5da984918",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000001",
+        "hp": 999,
+        "before": "audit_failure",
+        "after": "audit_failure",
+        "qualification": {
+          "certification": null,
+          "mode": null,
+          "route": null,
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000002",
+        "hp": 999,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "ff73f03e8e7cf8c7065846f5cae2d99a9cbf5d23071818ac7a3a7e07c2e27172",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000003",
+        "hp": 999,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "b6a873e2f3af53e6226f94c89cbf305c064e684fc913d0ef68444987e05d22cf",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000004",
+        "hp": 999,
+        "before": "error",
+        "after": "error",
+        "qualification": {
+          "certification": "semantic_unverified",
+          "mode": "exact",
+          "route": "6f82d7d6e050835d914b149123609a5e59157a7c71c47eebba77e011eaed08e3",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000005",
+        "hp": 999,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "9c562b5b8f8572d12daef73e9375a47c1da7e8d6065b7003cebf8c7b884892ac",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000006",
+        "hp": 999,
+        "before": "rule_risk",
+        "after": "rule_risk",
+        "qualification": {
+          "certification": "semantic_unverified",
+          "mode": "exact",
+          "route": "9d15eb2ce6d70504bc2266149e6cc2440b729e53bef59afaebf83b690105a080",
+          "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1"
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000007",
+        "hp": 999,
+        "before": "rule_risk",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "f6f17d91da8fdd604b8285286bc13fe6fa74ea5eedbd48c253ebaf0a8ba9b53a",
+          "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1"
+        },
+        "collected_status": "rule_risk"
+      },
+      {
+        "step": 0,
+        "root": "000008",
+        "hp": 999,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "07db3feaa5edade6463af7547455a095921d5a9d8f9bb0667507d31d89c5e196",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000009",
+        "hp": 999,
+        "before": "unsupported",
+        "after": "unsupported",
+        "qualification": {
+          "certification": "semantic_unverified",
+          "mode": "exact",
+          "route": "f1abdb04bba28125846828a534929b5e6822c7ae66cb3a34b0c1a1a91d4b53d3",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000010",
+        "hp": 999,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "a43c26da37311e085afd5de2e0b5f23855adae0ff309214bf1da546461d04021",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000011",
+        "hp": 999,
+        "before": "admissible_death",
+        "after": "admissible_death",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "1276b4d979c269cf713b3bde7d5e0063641e58fc8d8af4d876f6809325171747",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000012",
+        "hp": 999,
+        "before": "rule_risk",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "cf971a88ff4231c57e8d47441be509f42e30307a5bbf85a66838e36646f00a06",
+          "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1"
+        },
+        "collected_status": "rule_risk"
+      },
+      {
+        "step": 0,
+        "root": "000013",
+        "hp": 999,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "cf6142ca43fceab2280d2f876eb80d4e1b5e32c86e851422ea68be689cd62c53",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000014",
+        "hp": 999,
+        "before": "unsupported",
+        "after": "unsupported",
+        "qualification": {
+          "certification": "semantic_unverified",
+          "mode": "exact",
+          "route": "410c8d08f475b0776150f920e77c2ef7766f6648181dcdf42e2603f715e08dcf",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000015",
+        "hp": 999,
+        "before": "native_difference",
+        "after": "native_difference",
+        "qualification": {
+          "certification": "semantic_mismatch",
+          "mode": "exact",
+          "route": "de2df370780a78d6a7c749ec57906fbbea7ea2dd4168f903454f8dddc9780b72",
+          "rule": null
+        },
+        "collected_status": null
+      }
+    ],
+    "independent": [
+      {
+        "step": 0,
+        "root": "000000",
+        "hp": 75,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "27d76091899e5cbc445e4d054e899ee61bd551f90eb848d272f88333cd4ad2c8",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000001",
+        "hp": 80,
+        "before": "admissible_death",
+        "after": "admissible_death",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "a0d80ea0610e18857418300687ed2e0d290188ffed98844f984a7380d3eaa8b7",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000002",
+        "hp": 75,
+        "before": "admissible_death",
+        "after": "admissible_death",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "58e1226bc545a08e8552a5e145096bca933d70d32521d46b4b7cec15db0c1d3c",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000003",
+        "hp": 75,
+        "before": "admissible_death",
+        "after": "admissible_death",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "3d142fde12c3d965e578fd96fdc8ec9ae0a0eeeaad28c431ad225e05b24957d8",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000004",
+        "hp": 80,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "d1066a20897e72edec4f8cf85c15f91e722e58483aea80b1387796d8e62f41f0",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000005",
+        "hp": 80,
+        "before": "rule_risk",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "c1102634170e80fe8887d4f5a28f8b1c49f29efd1423ce108f05577853005adc",
+          "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1"
+        },
+        "collected_status": "rule_risk"
+      },
+      {
+        "step": 0,
+        "root": "000006",
+        "hp": 75,
+        "before": "native_difference",
+        "after": "native_difference",
+        "qualification": {
+          "certification": "semantic_mismatch",
+          "mode": "exact",
+          "route": "28793cb98c5f93b0da4d7aacab8de1ac35fba8351aa232bf859775938070b8aa",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000007",
+        "hp": 75,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "2246263794551883f1b8e4c1da13f82154661443c204da9a73f7a1f4bb01fcf3",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000008",
+        "hp": 66,
+        "before": "rule_risk",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "3bb999560f6e3109d66da1678d20068dc2546f098c133f540960d460a95410cb",
+          "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1"
+        },
+        "collected_status": "rule_risk"
+      },
+      {
+        "step": 0,
+        "root": "000009",
+        "hp": 80,
+        "before": "admissible_death",
+        "after": "admissible_death",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "c832fc39baaff28eefed2c57d6445dfb425d562c7af9f78414114b329370a512",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000010",
+        "hp": 66,
+        "before": "admissible_death",
+        "after": "admissible_death",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "402bfc259d0e3215e3f49c596f12244232c7e9cfc68c018be70e045db59d6155",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000011",
+        "hp": 75,
+        "before": "admissible_death",
+        "after": "admissible_death",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "6d780d91d6413b388cf13a3a12b4a8524821f9db30620a64292a151f9f378d02",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000012",
+        "hp": 75,
+        "before": "admissible_death",
+        "after": "admissible_death",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "416b550478071caad3677438ae6bb82c2a026b83c25132177805b8f944d814ae",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000013",
+        "hp": 75,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "04c592591a8411ef07b49123ee4530b70817624f3f33717659dfb81897ce103a",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000014",
+        "hp": 75,
+        "before": "unsupported",
+        "after": "unsupported",
+        "qualification": {
+          "certification": "semantic_unverified",
+          "mode": "exact",
+          "route": "3b5330fea5688ac687427eddd048c7a88983b48c4c1710ac64a4dd8d74e89ad0",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000015",
+        "hp": 80,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "3c3096fe18d1e69cda941dae418aa9d180608d0eb62416c7040dbead825d04f5",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000016",
+        "hp": 80,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "b278d475012155e992307aa9892e98d8bd3caaddf9a5ff0db81ca2cca82000ad",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000017",
+        "hp": 75,
+        "before": "unsupported",
+        "after": "unsupported",
+        "qualification": {
+          "certification": "semantic_unverified",
+          "mode": "exact",
+          "route": "3d8f0bc906fb507e6f66eb19e78e4273ddb13bab29b6d259273860f20e6f9854",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000018",
+        "hp": 75,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "a78750fa9134b51e016b59c50edfb017811dc60127f3c687a2f718e6cef7e3bb",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000019",
+        "hp": 70,
+        "before": "admissible_death",
+        "after": "admissible_death",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "86b417bbd616d6449772359a448fcb4c01687faf5813748e9138b70739010d47",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000020",
+        "hp": 75,
+        "before": "native_difference",
+        "after": "native_difference",
+        "qualification": {
+          "certification": "semantic_mismatch",
+          "mode": "exact",
+          "route": "f570a163bc0361f6a4d06876d961cfbcae42c3e173e27ee42b5f59bab3323b44",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000021",
+        "hp": 70,
+        "before": "admissible_death",
+        "after": "admissible_death",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "6a2f817f2788abca831f18422c037a4c5cde66c7699e0f274d9cc3af00aa137d",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000022",
+        "hp": 75,
+        "before": "admissible_death",
+        "after": "admissible_death",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "55c8a9f7636c2f09657a24fb495c2c472455e0810387e4839c8e8d04530976a4",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000023",
+        "hp": 66,
+        "before": "native_difference",
+        "after": "native_difference",
+        "qualification": {
+          "certification": "semantic_mismatch",
+          "mode": "exact",
+          "route": "f62f4f1816e9d470b0743edefc2e2f90258d448161aa14fe222ef3a9a3d57516",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000024",
+        "hp": 70,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "1f4f954961e4a314b272a60e99411cf29248dcda5c2f899f9abdb9d2cd5c6d62",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000025",
+        "hp": 75,
+        "before": "admissible_death",
+        "after": "admissible_death",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "cfaf2d8850b21a932329c6be7a6f58ed795e35018f8724789ad73161f31bbe71",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000026",
+        "hp": 70,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "1a756c2fa71b58883bec2365de0c46197cb30710f8ae8f3fdd1ea5d567941909",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000027",
+        "hp": 80,
+        "before": "unsupported",
+        "after": "unsupported",
+        "qualification": {
+          "certification": "semantic_unverified",
+          "mode": "exact",
+          "route": "eca4fd03105253269b5fd2f36c0c4eda0aa300d03c0c790e815b3a730e8775ed",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000028",
+        "hp": 80,
+        "before": "admissible_death",
+        "after": "admissible_death",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "fcecd87303faf5aec51fd68a99ca5b670aef128151476ce863b3dbc1da953d18",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 0,
+        "root": "000029",
+        "hp": 66,
+        "before": "admissible_death",
+        "after": "admissible_death",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "0fbb8cf8abe25de33e6603dc9b336f172b8b0c27e0a411dec90f2d9355f2ee8e",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000000",
+        "hp": 999,
+        "before": "rule_risk",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "b3885e47812076a83978add5f0c257abb555c6d418a22d058d7a0b4bea068e0b",
+          "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1"
+        },
+        "collected_status": "rule_risk"
+      },
+      {
+        "step": 1,
+        "root": "000001",
+        "hp": 999,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "a8e4ccf695eb96dad9064e5167cb53588208d8933a70152770aa2ceb927a3f56",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000002",
+        "hp": 999,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "caf2a8407321b1b4e582471891da044498788b0d2e933fdbf1782f576fc09459",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000003",
+        "hp": 999,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "42c24bcfc6f67be8dc52fb9d1aba1c2acbb5858424a4d6bc3a351d31110fec1a",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000004",
+        "hp": 999,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "aebd09a1e2b0096bedfebcf061cd4e9493673422c44534ed80c8a6347a03624b",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000005",
+        "hp": 999,
+        "before": "native_difference",
+        "after": "native_difference",
+        "qualification": {
+          "certification": "semantic_mismatch",
+          "mode": "exact",
+          "route": "4f7aedb607a97f229d110aa52f66c22218c21158755d202c21dd84d4685dfa8a",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000006",
+        "hp": 999,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "ca02b3cd4d69700e9e707a5183ed100a11a9a0460b22934fbc463246e8693aab",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000007",
+        "hp": 999,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "90dd1a9aba9740b922a8114d6c20274fc4e7a5476624f66f48f2f1df422302e7",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000008",
+        "hp": 999,
+        "before": "admissible_death",
+        "after": "audit_failure",
+        "qualification": {
+          "certification": null,
+          "mode": null,
+          "route": null,
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000009",
+        "hp": 999,
+        "before": "admissible_predicted_win",
+        "after": "audit_failure",
+        "qualification": {
+          "certification": null,
+          "mode": null,
+          "route": null,
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000010",
+        "hp": 999,
+        "before": "rule_risk",
+        "after": "audit_failure",
+        "qualification": {
+          "certification": null,
+          "mode": null,
+          "route": null,
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000011",
+        "hp": 999,
+        "before": "unsupported",
+        "after": "unsupported",
+        "qualification": {
+          "certification": "semantic_unverified",
+          "mode": "exact",
+          "route": "ab19e0729089be272c91de8ed5d9bb4a10bf6797c3b2e7767299c905a68edab6",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000012",
+        "hp": 999,
+        "before": "admissible_death",
+        "after": "admissible_death",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "997206086ac0638da773e58bb79973341fadb87285c6c90f6eba94befd3c17e5",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000013",
+        "hp": 999,
+        "before": "unsupported",
+        "after": "unsupported",
+        "qualification": {
+          "certification": "semantic_unverified",
+          "mode": "exact",
+          "route": "93b98661e459d33eb92eba1af254a880ab9a1d7224e5482b4b13566c9a1b4bae",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000014",
+        "hp": 999,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "f34d73b869d177aca4eea2f21953286ad1ef1bba8380a104082f39b2f82d7aed",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000015",
+        "hp": 999,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "ae0662548c55e43565978ee10b6979ec8d6d2d2df72f0105f74134edb76b3315",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000016",
+        "hp": 999,
+        "before": "admissible_predicted_win",
+        "after": "engine_failure",
+        "qualification": null,
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000017",
+        "hp": 999,
+        "before": "native_difference",
+        "after": "engine_failure",
+        "qualification": null,
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000018",
+        "hp": 999,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "375bf973f8b7dd0e938c30bb71539d372fe5b56329616df72e72e3a9956663db",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000019",
+        "hp": 999,
+        "before": "admissible_predicted_win",
+        "after": "audit_failure",
+        "qualification": {
+          "certification": null,
+          "mode": null,
+          "route": null,
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000020",
+        "hp": 999,
+        "before": "rule_risk",
+        "after": "audit_failure",
+        "qualification": {
+          "certification": null,
+          "mode": null,
+          "route": null,
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000021",
+        "hp": 999,
+        "before": "rule_risk",
+        "after": "audit_failure",
+        "qualification": {
+          "certification": null,
+          "mode": null,
+          "route": null,
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000022",
+        "hp": 999,
+        "before": "admissible_predicted_win",
+        "after": "audit_failure",
+        "qualification": {
+          "certification": null,
+          "mode": null,
+          "route": null,
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000023",
+        "hp": 999,
+        "before": "unsupported",
+        "after": "unsupported",
+        "qualification": {
+          "certification": "semantic_unverified",
+          "mode": "exact",
+          "route": "43f8bbb8b724f8f46a12e516a6d61b6576257c5a0481316078bb8ff737957c01",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000024",
+        "hp": 999,
+        "before": "unsupported",
+        "after": "unsupported",
+        "qualification": {
+          "certification": "semantic_unverified",
+          "mode": "exact",
+          "route": "a81d14aeb000cbfc7b8651ac623603fbdddc3d8aadfcae94064cac47f7988f54",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000025",
+        "hp": 999,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "cf913b4b23ecd723d39ca02da5c851ad520b815f52e3530607984eff7c71643b",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000026",
+        "hp": 999,
+        "before": "admissible_death",
+        "after": "audit_failure",
+        "qualification": {
+          "certification": null,
+          "mode": null,
+          "route": null,
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000027",
+        "hp": 999,
+        "before": "admissible_predicted_win",
+        "after": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "1abf85800f6cac626821a9dd994eb7bea2af32c73b5adb001945ce63f1cf1be0",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000028",
+        "hp": 999,
+        "before": "admissible_death",
+        "after": "admissible_death",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "f5ccbe0a986760b43eda36daedec1bbb5b3771f11488663e6f24bb03d93d52b1",
+          "rule": null
+        },
+        "collected_status": null
+      },
+      {
+        "step": 1,
+        "root": "000029",
+        "hp": 999,
+        "before": "truncated",
+        "after": "truncated",
+        "qualification": {
+          "certification": "semantic_unverified",
+          "mode": "exact",
+          "route": "8d91b810caadcdaa657d9d04472dea7036b0dd3fe12fdee1589c7bcecda05c17",
+          "rule": null
+        },
+        "collected_status": null
+      }
+    ]
+  },
+  "training": {
+    "cold_report": {
+      "admissions": {
+        "admissible_death": 1,
+        "admissible_predicted_win": 10,
+        "native_difference": 1,
+        "rule_risk": 1,
+        "unsupported": 3
+      },
+      "attempted": 16,
+      "attempts_per_second": 0.2440178077419495,
+      "audit_worker_seconds": 116.91868410049938,
+      "by_deck_card": [
+        {
+          "attempts": 1,
+          "card": "ACCURACY",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "ACCURACY",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "ASSASSINATE",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 2,
+          "card": "BARRAGE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "BLOODLETTING",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "BLOODLETTING",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "BLUDGEON",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "BLUR",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "BUBBLE_BUBBLE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "BUBBLE_BUBBLE",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "BULLET_TIME",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "CALCULATED_GAMBLE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "CHAOS",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "CHARGE_BATTERY",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "CHILL",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "CINDER",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "CLAW",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "COLD_SNAP",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "COLOSSUS",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "COMPACT",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "COOLHEADED",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "CORROSIVE_WAVE",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "CREATIVE_AI",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "CRUELTY",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "DAGGER_THROW",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "DEFEND_DEFECT",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "DEFLECT",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "DEMONIC_SHIELD",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "DEVOUR_LIFE",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "DOUBLE_ENERGY",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "ENVENOM",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "EXPECT_A_FIGHT",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "EXPERTISE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "FADE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "FERAL",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "FETCH",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "FLATTEN",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "FORBIDDEN_GRIMOIRE",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "FORGOTTEN_RITUAL",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "GENETIC_ALGORITHM",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "GLASSWORK",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 2,
+          "card": "GRAND_FINALE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "HEMOKINESIS",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "HIDDEN_DAGGERS",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "INFINITE_BLADES",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "INFLAME",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "IRON_WAVE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "KNIFE_TRAP",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "LEGION_OF_BONE",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "LEG_SWEEP",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "LOOP",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "MALAISE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "MOMENTUM_STRIKE",
+          "status": "rule_risk"
+        },
+        {
+          "attempts": 1,
+          "card": "MULTI_CAST",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "NEUTRALIZE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "NIGHTMARE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "PACTS_END",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "PERFECTED_STRIKE",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "PIERCING_WAIL",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "PILLAGE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "PINPOINT",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "PRECISE_CUT",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 3,
+          "card": "PREDATOR",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "PREPARED",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "RAGE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "RAINBOW",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 2,
+          "card": "REFLEX",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "REFLEX",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "RICOCHET",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "ROCKET_PUNCH",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "SHADOWMELD",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "SHADOW_STEP",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 2,
+          "card": "SIDESTEP",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "SKEWER",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "SMOKESTACK",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "SNEAKY",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "SNEAKY",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "STRIKE_IRONCLAD",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "SUPPRESS",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "SURVIVOR",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "SWEEPING_BEAM",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "SWORD_BOOMERANG",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "SYNCHRONIZE",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "TANK",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "TAUNT",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 2,
+          "card": "THE_HUNT",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "THUNDER",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "TOOLS_OF_THE_TRADE",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 2,
+          "card": "TRACKING",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "VICIOUS",
+          "status": "admissible_predicted_win"
+        },
+        {
+          "attempts": 1,
+          "card": "VICIOUS",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "VOLTAIC",
+          "status": "admissible_death"
+        },
+        {
+          "attempts": 1,
+          "card": "WELL_LAID_PLANS",
+          "status": "native_difference"
+        },
+        {
+          "attempts": 1,
+          "card": "WELL_LAID_PLANS",
+          "status": "unsupported"
+        },
+        {
+          "attempts": 1,
+          "card": "WHITE_NOISE",
+          "status": "admissible_death"
+        }
+      ],
+      "by_group": {
+        "AXEBOTS_NORMAL": {
+          "admissible_predicted_win": 1
+        },
+        "CORPSE_SLUGS_NORMAL": {
+          "native_difference": 1,
+          "rule_risk": 1
+        },
+        "CORPSE_SLUGS_WEAK": {
+          "admissible_predicted_win": 1
+        },
+        "CUBEX_CONSTRUCT_NORMAL": {
+          "unsupported": 1
+        },
+        "Defect": {
+          "admissible_death": 1,
+          "admissible_predicted_win": 2,
+          "rule_risk": 1
+        },
+        "GLOBE_HEAD_NORMAL": {
+          "admissible_death": 1
+        },
+        "HAUNTED_SHIP_NORMAL": {
+          "admissible_predicted_win": 1
+        },
+        "Ironclad": {
+          "admissible_predicted_win": 2,
+          "unsupported": 1
+        },
+        "MYTES_NORMAL": {
+          "admissible_predicted_win": 1
+        },
+        "NIBBITS_NORMAL": {
+          "admissible_predicted_win": 2
+        },
+        "NIBBITS_WEAK": {
+          "admissible_predicted_win": 1
+        },
+        "Necrobinder": {
+          "unsupported": 1
+        },
+        "SCROLLS_OF_BITING_NORMAL": {
+          "admissible_predicted_win": 1
+        },
+        "SLIMES_NORMAL": {
+          "unsupported": 1
+        },
+        "SPINY_TOAD_NORMAL": {
+          "admissible_predicted_win": 1
+        },
+        "Silent": {
+          "admissible_predicted_win": 6,
+          "native_difference": 1,
+          "unsupported": 1
+        },
+        "TWO_TAILED_RATS_NORMAL": {
+          "admissible_predicted_win": 1
+        },
+        "VINE_SHAMBLER_NORMAL": {
+          "unsupported": 1
+        }
+      },
+      "certification": {
+        "counts": {
+          "exact_native_match": 11,
+          "semantic_mismatch": 1,
+          "semantic_unverified": 4
+        },
+        "mode": "exact",
+        "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1"
+      },
+      "completed": 13,
+      "constructed": 16,
+      "optimizer": {
+        "actor_loss": 10804.555633544922,
+        "critic_loss": 75021.91564178467,
+        "decisions": 361,
+        "entropy": 510.51536363363266,
+        "grad_norm": 30.70612335205078,
+        "logp_error": 2.384185791015625e-07,
+        "model_sha256": "8cc128a8a1fd74171a6fd8a23091ca2378f52979b4ab129cb557fb5e358ceb27",
+        "qualified": 11,
+        "return_max": 99.8,
+        "return_min": -153.09129927359564
+      },
+      "predictions": {
+        "death": 1,
+        "predicted_win": 11,
+        "rule_risk": 1,
+        "unsupported": 3
+      },
+      "seconds": 65.56898510013707,
+      "update": 2
+    },
+    "e3": [
+      {
+        "step": 0,
+        "root": "000006",
+        "status": "rule_risk",
+        "qualification": {
+          "certification": "semantic_unverified",
+          "mode": "exact",
+          "route": "9d15eb2ce6d70504bc2266149e6cc2440b729e53bef59afaebf83b690105a080",
+          "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1"
+        },
+        "collected": {
+          "actions": 16,
+          "eligible": false,
+          "evidence": "unqualified",
+          "observation": {
+            "block": 12,
+            "energy": 1,
+            "hp": 957,
+            "max_hp": 999,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "turn": 5
+          },
+          "reason": "E3_ENEMY_SIDE_TERMINAL",
+          "replays": 16,
+          "solver_gap_count": 3,
+          "status": "rule_risk"
+        },
+        "eligible": false,
+        "reason": "continuation_difference",
+        "differences": {
+          "AttackStarts": {
+            "native": "2",
+            "prediction": "0"
+          },
+          "Y": {
+            "native": "0/0/2/2",
+            "prediction": "0/0/0/0"
+          }
+        }
+      },
+      {
+        "step": 0,
+        "root": "000007",
+        "status": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "f6f17d91da8fdd604b8285286bc13fe6fa74ea5eedbd48c253ebaf0a8ba9b53a",
+          "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1"
+        },
+        "collected": {
+          "actions": 17,
+          "eligible": false,
+          "evidence": "prediction_only",
+          "observation": {
+            "block": 8,
+            "energy": 0,
+            "hp": 964,
+            "max_hp": 999,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "turn": 6
+          },
+          "reason": "E3_ENEMY_SIDE_TERMINAL",
+          "replays": 17,
+          "solver_gap_count": 4,
+          "status": "rule_risk"
+        },
+        "eligible": true,
+        "reason": null,
+        "differences": null
+      },
+      {
+        "step": 0,
+        "root": "000012",
+        "status": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "cf971a88ff4231c57e8d47441be509f42e30307a5bbf85a66838e36646f00a06",
+          "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1"
+        },
+        "collected": {
+          "actions": 64,
+          "eligible": false,
+          "evidence": "prediction_only",
+          "observation": {
+            "block": 4,
+            "energy": 3,
+            "hp": 981,
+            "max_hp": 999,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "turn": 26
+          },
+          "reason": "E3_ENEMY_SIDE_TERMINAL",
+          "replays": 64,
+          "solver_gap_count": 4,
+          "status": "rule_risk"
+        },
+        "eligible": true,
+        "reason": null,
+        "differences": null
+      },
+      {
+        "step": 1,
+        "root": "000000",
+        "status": "rule_risk",
+        "qualification": {
+          "certification": "semantic_unverified",
+          "mode": "exact",
+          "route": "0c95bc46be655095bd3aa002f566073784116f0a7e6c83500a226536263738a3",
+          "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1"
+        },
+        "collected": {
+          "actions": 12,
+          "eligible": false,
+          "evidence": "unqualified",
+          "observation": {
+            "block": 7,
+            "energy": 2,
+            "hp": 992,
+            "max_hp": 999,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "turn": 3
+          },
+          "reason": "E3_ENEMY_SIDE_TERMINAL",
+          "replays": 12,
+          "solver_gap_count": 4,
+          "status": "rule_risk"
+        },
+        "eligible": false,
+        "reason": "continuation_difference",
+        "differences": {
+          "AttackStarts": {
+            "native": "1",
+            "prediction": "0"
+          },
+          "O": {
+            "native": "3:FROST_ORB[2/5],GLASS_ORB[3/6],DARK_ORB[6/12],",
+            "prediction": "3:FROST_ORB[2/5],GLASS_ORB[3/6],DARK_ORB[6/6],"
+          },
+          "Y": {
+            "native": "0/1/3/3",
+            "prediction": "0/0/0/0"
+          }
+        }
+      },
+      {
+        "step": 1,
+        "root": "000014",
+        "status": "admissible_predicted_win",
+        "qualification": {
+          "certification": "exact_native_match",
+          "mode": "exact",
+          "route": "09ad59d91b11ae5d318a7eed728c3d0749ace715dcef3a23d30dc55c8e58258d",
+          "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1"
+        },
+        "collected": {
+          "actions": 45,
+          "eligible": false,
+          "evidence": "prediction_only",
+          "observation": {
+            "block": 0,
+            "energy": 3,
+            "hp": 824,
+            "max_hp": 999,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "turn": 14
+          },
+          "reason": "E3_ENEMY_SIDE_TERMINAL",
+          "replays": 45,
+          "solver_gap_count": 11,
+          "status": "rule_risk"
+        },
+        "eligible": true,
+        "reason": null,
+        "differences": null
+      }
+    ],
+    "cold_hashes": [
+      [
+        0,
+        "2891891f463c065888c02ff194c1a962d432335be7ab72d0999e0b141e5f7dc9"
+      ],
+      [
+        1,
+        "cf187f0cf0889de77598bdd6d297bfbd5901b6db2936a3cb35814b60818a9acd"
+      ],
+      [
+        2,
+        "f102bb534c8a0c9033359e18c1292009fc5739423c48edba09fc79c6c3cba280"
+      ]
+    ],
+    "resumed_hashes": [
+      [
+        0,
+        "2891891f463c065888c02ff194c1a962d432335be7ab72d0999e0b141e5f7dc9"
+      ],
+      [
+        1,
+        "cf187f0cf0889de77598bdd6d297bfbd5901b6db2936a3cb35814b60818a9acd"
+      ]
+    ],
+    "first_update_checkpoint_equal": true,
+    "snapshots_equal": false
+  }
+}

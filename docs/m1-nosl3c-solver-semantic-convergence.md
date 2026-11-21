@@ -76,3 +76,31 @@ python "$f/train_completion.py" logs/iih2-cold --solver $s --suite integration -
 ```
 
 同一 II-C `0:6` 另提供进行中对照。一个存有 10 层 Doom 的非终局回合，Frail 由 2 降至 1。最终敌方回合中 Doom 敌人消失，Frail 保持 3 层。该见证的两次独立原生执行均记录了这些 Power 边界。
+
+## II-H.3 严格战斗认证桥接
+
+`sts2.nosl.iih3.enemy-side-exact-combat.v1` 复用现有 II-H.2 DLL。采集端仍将最后动作是结束回合的预测胜利记为 E3 风险，原严格认证器只审计正常胜负，训练优化器只接受已有严格资格的反馈。
+
+H.3 为具备完整轨迹的 E3 创建临时预期胜局反馈，交给独立原生与预测进程做 exact 审计。审计覆盖根、合法菜单、选择、稳定续体、最终资源和 SHA-256。升级还要求预测器实际报告胜利，原生到达奖励界面，而且重复结束回合后奖励面、持久资源和采样 RNG 保持稳定。失败路径保留原始不合格反馈。成功路径保存 `collected_feedback` 并提交派生训练反馈，v4 的公开观察、动作、行为 logp 和奖励函数保持原样。
+
+战斗资格截止于锁定战斗状态，要求战斗侧资源和相关 RNG 的精确续体。奖励生成、领取和地图处置走原生接口，H.2 的重复领奖证据仍独立保存。H.3 的奖励面探针只用于验证战斗已经无法继续，输出不进入策略观察。旧 Solver `0.51.5-iig.2` 的四条同路线均被构建身份门槛拒绝。
+
+沿用 II-H.2 的环境和账本数组。
+
+```powershell
+$s = 'logs/m1-nosl3c-iih2-candidate'
+$h3 = 'experiments/m1-nosl3c-iih3'
+python "$h3/replay.py" logs/iih3-archive @l --solver $s --workers 1
+python "$h3/train.py" logs/iih3-pair16 --solver $s --suite pair16
+python "$h3/train.py" logs/iih3-holdout --solver $s --suite holdout
+python "$h3/train.py" logs/iih3-resume --solver $s --suite e3-update --through-update 1
+python "$h3/train.py" logs/iih3-resume --solver $s --suite e3-update
+python "$h3/train.py" logs/iih3-cold --solver $s --suite e3-update
+python -m pytest -q "$h3/test_certification.py"
+```
+
+四条冻结 E3 均由新入口重新严格认证。旧独立 16 根中，`000007` 与 `000012` 从 E3 隔离升级，严格资格从 8/16 增至 10/16；`000006` 仍因 Y 和 AttackStarts 实差异被拒绝。v4 冷跑第一次更新确实用了这两条 E3，同时使用普通胜局和严格死亡。首次更新的行为 logp 最大复算误差为 `2.384185791015625e-07`。主测试通过 162 项、跳过 1 项；结算超时探针现在通过固定的 .NET 9 运行入口启动。E3 定向负例 11 项通过，F4、LS2A、LS2B 配置回归分别通过 6、7、5 项，旧死亡等价合同通过 1 个原生证据正例及 16 个拒绝检查。
+
+[严格战斗、样本配对和训练证据](../experiments/m1-nosl3c-iih3/evidence.json)
+
+本次旧 60 根首次完整尝试保留全部分母，38/60 获准。三条旧 E3 升级为精确胜局，另有宿主启动超时和执行错误，因此 38/60 不能视为有效的净回归结论。定向四条原生证明和已重跑的历史行均在证据中列明。历史证据的空白表示整批重新认证尚未成功写出该行。两次更新的冷跑已完成；首次检查点与分段执行一致，分段执行的第二批受宿主启动超时影响，完整恢复等价尚待验证。
