@@ -9,6 +9,8 @@
 
 ## 工程状态
 
+- II-H.9 候选集成验收在 `0.51.5-iih.8.1` 和 II-H.7 Headless 上得到冻结 42/65、独立 11/16 和 45/60，v4 冷跑与恢复一致。常规 Headless 的隔离输出路径未加载本地化，主测试有六项失败。全量验收基线保留 II-H.2。 [报告与复现](m1-nosl3c-iih9-integration.md)
+
 - 最新定向候选 `0.51.5-iih.8.1` 继承 II-H.4–H.7，复用 II-H.7 Headless。玩家回合准备先完成 Tyranny 选择及耗尽，再触发 Furnace。Sovereign Blade 的 29 个历史动作全部与原生精确对齐，牌区及实例正负例、四条历史回归和 Void Form 对照均通过。 [定向证据与复现](m1-nosl3c-iih8-sovereign-blade.md)
 
 - II-H.7 隔离构建 `0.51.5-iih.7.1` 继承 II-H.4–H.6。Headless 合法菜单使用原生 `CanPlay` 和经战斗钩子修饰的固定星费。Hunter Killer 历史败局、Void Form 星费正负例及三条历史回归均通过。 [定向证据与复现](m1-nosl3c-iih7-hunter-killer.md)

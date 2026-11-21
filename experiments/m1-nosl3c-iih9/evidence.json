@@ -1,0 +1,4992 @@
+{
+  "engine": {
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+    "coreclr": "9.0.7",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "headless_sha256": "b3f8ce1d862bdb98000bfeb90d701239e50be17034739c5c2ed18e26716150f0",
+    "native_identity": "87baa84a2b2297eae588a6996727d719b6e299227d1770a44bef7836ebe8e06f",
+    "policy": "M1-F2-discard-v1",
+    "sampler": "m1-d1-v1",
+    "solver": "0.51.5-iih.8.1",
+    "solver_sha256": "509eece4ef6a2be9e098e2b78d27e25736964e5c4ae5f7aa0d557c8680d77181"
+  },
+  "history": [
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000000",
+      "root": "68716d50ee58a6a1b993eb3b0391838d5fb74057726c95c8efd60daacc8ccd4e",
+      "baseline": "route_not_reconstructible",
+      "category": "incomplete_archived_route",
+      "classification": "route_not_reconstructible",
+      "archived": 0,
+      "consumed": 0,
+      "last_card": null,
+      "proof": {},
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000001",
+      "root": "91a554122daa601ca9f39623586df3c89ab43eb7497312087b26547a4bc5ec21",
+      "baseline": "route_not_reconstructible",
+      "category": "incomplete_archived_route",
+      "classification": "route_not_reconstructible",
+      "archived": 0,
+      "consumed": 0,
+      "last_card": null,
+      "proof": {},
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000002",
+      "root": "f8afb8a19d79a0f9d1535f81998a9d8fd5fac8f3559f0e3927e63fb0c7f3157d",
+      "baseline": "certified_death",
+      "category": "exact_native_match",
+      "classification": "certified_death",
+      "archived": 18,
+      "consumed": 18,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "34d49e810aefc0fc99a80e8b04823ddd3aaf57f874922829fa7c38d9274b7acd"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000003",
+      "root": "ab1cbddbad199d8df2fddbd796732d0a98169ef4211051d7e1450b4f8f4503a2",
+      "baseline": "solver_execution_risk",
+      "category": "solver_execution_risk",
+      "classification": "solver_execution_risk",
+      "archived": 7,
+      "consumed": 7,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 2,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "HAMMER_TIME",
+        "index": 1,
+        "upgrade": 0
+      },
+      "proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000004",
+      "root": "e2b50405a5748bf31c20e5557a0d75d4eedd64e7303698c4aced11b9a97d4989",
+      "baseline": "prefix_only",
+      "category": "incomplete_archived_route",
+      "classification": "prefix_only",
+      "archived": 4,
+      "consumed": 4,
+      "last_card": null,
+      "proof": {
+        "status": "error",
+        "certification": "semantic_unverified",
+        "exact_status": "error",
+        "reason": "unexpected_solver_status",
+        "terminal_verified": false
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000005",
+      "root": "1ff9f1b4b3d2602e3341cd33e4fd64da8988c4c88f7a6f37e2aeeeb426165ee4",
+      "baseline": "certified_win",
+      "category": "exact_native_match",
+      "classification": "certified_win",
+      "archived": 18,
+      "consumed": 18,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 3,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "VOLLEY",
+        "index": 1,
+        "upgrade": 0
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "5c09d24e02de40a3461497edcdcba6b44991b3aff9758ebdfb24f8bd1c0e7971"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000006",
+      "root": "416dd0d61a6bf68a04102b1c6d77b10f78c1d5de98920e50f0fd302c5fc0d81f",
+      "baseline": "certified_win",
+      "category": "exact_native_match",
+      "classification": "certified_win",
+      "archived": 14,
+      "consumed": 14,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "41803d1033ba573030fd808cb1f796624e3294b7d5500ffefdb86f9f9a02acd9"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000007",
+      "root": "b4f6000dc86568a76dd8746a9789c1a0d250c54ac92a9a4cbfb39e5421637e9d",
+      "baseline": "prefix_only",
+      "category": "incomplete_archived_route",
+      "classification": "prefix_only",
+      "archived": 8,
+      "consumed": 8,
+      "last_card": null,
+      "proof": {
+        "status": "error",
+        "certification": "semantic_unverified",
+        "exact_status": "error",
+        "reason": "unexpected_solver_status",
+        "terminal_verified": false
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000008",
+      "root": "609b6f3cef7082001ad243be5504532a56d6812d50b3d88493b8fd9d97db99a6",
+      "baseline": "certified_death",
+      "category": "exact_native_match",
+      "classification": "certified_death",
+      "archived": 24,
+      "consumed": 24,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "b17408a6556f1de528ea7aa9f5e8886da01b7f6a8c32b74417ee1258aaec9f87"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000009",
+      "root": "054168e08713b11cd0500f1b3b45fc1951f6ef4d92d8becd35e93512d31b48b0",
+      "baseline": "prefix_only",
+      "category": "incomplete_archived_route",
+      "classification": "prefix_only",
+      "archived": 3,
+      "consumed": 3,
+      "last_card": null,
+      "proof": {
+        "status": "error",
+        "certification": "semantic_unverified",
+        "exact_status": "error",
+        "reason": "unexpected_solver_status",
+        "terminal_verified": false
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000010",
+      "root": "fda331411ae76428f4b3a615e8d864b98c867ac3286e54466ba51492744cb44d",
+      "baseline": "certified_death",
+      "category": "exact_native_match",
+      "classification": "certified_death",
+      "archived": 11,
+      "consumed": 11,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "ffe6f3afbe02ab28e582fef224d24abd8245b7de45da33be5e9b53d4fab93b0e"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000011",
+      "root": "da56b63921b5cb7a7d4854a26b745c695a7386cdbce409e3f25418f47f7fca34",
+      "baseline": "prefix_only",
+      "category": "incomplete_archived_route",
+      "classification": "prefix_only",
+      "archived": 10,
+      "consumed": 10,
+      "last_card": null,
+      "proof": {
+        "status": "error",
+        "certification": "semantic_unverified",
+        "exact_status": "error",
+        "reason": "unexpected_solver_status",
+        "terminal_verified": false
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000012",
+      "root": "51f005b69d4e98a96e6a945fb5a835199d7045f7ac49ab2984bbe7501c837c10",
+      "baseline": "prefix_only",
+      "category": "incomplete_archived_route",
+      "classification": "prefix_only",
+      "archived": 3,
+      "consumed": 3,
+      "last_card": null,
+      "proof": {
+        "status": "error",
+        "certification": "semantic_unverified",
+        "exact_status": "error",
+        "reason": "unexpected_solver_status",
+        "terminal_verified": false
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000013",
+      "root": "a537143cff92c9e5d3dd6805bbd3f8312ee2d038e43453200b23d6a1e2f0fc5a",
+      "baseline": "certified_win",
+      "category": "exact_native_match",
+      "classification": "certified_win",
+      "archived": 25,
+      "consumed": 25,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 2,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "CASCADE",
+        "index": 0,
+        "upgrade": 0
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "332c421d2a77bd5829c996a1cf57d33e26737c965bba22c8a5333414f2f1cb43"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000014",
+      "root": "3b7e50ffc0dd714204f5f2a996154727c79e5719b74f96f4f5bdf974462a2d3c",
+      "baseline": "certified_death",
+      "category": "exact_native_match",
+      "classification": "certified_death",
+      "archived": 16,
+      "consumed": 16,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "50ee63f672930f36503a8ae0404f06df8de2953cf26203782c5676ca9ba7c689"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000015",
+      "root": "573ff359603de27b1e31e38593ed791e7469d1191deef27a6437e138d5be8f42",
+      "baseline": "certified_win",
+      "category": "exact_native_match",
+      "classification": "certified_win",
+      "archived": 11,
+      "consumed": 11,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "08f3c58b95b2cef84a15ca95b0d483575823e2e7cde3c1b8923a0958c5ddc798"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000016",
+      "root": "4c9f71cd91de224e2358fcfa439ae682602527914123a0ce36e79646f6e0b9a7",
+      "baseline": "route_not_reconstructible",
+      "category": "incomplete_archived_route",
+      "classification": "route_not_reconstructible",
+      "archived": 0,
+      "consumed": 0,
+      "last_card": null,
+      "proof": {},
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000017",
+      "root": "dd6c88daa806d4864b7dfa23c269e8e4305b3a8b06990401e3173f52990918b1",
+      "baseline": "certified_death",
+      "category": "exact_native_match",
+      "classification": "certified_death",
+      "archived": 14,
+      "consumed": 14,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "d9cd1a44640196edacce72b5a9491d164d7b8e45194a64eae02eadbb31c3fcd3"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000018",
+      "root": "99cb2bb200edf36f1d8c07c61fc787eab4cbcdc62d3c028e02c713d1ffbc0e0a",
+      "baseline": "certified_win",
+      "category": "exact_native_match",
+      "classification": "certified_win",
+      "archived": 21,
+      "consumed": 21,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 2,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "PERFECTED_STRIKE",
+        "index": 1,
+        "upgrade": 1
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "89375b52f32623ad6151a958dd3185dbe4714d9b024615bc93b0461dfa562d3b"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000019",
+      "root": "f43a2c9e8ccb6048463687e3704f347e06aaf769b12cb22a1ae70d1dbf41cd48",
+      "baseline": "semantic_mismatch",
+      "category": "exact_native_match",
+      "classification": "certified_death",
+      "archived": 32,
+      "consumed": 32,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "337d14109680270d930a2e9445a7cc70100079781398c073d45cf88ccda93039"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000000",
+      "root": "18028538b34921370d159be4fba1bd0ddbbb78f53a7a1e51da15ab1cc2a2e798",
+      "baseline": "certified_win",
+      "category": "exact_native_match",
+      "classification": "certified_win",
+      "archived": 11,
+      "consumed": 11,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "053a94bc6767f6a17b78b210e1c15aa87c81b708cc7c00f985b22430ea31e240"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000001",
+      "root": "633abe3f79410a883551771c69446fb20db518836dd280731daa7b118fdbebbc",
+      "baseline": "certified_death",
+      "category": "exact_native_match",
+      "classification": "certified_death",
+      "archived": 26,
+      "consumed": 26,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "2461d1658b1cb5fe82007ed3ea2bb659c93d1d423879a0ee6f9281a68b267b95"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000002",
+      "root": "cf3ddaef7a736ce107b48cab2af756eb6567cad117f06ea02b8b55940b695574",
+      "baseline": "semantic_mismatch",
+      "category": "exact_native_match",
+      "classification": "certified_death",
+      "archived": 23,
+      "consumed": 23,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "5e4097062b6070e61efbccfd4c10f9a521769023481cb0953e62abb303fb1aae"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000003",
+      "root": "b005353e44d03997afa53d4afdeb2d4ad22603daa4a63106bebef63b7f922097",
+      "baseline": "certified_death",
+      "category": "exact_native_match",
+      "classification": "certified_death",
+      "archived": 10,
+      "consumed": 10,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "4de2f734aa4f50fbc982441635e8627b1eb742511a38a036157022df7492cda0"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000004",
+      "root": "b9545e4cdfd710ee107de9d96af032b6c93c4c081b65dc55aa3024a2646773db",
+      "baseline": "certified_death",
+      "category": "exact_native_match",
+      "classification": "certified_death",
+      "archived": 12,
+      "consumed": 12,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "73dd053c57ad7bfa81894007d5b90ac1bb0fb7bb2d0d168b367906669dcdca13"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000005",
+      "root": "f05dcee66cc634882212c0c48c6932562a7fa3d2534e7af6a463b7f7a1743dc0",
+      "baseline": "certified_death",
+      "category": "exact_native_match",
+      "classification": "certified_death",
+      "archived": 9,
+      "consumed": 9,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "a8b28dcaafb0bbae1e950cd8da862a2874b86c1129fed596c78f06dd7e7db5c2"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000006",
+      "root": "e5d10722e568e021b2bd7162964453290fb0f26046b2f4a3839a2ed2a457983a",
+      "baseline": "certified_death",
+      "category": "exact_native_match",
+      "classification": "certified_death",
+      "archived": 20,
+      "consumed": 20,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "44cafcb507a10272a127ecd25793074435855c138a4637d320d722d8e5436bd0"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000007",
+      "root": "1d3ae5b9979eca822ce32ecbb03376c6f0a99276836a24b0b2629ad293232308",
+      "baseline": "certified_win",
+      "category": "exact_native_match",
+      "classification": "certified_win",
+      "archived": 20,
+      "consumed": 20,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 0,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "POKE",
+        "index": 3,
+        "upgrade": 1
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "71fdf74d5cd27bdae5030f8e505160b9edfa143b162da8844967bdf2582a768b"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000008",
+      "root": "509cdcea658784a4c19a1cf4e9c1d4fe96396b7d236a8ed22e333e94a645043b",
+      "baseline": "certified_death",
+      "category": "exact_native_match",
+      "classification": "certified_death",
+      "archived": 16,
+      "consumed": 16,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "ade1604d476a2ae6d0340102983d0594f6ba48b998d026b4cfa92116c03ccf72"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000009",
+      "root": "8c4c528c646f0d50a353700bd378c3a5b5b593f779b5154a356be4946671b24b",
+      "baseline": "solver_execution_risk",
+      "category": "solver_execution_risk",
+      "classification": "solver_execution_risk",
+      "archived": 1,
+      "consumed": 1,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 2,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "HIBERNATE",
+        "index": 2,
+        "upgrade": 0
+      },
+      "proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000010",
+      "root": "943b9b84726d46b31b3de102d9584e74add6bc723dc6bdce0581e2353882b777",
+      "baseline": "semantic_mismatch",
+      "category": "exact_native_match",
+      "classification": "certified_death",
+      "archived": 10,
+      "consumed": 10,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "0d7ce8290bd14ebca8f203beda8839c4b02ec6d677e9b88ce93698c94ed9a22f"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000011",
+      "root": "d9a40161f204121b5b87cb1542bf71fb463326bd9462966605135aee6fc238d2",
+      "baseline": "certified_win",
+      "category": "exact_native_match",
+      "classification": "certified_win",
+      "archived": 11,
+      "consumed": 11,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 3,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "SUNDER",
+        "index": 0,
+        "upgrade": 1
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "feca02535bb022d58080ecab89eb097f93614213b8f742c421ea40f2274de3bc"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000012",
+      "root": "5aa6832bbafa3b9917dc44cbaddaffd23a2c5bd1a86338a7249b08d246e5ffbf",
+      "baseline": "certified_death",
+      "category": "exact_native_match",
+      "classification": "certified_death",
+      "archived": 16,
+      "consumed": 16,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "14e32701079f9e5494502c1bbef07d0312a0860bb0e6028369daa77c18eac67b"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000013",
+      "root": "b17922f64b78a0fca0739d8bc2bb3a76747baecea247437be13aa898b421a6eb",
+      "baseline": "certified_death",
+      "category": "exact_native_match",
+      "classification": "certified_death",
+      "archived": 14,
+      "consumed": 14,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "72fdc20f59b355d8153041f1b44ffb6b9f29bd992bc3715d57170eaea5ff5b28"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000014",
+      "root": "42bd2844c8555b652d1383f75d343ae9558bd03c63293549c59f77b23283c2ea",
+      "baseline": "prefix_only",
+      "category": "incomplete_archived_route",
+      "classification": "prefix_only",
+      "archived": 4,
+      "consumed": 4,
+      "last_card": null,
+      "proof": {
+        "status": "error",
+        "certification": "semantic_unverified",
+        "exact_status": "error",
+        "reason": "unexpected_solver_status",
+        "terminal_verified": false
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000015",
+      "root": "73d2cb993dd460929b8e292561a182af444ca75c2d4f32963d88707ea979c902",
+      "baseline": "certified_win",
+      "category": "exact_native_match",
+      "classification": "certified_win",
+      "archived": 9,
+      "consumed": 9,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 1,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "STRIKE_SILENT",
+        "index": 2,
+        "upgrade": 0
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "fec7c8a2338160b134da8b68a8645b04021f2c003d8a2bcd70c7d03e3e063f43"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000016",
+      "root": "2d714ae89c2b9472ca1bfe9f8dad64c6f40f4821448de31b2a15d8783dfbafc9",
+      "baseline": "certified_win",
+      "category": "exact_native_match",
+      "classification": "certified_win",
+      "archived": 13,
+      "consumed": 13,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 1,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "SHATTER",
+        "index": 2,
+        "upgrade": 0
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "11286cb3e23201dc748c1e7901985aebfcd8d29ce6ca46462ba0d9bd04b28580"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000017",
+      "root": "745c575c49202ee0b336feb30bad2e4300a1124bf1c6d502a81ffc40b6d36299",
+      "baseline": "certified_win",
+      "category": "exact_native_match",
+      "classification": "certified_win",
+      "archived": 18,
+      "consumed": 18,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 1,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "PILLAGE",
+        "index": 2,
+        "upgrade": 1
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "ae8fcc9c6a9d4cfc0c5dcbd86f1dcc18799a99e0f0986a18a1e926f44a3276c2"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000018",
+      "root": "87ff5f29bf915e6f615224a1ecfb7983f0426008bda38b57ae5d2613b9a8b139",
+      "baseline": "certified_win",
+      "category": "exact_native_match",
+      "classification": "certified_win",
+      "archived": 18,
+      "consumed": 18,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 3,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "ICE_LANCE",
+        "index": 2,
+        "upgrade": 1
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "721d30e55509d768060892a95a67245a71c8d4f893ec22a389e5442065273220"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000019",
+      "root": "a7c2a747c2f78d96fec92156defdcf5888d1dc55456ffb726176a8788a34db95",
+      "baseline": "engine_failure",
+      "category": "engine_failure",
+      "classification": "engine_failure",
+      "archived": 0,
+      "consumed": 0,
+      "last_card": null,
+      "proof": {},
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000020",
+      "root": "c6753b7c4c0f07387632b119ae13596739b800971d41502a9f34297fcb993e20",
+      "baseline": "certified_death",
+      "category": "exact_native_match",
+      "classification": "certified_death",
+      "archived": 19,
+      "consumed": 19,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "ccf6808e0cfcdccee1b4eec5d5cf7c74cfafe425bd5a688dd61d88d71f6b0177"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000021",
+      "root": "701fa836a92b9b593c9ff4ffd70a924d03cc8d23c042483bcd46798d83cad361",
+      "baseline": "certified_win",
+      "category": "exact_native_match",
+      "classification": "certified_win",
+      "archived": 8,
+      "consumed": 8,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 1,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "BALL_LIGHTNING",
+        "index": 4,
+        "upgrade": 0
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "ecfd32b9557106fd7071cbf6896b882949e261fb2f04469e295d57d1a19dea41"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000022",
+      "root": "1d45f122a4e7b76464d3c33a84f8a159edf081892771247ecc20ced40d8d74cf",
+      "baseline": "certified_win",
+      "category": "exact_native_match",
+      "classification": "certified_win",
+      "archived": 8,
+      "consumed": 8,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 0,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "GIANT_ROCK",
+        "index": 2,
+        "upgrade": 1
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "8f58d950038742596e16e8520fa1e251ea2ff0d694fe1512b9b0495d58c684ed"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000023",
+      "root": "332267b2206bd5832e9f3c4d3a4c807c212b3f48a0fda0e2b1a32a52f61c5caa",
+      "baseline": "prefix_only",
+      "category": "incomplete_archived_route",
+      "classification": "prefix_only",
+      "archived": 4,
+      "consumed": 4,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 2,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "CLEANSE",
+        "index": 3,
+        "upgrade": 0
+      },
+      "proof": {
+        "status": "error",
+        "certification": "semantic_unverified",
+        "exact_status": "error",
+        "reason": "unexpected_solver_status",
+        "terminal_verified": false
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000024",
+      "root": "701e4c4f0f9b7cc29ec02d3f7601669c9f208460ffe23c55d262bceb6d9c7654",
+      "baseline": "certified_win",
+      "category": "exact_native_match",
+      "classification": "certified_win",
+      "archived": 14,
+      "consumed": 14,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 2,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "ADAPTIVE_STRIKE",
+        "index": 1,
+        "upgrade": 1
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "474f556d00a8a80fe3bc77678a85275054d972347deeb216bdf0ee258c28dac1"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000025",
+      "root": "4d69ccb086d5841e6dcb47818050dc206a1e2dcf5acc8da023e0312971ff390f",
+      "baseline": "solver_execution_risk",
+      "category": "solver_execution_risk",
+      "classification": "solver_execution_risk",
+      "archived": 2,
+      "consumed": 2,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 2,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "UNDERWORLD",
+        "index": 3,
+        "upgrade": 0
+      },
+      "proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000026",
+      "root": "8f2cf92453574dc81c42a5ec63e4105a73213e893fb1e6982497ec15fe20a679",
+      "baseline": "certified_death",
+      "category": "exact_native_match",
+      "classification": "certified_death",
+      "archived": 20,
+      "consumed": 20,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "7722eac1a70531b2f057b545beffdc0b2ab1ed2f4b7ac55b8e0b25c5373b9515"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000027",
+      "root": "1594e7c75455f092f817d6f746a28a06e5ec88b14bb7974afcb0d131262e3c34",
+      "baseline": "solver_execution_risk",
+      "category": "solver_execution_risk",
+      "classification": "solver_execution_risk",
+      "archived": 13,
+      "consumed": 13,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 2,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "LEGION_OF_BONE",
+        "index": 3,
+        "upgrade": 1
+      },
+      "proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000028",
+      "root": "a101781a88008d19bfbb97299552aaae62dc04ad21df97abc365e3aa2e25a66b",
+      "baseline": "solver_execution_risk",
+      "category": "solver_execution_risk",
+      "classification": "solver_execution_risk",
+      "archived": 3,
+      "consumed": 3,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 0,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "OUTRAGE",
+        "index": 2,
+        "upgrade": 0
+      },
+      "proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000029",
+      "root": "fee208c8f2d05f54033d6d3c30c5986954d5a5a6aa940d2bdecbd8af9534c3fb",
+      "baseline": "certified_death",
+      "category": "exact_native_match",
+      "classification": "certified_death",
+      "archived": 19,
+      "consumed": 19,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "c5a119493e5aedc6f79c5fcb040052b8e51ddfc42f41d6c41362336c556bc5d7"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 0,
+      "position": "000000",
+      "root": "7bcf1310821a485659c6d6f8a1369e28c7b04beae050e1bfab91694f75a83c57",
+      "baseline": "certified_win",
+      "category": "exact_native_match",
+      "classification": "certified_win",
+      "archived": 19,
+      "consumed": 19,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 1,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "FINISHER",
+        "index": 2,
+        "upgrade": 1
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "53a2be34904018c062c1ef8736d18e3af1f25de4165626342fd39e89f763e4fa"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 0,
+      "position": "000001",
+      "root": "88f7f6ae2f13cb13e4f6459d63b8ed34422cf1d47ad7f0e979f5df68d3c3f590",
+      "baseline": "prefix_only",
+      "category": "incomplete_archived_route",
+      "classification": "prefix_only",
+      "archived": 8,
+      "consumed": 8,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 1,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "SURVIVOR",
+        "index": 2,
+        "upgrade": 0
+      },
+      "proof": {
+        "status": "error",
+        "certification": "semantic_unverified",
+        "exact_status": "error",
+        "reason": "unexpected_solver_status",
+        "terminal_verified": false
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 0,
+      "position": "000002",
+      "root": "8103bb7336e60dbde00822f982f3e3fef12aa2ba698fe62ad166269df87045f5",
+      "baseline": "certified_win",
+      "category": "exact_native_match",
+      "classification": "certified_win",
+      "archived": 44,
+      "consumed": 44,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 2,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "CINDER",
+        "index": 3,
+        "upgrade": 1
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "f7af4f5e86653540ded1485cf8d3e2904bb3c7243c7b077b69cf75bbb2096cbe"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 0,
+      "position": "000003",
+      "root": "312cc7fa2164958d696b0479bb5ada3e1a515d0b31c7d904b404c2bb7d276ca2",
+      "baseline": "semantic_mismatch",
+      "category": "public_prefix_difference",
+      "classification": "public_prefix_difference",
+      "archived": 29,
+      "consumed": 28,
+      "last_card": null,
+      "proof": {
+        "status": "public_prefix_difference"
+      },
+      "differing_fields": [
+        "hand"
+      ],
+      "divergence_index": 28
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 0,
+      "position": "000004",
+      "root": "c4a685316da798f45d41eba477dd03ab697608828867d97661df751e4f22e02a",
+      "baseline": "certified_win",
+      "category": "exact_native_match",
+      "classification": "certified_win",
+      "archived": 44,
+      "consumed": 44,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 1,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "GIANT_ROCK",
+        "index": 0,
+        "upgrade": 0
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "c83de6fa0aa9452f58309ae5310338cd0ce67094580bdc4c218fb5c987582260"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 1,
+      "position": "000000",
+      "root": "40712d46497386881db529b8dd0a66bf185e532cd3d65a3ec2b5c5b895328fc3",
+      "baseline": "solver_execution_risk",
+      "category": "solver_execution_risk",
+      "classification": "solver_execution_risk",
+      "archived": 13,
+      "consumed": 13,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 1,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "GLIMPSE_BEYOND",
+        "index": 1,
+        "upgrade": 0
+      },
+      "proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 1,
+      "position": "000001",
+      "root": "f97fe1954e3345290eca7dc9bb7d98f54826618e3795f43c67c1e766e9fc122a",
+      "baseline": "prefix_only",
+      "category": "incomplete_archived_route",
+      "classification": "prefix_only",
+      "archived": 8,
+      "consumed": 8,
+      "last_card": null,
+      "proof": {
+        "status": "error",
+        "certification": "semantic_unverified",
+        "exact_status": "error",
+        "reason": "unexpected_solver_status",
+        "terminal_verified": false
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 1,
+      "position": "000002",
+      "root": "7243be6818f0ccbc5bbee929660ac6ca472fab7830d7d28b2254557c9aee6b3d",
+      "baseline": "solver_execution_risk",
+      "category": "solver_execution_risk",
+      "classification": "solver_execution_risk",
+      "archived": 1,
+      "consumed": 1,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 1,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "HAMMER_TIME",
+        "index": 4,
+        "upgrade": 1
+      },
+      "proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 1,
+      "position": "000003",
+      "root": "bc1716d1df53d50f67583ad6584dea4e477af98ee787da5008bd44075b3d4ff2",
+      "baseline": "solver_execution_risk",
+      "category": "solver_execution_risk",
+      "classification": "solver_execution_risk",
+      "archived": 8,
+      "consumed": 8,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 0,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "PLOT",
+        "index": 1,
+        "upgrade": 1
+      },
+      "proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 1,
+      "position": "000004",
+      "root": "1cc94e5973f7887801d9023b4e219ea8d01012b4187347f1a261f25a8718ce73",
+      "baseline": "certified_win",
+      "category": "exact_native_match",
+      "classification": "certified_win",
+      "archived": 30,
+      "consumed": 30,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "f41d9bc0f6f1366699a795f7c5b0f34a76381657cbe92a31ba00ea51521fd90a"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 2,
+      "position": "000000",
+      "root": "6ad1a4ab3588f49ce05fe2ae9c113b9ca99efaf26fd916d33c1fbf9f28a6d33f",
+      "baseline": "certified_death",
+      "category": "exact_native_match",
+      "classification": "certified_death",
+      "archived": 10,
+      "consumed": 10,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "bd01edc07150209fd00c3b2444d92e42b4ea7bd68d9c1c0ea162095f87e18c6e"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 2,
+      "position": "000001",
+      "root": "84ba9be6aa7330aa93fa5fd97559c1b4cf2d0692d6dfbc3b6aab204df6c2d3a5",
+      "baseline": "semantic_mismatch",
+      "category": "exact_native_match",
+      "classification": "certified_win",
+      "archived": 15,
+      "consumed": 15,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 2,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "CONSUMING_SHADOW",
+        "index": 0,
+        "upgrade": 0
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "69ba0999cc92fed137da36c3f936b9554e28221e03d05b6bd23d54659a99258e"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 2,
+      "position": "000002",
+      "root": "4230bc75d5822b60a09cae24482f72abf3cbcef5a2fc4ea8ea210048e42c809f",
+      "baseline": "certified_win",
+      "category": "exact_native_match",
+      "classification": "certified_win",
+      "archived": 10,
+      "consumed": 10,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 2,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "SOVEREIGN_BLADE",
+        "index": 2,
+        "upgrade": 0
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "e4159b7b30501012f8ad1ad58ff7318b4b7d88cf430a3429dcb40ffd10ec9a43"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 2,
+      "position": "000003",
+      "root": "ea50f8c33565f6aeea9b3608d8a435bb280e198caf95f1a039ddf114cadd12f4",
+      "baseline": "certified_death",
+      "category": "exact_native_match",
+      "classification": "certified_death",
+      "archived": 21,
+      "consumed": 21,
+      "last_card": null,
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "4de2ae59e6425e54b770fb96a1f0039792c3f8a0286f12fee9d460bc3421f1c0"
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 2,
+      "position": "000004",
+      "root": "044a75d105fa73169fc2c3284ff8679491c842007b73115ea8fcf9277016f0b8",
+      "baseline": "prefix_only",
+      "category": "incomplete_archived_route",
+      "classification": "prefix_only",
+      "archived": 13,
+      "consumed": 13,
+      "last_card": {
+        "affliction": null,
+        "affliction_amount": null,
+        "cost": 0,
+        "enchantment": null,
+        "enchantment_amount": null,
+        "id": "BRAND",
+        "index": 0,
+        "upgrade": 0
+      },
+      "proof": {
+        "status": "error",
+        "certification": "semantic_unverified",
+        "exact_status": "error",
+        "reason": "unexpected_solver_status",
+        "terminal_verified": false
+      },
+      "differing_fields": null,
+      "divergence_index": null
+    }
+  ],
+  "pair16": [
+    {
+      "step": 0,
+      "position": "000000",
+      "encounter": "DEVOTED_SCULPTOR_WEAK",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "a23dbacd22a03932acbcebfea261abe8d43195d0901001351d3319817ea3cdab"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "a23dbacd22a03932acbcebfea261abe8d43195d0901001351d3319817ea3cdab"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000001",
+      "encounter": "INKLETS_NORMAL",
+      "baseline": "audit_failure",
+      "classification": "audit_failure",
+      "baseline_proof": {
+        "status": "audit_failure",
+        "detail": "Combat turn timed out before reaching the next decision. The run has not been marked as a defeat; see stderr for engine diagnostics.",
+        "terminal_verified": false
+      },
+      "proof": {
+        "status": "audit_failure",
+        "detail": "Combat turn timed out before reaching the next decision. The run has not been marked as a defeat; see stderr for engine diagnostics.",
+        "terminal_verified": false
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000002",
+      "encounter": "SCROLLS_OF_BITING_WEAK",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "ab426ffb1d316394a688d554ee58f665504f318e122a5a08805919257d979b6b"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "ab426ffb1d316394a688d554ee58f665504f318e122a5a08805919257d979b6b"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000003",
+      "encounter": "SPINY_TOAD_NORMAL",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "bc2974805daedeb8b5be9f08b20f652e844490393ee07a014067ae094d716e9d"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "bc2974805daedeb8b5be9f08b20f652e844490393ee07a014067ae094d716e9d"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000004",
+      "encounter": "OVICOPTER_NORMAL",
+      "baseline": "error",
+      "classification": "error",
+      "baseline_proof": {
+        "status": "error",
+        "certification": "semantic_unverified",
+        "exact_status": "error",
+        "reason": "error",
+        "terminal_verified": false
+      },
+      "proof": {
+        "status": "error",
+        "certification": "semantic_unverified",
+        "exact_status": "error",
+        "reason": "error",
+        "terminal_verified": false
+      },
+      "baseline_prediction": "error",
+      "prediction": "error",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000005",
+      "encounter": "FOSSIL_STALKER_NORMAL",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "187680fde005d2b12b2f5cbe349b7237c4aecd5d0d85d989fec88365da6927d5"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "187680fde005d2b12b2f5cbe349b7237c4aecd5d0d85d989fec88365da6927d5"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000006",
+      "encounter": "SEAPUNK_NORMAL",
+      "baseline": "rule_risk",
+      "classification": "rule_risk",
+      "baseline_proof": {
+        "status": "rule_risk",
+        "certification": "semantic_unverified",
+        "exact_status": "native_difference",
+        "reason": "continuation_difference",
+        "first_failure": {
+          "action": "end_turn",
+          "card": null,
+          "effect": null,
+          "phase": "combat",
+          "position": 15,
+          "target_type": null
+        },
+        "continuation_fields": {
+          "AttackStarts": {
+            "native": "2",
+            "prediction": "0"
+          },
+          "Y": {
+            "native": "0/0/2/2",
+            "prediction": "0/0/0/0"
+          }
+        },
+        "terminal_verified": false
+      },
+      "proof": {
+        "status": "rule_risk",
+        "certification": "semantic_unverified",
+        "exact_status": "native_difference",
+        "reason": "continuation_difference",
+        "first_failure": {
+          "action": "end_turn",
+          "card": null,
+          "effect": null,
+          "phase": "combat",
+          "position": 15,
+          "target_type": null
+        },
+        "continuation_fields": {
+          "AttackStarts": {
+            "native": "2",
+            "prediction": "0"
+          },
+          "Y": {
+            "native": "0/0/2/2",
+            "prediction": "0/0/0/0"
+          }
+        },
+        "terminal_verified": false
+      },
+      "baseline_prediction": "rule_risk",
+      "prediction": "rule_risk",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000007",
+      "encounter": "HAUNTED_SHIP_NORMAL",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "b9cd95b11940e116ab207d49ff64ce32db216883f4a62c924fd06f442b00ccdb"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "b9cd95b11940e116ab207d49ff64ce32db216883f4a62c924fd06f442b00ccdb"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000008",
+      "encounter": "SLITHERING_STRANGLER_NORMAL",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "1c4f0644d5f2c28f84a667bee749d0c5b4d4c5e984cdddcfbe0098aa855a0dac"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "1c4f0644d5f2c28f84a667bee749d0c5b4d4c5e984cdddcfbe0098aa855a0dac"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000009",
+      "encounter": "SLIMES_NORMAL",
+      "baseline": "unsupported",
+      "classification": "unsupported",
+      "baseline_proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "baseline_prediction": "unsupported",
+      "prediction": "unsupported",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000010",
+      "encounter": "BOWLBUGS_WEAK",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "b40c31ee8c5df0a251940c171a88ac74a13693322ed3cbbd66e68e8879d7f459"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "b40c31ee8c5df0a251940c171a88ac74a13693322ed3cbbd66e68e8879d7f459"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000011",
+      "encounter": "CORPSE_SLUGS_NORMAL",
+      "baseline": "admissible_death",
+      "classification": "admissible_death",
+      "baseline_proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "9a8b31913d61184499e0fa0549840276c25764364d482452e970c96ebb3715c2"
+      },
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "9a8b31913d61184499e0fa0549840276c25764364d482452e970c96ebb3715c2"
+      },
+      "baseline_prediction": "death",
+      "prediction": "death",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000012",
+      "encounter": "CORPSE_SLUGS_WEAK",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "48d93a4ac9fc726e6eb78a6eec474dc83775deb8d772f041e71258603afc7337"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "48d93a4ac9fc726e6eb78a6eec474dc83775deb8d772f041e71258603afc7337"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000013",
+      "encounter": "PUNCH_CONSTRUCT_NORMAL",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "51102c8813786a2d46d328fdf8499b92afca4bfaad5ba108564c9896582504d0"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "51102c8813786a2d46d328fdf8499b92afca4bfaad5ba108564c9896582504d0"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000014",
+      "encounter": "SCROLLS_OF_BITING_WEAK",
+      "baseline": "unsupported",
+      "classification": "unsupported",
+      "baseline_proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "baseline_prediction": "unsupported",
+      "prediction": "unsupported",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000015",
+      "encounter": "OWL_MAGISTRATE_NORMAL",
+      "baseline": "native_difference",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "native_difference",
+        "certification": "semantic_mismatch",
+        "exact_status": "native_difference",
+        "reason": "continuation_difference",
+        "first_failure": {
+          "action": "play_card",
+          "card": "CONSUMING_SHADOW",
+          "effect": null,
+          "phase": "combat",
+          "position": 29,
+          "target_type": "Self"
+        },
+        "continuation_fields": {
+          "P": {
+            "native": "0:VULNERABLE_POWER=3/0[DamageIncrease=1.5,],0:CREATIVE_AI_POWER=1/0[],0:TRASH_TO_TREASURE_POWER=2/0[],0:LIGHTNING_ROD_POWER=2/0[],0:SMOKESTACK_POWER=5/0[],",
+            "prediction": "0:VULNERABLE_POWER=3/0[DamageIncrease=1.5,],0:CREATIVE_AI_POWER=1/0[],0:TRASH_TO_TREASURE_POWER=2/0[],0:LIGHTNING_ROD_POWER=2/0[],0:SMOKESTACK_POWER=5/0[],0:CONSUMING_SHADOW_POWER=1/0[],"
+          }
+        },
+        "terminal_verified": false
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "94b4770b2a1803dc6aeb3b63dc9b4b4c72cae8c43f21d203515bc053c64eb533"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    }
+  ],
+  "holdout": [
+    {
+      "step": 0,
+      "position": "000000",
+      "encounter": "TOADPOLES_WEAK",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "e0149541a799ffd9259b1f97559e50bdea673084c1c179f4c53459f34b219298"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "e0149541a799ffd9259b1f97559e50bdea673084c1c179f4c53459f34b219298"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000001",
+      "encounter": "RUBY_RAIDERS_NORMAL",
+      "baseline": "admissible_death",
+      "classification": "admissible_death",
+      "baseline_proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "4b9dd2ca8dc3d4ef943c2b12949d179b3382ddf11db5d9febc371771e676900a"
+      },
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "4b9dd2ca8dc3d4ef943c2b12949d179b3382ddf11db5d9febc371771e676900a"
+      },
+      "baseline_prediction": "death",
+      "prediction": "death",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000002",
+      "encounter": "EXOSKELETONS_NORMAL",
+      "baseline": "admissible_death",
+      "classification": "admissible_death",
+      "baseline_proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "211366e90cb5f015e631430c4b85dc79af3ba45ad5beb60e51c879e2f8fd9d0c"
+      },
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "211366e90cb5f015e631430c4b85dc79af3ba45ad5beb60e51c879e2f8fd9d0c"
+      },
+      "baseline_prediction": "death",
+      "prediction": "death",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000003",
+      "encounter": "INKLETS_NORMAL",
+      "baseline": "admissible_death",
+      "classification": "admissible_death",
+      "baseline_proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "ed599128e69cfdd6ef0ccac78040488335b973d363c3f74c39ba27541d8ba096"
+      },
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "ed599128e69cfdd6ef0ccac78040488335b973d363c3f74c39ba27541d8ba096"
+      },
+      "baseline_prediction": "death",
+      "prediction": "death",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000004",
+      "encounter": "FOGMOG_NORMAL",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "efd8487806c9984c214d3dc2e91104b1b20759ca7226201e072e3fce337f0362"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "efd8487806c9984c214d3dc2e91104b1b20759ca7226201e072e3fce337f0362"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000005",
+      "encounter": "THIEVING_HOPPER_WEAK",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "d09bda4da44327b98cdc767de8974e331dfe86024e4953534c59120f59d9469c"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "d09bda4da44327b98cdc767de8974e331dfe86024e4953534c59120f59d9469c"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000006",
+      "encounter": "SHRINKER_BEETLE_WEAK",
+      "baseline": "native_difference",
+      "classification": "native_difference",
+      "baseline_proof": {
+        "status": "native_difference",
+        "certification": "semantic_mismatch",
+        "exact_status": "native_difference",
+        "reason": "continuation_difference",
+        "first_failure": {
+          "action": "play_card",
+          "card": "WROUGHT_IN_WAR",
+          "effect": null,
+          "phase": "combat",
+          "position": 18,
+          "target_type": "AnyEnemy"
+        },
+        "continuation_fields": {
+          "H": {
+            "native": "SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=66,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,CHARGE+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Cards=2,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,BEAT_INTO_SHAPE+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[CalculationBase=5,CalculationExtra=5,Damage=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,CONSTELLATION+1/False:0/False:2/0:0/False/False/False/True/False/-:0:0/-:0[Block=12,Cards=1,Energy=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,",
+            "prediction": "SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=75,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,CHARGE+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Cards=2,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,BEAT_INTO_SHAPE+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[CalculationBase=5,CalculationExtra=5,Damage=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,CONSTELLATION+1/False:0/False:2/0:0/False/False/False/True/False/-:0:0/-:0[Block=12,Cards=1,Energy=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+          }
+        },
+        "terminal_verified": false
+      },
+      "proof": {
+        "status": "native_difference",
+        "certification": "semantic_mismatch",
+        "exact_status": "native_difference",
+        "reason": "continuation_difference",
+        "first_failure": {
+          "action": "play_card",
+          "card": "WROUGHT_IN_WAR",
+          "effect": null,
+          "phase": "combat",
+          "position": 18,
+          "target_type": "AnyEnemy"
+        },
+        "continuation_fields": {
+          "H": {
+            "native": "SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=66,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,CHARGE+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Cards=2,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,BEAT_INTO_SHAPE+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[CalculationBase=5,CalculationExtra=5,Damage=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,CONSTELLATION+1/False:0/False:2/0:0/False/False/False/True/False/-:0:0/-:0[Block=12,Cards=1,Energy=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,",
+            "prediction": "SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=75,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,CHARGE+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Cards=2,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,BEAT_INTO_SHAPE+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[CalculationBase=5,CalculationExtra=5,Damage=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,CONSTELLATION+1/False:0/False:2/0:0/False/False/False/True/False/-:0:0/-:0[Block=12,Cards=1,Energy=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+          }
+        },
+        "terminal_verified": false
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000007",
+      "encounter": "PUNCH_CONSTRUCT_NORMAL",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "5d5d4eeb0eefa127bd3053a44d03d67b489ec7d7192a4eed590b08e351a2434b"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "5d5d4eeb0eefa127bd3053a44d03d67b489ec7d7192a4eed590b08e351a2434b"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000008",
+      "encounter": "THIEVING_HOPPER_WEAK",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "c9e175e272aa1343630cbf1471b4e138ce2fc53bad6cbb5c8b825aebb725b627"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "c9e175e272aa1343630cbf1471b4e138ce2fc53bad6cbb5c8b825aebb725b627"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000009",
+      "encounter": "GLOBE_HEAD_NORMAL",
+      "baseline": "admissible_death",
+      "classification": "admissible_death",
+      "baseline_proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "454d4b289b3e4af2df9effdcb22b10e6b94204f15088ed5293cc46eebe856d7c"
+      },
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "454d4b289b3e4af2df9effdcb22b10e6b94204f15088ed5293cc46eebe856d7c"
+      },
+      "baseline_prediction": "death",
+      "prediction": "death",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000010",
+      "encounter": "SHRINKER_BEETLE_WEAK",
+      "baseline": "admissible_death",
+      "classification": "admissible_death",
+      "baseline_proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "070e6c14561dc4cc583603ce59d3f7f9ab08702f2a9d56dfc8e424a237000301"
+      },
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "070e6c14561dc4cc583603ce59d3f7f9ab08702f2a9d56dfc8e424a237000301"
+      },
+      "baseline_prediction": "death",
+      "prediction": "death",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000011",
+      "encounter": "DEVOTED_SCULPTOR_WEAK",
+      "baseline": "admissible_death",
+      "classification": "admissible_death",
+      "baseline_proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "5d6cfe29e8c6d9ab731bd6a55dac692115333783665ad168ee1ff37cdd59eb06"
+      },
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "5d6cfe29e8c6d9ab731bd6a55dac692115333783665ad168ee1ff37cdd59eb06"
+      },
+      "baseline_prediction": "death",
+      "prediction": "death",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000012",
+      "encounter": "FABRICATOR_NORMAL",
+      "baseline": "admissible_death",
+      "classification": "admissible_death",
+      "baseline_proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "758a8c4889e41565474be8470eda1cbc77af8ba46133c06f19d012009010b2df"
+      },
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "758a8c4889e41565474be8470eda1cbc77af8ba46133c06f19d012009010b2df"
+      },
+      "baseline_prediction": "death",
+      "prediction": "death",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000013",
+      "encounter": "FOSSIL_STALKER_NORMAL",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "90280b5a0cdd22cc51687119f37cc461c3e011fddc97485ec6497995d0f447f7"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "90280b5a0cdd22cc51687119f37cc461c3e011fddc97485ec6497995d0f447f7"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000014",
+      "encounter": "CHOMPERS_NORMAL",
+      "baseline": "unsupported",
+      "classification": "unsupported",
+      "baseline_proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "baseline_prediction": "unsupported",
+      "prediction": "unsupported",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000015",
+      "encounter": "SLIMES_WEAK",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "79339c15f382e50e7af8b9fa6edb3f65bacb3824bc13c4a53b20639d57452ffb"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "79339c15f382e50e7af8b9fa6edb3f65bacb3824bc13c4a53b20639d57452ffb"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000016",
+      "encounter": "FOGMOG_NORMAL",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "0ecb96788526d16901c5da42abfa215657a19fd2097545046b4273d3e090c700"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "0ecb96788526d16901c5da42abfa215657a19fd2097545046b4273d3e090c700"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000017",
+      "encounter": "SLIMES_WEAK",
+      "baseline": "unsupported",
+      "classification": "unsupported",
+      "baseline_proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "baseline_prediction": "unsupported",
+      "prediction": "unsupported",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000018",
+      "encounter": "GREMLIN_MERC_NORMAL",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "526c96d0ed6dc707834e356cd58eb3d8a572731db0aeabc8c69c9416b55f2fc9"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "526c96d0ed6dc707834e356cd58eb3d8a572731db0aeabc8c69c9416b55f2fc9"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000019",
+      "encounter": "GLOBE_HEAD_NORMAL",
+      "baseline": "admissible_death",
+      "classification": "admissible_death",
+      "baseline_proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "45ab6ce985281d216e41276f6642d0abb417b088024b8bf08ff13ab61a4a2761"
+      },
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "45ab6ce985281d216e41276f6642d0abb417b088024b8bf08ff13ab61a4a2761"
+      },
+      "baseline_prediction": "death",
+      "prediction": "death",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000020",
+      "encounter": "SCROLLS_OF_BITING_NORMAL",
+      "baseline": "native_difference",
+      "classification": "native_difference",
+      "baseline_proof": {
+        "status": "native_difference",
+        "certification": "semantic_mismatch",
+        "exact_status": "native_difference",
+        "reason": "menu_or_action_difference",
+        "first_failure": {
+          "action": "select_candidate",
+          "card": null,
+          "effect": "Transform",
+          "phase": "choice",
+          "position": 2,
+          "target_type": null
+        },
+        "detail": "",
+        "terminal_verified": false
+      },
+      "proof": {
+        "status": "native_difference",
+        "certification": "semantic_mismatch",
+        "exact_status": "native_difference",
+        "reason": "menu_or_action_difference",
+        "first_failure": {
+          "action": "select_candidate",
+          "card": null,
+          "effect": "Transform",
+          "phase": "choice",
+          "position": 2,
+          "target_type": null
+        },
+        "detail": "",
+        "terminal_verified": false
+      },
+      "baseline_prediction": "death",
+      "prediction": "death",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000021",
+      "encounter": "CHOMPERS_NORMAL",
+      "baseline": "admissible_death",
+      "classification": "admissible_death",
+      "baseline_proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "34b61e584f7c1c8b97e98cebf9364ffb639062e5eedc4921f32d896d0c682f1b"
+      },
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "34b61e584f7c1c8b97e98cebf9364ffb639062e5eedc4921f32d896d0c682f1b"
+      },
+      "baseline_prediction": "death",
+      "prediction": "death",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000022",
+      "encounter": "BOWLBUGS_NORMAL",
+      "baseline": "admissible_death",
+      "classification": "admissible_death",
+      "baseline_proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "6a66d6616773e7c49f1eac6f38d0b64f8a4a0b2004641d87d031babd1338a9c3"
+      },
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "6a66d6616773e7c49f1eac6f38d0b64f8a4a0b2004641d87d031babd1338a9c3"
+      },
+      "baseline_prediction": "death",
+      "prediction": "death",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000023",
+      "encounter": "FOSSIL_STALKER_NORMAL",
+      "baseline": "native_difference",
+      "classification": "native_difference",
+      "baseline_proof": {
+        "status": "native_difference",
+        "certification": "semantic_mismatch",
+        "exact_status": "native_difference",
+        "reason": "enemy_stage_death_boundary",
+        "first_failure": {
+          "action": "end_turn",
+          "card": null,
+          "effect": null,
+          "phase": "combat",
+          "position": 9,
+          "target_type": null
+        },
+        "continuation_fields": {
+          "P": {
+            "native": "1:SUCK_POWER=3/0[],1:STRENGTH_POWER=15/0[],",
+            "prediction": "1:SUCK_POWER=3/0[],1:STRENGTH_POWER=18/0[],"
+          }
+        },
+        "terminal_verified": false
+      },
+      "proof": {
+        "status": "native_difference",
+        "certification": "semantic_mismatch",
+        "exact_status": "native_difference",
+        "reason": "enemy_stage_death_boundary",
+        "first_failure": {
+          "action": "end_turn",
+          "card": null,
+          "effect": null,
+          "phase": "combat",
+          "position": 9,
+          "target_type": null
+        },
+        "continuation_fields": {
+          "P": {
+            "native": "1:SUCK_POWER=3/0[],1:STRENGTH_POWER=15/0[],",
+            "prediction": "1:SUCK_POWER=3/0[],1:STRENGTH_POWER=18/0[],"
+          }
+        },
+        "terminal_verified": false
+      },
+      "baseline_prediction": "death",
+      "prediction": "death",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000024",
+      "encounter": "CHOMPERS_NORMAL",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "35667191f6e88fd8ef99164610fc5352d92b718feea5b24b22fd5a0c82e351b4"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "35667191f6e88fd8ef99164610fc5352d92b718feea5b24b22fd5a0c82e351b4"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000025",
+      "encounter": "SEAPUNK_NORMAL",
+      "baseline": "admissible_death",
+      "classification": "admissible_death",
+      "baseline_proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "72c165b267595085ac1b8e6f509ac4f38670cd4f3ffa7ecbf6198e26d2026a13"
+      },
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "72c165b267595085ac1b8e6f509ac4f38670cd4f3ffa7ecbf6198e26d2026a13"
+      },
+      "baseline_prediction": "death",
+      "prediction": "death",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000026",
+      "encounter": "VINE_SHAMBLER_NORMAL",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "5089ba8ea7ecd786f0f9c4823e11bb33e8bf9d105e7fa065fedb993421cbcf8f"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "5089ba8ea7ecd786f0f9c4823e11bb33e8bf9d105e7fa065fedb993421cbcf8f"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000027",
+      "encounter": "PUNCH_CONSTRUCT_NORMAL",
+      "baseline": "unsupported",
+      "classification": "unsupported",
+      "baseline_proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "baseline_prediction": "unsupported",
+      "prediction": "unsupported",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000028",
+      "encounter": "GLOBE_HEAD_NORMAL",
+      "baseline": "admissible_death",
+      "classification": "admissible_death",
+      "baseline_proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "cd96e21d4207c90be18c230094aa0535c6fe2130a110afbfd7bb0db1d3c20b7f"
+      },
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "cd96e21d4207c90be18c230094aa0535c6fe2130a110afbfd7bb0db1d3c20b7f"
+      },
+      "baseline_prediction": "death",
+      "prediction": "death",
+      "first_changes": {}
+    },
+    {
+      "step": 0,
+      "position": "000029",
+      "encounter": "EXOSKELETONS_NORMAL",
+      "baseline": "admissible_death",
+      "classification": "admissible_death",
+      "baseline_proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "d83bbd0de2581e5fa9020b905c5e14d2a89cda5beb4b3dd1aeff7555cde8d69a"
+      },
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "d83bbd0de2581e5fa9020b905c5e14d2a89cda5beb4b3dd1aeff7555cde8d69a"
+      },
+      "baseline_prediction": "death",
+      "prediction": "death",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000000",
+      "encounter": "SLUMBERING_BEETLE_NORMAL",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "d056b7ec5ded53b0b3503387f790ebcb39a26bb7ca43dc004b5669d298e39c8a"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "d056b7ec5ded53b0b3503387f790ebcb39a26bb7ca43dc004b5669d298e39c8a"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000001",
+      "encounter": "CULTISTS_NORMAL",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "204fac4605379330b35be8886ce921653234f2eda357399ea9e3a550d671a787"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "204fac4605379330b35be8886ce921653234f2eda357399ea9e3a550d671a787"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000002",
+      "encounter": "SHRINKER_BEETLE_WEAK",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "6a830f38e633f046f19e797b2a701d4c366ede872f208571b5570eaf82e75207"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "6a830f38e633f046f19e797b2a701d4c366ede872f208571b5570eaf82e75207"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000003",
+      "encounter": "BOWLBUGS_WEAK",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "cff3d4e63b23ba74712232208feea4eb47fd3b47101d2f892fb717549d5959e4"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "cff3d4e63b23ba74712232208feea4eb47fd3b47101d2f892fb717549d5959e4"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000004",
+      "encounter": "OVERGROWTH_CRAWLERS",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "5c9a5441237a5a5776528abc4032fababefd8800a4dc20d23fa6426e707fdb6b"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "5c9a5441237a5a5776528abc4032fababefd8800a4dc20d23fa6426e707fdb6b"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000005",
+      "encounter": "CULTISTS_NORMAL",
+      "baseline": "native_difference",
+      "classification": "native_difference",
+      "baseline_proof": {
+        "status": "native_difference",
+        "certification": "semantic_mismatch",
+        "exact_status": "native_difference",
+        "reason": "menu_or_action_difference",
+        "first_failure": {
+          "action": "select_candidate",
+          "card": null,
+          "effect": "Transform",
+          "phase": "choice",
+          "position": 4,
+          "target_type": null
+        },
+        "detail": "",
+        "terminal_verified": false
+      },
+      "proof": {
+        "status": "native_difference",
+        "certification": "semantic_mismatch",
+        "exact_status": "native_difference",
+        "reason": "menu_or_action_difference",
+        "first_failure": {
+          "action": "select_candidate",
+          "card": null,
+          "effect": "Transform",
+          "phase": "choice",
+          "position": 4,
+          "target_type": null
+        },
+        "detail": "",
+        "terminal_verified": false
+      },
+      "baseline_prediction": "death",
+      "prediction": "death",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000006",
+      "encounter": "OVICOPTER_NORMAL",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "13e5ada4dc71662ace8c6351081e14ff36a3a2ca3f00229738117c33fee9bea2"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "13e5ada4dc71662ace8c6351081e14ff36a3a2ca3f00229738117c33fee9bea2"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000007",
+      "encounter": "CORPSE_SLUGS_NORMAL",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "0987eb198bfaf802b4a2aaaab9957e5ef4a6dc93f8a0b68079f6b7d417e4c9b0"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "0987eb198bfaf802b4a2aaaab9957e5ef4a6dc93f8a0b68079f6b7d417e4c9b0"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000008",
+      "encounter": "CULTISTS_NORMAL",
+      "baseline": "admissible_death",
+      "classification": "admissible_death",
+      "baseline_proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "316106bdb37e5eee989605e1d1f4ec6f5e5012c4338b7f75aa7ed53e0ed1e40c"
+      },
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "316106bdb37e5eee989605e1d1f4ec6f5e5012c4338b7f75aa7ed53e0ed1e40c"
+      },
+      "baseline_prediction": "death",
+      "prediction": "death",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000009",
+      "encounter": "FUZZY_WURM_CRAWLER_WEAK",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "eac577c33b07788de876671e9adb2a43cb59ee00c8daf4cf38192fcc38bc11dc"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "eac577c33b07788de876671e9adb2a43cb59ee00c8daf4cf38192fcc38bc11dc"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000010",
+      "encounter": "LOUSE_PROGENITOR_NORMAL",
+      "baseline": "rule_risk",
+      "classification": "rule_risk",
+      "baseline_proof": {
+        "status": "rule_risk",
+        "certification": "semantic_unverified",
+        "exact_status": "native_difference",
+        "reason": "continuation_difference",
+        "first_failure": {
+          "action": "end_turn",
+          "card": null,
+          "effect": null,
+          "phase": "combat",
+          "position": 15,
+          "target_type": null
+        },
+        "continuation_fields": {
+          "Y": {
+            "native": "0/0/2/2",
+            "prediction": "0/0/0/0"
+          }
+        },
+        "terminal_verified": false
+      },
+      "proof": {
+        "status": "rule_risk",
+        "certification": "semantic_unverified",
+        "exact_status": "native_difference",
+        "reason": "continuation_difference",
+        "first_failure": {
+          "action": "end_turn",
+          "card": null,
+          "effect": null,
+          "phase": "combat",
+          "position": 15,
+          "target_type": null
+        },
+        "continuation_fields": {
+          "Y": {
+            "native": "0/0/2/2",
+            "prediction": "0/0/0/0"
+          }
+        },
+        "terminal_verified": false
+      },
+      "baseline_prediction": "rule_risk",
+      "prediction": "rule_risk",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000011",
+      "encounter": "THE_LOST_AND_FORGOTTEN_NORMAL",
+      "baseline": "unsupported",
+      "classification": "unsupported",
+      "baseline_proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "baseline_prediction": "unsupported",
+      "prediction": "unsupported",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000012",
+      "encounter": "SNAPPING_JAXFRUIT_NORMAL",
+      "baseline": "admissible_death",
+      "classification": "admissible_death",
+      "baseline_proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "3c4aae06fe799be205864db6af2bf120ab1196bec5c26a3a9ccfd720745e063c"
+      },
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "3c4aae06fe799be205864db6af2bf120ab1196bec5c26a3a9ccfd720745e063c"
+      },
+      "baseline_prediction": "death",
+      "prediction": "death",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000013",
+      "encounter": "THE_OBSCURA_NORMAL",
+      "baseline": "unsupported",
+      "classification": "unsupported",
+      "baseline_proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "baseline_prediction": "unsupported",
+      "prediction": "unsupported",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000014",
+      "encounter": "MYTES_NORMAL",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "3a9c2b9987fc28c33f3842732a90129903ac745cdb97fea5abcad8536fab1fe0"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "3a9c2b9987fc28c33f3842732a90129903ac745cdb97fea5abcad8536fab1fe0"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000015",
+      "encounter": "TWO_TAILED_RATS_NORMAL",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "3288c1312374c2c61661580b8b4e9eba8945f8a7ee290e8d45eaad9efc968c0a"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "3288c1312374c2c61661580b8b4e9eba8945f8a7ee290e8d45eaad9efc968c0a"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000016",
+      "encounter": "TUNNELER_WEAK",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "6a5763f8934de1d0714cd99515a344ab34a147abd9578c13408086a05ff6a0c8"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "6a5763f8934de1d0714cd99515a344ab34a147abd9578c13408086a05ff6a0c8"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000017",
+      "encounter": "SLIMES_NORMAL",
+      "baseline": "native_difference",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "native_difference",
+        "certification": "semantic_mismatch",
+        "exact_status": "native_difference",
+        "reason": "menu_or_action_difference",
+        "first_failure": {
+          "action": "play_card",
+          "card": "SLIMED",
+          "effect": null,
+          "phase": "combat",
+          "position": 17,
+          "target_type": "None"
+        },
+        "detail": "('legal_target_menu', [], [(1, None, None)])",
+        "terminal_verified": false
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "a3bf05c43b26f0d4538970a62c6e240fc4ef97d56b9d162df1e9039d4c802d83"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000018",
+      "encounter": "INKLETS_NORMAL",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "cdb58bbfcf9fd251dc95add309564e998b6879410e89d00388ae25c86b993202"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "cdb58bbfcf9fd251dc95add309564e998b6879410e89d00388ae25c86b993202"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000019",
+      "encounter": "CHOMPERS_NORMAL",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "d7284062d54c1afedc18ea186476e960dc70643b8244bdb3cb2cda2c4f424589"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "d7284062d54c1afedc18ea186476e960dc70643b8244bdb3cb2cda2c4f424589"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000020",
+      "encounter": "EXOSKELETONS_NORMAL",
+      "baseline": "rule_risk",
+      "classification": "rule_risk",
+      "baseline_proof": {
+        "status": "rule_risk",
+        "certification": "semantic_unverified",
+        "exact_status": "native_difference",
+        "reason": "continuation_difference",
+        "first_failure": {
+          "action": "end_turn",
+          "card": null,
+          "effect": null,
+          "phase": "combat",
+          "position": 17,
+          "target_type": null
+        },
+        "continuation_fields": {
+          "P": {
+            "native": "0:FERAL_POWER=1/0[],0:SUBROUTINE_POWER=1/0[],0:LIGHTNING_ROD_POWER=2/0[],",
+            "prediction": "0:FERAL_POWER=1/0[],0:SUBROUTINE_POWER=1/0[],0:LIGHTNING_ROD_POWER=1/0[],"
+          }
+        },
+        "terminal_verified": false
+      },
+      "proof": {
+        "status": "rule_risk",
+        "certification": "semantic_unverified",
+        "exact_status": "native_difference",
+        "reason": "continuation_difference",
+        "first_failure": {
+          "action": "end_turn",
+          "card": null,
+          "effect": null,
+          "phase": "combat",
+          "position": 17,
+          "target_type": null
+        },
+        "continuation_fields": {
+          "P": {
+            "native": "0:FERAL_POWER=1/0[],0:SUBROUTINE_POWER=1/0[],0:LIGHTNING_ROD_POWER=2/0[],",
+            "prediction": "0:FERAL_POWER=1/0[],0:SUBROUTINE_POWER=1/0[],0:LIGHTNING_ROD_POWER=1/0[],"
+          }
+        },
+        "terminal_verified": false
+      },
+      "baseline_prediction": "rule_risk",
+      "prediction": "rule_risk",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000021",
+      "encounter": "NIBBITS_NORMAL",
+      "baseline": "rule_risk",
+      "classification": "rule_risk",
+      "baseline_proof": {
+        "status": "rule_risk",
+        "certification": "semantic_unverified",
+        "exact_status": "native_difference",
+        "reason": "continuation_difference",
+        "first_failure": {
+          "action": "end_turn",
+          "card": null,
+          "effect": null,
+          "phase": "combat",
+          "position": 20,
+          "target_type": null
+        },
+        "continuation_fields": {
+          "O": {
+            "native": "7:GLASS_ORB[0/0],GLASS_ORB[0/0],GLASS_ORB[1/2],GLASS_ORB[2/4],GLASS_ORB[3/6],",
+            "prediction": "7:GLASS_ORB[0/0],GLASS_ORB[0/0],GLASS_ORB[1/2],GLASS_ORB[3/6],GLASS_ORB[4/8],"
+          }
+        },
+        "terminal_verified": false
+      },
+      "proof": {
+        "status": "rule_risk",
+        "certification": "semantic_unverified",
+        "exact_status": "native_difference",
+        "reason": "continuation_difference",
+        "first_failure": {
+          "action": "end_turn",
+          "card": null,
+          "effect": null,
+          "phase": "combat",
+          "position": 20,
+          "target_type": null
+        },
+        "continuation_fields": {
+          "O": {
+            "native": "7:GLASS_ORB[0/0],GLASS_ORB[0/0],GLASS_ORB[1/2],GLASS_ORB[2/4],GLASS_ORB[3/6],",
+            "prediction": "7:GLASS_ORB[0/0],GLASS_ORB[0/0],GLASS_ORB[1/2],GLASS_ORB[3/6],GLASS_ORB[4/8],"
+          }
+        },
+        "terminal_verified": false
+      },
+      "baseline_prediction": "rule_risk",
+      "prediction": "rule_risk",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000022",
+      "encounter": "NIBBITS_WEAK",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "6619e742ca84101c22455071a3de4c535b954cd77570ccf1301514db50203050"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "6619e742ca84101c22455071a3de4c535b954cd77570ccf1301514db50203050"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000023",
+      "encounter": "TOADPOLES_WEAK",
+      "baseline": "unsupported",
+      "classification": "unsupported",
+      "baseline_proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "baseline_prediction": "unsupported",
+      "prediction": "unsupported",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000024",
+      "encounter": "SCROLLS_OF_BITING_NORMAL",
+      "baseline": "unsupported",
+      "classification": "unsupported",
+      "baseline_proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "proof": {
+        "status": "unsupported",
+        "certification": "semantic_unverified",
+        "exact_status": "unsupported",
+        "reason": "prediction_unsupported",
+        "terminal_verified": false
+      },
+      "baseline_prediction": "unsupported",
+      "prediction": "unsupported",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000025",
+      "encounter": "FOSSIL_STALKER_NORMAL",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "7e2c6f303e86db7eb35a9778f37b6520a86448c7aa2aa24b4c557a27cb8ce7ef"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "7e2c6f303e86db7eb35a9778f37b6520a86448c7aa2aa24b4c557a27cb8ce7ef"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000026",
+      "encounter": "SLITHERING_STRANGLER_NORMAL",
+      "baseline": "admissible_death",
+      "classification": "admissible_death",
+      "baseline_proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "0b69bd76d2106af1d4d99987b10bc955e83d74cbc169b4ab2444ddd08c7d0d34"
+      },
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "0b69bd76d2106af1d4d99987b10bc955e83d74cbc169b4ab2444ddd08c7d0d34"
+      },
+      "baseline_prediction": "death",
+      "prediction": "death",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000027",
+      "encounter": "RUBY_RAIDERS_NORMAL",
+      "baseline": "admissible_predicted_win",
+      "classification": "admissible_predicted_win",
+      "baseline_proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "aa07e72ff90f726d88bd29f6c6275ee682cc0028e59dcf0ab6b1614b50e1620d"
+      },
+      "proof": {
+        "status": "admissible_predicted_win",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_predicted_win",
+        "terminal_verified": true,
+        "native_terminal_stamp": "aa07e72ff90f726d88bd29f6c6275ee682cc0028e59dcf0ab6b1614b50e1620d"
+      },
+      "baseline_prediction": "predicted_win",
+      "prediction": "predicted_win",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000028",
+      "encounter": "FABRICATOR_NORMAL",
+      "baseline": "admissible_death",
+      "classification": "admissible_death",
+      "baseline_proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "10a4862de451a46f3ad6943c51ec2da88dfe280613d15e5413616c409b368e7b"
+      },
+      "proof": {
+        "status": "admissible_death",
+        "certification": "exact_native_match",
+        "exact_status": "admissible_death",
+        "reason": null,
+        "terminal_verified": true,
+        "native_terminal_stamp": "10a4862de451a46f3ad6943c51ec2da88dfe280613d15e5413616c409b368e7b"
+      },
+      "baseline_prediction": "death",
+      "prediction": "death",
+      "first_changes": {}
+    },
+    {
+      "step": 1,
+      "position": "000029",
+      "encounter": "AXEBOTS_NORMAL",
+      "baseline": "truncated",
+      "classification": "truncated",
+      "baseline_proof": {
+        "status": "truncated",
+        "certification": "semantic_unverified",
+        "exact_status": "truncated",
+        "reason": "action_cap",
+        "terminal_verified": false
+      },
+      "proof": {
+        "status": "truncated",
+        "certification": "semantic_unverified",
+        "exact_status": "truncated",
+        "reason": "action_cap",
+        "terminal_verified": false
+      },
+      "baseline_prediction": "truncated",
+      "prediction": "truncated",
+      "first_changes": {}
+    }
+  ],
+  "training": {
+    "comparison": {
+      "identity_equal": true,
+      "snapshots_equal": true,
+      "semantic_rows_equal": true,
+      "snapshots": 3,
+      "roots": 32
+    },
+    "snapshots": {
+      "cold": [
+        {
+          "step": 0,
+          "sha256": "2891891f463c065888c02ff194c1a962d432335be7ab72d0999e0b141e5f7dc9",
+          "stats": {}
+        },
+        {
+          "step": 1,
+          "sha256": "095d64741fc3af1521b2180b6607e0d8d20ad110584d1c35dfbf18798e0b0af4",
+          "stats": {
+            "actor_loss": 14080.300285339355,
+            "critic_loss": 77035.42158508301,
+            "decisions": 251,
+            "entropy": 327.6186841726303,
+            "grad_norm": 24.75005340576172,
+            "logp_error": 2.384185791015625e-07,
+            "model_sha256": "5e54ec5fb3f84c8a6f59027d205cc75bbff3a7bf9bffefcc3e9fa14878bbf010",
+            "qualified": 11,
+            "return_max": 86.06849190194319,
+            "return_min": -147.89129927359565
+          }
+        },
+        {
+          "step": 2,
+          "sha256": "391ab6a3bc082ecc7247c330c1dcb9bd94ef2d710bf1516fa19b99bdce113603",
+          "stats": {
+            "actor_loss": 10802.479888916016,
+            "critic_loss": 75021.64822387695,
+            "decisions": 361,
+            "entropy": 510.51572585105896,
+            "grad_norm": 30.776716232299805,
+            "logp_error": 2.384185791015625e-07,
+            "model_sha256": "93230f45fa62f3abf075027b8290b3533c4c3e392add836828cc3fb9c1fa0d8f",
+            "qualified": 11,
+            "return_max": 99.8,
+            "return_min": -153.09129927359564
+          }
+        }
+      ],
+      "resume": [
+        {
+          "step": 0,
+          "sha256": "2891891f463c065888c02ff194c1a962d432335be7ab72d0999e0b141e5f7dc9",
+          "stats": {}
+        },
+        {
+          "step": 1,
+          "sha256": "095d64741fc3af1521b2180b6607e0d8d20ad110584d1c35dfbf18798e0b0af4",
+          "stats": {
+            "actor_loss": 14080.300285339355,
+            "critic_loss": 77035.42158508301,
+            "decisions": 251,
+            "entropy": 327.6186841726303,
+            "grad_norm": 24.75005340576172,
+            "logp_error": 2.384185791015625e-07,
+            "model_sha256": "5e54ec5fb3f84c8a6f59027d205cc75bbff3a7bf9bffefcc3e9fa14878bbf010",
+            "qualified": 11,
+            "return_max": 86.06849190194319,
+            "return_min": -147.89129927359565
+          }
+        },
+        {
+          "step": 2,
+          "sha256": "391ab6a3bc082ecc7247c330c1dcb9bd94ef2d710bf1516fa19b99bdce113603",
+          "stats": {
+            "actor_loss": 10802.479888916016,
+            "critic_loss": 75021.64822387695,
+            "decisions": 361,
+            "entropy": 510.51572585105896,
+            "grad_norm": 30.776716232299805,
+            "logp_error": 2.384185791015625e-07,
+            "model_sha256": "93230f45fa62f3abf075027b8290b3533c4c3e392add836828cc3fb9c1fa0d8f",
+            "qualified": 11,
+            "return_max": 99.8,
+            "return_min": -153.09129927359564
+          }
+        }
+      ]
+    },
+    "admissions": [
+      {
+        "phase": "train",
+        "step": 0,
+        "position": "000000",
+        "encounter": "DEVOTED_SCULPTOR_WEAK",
+        "classification": "admissible_predicted_win",
+        "eligible": 1,
+        "qualification": [
+          {
+            "certification": "exact_native_match",
+            "mode": "exact",
+            "route": "518d683738bcc708ea404eee43e3250a6cc45044030e6caea7d1afcfb21f797c",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 0,
+        "position": "000001",
+        "encounter": "INKLETS_NORMAL",
+        "classification": "audit_failure",
+        "eligible": 0,
+        "qualification": [
+          {
+            "certification": null,
+            "mode": null,
+            "route": null,
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 0,
+        "position": "000002",
+        "encounter": "SCROLLS_OF_BITING_WEAK",
+        "classification": "admissible_predicted_win",
+        "eligible": 1,
+        "qualification": [
+          {
+            "certification": "exact_native_match",
+            "mode": "exact",
+            "route": "027c86dd3f59dbcd768fc9260de67ecdce5badcc13d4c20b7661bc33691880dd",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 0,
+        "position": "000003",
+        "encounter": "SPINY_TOAD_NORMAL",
+        "classification": "admissible_predicted_win",
+        "eligible": 1,
+        "qualification": [
+          {
+            "certification": "exact_native_match",
+            "mode": "exact",
+            "route": "a260e43b8b554f91a93199628d1555113f2881843de64638f1844a315b77e3fe",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 0,
+        "position": "000004",
+        "encounter": "OVICOPTER_NORMAL",
+        "classification": "error",
+        "eligible": 0,
+        "qualification": [
+          {
+            "certification": "semantic_unverified",
+            "mode": "exact",
+            "route": "0fa3ed213d15f9d0c284d1dd8304a675e4940e1ee3be022f38c8f862059939a7",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 0,
+        "position": "000005",
+        "encounter": "FOSSIL_STALKER_NORMAL",
+        "classification": "admissible_predicted_win",
+        "eligible": 1,
+        "qualification": [
+          {
+            "certification": "exact_native_match",
+            "mode": "exact",
+            "route": "a52873a11ff6ff2149e260180f6599404841a42c0f74c6fbab8cf65c79c74990",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 0,
+        "position": "000006",
+        "encounter": "SEAPUNK_NORMAL",
+        "classification": "rule_risk",
+        "eligible": 0,
+        "qualification": [
+          {
+            "certification": "semantic_unverified",
+            "mode": "exact",
+            "route": "32e8e88896aa35f69230f6116326d72ab32e7bbb9fd9ba2d8610ac49ca442d36",
+            "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1"
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 0,
+        "position": "000007",
+        "encounter": "HAUNTED_SHIP_NORMAL",
+        "classification": "admissible_predicted_win",
+        "eligible": 1,
+        "qualification": [
+          {
+            "certification": "exact_native_match",
+            "mode": "exact",
+            "route": "6f9a5b52063f9e28f8fddaa1898a97b6054da458961aa3395dcf26dfe52017c8",
+            "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1"
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 0,
+        "position": "000008",
+        "encounter": "SLITHERING_STRANGLER_NORMAL",
+        "classification": "admissible_predicted_win",
+        "eligible": 1,
+        "qualification": [
+          {
+            "certification": "exact_native_match",
+            "mode": "exact",
+            "route": "f36a2b54320bb413d1eaf2ec9242cfcd2d35301b74eeedd744d74efeba43bf68",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 0,
+        "position": "000009",
+        "encounter": "SLIMES_NORMAL",
+        "classification": "unsupported",
+        "eligible": 0,
+        "qualification": [
+          {
+            "certification": "semantic_unverified",
+            "mode": "exact",
+            "route": "c27c959e5ea7d71b7ea670a3b00c2d61210137ebd43ab6884f80dad0ffad59bf",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 0,
+        "position": "000010",
+        "encounter": "BOWLBUGS_WEAK",
+        "classification": "admissible_predicted_win",
+        "eligible": 1,
+        "qualification": [
+          {
+            "certification": "exact_native_match",
+            "mode": "exact",
+            "route": "052b164dcb70ee4c505619986c4e0266bb6a66ecaea548992edc8d41c5372f74",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 0,
+        "position": "000011",
+        "encounter": "CORPSE_SLUGS_NORMAL",
+        "classification": "admissible_death",
+        "eligible": 1,
+        "qualification": [
+          {
+            "certification": "exact_native_match",
+            "mode": "exact",
+            "route": "47da51da453e1deec3ac04bfcbabe4e751c8664075cdd770e7629407caf9904d",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 0,
+        "position": "000012",
+        "encounter": "CORPSE_SLUGS_WEAK",
+        "classification": "admissible_predicted_win",
+        "eligible": 1,
+        "qualification": [
+          {
+            "certification": "exact_native_match",
+            "mode": "exact",
+            "route": "93546d51b983c189f517d5545f6fe1f188bdc57d7ae71150df64c4ec11ef08d1",
+            "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1"
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 0,
+        "position": "000013",
+        "encounter": "PUNCH_CONSTRUCT_NORMAL",
+        "classification": "admissible_predicted_win",
+        "eligible": 1,
+        "qualification": [
+          {
+            "certification": "exact_native_match",
+            "mode": "exact",
+            "route": "4dc7fb1f606a2e4d4a1a3aaa5b67f4f173dc9fe243b497d732b262dc3381da6d",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 0,
+        "position": "000014",
+        "encounter": "SCROLLS_OF_BITING_WEAK",
+        "classification": "unsupported",
+        "eligible": 0,
+        "qualification": [
+          {
+            "certification": "semantic_unverified",
+            "mode": "exact",
+            "route": "67b2e50babff9b370fd6d3f2b23f421eeba22e956513ccb79b5e1c1566dae684",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 0,
+        "position": "000015",
+        "encounter": "OWL_MAGISTRATE_NORMAL",
+        "classification": "admissible_predicted_win",
+        "eligible": 1,
+        "qualification": [
+          {
+            "certification": "exact_native_match",
+            "mode": "exact",
+            "route": "17147d9c116bd9c53361a93af9d12e6b47c499e5702f84c8fe7a5ac1ae568f79",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 1,
+        "position": "000000",
+        "encounter": "CORPSE_SLUGS_NORMAL",
+        "classification": "rule_risk",
+        "eligible": 0,
+        "qualification": [
+          {
+            "certification": "semantic_unverified",
+            "mode": "exact",
+            "route": "eca87c8f8fd4ddda73d677439c6fb3301ada000518ef9da0153f08dc24633a46",
+            "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1"
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 1,
+        "position": "000001",
+        "encounter": "TWO_TAILED_RATS_NORMAL",
+        "classification": "admissible_predicted_win",
+        "eligible": 1,
+        "qualification": [
+          {
+            "certification": "exact_native_match",
+            "mode": "exact",
+            "route": "0df63687fcb1a7b8181523e0a720fbc093dcbc20f746b7cb4425937ac9fbdd35",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 1,
+        "position": "000002",
+        "encounter": "CORPSE_SLUGS_NORMAL",
+        "classification": "native_difference",
+        "eligible": 0,
+        "qualification": [
+          {
+            "certification": "semantic_mismatch",
+            "mode": "exact",
+            "route": "89c9b5e827825f14e35150f3aaf890b3a7c3858c00fd9c6895a6240024e90e31",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 1,
+        "position": "000003",
+        "encounter": "SLIMES_NORMAL",
+        "classification": "unsupported",
+        "eligible": 0,
+        "qualification": [
+          {
+            "certification": "semantic_unverified",
+            "mode": "exact",
+            "route": "f448144cf63e7e28baf9dc1553773a2a5306344b88b33b403e202fee207fdc63",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 1,
+        "position": "000004",
+        "encounter": "VINE_SHAMBLER_NORMAL",
+        "classification": "unsupported",
+        "eligible": 0,
+        "qualification": [
+          {
+            "certification": "semantic_unverified",
+            "mode": "exact",
+            "route": "6b602596b5c63f7c6d66f2014e91b30a62ea3d526ca7407a0ab757d7b6675aac",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 1,
+        "position": "000005",
+        "encounter": "SCROLLS_OF_BITING_NORMAL",
+        "classification": "admissible_predicted_win",
+        "eligible": 1,
+        "qualification": [
+          {
+            "certification": "exact_native_match",
+            "mode": "exact",
+            "route": "ee93b6ee3c120c3526e2b101c511efe4d19dbfd0060bafdb72fbbcb92b54c5bf",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 1,
+        "position": "000006",
+        "encounter": "CORPSE_SLUGS_WEAK",
+        "classification": "admissible_predicted_win",
+        "eligible": 1,
+        "qualification": [
+          {
+            "certification": "exact_native_match",
+            "mode": "exact",
+            "route": "1f57f7dc5eede40b46905f5a90b4ef533725db97d866ebea1648839f28f02505",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 1,
+        "position": "000007",
+        "encounter": "GLOBE_HEAD_NORMAL",
+        "classification": "admissible_death",
+        "eligible": 1,
+        "qualification": [
+          {
+            "certification": "exact_native_match",
+            "mode": "exact",
+            "route": "101e1e90812de10e3c8c1aa086357816b10b39d4fd8532119719336141a1615e",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 1,
+        "position": "000008",
+        "encounter": "NIBBITS_WEAK",
+        "classification": "admissible_predicted_win",
+        "eligible": 1,
+        "qualification": [
+          {
+            "certification": "exact_native_match",
+            "mode": "exact",
+            "route": "9cb57d86c968b8ff10a54ef913844135cdec67dee10809651640d7ef036b86de",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 1,
+        "position": "000009",
+        "encounter": "NIBBITS_NORMAL",
+        "classification": "admissible_predicted_win",
+        "eligible": 1,
+        "qualification": [
+          {
+            "certification": "exact_native_match",
+            "mode": "exact",
+            "route": "f616ad321f8f8b0f1ace64a6daf7c9089cdf34af9dee358f22819999d165ff72",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 1,
+        "position": "000010",
+        "encounter": "MYTES_NORMAL",
+        "classification": "admissible_predicted_win",
+        "eligible": 1,
+        "qualification": [
+          {
+            "certification": "exact_native_match",
+            "mode": "exact",
+            "route": "a4474f2f7de93c5189729ea0aa75fb570f63373fa1377ef2553be9c0794ee3b4",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 1,
+        "position": "000011",
+        "encounter": "NIBBITS_NORMAL",
+        "classification": "admissible_predicted_win",
+        "eligible": 1,
+        "qualification": [
+          {
+            "certification": "exact_native_match",
+            "mode": "exact",
+            "route": "7e146ea9196bd74ec16bcbec52f285c4438258740ba5ae36cec087c70e55ca15",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 1,
+        "position": "000012",
+        "encounter": "SPINY_TOAD_NORMAL",
+        "classification": "admissible_predicted_win",
+        "eligible": 1,
+        "qualification": [
+          {
+            "certification": "exact_native_match",
+            "mode": "exact",
+            "route": "1f6c170bb7cb89fa51a13628fa9b61c0c59a437a390630ed9de485d35fbd3ba3",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 1,
+        "position": "000013",
+        "encounter": "CUBEX_CONSTRUCT_NORMAL",
+        "classification": "unsupported",
+        "eligible": 0,
+        "qualification": [
+          {
+            "certification": "semantic_unverified",
+            "mode": "exact",
+            "route": "741f8a0dc1d91007bd76b448815019e22f8fb29fc5b357ae953f1d68bfa4a90e",
+            "rule": null
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 1,
+        "position": "000014",
+        "encounter": "AXEBOTS_NORMAL",
+        "classification": "admissible_predicted_win",
+        "eligible": 1,
+        "qualification": [
+          {
+            "certification": "exact_native_match",
+            "mode": "exact",
+            "route": "21eb8c97dec87d47f8c295e24706113cb0bc42bdeff93520342420c792b2cedf",
+            "rule": "sts2.nosl.iih3.enemy-side-exact-combat.v1"
+          }
+        ]
+      },
+      {
+        "phase": "train",
+        "step": 1,
+        "position": "000015",
+        "encounter": "HAUNTED_SHIP_NORMAL",
+        "classification": "admissible_predicted_win",
+        "eligible": 1,
+        "qualification": [
+          {
+            "certification": "exact_native_match",
+            "mode": "exact",
+            "route": "95611d8290c9c3d966e275aa10098117783a9a16a1d791e5b05d0ccb50850845",
+            "rule": null
+          }
+        ]
+      }
+    ]
+  },
+  "native_fixtures": {
+    "shadow": {
+      "exact_sha256": "bea62678d5d2fe71269edb018b36cb49a5ae756b92e67c99be8034f70ef452bc",
+      "powers": "P=0:CONSUMING_SHADOW_POWER=1/0[],1:ESCAPE_ARTIST_POWER=5/0[],",
+      "spec": {
+        "act": 2,
+        "act_variant": "HIVE",
+        "ascension": 0,
+        "character": "Defect",
+        "deck": [
+          {
+            "id": "CONSUMING_SHADOW",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_DEFECT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_DEFECT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_DEFECT",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_DEFECT",
+            "upgrade": 0
+          }
+        ],
+        "encounter": "THIEVING_HOPPER_WEAK",
+        "hp": 75,
+        "max_hp": 75,
+        "potions": [],
+        "relics": [],
+        "schema": 3,
+        "seed": "IIH4_SHADOW"
+      },
+      "terminal": false
+    },
+    "gas": {
+      "frames": [
+        {
+          "bombs": [],
+          "end_turn": 1,
+          "powers": "P=0:SMOGGY_POWER=1/0[],",
+          "stamp": "1960176401b45a126ba4abb141971b29252bc19048662ddee573f6f17f78f252"
+        },
+        {
+          "bombs": [
+            "E0=2/GAS_BOMB/bomb1/7/7/0/EXPLODE_MOVE"
+          ],
+          "end_turn": 2,
+          "powers": "P=0:SMOGGY_POWER=1/0[],2:MINION_POWER=1/0[],",
+          "stamp": "09ecd558be6b4495ef9ca360b6fd5e905684ba66e5b35160bfb4c54cf5cda91e"
+        },
+        {
+          "bombs": [],
+          "end_turn": 3,
+          "powers": "P=0:SMOGGY_POWER=1/0[],",
+          "stamp": "7e82bd8ec24d09ce6639d5b4dc6a438d761040a7e6d86c36f913dc5208a43919"
+        }
+      ],
+      "spec": {
+        "act": 1,
+        "act_variant": "UNDERDOCKS",
+        "ascension": 0,
+        "character": "Ironclad",
+        "deck": [
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0
+          }
+        ],
+        "encounter": "LIVING_FOG_NORMAL",
+        "hp": 80,
+        "max_hp": 80,
+        "potions": [],
+        "relics": [],
+        "schema": 3,
+        "seed": "IIH5_BLOAT"
+      }
+    },
+    "death": {
+      "cases": [
+        {
+          "frames": [
+            {
+              "action": "UNRELENTING",
+              "powers": "P=0:FREE_ATTACK_POWER=1/0[],",
+              "stamp": "a5a316236eda415cb2d871f90dee8fd764f1322ce643eebc95633c01b490ff9b",
+              "status": "active"
+            },
+            {
+              "action": "end_turn",
+              "powers": "P=0:FREE_ATTACK_POWER=1/0[],2:ILLUSION_POWER=1/0[],2:MINION_POWER=1/0[],",
+              "stamp": "bf41293806933c752cc4f2fc72b5809547b15abae257bbaa990b1adde087776b",
+              "status": "active"
+            },
+            {
+              "action": "end_turn",
+              "powers": "P=0:FREE_ATTACK_POWER=1/0[],2:ILLUSION_POWER=1/0[],2:MINION_POWER=1/0[],",
+              "stamp": "f3f2d3a91888382bc1e5d700ea32f2d1b8aec32024c64827c84cc4f1b4adf24d",
+              "status": "death"
+            }
+          ],
+          "spec": {
+            "act": 1,
+            "act_variant": "OVERGROWTH",
+            "ascension": 0,
+            "character": "Ironclad",
+            "deck": [
+              {
+                "id": "UNRELENTING",
+                "upgrade": 0
+              },
+              {
+                "id": "STRIKE_IRONCLAD",
+                "upgrade": 0
+              },
+              {
+                "id": "DEFEND_IRONCLAD",
+                "upgrade": 0
+              },
+              {
+                "id": "DEFEND_IRONCLAD",
+                "upgrade": 0
+              },
+              {
+                "id": "DEFEND_IRONCLAD",
+                "upgrade": 0
+              }
+            ],
+            "encounter": "FOGMOG_NORMAL",
+            "hp": 1,
+            "max_hp": 80,
+            "potions": [],
+            "relics": [],
+            "schema": 3,
+            "seed": "IIH6_FREE_ATTACK"
+          }
+        },
+        {
+          "frames": [
+            {
+              "action": "UNRELENTING",
+              "powers": "P=0:FREE_ATTACK_POWER=1/0[],",
+              "stamp": "a5a316236eda415cb2d871f90dee8fd764f1322ce643eebc95633c01b490ff9b",
+              "status": "active"
+            },
+            {
+              "action": "DEFEND_IRONCLAD",
+              "powers": "P=0:FREE_ATTACK_POWER=1/0[],",
+              "stamp": "c1603b654687b3e03f6d138c3c622f131fc4333fb3aacca6d576ef1f7b33f22e",
+              "status": "active"
+            },
+            {
+              "action": "STRIKE_IRONCLAD",
+              "powers": "P=",
+              "stamp": "df7b43d3d89580ce76aae443f92e1819ab772b4760a64c13a3a856cffe5537dc",
+              "status": "active"
+            },
+            {
+              "action": "end_turn",
+              "powers": "P=2:ILLUSION_POWER=1/0[],2:MINION_POWER=1/0[],",
+              "stamp": "1f6f4c9584bea4701cd0dc644504127bcdba4d051ec9262c0828c1ab3f34674a",
+              "status": "active"
+            },
+            {
+              "action": "end_turn",
+              "powers": "P=2:ILLUSION_POWER=1/0[],2:MINION_POWER=1/0[],",
+              "stamp": "1ced18b181dfd601fed30d9121a005703c50d114f2058b70f359ced9f2d7b3ad",
+              "status": "death"
+            }
+          ],
+          "spec": {
+            "act": 1,
+            "act_variant": "OVERGROWTH",
+            "ascension": 0,
+            "character": "Ironclad",
+            "deck": [
+              {
+                "id": "UNRELENTING",
+                "upgrade": 0
+              },
+              {
+                "id": "STRIKE_IRONCLAD",
+                "upgrade": 0
+              },
+              {
+                "id": "DEFEND_IRONCLAD",
+                "upgrade": 0
+              },
+              {
+                "id": "DEFEND_IRONCLAD",
+                "upgrade": 0
+              },
+              {
+                "id": "DEFEND_IRONCLAD",
+                "upgrade": 0
+              }
+            ],
+            "encounter": "FOGMOG_NORMAL",
+            "hp": 1,
+            "max_hp": 80,
+            "potions": [],
+            "relics": [],
+            "schema": 3,
+            "seed": "IIH6_FREE_ATTACK"
+          }
+        },
+        {
+          "frames": [
+            {
+              "action": "UNRELENTING",
+              "powers": "P=0:FREE_ATTACK_POWER=1/0[],",
+              "stamp": "201c46354cb8f818b2ecb6a2f58fbeda2b3f88ea4609cbc118053a3be0294e64",
+              "status": "active"
+            },
+            {
+              "action": "end_turn",
+              "powers": "P=",
+              "stamp": "44d1b6d7387132b287e0ad7d3f293afb11bacf653d70b9ad84932d2c83c80f72",
+              "status": "death"
+            }
+          ],
+          "spec": {
+            "act": 1,
+            "act_variant": "UNDERDOCKS",
+            "ascension": 0,
+            "character": "Ironclad",
+            "deck": [
+              {
+                "id": "UNRELENTING",
+                "upgrade": 0
+              },
+              {
+                "id": "STRIKE_IRONCLAD",
+                "upgrade": 0
+              },
+              {
+                "id": "DEFEND_IRONCLAD",
+                "upgrade": 0
+              },
+              {
+                "id": "DEFEND_IRONCLAD",
+                "upgrade": 0
+              },
+              {
+                "id": "DEFEND_IRONCLAD",
+                "upgrade": 0
+              }
+            ],
+            "encounter": "LIVING_FOG_NORMAL",
+            "hp": 1,
+            "max_hp": 80,
+            "potions": [],
+            "relics": [],
+            "schema": 3,
+            "seed": "IIH6_FREE_ATTACK"
+          }
+        }
+      ]
+    },
+    "legality": {
+      "frames": [
+        {
+          "after": null,
+          "smith_legal": false,
+          "smith_star_cost": 4,
+          "stamp": "f45c92efd6f9882bb7154a788fd1a5ecc932e8b65c913d23ed67503d0216b180",
+          "stars": 0
+        },
+        {
+          "after": "VOID_FORM",
+          "smith_legal": true,
+          "smith_star_cost": 0,
+          "stamp": "89143008d28b5c41d242f9d181d36940f1c4b34d9e985bb1c68794b25522cd78",
+          "stars": 0
+        },
+        {
+          "after": "DEFEND_REGENT",
+          "smith_legal": true,
+          "smith_star_cost": 0,
+          "stamp": "31a02ffdb4c08c042265264bff780cbf33e93840147cf9ff664420901ba0f884",
+          "stars": 0
+        },
+        {
+          "after": "CONVERGENCE",
+          "smith_legal": false,
+          "smith_star_cost": 4,
+          "stamp": "938d05a4074ab1982c278f4b33f79806944169794e7ed41a96de911cc037c640",
+          "stars": 0
+        }
+      ],
+      "spec": {
+        "act": 2,
+        "act_variant": "HIVE",
+        "ascension": 0,
+        "character": "Regent",
+        "deck": [
+          {
+            "id": "VOID_FORM",
+            "upgrade": 1
+          },
+          {
+            "id": "THE_SMITH",
+            "upgrade": 1
+          },
+          {
+            "id": "GENESIS",
+            "upgrade": 0
+          },
+          {
+            "id": "DEFEND_REGENT",
+            "upgrade": 0
+          },
+          {
+            "id": "CONVERGENCE",
+            "upgrade": 0
+          }
+        ],
+        "encounter": "HUNTER_KILLER_NORMAL",
+        "hp": 75,
+        "max_hp": 75,
+        "potions": [],
+        "relics": [],
+        "schema": 3,
+        "seed": "IIH7_STAR_COST"
+      }
+    },
+    "forge": {
+      "cases": [
+        {
+          "exhausted": "SOVEREIGN_BLADE",
+          "frames": [
+            {
+              "action": "SPOILS_OF_BATTLE",
+              "blade_fields": [
+                "H=TYRANNY+1/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Innate]/baselib=-,STRIKE_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=6,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,FURNACE+1/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Forge=7,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=19,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,"
+              ],
+              "stamp": "1ffb366196450598ec065d9e474f67f7eccca10fda8a94f30f0e1afe9713d22d"
+            },
+            {
+              "action": "TYRANNY",
+              "blade_fields": [
+                "H=STRIKE_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=6,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,FURNACE+1/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Forge=7,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=19,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,"
+              ],
+              "stamp": "6a6c4a09d8ba1d356fd3d3ddf2ff2d2976e135355c8cf4a30c6a7456ea4c37ca"
+            },
+            {
+              "action": "FURNACE",
+              "blade_fields": [
+                "H=STRIKE_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=6,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=19,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,"
+              ],
+              "stamp": "ace362b393dd4af99ae53815a17364ffb0c27600fb8612efbb2b1a5b4a9388e7"
+            },
+            {
+              "action": "confirm_selection",
+              "blade_fields": [
+                "H=SPOILS_OF_BATTLE+1/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Cards=2,Forge=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,STRIKE_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=6,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=17,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,",
+                "X=SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=26,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,"
+              ],
+              "stamp": "d33d3865477fa0ab582d38f3f63b68f328c36fc518a4eee101590c43164bff57"
+            }
+          ],
+          "spec": {
+            "act": 1,
+            "act_variant": "UNDERDOCKS",
+            "ascension": 0,
+            "character": "Regent",
+            "deck": [
+              {
+                "id": "SPOILS_OF_BATTLE",
+                "upgrade": 1
+              },
+              {
+                "id": "TYRANNY",
+                "upgrade": 1
+              },
+              {
+                "id": "FURNACE",
+                "upgrade": 1
+              },
+              {
+                "id": "DEFEND_REGENT",
+                "upgrade": 0
+              },
+              {
+                "id": "STRIKE_REGENT",
+                "upgrade": 0
+              }
+            ],
+            "encounter": "TWO_TAILED_RATS_NORMAL",
+            "hp": 75,
+            "max_hp": 75,
+            "potions": [],
+            "relics": [],
+            "schema": 3,
+            "seed": "IIH8_FORGE_ORDER"
+          }
+        },
+        {
+          "exhausted": "DEFEND_REGENT",
+          "frames": [
+            {
+              "action": "SPOILS_OF_BATTLE",
+              "blade_fields": [
+                "H=TYRANNY+1/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Innate]/baselib=-,STRIKE_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=6,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,FURNACE+1/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Forge=7,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=19,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,"
+              ],
+              "stamp": "1ffb366196450598ec065d9e474f67f7eccca10fda8a94f30f0e1afe9713d22d"
+            },
+            {
+              "action": "TYRANNY",
+              "blade_fields": [
+                "H=STRIKE_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=6,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,FURNACE+1/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Forge=7,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=19,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,"
+              ],
+              "stamp": "6a6c4a09d8ba1d356fd3d3ddf2ff2d2976e135355c8cf4a30c6a7456ea4c37ca"
+            },
+            {
+              "action": "FURNACE",
+              "blade_fields": [
+                "H=STRIKE_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=6,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,DEFEND_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Block=5,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=19,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,"
+              ],
+              "stamp": "ace362b393dd4af99ae53815a17364ffb0c27600fb8612efbb2b1a5b4a9388e7"
+            },
+            {
+              "action": "confirm_selection",
+              "blade_fields": [
+                "H=SOVEREIGN_BLADE+0/False:2/False:-1/0:0/False/False/False/False/False/-:0:0/-:0[CalculationBase=0,CalculationExtra=1,Damage=26,HitCount=1,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[Retain]/baselib=-,SPOILS_OF_BATTLE+1/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Cards=2,Forge=9,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,STRIKE_REGENT+0/False:1/False:-1/0:0/False/False/False/True/False/-:0:0/-:0[Damage=6,]/private=-|keywordsAdded=|keywordsRemoved=|dupe=False/keywords=[]/baselib=-,"
+              ],
+              "stamp": "01e6744630480d90efa8f8abe69a5743eaa3ea3da6461ad741fe60079dc10306"
+            }
+          ],
+          "spec": {
+            "act": 1,
+            "act_variant": "UNDERDOCKS",
+            "ascension": 0,
+            "character": "Regent",
+            "deck": [
+              {
+                "id": "SPOILS_OF_BATTLE",
+                "upgrade": 1
+              },
+              {
+                "id": "TYRANNY",
+                "upgrade": 1
+              },
+              {
+                "id": "FURNACE",
+                "upgrade": 1
+              },
+              {
+                "id": "DEFEND_REGENT",
+                "upgrade": 0
+              },
+              {
+                "id": "STRIKE_REGENT",
+                "upgrade": 0
+              }
+            ],
+            "encounter": "TWO_TAILED_RATS_NORMAL",
+            "hp": 75,
+            "max_hp": 75,
+            "potions": [],
+            "relics": [],
+            "schema": 3,
+            "seed": "IIH8_FORGE_ORDER"
+          }
+        }
+      ]
+    },
+    "blade": {
+      "actions": 29,
+      "corrected_archived_hand": {
+        "added_card": {
+          "affliction": null,
+          "affliction_amount": null,
+          "cost": 2,
+          "enchantment": null,
+          "enchantment_amount": null,
+          "id": "SOVEREIGN_BLADE",
+          "index": 2,
+          "upgrade": 0
+        },
+        "archived_action": {
+          "card": 1,
+          "choice": null,
+          "choice_zone": null,
+          "cost": 2,
+          "energy_x": false,
+          "index": 1,
+          "kind": "play_card",
+          "potion": null,
+          "preview": null,
+          "star_cost": 0,
+          "star_x": false,
+          "target": 0,
+          "target_side": "enemy",
+          "target_type": "AnyEnemy"
+        },
+        "position": 28
+      },
+      "final_status": "predicted_win",
+      "matched_boundaries": [
+        {
+          "position": 0,
+          "stamp": "d288465f0a1e22e9d89e1829c9517f90af1dcaaaed809a89b4a69ca1be2dcc67",
+          "terminal": false
+        },
+        {
+          "position": 1,
+          "stamp": "05ee5441b6d319dea7996d757f16cf7fe957be844908cd7164b00eee5623b395",
+          "terminal": false
+        },
+        {
+          "position": 2,
+          "stamp": "38e85674c858d1a175eacfcf6a15b45117c76a2c0c8066d81d836e772d521ef7",
+          "terminal": false
+        },
+        {
+          "position": 3,
+          "stamp": "222084c368b57359917bd336f9e2501820222cc1a932e0db45f8b24b3c90b355",
+          "terminal": false
+        },
+        {
+          "position": 4,
+          "stamp": "1024d59b2d8b46188ae683a1835df0764bc01e1f0659306173be6a5a624c482a",
+          "terminal": false
+        },
+        {
+          "position": 5,
+          "stamp": "78705a6d6f8f38a327cb5a32f3ca486b160cb6af96e668bc7b40df0f4b334da5",
+          "terminal": false
+        },
+        {
+          "position": 6,
+          "stamp": "bc76a28011c48fc38b5047ab4ea459dcf7038b236d7b31709fbbd95564cb65b2",
+          "terminal": false
+        },
+        {
+          "position": 7,
+          "stamp": "7e5583c5cb50f8e026327636884d2c6c45b06f1c13b6411d7650fbb081ceaf53",
+          "terminal": false
+        },
+        {
+          "position": 8,
+          "stamp": "af55124e19d49132ecfee367cdf00eecca4f283dd49733386d85fc4dddb266e1",
+          "terminal": false
+        },
+        {
+          "position": 9,
+          "stamp": "aae64e8df575b3292972e1f390ecd24d95087d4707e70dd837c5919eb5a5c192",
+          "terminal": false
+        },
+        {
+          "position": 10,
+          "stamp": "c23c54256fcaa819ec8d01bac9b267fac2e0c24b8a0cc28f8968ddef72fef246",
+          "terminal": false
+        },
+        {
+          "position": 11,
+          "stamp": "cd2203926cd5fe4a99687a0d6da9189b10fc2f999204ccd4d251b35345aa2148",
+          "terminal": false
+        },
+        {
+          "position": 12,
+          "stamp": "b46ed68a66456cd0ef91327ba6df8614b9e3429eae61aaabf9bda56b82dd1b2c",
+          "terminal": false
+        },
+        {
+          "position": 13,
+          "stamp": "56517d4e45c0d21b30d94873a8ba91947e98da0ffff2abb140adfb4eac26f37c",
+          "terminal": false
+        },
+        {
+          "position": 14,
+          "stamp": "640e6557485e8b8df0d725ee23c6fb71cec9fe69f5b99b66876391508c728afe",
+          "terminal": false
+        },
+        {
+          "position": 15,
+          "stamp": "169f982e7a3baad1684a912457d166a59136b8ad93e58a8ed8caff44f556d8b9",
+          "terminal": false
+        },
+        {
+          "position": 16,
+          "stamp": "f331531b7042c46b10ce92d1261ebce768ebcdca9e67fdb4bd83a815fca0530a",
+          "terminal": false
+        },
+        {
+          "position": 17,
+          "stamp": "766eca4efdd68b257cd8aa1ed34836f68d5d3eaa08d57633d78828e83aa8d809",
+          "terminal": false
+        },
+        {
+          "position": 18,
+          "stamp": "aec5c1df01c41366f1f339f8d1eab24dfc4cb235a110a9fb1de7e3ee86c176fd",
+          "terminal": false
+        },
+        {
+          "position": 19,
+          "stamp": "3f3e28667d24f023a6b06ed04cf2f92a36d0006c4721622cf1789db933596147",
+          "terminal": false
+        },
+        {
+          "position": 22,
+          "stamp": "46c295263b37f4fa1454e1066010523fae82f4b4f2b174c3eb0a5dde512c10a4",
+          "terminal": false
+        },
+        {
+          "position": 23,
+          "stamp": "c17da1da0e83155766bbb12d1ea3cfd0801dc1cbbd568ec6d2adcf4e14e7b1ab",
+          "terminal": false
+        },
+        {
+          "position": 24,
+          "stamp": "58900ef61b2105ffd5bd35098cfe5a8e1f1b561906bca2dd055571ea81410995",
+          "terminal": false
+        },
+        {
+          "position": 27,
+          "stamp": "50cc06f556a3e4e57632110a8fb0b31d0600b6727133c07ee2ac78cf61c136f1",
+          "terminal": false
+        },
+        {
+          "position": 28,
+          "stamp": "4700b2bbb4398f669eafc2025af092172645465b4628a3fe3ad3490e5995d16d",
+          "terminal": true
+        }
+      ],
+      "native_decision": "card_reward"
+    }
+  },
+  "main_tests": {
+    "summary": "6 failed, 158 passed, 1 skipped, 1 warning in 238.01s (0:03:58)",
+    "failures": [
+      "tests/test_ancient_healing.py::test_native_ancient_healing_and_act_start_reload",
+      "tests/test_boss_reward_gate.py::test_boss_reward_blocks_early_transition[claim]",
+      "tests/test_boss_reward_gate.py::test_boss_reward_blocks_early_transition[skip]",
+      "tests/test_event.py::TestNeowEvent::test_neow_is_first_event",
+      "tests/test_lang.py::TestLanguage::test_lang_en_returns_english",
+      "tests/test_lang.py::TestLanguage::test_lang_zh_returns_chinese"
+    ],
+    "classification": "environment_failure",
+    "first_failure": "Offering lookup raised StopIteration after reaching the boss reward",
+    "detail": "Output path depth bypassed repository localization directories",
+    "headless_sha256": "870674119125fa806128896e671d56ded10b76cd00ea0f53485f4a2246768668"
+  }
+}
