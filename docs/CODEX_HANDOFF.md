@@ -3,19 +3,21 @@
 ## 当前基线
 
 - 仓库 `matrix773768/sts2-cli`，分支 `port/v0.113.1`。每次启动先执行 `git status -sb` 和 `git rev-parse HEAD`。稳定化起点为 `5043f95467ee88a9e41375c51278a651b93ad14d`。
-- STS2 v0.113.1 Build 26660232，CoreCLR **9.0.7**，Solver **0.51.5-iih.2**。
-- Solver DLL SHA-256 为 `d15ba0e66d2bf54dd1d00714c39f7b8ecc26b9a5b35b79ceb64277d4fd4a54dd`。
+- STS2 v0.113.1 Build 26660232，CoreCLR **9.0.7**。最近一次全量验收构建为 Solver **0.51.5-iih.2**。
+- 全量验收构建的 Solver DLL SHA-256 为 `d15ba0e66d2bf54dd1d00714c39f7b8ecc26b9a5b35b79ceb64277d4fd4a54dd`。
 - E3 战斗认证 `sts2.nosl.iih3.enemy-side-exact-combat.v1`。保留 II-G Completion 死亡等价合同 `sts2.nosl.iig.completion.enemy-death-window.v1`。
 
 ## 工程状态
 
-- 最新定向候选 `0.51.5-iih.5.1` 继承 II-H.4.1。Gas Bomb 致死攻击后会先完成普通自杀和共享死亡清理，再发布败局。Living Fog 历史败局、召唤物原生正负例和吞噬暗影／Flutter 历史胜局均通过。 [定向证据与复现](m1-nosl3c-iih5-living-fog.md)
+- 最新定向候选 `0.51.5-iih.6.1` 继承 II-H.4 与 II-H.5。共享死亡清理按原生战斗监听器作用域应用幻影 Power 的移除条件。Fogmog 历史败局、免费攻击生命周期正负例及两条历史回归均通过。 [定向证据与复现](m1-nosl3c-iih6-fogmog.md)
+
+- II-H.5 隔离构建 `0.51.5-iih.5.1` 继承 II-H.4.1。Gas Bomb 致死攻击后会先完成普通自杀和共享死亡清理，再发布败局。Living Fog 历史败局、召唤物原生正负例和吞噬暗影／Flutter 历史胜局均通过。 [定向证据与复现](m1-nosl3c-iih5-living-fog.md)
 
 - II-H.4 隔离构建 `0.51.5-iih.4.1` 先同步伤害钩子的 Power 层数，再做共享死亡清理，并对齐吞噬暗影的终止条件。历史 II-E `2:000001` 已获精确胜局。II-H.2 仍为最近一次全量验收构建。 [定向证据与复现](m1-nosl3c-iih4-shared-combat.md)
 
 - II-H.1 校准原生历史窗口，II-H.2 修复胜利锁定后的 Power 减层。II-H.3 的四条 E3 使用真实预测胜利、独立原生精确匹配和终局锁定获得严格战斗资格。原始风险反馈仍保留，训练使用派生反馈。
 - 奖励和地图处置由独立原生流程负责。战斗审计的私有字段不进入 Actor。
-- 旧 Solver 的四条 E3 负例已拒绝。新 E3 已实际进入 v4 更新。剩余四类战斗差异和八条预测风险仍需后续研究。
+- 旧 Solver 的四条 E3 负例已拒绝。新 E3 已实际进入 v4 更新。剩余两类战斗差异（Hunter Killer、Sovereign Blade）和八条预测风险仍需后续研究。
 - 稳定化的最新验收以 [报告](m1-nosl3c-iih3-stabilization.md) 为准。宿主超时按阶段记录，环境失败与规则差异分别判断。
 
 ## 保留数据

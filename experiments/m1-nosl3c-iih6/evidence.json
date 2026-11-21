@@ -1,0 +1,269 @@
+{
+  "build": {
+    "version": "0.51.5-iih.6.1",
+    "source_revision": "78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+    "patched_sha256": "03e6d33d6eb41d00c07d779f13652da64923051be743d5ee2540474e0b12c41a",
+    "bridge_sha256": "529790e64614f2fbf0b48374eb80f1c6672511e706aa5bcde219f4f8f2bb4165",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "frozen_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13"
+  },
+  "engine": {
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+    "coreclr": "9.0.7",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "headless_sha256": "46e219d54cfe74ba6a4dffa4b74a04cb738981f76445654266a06ec1ee7533fa",
+    "native_identity": "2a2a357bb5ccc7cfec12695ca2f14cf3070b030397a01ee29a4761820ce70a45",
+    "policy": "M1-F2-discard-v1",
+    "sampler": "m1-d1-v1",
+    "solver": "0.51.5-iih.6.1",
+    "solver_sha256": "03e6d33d6eb41d00c07d779f13652da64923051be743d5ee2540474e0b12c41a"
+  },
+  "previous_fogmog_failure": {
+    "action": {
+      "action": "end_turn",
+      "card": null,
+      "effect": null,
+      "phase": "combat",
+      "position": 22,
+      "target_type": null
+    },
+    "differences": {
+      "P": {
+        "native": "0:FREE_ATTACK_POWER=1/0[],2:ILLUSION_POWER=1/0[],2:MINION_POWER=1/0[],1:STRENGTH_POWER=5/0[],1:VULNERABLE_POWER=1/0[DamageIncrease=1.5,],",
+        "prediction": "2:ILLUSION_POWER=1/0[],2:MINION_POWER=1/0[],1:STRENGTH_POWER=5/0[],1:VULNERABLE_POWER=1/0[DamageIncrease=1.5,],"
+      }
+    }
+  },
+  "historical": [
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000002",
+      "root": "cf3ddaef7a736ce107b48cab2af756eb6567cad117f06ea02b8b55940b695574",
+      "consumed_decisions": 23,
+      "certification": "exact_native_match",
+      "exact_status": "admissible_death",
+      "terminal_verified": true,
+      "native_terminal_stamp": "5e4097062b6070e61efbccfd4c10f9a521769023481cb0953e62abb303fb1aae",
+      "replay_status": "certified_death"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000019",
+      "root": "f43a2c9e8ccb6048463687e3704f347e06aaf769b12cb22a1ae70d1dbf41cd48",
+      "consumed_decisions": 32,
+      "certification": "exact_native_match",
+      "exact_status": "admissible_death",
+      "terminal_verified": true,
+      "native_terminal_stamp": "337d14109680270d930a2e9445a7cc70100079781398c073d45cf88ccda93039",
+      "replay_status": "certified_death"
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 2,
+      "position": "000001",
+      "root": "84ba9be6aa7330aa93fa5fd97559c1b4cf2d0692d6dfbc3b6aab204df6c2d3a5",
+      "consumed_decisions": 15,
+      "certification": "exact_native_match",
+      "exact_status": "admissible_predicted_win",
+      "terminal_verified": true,
+      "native_terminal_stamp": "69ba0999cc92fed137da36c3f936b9554e28221e03d05b6bd23d54659a99258e",
+      "replay_status": "certified_win"
+    }
+  ],
+  "lifecycle": {
+    "cases": [
+      {
+        "frames": [
+          {
+            "action": "UNRELENTING",
+            "powers": "P=0:FREE_ATTACK_POWER=1/0[],",
+            "stamp": "a5a316236eda415cb2d871f90dee8fd764f1322ce643eebc95633c01b490ff9b",
+            "status": "active"
+          },
+          {
+            "action": "end_turn",
+            "powers": "P=0:FREE_ATTACK_POWER=1/0[],2:ILLUSION_POWER=1/0[],2:MINION_POWER=1/0[],",
+            "stamp": "bf41293806933c752cc4f2fc72b5809547b15abae257bbaa990b1adde087776b",
+            "status": "active"
+          },
+          {
+            "action": "end_turn",
+            "powers": "P=0:FREE_ATTACK_POWER=1/0[],2:ILLUSION_POWER=1/0[],2:MINION_POWER=1/0[],",
+            "stamp": "f3f2d3a91888382bc1e5d700ea32f2d1b8aec32024c64827c84cc4f1b4adf24d",
+            "status": "death"
+          }
+        ],
+        "spec": {
+          "act": 1,
+          "act_variant": "OVERGROWTH",
+          "ascension": 0,
+          "character": "Ironclad",
+          "deck": [
+            {
+              "id": "UNRELENTING",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            }
+          ],
+          "encounter": "FOGMOG_NORMAL",
+          "hp": 1,
+          "max_hp": 80,
+          "potions": [],
+          "relics": [],
+          "schema": 3,
+          "seed": "IIH6_FREE_ATTACK"
+        }
+      },
+      {
+        "frames": [
+          {
+            "action": "UNRELENTING",
+            "powers": "P=0:FREE_ATTACK_POWER=1/0[],",
+            "stamp": "a5a316236eda415cb2d871f90dee8fd764f1322ce643eebc95633c01b490ff9b",
+            "status": "active"
+          },
+          {
+            "action": "DEFEND_IRONCLAD",
+            "powers": "P=0:FREE_ATTACK_POWER=1/0[],",
+            "stamp": "c1603b654687b3e03f6d138c3c622f131fc4333fb3aacca6d576ef1f7b33f22e",
+            "status": "active"
+          },
+          {
+            "action": "STRIKE_IRONCLAD",
+            "powers": "P=",
+            "stamp": "df7b43d3d89580ce76aae443f92e1819ab772b4760a64c13a3a856cffe5537dc",
+            "status": "active"
+          },
+          {
+            "action": "end_turn",
+            "powers": "P=2:ILLUSION_POWER=1/0[],2:MINION_POWER=1/0[],",
+            "stamp": "1f6f4c9584bea4701cd0dc644504127bcdba4d051ec9262c0828c1ab3f34674a",
+            "status": "active"
+          },
+          {
+            "action": "end_turn",
+            "powers": "P=2:ILLUSION_POWER=1/0[],2:MINION_POWER=1/0[],",
+            "stamp": "1ced18b181dfd601fed30d9121a005703c50d114f2058b70f359ced9f2d7b3ad",
+            "status": "death"
+          }
+        ],
+        "spec": {
+          "act": 1,
+          "act_variant": "OVERGROWTH",
+          "ascension": 0,
+          "character": "Ironclad",
+          "deck": [
+            {
+              "id": "UNRELENTING",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            }
+          ],
+          "encounter": "FOGMOG_NORMAL",
+          "hp": 1,
+          "max_hp": 80,
+          "potions": [],
+          "relics": [],
+          "schema": 3,
+          "seed": "IIH6_FREE_ATTACK"
+        }
+      },
+      {
+        "frames": [
+          {
+            "action": "UNRELENTING",
+            "powers": "P=0:FREE_ATTACK_POWER=1/0[],",
+            "stamp": "201c46354cb8f818b2ecb6a2f58fbeda2b3f88ea4609cbc118053a3be0294e64",
+            "status": "active"
+          },
+          {
+            "action": "end_turn",
+            "powers": "P=",
+            "stamp": "44d1b6d7387132b287e0ad7d3f293afb11bacf653d70b9ad84932d2c83c80f72",
+            "status": "death"
+          }
+        ],
+        "spec": {
+          "act": 1,
+          "act_variant": "UNDERDOCKS",
+          "ascension": 0,
+          "character": "Ironclad",
+          "deck": [
+            {
+              "id": "UNRELENTING",
+              "upgrade": 0
+            },
+            {
+              "id": "STRIKE_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            },
+            {
+              "id": "DEFEND_IRONCLAD",
+              "upgrade": 0
+            }
+          ],
+          "encounter": "LIVING_FOG_NORMAL",
+          "hp": 1,
+          "max_hp": 80,
+          "potions": [],
+          "relics": [],
+          "schema": 3,
+          "seed": "IIH6_FREE_ATTACK"
+        }
+      }
+    ],
+    "engine": {
+      "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+      "coreclr": "9.0.7",
+      "game": "0.113.1/26660232",
+      "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+      "headless_sha256": "eebea65dcd2a3ad424261077e1f25c807a7c133ceb81ddc41740a6039e4d025c",
+      "native_identity": "16f014cb40a904c2b366e43f9e08c19fbff64ab88141159800a5346ad4518d13",
+      "policy": "M1-F2-discard-v1",
+      "sampler": "m1-d1-v1",
+      "solver": "0.51.5-iih.6.1",
+      "solver_sha256": "03e6d33d6eb41d00c07d779f13652da64923051be743d5ee2540474e0b12c41a"
+    }
+  }
+}
