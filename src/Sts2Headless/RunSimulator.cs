@@ -2101,8 +2101,8 @@ public class RunSimulator
                 }
             }
 
-            // Use CurrentStarCost (combat-modified) for UI/can_play; BaseStarCost ignores temporary reductions.
-            var starCost = c.CurrentStarCost;
+            // Use the same fixed star cost as native CanPlay, including combat hooks.
+            var starCost = c.HasStarCostX ? c.CurrentStarCost : c.GetStarCostWithModifiers();
             var cardInfo = new Dictionary<string, object?>
             {
                 ["index"] = i,
@@ -2119,9 +2119,6 @@ public class RunSimulator
             if (starCost > 0)
             {
                 cardInfo["star_cost"] = starCost;
-                // BUG-007: Override can_play for star-cost cards when player lacks stars
-                if (pcs != null && pcs.Stars < starCost)
-                    cardInfo["can_play"] = false;
             }
             var kws = c.Keywords?.Where(k => k != CardKeyword.None).Select(k => k.ToString()).ToList();
             if (kws?.Count > 0) cardInfo["keywords"] = kws;

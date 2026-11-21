@@ -1,0 +1,196 @@
+{
+  "build": {
+    "version": "0.51.5-iih.7.1",
+    "source_revision": "78e4545e825e58c3d999354b1ffcd54241b1d2cf",
+    "patched_sha256": "f3dd631ce98a5878c2d3de3f3265a8958b4018014bb684db2ee9305581876946",
+    "bridge_sha256": "529790e64614f2fbf0b48374eb80f1c6672511e706aa5bcde219f4f8f2bb4165",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "frozen_sha256": "d286a18c7c0a06769aa636ec00cac53f3fb71de749028858c1e1a7062282ab13"
+  },
+  "engine": {
+    "archive_sha256": "df9578d8ccad3ea91813c25f9cc94e88af043f3d49fbbd2414e247c2b0c3a9e3",
+    "coreclr": "9.0.7",
+    "game": "0.113.1/26660232",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "headless_sha256": "b3f8ce1d862bdb98000bfeb90d701239e50be17034739c5c2ed18e26716150f0",
+    "native_identity": "87baa84a2b2297eae588a6996727d719b6e299227d1770a44bef7836ebe8e06f",
+    "policy": "M1-F2-discard-v1",
+    "sampler": "m1-d1-v1",
+    "solver": "0.51.5-iih.7.1",
+    "solver_sha256": "f3dd631ce98a5878c2d3de3f3265a8958b4018014bb684db2ee9305581876946"
+  },
+  "previous_hunter_killer_failure": {
+    "sources": [
+      "logs/iih2-archive/nosl3c-iid-release-independent.json",
+      "logs/nosl3c-iig-completion-archive/nosl3c-iid-release-independent.json"
+    ],
+    "first_failure": {
+      "action": "end_turn",
+      "card": null,
+      "effect": null,
+      "phase": "combat",
+      "position": 2,
+      "target_type": null
+    },
+    "menu_difference": "('legal_target_menu', [], [(2, None, None)])",
+    "native": {
+      "stars": 0,
+      "smith": {
+        "can_play": false,
+        "cost": 0,
+        "description": "THE_SMITH.description",
+        "id": "CARD.THE_SMITH",
+        "index": 2,
+        "legal_target_indices": null,
+        "name": "THE_SMITH.title",
+        "rarity": "Rare",
+        "star_cost": 4,
+        "stats": {
+          "forge": 40
+        },
+        "target_type": "Self",
+        "type": "Skill"
+      }
+    },
+    "prediction": {
+      "stars": 0,
+      "smith_action": {
+        "card": 2,
+        "choice": null,
+        "choice_zone": null,
+        "cost": 0,
+        "energy_x": false,
+        "index": 2,
+        "kind": "play_card",
+        "potion": null,
+        "preview": null,
+        "star_cost": 0,
+        "star_x": false,
+        "target": null,
+        "target_side": null,
+        "target_type": "Self"
+      }
+    }
+  },
+  "historical": [
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000010",
+      "root": "943b9b84726d46b31b3de102d9584e74add6bc723dc6bdce0581e2353882b777",
+      "consumed_decisions": 10,
+      "latest_status": "death",
+      "status": "admissible_death",
+      "certification": "exact_native_match",
+      "exact_status": "admissible_death",
+      "terminal_verified": true,
+      "native_terminal_stamp": "0d7ce8290bd14ebca8f203beda8839c4b02ec6d677e9b88ce93698c94ed9a22f"
+    },
+    {
+      "ledger": "nosl3c-iid-release-independent",
+      "step": 0,
+      "position": "000002",
+      "root": "cf3ddaef7a736ce107b48cab2af756eb6567cad117f06ea02b8b55940b695574",
+      "consumed_decisions": 23,
+      "latest_status": "death",
+      "status": "admissible_death",
+      "certification": "exact_native_match",
+      "exact_status": "admissible_death",
+      "terminal_verified": true,
+      "native_terminal_stamp": "5e4097062b6070e61efbccfd4c10f9a521769023481cb0953e62abb303fb1aae"
+    },
+    {
+      "ledger": "nosl3c-iic-random-final",
+      "step": 0,
+      "position": "000019",
+      "root": "f43a2c9e8ccb6048463687e3704f347e06aaf769b12cb22a1ae70d1dbf41cd48",
+      "consumed_decisions": 32,
+      "latest_status": "death",
+      "status": "admissible_death",
+      "certification": "exact_native_match",
+      "exact_status": "admissible_death",
+      "terminal_verified": true,
+      "native_terminal_stamp": "337d14109680270d930a2e9445a7cc70100079781398c073d45cf88ccda93039"
+    },
+    {
+      "ledger": "nosl3c-iie-broad",
+      "step": 2,
+      "position": "000001",
+      "root": "84ba9be6aa7330aa93fa5fd97559c1b4cf2d0692d6dfbc3b6aab204df6c2d3a5",
+      "consumed_decisions": 15,
+      "latest_status": "predicted_win",
+      "status": "admissible_predicted_win",
+      "certification": "exact_native_match",
+      "exact_status": "admissible_predicted_win",
+      "terminal_verified": true,
+      "native_terminal_stamp": "69ba0999cc92fed137da36c3f936b9554e28221e03d05b6bd23d54659a99258e"
+    }
+  ],
+  "legality": {
+    "frames": [
+      {
+        "after": null,
+        "smith_legal": false,
+        "smith_star_cost": 4,
+        "stamp": "f45c92efd6f9882bb7154a788fd1a5ecc932e8b65c913d23ed67503d0216b180",
+        "stars": 0
+      },
+      {
+        "after": "VOID_FORM",
+        "smith_legal": true,
+        "smith_star_cost": 0,
+        "stamp": "89143008d28b5c41d242f9d181d36940f1c4b34d9e985bb1c68794b25522cd78",
+        "stars": 0
+      },
+      {
+        "after": "DEFEND_REGENT",
+        "smith_legal": true,
+        "smith_star_cost": 0,
+        "stamp": "31a02ffdb4c08c042265264bff780cbf33e93840147cf9ff664420901ba0f884",
+        "stars": 0
+      },
+      {
+        "after": "CONVERGENCE",
+        "smith_legal": false,
+        "smith_star_cost": 4,
+        "stamp": "938d05a4074ab1982c278f4b33f79806944169794e7ed41a96de911cc037c640",
+        "stars": 0
+      }
+    ],
+    "spec": {
+      "act": 2,
+      "act_variant": "HIVE",
+      "ascension": 0,
+      "character": "Regent",
+      "deck": [
+        {
+          "id": "VOID_FORM",
+          "upgrade": 1
+        },
+        {
+          "id": "THE_SMITH",
+          "upgrade": 1
+        },
+        {
+          "id": "GENESIS",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_REGENT",
+          "upgrade": 0
+        },
+        {
+          "id": "CONVERGENCE",
+          "upgrade": 0
+        }
+      ],
+      "encounter": "HUNTER_KILLER_NORMAL",
+      "hp": 75,
+      "max_hp": 75,
+      "potions": [],
+      "relics": [],
+      "schema": 3,
+      "seed": "IIH7_STAR_COST"
+    }
+  }
+}
