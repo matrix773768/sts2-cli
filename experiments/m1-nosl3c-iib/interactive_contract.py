@@ -39,7 +39,7 @@ def project(wire):
     candidates = list(range(len(decision["candidates"])))
     selected = decision["selected"]
     if ([c["index"] for c in decision["candidates"]] != candidates
-            or not 0 <= decision["min"] <= decision["max"] <= len(candidates)
+            or not 0 <= decision["min"] <= min(decision["max"], len(candidates))
             or len(selected) != len(set(selected)) or set(selected) - set(candidates)
             or len(selected) > decision["max"]):
         raise ValueError("Invalid public choice shape")
