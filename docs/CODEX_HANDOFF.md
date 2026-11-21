@@ -10,11 +10,13 @@
 
 ## 工程状态
 
+- II-J.1 定向候选 `0.51.5-iij.1` 将生成选择绑定到已捕获的选项实例。Quasar → Panache 原生夹具通过，同根重采 66 决策、58 原生边界获严格败局。Hidden Daggers+ 弃牌数量及两个 Guards 菜单上限见证在两版重现。正式全量验收基线仍为 `0.51.5-iii.8`。 [报告与复现](m1-nosl3c-iij1-generated-choice.md)
+
 - II-I.9B 集成验收通过。独立重采严格准入 11/16 和 50/60，原准入全部保留。v4 冷跑与恢复的 32 条根记录、三个快照逐字节一致，完整主测试 164 通过、1 跳过。正式全量验收基线提升为 `0.51.5-iii.8`。 [报告与复现](m1-nosl3c-iii9b-integration.md)
 
 - II-I.9A 用累计候选 `0.51.5-iii.8` 复放冻结 65 条，原 42 条严格认证及终局戳全部保留。八条原阻断前缀分别精确匹配，原阻断均消除。八根统一重采获 2 胜、4 死严格认证，复现 Hammer Time+ 路线索引 42 的延迟抽牌 Power 实差异及 Quasar 确认 Panache 的预测不支持。[报告与复现](m1-nosl3c-iii9a-risk-acceptance.md)
 
-- 最新定向候选 `0.51.5-iii.8` 补齐 Plot。II-E `1:000003` 的八步冻结前缀精确匹配，最后一条原始阻断风险消除。普通／升级延迟抽牌及 Glimpse Beyond、Void Form 回归通过。同根重采遇到独立 Quasar 生成选牌确认缺陷，未获严格认证。 [报告与复现](m1-nosl3c-iii8-plot.md)
+- II-I.8 候选 `0.51.5-iii.8` 补齐 Plot。II-E `1:000003` 的八步冻结前缀精确匹配，最后一条原始阻断风险消除。普通／升级延迟抽牌及 Glimpse Beyond、Void Form 回归通过。同根重采遇到独立 Quasar 生成选牌确认缺陷，未获严格认证。 [报告与复现](m1-nosl3c-iii8-plot.md)
 
 - II-I.7 定向候选 `0.51.5-iii.7` 补齐 Glimpse Beyond。普通、升级和未打出对照通过。II-E `1:000000` 的 13 步冻结前缀精确匹配，同根重采获严格胜局，Legion of Bone 回归通过。[报告与复现](m1-nosl3c-iii7-glimpse-beyond.md)
 
