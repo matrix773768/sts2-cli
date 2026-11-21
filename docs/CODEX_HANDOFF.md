@@ -3,14 +3,16 @@
 ## 当前基线
 
 - 仓库 `matrix773768/sts2-cli`，分支 `port/v0.113.1`。每次启动先执行 `git status -sb` 和 `git rev-parse HEAD`。稳定化起点为 `5043f95467ee88a9e41375c51278a651b93ad14d`。
-- STS2 v0.113.1 Build 26660232，CoreCLR **9.0.7**。最近一次全量验收为 II-H.9.1，使用 Solver **0.51.5-iih.8.1**、II-H.7 战斗宿主与正确部署的常规 Headless。
-- 全量验收构建的 Solver DLL SHA-256 为 `509eece4ef6a2be9e098e2b78d27e25736964e5c4ae5f7aa0d557c8680d77181`。
+- STS2 v0.113.1 Build 26660232，CoreCLR **9.0.7**。最近一次全量验收为 II-I.9B，使用 Solver **0.51.5-iii.8**、II-H.7 战斗宿主与正确部署的常规 Headless。
+- 全量验收构建的 Solver DLL SHA-256 为 `2a55d3dbdf89714366e192e4cf2ec4a4add17d89673831cd7fee9632501764ef`。
 - II-H.7 战斗宿主 SHA-256 为 `b3f8ce1d862bdb98000bfeb90d701239e50be17034739c5c2ed18e26716150f0`。常规 Headless 部署至 `logs/iih9-main-host/bin/Debug/net9.0`。
 - E3 战斗认证 `sts2.nosl.iih3.enemy-side-exact-combat.v1`。保留 II-G Completion 死亡等价合同 `sts2.nosl.iig.completion.enemy-death-window.v1`。
 
 ## 工程状态
 
-- II-I.9A 用累计候选 `0.51.5-iii.8` 复放冻结 65 条，原 42 条严格认证及终局戳全部保留。八条原阻断前缀分别精确匹配，原阻断均消除。八根统一重采获 2 胜、4 死严格认证，复现 Hammer Time+ 路线索引 42 的延迟抽牌 Power 实差异及 Quasar 确认 Panache 的预测不支持。正式全量验收仍为 II-H.9.1，完整集成待 II-I.9B。 [报告与复现](m1-nosl3c-iii9a-risk-acceptance.md)
+- II-I.9B 集成验收通过。独立重采严格准入 11/16 和 50/60，原准入全部保留。v4 冷跑与恢复的 32 条根记录、三个快照逐字节一致，完整主测试 164 通过、1 跳过。正式全量验收基线提升为 `0.51.5-iii.8`。 [报告与复现](m1-nosl3c-iii9b-integration.md)
+
+- II-I.9A 用累计候选 `0.51.5-iii.8` 复放冻结 65 条，原 42 条严格认证及终局戳全部保留。八条原阻断前缀分别精确匹配，原阻断均消除。八根统一重采获 2 胜、4 死严格认证，复现 Hammer Time+ 路线索引 42 的延迟抽牌 Power 实差异及 Quasar 确认 Panache 的预测不支持。[报告与复现](m1-nosl3c-iii9a-risk-acceptance.md)
 
 - 最新定向候选 `0.51.5-iii.8` 补齐 Plot。II-E `1:000003` 的八步冻结前缀精确匹配，最后一条原始阻断风险消除。普通／升级延迟抽牌及 Glimpse Beyond、Void Form 回归通过。同根重采遇到独立 Quasar 生成选牌确认缺陷，未获严格认证。 [报告与复现](m1-nosl3c-iii8-plot.md)
 

@@ -10,9 +10,11 @@
 
 ## 本阶段交接
 
-**M1-NOSL3C-II-I.7 Glimpse Beyond 效果镜像。** 候选 `0.51.5-iii.7` 对齐 Soul 生成、抽牌堆顺序和 Shuffle RNG。II-E `1:000000` 冻结前缀 13 步精确匹配，同根重采获严格胜局。Legion of Bone 回归通过。下一根为 Regent II-E `1:000003`。 [定向验收](m1-nosl3c-iii7-glimpse-beyond.md)
+**M1-NOSL3C-II-I.9A/9B 累积构建集成验收。** 冻结 42/65 严格认证全部保留，八条原阻断前缀均精确匹配。同根统一重采 6/8，保留两条独立缺陷见证。独立重采 11/16、50/60，无新增认证退化。v4 两次更新的冷跑与恢复一致，完整主测试 164 通过、1 跳过。最新正式全量验收为 Solver `0.51.5-iii.8`、II-H.7 战斗宿主和 CoreCLR 9.0.7。 [报告与复现](m1-nosl3c-iii9b-integration.md)
 
-**M1-NOSL3C-II-H.9 累积规则集成验收。** 原 38 条严格认证全保留，冻结历史增至 42/65。两组独立新采集为 11/16、45/60。Sovereign Blade 独立原生一致，旧观察仍失配。v4 冷跑与恢复账本及快照一致。II-H.9.1 修正常规 Headless 部署路径，原六项失败通过，完整主测试 164 通过、1 跳过。最新全量验收为 Solver `0.51.5-iih.8.1`、II-H.7 战斗宿主和 CoreCLR 9.0.7。 [报告与逐根证据](m1-nosl3c-iih9-integration.md)
+**M1-NOSL3C-II-I.7 Glimpse Beyond 效果镜像。** 候选 `0.51.5-iii.7` 对齐 Soul 生成、抽牌堆顺序和 Shuffle RNG。II-E `1:000000` 冻结前缀 13 步精确匹配，同根重采获严格胜局。Legion of Bone 回归通过。[定向验收](m1-nosl3c-iii7-glimpse-beyond.md)
+
+**M1-NOSL3C-II-H.9 累积规则集成验收。** 原 38 条严格认证全保留，冻结历史增至 42/65。两组独立新采集为 11/16、45/60。Sovereign Blade 独立原生一致，旧观察仍失配。v4 冷跑与恢复账本及快照一致。II-H.9.1 修正常规 Headless 部署路径，原六项失败通过，完整主测试 164 通过、1 跳过。当时的全量验收为 Solver `0.51.5-iih.8.1`、II-H.7 战斗宿主和 CoreCLR 9.0.7。 [报告与逐根证据](m1-nosl3c-iih9-integration.md)
 
 **M1-NOSL3C-II-H.4 修复死亡清理顺序。** 吞噬暗影／Flutter 的历史路线取得精确胜局。非致死夹具继续正常施加吞噬暗影，Living Fog 和 Fogmog 仍有实质差异。本轮为定向验证。 [定向证据与复现](m1-nosl3c-iih4-shared-combat.md)
 
