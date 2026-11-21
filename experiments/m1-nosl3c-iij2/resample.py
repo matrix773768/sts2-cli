@@ -12,7 +12,7 @@ from train_completion import configuration, torch
 from training import Policy, checkpoint_policy
 
 
-def main(output, solver, suite="holdout", cases=((0, "000020"), (1, "000005"))):
+def main(output, solver, suite="holdout", cases=((0, "000020"), (1, "000005")), ledger_name=None):
     output.mkdir(parents=True)
     targets.configure()
     versions = TOOLS["bind"](output, solver)
@@ -28,11 +28,12 @@ def main(output, solver, suite="holdout", cases=((0, "000020"), (1, "000005"))):
     attempt = FunctionType(runner.attempt.__code__, runner.attempt.__globals__ |
                            dict(collect=collect, certify=partial(certify, mode="exact")))
     cap = configuration(suite, output)["action_cap"]
-    ledger = Path(f"logs/iii9b-{suite}/training.sqlite").resolve()
+    ledger_name = ledger_name or f"iii9b-{suite}"
+    ledger = (Path("logs") / ledger_name / "training.sqlite").resolve()
     source = runner.Journal.__new__(runner.Journal)
     with closing(sqlite3.connect(ledger.as_uri() + "?mode=ro", uri=True)) as source.db:
         for step, root in cases:
-            archived = TOOLS["batch"](f"iii9b-{suite}", step, root)
+            archived = TOOLS["batch"](ledger_name, step, root)
             old, = archived["rows"]
             behavior = old["behavior"]
             saved, _ = source.load(step)

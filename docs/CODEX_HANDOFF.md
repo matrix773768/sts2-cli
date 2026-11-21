@@ -10,6 +10,8 @@
 
 ## 工程状态
 
+- II-J.4 定向候选 `0.51.5-iij.4` 对齐 Pale Blue Dot 达到门槛时的原生 Power 应用结束边界。II-E `1:000002` 索引 42 差异消除，固定路线和同根重采均为 43 决策、31 原生边界，重采获严格胜局。非致胜创建与下一回合消费、Sovereign Blade／Forge、Hammer Time、Plot 及选择夹具通过。 [报告与复现](m1-nosl3c-iij4-delayed-draw.md)
+
 - II-J.3 定向候选 `0.51.5-iij.3` 对齐固定数量选择的隐式全选确认。Hidden Daggers 普通和升级夹具通过，独立 16 根 `0:000004` 的九步历史复放通过，同根重采 37 决策、33 原生边界获严格胜局。Guards、Quasar、CLEANSE 和 Survivor 定向回归通过。 [报告与复现](m1-nosl3c-iij3-hidden-daggers.md)
 
 - II-J.2 定向候选 `0.51.5-iij.2` 保留 Guards 的原生声明上限及实际候选约束。独立 60 根 `0:000020`、`1:000005` 的历史菜单精确匹配，同根重采分别获 10 决策／8 边界及 32 决策／26 边界的严格败局。 [报告与复现](m1-nosl3c-iij2-guards.md)
