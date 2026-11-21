@@ -10,6 +10,8 @@
 
 ## 本阶段交接
 
+**M1-NOSL3C-II-H.4 修复死亡清理顺序。** 吞噬暗影／Flutter 的历史路线取得精确胜局。非致死夹具继续正常施加吞噬暗影，Living Fog 和 Fogmog 仍有实质差异。本轮为定向验证。 [定向证据与复现](m1-nosl3c-iih4-shared-combat.md)
+
 **M1-NOSL3C-II-H.3 宿主稳定化。** 原生初始化探针 18 次全部成功回收。冻结 65 条重证为 38 条精确认证，旧独立 16 根保持 10/16，旧 60 根恢复至 44/60，v4 两次更新的冷跑和恢复快照逐字节一致。查阅 [阶段报告](m1-nosl3c-iih3-stabilization.md) 和 [Codex 短交接](CODEX_HANDOFF.md)。
 
 **M1-NOSL3C-II-H.3 接通 E3 严格战斗认证。** 四条冻结 E3 独立复放后全部获准，旧 Solver 四条拒绝。新资格实际进入 v4 参数更新。主测试 162 通过、1 跳过。 [合同、验证与复现](m1-nosl3c-solver-semantic-convergence.md)
