@@ -10,6 +10,8 @@
 
 ## 工程状态
 
+- II-J.5B 累计集成验收通过，待审查提升 Solver `0.51.5-iij.4`。冻结 42/65 及原终局戳保留，风险前缀八条精确、重采 8/8，固定套件 12/16 和 52/60，原认证全部保留。v4 两次更新冷跑与恢复一致，常规主测试 164 通过、1 跳过、0 失败。正式基线仍为 `0.51.5-iii.8`。 [报告与复现](m1-nosl3c-iij5b-integration.md)
+
 - II-J.5A 累计定向验收通过。单一 `0.51.5-iij.4` 构建复验 Quasar、Guards、Hidden Daggers+ 和 Pale Blue Dot。五条原见证的同根重采保留 2 胜、3 死严格认证及终局戳，具备进入 II-J.5B 的条件。 [报告与复现](m1-nosl3c-iij5a-targeted-acceptance.md)
 
 - II-J.4 定向候选 `0.51.5-iij.4` 对齐 Pale Blue Dot 达到门槛时的原生 Power 应用结束边界。II-E `1:000002` 索引 42 差异消除，固定路线和同根重采均为 43 决策、31 原生边界，重采获严格胜局。非致胜创建与下一回合消费、Sovereign Blade／Forge、Hammer Time、Plot 及选择夹具通过。 [报告与复现](m1-nosl3c-iij4-delayed-draw.md)

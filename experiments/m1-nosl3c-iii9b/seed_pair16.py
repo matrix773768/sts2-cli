@@ -8,7 +8,7 @@ import sqlite3
 import sys
 
 
-def seed(source, destination):
+def seed(source, destination, *, solver_version="0.51.5-iii.8"):
     def roots(folder):
         return json.loads((folder / "course-roots.json").read_bytes())[0]
 
@@ -19,7 +19,7 @@ def seed(source, destination):
         identity = "SELECT value FROM identity"
         a, b = (json.loads(db.execute(identity).fetchone()[0]) for db in (old, new))
         assert all(a[k] == b[k] for k in ("engine", "protocol", "source", "torch"))
-        assert a["engine"]["solver"] == "0.51.5-iii.8"
+        assert a["engine"]["solver"] == solver_version
         snapshot = "SELECT sha, payload FROM snapshots WHERE step = 0"
         assert old.execute(snapshot).fetchone() == new.execute(snapshot).fetchone()
         assert new.execute("SELECT count(*) FROM snapshots").fetchone() == (1,)
