@@ -10,6 +10,8 @@
 
 ## 工程状态
 
+- II-K.3A 已定位四条预测不支持首差：Sneaky、One for All+、Tank 和 Blade Symphony 的出牌效果缺口。已在 `0.51.5-iik.2.4` 单根复放，待 II-K.3B 实施。 [诊断与夹具建议](m1-nosl3c-iik3a-unsupported-diagnosis.md)
+
 - II-K.2.4 候选 `0.51.5-iik.2.4` 对齐 Fossil Stalker 致死后的 Strength。holdout `0:000023` 冻结复放精确，同根重采获严格败局。II-K.2 五条终局见证均已定向处理，待最终累计验收。 [定向验收](m1-nosl3c-iik24-fossil-stalker.md)
 
 - II-K.2.3 候选 `0.51.5-iik.2.3` 对齐末敌死亡后同批 Glass Orb 被动衰减。holdout `1:000021` 原边界精确匹配，同根重采获严格胜局。 [定向验收](m1-nosl3c-iik23-glass-orb.md)
