@@ -66,7 +66,7 @@ def read_copy(value):
     return json.loads(json.dumps(value))
 
 
-def train(out, cfg, batches, meter, events):
+def train(out, cfg, batches, meter, events, *, through=12, on_checkpoint=None):
     journal = runner.Journal
     optimize = v4.optimize
     summarize = runner.summarize
@@ -118,13 +118,15 @@ def train(out, cfg, batches, meter, events):
                                host_starts=len(events)-first_worker, stats=stats))
             print(f"Committed update {step}: {stats['qualified']}/24 trajectories", flush=True)
             timing.clear()
+        if on_checkpoint is not None:
+            on_checkpoint(step, payload)
         start = meter.start_phase()
         first_worker = len(events)
 
     frozen = {k: v for k, v in cfg.items() if k != "stages"} | {"batches": batches}
     with patch.object(journal, "save", checkpoint), patch.object(journal, "commit_root", root_commit), \
             patch.object(v4, "optimize", update), patch.object(runner, "summarize", report):
-        v4.run(out, solver, frozen, cfg["workers"], 12)
+        v4.run(out, solver, frozen, cfg["workers"], through)
 
 
 class Greedy:
