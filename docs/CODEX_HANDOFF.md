@@ -10,6 +10,8 @@
 
 ## 工程状态
 
+- II-J.5A 累计定向验收通过。单一 `0.51.5-iij.4` 构建复验 Quasar、Guards、Hidden Daggers+ 和 Pale Blue Dot。五条原见证的同根重采保留 2 胜、3 死严格认证及终局戳，具备进入 II-J.5B 的条件。 [报告与复现](m1-nosl3c-iij5a-targeted-acceptance.md)
+
 - II-J.4 定向候选 `0.51.5-iij.4` 对齐 Pale Blue Dot 达到门槛时的原生 Power 应用结束边界。II-E `1:000002` 索引 42 差异消除，固定路线和同根重采均为 43 决策、31 原生边界，重采获严格胜局。非致胜创建与下一回合消费、Sovereign Blade／Forge、Hammer Time、Plot 及选择夹具通过。 [报告与复现](m1-nosl3c-iij4-delayed-draw.md)
 
 - II-J.3 定向候选 `0.51.5-iij.3` 对齐固定数量选择的隐式全选确认。Hidden Daggers 普通和升级夹具通过，独立 16 根 `0:000004` 的九步历史复放通过，同根重采 37 决策、33 原生边界获严格胜局。Guards、Quasar、CLEANSE 和 Survivor 定向回归通过。 [报告与复现](m1-nosl3c-iij3-hidden-daggers.md)

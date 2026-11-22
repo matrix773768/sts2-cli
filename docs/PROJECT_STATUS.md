@@ -1,6 +1,6 @@
 # STS2 AI — 项目状态与交接（PROJECT_STATUS）
 
-> 更新日期：2026-11-21（Asia/Shanghai）
+> 更新日期：2026-11-22（Asia/Shanghai）
 > 当前研究主线已升级为机制感知、端口驱动的 NOSL 直接策略 + SL 搜索增强。LS2B 已完成可组合 StrategySpec 研究侧实证，但不作为最终 NOSL 必经结构。
 > 本文件描述 **matrix773768/sts2-cli** 的 `port/v0.113.1` 分支，不代表上游 `wuhao21/sts2-cli` 或 `main` 的支持情况。
 > M0 最后一次业务代码提交：`bc48ac58aeca80c2c7b9249cbf98f316ae99a27b` — Restore native Ancient healing and act-start travel rules。
@@ -9,6 +9,8 @@
 **项目长期目标、极速 Combat Solver 的定位、阶段性质量门槛及研究取舍，以 [PROJECT_VISION.md](PROJECT_VISION.md) 为准。** 本文件继续保留工程状态与历史验收记录；局外价值建模详见 [research-direction-and-value-model.md](research-direction-and-value-model.md)。
 
 ## 本阶段交接
+
+**M1-NOSL3C-II-J.5A 累计定向回归通过。** `0.51.5-iij.4` 上四项修复同时成立，五个原见证的固定策略重采保留严格认证及终局戳。进入 II-J.5B 的定向门槛已满足，正式全量验收基线为 `0.51.5-iii.8`。 [报告与复现](m1-nosl3c-iij5a-targeted-acceptance.md)
 
 **M1-NOSL3C-II-I.9A/9B 累积构建集成验收。** 冻结 42/65 严格认证全部保留，八条原阻断前缀均精确匹配。同根统一重采 6/8，保留两条独立缺陷见证。独立重采 11/16、50/60，无新增认证退化。v4 两次更新的冷跑与恢复一致，完整主测试 164 通过、1 跳过。最新正式全量验收为 Solver `0.51.5-iii.8`、II-H.7 战斗宿主和 CoreCLR 9.0.7。 [报告与复现](m1-nosl3c-iii9b-integration.md)
 
