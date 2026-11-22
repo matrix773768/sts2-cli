@@ -10,6 +10,8 @@
 
 ## 工程状态
 
+- II-K.1 候选 `0.51.5-iik.1` 修复预测奥斯蒂跨回合攻击计数。pair16 `0:000009` 原差异边界精确匹配，同根重采获严格胜局。 [定向验收](m1-nosl3c-iik1-rattle.md)
+
 - II-J.5B 保留冻结 42/65 的严格认证及终局戳，风险同根重采 8/8，固定套件 12/16 与 52/60，v4 冷跑与恢复一致，主测试 164 通过、1 跳过。 [全量验收](m1-nosl3c-iij5b-integration.md) · [II-J.5A 定向验收](m1-nosl3c-iij5a-targeted-acceptance.md)
 
 - 历史正式基线为 Solver `0.51.5-iii.8`（II-I.9B）。 [历史验收](m1-nosl3c-iii9b-integration.md) · [项目状态与历史证据](PROJECT_STATUS.md)
