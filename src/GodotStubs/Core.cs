@@ -6,6 +6,51 @@ public class GodotObject
 {
     public class SignalName { }
 
+    private const uint OneShot = 4;
+    private readonly Dictionary<StringName, List<(Callable Callback, uint Flags)>> _signals = new();
+
+    public Error Connect(StringName signal, Callable callable, uint flags = 0)
+    {
+        if ((flags & ~OneShot) != 0)
+            return Error.Unavailable;
+        if (!_signals.TryGetValue(signal, out var connections))
+            _signals[signal] = connections = new();
+        if (connections.Exists(connection => connection.Callback.Equals(callable)))
+            return Error.InvalidParameter;
+        connections.Add((callable, flags));
+        return Error.Ok;
+    }
+
+    public void Disconnect(StringName signal, Callable callable)
+    {
+        if (_signals.TryGetValue(signal, out var connections))
+            connections.RemoveAll(connection => connection.Callback.Equals(callable));
+    }
+
+    public Error EmitSignal(StringName signal, params Variant[] args)
+    {
+        if (!_signals.TryGetValue(signal, out var connections))
+            return Error.Ok;
+        foreach (var connection in connections.ToArray())
+        {
+            if (!connections.Contains(connection))
+                continue;
+            if ((connection.Flags & OneShot) != 0)
+                connections.Remove(connection);
+            connection.Callback.Call(args);
+        }
+        return Error.Ok;
+    }
+
+    public Variant CallDeferred(StringName method, params Variant[] args)
+    {
+        // Headless has no scene message queue. Its supported scene operation runs inline.
+        if (this is Node parent && method == Node.MethodName.AddChild
+            && args.Length == 1 && args[0].Obj is Node child)
+            parent.AddChild(child);
+        return default;
+    }
+
     public static bool IsInstanceValid(GodotObject? obj) => obj != null;
     public virtual bool IsQueuedForDeletion() => false;
 

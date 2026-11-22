@@ -82,7 +82,13 @@ public struct Callable
     public static Callable From<T>(Action<T> action) => new(action);
     public static Callable From<T1, T2>(Action<T1, T2> action) => new(action);
 
-    public void Call(params Variant[] args) => (_delegate as Action)?.Invoke();
+    public void Call(params Variant[] args)
+    {
+        if (_delegate is Action action && args.Length == 0)
+            action();
+        else if (_delegate is not null)
+            _delegate.DynamicInvoke(Array.ConvertAll(args, static arg => arg.Obj));
+    }
     public void CallDeferred(params Variant[] args) => Call(args);
 }
 
