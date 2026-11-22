@@ -10,7 +10,7 @@
 
 ## 工程状态
 
-- II-K.3A 已定位四条预测不支持首差：Sneaky、One for All+、Tank 和 Blade Symphony 的出牌效果缺口。已在 `0.51.5-iik.2.4` 单根复放，待 II-K.3B 实施。 [诊断与夹具建议](m1-nosl3c-iik3a-unsupported-diagnosis.md)
+- II-K.3B 候选 `0.51.5-iik.3b` 补齐 Sneaky、One for All、Tank 和 Blade Symphony。四条冻结路线精确越过原阻断，同根重采均获严格认证（三胜一败）。多人行为尚未跑局认证，正式全量基线仍为 `0.51.5-iij.4`。 [定向验收](m1-nosl3c-iik3b-card-effects.md) · [II-K.3A 诊断](m1-nosl3c-iik3a-unsupported-diagnosis.md)
 
 - II-K.2.4 候选 `0.51.5-iik.2.4` 对齐 Fossil Stalker 致死后的 Strength。holdout `0:000023` 冻结复放精确，同根重采获严格败局。II-K.2 五条终局见证均已定向处理，待最终累计验收。 [定向验收](m1-nosl3c-iik24-fossil-stalker.md)
 
