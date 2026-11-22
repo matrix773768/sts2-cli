@@ -10,6 +10,8 @@
 
 ## 工程状态
 
+- II-K.5 累计验收全通过。冻结 42/65 保留原戳，八根风险 8/8，固定套件 16/16、59/60，十一条修复见证均严格认证，唯一剩余 Axebot 策略截断。v4 冷跑／恢复一致，主测试 164 通过、1 跳过。建议提升至 `iik.3b`／II-K.4B／本轮常规 Headless，正式基线仍为 `iij.4`，待审查。 [累计报告](m1-nosl3c-iik5-integration.md)
+
 - II-K.4B 独立战斗宿主修复 Rolling Boulder 的 Godot ABI。pair16 `0:000001` 原 37 步复放精确，原预算重采获严格胜局。Axebot 保留策略截断。累计验收使用 II-K.4B 战斗宿主及重新部署的常规 Headless，Solver 仍为 `0.51.5-iik.3b`。 [定向验收与部署](m1-nosl3c-iik4b-rolling-boulder-host.md) · [II-K.4A 诊断](m1-nosl3c-iik4a-residual-diagnosis.md)
 
 - II-K.3B 候选 `0.51.5-iik.3b` 补齐 Sneaky、One for All、Tank 和 Blade Symphony。四条冻结路线精确越过原阻断，同根重采均获严格认证（三胜一败）。多人行为尚未跑局认证，正式全量基线仍为 `0.51.5-iij.4`。 [定向验收](m1-nosl3c-iik3b-card-effects.md) · [II-K.3A 诊断](m1-nosl3c-iik3a-unsupported-diagnosis.md)
