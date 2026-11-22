@@ -10,6 +10,8 @@
 
 ## 工程状态
 
+- II-K.2.4 候选 `0.51.5-iik.2.4` 对齐 Fossil Stalker 致死后的 Strength。holdout `0:000023` 冻结复放精确，同根重采获严格败局。II-K.2 五条终局见证均已定向处理，待最终累计验收。 [定向验收](m1-nosl3c-iik24-fossil-stalker.md)
+
 - II-K.2.3 候选 `0.51.5-iik.2.3` 对齐末敌死亡后同批 Glass Orb 被动衰减。holdout `1:000021` 原边界精确匹配，同根重采获严格胜局。 [定向验收](m1-nosl3c-iik23-glass-orb.md)
 
 - II-K.2.2 候选 `0.51.5-iik.2.2` 对齐 Lightning Rod 挤出球体致胜后的层数。holdout `1:000020` 原边界精确匹配，同根重采获严格胜局。 [定向验收](m1-nosl3c-iik22-lightning-rod.md)
