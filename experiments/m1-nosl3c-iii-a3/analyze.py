@@ -76,6 +76,7 @@ def stats(xs):
 
 
 def decompose(policy, rows, cfg):
+    scale = cfg.get("a5", {}).get("value_scale", 1)
     objective = v4.Objective(**cfg["objective"])
     prepared = [(row["transitions"], objective.reward(row["feedback"], row["hp_accounting"]["initial_hp"]),
                  row["feedback"]["status"]) for row in rows]
@@ -108,14 +109,14 @@ def decompose(policy, rows, cfg):
                 batch = torch.arange(len(active))
                 chosen = logp[batch, idx]
                 reward = value.new_tensor([r for _, r, _ in active])
-                actor = -(chosen * (reward - value.detach())).sum()
-                critic = ((value - reward).square() / value.new_tensor([len(route) for route, _, _ in active])).sum()
+                actor = -(chosen * (reward - scale * value.detach())).sum()
+                critic = ((value - reward / scale).square() / value.new_tensor([len(route) for route, _, _ in active])).sum()
                 entropy = -(logp.exp() * logp.masked_fill(~mask, 0)).sum()
                 scalar.update(actor_loss=actor.item(), critic_loss=critic.item(), entropy=entropy.item())
                 terms["actor"].append(actor)
                 terms["critic_weighted"].append(cfg["critic_weight"] * critic)
                 terms["entropy_weighted"].append(-cfg["entropy_weight"] * entropy)
-                for (_, r, status), prediction in zip(active, value.detach().tolist(), strict=True):
+                for (_, r, status), prediction in zip(active, (scale * value.detach()).tolist(), strict=True):
                     case = cases[status]
                     case["values"].append(prediction)
                     case["error"].append(prediction - r)
@@ -158,6 +159,7 @@ def measure(directory, step, cfg):
     assert all(scalars[key] == original[key] for key in scalars)
     assert digest(v4.checkpoint_policy(policy)) == model_hash
     names = [name for name, _ in policy.named_parameters()]
+    delta = [after["model"][name] - before["model"][name] for name in names]
     indices = {
         "all": list(range(len(names))),
         "actor_head": [i for i, name in enumerate(names) if name.startswith("actor.")],
@@ -172,20 +174,21 @@ def measure(directory, step, cfg):
         combined = sum(vectors.values())
         norms[key] = {term: norm(value) for term, value in vectors.items()} | dict(
             reconstructed=norm(combined), original=norm(original_vector), clipped=norm(flat(clipped, group)),
-            residual=norm(combined-original_vector))
+            residual=norm(combined-original_vector), adam_delta=norm(flat(delta, group)))
         if key in ("shared", "state"):
             actor, critic = vectors["actor"], vectors["critic_weighted"]
             cosine[key] = torch.dot(actor, critic).item() / (norm(actor) * norm(critic))
     assert norms["all"]["residual"] / original["grad_norm"] < 1e-5
     clip_factor = min(1, cfg["grad_clip"] / (original["grad_norm"] + 1e-6))
     output = policy.return_head[-1]
+    scale = cfg.get("a5", {}).get("value_scale", 1)
     weight = output.weight.detach()
     bias = output.bias.detach().item()
     return dict(step=step, rows=len(rows), snapshots=[pre_stamp, post_stamp],
                 historical_norm=hist["grad_norm"], decisions=hist["decisions"], norms=norms,
                 cosine=cosine, clip_factor=clip_factor, outcome=outcomes,
                 critic_output=dict(bias=bias, weight_l1=weight.abs().sum().item(),
-                                   upper_abs_bound=abs(bias)+weight.abs().sum().item(),
+                                   upper_abs_bound=scale*(abs(bias)+weight.abs().sum().item()),
                                    bias_delta=(after["model"]["return_head.2.bias"] -
                                                before["model"]["return_head.2.bias"]).item(),
                                    weight_delta_l2=norm(after["model"]["return_head.2.weight"] - weight)))
