@@ -10,6 +10,8 @@
 
 ## 工程状态
 
+- II-K.4A 复现 Rolling Boulder 回合开始时的 Godot ABI 缺口，建议 II-K.4B 修复宿主。Axebot 见证在 128／256 预算均因牌组缺少伤害而截断。 [专项诊断](m1-nosl3c-iik4a-residual-diagnosis.md)
+
 - II-K.3B 候选 `0.51.5-iik.3b` 补齐 Sneaky、One for All、Tank 和 Blade Symphony。四条冻结路线精确越过原阻断，同根重采均获严格认证（三胜一败）。多人行为尚未跑局认证，正式全量基线仍为 `0.51.5-iij.4`。 [定向验收](m1-nosl3c-iik3b-card-effects.md) · [II-K.3A 诊断](m1-nosl3c-iik3a-unsupported-diagnosis.md)
 
 - II-K.2.4 候选 `0.51.5-iik.2.4` 对齐 Fossil Stalker 致死后的 Strength。holdout `0:000023` 冻结复放精确，同根重采获严格败局。II-K.2 五条终局见证均已定向处理，待最终累计验收。 [定向验收](m1-nosl3c-iik24-fossil-stalker.md)
