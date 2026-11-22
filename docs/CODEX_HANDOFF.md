@@ -3,20 +3,18 @@
 ## 当前基线
 
 - 仓库 `matrix773768/sts2-cli`，分支 `port/v0.113.1`。每次启动先执行 `git status -sb` 和 `git rev-parse HEAD`。稳定化起点为 `5043f95467ee88a9e41375c51278a651b93ad14d`。
-- STS2 v0.113.1 Build 26660232，CoreCLR **9.0.7**。II-J.5A 与 II-J.5B 均已通过，II-J 正式关闭。正式全量验收基线为 Solver **0.51.5-iij.4**，配套 II-H.7 战斗宿主与 II-H.9.1 常规 Headless。
-- 全量验收构建的 Solver DLL SHA-256 为 `2c7a9ec1d0f6a58226be9aee9230268b40ab96fa6efe582cddf2e376b9a18e5f`。
-- II-H.7 战斗宿主 SHA-256 为 `b3f8ce1d862bdb98000bfeb90d701239e50be17034739c5c2ed18e26716150f0`。常规 Headless 部署至 `logs/iih9-main-host/bin/Debug/net9.0`。
+- 正式全量验收基线为 Solver `0.51.5-iik.3b`、II-K.4B 战斗宿主、常规 Headless `logs/iik5-main-host/bin/Debug/net9.0`、STS2 v0.113.1 Build 26660232 与 CoreCLR 9.0.7。战斗宿主部署在 `logs/iik4b-host-final/Headless/bin/Debug/net9.0`，五项产物 SHA-256 与运行身份见 [II-K.5 报告](m1-nosl3c-iik5-integration.md)。
 - E3 战斗认证 `sts2.nosl.iih3.enemy-side-exact-combat.v1`。保留 II-G Completion 死亡等价合同 `sts2.nosl.iig.completion.enemy-death-window.v1`。
 
 ## 工程状态
 
-- II-K.5 累计验收全通过。冻结 42/65 保留原戳，八根风险 8/8，固定套件 16/16、59/60，十一条修复见证均严格认证，唯一剩余 Axebot 策略截断。v4 冷跑／恢复一致，主测试 164 通过、1 跳过。建议提升至 `iik.3b`／II-K.4B／本轮常规 Headless，正式基线仍为 `iij.4`，待审查。 [累计报告](m1-nosl3c-iik5-integration.md)
+- II-K 语义修复专项正式关闭，专项范围以本次验收为界。固定套件 16/16、59/60，原认证和终局戳全部保留，唯一剩余 Axebot 为 128 动作预算下的合理策略截断。16/16 与 59/60 衡量固定回归套件的严格认证覆盖率，不能据此推断通关胜率或新根泛化能力。覆盖边界沿用 II-K.5，包含多人语义、One for All 无出牌记录的费用分支及 Rolling Boulder 图形路径等尚未独立验证的行为。 [累计验收](m1-nosl3c-iik5-integration.md)
 
 - II-K.4B 独立战斗宿主修复 Rolling Boulder 的 Godot ABI。pair16 `0:000001` 原 37 步复放精确，原预算重采获严格胜局。Axebot 保留策略截断。累计验收使用 II-K.4B 战斗宿主及重新部署的常规 Headless，Solver 仍为 `0.51.5-iik.3b`。 [定向验收与部署](m1-nosl3c-iik4b-rolling-boulder-host.md) · [II-K.4A 诊断](m1-nosl3c-iik4a-residual-diagnosis.md)
 
-- II-K.3B 候选 `0.51.5-iik.3b` 补齐 Sneaky、One for All、Tank 和 Blade Symphony。四条冻结路线精确越过原阻断，同根重采均获严格认证（三胜一败）。多人行为尚未跑局认证，正式全量基线仍为 `0.51.5-iij.4`。 [定向验收](m1-nosl3c-iik3b-card-effects.md) · [II-K.3A 诊断](m1-nosl3c-iik3a-unsupported-diagnosis.md)
+- II-K.3B 候选 `0.51.5-iik.3b` 补齐 Sneaky、One for All、Tank 和 Blade Symphony。四条冻结路线精确越过原阻断，同根重采均获严格认证（三胜一败）。多人行为尚未跑局认证。 [定向验收](m1-nosl3c-iik3b-card-effects.md) · [II-K.3A 诊断](m1-nosl3c-iik3a-unsupported-diagnosis.md)
 
-- II-K.2.4 候选 `0.51.5-iik.2.4` 对齐 Fossil Stalker 致死后的 Strength。holdout `0:000023` 冻结复放精确，同根重采获严格败局。II-K.2 五条终局见证均已定向处理，待最终累计验收。 [定向验收](m1-nosl3c-iik24-fossil-stalker.md)
+- II-K.2.4 候选 `0.51.5-iik.2.4` 对齐 Fossil Stalker 致死后的 Strength。holdout `0:000023` 冻结复放精确，同根重采获严格败局。II-K.2 五条终局见证均通过 II-K.5 累计验收。 [定向验收](m1-nosl3c-iik24-fossil-stalker.md)
 
 - II-K.2.3 候选 `0.51.5-iik.2.3` 对齐末敌死亡后同批 Glass Orb 被动衰减。holdout `1:000021` 原边界精确匹配，同根重采获严格胜局。 [定向验收](m1-nosl3c-iik23-glass-orb.md)
 
@@ -28,7 +26,7 @@
 
 - II-J.5B 保留冻结 42/65 的严格认证及终局戳，风险同根重采 8/8，固定套件 12/16 与 52/60，v4 冷跑与恢复一致，主测试 164 通过、1 跳过。 [全量验收](m1-nosl3c-iij5b-integration.md) · [II-J.5A 定向验收](m1-nosl3c-iij5a-targeted-acceptance.md)
 
-- 历史正式基线为 Solver `0.51.5-iii.8`（II-I.9B）。 [历史验收](m1-nosl3c-iii9b-integration.md) · [项目状态与历史证据](PROJECT_STATUS.md)
+- 历史正式基线包括 Solver `0.51.5-iij.4`（II-J.5B）、`0.51.5-iii.8`（II-I.9B）及更早版本。 [II-J.5B 验收](m1-nosl3c-iij5b-integration.md) · [II-I.9B 验收](m1-nosl3c-iii9b-integration.md) · [项目状态与历史证据](PROJECT_STATUS.md)
 
 - 奖励和地图处置由独立原生流程负责。战斗审计的私有字段不进入 Actor。 [II-H.3 稳定化报告](m1-nosl3c-iih3-stabilization.md)
 
