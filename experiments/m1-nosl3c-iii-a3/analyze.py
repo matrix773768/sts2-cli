@@ -75,7 +75,7 @@ def stats(xs):
     return dict(n=len(xs), mean=mean(xs), sd=pstdev(xs), min=min(xs), max=max(xs)) if xs else {"n": 0}
 
 
-def decompose(policy, rows, cfg):
+def decompose(policy, rows, cfg, *, decoded_critic_loss=False):
     scale = cfg.get("a5", {}).get("value_scale", 1)
     objective = v4.Objective(**cfg["objective"])
     prepared = [(row["transitions"], objective.reward(row["feedback"], row["hp_accounting"]["initial_hp"]),
@@ -110,7 +110,8 @@ def decompose(policy, rows, cfg):
                 chosen = logp[batch, idx]
                 reward = value.new_tensor([r for _, r, _ in active])
                 actor = -(chosen * (reward - scale * value.detach())).sum()
-                critic = ((value - reward / scale).square() / value.new_tensor([len(route) for route, _, _ in active])).sum()
+                error = scale * value - reward if decoded_critic_loss else value - reward / scale
+                critic = (error.square() / value.new_tensor([len(route) for route, _, _ in active])).sum()
                 entropy = -(logp.exp() * logp.masked_fill(~mask, 0)).sum()
                 scalar.update(actor_loss=actor.item(), critic_loss=critic.item(), entropy=entropy.item())
                 terms["actor"].append(actor)
