@@ -1,0 +1,4 @@
+# Keep the source fingerprints used in producer manifests reproducible.
+run.py -text whitespace=cr-at-eol,-blank-at-eof
+batching.py -text whitespace=cr-at-eol
+transport.py -text whitespace=cr-at-eol
