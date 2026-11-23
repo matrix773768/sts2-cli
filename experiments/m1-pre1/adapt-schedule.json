@@ -1,0 +1,19 @@
+{
+  "protocol": "sts2.pre1.training.v1",
+  "epochs": 20,
+  "mechanism_epochs": 10,
+  "width": 96,
+  "batch": 512,
+  "seed": 77431,
+  "learning_rate": 5e-05,
+  "weight_decay": 0.01,
+  "clip": 1.0,
+  "decisions_per_trajectory": 6,
+  "weights": [
+    1,
+    0.4,
+    1,
+    1
+  ],
+  "logit_penalty": 0.01
+}
