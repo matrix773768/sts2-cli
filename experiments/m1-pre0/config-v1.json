@@ -1,0 +1,35 @@
+{
+  "version": "ironclad.v1",
+  "seed": 73192026,
+  "policy_seed": 3826819,
+  "action_cap": 128,
+  "deck_length": [
+    12,
+    20
+  ],
+  "upgrade_rate": 0.25,
+  "hp": [
+    999,
+    160,
+    80
+  ],
+  "rooms": [
+    "Monster",
+    "Elite",
+    "Boss"
+  ],
+  "exclude": [
+    "TAG_TEAM"
+  ],
+  "generated_allow": [
+    "DAZED",
+    "WOUND",
+    "BURN",
+    "SLIMED",
+    "VOID",
+    "DARK_SHACKLES",
+    "GIANT_ROCK",
+    "BECKON",
+    "PACTS_END"
+  ]
+}

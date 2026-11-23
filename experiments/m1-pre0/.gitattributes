@@ -1,0 +1,4 @@
+# Preserve source bytes used by existing dataset manifests for resume.
+run.py -text whitespace=cr-at-eol,-blank-at-eof
+dataset.py -text whitespace=cr-at-eol
+inference.py -text whitespace=cr-at-eol
