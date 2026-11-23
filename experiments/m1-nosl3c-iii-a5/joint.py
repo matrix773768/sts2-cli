@@ -143,7 +143,7 @@ def gate(out, cfg, baseline_cases, preflight, model_hash):
     print("First-batch equivalence gate passed before optimization", flush=True)
 
 
-def main(out):
+def main(out, *, intervention=None, before_training=None):
     out.mkdir(parents=True)
     configure()
     cfg = read(A2 / "protocol.json")["config"]
@@ -153,7 +153,10 @@ def main(out):
     batches = batches[:36]
     assert len(batches) == 36 and all(len(batch) == 24 for batch in batches)
     cfg["stages"][0]["updates"] = 36
-    cfg["a5"] = dict(model=VERSION, value_scale=SCALE, adapter_sha256=sha256(Path(__file__).read_bytes()).hexdigest())
+    if intervention is None:
+        intervention = {"a5": dict(model=VERSION, value_scale=SCALE,
+                                   adapter_sha256=sha256(Path(__file__).read_bytes()).hexdigest())}
+    cfg.update(intervention)
     seeds = base_protocol["evaluation_policy_seeds"]
     save(out / "protocol.json", dict(config=cfg, train_sha256=digest(batches), eval_sha256=digest(roots),
                                      evaluation_policy_seeds=seeds))
@@ -161,6 +164,8 @@ def main(out):
     preflight = initial_preflight(cfg, baseline_cases, batches[0])
     save(out / "initial-preflight.json", preflight)
     print("Frozen initial identity verified", flush=True)
+    if before_training is not None:
+        before_training(out, cfg)
     training = out / "training"
     training.mkdir()
     events = []
