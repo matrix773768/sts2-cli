@@ -171,6 +171,13 @@ def validate(spec, home):
     stages = spec["stages"]
     if not isinstance(stages, list) or not stages:
         raise ValueError("At least one stage is required")
+    if "budget_reserve_seconds" in spec:
+        number(spec["budget_reserve_seconds"], "budget_reserve_seconds", 1)
+        if "budget_seconds" not in spec or spec["budget_reserve_seconds"] >= spec["budget_seconds"]:
+            raise ValueError("Budget reserve must be smaller than runtime budget")
+        if max([spec.get("stop_grace_seconds",60)] +
+               [stage.get("stop_grace_seconds",0) for stage in spec["stages"]]) > spec["budget_reserve_seconds"]:
+            raise ValueError("Stop grace exceeds budget reserve")
     prior = set()
     for stage in stages:
         sid = identifier(stage["id"])

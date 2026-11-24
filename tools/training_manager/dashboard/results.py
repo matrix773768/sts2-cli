@@ -2,7 +2,7 @@
 
 import re
 
-from .backend import DC1, INITIAL, CURRICULUM, contained
+from .backend import DC1, INITIAL, CURRICULUM, NIGHT, contained
 from ..common import read
 
 
@@ -81,7 +81,8 @@ def result_row(output, report, label, fit, dev, complex_stage=None, production_s
 
 def results(backend, manager):
     reports = {row["id"]: manager.report(row, persist=False) for row in manager.rows()
-               if row["id"] in (INITIAL, CURRICULUM) or row["id"].endswith("smoke")}
+               if row["id"] in (INITIAL, CURRICULUM, NIGHT) or row["id"].startswith(NIGHT+"-r")
+               or row["id"].endswith("smoke")}
     baseline = load(DC1, "results.json", {}).get("pools", {}).get("development", {})
     d2 = baseline.get("overall", {}).get("direct")
     baseline_summary = load(DC1, "evaluation/development/D2/summary.json", {})
@@ -98,6 +99,17 @@ def results(backend, manager):
                (f"g{n}-direct", f"g{n}-search")) for n in (1,2,3))):
         rows.append(result_row(backend.home/"jobs"/report["id"], report, label, fit, dev, complex_stage, prod)
                     if report else dict(name=label, development=None, training=[], complex=None, production={}, updates=None))
+    for key, report in reports.items():
+        if key!=NIGHT and not key.startswith(NIGHT+"-r"):
+            continue
+        output=backend.home/"jobs"/key
+        for n in range(1,13):
+            prefix=f"g{n}"
+            audit=load(output,f"{prefix}-audit/summary.json",{})
+            if audit.get("complete"):
+                row=result_row(output,report,f"{key} G{n}",f"{prefix}-fit",f"{prefix}-development",
+                               f"{prefix}-complex",(f"{prefix}-direct",f"{prefix}-search"))
+                rows.append(row)
     gate = load(backend.home/"jobs"/INITIAL, "gate/gate.json") if initial else None
     smoke = []
     for key, report in reports.items():

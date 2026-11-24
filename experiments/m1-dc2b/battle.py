@@ -1,5 +1,7 @@
 """Execute only public deterministic prefixes and score their boundaries in DC2B units."""
-from functools import partial
+from collections import Counter
+from contextlib import closing
+import sqlite3
 from time import perf_counter
 from types import FunctionType
 
@@ -7,7 +9,7 @@ from value import Path, checksum, expected, load, payoff, torch
 from dc_common import digest
 import loop_battle
 from loop_policy import BattlePolicy, extract
-from sv_data import Encoder
+from sv_data import Encoder, decoded
 from sv_runtime import tensors
 
 
@@ -103,8 +105,37 @@ class Controller(BattlePolicy):
         return direct, "direct_stop"
 
 
-def run(*args, **kwargs):
+class BatchCounts:
+    """Incremental progress for dense night batches; full metrics close the stage."""
+    def __init__(self):
+        self.last=-1
+        self.attempts=self.complete=0
+        self.status=Counter()
+        self.counts=Counter()
+        self.wall=0.
+
+    def __call__(self, output, wall):
+        uri=(output/"results.sqlite").resolve().as_uri()+"?mode=ro"
+        with closing(sqlite3.connect(uri,uri=True)) as db:
+            for ordinal,sha,payload in db.execute(
+                    "SELECT ordinal,sha,payload FROM results WHERE ordinal>? ORDER BY ordinal",(self.last,)):
+                item=decoded(sha,payload)
+                self.attempts+=1
+                self.complete+=item["row"]["complete"]
+                self.status[item["row"]["status"]]+=1
+                self.counts.update(item["counts"])
+                self.last=ordinal
+        self.wall=wall
+        return dict(attempts=self.attempts,complete=self.complete,status=self.status,counts=self.counts)
+
+    def close(self, output):
+        if self.attempts:
+            return loop_battle.summary(output,self.wall)
+
+
+def run(*args, compact=None, **kwargs):
     runner=FunctionType(loop_battle.run.__code__,loop_battle.run.__globals__ |
-                        {"NetworkPolicy":Policy,"BattlePolicy":Controller},
+                        {"NetworkPolicy":Policy,"BattlePolicy":Controller,
+                         "summary":compact or loop_battle.summary},
                         argdefs=loop_battle.run.__defaults__)
     return runner(*args,**kwargs)

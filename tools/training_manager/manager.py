@@ -202,7 +202,8 @@ class Manager:
             raise ValueError("Output identity has changed")
         verify_assets(spec)
         remaining = spec["budget_seconds"] - row["seconds"] if "budget_seconds" in spec else None
-        if remaining is not None and remaining <= 0:
+        reserve = spec.get("budget_reserve_seconds", 0)
+        if remaining is not None and remaining <= reserve:
             self.update(row, state="cancelled", reason="budget", intent=None)
             return
         work.mkdir(exist_ok=True)
@@ -215,7 +216,7 @@ class Manager:
             path = work / "attempts" / token
             path.mkdir(parents=True)
             request = dict(token=token, sha256=spec["sha256"], command=args, cwd=str((ROOT / spec["cwd"]).resolve()),
-                           remaining=remaining, grace=stage.get("stop_grace_seconds", spec.get("stop_grace_seconds", 60)),
+                           remaining=remaining-reserve if remaining is not None else None, grace=stage.get("stop_grace_seconds", spec.get("stop_grace_seconds", 60)),
                            resume=stage["resume"])
             write(path / "launch.json", request)
             write(work / "request.json", request)

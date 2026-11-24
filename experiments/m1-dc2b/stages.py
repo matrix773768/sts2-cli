@@ -11,7 +11,7 @@ from fit import progress, stopped
 from dc_metrics import ledger, describe
 from loop_battle import Host, run as baseline, read_ledger
 from sv_data import Encoder, Shards, examples, policy_key
-from battle import run
+from battle import BatchCounts, run
 from tools.training_manager.common import write as write_atomic
 from tools.training_manager.ledger import identity as ledger_identity
 
@@ -85,12 +85,16 @@ def independent(out):
         frozen(out/f"{split}.json",manifest(CFG,purpose,jobs))
 
 
-def production(out, generation, count, previous, search=False):
-    previous_rows=list(read_ledger(previous,full=False)) if previous else []
+def production(out, generation, count, previous, search=False, night=False):
     by_family=defaultdict(list)
-    for entry in previous_rows:
-        row=entry["row"]
-        by_family[row["family"]].append(row)
+    histories=([out.parent/f"g{i}-direct/ledger" for i in range(1,int(previous.name)+1)]
+               if night and previous else [previous] if previous else [])
+    for history in histories:
+        for entry in read_ledger(history,full=False):
+            r=entry["row"]
+            by_family[r["family"]].append({k:r[k] for k in ("terminal","length","status")} |
+                {"root":{k:r["root"][k] for k in ("hp","max_hp")}})
+
     candidates=defaultdict(list)
     diagnostic=[]
     for f,spec in upgraded_families():
@@ -133,7 +137,7 @@ def production(out, generation, count, previous, search=False):
             if i%5==0:
                 hp=999
         hp_now=hp if hp!=80 else min(80,f["spec"]["hp"])
-        recipe=world(spec|{"hp":hp_now,"max_hp":hp},CFG,f["id"],i,f"dc2b-{generation}-{out.name}")
+        recipe=world(spec|{"hp":hp_now,"max_hp":hp},CFG,f["id"],i,f"dc2b-{generation}-{out.name}" if not night else f"dc2b-night1-{generation}-{out.name}")
         split="validation" if int(f["id"][:8],16)%7==0 else "train"
         jobs.append([i,recipe,split,f["id"],f["room"]])
     write_atomic(out/"promotion.json",{str(hp):len(families) for hp,families in promoted.items()})
@@ -180,6 +184,7 @@ def main():
     cli.add_argument("--target",type=int)
     cli.add_argument("--reference",type=Path)
     cli.add_argument("--gate",type=Path)
+    cli.add_argument("--night-history",action="store_true")
     a=cli.parse_args()
     if a.gate and read(a.gate)["passed"] is not True:
         return 3
@@ -210,11 +215,13 @@ def main():
             raise ValueError("Only the complex development partition may run automatically")
         spec=spec|{"jobs":spec["jobs"][:a.count]}
     else:
-        spec=production(out,a.generation,a.count,a.previous,bool(a.budget))
+        spec=production(out,a.generation,a.count,a.previous,bool(a.budget),a.night_history)
     path=out/"roots.json"
     frozen(path,spec)
     battle,model=deploy(a.checkpoint,a.budget)
     host=Host(out,ROOT/"logs/m1-sv4a-host",CFG)
+    compact=BatchCounts() if a.mode=="produce" and a.night_history else None
+    options={"compact":compact} if compact else {}
     started=perf_counter()
     done,complete=0,0
     ledger_path=out/"ledger/results.sqlite"
@@ -222,7 +229,7 @@ def main():
     try:
         if ledger_path.exists():
             result=battle(host,path,out/"ledger",CFG,*model,
-                          epsilon=.05 if a.mode=="produce" else 0.,max_new=0)
+                          epsilon=.05 if a.mode=="produce" else 0.,max_new=0,**options)
             if result:
                 done=result["attempts"]
                 complete=result["complete"]
@@ -238,10 +245,12 @@ def main():
             if stopped():
                 return 75
             result=battle(host,path,out/"ledger",CFG,*model,
-                          epsilon=.05 if a.mode=="produce" else 0.,max_new=a.chunk)
+                          epsilon=.05 if a.mode=="produce" else 0.,max_new=min(a.chunk,target-complete) if a.target and a.night_history else a.chunk,**options)
             done=result["attempts"]
             complete=result["complete"]
             publish()
+            if compact and (result["status"].get("error",0) or result["counts"].get("terminal_mismatch",0)):
+                raise ValueError("Night ledger contains an execution or terminal mismatch")
         if a.mode != "produce":
             rows=list(ledger(out/"ledger").values())
             write_json(out/"metrics.json",{str(hp):describe(r for r in rows if r["root"]["max_hp"]==hp)
@@ -249,6 +258,8 @@ def main():
         return 3 if a.target and complete<a.target else 0
     finally:
         host.close()
+        if compact:
+            compact.close(out/"ledger")
 
 
 if __name__=="__main__":

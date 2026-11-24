@@ -20,10 +20,12 @@ CONFIGS = ROOT / "configs/training_jobs"
 DC1 = ROOT / "logs/m1-dc1-formal"
 INITIAL = "dc2b-initial"
 CURRICULUM = "dc2b-curriculum"
+NIGHT = "dc2b-night1"
 SETTABLE = ("idle_seconds", "min_disk_mb", "min_ram_mb", "min_vram_mb", "resource_samples", "require_ac")
 NAMES = {
     INITIAL: ("DC2B 初始训练", "从 D2 迁移价值网络，完成原开发集退化检查及复杂构筑对照。"),
     CURRICULUM: ("DC2B 课程训练", "最多三代，逐代生产经验、构建特征、训练并运行开发评测。"),
+    NIGHT: ("DC2B 八小时夜间训练", "八小时总计算预算，最多十二代；逐代审计并保留可恢复体验。"),
     "sts2-smoke": ("STS2 小规模验收", "运行有限经验生产、特征构建、续训和开发评测。"),
     "inf2-smoke": ("INF2 面板验收", "隔离运行 80 次 CUDA 更新和 8 个开发根。"),
 }
@@ -93,7 +95,7 @@ class Backend:
     def plans(self, manager):
         items = []
         files = sorted(self.templates.glob("*.json"), key=lambda p: (
-            [INITIAL, CURRICULUM].index(p.stem) if p.stem in (INITIAL, CURRICULUM) else 2, p.name))
+            [INITIAL, CURRICULUM, NIGHT].index(p.stem) if p.stem in (INITIAL, CURRICULUM, NIGHT) else 3, p.name))
         for path in files:
             contained(self.templates, path)
             spec = read(path, {})
@@ -101,7 +103,7 @@ class Backend:
                 continue
             if path.stem != spec["id"]:
                 continue
-            if self.home != HOME and spec["id"] in (INITIAL, CURRICULUM):
+            if self.home != HOME and spec["id"] in (INITIAL, CURRICULUM, NIGHT):
                 continue
             if self.home != HOME:
                 spec = spec | {"output": (self.home / "jobs" / identifier(spec["id"])).relative_to(ROOT).as_posix()}
@@ -121,7 +123,7 @@ class Backend:
             reasons.append("任务 ID 已提交")
         elif output.exists():
             reasons.append("输出目录已经存在，请保留原实验资产")
-        if key == CURRICULUM:
+        if key in (CURRICULUM, NIGHT):
             blocked = review_gate(manager)
             if blocked:
                 reasons.append(blocked)
