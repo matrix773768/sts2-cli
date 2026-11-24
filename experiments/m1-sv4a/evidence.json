@@ -1,0 +1,2101 @@
+{
+  "arms": {
+    "A2": {
+      "budget": 0,
+      "condition": null,
+      "weight": null
+    },
+    "D0": {
+      "budget": 0,
+      "condition": "nosl3c.hp-loss-actor-critic.v4|180b1141d52fe836d5b7770c90c7be193c1c9a8b86bfd7e152274f2e8cd540a6|sample",
+      "weight": "3f60c9820379fa8417bf25554b92855754803e494f41851c721ea1f3d7e03dbf"
+    },
+    "D1": {
+      "budget": 0,
+      "condition": "sts2.sv4a.prediction_only.v1|ec8416da0498b1e100e123d15f969034db7d0dec4ded951565edf710c006e2d9|conditional",
+      "weight": "63facff1f27818adbbf209a8fb4e91ebe8760ee3cfcee1308f5466b4b8bc3e35"
+    },
+    "D2": {
+      "budget": 0,
+      "condition": "sts2.sv4a.prediction_only.v1|bdd5a26dd34043f229d485d22d9be72e7af3450f3bfa5b454f6c021fc3abf503|conditional",
+      "weight": "b0760e531e85490ff8ef5e12462fdca7c96d87aee0bf39f688e855817e8c2766"
+    },
+    "D2-A2": {
+      "budget": 0,
+      "condition": "nosl3c.hp-loss-actor-critic.v4|180b1141d52fe836d5b7770c90c7be193c1c9a8b86bfd7e152274f2e8cd540a6|sample",
+      "weight": "b0760e531e85490ff8ef5e12462fdca7c96d87aee0bf39f688e855817e8c2766"
+    },
+    "D2-search": {
+      "budget": 350,
+      "condition": "sts2.sv4a.prediction_only.v1|bdd5a26dd34043f229d485d22d9be72e7af3450f3bfa5b454f6c021fc3abf503|conditional",
+      "weight": "b0760e531e85490ff8ef5e12462fdca7c96d87aee0bf39f688e855817e8c2766"
+    },
+    "S0": {
+      "budget": 350,
+      "condition": "nosl3c.hp-loss-actor-critic.v4|180b1141d52fe836d5b7770c90c7be193c1c9a8b86bfd7e152274f2e8cd540a6|sample",
+      "weight": "3f60c9820379fa8417bf25554b92855754803e494f41851c721ea1f3d7e03dbf"
+    },
+    "S1": {
+      "budget": 350,
+      "condition": "sts2.sv4a.prediction_only.v1|ce21eec97a33eea8e67c698e636c64a76fa5e3f4f398df1a8dc99fa2d4ef94ec|conditional",
+      "weight": "3132ad16871918ea15155be7a9e0b0f9e1288a0fe04c78a328ee98d8a67e5f08"
+    },
+    "S2": {
+      "budget": 350,
+      "condition": "sts2.sv4a.prediction_only.v1|0655f73602b516ec737e354ece631b5620dc525d1fa99a430ba802a4cf597ce2|conditional",
+      "weight": "1d339ef1c45e7caef1c5d13a484d98462839c07182da9dac19bd6ea218251ba7"
+    },
+    "S2-A2": {
+      "budget": 0,
+      "condition": "nosl3c.hp-loss-actor-critic.v4|180b1141d52fe836d5b7770c90c7be193c1c9a8b86bfd7e152274f2e8cd540a6|sample",
+      "weight": "1d339ef1c45e7caef1c5d13a484d98462839c07182da9dac19bd6ea218251ba7"
+    },
+    "S2-direct": {
+      "budget": 0,
+      "condition": "sts2.sv4a.prediction_only.v1|0655f73602b516ec737e354ece631b5620dc525d1fa99a430ba802a4cf597ce2|conditional",
+      "weight": "1d339ef1c45e7caef1c5d13a484d98462839c07182da9dac19bd6ea218251ba7"
+    }
+  },
+  "base_commit": "20204548503051afb234a3581a6647964089e0f5",
+  "diagnostics": {
+    "cascade-A2": {
+      "ledger": {
+        "attempts": 1,
+        "behavior": "c54fc4fe216658d9ddad415bcce73ece75b0e13ecb6b00e9bd1a94f279bbfe12",
+        "database": {
+          "path": "logs/m1-sv4a-formal/diagnostics/cascade-A2/results.sqlite",
+          "sha256": "630bb77970fab027cf4b0c70275bbe59ca2ec756084a1751b91577390349afbd"
+        },
+        "identity": "a36b886b1523afe7a555515115c80124932581043d94b64aa0465a6467313448",
+        "outcomes": {
+          "death": 1
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/diagnostics/cascade-A2/summary.json",
+          "sha256": "e7fce142a507d146e92980b755c7b7c1ba7a97dba3722dd38c42e6d284ecddd5"
+        },
+        "wall_s": 3.6415848997421563
+      },
+      "rows": [
+        {
+          "actual_first": {
+            "card": 1,
+            "choice": null,
+            "choice_zone": null,
+            "cost": 3,
+            "energy_x": true,
+            "index": 1,
+            "kind": "play_card",
+            "potion": null,
+            "preview": null,
+            "star_cost": 0,
+            "star_x": false,
+            "target": null,
+            "target_side": null,
+            "target_type": "Self"
+          },
+          "counts": {},
+          "encounter": "OWL_MAGISTRATE_NORMAL",
+          "first_card": "CASCADE",
+          "first_search": null,
+          "initial_q": null,
+          "length": 89,
+          "ordinal": 63,
+          "status": "death",
+          "terminal": {
+            "block": 0,
+            "energy": 3,
+            "gold": 99,
+            "hp": 0,
+            "max_hp": 999,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "turn": 44
+          }
+        }
+      ]
+    },
+    "cascade-D0": {
+      "ledger": {
+        "attempts": 1,
+        "behavior": "7d5d5a236c5d45f47502335cdd4977c2da28610a01ede4afa0c16d50dd72f95a",
+        "database": {
+          "path": "logs/m1-sv4a-formal/diagnostics/cascade-D0/results.sqlite",
+          "sha256": "ffc30ca31c994313202771e5112fc45a272473f358b61b803aaf80b846dec4e8"
+        },
+        "identity": "9669efd83bbc648e6518fc1fb0972e7a35f99659c5d8ad1b0c7c3c75172fd7e8",
+        "outcomes": {
+          "death": 1
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/diagnostics/cascade-D0/summary.json",
+          "sha256": "57bcde67c4f51dd65c14ea2bdbb126f11ffef5ac106bcd31ba96936eed2b5d59"
+        },
+        "wall_s": 6.329008799977601
+      },
+      "rows": [
+        {
+          "actual_first": {
+            "card": 1,
+            "choice": null,
+            "choice_zone": null,
+            "cost": 3,
+            "energy_x": true,
+            "index": 1,
+            "kind": "play_card",
+            "potion": null,
+            "preview": null,
+            "star_cost": 0,
+            "star_x": false,
+            "target": null,
+            "target_side": null,
+            "target_type": "Self"
+          },
+          "counts": {
+            "evaluated_states": 155,
+            "scoring_requests": 155
+          },
+          "encounter": "OWL_MAGISTRATE_NORMAL",
+          "first_card": "CASCADE",
+          "first_search": null,
+          "initial_q": {
+            "death_probability": 0.001920883310958743,
+            "direct_index": 1,
+            "executed_index": 1,
+            "utility": 1.2175263166427612
+          },
+          "length": 155,
+          "ordinal": 63,
+          "status": "death",
+          "terminal": {
+            "block": 0,
+            "energy": 0,
+            "gold": 99,
+            "hp": 0,
+            "max_hp": 999,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "turn": 38
+          }
+        }
+      ]
+    },
+    "cascade-D2": {
+      "ledger": {
+        "attempts": 1,
+        "behavior": "92e58b1ddb821eb8964bdf5bc7661bc759787d1ae641467c00de65fbe7c0ab2e",
+        "database": {
+          "path": "logs/m1-sv4a-formal/diagnostics/cascade-D2/results.sqlite",
+          "sha256": "f78bab8a5d326bd531d152f7389972dd826ca891edd953dbdf2fa2022d009f79"
+        },
+        "identity": "2b128da66a5cc6789cb0088f1096bd02e072485ec4df71c20d435bd3bc187b76",
+        "outcomes": {
+          "death": 1
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/diagnostics/cascade-D2/summary.json",
+          "sha256": "6130f2753ab02836479bc3e6d710aa2b9c160aeaa571b30fcd4668925cf4fc9b"
+        },
+        "wall_s": 4.357778899837285
+      },
+      "rows": [
+        {
+          "actual_first": {
+            "card": 1,
+            "choice": null,
+            "choice_zone": null,
+            "cost": 3,
+            "energy_x": true,
+            "index": 1,
+            "kind": "play_card",
+            "potion": null,
+            "preview": null,
+            "star_cost": 0,
+            "star_x": false,
+            "target": null,
+            "target_side": null,
+            "target_type": "Self"
+          },
+          "counts": {
+            "evaluated_states": 86,
+            "scoring_requests": 86
+          },
+          "encounter": "OWL_MAGISTRATE_NORMAL",
+          "first_card": "CASCADE",
+          "first_search": null,
+          "initial_q": {
+            "death_probability": 0.0021013813093304634,
+            "direct_index": 1,
+            "executed_index": 1,
+            "utility": 1.2235331535339355
+          },
+          "length": 86,
+          "ordinal": 63,
+          "status": "death",
+          "terminal": {
+            "block": 0,
+            "energy": 0,
+            "gold": 99,
+            "hp": 0,
+            "max_hp": 999,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "turn": 38
+          }
+        }
+      ]
+    },
+    "cascade-S0": {
+      "ledger": {
+        "attempts": 1,
+        "behavior": "1a737772daeb559d3f919ac9779d63a092c513e32c99a615defc9d5a6c9aeeca",
+        "database": {
+          "path": "logs/m1-sv4a-formal/diagnostics/cascade-S0/results.sqlite",
+          "sha256": "38fbd3bd0c07847e9f0c1d95260cd943dd83f1016e129d984241d4d43e4c580c"
+        },
+        "identity": "d9975c4333e1217cb55e56103e167206ee35da1f6c0b32db1cbed916bfc16098",
+        "outcomes": {
+          "predicted_win": 1
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/diagnostics/cascade-S0/summary.json",
+          "sha256": "1f3fc5638f5e8ccf7e004ffea9bb9081ddf50a1a98cdca241b5cde4b8e43421e"
+        },
+        "wall_s": 3.730321600101888
+      },
+      "rows": [
+        {
+          "actual_first": {
+            "card": 1,
+            "choice": null,
+            "choice_zone": null,
+            "cost": 3,
+            "energy_x": true,
+            "index": 1,
+            "kind": "play_card",
+            "potion": null,
+            "preview": null,
+            "star_cost": 0,
+            "star_x": false,
+            "target": null,
+            "target_side": null,
+            "target_type": "Self"
+          },
+          "counts": {
+            "boundaries": 840,
+            "boundary_end_play_a": 305,
+            "boundary_random": 528,
+            "boundary_victory": 7,
+            "direct_stop": 14,
+            "evaluated_states": 113,
+            "executed_plan_steps": 15,
+            "executed_random_trigger": 5,
+            "fallback_pending_choice": 4,
+            "nodes": 1172,
+            "planned_actions": 15,
+            "plans": 6,
+            "replan_after_random": 5,
+            "scoring_requests": 24,
+            "searches": 20,
+            "stop_exhausted": 20,
+            "terminal_verified": 1,
+            "transitions": 923,
+            "unscored_choice_or_unverified_path": 521
+          },
+          "encounter": "OWL_MAGISTRATE_NORMAL",
+          "first_card": "CASCADE",
+          "first_search": {
+            "by_first": {
+              "0": 1.2122430801391602,
+              "1": 1.2175261974334717,
+              "2": 1.217484712600708,
+              "3": 1.2144131660461426,
+              "4": 1.2166895866394043,
+              "5": 1.2027233839035034
+            },
+            "direct": 1,
+            "direct_value": 1.2175261974334717,
+            "nodes": 30,
+            "position": 0,
+            "scored": 25,
+            "states": 5,
+            "stop": "exhausted",
+            "transitions": 24,
+            "unscored": {}
+          },
+          "initial_q": {
+            "death_probability": 0.001920883310958743,
+            "direct_index": 1,
+            "executed_index": 1,
+            "utility": 1.2175263166427612
+          },
+          "length": 33,
+          "ordinal": 63,
+          "status": "predicted_win",
+          "terminal": {
+            "block": 0,
+            "energy": 0,
+            "gold": 99,
+            "hp": 880,
+            "max_hp": 999,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "turn": 6
+          }
+        }
+      ]
+    },
+    "cascade-S2": {
+      "ledger": {
+        "attempts": 1,
+        "behavior": "136dda8a707ccd09d634817e315ed1e5ac7d70c805efb9b6159c2bda59285788",
+        "database": {
+          "path": "logs/m1-sv4a-formal/diagnostics/cascade-S2/results.sqlite",
+          "sha256": "2bc9f69cea15188c11d8450fdea7fb7ce5e999c5ff00737d00771d9f1c17e648"
+        },
+        "identity": "65698d0431e518db85046822f573e23d8fc3833b8662829d14d62d0ed1513cd9",
+        "outcomes": {
+          "predicted_win": 1
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/diagnostics/cascade-S2/summary.json",
+          "sha256": "31d328d20bc284bb538b32b766a79d073976ff358f5b273c68d3d3baf09c79b0"
+        },
+        "wall_s": 4.662397400010377
+      },
+      "rows": [
+        {
+          "actual_first": {
+            "card": 1,
+            "choice": null,
+            "choice_zone": null,
+            "cost": 3,
+            "energy_x": true,
+            "index": 1,
+            "kind": "play_card",
+            "potion": null,
+            "preview": null,
+            "star_cost": 0,
+            "star_x": false,
+            "target": null,
+            "target_side": null,
+            "target_type": "Self"
+          },
+          "counts": {
+            "boundaries": 1063,
+            "boundary_budget": 9,
+            "boundary_end_play_a": 361,
+            "boundary_random": 675,
+            "boundary_victory": 18,
+            "direct_stop": 15,
+            "evaluated_states": 129,
+            "executed_plan_steps": 18,
+            "executed_random_trigger": 6,
+            "fallback_pending_choice": 4,
+            "nodes": 1460,
+            "planned_actions": 18,
+            "plans": 7,
+            "replan_after_random": 6,
+            "scoring_requests": 26,
+            "searches": 22,
+            "stop_exhausted": 21,
+            "stop_transition_cap": 1,
+            "terminal_verified": 1,
+            "transitions": 1161,
+            "unscored_budget": 9,
+            "unscored_choice_or_unverified_path": 665
+          },
+          "encounter": "OWL_MAGISTRATE_NORMAL",
+          "first_card": "CASCADE",
+          "first_search": {
+            "by_first": {
+              "0": 1.2237370014190674,
+              "1": 1.2247928380966187,
+              "2": 1.224460244178772,
+              "3": 1.224489450454712,
+              "4": 1.2243239879608154,
+              "5": 1.2176454067230225
+            },
+            "direct": 1,
+            "direct_value": 1.2247928380966187,
+            "nodes": 30,
+            "position": 0,
+            "scored": 25,
+            "states": 5,
+            "stop": "exhausted",
+            "transitions": 24,
+            "unscored": {}
+          },
+          "initial_q": {
+            "death_probability": 0.0010190506000071764,
+            "direct_index": 1,
+            "executed_index": 1,
+            "utility": 1.2247928380966187
+          },
+          "length": 37,
+          "ordinal": 63,
+          "status": "predicted_win",
+          "terminal": {
+            "block": 0,
+            "energy": 2,
+            "gold": 99,
+            "hp": 872,
+            "max_hp": 999,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "turn": 6
+          }
+        }
+      ]
+    },
+    "endturn-D0": {
+      "ledger": {
+        "attempts": 1,
+        "behavior": "8cd7610375aaf04c180ba546628b3b2da172c4db09710262a3ced0da827b6cf2",
+        "database": {
+          "path": "logs/m1-sv4a-formal/diagnostics/endturn-D0/results.sqlite",
+          "sha256": "86a11799f3935be7dcc00bfaa458ecfc776f9dc83ba6c519e5ae41842e5c6e6d"
+        },
+        "identity": "1ff3c2d2706487e2d69a4b0fd4f089780384d7862034b81a6a8e514a173eee23",
+        "outcomes": {
+          "predicted_win": 1
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/diagnostics/endturn-D0/summary.json",
+          "sha256": "1863de1ee6807fd8ccae0cf6e4615dfd02e313891cffc29cbd77d7431856475c"
+        },
+        "wall_s": 3.1425600997172296
+      },
+      "rows": [
+        {
+          "actual_first": {
+            "card": null,
+            "choice": null,
+            "choice_zone": null,
+            "cost": null,
+            "energy_x": false,
+            "index": 5,
+            "kind": "end_turn",
+            "potion": null,
+            "preview": null,
+            "star_cost": null,
+            "star_x": false,
+            "target": null,
+            "target_side": null,
+            "target_type": null
+          },
+          "counts": {
+            "evaluated_states": 19,
+            "scoring_requests": 19
+          },
+          "encounter": "OWL_MAGISTRATE_NORMAL",
+          "first_card": null,
+          "first_search": null,
+          "initial_q": {
+            "death_probability": 0.004677893128246069,
+            "direct_index": 1,
+            "executed_index": 5,
+            "utility": 1.2027231454849243
+          },
+          "length": 19,
+          "ordinal": 63,
+          "status": "predicted_win",
+          "terminal": {
+            "block": 0,
+            "energy": 0,
+            "gold": 99,
+            "hp": 931,
+            "max_hp": 999,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "turn": 5
+          }
+        }
+      ]
+    },
+    "long-D0": {
+      "ledger": {
+        "attempts": 2,
+        "behavior": "535ee7587437f3ea6da72a6efaa024941d1e052962814e3d783be03d1f90b8a7",
+        "database": {
+          "path": "logs/m1-sv4a-formal/diagnostics/long-D0/results.sqlite",
+          "sha256": "cfa268ba34c6a7f1765f61ab14ad050de5fe414a02d263edc3aa91434dbd83e4"
+        },
+        "identity": "b56f4182ed42f927c25cb52d772cfc2eed333b0cd74962900c55a283c429ea2e",
+        "outcomes": {
+          "truncated": 2
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/diagnostics/long-D0/summary.json",
+          "sha256": "4c4ddfcf11e95a15a7262da5f54c9a71ed9cd0731d9afb31a4333a67c1d00fd9"
+        },
+        "wall_s": 7.108250799588859
+      },
+      "rows": [
+        {
+          "actual_first": {
+            "card": 1,
+            "choice": null,
+            "choice_zone": null,
+            "cost": 1,
+            "energy_x": false,
+            "index": 1,
+            "kind": "play_card",
+            "potion": null,
+            "preview": null,
+            "star_cost": 0,
+            "star_x": false,
+            "target": null,
+            "target_side": null,
+            "target_type": "Self"
+          },
+          "counts": {
+            "evaluated_states": 256,
+            "scoring_requests": 256
+          },
+          "encounter": "WATERFALL_GIANT_BOSS",
+          "first_card": "HAVOC",
+          "first_search": null,
+          "initial_q": {
+            "death_probability": 0.06547661870718002,
+            "direct_index": 1,
+            "executed_index": 1,
+            "utility": 1.0638970136642456
+          },
+          "length": 256,
+          "ordinal": 48,
+          "status": "truncated",
+          "terminal": null
+        },
+        {
+          "actual_first": {
+            "card": 4,
+            "choice": null,
+            "choice_zone": null,
+            "cost": 1,
+            "energy_x": false,
+            "index": 5,
+            "kind": "play_card",
+            "potion": null,
+            "preview": null,
+            "star_cost": 0,
+            "star_x": false,
+            "target": null,
+            "target_side": null,
+            "target_type": "Self"
+          },
+          "counts": {
+            "evaluated_states": 256,
+            "scoring_requests": 256
+          },
+          "encounter": "SNAPPING_JAXFRUIT_NORMAL",
+          "first_card": "CRIMSON_MANTLE",
+          "first_search": null,
+          "initial_q": {
+            "death_probability": 0.003083147807046771,
+            "direct_index": 5,
+            "executed_index": 5,
+            "utility": 1.1904687881469727
+          },
+          "length": 256,
+          "ordinal": 268,
+          "status": "truncated",
+          "terminal": null
+        }
+      ]
+    },
+    "long-D2": {
+      "ledger": {
+        "attempts": 2,
+        "behavior": "d851441b0085c0ebb6a25554f5f6f35024d5f74e2b1c33ed9cd9626085a1bf50",
+        "database": {
+          "path": "logs/m1-sv4a-formal/diagnostics/long-D2/results.sqlite",
+          "sha256": "d186e13423a85386340962de7af6162cff5409ae4404420101c6f0c571dfdaeb"
+        },
+        "identity": "1cb4263f5e66e6227aae414e213594865f5828f6ae755c39084636b353243fb7",
+        "outcomes": {
+          "predicted_win": 1,
+          "truncated": 1
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/diagnostics/long-D2/summary.json",
+          "sha256": "0e402a1114bcec00dc3f1b1a99431919884b12b824c592b09e9a3a9ce127e54e"
+        },
+        "wall_s": 7.166514599695802
+      },
+      "rows": [
+        {
+          "actual_first": {
+            "card": 1,
+            "choice": null,
+            "choice_zone": null,
+            "cost": 1,
+            "energy_x": false,
+            "index": 1,
+            "kind": "play_card",
+            "potion": null,
+            "preview": null,
+            "star_cost": 0,
+            "star_x": false,
+            "target": null,
+            "target_side": null,
+            "target_type": "Self"
+          },
+          "counts": {
+            "evaluated_states": 174,
+            "scoring_requests": 174
+          },
+          "encounter": "WATERFALL_GIANT_BOSS",
+          "first_card": "HAVOC",
+          "first_search": null,
+          "initial_q": {
+            "death_probability": 0.04222872108221054,
+            "direct_index": 1,
+            "executed_index": 1,
+            "utility": 1.1259829998016357
+          },
+          "length": 174,
+          "ordinal": 48,
+          "status": "predicted_win",
+          "terminal": {
+            "block": 0,
+            "energy": 1,
+            "gold": 99,
+            "hp": 641,
+            "max_hp": 999,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "turn": 43
+          }
+        },
+        {
+          "actual_first": {
+            "card": 4,
+            "choice": null,
+            "choice_zone": null,
+            "cost": 1,
+            "energy_x": false,
+            "index": 5,
+            "kind": "play_card",
+            "potion": null,
+            "preview": null,
+            "star_cost": 0,
+            "star_x": false,
+            "target": null,
+            "target_side": null,
+            "target_type": "Self"
+          },
+          "counts": {
+            "evaluated_states": 256,
+            "scoring_requests": 256
+          },
+          "encounter": "SNAPPING_JAXFRUIT_NORMAL",
+          "first_card": "CRIMSON_MANTLE",
+          "first_search": null,
+          "initial_q": {
+            "death_probability": 0.0017696249997243285,
+            "direct_index": 5,
+            "executed_index": 5,
+            "utility": 1.2073822021484375
+          },
+          "length": 256,
+          "ordinal": 268,
+          "status": "truncated",
+          "terminal": null
+        }
+      ]
+    },
+    "long-S0": {
+      "ledger": {
+        "attempts": 2,
+        "behavior": "c76e9fad43209ffb457cb34bc3b8ffa02e67bd5f25d258f1d9991a55ff966051",
+        "database": {
+          "path": "logs/m1-sv4a-formal/diagnostics/long-S0/results.sqlite",
+          "sha256": "c40c72b316bc850d7063ce76b773c74b1b108a2e4e59ac4495c24b931820626e"
+        },
+        "identity": "c1453f5d340d5e1b50628e79ef262c1465bba698e5db7b0eeaf0c4f274787923",
+        "outcomes": {
+          "death": 1,
+          "predicted_win": 1
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/diagnostics/long-S0/summary.json",
+          "sha256": "c0f57eefaf581009deb38be14072fe496a484b695f5372309c96f98abccaf251"
+        },
+        "wall_s": 5.816477099899203
+      },
+      "rows": [
+        {
+          "actual_first": {
+            "card": 1,
+            "choice": null,
+            "choice_zone": null,
+            "cost": 1,
+            "energy_x": false,
+            "index": 1,
+            "kind": "play_card",
+            "potion": null,
+            "preview": null,
+            "star_cost": 0,
+            "star_x": false,
+            "target": null,
+            "target_side": null,
+            "target_type": "Self"
+          },
+          "counts": {
+            "boundaries": 639,
+            "boundary_death": 3,
+            "boundary_end_play_a": 290,
+            "boundary_random": 346,
+            "direct_stop": 174,
+            "evaluated_states": 282,
+            "executed_plan_steps": 8,
+            "executed_random_trigger": 4,
+            "nodes": 932,
+            "planned_actions": 8,
+            "plans": 4,
+            "replan_after_random": 4,
+            "scoring_requests": 178,
+            "searches": 178,
+            "stop_exhausted": 178,
+            "transitions": 470,
+            "unscored_choice_or_unverified_path": 30
+          },
+          "encounter": "WATERFALL_GIANT_BOSS",
+          "first_card": "HAVOC",
+          "first_search": {
+            "by_first": {
+              "0": 1.0462613105773926,
+              "1": 1.0638971328735352,
+              "2": 1.0274877548217773,
+              "3": 0.8424271941184998,
+              "4": 1.0638971328735352,
+              "5": 0.8833155632019043
+            },
+            "direct": 1,
+            "direct_value": 1.0638971328735352,
+            "nodes": 14,
+            "position": 0,
+            "scored": 12,
+            "states": 2,
+            "stop": "exhausted",
+            "transitions": 11,
+            "unscored": {}
+          },
+          "initial_q": {
+            "death_probability": 0.06547661870718002,
+            "direct_index": 1,
+            "executed_index": 1,
+            "utility": 1.0638970136642456
+          },
+          "length": 182,
+          "ordinal": 48,
+          "status": "death",
+          "terminal": {
+            "block": 0,
+            "energy": 3,
+            "gold": 99,
+            "hp": 0,
+            "max_hp": 999,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "turn": 85
+          }
+        },
+        {
+          "actual_first": {
+            "card": 4,
+            "choice": null,
+            "choice_zone": null,
+            "cost": 1,
+            "energy_x": false,
+            "index": 5,
+            "kind": "play_card",
+            "potion": null,
+            "preview": null,
+            "star_cost": 0,
+            "star_x": false,
+            "target": null,
+            "target_side": null,
+            "target_type": "Self"
+          },
+          "counts": {
+            "boundaries": 313,
+            "boundary_end_play_a": 115,
+            "boundary_random": 191,
+            "boundary_victory": 7,
+            "direct_stop": 5,
+            "evaluated_states": 115,
+            "executed_plan_steps": 9,
+            "executed_random_trigger": 2,
+            "nodes": 428,
+            "planned_actions": 9,
+            "plans": 3,
+            "replan_after_random": 2,
+            "scoring_requests": 8,
+            "searches": 8,
+            "stop_exhausted": 8,
+            "terminal_verified": 1,
+            "transitions": 305
+          },
+          "encounter": "SNAPPING_JAXFRUIT_NORMAL",
+          "first_card": "CRIMSON_MANTLE",
+          "first_search": {
+            "by_first": {
+              "0": 1.1747124195098877,
+              "1": 1.1737635135650635,
+              "2": 1.17266845703125,
+              "3": 1.1781469583511353,
+              "4": 1.1591724157333374,
+              "5": 1.176307201385498,
+              "6": 1.1541593074798584
+            },
+            "direct": 5,
+            "direct_value": 1.1904687881469727,
+            "nodes": 75,
+            "position": 0,
+            "scored": 50,
+            "states": 25,
+            "stop": "exhausted",
+            "transitions": 49,
+            "unscored": {}
+          },
+          "initial_q": {
+            "death_probability": 0.003083147807046771,
+            "direct_index": 5,
+            "executed_index": 5,
+            "utility": 1.1904687881469727
+          },
+          "length": 14,
+          "ordinal": 268,
+          "status": "predicted_win",
+          "terminal": {
+            "block": 10,
+            "energy": 1,
+            "gold": 99,
+            "hp": 142,
+            "max_hp": 160,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "turn": 4
+          }
+        }
+      ]
+    },
+    "long-S2": {
+      "ledger": {
+        "attempts": 2,
+        "behavior": "f3a680259b6ed4fb3ec5732c9f7603fb2a7d4497d98c167446a1bb796340413e",
+        "database": {
+          "path": "logs/m1-sv4a-formal/diagnostics/long-S2/results.sqlite",
+          "sha256": "c8cae4c7afa7e7cd430380674acb23d9f6b5f915a5af8c3228958fdf8217151e"
+        },
+        "identity": "5c92d0b044807469f2d8f88ac4cc1748020a833efa26c7b05a703da2fbb94133",
+        "outcomes": {
+          "death": 1,
+          "predicted_win": 1
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/diagnostics/long-S2/summary.json",
+          "sha256": "d5558a5b05303d9e93b1bb1490348c128e60564ab16ca7f3bef8ca9298acd589"
+        },
+        "wall_s": 5.902124299667776
+      },
+      "rows": [
+        {
+          "actual_first": {
+            "card": 1,
+            "choice": null,
+            "choice_zone": null,
+            "cost": 1,
+            "energy_x": false,
+            "index": 1,
+            "kind": "play_card",
+            "potion": null,
+            "preview": null,
+            "star_cost": 0,
+            "star_x": false,
+            "target": null,
+            "target_side": null,
+            "target_type": "Self"
+          },
+          "counts": {
+            "boundaries": 616,
+            "boundary_death": 3,
+            "boundary_end_play_a": 281,
+            "boundary_random": 332,
+            "direct_stop": 173,
+            "evaluated_states": 277,
+            "executed_plan_steps": 10,
+            "executed_random_trigger": 4,
+            "nodes": 898,
+            "planned_actions": 10,
+            "plans": 4,
+            "replan_after_random": 4,
+            "scoring_requests": 177,
+            "searches": 177,
+            "stop_exhausted": 177,
+            "transitions": 442,
+            "unscored_choice_or_unverified_path": 12
+          },
+          "encounter": "WATERFALL_GIANT_BOSS",
+          "first_card": "HAVOC",
+          "first_search": {
+            "by_first": {
+              "0": 1.1354827880859375,
+              "1": 1.1455508470535278,
+              "2": 1.1294958591461182,
+              "3": 1.0657567977905273,
+              "4": 1.1455508470535278,
+              "5": 1.066675066947937
+            },
+            "direct": 1,
+            "direct_value": 1.1455508470535278,
+            "nodes": 14,
+            "position": 0,
+            "scored": 12,
+            "states": 2,
+            "stop": "exhausted",
+            "transitions": 11,
+            "unscored": {}
+          },
+          "initial_q": {
+            "death_probability": 0.0332222655415535,
+            "direct_index": 1,
+            "executed_index": 1,
+            "utility": 1.1455509662628174
+          },
+          "length": 183,
+          "ordinal": 48,
+          "status": "death",
+          "terminal": {
+            "block": 0,
+            "energy": 3,
+            "gold": 99,
+            "hp": 0,
+            "max_hp": 999,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "turn": 85
+          }
+        },
+        {
+          "actual_first": {
+            "card": 1,
+            "choice": null,
+            "choice_zone": null,
+            "cost": 2,
+            "energy_x": false,
+            "index": 1,
+            "kind": "play_card",
+            "potion": null,
+            "preview": null,
+            "star_cost": 0,
+            "star_x": false,
+            "target": 0,
+            "target_side": "enemy",
+            "target_type": "AnyEnemy"
+          },
+          "counts": {
+            "boundaries": 762,
+            "boundary_budget": 10,
+            "boundary_end_play_a": 267,
+            "boundary_random": 485,
+            "direct_stop": 7,
+            "evaluated_states": 268,
+            "executed_plan_steps": 12,
+            "executed_random_trigger": 4,
+            "nodes": 1033,
+            "planned_actions": 12,
+            "plans": 4,
+            "replan_after_random": 3,
+            "scoring_requests": 11,
+            "searches": 11,
+            "stop_exhausted": 10,
+            "stop_transition_cap": 1,
+            "transitions": 745,
+            "unscored_budget": 10
+          },
+          "encounter": "SNAPPING_JAXFRUIT_NORMAL",
+          "first_card": "FIEND_FIRE",
+          "first_search": {
+            "by_first": {
+              "0": 1.1954470872879028,
+              "1": 1.1891283988952637,
+              "2": 1.1881921291351318,
+              "3": 1.1954470872879028,
+              "4": 1.1849958896636963,
+              "5": 1.1954470872879028,
+              "6": 1.19072687625885
+            },
+            "direct": 1,
+            "direct_value": 1.2135370969772339,
+            "nodes": 75,
+            "position": 0,
+            "scored": 50,
+            "states": 25,
+            "stop": "exhausted",
+            "transitions": 49,
+            "unscored": {}
+          },
+          "initial_q": {
+            "death_probability": 0.0015437344554811716,
+            "direct_index": 1,
+            "executed_index": 1,
+            "utility": 1.2135369777679443
+          },
+          "length": 19,
+          "ordinal": 268,
+          "status": "predicted_win",
+          "terminal": {
+            "block": 0,
+            "energy": 3,
+            "gold": 99,
+            "hp": 133,
+            "max_hp": 160,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "turn": 5
+          }
+        }
+      ]
+    }
+  },
+  "files": {
+    "ancestor.json": {
+      "path": "logs/m1-sv4a-formal/ancestor.json",
+      "sha256": "e6a632fd45d8c4539a4d89a05d4eae602f1129c9717e2badbe23d23e674841b2"
+    },
+    "candidate-lock.json": {
+      "path": "logs/m1-sv4a-formal/candidate-lock.json",
+      "sha256": "05d20850d1c12f41c56992d26083e722f60c1a5a674ea8e4092050369dde10f1"
+    },
+    "checks/summary.json": {
+      "path": "logs/m1-sv4a-formal/checks/summary.json",
+      "sha256": "cb977979cf564f54931577dea1675b1e094b473bab90231df318ae691a188da5"
+    },
+    "diagnostics/long.json": {
+      "path": "logs/m1-sv4a-formal/diagnostics/long.json",
+      "sha256": "115a798331ff3914f7b17b191db378d2ae56d3b2648a520297f00813699cfca6"
+    },
+    "diagnostics/owl.json": {
+      "path": "logs/m1-sv4a-formal/diagnostics/owl.json",
+      "sha256": "bde5c483a05f617d3d7cec1a9050fb970e258489457c9057217d4883a3c4934f"
+    },
+    "models/D1/epoch-1-summary.json": {
+      "path": "logs/m1-sv4a-formal/models/D1/epoch-1-summary.json",
+      "sha256": "8f964ff30b05f553e40ba6fa3cf43b2e7535e992ad95c651e89ec918fd5831fd"
+    },
+    "models/D1/interruption-proof.json": {
+      "path": "logs/m1-sv4a-formal/models/D1/interruption-proof.json",
+      "sha256": "14d1bdf4a2132e9fdc623e95d03d7481842ebb42383509c02cd8c16c19c32891"
+    },
+    "paired.json": {
+      "path": "logs/m1-sv4a-formal/paired.json",
+      "sha256": "a5a10213e39c77642dd08be10c047991f3b852c05d81cb4b90a33c17a6a2edc2"
+    },
+    "roots/identity.json": {
+      "path": "logs/m1-sv4a-formal/roots/identity.json",
+      "sha256": "284f6000de40814fd12214700a9f85f955e4673bbcf1976e4b8f4254db837616"
+    },
+    "selection.json": {
+      "path": "logs/m1-sv4a-formal/selection.json",
+      "sha256": "504b77a041b9397842874deb5517dba167b08753949646a0b291686a84f39062"
+    },
+    "support.json": {
+      "path": "logs/m1-sv4a-formal/support.json",
+      "sha256": "09ba196812e07b2c753b7e6833cdacc4301fdcbfb21a2e370f406b1edae50c5e"
+    }
+  },
+  "game": "0.113.1 (26660232)",
+  "generations": {
+    "D1": {
+      "complete": 5181,
+      "definition": {
+        "budget": 0,
+        "continuation": "nosl3c.hp-loss-actor-critic.v4|180b1141d52fe836d5b7770c90c7be193c1c9a8b86bfd7e152274f2e8cd540a6|sample",
+        "depth": null,
+        "direct_stop_margin": 0.0,
+        "exploration": "uniform-legal-mixture:0.05",
+        "fallback": "all-legal-direct-q",
+        "host": {
+          "base_solver": "b4db8cae5abada95a3a51caac31bbae9f356fb553949b3c7d4b14ea10d181c53",
+          "coreclr": "9.0.7",
+          "game": "0.113.1/26660232",
+          "overlay": {
+            "host/Headless/bin/Debug/net9.0/GodotSharp.dll": "14f526fd15ed0f3d4e16678820c923224fb8255589898b06038956249c0bc116",
+            "host/Headless/bin/Debug/net9.0/OfflineSearchHarness.dll": "93efe74a4e9b0c8154d1ac08e13f41961f45b4f495a4f0fea389021a3ced2c46",
+            "solver-bin/CombatSolver.dll": "27d64e73780fc60c5bc3d270d2070e35a8c96ed35297e240af3c31ed18479739"
+          },
+          "probe": {
+            "SearchProbe.cs": "cd9b9b67948a227389d0848f8ad815ecbbb9fdd6a064a1bc19169b8221184a19",
+            "TurnGraph.cs": "247508edbd7063381dae4ae6f9fb2c7976e2c32e5896b5846001193132e5af96"
+          }
+        },
+        "model": "3f60c9820379fa8417bf25554b92855754803e494f41851c721ea1f3d7e03dbf",
+        "sampling": "stable-argmax-with-exact-epsilon-conditional-probability",
+        "search": null,
+        "utility": "death=-1;win=1+.25*hp/terminal_max",
+        "version": "sts2.sv4a.loop.v1",
+        "wall_ms": null
+      },
+      "experience": {
+        "attempts": 5184,
+        "behavior": "ec8416da0498b1e100e123d15f969034db7d0dec4ded951565edf710c006e2d9",
+        "database": {
+          "path": "logs/m1-sv4a-formal/experience/D1/results.sqlite",
+          "sha256": "43bf18c7665ebc9a79fb18b6ae31bb41533964c61b09702cb326302b2cda231e"
+        },
+        "identity": "a7b515572a858853a3bf2e60ec8ef18e13db8574995f1b43ffc2654d19259a74",
+        "outcomes": {
+          "death": 592,
+          "predicted_win": 4589,
+          "truncated": 3
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/experience/D1/summary.json",
+          "sha256": "3198e463024b405c137df9313d3bf90bd9ff18ce55d875978831654e7c880162"
+        },
+        "wall_s": 721.293039099779
+      },
+      "features": {
+        "path": "logs/m1-sv4a-formal/features/D1/manifest.json",
+        "sha256": "6501e92f1cb3e481e3c3dbbc6a271c121b5056ff09b5a741dcbd3ee4bc11d3c6"
+      },
+      "log": {
+        "path": "logs/m1-sv4a-formal/models/D1/train.log",
+        "sha256": "b8e5eba8d4ebfe6642205770e4f1a7e5ff773d6fdcf0eba19f9985a3eb9741a0"
+      },
+      "optimizer": {
+        "path": "logs/m1-sv4a-formal/models/D1/best-train.pt",
+        "sha256": "6f6b897e29e093a7e1f684cb2855d3abd4ebd6c2b70568dfc781dabf45aae90d"
+      },
+      "policy": "sts2.sv4a.prediction_only.v1|ec8416da0498b1e100e123d15f969034db7d0dec4ded951565edf710c006e2d9|conditional",
+      "presentations": {
+        "current": 245760,
+        "history": 245760
+      },
+      "report": {
+        "path": "logs/m1-sv4a-formal/models/D1/summary.json",
+        "sha256": "e58a2ce00536df6490070233336fd690b7bb026b6c37fdd11d6d7cd8f97182aa"
+      },
+      "resume": {
+        "path": "logs/m1-sv4a-formal/models/D1/resume.pt",
+        "sha256": "07f9e95dfd01a10fa6bbb40b1511773a56c54b256d7dba3f9e26471360171b91"
+      },
+      "selected_epoch": 5,
+      "updates": 960,
+      "weight": {
+        "path": "logs/m1-sv4a-formal/models/D1/best.pt",
+        "sha256": "63facff1f27818adbbf209a8fb4e91ebe8760ee3cfcee1308f5466b4b8bc3e35"
+      }
+    },
+    "D2": {
+      "complete": 5178,
+      "definition": {
+        "budget": 0,
+        "continuation": "sts2.sv4a.prediction_only.v1|ec8416da0498b1e100e123d15f969034db7d0dec4ded951565edf710c006e2d9|conditional",
+        "depth": null,
+        "direct_stop_margin": 0.0,
+        "exploration": "uniform-legal-mixture:0.05",
+        "fallback": "all-legal-direct-q",
+        "host": {
+          "base_solver": "b4db8cae5abada95a3a51caac31bbae9f356fb553949b3c7d4b14ea10d181c53",
+          "coreclr": "9.0.7",
+          "game": "0.113.1/26660232",
+          "overlay": {
+            "host/Headless/bin/Debug/net9.0/GodotSharp.dll": "14f526fd15ed0f3d4e16678820c923224fb8255589898b06038956249c0bc116",
+            "host/Headless/bin/Debug/net9.0/OfflineSearchHarness.dll": "93efe74a4e9b0c8154d1ac08e13f41961f45b4f495a4f0fea389021a3ced2c46",
+            "solver-bin/CombatSolver.dll": "27d64e73780fc60c5bc3d270d2070e35a8c96ed35297e240af3c31ed18479739"
+          },
+          "probe": {
+            "SearchProbe.cs": "cd9b9b67948a227389d0848f8ad815ecbbb9fdd6a064a1bc19169b8221184a19",
+            "TurnGraph.cs": "247508edbd7063381dae4ae6f9fb2c7976e2c32e5896b5846001193132e5af96"
+          }
+        },
+        "model": "63facff1f27818adbbf209a8fb4e91ebe8760ee3cfcee1308f5466b4b8bc3e35",
+        "sampling": "stable-argmax-with-exact-epsilon-conditional-probability",
+        "search": null,
+        "utility": "death=-1;win=1+.25*hp/terminal_max",
+        "version": "sts2.sv4a.loop.v1",
+        "wall_ms": null
+      },
+      "experience": {
+        "attempts": 5184,
+        "behavior": "bdd5a26dd34043f229d485d22d9be72e7af3450f3bfa5b454f6c021fc3abf503",
+        "database": {
+          "path": "logs/m1-sv4a-formal/experience/D2/results.sqlite",
+          "sha256": "a982df2e2bf65dfe67530f0eedf9380e40aacc96f4d3968996a0badf9263560a"
+        },
+        "identity": "f66f13723a0eaabda76145a41f361cc4096d0b589066ec98ffa55bbf7dc54755",
+        "outcomes": {
+          "death": 561,
+          "predicted_win": 4617,
+          "truncated": 6
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/experience/D2/summary.json",
+          "sha256": "2d3b350decfd335dab5adbf6840526ad22b7ecb4c871ac23839a2830d6428d4d"
+        },
+        "wall_s": 706.6857210998423
+      },
+      "features": {
+        "path": "logs/m1-sv4a-formal/features/D2/manifest.json",
+        "sha256": "84a65982d657aa4aa26a507be6d37b7ce01ec780773d43eba39662c7e87335f5"
+      },
+      "log": {
+        "path": "logs/m1-sv4a-formal/models/D2/train.log",
+        "sha256": "a953b2bb8f263fca94438245f20904595476ec6bb58768d32fc9348c89085eff"
+      },
+      "optimizer": {
+        "path": "logs/m1-sv4a-formal/models/D2/best-train.pt",
+        "sha256": "4235b7611d4a3c31c3f00293dbf003f7f6dd362b9cdc7b0ab17161c37241f7d1"
+      },
+      "policy": "sts2.sv4a.prediction_only.v1|bdd5a26dd34043f229d485d22d9be72e7af3450f3bfa5b454f6c021fc3abf503|conditional",
+      "presentations": {
+        "current": 147840,
+        "history": 245760,
+        "previous": 97920
+      },
+      "report": {
+        "path": "logs/m1-sv4a-formal/models/D2/summary.json",
+        "sha256": "6787ad9cf713ae391993ef3522da885bad45dd3d5e46aefedd76b1baf3af0bf5"
+      },
+      "resume": {
+        "path": "logs/m1-sv4a-formal/models/D2/resume.pt",
+        "sha256": "4d560f18fe6475145bb58e991fe2daf8c975fa98a149247617450e34720a0e95"
+      },
+      "selected_epoch": 5,
+      "updates": 960,
+      "weight": {
+        "path": "logs/m1-sv4a-formal/models/D2/best.pt",
+        "sha256": "b0760e531e85490ff8ef5e12462fdca7c96d87aee0bf39f688e855817e8c2766"
+      }
+    },
+    "S1": {
+      "complete": 2176,
+      "definition": {
+        "budget": 350,
+        "continuation": "nosl3c.hp-loss-actor-critic.v4|180b1141d52fe836d5b7770c90c7be193c1c9a8b86bfd7e152274f2e8cd540a6|sample",
+        "depth": 32,
+        "direct_stop_margin": 0.0,
+        "exploration": "uniform-legal-mixture:0.05",
+        "fallback": "all-legal-direct-q",
+        "host": {
+          "base_solver": "b4db8cae5abada95a3a51caac31bbae9f356fb553949b3c7d4b14ea10d181c53",
+          "coreclr": "9.0.7",
+          "game": "0.113.1/26660232",
+          "overlay": {
+            "host/Headless/bin/Debug/net9.0/GodotSharp.dll": "14f526fd15ed0f3d4e16678820c923224fb8255589898b06038956249c0bc116",
+            "host/Headless/bin/Debug/net9.0/OfflineSearchHarness.dll": "93efe74a4e9b0c8154d1ac08e13f41961f45b4f495a4f0fea389021a3ced2c46",
+            "solver-bin/CombatSolver.dll": "27d64e73780fc60c5bc3d270d2070e35a8c96ed35297e240af3c31ed18479739"
+          },
+          "probe": {
+            "SearchProbe.cs": "cd9b9b67948a227389d0848f8ad815ecbbb9fdd6a064a1bc19169b8221184a19",
+            "TurnGraph.cs": "247508edbd7063381dae4ae6f9fb2c7976e2c32e5896b5846001193132e5af96"
+          }
+        },
+        "model": "3f60c9820379fa8417bf25554b92855754803e494f41851c721ea1f3d7e03dbf",
+        "sampling": "stable-argmax-with-exact-epsilon-conditional-probability",
+        "search": "sv1.public.tree",
+        "utility": "death=-1;win=1+.25*hp/terminal_max",
+        "version": "sts2.sv4a.loop.v1",
+        "wall_ms": 20000
+      },
+      "experience": {
+        "attempts": 2176,
+        "behavior": "ce21eec97a33eea8e67c698e636c64a76fa5e3f4f398df1a8dc99fa2d4ef94ec",
+        "database": {
+          "path": "logs/m1-sv4a-formal/experience/S1/results.sqlite",
+          "sha256": "984853be5c51ffaa33ed311907751f98d00cdfcf8714912789465a9c8d11c635"
+        },
+        "identity": "a668e2ab221ded74f82450ecaf7fffe308e89fb56afed7dace76a65680214913",
+        "outcomes": {
+          "death": 248,
+          "predicted_win": 1928
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/experience/S1/summary.json",
+          "sha256": "bae37b6963f0a7e37c2a02a21ab0f0d42a76d100aea764690b33a8959fb93dd3"
+        },
+        "wall_s": 878.4035500003956
+      },
+      "features": {
+        "path": "logs/m1-sv4a-formal/features/S1/manifest.json",
+        "sha256": "d81aeb8a4b423809985c8a947d27d7fb3f6290ee7067a9384a30310297098df6"
+      },
+      "log": {
+        "path": "logs/m1-sv4a-formal/models/S1/train.log",
+        "sha256": "7fbb955c7998c0befb56343e9a6414bb1fed0f5b0d81f78980d6bbc9360f97d2"
+      },
+      "optimizer": {
+        "path": "logs/m1-sv4a-formal/models/S1/best-train.pt",
+        "sha256": "097d24885afc3586393c0a9dc18d8669dccdea05c1d80b9b73cdd460abe433ce"
+      },
+      "policy": "sts2.sv4a.prediction_only.v1|ce21eec97a33eea8e67c698e636c64a76fa5e3f4f398df1a8dc99fa2d4ef94ec|conditional",
+      "presentations": {
+        "current": 245760,
+        "history": 245760
+      },
+      "report": {
+        "path": "logs/m1-sv4a-formal/models/S1/summary.json",
+        "sha256": "295450a0bf40403a8ec73714f1261c0e238246c727ef8fe68baebcd8f2b2a940"
+      },
+      "resume": {
+        "path": "logs/m1-sv4a-formal/models/S1/resume.pt",
+        "sha256": "a0889a892064bb109532f22f1fde24a6805015cb82151c6e25cda2129cfe9990"
+      },
+      "selected_epoch": 2,
+      "updates": 960,
+      "weight": {
+        "path": "logs/m1-sv4a-formal/models/S1/best.pt",
+        "sha256": "3132ad16871918ea15155be7a9e0b0f9e1288a0fe04c78a328ee98d8a67e5f08"
+      }
+    },
+    "S2": {
+      "complete": 2174,
+      "definition": {
+        "budget": 350,
+        "continuation": "sts2.sv4a.prediction_only.v1|ce21eec97a33eea8e67c698e636c64a76fa5e3f4f398df1a8dc99fa2d4ef94ec|conditional",
+        "depth": 32,
+        "direct_stop_margin": 0.0,
+        "exploration": "uniform-legal-mixture:0.05",
+        "fallback": "all-legal-direct-q",
+        "host": {
+          "base_solver": "b4db8cae5abada95a3a51caac31bbae9f356fb553949b3c7d4b14ea10d181c53",
+          "coreclr": "9.0.7",
+          "game": "0.113.1/26660232",
+          "overlay": {
+            "host/Headless/bin/Debug/net9.0/GodotSharp.dll": "14f526fd15ed0f3d4e16678820c923224fb8255589898b06038956249c0bc116",
+            "host/Headless/bin/Debug/net9.0/OfflineSearchHarness.dll": "93efe74a4e9b0c8154d1ac08e13f41961f45b4f495a4f0fea389021a3ced2c46",
+            "solver-bin/CombatSolver.dll": "27d64e73780fc60c5bc3d270d2070e35a8c96ed35297e240af3c31ed18479739"
+          },
+          "probe": {
+            "SearchProbe.cs": "cd9b9b67948a227389d0848f8ad815ecbbb9fdd6a064a1bc19169b8221184a19",
+            "TurnGraph.cs": "247508edbd7063381dae4ae6f9fb2c7976e2c32e5896b5846001193132e5af96"
+          }
+        },
+        "model": "3132ad16871918ea15155be7a9e0b0f9e1288a0fe04c78a328ee98d8a67e5f08",
+        "sampling": "stable-argmax-with-exact-epsilon-conditional-probability",
+        "search": "sv1.public.tree",
+        "utility": "death=-1;win=1+.25*hp/terminal_max",
+        "version": "sts2.sv4a.loop.v1",
+        "wall_ms": 20000
+      },
+      "experience": {
+        "attempts": 2176,
+        "behavior": "0655f73602b516ec737e354ece631b5620dc525d1fa99a430ba802a4cf597ce2",
+        "database": {
+          "path": "logs/m1-sv4a-formal/experience/S2/results.sqlite",
+          "sha256": "ba42cf03b004a5991ef7e5558ff4f26672126bf6b5864372d0d235049c9693e2"
+        },
+        "identity": "df6e18bde721023ad54613ef0a2b177411ddfec1e1e442f92fd4ae302dc78fb5",
+        "outcomes": {
+          "death": 208,
+          "predicted_win": 1966,
+          "truncated": 2
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/experience/S2/summary.json",
+          "sha256": "5d9ee29f253e4de4b3d8ad27ef54344d5c950caa70044ee37a4a8b9a7d2e8a8f"
+        },
+        "wall_s": 604.89385400014
+      },
+      "features": {
+        "path": "logs/m1-sv4a-formal/features/S2/manifest.json",
+        "sha256": "39183cc79ae3901d279bbdd51443c00a1937d0695e597b7b2acdb2b99dd181eb"
+      },
+      "log": {
+        "path": "logs/m1-sv4a-formal/models/S2/train.log",
+        "sha256": "6eeab84473ce088e26eb7c7c33666c830c6f6267c50100bc90bdcfd40eca4710"
+      },
+      "optimizer": {
+        "path": "logs/m1-sv4a-formal/models/S2/best-train.pt",
+        "sha256": "8186d5c08ff6770fa4a8bd0766e1978dacb7f0d956a392e0d179795d59bbd31e"
+      },
+      "policy": "sts2.sv4a.prediction_only.v1|0655f73602b516ec737e354ece631b5620dc525d1fa99a430ba802a4cf597ce2|conditional",
+      "presentations": {
+        "current": 147840,
+        "history": 245760,
+        "previous": 97920
+      },
+      "report": {
+        "path": "logs/m1-sv4a-formal/models/S2/summary.json",
+        "sha256": "e75f8ed8d7133b178631862a5b4d404efc4a24a4a796dfcd67b6f4da1e22c2dc"
+      },
+      "resume": {
+        "path": "logs/m1-sv4a-formal/models/S2/resume.pt",
+        "sha256": "be70ea2fa6db839b8771a2243bbbf4512f23ad57263b3b4d672c1b317589745b"
+      },
+      "selected_epoch": 5,
+      "updates": 960,
+      "weight": {
+        "path": "logs/m1-sv4a-formal/models/S2/best.pt",
+        "sha256": "1d339ef1c45e7caef1c5d13a484d98462839c07182da9dac19bd6ea218251ba7"
+      }
+    }
+  },
+  "pretest": {
+    "0": {
+      "attempts": 128,
+      "behavior": "535ee7587437f3ea6da72a6efaa024941d1e052962814e3d783be03d1f90b8a7",
+      "database": {
+        "path": "logs/m1-sv4a-formal/pretest/budget-0/results.sqlite",
+        "sha256": "307706497c979ecea03fd0a0550d6e5aec829a96797167da06dcf0e610c63a4b"
+      },
+      "identity": "aa26be2ab9c5466341700a6fc2a68d3fc0e1d8d57a965aa0ddd9e1782b545de5",
+      "outcomes": {
+        "death": 17,
+        "predicted_win": 111
+      },
+      "sessions": 1,
+      "summary": {
+        "path": "logs/m1-sv4a-formal/pretest/budget-0/summary.json",
+        "sha256": "c08a98d69de0496e10d12c7aa3065181f574c7b63c320b507a8e85d91a6d1f26"
+      },
+      "wall_s": 19.083082700148225
+    },
+    "1400": {
+      "attempts": 128,
+      "behavior": "1930702b4647cbd11ec4f9412cdbd1f189ee680a8e907012ca6f9db0106f8576",
+      "database": {
+        "path": "logs/m1-sv4a-formal/pretest/budget-1400/results.sqlite",
+        "sha256": "1f3c67e9f70057b37f578476f6fffd620af21f41d4a2b7da920a093a5cbfb991"
+      },
+      "identity": "fedd0fa13f173d5762ed2cb77232bd5be9a5d3220ec106a0963b05dd0ca492e4",
+      "outcomes": {
+        "death": 13,
+        "predicted_win": 114,
+        "truncated": 1
+      },
+      "sessions": 1,
+      "summary": {
+        "path": "logs/m1-sv4a-formal/pretest/budget-1400/summary.json",
+        "sha256": "0aab4abf977de42e1b9c946cdcd710f2c80c2b46a0deaf244ed585fcb11d9c37"
+      },
+      "wall_s": 205.97999979974702
+    },
+    "350": {
+      "attempts": 128,
+      "behavior": "c76e9fad43209ffb457cb34bc3b8ffa02e67bd5f25d258f1d9991a55ff966051",
+      "database": {
+        "path": "logs/m1-sv4a-formal/pretest/budget-350/results.sqlite",
+        "sha256": "db903f83571c41b9e67ec1e99082a11a3860b027ab785bcd4391e0bbe5459d87"
+      },
+      "identity": "5a16790dfe87e0df9c48f3f5e266456472dbdcf7eb6c10f9c70a933247954462",
+      "outcomes": {
+        "death": 12,
+        "predicted_win": 116
+      },
+      "sessions": 1,
+      "summary": {
+        "path": "logs/m1-sv4a-formal/pretest/budget-350/summary.json",
+        "sha256": "20223468edf82145e962c791c2f4e972f8df14e958fd5a61488454cf72bf9154"
+      },
+      "wall_s": 54.106477099936455
+    },
+    "700": {
+      "attempts": 128,
+      "behavior": "f65c74d5339850acbdb4fa69cf12c1faac2cc08a0813221a2d9b1d996200c762",
+      "database": {
+        "path": "logs/m1-sv4a-formal/pretest/budget-700/results.sqlite",
+        "sha256": "11a8a749015f1ee4a261b83d8fe197b10aaba63f85d8feea5fe656a5a39b2b6b"
+      },
+      "identity": "37474ad4bb88adb0565186932daf76e2ec00c109e74c3a134e967cb86f0755af",
+      "outcomes": {
+        "death": 13,
+        "predicted_win": 115
+      },
+      "sessions": 1,
+      "summary": {
+        "path": "logs/m1-sv4a-formal/pretest/budget-700/summary.json",
+        "sha256": "09b19a0fd18b69d12f921ef956051b65b10fffa6f3985c61b235936749a7818a"
+      },
+      "wall_s": 62.77832349995151
+    }
+  },
+  "repeated_development": {
+    "D0": {
+      "action_changes": [
+        93
+      ],
+      "outcome_changes": [],
+      "roots": 128,
+      "terminal_changes": []
+    },
+    "S0": {
+      "action_changes": [
+        62,
+        98
+      ],
+      "outcome_changes": [],
+      "roots": 128,
+      "terminal_changes": []
+    }
+  },
+  "root_isolation": {
+    "historical_deck_compositions": 62187,
+    "historical_seeds": 65535,
+    "new_unique_roots": 15776
+  },
+  "roots": {
+    "D1": {
+      "path": "logs/m1-sv4a-formal/roots/D1.json",
+      "sha256": "afd2db71baf9abdb60e59f30359d9a10700200233814afbe722addb724bccab8"
+    },
+    "D2": {
+      "path": "logs/m1-sv4a-formal/roots/D2.json",
+      "sha256": "1eb5e7749e36c69c8c3e865b37bcbe007bf997fe18df70d3daa4e52d52404301"
+    },
+    "S1": {
+      "path": "logs/m1-sv4a-formal/roots/S1.json",
+      "sha256": "81cec503b51f3cfe69e2a7bdd9498fb505c232397e1273cdbc150d35f2597902"
+    },
+    "S2": {
+      "path": "logs/m1-sv4a-formal/roots/S2.json",
+      "sha256": "1d302c73e9328004e20cd617417ce843e2ed5251e5ba9cf90afb8ee5d606ecb3"
+    },
+    "confirmation": {
+      "path": "logs/m1-sv4a-formal/roots/confirmation.json",
+      "sha256": "1b1c2f7579e5a52b43656cba4c711dbfcc745a9aa13327fdf409922f5c6e0023"
+    },
+    "development": {
+      "path": "logs/m1-sv4a-formal/roots/development.json",
+      "sha256": "2cd3024d70e805d1330770953aa583a12d29172b00971d0c3b3fdf660efcac3a"
+    },
+    "smoke": {
+      "path": "logs/m1-sv4a-formal/roots/smoke.json",
+      "sha256": "3c08b7ad0a3c520bf9a6ac06b6c8a052e323c63337d3123b42ed2e789df37f72"
+    }
+  },
+  "runs": {
+    "confirmation": {
+      "A2": {
+        "attempts": 512,
+        "behavior": "9fee2f0b27b29824dbcbd7a76fbaa83ad19067e66a711eb601ee16530b1fce80",
+        "database": {
+          "path": "logs/m1-sv4a-formal/evaluation/confirmation/A2/results.sqlite",
+          "sha256": "f944a90f47db5a0a4e26a4e3504b3fda553116068656b873a4dd05c596ae3c57"
+        },
+        "identity": "c84171903f606f617e9e28491f486bf1ffbba7905e424adaec89db2976235552",
+        "outcomes": {
+          "death": 98,
+          "predicted_win": 414
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/evaluation/confirmation/A2/summary.json",
+          "sha256": "416c2d05f88db11a5bb5edd9700cab15128fd314064e1757eac9819b4c5a8646"
+        },
+        "wall_s": 57.52863069996238
+      },
+      "D0": {
+        "attempts": 512,
+        "behavior": "535ee7587437f3ea6da72a6efaa024941d1e052962814e3d783be03d1f90b8a7",
+        "database": {
+          "path": "logs/m1-sv4a-formal/evaluation/confirmation/D0/results.sqlite",
+          "sha256": "0bebcc31a7a97f787afa436169769e3d617e9dddcbb752cf6e7e232a0d5993dd"
+        },
+        "identity": "419a8d002937ceed0227eba093c88af65b60809e0c6f9293da0343606bf4dbc1",
+        "outcomes": {
+          "death": 59,
+          "predicted_win": 453
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/evaluation/confirmation/D0/summary.json",
+          "sha256": "828b8dcab032e5f941cef9e9ea63f9c77c1989439cd55de5584567a833e3748d"
+        },
+        "wall_s": 32.869111199863255
+      },
+      "D1": {
+        "attempts": 512,
+        "behavior": "f8eb7a2cb05b2f3c14c4eee29e99d2d33b0bf4a36a9424f60c5f5f77b91d34a4",
+        "database": {
+          "path": "logs/m1-sv4a-formal/evaluation/confirmation/D1/results.sqlite",
+          "sha256": "6c9757b7ff01203d242fc4faa644ab88f44ac6412ee3fb6651e4e48ad36c5dc8"
+        },
+        "identity": "5a8c52ea86f535aa77a6cc0d573036a12ee184e65ab5bbc2e182acf10825d3b3",
+        "outcomes": {
+          "death": 59,
+          "predicted_win": 453
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/evaluation/confirmation/D1/summary.json",
+          "sha256": "5af6256d9d6e99e900b9f13f6db2bceff0f741c45daf09d28371fa1b919b8d7e"
+        },
+        "wall_s": 34.44378950027749
+      },
+      "D2": {
+        "attempts": 512,
+        "behavior": "d851441b0085c0ebb6a25554f5f6f35024d5f74e2b1c33ed9cd9626085a1bf50",
+        "database": {
+          "path": "logs/m1-sv4a-formal/evaluation/confirmation/D2/results.sqlite",
+          "sha256": "f9ce0f47a26ab21318972bc40fad6511bdd0cc7ddabe5a4f3f875ed1fe9ceac1"
+        },
+        "identity": "0d219b2e9c3365c16a84e73f21fac52dd9612322c2769b7f5807b1674f2ceb8e",
+        "outcomes": {
+          "death": 53,
+          "predicted_win": 459
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/evaluation/confirmation/D2/summary.json",
+          "sha256": "d8162d58996ebe856762398d25e6d7af3b711daa69b053b63d7b8d73758204d5"
+        },
+        "wall_s": 36.691628800239414
+      },
+      "D2-A2": {
+        "attempts": 512,
+        "behavior": "f304e1d8860418da955ed5da1f4596f57cce6fa16677d69dec888d5d4c70c30a",
+        "database": {
+          "path": "logs/m1-sv4a-formal/evaluation/confirmation/D2-A2/results.sqlite",
+          "sha256": "0512f6775788b26c45d345b1c05a7722e7e430d9d884c92df23e1724bb2e8f22"
+        },
+        "identity": "4ce889a28f9d398610dbd40507f88925f2093adeb74b0afa61fa4997533327eb",
+        "outcomes": {
+          "death": 52,
+          "predicted_win": 460
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/evaluation/confirmation/D2-A2/summary.json",
+          "sha256": "60570748e24d000edc3189ddbd7e2e2c037497a16efd71344f16b265a27b2a8d"
+        },
+        "wall_s": 48.29788940027356
+      },
+      "D2-search": {
+        "attempts": 512,
+        "behavior": "8024a9b6965e19c169b3ae93f853227fa3ab0b9da89fd812b30e183d353e55de",
+        "database": {
+          "path": "logs/m1-sv4a-formal/evaluation/confirmation/D2-search/results.sqlite",
+          "sha256": "ca9df40132d350576a95d50562e2c9b1a04d1853b605b525b69e922e215dd2cd"
+        },
+        "identity": "b31dd7815e47607c1f426d57634e9ccc1bd9886979e003b7aee482f33e472217",
+        "outcomes": {
+          "death": 44,
+          "predicted_win": 468
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/evaluation/confirmation/D2-search/summary.json",
+          "sha256": "ab74f5693d72b77e7653d38eb6130d42fe30051c21d57d91e5a726124fd5f12b"
+        },
+        "wall_s": 118.24406279996037
+      },
+      "S0": {
+        "attempts": 512,
+        "behavior": "c76e9fad43209ffb457cb34bc3b8ffa02e67bd5f25d258f1d9991a55ff966051",
+        "database": {
+          "path": "logs/m1-sv4a-formal/evaluation/confirmation/S0/results.sqlite",
+          "sha256": "52106b0eddb4360529e6e387c800a9e1efcf07b88c1e308ed568ce98a4d15b73"
+        },
+        "identity": "50012b8b3341ca0fcc5d1847b14af87ba858f6ccd890ddd349c387b2523c119e",
+        "outcomes": {
+          "death": 48,
+          "predicted_win": 464
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/evaluation/confirmation/S0/summary.json",
+          "sha256": "e25b6be4b932d516a22f1f505ba332f3b9f59089e20851374bd4fdad4229fac0"
+        },
+        "wall_s": 84.38717989996076
+      },
+      "S1": {
+        "attempts": 512,
+        "behavior": "daf958b77a2961702f6212c90f46947319de431dd217fc1cafdbbe4ebff6e1a4",
+        "database": {
+          "path": "logs/m1-sv4a-formal/evaluation/confirmation/S1/results.sqlite",
+          "sha256": "118f7f74cd01a2261c27571c99dfe2a88c15ecb3eb4ce081d92f65376a9f8d9b"
+        },
+        "identity": "ce02ca4572c791f1cecd377d06ac23fffcfad81d78a5ebde59e90c1dc17f7e44",
+        "outcomes": {
+          "death": 48,
+          "predicted_win": 464
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/evaluation/confirmation/S1/summary.json",
+          "sha256": "9f68e74fcf9e4a8784c242c1fb5d451665eadec24b87c670dd14c775f0291489"
+        },
+        "wall_s": 93.60393280023709
+      },
+      "S2": {
+        "attempts": 512,
+        "behavior": "f3a680259b6ed4fb3ec5732c9f7603fb2a7d4497d98c167446a1bb796340413e",
+        "database": {
+          "path": "logs/m1-sv4a-formal/evaluation/confirmation/S2/results.sqlite",
+          "sha256": "8cd4d8860cedff6cd1a25828984fda277199bb6d5caca290962b19991ed06c79"
+        },
+        "identity": "671c2d797c7cc608dfe525748e7f9b059802ba5acb0e7cde5a7c3b736b3355a1",
+        "outcomes": {
+          "death": 48,
+          "predicted_win": 464
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/evaluation/confirmation/S2/summary.json",
+          "sha256": "b5a9f9dcc9ffd876a43feeb1974dfbacc679743cb1ce5ed3b18db98913a297f7"
+        },
+        "wall_s": 120.82306439988315
+      },
+      "S2-A2": {
+        "attempts": 512,
+        "behavior": "f033cb7d44392966eb651a07d9a5dc882db914bd8434e203c75ab85a2cf28091",
+        "database": {
+          "path": "logs/m1-sv4a-formal/evaluation/confirmation/S2-A2/results.sqlite",
+          "sha256": "f3ff9a3dd083f71a2f5ee4f14054d9409c844c8f953cef4ca3470be29f835d69"
+        },
+        "identity": "53f6d45eb8c74f46fbf9fb20d2811068fe47b47cab0f05194be002cec56b78be",
+        "outcomes": {
+          "death": 56,
+          "predicted_win": 456
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/evaluation/confirmation/S2-A2/summary.json",
+          "sha256": "ff03096f39541727252ab259b6f83def3ea3cac4027b487c9561c4982d6f5525"
+        },
+        "wall_s": 31.87959949998185
+      },
+      "S2-direct": {
+        "attempts": 512,
+        "behavior": "936378ea65c6d416f9173939afaa09f9ab5da1f688ce945ca3579264471b0cfe",
+        "database": {
+          "path": "logs/m1-sv4a-formal/evaluation/confirmation/S2-direct/results.sqlite",
+          "sha256": "08d346b4511781fb1984a0fd97ce469de1ee53fa29caf29dc3d3fee731d6d7d8"
+        },
+        "identity": "eb3b356bfa3c7a45e4915cd3deb7e182c11b9d0579cc55ba2578754e120b4637",
+        "outcomes": {
+          "death": 56,
+          "predicted_win": 456
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/evaluation/confirmation/S2-direct/summary.json",
+          "sha256": "c82de6a20ca7f124f42cb81916abaf42e94a5b9e23f26405acb6a19ba1b29bee"
+        },
+        "wall_s": 56.371123999822885
+      }
+    },
+    "development": {
+      "A2": {
+        "attempts": 512,
+        "behavior": "9fee2f0b27b29824dbcbd7a76fbaa83ad19067e66a711eb601ee16530b1fce80",
+        "database": {
+          "path": "logs/m1-sv4a-formal/evaluation/development/A2/results.sqlite",
+          "sha256": "efe66a0ed454b708e23cd1621e8e4a0be2c27f2667177e8d4b76400d62cad132"
+        },
+        "identity": "92a3a23b01bb54a99c33b747ff2e8ef6a5238c2cd5d0a63389a209ca4894acad",
+        "outcomes": {
+          "death": 87,
+          "predicted_win": 425
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/evaluation/development/A2/summary.json",
+          "sha256": "948090d7e728c623f786ae1c1fa6a2aead8cf4061e2e78f8116c0f5bdbfe81ad"
+        },
+        "wall_s": 59.0153356003575
+      },
+      "D0": {
+        "attempts": 512,
+        "behavior": "535ee7587437f3ea6da72a6efaa024941d1e052962814e3d783be03d1f90b8a7",
+        "database": {
+          "path": "logs/m1-sv4a-formal/evaluation/development/D0/results.sqlite",
+          "sha256": "963541ba17bc7e51210046fade831818872149b159cf182d62f8497faf630f6d"
+        },
+        "identity": "dc1907a2d463d124291330acae09d10dfd46cda66d55bb15a12c5a422672886b",
+        "outcomes": {
+          "death": 54,
+          "predicted_win": 458
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/evaluation/development/D0/summary.json",
+          "sha256": "9f6690fadb3339c7a6dbca7871724f76fe938d1b4b839b720467d857ebed6688"
+        },
+        "wall_s": 79.19036960043013
+      },
+      "D1": {
+        "attempts": 512,
+        "behavior": "f8eb7a2cb05b2f3c14c4eee29e99d2d33b0bf4a36a9424f60c5f5f77b91d34a4",
+        "database": {
+          "path": "logs/m1-sv4a-formal/evaluation/development/D1/results.sqlite",
+          "sha256": "316f7d92545db7f93b546f4735116237dcf20da2c6d61cbf70aa8c389b29baa6"
+        },
+        "identity": "427b729316521a03bf7f595c307ce05c42b9baa024a9b2a35ff06cd5fff01d1b",
+        "outcomes": {
+          "death": 49,
+          "predicted_win": 463
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/evaluation/development/D1/summary.json",
+          "sha256": "3527878fc9010f6013c73277e47352a48db4c8f2c121726a88866aeee8662b32"
+        },
+        "wall_s": 70.29107249993831
+      },
+      "D2": {
+        "attempts": 512,
+        "behavior": "d851441b0085c0ebb6a25554f5f6f35024d5f74e2b1c33ed9cd9626085a1bf50",
+        "database": {
+          "path": "logs/m1-sv4a-formal/evaluation/development/D2/results.sqlite",
+          "sha256": "d00294435bce49bd50f6d1c9598fabdb76cf1a695445fce87a7f9969ec95098d"
+        },
+        "identity": "fbc4b5fe347c3b6cbf7f3dbe96944496a2c0977b78ba6f1c66e445cf562686ba",
+        "outcomes": {
+          "death": 49,
+          "predicted_win": 463
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/evaluation/development/D2/summary.json",
+          "sha256": "a543013dab84996df1e427e5d868ace829f782033c41ed22f057278a2e399081"
+        },
+        "wall_s": 43.95864229975268
+      },
+      "D2-A2": {
+        "attempts": 512,
+        "behavior": "f304e1d8860418da955ed5da1f4596f57cce6fa16677d69dec888d5d4c70c30a",
+        "database": {
+          "path": "logs/m1-sv4a-formal/evaluation/development/D2-A2/results.sqlite",
+          "sha256": "e0abf295cb75b39bf811dd6b2ca6dfbb18e49b77b2b1a4997dd5972d89366bdc"
+        },
+        "identity": "804c5d0cf3d17f368944a53c23a61158e4c3b0cd0cf4f8da6e1b6145f514b6c9",
+        "outcomes": {
+          "death": 49,
+          "predicted_win": 463
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/evaluation/development/D2-A2/summary.json",
+          "sha256": "676df1699af0420bbfe49ced7d373e0ede540df2ac7ac57d61e60bdd2297b11c"
+        },
+        "wall_s": 34.61243290035054
+      },
+      "D2-search": {
+        "attempts": 512,
+        "behavior": "8024a9b6965e19c169b3ae93f853227fa3ab0b9da89fd812b30e183d353e55de",
+        "database": {
+          "path": "logs/m1-sv4a-formal/evaluation/development/D2-search/results.sqlite",
+          "sha256": "dd1af25c43ddd25eadf746cea889203bbea15e8975690af0e54b61313c70a044"
+        },
+        "identity": "0a4471e30cd6a14b99b3b151f5e9fd4af59c9731f3fd8a968e3ae3b402b46563",
+        "outcomes": {
+          "death": 46,
+          "predicted_win": 465,
+          "truncated": 1
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/evaluation/development/D2-search/summary.json",
+          "sha256": "22636e43527f0c36a377be72de93e70208c2090ac49b83912819b3e928b51848"
+        },
+        "wall_s": 98.57119490019977
+      },
+      "S0": {
+        "attempts": 512,
+        "behavior": "c76e9fad43209ffb457cb34bc3b8ffa02e67bd5f25d258f1d9991a55ff966051",
+        "database": {
+          "path": "logs/m1-sv4a-formal/evaluation/development/S0/results.sqlite",
+          "sha256": "c21ae88828177c9ed4a735c0f45afc5a1aabaf14dfd271b7b5ddf69e75f68b51"
+        },
+        "identity": "6c70b86844358dda1c7ec73c282895575e08ec3525ac9e45d33e68c66d91ddcd",
+        "outcomes": {
+          "death": 47,
+          "predicted_win": 465
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/evaluation/development/S0/summary.json",
+          "sha256": "1b45588711acc35c8710014467f2198c6eee75cfd052d05202cd04a7156270e0"
+        },
+        "wall_s": 223.8099056002684
+      },
+      "S1": {
+        "attempts": 512,
+        "behavior": "daf958b77a2961702f6212c90f46947319de431dd217fc1cafdbbe4ebff6e1a4",
+        "database": {
+          "path": "logs/m1-sv4a-formal/evaluation/development/S1/results.sqlite",
+          "sha256": "826ee31a4da8a5a38fca0f84c1355106ceb8cbc0dd479f58d6f5151759794e75"
+        },
+        "identity": "67e90b6a281f2a0068df4a434378d0e27cadcbc0be85fabe1d2ba95ab83d845f",
+        "outcomes": {
+          "death": 50,
+          "predicted_win": 462
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/evaluation/development/S1/summary.json",
+          "sha256": "d320f819b95b2ffbf801333271e6cd643e4e6079a927132ed479b17256698de3"
+        },
+        "wall_s": 224.9594836998731
+      },
+      "S2": {
+        "attempts": 512,
+        "behavior": "f3a680259b6ed4fb3ec5732c9f7603fb2a7d4497d98c167446a1bb796340413e",
+        "database": {
+          "path": "logs/m1-sv4a-formal/evaluation/development/S2/results.sqlite",
+          "sha256": "c8a7cc70f6cad9c40ec036711e2285f97c16b3a93aae7846f1ef12713657c7bc"
+        },
+        "identity": "1c85fa0e80eb3388dcbb176cdc61d891d0d14ec579224e3887bad09a0c8bc4c2",
+        "outcomes": {
+          "death": 52,
+          "predicted_win": 460
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/evaluation/development/S2/summary.json",
+          "sha256": "cb3ff91c59b0e5570efffe73070ed39d1202a56532e3f817b99e2ead34cedd1f"
+        },
+        "wall_s": 93.5996429999359
+      },
+      "S2-A2": {
+        "attempts": 512,
+        "behavior": "f033cb7d44392966eb651a07d9a5dc882db914bd8434e203c75ab85a2cf28091",
+        "database": {
+          "path": "logs/m1-sv4a-formal/evaluation/development/S2-A2/results.sqlite",
+          "sha256": "83e23d47f8eb9c3c5694f5f5b57c49402de5308d729431c89259492fcc6a49d6"
+        },
+        "identity": "8f8b7ee48d1f7c7c1ba013c82434d01428d890f2b7123df5ec8b04e42b248692",
+        "outcomes": {
+          "death": 56,
+          "predicted_win": 456
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/evaluation/development/S2-A2/summary.json",
+          "sha256": "939cb02ec6fcfd4547521fdedb208db6f6e616dc2527c45a638f30b90be8066b"
+        },
+        "wall_s": 34.38258589990437
+      },
+      "S2-direct": {
+        "attempts": 512,
+        "behavior": "936378ea65c6d416f9173939afaa09f9ab5da1f688ce945ca3579264471b0cfe",
+        "database": {
+          "path": "logs/m1-sv4a-formal/evaluation/development/S2-direct/results.sqlite",
+          "sha256": "035824e29b4f4406585841478a48cf556ba3db0b0c05248af3233ca86cb06c78"
+        },
+        "identity": "0d6d580a9ee6633618a062680d6b9962e6aefd74fcfed57b4798eba59ae85015",
+        "outcomes": {
+          "death": 56,
+          "predicted_win": 456
+        },
+        "sessions": 1,
+        "summary": {
+          "path": "logs/m1-sv4a-formal/evaluation/development/S2-direct/summary.json",
+          "sha256": "159b9fd7900750f46e8e5bb3c6e8f2fec4334441791cbae6aebedca636873902"
+        },
+        "wall_s": 34.7595504000783
+      }
+    }
+  },
+  "smoke": {
+    "D0": {
+      "attempts": 32,
+      "behavior": "535ee7587437f3ea6da72a6efaa024941d1e052962814e3d783be03d1f90b8a7",
+      "database": {
+        "path": "logs/m1-sv4a-formal/smoke/D0/results.sqlite",
+        "sha256": "0d56f0414ae3749b45cd00fd8bd83af540b00599203ec535476ac3a68788cc32"
+      },
+      "identity": "fad82a24f6676f0f805eb476ca525c8964ba7f594f89983cf60bafd20517b93e",
+      "outcomes": {
+        "death": 2,
+        "predicted_win": 30
+      },
+      "sessions": 2,
+      "summary": {
+        "path": "logs/m1-sv4a-formal/smoke/D0/summary.json",
+        "sha256": "e1a7528b028daa87ca3a745df9cd1daeb220c8073c302df854f2f0b20e1f41c4"
+      },
+      "wall_s": 9.655887299682945
+    },
+    "S0": {
+      "attempts": 32,
+      "behavior": "c76e9fad43209ffb457cb34bc3b8ffa02e67bd5f25d258f1d9991a55ff966051",
+      "database": {
+        "path": "logs/m1-sv4a-formal/smoke/S0/results.sqlite",
+        "sha256": "5b4a18b965d9d81fb2621da831aa3775151cdf45e7886bc14e5c8995dfad68a9"
+      },
+      "identity": "be8b0cd00fa06c449caba2321643da1e85f1e6c6f538eebb0bb9c915b2973903",
+      "outcomes": {
+        "death": 2,
+        "predicted_win": 30
+      },
+      "sessions": 2,
+      "summary": {
+        "path": "logs/m1-sv4a-formal/smoke/S0/summary.json",
+        "sha256": "eeaac2a9e4216c374b232801e955888729fb3e834e09687896f0eb9afcb3e238"
+      },
+      "wall_s": 21.1754902000539
+    }
+  },
+  "solver": "0.51.5-iik.3b",
+  "sources": {
+    ".gitattributes": "5fd981db89c9d2a92a5f44f021167a3f627a2820b40277ac8032c8123809af62",
+    "audit.py": "1f116cb22f20dedcc90a4cc44d3c56631c4296ecbad2d6b7262c29fa1ab85a23",
+    "build_host.py": "1dbe6f209d5371afb2c4dc11cda0d2f9bf4e9e7750f5fa6c38aaf415a44432be",
+    "campaign.py": "808982651b83f402c874e1cbe3c32104263feb820531c16e9f35e29f7451f64b",
+    "config.json": "fcc58bbe04bcd5dc1afcd017f7352f17f54d760b384b629725996c8d72f9f28d",
+    "loop_battle.py": "f7720657d018590b25f658c8e1f42d2ade20e3ed481efef599534f5adea72b7a",
+    "loop_checks.py": "364241cfd439e5e4a24843082bf8aaef772e47b5e954dcb7a1ea4486922cc46f",
+    "loop_common.py": "a200f9af7de1475bf557ffa03351a0e5bca94639a86634437327aa64db0a8b71",
+    "loop_learn.py": "747d055d96c4a3e187c9dd3513bdbb3f9384a261f6c15c117e21c30dad98a63c",
+    "loop_policy.py": "082dd92955e692c4222b789e3f09b0bc3a5b154e390fc2444b028a6ab78c9a3a",
+    "loop_roots.py": "a899a358fab290426552ab00acd5c15d116ea4defedbfd9527c39c77e7b37700",
+    "stages.py": "82b144b1716c49628d3e47d70e5fd5de68015b9afd077b207c569cca103ab355",
+    "support.py": "e95443752c1a6567b93f1eaa31e96f4959465985640d295722aa0b3e8a5d4fcc",
+    "test_loop.py": "d3b9c9bbb8290fe24e47fdfbeb0269f5d839ba236d857dd3d67b09aadaeafe3d"
+  },
+  "version": "sts2.sv4a.loop.v1"
+}
