@@ -8,6 +8,10 @@
 
 可选脚本 [create-dashboard-shortcut.ps1](../tools/training_manager/create-dashboard-shortcut.ps1) 创建桌面快捷方式。运行一次后可直接双击快捷方式。脚本只创建当前用户的快捷方式。
 
+### 更新后重新打开面板
+
+如果更新前的 Web 服务仍在运行，在「资源与设置」点击「关闭面板服务」，然后再次双击启动器。这会重新加载面板代码，INF1 保持原有运行状态。冻结时会依次查找 PATH 中的 Git、已安装的 Git for Windows 和 GitHub Desktop 自带的 Git，并验证当前项目的 Git HEAD。找不到 Git 时，面板会提示检查安装并重新打开。
+
 ## 启动 DC2B 初始训练
 
 1. 在 **训练计划** 找到 **DC2B 初始训练**，打开 **审核计划**。检查输入资产、4,096 次更新、6 小时执行预算、512 个原开发世界，以及复杂构筑对照。

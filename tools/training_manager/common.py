@@ -7,9 +7,10 @@ import math
 import os
 from pathlib import Path
 import re
-import subprocess
 from time import sleep
 import uuid
+
+from .git_head import checkout_head
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -201,7 +202,7 @@ def validate(spec, home):
 
 def freeze(spec, home):
     result = dict(spec)
-    result["baseline"] = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
+    result["baseline"] = checkout_head(ROOT)
     names = set(result["inputs"]) | {result["python"]}
     for stage in result["stages"]:
         names.add(stage["args"][0])
