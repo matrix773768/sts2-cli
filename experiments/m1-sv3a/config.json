@@ -1,0 +1,27 @@
+{
+  "schema": "sts2.sv3a.mc.v1",
+  "sources": {
+    "pre0b": "logs/m1-pre0b-formal/dataset.sqlite",
+    "pre0": "logs/m1-pre0-formal-8b/dataset.sqlite",
+    "p0": "logs/m1-pre1-data-p0/dataset.sqlite",
+    "teacher": "logs/m1-pre1-data-teacher/dataset.sqlite",
+    "structured": "logs/m1-pre1-data-structured/dataset.sqlite",
+    "a2_spike": "logs/m1-pre1-data-a2/dataset.sqlite"
+  },
+  "pre1": "logs/m1-pre1-campaign/weights/final.pt",
+  "teacher": "logs/nosl3c-iii-a2-01/training/training.sqlite",
+  "host": "logs/m1-pre0b-host-final",
+  "width": 96,
+  "hp_bins": 32,
+  "policy_slots": 16,
+  "per_trajectory": 12,
+  "epoch_draws": 3,
+  "epochs": 20,
+  "batch": 512,
+  "lr": 0.00012,
+  "weight_decay": 0.01,
+  "seeds": [71393001, 71393002],
+  "prior_top_k": 3,
+  "eval_roots": 512,
+  "eval_workers": 8
+}
