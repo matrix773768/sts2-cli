@@ -1,0 +1,116 @@
+{
+  "schema": "sts2.inf1.evidence.v1",
+  "task": "sts2-smoke",
+  "curriculum_round": 102,
+  "windows_terminal_exit_verified": true,
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "tests": {
+    "inf1_unittest": 8,
+    "dc1_unittest": 4,
+    "powershell_scripts_parsed": 2
+  },
+  "real_smoke": {
+    "baseline": "27e3cd9f96081ec740fa0a8fde5ecd2b3c4e8f3c",
+    "task_sha256": "1b5ffc16ccd5704e41b9c331fd3239c4cb2ff5706622133d38c6cd1dcf8f3a0c",
+    "environment": "2.12.0+cu126",
+    "report_sha256": "96546233ae7d6ef77535994b1f5f9f55856e0a6d19d9c255afbd6351ad10905b",
+    "observations_sha256": "80aba6ddbd05d8d02e07b31746875a4c34299a7204cefe6efd3cfa42eee3aded",
+    "active": 0,
+    "pause": {
+      "experience paused": 16,
+      "GPU training paused": 2
+    },
+    "experience": {
+      "attempts": 64,
+      "unique_records": 64,
+      "sessions": 8,
+      "seconds": 32.146,
+      "terminals": {
+        "predicted_win": 46,
+        "death": 18
+      },
+      "ledger_sha256": "bb3754e00147762cf70c554e0fadf4568866b403699cc967de4d9009e10a6745",
+      "roots_sha256": "0258205308c87ed3dbf56422ec5208caadcd477f1abb17fe7b3045c7b03f6a98"
+    },
+    "development": {
+      "attempts": 8,
+      "unique_records": 8,
+      "sessions": 4,
+      "seconds": 10.017,
+      "terminals": {
+        "predicted_win": 8
+      },
+      "ledger_sha256": "e441a0fc14969cbee7533bdd06bc0670407bef250924760e91d2e3014d75a507",
+      "roots_sha256": "5e55881e93c444b7dd628133014abe2847fe1723a5786386c9568d0ac19d118f"
+    },
+    "features": {
+      "validation": 8,
+      "validation_rows": 91,
+      "train": 56,
+      "train_rows": 664
+    },
+    "training": {
+      "epochs": 3,
+      "updates": 6,
+      "optimizer_step_deltas": {
+        "6": 60
+      },
+      "best_epoch": 3,
+      "peak_cuda_bytes": 115198464,
+      "resume": "f65a6e1ea5c0c539b344787f49c3545c04690ca3d5b2a7b5a6de92a4d40db0e9",
+      "best": "a08d71f4784d10630bdfb9132bb6ef4c411048c7a76ad2d84f6c21235bcc58f9",
+      "best-train": "237e5f78cd9b53a8fcb79eefe11fd239f8c05282a26d6e767744a3ff3c2c1503"
+    },
+    "seconds": 91.727
+  },
+  "local_files": {
+    "audit": {
+      "path": "logs/inf1/smoke-acceptance/audit.json",
+      "sha256": "79cd1e33649380574001bfa9780396f69dd526e40a83b0a37da5ddc451270abe"
+    },
+    "approved_plan": {
+      "path": "logs/inf1/smoke-acceptance/sts2-smoke.frozen.json",
+      "sha256": "9b94d3fae073f4415493311440158e61146e1a49c4cce332b3b84a750a265339"
+    },
+    "queue": {
+      "path": "logs/inf1/smoke-acceptance/queue.sqlite",
+      "sha256": "52780a5e5b8bf7026f6f9f3202e4d40853e5c4df0c53a834682df4c5b658aafc"
+    },
+    "manager_log": {
+      "path": "logs/inf1/smoke-acceptance/manager.log",
+      "sha256": "f899a59499b4d7f84883d611e26adf8095b0dc6811a3dabd148f2c4dc4a7cdd3"
+    },
+    "observations": {
+      "path": "logs/inf1/smoke-acceptance/smoke-observed.json",
+      "sha256": "80aba6ddbd05d8d02e07b31746875a4c34299a7204cefe6efd3cfa42eee3aded"
+    },
+    "report": {
+      "path": "logs/inf1/smoke-acceptance/jobs/sts2-smoke/report.json",
+      "sha256": "96546233ae7d6ef77535994b1f5f9f55856e0a6d19d9c255afbd6351ad10905b"
+    },
+    "experience": {
+      "path": "logs/inf1/smoke-acceptance/jobs/sts2-smoke/experience/battle/results.sqlite",
+      "sha256": "bb3754e00147762cf70c554e0fadf4568866b403699cc967de4d9009e10a6745"
+    },
+    "features": {
+      "path": "logs/inf1/smoke-acceptance/jobs/sts2-smoke/features/manifest.json",
+      "sha256": "749e84bc8ff3f0fa7fbcd35676159aa27f896d2d94a0459e0012c4c4ef49d7b1"
+    },
+    "resume": {
+      "path": "logs/inf1/smoke-acceptance/jobs/sts2-smoke/training/resume.pt",
+      "sha256": "f65a6e1ea5c0c539b344787f49c3545c04690ca3d5b2a7b5a6de92a4d40db0e9"
+    },
+    "best": {
+      "path": "logs/inf1/smoke-acceptance/jobs/sts2-smoke/training/best.pt",
+      "sha256": "a08d71f4784d10630bdfb9132bb6ef4c411048c7a76ad2d84f6c21235bcc58f9"
+    },
+    "best_train": {
+      "path": "logs/inf1/smoke-acceptance/jobs/sts2-smoke/training/best-train.pt",
+      "sha256": "237e5f78cd9b53a8fcb79eefe11fd239f8c05282a26d6e767744a3ff3c2c1503"
+    },
+    "development": {
+      "path": "logs/inf1/smoke-acceptance/jobs/sts2-smoke/development/battle/results.sqlite",
+      "sha256": "e441a0fc14969cbee7533bdd06bc0670407bef250924760e91d2e3014d75a507"
+    }
+  }
+}

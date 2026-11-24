@@ -1,0 +1,159 @@
+{
+  "id": "sts2-smoke",
+  "name": "INF1 real STS2 acceptance",
+  "type": "smoke",
+  "cwd": ".",
+  "python": "logs/m1-pre1-cuda/Scripts/python.exe",
+  "output": "logs/inf1/jobs/sts2-smoke",
+  "mode": "Any",
+  "max_retries": 0,
+  "budget_seconds": 600,
+  "limits": {
+    "generations": 1,
+    "experience_roots": 64,
+    "experience_attempts": 64,
+    "optimizer_updates": 6,
+    "development_roots": 8,
+    "development_queue": "DC1 development",
+    "confirmation_evaluations": 0
+  },
+  "inputs": [
+    "tools/training_manager/__main__.py",
+    "tools/training_manager/common.py",
+    "tools/training_manager/manager.py",
+    "tools/training_manager/worker.py",
+    "tools/training_manager/windows.py",
+    "experiments/m1-dc1/config.json",
+    "experiments/m1-dc1/dc_common.py",
+    "experiments/m1-dc1/dc_produce.py",
+    "experiments/m1-dc1/dc_roots.py",
+    "experiments/m1-sv4a/config.json",
+    "experiments/m1-sv4a/evidence.json",
+    "experiments/m1-sv4a/loop_battle.py",
+    "experiments/m1-sv4a/loop_common.py",
+    "experiments/m1-sv4a/loop_learn.py",
+    "experiments/m1-sv4a/loop_policy.py",
+    "experiments/m1-sv3a/config.json",
+    "experiments/m1-sv3a/sv_data.py",
+    "experiments/m1-sv3a/sv_model.py",
+    "experiments/m1-sv3a/sv_train.py",
+    "logs/m1-dc1-formal/family-analysis.json",
+    "logs/m1-dc1-formal/roots/families.json",
+    "logs/m1-dc1-formal/roots/development.json",
+    "logs/m1-sv4a-formal/models/D2/best.pt",
+    "logs/m1-sv4a-formal/models/D2/best-train.pt",
+    "logs/m1-sv3a-data/manifest.json",
+    "logs/m1-sv4a-host/build.json",
+    "logs/m1-pre0b-host-final/build.json"
+  ],
+  "stages": [
+    {
+      "id": "experience",
+      "depends_on": [],
+      "args": [
+        "tools/training_manager/sts2.py",
+        "dc1",
+        "{work}",
+        "{repo}/logs/m1-dc1-formal",
+        "--round",
+        "101",
+        "--count",
+        "64",
+        "--chunk",
+        "8"
+      ],
+      "resume": "checkpoint",
+      "boundary": "Committed root batch, up to eight roots",
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "light_workers": 2,
+      "light_args": [
+        "tools/training_manager/sts2.py",
+        "dc1",
+        "{work}",
+        "{repo}/logs/m1-dc1-formal",
+        "--round",
+        "101",
+        "--count",
+        "64",
+        "--chunk",
+        "2"
+      ]
+    },
+    {
+      "id": "features",
+      "depends_on": [
+        "experience"
+      ],
+      "args": [
+        "tools/training_manager/sts2.py",
+        "features",
+        "{work}",
+        "{output}/experience",
+        "{repo}/logs/m1-sv4a-formal/models/D2/best.pt",
+        "--chunk",
+        "16"
+      ],
+      "resume": "checkpoint",
+      "boundary": "Committed feature shard group, up to 16 roots",
+      "gpu": false,
+      "heavy": false,
+      "workers": 1
+    },
+    {
+      "id": "training",
+      "depends_on": [
+        "features"
+      ],
+      "args": [
+        "tools/training_manager/sts2.py",
+        "sv4-train",
+        "{work}",
+        "{output}/features",
+        "--history",
+        "{repo}/logs/m1-sv3a-data",
+        "--parent",
+        "{repo}/logs/m1-sv4a-formal/models/D2/best.pt",
+        "--optimizer",
+        "{repo}/logs/m1-sv4a-formal/models/D2/best-train.pt",
+        "--history-shards",
+        "1",
+        "--epochs",
+        "3",
+        "--updates",
+        "2"
+      ],
+      "resume": "checkpoint",
+      "boundary": "Complete epoch, two optimizer updates plus validation",
+      "gpu": true,
+      "heavy": true,
+      "workers": 2
+    },
+    {
+      "id": "development",
+      "depends_on": [
+        "training"
+      ],
+      "args": [
+        "tools/training_manager/sts2.py",
+        "development",
+        "{work}",
+        "{repo}/logs/m1-dc1-formal/roots/development.json",
+        "--weights",
+        "{output}/training/best.pt",
+        "--experience",
+        "{output}/experience/roots.json",
+        "--count",
+        "8",
+        "--chunk",
+        "2"
+      ],
+      "resume": "checkpoint",
+      "boundary": "Committed evaluation batch, up to two roots",
+      "gpu": false,
+      "heavy": false,
+      "workers": 2
+    }
+  ]
+}
