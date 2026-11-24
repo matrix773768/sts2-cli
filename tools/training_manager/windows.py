@@ -30,6 +30,7 @@ if os.name == "nt":
     terminate_job = api("TerminateJobObject", wt.BOOL, wt.HANDLE, wt.UINT)
     query_job = api("QueryInformationJobObject", wt.BOOL, wt.HANDLE, ct.c_int, wt.LPVOID, wt.DWORD, wt.LPVOID)
     tick = api("GetTickCount", wt.DWORD)
+    system_times = api("GetSystemTimes", wt.BOOL, *([ct.POINTER(wt.FILETIME)] * 3))
 
 
 class BasicLimits(ct.Structure):
@@ -129,6 +130,16 @@ def detach(command, cwd, log):
         flags |= 0x01000000  # CREATE_BREAKAWAY_FROM_JOB
     return subprocess.Popen(command, cwd=cwd, stdin=subprocess.DEVNULL, stdout=log, stderr=log,
                             creationflags=flags)
+
+
+def cpu_times():
+    if os.name != "nt":
+        return None
+    clocks = [wt.FILETIME() for _ in range(3)]
+    if not system_times(*(ct.byref(clock) for clock in clocks)):
+        return None
+    idle, kernel_time, user_time = [(clock.dwHighDateTime << 32) | clock.dwLowDateTime for clock in clocks]
+    return idle, kernel_time + user_time
 
 
 def resources(path, gpu=False):

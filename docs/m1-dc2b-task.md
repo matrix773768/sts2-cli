@@ -4,6 +4,8 @@
 
 ## 冻结与运行
 
+也可在 [INF2 本地训练中心](inf2-training-dashboard.md) 审核、冻结和提交这两项任务。
+
 从仓库根运行。项目负责人先复核配置再冻结和提交。
 
 ```powershell

@@ -1,5 +1,7 @@
 # INF1 Windows 训练管理器
 
+中文浏览器操作见 [INF2 本地训练中心](inf2-training-dashboard.md)。
+
 INF1 在 Windows 登录会话内独立管理本机训练队列。默认队列、日志和报告都在 `logs/inf1/`。日常操作从仓库根目录执行。计算期间 Windows 必须处于唤醒状态，睡眠、休眠或关机都会停止计算。
 
 ## 日常操作

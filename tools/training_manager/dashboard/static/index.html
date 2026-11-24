@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>STS2 本地训练中心</title>
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">∿</span><div><strong>本地训练中心</strong><small>STS2 · INF2</small></div></div>
+    <nav aria-label="主导航">
+      <button type="button" data-page="overview" aria-current="page"><span aria-hidden="true">◫</span>训练总览</button>
+      <button type="button" data-page="plans"><span aria-hidden="true">▤</span>训练计划</button>
+      <button type="button" data-page="queue"><span aria-hidden="true">≡</span>任务队列</button>
+      <button type="button" data-page="results"><span aria-hidden="true">⌁</span>训练结果</button>
+      <button type="button" data-page="resources"><span aria-hidden="true">⊙</span>资源与设置</button>
+    </nav>
+    <div class="sidebar-foot"><span class="dot"></span>仅本机访问</div>
+  </aside>
+  <main>
+    <header class="topline"><span>STS2 研究工作区</span><span id="connection">正在连接面板</span></header>
+    <section class="workspace" aria-labelledby="page-title">
+      <div class="page-head">
+        <div><h1 id="page-title">训练总览</h1><p id="page-subtitle">查看训练进度和调度状态。</p></div>
+        <button id="refresh" class="button secondary" type="button">刷新</button>
+      </div>
+      <div id="content" aria-live="polite"><div class="card"><p>正在读取本地队列…</p></div></div>
+    </section>
+  </main>
+  <div id="notice" role="status" hidden></div>
+  <dialog id="modal"><div class="modal-head"><h2 id="modal-title"></h2><button id="modal-close" type="button" class="button secondary">关闭</button></div><div id="modal-body"></div></dialog>
+</body>
+</html>

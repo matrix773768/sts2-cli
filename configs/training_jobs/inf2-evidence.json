@@ -1,0 +1,76 @@
+{
+  "schema": "sts2.inf2.evidence.v1",
+  "baseline": "4e5a3e025f368279f045d4f4645054c79164016b",
+  "task_sha256": "d79929a518409fd80cac88af4b0324f205dfa0332127cf3de9e11062e531881f",
+  "environment": "2.12.0+cu126",
+  "smoke_id": "inf2-smoke",
+  "observations": [
+    {
+      "name": "Windows launcher opened default browser"
+    },
+    {
+      "name": "Duplicate launcher reused loopback service"
+    },
+    {
+      "name": "Formal curriculum blocked before submission"
+    },
+    {
+      "name": "Browser started standalone INF1"
+    },
+    {
+      "name": "Browser selected Light, Full, Idle and Full"
+    },
+    {
+      "name": "GPU training paused at committed optimizer checkpoint",
+      "updates": 12
+    },
+    {
+      "name": "Training advanced after closing browser",
+      "before": 12,
+      "after": 16
+    },
+    {
+      "name": "Reopened browser showed real results and copied Markdown",
+      "updates": 80,
+      "development": 8
+    },
+    {
+      "name": "All scheduling stopped; INF1 and test web service closed"
+    }
+  ],
+  "updates": 80,
+  "optimizer_step_counts": {
+    "80": 60
+  },
+  "development_statuses": {
+    "predicted_win": 8
+  },
+  "development": {
+    "contract": "7ac48f70c7de8385b04579935ae659c8077cfb0ba4371598ebbdf5a39f15879d",
+    "rows": "a695d554c7fe1bf7e0bf6ce7cc7cc015389d67b007196e366b2ece3bf7383897",
+    "count": 8,
+    "model": "952f6c9816d8c705ef94c11edc4ad00a4bcf1db48a4f03c4e55be0f6bef733be",
+    "manifest": "5e55881e93c444b7dd628133014abe2847fe1723a5786386c9568d0ac19d118f",
+    "purpose": "development"
+  },
+  "seconds": 44.28,
+  "formal_tasks_submitted": 0,
+  "screenshots": {
+    "docs/images/inf2-plans.png": "e06e186c4962f0e467714f532f5d02a4c83b4b5affa780315ffeb52de6e7388e",
+    "docs/images/inf2-queue.png": "ec64c8ecd4d17e128497c0465339b0b971ebf02fa9b25480761814a6231fe1c4",
+    "docs/images/inf2-results.png": "a08eacf719929fb41b0e123a784b1772b883ad4e7bd6d04a9327deec84db6fed",
+    "docs/images/inf2-training.png": "1d1d66a144f1b2005110f5b6f5728c236cf21fb5429bc5a28c09436ddb32940e"
+  },
+  "local_files": {
+    "logs/inf1/inf2-final-verified/browser-evidence.json": "2ee40a25d32dbbc57c0b3606bc26784fabd62bc31e8777c3b8cd4589b00b2b2e",
+    "logs/inf1/inf2-final-verified/copied-summary.md": "cbaf89238dda21ccdc10356c19e8aa27eff330c769d0ef347030bab28fa485ae",
+    "logs/inf1/inf2-final-verified/jobs/inf2-smoke/task.json": "73f6b4d1c09727a96ecc3ee93f6d5f47ba276ff57104f0c61d5fe54c4b6f4ecf",
+    "logs/inf1/inf2-final-verified/jobs/inf2-smoke/report.json": "b068e8bbd7ba88e6c4231341f812d0d56c5ec7ab1b4fd5f1dc77e45194621f9f",
+    "logs/inf1/inf2-final-verified/jobs/inf2-smoke/training/resume.pt": "b12afe6ab54ee31c2a55ddb928badf1560227eb320eddebf13d1e622d72cd71e",
+    "logs/inf1/inf2-final-verified/jobs/inf2-smoke/training/best.pt": "952f6c9816d8c705ef94c11edc4ad00a4bcf1db48a4f03c4e55be0f6bef733be",
+    "logs/inf1/inf2-final-verified/jobs/inf2-smoke/training/update-00080.json": "25cf89e41d37754a4857de48699ce3e1b41a2533e7817f09792d0ac6c6ac511e",
+    "logs/inf1/inf2-final-verified/jobs/inf2-smoke/development/ledger/results.sqlite": "cd9e0180bb1860a44fdc3288c5b7b978f600abb18143f59e0cf912b58422d665",
+    "logs/inf1/inf2-final-verified/jobs/inf2-smoke/development/metrics.json": "b61f4367b57e7f60eec7344690de9d8cdac3f7f3ab7d8a97ddda81d7c83036fc",
+    "logs/inf1/inf2-final-verified/jobs/inf2-smoke/development/ledger/summary.json": "4d6e62ca2a0b91609531077f6d96edec4d47496b0197aa519f803b4e0d00ffb3"
+  }
+}

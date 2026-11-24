@@ -1,6 +1,7 @@
 """Resumable Monte Carlo migration from public SV3A/SV4A shards."""
 import argparse
 import os
+import sys
 from time import perf_counter
 
 import numpy as np
@@ -11,15 +12,19 @@ from dc_common import read, write_json, digest
 from loop_learn import Pool, merge, load_cache
 from train import atomic_save
 
+sys.path.insert(0, str(ROOT))
+from tools.training_manager.worker import progress as manager_progress
+
 HISTORY = [ROOT/"logs/m1-sv3a-data", *(ROOT/"logs/m1-sv4a-formal/features"/s for s in ("D1","D2","S1","S2"))]
 PARENT = ROOT/"logs/m1-sv4a-formal/models/D2/best.pt"
 
 
-def progress(done,target,checkpoint,started):
+def progress(done,target,checkpoint,started,**details):
     path = os.getenv("INF1_PROGRESS")
     if path:
-        write_json(Path(path),dict(done=done,target=target,checkpoint=str(checkpoint.resolve()) if checkpoint else None,
-                                  throughput=done/max(.001,perf_counter()-started)))
+        new_units=details.pop("new_units",done)
+        manager_progress(done,target,checkpoint.resolve() if checkpoint else None,
+                         throughput=new_units/max(.001,perf_counter()-started),measured_units=new_units,**details)
 
 
 def stopped():
@@ -119,7 +124,8 @@ def fit(out,device,updates,batch,limit=0,epoch=32,parent=None,extra=()):
         net.load_state_dict(saved["model"])
         optimizer.load_state_dict(saved["optimizer"])
         done=saved["done"]
-    progress(done,updates,path if path.exists() else None,started)
+    initial=done
+    progress(done,updates,path if path.exists() else None,started,new_units=0,updates=done)
     if stopped() and done<updates:
         return 75
     pools={split:Pool([arr for p in sources for arr in migrated(p,split,meta["policies"],limit)])
@@ -144,7 +150,7 @@ def fit(out,device,updates,batch,limit=0,epoch=32,parent=None,extra=()):
         metrics=score(net,pools["validation"],np.random.default_rng(839),device)
         write_json(out/f"update-{done:05}.json",dict(loss=float(loss.detach()),validation=metrics))
         atomic_save(path,meta|dict(model=net.state_dict(),optimizer=optimizer.state_dict(),done=done,identity=identity))
-        progress(done,updates,path,started)
+        progress(done,updates,path,started,new_units=done-initial,updates=done)
         if stopped() and done<updates:
             return 75
     atomic_save(out/"best.pt",meta|dict(model=net.state_dict()))

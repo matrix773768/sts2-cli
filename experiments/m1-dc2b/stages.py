@@ -12,6 +12,8 @@ from dc_metrics import ledger, describe
 from loop_battle import Host, run as baseline, read_ledger
 from sv_data import Encoder, Shards, examples, policy_key
 from battle import run
+from tools.training_manager.common import write as write_atomic
+from tools.training_manager.ledger import identity as ledger_identity
 
 DC1=ROOT/"logs/m1-dc1-formal"
 CFG=config() | {"direct_stop_margin":0.}
@@ -107,6 +109,7 @@ def production(out, generation, count, previous, search=False):
     schedule=["complex"]*4+["improvable"]*3+["resource"]*2+["base"]
     jobs=[]
     categories=Counter()
+    promoted={80:set(),160:set()}
     for i in range(count):
         category="improvable" if search and i%5 else schedule[i%len(schedule)]
         if not candidates[category]:
@@ -125,12 +128,15 @@ def production(out, generation, count, previous, search=False):
                     hp=next_level
                 else:
                     break
+            if hp in promoted:
+                promoted[hp].add(f["id"])
             if i%5==0:
                 hp=999
         hp_now=hp if hp!=80 else min(80,f["spec"]["hp"])
         recipe=world(spec|{"hp":hp_now,"max_hp":hp},CFG,f["id"],i,f"dc2b-{generation}-{out.name}")
         split="validation" if int(f["id"][:8],16)%7==0 else "train"
         jobs.append([i,recipe,split,f["id"],f["room"]])
+    write_atomic(out/"promotion.json",{str(hp):len(families) for hp,families in promoted.items()})
     return manifest(CFG,"experience_dc2b",jobs) | dict(categories=categories,diagnostic=sorted(diagnostic))
 
 
@@ -191,7 +197,9 @@ def main():
         comparison=paired(((base[i],candidate[i]) for i in base),bootstrap=True)
         passed=(comparison["win_delta"]>=-.05 and comparison["death_delta"]<=.05
                 and comparison["joint_complete"]>=.98*len(base))
-        write_json(out/"gate.json",dict(passed=passed,comparison=comparison))
+        write_atomic(out/"gate.json",dict(passed=passed,comparison=comparison,
+                     evidence={key:ledger_identity(path/"results.sqlite") for key,path in
+                               (("reference",a.reference),("candidate",a.ledger))}))
         return 0 if passed else 3
     if a.mode=="cache":
         cache(out,a.ledger,a.checkpoint)
@@ -208,29 +216,37 @@ def main():
     battle,model=deploy(a.checkpoint,a.budget)
     host=Host(out,ROOT/"logs/m1-sv4a-host",CFG)
     started=perf_counter()
-    done=0
+    done,complete=0,0
+    ledger_path=out/"ledger/results.sqlite"
+    target=a.target or len(spec["jobs"])
     try:
-        if (out/"ledger/results.sqlite").exists():
+        if ledger_path.exists():
             result=battle(host,path,out/"ledger",CFG,*model,
                           epsilon=.05 if a.mode=="produce" else 0.,max_new=0)
             if result:
                 done=result["attempts"]
-                if a.target and result["complete"]>=a.target:
-                    return 0
-        while done<len(spec["jobs"]):
+                complete=result["complete"]
+        initial=complete if a.target else done
+
+        def publish():
+            units=complete if a.target else done
+            progress(min(units,target),target,ledger_path if done else None,started,new_units=units-initial,
+                     attempts=done,attempt_limit=len(spec["jobs"]),complete=complete)
+
+        publish()
+        while done<len(spec["jobs"]) and (not a.target or complete<a.target):
             if stopped():
                 return 75
             result=battle(host,path,out/"ledger",CFG,*model,
                           epsilon=.05 if a.mode=="produce" else 0.,max_new=a.chunk)
             done=result["attempts"]
-            progress(done,len(spec["jobs"]),out/"ledger/results.sqlite",started)
-            if a.target and result["complete"]>=a.target:
-                return 0
+            complete=result["complete"]
+            publish()
         if a.mode != "produce":
             rows=list(ledger(out/"ledger").values())
             write_json(out/"metrics.json",{str(hp):describe(r for r in rows if r["root"]["max_hp"]==hp)
                                          for hp in (80,160,999)})
-        return 3 if a.target and result["complete"]<a.target else 0
+        return 3 if a.target and complete<a.target else 0
     finally:
         host.close()
 

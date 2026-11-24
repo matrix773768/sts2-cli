@@ -91,7 +91,10 @@ def identifier(value):
 
 
 def settings(home):
-    cfg = SETTINGS | read(home / "settings.json", {})
+    return validate_settings(SETTINGS | read(home / "settings.json", {}))
+
+
+def validate_settings(cfg):
     if cfg["mode"] not in MODES or type(cfg["enabled"]) is not bool or type(cfg["require_ac"]) is not bool:
         raise ValueError("Invalid settings mode or flag")
     for key in ("idle_seconds", "resource_samples", "min_disk_mb", "min_ram_mb", "min_vram_mb"):
@@ -162,6 +165,8 @@ def validate(spec, home):
     number(spec["max_retries"], "max_retries", 0, integral=True)
     if "budget_seconds" in spec:
         number(spec["budget_seconds"], "budget_seconds", 1)
+    if "stop_grace_seconds" in spec:
+        number(spec["stop_grace_seconds"], "stop_grace_seconds", 1)
     stages = spec["stages"]
     if not isinstance(stages, list) or not stages:
         raise ValueError("At least one stage is required")

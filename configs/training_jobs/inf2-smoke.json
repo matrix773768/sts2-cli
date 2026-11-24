@@ -1,0 +1,79 @@
+{
+  "id": "inf2-smoke",
+  "name": "INF2 dashboard smoke",
+  "type": "smoke",
+  "cwd": ".",
+  "python": "logs/m1-pre1-cuda/Scripts/python.exe",
+  "output": "logs/inf1/jobs/inf2-smoke",
+  "mode": "Any",
+  "max_retries": 0,
+  "budget_seconds": 420,
+  "limits": {
+    "generations": 0,
+    "optimizer_updates": 80,
+    "development_roots": 8,
+    "confirmation_evaluations": 0
+  },
+  "inputs": [
+    "experiments/m1-dc2b/fit.py",
+    "experiments/m1-dc2b/stages.py",
+    "experiments/m1-dc2b/battle.py",
+    "experiments/m1-dc2b/value.py",
+    "tools/training_manager/common.py",
+    "tools/training_manager/ledger.py",
+    "tools/training_manager/windows.py",
+    "tools/training_manager/worker.py",
+    "logs/m1-sv4a-formal/models/D2/best.pt",
+    "logs/m1-sv3a-data/manifest.json",
+    "logs/m1-sv4a-formal/features/D1/manifest.json",
+    "logs/m1-sv4a-formal/features/D2/manifest.json",
+    "logs/m1-sv4a-formal/features/S1/manifest.json",
+    "logs/m1-sv4a-formal/features/S2/manifest.json",
+    "logs/m1-dc1-formal/roots/development.json"
+  ],
+  "stages": [
+    {
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch",
+      "heavy": true,
+      "id": "training",
+      "depends_on": [],
+      "args": [
+        "experiments/m1-dc2b/fit.py",
+        "{work}",
+        "--updates",
+        "80",
+        "--batch",
+        "64",
+        "--epoch",
+        "4",
+        "--shards",
+        "1"
+      ],
+      "gpu": true,
+      "workers": 2
+    },
+    {
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch",
+      "heavy": true,
+      "id": "development",
+      "depends_on": [
+        "training"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "development",
+        "{work}",
+        "--count",
+        "8",
+        "--chunk",
+        "2",
+        "--checkpoint",
+        "{output}/training/best.pt"
+      ],
+      "gpu": false,
+      "workers": 2
+    }
+  ]
+}

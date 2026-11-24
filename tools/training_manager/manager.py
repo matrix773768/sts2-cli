@@ -170,7 +170,7 @@ class Manager:
                     self.update(row, state="pausing", intent="automatic", reason="manager stopped")
                     self.signal(self.job(row["id"]))
 
-    def report(self, row):
+    def report(self, row, *, persist=True):
         spec, output, stage, work = self.inspect(row)
         result = dict(row) | {"spec": spec, "current_stage": stage["id"] if stage else None,
                              "progress": read(work / "progress.json") if work else None}
@@ -192,7 +192,7 @@ class Manager:
         result["stages"] = {
             item["id"]: read(output / item["id"] / "progress.json") for item in spec["stages"]
         }
-        if row["state"] in TERMINAL:
+        if persist and row["state"] in TERMINAL:
             write(output / "report.json", result)
         return result
 
@@ -215,7 +215,8 @@ class Manager:
             path = work / "attempts" / token
             path.mkdir(parents=True)
             request = dict(token=token, sha256=spec["sha256"], command=args, cwd=str((ROOT / spec["cwd"]).resolve()),
-                           remaining=remaining, grace=stage.get("stop_grace_seconds", 60), resume=stage["resume"])
+                           remaining=remaining, grace=stage.get("stop_grace_seconds", spec.get("stop_grace_seconds", 60)),
+                           resume=stage["resume"])
             write(path / "launch.json", request)
             write(work / "request.json", request)
             now = time()
