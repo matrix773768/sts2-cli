@@ -1,0 +1,237 @@
+{
+  "id": "dc2b-initial",
+  "name": "dc2b-initial",
+  "type": "training",
+  "cwd": ".",
+  "python": "logs/m1-pre1-cuda/Scripts/python.exe",
+  "output": "logs/inf1/jobs/dc2b-initial",
+  "mode": "Any",
+  "max_retries": 0,
+  "budget_seconds": 21600,
+  "stop_grace_seconds": 600,
+  "limits": {
+    "generations": 0,
+    "optimizer_updates": 4096,
+    "development_roots": 512,
+    "confirmation_evaluations": 0
+  },
+  "inputs": [
+    "experiments/m1-dc1/config.json",
+    "experiments/m1-dc1/dc_analyze.py",
+    "experiments/m1-dc1/dc_common.py",
+    "experiments/m1-dc1/dc_diagnostics.py",
+    "experiments/m1-dc1/dc_evidence.py",
+    "experiments/m1-dc1/dc_history.py",
+    "experiments/m1-dc1/dc_metrics.py",
+    "experiments/m1-dc1/dc_produce.py",
+    "experiments/m1-dc1/dc_roots.py",
+    "experiments/m1-dc1/dc_run.py",
+    "experiments/m1-dc1/dc_utility.py",
+    "experiments/m1-dc1/dc_utility_run.py",
+    "experiments/m1-dc2b/battle.py",
+    "experiments/m1-dc2b/fit.py",
+    "experiments/m1-dc2b/stages.py",
+    "experiments/m1-dc2b/value.py",
+    "experiments/m1-pre1/campaign.py",
+    "experiments/m1-pre1/conditions.py",
+    "experiments/m1-pre1/evaluate.py",
+    "experiments/m1-pre1/evidence.py",
+    "experiments/m1-pre1/features.py",
+    "experiments/m1-pre1/inference.py",
+    "experiments/m1-pre1/labels.py",
+    "experiments/m1-pre1/network.py",
+    "experiments/m1-pre1/prepare.py",
+    "experiments/m1-pre1/relation_probe.py",
+    "experiments/m1-pre1/rl.py",
+    "experiments/m1-pre1/structured.py",
+    "experiments/m1-pre1/test_pre1.py",
+    "experiments/m1-pre1/train.py",
+    "experiments/m1-sv3a/build_bridge.py",
+    "experiments/m1-sv3a/sv_audit.py",
+    "experiments/m1-sv3a/sv_boundary.py",
+    "experiments/m1-sv3a/sv_checks.py",
+    "experiments/m1-sv3a/sv_consistency.py",
+    "experiments/m1-sv3a/sv_data.py",
+    "experiments/m1-sv3a/sv_eval.py",
+    "experiments/m1-sv3a/sv_extend.py",
+    "experiments/m1-sv3a/sv_metrics.py",
+    "experiments/m1-sv3a/sv_model.py",
+    "experiments/m1-sv3a/sv_runtime.py",
+    "experiments/m1-sv3a/sv_train.py",
+    "experiments/m1-sv4a/audit.py",
+    "experiments/m1-sv4a/build_host.py",
+    "experiments/m1-sv4a/campaign.py",
+    "experiments/m1-sv4a/evidence.json",
+    "experiments/m1-sv4a/loop_battle.py",
+    "experiments/m1-sv4a/loop_checks.py",
+    "experiments/m1-sv4a/loop_common.py",
+    "experiments/m1-sv4a/loop_learn.py",
+    "experiments/m1-sv4a/loop_policy.py",
+    "experiments/m1-sv4a/loop_roots.py",
+    "experiments/m1-sv4a/stages.py",
+    "experiments/m1-sv4a/support.py",
+    "experiments/m1-sv4a/test_loop.py",
+    "logs/m1-dc1-formal/evaluation/development/D2/results.sqlite",
+    "logs/m1-dc1-formal/evaluation/train/D2-search/results.sqlite",
+    "logs/m1-dc1-formal/evaluation/train/D2/results.sqlite",
+    "logs/m1-dc1-formal/family-analysis.json",
+    "logs/m1-dc1-formal/roots/catalog.json",
+    "logs/m1-dc1-formal/roots/development.json",
+    "logs/m1-dc1-formal/roots/families.json",
+    "logs/m1-pre0b-host-final/build.json",
+    "logs/m1-sv3a-data/manifest.json",
+    "logs/m1-sv4a-formal/features/D1/manifest.json",
+    "logs/m1-sv4a-formal/features/D2/manifest.json",
+    "logs/m1-sv4a-formal/features/S1/manifest.json",
+    "logs/m1-sv4a-formal/features/S2/manifest.json",
+    "logs/m1-sv4a-formal/models/D2/best.pt",
+    "logs/m1-sv4a-host/build.json",
+    "logs/m1-dc2b-frozen/development.json",
+    "logs/m1-dc2b-frozen/challenge.json"
+  ],
+  "stages": [
+    {
+      "id": "cache-d2",
+      "depends_on": [],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{repo}/logs/m1-dc1-formal/evaluation/train/D2"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "cache-d2-search",
+      "depends_on": [],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{repo}/logs/m1-dc1-formal/evaluation/train/D2-search"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "initial",
+      "depends_on": [
+        "cache-d2",
+        "cache-d2-search"
+      ],
+      "args": [
+        "experiments/m1-dc2b/fit.py",
+        "{work}",
+        "--updates",
+        "4096",
+        "--epoch",
+        "64",
+        "--extra",
+        "{output}/cache-d2",
+        "{output}/cache-d2-search"
+      ],
+      "gpu": true,
+      "heavy": true,
+      "workers": 2,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "development",
+      "depends_on": [
+        "initial"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "development",
+        "{work}",
+        "--checkpoint",
+        "{output}/initial/best.pt",
+        "--count",
+        "512",
+        "--chunk",
+        "32"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "gate",
+      "depends_on": [
+        "development"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "gate",
+        "{work}",
+        "--ledger",
+        "{output}/development/ledger",
+        "--reference",
+        "{repo}/logs/m1-dc1-formal/evaluation/development/D2"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "complex-baseline",
+      "depends_on": [
+        "gate"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "complex-development",
+        "{work}",
+        "--reference",
+        "{repo}/logs/m1-dc2b-frozen/development.json",
+        "--count",
+        "9999",
+        "--chunk",
+        "32"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "complex-development",
+      "depends_on": [
+        "complex-baseline"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "complex-development",
+        "{work}",
+        "--reference",
+        "{repo}/logs/m1-dc2b-frozen/development.json",
+        "--count",
+        "9999",
+        "--chunk",
+        "32",
+        "--checkpoint",
+        "{output}/initial/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    }
+  ]
+}

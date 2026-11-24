@@ -1,0 +1,4 @@
+# Keep source bytes stable for frozen INF1 identities.
+*.py -text whitespace=cr-at-eol
+*.json -text
+.gitattributes -text
