@@ -1,0 +1,4 @@
+# Keep the exact bytes covered by frozen run and model-policy hashes.
+*.py -text whitespace=cr-at-eol
+*.json -text
+.gitattributes -text

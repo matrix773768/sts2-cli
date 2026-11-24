@@ -1,0 +1,20 @@
+{
+  "version": "sts2.dc1.v1",
+  "seed": 71402101,
+  "pools": {"development": [128, 4], "benchmark": [256, 4], "challenge": [128, 4], "train": [512, 2]},
+  "arms": ["D2", "D2-search"],
+  "control_families_per_pool": 16,
+  "near_duplicate_jaccard": 0.8,
+  "action_cap": 256,
+  "search_budget": 350,
+  "search_depth": 32,
+  "search_wall_ms": 20000,
+  "workers": 8,
+  "inference_groups": 2,
+  "inference_batch": 8,
+  "low_loss_hp": 10,
+  "serious_loss_fraction": 0.5,
+  "risk_threshold": 0.05,
+  "combat_hp_shadow_families": 24,
+  "utility": {"kappa": 10, "linear_weight": 0.05, "hp_scale": 80, "risk_threshold": 0.05}
+}
