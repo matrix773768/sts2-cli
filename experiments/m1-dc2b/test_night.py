@@ -24,11 +24,28 @@ class NightTests(unittest.TestCase):
         self.assertIn("g12-audit",seen)
         self.assertEqual(data["budget_seconds"],28800)
 
+    def test_hf1_plan_keeps_budget_and_uses_independent_namespace(self):
+        paths=night.ROOT/"configs/training_jobs"
+        base=json.loads((paths/"dc2b-night1.json").read_bytes())
+        hf=paths/"dc2b-night1-hf1.json"
+        data=json.loads(hf.read_bytes())
+        with tempfile.TemporaryDirectory(dir=night.ROOT/"logs") as tmp:
+            path=Path(tmp)/"hf1.json"
+            night.make(path,data["id"])
+            self.assertEqual(path.read_bytes(),hf.read_bytes())
+        self.assertEqual(base["limits"],data["limits"])
+        self.assertEqual(base["budget_seconds"],data["budget_seconds"])
+        self.assertNotEqual(base["output"],data["output"])
+        for stage in data["stages"]:
+            args=stage["args"]
+            if "produce" in args:
+                self.assertEqual(args[args.index("--night-namespace")+1],data["id"])
+
     def test_restore_committed_files_and_relocate_progress(self):
         with tempfile.TemporaryDirectory(dir=night.ROOT/"logs") as tmp:
             root=Path(tmp).resolve()
             jobs=root/"logs/inf1/jobs"
-            old,new=jobs/"dc2b-night1",jobs/"dc2b-night1-r1"
+            old,new=jobs/"dc2b-night1-hf1",jobs/"dc2b-night1-hf1-r1"
             stage=old/"g1-direct"
             ledger=stage/"ledger"
             ledger.mkdir(parents=True)

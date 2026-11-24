@@ -1,0 +1,2797 @@
+{
+  "id": "dc2b-night1-hf1",
+  "name": "DC2B 八小时夜间训练 HF1",
+  "type": "training",
+  "cwd": ".",
+  "python": "logs/m1-pre1-cuda/Scripts/python.exe",
+  "output": "logs/inf1/jobs/dc2b-night1-hf1",
+  "mode": "Any",
+  "max_retries": 0,
+  "budget_seconds": 28800,
+  "stop_grace_seconds": 180,
+  "limits": {
+    "generations": 12,
+    "experience_roots": 120000,
+    "experience_attempts": 130560,
+    "optimizer_updates": 19200,
+    "development_roots": 512,
+    "confirmation_evaluations": 0,
+    "direct_per_generation": 8000,
+    "search_per_generation": 2000
+  },
+  "inputs": [
+    "experiments/m1-dc1/config.json",
+    "experiments/m1-dc1/dc_analyze.py",
+    "experiments/m1-dc1/dc_common.py",
+    "experiments/m1-dc1/dc_diagnostics.py",
+    "experiments/m1-dc1/dc_evidence.py",
+    "experiments/m1-dc1/dc_history.py",
+    "experiments/m1-dc1/dc_metrics.py",
+    "experiments/m1-dc1/dc_produce.py",
+    "experiments/m1-dc1/dc_roots.py",
+    "experiments/m1-dc1/dc_run.py",
+    "experiments/m1-dc1/dc_utility.py",
+    "experiments/m1-dc1/dc_utility_run.py",
+    "experiments/m1-dc2b/battle.py",
+    "experiments/m1-dc2b/fit.py",
+    "experiments/m1-dc2b/stages.py",
+    "experiments/m1-dc2b/value.py",
+    "tools/training_manager/common.py",
+    "tools/training_manager/ledger.py",
+    "tools/training_manager/windows.py",
+    "tools/training_manager/worker.py",
+    "experiments/m1-pre1/campaign.py",
+    "experiments/m1-pre1/conditions.py",
+    "experiments/m1-pre1/evaluate.py",
+    "experiments/m1-pre1/evidence.py",
+    "experiments/m1-pre1/features.py",
+    "experiments/m1-pre1/inference.py",
+    "experiments/m1-pre1/labels.py",
+    "experiments/m1-pre1/network.py",
+    "experiments/m1-pre1/prepare.py",
+    "experiments/m1-pre1/relation_probe.py",
+    "experiments/m1-pre1/rl.py",
+    "experiments/m1-pre1/structured.py",
+    "experiments/m1-pre1/test_pre1.py",
+    "experiments/m1-pre1/train.py",
+    "experiments/m1-sv3a/build_bridge.py",
+    "experiments/m1-sv3a/sv_audit.py",
+    "experiments/m1-sv3a/sv_boundary.py",
+    "experiments/m1-sv3a/sv_checks.py",
+    "experiments/m1-sv3a/sv_consistency.py",
+    "experiments/m1-sv3a/sv_data.py",
+    "experiments/m1-sv3a/sv_eval.py",
+    "experiments/m1-sv3a/sv_extend.py",
+    "experiments/m1-sv3a/sv_metrics.py",
+    "experiments/m1-sv3a/sv_model.py",
+    "experiments/m1-sv3a/sv_runtime.py",
+    "experiments/m1-sv3a/sv_train.py",
+    "experiments/m1-sv4a/audit.py",
+    "experiments/m1-sv4a/build_host.py",
+    "experiments/m1-sv4a/campaign.py",
+    "experiments/m1-sv4a/evidence.json",
+    "experiments/m1-sv4a/loop_battle.py",
+    "experiments/m1-sv4a/loop_checks.py",
+    "experiments/m1-sv4a/loop_common.py",
+    "experiments/m1-sv4a/loop_learn.py",
+    "experiments/m1-sv4a/loop_policy.py",
+    "experiments/m1-sv4a/loop_roots.py",
+    "experiments/m1-sv4a/stages.py",
+    "experiments/m1-sv4a/support.py",
+    "experiments/m1-sv4a/test_loop.py",
+    "logs/inf1/jobs/dc2b-initial/gate/gate.json",
+    "logs/inf1/jobs/dc2b-initial/initial/best.pt",
+    "logs/m1-dc1-formal/family-analysis.json",
+    "logs/m1-dc1-formal/roots/catalog.json",
+    "logs/m1-dc1-formal/roots/development.json",
+    "logs/m1-dc1-formal/roots/families.json",
+    "logs/m1-pre0b-host-final/build.json",
+    "logs/m1-sv3a-data/manifest.json",
+    "logs/m1-sv4a-formal/features/D1/manifest.json",
+    "logs/m1-sv4a-formal/features/D2/manifest.json",
+    "logs/m1-sv4a-formal/features/S1/manifest.json",
+    "logs/m1-sv4a-formal/features/S2/manifest.json",
+    "logs/m1-sv4a-formal/models/D2/best.pt",
+    "logs/m1-sv4a-host/build.json",
+    "logs/m1-dc2b-frozen/development.json",
+    "logs/m1-dc2b-frozen/challenge.json",
+    "tools/training_manager/manager.py",
+    "experiments/m1-dc2b/night.py",
+    "logs/inf1/jobs/dc2b-initial/initial/resume.pt",
+    "logs/inf1/jobs/dc2b-initial/development/ledger/results.sqlite",
+    "logs/inf1/jobs/dc2b-initial/complex-development/ledger/results.sqlite",
+    "logs/inf1/jobs/dc2b-initial/complex-baseline/ledger/results.sqlite"
+  ],
+  "stages": [
+    {
+      "id": "preflight",
+      "depends_on": [],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "initial"
+      ],
+      "gpu": false,
+      "heavy": false,
+      "workers": 1,
+      "resume": "restart",
+      "boundary": "Audit G0 and policy slot capacity"
+    },
+    {
+      "id": "g1-direct",
+      "depends_on": [
+        "preflight"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "produce",
+        "{work}",
+        "--checkpoint",
+        "{repo}/logs/inf1/jobs/dc2b-initial/initial/best.pt",
+        "--generation",
+        "1",
+        "--budget",
+        "0",
+        "--count",
+        "8704",
+        "--target",
+        "8000",
+        "--chunk",
+        "128",
+        "--gate",
+        "{repo}/logs/inf1/jobs/dc2b-initial/gate/gate.json",
+        "--night-history",
+        "--night-namespace",
+        "dc2b-night1-hf1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g1-direct-cache",
+      "depends_on": [
+        "g1-direct"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{output}/g1-direct/ledger",
+        "--checkpoint",
+        "{repo}/logs/inf1/jobs/dc2b-initial/initial/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "g1-search",
+      "depends_on": [
+        "preflight"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "produce",
+        "{work}",
+        "--checkpoint",
+        "{repo}/logs/inf1/jobs/dc2b-initial/initial/best.pt",
+        "--generation",
+        "1",
+        "--budget",
+        "350",
+        "--count",
+        "2176",
+        "--target",
+        "2000",
+        "--chunk",
+        "128",
+        "--gate",
+        "{repo}/logs/inf1/jobs/dc2b-initial/gate/gate.json",
+        "--night-history",
+        "--night-namespace",
+        "dc2b-night1-hf1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g1-search-cache",
+      "depends_on": [
+        "g1-search"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{output}/g1-search/ledger",
+        "--checkpoint",
+        "{repo}/logs/inf1/jobs/dc2b-initial/initial/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "g1-budget",
+      "depends_on": [
+        "g1-direct-cache",
+        "g1-search-cache"
+      ],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "budget",
+        "{work}",
+        "1"
+      ],
+      "gpu": false,
+      "heavy": false,
+      "workers": 1,
+      "resume": "restart",
+      "boundary": "Budget admission"
+    },
+    {
+      "id": "g1-fit",
+      "depends_on": [
+        "g1-budget"
+      ],
+      "args": [
+        "experiments/m1-dc2b/fit.py",
+        "{work}",
+        "--parent",
+        "{repo}/logs/inf1/jobs/dc2b-initial/initial/best.pt",
+        "--updates",
+        "1600",
+        "--epoch",
+        "64",
+        "--night-replay",
+        "--extra",
+        "{output}/g1-direct-cache",
+        "{output}/g1-search-cache"
+      ],
+      "gpu": true,
+      "heavy": true,
+      "workers": 2,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g1-development",
+      "depends_on": [
+        "g1-fit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "development",
+        "{work}",
+        "--checkpoint",
+        "{output}/g1-fit/best.pt",
+        "--count",
+        "512",
+        "--chunk",
+        "32"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g1-complex",
+      "depends_on": [
+        "g1-development"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "complex-development",
+        "{work}",
+        "--reference",
+        "{repo}/logs/m1-dc2b-frozen/development.json",
+        "--count",
+        "9999",
+        "--chunk",
+        "32",
+        "--checkpoint",
+        "{output}/g1-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g1-audit",
+      "depends_on": [
+        "g1-complex"
+      ],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "audit",
+        "{work}",
+        "1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 2,
+      "resume": "restart",
+      "boundary": "Completed generation evidence"
+    },
+    {
+      "id": "g2-direct",
+      "depends_on": [
+        "g1-audit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "produce",
+        "{work}",
+        "--checkpoint",
+        "{output}/g1-fit/best.pt",
+        "--generation",
+        "2",
+        "--budget",
+        "0",
+        "--count",
+        "8704",
+        "--target",
+        "8000",
+        "--chunk",
+        "128",
+        "--previous",
+        "1",
+        "--night-history",
+        "--night-namespace",
+        "dc2b-night1-hf1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g2-direct-cache",
+      "depends_on": [
+        "g2-direct"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{output}/g2-direct/ledger",
+        "--checkpoint",
+        "{output}/g1-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "g2-search",
+      "depends_on": [
+        "g1-audit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "produce",
+        "{work}",
+        "--checkpoint",
+        "{output}/g1-fit/best.pt",
+        "--generation",
+        "2",
+        "--budget",
+        "350",
+        "--count",
+        "2176",
+        "--target",
+        "2000",
+        "--chunk",
+        "128",
+        "--previous",
+        "1",
+        "--night-history",
+        "--night-namespace",
+        "dc2b-night1-hf1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g2-search-cache",
+      "depends_on": [
+        "g2-search"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{output}/g2-search/ledger",
+        "--checkpoint",
+        "{output}/g1-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "g2-budget",
+      "depends_on": [
+        "g2-direct-cache",
+        "g2-search-cache"
+      ],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "budget",
+        "{work}",
+        "2"
+      ],
+      "gpu": false,
+      "heavy": false,
+      "workers": 1,
+      "resume": "restart",
+      "boundary": "Budget admission"
+    },
+    {
+      "id": "g2-fit",
+      "depends_on": [
+        "g2-budget"
+      ],
+      "args": [
+        "experiments/m1-dc2b/fit.py",
+        "{work}",
+        "--parent",
+        "{output}/g1-fit/best.pt",
+        "--updates",
+        "1600",
+        "--epoch",
+        "64",
+        "--night-replay",
+        "--extra",
+        "{output}/g2-direct-cache",
+        "{output}/g2-search-cache",
+        "{output}/g1-direct-cache",
+        "{output}/g1-search-cache"
+      ],
+      "gpu": true,
+      "heavy": true,
+      "workers": 2,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g2-development",
+      "depends_on": [
+        "g2-fit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "development",
+        "{work}",
+        "--checkpoint",
+        "{output}/g2-fit/best.pt",
+        "--count",
+        "512",
+        "--chunk",
+        "32"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g2-complex",
+      "depends_on": [
+        "g2-development"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "complex-development",
+        "{work}",
+        "--reference",
+        "{repo}/logs/m1-dc2b-frozen/development.json",
+        "--count",
+        "9999",
+        "--chunk",
+        "32",
+        "--checkpoint",
+        "{output}/g2-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g2-audit",
+      "depends_on": [
+        "g2-complex"
+      ],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "audit",
+        "{work}",
+        "2"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 2,
+      "resume": "restart",
+      "boundary": "Completed generation evidence"
+    },
+    {
+      "id": "g3-direct",
+      "depends_on": [
+        "g2-audit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "produce",
+        "{work}",
+        "--checkpoint",
+        "{output}/g2-fit/best.pt",
+        "--generation",
+        "3",
+        "--budget",
+        "0",
+        "--count",
+        "8704",
+        "--target",
+        "8000",
+        "--chunk",
+        "128",
+        "--previous",
+        "2",
+        "--night-history",
+        "--night-namespace",
+        "dc2b-night1-hf1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g3-direct-cache",
+      "depends_on": [
+        "g3-direct"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{output}/g3-direct/ledger",
+        "--checkpoint",
+        "{output}/g2-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "g3-search",
+      "depends_on": [
+        "g2-audit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "produce",
+        "{work}",
+        "--checkpoint",
+        "{output}/g2-fit/best.pt",
+        "--generation",
+        "3",
+        "--budget",
+        "350",
+        "--count",
+        "2176",
+        "--target",
+        "2000",
+        "--chunk",
+        "128",
+        "--previous",
+        "2",
+        "--night-history",
+        "--night-namespace",
+        "dc2b-night1-hf1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g3-search-cache",
+      "depends_on": [
+        "g3-search"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{output}/g3-search/ledger",
+        "--checkpoint",
+        "{output}/g2-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "g3-budget",
+      "depends_on": [
+        "g3-direct-cache",
+        "g3-search-cache"
+      ],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "budget",
+        "{work}",
+        "3"
+      ],
+      "gpu": false,
+      "heavy": false,
+      "workers": 1,
+      "resume": "restart",
+      "boundary": "Budget admission"
+    },
+    {
+      "id": "g3-fit",
+      "depends_on": [
+        "g3-budget"
+      ],
+      "args": [
+        "experiments/m1-dc2b/fit.py",
+        "{work}",
+        "--parent",
+        "{output}/g2-fit/best.pt",
+        "--updates",
+        "1600",
+        "--epoch",
+        "64",
+        "--night-replay",
+        "--extra",
+        "{output}/g3-direct-cache",
+        "{output}/g3-search-cache",
+        "{output}/g2-direct-cache",
+        "{output}/g2-search-cache",
+        "{output}/g1-direct-cache",
+        "{output}/g1-search-cache"
+      ],
+      "gpu": true,
+      "heavy": true,
+      "workers": 2,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g3-development",
+      "depends_on": [
+        "g3-fit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "development",
+        "{work}",
+        "--checkpoint",
+        "{output}/g3-fit/best.pt",
+        "--count",
+        "512",
+        "--chunk",
+        "32"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g3-complex",
+      "depends_on": [
+        "g3-development"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "complex-development",
+        "{work}",
+        "--reference",
+        "{repo}/logs/m1-dc2b-frozen/development.json",
+        "--count",
+        "9999",
+        "--chunk",
+        "32",
+        "--checkpoint",
+        "{output}/g3-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g3-audit",
+      "depends_on": [
+        "g3-complex"
+      ],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "audit",
+        "{work}",
+        "3"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 2,
+      "resume": "restart",
+      "boundary": "Completed generation evidence"
+    },
+    {
+      "id": "g4-direct",
+      "depends_on": [
+        "g3-audit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "produce",
+        "{work}",
+        "--checkpoint",
+        "{output}/g3-fit/best.pt",
+        "--generation",
+        "4",
+        "--budget",
+        "0",
+        "--count",
+        "8704",
+        "--target",
+        "8000",
+        "--chunk",
+        "128",
+        "--previous",
+        "3",
+        "--night-history",
+        "--night-namespace",
+        "dc2b-night1-hf1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g4-direct-cache",
+      "depends_on": [
+        "g4-direct"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{output}/g4-direct/ledger",
+        "--checkpoint",
+        "{output}/g3-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "g4-search",
+      "depends_on": [
+        "g3-audit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "produce",
+        "{work}",
+        "--checkpoint",
+        "{output}/g3-fit/best.pt",
+        "--generation",
+        "4",
+        "--budget",
+        "350",
+        "--count",
+        "2176",
+        "--target",
+        "2000",
+        "--chunk",
+        "128",
+        "--previous",
+        "3",
+        "--night-history",
+        "--night-namespace",
+        "dc2b-night1-hf1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g4-search-cache",
+      "depends_on": [
+        "g4-search"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{output}/g4-search/ledger",
+        "--checkpoint",
+        "{output}/g3-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "g4-budget",
+      "depends_on": [
+        "g4-direct-cache",
+        "g4-search-cache"
+      ],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "budget",
+        "{work}",
+        "4"
+      ],
+      "gpu": false,
+      "heavy": false,
+      "workers": 1,
+      "resume": "restart",
+      "boundary": "Budget admission"
+    },
+    {
+      "id": "g4-fit",
+      "depends_on": [
+        "g4-budget"
+      ],
+      "args": [
+        "experiments/m1-dc2b/fit.py",
+        "{work}",
+        "--parent",
+        "{output}/g3-fit/best.pt",
+        "--updates",
+        "1600",
+        "--epoch",
+        "64",
+        "--night-replay",
+        "--extra",
+        "{output}/g4-direct-cache",
+        "{output}/g4-search-cache",
+        "{output}/g3-direct-cache",
+        "{output}/g3-search-cache",
+        "{output}/g2-direct-cache",
+        "{output}/g2-search-cache",
+        "{output}/g1-direct-cache",
+        "{output}/g1-search-cache"
+      ],
+      "gpu": true,
+      "heavy": true,
+      "workers": 2,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g4-development",
+      "depends_on": [
+        "g4-fit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "development",
+        "{work}",
+        "--checkpoint",
+        "{output}/g4-fit/best.pt",
+        "--count",
+        "512",
+        "--chunk",
+        "32"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g4-complex",
+      "depends_on": [
+        "g4-development"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "complex-development",
+        "{work}",
+        "--reference",
+        "{repo}/logs/m1-dc2b-frozen/development.json",
+        "--count",
+        "9999",
+        "--chunk",
+        "32",
+        "--checkpoint",
+        "{output}/g4-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g4-audit",
+      "depends_on": [
+        "g4-complex"
+      ],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "audit",
+        "{work}",
+        "4"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 2,
+      "resume": "restart",
+      "boundary": "Completed generation evidence"
+    },
+    {
+      "id": "g5-direct",
+      "depends_on": [
+        "g4-audit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "produce",
+        "{work}",
+        "--checkpoint",
+        "{output}/g4-fit/best.pt",
+        "--generation",
+        "5",
+        "--budget",
+        "0",
+        "--count",
+        "8704",
+        "--target",
+        "8000",
+        "--chunk",
+        "128",
+        "--previous",
+        "4",
+        "--night-history",
+        "--night-namespace",
+        "dc2b-night1-hf1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g5-direct-cache",
+      "depends_on": [
+        "g5-direct"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{output}/g5-direct/ledger",
+        "--checkpoint",
+        "{output}/g4-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "g5-search",
+      "depends_on": [
+        "g4-audit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "produce",
+        "{work}",
+        "--checkpoint",
+        "{output}/g4-fit/best.pt",
+        "--generation",
+        "5",
+        "--budget",
+        "350",
+        "--count",
+        "2176",
+        "--target",
+        "2000",
+        "--chunk",
+        "128",
+        "--previous",
+        "4",
+        "--night-history",
+        "--night-namespace",
+        "dc2b-night1-hf1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g5-search-cache",
+      "depends_on": [
+        "g5-search"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{output}/g5-search/ledger",
+        "--checkpoint",
+        "{output}/g4-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "g5-budget",
+      "depends_on": [
+        "g5-direct-cache",
+        "g5-search-cache"
+      ],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "budget",
+        "{work}",
+        "5"
+      ],
+      "gpu": false,
+      "heavy": false,
+      "workers": 1,
+      "resume": "restart",
+      "boundary": "Budget admission"
+    },
+    {
+      "id": "g5-fit",
+      "depends_on": [
+        "g5-budget"
+      ],
+      "args": [
+        "experiments/m1-dc2b/fit.py",
+        "{work}",
+        "--parent",
+        "{output}/g4-fit/best.pt",
+        "--updates",
+        "1600",
+        "--epoch",
+        "64",
+        "--night-replay",
+        "--extra",
+        "{output}/g5-direct-cache",
+        "{output}/g5-search-cache",
+        "{output}/g4-direct-cache",
+        "{output}/g4-search-cache",
+        "{output}/g3-direct-cache",
+        "{output}/g3-search-cache",
+        "{output}/g2-direct-cache",
+        "{output}/g2-search-cache",
+        "{output}/g1-direct-cache",
+        "{output}/g1-search-cache"
+      ],
+      "gpu": true,
+      "heavy": true,
+      "workers": 2,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g5-development",
+      "depends_on": [
+        "g5-fit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "development",
+        "{work}",
+        "--checkpoint",
+        "{output}/g5-fit/best.pt",
+        "--count",
+        "512",
+        "--chunk",
+        "32"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g5-complex",
+      "depends_on": [
+        "g5-development"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "complex-development",
+        "{work}",
+        "--reference",
+        "{repo}/logs/m1-dc2b-frozen/development.json",
+        "--count",
+        "9999",
+        "--chunk",
+        "32",
+        "--checkpoint",
+        "{output}/g5-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g5-audit",
+      "depends_on": [
+        "g5-complex"
+      ],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "audit",
+        "{work}",
+        "5"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 2,
+      "resume": "restart",
+      "boundary": "Completed generation evidence"
+    },
+    {
+      "id": "g6-direct",
+      "depends_on": [
+        "g5-audit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "produce",
+        "{work}",
+        "--checkpoint",
+        "{output}/g5-fit/best.pt",
+        "--generation",
+        "6",
+        "--budget",
+        "0",
+        "--count",
+        "8704",
+        "--target",
+        "8000",
+        "--chunk",
+        "128",
+        "--previous",
+        "5",
+        "--night-history",
+        "--night-namespace",
+        "dc2b-night1-hf1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g6-direct-cache",
+      "depends_on": [
+        "g6-direct"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{output}/g6-direct/ledger",
+        "--checkpoint",
+        "{output}/g5-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "g6-search",
+      "depends_on": [
+        "g5-audit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "produce",
+        "{work}",
+        "--checkpoint",
+        "{output}/g5-fit/best.pt",
+        "--generation",
+        "6",
+        "--budget",
+        "350",
+        "--count",
+        "2176",
+        "--target",
+        "2000",
+        "--chunk",
+        "128",
+        "--previous",
+        "5",
+        "--night-history",
+        "--night-namespace",
+        "dc2b-night1-hf1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g6-search-cache",
+      "depends_on": [
+        "g6-search"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{output}/g6-search/ledger",
+        "--checkpoint",
+        "{output}/g5-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "g6-budget",
+      "depends_on": [
+        "g6-direct-cache",
+        "g6-search-cache"
+      ],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "budget",
+        "{work}",
+        "6"
+      ],
+      "gpu": false,
+      "heavy": false,
+      "workers": 1,
+      "resume": "restart",
+      "boundary": "Budget admission"
+    },
+    {
+      "id": "g6-fit",
+      "depends_on": [
+        "g6-budget"
+      ],
+      "args": [
+        "experiments/m1-dc2b/fit.py",
+        "{work}",
+        "--parent",
+        "{output}/g5-fit/best.pt",
+        "--updates",
+        "1600",
+        "--epoch",
+        "64",
+        "--night-replay",
+        "--extra",
+        "{output}/g6-direct-cache",
+        "{output}/g6-search-cache",
+        "{output}/g5-direct-cache",
+        "{output}/g5-search-cache",
+        "{output}/g4-direct-cache",
+        "{output}/g4-search-cache",
+        "{output}/g3-direct-cache",
+        "{output}/g3-search-cache",
+        "{output}/g2-direct-cache",
+        "{output}/g2-search-cache",
+        "{output}/g1-direct-cache",
+        "{output}/g1-search-cache"
+      ],
+      "gpu": true,
+      "heavy": true,
+      "workers": 2,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g6-development",
+      "depends_on": [
+        "g6-fit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "development",
+        "{work}",
+        "--checkpoint",
+        "{output}/g6-fit/best.pt",
+        "--count",
+        "512",
+        "--chunk",
+        "32"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g6-complex",
+      "depends_on": [
+        "g6-development"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "complex-development",
+        "{work}",
+        "--reference",
+        "{repo}/logs/m1-dc2b-frozen/development.json",
+        "--count",
+        "9999",
+        "--chunk",
+        "32",
+        "--checkpoint",
+        "{output}/g6-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g6-audit",
+      "depends_on": [
+        "g6-complex"
+      ],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "audit",
+        "{work}",
+        "6"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 2,
+      "resume": "restart",
+      "boundary": "Completed generation evidence"
+    },
+    {
+      "id": "g7-direct",
+      "depends_on": [
+        "g6-audit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "produce",
+        "{work}",
+        "--checkpoint",
+        "{output}/g6-fit/best.pt",
+        "--generation",
+        "7",
+        "--budget",
+        "0",
+        "--count",
+        "8704",
+        "--target",
+        "8000",
+        "--chunk",
+        "128",
+        "--previous",
+        "6",
+        "--night-history",
+        "--night-namespace",
+        "dc2b-night1-hf1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g7-direct-cache",
+      "depends_on": [
+        "g7-direct"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{output}/g7-direct/ledger",
+        "--checkpoint",
+        "{output}/g6-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "g7-search",
+      "depends_on": [
+        "g6-audit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "produce",
+        "{work}",
+        "--checkpoint",
+        "{output}/g6-fit/best.pt",
+        "--generation",
+        "7",
+        "--budget",
+        "350",
+        "--count",
+        "2176",
+        "--target",
+        "2000",
+        "--chunk",
+        "128",
+        "--previous",
+        "6",
+        "--night-history",
+        "--night-namespace",
+        "dc2b-night1-hf1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g7-search-cache",
+      "depends_on": [
+        "g7-search"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{output}/g7-search/ledger",
+        "--checkpoint",
+        "{output}/g6-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "g7-budget",
+      "depends_on": [
+        "g7-direct-cache",
+        "g7-search-cache"
+      ],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "budget",
+        "{work}",
+        "7"
+      ],
+      "gpu": false,
+      "heavy": false,
+      "workers": 1,
+      "resume": "restart",
+      "boundary": "Budget admission"
+    },
+    {
+      "id": "g7-fit",
+      "depends_on": [
+        "g7-budget"
+      ],
+      "args": [
+        "experiments/m1-dc2b/fit.py",
+        "{work}",
+        "--parent",
+        "{output}/g6-fit/best.pt",
+        "--updates",
+        "1600",
+        "--epoch",
+        "64",
+        "--night-replay",
+        "--extra",
+        "{output}/g7-direct-cache",
+        "{output}/g7-search-cache",
+        "{output}/g6-direct-cache",
+        "{output}/g6-search-cache",
+        "{output}/g5-direct-cache",
+        "{output}/g5-search-cache",
+        "{output}/g4-direct-cache",
+        "{output}/g4-search-cache",
+        "{output}/g3-direct-cache",
+        "{output}/g3-search-cache",
+        "{output}/g2-direct-cache",
+        "{output}/g2-search-cache",
+        "{output}/g1-direct-cache",
+        "{output}/g1-search-cache"
+      ],
+      "gpu": true,
+      "heavy": true,
+      "workers": 2,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g7-development",
+      "depends_on": [
+        "g7-fit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "development",
+        "{work}",
+        "--checkpoint",
+        "{output}/g7-fit/best.pt",
+        "--count",
+        "512",
+        "--chunk",
+        "32"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g7-complex",
+      "depends_on": [
+        "g7-development"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "complex-development",
+        "{work}",
+        "--reference",
+        "{repo}/logs/m1-dc2b-frozen/development.json",
+        "--count",
+        "9999",
+        "--chunk",
+        "32",
+        "--checkpoint",
+        "{output}/g7-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g7-audit",
+      "depends_on": [
+        "g7-complex"
+      ],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "audit",
+        "{work}",
+        "7"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 2,
+      "resume": "restart",
+      "boundary": "Completed generation evidence"
+    },
+    {
+      "id": "g8-direct",
+      "depends_on": [
+        "g7-audit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "produce",
+        "{work}",
+        "--checkpoint",
+        "{output}/g7-fit/best.pt",
+        "--generation",
+        "8",
+        "--budget",
+        "0",
+        "--count",
+        "8704",
+        "--target",
+        "8000",
+        "--chunk",
+        "128",
+        "--previous",
+        "7",
+        "--night-history",
+        "--night-namespace",
+        "dc2b-night1-hf1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g8-direct-cache",
+      "depends_on": [
+        "g8-direct"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{output}/g8-direct/ledger",
+        "--checkpoint",
+        "{output}/g7-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "g8-search",
+      "depends_on": [
+        "g7-audit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "produce",
+        "{work}",
+        "--checkpoint",
+        "{output}/g7-fit/best.pt",
+        "--generation",
+        "8",
+        "--budget",
+        "350",
+        "--count",
+        "2176",
+        "--target",
+        "2000",
+        "--chunk",
+        "128",
+        "--previous",
+        "7",
+        "--night-history",
+        "--night-namespace",
+        "dc2b-night1-hf1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g8-search-cache",
+      "depends_on": [
+        "g8-search"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{output}/g8-search/ledger",
+        "--checkpoint",
+        "{output}/g7-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "g8-budget",
+      "depends_on": [
+        "g8-direct-cache",
+        "g8-search-cache"
+      ],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "budget",
+        "{work}",
+        "8"
+      ],
+      "gpu": false,
+      "heavy": false,
+      "workers": 1,
+      "resume": "restart",
+      "boundary": "Budget admission"
+    },
+    {
+      "id": "g8-fit",
+      "depends_on": [
+        "g8-budget"
+      ],
+      "args": [
+        "experiments/m1-dc2b/fit.py",
+        "{work}",
+        "--parent",
+        "{output}/g7-fit/best.pt",
+        "--updates",
+        "1600",
+        "--epoch",
+        "64",
+        "--night-replay",
+        "--extra",
+        "{output}/g8-direct-cache",
+        "{output}/g8-search-cache",
+        "{output}/g7-direct-cache",
+        "{output}/g7-search-cache",
+        "{output}/g6-direct-cache",
+        "{output}/g6-search-cache",
+        "{output}/g5-direct-cache",
+        "{output}/g5-search-cache",
+        "{output}/g4-direct-cache",
+        "{output}/g4-search-cache",
+        "{output}/g3-direct-cache",
+        "{output}/g3-search-cache",
+        "{output}/g2-direct-cache",
+        "{output}/g2-search-cache",
+        "{output}/g1-direct-cache",
+        "{output}/g1-search-cache"
+      ],
+      "gpu": true,
+      "heavy": true,
+      "workers": 2,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g8-development",
+      "depends_on": [
+        "g8-fit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "development",
+        "{work}",
+        "--checkpoint",
+        "{output}/g8-fit/best.pt",
+        "--count",
+        "512",
+        "--chunk",
+        "32"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g8-complex",
+      "depends_on": [
+        "g8-development"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "complex-development",
+        "{work}",
+        "--reference",
+        "{repo}/logs/m1-dc2b-frozen/development.json",
+        "--count",
+        "9999",
+        "--chunk",
+        "32",
+        "--checkpoint",
+        "{output}/g8-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g8-audit",
+      "depends_on": [
+        "g8-complex"
+      ],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "audit",
+        "{work}",
+        "8"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 2,
+      "resume": "restart",
+      "boundary": "Completed generation evidence"
+    },
+    {
+      "id": "g9-direct",
+      "depends_on": [
+        "g8-audit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "produce",
+        "{work}",
+        "--checkpoint",
+        "{output}/g8-fit/best.pt",
+        "--generation",
+        "9",
+        "--budget",
+        "0",
+        "--count",
+        "8704",
+        "--target",
+        "8000",
+        "--chunk",
+        "128",
+        "--previous",
+        "8",
+        "--night-history",
+        "--night-namespace",
+        "dc2b-night1-hf1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g9-direct-cache",
+      "depends_on": [
+        "g9-direct"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{output}/g9-direct/ledger",
+        "--checkpoint",
+        "{output}/g8-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "g9-search",
+      "depends_on": [
+        "g8-audit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "produce",
+        "{work}",
+        "--checkpoint",
+        "{output}/g8-fit/best.pt",
+        "--generation",
+        "9",
+        "--budget",
+        "350",
+        "--count",
+        "2176",
+        "--target",
+        "2000",
+        "--chunk",
+        "128",
+        "--previous",
+        "8",
+        "--night-history",
+        "--night-namespace",
+        "dc2b-night1-hf1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g9-search-cache",
+      "depends_on": [
+        "g9-search"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{output}/g9-search/ledger",
+        "--checkpoint",
+        "{output}/g8-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "g9-budget",
+      "depends_on": [
+        "g9-direct-cache",
+        "g9-search-cache"
+      ],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "budget",
+        "{work}",
+        "9"
+      ],
+      "gpu": false,
+      "heavy": false,
+      "workers": 1,
+      "resume": "restart",
+      "boundary": "Budget admission"
+    },
+    {
+      "id": "g9-fit",
+      "depends_on": [
+        "g9-budget"
+      ],
+      "args": [
+        "experiments/m1-dc2b/fit.py",
+        "{work}",
+        "--parent",
+        "{output}/g8-fit/best.pt",
+        "--updates",
+        "1600",
+        "--epoch",
+        "64",
+        "--night-replay",
+        "--extra",
+        "{output}/g9-direct-cache",
+        "{output}/g9-search-cache",
+        "{output}/g8-direct-cache",
+        "{output}/g8-search-cache",
+        "{output}/g7-direct-cache",
+        "{output}/g7-search-cache",
+        "{output}/g6-direct-cache",
+        "{output}/g6-search-cache",
+        "{output}/g5-direct-cache",
+        "{output}/g5-search-cache",
+        "{output}/g4-direct-cache",
+        "{output}/g4-search-cache",
+        "{output}/g3-direct-cache",
+        "{output}/g3-search-cache",
+        "{output}/g2-direct-cache",
+        "{output}/g2-search-cache",
+        "{output}/g1-direct-cache",
+        "{output}/g1-search-cache"
+      ],
+      "gpu": true,
+      "heavy": true,
+      "workers": 2,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g9-development",
+      "depends_on": [
+        "g9-fit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "development",
+        "{work}",
+        "--checkpoint",
+        "{output}/g9-fit/best.pt",
+        "--count",
+        "512",
+        "--chunk",
+        "32"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g9-complex",
+      "depends_on": [
+        "g9-development"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "complex-development",
+        "{work}",
+        "--reference",
+        "{repo}/logs/m1-dc2b-frozen/development.json",
+        "--count",
+        "9999",
+        "--chunk",
+        "32",
+        "--checkpoint",
+        "{output}/g9-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g9-audit",
+      "depends_on": [
+        "g9-complex"
+      ],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "audit",
+        "{work}",
+        "9"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 2,
+      "resume": "restart",
+      "boundary": "Completed generation evidence"
+    },
+    {
+      "id": "g10-direct",
+      "depends_on": [
+        "g9-audit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "produce",
+        "{work}",
+        "--checkpoint",
+        "{output}/g9-fit/best.pt",
+        "--generation",
+        "10",
+        "--budget",
+        "0",
+        "--count",
+        "8704",
+        "--target",
+        "8000",
+        "--chunk",
+        "128",
+        "--previous",
+        "9",
+        "--night-history",
+        "--night-namespace",
+        "dc2b-night1-hf1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g10-direct-cache",
+      "depends_on": [
+        "g10-direct"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{output}/g10-direct/ledger",
+        "--checkpoint",
+        "{output}/g9-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "g10-search",
+      "depends_on": [
+        "g9-audit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "produce",
+        "{work}",
+        "--checkpoint",
+        "{output}/g9-fit/best.pt",
+        "--generation",
+        "10",
+        "--budget",
+        "350",
+        "--count",
+        "2176",
+        "--target",
+        "2000",
+        "--chunk",
+        "128",
+        "--previous",
+        "9",
+        "--night-history",
+        "--night-namespace",
+        "dc2b-night1-hf1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g10-search-cache",
+      "depends_on": [
+        "g10-search"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{output}/g10-search/ledger",
+        "--checkpoint",
+        "{output}/g9-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "g10-budget",
+      "depends_on": [
+        "g10-direct-cache",
+        "g10-search-cache"
+      ],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "budget",
+        "{work}",
+        "10"
+      ],
+      "gpu": false,
+      "heavy": false,
+      "workers": 1,
+      "resume": "restart",
+      "boundary": "Budget admission"
+    },
+    {
+      "id": "g10-fit",
+      "depends_on": [
+        "g10-budget"
+      ],
+      "args": [
+        "experiments/m1-dc2b/fit.py",
+        "{work}",
+        "--parent",
+        "{output}/g9-fit/best.pt",
+        "--updates",
+        "1600",
+        "--epoch",
+        "64",
+        "--night-replay",
+        "--extra",
+        "{output}/g10-direct-cache",
+        "{output}/g10-search-cache",
+        "{output}/g9-direct-cache",
+        "{output}/g9-search-cache",
+        "{output}/g8-direct-cache",
+        "{output}/g8-search-cache",
+        "{output}/g7-direct-cache",
+        "{output}/g7-search-cache",
+        "{output}/g6-direct-cache",
+        "{output}/g6-search-cache",
+        "{output}/g5-direct-cache",
+        "{output}/g5-search-cache",
+        "{output}/g4-direct-cache",
+        "{output}/g4-search-cache",
+        "{output}/g3-direct-cache",
+        "{output}/g3-search-cache",
+        "{output}/g2-direct-cache",
+        "{output}/g2-search-cache",
+        "{output}/g1-direct-cache",
+        "{output}/g1-search-cache"
+      ],
+      "gpu": true,
+      "heavy": true,
+      "workers": 2,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g10-development",
+      "depends_on": [
+        "g10-fit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "development",
+        "{work}",
+        "--checkpoint",
+        "{output}/g10-fit/best.pt",
+        "--count",
+        "512",
+        "--chunk",
+        "32"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g10-complex",
+      "depends_on": [
+        "g10-development"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "complex-development",
+        "{work}",
+        "--reference",
+        "{repo}/logs/m1-dc2b-frozen/development.json",
+        "--count",
+        "9999",
+        "--chunk",
+        "32",
+        "--checkpoint",
+        "{output}/g10-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g10-audit",
+      "depends_on": [
+        "g10-complex"
+      ],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "audit",
+        "{work}",
+        "10"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 2,
+      "resume": "restart",
+      "boundary": "Completed generation evidence"
+    },
+    {
+      "id": "g11-direct",
+      "depends_on": [
+        "g10-audit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "produce",
+        "{work}",
+        "--checkpoint",
+        "{output}/g10-fit/best.pt",
+        "--generation",
+        "11",
+        "--budget",
+        "0",
+        "--count",
+        "8704",
+        "--target",
+        "8000",
+        "--chunk",
+        "128",
+        "--previous",
+        "10",
+        "--night-history",
+        "--night-namespace",
+        "dc2b-night1-hf1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g11-direct-cache",
+      "depends_on": [
+        "g11-direct"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{output}/g11-direct/ledger",
+        "--checkpoint",
+        "{output}/g10-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "g11-search",
+      "depends_on": [
+        "g10-audit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "produce",
+        "{work}",
+        "--checkpoint",
+        "{output}/g10-fit/best.pt",
+        "--generation",
+        "11",
+        "--budget",
+        "350",
+        "--count",
+        "2176",
+        "--target",
+        "2000",
+        "--chunk",
+        "128",
+        "--previous",
+        "10",
+        "--night-history",
+        "--night-namespace",
+        "dc2b-night1-hf1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g11-search-cache",
+      "depends_on": [
+        "g11-search"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{output}/g11-search/ledger",
+        "--checkpoint",
+        "{output}/g10-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "g11-budget",
+      "depends_on": [
+        "g11-direct-cache",
+        "g11-search-cache"
+      ],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "budget",
+        "{work}",
+        "11"
+      ],
+      "gpu": false,
+      "heavy": false,
+      "workers": 1,
+      "resume": "restart",
+      "boundary": "Budget admission"
+    },
+    {
+      "id": "g11-fit",
+      "depends_on": [
+        "g11-budget"
+      ],
+      "args": [
+        "experiments/m1-dc2b/fit.py",
+        "{work}",
+        "--parent",
+        "{output}/g10-fit/best.pt",
+        "--updates",
+        "1600",
+        "--epoch",
+        "64",
+        "--night-replay",
+        "--extra",
+        "{output}/g11-direct-cache",
+        "{output}/g11-search-cache",
+        "{output}/g10-direct-cache",
+        "{output}/g10-search-cache",
+        "{output}/g9-direct-cache",
+        "{output}/g9-search-cache",
+        "{output}/g8-direct-cache",
+        "{output}/g8-search-cache",
+        "{output}/g7-direct-cache",
+        "{output}/g7-search-cache",
+        "{output}/g6-direct-cache",
+        "{output}/g6-search-cache",
+        "{output}/g5-direct-cache",
+        "{output}/g5-search-cache",
+        "{output}/g4-direct-cache",
+        "{output}/g4-search-cache",
+        "{output}/g3-direct-cache",
+        "{output}/g3-search-cache",
+        "{output}/g2-direct-cache",
+        "{output}/g2-search-cache",
+        "{output}/g1-direct-cache",
+        "{output}/g1-search-cache"
+      ],
+      "gpu": true,
+      "heavy": true,
+      "workers": 2,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g11-development",
+      "depends_on": [
+        "g11-fit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "development",
+        "{work}",
+        "--checkpoint",
+        "{output}/g11-fit/best.pt",
+        "--count",
+        "512",
+        "--chunk",
+        "32"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g11-complex",
+      "depends_on": [
+        "g11-development"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "complex-development",
+        "{work}",
+        "--reference",
+        "{repo}/logs/m1-dc2b-frozen/development.json",
+        "--count",
+        "9999",
+        "--chunk",
+        "32",
+        "--checkpoint",
+        "{output}/g11-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g11-audit",
+      "depends_on": [
+        "g11-complex"
+      ],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "audit",
+        "{work}",
+        "11"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 2,
+      "resume": "restart",
+      "boundary": "Completed generation evidence"
+    },
+    {
+      "id": "g12-direct",
+      "depends_on": [
+        "g11-audit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "produce",
+        "{work}",
+        "--checkpoint",
+        "{output}/g11-fit/best.pt",
+        "--generation",
+        "12",
+        "--budget",
+        "0",
+        "--count",
+        "8704",
+        "--target",
+        "8000",
+        "--chunk",
+        "128",
+        "--previous",
+        "11",
+        "--night-history",
+        "--night-namespace",
+        "dc2b-night1-hf1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g12-direct-cache",
+      "depends_on": [
+        "g12-direct"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{output}/g12-direct/ledger",
+        "--checkpoint",
+        "{output}/g11-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "g12-search",
+      "depends_on": [
+        "g11-audit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "produce",
+        "{work}",
+        "--checkpoint",
+        "{output}/g11-fit/best.pt",
+        "--generation",
+        "12",
+        "--budget",
+        "350",
+        "--count",
+        "2176",
+        "--target",
+        "2000",
+        "--chunk",
+        "128",
+        "--previous",
+        "11",
+        "--night-history",
+        "--night-namespace",
+        "dc2b-night1-hf1"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g12-search-cache",
+      "depends_on": [
+        "g12-search"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "cache",
+        "{work}",
+        "--ledger",
+        "{output}/g12-search/ledger",
+        "--checkpoint",
+        "{output}/g11-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "restart",
+      "boundary": "Completed stage"
+    },
+    {
+      "id": "g12-budget",
+      "depends_on": [
+        "g12-direct-cache",
+        "g12-search-cache"
+      ],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "budget",
+        "{work}",
+        "12"
+      ],
+      "gpu": false,
+      "heavy": false,
+      "workers": 1,
+      "resume": "restart",
+      "boundary": "Budget admission"
+    },
+    {
+      "id": "g12-fit",
+      "depends_on": [
+        "g12-budget"
+      ],
+      "args": [
+        "experiments/m1-dc2b/fit.py",
+        "{work}",
+        "--parent",
+        "{output}/g11-fit/best.pt",
+        "--updates",
+        "1600",
+        "--epoch",
+        "64",
+        "--night-replay",
+        "--extra",
+        "{output}/g12-direct-cache",
+        "{output}/g12-search-cache",
+        "{output}/g11-direct-cache",
+        "{output}/g11-search-cache",
+        "{output}/g10-direct-cache",
+        "{output}/g10-search-cache",
+        "{output}/g9-direct-cache",
+        "{output}/g9-search-cache",
+        "{output}/g8-direct-cache",
+        "{output}/g8-search-cache",
+        "{output}/g7-direct-cache",
+        "{output}/g7-search-cache",
+        "{output}/g6-direct-cache",
+        "{output}/g6-search-cache",
+        "{output}/g5-direct-cache",
+        "{output}/g5-search-cache",
+        "{output}/g4-direct-cache",
+        "{output}/g4-search-cache",
+        "{output}/g3-direct-cache",
+        "{output}/g3-search-cache",
+        "{output}/g2-direct-cache",
+        "{output}/g2-search-cache",
+        "{output}/g1-direct-cache",
+        "{output}/g1-search-cache"
+      ],
+      "gpu": true,
+      "heavy": true,
+      "workers": 2,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g12-development",
+      "depends_on": [
+        "g12-fit"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "development",
+        "{work}",
+        "--checkpoint",
+        "{output}/g12-fit/best.pt",
+        "--count",
+        "512",
+        "--chunk",
+        "32"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g12-complex",
+      "depends_on": [
+        "g12-development"
+      ],
+      "args": [
+        "experiments/m1-dc2b/stages.py",
+        "complex-development",
+        "{work}",
+        "--reference",
+        "{repo}/logs/m1-dc2b-frozen/development.json",
+        "--count",
+        "9999",
+        "--chunk",
+        "32",
+        "--checkpoint",
+        "{output}/g12-fit/best.pt"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 8,
+      "resume": "checkpoint",
+      "boundary": "Committed optimizer or battle batch"
+    },
+    {
+      "id": "g12-audit",
+      "depends_on": [
+        "g12-complex"
+      ],
+      "args": [
+        "experiments/m1-dc2b/night.py",
+        "audit",
+        "{work}",
+        "12"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 2,
+      "resume": "restart",
+      "boundary": "Completed generation evidence"
+    }
+  ],
+  "budget_reserve_seconds": 180
+}

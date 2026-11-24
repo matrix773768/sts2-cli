@@ -5,8 +5,10 @@ import math
 from pathlib import Path
 import re
 import shutil
+import sys
 
 from value import ROOT, torch, load
+sys.path.insert(0, str(ROOT))
 from dc_common import read, checksum, write_json
 from dc_metrics import paired, ledger
 
@@ -155,7 +157,7 @@ def finish_budget(out,generation):
     return 3 if insufficient else 0
 
 
-def make(path):
+def make(path, key="dc2b-night1"):
     doc=read(TEMPLATE)
     originals=doc["stages"]
     stages=[dict(id="preflight",depends_on=[],args=["experiments/m1-dc2b/night.py","initial"],
@@ -168,15 +170,17 @@ def make(path):
                 continue
             s=json.loads(json.dumps(item))
             if g>3:
-                for key in ("id","args","depends_on"):
-                    value=s[key] if isinstance(s[key],list) else [s[key]]
+                for field in ("id","args","depends_on"):
+                    value=s[field] if isinstance(s[field],list) else [s[field]]
                     value=[re.sub(r"g([123])-",lambda m:f"g{int(m[1])+g-3}-",v) for v in value]
-                    s[key]=value if key!="id" else value[0]
+                    s[field]=value if field!="id" else value[0]
             args=s["args"]
             if "produce" in args:
                 args[args.index("--generation")+1]=str(g)
                 args[args.index("--chunk")+1]="128"
                 args+=["--night-history"]
+                if key!="dc2b-night1":
+                    args+=["--night-namespace",key]
                 if g==1:
                     s["depends_on"]=["preflight"]
                 if g>1:
@@ -194,7 +198,7 @@ def make(path):
         stages.append(dict(id=prefix+"-audit",depends_on=[prefix+"-complex"],args=[
             "experiments/m1-dc2b/night.py","audit","{work}",str(g)],gpu=False,heavy=True,
             workers=2,resume="restart",boundary="Completed generation evidence"))
-    doc.update(id="dc2b-night1",name="DC2B 八小时夜间训练",output="logs/inf1/jobs/dc2b-night1",
+    doc.update(id=key,name="DC2B 八小时夜间训练" if key=="dc2b-night1" else "DC2B 八小时夜间训练 HF1",output=f"logs/inf1/jobs/{key}",
                budget_seconds=28800,stop_grace_seconds=STOP_RESERVE,budget_reserve_seconds=STOP_RESERVE,stages=stages)
     doc["limits"].update(generations=12,experience_roots=120000,experience_attempts=130560,
                          optimizer_updates=19200,direct_per_generation=8000,search_per_generation=2000)
@@ -207,7 +211,7 @@ def make(path):
 def recoverable(source):
     jobs=ROOT/"logs/inf1/jobs"
     source=source.resolve()
-    if source.parent!=jobs or not re.fullmatch(r"dc2b-night1(?:-r[0-9]+)?",source.name):
+    if source.parent!=jobs or not re.fullmatch(r"dc2b-night1(?:-hf1)?(?:-r[0-9]+)?",source.name):
         raise ValueError("Only a terminal DC2B night job can be continued")
     report=read(source/"report.json")
     if report["id"]!=source.name:
@@ -242,7 +246,8 @@ def assets(source):
 def continuation(source,destination,key,seconds):
     report=recoverable(source)
     source=source.resolve()
-    if not re.fullmatch(r"dc2b-night1-r[0-9]+",key) or key==source.name or seconds<=STOP_RESERVE:
+    base=source.name.split("-r",1)[0]
+    if not re.fullmatch(re.escape(base)+r"-r[0-9]+",key) or key==source.name or seconds<=STOP_RESERVE:
         raise ValueError("Choose a new continuation ID and a positive budget above the reserve")
     plan=read(source/"task.json")
     for path in ("experiments/m1-dc2b/fit.py","experiments/m1-dc2b/stages.py",
@@ -259,7 +264,7 @@ def continuation(source,destination,key,seconds):
                  resume="restart",boundary="Copy committed artifacts to independent output")
     for s in stages:
         s["depends_on"]=["restore",*[k for k in s["depends_on"] if k not in done and k!="restore"]]
-    fresh=read(ROOT/"configs/training_jobs/dc2b-night1.json")
+    fresh=read(ROOT/f"configs/training_jobs/{base}.json")
     listed={p.relative_to(ROOT).as_posix() for p in assets(source)}
     fresh.update(id=key,name=key,output=f"logs/inf1/jobs/{key}",budget_seconds=seconds,
                  stages=[restore,*stages],inputs=sorted(set(fresh["inputs"])|listed))
@@ -270,7 +275,7 @@ def continuation(source,destination,key,seconds):
 def restore(source,destination):
     recoverable(source)
     root=destination.resolve()
-    if root.parent!=ROOT/"logs/inf1/jobs" or not re.fullmatch(r"dc2b-night1-r[0-9]+",root.name):
+    if root.parent!=ROOT/"logs/inf1/jobs" or not re.fullmatch(r"dc2b-night1(?:-hf1)?-r[0-9]+",root.name):
         raise ValueError("Continuation destination is outside the admitted job scope")
     for path in assets(source.resolve()):
         target=root/path.relative_to(source.resolve())
@@ -304,7 +309,7 @@ if __name__=="__main__":
     if args.mode=="initial":
         print(json.dumps(initial(),ensure_ascii=False))
     elif args.mode=="make":
-        make(args.path)
+        make(args.path,args.id or "dc2b-night1")
     elif args.mode=="continue":
         continuation(args.path,Path(args.generation),args.id,args.seconds)
     elif args.mode=="restore":

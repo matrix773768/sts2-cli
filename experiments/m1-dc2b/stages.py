@@ -85,7 +85,7 @@ def independent(out):
         frozen(out/f"{split}.json",manifest(CFG,purpose,jobs))
 
 
-def production(out, generation, count, previous, search=False, night=False):
+def production(out, generation, count, previous, search=False, night=False, namespace="dc2b-night1"):
     by_family=defaultdict(list)
     histories=([out.parent/f"g{i}-direct/ledger" for i in range(1,int(previous.name)+1)]
                if night and previous else [previous] if previous else [])
@@ -137,7 +137,7 @@ def production(out, generation, count, previous, search=False, night=False):
             if i%5==0:
                 hp=999
         hp_now=hp if hp!=80 else min(80,f["spec"]["hp"])
-        recipe=world(spec|{"hp":hp_now,"max_hp":hp},CFG,f["id"],i,f"dc2b-{generation}-{out.name}" if not night else f"dc2b-night1-{generation}-{out.name}")
+        recipe=world(spec|{"hp":hp_now,"max_hp":hp},CFG,f["id"],i,f"dc2b-{generation}-{out.name}" if not night else f"{namespace}-{generation}-{out.name}")
         split="validation" if int(f["id"][:8],16)%7==0 else "train"
         jobs.append([i,recipe,split,f["id"],f["room"]])
     write_atomic(out/"promotion.json",{str(hp):len(families) for hp,families in promoted.items()})
@@ -185,6 +185,7 @@ def main():
     cli.add_argument("--reference",type=Path)
     cli.add_argument("--gate",type=Path)
     cli.add_argument("--night-history",action="store_true")
+    cli.add_argument("--night-namespace",default="dc2b-night1")
     a=cli.parse_args()
     if a.gate and read(a.gate)["passed"] is not True:
         return 3
@@ -215,7 +216,7 @@ def main():
             raise ValueError("Only the complex development partition may run automatically")
         spec=spec|{"jobs":spec["jobs"][:a.count]}
     else:
-        spec=production(out,a.generation,a.count,a.previous,bool(a.budget),a.night_history)
+        spec=production(out,a.generation,a.count,a.previous,bool(a.budget),a.night_history,a.night_namespace)
     path=out/"roots.json"
     frozen(path,spec)
     battle,model=deploy(a.checkpoint,a.budget)
