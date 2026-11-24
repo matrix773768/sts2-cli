@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "baseline_git": "1714be91c8d2471e729dbc80560abeb0e19a4abf",
+  "pre1_git": "57d4fdb96a326d367d6e0e2250f3717fe0bcef61",
+  "game": "0.113.1/26660232",
+  "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+  "coreclr": "9.0.7",
+  "base_solver": "0.51.5-iik.3b",
+  "base_solver_sha256": "b4db8cae5abada95a3a51caac31bbae9f356fb553949b3c7d4b14ea10d181c53",
+  "sv1_build": {
+    "version": "0.51.5-iik.3b.sv1",
+    "artifacts": {
+      "logs/m1-sv1-build-3/host/Headless/bin/Debug/net9.0/GodotSharp.dll": "fa83e828a4196830263d03c53617259c184d5f696252f11a3dac2dfd418f9c0b",
+      "logs/m1-sv1-build-3/host/Headless/bin/Debug/net9.0/OfflineSearchHarness.dll": "3ded97c9132137fd34104e3452b853dc8e25d96d5100f657e36f8adc71a58a7e",
+      "logs/m1-sv1-build-3/solver-bin/CombatSolver.dll": "f2a971d241da0c300fbc95bc84758e415ebe15a911b1b3f504dd4970204e5456"
+    }
+  },
+  "root_seed": 71391127,
+  "manifest_canonical_sha256": "d1842539c3294d547f2f4f96aa72527f7deca4cb86dd626c08a208d8a0639360",
+  "formal_contract_sha256": "3cc217452d13b5eaf840c72c7616d950c24d03b1fd280703552fa6d51845622b",
+  "formal_attempts": 2048,
+  "formal_sources": {
+    "p0": {
+      "complete_train": 20885,
+      "database_sha256": "480dc5c28f8b261f88bd1d3598d26dd7c6bbe1042040930749b77547dd60b80e",
+      "manifest_sha256": "497b72fb6287f4db2180d1621cb494ea262a0bc65ed1450c51ee130545ce0488",
+      "path": "logs/m1-pre1-data-p0/dataset.sqlite"
+    },
+    "structured": {
+      "complete_train": 3600,
+      "database_sha256": "2015502b481691d5956607a8d5661ed3fa6f194edd318ccd5f576d348e62ba24",
+      "manifest_sha256": "f58e682691b490c8d26bac169a00d57052eafa3e35d0bfd3488a6680c800a826",
+      "path": "logs/m1-pre1-data-structured/dataset.sqlite"
+    },
+    "teacher": {
+      "complete_train": 20748,
+      "database_sha256": "2e90d78695c719a420e83ba7a3d32723259ab2be5a5ccba9df41fd7b83cd08b7",
+      "manifest_sha256": "aafe54e22aebfadc5531331815b2960478679116a434c8eb812f4ee82b1584ce",
+      "path": "logs/m1-pre1-data-teacher/dataset.sqlite"
+    }
+  },
+  "tracked_source_sha256": {
+    "build.py": "f30e748dd1a9c665a484f5b146b61ba79f466d7f17e49911ecad9aeb9643c3e4",
+    "campaign.py": "02721495418a70a60c821f30756f32344bf9c25cb2b64f45b92a3a847afeeb04",
+    "checks.py": "3a010849b97e691dc55b601ab82c45923ff79a9d197d7e1efe6c047fcfae49ef",
+    "config.json": "8bd073465609c1fb9a850b3d1a6db0d88014f57c27779db9d9152ef07837dfb5",
+    "SearchProbe.cs": "cd9b9b67948a227389d0848f8ad815ecbbb9fdd6a064a1bc19169b8221184a19",
+    "summarize.py": "b23507ddcd6153363b59840fe895eb62e52779021171706a409a92aa3d6a20d1",
+    "TurnGraph.cs": "cb80c6ba7e44ad1f145e118ddc77f00d734819f799eab1f96e42e3647cc28703"
+  },
+  "local_artifacts_sha256": {
+    "logs/m1-sv1-input/frozen.json": "721c7f3666aed99f979ae427c45e56f75714ebc06f9e4d0b117836013158ca03",
+    "logs/m1-sv1-formal/results.sqlite": "ad7f55f4f7c08f62b7f5fbfca9a0f3b935b92946a83d30ae7ec98975c9b1a201",
+    "logs/m1-sv1-formal/summary.json": "fa72c169c9315d596e2b9bb8ce1c6bd69fb73f7866048231769959dad15be4b3",
+    "logs/m1-sv1-control-4x1400/results.sqlite": "7fc4539d8072a401e162c63ff2ce6d132a2e1ef271bedbbb95e217c23bc85482",
+    "logs/m1-sv1-control-4x1400/summary.json": "29176923cd854db0c4fb0c5fa7bb9bdf19c4de83c60b9ae3ace2457d95aa072b",
+    "logs/m1-sv1-control-1x1400/results.sqlite": "f6d8221366e5e5eb737718debf7ff5837833e6359028c0102819ffd4cd715807",
+    "logs/m1-sv1-control-1x1400/summary.json": "7fdf43b6b2a9be6aad1a83a9dbb59315e483ca73182b7119c0c26f3cd66eccb1",
+    "logs/m1-sv1-control-4x350/results.sqlite": "3384cb1d5fc33df903bfb01a1143264169f0fad434b5970253c263dfc2eaa36f",
+    "logs/m1-sv1-control-4x350/summary.json": "5af926f0d9201d34a256e1635e0f9559958d876524612c5022338a749429d64d",
+    "logs/m1-sv1-checks-accept/checks.jsonl": "8bc97843f62010b0df76e0300410e935a3563b451e03456e0e0281aeab5b355a",
+    "logs/m1-sv1-checks-accept/summary.json": "36204cc31d182d2dc0694dd659de30e58a59f13079a3e9e152deebc3b1b7fb8e",
+    "logs/m1-sv1-regression-main-2.log": "8d4c5eb5bea331967d83ca8351ef048a831e83f21b73bbcabb1ec87e25c75c4f",
+    "logs/m1-sv1-regression-timeout.log": "0489f234ba24dc3b818d53a6de123880d0e138e01e635c415c83c4853c74e6b0",
+    "logs/m1-sv1-regression-environment.log": "1b76f1511d26ddd4b93e0f2368bc1db4e9f69acd584e960f0df309916dc1434d",
+    "logs/m1-sv1-regression-pre1-2.log": "71ad91cd9cb3a505285df1450ae133dbca29ece5d4f2e356fce1f32eb166b389",
+    "logs/m1-sv1-regression-ls2a-2.log": "5f064b1827520fc692350d5dd226299aebeeda36caaea9dfded1db65958a90e9"
+  }
+}
