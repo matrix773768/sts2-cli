@@ -4,11 +4,13 @@ import os
 from pathlib import Path
 import subprocess
 import sys
-from time import monotonic, sleep, time
+from threading import Event, Thread
+from time import sleep, time
 import traceback
 
 from .common import ROOT, lease, path_at, read, write
 from .windows import attach, drain, process_identity, process_tree
+from .timing import HEARTBEAT_SECONDS, execution_clock
 
 
 PAUSED = 75
@@ -55,24 +57,44 @@ def supervise(work, token):
 
 
 def run_attempt(work, attempt, request):
+    clock = execution_clock()
     started = time()
     owner = dict(token=request["token"], sha256=request["sha256"],
                  process=process_identity(os.getpid()), started=started)
     write(attempt / "owner.json", owner)
     result = dict(token=request["token"], started=started, exit_code=None, state="failed")
     with (attempt / "stdout.log").open("ab", buffering=0) as out, (attempt / "stderr.log").open("ab", buffering=0) as err:
+        stop = Event()
+
+        def pulse():
+            write(attempt / "heartbeat.json", owner | {"observed": time(), "elapsed": execution_clock() - clock})
+
+        def monitor():
+            while not stop.wait(HEARTBEAT_SECONDS):
+                try:
+                    pulse()
+                except OSError:
+                    err.write(traceback.format_exc().encode())
+
+        pulse()
+        monitor_thread = Thread(target=monitor, daemon=True)
+        monitor_thread.start()
         try:
-            result.update(execute(work, attempt, request, owner, out, err))
+            result.update(execute(work, attempt, request, owner, out, err, clock))
         except Exception as error:
             result["reason"] = str(error)
             err.write(traceback.format_exc().encode())
-    write(attempt / "result.json", result | {"ended": time()})
+        finally:
+            stop.set()
+            monitor_thread.join()
+    write(attempt / "result.json", result | {"ended": time(), "elapsed": execution_clock() - clock,
+                                            "exit_confirmed": True})
 
 
-def execute(work, attempt, request, owner, out, err):
+def execute(work, attempt, request, owner, out, err, clock):
     env = os.environ | {"INF1_STOP": str(attempt / "stop.json"), "INF1_PROGRESS": str(work / "progress.json")}
     remaining = request["remaining"]
-    deadline = monotonic() + remaining if remaining is not None else None
+    deadline = clock + remaining if remaining is not None else None
     reason = None
     with process_tree() as job:
         # The gate cannot start the workload until its process tree belongs to the Job Object.
@@ -91,14 +113,14 @@ def execute(work, attempt, request, owner, out, err):
                 if control.get("reason") == "force":
                     reason = "force"
                     break
-                if deadline is not None and monotonic() >= deadline:
+                if deadline is not None and execution_clock() >= deadline:
                     if not expired:
                         write(attempt / "budget.json", {"time": time()})
                         if not control:
                             write(attempt / "stop.json", {"reason": "budget"})
                         expired = True
                     reason = "budget"
-                    if monotonic() >= deadline + request["grace"]:
+                    if execution_clock() >= deadline + request["grace"]:
                         break
                 sleep(.15)
         finally:

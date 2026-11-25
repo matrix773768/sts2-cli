@@ -5,10 +5,12 @@ import subprocess
 import sys
 from time import monotonic, sleep
 import unittest
+from unittest.mock import patch
 import uuid
 
 from tools.training_manager.common import HOME, ROOT, freeze, lease, read, write
 from tools.training_manager.manager import Manager
+from tools.training_manager.timing import duration
 from tools.training_manager.windows import process_identity, resources
 
 
@@ -216,15 +218,35 @@ class TrainingManagerTests(unittest.TestCase):
         self.assertEqual(len(self.manager.report(self.manager.job("adoption"))["runs"]), 1)
 
     def test_worker_crash_releases_tree_and_marks_interrupted(self):
-        self.manager.submit(self.make("crash", [self.stage("work", 90)], max_retries=0))
-        self.until(lambda: self.stage_info("crash").get("done", 0) >= 2)
-        owner = self.manager.report(self.manager.job("crash"))["runs"][0]["owner"]
+        self.manager.submit(self.make("crash", [self.stage("work", 90)], max_retries=1, budget_seconds=120))
+        def recent():
+            run = self.manager.report(self.manager.job("crash"))["runs"][0]
+            pulse = run.get("heartbeat")
+            return run if pulse and pulse["elapsed"] >= 1 else None
+        run = self.until(recent)
+        owner = run["owner"]
         # Only terminate the identified test supervisor, not its gate or any game process.
         self.assertEqual(process_identity(owner["process"]["pid"]), owner["process"])
         os.kill(owner["process"]["pid"], 15)
-        self.wait("crash", "interrupted")
+        with patch("tools.training_manager.timing.time", return_value=run["heartbeat"]["observed"] + 9 * 3600):
+            self.wait("crash", "interrupted")
         self.assertIsNone(process_identity(owner["gate"]["pid"]))
-        self.assertEqual(self.manager.job("crash")["errors"], 1)
+        row = self.manager.job("crash")
+        self.assertEqual(row["errors"], 1)
+        self.assertEqual(row["retries"], 0)
+        report = self.manager.report(row)
+        outcome = report["runs"][0]["outcome"]
+        self.assertGreater(outcome["detected"] - outcome["ended"], 8 * 3600)
+        self.assertFalse(outcome["exit_confirmed"])
+        self.assertTrue(report["timing"]["unknown_tail"])
+        self.assertLessEqual(run["heartbeat"]["elapsed"], report["seconds"])
+        self.assertLess(report["seconds"], 20)
+        with self.assertRaisesRegex(ValueError, "另行批准"):
+            self.manager.request("crash", "retry")
+
+    def test_elapsed_is_independent_of_wall_clock_jumps(self):
+        self.assertEqual(duration(dict(state="completed", started=5000,ended=1200,elapsed=7)), 7)
+        self.assertEqual(duration(dict(state="interrupted", started=5000,ended=82000)), 0)
 
 
 if __name__ == "__main__":

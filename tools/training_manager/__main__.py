@@ -79,7 +79,7 @@ def main():
         manager.submit(spec)
         print(spec["id"])
     elif op in ("status", "report") and args.id:
-        dump(manager.report(manager.job(args.id)))
+        dump(manager.report(manager.job(args.id), persist=False))
     elif op in ("list", "status"):
         cfg = settings(home)
         owner = read(home / "manager.json")

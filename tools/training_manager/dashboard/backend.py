@@ -14,6 +14,8 @@ from ..common import (HOME, MODES, ROOT, checksum, freeze, identifier, input_pat
 from ..ledger import identity as ledger_identity
 from ..manager import ACTIVE, Manager
 from ..windows import cpu_times, process_identity, resources
+from ..recovery import approve, offer
+from ..timing import INCIDENT
 
 
 CONFIGS = ROOT / "configs/training_jobs"
@@ -110,6 +112,14 @@ class Backend:
             if self.home != HOME:
                 spec = spec | {"output": (self.home / "jobs" / identifier(spec["id"])).relative_to(ROOT).as_posix()}
             items.append(self.plan(manager, spec))
+        if self.home == HOME and self.templates == CONFIGS:
+            recovery = offer(manager)
+            if recovery:
+                spec, proof = recovery
+                item = self.plan(manager, spec)
+                item.update(purpose="按审计证据续接 G3；独立批准新预算后才能提交。",
+                            recovery={key: proof[key] for key in ("timing","g3","models","completed")})
+                items.append(item)
         return items
 
     def plan(self, manager, spec):
@@ -147,18 +157,19 @@ class Backend:
                     progress["checkpoint"] = source.relative_to(ROOT).as_posix() if source.is_file() else None
                 except ValueError:
                     progress["checkpoint"] = None
-            seconds = row["seconds"]
-            if row["state"] in ACTIVE:
-                owner_path = work / "attempts" / row["token"] / "owner.json"
-                runner = read(owner_path, {})
-                if runner.get("started"):
-                    seconds += max(0, time() - runner["started"])
+            timing = manager.timing(row, spec, output)
+            if progress and timing.get("audited"):
+                committed = read(INCIDENT)["g3"]["identity"]["count"]
+                progress |= {"done":committed, "attempts":committed, "complete":committed, "throughput":None}
             task = {field: row[field] for field in ("id", "state", "intent", "reason", "retries", "errors")}
             task.update(name=NAMES.get(row["id"], (spec["name"], ""))[0], output=output.relative_to(ROOT).as_posix(),
                         stage=stage["id"] if stage else None, stage_index=row["stage"], stage_total=len(spec["stages"]),
-                        boundary=stage["boundary"] if stage else None, progress=progress, seconds=seconds,
+                        boundary=stage["boundary"] if stage else None, progress=progress,
+                        seconds=timing["confirmed_seconds"], timing=timing,
+                        paused_seconds=row["paused_seconds"] + (max(0,time()-row["paused_at"]) if row["paused_at"] else 0),
                         budget=spec.get("budget_seconds"), retryable=bool(
                             row["state"] in ("failed", "interrupted") and row["retries"] < spec["max_retries"]
+                            and not ("budget_seconds" in spec and manager.has_interruption(row))
                             and (not row["token"] or stage["resume"] != "none")))
             tasks.append(task)
         return dict(online=online, enabled=manager.get_control("enabled", cfg["enabled"]),
@@ -182,7 +193,8 @@ class Backend:
         with self.lock:
             if operation == "freeze":
                 item = self.allowed_plan(manager, data["id"])
-                frozen = freeze(item["spec"], self.home)
+                prepared = approve(manager, data.get("budget_seconds")) if item.get("recovery") else item["spec"]
+                frozen = freeze(prepared, self.home)
                 token = secrets.token_urlsafe(24)
                 now = monotonic()
                 self.drafts = {k: v for k, v in self.drafts.items() if now - v[2] < 1800}
@@ -194,8 +206,11 @@ class Backend:
                 owner, frozen, created, template = self.drafts.get(data["draft"], (None, None, 0, None))
                 if owner != session or monotonic() - created >= 1800 or frozen["sha256"] != data["sha256"]:
                     raise ValueError("冻结凭据已失效，请重新审核")
-                if template != self.allowed_plan(manager, frozen["id"])["spec"]:
+                item = self.allowed_plan(manager, frozen["id"])
+                if template != item["spec"]:
                     raise ValueError("计划模板已经改变，请重新冻结")
+                if item.get("recovery"):
+                    approve(manager, frozen["budget_seconds"])
                 manager.submit(frozen)
                 del self.drafts[data["draft"]]
                 return {"id": frozen["id"], "state": "queued"}

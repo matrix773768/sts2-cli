@@ -211,7 +211,8 @@ class DashboardTests(unittest.TestCase):
         for index, _ in enumerate(stage_ids):
             self.manager.db.execute("INSERT INTO runs(token,job,stage,profile,launched,ended,result,command) "
                                     "VALUES (?,?,?,'Full',0,1,?,'[]')",
-                                    (str(index), INITIAL, index, json.dumps({"state":"completed","exit_code":0})))
+                                    (str(index), INITIAL, index,
+                                     json.dumps({"state":"completed","exit_code":0,"started":0,"ended":1})))
         model = output/"initial/best.pt"
         model.parent.mkdir()
         model.write_bytes(b"test-model")

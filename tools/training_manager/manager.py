@@ -10,6 +10,7 @@ from time import sleep, time
 import uuid
 
 from .common import ROOT, command, lease, output_for, read, settings, validate, verify_assets, write
+from .timing import audited_timing, duration, heartbeat, lost_attempt
 from .windows import process_identity, resources
 
 
@@ -68,6 +69,10 @@ class Manager:
     def rows(self):
         return self.db.execute("SELECT * FROM jobs ORDER BY submitted,rowid").fetchall()
 
+    def has_interruption(self, row):
+        return any(json.loads(record["result"])["state"] == "interrupted" for record in self.db.execute(
+            "SELECT result FROM runs WHERE job=? AND result IS NOT NULL", (row["id"],)))
+
     def update(self, row, **changes):
         clause = ", ".join(f"{key}=?" for key in changes)
         self.db.execute(f"UPDATE jobs SET {clause} WHERE id=?", (*changes.values(), row["id"]))
@@ -98,7 +103,9 @@ class Manager:
     def request(self, key, operation):
         with self.transaction():
             row = self.job(key)
-            spec, _, stage, _ = self.inspect(row)
+            spec, output, stage, _ = self.inspect(row)
+            if audited_timing(row, output, spec):
+                raise ValueError("原中断任务已封存。请使用独立续接计划。")
             state = row["state"]
             if operation in ("cancel", "force") and state not in ("completed", "cancelled"):
                 if state in ACTIVE:
@@ -117,6 +124,8 @@ class Manager:
             elif operation == "resume" and state == "paused":
                 self.update(row, state="queued", intent=None, reason=None)
             elif operation == "retry" and state in ("failed", "interrupted"):
+                if "budget_seconds" in spec and self.has_interruption(row):
+                    raise ValueError("异常中断的执行尾段无法确认。请用另行批准的预算提交独立续接任务。")
                 if row["retries"] >= spec["max_retries"] or (row["token"] and stage["resume"] == "none"):
                     raise ValueError(f"No approved retry available: {key}")
                 self.update(row, state="queued", intent=None, reason=None, retries=row["retries"] + 1)
@@ -186,21 +195,51 @@ class Manager:
                 stdout=str(attempt / "stdout.log"), stderr=str(attempt / "stderr.log"),
                 outcome=json.loads(run["result"]) if run["result"] else None)
             record.pop("result")
-            if run["ended"] is None:
-                result["seconds"] += max(0, time() - (record["owner"] or {}).get("started", run["launched"]))
+            if not record["outcome"]:
+                record["heartbeat"] = heartbeat(attempt, record["owner"])
             result["runs"].append(record)
         result["stages"] = {
             item["id"]: read(output / item["id"] / "progress.json") for item in spec["stages"]
         }
-        if persist and row["state"] in TERMINAL:
+        result["timing"] = self.timing(row, spec, output, result["runs"])
+        result["seconds"] = result["timing"]["confirmed_seconds"]
+        if persist and row["state"] in TERMINAL and not result["timing"].get("audited"):
             write(output / "report.json", result)
         return result
+
+    def timing(self, row, spec, output, records=None):
+        audited = audited_timing(row, output, spec)
+        if audited:
+            return audited | {"audited": True, "unknown_tail": True}
+        confirmed = 0
+        unknown = False
+        if records is None:
+            records = []
+            for run in self.db.execute("SELECT * FROM runs WHERE job=?", (row["id"],)):
+                attempt = output / spec["stages"][run["stage"]]["id"] / "attempts" / run["token"]
+                outcome = json.loads(run["result"]) if run["result"] else None
+                records.append({"outcome": outcome, "heartbeat": None if outcome else
+                                heartbeat(attempt, read(attempt / "owner.json"))})
+        for record in records:
+            outcome = record["outcome"]
+            if outcome:
+                confirmed += duration(outcome)
+                unknown |= outcome["state"] == "interrupted"
+            elif record.get("heartbeat"):
+                confirmed += record["heartbeat"]["elapsed"]
+            else:
+                unknown = True
+        return dict(confirmed_seconds=confirmed, unknown_tail=unknown, offline_seconds=None,
+                    legacy_recorded_seconds=row["seconds"])
 
     def begin(self, row, spec, output, stage, work, cfg):
         validate(spec, self.home)
         if read(output / "task.json") != spec:
             raise ValueError("Output identity has changed")
         verify_assets(spec)
+        if "budget_seconds" in spec and self.has_interruption(row):
+            self.update(row, state="interrupted", reason="独立续接需要另行批准预算", intent=None)
+            return
         remaining = spec["budget_seconds"] - row["seconds"] if "budget_seconds" in spec else None
         reserve = spec.get("budget_reserve_seconds", 0)
         if remaining is not None and remaining <= reserve:
@@ -232,7 +271,7 @@ class Manager:
     def finish(self, row, spec, stage, run, outcome):
         code, end, state = outcome["exit_code"], outcome["ended"], outcome["state"]
         self.db.execute("UPDATE runs SET ended=?,result=? WHERE token=?", (end, json.dumps(outcome), run["token"]))
-        elapsed = row["seconds"] + max(0, end - outcome["started"])
+        elapsed = row["seconds"] + duration(outcome)
         intent = row["intent"]
         changes = dict(seconds=elapsed, exit_code=code, reason=outcome.get("reason") or row["reason"], intent=None)
         if state == "completed":
@@ -249,7 +288,8 @@ class Manager:
                 changes["reason"] = None
         elif state in ("failed", "interrupted"):
             changes["errors"] = row["errors"] + 1
-            if intent is None and stage["resume"] != "none" and row["retries"] < spec["max_retries"]:
+            budget_uncertain = state == "interrupted" and "budget_seconds" in spec
+            if not budget_uncertain and intent is None and stage["resume"] != "none" and row["retries"] < spec["max_retries"]:
                 changes["retries"] = row["retries"] + 1
                 state = "queued"
         if state == "paused":
@@ -272,11 +312,9 @@ class Manager:
                 elif (owner and owner.get("gate") and
                       process_identity(owner["gate"]["pid"]) == owner["gate"]):
                     return
-                elif time() - run["launched"] > 5:
+                elif owner or not 0 <= time() - run["launched"] <= 5:
                     write(work / "request.json", {})
-                    self.finish(row, spec, stage, run,
-                                dict(state="interrupted", started=(owner or {}).get("started", run["launched"]),
-                                     ended=time(), exit_code=None, reason="attempt exited without a result"))
+                    self.finish(row, spec, stage, run, lost_attempt(run, owner, attempt))
                 return
         if not owner or not owner["process"] or process_identity(owner["process"]["pid"]) != owner["process"]:
             return

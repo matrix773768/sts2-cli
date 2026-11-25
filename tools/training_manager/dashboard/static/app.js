@@ -163,11 +163,19 @@ function progress(label, done, target) {
 }
 function taskCard(task) {
   const p = task.progress;
+  const live = ["running", "pausing"].includes(task.state);
   const container = card(task.name, dataList([
-    ["当前阶段", stage(task.stage)], ["累计运行", duration(task.seconds)],
-    ["剩余执行预算", task.budget == null ? "未设定" : duration(task.budget - task.seconds)],
+    ["当前阶段", stage(task.stage)], ["已确认执行", duration(task.seconds)],
+    ["暂停（自然时间）", duration(task.paused_seconds)],
+    ["任务离线", task.timing?.offline_seconds == null ? "未测定" : duration(task.timing.offline_seconds)],
+    ["剩余执行预算", task.budget == null ? "未设定" : task.timing?.unknown_tail ?
+      (live ? "等待执行心跳" : "需另行批准") : duration(task.budget - task.seconds)],
     ["实际吞吐", p?.throughput > 0 ? n(p.throughput) + " 单位/秒" : "不可用"]
   ]), progress("总体阶段进度", task.stage_index, task.stage_total));
+  if (task.timing?.unknown_tail) add(container, callout(task.timing.audited ?
+    "原面板记录 " + duration(task.timing.legacy_recorded_seconds) + "。审计执行区间 " +
+      duration(task.seconds) + " 至 " + duration(task.timing.upper_seconds) + "。" :
+    "执行尾段无法确认，已显示最近心跳确认的执行量。", "warn"));
   add(container, p ? progress("当前阶段已提交", p.done, p.target) :
     node("p", "当前阶段未提供精确内部进度。", "muted progress-wrap"));
   if (p && (p.attempts != null || p.updates != null || p.complete != null)) {
@@ -186,6 +194,8 @@ function taskCard(task) {
   return container;
 }
 function taskActions(task) {
+  if (task.timing?.audited) return bar(action("中断诊断", () => jobDetail(task.id)),
+    action("查看续接计划", () => navigate("plans")));
   const command = op => operate(op, {id:task.id});
   const cancellable = ["queued","running","pausing","paused","failed","interrupted"].includes(task.state);
   return bar(
@@ -259,10 +269,21 @@ function planDetails(item) {
   ];
 }
 function reviewPlan(item) {
+  const budget = node("input");
+  budget.type = "number";
+  budget.min = (item.spec.budget_reserve_seconds ?? item.spec.stop_grace_seconds ?? 180) + 1;
+  budget.step = 1;
+  budget.required = true;
+  const recovery = item.recovery;
   show("审核 " + item.name, node("p", item.purpose), ...planDetails(item),
+    recovery ? callout(`已审计 ${recovery.completed.length} 个成功阶段，保留 G1 / G2 和 G3 已提交的 ${recovery.g3.identity.count} 根。
+      原执行范围 ${duration(recovery.timing.confirmed_seconds)} 至 ${duration(recovery.timing.upper_seconds)}。
+      新预算由你单独批准。`) : null,
+    recovery ? add(node("label", null, "settings-form"), node("span", "批准的新预算（秒）"), budget) : null,
     item.reasons.length ? callout(item.reasons.join("；"), "warn") : callout("冻结会核对资产并展示最终配置，提交需要再确认。"),
     bar(action("冻结并查看配置", async () => {
-      reviewed = await api("action/freeze", {id:item.spec.id});
+      if (recovery && !budget.reportValidity()) return;
+      reviewed = await api("action/freeze", recovery ? {id:item.spec.id, budget_seconds:Number(budget.value)} : {id:item.spec.id});
       show("确认冻结配置", node("p", item.name),
         node("p", "任务配置 SHA-256  " + reviewed.spec.sha256, "detail-path"),
         node("pre", JSON.stringify(reviewed.spec, null, 2)),
@@ -299,8 +320,12 @@ async function jobDetail(id) {
   const report = await api("job?" + new URLSearchParams({id}));
   const task = state?.tasks.find(item => item.id === id);
   const files = report.files;
+  const t = report.timing;
   const result = show("任务详情 · " + id, dataList([["状态", states[report.state]],["当前阶段", stage(report.current_stage)],
-    ["累计运行",duration(report.seconds)],["累计暂停",duration(report.paused_seconds)],
+    ["已确认执行",duration(report.seconds)],["累计暂停",duration(report.paused_seconds)],
+    ["任务离线",t?.offline_seconds == null ? "未测定" : duration(t.offline_seconds)],
+    ["无法确认的执行尾段", t?.unknown_tail ? (t.upper_seconds == null ? "长度未测定" :
+      "最多 " + duration(t.upper_seconds-report.seconds)) : "无记录"],
     ["退出码",report.exit_code],["异常次数",report.errors]]),
     node("p", "输出目录  " + report.spec.output, "detail-path"),
     disclosure("真实阶段与运行记录", node("pre", JSON.stringify(report, null, 2))),
@@ -312,7 +337,7 @@ async function jobDetail(id) {
 }
 function queue() {
   if (!state.tasks.length) return [card("任务队列", node("p", "尚未提交任务。", "empty"))];
-  return [card("已提交任务", table(["任务", "状态", "阶段", "累计运行", "操作"],
+  return [card("已提交任务", table(["任务", "状态", "阶段", "已确认执行", "操作"],
     [...state.tasks].reverse().map(task => [task.name, pill(states[task.state], task.state), stage(task.stage),
       duration(task.seconds), taskActions(task)]))),
     ...state.tasks.filter(task => ["running","pausing","paused","failed","interrupted"].includes(task.state)).map(taskCard)];
