@@ -1,0 +1,4607 @@
+{
+  "core50": {
+    "Name": "core50",
+    "Base": "core50",
+    "Target": "core",
+    "RootKey": "99CE09CC80379751730C354302876B5B61AC99A0D01AB1EA783475992689A068",
+    "runtimeMs": 201.3722,
+    "coldMs": 3940.6036,
+    "arms": {
+      "Startup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 38,
+        "Milliseconds": 20.0574,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Fight": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 19,
+        "EntryAttempts": 12,
+        "AuditAttempts": 19,
+        "Milliseconds": 4.0493,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Switch": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 19,
+        "EntryAttempts": 12,
+        "AuditAttempts": 19,
+        "Milliseconds": 1.9547,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "IdealStartup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 38,
+        "Milliseconds": 1.9238,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      }
+    },
+    "potential": {
+      "Nodes": 3,
+      "SearchAttempts": 2,
+      "ReplayAttempts": 21,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "target": [
+            "FLASH_OF_STEEL",
+            "FINESSE"
+          ],
+          "startup": 0,
+          "stop": "terminal:Victory"
+        }
+      ]
+    }
+  },
+  "core25": {
+    "Name": "core25",
+    "Base": "core50",
+    "Target": "core",
+    "RootKey": "E454AD66605886B8C419D5DD03738C1AB85810E2DD2B0AE0AFB9361E7AB8B000",
+    "runtimeMs": 312.388,
+    "coldMs": 4267.2464,
+    "arms": {
+      "Startup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 18,
+        "Milliseconds": 29.3376,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Fight": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 9,
+        "EntryAttempts": 12,
+        "AuditAttempts": 9,
+        "Milliseconds": 3.856,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Switch": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 9,
+        "EntryAttempts": 12,
+        "AuditAttempts": 9,
+        "Milliseconds": 1.4991,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "IdealStartup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 18,
+        "Milliseconds": 1.1158,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      }
+    },
+    "potential": {
+      "Nodes": 3,
+      "SearchAttempts": 2,
+      "ReplayAttempts": 11,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "target": [
+            "FLASH_OF_STEEL",
+            "FINESSE"
+          ],
+          "startup": 0,
+          "stop": "terminal:Victory"
+        }
+      ]
+    }
+  },
+  "core80": {
+    "Name": "core80",
+    "Base": "core50",
+    "Target": "core",
+    "RootKey": "67A2CFF38F1158B587DA219D466211F0D95703442F42A15DAE6368B3C737599E",
+    "runtimeMs": 373.8135,
+    "coldMs": 4787.3931,
+    "arms": {
+      "Startup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 48,
+        "Milliseconds": 32.2427,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Fight": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 24,
+        "EntryAttempts": 12,
+        "AuditAttempts": 24,
+        "Milliseconds": 5.9407,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Switch": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 24,
+        "EntryAttempts": 12,
+        "AuditAttempts": 24,
+        "Milliseconds": 3.8992,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": null
+      },
+      "IdealStartup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 48,
+        "Milliseconds": 11.304,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": null
+      }
+    },
+    "potential": {
+      "Nodes": 24,
+      "SearchAttempts": 24,
+      "ReplayAttempts": 26,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": [
+        {
+          "grade": "finite_repetitions",
+          "kind": "productive",
+          "target": [
+            "FLASH_OF_STEEL",
+            "FINESSE"
+          ],
+          "startup": 0,
+          "stop": "action_horizon"
+        }
+      ]
+    }
+  },
+  "hand1": {
+    "Name": "hand1",
+    "Base": "core50",
+    "Target": "core",
+    "RootKey": "FC91351DA3BAF228EE125A8FC0E03D574B2087906F782C960B4E04ED553EF8F6",
+    "runtimeMs": 430.5858,
+    "coldMs": 4841.9096,
+    "arms": {
+      "Startup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 38,
+        "Milliseconds": 51.5052,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Fight": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 19,
+        "EntryAttempts": 12,
+        "AuditAttempts": 19,
+        "Milliseconds": 6.5551,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Switch": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 19,
+        "EntryAttempts": 12,
+        "AuditAttempts": 19,
+        "Milliseconds": 2.9646,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "IdealStartup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 38,
+        "Milliseconds": 2.8651,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      }
+    },
+    "potential": {
+      "Nodes": 4,
+      "SearchAttempts": 3,
+      "ReplayAttempts": 20,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "target": [
+            "FINESSE",
+            "FLASH_OF_STEEL"
+          ],
+          "startup": 1,
+          "stop": "terminal:Victory"
+        }
+      ]
+    }
+  },
+  "hand2": {
+    "Name": "hand2",
+    "Base": "core50",
+    "Target": "core",
+    "RootKey": "AF3A12C7745F2CEA19CADB46EAB5A2B204D420272E5B0B443065B155516B50C6",
+    "runtimeMs": 339.5769,
+    "coldMs": 4637.1816,
+    "arms": {
+      "Startup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 38,
+        "Milliseconds": 41.556,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Fight": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 19,
+        "EntryAttempts": 12,
+        "AuditAttempts": 19,
+        "Milliseconds": 26.1621,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Switch": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 19,
+        "EntryAttempts": 12,
+        "AuditAttempts": 19,
+        "Milliseconds": 7.4564,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "IdealStartup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 38,
+        "Milliseconds": 6.137,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      }
+    },
+    "potential": {
+      "Nodes": 4,
+      "SearchAttempts": 3,
+      "ReplayAttempts": 20,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "target": [
+            "FINESSE",
+            "FLASH_OF_STEEL"
+          ],
+          "startup": 1,
+          "stop": "terminal:Victory"
+        }
+      ]
+    }
+  },
+  "draw1": {
+    "Name": "draw1",
+    "Base": "core50",
+    "Target": "core",
+    "RootKey": "0176888A5C8B42B18659694D702353A013AC3E89115239FB059D5B13315A5316",
+    "runtimeMs": 245.4622,
+    "coldMs": 4445.0602,
+    "arms": {
+      "Startup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 1,
+        "EntryAttempts": 1,
+        "AuditAttempts": 1,
+        "Milliseconds": 15.5649,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Fight": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 1,
+        "EntryAttempts": 1,
+        "AuditAttempts": 1,
+        "Milliseconds": 0.3475,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Switch": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 1,
+        "EntryAttempts": 1,
+        "AuditAttempts": 1,
+        "Milliseconds": 4.2693,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "IdealStartup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 1,
+        "EntryAttempts": 1,
+        "AuditAttempts": 1,
+        "Milliseconds": 0.2098,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      }
+    },
+    "potential": {
+      "Nodes": 2,
+      "SearchAttempts": 1,
+      "ReplayAttempts": 0,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": []
+    }
+  },
+  "draw2": {
+    "Name": "draw2",
+    "Base": "core50",
+    "Target": "core",
+    "RootKey": "93ACD0E85D1A0798225A1F89F730ED52EC29A448200C7AFCCF65AF8C75F7680E",
+    "runtimeMs": 342.9351,
+    "coldMs": 4274.1013,
+    "arms": {
+      "Startup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 2,
+        "EntryAttempts": 2,
+        "AuditAttempts": 2,
+        "Milliseconds": 41.6166,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Fight": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 2,
+        "EntryAttempts": 2,
+        "AuditAttempts": 2,
+        "Milliseconds": 0.8011,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Switch": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 2,
+        "EntryAttempts": 2,
+        "AuditAttempts": 2,
+        "Milliseconds": 6.0597,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "IdealStartup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 2,
+        "EntryAttempts": 2,
+        "AuditAttempts": 2,
+        "Milliseconds": 0.6797,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      }
+    },
+    "potential": {
+      "Nodes": 2,
+      "SearchAttempts": 2,
+      "ReplayAttempts": 0,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": []
+    }
+  },
+  "discard1": {
+    "Name": "discard1",
+    "Base": "core50",
+    "Target": "core",
+    "RootKey": "144ABA3B6EBFB541FCA0902158E3CE3671AB077A2378E6B18978A2F0B77AA037",
+    "runtimeMs": 255.4907,
+    "coldMs": 3868.8088,
+    "arms": {
+      "Startup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 4,
+        "EntryAttempts": 5,
+        "AuditAttempts": 4,
+        "Milliseconds": 36.346,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Fight": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 4,
+        "EntryAttempts": 5,
+        "AuditAttempts": 4,
+        "Milliseconds": 0.7493,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Switch": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 4,
+        "EntryAttempts": 5,
+        "AuditAttempts": 4,
+        "Milliseconds": 4.2874,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "IdealStartup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 4,
+        "EntryAttempts": 5,
+        "AuditAttempts": 3,
+        "Milliseconds": 0.6924,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      }
+    },
+    "potential": {
+      "Nodes": 4,
+      "SearchAttempts": 4,
+      "ReplayAttempts": 0,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": []
+    }
+  },
+  "discard2": {
+    "Name": "discard2",
+    "Base": "core50",
+    "Target": "core",
+    "RootKey": "FA57B308AF3278190D424BB57368D32892E99358DA220328BB757463E8CDA718",
+    "runtimeMs": 227.0135,
+    "coldMs": 4094.0726,
+    "arms": {
+      "Startup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 5,
+        "EntryAttempts": 7,
+        "AuditAttempts": 5,
+        "Milliseconds": 37.5599,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Fight": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 5,
+        "EntryAttempts": 7,
+        "AuditAttempts": 5,
+        "Milliseconds": 0.5998,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Switch": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 5,
+        "EntryAttempts": 7,
+        "AuditAttempts": 5,
+        "Milliseconds": 4.9909,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "IdealStartup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 5,
+        "EntryAttempts": 7,
+        "AuditAttempts": 4,
+        "Milliseconds": 5.1834,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      }
+    },
+    "potential": {
+      "Nodes": 4,
+      "SearchAttempts": 5,
+      "ReplayAttempts": 0,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": []
+    }
+  },
+  "discard_redundant_finesse": {
+    "Name": "discard_redundant_finesse",
+    "Base": "core50",
+    "Target": "core",
+    "RootKey": "3E0FF4EF93E7B3AE609D2A0036AD2F1D931428B8A6C11DE8EAD19895464E2BE6",
+    "runtimeMs": 1002.7752,
+    "coldMs": 4760.9323,
+    "arms": {
+      "Startup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0.08984375,
+        "Death": 0,
+        "Unfinished": 0.91015625,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0.08984375,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 13,
+        "EntryAttempts": 30,
+        "AuditAttempts": 1516,
+        "Milliseconds": 168.4979,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Fight": {
+        "Lower": 0.08984375,
+        "Upper": 0.08984375,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0.08984375,
+        "Death": 0,
+        "Unfinished": 0.91015625,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0.08984375,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 1516,
+        "EntryAttempts": 30,
+        "AuditAttempts": 1516,
+        "Milliseconds": 149.2507,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Switch": {
+        "Lower": 0.08984375,
+        "Upper": 0.08984375,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0.08984375,
+        "Death": 0,
+        "Unfinished": 0.91015625,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0.08984375,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 1516,
+        "EntryAttempts": 30,
+        "AuditAttempts": 1516,
+        "Milliseconds": 170.6331,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "IdealStartup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 1,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 13,
+        "EntryAttempts": 30,
+        "AuditAttempts": 30,
+        "Milliseconds": 4.3078,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": 0.0
+      }
+    },
+    "potential": {
+      "Nodes": 37,
+      "SearchAttempts": 52,
+      "ReplayAttempts": 90,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "target": [
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "FLASH_OF_STEEL",
+            "FINESSE"
+          ],
+          "startup": 3,
+          "stop": "terminal:Victory"
+        },
+        {
+          "grade": "finite_repetitions",
+          "kind": "productive",
+          "target": [
+            "FINESSE",
+            "FINESSE",
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "FINESSE",
+            "FLASH_OF_STEEL"
+          ],
+          "startup": 1,
+          "stop": "action_horizon"
+        },
+        {
+          "grade": "candidate",
+          "kind": "productive",
+          "target": [
+            "FINESSE",
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "FINESSE"
+          ],
+          "startup": 19,
+          "stop": "action_horizon"
+        }
+      ]
+    },
+    "substitute": {
+      "target": [
+        "FLASH_OF_STEEL",
+        "FINESSE",
+        "FLASH_OF_STEEL",
+        "FINESSE"
+      ],
+      "startup": [
+        1,
+        1
+      ],
+      "victory": 0.08984375
+    }
+  },
+  "draw_redundant_flash": {
+    "Name": "draw_redundant_flash",
+    "Base": "core50",
+    "Target": "core",
+    "RootKey": "9EAC157485384B11969214CEC8E1DDF2D5A4E4FAEA4BC47691F4171A6218E167",
+    "runtimeMs": 538.9806,
+    "coldMs": 5004.8249,
+    "arms": {
+      "Startup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 1,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 14,
+        "EntryAttempts": 38,
+        "AuditAttempts": 203,
+        "Milliseconds": 77.7684,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Fight": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 1,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 203,
+        "EntryAttempts": 38,
+        "AuditAttempts": 203,
+        "Milliseconds": 11.7028,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Switch": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 1,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 203,
+        "EntryAttempts": 38,
+        "AuditAttempts": 203,
+        "Milliseconds": 19.0079,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "IdealStartup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 1,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 14,
+        "EntryAttempts": 38,
+        "AuditAttempts": 19,
+        "Milliseconds": 4.5612,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": 0.0
+      }
+    },
+    "potential": {
+      "Nodes": 16,
+      "SearchAttempts": 21,
+      "ReplayAttempts": 88,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "target": [
+            "FLASH_OF_STEEL",
+            "FLASH_OF_STEEL",
+            "FLASH_OF_STEEL",
+            "FINESSE"
+          ],
+          "startup": 0,
+          "stop": "terminal:Victory"
+        },
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "target": [
+            "FLASH_OF_STEEL",
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "FLASH_OF_STEEL",
+            "FLASH_OF_STEEL",
+            "FINESSE"
+          ],
+          "startup": 0,
+          "stop": "terminal:Victory"
+        },
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "target": [
+            "FLASH_OF_STEEL",
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "FLASH_OF_STEEL",
+            "FLASH_OF_STEEL",
+            "FINESSE"
+          ],
+          "startup": 0,
+          "stop": "terminal:Victory"
+        }
+      ]
+    },
+    "substitute": {
+      "target": [
+        "FLASH_OF_STEEL",
+        "FLASH_OF_STEEL",
+        "FLASH_OF_STEEL",
+        "FINESSE"
+      ],
+      "startup": [
+        1,
+        1
+      ],
+      "victory": 1
+    }
+  },
+  "blocker_burning_pact": {
+    "Name": "blocker_burning_pact",
+    "Base": "core50",
+    "Target": "core",
+    "RootKey": "C1E733237EBD7DF4E0897F2B94FE121D4BD0D633EFF9A7C17F0794393036435B",
+    "runtimeMs": 419.4403,
+    "coldMs": 5177.8618,
+    "arms": {
+      "Startup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 38,
+        "Milliseconds": 39.6684,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Fight": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 21,
+        "EntryAttempts": 14,
+        "AuditAttempts": 21,
+        "Milliseconds": 6.9565,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Switch": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 19,
+        "EntryAttempts": 12,
+        "AuditAttempts": 19,
+        "Milliseconds": 2.8883,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "IdealStartup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 38,
+        "Milliseconds": 5.9231,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      }
+    },
+    "potential": {
+      "Nodes": 400,
+      "SearchAttempts": 476,
+      "ReplayAttempts": 19,
+      "Stop": "node_budget",
+      "witnesses": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "target": [
+            "FLASH_OF_STEEL",
+            "FINESSE"
+          ],
+          "startup": 3,
+          "stop": "terminal:Victory"
+        }
+      ]
+    }
+  },
+  "blocker_headbutt": {
+    "Name": "blocker_headbutt",
+    "Base": "core50",
+    "Target": "core",
+    "RootKey": "D0982C12B7B6C6AF9C26F6BF13966BEA616CA703B1963B8819DEAEC605A89C4F",
+    "runtimeMs": 296.7787,
+    "coldMs": 4470.2078,
+    "arms": {
+      "Startup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 25,
+        "EntryAttempts": 24,
+        "AuditAttempts": 7,
+        "Milliseconds": 29.0647,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Fight": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 25,
+        "EntryAttempts": 8,
+        "AuditAttempts": 7,
+        "Milliseconds": 0.8042,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Switch": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 25,
+        "EntryAttempts": 5,
+        "AuditAttempts": 7,
+        "Milliseconds": 2.9126,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "IdealStartup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 25,
+        "EntryAttempts": 24,
+        "AuditAttempts": 5,
+        "Milliseconds": 1.3132,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      }
+    },
+    "potential": {
+      "Nodes": 21,
+      "SearchAttempts": 25,
+      "ReplayAttempts": 0,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": []
+    }
+  },
+  "blocker_pommel": {
+    "Name": "blocker_pommel",
+    "Base": "core50",
+    "Target": "core",
+    "RootKey": "31C505B2FE20C943962B129C9DFAA4F2D6EF35F24A61A75EB8FBC5C12BDB084F",
+    "runtimeMs": 311.8091,
+    "coldMs": 4175.7274,
+    "arms": {
+      "Startup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 45,
+        "EntryAttempts": 57,
+        "AuditAttempts": 13,
+        "Milliseconds": 31.5712,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Fight": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 47,
+        "EntryAttempts": 14,
+        "AuditAttempts": 13,
+        "Milliseconds": 1.6701,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Switch": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 47,
+        "EntryAttempts": 28,
+        "AuditAttempts": 22,
+        "Milliseconds": 9.8162,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "IdealStartup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 45,
+        "EntryAttempts": 57,
+        "AuditAttempts": 9,
+        "Milliseconds": 2.3388,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      }
+    },
+    "potential": {
+      "Nodes": 38,
+      "SearchAttempts": 47,
+      "ReplayAttempts": 0,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": []
+    }
+  },
+  "startup_hand": {
+    "Name": "startup_hand",
+    "Base": "startup_hand",
+    "Target": "core",
+    "RootKey": "668D55144CF11FD8E7DCEF7F6D00E4F8AF4254D353BA1BA8AA8D397EDF763729",
+    "runtimeMs": 386.8451,
+    "coldMs": 3436.8415,
+    "arms": {
+      "Startup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 0.9999999999999999,
+        "EntryUnresolved": 0,
+        "Victory": 0.9999999999999999,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0.9999999999999999,
+        "VictoryWithPeriodActions": 0.9999999999999999,
+        "Attempts": 18,
+        "EntryAttempts": 44,
+        "AuditAttempts": 240,
+        "Milliseconds": 89.1338,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "OFFERING",
+          "Target": -1
+        },
+        "entryCount": 6,
+        "victoryMeanSignedHpLoss": 6.000000000000001
+      },
+      "Fight": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 0.9999999999999999,
+        "EntryUnresolved": 0,
+        "Victory": 0.9999999999999999,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0.9999999999999999,
+        "VictoryWithPeriodActions": 0.9999999999999999,
+        "Attempts": 772,
+        "EntryAttempts": 64,
+        "AuditAttempts": 135,
+        "Milliseconds": 37.1816,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "OFFERING",
+          "Target": -1
+        },
+        "entryCount": 6,
+        "victoryMeanSignedHpLoss": 6.000000000000001
+      },
+      "Switch": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 0.9999999999999999,
+        "EntryUnresolved": 0,
+        "Victory": 0.9999999999999999,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0.9999999999999999,
+        "VictoryWithPeriodActions": 0.9999999999999999,
+        "Attempts": 130,
+        "EntryAttempts": 34,
+        "AuditAttempts": 130,
+        "Milliseconds": 12.0385,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "OFFERING",
+          "Target": -1
+        },
+        "entryCount": 2,
+        "victoryMeanSignedHpLoss": 6.000000000000001
+      },
+      "IdealStartup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 4,
+        "EntryAttempts": 6,
+        "AuditAttempts": 42,
+        "Milliseconds": 4.5873,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "OFFERING",
+          "Target": -1
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 6.0
+      }
+    },
+    "potential": {
+      "Nodes": 400,
+      "SearchAttempts": 494,
+      "ReplayAttempts": 20,
+      "Stop": "node_budget",
+      "witnesses": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "target": [
+            "FINESSE",
+            "FLASH_OF_STEEL"
+          ],
+          "startup": 3,
+          "stop": "terminal:Victory"
+        }
+      ]
+    }
+  },
+  "startup_unknown": {
+    "Name": "startup_unknown",
+    "Base": "startup_unknown",
+    "Target": "core",
+    "RootKey": "57EE5F286D5096F8CA4AAEA3ACF7B1D0AFCA0E9816021E39A5D558125AFD0F5B",
+    "runtimeMs": 1456.9455,
+    "coldMs": 3582.4536,
+    "arms": {
+      "Startup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 0.9999999999999996,
+        "EntryUnresolved": 0,
+        "Victory": 0.9999999999999996,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0.9999999999999996,
+        "VictoryWithPeriodActions": 0.9999999999999996,
+        "Attempts": 413,
+        "EntryAttempts": 282,
+        "AuditAttempts": 731,
+        "Milliseconds": 241.2889,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "OFFERING",
+          "Target": -1
+        },
+        "entryCount": 12,
+        "victoryMeanSignedHpLoss": 6.000000000000003
+      },
+      "Fight": {
+        "Lower": 0.41666666666666663,
+        "Upper": 1,
+        "EntryConfirmed": 0.45833333333333315,
+        "EntryUnresolved": 0.5416666666666667,
+        "Victory": 0.4166666666666665,
+        "Death": 0,
+        "Unfinished": 0.041666666666666664,
+        "Unresolved": 0.5416666666666667,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0.4166666666666665,
+        "VictoryWithPeriodActions": 0.4166666666666665,
+        "Attempts": 6000,
+        "EntryAttempts": 78,
+        "AuditAttempts": 247,
+        "Milliseconds": 259.3735,
+        "SearchStops": {
+          "attempt_budget": 8
+        },
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "OFFERING",
+          "Target": -1
+        },
+        "entryCount": 7,
+        "victoryMeanSignedHpLoss": 6.000000000000002
+      },
+      "Switch": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1.0000000000000002,
+        "EntryUnresolved": 0,
+        "Victory": 1.0000000000000002,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1.0000000000000002,
+        "VictoryWithPeriodActions": 1.0000000000000002,
+        "Attempts": 3722,
+        "EntryAttempts": 112,
+        "AuditAttempts": 527,
+        "Milliseconds": 185.5187,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "OFFERING",
+          "Target": -1
+        },
+        "entryCount": 8,
+        "victoryMeanSignedHpLoss": 5.999999999999999
+      },
+      "IdealStartup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 5,
+        "EntryAttempts": 6,
+        "AuditAttempts": 43,
+        "Milliseconds": 8.9248,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "OFFERING",
+          "Target": -1
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 6.0
+      }
+    },
+    "potential": {
+      "Nodes": 400,
+      "SearchAttempts": 550,
+      "ReplayAttempts": 20,
+      "Stop": "node_budget",
+      "witnesses": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "target": [
+            "FINESSE",
+            "FLASH_OF_STEEL"
+          ],
+          "startup": 3,
+          "stop": "terminal:Victory"
+        }
+      ]
+    },
+    "pair": {
+      "equal": true,
+      "policies": 4,
+      "potentialMatches": true,
+      "privateRngStreamsReplaced": 10
+    },
+    "budgetCheck": {
+      "Lower": 0,
+      "Upper": 1,
+      "Unresolved": 1
+    }
+  },
+  "startup_hp5": {
+    "Name": "startup_hp5",
+    "Base": "startup_unknown",
+    "Target": "core",
+    "RootKey": "A56AEADABA1FC71E0A7221735C0728DA2E9D554484471BB5031A48FF7B60F1AF",
+    "runtimeMs": 273.4249,
+    "coldMs": 4242.944,
+    "arms": {
+      "Startup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 1,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 1,
+        "EntryAttempts": 0,
+        "AuditAttempts": 1,
+        "Milliseconds": 26.2512,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "OFFERING",
+          "Target": -1
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Fight": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 1,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 1,
+        "EntryAttempts": 0,
+        "AuditAttempts": 1,
+        "Milliseconds": 0.2724,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "OFFERING",
+          "Target": -1
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Switch": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 1,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 1,
+        "EntryAttempts": 0,
+        "AuditAttempts": 1,
+        "Milliseconds": 3.6701,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "OFFERING",
+          "Target": -1
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "IdealStartup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 1,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 1,
+        "EntryAttempts": 0,
+        "AuditAttempts": 1,
+        "Milliseconds": 0.0846,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "OFFERING",
+          "Target": -1
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      }
+    },
+    "potential": {
+      "Nodes": 1,
+      "SearchAttempts": 1,
+      "ReplayAttempts": 0,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": []
+    }
+  },
+  "startup_hp6": {
+    "Name": "startup_hp6",
+    "Base": "startup_unknown",
+    "Target": "core",
+    "RootKey": "629477D7DB6D387484353D14BDF12557F91A806FE3F55EBD0D778B400F2F58D3",
+    "runtimeMs": 155.6913,
+    "coldMs": 4562.7941,
+    "arms": {
+      "Startup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 1,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 1,
+        "EntryAttempts": 0,
+        "AuditAttempts": 1,
+        "Milliseconds": 14.8955,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "OFFERING",
+          "Target": -1
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Fight": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 1,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 1,
+        "EntryAttempts": 0,
+        "AuditAttempts": 1,
+        "Milliseconds": 0.1756,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "OFFERING",
+          "Target": -1
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Switch": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 1,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 1,
+        "EntryAttempts": 0,
+        "AuditAttempts": 1,
+        "Milliseconds": 2.318,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "OFFERING",
+          "Target": -1
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "IdealStartup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 1,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 1,
+        "EntryAttempts": 0,
+        "AuditAttempts": 1,
+        "Milliseconds": 0.1158,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "OFFERING",
+          "Target": -1
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      }
+    },
+    "potential": {
+      "Nodes": 1,
+      "SearchAttempts": 1,
+      "ReplayAttempts": 0,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": []
+    }
+  },
+  "startup_hp7": {
+    "Name": "startup_hp7",
+    "Base": "startup_unknown",
+    "Target": "core",
+    "RootKey": "D733B816732466DBD6A121569C101B4057524948610CB43D85474E2994BEB9E5",
+    "runtimeMs": 934.5107,
+    "coldMs": 4228.6251,
+    "arms": {
+      "Startup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 0.9999999999999996,
+        "EntryUnresolved": 0,
+        "Victory": 0.9999999999999996,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0.9999999999999996,
+        "VictoryWithPeriodActions": 0.9999999999999996,
+        "Attempts": 413,
+        "EntryAttempts": 282,
+        "AuditAttempts": 731,
+        "Milliseconds": 189.077,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "OFFERING",
+          "Target": -1
+        },
+        "entryCount": 12,
+        "victoryMeanSignedHpLoss": 6.000000000000003
+      },
+      "Fight": {
+        "Lower": 0.41666666666666663,
+        "Upper": 1,
+        "EntryConfirmed": 0.45833333333333315,
+        "EntryUnresolved": 0.5416666666666667,
+        "Victory": 0.4166666666666665,
+        "Death": 0,
+        "Unfinished": 0.041666666666666664,
+        "Unresolved": 0.5416666666666667,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0.4166666666666665,
+        "VictoryWithPeriodActions": 0.4166666666666665,
+        "Attempts": 6000,
+        "EntryAttempts": 78,
+        "AuditAttempts": 247,
+        "Milliseconds": 148.028,
+        "SearchStops": {
+          "attempt_budget": 8
+        },
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "OFFERING",
+          "Target": -1
+        },
+        "entryCount": 7,
+        "victoryMeanSignedHpLoss": 6.000000000000002
+      },
+      "Switch": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1.0000000000000002,
+        "EntryUnresolved": 0,
+        "Victory": 1.0000000000000002,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1.0000000000000002,
+        "VictoryWithPeriodActions": 1.0000000000000002,
+        "Attempts": 3722,
+        "EntryAttempts": 112,
+        "AuditAttempts": 527,
+        "Milliseconds": 152.5018,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "OFFERING",
+          "Target": -1
+        },
+        "entryCount": 8,
+        "victoryMeanSignedHpLoss": 5.999999999999999
+      },
+      "IdealStartup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 5,
+        "EntryAttempts": 6,
+        "AuditAttempts": 43,
+        "Milliseconds": 6.6444,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "OFFERING",
+          "Target": -1
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 6.0
+      }
+    },
+    "potential": {
+      "Nodes": 400,
+      "SearchAttempts": 550,
+      "ReplayAttempts": 20,
+      "Stop": "node_budget",
+      "witnesses": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "target": [
+            "FINESSE",
+            "FLASH_OF_STEEL"
+          ],
+          "startup": 3,
+          "stop": "terminal:Victory"
+        }
+      ]
+    }
+  },
+  "startup_thick": {
+    "Name": "startup_thick",
+    "Base": "startup_unknown",
+    "Target": "core",
+    "RootKey": "E25FC0DADAB5EC5A1F832B9C2B50F8868ABE0397DA9F10B0A5A541B47A1AB9F9",
+    "runtimeMs": 654.6926,
+    "coldMs": 4426.2085,
+    "arms": {
+      "Startup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 0.9999999999999999,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 3370,
+        "EntryAttempts": 614,
+        "AuditAttempts": 336,
+        "Milliseconds": 148.9036,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "OFFERING",
+          "Target": -1
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Fight": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 0.9999999999999999,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 3370,
+        "EntryAttempts": 536,
+        "AuditAttempts": 336,
+        "Milliseconds": 170.2341,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "OFFERING",
+          "Target": -1
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Switch": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 0.9999999999999999,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 3370,
+        "EntryAttempts": 322,
+        "AuditAttempts": 367,
+        "Milliseconds": 83.2743,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "OFFERING",
+          "Target": -1
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "IdealStartup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 3370,
+        "EntryAttempts": 614,
+        "AuditAttempts": 10,
+        "Milliseconds": 75.0533,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "OFFERING",
+          "Target": -1
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      }
+    },
+    "potential": {
+      "Nodes": 400,
+      "SearchAttempts": 531,
+      "ReplayAttempts": 0,
+      "Stop": "node_budget",
+      "witnesses": []
+    }
+  },
+  "headbutt_setup": {
+    "Name": "headbutt_setup",
+    "Base": "headbutt_setup",
+    "Target": "core",
+    "RootKey": "8165DD735F956D40881EFF6DB2239DCC8AB1610F1C57FF3C913877F45FB7D940",
+    "runtimeMs": 296.3663,
+    "coldMs": 4016.6182,
+    "arms": {
+      "Startup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 36,
+        "Milliseconds": 40.4932,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Fight": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 116,
+        "EntryAttempts": 12,
+        "AuditAttempts": 18,
+        "Milliseconds": 17.7975,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 2,
+          "Card": "FINESSE",
+          "Target": -1
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Switch": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 116,
+        "EntryAttempts": 12,
+        "AuditAttempts": 18,
+        "Milliseconds": 17.0598,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 2,
+          "Card": "FINESSE",
+          "Target": -1
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "IdealStartup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 36,
+        "Milliseconds": 4.383,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      }
+    },
+    "potential": {
+      "Nodes": 19,
+      "SearchAttempts": 22,
+      "ReplayAttempts": 20,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "target": [
+            "FINESSE",
+            "FLASH_OF_STEEL"
+          ],
+          "startup": 0,
+          "stop": "terminal:Victory"
+        }
+      ]
+    }
+  },
+  "conditioned": {
+    "Name": "conditioned",
+    "Base": "conditioned",
+    "Target": "conditioned",
+    "RootKey": "D817A72EEEC32AF277F84F5CDD0EA412110377E3058FF6827D74C571A0B6C9C4",
+    "runtimeMs": 841.7067,
+    "coldMs": 3545.3685,
+    "arms": {
+      "Startup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0.0283203125,
+        "Death": 0,
+        "Unfinished": 0.9716796875,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0.0283203125,
+        "VictoryWithPeriodActions": 0.02197265625,
+        "Attempts": 5,
+        "EntryAttempts": 22,
+        "AuditAttempts": 2181,
+        "Milliseconds": 197.8039,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 2,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Fight": {
+        "Lower": 0.0283203125,
+        "Upper": 0.0283203125,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0.0283203125,
+        "Death": 0,
+        "Unfinished": 0.9716796875,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0.0283203125,
+        "VictoryWithPeriodActions": 0.02197265625,
+        "Attempts": 2132,
+        "EntryAttempts": 100,
+        "AuditAttempts": 2132,
+        "Milliseconds": 160.132,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 2,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Switch": {
+        "Lower": 0.0283203125,
+        "Upper": 0.0283203125,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0.0283203125,
+        "Death": 0,
+        "Unfinished": 0.9716796875,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0.0283203125,
+        "VictoryWithPeriodActions": 0.02197265625,
+        "Attempts": 2132,
+        "EntryAttempts": 100,
+        "AuditAttempts": 2132,
+        "Milliseconds": 168.0781,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 2,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "IdealStartup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 3,
+        "EntryAttempts": 15,
+        "AuditAttempts": 53,
+        "Milliseconds": 4.7367,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      }
+    },
+    "potential": {
+      "Nodes": 18,
+      "SearchAttempts": 23,
+      "ReplayAttempts": 119,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "target": [
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "FLASH_OF_STEEL",
+            "POMMEL_STRIKE"
+          ],
+          "startup": 3,
+          "stop": "terminal:Victory"
+        },
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "target": [
+            "FINESSE",
+            "POMMEL_STRIKE",
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "FLASH_OF_STEEL",
+            "POMMEL_STRIKE",
+            "FINESSE",
+            "FLASH_OF_STEEL"
+          ],
+          "startup": 1,
+          "stop": "terminal:Victory"
+        },
+        {
+          "grade": "finite_repetitions",
+          "kind": "finite_resource",
+          "target": [
+            "FLASH_OF_STEEL",
+            "POMMEL_STRIKE",
+            "FINESSE",
+            "FLASH_OF_STEEL",
+            "POMMEL_STRIKE",
+            "FINESSE"
+          ],
+          "startup": 5,
+          "stop": "insufficient_energy"
+        }
+      ]
+    },
+    "conditioned": {
+      "fixed": 0.0078125,
+      "adaptive": [
+        0.015625,
+        0.015625
+      ],
+      "ideal": [
+        1,
+        1
+      ],
+      "horizon": 16
+    }
+  },
+  "conditioned_e3": {
+    "Name": "conditioned_e3",
+    "Base": "conditioned",
+    "Target": "conditioned",
+    "RootKey": "07331E124771F102FA2ED6584EED76E27603E6823D6E12B031B221732E4F40C5",
+    "runtimeMs": 395.0338,
+    "coldMs": 4190.9712,
+    "arms": {
+      "Startup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 5,
+        "EntryAttempts": 22,
+        "AuditAttempts": 271,
+        "Milliseconds": 50.3038,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 2,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Fight": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 238,
+        "EntryAttempts": 100,
+        "AuditAttempts": 238,
+        "Milliseconds": 13.5001,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 2,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Switch": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 238,
+        "EntryAttempts": 100,
+        "AuditAttempts": 238,
+        "Milliseconds": 16.7183,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 2,
+        "victoryMeanSignedHpLoss": null
+      },
+      "IdealStartup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 3,
+        "EntryAttempts": 15,
+        "AuditAttempts": 39,
+        "Milliseconds": 6.4509,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": null
+      }
+    },
+    "potential": {
+      "Nodes": 33,
+      "SearchAttempts": 42,
+      "ReplayAttempts": 124,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": [
+        {
+          "grade": "finite_repetitions",
+          "kind": "finite_resource",
+          "target": [
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "FLASH_OF_STEEL",
+            "POMMEL_STRIKE"
+          ],
+          "startup": 3,
+          "stop": "insufficient_energy"
+        },
+        {
+          "grade": "candidate",
+          "kind": "finite_resource",
+          "target": [
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "POMMEL_STRIKE",
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "FLASH_OF_STEEL",
+            "POMMEL_STRIKE",
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "POMMEL_STRIKE"
+          ],
+          "startup": 0,
+          "stop": "insufficient_energy"
+        },
+        {
+          "grade": "candidate",
+          "kind": "finite_resource",
+          "target": [
+            "FINESSE",
+            "POMMEL_STRIKE",
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "FLASH_OF_STEEL",
+            "POMMEL_STRIKE",
+            "FINESSE",
+            "FLASH_OF_STEEL"
+          ],
+          "startup": 1,
+          "stop": "insufficient_energy"
+        }
+      ]
+    }
+  },
+  "conditioned_hp45": {
+    "Name": "conditioned_hp45",
+    "Base": "conditioned",
+    "Target": "conditioned",
+    "RootKey": "C4D53C0370CC93D1C0726DCBF3CAA2E0D42BC3095385529656D2596A428848F2",
+    "runtimeMs": 443.7019,
+    "coldMs": 4815.8808,
+    "arms": {
+      "Startup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 0.25,
+        "Attempts": 5,
+        "EntryAttempts": 22,
+        "AuditAttempts": 181,
+        "Milliseconds": 79.0243,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 2,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Fight": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 0.25,
+        "Attempts": 158,
+        "EntryAttempts": 101,
+        "AuditAttempts": 158,
+        "Milliseconds": 16.4527,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 2,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Switch": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 0.25,
+        "Attempts": 158,
+        "EntryAttempts": 101,
+        "AuditAttempts": 158,
+        "Milliseconds": 21.0671,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 2,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "IdealStartup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 3,
+        "EntryAttempts": 15,
+        "AuditAttempts": 29,
+        "Milliseconds": 4.0752,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      }
+    },
+    "potential": {
+      "Nodes": 16,
+      "SearchAttempts": 21,
+      "ReplayAttempts": 90,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "target": [
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "FLASH_OF_STEEL",
+            "POMMEL_STRIKE"
+          ],
+          "startup": 3,
+          "stop": "terminal:Victory"
+        },
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "target": [
+            "FINESSE",
+            "POMMEL_STRIKE",
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "FLASH_OF_STEEL",
+            "POMMEL_STRIKE",
+            "FINESSE",
+            "FLASH_OF_STEEL"
+          ],
+          "startup": 1,
+          "stop": "terminal:Victory"
+        },
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "target": [
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "POMMEL_STRIKE",
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "POMMEL_STRIKE"
+          ],
+          "startup": 0,
+          "stop": "terminal:Victory"
+        }
+      ]
+    }
+  },
+  "energy_limited": {
+    "Name": "energy_limited",
+    "Base": "energy_limited",
+    "Target": "energy",
+    "RootKey": "65DCBD6ABDBD1E6447D1C95C5CA36E87846BAE1C4903AC2010C1CF01524AF338",
+    "runtimeMs": 260.7687,
+    "coldMs": 4604.5327,
+    "arms": {
+      "Startup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 16,
+        "Milliseconds": 37.532,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Fight": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 8,
+        "EntryAttempts": 12,
+        "AuditAttempts": 8,
+        "Milliseconds": 5.2609,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "POMMEL_STRIKE",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Switch": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 8,
+        "EntryAttempts": 12,
+        "AuditAttempts": 8,
+        "Milliseconds": 3.2232,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "POMMEL_STRIKE",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": null
+      },
+      "IdealStartup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 16,
+        "Milliseconds": 6.7724,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": null
+      }
+    },
+    "potential": {
+      "Nodes": 9,
+      "SearchAttempts": 8,
+      "ReplayAttempts": 10,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": [
+        {
+          "grade": "finite_repetitions",
+          "kind": "finite_resource",
+          "target": [
+            "POMMEL_STRIKE",
+            "FINESSE"
+          ],
+          "startup": 0,
+          "stop": "insufficient_energy"
+        }
+      ]
+    },
+    "laps": {
+      "WinProbability": 0,
+      "Unresolved": 0,
+      "ObservationsAccepted": 1,
+      "CompleteLaps": 4,
+      "Stop": "insufficient_energy",
+      "Outcome": "Ongoing",
+      "HpLost": 0,
+      "EnergyDelta": -4,
+      "Attempts": 8
+    }
+  },
+  "energy0": {
+    "Name": "energy0",
+    "Base": "energy_limited",
+    "Target": "energy",
+    "RootKey": "699D4E3D02C703DCA0536E307682812156AECF4FF450E12ED975EB67CB09BE04",
+    "runtimeMs": 131.7776,
+    "coldMs": 4732.3562,
+    "arms": {
+      "Startup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 0,
+        "EntryAttempts": 0,
+        "AuditAttempts": 0,
+        "Milliseconds": 22.1332,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Fight": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 0,
+        "EntryAttempts": 0,
+        "AuditAttempts": 0,
+        "Milliseconds": 0.0867,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Switch": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 0,
+        "EntryAttempts": 0,
+        "AuditAttempts": 0,
+        "Milliseconds": 0.0532,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "IdealStartup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 0,
+        "EntryAttempts": 0,
+        "AuditAttempts": 0,
+        "Milliseconds": 0.05,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      }
+    },
+    "potential": {
+      "Nodes": 1,
+      "SearchAttempts": 0,
+      "ReplayAttempts": 0,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": []
+    },
+    "laps": {
+      "WinProbability": 0,
+      "Unresolved": 0,
+      "ObservationsAccepted": 1,
+      "CompleteLaps": 0,
+      "Stop": "insufficient_energy",
+      "Outcome": "Ongoing",
+      "HpLost": 0,
+      "EnergyDelta": 0,
+      "Attempts": 0
+    }
+  },
+  "energy1": {
+    "Name": "energy1",
+    "Base": "energy_limited",
+    "Target": "energy",
+    "RootKey": "216DDE3407FC17A0706621EB76F9873D7E249DD08226249EDB0DFF39C23906D6",
+    "runtimeMs": 199.7342,
+    "coldMs": 3968.0291,
+    "arms": {
+      "Startup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 4,
+        "Milliseconds": 26.6807,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Fight": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 2,
+        "EntryAttempts": 3,
+        "AuditAttempts": 2,
+        "Milliseconds": 2.4516,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "POMMEL_STRIKE",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Switch": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 2,
+        "EntryAttempts": 3,
+        "AuditAttempts": 2,
+        "Milliseconds": 0.8469,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "POMMEL_STRIKE",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": null
+      },
+      "IdealStartup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 4,
+        "Milliseconds": 0.9436,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": null
+      }
+    },
+    "potential": {
+      "Nodes": 3,
+      "SearchAttempts": 2,
+      "ReplayAttempts": 4,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": [
+        {
+          "grade": "candidate",
+          "kind": "finite_resource",
+          "target": [
+            "POMMEL_STRIKE",
+            "FINESSE"
+          ],
+          "startup": 0,
+          "stop": "insufficient_energy"
+        }
+      ]
+    },
+    "laps": {
+      "WinProbability": 0,
+      "Unresolved": 0,
+      "ObservationsAccepted": 1,
+      "CompleteLaps": 1,
+      "Stop": "insufficient_energy",
+      "Outcome": "Ongoing",
+      "HpLost": 0,
+      "EnergyDelta": -1,
+      "Attempts": 2
+    }
+  },
+  "energy2": {
+    "Name": "energy2",
+    "Base": "energy_limited",
+    "Target": "energy",
+    "RootKey": "3D0DA0787941A012ACC5AD696852F415D04CD12953FF14CD5968538784571339",
+    "runtimeMs": 197.533,
+    "coldMs": 4127.1536,
+    "arms": {
+      "Startup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 8,
+        "Milliseconds": 18.7475,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Fight": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 4,
+        "EntryAttempts": 7,
+        "AuditAttempts": 4,
+        "Milliseconds": 1.9888,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "POMMEL_STRIKE",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Switch": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 4,
+        "EntryAttempts": 7,
+        "AuditAttempts": 4,
+        "Milliseconds": 0.8651,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "POMMEL_STRIKE",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": null
+      },
+      "IdealStartup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 8,
+        "Milliseconds": 0.7143,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": null
+      }
+    },
+    "potential": {
+      "Nodes": 5,
+      "SearchAttempts": 4,
+      "ReplayAttempts": 6,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": [
+        {
+          "grade": "finite_repetitions",
+          "kind": "finite_resource",
+          "target": [
+            "POMMEL_STRIKE",
+            "FINESSE"
+          ],
+          "startup": 0,
+          "stop": "insufficient_energy"
+        }
+      ]
+    },
+    "laps": {
+      "WinProbability": 0,
+      "Unresolved": 0,
+      "ObservationsAccepted": 1,
+      "CompleteLaps": 2,
+      "Stop": "insufficient_energy",
+      "Outcome": "Ongoing",
+      "HpLost": 0,
+      "EnergyDelta": -2,
+      "Attempts": 4
+    }
+  },
+  "energy6": {
+    "Name": "energy6",
+    "Base": "energy_limited",
+    "Target": "energy",
+    "RootKey": "40EEE75FB8788594FD2CB339130215C7DDF0F7677A4F368D9D15013254339F9A",
+    "runtimeMs": 148.8446,
+    "coldMs": 3726.8565,
+    "arms": {
+      "Startup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 24,
+        "Milliseconds": 22.2419,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Fight": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 12,
+        "EntryAttempts": 12,
+        "AuditAttempts": 12,
+        "Milliseconds": 2.218,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "POMMEL_STRIKE",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Switch": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 12,
+        "EntryAttempts": 12,
+        "AuditAttempts": 12,
+        "Milliseconds": 3.3474,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "POMMEL_STRIKE",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": null
+      },
+      "IdealStartup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 24,
+        "Milliseconds": 1.3761,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": null
+      }
+    },
+    "potential": {
+      "Nodes": 13,
+      "SearchAttempts": 12,
+      "ReplayAttempts": 14,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": [
+        {
+          "grade": "finite_repetitions",
+          "kind": "finite_resource",
+          "target": [
+            "POMMEL_STRIKE",
+            "FINESSE"
+          ],
+          "startup": 0,
+          "stop": "insufficient_energy"
+        }
+      ]
+    },
+    "laps": {
+      "WinProbability": 0,
+      "Unresolved": 0,
+      "ObservationsAccepted": 1,
+      "CompleteLaps": 6,
+      "Stop": "insufficient_energy",
+      "Outcome": "Ongoing",
+      "HpLost": 0,
+      "EnergyDelta": -6,
+      "Attempts": 12
+    }
+  },
+  "energy6_hp45": {
+    "Name": "energy6_hp45",
+    "Base": "energy_limited",
+    "Target": "energy",
+    "RootKey": "4EABCED674F4FF556A50534A5BB822EA25B91A60A8AA4E542507789C72F18BB4",
+    "runtimeMs": 187.3429,
+    "coldMs": 3830.7474,
+    "arms": {
+      "Startup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 18,
+        "Milliseconds": 27.9385,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Fight": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 9,
+        "EntryAttempts": 12,
+        "AuditAttempts": 9,
+        "Milliseconds": 2.9369,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "POMMEL_STRIKE",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Switch": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 9,
+        "EntryAttempts": 12,
+        "AuditAttempts": 9,
+        "Milliseconds": 1.5865,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "POMMEL_STRIKE",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "IdealStartup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 18,
+        "Milliseconds": 6.2284,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      }
+    },
+    "potential": {
+      "Nodes": 3,
+      "SearchAttempts": 2,
+      "ReplayAttempts": 11,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "target": [
+            "POMMEL_STRIKE",
+            "FINESSE"
+          ],
+          "startup": 0,
+          "stop": "terminal:Victory"
+        }
+      ]
+    },
+    "laps": {
+      "WinProbability": 1,
+      "Unresolved": 0,
+      "ObservationsAccepted": 1,
+      "CompleteLaps": 4,
+      "Stop": "terminal:Victory",
+      "Outcome": "Victory",
+      "HpLost": 0,
+      "EnergyDelta": -5,
+      "Attempts": 9
+    }
+  },
+  "no_draw": {
+    "Name": "no_draw",
+    "Base": "no_draw",
+    "Target": "core",
+    "RootKey": "765C896B1C40B25110556126EB6208493103E21A7F984988C449CA21019B6B8C",
+    "runtimeMs": 297.161,
+    "coldMs": 4083.7005,
+    "arms": {
+      "Startup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 1,
+        "EntryAttempts": 1,
+        "AuditAttempts": 1,
+        "Milliseconds": 45.4876,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Fight": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 1,
+        "EntryAttempts": 1,
+        "AuditAttempts": 1,
+        "Milliseconds": 0.3996,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Switch": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 1,
+        "EntryAttempts": 1,
+        "AuditAttempts": 1,
+        "Milliseconds": 5.2966,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "IdealStartup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 1,
+        "EntryAttempts": 1,
+        "AuditAttempts": 1,
+        "Milliseconds": 0.2342,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      }
+    },
+    "potential": {
+      "Nodes": 2,
+      "SearchAttempts": 1,
+      "ReplayAttempts": 0,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": []
+    }
+  },
+  "quick_kill": {
+    "Name": "quick_kill",
+    "Base": "quick_kill",
+    "Target": "core",
+    "RootKey": "9D39EC0A3565FFF90A7909E5D8330689C0F55A04A8B2B3FCEB8BFE42D4888E22",
+    "runtimeMs": 404.5377,
+    "coldMs": 4379.1287,
+    "arms": {
+      "Startup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 10,
+        "Milliseconds": 54.1737,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Fight": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 2,
+        "EntryAttempts": 6,
+        "AuditAttempts": 2,
+        "Milliseconds": 16.0511,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "STRIKE_IRONCLAD",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Switch": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 5,
+        "EntryAttempts": 9,
+        "AuditAttempts": 5,
+        "Milliseconds": 3.0944,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 3,
+          "Card": "FLASH_OF_STEEL",
+          "Target": 0
+        },
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "IdealStartup": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 1,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 1,
+        "VictoryWithPeriodActions": 1,
+        "Attempts": 0,
+        "EntryAttempts": 2,
+        "AuditAttempts": 10,
+        "Milliseconds": 1.4392,
+        "SearchStops": {},
+        "FirstMove": null,
+        "entryCount": 1,
+        "victoryMeanSignedHpLoss": 0.0
+      }
+    },
+    "potential": {
+      "Nodes": 17,
+      "SearchAttempts": 42,
+      "ReplayAttempts": 7,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "target": [
+            "FLASH_OF_STEEL",
+            "FINESSE"
+          ],
+          "startup": 0,
+          "stop": "terminal:Victory"
+        }
+      ]
+    }
+  },
+  "ordinary": {
+    "Name": "ordinary",
+    "Base": "ordinary",
+    "Target": "core",
+    "RootKey": "9E51469538154CC1CA2F75B9F842BD5E6F18FE13D563C15778ECB1BBCF84E176",
+    "runtimeMs": 223.7088,
+    "coldMs": 4766.5956,
+    "arms": {
+      "Startup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 15,
+        "EntryAttempts": 0,
+        "AuditAttempts": 3,
+        "Milliseconds": 31.5326,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "STRIKE_IRONCLAD",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Fight": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 15,
+        "EntryAttempts": 0,
+        "AuditAttempts": 3,
+        "Milliseconds": 0.7138,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "STRIKE_IRONCLAD",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Switch": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 15,
+        "EntryAttempts": 0,
+        "AuditAttempts": 3,
+        "Milliseconds": 5.0092,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "STRIKE_IRONCLAD",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "IdealStartup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 1,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 15,
+        "EntryAttempts": 0,
+        "AuditAttempts": 3,
+        "Milliseconds": 0.6915,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "STRIKE_IRONCLAD",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      }
+    },
+    "potential": {
+      "Nodes": 16,
+      "SearchAttempts": 15,
+      "ReplayAttempts": 0,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": []
+    }
+  },
+  "ordinary_direct": {
+    "Name": "ordinary_direct",
+    "Base": "ordinary",
+    "Target": "core",
+    "RootKey": "A9BC7F8A6EF849C98447672A24F770BE3C0B265C2628EB139690435B4F8BCD7F",
+    "runtimeMs": 214.8641,
+    "coldMs": 4850.8824,
+    "arms": {
+      "Startup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 1,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 13,
+        "EntryAttempts": 0,
+        "AuditAttempts": 2,
+        "Milliseconds": 31.1517,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "STRIKE_IRONCLAD",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Fight": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 1,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 2,
+        "EntryAttempts": 0,
+        "AuditAttempts": 2,
+        "Milliseconds": 0.2044,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "STRIKE_IRONCLAD",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "Switch": {
+        "Lower": 1,
+        "Upper": 1,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 1,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 2,
+        "EntryAttempts": 0,
+        "AuditAttempts": 2,
+        "Milliseconds": 2.5975,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "STRIKE_IRONCLAD",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": 0.0
+      },
+      "IdealStartup": {
+        "Lower": 0,
+        "Upper": 0,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 0,
+        "Victory": 1,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 0,
+        "VictoryWithoutEntry": 1,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 13,
+        "EntryAttempts": 0,
+        "AuditAttempts": 2,
+        "Milliseconds": 0.3116,
+        "SearchStops": {},
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "STRIKE_IRONCLAD",
+          "Target": 0
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": 0.0
+      }
+    },
+    "potential": {
+      "Nodes": 8,
+      "SearchAttempts": 13,
+      "ReplayAttempts": 0,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": []
+    }
+  },
+  "unsupported": {
+    "Name": "unsupported",
+    "Base": "unsupported",
+    "Target": "core",
+    "RootKey": "CBE85CA000130756A92AC5A387C1231AEE7D5519DE74D18D4FDA9A51B52CCD12",
+    "runtimeMs": 126.2327,
+    "coldMs": 4275.2622,
+    "arms": {
+      "Startup": {
+        "Lower": 0,
+        "Upper": 1,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 1,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 1,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 1,
+        "EntryAttempts": 0,
+        "AuditAttempts": 0,
+        "Milliseconds": 21.6846,
+        "SearchStops": {
+          "unsupported:HAVOC:autoplay_from_draw": 1
+        },
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "HAVOC",
+          "Target": -1
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Fight": {
+        "Lower": 0,
+        "Upper": 1,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 1,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 1,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 1,
+        "EntryAttempts": 0,
+        "AuditAttempts": 0,
+        "Milliseconds": 0.2618,
+        "SearchStops": {
+          "unsupported:HAVOC:autoplay_from_draw": 1
+        },
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "HAVOC",
+          "Target": -1
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "Switch": {
+        "Lower": 0,
+        "Upper": 1,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 1,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 1,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 1,
+        "EntryAttempts": 0,
+        "AuditAttempts": 0,
+        "Milliseconds": 5.0724,
+        "SearchStops": {
+          "unsupported:HAVOC:autoplay_from_draw": 1
+        },
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "HAVOC",
+          "Target": -1
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      },
+      "IdealStartup": {
+        "Lower": 0,
+        "Upper": 1,
+        "EntryConfirmed": 0,
+        "EntryUnresolved": 1,
+        "Victory": 0,
+        "Death": 0,
+        "Unfinished": 0,
+        "Unresolved": 1,
+        "VictoryWithoutEntry": 0,
+        "VictoryAfterEntry": 0,
+        "VictoryWithPeriodActions": 0,
+        "Attempts": 1,
+        "EntryAttempts": 0,
+        "AuditAttempts": 0,
+        "Milliseconds": 0.2554,
+        "SearchStops": {
+          "unsupported:HAVOC:autoplay_from_draw": 1
+        },
+        "FirstMove": {
+          "Kind": "PlayCard",
+          "Instance": 1,
+          "Card": "HAVOC",
+          "Target": -1
+        },
+        "entryCount": 0,
+        "victoryMeanSignedHpLoss": null
+      }
+    },
+    "potential": {
+      "Nodes": 1,
+      "SearchAttempts": 1,
+      "ReplayAttempts": 0,
+      "Stop": "admitted_frontier_finished",
+      "witnesses": []
+    }
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "schema": 1,
+  "budgets": {
+    "StartActions": 5,
+    "BattleActions": 24,
+    "Events": 20,
+    "Attempts": 6000,
+    "EntryAttempts": 1800,
+    "Milliseconds": 1800
+  },
+  "discovery": {
+    "Nodes": 400,
+    "Attempts": 2000,
+    "Actions": 24,
+    "Events": 20,
+    "Milliseconds": 550,
+    "Period": 10,
+    "Laps": 16,
+    "Candidates": 3
+  },
+  "cases": {
+    "core50": {
+      "base": "core50",
+      "target": "core"
+    },
+    "core25": {
+      "base": "core50",
+      "target": "core",
+      "enemy": 25
+    },
+    "core80": {
+      "base": "core50",
+      "target": "core",
+      "enemy": 80
+    },
+    "hand1": {
+      "base": "core50",
+      "target": "core",
+      "add": [
+        [
+          "DEFEND_IRONCLAD",
+          "Hand"
+        ]
+      ]
+    },
+    "hand2": {
+      "base": "core50",
+      "target": "core",
+      "add": [
+        [
+          "DEFEND_IRONCLAD",
+          "Hand",
+          2
+        ]
+      ]
+    },
+    "draw1": {
+      "base": "core50",
+      "target": "core",
+      "add": [
+        [
+          "DEFEND_IRONCLAD",
+          "Draw"
+        ]
+      ]
+    },
+    "draw2": {
+      "base": "core50",
+      "target": "core",
+      "add": [
+        [
+          "DEFEND_IRONCLAD",
+          "Draw",
+          2
+        ]
+      ]
+    },
+    "discard1": {
+      "base": "core50",
+      "target": "core",
+      "add": [
+        [
+          "DEFEND_IRONCLAD",
+          "Discard"
+        ]
+      ]
+    },
+    "discard2": {
+      "base": "core50",
+      "target": "core",
+      "add": [
+        [
+          "DEFEND_IRONCLAD",
+          "Discard",
+          2
+        ]
+      ]
+    },
+    "discard_redundant_finesse": {
+      "base": "core50",
+      "target": "core",
+      "add": [
+        [
+          "FINESSE",
+          "Discard"
+        ]
+      ]
+    },
+    "draw_redundant_flash": {
+      "base": "core50",
+      "target": "core",
+      "add": [
+        [
+          "FLASH_OF_STEEL",
+          "Draw"
+        ]
+      ]
+    },
+    "blocker_burning_pact": {
+      "base": "core50",
+      "target": "core",
+      "energy": 1,
+      "add": [
+        [
+          "BURNING_PACT",
+          "Hand"
+        ],
+        [
+          "DEFEND_IRONCLAD",
+          "Hand"
+        ]
+      ]
+    },
+    "blocker_headbutt": {
+      "base": "core50",
+      "target": "core",
+      "energy": 1,
+      "add": [
+        [
+          "HEADBUTT",
+          "Hand"
+        ],
+        [
+          "DEFEND_IRONCLAD",
+          "Discard"
+        ]
+      ]
+    },
+    "blocker_pommel": {
+      "base": "core50",
+      "target": "core",
+      "energy": 1,
+      "add": [
+        [
+          "POMMEL_STRIKE",
+          "Hand"
+        ],
+        [
+          "DEFEND_IRONCLAD",
+          "Discard"
+        ]
+      ]
+    },
+    "startup_hand": {
+      "base": "startup_hand",
+      "target": "core"
+    },
+    "startup_unknown": {
+      "base": "startup_unknown",
+      "target": "core",
+      "pair": true
+    },
+    "startup_hp5": {
+      "base": "startup_unknown",
+      "target": "core",
+      "hp": 5
+    },
+    "startup_hp6": {
+      "base": "startup_unknown",
+      "target": "core",
+      "hp": 6
+    },
+    "startup_hp7": {
+      "base": "startup_unknown",
+      "target": "core",
+      "hp": 7
+    },
+    "startup_thick": {
+      "base": "startup_unknown",
+      "target": "core",
+      "add": [
+        [
+          "DEFEND_IRONCLAD",
+          "Draw",
+          2
+        ]
+      ]
+    },
+    "headbutt_setup": {
+      "base": "headbutt_setup",
+      "target": "core"
+    },
+    "conditioned": {
+      "base": "conditioned",
+      "target": "conditioned",
+      "tape": true
+    },
+    "conditioned_e3": {
+      "base": "conditioned",
+      "target": "conditioned",
+      "energy": 3
+    },
+    "conditioned_hp45": {
+      "base": "conditioned",
+      "target": "conditioned",
+      "enemy": 45
+    },
+    "energy_limited": {
+      "base": "energy_limited",
+      "target": "energy",
+      "laps": true
+    },
+    "energy0": {
+      "base": "energy_limited",
+      "target": "energy",
+      "energy": 0,
+      "laps": true
+    },
+    "energy1": {
+      "base": "energy_limited",
+      "target": "energy",
+      "energy": 1,
+      "laps": true
+    },
+    "energy2": {
+      "base": "energy_limited",
+      "target": "energy",
+      "energy": 2,
+      "laps": true
+    },
+    "energy6": {
+      "base": "energy_limited",
+      "target": "energy",
+      "energy": 6,
+      "laps": true
+    },
+    "energy6_hp45": {
+      "base": "energy_limited",
+      "target": "energy",
+      "energy": 6,
+      "enemy": 45,
+      "laps": true
+    },
+    "no_draw": {
+      "base": "no_draw",
+      "target": "core"
+    },
+    "quick_kill": {
+      "base": "quick_kill",
+      "target": "core"
+    },
+    "ordinary": {
+      "base": "ordinary",
+      "target": "core"
+    },
+    "ordinary_direct": {
+      "base": "ordinary",
+      "target": "core",
+      "enemy": 12
+    },
+    "unsupported": {
+      "base": "unsupported",
+      "target": "core"
+    }
+  }
+}
