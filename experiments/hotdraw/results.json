@@ -1,0 +1,4842 @@
+{
+  "schema": 1,
+  "build": {
+    "upstream": "131d10ae4499b56332787af61fe4a9306e65860f",
+    "archive_sha256": "3aa49546ccf0bad704c2cfd77182a9d311d88622196cbdece9a7a1e9c51199b3",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "harness_sha256": "554e4f956f30bb1a1acf994b176b14ab74169611b63905958044514f9f1bcbf0",
+    "runtimeconfig_sha256": "bdc43145748bd018ad0620469db3e460f465076f79977857b01e13a6818d2b28",
+    "solver_sha256": "e12827a9ae3b3b12fae0fd7cc78408edb268b1c745cf0dbefc1c1c252d6fa60d",
+    "coreclr_sha256": "8b6b0017786e78a8e65b2b3fc8da74d1a4911adf674294625d613b99aaa1a17d",
+    "runtime_sha256": "0a1b7ca731245de1f267a9c3c4d1ef8705e0821923fcdd6e0d61c31132f51240",
+    "adapter": {
+      "Belief.cs": "96ce6ecc206ebe68b1c2bc3326c544e9de797e846837f40e40fb290111e12d77",
+      "build.py": "e1e2de58783af5e573d81bd909b722a351e25648dc4e50a1d95b4ef56f2573d9",
+      "check.py": "82c92eaf13ec078cef5fa520c7fb0960f743a8493754e1f8cf5106a34712317b",
+      "Harness.cs": "86d3a2013699d75a9c9ca97e4740d95e579a74495e04ab6c36762430e79da29b",
+      "Resolver.cs": "e18d10268bbb8e42d08039ef96ec902cba01e0a4868cdb191011b82e00fd0c66",
+      "Search.cs": "c2ce16640fc38351ca6660131f63626bfd7bde0c5cbff5e813c471c1d69f992c",
+      "Session.cs": "5519d192a78f25a414998be8077130df727c21d64cb4d46e944c8d589ff0c058"
+    },
+    "ritsu": {
+      "0.113.0/STS2-RitsuLib.dll": "645ee54695dc368d1bdad7750169f3a60ca2c8acd9254dd2b1bf6970c5e93cce",
+      "0.113.0/STS2-RitsuLib.Runtime.dll": "4fbe55f3ea5d60670f5a016d2ca6e279e00a36993a4b883e3b4225f8cd67f2a6",
+      "shared/STS2-RitsuLib.Settings.dll": "0ce09f8b88f26620dadd19ee6b289f46b53eb9821cb7c26531cca462bf2bd473",
+      "shared/STS2-RitsuLib.Shared.dll": "d9c5f16137ab24011ec2963ba1887db7b686a03d4b27950243637c1f0e3ae414",
+      "shared/STS2-RitsuLib.Ui.dll": "6f7e56cb9601cc3396a8b712fdd3b1eaff7797fd71b0b751aa805f23760eadeb"
+    }
+  },
+  "fixtures": {
+    "draws": {
+      "fixture": "draws",
+      "coldMilliseconds": 3382.7369,
+      "result": {
+        "strike": 0.6666666666666666,
+        "defend": 0.33333333333333337,
+        "paths": [
+          {
+            "Instance": 3,
+            "second": 4,
+            "probability": 0.16666666666666666,
+            "Events": [
+              {
+                "Position": 0,
+                "Kind": "Draw",
+                "Source": "POMMEL_STRIKE#1@0/ExecuteBytecodeInternal",
+                "Phase": "draw_cards",
+                "DrawDepth": 1,
+                "Remaining": 2,
+                "Observation": "on_draw_to_hand",
+                "Options": [
+                  {
+                    "Instance": 3,
+                    "Denominator": 3,
+                    "EquivalenceRepresentative": 0,
+                    "Probability": 0.3333333333333333
+                  },
+                  {
+                    "Instance": 4,
+                    "Denominator": 3,
+                    "EquivalenceRepresentative": 3,
+                    "Probability": 0.3333333333333333
+                  },
+                  {
+                    "Instance": 5,
+                    "Denominator": 3,
+                    "EquivalenceRepresentative": 0,
+                    "Probability": 0.3333333333333333
+                  }
+                ],
+                "Choices": [],
+                "Result": 3,
+                "Selection": null
+              },
+              {
+                "Position": 1,
+                "Kind": "Draw",
+                "Source": "POMMEL_STRIKE#1@0/ExecuteBytecodeInternal",
+                "Phase": "draw_cards",
+                "DrawDepth": 1,
+                "Remaining": 1,
+                "Observation": "on_draw_to_hand",
+                "Options": [
+                  {
+                    "Instance": 4,
+                    "Denominator": 2,
+                    "EquivalenceRepresentative": 0,
+                    "Probability": 0.5
+                  },
+                  {
+                    "Instance": 5,
+                    "Denominator": 2,
+                    "EquivalenceRepresentative": 0,
+                    "Probability": 0.5
+                  }
+                ],
+                "Choices": [],
+                "Result": 4,
+                "Selection": null
+              }
+            ]
+          },
+          {
+            "Instance": 3,
+            "second": 5,
+            "probability": 0.16666666666666666,
+            "Events": [
+              {
+                "Position": 0,
+                "Kind": "Draw",
+                "Source": "POMMEL_STRIKE#1@0/ExecuteBytecodeInternal",
+                "Phase": "draw_cards",
+                "DrawDepth": 1,
+                "Remaining": 2,
+                "Observation": "on_draw_to_hand",
+                "Options": [
+                  {
+                    "Instance": 3,
+                    "Denominator": 3,
+                    "EquivalenceRepresentative": 0,
+                    "Probability": 0.3333333333333333
+                  },
+                  {
+                    "Instance": 4,
+                    "Denominator": 3,
+                    "EquivalenceRepresentative": 3,
+                    "Probability": 0.3333333333333333
+                  },
+                  {
+                    "Instance": 5,
+                    "Denominator": 3,
+                    "EquivalenceRepresentative": 0,
+                    "Probability": 0.3333333333333333
+                  }
+                ],
+                "Choices": [],
+                "Result": 3,
+                "Selection": null
+              },
+              {
+                "Position": 1,
+                "Kind": "Draw",
+                "Source": "POMMEL_STRIKE#1@0/ExecuteBytecodeInternal",
+                "Phase": "draw_cards",
+                "DrawDepth": 1,
+                "Remaining": 1,
+                "Observation": "on_draw_to_hand",
+                "Options": [
+                  {
+                    "Instance": 4,
+                    "Denominator": 2,
+                    "EquivalenceRepresentative": 0,
+                    "Probability": 0.5
+                  },
+                  {
+                    "Instance": 5,
+                    "Denominator": 2,
+                    "EquivalenceRepresentative": 0,
+                    "Probability": 0.5
+                  }
+                ],
+                "Choices": [],
+                "Result": 5,
+                "Selection": null
+              }
+            ]
+          },
+          {
+            "Instance": 4,
+            "second": 3,
+            "probability": 0.16666666666666666,
+            "Events": [
+              {
+                "Position": 0,
+                "Kind": "Draw",
+                "Source": "POMMEL_STRIKE#1@0/ExecuteBytecodeInternal",
+                "Phase": "draw_cards",
+                "DrawDepth": 1,
+                "Remaining": 2,
+                "Observation": "on_draw_to_hand",
+                "Options": [
+                  {
+                    "Instance": 3,
+                    "Denominator": 3,
+                    "EquivalenceRepresentative": 0,
+                    "Probability": 0.3333333333333333
+                  },
+                  {
+                    "Instance": 4,
+                    "Denominator": 3,
+                    "EquivalenceRepresentative": 3,
+                    "Probability": 0.3333333333333333
+                  },
+                  {
+                    "Instance": 5,
+                    "Denominator": 3,
+                    "EquivalenceRepresentative": 0,
+                    "Probability": 0.3333333333333333
+                  }
+                ],
+                "Choices": [],
+                "Result": 4,
+                "Selection": null
+              },
+              {
+                "Position": 1,
+                "Kind": "Draw",
+                "Source": "POMMEL_STRIKE#1@0/ExecuteBytecodeInternal",
+                "Phase": "draw_cards",
+                "DrawDepth": 1,
+                "Remaining": 1,
+                "Observation": "on_draw_to_hand",
+                "Options": [
+                  {
+                    "Instance": 3,
+                    "Denominator": 2,
+                    "EquivalenceRepresentative": 0,
+                    "Probability": 0.5
+                  },
+                  {
+                    "Instance": 5,
+                    "Denominator": 2,
+                    "EquivalenceRepresentative": 0,
+                    "Probability": 0.5
+                  }
+                ],
+                "Choices": [],
+                "Result": 3,
+                "Selection": null
+              }
+            ]
+          },
+          {
+            "Instance": 4,
+            "second": 5,
+            "probability": 0.16666666666666666,
+            "Events": [
+              {
+                "Position": 0,
+                "Kind": "Draw",
+                "Source": "POMMEL_STRIKE#1@0/ExecuteBytecodeInternal",
+                "Phase": "draw_cards",
+                "DrawDepth": 1,
+                "Remaining": 2,
+                "Observation": "on_draw_to_hand",
+                "Options": [
+                  {
+                    "Instance": 3,
+                    "Denominator": 3,
+                    "EquivalenceRepresentative": 0,
+                    "Probability": 0.3333333333333333
+                  },
+                  {
+                    "Instance": 4,
+                    "Denominator": 3,
+                    "EquivalenceRepresentative": 3,
+                    "Probability": 0.3333333333333333
+                  },
+                  {
+                    "Instance": 5,
+                    "Denominator": 3,
+                    "EquivalenceRepresentative": 0,
+                    "Probability": 0.3333333333333333
+                  }
+                ],
+                "Choices": [],
+                "Result": 4,
+                "Selection": null
+              },
+              {
+                "Position": 1,
+                "Kind": "Draw",
+                "Source": "POMMEL_STRIKE#1@0/ExecuteBytecodeInternal",
+                "Phase": "draw_cards",
+                "DrawDepth": 1,
+                "Remaining": 1,
+                "Observation": "on_draw_to_hand",
+                "Options": [
+                  {
+                    "Instance": 3,
+                    "Denominator": 2,
+                    "EquivalenceRepresentative": 0,
+                    "Probability": 0.5
+                  },
+                  {
+                    "Instance": 5,
+                    "Denominator": 2,
+                    "EquivalenceRepresentative": 0,
+                    "Probability": 0.5
+                  }
+                ],
+                "Choices": [],
+                "Result": 5,
+                "Selection": null
+              }
+            ]
+          },
+          {
+            "Instance": 5,
+            "second": 3,
+            "probability": 0.16666666666666666,
+            "Events": [
+              {
+                "Position": 0,
+                "Kind": "Draw",
+                "Source": "POMMEL_STRIKE#1@0/ExecuteBytecodeInternal",
+                "Phase": "draw_cards",
+                "DrawDepth": 1,
+                "Remaining": 2,
+                "Observation": "on_draw_to_hand",
+                "Options": [
+                  {
+                    "Instance": 3,
+                    "Denominator": 3,
+                    "EquivalenceRepresentative": 0,
+                    "Probability": 0.3333333333333333
+                  },
+                  {
+                    "Instance": 4,
+                    "Denominator": 3,
+                    "EquivalenceRepresentative": 3,
+                    "Probability": 0.3333333333333333
+                  },
+                  {
+                    "Instance": 5,
+                    "Denominator": 3,
+                    "EquivalenceRepresentative": 0,
+                    "Probability": 0.3333333333333333
+                  }
+                ],
+                "Choices": [],
+                "Result": 5,
+                "Selection": null
+              },
+              {
+                "Position": 1,
+                "Kind": "Draw",
+                "Source": "POMMEL_STRIKE#1@0/ExecuteBytecodeInternal",
+                "Phase": "draw_cards",
+                "DrawDepth": 1,
+                "Remaining": 1,
+                "Observation": "on_draw_to_hand",
+                "Options": [
+                  {
+                    "Instance": 3,
+                    "Denominator": 2,
+                    "EquivalenceRepresentative": 0,
+                    "Probability": 0.5
+                  },
+                  {
+                    "Instance": 4,
+                    "Denominator": 2,
+                    "EquivalenceRepresentative": 3,
+                    "Probability": 0.5
+                  }
+                ],
+                "Choices": [],
+                "Result": 3,
+                "Selection": null
+              }
+            ]
+          },
+          {
+            "Instance": 5,
+            "second": 4,
+            "probability": 0.16666666666666666,
+            "Events": [
+              {
+                "Position": 0,
+                "Kind": "Draw",
+                "Source": "POMMEL_STRIKE#1@0/ExecuteBytecodeInternal",
+                "Phase": "draw_cards",
+                "DrawDepth": 1,
+                "Remaining": 2,
+                "Observation": "on_draw_to_hand",
+                "Options": [
+                  {
+                    "Instance": 3,
+                    "Denominator": 3,
+                    "EquivalenceRepresentative": 0,
+                    "Probability": 0.3333333333333333
+                  },
+                  {
+                    "Instance": 4,
+                    "Denominator": 3,
+                    "EquivalenceRepresentative": 3,
+                    "Probability": 0.3333333333333333
+                  },
+                  {
+                    "Instance": 5,
+                    "Denominator": 3,
+                    "EquivalenceRepresentative": 0,
+                    "Probability": 0.3333333333333333
+                  }
+                ],
+                "Choices": [],
+                "Result": 5,
+                "Selection": null
+              },
+              {
+                "Position": 1,
+                "Kind": "Draw",
+                "Source": "POMMEL_STRIKE#1@0/ExecuteBytecodeInternal",
+                "Phase": "draw_cards",
+                "DrawDepth": 1,
+                "Remaining": 1,
+                "Observation": "on_draw_to_hand",
+                "Options": [
+                  {
+                    "Instance": 3,
+                    "Denominator": 2,
+                    "EquivalenceRepresentative": 0,
+                    "Probability": 0.5
+                  },
+                  {
+                    "Instance": 4,
+                    "Denominator": 2,
+                    "EquivalenceRepresentative": 3,
+                    "Probability": 0.5
+                  }
+                ],
+                "Choices": [],
+                "Result": 4,
+                "Selection": null
+              }
+            ]
+          }
+        ],
+        "mass": 0.9999999999999999,
+        "known": [
+          {
+            "Position": 0,
+            "Kind": "KnownDraw",
+            "Source": "POMMEL_STRIKE#1@0/ExecuteBytecodeInternal",
+            "Phase": "draw_cards",
+            "DrawDepth": 1,
+            "Remaining": 2,
+            "Observation": "on_draw_to_hand",
+            "Options": [
+              {
+                "Instance": 3,
+                "Denominator": 1,
+                "EquivalenceRepresentative": 0,
+                "Probability": 1
+              }
+            ],
+            "Choices": [],
+            "Result": 3,
+            "Selection": null
+          },
+          {
+            "Position": 1,
+            "Kind": "KnownDraw",
+            "Source": "POMMEL_STRIKE#1@0/ExecuteBytecodeInternal",
+            "Phase": "draw_cards",
+            "DrawDepth": 1,
+            "Remaining": 1,
+            "Observation": "on_draw_to_hand",
+            "Options": [
+              {
+                "Instance": 4,
+                "Denominator": 1,
+                "EquivalenceRepresentative": 0,
+                "Probability": 1
+              }
+            ],
+            "Choices": [],
+            "Result": 4,
+            "Selection": null
+          }
+        ],
+        "distinctModifiers": true,
+        "rejectsNonExchangeable": true,
+        "rejectsBadPrefix": true,
+        "fullHand": true,
+        "earlyTerminal": true,
+        "jointGoal": {
+          "budget": {
+            "Nodes": 400,
+            "Actions": 1,
+            "Events": 2,
+            "EndTurn": false,
+            "FixedHorizon": true
+          },
+          "nosl": {
+            "Best": {
+              "Mass": {
+                "Success": 0.3333333333333333,
+                "Failure": 0.6666666666666666,
+                "Unresolved": 0,
+                "Upper": 0.3333333333333333
+              },
+              "Witness": [
+                {
+                  "Action": "POMMEL_STRIKE#1@0",
+                  "Events": [
+                    {
+                      "Position": 0,
+                      "Kind": "Draw",
+                      "Source": "POMMEL_STRIKE#1@0/ExecuteBytecodeInternal",
+                      "Phase": "draw_cards",
+                      "DrawDepth": 1,
+                      "Remaining": 2,
+                      "Observation": "on_draw_to_hand",
+                      "Options": [
+                        {
+                          "Instance": 3,
+                          "Denominator": 3,
+                          "EquivalenceRepresentative": 0,
+                          "Probability": 0.3333333333333333
+                        },
+                        {
+                          "Instance": 4,
+                          "Denominator": 3,
+                          "EquivalenceRepresentative": 3,
+                          "Probability": 0.3333333333333333
+                        },
+                        {
+                          "Instance": 5,
+                          "Denominator": 3,
+                          "EquivalenceRepresentative": 0,
+                          "Probability": 0.3333333333333333
+                        }
+                      ],
+                      "Choices": [],
+                      "Result": 3,
+                      "Selection": null
+                    },
+                    {
+                      "Position": 1,
+                      "Kind": "Draw",
+                      "Source": "POMMEL_STRIKE#1@0/ExecuteBytecodeInternal",
+                      "Phase": "draw_cards",
+                      "DrawDepth": 1,
+                      "Remaining": 1,
+                      "Observation": "on_draw_to_hand",
+                      "Options": [
+                        {
+                          "Instance": 4,
+                          "Denominator": 2,
+                          "EquivalenceRepresentative": 0,
+                          "Probability": 0.5
+                        },
+                        {
+                          "Instance": 5,
+                          "Denominator": 2,
+                          "EquivalenceRepresentative": 0,
+                          "Probability": 0.5
+                        }
+                      ],
+                      "Choices": [],
+                      "Result": 4,
+                      "Selection": null
+                    }
+                  ]
+                }
+              ],
+              "Action": "POMMEL_STRIKE#1@0"
+            },
+            "RootActions": {
+              "POMMEL_STRIKE#1@0": {
+                "Success": 0.3333333333333333,
+                "Failure": 0.6666666666666666,
+                "Unresolved": 0,
+                "Upper": 0.3333333333333333
+              },
+              "FLASH_OF_STEEL#2@0": {
+                "Success": 0,
+                "Failure": 1,
+                "Unresolved": 0,
+                "Upper": 0
+              }
+            },
+            "Nodes": 10,
+            "Attempts": 9,
+            "Transitions": 5,
+            "Replays": 7,
+            "ActionDepth": 1,
+            "EventDepth": 2,
+            "ChanceByDepth": {
+              "1": {
+                "Nodes": 2,
+                "Edges": 4,
+                "InstanceEdges": 6
+              },
+              "2": {
+                "Nodes": 2,
+                "Edges": 3,
+                "InstanceEdges": 4
+              }
+            },
+            "ChanceWidths": {
+              "2": 3,
+              "1": 1
+            },
+            "Stops": {},
+            "Milliseconds": 70.8239,
+            "StepMilliseconds": 64.2094,
+            "ReplayMilliseconds": 0.2643,
+            "BeliefMilliseconds": 0.1835
+          },
+          "ideal": {
+            "Best": {
+              "Mass": {
+                "Success": 1,
+                "Failure": 0,
+                "Unresolved": 0,
+                "Upper": 1
+              },
+              "Witness": [
+                {
+                  "Action": "POMMEL_STRIKE#1@0",
+                  "Events": [
+                    {
+                      "Position": 0,
+                      "Kind": "Draw",
+                      "Source": "POMMEL_STRIKE#1@0/ExecuteBytecodeInternal",
+                      "Phase": "draw_cards",
+                      "DrawDepth": 1,
+                      "Remaining": 2,
+                      "Observation": "on_draw_to_hand",
+                      "Options": [
+                        {
+                          "Instance": 3,
+                          "Denominator": 3,
+                          "EquivalenceRepresentative": 0,
+                          "Probability": 0.3333333333333333
+                        },
+                        {
+                          "Instance": 4,
+                          "Denominator": 3,
+                          "EquivalenceRepresentative": 3,
+                          "Probability": 0.3333333333333333
+                        },
+                        {
+                          "Instance": 5,
+                          "Denominator": 3,
+                          "EquivalenceRepresentative": 0,
+                          "Probability": 0.3333333333333333
+                        }
+                      ],
+                      "Choices": [],
+                      "Result": 3,
+                      "Selection": null
+                    },
+                    {
+                      "Position": 1,
+                      "Kind": "Draw",
+                      "Source": "POMMEL_STRIKE#1@0/ExecuteBytecodeInternal",
+                      "Phase": "draw_cards",
+                      "DrawDepth": 1,
+                      "Remaining": 1,
+                      "Observation": "on_draw_to_hand",
+                      "Options": [
+                        {
+                          "Instance": 4,
+                          "Denominator": 2,
+                          "EquivalenceRepresentative": 0,
+                          "Probability": 0.5
+                        },
+                        {
+                          "Instance": 5,
+                          "Denominator": 2,
+                          "EquivalenceRepresentative": 0,
+                          "Probability": 0.5
+                        }
+                      ],
+                      "Choices": [],
+                      "Result": 4,
+                      "Selection": null
+                    }
+                  ]
+                }
+              ],
+              "Action": "POMMEL_STRIKE#1@0"
+            },
+            "RootActions": {
+              "POMMEL_STRIKE#1@0": {
+                "Success": 1,
+                "Failure": 0,
+                "Unresolved": 0,
+                "Upper": 1
+              },
+              "FLASH_OF_STEEL#2@0": {
+                "Success": 0,
+                "Failure": 1,
+                "Unresolved": 0,
+                "Upper": 0
+              }
+            },
+            "Nodes": 10,
+            "Attempts": 9,
+            "Transitions": 5,
+            "Replays": 7,
+            "ActionDepth": 1,
+            "EventDepth": 2,
+            "ChanceByDepth": {
+              "1": {
+                "Nodes": 2,
+                "Edges": 4,
+                "InstanceEdges": 6
+              },
+              "2": {
+                "Nodes": 2,
+                "Edges": 3,
+                "InstanceEdges": 4
+              }
+            },
+            "ChanceWidths": {
+              "2": 3,
+              "1": 1
+            },
+            "Stops": {},
+            "Milliseconds": 0.4122,
+            "StepMilliseconds": 0.2299,
+            "ReplayMilliseconds": 0.1436,
+            "BeliefMilliseconds": 0.09
+          }
+        },
+        "performance": {
+          "iterations": 500,
+          "warmupIterations": 100,
+          "fixedStepUs": 4.282,
+          "researchOneDrawStepUs": 16.7162,
+          "researchTwoDrawStepUs": 24.354200000000002,
+          "singleFanoutUs": 134.69920000000002,
+          "doubleFanoutUs": 202.53,
+          "copyUs": 1.5926,
+          "copySink": 1500,
+          "beliefUs": 3.2664
+        }
+      }
+    },
+    "nested": {
+      "fixture": "nested",
+      "coldMilliseconds": 3303.6103,
+      "result": {
+        "first": {
+          "Position": 0,
+          "Kind": "Draw",
+          "Source": "PREPARED#1@-1/ExecuteCoreCustomCard",
+          "Phase": "draw_cards",
+          "DrawDepth": 1,
+          "Remaining": 1,
+          "Observation": "on_draw_to_hand",
+          "Options": [
+            {
+              "Instance": 3,
+              "Denominator": 3,
+              "EquivalenceRepresentative": 0,
+              "Probability": 0.3333333333333333
+            },
+            {
+              "Instance": 4,
+              "Denominator": 3,
+              "EquivalenceRepresentative": 0,
+              "Probability": 0.3333333333333333
+            },
+            {
+              "Instance": 5,
+              "Denominator": 3,
+              "EquivalenceRepresentative": 0,
+              "Probability": 0.3333333333333333
+            }
+          ],
+          "Choices": [],
+          "Result": null,
+          "Selection": null
+        },
+        "nested": {
+          "Position": 1,
+          "Kind": "Draw",
+          "Source": "PREPARED#1@-1/HandleAfterCardDrawn",
+          "Phase": "draw_cards",
+          "DrawDepth": 2,
+          "Remaining": 1,
+          "Observation": "on_draw_to_hand",
+          "Options": [
+            {
+              "Instance": 4,
+              "Denominator": 2,
+              "EquivalenceRepresentative": 0,
+              "Probability": 0.5
+            },
+            {
+              "Instance": 5,
+              "Denominator": 2,
+              "EquivalenceRepresentative": 0,
+              "Probability": 0.5
+            }
+          ],
+          "Choices": [],
+          "Result": null,
+          "Selection": null
+        },
+        "choice": {
+          "Position": 2,
+          "Kind": "PlayerChoice",
+          "Source": "PREPARED#1@-1",
+          "Phase": "HandCard",
+          "DrawDepth": 0,
+          "Remaining": 0,
+          "Observation": "player_prompt",
+          "Options": [],
+          "Choices": [
+            {
+              "Kind": "HandCard",
+              "Instance": 2
+            },
+            {
+              "Kind": "HandCard",
+              "Instance": 3
+            },
+            {
+              "Kind": "HandCard",
+              "Instance": 4
+            }
+          ],
+          "Result": null,
+          "Selection": null
+        },
+        "committed": [
+          {
+            "Position": 0,
+            "Kind": "Draw",
+            "Source": "PREPARED#1@-1/ExecuteCoreCustomCard",
+            "Phase": "draw_cards",
+            "DrawDepth": 1,
+            "Remaining": 1,
+            "Observation": "on_draw_to_hand",
+            "Options": [
+              {
+                "Instance": 3,
+                "Denominator": 3,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.3333333333333333
+              },
+              {
+                "Instance": 4,
+                "Denominator": 3,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.3333333333333333
+              },
+              {
+                "Instance": 5,
+                "Denominator": 3,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.3333333333333333
+              }
+            ],
+            "Choices": [],
+            "Result": 3,
+            "Selection": null
+          },
+          {
+            "Position": 1,
+            "Kind": "Draw",
+            "Source": "PREPARED#1@-1/HandleAfterCardDrawn",
+            "Phase": "draw_cards",
+            "DrawDepth": 2,
+            "Remaining": 1,
+            "Observation": "on_draw_to_hand",
+            "Options": [
+              {
+                "Instance": 4,
+                "Denominator": 2,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.5
+              },
+              {
+                "Instance": 5,
+                "Denominator": 2,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.5
+              }
+            ],
+            "Choices": [],
+            "Result": 4,
+            "Selection": null
+          },
+          {
+            "Position": 2,
+            "Kind": "PlayerChoice",
+            "Source": "PREPARED#1@-1",
+            "Phase": "HandCard",
+            "DrawDepth": 0,
+            "Remaining": 0,
+            "Observation": "player_prompt",
+            "Options": [],
+            "Choices": [
+              {
+                "Kind": "HandCard",
+                "Instance": 2
+              },
+              {
+                "Kind": "HandCard",
+                "Instance": 3
+              },
+              {
+                "Kind": "HandCard",
+                "Instance": 4
+              }
+            ],
+            "Result": null,
+            "Selection": {
+              "Kind": "HandCard",
+              "Instance": 2
+            }
+          }
+        ],
+        "reverseOrder": true,
+        "staleRejected": true,
+        "excessRejected": true,
+        "audit": {
+          "matched": true,
+          "Events": [
+            {
+              "Position": 0,
+              "Kind": "Draw",
+              "Source": "PREPARED#1@-1/ExecuteCoreCustomCard",
+              "Phase": "draw_cards",
+              "DrawDepth": 1,
+              "Remaining": 1,
+              "Observation": "on_draw_to_hand",
+              "Options": [
+                {
+                  "Instance": 3,
+                  "Denominator": 3,
+                  "EquivalenceRepresentative": 0,
+                  "Probability": 0.3333333333333333
+                },
+                {
+                  "Instance": 4,
+                  "Denominator": 3,
+                  "EquivalenceRepresentative": 0,
+                  "Probability": 0.3333333333333333
+                },
+                {
+                  "Instance": 5,
+                  "Denominator": 3,
+                  "EquivalenceRepresentative": 0,
+                  "Probability": 0.3333333333333333
+                }
+              ],
+              "Choices": [],
+              "Result": 3,
+              "Selection": null
+            },
+            {
+              "Position": 1,
+              "Kind": "Draw",
+              "Source": "PREPARED#1@-1/HandleAfterCardDrawn",
+              "Phase": "draw_cards",
+              "DrawDepth": 2,
+              "Remaining": 1,
+              "Observation": "on_draw_to_hand",
+              "Options": [
+                {
+                  "Instance": 4,
+                  "Denominator": 2,
+                  "EquivalenceRepresentative": 0,
+                  "Probability": 0.5
+                },
+                {
+                  "Instance": 5,
+                  "Denominator": 2,
+                  "EquivalenceRepresentative": 0,
+                  "Probability": 0.5
+                }
+              ],
+              "Choices": [],
+              "Result": 4,
+              "Selection": null
+            },
+            {
+              "Position": 2,
+              "Kind": "PlayerChoice",
+              "Source": "PREPARED#1@-1",
+              "Phase": "HandCard",
+              "DrawDepth": 0,
+              "Remaining": 0,
+              "Observation": "player_prompt",
+              "Options": [],
+              "Choices": [
+                {
+                  "Kind": "HandCard",
+                  "Instance": 2
+                },
+                {
+                  "Kind": "HandCard",
+                  "Instance": 3
+                },
+                {
+                  "Kind": "HandCard",
+                  "Instance": 4
+                }
+              ],
+              "Result": null,
+              "Selection": {
+                "Kind": "HandCard",
+                "Instance": 2
+              }
+            }
+          ],
+          "LogicalShuffles": 0,
+          "rngDeltas": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "checkedNativeChoice": 1,
+          "observedEnergy": 2,
+          "observedHp": 70,
+          "observedBlock": 0
+        }
+      }
+    },
+    "exhaust": {
+      "fixture": "exhaust",
+      "coldMilliseconds": 3392.8283,
+      "result": {
+        "Events": [
+          {
+            "Position": 0,
+            "Kind": "PlayerChoice",
+            "Source": "BURNING_PACT#1@-1",
+            "Phase": "HandCard",
+            "DrawDepth": 0,
+            "Remaining": 0,
+            "Observation": "player_prompt",
+            "Options": [],
+            "Choices": [
+              {
+                "Kind": "HandCard",
+                "Instance": 2
+              },
+              {
+                "Kind": "HandCard",
+                "Instance": 3
+              }
+            ],
+            "Result": null,
+            "Selection": {
+              "Kind": "HandCard",
+              "Instance": 2
+            }
+          },
+          {
+            "Position": 1,
+            "Kind": "Draw",
+            "Source": "BURNING_PACT#1@-1/HandleAfterCardExhausted",
+            "Phase": "draw_cards",
+            "DrawDepth": 1,
+            "Remaining": 1,
+            "Observation": "on_draw_to_hand",
+            "Options": [
+              {
+                "Instance": 4,
+                "Denominator": 3,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.3333333333333333
+              },
+              {
+                "Instance": 5,
+                "Denominator": 3,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.3333333333333333
+              },
+              {
+                "Instance": 6,
+                "Denominator": 3,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.3333333333333333
+              }
+            ],
+            "Choices": [],
+            "Result": 4,
+            "Selection": null
+          },
+          {
+            "Position": 2,
+            "Kind": "Draw",
+            "Source": "BURNING_PACT#1@-1/ExecuteCoreCustomCard",
+            "Phase": "draw_cards",
+            "DrawDepth": 1,
+            "Remaining": 2,
+            "Observation": "on_draw_to_hand",
+            "Options": [
+              {
+                "Instance": 5,
+                "Denominator": 2,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.5
+              },
+              {
+                "Instance": 6,
+                "Denominator": 2,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.5
+              }
+            ],
+            "Choices": [],
+            "Result": 5,
+            "Selection": null
+          },
+          {
+            "Position": 3,
+            "Kind": "KnownDraw",
+            "Source": "BURNING_PACT#1@-1/ExecuteCoreCustomCard",
+            "Phase": "draw_cards",
+            "DrawDepth": 1,
+            "Remaining": 1,
+            "Observation": "on_draw_to_hand",
+            "Options": [
+              {
+                "Instance": 6,
+                "Denominator": 1,
+                "EquivalenceRepresentative": 0,
+                "Probability": 1
+              }
+            ],
+            "Choices": [],
+            "Result": 6,
+            "Selection": null
+          }
+        ],
+        "exhausted": 1,
+        "drawn": 3
+      }
+    },
+    "shuffle": {
+      "fixture": "shuffle",
+      "coldMilliseconds": 3561.3615,
+      "result": {
+        "conditionalChoices": [
+          {
+            "Position": 0,
+            "Kind": "Shuffle",
+            "Source": "SHRUG_IT_OFF#1@-1",
+            "Phase": "shuffle_discard",
+            "DrawDepth": 0,
+            "Remaining": 0,
+            "Observation": "membership_only",
+            "Options": [],
+            "Choices": [],
+            "Result": null,
+            "Selection": null
+          },
+          {
+            "Position": 1,
+            "Kind": "Draw",
+            "Source": "SHRUG_IT_OFF#1@-1/ExecuteBytecodeInternal",
+            "Phase": "draw_cards",
+            "DrawDepth": 1,
+            "Remaining": 1,
+            "Observation": "on_draw_to_hand",
+            "Options": [
+              {
+                "Instance": 2,
+                "Denominator": 3,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.3333333333333333
+              },
+              {
+                "Instance": 3,
+                "Denominator": 3,
+                "EquivalenceRepresentative": 2,
+                "Probability": 0.3333333333333333
+              },
+              {
+                "Instance": 4,
+                "Denominator": 3,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.3333333333333333
+              }
+            ],
+            "Choices": [],
+            "Result": null,
+            "Selection": null
+          }
+        ],
+        "audit": {
+          "matched": true,
+          "Events": [
+            {
+              "Position": 0,
+              "Kind": "Shuffle",
+              "Source": "SHRUG_IT_OFF#1@-1",
+              "Phase": "shuffle_discard",
+              "DrawDepth": 0,
+              "Remaining": 0,
+              "Observation": "membership_only",
+              "Options": [],
+              "Choices": [],
+              "Result": null,
+              "Selection": null
+            },
+            {
+              "Position": 1,
+              "Kind": "Draw",
+              "Source": "SHRUG_IT_OFF#1@-1/ExecuteBytecodeInternal",
+              "Phase": "draw_cards",
+              "DrawDepth": 1,
+              "Remaining": 1,
+              "Observation": "on_draw_to_hand",
+              "Options": [
+                {
+                  "Instance": 2,
+                  "Denominator": 3,
+                  "EquivalenceRepresentative": 0,
+                  "Probability": 0.3333333333333333
+                },
+                {
+                  "Instance": 3,
+                  "Denominator": 3,
+                  "EquivalenceRepresentative": 2,
+                  "Probability": 0.3333333333333333
+                },
+                {
+                  "Instance": 4,
+                  "Denominator": 3,
+                  "EquivalenceRepresentative": 0,
+                  "Probability": 0.3333333333333333
+                }
+              ],
+              "Choices": [],
+              "Result": 4,
+              "Selection": null
+            }
+          ],
+          "LogicalShuffles": 1,
+          "rngDeltas": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "checkedNativeChoice": null,
+          "observedEnergy": 2,
+          "observedHp": 70,
+          "observedBlock": 14
+        }
+      }
+    },
+    "shuffle_multi": {
+      "fixture": "shuffle_multi",
+      "coldMilliseconds": 3507.1215,
+      "result": {
+        "paths": 6,
+        "total": 0.9999999999999999
+      }
+    },
+    "turn": {
+      "fixture": "turn",
+      "coldMilliseconds": 3497.9932,
+      "result": {
+        "trace": [
+          {
+            "Position": 0,
+            "Kind": "Draw",
+            "Source": "EndTurn/RunPlayerTurnSetupBody",
+            "Phase": "turn_start_draw",
+            "DrawDepth": 1,
+            "Remaining": 5,
+            "Observation": "on_draw_to_hand",
+            "Options": [
+              {
+                "Instance": 2,
+                "Denominator": 6,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.16666666666666666
+              },
+              {
+                "Instance": 3,
+                "Denominator": 6,
+                "EquivalenceRepresentative": 2,
+                "Probability": 0.16666666666666666
+              },
+              {
+                "Instance": 4,
+                "Denominator": 6,
+                "EquivalenceRepresentative": 2,
+                "Probability": 0.16666666666666666
+              },
+              {
+                "Instance": 5,
+                "Denominator": 6,
+                "EquivalenceRepresentative": 2,
+                "Probability": 0.16666666666666666
+              },
+              {
+                "Instance": 6,
+                "Denominator": 6,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.16666666666666666
+              },
+              {
+                "Instance": 7,
+                "Denominator": 6,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.16666666666666666
+              }
+            ],
+            "Choices": [],
+            "Result": null,
+            "Selection": null
+          },
+          {
+            "Position": 1,
+            "Kind": "Draw",
+            "Source": "EndTurn/RunPlayerTurnSetupBody",
+            "Phase": "turn_start_draw",
+            "DrawDepth": 1,
+            "Remaining": 4,
+            "Observation": "on_draw_to_hand",
+            "Options": [
+              {
+                "Instance": 3,
+                "Denominator": 5,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.2
+              },
+              {
+                "Instance": 4,
+                "Denominator": 5,
+                "EquivalenceRepresentative": 3,
+                "Probability": 0.2
+              },
+              {
+                "Instance": 5,
+                "Denominator": 5,
+                "EquivalenceRepresentative": 3,
+                "Probability": 0.2
+              },
+              {
+                "Instance": 6,
+                "Denominator": 5,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.2
+              },
+              {
+                "Instance": 7,
+                "Denominator": 5,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.2
+              }
+            ],
+            "Choices": [],
+            "Result": null,
+            "Selection": null
+          },
+          {
+            "Position": 2,
+            "Kind": "Draw",
+            "Source": "EndTurn/RunPlayerTurnSetupBody",
+            "Phase": "turn_start_draw",
+            "DrawDepth": 1,
+            "Remaining": 3,
+            "Observation": "on_draw_to_hand",
+            "Options": [
+              {
+                "Instance": 4,
+                "Denominator": 4,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.25
+              },
+              {
+                "Instance": 5,
+                "Denominator": 4,
+                "EquivalenceRepresentative": 4,
+                "Probability": 0.25
+              },
+              {
+                "Instance": 6,
+                "Denominator": 4,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.25
+              },
+              {
+                "Instance": 7,
+                "Denominator": 4,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.25
+              }
+            ],
+            "Choices": [],
+            "Result": null,
+            "Selection": null
+          },
+          {
+            "Position": 3,
+            "Kind": "Draw",
+            "Source": "EndTurn/RunPlayerTurnSetupBody",
+            "Phase": "turn_start_draw",
+            "DrawDepth": 1,
+            "Remaining": 2,
+            "Observation": "on_draw_to_hand",
+            "Options": [
+              {
+                "Instance": 5,
+                "Denominator": 3,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.3333333333333333
+              },
+              {
+                "Instance": 6,
+                "Denominator": 3,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.3333333333333333
+              },
+              {
+                "Instance": 7,
+                "Denominator": 3,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.3333333333333333
+              }
+            ],
+            "Choices": [],
+            "Result": null,
+            "Selection": null
+          },
+          {
+            "Position": 4,
+            "Kind": "Draw",
+            "Source": "EndTurn/RunPlayerTurnSetupBody",
+            "Phase": "turn_start_draw",
+            "DrawDepth": 1,
+            "Remaining": 1,
+            "Observation": "on_draw_to_hand",
+            "Options": [
+              {
+                "Instance": 6,
+                "Denominator": 2,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.5
+              },
+              {
+                "Instance": 7,
+                "Denominator": 2,
+                "EquivalenceRepresentative": 0,
+                "Probability": 0.5
+              }
+            ],
+            "Choices": [],
+            "Result": null,
+            "Selection": null
+          }
+        ],
+        "audit": {
+          "matched": true,
+          "Events": [
+            {
+              "Position": 0,
+              "Kind": "Draw",
+              "Source": "EndTurn/RunPlayerTurnSetupBody",
+              "Phase": "turn_start_draw",
+              "DrawDepth": 1,
+              "Remaining": 5,
+              "Observation": "on_draw_to_hand",
+              "Options": [
+                {
+                  "Instance": 2,
+                  "Denominator": 6,
+                  "EquivalenceRepresentative": 0,
+                  "Probability": 0.16666666666666666
+                },
+                {
+                  "Instance": 3,
+                  "Denominator": 6,
+                  "EquivalenceRepresentative": 2,
+                  "Probability": 0.16666666666666666
+                },
+                {
+                  "Instance": 4,
+                  "Denominator": 6,
+                  "EquivalenceRepresentative": 2,
+                  "Probability": 0.16666666666666666
+                },
+                {
+                  "Instance": 5,
+                  "Denominator": 6,
+                  "EquivalenceRepresentative": 2,
+                  "Probability": 0.16666666666666666
+                },
+                {
+                  "Instance": 6,
+                  "Denominator": 6,
+                  "EquivalenceRepresentative": 0,
+                  "Probability": 0.16666666666666666
+                },
+                {
+                  "Instance": 7,
+                  "Denominator": 6,
+                  "EquivalenceRepresentative": 0,
+                  "Probability": 0.16666666666666666
+                }
+              ],
+              "Choices": [],
+              "Result": 2,
+              "Selection": null
+            },
+            {
+              "Position": 1,
+              "Kind": "Draw",
+              "Source": "EndTurn/RunPlayerTurnSetupBody",
+              "Phase": "turn_start_draw",
+              "DrawDepth": 1,
+              "Remaining": 4,
+              "Observation": "on_draw_to_hand",
+              "Options": [
+                {
+                  "Instance": 3,
+                  "Denominator": 5,
+                  "EquivalenceRepresentative": 0,
+                  "Probability": 0.2
+                },
+                {
+                  "Instance": 4,
+                  "Denominator": 5,
+                  "EquivalenceRepresentative": 3,
+                  "Probability": 0.2
+                },
+                {
+                  "Instance": 5,
+                  "Denominator": 5,
+                  "EquivalenceRepresentative": 3,
+                  "Probability": 0.2
+                },
+                {
+                  "Instance": 6,
+                  "Denominator": 5,
+                  "EquivalenceRepresentative": 0,
+                  "Probability": 0.2
+                },
+                {
+                  "Instance": 7,
+                  "Denominator": 5,
+                  "EquivalenceRepresentative": 0,
+                  "Probability": 0.2
+                }
+              ],
+              "Choices": [],
+              "Result": 3,
+              "Selection": null
+            },
+            {
+              "Position": 2,
+              "Kind": "Draw",
+              "Source": "EndTurn/RunPlayerTurnSetupBody",
+              "Phase": "turn_start_draw",
+              "DrawDepth": 1,
+              "Remaining": 3,
+              "Observation": "on_draw_to_hand",
+              "Options": [
+                {
+                  "Instance": 4,
+                  "Denominator": 4,
+                  "EquivalenceRepresentative": 0,
+                  "Probability": 0.25
+                },
+                {
+                  "Instance": 5,
+                  "Denominator": 4,
+                  "EquivalenceRepresentative": 4,
+                  "Probability": 0.25
+                },
+                {
+                  "Instance": 6,
+                  "Denominator": 4,
+                  "EquivalenceRepresentative": 0,
+                  "Probability": 0.25
+                },
+                {
+                  "Instance": 7,
+                  "Denominator": 4,
+                  "EquivalenceRepresentative": 0,
+                  "Probability": 0.25
+                }
+              ],
+              "Choices": [],
+              "Result": 4,
+              "Selection": null
+            },
+            {
+              "Position": 3,
+              "Kind": "Draw",
+              "Source": "EndTurn/RunPlayerTurnSetupBody",
+              "Phase": "turn_start_draw",
+              "DrawDepth": 1,
+              "Remaining": 2,
+              "Observation": "on_draw_to_hand",
+              "Options": [
+                {
+                  "Instance": 5,
+                  "Denominator": 3,
+                  "EquivalenceRepresentative": 0,
+                  "Probability": 0.3333333333333333
+                },
+                {
+                  "Instance": 6,
+                  "Denominator": 3,
+                  "EquivalenceRepresentative": 0,
+                  "Probability": 0.3333333333333333
+                },
+                {
+                  "Instance": 7,
+                  "Denominator": 3,
+                  "EquivalenceRepresentative": 0,
+                  "Probability": 0.3333333333333333
+                }
+              ],
+              "Choices": [],
+              "Result": 5,
+              "Selection": null
+            },
+            {
+              "Position": 4,
+              "Kind": "Draw",
+              "Source": "EndTurn/RunPlayerTurnSetupBody",
+              "Phase": "turn_start_draw",
+              "DrawDepth": 1,
+              "Remaining": 1,
+              "Observation": "on_draw_to_hand",
+              "Options": [
+                {
+                  "Instance": 6,
+                  "Denominator": 2,
+                  "EquivalenceRepresentative": 0,
+                  "Probability": 0.5
+                },
+                {
+                  "Instance": 7,
+                  "Denominator": 2,
+                  "EquivalenceRepresentative": 0,
+                  "Probability": 0.5
+                }
+              ],
+              "Choices": [],
+              "Result": 6,
+              "Selection": null
+            }
+          ],
+          "LogicalShuffles": 0,
+          "rngDeltas": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "checkedNativeChoice": null,
+          "observedEnergy": 3,
+          "observedHp": 66,
+          "observedBlock": 0
+        }
+      }
+    },
+    "order": {
+      "fixture": "order",
+      "coldMilliseconds": 3601.3187,
+      "result": {
+        "publicPair": true,
+        "negativeControl": true,
+        "pending": {
+          "Position": 0,
+          "Kind": "Draw",
+          "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+          "Phase": "draw_cards",
+          "DrawDepth": 1,
+          "Remaining": 1,
+          "Observation": "on_draw_to_hand",
+          "Options": [
+            {
+              "Instance": 2,
+              "Denominator": 2,
+              "EquivalenceRepresentative": 0,
+              "Probability": 0.5
+            },
+            {
+              "Instance": 3,
+              "Denominator": 2,
+              "EquivalenceRepresentative": 0,
+              "Probability": 0.5
+            }
+          ],
+          "Choices": [],
+          "Result": null,
+          "Selection": null
+        },
+        "cutoff": {
+          "Success": 0,
+          "Failure": 0,
+          "Unresolved": 1,
+          "Upper": 1
+        },
+        "handTrees": {
+          "before": {
+            "Success": 0.5,
+            "Failure": 0.5,
+            "Unresolved": 0,
+            "Upper": 0.5
+          },
+          "after": {
+            "Success": 1,
+            "Failure": 0,
+            "Unresolved": 0,
+            "Upper": 1
+          },
+          "truncated": {
+            "Success": 0.5,
+            "Failure": 0.25,
+            "Unresolved": 0.25,
+            "Upper": 0.75
+          }
+        },
+        "frozenPolicy": 0.5,
+        "modes": {
+          "budget": {
+            "Nodes": 20000,
+            "Actions": 2,
+            "Events": 12,
+            "EndTurn": false,
+            "FixedHorizon": true
+          },
+          "nosl": {
+            "Best": {
+              "Mass": {
+                "Success": 0.5,
+                "Failure": 0.5,
+                "Unresolved": 0,
+                "Upper": 0.5
+              },
+              "Witness": [
+                {
+                  "Action": "FLASH_OF_STEEL#1@0",
+                  "Events": [
+                    {
+                      "Position": 0,
+                      "Kind": "Draw",
+                      "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                      "Phase": "draw_cards",
+                      "DrawDepth": 1,
+                      "Remaining": 1,
+                      "Observation": "on_draw_to_hand",
+                      "Options": [
+                        {
+                          "Instance": 2,
+                          "Denominator": 2,
+                          "EquivalenceRepresentative": 0,
+                          "Probability": 0.5
+                        },
+                        {
+                          "Instance": 3,
+                          "Denominator": 2,
+                          "EquivalenceRepresentative": 0,
+                          "Probability": 0.5
+                        }
+                      ],
+                      "Choices": [],
+                      "Result": 2,
+                      "Selection": null
+                    }
+                  ]
+                },
+                {
+                  "Action": "STRIKE_IRONCLAD#2@0",
+                  "Events": []
+                }
+              ],
+              "Action": "FLASH_OF_STEEL#1@0"
+            },
+            "RootActions": {
+              "FLASH_OF_STEEL#1@0": {
+                "Success": 0.5,
+                "Failure": 0.5,
+                "Unresolved": 0,
+                "Upper": 0.5
+              }
+            },
+            "Nodes": 8,
+            "Attempts": 5,
+            "Transitions": 4,
+            "Replays": 2,
+            "ActionDepth": 2,
+            "EventDepth": 1,
+            "ChanceByDepth": {
+              "1": {
+                "Nodes": 1,
+                "Edges": 2,
+                "InstanceEdges": 2
+              }
+            },
+            "ChanceWidths": {
+              "2": 1
+            },
+            "Stops": {},
+            "Milliseconds": 0.106,
+            "StepMilliseconds": 0.0873,
+            "ReplayMilliseconds": 0.0297,
+            "BeliefMilliseconds": 0.0248
+          },
+          "ideal": {
+            "Best": {
+              "Mass": {
+                "Success": 1,
+                "Failure": 0,
+                "Unresolved": 0,
+                "Upper": 1
+              },
+              "Witness": [
+                {
+                  "Action": "FLASH_OF_STEEL#1@0",
+                  "Events": [
+                    {
+                      "Position": 0,
+                      "Kind": "Draw",
+                      "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                      "Phase": "draw_cards",
+                      "DrawDepth": 1,
+                      "Remaining": 1,
+                      "Observation": "on_draw_to_hand",
+                      "Options": [
+                        {
+                          "Instance": 2,
+                          "Denominator": 2,
+                          "EquivalenceRepresentative": 0,
+                          "Probability": 0.5
+                        },
+                        {
+                          "Instance": 3,
+                          "Denominator": 2,
+                          "EquivalenceRepresentative": 0,
+                          "Probability": 0.5
+                        }
+                      ],
+                      "Choices": [],
+                      "Result": 2,
+                      "Selection": null
+                    }
+                  ]
+                },
+                {
+                  "Action": "STRIKE_IRONCLAD#2@0",
+                  "Events": []
+                }
+              ],
+              "Action": "FLASH_OF_STEEL#1@0"
+            },
+            "RootActions": {
+              "FLASH_OF_STEEL#1@0": {
+                "Success": 1,
+                "Failure": 0,
+                "Unresolved": 0,
+                "Upper": 1
+              }
+            },
+            "Nodes": 8,
+            "Attempts": 5,
+            "Transitions": 4,
+            "Replays": 2,
+            "ActionDepth": 2,
+            "EventDepth": 1,
+            "ChanceByDepth": {
+              "1": {
+                "Nodes": 1,
+                "Edges": 2,
+                "InstanceEdges": 2
+              }
+            },
+            "ChanceWidths": {
+              "2": 1
+            },
+            "Stops": {},
+            "Milliseconds": 0.0715,
+            "StepMilliseconds": 0.0601,
+            "ReplayMilliseconds": 0.0229,
+            "BeliefMilliseconds": 0.0132
+          },
+          "oracle": {
+            "Best": {
+              "Mass": {
+                "Success": 1,
+                "Failure": 0,
+                "Unresolved": 0,
+                "Upper": 1
+              },
+              "Witness": [
+                {
+                  "Action": "FLASH_OF_STEEL#1@0",
+                  "Events": [
+                    {
+                      "Position": 0,
+                      "Kind": "Draw",
+                      "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                      "Phase": "draw_cards",
+                      "DrawDepth": 1,
+                      "Remaining": 1,
+                      "Observation": "on_draw_to_hand",
+                      "Options": [
+                        {
+                          "Instance": 2,
+                          "Denominator": 2,
+                          "EquivalenceRepresentative": 0,
+                          "Probability": 0.5
+                        },
+                        {
+                          "Instance": 3,
+                          "Denominator": 2,
+                          "EquivalenceRepresentative": 0,
+                          "Probability": 0.5
+                        }
+                      ],
+                      "Choices": [],
+                      "Result": 2,
+                      "Selection": null
+                    }
+                  ]
+                },
+                {
+                  "Action": "STRIKE_IRONCLAD#2@0",
+                  "Events": []
+                }
+              ],
+              "Action": "FLASH_OF_STEEL#1@0"
+            },
+            "RootActions": {
+              "FLASH_OF_STEEL#1@0": {
+                "Success": 1,
+                "Failure": 0,
+                "Unresolved": 0,
+                "Upper": 1
+              }
+            },
+            "Nodes": 4,
+            "Attempts": 2,
+            "Transitions": 2,
+            "Replays": 0,
+            "ActionDepth": 2,
+            "EventDepth": 1,
+            "ChanceByDepth": {},
+            "ChanceWidths": {},
+            "Stops": {},
+            "Milliseconds": 0.0264,
+            "StepMilliseconds": 0.0216,
+            "ReplayMilliseconds": 0,
+            "BeliefMilliseconds": 0.0018
+          }
+        }
+      }
+    },
+    "known": {
+      "fixture": "known",
+      "coldMilliseconds": 3453.3124,
+      "result": {
+        "top": [
+          4
+        ],
+        "Events": [
+          {
+            "Position": 0,
+            "Kind": "KnownDraw",
+            "Source": "FLASH_OF_STEEL#2@0/ExecuteCoreCustomCard",
+            "Phase": "draw_cards",
+            "DrawDepth": 1,
+            "Remaining": 1,
+            "Observation": "on_draw_to_hand",
+            "Options": [
+              {
+                "Instance": 4,
+                "Denominator": 1,
+                "EquivalenceRepresentative": 0,
+                "Probability": 1
+              }
+            ],
+            "Choices": [],
+            "Result": 4,
+            "Selection": null
+          }
+        ],
+        "modes": {
+          "budget": {
+            "Nodes": 20000,
+            "Actions": 3,
+            "Events": 12,
+            "EndTurn": false,
+            "FixedHorizon": true
+          },
+          "nosl": {
+            "Best": {
+              "Mass": {
+                "Success": 1,
+                "Failure": 0,
+                "Unresolved": 0,
+                "Upper": 1
+              },
+              "Witness": [
+                {
+                  "Action": "HEADBUTT#1@0",
+                  "Events": []
+                },
+                {
+                  "Action": "FLASH_OF_STEEL#2@0",
+                  "Events": [
+                    {
+                      "Position": 0,
+                      "Kind": "KnownDraw",
+                      "Source": "FLASH_OF_STEEL#2@0/ExecuteCoreCustomCard",
+                      "Phase": "draw_cards",
+                      "DrawDepth": 1,
+                      "Remaining": 1,
+                      "Observation": "on_draw_to_hand",
+                      "Options": [
+                        {
+                          "Instance": 4,
+                          "Denominator": 1,
+                          "EquivalenceRepresentative": 0,
+                          "Probability": 1
+                        }
+                      ],
+                      "Choices": [],
+                      "Result": 4,
+                      "Selection": null
+                    }
+                  ]
+                },
+                {
+                  "Action": "STRIKE_IRONCLAD#4@0",
+                  "Events": []
+                }
+              ],
+              "Action": "HEADBUTT#1@0"
+            },
+            "RootActions": {
+              "HEADBUTT#1@0": {
+                "Success": 1,
+                "Failure": 0,
+                "Unresolved": 0,
+                "Upper": 1
+              },
+              "FLASH_OF_STEEL#2@0": {
+                "Success": 0,
+                "Failure": 1,
+                "Unresolved": 0,
+                "Upper": 0
+              }
+            },
+            "Nodes": 21,
+            "Attempts": 14,
+            "Transitions": 12,
+            "Replays": 5,
+            "ActionDepth": 3,
+            "EventDepth": 0,
+            "ChanceByDepth": {},
+            "ChanceWidths": {},
+            "Stops": {},
+            "Milliseconds": 43.8218,
+            "StepMilliseconds": 40.3194,
+            "ReplayMilliseconds": 6.4706,
+            "BeliefMilliseconds": 1.4156
+          },
+          "ideal": {
+            "Best": {
+              "Mass": {
+                "Success": 1,
+                "Failure": 0,
+                "Unresolved": 0,
+                "Upper": 1
+              },
+              "Witness": [
+                {
+                  "Action": "HEADBUTT#1@0",
+                  "Events": []
+                },
+                {
+                  "Action": "FLASH_OF_STEEL#2@0",
+                  "Events": [
+                    {
+                      "Position": 0,
+                      "Kind": "KnownDraw",
+                      "Source": "FLASH_OF_STEEL#2@0/ExecuteCoreCustomCard",
+                      "Phase": "draw_cards",
+                      "DrawDepth": 1,
+                      "Remaining": 1,
+                      "Observation": "on_draw_to_hand",
+                      "Options": [
+                        {
+                          "Instance": 4,
+                          "Denominator": 1,
+                          "EquivalenceRepresentative": 0,
+                          "Probability": 1
+                        }
+                      ],
+                      "Choices": [],
+                      "Result": 4,
+                      "Selection": null
+                    }
+                  ]
+                },
+                {
+                  "Action": "STRIKE_IRONCLAD#4@0",
+                  "Events": []
+                }
+              ],
+              "Action": "HEADBUTT#1@0"
+            },
+            "RootActions": {
+              "HEADBUTT#1@0": {
+                "Success": 1,
+                "Failure": 0,
+                "Unresolved": 0,
+                "Upper": 1
+              },
+              "FLASH_OF_STEEL#2@0": {
+                "Success": 0,
+                "Failure": 1,
+                "Unresolved": 0,
+                "Upper": 0
+              }
+            },
+            "Nodes": 21,
+            "Attempts": 14,
+            "Transitions": 12,
+            "Replays": 5,
+            "ActionDepth": 3,
+            "EventDepth": 0,
+            "ChanceByDepth": {},
+            "ChanceWidths": {},
+            "Stops": {},
+            "Milliseconds": 0.2839,
+            "StepMilliseconds": 0.2489,
+            "ReplayMilliseconds": 0.0716,
+            "BeliefMilliseconds": 0.0126
+          },
+          "oracle": {
+            "Best": {
+              "Mass": {
+                "Success": 1,
+                "Failure": 0,
+                "Unresolved": 0,
+                "Upper": 1
+              },
+              "Witness": [
+                {
+                  "Action": "HEADBUTT#1@0",
+                  "Events": []
+                },
+                {
+                  "Action": "FLASH_OF_STEEL#2@0",
+                  "Events": [
+                    {
+                      "Position": 0,
+                      "Kind": "KnownDraw",
+                      "Source": "FLASH_OF_STEEL#2@0/ExecuteCoreCustomCard",
+                      "Phase": "draw_cards",
+                      "DrawDepth": 1,
+                      "Remaining": 1,
+                      "Observation": "on_draw_to_hand",
+                      "Options": [
+                        {
+                          "Instance": 4,
+                          "Denominator": 1,
+                          "EquivalenceRepresentative": 0,
+                          "Probability": 1
+                        }
+                      ],
+                      "Choices": [],
+                      "Result": 4,
+                      "Selection": null
+                    }
+                  ]
+                },
+                {
+                  "Action": "STRIKE_IRONCLAD#4@0",
+                  "Events": []
+                }
+              ],
+              "Action": "HEADBUTT#1@0"
+            },
+            "RootActions": {
+              "HEADBUTT#1@0": {
+                "Success": 1,
+                "Failure": 0,
+                "Unresolved": 0,
+                "Upper": 1
+              },
+              "FLASH_OF_STEEL#2@0": {
+                "Success": 0,
+                "Failure": 1,
+                "Unresolved": 0,
+                "Upper": 0
+              }
+            },
+            "Nodes": 21,
+            "Attempts": 14,
+            "Transitions": 12,
+            "Replays": 5,
+            "ActionDepth": 3,
+            "EventDepth": 0,
+            "ChanceByDepth": {},
+            "ChanceWidths": {},
+            "Stops": {},
+            "Milliseconds": 0.2171,
+            "StepMilliseconds": 0.1909,
+            "ReplayMilliseconds": 0.0642,
+            "BeliefMilliseconds": 0.005
+          }
+        }
+      }
+    },
+    "energy": {
+      "fixture": "energy",
+      "coldMilliseconds": 3403.8559,
+      "result": {
+        "budget": {
+          "Nodes": 20000,
+          "Actions": 3,
+          "Events": 12,
+          "EndTurn": false,
+          "FixedHorizon": true
+        },
+        "nosl": {
+          "Best": {
+            "Mass": {
+              "Success": 0.5,
+              "Failure": 0.5,
+              "Unresolved": 0,
+              "Upper": 0.5
+            },
+            "Witness": [
+              {
+                "Action": "BLOODLETTING#1@-1",
+                "Events": []
+              },
+              {
+                "Action": "FLASH_OF_STEEL#2@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Draw",
+                    "Source": "FLASH_OF_STEEL#2@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 3,
+                        "Denominator": 2,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 0.5
+                      },
+                      {
+                        "Instance": 4,
+                        "Denominator": 2,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 0.5
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 3,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "STRIKE_IRONCLAD#3@0",
+                "Events": []
+              }
+            ],
+            "Action": "BLOODLETTING#1@-1"
+          },
+          "RootActions": {
+            "BLOODLETTING#1@-1": {
+              "Success": 0.5,
+              "Failure": 0.5,
+              "Unresolved": 0,
+              "Upper": 0.5
+            },
+            "FLASH_OF_STEEL#2@0": {
+              "Success": 0.5,
+              "Failure": 0.5,
+              "Unresolved": 0,
+              "Upper": 0.5
+            }
+          },
+          "Nodes": 21,
+          "Attempts": 13,
+          "Transitions": 11,
+          "Replays": 4,
+          "ActionDepth": 3,
+          "EventDepth": 1,
+          "ChanceByDepth": {
+            "1": {
+              "Nodes": 2,
+              "Edges": 4,
+              "InstanceEdges": 4
+            }
+          },
+          "ChanceWidths": {
+            "2": 2
+          },
+          "Stops": {},
+          "Milliseconds": 105.9189,
+          "StepMilliseconds": 93.0816,
+          "ReplayMilliseconds": 2.4048,
+          "BeliefMilliseconds": 5.5763
+        },
+        "ideal": {
+          "Best": {
+            "Mass": {
+              "Success": 1,
+              "Failure": 0,
+              "Unresolved": 0,
+              "Upper": 1
+            },
+            "Witness": [
+              {
+                "Action": "BLOODLETTING#1@-1",
+                "Events": []
+              },
+              {
+                "Action": "FLASH_OF_STEEL#2@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Draw",
+                    "Source": "FLASH_OF_STEEL#2@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 3,
+                        "Denominator": 2,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 0.5
+                      },
+                      {
+                        "Instance": 4,
+                        "Denominator": 2,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 0.5
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 3,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "STRIKE_IRONCLAD#3@0",
+                "Events": []
+              }
+            ],
+            "Action": "BLOODLETTING#1@-1"
+          },
+          "RootActions": {
+            "BLOODLETTING#1@-1": {
+              "Success": 1,
+              "Failure": 0,
+              "Unresolved": 0,
+              "Upper": 1
+            },
+            "FLASH_OF_STEEL#2@0": {
+              "Success": 1,
+              "Failure": 0,
+              "Unresolved": 0,
+              "Upper": 1
+            }
+          },
+          "Nodes": 21,
+          "Attempts": 13,
+          "Transitions": 11,
+          "Replays": 4,
+          "ActionDepth": 3,
+          "EventDepth": 1,
+          "ChanceByDepth": {
+            "1": {
+              "Nodes": 2,
+              "Edges": 4,
+              "InstanceEdges": 4
+            }
+          },
+          "ChanceWidths": {
+            "2": 2
+          },
+          "Stops": {},
+          "Milliseconds": 2.6856,
+          "StepMilliseconds": 2.447,
+          "ReplayMilliseconds": 0.0703,
+          "BeliefMilliseconds": 0.0634
+        },
+        "oracle": {
+          "Best": {
+            "Mass": {
+              "Success": 1,
+              "Failure": 0,
+              "Unresolved": 0,
+              "Upper": 1
+            },
+            "Witness": [
+              {
+                "Action": "BLOODLETTING#1@-1",
+                "Events": []
+              },
+              {
+                "Action": "FLASH_OF_STEEL#2@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Draw",
+                    "Source": "FLASH_OF_STEEL#2@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 3,
+                        "Denominator": 2,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 0.5
+                      },
+                      {
+                        "Instance": 4,
+                        "Denominator": 2,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 0.5
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 3,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "STRIKE_IRONCLAD#3@0",
+                "Events": []
+              }
+            ],
+            "Action": "BLOODLETTING#1@-1"
+          },
+          "RootActions": {
+            "BLOODLETTING#1@-1": {
+              "Success": 1,
+              "Failure": 0,
+              "Unresolved": 0,
+              "Upper": 1
+            },
+            "FLASH_OF_STEEL#2@0": {
+              "Success": 1,
+              "Failure": 0,
+              "Unresolved": 0,
+              "Upper": 1
+            }
+          },
+          "Nodes": 11,
+          "Attempts": 6,
+          "Transitions": 6,
+          "Replays": 0,
+          "ActionDepth": 3,
+          "EventDepth": 1,
+          "ChanceByDepth": {},
+          "ChanceWidths": {},
+          "Stops": {},
+          "Milliseconds": 0.0763,
+          "StepMilliseconds": 0.0646,
+          "ReplayMilliseconds": 0,
+          "BeliefMilliseconds": 0.0029
+        }
+      }
+    },
+    "plain": {
+      "fixture": "plain",
+      "coldMilliseconds": 3407.1709,
+      "result": {
+        "modes": {
+          "budget": {
+            "Nodes": 20000,
+            "Actions": 1,
+            "Events": 12,
+            "EndTurn": false,
+            "FixedHorizon": true
+          },
+          "nosl": {
+            "Best": {
+              "Mass": {
+                "Success": 1,
+                "Failure": 0,
+                "Unresolved": 0,
+                "Upper": 1
+              },
+              "Witness": [
+                {
+                  "Action": "STRIKE_IRONCLAD#1@0",
+                  "Events": []
+                }
+              ],
+              "Action": "STRIKE_IRONCLAD#1@0"
+            },
+            "RootActions": {
+              "STRIKE_IRONCLAD#1@0": {
+                "Success": 1,
+                "Failure": 0,
+                "Unresolved": 0,
+                "Upper": 1
+              }
+            },
+            "Nodes": 2,
+            "Attempts": 1,
+            "Transitions": 1,
+            "Replays": 0,
+            "ActionDepth": 1,
+            "EventDepth": 0,
+            "ChanceByDepth": {},
+            "ChanceWidths": {},
+            "Stops": {},
+            "Milliseconds": 36.5048,
+            "StepMilliseconds": 28.6317,
+            "ReplayMilliseconds": 0,
+            "BeliefMilliseconds": 0.0191
+          },
+          "ideal": {
+            "Best": {
+              "Mass": {
+                "Success": 1,
+                "Failure": 0,
+                "Unresolved": 0,
+                "Upper": 1
+              },
+              "Witness": [
+                {
+                  "Action": "STRIKE_IRONCLAD#1@0",
+                  "Events": []
+                }
+              ],
+              "Action": "STRIKE_IRONCLAD#1@0"
+            },
+            "RootActions": {
+              "STRIKE_IRONCLAD#1@0": {
+                "Success": 1,
+                "Failure": 0,
+                "Unresolved": 0,
+                "Upper": 1
+              }
+            },
+            "Nodes": 2,
+            "Attempts": 1,
+            "Transitions": 1,
+            "Replays": 0,
+            "ActionDepth": 1,
+            "EventDepth": 0,
+            "ChanceByDepth": {},
+            "ChanceWidths": {},
+            "Stops": {},
+            "Milliseconds": 0.0759,
+            "StepMilliseconds": 0.0488,
+            "ReplayMilliseconds": 0,
+            "BeliefMilliseconds": 0.0002
+          },
+          "oracle": {
+            "Best": {
+              "Mass": {
+                "Success": 1,
+                "Failure": 0,
+                "Unresolved": 0,
+                "Upper": 1
+              },
+              "Witness": [
+                {
+                  "Action": "STRIKE_IRONCLAD#1@0",
+                  "Events": []
+                }
+              ],
+              "Action": "STRIKE_IRONCLAD#1@0"
+            },
+            "RootActions": {
+              "STRIKE_IRONCLAD#1@0": {
+                "Success": 1,
+                "Failure": 0,
+                "Unresolved": 0,
+                "Upper": 1
+              }
+            },
+            "Nodes": 2,
+            "Attempts": 1,
+            "Transitions": 1,
+            "Replays": 0,
+            "ActionDepth": 1,
+            "EventDepth": 0,
+            "ChanceByDepth": {},
+            "ChanceWidths": {},
+            "Stops": {},
+            "Milliseconds": 0.0144,
+            "StepMilliseconds": 0.0117,
+            "ReplayMilliseconds": 0,
+            "BeliefMilliseconds": 0
+          }
+        },
+        "nativeTerminal": "Victory"
+      }
+    },
+    "pair": {
+      "fixture": "pair",
+      "coldMilliseconds": 3308.039,
+      "result": {
+        "budget": {
+          "Nodes": 20000,
+          "Actions": 48,
+          "Events": 12,
+          "EndTurn": false,
+          "FixedHorizon": true
+        },
+        "nosl": {
+          "Best": {
+            "Mass": {
+              "Success": 1,
+              "Failure": 0,
+              "Unresolved": 0,
+              "Upper": 1
+            },
+            "Witness": [
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": []
+              }
+            ],
+            "Action": "FLASH_OF_STEEL#1@0"
+          },
+          "RootActions": {
+            "FLASH_OF_STEEL#1@0": {
+              "Success": 1,
+              "Failure": 0,
+              "Unresolved": 0,
+              "Upper": 1
+            }
+          },
+          "Nodes": 38,
+          "Attempts": 19,
+          "Transitions": 19,
+          "Replays": 0,
+          "ActionDepth": 19,
+          "EventDepth": 0,
+          "ChanceByDepth": {},
+          "ChanceWidths": {},
+          "Stops": {},
+          "Milliseconds": 186.0288,
+          "StepMilliseconds": 176.8756,
+          "ReplayMilliseconds": 0,
+          "BeliefMilliseconds": 10.7782
+        },
+        "ideal": {
+          "Best": {
+            "Mass": {
+              "Success": 1,
+              "Failure": 0,
+              "Unresolved": 0,
+              "Upper": 1
+            },
+            "Witness": [
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": []
+              }
+            ],
+            "Action": "FLASH_OF_STEEL#1@0"
+          },
+          "RootActions": {
+            "FLASH_OF_STEEL#1@0": {
+              "Success": 1,
+              "Failure": 0,
+              "Unresolved": 0,
+              "Upper": 1
+            }
+          },
+          "Nodes": 38,
+          "Attempts": 19,
+          "Transitions": 19,
+          "Replays": 0,
+          "ActionDepth": 19,
+          "EventDepth": 0,
+          "ChanceByDepth": {},
+          "ChanceWidths": {},
+          "Stops": {},
+          "Milliseconds": 0.3254,
+          "StepMilliseconds": 0.2743,
+          "ReplayMilliseconds": 0,
+          "BeliefMilliseconds": 0.0534
+        },
+        "oracle": {
+          "Best": {
+            "Mass": {
+              "Success": 1,
+              "Failure": 0,
+              "Unresolved": 0,
+              "Upper": 1
+            },
+            "Witness": [
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FLASH_OF_STEEL#1@0",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FLASH_OF_STEEL#1@0/ExecuteCoreCustomCard",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 2,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 2,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FINESSE#2@-1",
+                "Events": [
+                  {
+                    "Position": 0,
+                    "Kind": "Shuffle",
+                    "Source": "FINESSE#2@-1",
+                    "Phase": "shuffle_discard",
+                    "DrawDepth": 0,
+                    "Remaining": 0,
+                    "Observation": "membership_only",
+                    "Options": [],
+                    "Choices": [],
+                    "Result": null,
+                    "Selection": null
+                  },
+                  {
+                    "Position": 1,
+                    "Kind": "KnownDraw",
+                    "Source": "FINESSE#2@-1/ExecuteBytecodeInternal",
+                    "Phase": "draw_cards",
+                    "DrawDepth": 1,
+                    "Remaining": 1,
+                    "Observation": "on_draw_to_hand",
+                    "Options": [
+                      {
+                        "Instance": 1,
+                        "Denominator": 1,
+                        "EquivalenceRepresentative": 0,
+                        "Probability": 1
+                      }
+                    ],
+                    "Choices": [],
+                    "Result": 1,
+                    "Selection": null
+                  }
+                ]
+              },
+              {
+                "Action": "FLASH_OF_STEEL#1@0",
+                "Events": []
+              }
+            ],
+            "Action": "FLASH_OF_STEEL#1@0"
+          },
+          "RootActions": {
+            "FLASH_OF_STEEL#1@0": {
+              "Success": 1,
+              "Failure": 0,
+              "Unresolved": 0,
+              "Upper": 1
+            }
+          },
+          "Nodes": 38,
+          "Attempts": 19,
+          "Transitions": 19,
+          "Replays": 0,
+          "ActionDepth": 19,
+          "EventDepth": 0,
+          "ChanceByDepth": {},
+          "ChanceWidths": {},
+          "Stops": {},
+          "Milliseconds": 2.3454,
+          "StepMilliseconds": 2.2885,
+          "ReplayMilliseconds": 0,
+          "BeliefMilliseconds": 0.0583
+        }
+      }
+    },
+    "unsupported": {
+      "fixture": "unsupported",
+      "coldMilliseconds": 3499.7987,
+      "result": {
+        "autoplay": {
+          "Reason": "autoplay_from_draw",
+          "Point": "HAVOC"
+        },
+        "randomCost": {
+          "Reason": "unmodeled_rng",
+          "Point": "HandleAfterCardDrawn"
+        }
+      }
+    },
+    "no_draw": {
+      "fixture": "no_draw",
+      "coldMilliseconds": 3462.7609,
+      "result": {
+        "blockedDraw": true,
+        "DrawCount": 2
+      }
+    },
+    "empty": {
+      "fixture": "empty",
+      "coldMilliseconds": 3582.595,
+      "result": {
+        "blockedDraw": true,
+        "DrawCount": 0
+      }
+    },
+    "perfect_fit": {
+      "fixture": "perfect_fit",
+      "coldMilliseconds": 3477.5879,
+      "result": {
+        "Reason": "perfect_fit",
+        "Point": "ModifyShuffleOrder"
+      }
+    }
+  },
+  "errors": {}
+}
