@@ -1,0 +1,45 @@
+{
+  "id": "dc3a-pilot",
+  "name": "DC3A Solver 预算预实验",
+  "type": "benchmark",
+  "mode": "Any",
+  "cwd": ".",
+  "python": "logs/m1-pre1-cuda/Scripts/python.exe",
+  "output": "logs/inf1/jobs/dc3a-pilot",
+  "max_retries": 0,
+  "budget_seconds": 3600,
+  "stop_grace_seconds": 240,
+  "limits": {
+    "reference_worlds": 24,
+    "confirmation_evaluations": 0
+  },
+  "inputs": [
+    "experiments/m1-dc3a/reference.py",
+    "experiments/m1-dc1/dc_common.py",
+    "experiments/m1-sv4a/loop_battle.py",
+    "experiments/m1-sv4a/loop_common.py",
+    "experiments/m1-dc1/config.json",
+    "logs/m1-sv4a-host/build.json",
+    "logs/m1-pre0b-host-final/build.json",
+    "logs/m1-dc1-formal/roots/development.json",
+    "logs/m1-dc2b-frozen/development.json",
+    "logs/m1-dc3a-frozen/pilot.json"
+  ],
+  "stages": [
+    {
+      "id": "solve",
+      "depends_on": [],
+      "args": [
+        "experiments/m1-dc3a/reference.py",
+        "{work}",
+        "--manifest",
+        "{repo}/logs/m1-dc3a-frozen/pilot.json"
+      ],
+      "gpu": false,
+      "heavy": true,
+      "workers": 1,
+      "resume": "checkpoint",
+      "boundary": "One committed combat world"
+    }
+  ]
+}
