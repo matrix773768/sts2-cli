@@ -1,0 +1,886 @@
+{
+  "cases": 35,
+  "policyQueries": 140,
+  "historicalStructureCases": 13,
+  "fairExportPairs": 35,
+  "nontrivialHiddenPairs": 7,
+  "warmMedianMs": 0.355208,
+  "warmMaxMs": 0.6408400000000001,
+  "coldMedianMs": 3449.2084,
+  "sameAttackDifferentFollowup": [
+    {
+      "MoveId": "FIRST_ACID_GOOP",
+      "NodeKind": "Move",
+      "BaseDamage": 4,
+      "Repeats": 1,
+      "RemovesOwnerOnMove": false,
+      "attacks": [
+        {
+          "BaseDamage": 4,
+          "Repeats": 1,
+          "Flags": 0
+        }
+      ],
+      "effects": [],
+      "next": "INHALE",
+      "targets": [],
+      "weightsAvailable": false,
+      "repeatTypes": [],
+      "maxTimes": [],
+      "cooldowns": [],
+      "Cooldown": 0,
+      "MustPerformOnceBeforeRepeat": false,
+      "CannotRepeat": false,
+      "ConditionalKind": "None",
+      "condition": null,
+      "successor": "catalog_edge"
+    },
+    {
+      "MoveId": "ACID_GOOP",
+      "NodeKind": "Move",
+      "BaseDamage": 4,
+      "Repeats": 1,
+      "RemovesOwnerOnMove": false,
+      "attacks": [
+        {
+          "BaseDamage": 4,
+          "Repeats": 1,
+          "Flags": 0
+        }
+      ],
+      "effects": [],
+      "next": "FIRST_ACID_GOOP",
+      "targets": [],
+      "weightsAvailable": false,
+      "repeatTypes": [],
+      "maxTimes": [],
+      "cooldowns": [],
+      "Cooldown": 0,
+      "MustPerformOnceBeforeRepeat": false,
+      "CannotRepeat": false,
+      "ConditionalKind": "None",
+      "condition": null,
+      "successor": "catalog_edge"
+    }
+  ],
+  "sameTotalDifferentHits": [],
+  "syntheticContractDiagnostics": {
+    "equalTotalDistinctSegments": [
+      [
+        12,
+        1
+      ],
+      [
+        6,
+        2
+      ]
+    ],
+    "costExpirationFlags": [
+      1,
+      3
+    ]
+  },
+  "conditionalRules": {
+    "TestSubjectRevive": {
+      "predicate": "revive_phase_register_lt_2",
+      "whenTrue": "MULTI_CLAW_MOVE",
+      "whenFalse": "PHASE3_LACERATE_MOVE",
+      "dependency": "unqualified_revive_phase"
+    },
+    "LagavulinSleep": {
+      "predicate": "asleep_amount_positive",
+      "whenTrue": "SLEEP_MOVE",
+      "whenFalse": "SLASH_MOVE",
+      "dependency": "owner_asleep_power"
+    },
+    "SlumberingBeetleSnore": {
+      "predicate": "slumber_amount_positive",
+      "whenTrue": "SNORE_MOVE",
+      "whenFalse": "ROLL_OUT_MOVE",
+      "dependency": "owner_slumber_power"
+    }
+  },
+  "sameDeckDifferentZones": {
+    "hand1": {
+      "FLASH_OF_STEEL": 1,
+      "DEFEND_IRONCLAD": 1,
+      "FINESSE": 1
+    },
+    "draw1": {
+      "FLASH_OF_STEEL": 1,
+      "DEFEND_IRONCLAD": 1,
+      "FINESSE": 1
+    },
+    "discard1": {
+      "FLASH_OF_STEEL": 1,
+      "FINESSE": 1,
+      "DEFEND_IRONCLAD": 1
+    }
+  },
+  "sameIdealDifferentFair": [],
+  "idealVictoryDifferentFairCashout": [
+    [
+      "discard_redundant_finesse",
+      0.08984375,
+      0.08984375
+    ],
+    [
+      "conditioned",
+      0.0283203125,
+      0.0283203125
+    ]
+  ],
+  "directVictory": {
+    "discard_redundant_finesse": 0.08984375,
+    "draw_redundant_flash": 1,
+    "ordinary_direct": 1
+  },
+  "conditionalTape": [
+    0.0078125,
+    0.015625
+  ],
+  "exhaustionNecessity": {
+    "status": "unresolved",
+    "existingBurningPactStartup": 1,
+    "entryActions": [
+      0
+    ],
+    "entryExhaustChanges": [
+      0
+    ],
+    "reason": "core already qualified at depth zero with the blocker in hand"
+  },
+  "enemyProbes": {
+    "TEST_SUBJECT_BOSS": [
+      {
+        "slot": 0,
+        "Entry": "TEST_SUBJECT",
+        "StateKind": "TestSubject",
+        "rules": {
+          "initial": "BITE_MOVE",
+          "coverage": "catalog_graph_specialized_execution_unexpanded",
+          "nodes": [
+            {
+              "MoveId": "BIG_POUNCE",
+              "NodeKind": "Move",
+              "BaseDamage": 45,
+              "Repeats": 1,
+              "RemovesOwnerOnMove": false,
+              "attacks": [
+                {
+                  "BaseDamage": 45,
+                  "Repeats": 1,
+                  "Flags": 0
+                }
+              ],
+              "effects": [],
+              "next": "BURNING_GROWL_MOVE",
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": false,
+              "CannotRepeat": false,
+              "ConditionalKind": "None",
+              "condition": null,
+              "successor": "catalog_edge"
+            },
+            {
+              "MoveId": "BITE_MOVE",
+              "NodeKind": "Move",
+              "BaseDamage": 20,
+              "Repeats": 1,
+              "RemovesOwnerOnMove": false,
+              "attacks": [
+                {
+                  "BaseDamage": 20,
+                  "Repeats": 1,
+                  "Flags": 0
+                }
+              ],
+              "effects": [],
+              "next": "SKULL_BASH_MOVE",
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": false,
+              "CannotRepeat": false,
+              "ConditionalKind": "None",
+              "condition": null,
+              "successor": "catalog_edge"
+            },
+            {
+              "MoveId": "BURNING_GROWL_MOVE",
+              "NodeKind": "Move",
+              "BaseDamage": 0,
+              "Repeats": 0,
+              "RemovesOwnerOnMove": false,
+              "attacks": [],
+              "effects": [],
+              "next": "PHASE3_LACERATE_MOVE",
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": false,
+              "CannotRepeat": false,
+              "ConditionalKind": "None",
+              "condition": null,
+              "successor": "catalog_edge"
+            },
+            {
+              "MoveId": "MULTI_CLAW_MOVE",
+              "NodeKind": "Move",
+              "BaseDamage": 10,
+              "Repeats": 3,
+              "RemovesOwnerOnMove": false,
+              "attacks": [
+                {
+                  "BaseDamage": 10,
+                  "Repeats": 3,
+                  "Flags": 0
+                }
+              ],
+              "effects": [],
+              "next": "MULTI_CLAW_MOVE",
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": false,
+              "CannotRepeat": false,
+              "ConditionalKind": "None",
+              "condition": null,
+              "successor": "catalog_edge"
+            },
+            {
+              "MoveId": "PHASE3_LACERATE_MOVE",
+              "NodeKind": "Move",
+              "BaseDamage": 10,
+              "Repeats": 3,
+              "RemovesOwnerOnMove": false,
+              "attacks": [
+                {
+                  "BaseDamage": 10,
+                  "Repeats": 3,
+                  "Flags": 0
+                }
+              ],
+              "effects": [],
+              "next": "BIG_POUNCE",
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": false,
+              "CannotRepeat": false,
+              "ConditionalKind": "None",
+              "condition": null,
+              "successor": "catalog_edge"
+            },
+            {
+              "MoveId": "RESPAWN_MOVE",
+              "NodeKind": "Move",
+              "BaseDamage": 0,
+              "Repeats": 0,
+              "RemovesOwnerOnMove": false,
+              "attacks": [],
+              "effects": [],
+              "next": "REVIVE_BRANCH",
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": true,
+              "CannotRepeat": false,
+              "ConditionalKind": "None",
+              "condition": null,
+              "successor": "catalog_edge"
+            },
+            {
+              "MoveId": "REVIVE_BRANCH",
+              "NodeKind": "ConditionalBranch",
+              "BaseDamage": 0,
+              "Repeats": 0,
+              "RemovesOwnerOnMove": false,
+              "attacks": [],
+              "effects": [],
+              "next": null,
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": false,
+              "CannotRepeat": false,
+              "ConditionalKind": "TestSubjectRevive",
+              "condition": {
+                "predicate": "revive_phase_register_lt_2",
+                "whenTrue": "MULTI_CLAW_MOVE",
+                "whenFalse": "PHASE3_LACERATE_MOVE",
+                "dependency": "unqualified_revive_phase"
+              },
+              "successor": "unqualified"
+            },
+            {
+              "MoveId": "SKULL_BASH_MOVE",
+              "NodeKind": "Move",
+              "BaseDamage": 14,
+              "Repeats": 1,
+              "RemovesOwnerOnMove": false,
+              "attacks": [
+                {
+                  "BaseDamage": 14,
+                  "Repeats": 1,
+                  "Flags": 0
+                }
+              ],
+              "effects": [
+                {
+                  "Op": "ApplyPowerTarget",
+                  "Amount": 1,
+                  "Flags": 0,
+                  "TargetDefId": 296,
+                  "power": "VULNERABLE_POWER"
+                }
+              ],
+              "next": "BITE_MOVE",
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": false,
+              "CannotRepeat": false,
+              "ConditionalKind": "None",
+              "condition": null,
+              "successor": "catalog_edge"
+            },
+            {
+              "MoveId": "STUNNED",
+              "NodeKind": "Move",
+              "BaseDamage": 0,
+              "Repeats": 0,
+              "RemovesOwnerOnMove": false,
+              "attacks": [],
+              "effects": [],
+              "next": null,
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": true,
+              "CannotRepeat": false,
+              "ConditionalKind": "None",
+              "condition": null,
+              "successor": "catalog_edge"
+            }
+          ]
+        }
+      }
+    ],
+    "LAGAVULIN_MATRIARCH_BOSS": [
+      {
+        "slot": 0,
+        "Entry": "LAGAVULIN_MATRIARCH",
+        "StateKind": "AwakeCheck",
+        "rules": {
+          "initial": "SLEEP_MOVE",
+          "coverage": "catalog_graph_specialized_execution_unexpanded",
+          "nodes": [
+            {
+              "MoveId": "DISEMBOWEL_MOVE",
+              "NodeKind": "Move",
+              "BaseDamage": 9,
+              "Repeats": 2,
+              "RemovesOwnerOnMove": false,
+              "attacks": [
+                {
+                  "BaseDamage": 9,
+                  "Repeats": 2,
+                  "Flags": 0
+                }
+              ],
+              "effects": [],
+              "next": "SLASH2_MOVE",
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": false,
+              "CannotRepeat": false,
+              "ConditionalKind": "None",
+              "condition": null,
+              "successor": "catalog_edge"
+            },
+            {
+              "MoveId": "SLASH2_MOVE",
+              "NodeKind": "Move",
+              "BaseDamage": 12,
+              "Repeats": 1,
+              "RemovesOwnerOnMove": false,
+              "attacks": [
+                {
+                  "BaseDamage": 12,
+                  "Repeats": 1,
+                  "Flags": 0
+                }
+              ],
+              "effects": [],
+              "next": "SOUL_SIPHON_MOVE",
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": false,
+              "CannotRepeat": false,
+              "ConditionalKind": "None",
+              "condition": null,
+              "successor": "catalog_edge"
+            },
+            {
+              "MoveId": "SLASH_MOVE",
+              "NodeKind": "Move",
+              "BaseDamage": 19,
+              "Repeats": 1,
+              "RemovesOwnerOnMove": false,
+              "attacks": [
+                {
+                  "BaseDamage": 19,
+                  "Repeats": 1,
+                  "Flags": 0
+                }
+              ],
+              "effects": [],
+              "next": "DISEMBOWEL_MOVE",
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": false,
+              "CannotRepeat": false,
+              "ConditionalKind": "None",
+              "condition": null,
+              "successor": "catalog_edge"
+            },
+            {
+              "MoveId": "SLEEP_BRANCH",
+              "NodeKind": "ConditionalBranch",
+              "BaseDamage": 0,
+              "Repeats": 0,
+              "RemovesOwnerOnMove": false,
+              "attacks": [],
+              "effects": [],
+              "next": null,
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": false,
+              "CannotRepeat": false,
+              "ConditionalKind": "LagavulinSleep",
+              "condition": {
+                "predicate": "asleep_amount_positive",
+                "whenTrue": "SLEEP_MOVE",
+                "whenFalse": "SLASH_MOVE",
+                "dependency": "owner_asleep_power"
+              },
+              "successor": "unqualified"
+            },
+            {
+              "MoveId": "SLEEP_MOVE",
+              "NodeKind": "Move",
+              "BaseDamage": 0,
+              "Repeats": 0,
+              "RemovesOwnerOnMove": false,
+              "attacks": [],
+              "effects": [],
+              "next": "SLEEP_BRANCH",
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": false,
+              "CannotRepeat": false,
+              "ConditionalKind": "None",
+              "condition": null,
+              "successor": "catalog_edge"
+            },
+            {
+              "MoveId": "SOUL_SIPHON_MOVE",
+              "NodeKind": "Move",
+              "BaseDamage": 0,
+              "Repeats": 0,
+              "RemovesOwnerOnMove": false,
+              "attacks": [],
+              "effects": [],
+              "next": "SLASH_MOVE",
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": false,
+              "CannotRepeat": false,
+              "ConditionalKind": "None",
+              "condition": null,
+              "successor": "catalog_edge"
+            },
+            {
+              "MoveId": "STUNNED",
+              "NodeKind": "Move",
+              "BaseDamage": 0,
+              "Repeats": 0,
+              "RemovesOwnerOnMove": false,
+              "attacks": [],
+              "effects": [],
+              "next": null,
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": true,
+              "CannotRepeat": false,
+              "ConditionalKind": "None",
+              "condition": null,
+              "successor": "catalog_edge"
+            }
+          ]
+        }
+      }
+    ],
+    "SLUMBERING_BEETLE_NORMAL": [
+      {
+        "slot": 0,
+        "Entry": "BOWLBUG_ROCK",
+        "StateKind": "None",
+        "rules": {
+          "initial": "HEADBUTT_MOVE",
+          "coverage": "catalog_graph_specialized_execution_unexpanded",
+          "nodes": [
+            {
+              "MoveId": "DIZZY_MOVE",
+              "NodeKind": "Move",
+              "BaseDamage": 0,
+              "Repeats": 0,
+              "RemovesOwnerOnMove": false,
+              "attacks": [],
+              "effects": [],
+              "next": "HEADBUTT_MOVE",
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": false,
+              "CannotRepeat": false,
+              "ConditionalKind": "None",
+              "condition": null,
+              "successor": "catalog_edge"
+            },
+            {
+              "MoveId": "HEADBUTT_MOVE",
+              "NodeKind": "Move",
+              "BaseDamage": 15,
+              "Repeats": 1,
+              "RemovesOwnerOnMove": false,
+              "attacks": [
+                {
+                  "BaseDamage": 15,
+                  "Repeats": 1,
+                  "Flags": 0
+                }
+              ],
+              "effects": [],
+              "next": "POST_HEADBUTT",
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": false,
+              "CannotRepeat": false,
+              "ConditionalKind": "None",
+              "condition": null,
+              "successor": "catalog_edge"
+            },
+            {
+              "MoveId": "POST_HEADBUTT",
+              "NodeKind": "ConditionalBranch",
+              "BaseDamage": 0,
+              "Repeats": 0,
+              "RemovesOwnerOnMove": false,
+              "attacks": [],
+              "effects": [],
+              "next": null,
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": false,
+              "CannotRepeat": false,
+              "ConditionalKind": "BowlbugRockPostHeadbutt",
+              "condition": null,
+              "successor": "unqualified"
+            },
+            {
+              "MoveId": "STUNNED",
+              "NodeKind": "Move",
+              "BaseDamage": 0,
+              "Repeats": 0,
+              "RemovesOwnerOnMove": false,
+              "attacks": [],
+              "effects": [],
+              "next": null,
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": true,
+              "CannotRepeat": false,
+              "ConditionalKind": "None",
+              "condition": null,
+              "successor": "catalog_edge"
+            }
+          ]
+        }
+      },
+      {
+        "slot": 1,
+        "Entry": "BOWLBUG_SILK",
+        "StateKind": "None",
+        "rules": {
+          "initial": "TOXIC_SPIT_MOVE",
+          "coverage": "catalog_graph_specialized_execution_unexpanded",
+          "nodes": [
+            {
+              "MoveId": "THRASH_MOVE",
+              "NodeKind": "Move",
+              "BaseDamage": 4,
+              "Repeats": 2,
+              "RemovesOwnerOnMove": false,
+              "attacks": [
+                {
+                  "BaseDamage": 4,
+                  "Repeats": 2,
+                  "Flags": 0
+                }
+              ],
+              "effects": [],
+              "next": "TOXIC_SPIT_MOVE",
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": false,
+              "CannotRepeat": false,
+              "ConditionalKind": "None",
+              "condition": null,
+              "successor": "catalog_edge"
+            },
+            {
+              "MoveId": "TOXIC_SPIT_MOVE",
+              "NodeKind": "Move",
+              "BaseDamage": 0,
+              "Repeats": 0,
+              "RemovesOwnerOnMove": false,
+              "attacks": [],
+              "effects": [],
+              "next": "THRASH_MOVE",
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": false,
+              "CannotRepeat": false,
+              "ConditionalKind": "None",
+              "condition": null,
+              "successor": "catalog_edge"
+            },
+            {
+              "MoveId": "STUNNED",
+              "NodeKind": "Move",
+              "BaseDamage": 0,
+              "Repeats": 0,
+              "RemovesOwnerOnMove": false,
+              "attacks": [],
+              "effects": [],
+              "next": null,
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": true,
+              "CannotRepeat": false,
+              "ConditionalKind": "None",
+              "condition": null,
+              "successor": "catalog_edge"
+            }
+          ]
+        }
+      },
+      {
+        "slot": 2,
+        "Entry": "SLUMBERING_BEETLE",
+        "StateKind": "AwakeCheck",
+        "rules": {
+          "initial": "SNORE_MOVE",
+          "coverage": "catalog_graph_specialized_execution_unexpanded",
+          "nodes": [
+            {
+              "MoveId": "ROLL_OUT_MOVE",
+              "NodeKind": "Move",
+              "BaseDamage": 16,
+              "Repeats": 1,
+              "RemovesOwnerOnMove": false,
+              "attacks": [
+                {
+                  "BaseDamage": 16,
+                  "Repeats": 1,
+                  "Flags": 0
+                }
+              ],
+              "effects": [],
+              "next": "ROLL_OUT_MOVE",
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": false,
+              "CannotRepeat": false,
+              "ConditionalKind": "None",
+              "condition": null,
+              "successor": "catalog_edge"
+            },
+            {
+              "MoveId": "SNORE_MOVE",
+              "NodeKind": "Move",
+              "BaseDamage": 0,
+              "Repeats": 0,
+              "RemovesOwnerOnMove": false,
+              "attacks": [],
+              "effects": [],
+              "next": "SNORE_NEXT",
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": false,
+              "CannotRepeat": false,
+              "ConditionalKind": "None",
+              "condition": null,
+              "successor": "catalog_edge"
+            },
+            {
+              "MoveId": "SNORE_NEXT",
+              "NodeKind": "ConditionalBranch",
+              "BaseDamage": 0,
+              "Repeats": 0,
+              "RemovesOwnerOnMove": false,
+              "attacks": [],
+              "effects": [],
+              "next": null,
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": false,
+              "CannotRepeat": false,
+              "ConditionalKind": "SlumberingBeetleSnore",
+              "condition": {
+                "predicate": "slumber_amount_positive",
+                "whenTrue": "SNORE_MOVE",
+                "whenFalse": "ROLL_OUT_MOVE",
+                "dependency": "owner_slumber_power"
+              },
+              "successor": "unqualified"
+            },
+            {
+              "MoveId": "STUNNED",
+              "NodeKind": "Move",
+              "BaseDamage": 0,
+              "Repeats": 0,
+              "RemovesOwnerOnMove": false,
+              "attacks": [],
+              "effects": [],
+              "next": null,
+              "targets": [],
+              "weightsAvailable": false,
+              "repeatTypes": [],
+              "maxTimes": [],
+              "cooldowns": [],
+              "Cooldown": 0,
+              "MustPerformOnceBeforeRepeat": true,
+              "CannotRepeat": false,
+              "ConditionalKind": "None",
+              "condition": null,
+              "successor": "catalog_edge"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "compileMilliseconds": 62.958700000308454,
+  "encodeGzipMilliseconds": 130.7585000031395,
+  "datasetBytes": 195636,
+  "identity": {
+    "upstream": "131d10ae4499b56332787af61fe4a9306e65860f",
+    "archive_sha256": "3aa49546ccf0bad704c2cfd77182a9d311d88622196cbdece9a7a1e9c51199b3",
+    "game_sha256": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3",
+    "harness_sha256": "212067ddf8fd07655c07020ac1e1947b1b9414e4017c7998b4fc32b98df81c24",
+    "runtime_sha256": "0a1b7ca731245de1f267a9c3c4d1ef8705e0821923fcdd6e0d61c31132f51240",
+    "mechanisms": {
+      "MechanismHarness.cs": "b15a64031608b189e3224e57486d8c9339ca9fdd01e638257df8dbb1a4fd1fd0"
+    },
+    "solver_sha256": "4f43cad458ff276f911e4c3ff4424dc3ff4972d524a45d955ef09e42a5bd4de7"
+  }
+}
