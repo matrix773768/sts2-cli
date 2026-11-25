@@ -1,0 +1,228 @@
+{
+  "budget": {
+    "Nodes": 2500,
+    "Attempts": 10000,
+    "Actions": 240,
+    "Events": 30,
+    "Milliseconds": 3000,
+    "Period": 12,
+    "Laps": 128,
+    "Candidates": 6
+  },
+  "cases": {
+    "core50": {
+      "upstream": true,
+      "prior": true,
+      "options": {
+        "HotSearch": true
+      }
+    },
+    "core500": {
+      "hp": 500,
+      "energy": 0,
+      "cards": [
+        [
+          "FLASH_OF_STEEL"
+        ],
+        [
+          "FINESSE",
+          "Discard"
+        ]
+      ]
+    },
+    "startup_hand": {
+      "hp": 50,
+      "energy": 0,
+      "cards": [
+        [
+          "OFFERING"
+        ],
+        [
+          "FINESSE",
+          "Draw"
+        ],
+        [
+          "FLASH_OF_STEEL",
+          "Draw"
+        ],
+        [
+          "DEFEND_IRONCLAD",
+          "Draw"
+        ]
+      ]
+    },
+    "startup_unknown": {
+      "hp": 50,
+      "energy": 0,
+      "cards": [
+        [
+          "OFFERING"
+        ],
+        [
+          "DEFEND_IRONCLAD",
+          "Draw"
+        ],
+        [
+          "FINESSE",
+          "Draw"
+        ],
+        [
+          "FLASH_OF_STEEL",
+          "Draw"
+        ],
+        [
+          "STRIKE_IRONCLAD",
+          "Draw"
+        ]
+      ],
+      "options": {
+        "Pair": true
+      }
+    },
+    "headbutt_setup": {
+      "hp": 45,
+      "energy": 2,
+      "cards": [
+        [
+          "HEADBUTT"
+        ],
+        [
+          "FINESSE"
+        ],
+        [
+          "FLASH_OF_STEEL",
+          "Discard"
+        ]
+      ]
+    },
+    "quick_kill": {
+      "hp": 12,
+      "energy": 2,
+      "cards": [
+        [
+          "STRIKE_IRONCLAD",
+          "Hand",
+          2
+        ],
+        [
+          "FLASH_OF_STEEL"
+        ],
+        [
+          "FINESSE",
+          "Discard"
+        ]
+      ]
+    },
+    "energy_limited": {
+      "hp": 80,
+      "energy": 4,
+      "cards": [
+        [
+          "POMMEL_STRIKE"
+        ],
+        [
+          "FINESSE",
+          "Discard"
+        ]
+      ]
+    },
+    "conditioned": {
+      "hp": 90,
+      "energy": 5,
+      "cards": [
+        [
+          "FLASH_OF_STEEL"
+        ],
+        [
+          "FINESSE",
+          "Discard"
+        ],
+        [
+          "POMMEL_STRIKE",
+          "Discard"
+        ]
+      ]
+    },
+    "letter_opener": {
+      "hp": 40,
+      "energy": 0,
+      "cards": [
+        [
+          "FINESSE"
+        ],
+        [
+          "FINESSE",
+          "Discard"
+        ]
+      ],
+      "relics": [
+        "LETTER_OPENER"
+      ],
+      "options": {
+        "NativeLetter": true
+      }
+    },
+    "block_only": {
+      "hp": 50,
+      "energy": 0,
+      "cards": [
+        [
+          "FINESSE"
+        ],
+        [
+          "FINESSE",
+          "Discard"
+        ]
+      ],
+      "budget": {
+        "Actions": 16
+      }
+    },
+    "no_draw": {
+      "hp": 50,
+      "energy": 0,
+      "cards": [
+        [
+          "FLASH_OF_STEEL"
+        ],
+        [
+          "FINESSE",
+          "Discard"
+        ]
+      ],
+      "powers": [
+        "NO_DRAW_POWER"
+      ],
+      "options": {
+        "PowerControl": true
+      }
+    },
+    "ordinary": {
+      "hp": 30,
+      "energy": 3,
+      "cards": [
+        [
+          "STRIKE_IRONCLAD",
+          "Hand",
+          2
+        ],
+        [
+          "DEFEND_IRONCLAD"
+        ]
+      ]
+    },
+    "unsupported": {
+      "hp": 50,
+      "energy": 3,
+      "cards": [
+        [
+          "HAVOC"
+        ],
+        [
+          "STRIKE_IRONCLAD",
+          "Draw"
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,2056 @@
+{
+  "core50": {
+    "rootKey": "99CE09CC80379751730C354302876B5B61AC99A0D01AB1EA783475992689A068",
+    "coldMs": 4480.2821,
+    "comparisonMs": 174.2291,
+    "battle": {
+      "Nodes": 19,
+      "SearchAttempts": 19,
+      "SearchTransitions": 19,
+      "ReplayAttempts": 21,
+      "AnalysisAttempts": 19,
+      "OutsideAuditAttempts": 38,
+      "MaxActionDepth": 19,
+      "MaxEventDepth": 0,
+      "SearchAndAnalysisMs": 122.70319999999998,
+      "AnalysisMs": 28.357099999999996,
+      "ReplayMs": 42.9446,
+      "AuditMs": 2.429,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "terminal:Victory": 1
+      },
+      "FirstStructure": {
+        "nodes": 19,
+        "transitions": 19,
+        "attempts": 19,
+        "verificationAttempts": 21,
+        "milliseconds": 159.6146
+      },
+      "winningSteps": 19,
+      "structures": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "startup": 0,
+          "period": 2,
+          "periodCards": [
+            "FLASH_OF_STEEL",
+            "FINESSE"
+          ],
+          "laps": 10,
+          "completeLaps": 9,
+          "firstFourDeltas": [
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            }
+          ],
+          "stop": "terminal:Victory",
+          "tapeProbability": 1,
+          "nontrivialDraws": 0,
+          "observedPaymentRequirement": 0,
+          "entryEnergy": {
+            "Minimum": 0,
+            "TestedThrough": 0,
+            "Stop": "qualified_under_same_state_and_event_tape"
+          }
+        }
+      ]
+    },
+    "active": {
+      "Nodes": 3,
+      "SearchAttempts": 2,
+      "SearchTransitions": 2,
+      "ReplayAttempts": 21,
+      "AnalysisAttempts": 0,
+      "OutsideAuditAttempts": 38,
+      "MaxActionDepth": 2,
+      "MaxEventDepth": 0,
+      "SearchAndAnalysisMs": 1.5813,
+      "AnalysisMs": 0.3721999999999999,
+      "ReplayMs": 1.7278,
+      "AuditMs": 1.8254,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "verified_terminal_subtree_deferred": 1
+      },
+      "FirstStructure": {
+        "nodes": 3,
+        "transitions": 2,
+        "attempts": 2,
+        "verificationAttempts": 21,
+        "milliseconds": 2.9711
+      },
+      "winningSteps": 19,
+      "structures": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "startup": 0,
+          "period": 2,
+          "periodCards": [
+            "FLASH_OF_STEEL",
+            "FINESSE"
+          ],
+          "laps": 10,
+          "completeLaps": 9,
+          "firstFourDeltas": [
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            }
+          ],
+          "stop": "terminal:Victory",
+          "tapeProbability": 1,
+          "nontrivialDraws": 0,
+          "observedPaymentRequirement": 0,
+          "entryEnergy": {
+            "Minimum": 0,
+            "TestedThrough": 0,
+            "Stop": "qualified_under_same_state_and_event_tape"
+          }
+        }
+      ]
+    }
+  },
+  "core500": {
+    "rootKey": "BA04AB65CDA1307D280CD9EF91CF4D26E9DBD588D9E70FB81BA8C182763FF588",
+    "coldMs": 4556.8812,
+    "comparisonMs": 400.052,
+    "battle": {
+      "Nodes": 199,
+      "SearchAttempts": 199,
+      "SearchTransitions": 199,
+      "ReplayAttempts": 201,
+      "AnalysisAttempts": 199,
+      "OutsideAuditAttempts": 398,
+      "MaxActionDepth": 199,
+      "MaxEventDepth": 0,
+      "SearchAndAnalysisMs": 277.72720000000004,
+      "AnalysisMs": 88.62129999999999,
+      "ReplayMs": 65.5882,
+      "AuditMs": 24.0277,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "terminal:Victory": 1
+      },
+      "FirstStructure": {
+        "nodes": 199,
+        "transitions": 199,
+        "attempts": 199,
+        "verificationAttempts": 201,
+        "milliseconds": 318.9433
+      },
+      "winningSteps": 199,
+      "structures": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "startup": 0,
+          "period": 2,
+          "periodCards": [
+            "FLASH_OF_STEEL",
+            "FINESSE"
+          ],
+          "laps": 100,
+          "completeLaps": 99,
+          "firstFourDeltas": [
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            }
+          ],
+          "stop": "terminal:Victory",
+          "tapeProbability": 1,
+          "nontrivialDraws": 0,
+          "observedPaymentRequirement": 0,
+          "entryEnergy": {
+            "Minimum": 0,
+            "TestedThrough": 0,
+            "Stop": "qualified_under_same_state_and_event_tape"
+          }
+        }
+      ]
+    },
+    "active": {
+      "Nodes": 3,
+      "SearchAttempts": 2,
+      "SearchTransitions": 2,
+      "ReplayAttempts": 201,
+      "AnalysisAttempts": 0,
+      "OutsideAuditAttempts": 398,
+      "MaxActionDepth": 2,
+      "MaxEventDepth": 0,
+      "SearchAndAnalysisMs": 1.652800000000001,
+      "AnalysisMs": 0.3232000000000004,
+      "ReplayMs": 9.6246,
+      "AuditMs": 20.3945,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "verified_terminal_subtree_deferred": 1
+      },
+      "FirstStructure": {
+        "nodes": 3,
+        "transitions": 2,
+        "attempts": 2,
+        "verificationAttempts": 201,
+        "milliseconds": 11.0051
+      },
+      "winningSteps": 199,
+      "structures": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "startup": 0,
+          "period": 2,
+          "periodCards": [
+            "FLASH_OF_STEEL",
+            "FINESSE"
+          ],
+          "laps": 100,
+          "completeLaps": 99,
+          "firstFourDeltas": [
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            }
+          ],
+          "stop": "terminal:Victory",
+          "tapeProbability": 1,
+          "nontrivialDraws": 0,
+          "observedPaymentRequirement": 0,
+          "entryEnergy": {
+            "Minimum": 0,
+            "TestedThrough": 0,
+            "Stop": "qualified_under_same_state_and_event_tape"
+          }
+        }
+      ]
+    }
+  },
+  "startup_hand": {
+    "rootKey": "668D55144CF11FD8E7DCEF7F6D00E4F8AF4254D353BA1BA8AA8D397EDF763729",
+    "coldMs": 4579.6895,
+    "comparisonMs": 519.2755,
+    "battle": {
+      "Nodes": 118,
+      "SearchAttempts": 137,
+      "SearchTransitions": 118,
+      "ReplayAttempts": 20,
+      "AnalysisAttempts": 25,
+      "OutsideAuditAttempts": 48,
+      "MaxActionDepth": 22,
+      "MaxEventDepth": 3,
+      "SearchAndAnalysisMs": 291.7354,
+      "AnalysisMs": 62.54990000000001,
+      "ReplayMs": 85.1695,
+      "AuditMs": 3.5012,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "no_completed_child": 32,
+        "terminal:Victory": 1
+      },
+      "FirstStructure": {
+        "nodes": 118,
+        "transitions": 118,
+        "attempts": 137,
+        "verificationAttempts": 20,
+        "milliseconds": 372.3019
+      },
+      "winningSteps": 22,
+      "structures": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "startup": 3,
+          "period": 2,
+          "periodCards": [
+            "FINESSE",
+            "FLASH_OF_STEEL"
+          ],
+          "laps": 9,
+          "completeLaps": 9,
+          "firstFourDeltas": [
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            }
+          ],
+          "stop": "terminal:Victory",
+          "tapeProbability": 1,
+          "nontrivialDraws": 0,
+          "observedPaymentRequirement": 0,
+          "entryEnergy": {
+            "Minimum": 0,
+            "TestedThrough": 0,
+            "Stop": "qualified_under_same_state_and_event_tape"
+          }
+        }
+      ]
+    },
+    "active": {
+      "Nodes": 2441,
+      "SearchAttempts": 2918,
+      "SearchTransitions": 2509,
+      "ReplayAttempts": 20,
+      "AnalysisAttempts": 0,
+      "OutsideAuditAttempts": 46,
+      "MaxActionDepth": 23,
+      "MaxEventDepth": 3,
+      "SearchAndAnalysisMs": 133.7044,
+      "AnalysisMs": 18.203300000000226,
+      "ReplayMs": 1.6568,
+      "AuditMs": 1.3828,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "verified_terminal_subtree_deferred": 1,
+        "no_completed_child": 787,
+        "terminal:Victory": 69
+      },
+      "FirstStructure": {
+        "nodes": 6,
+        "transitions": 15,
+        "attempts": 19,
+        "verificationAttempts": 20,
+        "milliseconds": 5.2923
+      },
+      "winningSteps": 21,
+      "structures": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "startup": 3,
+          "period": 2,
+          "periodCards": [
+            "FINESSE",
+            "FLASH_OF_STEEL"
+          ],
+          "laps": 9,
+          "completeLaps": 9,
+          "firstFourDeltas": [
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            }
+          ],
+          "stop": "terminal:Victory",
+          "tapeProbability": 1,
+          "nontrivialDraws": 0,
+          "observedPaymentRequirement": 0,
+          "entryEnergy": {
+            "Minimum": 0,
+            "TestedThrough": 0,
+            "Stop": "qualified_under_same_state_and_event_tape"
+          }
+        }
+      ]
+    }
+  },
+  "startup_unknown": {
+    "rootKey": "57EE5F286D5096F8CA4AAEA3ACF7B1D0AFCA0E9816021E39A5D558125AFD0F5B",
+    "coldMs": 4228.3277,
+    "comparisonMs": 487.479,
+    "battle": {
+      "Nodes": 477,
+      "SearchAttempts": 567,
+      "SearchTransitions": 477,
+      "ReplayAttempts": 20,
+      "AnalysisAttempts": 23,
+      "OutsideAuditAttempts": 47,
+      "MaxActionDepth": 19,
+      "MaxEventDepth": 5,
+      "SearchAndAnalysisMs": 341.8454,
+      "AnalysisMs": 60.660500000000006,
+      "ReplayMs": 48.5254,
+      "AuditMs": 1.7402,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "no_completed_child": 258,
+        "terminal:Victory": 1
+      },
+      "FirstStructure": {
+        "nodes": 477,
+        "transitions": 477,
+        "attempts": 567,
+        "verificationAttempts": 20,
+        "milliseconds": 389.4614
+      },
+      "winningSteps": 19,
+      "structures": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "startup": 3,
+          "period": 2,
+          "periodCards": [
+            "FINESSE",
+            "FLASH_OF_STEEL"
+          ],
+          "laps": 9,
+          "completeLaps": 9,
+          "firstFourDeltas": [
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            }
+          ],
+          "stop": "terminal:Victory",
+          "tapeProbability": 1,
+          "nontrivialDraws": 0,
+          "observedPaymentRequirement": 0,
+          "entryEnergy": {
+            "Minimum": 0,
+            "TestedThrough": 0,
+            "Stop": "qualified_under_same_state_and_event_tape"
+          }
+        }
+      ]
+    },
+    "active": {
+      "Nodes": 2500,
+      "SearchAttempts": 3134,
+      "SearchTransitions": 2666,
+      "ReplayAttempts": 20,
+      "AnalysisAttempts": 0,
+      "OutsideAuditAttempts": 48,
+      "MaxActionDepth": 22,
+      "MaxEventDepth": 5,
+      "SearchAndAnalysisMs": 91.3691,
+      "AnalysisMs": 4.641799999999991,
+      "ReplayMs": 0.8483,
+      "AuditMs": 1.6907,
+      "Stop": "node_budget",
+      "Boundaries": {
+        "verified_terminal_subtree_deferred": 1,
+        "no_completed_child": 1296,
+        "terminal:Victory": 125
+      },
+      "FirstStructure": {
+        "nodes": 6,
+        "transitions": 36,
+        "attempts": 53,
+        "verificationAttempts": 20,
+        "milliseconds": 3.358
+      },
+      "winningSteps": 21,
+      "structures": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "startup": 3,
+          "period": 2,
+          "periodCards": [
+            "FINESSE",
+            "FLASH_OF_STEEL"
+          ],
+          "laps": 9,
+          "completeLaps": 9,
+          "firstFourDeltas": [
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            }
+          ],
+          "stop": "terminal:Victory",
+          "tapeProbability": 1,
+          "nontrivialDraws": 0,
+          "observedPaymentRequirement": 0,
+          "entryEnergy": {
+            "Minimum": 0,
+            "TestedThrough": 0,
+            "Stop": "qualified_under_same_state_and_event_tape"
+          }
+        }
+      ]
+    }
+  },
+  "headbutt_setup": {
+    "rootKey": "8165DD735F956D40881EFF6DB2239DCC8AB1610F1C57FF3C913877F45FB7D940",
+    "coldMs": 4207.1196,
+    "comparisonMs": 267.2374,
+    "battle": {
+      "Nodes": 88,
+      "SearchAttempts": 107,
+      "SearchTransitions": 88,
+      "ReplayAttempts": 20,
+      "AnalysisAttempts": 15,
+      "OutsideAuditAttempts": 33,
+      "MaxActionDepth": 14,
+      "MaxEventDepth": 1,
+      "SearchAndAnalysisMs": 218.13150000000002,
+      "AnalysisMs": 29.5875,
+      "ReplayMs": 36.386,
+      "AuditMs": 2.6369,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "no_completed_child": 28,
+        "terminal:Victory": 1
+      },
+      "FirstStructure": {
+        "nodes": 88,
+        "transitions": 88,
+        "attempts": 107,
+        "verificationAttempts": 20,
+        "milliseconds": 252.02
+      },
+      "winningSteps": 14,
+      "structures": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "startup": 0,
+          "period": 2,
+          "periodCards": [
+            "FINESSE",
+            "FLASH_OF_STEEL"
+          ],
+          "laps": 9,
+          "completeLaps": 9,
+          "firstFourDeltas": [
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            }
+          ],
+          "stop": "terminal:Victory",
+          "tapeProbability": 1,
+          "nontrivialDraws": 0,
+          "observedPaymentRequirement": 0,
+          "entryEnergy": {
+            "Minimum": 0,
+            "TestedThrough": 0,
+            "Stop": "qualified_under_same_state_and_event_tape"
+          }
+        }
+      ]
+    },
+    "active": {
+      "Nodes": 19,
+      "SearchAttempts": 22,
+      "SearchTransitions": 18,
+      "ReplayAttempts": 20,
+      "AnalysisAttempts": 0,
+      "OutsideAuditAttempts": 36,
+      "MaxActionDepth": 6,
+      "MaxEventDepth": 1,
+      "SearchAndAnalysisMs": 5.6625000000000005,
+      "AnalysisMs": 0.2565000000000001,
+      "ReplayMs": 0.9936,
+      "AuditMs": 1.185,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "verified_terminal_subtree_deferred": 1,
+        "no_completed_child": 6
+      },
+      "FirstStructure": {
+        "nodes": 3,
+        "transitions": 4,
+        "attempts": 4,
+        "verificationAttempts": 20,
+        "milliseconds": 5.9538
+      },
+      "winningSteps": 18,
+      "structures": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "startup": 0,
+          "period": 2,
+          "periodCards": [
+            "FINESSE",
+            "FLASH_OF_STEEL"
+          ],
+          "laps": 9,
+          "completeLaps": 9,
+          "firstFourDeltas": [
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            }
+          ],
+          "stop": "terminal:Victory",
+          "tapeProbability": 1,
+          "nontrivialDraws": 0,
+          "observedPaymentRequirement": 0,
+          "entryEnergy": {
+            "Minimum": 0,
+            "TestedThrough": 0,
+            "Stop": "qualified_under_same_state_and_event_tape"
+          }
+        }
+      ]
+    }
+  },
+  "quick_kill": {
+    "rootKey": "9D39EC0A3565FFF90A7909E5D8330689C0F55A04A8B2B3FCEB8BFE42D4888E22",
+    "coldMs": 3595.1421,
+    "comparisonMs": 261.8249,
+    "battle": {
+      "Nodes": 2,
+      "SearchAttempts": 2,
+      "SearchTransitions": 2,
+      "ReplayAttempts": 0,
+      "AnalysisAttempts": 2,
+      "OutsideAuditAttempts": 2,
+      "MaxActionDepth": 2,
+      "MaxEventDepth": 0,
+      "SearchAndAnalysisMs": 65.9807,
+      "AnalysisMs": 5.1773,
+      "ReplayMs": 0,
+      "AuditMs": 0.1862,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "terminal:Victory": 1
+      },
+      "FirstStructure": null,
+      "winningSteps": 2,
+      "structures": []
+    },
+    "active": {
+      "Nodes": 17,
+      "SearchAttempts": 42,
+      "SearchTransitions": 38,
+      "ReplayAttempts": 7,
+      "AnalysisAttempts": 0,
+      "OutsideAuditAttempts": 10,
+      "MaxActionDepth": 4,
+      "MaxEventDepth": 1,
+      "SearchAndAnalysisMs": 135.1257,
+      "AnalysisMs": 7.362199999999996,
+      "ReplayMs": 59.27,
+      "AuditMs": 0.4417,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "verified_terminal_subtree_deferred": 1,
+        "terminal:Victory": 22
+      },
+      "FirstStructure": {
+        "nodes": 3,
+        "transitions": 6,
+        "attempts": 6,
+        "verificationAttempts": 7,
+        "milliseconds": 186.1512
+      },
+      "winningSteps": 5,
+      "structures": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "startup": 0,
+          "period": 2,
+          "periodCards": [
+            "FLASH_OF_STEEL",
+            "FINESSE"
+          ],
+          "laps": 3,
+          "completeLaps": 2,
+          "firstFourDeltas": [
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 0,
+              "EnemyDurabilityRemoved": 2,
+              "PlayerPowerAmount": 0,
+              "Drawn": 0,
+              "Shuffles": 0,
+              "Exhausted": 0
+            }
+          ],
+          "stop": "terminal:Victory",
+          "tapeProbability": 1,
+          "nontrivialDraws": 0,
+          "observedPaymentRequirement": 0,
+          "entryEnergy": {
+            "Minimum": 0,
+            "TestedThrough": 0,
+            "Stop": "qualified_under_same_state_and_event_tape"
+          }
+        }
+      ]
+    }
+  },
+  "energy_limited": {
+    "rootKey": "65DCBD6ABDBD1E6447D1C95C5CA36E87846BAE1C4903AC2010C1CF01524AF338",
+    "coldMs": 3659.1309,
+    "comparisonMs": 156.3783,
+    "battle": {
+      "Nodes": 9,
+      "SearchAttempts": 8,
+      "SearchTransitions": 8,
+      "ReplayAttempts": 0,
+      "AnalysisAttempts": 0,
+      "OutsideAuditAttempts": 0,
+      "MaxActionDepth": 8,
+      "MaxEventDepth": 0,
+      "SearchAndAnalysisMs": 52.1118,
+      "AnalysisMs": 0,
+      "ReplayMs": 0,
+      "AuditMs": 0.0007,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "no_completed_child": 1
+      },
+      "FirstStructure": null,
+      "winningSteps": 0,
+      "structures": []
+    },
+    "active": {
+      "Nodes": 9,
+      "SearchAttempts": 8,
+      "SearchTransitions": 8,
+      "ReplayAttempts": 10,
+      "AnalysisAttempts": 0,
+      "OutsideAuditAttempts": 8,
+      "MaxActionDepth": 8,
+      "MaxEventDepth": 0,
+      "SearchAndAnalysisMs": 16.995999999999995,
+      "AnalysisMs": 13.847399999999991,
+      "ReplayMs": 83.8721,
+      "AuditMs": 1.8499,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "no_completed_child": 1
+      },
+      "FirstStructure": {
+        "nodes": 3,
+        "transitions": 2,
+        "attempts": 2,
+        "verificationAttempts": 10,
+        "milliseconds": 100.328
+      },
+      "winningSteps": 0,
+      "structures": [
+        {
+          "grade": "finite_repetitions",
+          "kind": "finite_resource",
+          "startup": 0,
+          "period": 2,
+          "periodCards": [
+            "POMMEL_STRIKE",
+            "FINESSE"
+          ],
+          "laps": 4,
+          "completeLaps": 4,
+          "firstFourDeltas": [
+            {
+              "Energy": -1,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 9,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": -1,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 9,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": -1,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 9,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": -1,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 9,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            }
+          ],
+          "stop": "insufficient_energy",
+          "tapeProbability": 1,
+          "nontrivialDraws": 0,
+          "observedPaymentRequirement": 1,
+          "entryEnergy": {
+            "Minimum": 1,
+            "TestedThrough": 1,
+            "Stop": "qualified_under_same_state_and_event_tape"
+          }
+        }
+      ]
+    }
+  },
+  "conditioned": {
+    "rootKey": "D817A72EEEC32AF277F84F5CDD0EA412110377E3058FF6827D74C571A0B6C9C4",
+    "coldMs": 4233.8509,
+    "comparisonMs": 341.0751,
+    "battle": {
+      "Nodes": 19,
+      "SearchAttempts": 28,
+      "SearchTransitions": 19,
+      "ReplayAttempts": 33,
+      "AnalysisAttempts": 28,
+      "OutsideAuditAttempts": 56,
+      "MaxActionDepth": 19,
+      "MaxEventDepth": 9,
+      "SearchAndAnalysisMs": 236.1899,
+      "AnalysisMs": 44.87610000000001,
+      "ReplayMs": 59.946,
+      "AuditMs": 2.7699,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "terminal:Victory": 1
+      },
+      "FirstStructure": {
+        "nodes": 19,
+        "transitions": 19,
+        "attempts": 28,
+        "verificationAttempts": 33,
+        "milliseconds": 294.3837
+      },
+      "winningSteps": 19,
+      "structures": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "startup": 3,
+          "period": 4,
+          "periodCards": [
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "FLASH_OF_STEEL",
+            "POMMEL_STRIKE"
+          ],
+          "laps": 4,
+          "completeLaps": 4,
+          "firstFourDeltas": [
+            {
+              "Energy": -1,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 19,
+              "PlayerPowerAmount": 0,
+              "Drawn": 4,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": -1,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 19,
+              "PlayerPowerAmount": 0,
+              "Drawn": 4,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": -1,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 19,
+              "PlayerPowerAmount": 0,
+              "Drawn": 4,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": -1,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 19,
+              "PlayerPowerAmount": 0,
+              "Drawn": 3,
+              "Shuffles": 1,
+              "Exhausted": 0
+            }
+          ],
+          "stop": "terminal:Victory",
+          "tapeProbability": 0.0078125,
+          "nontrivialDraws": 7,
+          "observedPaymentRequirement": 1,
+          "entryEnergy": {
+            "Minimum": 1,
+            "TestedThrough": 1,
+            "Stop": "qualified_under_same_state_and_event_tape"
+          }
+        }
+      ]
+    },
+    "active": {
+      "Nodes": 48,
+      "SearchAttempts": 63,
+      "SearchTransitions": 48,
+      "ReplayAttempts": 241,
+      "AnalysisAttempts": 0,
+      "OutsideAuditAttempts": 201,
+      "MaxActionDepth": 20,
+      "MaxEventDepth": 10,
+      "SearchAndAnalysisMs": 16.857,
+      "AnalysisMs": 0.9719000000000017,
+      "ReplayMs": 15.240499999999999,
+      "AuditMs": 8.5444,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "verified_terminal_subtree_deferred": 2,
+        "terminal:Victory": 1,
+        "no_completed_child": 7,
+        "candidate_budget": 6
+      },
+      "FirstStructure": {
+        "nodes": 8,
+        "transitions": 11,
+        "attempts": 15,
+        "verificationAttempts": 33,
+        "milliseconds": 5.7967
+      },
+      "winningSteps": 19,
+      "structures": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "startup": 3,
+          "period": 4,
+          "periodCards": [
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "FLASH_OF_STEEL",
+            "POMMEL_STRIKE"
+          ],
+          "laps": 4,
+          "completeLaps": 4,
+          "firstFourDeltas": [
+            {
+              "Energy": -1,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 19,
+              "PlayerPowerAmount": 0,
+              "Drawn": 4,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": -1,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 19,
+              "PlayerPowerAmount": 0,
+              "Drawn": 4,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": -1,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 19,
+              "PlayerPowerAmount": 0,
+              "Drawn": 4,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": -1,
+              "Hp": 0,
+              "Block": 4,
+              "EnemyDurabilityRemoved": 19,
+              "PlayerPowerAmount": 0,
+              "Drawn": 3,
+              "Shuffles": 1,
+              "Exhausted": 0
+            }
+          ],
+          "stop": "terminal:Victory",
+          "tapeProbability": 0.0078125,
+          "nontrivialDraws": 7,
+          "observedPaymentRequirement": 1,
+          "entryEnergy": {
+            "Minimum": 1,
+            "TestedThrough": 1,
+            "Stop": "qualified_under_same_state_and_event_tape"
+          }
+        },
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "startup": 1,
+          "period": 8,
+          "periodCards": [
+            "FINESSE",
+            "POMMEL_STRIKE",
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "FLASH_OF_STEEL",
+            "POMMEL_STRIKE",
+            "FINESSE",
+            "FLASH_OF_STEEL"
+          ],
+          "laps": 3,
+          "completeLaps": 2,
+          "firstFourDeltas": [
+            {
+              "Energy": -2,
+              "Hp": 0,
+              "Block": 12,
+              "EnemyDurabilityRemoved": 33,
+              "PlayerPowerAmount": 0,
+              "Drawn": 8,
+              "Shuffles": 4,
+              "Exhausted": 0
+            },
+            {
+              "Energy": -2,
+              "Hp": 0,
+              "Block": 12,
+              "EnemyDurabilityRemoved": 33,
+              "PlayerPowerAmount": 0,
+              "Drawn": 8,
+              "Shuffles": 4,
+              "Exhausted": 0
+            },
+            {
+              "Energy": -1,
+              "Hp": 0,
+              "Block": 8,
+              "EnemyDurabilityRemoved": 19,
+              "PlayerPowerAmount": 0,
+              "Drawn": 4,
+              "Shuffles": 2,
+              "Exhausted": 0
+            }
+          ],
+          "stop": "terminal:Victory",
+          "tapeProbability": 0.0009765625,
+          "nontrivialDraws": 10,
+          "observedPaymentRequirement": 2,
+          "entryEnergy": {
+            "Minimum": 2,
+            "TestedThrough": 2,
+            "Stop": "qualified_under_same_state_and_event_tape"
+          }
+        },
+        {
+          "grade": "finite_repetitions",
+          "kind": "finite_resource",
+          "startup": 5,
+          "period": 6,
+          "periodCards": [
+            "FLASH_OF_STEEL",
+            "POMMEL_STRIKE",
+            "FINESSE",
+            "FLASH_OF_STEEL",
+            "POMMEL_STRIKE",
+            "FINESSE"
+          ],
+          "laps": 3,
+          "completeLaps": 2,
+          "firstFourDeltas": [
+            {
+              "Energy": -2,
+              "Hp": 0,
+              "Block": 8,
+              "EnemyDurabilityRemoved": 28,
+              "PlayerPowerAmount": 0,
+              "Drawn": 6,
+              "Shuffles": 3,
+              "Exhausted": 0
+            },
+            {
+              "Energy": -2,
+              "Hp": 0,
+              "Block": 8,
+              "EnemyDurabilityRemoved": 28,
+              "PlayerPowerAmount": 0,
+              "Drawn": 6,
+              "Shuffles": 3,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 0,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 1,
+              "Shuffles": 0,
+              "Exhausted": 0
+            }
+          ],
+          "stop": "insufficient_energy",
+          "tapeProbability": 0.015625,
+          "nontrivialDraws": 6,
+          "observedPaymentRequirement": 2,
+          "entryEnergy": {
+            "Minimum": 2,
+            "TestedThrough": 2,
+            "Stop": "qualified_under_same_state_and_event_tape"
+          }
+        },
+        {
+          "grade": "candidate",
+          "kind": "finite_resource",
+          "startup": 3,
+          "period": 10,
+          "periodCards": [
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "FLASH_OF_STEEL",
+            "POMMEL_STRIKE",
+            "FINESSE",
+            "FLASH_OF_STEEL",
+            "POMMEL_STRIKE",
+            "FINESSE",
+            "FLASH_OF_STEEL",
+            "POMMEL_STRIKE"
+          ],
+          "laps": 2,
+          "completeLaps": 1,
+          "firstFourDeltas": [
+            {
+              "Energy": -3,
+              "Hp": 0,
+              "Block": 12,
+              "EnemyDurabilityRemoved": 47,
+              "PlayerPowerAmount": 0,
+              "Drawn": 10,
+              "Shuffles": 5,
+              "Exhausted": 0
+            },
+            {
+              "Energy": -1,
+              "Hp": 0,
+              "Block": 8,
+              "EnemyDurabilityRemoved": 24,
+              "PlayerPowerAmount": 0,
+              "Drawn": 6,
+              "Shuffles": 3,
+              "Exhausted": 0
+            }
+          ],
+          "stop": "insufficient_energy",
+          "tapeProbability": 0.00390625,
+          "nontrivialDraws": 8,
+          "observedPaymentRequirement": 3,
+          "entryEnergy": {
+            "Minimum": 3,
+            "TestedThrough": 3,
+            "Stop": "qualified_under_same_state_and_event_tape"
+          }
+        },
+        {
+          "grade": "candidate",
+          "kind": "finite_resource",
+          "startup": 9,
+          "period": 8,
+          "periodCards": [
+            "POMMEL_STRIKE",
+            "FINESSE",
+            "FLASH_OF_STEEL",
+            "POMMEL_STRIKE",
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "POMMEL_STRIKE",
+            "FLASH_OF_STEEL"
+          ],
+          "laps": 1,
+          "completeLaps": 1,
+          "firstFourDeltas": [
+            {
+              "Energy": -3,
+              "Hp": 0,
+              "Block": 8,
+              "EnemyDurabilityRemoved": 42,
+              "PlayerPowerAmount": 0,
+              "Drawn": 8,
+              "Shuffles": 4,
+              "Exhausted": 0
+            }
+          ],
+          "stop": "insufficient_energy",
+          "tapeProbability": 0.0625,
+          "nontrivialDraws": 4,
+          "observedPaymentRequirement": 3,
+          "entryEnergy": {
+            "Minimum": 3,
+            "TestedThrough": 3,
+            "Stop": "qualified_under_same_state_and_event_tape"
+          }
+        },
+        {
+          "grade": "candidate",
+          "kind": "finite_resource",
+          "startup": 13,
+          "period": 4,
+          "periodCards": [
+            "FINESSE",
+            "FLASH_OF_STEEL",
+            "FINESSE",
+            "POMMEL_STRIKE"
+          ],
+          "laps": 2,
+          "completeLaps": 1,
+          "firstFourDeltas": [
+            {
+              "Energy": -1,
+              "Hp": 0,
+              "Block": 8,
+              "EnemyDurabilityRemoved": 14,
+              "PlayerPowerAmount": 0,
+              "Drawn": 4,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 8,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 3,
+              "Shuffles": 1,
+              "Exhausted": 0
+            }
+          ],
+          "stop": "insufficient_energy",
+          "tapeProbability": 0.125,
+          "nontrivialDraws": 3,
+          "observedPaymentRequirement": 1,
+          "entryEnergy": {
+            "Minimum": 1,
+            "TestedThrough": 1,
+            "Stop": "qualified_under_same_state_and_event_tape"
+          }
+        }
+      ]
+    }
+  },
+  "letter_opener": {
+    "rootKey": "328EAEEB27D6EF427CBF24D92F30AD2E9C2ADA95AF5A751E026041EF3EC66E7D",
+    "coldMs": 4507.6257,
+    "comparisonMs": 256.1687,
+    "battle": {
+      "Nodes": 24,
+      "SearchAttempts": 24,
+      "SearchTransitions": 24,
+      "ReplayAttempts": 26,
+      "AnalysisAttempts": 24,
+      "OutsideAuditAttempts": 48,
+      "MaxActionDepth": 24,
+      "MaxEventDepth": 0,
+      "SearchAndAnalysisMs": 181.42739999999998,
+      "AnalysisMs": 45.0727,
+      "ReplayMs": 65.9113,
+      "AuditMs": 2.0838,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "terminal:Victory": 1
+      },
+      "FirstStructure": {
+        "nodes": 24,
+        "transitions": 24,
+        "attempts": 24,
+        "verificationAttempts": 26,
+        "milliseconds": 245.5516
+      },
+      "winningSteps": 24,
+      "structures": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "startup": 0,
+          "period": 2,
+          "periodCards": [
+            "FINESSE",
+            "FINESSE"
+          ],
+          "laps": 12,
+          "completeLaps": 12,
+          "firstFourDeltas": [
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 8,
+              "EnemyDurabilityRemoved": 0,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 8,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 8,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 8,
+              "EnemyDurabilityRemoved": 0,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            }
+          ],
+          "stop": "terminal:Victory",
+          "tapeProbability": 1,
+          "nontrivialDraws": 0,
+          "observedPaymentRequirement": 0,
+          "entryEnergy": {
+            "Minimum": 0,
+            "TestedThrough": 0,
+            "Stop": "qualified_under_same_state_and_event_tape"
+          }
+        }
+      ]
+    },
+    "active": {
+      "Nodes": 3,
+      "SearchAttempts": 2,
+      "SearchTransitions": 2,
+      "ReplayAttempts": 26,
+      "AnalysisAttempts": 0,
+      "OutsideAuditAttempts": 48,
+      "MaxActionDepth": 2,
+      "MaxEventDepth": 0,
+      "SearchAndAnalysisMs": 0.8512,
+      "AnalysisMs": 0.2195,
+      "ReplayMs": 0.8245,
+      "AuditMs": 3.9921,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "verified_terminal_subtree_deferred": 1
+      },
+      "FirstStructure": {
+        "nodes": 3,
+        "transitions": 2,
+        "attempts": 2,
+        "verificationAttempts": 26,
+        "milliseconds": 1.4787
+      },
+      "winningSteps": 24,
+      "structures": [
+        {
+          "grade": "repeated_to_terminal",
+          "kind": "productive",
+          "startup": 0,
+          "period": 2,
+          "periodCards": [
+            "FINESSE",
+            "FINESSE"
+          ],
+          "laps": 12,
+          "completeLaps": 12,
+          "firstFourDeltas": [
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 8,
+              "EnemyDurabilityRemoved": 0,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 8,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 8,
+              "EnemyDurabilityRemoved": 5,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 8,
+              "EnemyDurabilityRemoved": 0,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            }
+          ],
+          "stop": "terminal:Victory",
+          "tapeProbability": 1,
+          "nontrivialDraws": 0,
+          "observedPaymentRequirement": 0,
+          "entryEnergy": {
+            "Minimum": 0,
+            "TestedThrough": 0,
+            "Stop": "qualified_under_same_state_and_event_tape"
+          }
+        }
+      ]
+    }
+  },
+  "block_only": {
+    "rootKey": "2313E62A47194CE1BCF2DE3771590516715DAC06FE13BF68B30F75148629265A",
+    "coldMs": 4698.3482,
+    "comparisonMs": 237.944,
+    "battle": {
+      "Nodes": 16,
+      "SearchAttempts": 16,
+      "SearchTransitions": 16,
+      "ReplayAttempts": 0,
+      "AnalysisAttempts": 0,
+      "OutsideAuditAttempts": 0,
+      "MaxActionDepth": 16,
+      "MaxEventDepth": 0,
+      "SearchAndAnalysisMs": 92.063,
+      "AnalysisMs": 0,
+      "ReplayMs": 0,
+      "AuditMs": 0.0016,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "action_horizon": 1
+      },
+      "FirstStructure": null,
+      "winningSteps": 0,
+      "structures": []
+    },
+    "active": {
+      "Nodes": 16,
+      "SearchAttempts": 16,
+      "SearchTransitions": 16,
+      "ReplayAttempts": 10,
+      "AnalysisAttempts": 0,
+      "OutsideAuditAttempts": 8,
+      "MaxActionDepth": 16,
+      "MaxEventDepth": 0,
+      "SearchAndAnalysisMs": 19.06909999999999,
+      "AnalysisMs": 11.765100000000006,
+      "ReplayMs": 123.1121,
+      "AuditMs": 1.9906,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "action_horizon": 1
+      },
+      "FirstStructure": null,
+      "winningSteps": 0,
+      "structures": [
+        {
+          "grade": "finite_repetitions",
+          "kind": "block_only",
+          "startup": 0,
+          "period": 2,
+          "periodCards": [
+            "FINESSE",
+            "FINESSE"
+          ],
+          "laps": 4,
+          "completeLaps": 4,
+          "firstFourDeltas": [
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 8,
+              "EnemyDurabilityRemoved": 0,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 8,
+              "EnemyDurabilityRemoved": 0,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 8,
+              "EnemyDurabilityRemoved": 0,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            },
+            {
+              "Energy": 0,
+              "Hp": 0,
+              "Block": 8,
+              "EnemyDurabilityRemoved": 0,
+              "PlayerPowerAmount": 0,
+              "Drawn": 2,
+              "Shuffles": 2,
+              "Exhausted": 0
+            }
+          ],
+          "stop": "no_offensive_or_resource_progress_in_four_laps",
+          "tapeProbability": 1,
+          "nontrivialDraws": 0,
+          "observedPaymentRequirement": 0,
+          "entryEnergy": {
+            "Minimum": 0,
+            "TestedThrough": 0,
+            "Stop": "qualified_under_same_state_and_event_tape"
+          }
+        }
+      ]
+    }
+  },
+  "no_draw": {
+    "rootKey": "765C896B1C40B25110556126EB6208493103E21A7F984988C449CA21019B6B8C",
+    "coldMs": 4284.3153,
+    "comparisonMs": 108.3232,
+    "battle": {
+      "Nodes": 2,
+      "SearchAttempts": 1,
+      "SearchTransitions": 1,
+      "ReplayAttempts": 0,
+      "AnalysisAttempts": 0,
+      "OutsideAuditAttempts": 0,
+      "MaxActionDepth": 1,
+      "MaxEventDepth": 0,
+      "SearchAndAnalysisMs": 106.1232,
+      "AnalysisMs": 0,
+      "ReplayMs": 0,
+      "AuditMs": 0.0007,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "no_completed_child": 1
+      },
+      "FirstStructure": null,
+      "winningSteps": 0,
+      "structures": []
+    },
+    "active": {
+      "Nodes": 2,
+      "SearchAttempts": 1,
+      "SearchTransitions": 1,
+      "ReplayAttempts": 0,
+      "AnalysisAttempts": 0,
+      "OutsideAuditAttempts": 0,
+      "MaxActionDepth": 1,
+      "MaxEventDepth": 0,
+      "SearchAndAnalysisMs": 1.1706,
+      "AnalysisMs": 0.5989,
+      "ReplayMs": 0,
+      "AuditMs": 0.0005,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "no_completed_child": 1
+      },
+      "FirstStructure": null,
+      "winningSteps": 0,
+      "structures": []
+    }
+  },
+  "ordinary": {
+    "rootKey": "9E51469538154CC1CA2F75B9F842BD5E6F18FE13D563C15778ECB1BBCF84E176",
+    "coldMs": 4114.2356,
+    "comparisonMs": 68.407,
+    "battle": {
+      "Nodes": 16,
+      "SearchAttempts": 15,
+      "SearchTransitions": 15,
+      "ReplayAttempts": 0,
+      "AnalysisAttempts": 0,
+      "OutsideAuditAttempts": 0,
+      "MaxActionDepth": 3,
+      "MaxEventDepth": 0,
+      "SearchAndAnalysisMs": 64.7948,
+      "AnalysisMs": 0,
+      "ReplayMs": 0,
+      "AuditMs": 0.0007,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "no_completed_child": 6
+      },
+      "FirstStructure": null,
+      "winningSteps": 0,
+      "structures": []
+    },
+    "active": {
+      "Nodes": 16,
+      "SearchAttempts": 15,
+      "SearchTransitions": 15,
+      "ReplayAttempts": 0,
+      "AnalysisAttempts": 0,
+      "OutsideAuditAttempts": 0,
+      "MaxActionDepth": 3,
+      "MaxEventDepth": 0,
+      "SearchAndAnalysisMs": 2.7398,
+      "AnalysisMs": 0.6641999999999996,
+      "ReplayMs": 0,
+      "AuditMs": 0.0008,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "no_completed_child": 6
+      },
+      "FirstStructure": null,
+      "winningSteps": 0,
+      "structures": []
+    }
+  },
+  "unsupported": {
+    "rootKey": "CBE85CA000130756A92AC5A387C1231AEE7D5519DE74D18D4FDA9A51B52CCD12",
+    "coldMs": 3973.4375,
+    "comparisonMs": 22.9454,
+    "battle": {
+      "Nodes": 1,
+      "SearchAttempts": 1,
+      "SearchTransitions": 0,
+      "ReplayAttempts": 0,
+      "AnalysisAttempts": 0,
+      "OutsideAuditAttempts": 0,
+      "MaxActionDepth": 0,
+      "MaxEventDepth": 0,
+      "SearchAndAnalysisMs": 20.3218,
+      "AnalysisMs": 0,
+      "ReplayMs": 0,
+      "AuditMs": 0.0011,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "unsupported:HAVOC:autoplay_from_draw": 1,
+        "no_completed_child": 1
+      },
+      "FirstStructure": null,
+      "winningSteps": 0,
+      "structures": []
+    },
+    "active": {
+      "Nodes": 1,
+      "SearchAttempts": 1,
+      "SearchTransitions": 0,
+      "ReplayAttempts": 0,
+      "AnalysisAttempts": 0,
+      "OutsideAuditAttempts": 0,
+      "MaxActionDepth": 0,
+      "MaxEventDepth": 0,
+      "SearchAndAnalysisMs": 1.6618,
+      "AnalysisMs": 0.8552,
+      "ReplayMs": 0,
+      "AuditMs": 0.0006,
+      "Stop": "admitted_frontier_finished",
+      "Boundaries": {
+        "unsupported:HAVOC:autoplay_from_draw": 1,
+        "no_completed_child": 1
+      },
+      "FirstStructure": null,
+      "winningSteps": 0,
+      "structures": []
+    }
+  }
+}

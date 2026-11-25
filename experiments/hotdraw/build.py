@@ -86,7 +86,7 @@ def instrument(tree):
     return harness
 
 
-def build(output, archive, steam):
+def build(output, archive, steam, *, extension=None):
     if checksum(archive) != ARCHIVE_SHA:
         raise ValueError("Upstream archive differs from HK1A")
     game = steam / "steamapps/common/Slay the Spire 2/data_sts2_windows_x86_64/sts2.dll"
@@ -97,6 +97,7 @@ def build(output, archive, steam):
         source.extractall(output)
     tree = output / f"CombatSolver-{PIN}"
     harness = instrument(tree)
+    extension_manifest = extension(tree, harness) if extension else {}
     env = os.environ | {"NUGET_PACKAGES": str(ROOT / "logs/nuget-packages"),
                         "DOTNET_CLI_HOME": str(output / "dotnet-home"),
                         "DOTNET_GENERATE_ASPNET_CERTIFICATE": "false"}
@@ -119,7 +120,7 @@ def build(output, archive, steam):
                 "runtime": str(runtime), "runtime_sha256": checksum(runtime),
                 "adapter": {p.name: checksum(p) for p in sorted(HERE.iterdir()) if p.suffix in {".cs", ".py"}},
                 "ritsu": {f"{d.name}/{p.name}": checksum(p) for d in references for p in sorted(d.glob("*.dll"))}}
-    (output / "build.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+    (output / "build.json").write_text(json.dumps(manifest | extension_manifest, indent=2) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":
