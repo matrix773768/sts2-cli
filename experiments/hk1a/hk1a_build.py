@@ -106,7 +106,7 @@ def freeze_build(output, tree):
             *(p for directory in ritsu for p in directory.glob("*.dll")),
             runtime / "dotnet.exe", *runtime.glob("host/fxr/9.0.7/*.dll"),
             *runtime.glob("shared/Microsoft.NETCore.App/9.0.7/*.dll")]
-    manifest = {"version": f"hk1a-{PIN}", "dll": str(dll), "tree": str(tree),
+    manifest = {"version": f"hk1a-final-locked-hp-v1-{PIN}", "dll": str(dll), "tree": str(tree),
                 "adapter": {str(p): checksum(p) for p in
                             (HERE / "Oracle.cs", HERE / "hk1a_build.py",
                              ROOT / "logs/m1-sv4a-host/host/Headless/SyntheticCombat.cs")},

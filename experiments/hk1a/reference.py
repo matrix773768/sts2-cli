@@ -11,6 +11,7 @@ import subprocess
 from time import perf_counter
 
 from hk1a_build import ROOT, checksum
+from budget_review import review
 
 old_spec = importlib.util.spec_from_file_location(
     "dc3a_legacy", ROOT / "experiments/m1-dc3a/reference.py")
@@ -21,7 +22,7 @@ TIERS = (100, 500, 2000, 10000)
 FIELDS = ("seed", "character", "ascension", "should_save", "replay_writer_enabled",
           "visited_map_nodes", "run_rng", "player_rng", "deck",
           "hand", "draw", "discard", "exhaust", "act", "act_variant", "act_boss")
-BUILD = ROOT / "logs/hk1a-build/build.json"
+BUILD = ROOT / "logs/hk1a-final-build/build.json"
 RUNTIME = ROOT / "logs/m0-v5/dotnet9/dotnet.exe"
 
 
@@ -53,12 +54,14 @@ def invoke(build, directory, mode, tier, spec, route=None):
 
 
 def solve_world(host, build, directory, world, tiers):
+    started = perf_counter()
     with old.opened(host, world) as (_, public, native, audit, init):
         root = old.digest([public, native, audit])
     row = dict(world=world, root=root, legacy_init_seconds=init, tiers=[],
                reference=None, solver=build["version"], information="offline_oracle_full_rng")
     old.write_json(directory / "legacy-private.json", {"public": public, "native": native, "audit": audit})
     for tier in tiers:
+        tier_started = perf_counter()
         result = {"budget_ms": tier}
         try:
             search = invoke(build, directory, "solve", tier, world["spec"])
@@ -84,8 +87,14 @@ def solve_world(host, build, directory, world, tiers):
                 else:
                     result["status"] = replay["status"]
                     result["replay_ms"] = replay["replayMs"]
+                    result["native_terminal"] = {key: replay[key] for key in ("initial", "locked", "callback", "post")}
+                    result["prediction_diagnostics"] = dict(terminal=replay["prediction"],
+                                                            turn_differences=len(replay["diagnostics"]))
                     if replay["status"] == "native_win":
-                        loss = world["spec"]["hp"] - replay["lockedHp"]
+                        if (replay["initial"]["Hp"], replay["initial"]["MaxHp"]) != (
+                                world["spec"]["hp"], world["spec"]["max_hp"]):
+                            raise ValueError("Incorrect native HP or maximum HP at matched root")
+                        loss = replay["initial"]["Hp"] - replay["lockedHp"]
                         if row["reference"] is None or loss < row["reference"]["net"]:
                             row["reference"] = dict(net=loss, budget_ms=tier, end_hp=replay["lockedHp"],
                                                     post_combat_hp=replay["hp"], max_hp=replay["maxHp"],
@@ -93,14 +102,17 @@ def solve_world(host, build, directory, world, tiers):
         except subprocess.TimeoutExpired:
             result["status"] = "timeout"
         except subprocess.CalledProcessError as error:
-            result.update(status="worker_error", exit_code=error.returncode)
-        row["tiers"].append(result | {"incumbent": row["reference"]})
+            mode = error.cmd[3]
+            result.update(status="replay_rejected" if mode == "replay" else "worker_error",
+                          exit_code=error.returncode, worker_log=f"{mode}-{tier}.log")
+        row["tiers"].append(result | {"incumbent": row["reference"],
+                                     "end_to_end_seconds": perf_counter() - tier_started})
     historical = ROOT / "logs/m1-dc3a-smoke-model" / f"{world['id']}.json"
     if historical.is_file() and any(r.get("mismatched_fields") == [] for r in row["tiers"]):
         model = old.read(historical)
         if model.get("attested_root") == root:
             row["historical_model"] = {key: model.get(key) for key in ("status", "terminal", "attested_root")}
-    return row
+    return row | {"world_end_to_end_seconds": perf_counter() - started}
 
 
 def run(args):
@@ -130,7 +142,8 @@ def run(args):
     out.mkdir(parents=True, exist_ok=True)
     db_path = out / "reference.sqlite"
     identity = old.digest([checksum(args.manifest), tiers, args.sample, checksum(args.build),
-                           checksum(Path(__file__)), checksum(old.BUILD / "build.json")])
+                           checksum(Path(__file__)), checksum(Path(__file__).with_name("budget_review.py")),
+                           checksum(old.BUILD / "build.json")])
     with closing(sqlite3.connect(db_path)) as db:
         db.executescript("CREATE TABLE IF NOT EXISTS contract(id TEXT PRIMARY KEY);"
                          "CREATE TABLE IF NOT EXISTS results(id TEXT PRIMARY KEY,payload TEXT NOT NULL);")
@@ -159,17 +172,15 @@ def run(args):
             if "INF1_PROGRESS" in os.environ:
                 old.progress(len(done), len(queue), db_path)
         rows = [json.loads(payload) for payload, in db.execute("SELECT payload FROM results")]
-    milestones = [{r["world"]["id"]: r["tiers"][i]["incumbent"]["net"] for r in rows
-                   if r["tiers"][i]["incumbent"]} for i in range(len(tiers))]
-    if kind == "dc3a-pilot" and not args.sample and milestones[-1]:
-        final = milestones[-1]
-        chosen = next(i for i, wins in enumerate(milestones) if wins.keys() == final.keys()
-                      and sum(wins.values()) - sum(final.values()) <= 2 * len(final))
+    budget = review(rows, tiers)
+    wins = budget["tiers"][-1]["verified_wins"]
+    chosen = budget["recommended_index"]
+    if kind == "dc3a-pilot" and not args.sample and chosen is not None:
         old.frozen(out / "budget.json", {"tiers": list(tiers[:chosen+1]), "build": checksum(args.build),
-                                         "pilot_manifest": checksum(args.manifest)})
-    old.write_json(out / "summary.json", {"worlds": len(rows), "wins": len(milestones[-1]),
+                                         "pilot_manifest": checksum(args.manifest), "advisory": True})
+    old.write_json(out / "summary.json", {"worlds": len(rows), "wins": wins, "budget_review": budget,
         "tiers": tiers, "statuses": dict(Counter(t["status"] for r in rows for t in r["tiers"]))})
-    return 0 if args.sample or milestones[-1] else 1
+    return 0 if args.sample or wins else 1
 
 
 if __name__ == "__main__":

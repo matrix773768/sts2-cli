@@ -1,4 +1,4 @@
-param([Parameter(Mandatory)][string]$Output, [int]$Repeats = 5)
+param([Parameter(Mandatory)][string]$Output, [int]$Repeats = 5, [string]$Build)
 $ErrorActionPreference = 'Stop'
 $repo = (Resolve-Path (Join-Path $PSScriptRoot '../..')).Path
 $queue = Join-Path $repo 'logs/inf1/queue.sqlite'
@@ -6,7 +6,8 @@ $active = python -c "import pathlib,sqlite3,sys; p=pathlib.Path(sys.argv[1]).res
 if ($LASTEXITCODE -ne 0 -or $active -ne '0') { throw 'INF1 has active runs or its queue is unreadable' }
 if (Test-Path -LiteralPath $Output) { throw 'Choose a fresh output directory' }
 $out = (New-Item -ItemType Directory -Path $Output).FullName
-$build = Get-Content (Join-Path $repo 'logs/hk1a-build/build.json') -Raw | ConvertFrom-Json
+if (!$Build) { $Build = Join-Path $repo 'logs/hk1a-final-build/build.json' }
+$build = Get-Content -LiteralPath $Build -Raw | ConvertFrom-Json
 $runtime = Join-Path $repo 'logs/m0-v5/dotnet9/dotnet.exe'
 $env:DOTNET_PROCESSOR_COUNT = '1'
 for ($index = 1; $index -le $Repeats; $index++) {
