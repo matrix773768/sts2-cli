@@ -15,7 +15,7 @@ from ..ledger import identity as ledger_identity
 from ..manager import ACTIVE, Manager
 from ..windows import cpu_times, process_identity, resources
 from ..recovery import approve, offer
-from ..timing import INCIDENT
+from ..timing import CONTINUATION_JOB, incident_status
 
 
 CONFIGS = ROOT / "configs/training_jobs"
@@ -113,13 +113,18 @@ class Backend:
                 spec = spec | {"output": (self.home / "jobs" / identifier(spec["id"])).relative_to(ROOT).as_posix()}
             items.append(self.plan(manager, spec))
         if self.home == HOME and self.templates == CONFIGS:
-            recovery = offer(manager)
-            if recovery:
-                spec, proof = recovery
-                item = self.plan(manager, spec)
-                item.update(purpose="按审计证据续接 G3；独立批准新预算后才能提交。",
-                            recovery={key: proof[key] for key in ("timing","g3","models","completed")})
-                items.append(item)
+            try:
+                recovery = offer(manager)
+                if recovery:
+                    spec, proof = recovery
+                    item = self.plan(manager, spec)
+                    item.update(purpose="按审计证据续接 G3；独立批准新预算后才能提交。",
+                                recovery={key: proof[key] for key in ("timing","g3","models","completed")})
+                    items.append(item)
+            except (OSError, ValueError, KeyError, TypeError) as error:
+                spec = dict(id=CONTINUATION_JOB, output=f"logs/inf1/jobs/{CONTINUATION_JOB}", stages=[], inputs=[])
+                items.append(dict(spec=spec, name="DC2B 夜间任务 G3 续接", purpose="原任务的审计校验未通过。",
+                                  reasons=[str(error)], missing=[], asset_count=0))
         return items
 
     def plan(self, manager, spec):
@@ -158,14 +163,15 @@ class Backend:
                 except ValueError:
                     progress["checkpoint"] = None
             timing = manager.timing(row, spec, output)
-            if progress and timing.get("audited"):
-                committed = read(INCIDENT)["g3"]["identity"]["count"]
+            proof, blocker = incident_status(row, output, spec)
+            if progress and proof:
+                committed = proof["g3"]["identity"]["count"]
                 progress |= {"done":committed, "attempts":committed, "complete":committed, "throughput":None}
             task = {field: row[field] for field in ("id", "state", "intent", "reason", "retries", "errors")}
             task.update(name=NAMES.get(row["id"], (spec["name"], ""))[0], output=output.relative_to(ROOT).as_posix(),
                         stage=stage["id"] if stage else None, stage_index=row["stage"], stage_total=len(spec["stages"]),
                         boundary=stage["boundary"] if stage else None, progress=progress,
-                        seconds=timing["confirmed_seconds"], timing=timing,
+                        seconds=timing["confirmed_seconds"], timing=timing, audit_blocker=blocker,
                         paused_seconds=row["paused_seconds"] + (max(0,time()-row["paused_at"]) if row["paused_at"] else 0),
                         budget=spec.get("budget_seconds"), retryable=bool(
                             row["state"] in ("failed", "interrupted") and row["retries"] < spec["max_retries"]
@@ -261,7 +267,8 @@ class Backend:
         row = manager.job(identifier(key))
         spec, output, _, _ = manager.inspect(row)
         report = manager.report(row, persist=False)
-        return report | {"files": self.job_files(output, spec, report)}
+        _, blocker = incident_status(row, output, spec)
+        return report | {"files": self.job_files(output, spec, report), "audit_blocker": blocker}
 
     def job_files(self, output, spec, report):
         contained(self.home / "jobs", output)

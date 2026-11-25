@@ -13,12 +13,12 @@ from threading import Lock, Thread
 from time import monotonic, sleep
 from urllib.error import URLError
 from urllib.parse import parse_qs, urlsplit
-from urllib.request import ProxyHandler, build_opener
+from urllib.request import ProxyHandler, Request, build_opener
 import webbrowser
 
 from .backend import Backend
 from .results import results
-from ..common import HOME, ROOT, home_path, lease, read, write
+from ..common import HOME, ROOT, checksum, home_path, lease, read, write
 from ..manager import Manager
 from ..windows import detach
 
@@ -30,6 +30,14 @@ STATIC = {
 }
 PORT = 8765
 MAX_JSON = 8192
+DASHBOARD_ROOT = ROOT / "tools/training_manager"
+
+
+def service_revision():
+    paths = sorted(DASHBOARD_ROOT.rglob("*.py"))
+    paths.extend(DASHBOARD_ROOT / "dashboard/static" / name for name, _ in STATIC.values())
+    files = [(path.relative_to(DASHBOARD_ROOT).as_posix(), checksum(path)) for path in paths]
+    return sha256(json.dumps(files).encode()).hexdigest()
 
 
 class Dashboard(ThreadingHTTPServer):
@@ -44,6 +52,9 @@ class Dashboard(ThreadingHTTPServer):
         self.auth_lock = Lock()
         self.bootstrap = secrets.token_urlsafe(32)
         self.sessions = {}
+        self.revision = service_revision()
+        self.static = {route: ((DASHBOARD_ROOT / "dashboard/static" / name).read_bytes(), mime)
+                       for route, (name, mime) in STATIC.items()}
 
     def new_session(self, proof):
         if not isinstance(proof, str) or not proof.isascii() or not secrets.compare_digest(proof, self.bootstrap):
@@ -109,10 +120,11 @@ class Handler(BaseHTTPRequestHandler):
             return self.respond({"error": "无效的本机地址"}, 403)
         path = urlsplit(self.path)
         if path.path == "/health":
-            return self.respond({"service": "INF2", "instance": fingerprint(self.server.backend.home)})
-        if path.path in STATIC:
-            file, mime = STATIC[path.path]
-            return self.respond((ROOT / "tools/training_manager/dashboard/static" / file).read_bytes(), mime=mime)
+            return self.respond({"service": "INF2", "instance": fingerprint(self.server.backend.home),
+                                 "revision": self.server.revision})
+        if path.path in self.server.static:
+            content, mime = self.server.static[path.path]
+            return self.respond(content, mime=mime)
         session = self.session()
         if not session or self.headers.get("Sec-Fetch-Site") not in (None, "same-origin", "none"):
             return self.respond({"error": "请从 Windows 启动器打开面板"}, 401)
@@ -204,14 +216,39 @@ def existing(home, port):
             health = json.load(response)
     except (OSError, URLError, ValueError):
         return None
-    if health == {"service": "INF2", "instance": fingerprint(home)}:
-        return record
+    if isinstance(health, dict) and health.get("service") == "INF2" and health.get("instance") == fingerprint(home):
+        return record | {"revision": health.get("revision")}
     return None
 
 
-def launch(home, port, browser=True):
-    home.mkdir(parents=True, exist_ok=True)
+def close_old_service(home, port, record):
+    url = f"http://127.0.0.1:{port}"
+    opener = build_opener(ProxyHandler({}))
+    headers = {"Origin": url, "Content-Type": "application/json"}
+    try:
+        with opener.open(Request(url + "/api/session", json.dumps({"proof": record["proof"]}).encode(),
+                                 headers), timeout=4) as response:
+            cookie = response.headers["Set-Cookie"].split(";", 1)[0]
+            csrf = json.load(response)["csrf"]
+        control = headers | {"Cookie":cookie, "X-INF2-CSRF":csrf}
+        with opener.open(Request(url + "/api/action/close-panel", b"{}", control), timeout=4) as response:
+            if json.load(response).get("closed") is not True:
+                raise ValueError("旧服务未确认关闭")
+    except (OSError, ValueError, KeyError, AttributeError) as error:
+        raise ValueError("无法安全关闭旧版 Web 面板。请在旧面板的「资源与设置」关闭面板服务后再打开。") from error
+    deadline = monotonic() + 8
+    while existing(home, port):
+        if monotonic() >= deadline:
+            raise ValueError("旧版 Web 面板仍在退出。请等它关闭后再打开。")
+        sleep(.12)
+
+
+def ensure_service(home, port):
+    revision = service_revision()
     record = existing(home, port)
+    if record and record["revision"] != revision:
+        close_old_service(home, port, record)
+        record = None
     if not record:
         command = [sys.executable, "-X", "utf8", "-m", "tools.training_manager.dashboard", "--serve",
                    "--home", str(home.relative_to(HOME)), "--port", str(port)]
@@ -223,8 +260,17 @@ def launch(home, port, browser=True):
             record = existing(home, port)
             if process.poll() is not None and not record:
                 break
-        if not record:
+        if not record or record["revision"] != revision:
             raise ValueError(f"面板启动失败。请检查 {home/'dashboard.log'}")
+    return record
+
+
+def launch(home, port, browser=True):
+    home.mkdir(parents=True, exist_ok=True)
+    with lease(home / "dashboard-launch.lock") as acquired:
+        if not acquired:
+            raise ValueError("另一个启动器正在打开面板，请稍后重试。")
+        record = ensure_service(home, port)
     url = f"http://127.0.0.1:{port}/"
     if browser and not webbrowser.open(url + "#" + record["proof"]):
         raise ValueError("面板已启动，但 Windows 未能打开默认浏览器")

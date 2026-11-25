@@ -172,6 +172,7 @@ function taskCard(task) {
       (live ? "等待执行心跳" : "需另行批准") : duration(task.budget - task.seconds)],
     ["实际吞吐", p?.throughput > 0 ? n(p.throughput) + " 单位/秒" : "不可用"]
   ]), progress("总体阶段进度", task.stage_index, task.stage_total));
+  if (task.audit_blocker) add(container, callout("续接校验阻塞：" + task.audit_blocker, "warn"));
   if (task.timing?.unknown_tail) add(container, callout(task.timing.audited ?
     "原面板记录 " + duration(task.timing.legacy_recorded_seconds) + "。审计执行区间 " +
       duration(task.seconds) + " 至 " + duration(task.timing.upper_seconds) + "。" :
@@ -194,8 +195,8 @@ function taskCard(task) {
   return container;
 }
 function taskActions(task) {
-  if (task.timing?.audited) return bar(action("中断诊断", () => jobDetail(task.id)),
-    action("查看续接计划", () => navigate("plans")));
+  if (task.timing?.audited || task.audit_blocker) return bar(action("中断诊断", () => jobDetail(task.id)),
+    action("查看续接计划", () => { if (modal.open) modal.close(); return navigate("plans"); }));
   const command = op => operate(op, {id:task.id});
   const cancellable = ["queued","running","pausing","paused","failed","interrupted"].includes(task.state);
   return bar(
@@ -327,6 +328,7 @@ async function jobDetail(id) {
     ["无法确认的执行尾段", t?.unknown_tail ? (t.upper_seconds == null ? "长度未测定" :
       "最多 " + duration(t.upper_seconds-report.seconds)) : "无记录"],
     ["退出码",report.exit_code],["异常次数",report.errors]]),
+    report.audit_blocker ? callout("续接校验阻塞：" + report.audit_blocker, "warn") : null,
     node("p", "输出目录  " + report.spec.output, "detail-path"),
     disclosure("真实阶段与运行记录", node("pre", JSON.stringify(report, null, 2))),
     disclosure("日志、检查点及 JSON", add(node("div", null, "actions"),

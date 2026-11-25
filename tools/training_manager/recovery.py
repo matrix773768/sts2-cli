@@ -13,25 +13,22 @@ if not __package__:
 
 from tools.training_manager.common import HOME, ROOT, checksum, path_at, read, validate, write
 from tools.training_manager.ledger import identity, snapshot
-from tools.training_manager.timing import INCIDENT
+from tools.training_manager.timing import INCIDENT, INCIDENT_JOB, verified_incident
 
 
 RESTORE = "tools/training_manager/recovery.py"
 
 
 def admitted(manager):
-    proof = read(INCIDENT)
-    if not proof or not any(row["id"] == proof["source"] for row in manager.rows()):
+    if not any(row["id"] == INCIDENT_JOB for row in manager.rows()):
         return None
-    row = manager.job(proof["source"])
-    spec, output, stage, _ = manager.inspect(row)
-    if (row["state"] != "interrupted" or stage["id"] != "g3-direct" or row["token"] != proof["token"]
-            or spec["sha256"] != proof["task_sha256"] or read(output/"task.json") != spec
-            or checksum(output/"report.json") != proof["report_sha256"]):
-        raise ValueError("原任务的中断状态或冻结身份与审计证据不一致")
+    row = manager.job(INCIDENT_JOB)
+    spec, output, _, _ = manager.inspect(row)
+    proof = verified_incident(row, output, spec)
     validate(spec, manager.home)
     runs = manager.report(row, persist=False)["runs"]
-    completed = [r["stage"] for r in runs if r["outcome"]["state"] == "completed" and r["outcome"]["exit_code"] == 0]
+    completed = [r["stage"] for r in runs if (r["outcome"] or {}).get("state") == "completed"
+                 and r["outcome"].get("exit_code") == 0]
     if completed != proof["completed"] or completed != [s["id"] for s in spec["stages"][:row["stage"]]]:
         raise ValueError("已完成阶段和审计顺序不一致")
     return proof, spec, output
