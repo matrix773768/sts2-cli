@@ -19,6 +19,9 @@ old = importlib.util.module_from_spec(old_spec)
 old_spec.loader.exec_module(old)
 
 TIERS = (100, 500, 2000, 10000)
+EXTENDED_TIERS = (*TIERS, 30000)
+EXTENSION_PROTOCOL = "hk1a-final-locked-hp-150k-v1"
+PILOT_LEDGER = ROOT / "logs/inf1/jobs/dc3a-hotkernel-pilot/solve/reference.sqlite"
 FIELDS = ("seed", "character", "ascension", "should_save", "replay_writer_enabled",
           "visited_map_nodes", "run_rng", "player_rng", "deck",
           "hand", "draw", "discard", "exhaust", "act", "act_variant", "act_boss")
@@ -53,12 +56,17 @@ def invoke(build, directory, mode, tier, spec, route=None):
     return old.read(path) | {"process_seconds": perf_counter() - started}
 
 
-def solve_world(host, build, directory, world, tiers):
+def solve_world(host, build, directory, world, tiers, prior=None):
     started = perf_counter()
     with old.opened(host, world) as (_, public, native, audit, init):
         root = old.digest([public, native, audit])
     row = dict(world=world, root=root, legacy_init_seconds=init, tiers=[],
                reference=None, solver=build["version"], information="offline_oracle_full_rng")
+    if prior:
+        if root != prior["root"]:
+            raise ValueError("Extension root differs from the committed pilot root")
+        row["tiers"] = list(prior["tiers"])
+        row["reference"] = prior["reference"]
     old.write_json(directory / "legacy-private.json", {"public": public, "native": native, "audit": audit})
     for tier in tiers:
         tier_started = perf_counter()
@@ -115,6 +123,26 @@ def solve_world(host, build, directory, world, tiers):
     return row | {"world_end_to_end_seconds": perf_counter() - started}
 
 
+def extension_source(path, worlds, build, manifest):
+    path = path.resolve()
+    pilot = old.read(path.with_name("budget.json"))
+    if pilot["build"] != checksum(build) or pilot["pilot_manifest"] != checksum(manifest):
+        raise ValueError("Extension requires the original pilot build and world set")
+    with closing(sqlite3.connect(path.as_uri() + "?mode=ro", uri=True)) as db:
+        rows = {key: json.loads(payload) for key, payload in db.execute("SELECT id,payload FROM results")}
+    if rows.keys() != {world["id"] for world in worlds}:
+        raise ValueError("Extension requires all 24 original committed worlds")
+    version = old.read(build)["version"]
+    for world in worlds:
+        row = rows[world["id"]]
+        if (row["world"] != world or row["solver"] != version or not row.get("root")
+            or tuple(t["budget_ms"] for t in row["tiers"]) != TIERS
+            or any(t["status"] not in ("native_win", "no_win_route") for t in row["tiers"])
+            or row["reference"] != row["tiers"][-1]["incumbent"]):
+            raise ValueError("Invalid committed pilot row")
+    return rows
+
+
 def run(args):
     data = old.read(args.manifest)
     kind = data["kind"]
@@ -129,19 +157,31 @@ def run(args):
         if checksum(Path(path)) != sha:
             raise ValueError(f"Changed runtime artifact {path}")
     tiers = (2000,) if args.sample else TIERS
+    prior = {}
+    if args.extend_from:
+        if kind != "dc3a-pilot" or args.sample:
+            raise ValueError("Extension requires the full frozen pilot manifest")
+        prior = extension_source(args.extend_from, data["worlds"], args.build, args.manifest)
+        tiers = EXTENDED_TIERS
     if kind == "dc3a-formal":
         if args.sample or not args.budget_file:
             raise ValueError("Formal queue requires the completed HotKernel pilot budget")
         pick = old.read(args.budget_file)
         tiers = tuple(pick["tiers"])
-        if (not tiers or tiers != TIERS[:len(tiers)] or pick["build"] != checksum(args.build)
+        if (not tiers or tiers != EXTENDED_TIERS[:len(tiers)] or pick["build"] != checksum(args.build)
+            or pick.get("protocol") != EXTENSION_PROTOCOL or pick.get("measured_tiers") != list(EXTENDED_TIERS)
+            or pick.get("prior_ledger") != checksum(PILOT_LEDGER)
             or pick["pilot_manifest"] != checksum(frozen.with_name("pilot.json"))):
             raise ValueError("Budget does not match this build")
     queue = select_worlds(data, args.sample)
     out = args.output.resolve()
     out.mkdir(parents=True, exist_ok=True)
     db_path = out / "reference.sqlite"
+    if args.extend_from and db_path.resolve() == args.extend_from.resolve():
+        raise ValueError("Use a separate extension ledger")
     identity = old.digest([checksum(args.manifest), tiers, args.sample, checksum(args.build),
+                           checksum(args.extend_from) if prior else None,
+                           checksum(args.budget_file) if args.budget_file else None,
                            checksum(Path(__file__)), checksum(Path(__file__).with_name("budget_review.py")),
                            checksum(old.BUILD / "build.json")])
     with closing(sqlite3.connect(db_path)) as db:
@@ -162,22 +202,25 @@ def run(args):
                 return 75
             directory = out / world["id"]
             directory.mkdir(exist_ok=True)
-            row = solve_world(host, build, directory, world, tiers)
-            if stop and Path(stop).exists():
-                return 75
+            row = solve_world(host, build, directory, world, (30000,) if prior else tiers,
+                              prior.get(world["id"]))
             with db:
                 db.execute("INSERT INTO results VALUES (?,?)", (world["id"], json.dumps(row)))
             done.add(world["id"])
             print(world["id"][:8], [tier["status"] for tier in row["tiers"]], flush=True)
             if "INF1_PROGRESS" in os.environ:
                 old.progress(len(done), len(queue), db_path)
+            if stop and Path(stop).exists():
+                return 75
         rows = [json.loads(payload) for payload, in db.execute("SELECT payload FROM results")]
     budget = review(rows, tiers)
     wins = budget["tiers"][-1]["verified_wins"]
     chosen = budget["recommended_index"]
     if kind == "dc3a-pilot" and not args.sample and chosen is not None:
         old.frozen(out / "budget.json", {"tiers": list(tiers[:chosen+1]), "build": checksum(args.build),
-                                         "pilot_manifest": checksum(args.manifest), "advisory": True})
+                                         "pilot_manifest": checksum(args.manifest), "advisory": True,
+                                         "protocol": EXTENSION_PROTOCOL, "measured_tiers": list(tiers),
+                                         "prior_ledger": checksum(args.extend_from) if prior else None})
     old.write_json(out / "summary.json", {"worlds": len(rows), "wins": wins, "budget_review": budget,
         "tiers": tiers, "statuses": dict(Counter(t["status"] for r in rows for t in r["tiers"]))})
     return 0 if args.sample or wins else 1
@@ -189,5 +232,6 @@ if __name__ == "__main__":
     parser.add_argument("--manifest", type=Path, required=True)
     parser.add_argument("--build", type=Path, default=BUILD)
     parser.add_argument("--budget-file", type=Path)
+    parser.add_argument("--extend-from", type=Path)
     parser.add_argument("--sample", action="store_true")
     raise SystemExit(run(parser.parse_args()))

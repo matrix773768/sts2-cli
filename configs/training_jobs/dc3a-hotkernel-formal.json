@@ -24,14 +24,15 @@
     "logs/m1-dc1-formal/roots/development.json",
     "logs/m1-dc2b-frozen/development.json",
     "logs/m1-dc3a-frozen/formal.json",
-    "logs/inf1/jobs/dc3a-hotkernel-pilot/solve/budget.json",
+    "logs/inf1/jobs/dc3a-hotkernel-pilot-extend/solve/budget.json",
     "experiments/hk1a/reference.py",
     "experiments/hk1a/hk1a_build.py",
     "experiments/hk1a/Oracle.cs",
     "experiments/m1-s1/SyntheticCombat.cs",
     "logs/hk1a-final-build/build.json",
     "experiments/hk1a/budget_review.py",
-    "logs/m1-sv4a-host/host/Headless/SyntheticCombat.cs"
+    "logs/m1-sv4a-host/host/Headless/SyntheticCombat.cs",
+    "logs/inf1/jobs/dc3a-hotkernel-pilot/solve/reference.sqlite"
   ],
   "stages": [
     {
@@ -43,7 +44,7 @@
         "--manifest",
         "{repo}/logs/m1-dc3a-frozen/formal.json",
         "--budget-file",
-        "{repo}/logs/inf1/jobs/dc3a-hotkernel-pilot/solve/budget.json"
+        "{repo}/logs/inf1/jobs/dc3a-hotkernel-pilot-extend/solve/budget.json"
       ],
       "gpu": false,
       "heavy": true,

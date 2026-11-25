@@ -1,8 +1,12 @@
 """Read measured training and development metrics from approved artifacts."""
 
 import re
+import json
+import runpy
+import sqlite3
+from contextlib import closing
 
-from .backend import DC1, INITIAL, CURRICULUM, NIGHT, NIGHT_HF1, contained
+from .backend import DC1, INITIAL, CURRICULUM, NIGHT, NIGHT_HF1, ROOT, contained
 from ..common import read
 
 
@@ -79,6 +83,41 @@ def result_row(output, report, label, fit, dev, complex_stage=None, production_s
                             if stage in completed and (item := production(output,stage))})
 
 
+def hotkernel_results(backend, manager):
+    items = []
+    for job in manager.rows():
+        if not job["id"].startswith("dc3a-hotkernel-") or job["state"] != "completed":
+            continue
+        spec, output, _, _ = manager.inspect(job)
+        summary = load(output, "solve/summary.json", {})
+        comparison = load(output, "solve/model-comparison.json")
+        report = summary.get("budget_review")
+        if not report or not report.get("strata"):
+            path = contained(output, output / "solve/reference.sqlite")
+            if not path.is_file() or not summary.get("tiers"):
+                continue
+            with closing(sqlite3.connect(path.as_uri() + "?mode=ro", uri=True)) as ledger:
+                rows = [json.loads(raw) for raw, in ledger.execute("SELECT payload FROM results")]
+            review = runpy.run_path(str(ROOT / "experiments/hk1a/budget_review.py"))["review"]
+            report = review(rows, summary["tiers"])
+        # Keep private world fingerprints and replay payloads out of the panel.
+        keys = ("budget_ms", "coverage", "verified_wins", "native_routes", "common_previous",
+                "improvement", "search_seconds", "end_to_end_seconds", "endings",
+                "expanded", "transitions", "turn_differences", "terminal_differences")
+        def public(tier):
+            return {key: tier.get(key) for key in keys} | {"new_wins": len(tier["new_wins"])}
+        items.append(dict(id=job["id"], name=spec["name"], worlds=summary["worlds"],
+                          tiers=[public(t) for t in report["tiers"]],
+                          strata={kind: {label: [public(t) for t in tiers] for label, tiers in groups.items()}
+                                  for kind, groups in report["strata"].items() if kind in ("HP", "来源")},
+                          recommendation=report["recommended_index"],
+                          tail_count=len(report["recommendation_tail"]),
+                          consider_30000_ms=report["consider_30000_ms"],
+                          estimated_formal_seconds=report["estimated_formal_seconds"],
+                          model_comparison=comparison))
+    return items
+
+
 def results(backend, manager):
     reports = {row["id"]: manager.report(row, persist=False) for row in manager.rows()
                if row["id"] in (INITIAL, CURRICULUM, NIGHT, NIGHT_HF1) or row["id"].startswith((NIGHT+"-r",NIGHT_HF1+"-r"))
@@ -121,7 +160,8 @@ def results(backend, manager):
         output = backend.home/"jobs"/key
         item = result_row(output, report, key, fit, dev, production_stages=("experience",) if "experience" in available else ())
         smoke.append(item)
-    return dict(formal=rows, smoke=smoke, gate=gate, markdown=markdown(rows,smoke,gate))
+    return dict(formal=rows, smoke=smoke, gate=gate, markdown=markdown(rows,smoke,gate),
+                hotkernel=hotkernel_results(backend, manager))
 
 
 def markdown(rows, smoke, gate):

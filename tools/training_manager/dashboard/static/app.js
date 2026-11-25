@@ -417,6 +417,38 @@ function resultDetail(row) {
   return card(row.name, ...parts);
 }
 function addParts(parts, ...items) { parts.push(...items); }
+function hotkernelResult(report) {
+  const value = x => x == null ? "—" : n(x);
+  const headings = ["预算 ms","累计胜局","本档验证胜路","新增","共同胜局","改善均值","中位数","P90","最大",
+    "搜索均值 s","端到端均值 s","终止原因","最大展开","最大转移","预测差异 回合/终局"];
+  const rows = tiers => tiers.map(t => [
+    t.budget_ms, t.verified_wins + " · " + pct(t.coverage), t.native_routes, t.new_wins, t.improvement.count,
+    ...["mean","median","p90","maximum"].map(k => value(t.improvement[k])),
+    value(t.search_seconds.mean), value(t.end_to_end_seconds.mean),
+    Object.entries(t.endings).map(([k,v]) => k + " " + v).join(" · "),
+    value(t.expanded.maximum), value(t.transitions.maximum), t.turn_differences + "/" + t.terminal_differences
+  ]);
+  const recommendation = report.recommendation == null ? "无" : report.tiers[report.recommendation].budget_ms + " ms";
+  const facts = [
+    ["冻结世界", report.worlds], ["建议预算上限", recommendation],
+    ["建议依据", "累计覆盖相同且平均净损距最高档 ≤2 HP"],
+    ["建议档仍差 ≥5 HP 的世界", report.tail_count],
+    ["30 秒扩展建议", report.consider_30000_ms ? "值得人工复核" : "无进一步自动扩展"],
+    ["192 世界估计耗时", duration(report.estimated_formal_seconds)]
+  ];
+  const sections = Object.entries(report.strata).flatMap(([kind, groups]) =>
+    Object.entries(groups).map(([label, tiers]) => [kind + " " + label, rows(tiers)]));
+  const markdownTable = data => [headings, headings.map(() => "---"), ...data]
+    .map(row => "| " + row.join(" | ") + " |").join("\n");
+  const markdown = ["## " + report.name, facts.map(([k,v]) => "- " + k + " " + v).join("\n"),
+    markdownTable(rows(report.tiers)), ...sections.map(([label, data]) => "### " + label + "\n\n" +
+      markdownTable(data))].join("\n\n");
+  return card(report.name, dataList(facts), table(headings, rows(report.tiers)),
+    ...sections.map(([label,data]) => disclosure(label, table(headings,data))),
+    report.model_comparison ? disclosure("模型对比", node("pre", JSON.stringify(report.model_comparison,null,2))) : null,
+    bar(action("复制 Markdown 摘要", () => copySummary(markdown))));
+}
+
 function results(data) {
   const fmt = value => value == null ? "尚未生成" : n(value);
   const rows = data.formal.map(row => {
@@ -426,7 +458,7 @@ function results(data) {
   });
   const gate = data.gate;
   const outcome = gate ? (gate.passed ? "已通过" : "未通过") : "尚未生成";
-  return [card("开发集模型对比",
+  return [...(data.hotkernel ?? []).map(hotkernelResult), card("开发集模型对比",
     table(["模型","尝试数","胜率","平均净战损","零净战损胜率","≤10 HP 胜率","更新数","死亡 Brier","绝对净战损 MAE"], rows),
     bar(action("复制 Markdown 摘要", () => copySummary(data.markdown), ""),
       action("预览 Markdown", () => show("Markdown 实验摘要", node("pre", data.markdown))))),
