@@ -1,0 +1,144 @@
+{
+  "families": 24,
+  "encounters": 18,
+  "thickness": [
+    13,
+    24
+  ],
+  "paired": {
+    "anchors": 46,
+    "old_calls": 21926,
+    "old_restores": 3940,
+    "old_seconds": 204.91207069996744,
+    "tree": {
+      "queries": 46,
+      "calls": 4016,
+      "forks": 4062,
+      "nodes": 7933,
+      "simulator_seconds": 7.5220949,
+      "rpc_seconds": 8.25963149999734,
+      "stops": 3871,
+      "decisions": 3053,
+      "other_stops": {
+        "decision": 3053,
+        "unsupported_pending_choice": 101,
+        "C": 339,
+        "budget": 3871,
+        "unqualified_public_belief": 221,
+        "random_target": 179,
+        "card_selection": 125,
+        "autoplay_from_draw": 8,
+        "unqualified_draw_instances": 21,
+        "card_generation": 15
+      }
+    },
+    "reduced": {
+      "queries": 46,
+      "calls": 3902,
+      "forks": 3948,
+      "nodes": 7670,
+      "simulator_seconds": 7.2268056000000005,
+      "rpc_seconds": 7.986887799954275,
+      "stops": 3722,
+      "decisions": 2963,
+      "other_stops": {
+        "decision": 2963,
+        "unsupported_pending_choice": 101,
+        "C": 326,
+        "random_target": 178,
+        "budget": 3722,
+        "unqualified_public_belief": 215,
+        "card_selection": 121,
+        "autoplay_from_draw": 8,
+        "unqualified_draw_instances": 21,
+        "card_generation": 15
+      }
+    },
+    "old_budget": {
+      "queries": 44,
+      "calls": 6638,
+      "forks": 6682,
+      "nodes": 16365,
+      "simulator_seconds": 6.717031499999998,
+      "rpc_seconds": null,
+      "stops": 9127,
+      "decisions": 5131,
+      "other_stops": {
+        "decision": 5131,
+        "unsupported_pending_choice": 121,
+        "C": 770,
+        "random_target": 246,
+        "budget": 9127,
+        "unqualified_public_belief": 242,
+        "card_selection": 85,
+        "autoplay_from_draw": 8,
+        "unqualified_draw_instances": 64,
+        "draw_depth_cap": 556,
+        "card_generation": 15
+      }
+    },
+    "old_positive_anchor_calls": 21926,
+    "distinct_tree_vectors": 445,
+    "distinct_reduced_vectors": 445,
+    "identical_fronts": 45,
+    "matched_vectors": 444,
+    "covered_tree_vectors": 445,
+    "reduction_events": {
+      "canonical_constraints": 156,
+      "sleep_pruned": 27,
+      "unsupported_pending_choice": 101,
+      "duplicate_pruned": 35,
+      "ordinary_end_turn": 102,
+      "goal_expand": 95,
+      "dominance_pruned": 38,
+      "random_target": 178,
+      "budget": 3722,
+      "unqualified_public_belief": 215,
+      "card_selection": 121,
+      "precedence_constraints": 9,
+      "autoplay_from_draw": 8,
+      "unqualified_draw_instances": 21,
+      "card_generation": 15
+    }
+  },
+  "panel_seconds": 161.38947230001213,
+  "paired_or_exec_errors": [],
+  "deployment": {
+    "seconds": 71.47519400005694,
+    "end_to_end_seconds": 73.12887909990968,
+    "actions": 173,
+    "queries": 52,
+    "counts": {
+      "replan_draw": 4,
+      "B": 46,
+      "pending_settlement": 2,
+      "fallback_actions": 4
+    },
+    "leaves": {
+      "B": 48
+    },
+    "finished_twice": 24,
+    "without_fallback_twice": 22,
+    "query_seconds": 13.984283399942797,
+    "median_query_seconds": 0.2597261499904562,
+    "calls": 4339,
+    "forks": 4391,
+    "settlement_root_replays": 171,
+    "settlement_calls": 544,
+    "resolved_mass_per_query": {
+      "B": 0.0009038517654780452,
+      "deferred": 0.325344312463456,
+      "unresolved": 0.6737518357710663
+    },
+    "unresolved_reason_mass_per_query": {
+      "monster_multi_outcome_rng": 0.19230769230769232,
+      "pending_or_unsupported": 0.038461538461538464,
+      "shuffle": 0.019230769230769232,
+      "unqualified_draw_instances": 0.0006749126941434634,
+      "unqualified_public_belief": 0.4230769230769231
+    },
+    "complete_before_integration": 0.0,
+    "fully_integrated": 0,
+    "only_end_turn": 0
+  }
+}

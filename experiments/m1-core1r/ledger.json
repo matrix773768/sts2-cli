@@ -1,0 +1,204 @@
+{
+  "schema": 1,
+  "baseline": "41ff6ab6cb51bcbffc8f876ba134101d208887fe",
+  "historical_ledger": "../m1-core1/ledger.json",
+  "scope": "Sum of measured job seconds. Concurrent jobs count separately. Stage scripts time their own work; interpreter startup, archive I/O outside stage timers, short inspection commands and engineering time are not comprehensively metered.",
+  "runs": [
+    {
+      "source": "logs/core1r-audit-build/build.json",
+      "seconds": 24.3137
+    },
+    {
+      "source": "logs/core1r-audit-fx/fixtures.json.gz",
+      "seconds": 23.4293,
+      "cases": 11,
+      "errors": 0
+    },
+    {
+      "source": "logs/core1r-audit-integral/integral.json.gz",
+      "seconds": 12.3488,
+      "cases": 4,
+      "errors": 0
+    },
+    {
+      "source": "logs/core1r-audit-native/native.json",
+      "seconds": 14.3272,
+      "cases": 2,
+      "errors": 0
+    },
+    {
+      "source": "logs/core1r-audit-panel/panel.json",
+      "seconds": 161.3895,
+      "cases": 24,
+      "errors": 0,
+      "python_cpu_seconds": 6.390625
+    },
+    {
+      "source": "logs/core1r-build1/build.json",
+      "seconds": 111.7805
+    },
+    {
+      "source": "logs/core1r-build2/build.json",
+      "seconds": 34.2434
+    },
+    {
+      "source": "logs/core1r-build3/build.json",
+      "seconds": 45.7468
+    },
+    {
+      "source": "logs/core1r-delivery/build.json",
+      "seconds": 26.5415
+    },
+    {
+      "source": "logs/core1r-delivery-fx/fixtures.json.gz",
+      "seconds": 22.4843,
+      "cases": 11,
+      "errors": 1
+    },
+    {
+      "source": "logs/core1r-delivery-integral/integral.json.gz",
+      "seconds": 12.8865,
+      "cases": 4,
+      "errors": 0
+    },
+    {
+      "source": "logs/core1r-delivery-panel/panel.json",
+      "seconds": 168.3647,
+      "cases": 24,
+      "errors": 0,
+      "python_cpu_seconds": 6.640625
+    },
+    {
+      "source": "logs/core1r-final-build/build.json",
+      "seconds": 55.5934
+    },
+    {
+      "source": "logs/core1r-fixture1/fixtures.json.gz",
+      "seconds": 25.7913,
+      "cases": 10,
+      "errors": 10
+    },
+    {
+      "source": "logs/core1r-fixture2/fixtures.json.gz",
+      "seconds": 30.151,
+      "cases": 10,
+      "errors": 1
+    },
+    {
+      "source": "logs/core1r-fixture3/fixtures.json.gz",
+      "seconds": 26.3675,
+      "cases": 10,
+      "errors": 0
+    },
+    {
+      "source": "logs/core1r-fixtures-final/fixtures.json.gz",
+      "seconds": 31.4111,
+      "cases": 10,
+      "errors": 9
+    },
+    {
+      "source": "logs/core1r-fx4/fixtures.json.gz",
+      "seconds": 21.2367,
+      "cases": 10,
+      "errors": 0
+    },
+    {
+      "source": "logs/core1r-native/native.json",
+      "seconds": 14.314,
+      "cases": 2,
+      "errors": 0
+    },
+    {
+      "source": "logs/core1r-panel-final/panel.json",
+      "seconds": 172.5147,
+      "cases": 24,
+      "errors": 24,
+      "python_cpu_seconds": 6.96875
+    },
+    {
+      "source": "logs/core1r-panel-probe/panel.json",
+      "seconds": 23.8309,
+      "cases": 3,
+      "errors": 0,
+      "python_cpu_seconds": 2.75
+    },
+    {
+      "source": "logs/core1r-panel4/panel.json",
+      "seconds": 166.0119,
+      "cases": 24,
+      "errors": 0,
+      "python_cpu_seconds": 6.4375
+    },
+    {
+      "source": "logs/core1r-qualified-build/build.json",
+      "seconds": 33.5872
+    },
+    {
+      "source": "logs/core1r-release/build.json",
+      "seconds": 25.162
+    },
+    {
+      "source": "logs/core1r-release-fx/fixtures.json.gz",
+      "seconds": 21.1615,
+      "cases": 10,
+      "errors": 0
+    },
+    {
+      "source": "logs/core1r-release-panel/panel.json",
+      "seconds": 161.508,
+      "cases": 24,
+      "errors": 0,
+      "python_cpu_seconds": 6.78125
+    },
+    {
+      "source": "logs/core1r-v11/build.json",
+      "seconds": 26.4936
+    },
+    {
+      "source": "logs/core1r-v11-fx/fixtures.json.gz",
+      "seconds": 20.9175,
+      "cases": 10,
+      "errors": 0
+    },
+    {
+      "source": "logs/core1r-v11-integral/integral.json.gz",
+      "seconds": 13.1494,
+      "cases": 4,
+      "errors": 0
+    },
+    {
+      "source": "logs/core1r-v11-native/native.json",
+      "seconds": 14.3625,
+      "cases": 2,
+      "errors": 0
+    },
+    {
+      "source": "logs/core1r-v11-panel/panel.json",
+      "seconds": 156.8281,
+      "cases": 24,
+      "errors": 0,
+      "python_cpu_seconds": 6.53125
+    }
+  ],
+  "regressions_wall_seconds": {
+    "development CORE-1R archive tests": 6.9544,
+    "first CORE-1 regressions": 5.9146,
+    "first SV4A regressions": 5.6197,
+    "CORE-1R 12 tests": 5.2094567,
+    "CORE-1 9 regressions": 6.2507208,
+    "SV4A 3 regressions": 5.4654161,
+    "CORE-1R archive and checkout-independent source hashes": 7.9056538
+  },
+  "summed_job_wall_seconds": 1741.6,
+  "training_updates": 0,
+  "training_presentations": 0,
+  "gpu_seconds": 0,
+  "main_panel_python_cpu_seconds": 6.390625,
+  "child_process_cpu_seconds": null,
+  "old_sampler_queries_rerun": 0,
+  "notes": [
+    "Old method reuses frozen per-query work, full public anchors and witnesses. New paired comparisons verify the anchors.",
+    "Early untyped settlement responses, incorrect command routing, card priority and synthetic fixture mistakes are included. Zero command errors does not imply research qualification.",
+    "The new policy runs without G2 inference. Directed native audits use frozen G2 only beyond forced two-turn prefixes."
+  ]
+}
