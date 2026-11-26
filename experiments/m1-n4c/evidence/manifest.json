@@ -1,0 +1,231 @@
+{
+  "version": "n4c-selective-v1",
+  "base": "fab07d0e47d206270a2e28b20a31e552c752db11",
+  "model_hashes": {
+    "inf1\\jobs\\dc2b-night1-hf1\\g2-fit\\best.pt": "1077c191586885c49173afe5801849b3ea6a4535425731e27226fe1978abf084",
+    "n4b-finalfit\\counter_pair-17-20.pt": "601429c1431f4e9c2e8e9cce299fdeccc6410e123da4d617b2ca2ef663a1d9d9",
+    "n4b-plan.json": "ac665d5909dd09c064ab454367221c727fcd10963c59f4be6f20ea553eb12cc2"
+  },
+  "host": {
+    "solver-bin/CombatSolver.dll": "27d64e73780fc60c5bc3d270d2070e35a8c96ed35297e240af3c31ed18479739",
+    "host/Headless/bin/Debug/net9.0/OfflineSearchHarness.dll": "4c36625d532b754abe39891b103368b4883af98b0baa1656d40347de4f20e4cc",
+    "host/Headless/bin/Debug/net9.0/GodotSharp.dll": "ddd11aa7feb8dbce480e6ecdaef15aa6c8b3be9437580fda7dda2764b5bb5b4b"
+  },
+  "compute_seconds": {
+    "dev1": 55.424988599988865,
+    "dev2": 68.26245280000148,
+    "devrepair": 7.289754400000675,
+    "multi-dev": 10.251744900015183,
+    "replay": 151.48002050002106,
+    "replay-dev": 42.4781207999913,
+    "core-a": 285.9599476000003,
+    "core-b": 178.5798840999778,
+    "repair": 31.925631600024644,
+    "mixcore": 106.97254590000375,
+    "mixrepair": 8.462916799995583,
+    "mixall": 118.73660269999527,
+    "mixallrepair": 10.730198500008555,
+    "multi": 34.134700700000394,
+    "mixallmulti": 18.517851600016,
+    "multiext": 76.47390760001144,
+    "replicate": 144.77634670000407,
+    "cap-probe": 179.8413829000201,
+    "stress": 39.49591789999977,
+    "timing": 28.551664499973413,
+    "native": 40.87710899999365,
+    "native-loss": 23.069551699998556,
+    "nativemulti": 9.999407199997222,
+    "mix": 1.8115732000151183,
+    "mix-verify": 1.764144299988402,
+    "curve": 2.3380452999845147,
+    "dev-analysis": 0.20001440000487491,
+    "confirm": 1.7632883999904152,
+    "replication-analysis": 0.1363446999748703,
+    "probe-analysis": 0.9269675000105053,
+    "stress-analysis": 0.08218529997975565,
+    "pack_analysis": 3.7378285999875516
+  },
+  "measured_seconds_sum": 1685.053040699975,
+  "usage": {
+    "dev": {},
+    "dev1": {
+      "worlds": 20,
+      "episodes": 160,
+      "completed": 160,
+      "decisions": 2440,
+      "transitions": 9019
+    },
+    "dev2": {
+      "worlds": 20,
+      "episodes": 200,
+      "completed": 200,
+      "decisions": 3053,
+      "transitions": 11950
+    },
+    "devrepair": {
+      "worlds": 2,
+      "episodes": 20,
+      "completed": 20,
+      "decisions": 98,
+      "transitions": 642
+    },
+    "multi-dev": {
+      "worlds": 1,
+      "episodes": 10,
+      "completed": 10,
+      "decisions": 162,
+      "transitions": 772
+    },
+    "replay": {
+      "worlds": 196,
+      "episodes": 508,
+      "completed": 508,
+      "decisions": 12450,
+      "transitions": 1089
+    },
+    "replay-dev": {
+      "worlds": 78,
+      "episodes": 192,
+      "completed": 192,
+      "decisions": 4052,
+      "transitions": 333
+    },
+    "core-a": {
+      "worlds": 98,
+      "episodes": 980,
+      "completed": 980,
+      "decisions": 12128,
+      "transitions": 56010
+    },
+    "core-b": {
+      "worlds": 40,
+      "episodes": 400,
+      "completed": 400,
+      "decisions": 11224,
+      "transitions": 41335
+    },
+    "repair": {
+      "worlds": 10,
+      "episodes": 100,
+      "completed": 100,
+      "decisions": 940,
+      "transitions": 4662
+    },
+    "mixcore": {
+      "worlds": 138,
+      "episodes": 138,
+      "completed": 138,
+      "decisions": 2427,
+      "transitions": 8226
+    },
+    "mixrepair": {
+      "worlds": 10,
+      "episodes": 10,
+      "completed": 10,
+      "decisions": 97,
+      "transitions": 528
+    },
+    "mixall": {
+      "worlds": 138,
+      "episodes": 138,
+      "completed": 138,
+      "decisions": 2481,
+      "transitions": 23806
+    },
+    "mixallrepair": {
+      "worlds": 10,
+      "episodes": 10,
+      "completed": 10,
+      "decisions": 96,
+      "transitions": 1073
+    },
+    "multi": {
+      "transitions": 3603,
+      "worlds": 5,
+      "episodes": 55,
+      "completed": 55,
+      "decisions": 795
+    },
+    "mixallmulti": {
+      "transitions": 622,
+      "worlds": 5,
+      "episodes": 5,
+      "completed": 5,
+      "decisions": 66
+    },
+    "multiext": {
+      "worlds": 12,
+      "episodes": 144,
+      "completed": 144,
+      "decisions": 2146,
+      "transitions": 11056
+    },
+    "replicate": {
+      "worlds": 80,
+      "episodes": 640,
+      "completed": 640,
+      "decisions": 7506,
+      "transitions": 32603
+    },
+    "cap-probe": {
+      "worlds": 98,
+      "episodes": 490,
+      "completed": 490,
+      "decisions": 6094,
+      "transitions": 33237
+    },
+    "stress": {
+      "worlds": 24,
+      "episodes": 120,
+      "completed": 120,
+      "decisions": 1583,
+      "transitions": 11348
+    },
+    "timing": {
+      "worlds": 8,
+      "episodes": 64,
+      "completed": 64,
+      "decisions": 1669,
+      "transitions": 5656
+    },
+    "native": {},
+    "native-loss": {},
+    "nativemulti": {}
+  },
+  "independent_primary_families": 64,
+  "previous_N4_or_N4B_confirmation_families": 51,
+  "primary_root_worlds": 160,
+  "primary_episodes": 1920,
+  "primary_status": {
+    "death": 561,
+    "predicted_win": 1359
+  },
+  "primary_transitions": 146696,
+  "archive": {
+    "details.json.gz": {
+      "sha256": "c2b3746f71ab25ac4cdeb1ed01e9a581dc3dc30c56b9b68210030d29f18b4c93",
+      "bytes": 11411
+    },
+    "mixed-ridge.json": {
+      "sha256": "5de7d11b1a3ba7d335a5510764294500c197f7a90632bcc4ca4208b0d55dc651",
+      "bytes": 8414
+    },
+    "raw.zip": {
+      "sha256": "d40d5f05605dff9f3ed6f4b7f65e32e255212eb272997390640abd581d06c4e0",
+      "bytes": 1841819
+    },
+    "results.json.gz": {
+      "sha256": "5402f63172d5174ebf80cdb1601fb6dba5622b255dc12420aeb8b9e7685a1ba5",
+      "bytes": 36823
+    }
+  },
+  "source": {
+    "archive.py": "e21ed7bbc5d5a86891c0c28d976b34e03c62a5ececc3457e684814f71f5ad39e",
+    "assess.py": "f6d7f855eedfcccfe55389d6344ea52287b9e911744d88f9ad10bbd6bee504c9",
+    "deploy.py": "e514351d5a0b6e6bc58e201259f4ec9eec23ac9b3f35c4d8c6dba72739257a76",
+    "native_routes.py": "bba9663d7a3215cb65f765e84f93f082325f285e8bc7ffa7a69f185792417696",
+    "pilot_protocol.py": "9931ee236996d714547722546005aac3683e1bf67e4b4515912cb5211b0fe354",
+    "replay_fit.py": "fb55d1791718b4e39e7e059ad774cd465207487c961f718f6ae548b071beb2cc",
+    "test_deployment.py": "150fbfacb4f166d40b69cc71e0bfee5660652d8cee7cec1b53e35bfa42da1a3b"
+  }
+}
