@@ -1,0 +1,385 @@
+{
+  "probes": {
+    "persistent": {
+      "simple": [
+        75.12583923339844,
+        81.8568344116211,
+        70.78058624267578
+      ],
+      "mechanism": [
+        68.16356658935547,
+        75.24665069580078,
+        63.753257751464844
+      ]
+    },
+    "growth": {
+      "simple": [
+        75.12583923339844,
+        81.8568344116211,
+        70.78058624267578
+      ],
+      "mechanism": [
+        76.06900024414062,
+        81.49039459228516,
+        68.2070541381836
+      ]
+    },
+    "strike": {
+      "simple": [
+        76.4210205078125,
+        82.3938980102539,
+        70.91473388671875
+      ],
+      "mechanism": [
+        61.95258331298828,
+        73.91073608398438,
+        61.88228225708008
+      ]
+    },
+    "headbutt": {
+      "simple": [
+        80.30680847167969,
+        83.67253112792969,
+        73.05138397216797
+      ],
+      "mechanism": [
+        63.777679443359375,
+        72.19105529785156,
+        62.18812561035156
+      ]
+    }
+  },
+  "failures": [
+    {
+      "ordinal": 918,
+      "encounter": "LAGAVULIN_MATRIARCH_BOSS",
+      "terminal": "death",
+      "trace": [
+        {
+          "turn": 1,
+          "hp": 160,
+          "first": 1,
+          "estimate": 17.265884399414062,
+          "options": 5,
+          "steps": 3,
+          "reason": "end"
+        },
+        {
+          "turn": 2,
+          "hp": 160,
+          "first": 0,
+          "estimate": 27.6875,
+          "options": 5,
+          "steps": 4,
+          "reason": "end"
+        },
+        {
+          "turn": 3,
+          "hp": 156,
+          "first": 2,
+          "estimate": 38.242313385009766,
+          "options": 5,
+          "steps": 3,
+          "reason": "end"
+        },
+        {
+          "turn": 4,
+          "hp": 138,
+          "first": 2,
+          "estimate": -0.6816658020019533,
+          "options": 5,
+          "steps": 4,
+          "reason": "end"
+        },
+        {
+          "turn": 5,
+          "hp": 134,
+          "first": 0,
+          "estimate": 32.40311050415039,
+          "options": 5,
+          "steps": 3,
+          "reason": "end"
+        },
+        {
+          "turn": 6,
+          "hp": 134,
+          "first": 0,
+          "estimate": 18.6075382232666,
+          "options": 5,
+          "steps": 4,
+          "reason": "end"
+        },
+        {
+          "turn": 7,
+          "hp": 122,
+          "first": 1,
+          "estimate": 34.397117614746094,
+          "options": 4,
+          "steps": 4,
+          "reason": "end"
+        },
+        {
+          "turn": 8,
+          "hp": 105,
+          "first": 1,
+          "estimate": -1.2064990997314453,
+          "options": 6,
+          "steps": 3,
+          "reason": "end"
+        },
+        {
+          "turn": 9,
+          "hp": 98,
+          "first": 1,
+          "estimate": 33.558780670166016,
+          "options": 5,
+          "steps": 4,
+          "reason": "end"
+        },
+        {
+          "turn": 10,
+          "hp": 98,
+          "first": 0,
+          "estimate": -2.531757354736328,
+          "options": 4,
+          "steps": 3,
+          "reason": "end"
+        },
+        {
+          "turn": 11,
+          "hp": 77,
+          "first": 0,
+          "estimate": 14.48434066772461,
+          "options": 6,
+          "steps": 4,
+          "reason": "end"
+        },
+        {
+          "turn": 12,
+          "hp": 63,
+          "first": 0,
+          "estimate": -4.711513519287109,
+          "options": 4,
+          "steps": 2,
+          "reason": "end"
+        },
+        {
+          "turn": 13,
+          "hp": 47,
+          "first": 0,
+          "estimate": -15.904518127441406,
+          "options": 6,
+          "steps": 3,
+          "reason": "end"
+        },
+        {
+          "turn": 14,
+          "hp": 47,
+          "first": 1,
+          "estimate": -28.106727600097656,
+          "options": 6,
+          "steps": 4,
+          "reason": "end"
+        },
+        {
+          "turn": 15,
+          "hp": 22,
+          "first": 0,
+          "estimate": -25.843257904052734,
+          "options": 4,
+          "steps": 5,
+          "reason": "end"
+        },
+        {
+          "turn": 16,
+          "hp": 1,
+          "first": -1,
+          "estimate": -50.0,
+          "options": 5,
+          "steps": 1,
+          "reason": "end"
+        }
+      ],
+      "native": {
+        "search": {
+          "mechanism_checks": 54,
+          "stamps": 0,
+          "differing_stamps": [],
+          "native": {
+            "player_hp": 0,
+            "player_max_hp": 160,
+            "player_gold": 99,
+            "player_potions": "-,-,-"
+          },
+          "decision": "game_over",
+          "won": false,
+          "locked": false,
+          "terminal_match": true
+        },
+        "G2": {
+          "mechanism_checks": 26,
+          "stamps": 0,
+          "differing_stamps": [],
+          "native": {
+            "player_hp": 122,
+            "player_max_hp": 160,
+            "player_gold": 99,
+            "player_potions": "-,-,-"
+          },
+          "decision": "card_reward",
+          "won": true,
+          "locked": true,
+          "terminal_match": true
+        }
+      }
+    },
+    {
+      "ordinal": 892,
+      "encounter": "PHROG_PARASITE_ELITE",
+      "terminal": "death",
+      "trace": [
+        {
+          "turn": 1,
+          "hp": 80,
+          "first": 0,
+          "estimate": 66.03289794921875,
+          "options": 5,
+          "steps": 4,
+          "reason": "end"
+        },
+        {
+          "turn": 2,
+          "hp": 80,
+          "first": 2,
+          "estimate": 77.94343566894531,
+          "options": 5,
+          "steps": 3,
+          "reason": "end"
+        },
+        {
+          "turn": 3,
+          "hp": 80,
+          "first": 2,
+          "estimate": 83.52730560302734,
+          "options": 4,
+          "steps": 4,
+          "reason": "end"
+        },
+        {
+          "turn": 4,
+          "hp": 80,
+          "first": 0,
+          "estimate": 96.04600524902344,
+          "options": 4,
+          "steps": 4,
+          "reason": "end"
+        },
+        {
+          "turn": 5,
+          "hp": 80,
+          "first": 0,
+          "estimate": 86.752197265625,
+          "options": 4,
+          "steps": 3,
+          "reason": "end"
+        },
+        {
+          "turn": 6,
+          "hp": 74,
+          "first": 1,
+          "estimate": 81.7247543334961,
+          "options": 5,
+          "steps": 2,
+          "reason": "end"
+        },
+        {
+          "turn": 7,
+          "hp": 60,
+          "first": 1,
+          "estimate": 92.04751586914062,
+          "options": 4,
+          "steps": 2,
+          "reason": "end"
+        },
+        {
+          "turn": 8,
+          "hp": 59,
+          "first": -1,
+          "estimate": 72.47067260742188,
+          "options": 2,
+          "steps": 1,
+          "reason": "end"
+        },
+        {
+          "turn": 9,
+          "hp": 37,
+          "first": 2,
+          "estimate": 82.98078908675757,
+          "options": 4,
+          "steps": 2,
+          "reason": "end"
+        },
+        {
+          "turn": 10,
+          "hp": 37,
+          "first": 0,
+          "estimate": 72.04412078857422,
+          "options": 4,
+          "steps": 2,
+          "reason": "end"
+        },
+        {
+          "turn": 11,
+          "hp": 20,
+          "first": -1,
+          "estimate": 53.67080307006836,
+          "options": 1,
+          "steps": 1,
+          "reason": "end"
+        },
+        {
+          "turn": 12,
+          "hp": 5,
+          "first": -1,
+          "estimate": -50.0,
+          "options": 2,
+          "steps": 1,
+          "reason": "end"
+        }
+      ],
+      "native": {
+        "search": {
+          "mechanism_checks": 29,
+          "stamps": 0,
+          "differing_stamps": [],
+          "native": {
+            "player_hp": 0,
+            "player_max_hp": 80,
+            "player_gold": 99,
+            "player_potions": "-,-,-"
+          },
+          "decision": "game_over",
+          "won": false,
+          "locked": false,
+          "terminal_match": true
+        },
+        "G2": {
+          "mechanism_checks": 31,
+          "stamps": 0,
+          "differing_stamps": [],
+          "native": {
+            "player_hp": 37,
+            "player_max_hp": 80,
+            "player_gold": 99,
+            "player_potions": "-,-,-"
+          },
+          "decision": "card_reward",
+          "won": true,
+          "locked": true,
+          "terminal_match": true
+        }
+      }
+    }
+  ],
+  "seconds": 49.69806670001708
+}

@@ -1,0 +1,38 @@
+{
+  "costs": {
+    "core3-pilot": 11.201385599997593,
+    "core3-data0": 89.78909569999087,
+    "core3-data1": 89.57035230001202,
+    "core3-data2": 90.31041350000305,
+    "core3-data3": 87.05498670000816,
+    "0_confirmation": 8.887062000023434,
+    "1_confirmation": 9.63699580001412,
+    "2_development": 20.35720759999822,
+    "3_development": 23.565658099978464,
+    "fit": 23.0120568999846,
+    "full_deploy": 27.45805429999018,
+    "draw_fixture": 7.827287999971304,
+    "smoke": 9.006642099993769,
+    "failure_replay_and_native": 49.69806670001708,
+    "first_failure_probe": 15.37,
+    "failed_native_setup_estimate": 10.0,
+    "evaluation": 2.3676298999926075,
+    "test_process": 5.46,
+    "core2_regression": 5.58,
+    "core1r2_regression": 5.53
+  },
+  "summed_seconds": 591.6828951999755,
+  "warm_48_states_seconds": {
+    "simple": 0.0017367000109516084,
+    "mechanism": 0.009444600000279024
+  },
+  "natural_actions": 26961,
+  "paired_actions": 4877,
+  "candidate_search_plays": 4496,
+  "full_deploy_search_plays": 13285,
+  "candidate_world_proposals": 414,
+  "updates_per_arm": 3550,
+  "presentations_per_arm": 225350,
+  "gpu_seconds": 0,
+  "scope": "Host inner copies and child CPU not instrumented. Sum includes pilot and reruns; interpreter startup, short checks and editing excluded."
+}
