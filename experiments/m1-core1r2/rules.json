@@ -1,0 +1,514 @@
+{
+  "build_sha256": "0d691e438c3b863e6dca9cede57f9c6b292e08d8c19ee6486c05ecd2dee85d84",
+  "cards": {
+    "FRANTIC_ESCAPE": {
+      "BaseCost": 1,
+      "CanGenerateUnknown": false,
+      "HookMask": "None",
+      "OrderedVarNames": [],
+      "Target": "Self",
+      "Type": "Status",
+      "UpgradedCost": 1,
+      "coverage": "specialized_execution_unexpanded",
+      "knownCustomSemantics": [],
+      "operations": []
+    }
+  },
+  "conflicts": [],
+  "graphs": {
+    "EXOSKELETON": [
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "ENRAGE_MOVE",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "RAND",
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "StaticFallback",
+        "MoveId": "INIT_MOVE",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "ConditionalBranch",
+        "condition": null,
+        "next": null,
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "MANDIBLES_MOVE",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "ENRAGE_MOVE",
+        "targets": []
+      },
+      {
+        "CannotRepeat": true,
+        "ConditionalKind": "None",
+        "MoveId": "RAND",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "RandomBranch",
+        "condition": null,
+        "next": null,
+        "targets": [
+          "SKITTER_MOVE",
+          "MANDIBLES_MOVE"
+        ]
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "SKITTER_MOVE",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "RAND",
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "STUNNED",
+        "MustPerformOnceBeforeRepeat": true,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": null,
+        "targets": []
+      }
+    ],
+    "FROG_KNIGHT": [
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "BEETLE_CHARGE",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "TONGUE_LASH",
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "FOR_THE_QUEEN",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "HALF_HEALTH",
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "FrogKnightHalfHealth",
+        "MoveId": "HALF_HEALTH",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "ConditionalBranch",
+        "condition": {
+          "dependency": "current_max_hp_and_unqualified_charge_history",
+          "predicate": "already_charged_or_hp_at_least_floor_half",
+          "whenFalse": "BEETLE_CHARGE",
+          "whenTrue": "TONGUE_LASH"
+        },
+        "next": null,
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "STRIKE_DOWN_EVIL",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "FOR_THE_QUEEN",
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "TONGUE_LASH",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "STRIKE_DOWN_EVIL",
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "STUNNED",
+        "MustPerformOnceBeforeRepeat": true,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": null,
+        "targets": []
+      }
+    ],
+    "FUZZY_WURM_CRAWLER": [
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "ACID_GOOP",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "FIRST_ACID_GOOP",
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "FIRST_ACID_GOOP",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "INHALE",
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "INHALE",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "ACID_GOOP",
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "STUNNED",
+        "MustPerformOnceBeforeRepeat": true,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": null,
+        "targets": []
+      }
+    ],
+    "HUNTER_KILLER": [
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "BITE_MOVE",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "RAND",
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "PUNCTURE_MOVE",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "RAND",
+        "targets": []
+      },
+      {
+        "CannotRepeat": true,
+        "ConditionalKind": "None",
+        "MoveId": "RAND",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "RandomBranch",
+        "condition": null,
+        "next": null,
+        "targets": [
+          "BITE_MOVE",
+          "PUNCTURE_MOVE"
+        ]
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "TENDERIZING_GOOP_MOVE",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "RAND",
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "STUNNED",
+        "MustPerformOnceBeforeRepeat": true,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": null,
+        "targets": []
+      }
+    ],
+    "LIVING_SHIELD": [
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "LivingShieldSlam",
+        "MoveId": "SHIELD_SLAM_BRANCH",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "ConditionalBranch",
+        "condition": null,
+        "next": null,
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "SHIELD_SLAM_MOVE",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "SHIELD_SLAM_BRANCH",
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "SMASH_MOVE",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "SMASH_MOVE",
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "STUNNED",
+        "MustPerformOnceBeforeRepeat": true,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": null,
+        "targets": []
+      }
+    ],
+    "MAWLER": [
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "CLAW_MOVE",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "RAND",
+        "targets": []
+      },
+      {
+        "CannotRepeat": true,
+        "ConditionalKind": "None",
+        "MoveId": "RAND",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "RandomBranch",
+        "condition": null,
+        "next": null,
+        "targets": [
+          "RIP_AND_TEAR_MOVE",
+          "ROAR_MOVE",
+          "CLAW_MOVE"
+        ]
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "RIP_AND_TEAR_MOVE",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "RAND",
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "ROAR_MOVE",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "RAND",
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "STUNNED",
+        "MustPerformOnceBeforeRepeat": true,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": null,
+        "targets": []
+      }
+    ],
+    "SHRINKER_BEETLE": [
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "CHOMP_MOVE",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "STOMP_MOVE",
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "SHRINKER_MOVE",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "CHOMP_MOVE",
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "STOMP_MOVE",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "CHOMP_MOVE",
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "STUNNED",
+        "MustPerformOnceBeforeRepeat": true,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": null,
+        "targets": []
+      }
+    ],
+    "SLUMBERING_BEETLE": [
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "ROLL_OUT_MOVE",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "ROLL_OUT_MOVE",
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "SNORE_MOVE",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "SNORE_NEXT",
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "SlumberingBeetleSnore",
+        "MoveId": "SNORE_NEXT",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "ConditionalBranch",
+        "condition": {
+          "dependency": "owner_slumber_power",
+          "predicate": "slumber_amount_positive",
+          "whenFalse": "ROLL_OUT_MOVE",
+          "whenTrue": "SNORE_MOVE"
+        },
+        "next": null,
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "STUNNED",
+        "MustPerformOnceBeforeRepeat": true,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": null,
+        "targets": []
+      }
+    ],
+    "TURRET_OPERATOR": [
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "RELOAD_MOVE",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "UNLOAD_MOVE",
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "UNLOAD_MOVE",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "UNLOAD_MOVE_2",
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "UNLOAD_MOVE_2",
+        "MustPerformOnceBeforeRepeat": false,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": "RELOAD_MOVE",
+        "targets": []
+      },
+      {
+        "CannotRepeat": false,
+        "ConditionalKind": "None",
+        "MoveId": "STUNNED",
+        "MustPerformOnceBeforeRepeat": true,
+        "NodeKind": "Move",
+        "condition": null,
+        "next": null,
+        "targets": []
+      }
+    ]
+  },
+  "missing_cards": [],
+  "missing_graphs": [],
+  "rows": [
+    {
+      "encounter": "AEONGLASS_BOSS",
+      "exit_code": 0
+    },
+    {
+      "encounter": "EXOSKELETONS_NORMAL",
+      "exit_code": 0
+    },
+    {
+      "encounter": "FROG_KNIGHT_NORMAL",
+      "exit_code": 0
+    },
+    {
+      "encounter": "HUNTER_KILLER_NORMAL",
+      "exit_code": 0
+    },
+    {
+      "encounter": "MAWLER_NORMAL",
+      "exit_code": 0
+    },
+    {
+      "encounter": "OVERGROWTH_CRAWLERS",
+      "exit_code": 0
+    },
+    {
+      "encounter": "SLUMBERING_BEETLE_NORMAL",
+      "exit_code": 0
+    },
+    {
+      "encounter": "TURRET_OPERATOR_WEAK",
+      "exit_code": 0
+    }
+  ]
+}

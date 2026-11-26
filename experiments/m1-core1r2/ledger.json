@@ -1,0 +1,324 @@
+{
+  "schema": "core1r2.compute.v1",
+  "start_commit": "75d58af560f956f6a2fa5151f1462d6d106c0b20",
+  "branch": "port/v0.113.1",
+  "baseline_ledger": "experiments/m1-core1r/ledger.json",
+  "runs": [
+    {
+      "job": "r2-accept-fx",
+      "kind": "fixtures",
+      "seconds": 35.15316379998694,
+      "cases": 16,
+      "fixture_graph_calls": 2982,
+      "followup_calls": 5,
+      "settlement_calls": 184
+    },
+    {
+      "job": "r2-accept-native",
+      "kind": "native",
+      "seconds": 25.796330600016518,
+      "families": 4,
+      "complete_matches": 3
+    },
+    {
+      "job": "r2-accept-panel",
+      "kind": "paired_panel",
+      "seconds": 147.29598379999516,
+      "python_cpu_seconds": 6.765625,
+      "families": 24,
+      "queries": 56,
+      "paired_live_calls": 8734,
+      "deeper_live_calls": 3103,
+      "evaluated_deployment_calls": 5164,
+      "executed_steps": 174,
+      "paired_errors": 0
+    },
+    {
+      "job": "r2-accept-strict",
+      "kind": "strict_replay",
+      "seconds": 4.879708100022981,
+      "queries": 1,
+      "simulation_calls": 36,
+      "failure": "audit compared ordered discard on the canonical tactical fork"
+    },
+    {
+      "job": "r2-build01",
+      "kind": "failed_build",
+      "seconds": 3.31,
+      "cause": "host codepage decode failure"
+    },
+    {
+      "job": "r2-build02",
+      "kind": "build",
+      "seconds": 56.902699900005246
+    },
+    {
+      "job": "r2-build03",
+      "kind": "build",
+      "seconds": 45.75379210000392
+    },
+    {
+      "job": "r2-build04",
+      "kind": "build",
+      "seconds": 38.37377250002464
+    },
+    {
+      "job": "r2-build05",
+      "kind": "build",
+      "seconds": 55.44665910000913
+    },
+    {
+      "job": "r2-build06",
+      "kind": "build",
+      "seconds": 50.87279579997994
+    },
+    {
+      "job": "r2-build07",
+      "kind": "build",
+      "seconds": 54.60344530001748
+    },
+    {
+      "job": "r2-build08",
+      "kind": "build",
+      "seconds": 55.64008770001237
+    },
+    {
+      "job": "r2-dev01",
+      "kind": "paired_panel",
+      "seconds": 149.65136899999925,
+      "python_cpu_seconds": 7.03125,
+      "families": 24,
+      "queries": 54,
+      "paired_live_calls": 8243,
+      "deeper_live_calls": 3103,
+      "evaluated_deployment_calls": 4824,
+      "executed_steps": 174,
+      "paired_errors": 0
+    },
+    {
+      "job": "r2-dev02",
+      "kind": "paired_panel",
+      "seconds": 179.8365921000077,
+      "python_cpu_seconds": 8.25,
+      "families": 24,
+      "queries": 55,
+      "paired_live_calls": 8167,
+      "deeper_live_calls": 3103,
+      "evaluated_deployment_calls": 4835,
+      "executed_steps": 174,
+      "paired_errors": 0
+    },
+    {
+      "job": "r2-dev03",
+      "kind": "paired_panel",
+      "seconds": 161.49444219999714,
+      "python_cpu_seconds": 6.765625,
+      "families": 24,
+      "queries": 55,
+      "paired_live_calls": 8285,
+      "deeper_live_calls": 3103,
+      "evaluated_deployment_calls": 4960,
+      "executed_steps": 176,
+      "paired_errors": 0
+    },
+    {
+      "job": "r2-final-archive",
+      "kind": "build",
+      "seconds": 55.64008770001237
+    },
+    {
+      "job": "r2-final-fx",
+      "kind": "fixtures",
+      "seconds": 34.81636520000757,
+      "cases": 16,
+      "fixture_graph_calls": 2982,
+      "followup_calls": 5,
+      "settlement_calls": 184
+    },
+    {
+      "job": "r2-final-native08",
+      "kind": "native",
+      "seconds": 25.767401199991582,
+      "families": 4,
+      "complete_matches": 3
+    },
+    {
+      "job": "r2-final-panel",
+      "kind": "paired_panel",
+      "seconds": 147.73741850000806,
+      "python_cpu_seconds": 6.96875,
+      "families": 24,
+      "queries": 56,
+      "paired_live_calls": 8734,
+      "deeper_live_calls": 3103,
+      "evaluated_deployment_calls": 5172,
+      "executed_steps": 174,
+      "paired_errors": 0
+    },
+    {
+      "job": "r2-final-strict08",
+      "kind": "strict_replay",
+      "seconds": 77.58598079998046,
+      "queries": 56,
+      "simulation_calls": 413
+    },
+    {
+      "job": "r2-fx01",
+      "kind": "fixtures",
+      "seconds": 26.465713900019182,
+      "cases": 11,
+      "fixture_graph_calls": 1638,
+      "followup_calls": 0,
+      "settlement_calls": 40
+    },
+    {
+      "job": "r2-fx02",
+      "kind": "fixtures",
+      "seconds": 34.59770069998922,
+      "cases": 16,
+      "fixture_graph_calls": 3004,
+      "followup_calls": 5,
+      "settlement_calls": 184
+    },
+    {
+      "job": "r2-fx03",
+      "kind": "fixtures",
+      "seconds": 44.01714690000517,
+      "cases": 16,
+      "fixture_graph_calls": 3004,
+      "followup_calls": 5,
+      "settlement_calls": 184
+    },
+    {
+      "job": "r2-gaps",
+      "kind": "paired_panel",
+      "seconds": 18.980771000002278,
+      "python_cpu_seconds": 2.71875,
+      "families": 3,
+      "queries": 10,
+      "paired_live_calls": 1409,
+      "deeper_live_calls": 2617,
+      "evaluated_deployment_calls": 1013,
+      "executed_steps": 25,
+      "paired_errors": 0
+    },
+    {
+      "job": "r2-native-final",
+      "kind": "native",
+      "seconds": 37.29455640001106,
+      "families": 4,
+      "complete_matches": 3
+    },
+    {
+      "job": "r2-probe01",
+      "kind": "paired_panel",
+      "seconds": 19.391688300005626,
+      "python_cpu_seconds": 2.84375,
+      "families": 3,
+      "queries": 10,
+      "paired_live_calls": 1409,
+      "deeper_live_calls": 2617,
+      "evaluated_deployment_calls": 1013,
+      "executed_steps": 25,
+      "paired_errors": 0
+    },
+    {
+      "job": "r2-release-fixtures",
+      "kind": "fixtures",
+      "seconds": 34.836322599992855,
+      "cases": 16,
+      "fixture_graph_calls": 3004,
+      "followup_calls": 5,
+      "settlement_calls": 184
+    },
+    {
+      "job": "r2-release-panel",
+      "kind": "paired_panel",
+      "seconds": 161.53606810001656,
+      "python_cpu_seconds": 6.96875,
+      "families": 24,
+      "queries": 56,
+      "paired_live_calls": 8734,
+      "deeper_live_calls": 3103,
+      "evaluated_deployment_calls": 5164,
+      "executed_steps": 174,
+      "paired_errors": 0
+    },
+    {
+      "job": "r2-rule-export",
+      "kind": "static_rules",
+      "seconds": 33.88347460000659,
+      "encounters": 8
+    },
+    {
+      "job": "r2-strict-final",
+      "kind": "strict_replay",
+      "seconds": 80.48972110002069,
+      "queries": 56,
+      "simulation_calls": 413
+    },
+    {
+      "job": "r2-build09",
+      "kind": "build",
+      "seconds": 38.140591300005326
+    },
+    {
+      "job": "r2-check09-fx",
+      "kind": "fixtures",
+      "seconds": 34.98705500000506,
+      "cases": 16,
+      "fixture_graph_calls": 2982,
+      "followup_calls": 5,
+      "settlement_calls": 184
+    },
+    {
+      "job": "r2-check09-panel",
+      "kind": "paired_panel",
+      "seconds": 149.04215880000265,
+      "python_cpu_seconds": 6.765625,
+      "families": 24,
+      "queries": 56,
+      "paired_live_calls": 8734,
+      "deeper_live_calls": 3103,
+      "evaluated_deployment_calls": 5172,
+      "executed_steps": 174,
+      "paired_errors": 0
+    },
+    {
+      "job": "r2-check09-native",
+      "kind": "native",
+      "seconds": 25.627965899999253,
+      "families": 4,
+      "complete_matches": 3
+    },
+    {
+      "job": "r2-check09-strict",
+      "kind": "strict_replay",
+      "seconds": 80.94350689998828,
+      "queries": 56,
+      "simulation_calls": 413
+    }
+  ],
+  "other_measured_wall_seconds": {
+    "CORE-1R historical suite": 5.346,
+    "CORE-1 historical suite": 6.201,
+    "SV4A suite": 5.927,
+    "fixture assertions during acceptance": 5.081,
+    "CORE-1R2 first archive suite": 7.636,
+    "CORE-1R2 final archive check and suite": 8.098,
+    "first archival and feature timing": 7.346,
+    "supplemented archival and feature timing": 7.145,
+    "scoped precedence and threshold regression": 4.8,
+    "final packaged evidence and feature join": 7.4499045,
+    "final repository evidence and CORE-1R2 suite": 7.5002039
+  },
+  "summed_job_wall_seconds": 2299.323,
+  "old_sampler_queries_rerun": 0,
+  "training_presentations": 0,
+  "training_updates": 0,
+  "gpu_seconds": 0,
+  "confirmation_families_evaluated": 0,
+  "child_process_cpu_seconds": null,
+  "main_panel_python_cpu_seconds": 6.765625,
+  "scope": "Individual measured jobs summed even if concurrent. Includes initial builds, failed audits and reruns. Historical reference costs excluded. Excludes interactive editing, source reads, short ad hoc calculations and incomplete subprocess CPU information. Fixture graph counts exclude host setup and driver calls. Repeated families are not independent data."
+}

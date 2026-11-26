@@ -1,0 +1,122 @@
+{
+  "observed_c_json_bytes": [
+    2011,
+    2980.5,
+    4034
+  ],
+  "historical_front_covered": 383,
+  "families": 24,
+  "errors": [],
+  "paired_anchors": 46,
+  "encounters": 18,
+  "deck_range": [
+    13,
+    24
+  ],
+  "calls": {
+    "tree": 4752,
+    "r1": 3902,
+    "reduced": 3982
+  },
+  "nodes": {
+    "tree": 14542,
+    "r1": 7670,
+    "reduced": 12803
+  },
+  "rpc_seconds": {
+    "tree": 9.297813800018048,
+    "r1": 7.986887799954275,
+    "reduced": 8.03126450011041
+  },
+  "complete_deterministic_roots": 9,
+  "complete_calls": {
+    "tree": 531,
+    "r1": 494,
+    "reduced": 302
+  },
+  "complete_front_covered": 9,
+  "equal_quality_roots": 46,
+  "calls_to_quality": {
+    "tree": 1756,
+    "reduced": 1255
+  },
+  "target_points": 460,
+  "covered_points": 460,
+  "gaps": [],
+  "deeper": {
+    "calls": {
+      "tree": 1714,
+      "reduced": 1389
+    },
+    "roots": 4,
+    "target": 65,
+    "covered": 65
+  },
+  "root_candidates": 277,
+  "root_classified": 186,
+  "old_root_classified": 87,
+  "counts": {
+    "catalog_operations": 4548,
+    "generated_classified": 4741,
+    "dynamic_default": 2130,
+    "generated_barrier": 1937,
+    "duplicate_pruned": 229,
+    "canonical_constraints": 3172,
+    "sleep_pruned": 820,
+    "unsupported_pending_choice": 90,
+    "goal_expand": 513,
+    "precedence_constraints": 106,
+    "dominance_pruned": 42,
+    "ordinary_combinations": 413,
+    "ordinary_skip": 114,
+    "budget": 8733,
+    "random_target": 97,
+    "card_selection": 146,
+    "card_generation": 14,
+    "autoplay_from_draw": 8,
+    "draw_depth_cap": 42
+  },
+  "modeled_mass_per_query": {
+    "C": 0.8392857142857143,
+    "C_model": 0.16071428571428573
+  },
+  "two_B": 24,
+  "observed_C": 48,
+  "selected": {
+    "0": 53,
+    "1": 3
+  },
+  "candidates": {
+    "3": 53,
+    "1": 3
+  },
+  "root_laws": {
+    "available": 56
+  },
+  "audit": {
+    "rules_compared": 39,
+    "rules_matched": 39,
+    "proxy_compared": 9,
+    "proxy_matched": 3
+  },
+  "differences": {
+    "proxy_enemies": 6
+  },
+  "deployment": {
+    "queries": 56,
+    "actions": 174,
+    "counts": {
+      "replan_draw": 8,
+      "B": 48
+    },
+    "administrative_steps": 4,
+    "search_calls": 4109,
+    "settlement_calls": 1063,
+    "prefix_replays": 311,
+    "settlement_rpc_seconds": 3.7661388000124134,
+    "query_ms_median": 274.41389999876264,
+    "wall_seconds": 70.36259750003228
+  },
+  "panel_seconds": 149.04215880000265,
+  "python_cpu_seconds": 6.765625
+}
