@@ -1,0 +1,4512 @@
+{
+ "version": "core0-v1",
+ "source_sha256": "4cde49a8c24650e3dc5a25dc9baa2385e9f4382a172c6331d81f5d3020b44a65",
+ "model_sha256": "1077c191586885c49173afe5801849b3ea6a4535425731e27226fe1978abf084",
+ "baselines": {
+  "g2": 0,
+  "g2-search": 24
+ },
+ "search_depth": 8,
+ "action_cap": 128,
+ "domains": {
+  "natural": "unchanged recipe",
+  "hard": "same recipe hp=min(hp,24)",
+  "cross": "same deck and resources, rotate across the frozen transfer encounters"
+ },
+ "transfer": [
+  "FOSSIL_STALKER_NORMAL",
+  "PUNCH_CONSTRUCT_NORMAL",
+  "SNAPPING_JAXFRUIT_NORMAL",
+  "TUNNELER_WEAK"
+ ],
+ "jobs": [
+  {
+   "family": "442dbe261b8bd51de90753ab7777c9f599bd6b70e8717dbfb9a71691d9f009f3",
+   "split": "development",
+   "source_row": 156,
+   "room": "Monster",
+   "spec": {
+    "act": 1,
+    "act_variant": "OVERGROWTH",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "POMMEL_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "SHRUG_IT_OFF",
+      "upgrade": 0
+     },
+     {
+      "id": "HEMOKINESIS",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "RUPTURE",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOOD_WALL",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "SWORD_BOOMERANG",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "TRUE_GRIT",
+      "upgrade": 1
+     }
+    ],
+    "encounter": "OVERGROWTH_CRAWLERS",
+    "hp": 999,
+    "max_hp": 999,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "798907CFDDBE97E7"
+   }
+  },
+  {
+   "family": "4d81e221940f2579e4e668daacd643ead26cf32211ece9705ffb4711c3141f85",
+   "split": "confirmation",
+   "source_row": 449,
+   "room": "Monster",
+   "spec": {
+    "act": 2,
+    "act_variant": "HIVE",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "MIDNIGHT",
+      "upgrade": 0
+     },
+     {
+      "id": "INFERNO",
+      "upgrade": 0
+     },
+     {
+      "id": "BODY_SLAM",
+      "upgrade": 0
+     },
+     {
+      "id": "BULLY",
+      "upgrade": 1
+     },
+     {
+      "id": "BURNING_PACT",
+      "upgrade": 0
+     },
+     {
+      "id": "JUGGLING",
+      "upgrade": 0
+     },
+     {
+      "id": "AGGRESSION",
+      "upgrade": 0
+     },
+     {
+      "id": "BRAND",
+      "upgrade": 0
+     },
+     {
+      "id": "HEMOKINESIS",
+      "upgrade": 1
+     },
+     {
+      "id": "ANGER",
+      "upgrade": 0
+     },
+     {
+      "id": "RUPTURE",
+      "upgrade": 0
+     },
+     {
+      "id": "FLAME_BARRIER",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "SPINY_TOAD_NORMAL",
+    "hp": 80,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "636C257639E268B2"
+   }
+  },
+  {
+   "family": "e0f07c988473f96261cd7831b3c70725dbcd86f403935b817f58c4bd28981422",
+   "split": "development",
+   "source_row": 331,
+   "room": "Monster",
+   "spec": {
+    "act": 3,
+    "act_variant": "GLORY",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 1
+     },
+     {
+      "id": "THUNDERCLAP",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "TRUE_GRIT",
+      "upgrade": 0
+     },
+     {
+      "id": "SHRUG_IT_OFF",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "EVIL_EYE",
+      "upgrade": 0
+     },
+     {
+      "id": "TRUE_GRIT",
+      "upgrade": 0
+     },
+     {
+      "id": "RAMPAGE",
+      "upgrade": 0
+     },
+     {
+      "id": "SHRUG_IT_OFF",
+      "upgrade": 1
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 0
+     },
+     {
+      "id": "FORGOTTEN_RITUAL",
+      "upgrade": 1
+     },
+     {
+      "id": "STONE_ARMOR",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 0
+     },
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 1
+     },
+     {
+      "id": "STOKE",
+      "upgrade": 0
+     },
+     {
+      "id": "CINDER",
+      "upgrade": 0
+     },
+     {
+      "id": "SWORD_BOOMERANG",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "SETUP_STRIKE",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "FROG_KNIGHT_NORMAL",
+    "hp": 44,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "87354609ABF05DD8"
+   }
+  },
+  {
+   "family": "ca4cae7ef0688136f05eb2818b418daf37ebde6d785ef6becf0914a1b2746abb",
+   "split": "confirmation",
+   "source_row": 423,
+   "room": "Boss",
+   "spec": {
+    "act": 3,
+    "act_variant": "GLORY",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "SWORD_BOOMERANG",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STONE_ARMOR",
+      "upgrade": 1
+     },
+     {
+      "id": "BLOOD_WALL",
+      "upgrade": 0
+     },
+     {
+      "id": "INFLAME",
+      "upgrade": 0
+     },
+     {
+      "id": "INFLAME",
+      "upgrade": 0
+     },
+     {
+      "id": "STONE_ARMOR",
+      "upgrade": 0
+     },
+     {
+      "id": "RAMPAGE",
+      "upgrade": 0
+     },
+     {
+      "id": "HEMOKINESIS",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BURNING_PACT",
+      "upgrade": 1
+     },
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 1
+     },
+     {
+      "id": "HEMOKINESIS",
+      "upgrade": 1
+     },
+     {
+      "id": "INFLAME",
+      "upgrade": 1
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "TRUE_GRIT",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "UNMOVABLE",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     }
+    ],
+    "encounter": "AEONGLASS_BOSS",
+    "hp": 80,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "0B205A09E07514E3"
+   }
+  },
+  {
+   "family": "6321dff8bf7671a22eee9d6e3ee152927a9fd6c0c7d8973e67f0cae0393e9ce0",
+   "split": "development",
+   "source_row": 23,
+   "room": "Monster",
+   "spec": {
+    "act": 2,
+    "act_variant": "HIVE",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "SHRUG_IT_OFF",
+      "upgrade": 0
+     },
+     {
+      "id": "MOLTEN_FIST",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "HEADBUTT",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "FLAME_BARRIER",
+      "upgrade": 0
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 1
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "BATTLE_TRANCE",
+      "upgrade": 1
+     },
+     {
+      "id": "EXPECT_A_FIGHT",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "TWIN_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "SWORD_BOOMERANG",
+      "upgrade": 0
+     },
+     {
+      "id": "INFLAME",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "UNMOVABLE",
+      "upgrade": 1
+     }
+    ],
+    "encounter": "TUNNELER_WEAK",
+    "hp": 64,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "E1DA4C9BDCD2B4FA"
+   }
+  },
+  {
+   "family": "26bdfb1e564f3a872a43975536671ab9f167c8a89b6c6bb47f5768f0dba91203",
+   "split": "confirmation",
+   "source_row": 30,
+   "room": "Monster",
+   "spec": {
+    "act": 2,
+    "act_variant": "HIVE",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "SETUP_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "BODY_SLAM",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 1
+     },
+     {
+      "id": "THUNDERCLAP",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "IMPERVIOUS",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "TRUE_GRIT",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "FLAME_BARRIER",
+      "upgrade": 0
+     },
+     {
+      "id": "BARRICADE",
+      "upgrade": 0
+     },
+     {
+      "id": "SHRUG_IT_OFF",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "POMMEL_STRIKE",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "SLUMBERING_BEETLE_NORMAL",
+    "hp": 160,
+    "max_hp": 160,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "73F341D81261A22C"
+   }
+  },
+  {
+   "family": "5817b9482e5ea0eff04d64a5cfa93f37e70ee4ee89909fe9bf6f011ec83022bd",
+   "split": "development",
+   "source_row": 319,
+   "room": "Monster",
+   "spec": {
+    "act": 2,
+    "act_variant": "HIVE",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "FORGOTTEN_RITUAL",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "EVIL_EYE",
+      "upgrade": 0
+     },
+     {
+      "id": "TWIN_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "TRUE_GRIT",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 0
+     },
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 0
+     },
+     {
+      "id": "SHRUG_IT_OFF",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "TRUE_GRIT",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STOKE",
+      "upgrade": 0
+     },
+     {
+      "id": "THUNDERCLAP",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     }
+    ],
+    "encounter": "EXOSKELETONS_NORMAL",
+    "hp": 160,
+    "max_hp": 160,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "0A53A9528FC13989"
+   }
+  },
+  {
+   "family": "bf4ea2297bb1f1abfccfbf5cdba6710de3f53a3da9eaa67d902bc006dce632ef",
+   "split": "confirmation",
+   "source_row": 398,
+   "room": "Boss",
+   "spec": {
+    "act": 1,
+    "act_variant": "OVERGROWTH",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 1
+     },
+     {
+      "id": "TRUE_GRIT",
+      "upgrade": 0
+     },
+     {
+      "id": "CINDER",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOOD_WALL",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "FORGOTTEN_RITUAL",
+      "upgrade": 0
+     },
+     {
+      "id": "CINDER",
+      "upgrade": 0
+     },
+     {
+      "id": "STOKE",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "UNMOVABLE",
+      "upgrade": 0
+     },
+     {
+      "id": "EVIL_EYE",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "THE_KIN_BOSS",
+    "hp": 160,
+    "max_hp": 160,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "5AF26953C25F39ED"
+   }
+  },
+  {
+   "family": "4ec8ddce6074c59f00310a2dd1a42390dd9a2b75ad2fe5caaed85e6e36bddc5f",
+   "split": "development",
+   "source_row": 140,
+   "room": "Boss",
+   "spec": {
+    "act": 3,
+    "act_variant": "GLORY",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "SWORD_BOOMERANG",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "THUNDERCLAP",
+      "upgrade": 1
+     },
+     {
+      "id": "SWORD_BOOMERANG",
+      "upgrade": 1
+     },
+     {
+      "id": "BURNING_PACT",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "TWIN_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "RUPTURE",
+      "upgrade": 1
+     },
+     {
+      "id": "SETUP_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "STONE_ARMOR",
+      "upgrade": 0
+     },
+     {
+      "id": "STONE_ARMOR",
+      "upgrade": 0
+     },
+     {
+      "id": "TRUE_GRIT",
+      "upgrade": 1
+     },
+     {
+      "id": "FIGHT_ME",
+      "upgrade": 1
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "HEADBUTT",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOOD_WALL",
+      "upgrade": 1
+     },
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "HEMOKINESIS",
+      "upgrade": 0
+     },
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 1
+     }
+    ],
+    "encounter": "AEONGLASS_BOSS",
+    "hp": 160,
+    "max_hp": 160,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "0E274000A6203879"
+   }
+  },
+  {
+   "family": "5df6ff617d30f0190893372a7cd9aadc4e1fe26c7abed6459efe17ace963db3b",
+   "split": "confirmation",
+   "source_row": 497,
+   "room": "Elite",
+   "spec": {
+    "act": 2,
+    "act_variant": "HIVE",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "FEED",
+      "upgrade": 0
+     },
+     {
+      "id": "CRUELTY",
+      "upgrade": 0
+     },
+     {
+      "id": "STOMP",
+      "upgrade": 0
+     },
+     {
+      "id": "JUGGLING",
+      "upgrade": 1
+     },
+     {
+      "id": "THUNDERCLAP",
+      "upgrade": 0
+     },
+     {
+      "id": "CRUELTY",
+      "upgrade": 0
+     },
+     {
+      "id": "THRASH",
+      "upgrade": 1
+     },
+     {
+      "id": "TREMBLE",
+      "upgrade": 0
+     },
+     {
+      "id": "BLUDGEON",
+      "upgrade": 0
+     },
+     {
+      "id": "MIDNIGHT",
+      "upgrade": 0
+     },
+     {
+      "id": "AGGRESSION",
+      "upgrade": 1
+     },
+     {
+      "id": "HEADBUTT",
+      "upgrade": 0
+     },
+     {
+      "id": "PERFECTED_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "OUTRAGE",
+      "upgrade": 0
+     },
+     {
+      "id": "CRIMSON_MANTLE",
+      "upgrade": 0
+     },
+     {
+      "id": "DARK_EMBRACE",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 0
+     },
+     {
+      "id": "TREMBLE",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "ENTOMANCER_ELITE",
+    "hp": 64,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "D2D16A5185F759A6"
+   }
+  },
+  {
+   "family": "ce23265def4613065364ed5c354699079d10d6aeff62a826080040b875e3abbc",
+   "split": "development",
+   "source_row": 283,
+   "room": "Boss",
+   "spec": {
+    "act": 3,
+    "act_variant": "GLORY",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "CINDER",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOOD_WALL",
+      "upgrade": 1
+     },
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 0
+     },
+     {
+      "id": "TRUE_GRIT",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "BASH",
+      "upgrade": 1
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 0
+     },
+     {
+      "id": "POMMEL_STRIKE",
+      "upgrade": 1
+     },
+     {
+      "id": "SWORD_BOOMERANG",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 0
+     },
+     {
+      "id": "FLAME_BARRIER",
+      "upgrade": 0
+     },
+     {
+      "id": "HEMOKINESIS",
+      "upgrade": 1
+     },
+     {
+      "id": "UNMOVABLE",
+      "upgrade": 0
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 1
+     },
+     {
+      "id": "UPPERCUT",
+      "upgrade": 1
+     },
+     {
+      "id": "RUPTURE",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BATTLE_TRANCE",
+      "upgrade": 1
+     },
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "TEST_SUBJECT_BOSS",
+    "hp": 64,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "40C147C9AE83488A"
+   }
+  },
+  {
+   "family": "9cb2bf78c8f5d74c00e1722d0b4155ac4449c4c5e0e2911c7d3f2572086a36af",
+   "split": "confirmation",
+   "source_row": 167,
+   "room": "Monster",
+   "spec": {
+    "act": 2,
+    "act_variant": "HIVE",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "HEADBUTT",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 1
+     },
+     {
+      "id": "SWORD_BOOMERANG",
+      "upgrade": 1
+     },
+     {
+      "id": "RAMPAGE",
+      "upgrade": 1
+     },
+     {
+      "id": "BASH",
+      "upgrade": 1
+     },
+     {
+      "id": "POMMEL_STRIKE",
+      "upgrade": 1
+     },
+     {
+      "id": "INFLAME",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "TRUE_GRIT",
+      "upgrade": 0
+     },
+     {
+      "id": "RAMPAGE",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "COLOSSUS",
+      "upgrade": 0
+     },
+     {
+      "id": "FIGHT_ME",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "COLOSSUS",
+      "upgrade": 1
+     }
+    ],
+    "encounter": "EXOSKELETONS_NORMAL",
+    "hp": 64,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "46B2929497663CB2"
+   }
+  },
+  {
+   "family": "c2e2e31ef64a59aa7aab50eb1cb092941210f3d4cbc6278eeb42fcb307256857",
+   "split": "development",
+   "source_row": 173,
+   "room": "Monster",
+   "spec": {
+    "act": 2,
+    "act_variant": "HIVE",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "UNMOVABLE",
+      "upgrade": 0
+     },
+     {
+      "id": "TRUE_GRIT",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 1
+     },
+     {
+      "id": "SWORD_BOOMERANG",
+      "upgrade": 1
+     },
+     {
+      "id": "ARMAMENTS",
+      "upgrade": 0
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 0
+     },
+     {
+      "id": "RUPTURE",
+      "upgrade": 0
+     },
+     {
+      "id": "SWORD_BOOMERANG",
+      "upgrade": 1
+     },
+     {
+      "id": "TWIN_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOOD_WALL",
+      "upgrade": 0
+     },
+     {
+      "id": "HEMOKINESIS",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "BLOOD_WALL",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "SLUMBERING_BEETLE_NORMAL",
+    "hp": 999,
+    "max_hp": 999,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "1C92094765F76072"
+   }
+  },
+  {
+   "family": "6ab9473652cada8369644da01fd29de53bba2ae9830dfe3dbf6a437e50ebe7f7",
+   "split": "confirmation",
+   "source_row": 394,
+   "room": "Boss",
+   "spec": {
+    "act": 1,
+    "act_variant": "UNDERDOCKS",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "UNMOVABLE",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOOD_WALL",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "SWORD_BOOMERANG",
+      "upgrade": 0
+     },
+     {
+      "id": "HEMOKINESIS",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "RUPTURE",
+      "upgrade": 0
+     },
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "LAGAVULIN_MATRIARCH_BOSS",
+    "hp": 64,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "3C6A4373509E9B2B"
+   }
+  },
+  {
+   "family": "39d048834343165379e3fe2c862b6a2e47118b97b2cd7969e062f51fb2f77109",
+   "split": "development",
+   "source_row": 314,
+   "room": "Monster",
+   "spec": {
+    "act": 2,
+    "act_variant": "HIVE",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "COLOSSUS",
+      "upgrade": 0
+     },
+     {
+      "id": "COLOSSUS",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "HEMOKINESIS",
+      "upgrade": 1
+     },
+     {
+      "id": "RUPTURE",
+      "upgrade": 1
+     },
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 1
+     },
+     {
+      "id": "COLOSSUS",
+      "upgrade": 0
+     },
+     {
+      "id": "POMMEL_STRIKE",
+      "upgrade": 1
+     },
+     {
+      "id": "SWORD_BOOMERANG",
+      "upgrade": 0
+     },
+     {
+      "id": "POMMEL_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOOD_WALL",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "ARMAMENTS",
+      "upgrade": 1
+     },
+     {
+      "id": "SHRUG_IT_OFF",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "MOLTEN_FIST",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "SLUMBERING_BEETLE_NORMAL",
+    "hp": 44,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "CCA149DAA22B23FA"
+   }
+  },
+  {
+   "family": "d7a4af85a3e25df404ee1b19f0de4a6c772ec3760d5eeadfac9b78a7f5987d57",
+   "split": "confirmation",
+   "source_row": 44,
+   "room": "Monster",
+   "spec": {
+    "act": 3,
+    "act_variant": "GLORY",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "CINDER",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "HEMOKINESIS",
+      "upgrade": 0
+     },
+     {
+      "id": "FIGHT_ME",
+      "upgrade": 0
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "BLOOD_WALL",
+      "upgrade": 1
+     },
+     {
+      "id": "EXPECT_A_FIGHT",
+      "upgrade": 0
+     },
+     {
+      "id": "RUPTURE",
+      "upgrade": 0
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 0
+     },
+     {
+      "id": "THUNDERCLAP",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "RAMPAGE",
+      "upgrade": 1
+     },
+     {
+      "id": "BLOOD_WALL",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "THUNDERCLAP",
+      "upgrade": 1
+     },
+     {
+      "id": "UNMOVABLE",
+      "upgrade": 1
+     },
+     {
+      "id": "FLAME_BARRIER",
+      "upgrade": 0
+     },
+     {
+      "id": "UNMOVABLE",
+      "upgrade": 1
+     },
+     {
+      "id": "COLOSSUS",
+      "upgrade": 0
+     },
+     {
+      "id": "SWORD_BOOMERANG",
+      "upgrade": 1
+     },
+     {
+      "id": "BURNING_PACT",
+      "upgrade": 0
+     },
+     {
+      "id": "HEADBUTT",
+      "upgrade": 1
+     }
+    ],
+    "encounter": "TURRET_OPERATOR_WEAK",
+    "hp": 160,
+    "max_hp": 160,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "8599EC29BD8C327B"
+   }
+  },
+  {
+   "family": "49dc4d1f569a1fa2b45ca986d79aefe80c477b1bb4bb31eebc7913651f0b7870",
+   "split": "development",
+   "source_row": 270,
+   "room": "Boss",
+   "spec": {
+    "act": 2,
+    "act_variant": "HIVE",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "POMMEL_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "HEMOKINESIS",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "THUNDERCLAP",
+      "upgrade": 1
+     },
+     {
+      "id": "BLOOD_WALL",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "UNMOVABLE",
+      "upgrade": 0
+     },
+     {
+      "id": "SWORD_BOOMERANG",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "RUPTURE",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "SETUP_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "TRUE_GRIT",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "KNOWLEDGE_DEMON_BOSS",
+    "hp": 999,
+    "max_hp": 999,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "238BEDB6980A3783"
+   }
+  },
+  {
+   "family": "98bd98a10612c22d8413cef69c6f2509de03693f9a89e272a98ca4d7bdd6eda3",
+   "split": "confirmation",
+   "source_row": 218,
+   "room": "Elite",
+   "spec": {
+    "act": 2,
+    "act_variant": "HIVE",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "BODY_SLAM",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 0
+     },
+     {
+      "id": "FLAME_BARRIER",
+      "upgrade": 0
+     },
+     {
+      "id": "HEADBUTT",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOOD_WALL",
+      "upgrade": 1
+     },
+     {
+      "id": "IMPERVIOUS",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BARRICADE",
+      "upgrade": 1
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STONE_ARMOR",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOOD_WALL",
+      "upgrade": 0
+     },
+     {
+      "id": "BATTLE_TRANCE",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "SHRUG_IT_OFF",
+      "upgrade": 1
+     },
+     {
+      "id": "INFLAME",
+      "upgrade": 1
+     },
+     {
+      "id": "ARMAMENTS",
+      "upgrade": 1
+     }
+    ],
+    "encounter": "INFESTED_PRISMS_ELITE",
+    "hp": 80,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "9F4C08AF1460F14E"
+   }
+  },
+  {
+   "family": "e74a85704bafdb5da45ba202b41addded68745f668151e423b83f41879c18004",
+   "split": "development",
+   "source_row": 227,
+   "room": "Elite",
+   "spec": {
+    "act": 3,
+    "act_variant": "GLORY",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 1
+     },
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 0
+     },
+     {
+      "id": "BURNING_PACT",
+      "upgrade": 0
+     },
+     {
+      "id": "SECOND_WIND",
+      "upgrade": 0
+     },
+     {
+      "id": "CASCADE",
+      "upgrade": 0
+     },
+     {
+      "id": "BATTLE_TRANCE",
+      "upgrade": 1
+     },
+     {
+      "id": "THRASH",
+      "upgrade": 0
+     },
+     {
+      "id": "PACTS_END",
+      "upgrade": 0
+     },
+     {
+      "id": "PACTS_END",
+      "upgrade": 0
+     },
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 1
+     },
+     {
+      "id": "FLAME_BARRIER",
+      "upgrade": 0
+     },
+     {
+      "id": "CRIMSON_MANTLE",
+      "upgrade": 1
+     },
+     {
+      "id": "RAGE",
+      "upgrade": 0
+     },
+     {
+      "id": "TREMBLE",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "KNIGHTS_ELITE",
+    "hp": 64,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "66127776938FD93A"
+   }
+  },
+  {
+   "family": "6701ad000f4a6bb3a740fa30bc02ad9f6425fb0e66b915293b67d8d5340a7287",
+   "split": "confirmation",
+   "source_row": 199,
+   "room": "Elite",
+   "spec": {
+    "act": 1,
+    "act_variant": "UNDERDOCKS",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "EXPECT_A_FIGHT",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "BASH",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "SHRUG_IT_OFF",
+      "upgrade": 0
+     },
+     {
+      "id": "SETUP_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "POMMEL_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "THUNDERCLAP",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "SETUP_STRIKE",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "PHANTASMAL_GARDENERS_ELITE",
+    "hp": 44,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "E244D5E05F37E3A0"
+   }
+  },
+  {
+   "family": "0a3768effcd6ac65dde3f139a01ef15552f852d7210e474a0106fc251a87fda3",
+   "split": "development",
+   "source_row": 402,
+   "room": "Boss",
+   "spec": {
+    "act": 2,
+    "act_variant": "HIVE",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "JUGGLING",
+      "upgrade": 0
+     },
+     {
+      "id": "DRUM_OF_BATTLE",
+      "upgrade": 0
+     },
+     {
+      "id": "TREMBLE",
+      "upgrade": 0
+     },
+     {
+      "id": "TREMBLE",
+      "upgrade": 1
+     },
+     {
+      "id": "NOT_YET",
+      "upgrade": 0
+     },
+     {
+      "id": "JUGGERNAUT",
+      "upgrade": 0
+     },
+     {
+      "id": "RAGE",
+      "upgrade": 0
+     },
+     {
+      "id": "INFLAME",
+      "upgrade": 0
+     },
+     {
+      "id": "UNMOVABLE",
+      "upgrade": 0
+     },
+     {
+      "id": "JUGGERNAUT",
+      "upgrade": 0
+     },
+     {
+      "id": "DISMANTLE",
+      "upgrade": 0
+     },
+     {
+      "id": "POMMEL_STRIKE",
+      "upgrade": 1
+     },
+     {
+      "id": "FIGHT_ME",
+      "upgrade": 1
+     }
+    ],
+    "encounter": "KNOWLEDGE_DEMON_BOSS",
+    "hp": 44,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "0E734A13BD5EEE55"
+   }
+  },
+  {
+   "family": "75579dd0e641fd7f086767b383eada3b07be2e36e9eaf6bfbffe7e68e0a57ca9",
+   "split": "confirmation",
+   "source_row": 89,
+   "room": "Elite",
+   "spec": {
+    "act": 3,
+    "act_variant": "GLORY",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "RAMPAGE",
+      "upgrade": 1
+     },
+     {
+      "id": "BODY_SLAM",
+      "upgrade": 1
+     },
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 0
+     },
+     {
+      "id": "THUNDERCLAP",
+      "upgrade": 1
+     },
+     {
+      "id": "BARRICADE",
+      "upgrade": 0
+     },
+     {
+      "id": "TWIN_STRIKE",
+      "upgrade": 1
+     },
+     {
+      "id": "IMPERVIOUS",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOOD_WALL",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "FLAME_BARRIER",
+      "upgrade": 0
+     },
+     {
+      "id": "UPPERCUT",
+      "upgrade": 0
+     },
+     {
+      "id": "POMMEL_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "CINDER",
+      "upgrade": 0
+     },
+     {
+      "id": "RAMPAGE",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "UPPERCUT",
+      "upgrade": 0
+     },
+     {
+      "id": "TRUE_GRIT",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 1
+     },
+     {
+      "id": "FLAME_BARRIER",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "UNMOVABLE",
+      "upgrade": 1
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 0
+     },
+     {
+      "id": "COLOSSUS",
+      "upgrade": 0
+     },
+     {
+      "id": "BATTLE_TRANCE",
+      "upgrade": 0
+     },
+     {
+      "id": "SHRUG_IT_OFF",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "KNIGHTS_ELITE",
+    "hp": 80,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "3161D010CB6ECD40"
+   }
+  },
+  {
+   "family": "329f9e0cd87e456b4de85957f14059bb928277af8b681a640ae9fed0e2848b2e",
+   "split": "development",
+   "source_row": 296,
+   "room": "Monster",
+   "spec": {
+    "act": 1,
+    "act_variant": "OVERGROWTH",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 0
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 0
+     },
+     {
+      "id": "SWORD_BOOMERANG",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOOD_WALL",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "HEMOKINESIS",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "RUPTURE",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "CINDER",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "MAWLER_NORMAL",
+    "hp": 44,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "CCAD1B8B8830E289"
+   }
+  },
+  {
+   "family": "5cf00c7c5a6ff5c04160836e27f021f6cae812e0f04773490d88ccf9fc672212",
+   "split": "confirmation",
+   "source_row": 467,
+   "room": "Monster",
+   "spec": {
+    "act": 3,
+    "act_variant": "GLORY",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "PRIMAL_FORCE",
+      "upgrade": 0
+     },
+     {
+      "id": "JUGGERNAUT",
+      "upgrade": 1
+     },
+     {
+      "id": "CONFLAGRATION",
+      "upgrade": 0
+     },
+     {
+      "id": "CASCADE",
+      "upgrade": 0
+     },
+     {
+      "id": "RAGE",
+      "upgrade": 0
+     },
+     {
+      "id": "CINDER",
+      "upgrade": 0
+     },
+     {
+      "id": "ANGER",
+      "upgrade": 1
+     },
+     {
+      "id": "FLAME_BARRIER",
+      "upgrade": 0
+     },
+     {
+      "id": "BURNING_PACT",
+      "upgrade": 1
+     },
+     {
+      "id": "BURNING_PACT",
+      "upgrade": 0
+     },
+     {
+      "id": "SECOND_WIND",
+      "upgrade": 0
+     },
+     {
+      "id": "FORGOTTEN_RITUAL",
+      "upgrade": 0
+     },
+     {
+      "id": "COLOSSUS",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "DOMINATE",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "CONSTRUCT_MENAGERIE_NORMAL",
+    "hp": 80,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "C87E6B494B0429FB"
+   }
+  },
+  {
+   "family": "7914e769e53a9cf61168f351a0c237d68532c730ace9cac61896e10187767666",
+   "split": "development",
+   "source_row": 274,
+   "room": "Boss",
+   "spec": {
+    "act": 3,
+    "act_variant": "GLORY",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "BODY_SLAM",
+      "upgrade": 0
+     },
+     {
+      "id": "UNMOVABLE",
+      "upgrade": 1
+     },
+     {
+      "id": "OUTRAGE",
+      "upgrade": 0
+     },
+     {
+      "id": "SHRUG_IT_OFF",
+      "upgrade": 0
+     },
+     {
+      "id": "RUPTURE",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 1
+     },
+     {
+      "id": "FIEND_FIRE",
+      "upgrade": 1
+     },
+     {
+      "id": "NOT_YET",
+      "upgrade": 0
+     },
+     {
+      "id": "DARK_EMBRACE",
+      "upgrade": 0
+     },
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 1
+     },
+     {
+      "id": "BARRICADE",
+      "upgrade": 1
+     },
+     {
+      "id": "VICIOUS",
+      "upgrade": 0
+     },
+     {
+      "id": "TRUE_GRIT",
+      "upgrade": 0
+     },
+     {
+      "id": "PRIMAL_FORCE",
+      "upgrade": 0
+     },
+     {
+      "id": "SPITE",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "AEONGLASS_BOSS",
+    "hp": 44,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "74612A2CA2077309"
+   }
+  },
+  {
+   "family": "fafd70575c65ccd2d44f041da2a1ae2d3e7b66b8bfafb9e3155f906d119c9edb",
+   "split": "confirmation",
+   "source_row": 151,
+   "room": "Monster",
+   "spec": {
+    "act": 1,
+    "act_variant": "UNDERDOCKS",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "RAMPAGE",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STONE_ARMOR",
+      "upgrade": 0
+     },
+     {
+      "id": "ARMAMENTS",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 0
+     },
+     {
+      "id": "SHRUG_IT_OFF",
+      "upgrade": 1
+     },
+     {
+      "id": "EXPECT_A_FIGHT",
+      "upgrade": 0
+     },
+     {
+      "id": "MOLTEN_FIST",
+      "upgrade": 0
+     },
+     {
+      "id": "EXPECT_A_FIGHT",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "CORPSE_SLUGS_WEAK",
+    "hp": 64,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "8C87AE9EC9E8611B"
+   }
+  },
+  {
+   "family": "ee8c7992971ab2b65bd5f0c103a25ad6294571c30360f3476a9add20fecad413",
+   "split": "development",
+   "source_row": 70,
+   "room": "Elite",
+   "spec": {
+    "act": 2,
+    "act_variant": "HIVE",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "TRUE_GRIT",
+      "upgrade": 0
+     },
+     {
+      "id": "UPPERCUT",
+      "upgrade": 0
+     },
+     {
+      "id": "STONE_ARMOR",
+      "upgrade": 0
+     },
+     {
+      "id": "STONE_ARMOR",
+      "upgrade": 1
+     },
+     {
+      "id": "FIGHT_ME",
+      "upgrade": 1
+     },
+     {
+      "id": "FIGHT_ME",
+      "upgrade": 0
+     },
+     {
+      "id": "SETUP_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "CINDER",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "SHRUG_IT_OFF",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 1
+     },
+     {
+      "id": "BLOOD_WALL",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 0
+     },
+     {
+      "id": "RAMPAGE",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "SETUP_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "RAMPAGE",
+      "upgrade": 1
+     }
+    ],
+    "encounter": "INFESTED_PRISMS_ELITE",
+    "hp": 44,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "65EF554253C8893D"
+   }
+  },
+  {
+   "family": "d830350bc3a5bddaef0891322c4dc1d0c7e1c3e806d74000747411f8ccc19492",
+   "split": "confirmation",
+   "source_row": 490,
+   "room": "Elite",
+   "spec": {
+    "act": 1,
+    "act_variant": "OVERGROWTH",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "TRUE_GRIT",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "COLOSSUS",
+      "upgrade": 1
+     },
+     {
+      "id": "FORGOTTEN_RITUAL",
+      "upgrade": 1
+     },
+     {
+      "id": "STOKE",
+      "upgrade": 0
+     },
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "EVIL_EYE",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "HEMOKINESIS",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "PHROG_PARASITE_ELITE",
+    "hp": 80,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "2B38A7860007D371"
+   }
+  },
+  {
+   "family": "a503a6c0243919e0e7fb8892bef6337d9019f8315e27fa2d2fa43d7b9d877c80",
+   "split": "development",
+   "source_row": 110,
+   "room": "Boss",
+   "spec": {
+    "act": 1,
+    "act_variant": "UNDERDOCKS",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "OFFERING",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "UPPERCUT",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "BATTLE_TRANCE",
+      "upgrade": 0
+     },
+     {
+      "id": "POMMEL_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 1
+     },
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "TRUE_GRIT",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "LAGAVULIN_MATRIARCH_BOSS",
+    "hp": 160,
+    "max_hp": 160,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "572E4CAFBEC4C37E"
+   }
+  },
+  {
+   "family": "2132093db4520e7dfaa98a874a5b3800b7f0c228f91ed64e69d29ec41f330400",
+   "split": "confirmation",
+   "source_row": 264,
+   "room": "Boss",
+   "spec": {
+    "act": 2,
+    "act_variant": "HIVE",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "BODY_SLAM",
+      "upgrade": 0
+     },
+     {
+      "id": "FLAME_BARRIER",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "SHRUG_IT_OFF",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "IMPERVIOUS",
+      "upgrade": 0
+     },
+     {
+      "id": "TWIN_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "ARMAMENTS",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 0
+     },
+     {
+      "id": "BARRICADE",
+      "upgrade": 0
+     },
+     {
+      "id": "COLOSSUS",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "TRUE_GRIT",
+      "upgrade": 1
+     },
+     {
+      "id": "BATTLE_TRANCE",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "THE_INSATIABLE_BOSS",
+    "hp": 64,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "D6ED69AA05B1F465"
+   }
+  },
+  {
+   "family": "94259a2e49d4c484e80fb4386753b7dd3a4d98c88868211b2c51ebf5d0d0d7a3",
+   "split": "development",
+   "source_row": 495,
+   "room": "Elite",
+   "spec": {
+    "act": 1,
+    "act_variant": "UNDERDOCKS",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "HAVOC",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "HEADBUTT",
+      "upgrade": 1
+     },
+     {
+      "id": "POMMEL_STRIKE",
+      "upgrade": 1
+     },
+     {
+      "id": "THUNDERCLAP",
+      "upgrade": 0
+     },
+     {
+      "id": "ONE_TWO_PUNCH",
+      "upgrade": 0
+     },
+     {
+      "id": "RAMPAGE",
+      "upgrade": 1
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "PHANTASMAL_GARDENERS_ELITE",
+    "hp": 999,
+    "max_hp": 999,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "F63F9F106DBD2DAA"
+   }
+  },
+  {
+   "family": "3d7544f081197702c7f3cc25159d833d3e2c44db8ecc4ae62bbd1333b4e9d7a4",
+   "split": "confirmation",
+   "source_row": 15,
+   "room": "Monster",
+   "spec": {
+    "act": 1,
+    "act_variant": "OVERGROWTH",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BATTLE_TRANCE",
+      "upgrade": 0
+     },
+     {
+      "id": "THUNDERCLAP",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "OFFERING",
+      "upgrade": 0
+     },
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 0
+     },
+     {
+      "id": "POMMEL_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "HEADBUTT",
+      "upgrade": 0
+     },
+     {
+      "id": "FLAME_BARRIER",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "INFLAME",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "SNAPPING_JAXFRUIT_NORMAL",
+    "hp": 160,
+    "max_hp": 160,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "B176AFDC96933EBD"
+   }
+  },
+  {
+   "family": "b210c4d48cc510c38c800024010160b4e07c6532e62fe62490947c3da9a594ed",
+   "split": "development",
+   "source_row": 95,
+   "room": "Elite",
+   "spec": {
+    "act": 3,
+    "act_variant": "GLORY",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "HEMOKINESIS",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOOD_WALL",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "RUPTURE",
+      "upgrade": 0
+     },
+     {
+      "id": "TRUE_GRIT",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 0
+     },
+     {
+      "id": "HEADBUTT",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "COLOSSUS",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOOD_WALL",
+      "upgrade": 1
+     },
+     {
+      "id": "BATTLE_TRANCE",
+      "upgrade": 1
+     },
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 0
+     },
+     {
+      "id": "SWORD_BOOMERANG",
+      "upgrade": 1
+     },
+     {
+      "id": "FIGHT_ME",
+      "upgrade": 1
+     },
+     {
+      "id": "HEMOKINESIS",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 0
+     },
+     {
+      "id": "ARMAMENTS",
+      "upgrade": 1
+     }
+    ],
+    "encounter": "KNIGHTS_ELITE",
+    "hp": 160,
+    "max_hp": 160,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "B28CCC30FABADB2D"
+   }
+  },
+  {
+   "family": "7aadbd0336c5ceb57a2f73c5b66f4fcf32277194d4dc2f7eb84a2696b46f57b7",
+   "split": "confirmation",
+   "source_row": 293,
+   "room": "Monster",
+   "spec": {
+    "act": 1,
+    "act_variant": "OVERGROWTH",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "SETUP_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "UPPERCUT",
+      "upgrade": 0
+     },
+     {
+      "id": "MOLTEN_FIST",
+      "upgrade": 1
+     },
+     {
+      "id": "CINDER",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 1
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     }
+    ],
+    "encounter": "SLIMES_NORMAL",
+    "hp": 64,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "B52D61564D25155A"
+   }
+  },
+  {
+   "family": "795e8d124be69215cfaf1c0c634b636c00b390c71613ffc64750b4c73be99742",
+   "split": "development",
+   "source_row": 327,
+   "room": "Monster",
+   "spec": {
+    "act": 3,
+    "act_variant": "GLORY",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "UNMOVABLE",
+      "upgrade": 0
+     },
+     {
+      "id": "EXPECT_A_FIGHT",
+      "upgrade": 1
+     },
+     {
+      "id": "INFLAME",
+      "upgrade": 1
+     },
+     {
+      "id": "RAMPAGE",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "SWORD_BOOMERANG",
+      "upgrade": 0
+     },
+     {
+      "id": "UPPERCUT",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "FLAME_BARRIER",
+      "upgrade": 0
+     },
+     {
+      "id": "HEMOKINESIS",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "BASH",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "SETUP_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "ARMAMENTS",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "TWIN_STRIKE",
+      "upgrade": 1
+     },
+     {
+      "id": "STONE_ARMOR",
+      "upgrade": 1
+     },
+     {
+      "id": "BATTLE_TRANCE",
+      "upgrade": 0
+     },
+     {
+      "id": "HEMOKINESIS",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "GLOBE_HEAD_NORMAL",
+    "hp": 64,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "5627385C6A1AE4E6"
+   }
+  },
+  {
+   "family": "5e2e1d2e2aa842f40cde40b9ea995c6e398e406552ec01b409a96dae341fbe79",
+   "split": "confirmation",
+   "source_row": 248,
+   "room": "Boss",
+   "spec": {
+    "act": 1,
+    "act_variant": "UNDERDOCKS",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "OFFERING",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "BATTLE_TRANCE",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "POMMEL_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "SWORD_BOOMERANG",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "WATERFALL_GIANT_BOSS",
+    "hp": 64,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "0EDAE003D015CB72"
+   }
+  },
+  {
+   "family": "ecff090ca3448b89aa54a7da95c3293d532d22c5167e0cc4a3ce3a0bc6aff047",
+   "split": "development",
+   "source_row": 505,
+   "room": "Elite",
+   "spec": {
+    "act": 2,
+    "act_variant": "HIVE",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "TRUE_GRIT",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BATTLE_TRANCE",
+      "upgrade": 0
+     },
+     {
+      "id": "FIGHT_ME",
+      "upgrade": 0
+     },
+     {
+      "id": "FORGOTTEN_RITUAL",
+      "upgrade": 0
+     },
+     {
+      "id": "EVIL_EYE",
+      "upgrade": 1
+     },
+     {
+      "id": "TWIN_STRIKE",
+      "upgrade": 1
+     },
+     {
+      "id": "BASH",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "SHRUG_IT_OFF",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 0
+     },
+     {
+      "id": "STOKE",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "INFESTED_PRISMS_ELITE",
+    "hp": 80,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "7C685209A7408C41"
+   }
+  },
+  {
+   "family": "b632cfb428dbc847681430ae9612903f65d63918f58cef48b8e6a03163b9f04b",
+   "split": "confirmation",
+   "source_row": 373,
+   "room": "Elite",
+   "spec": {
+    "act": 3,
+    "act_variant": "GLORY",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "BATTLE_TRANCE",
+      "upgrade": 0
+     },
+     {
+      "id": "COLOSSUS",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "MOLTEN_FIST",
+      "upgrade": 0
+     },
+     {
+      "id": "EXPECT_A_FIGHT",
+      "upgrade": 1
+     },
+     {
+      "id": "TWIN_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "SHRUG_IT_OFF",
+      "upgrade": 1
+     },
+     {
+      "id": "UPPERCUT",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "TWIN_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "SWORD_BOOMERANG",
+      "upgrade": 0
+     },
+     {
+      "id": "POMMEL_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "BURNING_PACT",
+      "upgrade": 1
+     },
+     {
+      "id": "HEADBUTT",
+      "upgrade": 0
+     },
+     {
+      "id": "THUNDERCLAP",
+      "upgrade": 0
+     },
+     {
+      "id": "POMMEL_STRIKE",
+      "upgrade": 1
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "ARMAMENTS",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "SOUL_NEXUS_ELITE",
+    "hp": 44,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "FCABE60BB9A3538E"
+   }
+  },
+  {
+   "family": "72de6cdd226be55816c9aec7eb10e0879990399df59cafefccbac1e2ff5dfef0",
+   "split": "development",
+   "source_row": 171,
+   "room": "Monster",
+   "spec": {
+    "act": 2,
+    "act_variant": "HIVE",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "BODY_SLAM",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "SHRUG_IT_OFF",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "RAMPAGE",
+      "upgrade": 0
+     },
+     {
+      "id": "SHRUG_IT_OFF",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "FLAME_BARRIER",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "IMPERVIOUS",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "POMMEL_STRIKE",
+      "upgrade": 1
+     },
+     {
+      "id": "FLAME_BARRIER",
+      "upgrade": 0
+     },
+     {
+      "id": "COLOSSUS",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BARRICADE",
+      "upgrade": 0
+     },
+     {
+      "id": "MOLTEN_FIST",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "HUNTER_KILLER_NORMAL",
+    "hp": 44,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "60525D666672CC05"
+   }
+  },
+  {
+   "family": "6f2ca8b2a2c062fc23e085867c5ec0c81d439a506332a0a7dabc1874b044115f",
+   "split": "confirmation",
+   "source_row": 9,
+   "room": "Monster",
+   "spec": {
+    "act": 1,
+    "act_variant": "OVERGROWTH",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOOD_WALL",
+      "upgrade": 0
+     },
+     {
+      "id": "DARK_EMBRACE",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BURNING_PACT",
+      "upgrade": 0
+     },
+     {
+      "id": "ASHEN_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "SECOND_WIND",
+      "upgrade": 1
+     },
+     {
+      "id": "FEEL_NO_PAIN",
+      "upgrade": 0
+     },
+     {
+      "id": "SWORD_BOOMERANG",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "VINE_SHAMBLER_NORMAL",
+    "hp": 44,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "BBFF7AD86764329E"
+   }
+  },
+  {
+   "family": "b4df371d86cf3909ced67440acf1d0b208e02758e3b4787a8c0c801d65b0c4ea",
+   "split": "development",
+   "source_row": 119,
+   "room": "Boss",
+   "spec": {
+    "act": 2,
+    "act_variant": "HIVE",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "THUNDERCLAP",
+      "upgrade": 1
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "SWORD_BOOMERANG",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "BURNING_PACT",
+      "upgrade": 0
+     },
+     {
+      "id": "ARMAMENTS",
+      "upgrade": 0
+     },
+     {
+      "id": "UNMOVABLE",
+      "upgrade": 0
+     },
+     {
+      "id": "ARMAMENTS",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "SHRUG_IT_OFF",
+      "upgrade": 1
+     },
+     {
+      "id": "FLAME_BARRIER",
+      "upgrade": 0
+     },
+     {
+      "id": "FLAME_BARRIER",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BATTLE_TRANCE",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "UNMOVABLE",
+      "upgrade": 0
+     },
+     {
+      "id": "STONE_ARMOR",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "THE_INSATIABLE_BOSS",
+    "hp": 80,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "17F14CD974CFD041"
+   }
+  },
+  {
+   "family": "dfc3e945be869f091a2283a4bd41f71159308ca68aaa59d79a3c9a973f93bbcb",
+   "split": "confirmation",
+   "source_row": 338,
+   "room": "Elite",
+   "spec": {
+    "act": 1,
+    "act_variant": "OVERGROWTH",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "DRUM_OF_BATTLE",
+      "upgrade": 1
+     },
+     {
+      "id": "MIDNIGHT",
+      "upgrade": 1
+     },
+     {
+      "id": "DARK_EMBRACE",
+      "upgrade": 0
+     },
+     {
+      "id": "MIDNIGHT",
+      "upgrade": 0
+     },
+     {
+      "id": "JUGGLING",
+      "upgrade": 0
+     },
+     {
+      "id": "OFFERING",
+      "upgrade": 0
+     },
+     {
+      "id": "AGGRESSION",
+      "upgrade": 1
+     },
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 1
+     },
+     {
+      "id": "STOKE",
+      "upgrade": 1
+     },
+     {
+      "id": "PILLAGE",
+      "upgrade": 0
+     },
+     {
+      "id": "JUGGLING",
+      "upgrade": 0
+     },
+     {
+      "id": "TEAR_ASUNDER",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "IRON_WAVE",
+      "upgrade": 0
+     },
+     {
+      "id": "HEADBUTT",
+      "upgrade": 0
+     },
+     {
+      "id": "HEMOKINESIS",
+      "upgrade": 1
+     },
+     {
+      "id": "ASHEN_STRIKE",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "PHROG_PARASITE_ELITE",
+    "hp": 64,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "BC0D280AD93EC032"
+   }
+  },
+  {
+   "family": "c92bacdb747338225b6c2dfd4ee80664bf87af7c11e2607960817b4e509c02ab",
+   "split": "development",
+   "source_row": 416,
+   "room": "Boss",
+   "spec": {
+    "act": 3,
+    "act_variant": "GLORY",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "CASCADE",
+      "upgrade": 1
+     },
+     {
+      "id": "DRUM_OF_BATTLE",
+      "upgrade": 1
+     },
+     {
+      "id": "FORGOTTEN_RITUAL",
+      "upgrade": 1
+     },
+     {
+      "id": "EXPECT_A_FIGHT",
+      "upgrade": 0
+     },
+     {
+      "id": "BARRICADE",
+      "upgrade": 1
+     },
+     {
+      "id": "MANGLE",
+      "upgrade": 0
+     },
+     {
+      "id": "DARK_EMBRACE",
+      "upgrade": 0
+     },
+     {
+      "id": "RAGE",
+      "upgrade": 0
+     },
+     {
+      "id": "MOLTEN_FIST",
+      "upgrade": 0
+     },
+     {
+      "id": "PRIMAL_FORCE",
+      "upgrade": 1
+     },
+     {
+      "id": "CONFLAGRATION",
+      "upgrade": 0
+     },
+     {
+      "id": "UNMOVABLE",
+      "upgrade": 0
+     },
+     {
+      "id": "BLUDGEON",
+      "upgrade": 0
+     },
+     {
+      "id": "STOMP",
+      "upgrade": 0
+     },
+     {
+      "id": "INFERNO",
+      "upgrade": 0
+     },
+     {
+      "id": "BURNING_PACT",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "QUEEN_BOSS",
+    "hp": 44,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "945E4AE6BE62AFBC"
+   }
+  },
+  {
+   "family": "e304bb002f0002b0821fb89e011147a5139489cd5da71b7f2bddb9f16d90492e",
+   "split": "confirmation",
+   "source_row": 342,
+   "room": "Elite",
+   "spec": {
+    "act": 1,
+    "act_variant": "OVERGROWTH",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOOD_WALL",
+      "upgrade": 1
+     },
+     {
+      "id": "ARMAMENTS",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "THUNDERCLAP",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "SWORD_BOOMERANG",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "BYRDONIS_ELITE",
+    "hp": 44,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "98A2B54E7357EC26"
+   }
+  },
+  {
+   "family": "6ab5113f4a0ef565ca4f7376b40cc75d9fda2f804e355764baab2ee434e598f4",
+   "split": "development",
+   "source_row": 215,
+   "room": "Elite",
+   "spec": {
+    "act": 2,
+    "act_variant": "HIVE",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "POMMEL_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 1
+     },
+     {
+      "id": "TWIN_STRIKE",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 0
+     },
+     {
+      "id": "UNMOVABLE",
+      "upgrade": 0
+     },
+     {
+      "id": "COLOSSUS",
+      "upgrade": 0
+     },
+     {
+      "id": "RAMPAGE",
+      "upgrade": 0
+     },
+     {
+      "id": "TRUE_GRIT",
+      "upgrade": 1
+     },
+     {
+      "id": "THUNDERCLAP",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "INFESTED_PRISMS_ELITE",
+    "hp": 44,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "8D23BA2B88E3C9D5"
+   }
+  },
+  {
+   "family": "382e7a5116684471a9fbce72ece8405bc42324acfad3e8b151656e0b612a5c3d",
+   "split": "confirmation",
+   "source_row": 354,
+   "room": "Elite",
+   "spec": {
+    "act": 2,
+    "act_variant": "HIVE",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "RAMPAGE",
+      "upgrade": 0
+     },
+     {
+      "id": "DOMINATE",
+      "upgrade": 0
+     },
+     {
+      "id": "CINDER",
+      "upgrade": 1
+     },
+     {
+      "id": "EXPECT_A_FIGHT",
+      "upgrade": 0
+     },
+     {
+      "id": "BATTLE_TRANCE",
+      "upgrade": 1
+     },
+     {
+      "id": "JUGGERNAUT",
+      "upgrade": 0
+     },
+     {
+      "id": "OUTRAGE",
+      "upgrade": 0
+     },
+     {
+      "id": "UNMOVABLE",
+      "upgrade": 0
+     },
+     {
+      "id": "STOKE",
+      "upgrade": 0
+     },
+     {
+      "id": "HELLRAISER",
+      "upgrade": 0
+     },
+     {
+      "id": "BODY_SLAM",
+      "upgrade": 0
+     },
+     {
+      "id": "COLOSSUS",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOOD_WALL",
+      "upgrade": 0
+     },
+     {
+      "id": "BARRICADE",
+      "upgrade": 0
+     },
+     {
+      "id": "JUGGLING",
+      "upgrade": 0
+     },
+     {
+      "id": "VICIOUS",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "ENTOMANCER_ELITE",
+    "hp": 64,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "AF9A06BE05EB1FBD"
+   }
+  },
+  {
+   "family": "07d7072b28d6fc6d78196bc9bc06b44ac1f237d22a6dec47f8876c0a097a880f",
+   "split": "development",
+   "source_row": 190,
+   "room": "Monster",
+   "spec": {
+    "act": 3,
+    "act_variant": "GLORY",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "FORGOTTEN_RITUAL",
+      "upgrade": 0
+     },
+     {
+      "id": "INFLAME",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "INFLAME",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "HEADBUTT",
+      "upgrade": 1
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "FLAME_BARRIER",
+      "upgrade": 0
+     },
+     {
+      "id": "HEADBUTT",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "EVIL_EYE",
+      "upgrade": 0
+     },
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 0
+     },
+     {
+      "id": "STOKE",
+      "upgrade": 1
+     },
+     {
+      "id": "WHIRLWIND",
+      "upgrade": 1
+     },
+     {
+      "id": "TRUE_GRIT",
+      "upgrade": 0
+     },
+     {
+      "id": "STONE_ARMOR",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "TURRET_OPERATOR_WEAK",
+    "hp": 999,
+    "max_hp": 999,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "F27F21594ADE38B1"
+   }
+  },
+  {
+   "family": "931d876e184d4a8603fc01ecb72f245f63b1ea12a6952570c828c4a595a967f5",
+   "split": "confirmation",
+   "source_row": 408,
+   "room": "Boss",
+   "spec": {
+    "act": 2,
+    "act_variant": "HIVE",
+    "ascension": 0,
+    "character": "Ironclad",
+    "deck": [
+     {
+      "id": "SWORD_BOOMERANG",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 0
+     },
+     {
+      "id": "BASH",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOOD_WALL",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "COLOSSUS",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 1
+     },
+     {
+      "id": "STONE_ARMOR",
+      "upgrade": 0
+     },
+     {
+      "id": "RUPTURE",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "HEMOKINESIS",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "BLOODLETTING",
+      "upgrade": 0
+     },
+     {
+      "id": "STRIKE_IRONCLAD",
+      "upgrade": 0
+     },
+     {
+      "id": "MOLTEN_FIST",
+      "upgrade": 0
+     },
+     {
+      "id": "HEADBUTT",
+      "upgrade": 0
+     },
+     {
+      "id": "DEFEND_IRONCLAD",
+      "upgrade": 0
+     }
+    ],
+    "encounter": "KAISER_CRAB_BOSS",
+    "hp": 64,
+    "max_hp": 80,
+    "potions": [],
+    "relics": [],
+    "schema": 3,
+    "seed": "6E49996DF64264C6"
+   }
+  }
+ ]
+}

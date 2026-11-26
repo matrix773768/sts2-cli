@@ -1,0 +1,210 @@
+{
+  "resident": {
+    "roots": 24,
+    "families": 24,
+    "encounters": 18,
+    "thickness": [
+      13,
+      24
+    ],
+    "seconds": 270.1271120000165,
+    "python_cpu_seconds": 29.8125,
+    "host_cpu_seconds": null,
+    "counts": {
+      "accepted_worlds": 126,
+      "queries": 46,
+      "candidates": 1292,
+      "legal_info_actions": 8950,
+      "visited_info_actions": 4297,
+      "executed_B": 43,
+      "deployment_actions": 188,
+      "deployment_inferences": 37,
+      "unseen_menu_actions": 37,
+      "roots_with_completion": 22,
+      "two_successive": 21,
+      "no_qualified_candidate": 3
+    },
+    "kinds": {
+      "B": 3718,
+      "death": 58
+    },
+    "accepted_histogram": {
+      "3": 41,
+      "0": 3,
+      "1": 1,
+      "2": 1
+    },
+    "ess_min": 1.0,
+    "query_seconds_median": 4.257506949987146,
+    "query_seconds_max": 8.305402100028004,
+    "work": {
+      "root_restores": 3940,
+      "proposals": 855,
+      "sv1_transitions": 1032,
+      "sv1_transition_cap": 42,
+      "steps": 12938,
+      "inference_seconds": 7.999568799859844,
+      "inferences": 2946,
+      "public_deviations": 4591,
+      "expanded_deviations": 514,
+      "cached_rollouts": 734,
+      "seconds": 204.91207069996744,
+      "compile_seconds": 0.059838700079126284,
+      "prefix_steps": 7956,
+      "sv1_exhausted": 1
+    }
+  },
+  "pressure": {
+    "roots": 4,
+    "families": 4,
+    "encounters": 4,
+    "thickness": [
+      16,
+      23
+    ],
+    "seconds": 43.57501420000335,
+    "python_cpu_seconds": 5.890625,
+    "host_cpu_seconds": 45.890625,
+    "counts": {
+      "accepted_worlds": 18,
+      "queries": 7,
+      "candidates": 186,
+      "legal_info_actions": 1112,
+      "visited_info_actions": 587,
+      "executed_B": 6,
+      "deployment_actions": 28,
+      "deployment_inferences": 0,
+      "roots_with_completion": 3,
+      "two_successive": 3,
+      "no_qualified_candidate": 1
+    },
+    "kinds": {
+      "B": 558
+    },
+    "accepted_histogram": {
+      "3": 6,
+      "0": 1
+    },
+    "ess_min": 3.0,
+    "query_seconds_median": 4.6008074000128545,
+    "query_seconds_max": 6.2589697999937925,
+    "work": {
+      "root_restores": 689,
+      "proposals": 221,
+      "sv1_transitions": 144,
+      "sv1_transition_cap": 5,
+      "steps": 1908,
+      "inference_seconds": 0.9905774002836552,
+      "inferences": 390,
+      "public_deviations": 522,
+      "expanded_deviations": 72,
+      "cached_rollouts": 96,
+      "seconds": 32.53405290006776,
+      "compile_seconds": 0.006864699971629307,
+      "prefix_steps": 1114,
+      "sv1_exhausted": 1
+    }
+  },
+  "transfer": {
+    "roots": 4,
+    "families": 4,
+    "encounters": 4,
+    "thickness": [
+      16,
+      23
+    ],
+    "seconds": 56.940714299998945,
+    "python_cpu_seconds": 8.875,
+    "host_cpu_seconds": 60.703125,
+    "counts": {
+      "accepted_worlds": 22,
+      "queries": 8,
+      "candidates": 252,
+      "legal_info_actions": 1514,
+      "visited_info_actions": 808,
+      "executed_B": 8,
+      "deployment_actions": 36,
+      "deployment_inferences": 11,
+      "unseen_menu_actions": 11,
+      "roots_with_completion": 4,
+      "two_successive": 4
+    },
+    "kinds": {
+      "B": 692
+    },
+    "accepted_histogram": {
+      "3": 7,
+      "1": 1
+    },
+    "ess_min": 1.0,
+    "query_seconds_median": 5.0717949999962,
+    "query_seconds_max": 7.407459300011396,
+    "work": {
+      "root_restores": 783,
+      "proposals": 203,
+      "sv1_transitions": 192,
+      "sv1_transition_cap": 7,
+      "steps": 2402,
+      "inference_seconds": 1.642745700199157,
+      "inferences": 535,
+      "public_deviations": 681,
+      "expanded_deviations": 96,
+      "cached_rollouts": 120,
+      "seconds": 39.986307799990755,
+      "compile_seconds": 0.014117100043222308,
+      "prefix_steps": 1569,
+      "sv1_exhausted": 1
+    }
+  },
+  "world8": {
+    "roots": 3,
+    "families": 3,
+    "encounters": 3,
+    "thickness": [
+      16,
+      23
+    ],
+    "seconds": 62.454333500005305,
+    "python_cpu_seconds": 9.984375,
+    "host_cpu_seconds": 65.90625,
+    "counts": {
+      "accepted_worlds": 47,
+      "queries": 6,
+      "candidates": 186,
+      "legal_info_actions": 1994,
+      "visited_info_actions": 893,
+      "executed_B": 6,
+      "deployment_actions": 28,
+      "deployment_inferences": 3,
+      "unseen_menu_actions": 3,
+      "roots_with_completion": 3,
+      "two_successive": 3
+    },
+    "kinds": {
+      "B": 1454
+    },
+    "accepted_histogram": {
+      "8": 5,
+      "7": 1
+    },
+    "ess_min": 7.000000000000002,
+    "query_seconds_median": 8.54940784999053,
+    "query_seconds_max": 11.16072179999901,
+    "work": {
+      "root_restores": 1320,
+      "proposals": 205,
+      "sv1_transitions": 144,
+      "sv1_transition_cap": 5,
+      "steps": 4565,
+      "inference_seconds": 1.7944614999578334,
+      "inferences": 692,
+      "public_deviations": 1041,
+      "expanded_deviations": 72,
+      "cached_rollouts": 345,
+      "seconds": 53.459141499974066,
+      "compile_seconds": 0.015719299990450963,
+      "prefix_steps": 2631,
+      "sv1_exhausted": 1
+    }
+  }
+}

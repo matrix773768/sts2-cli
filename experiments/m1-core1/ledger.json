@@ -1,0 +1,469 @@
+{
+  "schema": 1,
+  "scope": "Measured stage sums, including repeated and concurrent jobs. Missing fields are unmeasured.",
+  "historical": [
+    {
+      "stage": "SV4A D/S generation",
+      "source": "docs/m1-sv4a-search-value-loop.md",
+      "completed_episodes": 14709,
+      "capped": 11,
+      "updates_per_generation": 960,
+      "presentations_per_generation": 491520
+    },
+    {
+      "stage": "DC2B G0/G1/G2",
+      "source": "docs/inf3-dc2b-recovery.md",
+      "updates": [
+        4096,
+        1600,
+        1600
+      ],
+      "g1_g2_completed_experience": [
+        10000,
+        10000
+      ],
+      "presentations": [
+        null,
+        819200,
+        819200
+      ],
+      "training_wall_seconds": [
+        271.0,
+        450.3,
+        466.1
+      ],
+      "direct_search_collection_seconds": [
+        [
+          3104.9,
+          1157.9
+        ],
+        [
+          2353.2,
+          1141.3
+        ]
+      ]
+    },
+    {
+      "stage": "N4",
+      "source": "docs/m1-n4-counterfactual-value.md",
+      "conditional_rollouts": 8438,
+      "main_seconds": 1590.2,
+      "estimated_inclusive_seconds": 2100
+    },
+    {
+      "stage": "N4B",
+      "source": "experiments/m1-n4b/evidence/summary.json",
+      "measured_seconds": 5753.688017500128
+    },
+    {
+      "stage": "N4C",
+      "source": "experiments/m1-n4c/evidence/manifest.json",
+      "main_families": 64,
+      "main_root_worlds": 160,
+      "main_episodes": 1920,
+      "main_transitions": 146696,
+      "measured_seconds": 1685.053040699975,
+      "per_job": {
+        "dev": {},
+        "dev1": {
+          "worlds": 20,
+          "episodes": 160,
+          "completed": 160,
+          "decisions": 2440,
+          "transitions": 9019
+        },
+        "dev2": {
+          "worlds": 20,
+          "episodes": 200,
+          "completed": 200,
+          "decisions": 3053,
+          "transitions": 11950
+        },
+        "devrepair": {
+          "worlds": 2,
+          "episodes": 20,
+          "completed": 20,
+          "decisions": 98,
+          "transitions": 642
+        },
+        "multi-dev": {
+          "worlds": 1,
+          "episodes": 10,
+          "completed": 10,
+          "decisions": 162,
+          "transitions": 772
+        },
+        "replay": {
+          "worlds": 196,
+          "episodes": 508,
+          "completed": 508,
+          "decisions": 12450,
+          "transitions": 1089
+        },
+        "replay-dev": {
+          "worlds": 78,
+          "episodes": 192,
+          "completed": 192,
+          "decisions": 4052,
+          "transitions": 333
+        },
+        "core-a": {
+          "worlds": 98,
+          "episodes": 980,
+          "completed": 980,
+          "decisions": 12128,
+          "transitions": 56010
+        },
+        "core-b": {
+          "worlds": 40,
+          "episodes": 400,
+          "completed": 400,
+          "decisions": 11224,
+          "transitions": 41335
+        },
+        "repair": {
+          "worlds": 10,
+          "episodes": 100,
+          "completed": 100,
+          "decisions": 940,
+          "transitions": 4662
+        },
+        "mixcore": {
+          "worlds": 138,
+          "episodes": 138,
+          "completed": 138,
+          "decisions": 2427,
+          "transitions": 8226
+        },
+        "mixrepair": {
+          "worlds": 10,
+          "episodes": 10,
+          "completed": 10,
+          "decisions": 97,
+          "transitions": 528
+        },
+        "mixall": {
+          "worlds": 138,
+          "episodes": 138,
+          "completed": 138,
+          "decisions": 2481,
+          "transitions": 23806
+        },
+        "mixallrepair": {
+          "worlds": 10,
+          "episodes": 10,
+          "completed": 10,
+          "decisions": 96,
+          "transitions": 1073
+        },
+        "multi": {
+          "transitions": 3603,
+          "worlds": 5,
+          "episodes": 55,
+          "completed": 55,
+          "decisions": 795
+        },
+        "mixallmulti": {
+          "transitions": 622,
+          "worlds": 5,
+          "episodes": 5,
+          "completed": 5,
+          "decisions": 66
+        },
+        "multiext": {
+          "worlds": 12,
+          "episodes": 144,
+          "completed": 144,
+          "decisions": 2146,
+          "transitions": 11056
+        },
+        "replicate": {
+          "worlds": 80,
+          "episodes": 640,
+          "completed": 640,
+          "decisions": 7506,
+          "transitions": 32603
+        },
+        "cap-probe": {
+          "worlds": 98,
+          "episodes": 490,
+          "completed": 490,
+          "decisions": 6094,
+          "transitions": 33237
+        },
+        "stress": {
+          "worlds": 24,
+          "episodes": 120,
+          "completed": 120,
+          "decisions": 1583,
+          "transitions": 11348
+        },
+        "timing": {
+          "worlds": 8,
+          "episodes": 64,
+          "completed": 64,
+          "decisions": 1669,
+          "transitions": 5656
+        },
+        "native": {},
+        "native-loss": {},
+        "nativemulti": {}
+      }
+    }
+  ],
+  "core1": [
+    {
+      "stage": "pilot",
+      "seconds": null,
+      "python_cpu": null,
+      "host_cpu": null,
+      "commands": {
+        "i1_s3a_identity": 2,
+        "pre0_start": 104,
+        "i1_n2_close": 105,
+        "i1_release": 105,
+        "f1_3c_release": 105,
+        "pre0_abandon": 105,
+        "i1_sv1_graph": 1,
+        "i1_n2_step": 149
+      }
+    },
+    {
+      "stage": "development",
+      "seconds": 123.38989219997893,
+      "python_cpu": 13.640625,
+      "host_cpu": null,
+      "commands": {
+        "i1_s3a_identity": 24,
+        "pre0_start": 1489,
+        "i1_n2_close": 1477,
+        "i1_release": 1477,
+        "f1_3c_release": 1477,
+        "pre0_abandon": 1477,
+        "i1_sv1_graph": 17,
+        "i1_n2_step": 6141
+      }
+    },
+    {
+      "stage": "policy",
+      "seconds": 116.16318629999296,
+      "python_cpu": 14.375,
+      "host_cpu": null,
+      "commands": {
+        "i1_s3a_identity": 24,
+        "pre0_start": 1770,
+        "i1_n2_close": 1758,
+        "i1_release": 1758,
+        "f1_3c_release": 1758,
+        "pre0_abandon": 1758,
+        "i1_sv1_graph": 21,
+        "i1_n2_step": 8530
+      }
+    },
+    {
+      "stage": "final",
+      "seconds": 262.2507391999825,
+      "python_cpu": 34.875,
+      "host_cpu": null,
+      "commands": {
+        "i1_s3a_identity": 50,
+        "pre0_start": 4720,
+        "i1_n2_step": 26388,
+        "i1_n2_close": 4694,
+        "i1_release": 4694,
+        "f1_3c_release": 4694,
+        "pre0_abandon": 4694,
+        "i1_sv1_graph": 43
+      }
+    },
+    {
+      "stage": "resident",
+      "seconds": 270.1271120000165,
+      "python_cpu": 29.8125,
+      "host_cpu": null,
+      "commands": {
+        "i1_s3a_identity": 49,
+        "pre0_start": 3986,
+        "i1_n2_close": 3961,
+        "i1_release": 3961,
+        "f1_3c_release": 3961,
+        "pre0_abandon": 3961,
+        "i1_sv1_graph": 43,
+        "i1_n2_step": 21181
+      }
+    },
+    {
+      "stage": "pressure",
+      "seconds": 43.57501420000335,
+      "python_cpu": 5.890625,
+      "host_cpu": 45.890625,
+      "commands": {
+        "i1_s3a_identity": 8,
+        "pre0_start": 696,
+        "i1_n2_close": 692,
+        "i1_release": 692,
+        "f1_3c_release": 692,
+        "pre0_abandon": 692,
+        "i1_sv1_graph": 6,
+        "i1_n2_step": 3063
+      }
+    },
+    {
+      "stage": "transfer",
+      "seconds": 56.940714299998945,
+      "python_cpu": 8.875,
+      "host_cpu": 60.703125,
+      "commands": {
+        "i1_s3a_identity": 8,
+        "pre0_start": 791,
+        "i1_n2_close": 787,
+        "i1_release": 787,
+        "f1_3c_release": 787,
+        "pre0_abandon": 787,
+        "i1_sv1_graph": 8,
+        "i1_n2_step": 4026
+      }
+    },
+    {
+      "stage": "world8",
+      "seconds": 62.454333500005305,
+      "python_cpu": 9.984375,
+      "host_cpu": 65.90625,
+      "commands": {
+        "i1_s3a_identity": 9,
+        "pre0_start": 1326,
+        "i1_n2_step": 7237,
+        "i1_n2_close": 1320,
+        "i1_release": 1320,
+        "f1_3c_release": 1320,
+        "pre0_abandon": 1320,
+        "i1_sv1_graph": 6
+      }
+    },
+    {
+      "stage": "isolation",
+      "seconds": 10.142796500003897,
+      "python_cpu": null,
+      "host_cpu": null,
+      "commands": {
+        "i1_s3a_identity": 1,
+        "pre0_start": 189,
+        "i1_n2_close": 189,
+        "i1_release": 189,
+        "f1_3c_release": 189,
+        "pre0_abandon": 189,
+        "i1_sv1_graph": 2,
+        "i1_n2_step": 658
+      }
+    },
+    {
+      "stage": "compare",
+      "seconds": 119.24775959999533,
+      "python_cpu": null,
+      "host_cpu": null,
+      "commands": {
+        "i1_s3a_identity": 57,
+        "pre0_start": 54,
+        "i1_n2_step": 626,
+        "i1_iid_prediction_roster": 99,
+        "i1_sv1_graph": 125,
+        "synthetic_start": 3,
+        "i1_begin": 3,
+        "i1_iid_native_roster": 99,
+        "action": 102,
+        "i1_iib_native_stamp": 3
+      }
+    },
+    {
+      "stage": "release-smoke",
+      "seconds": 13.001917799992952,
+      "python_cpu": 3.65625,
+      "host_cpu": 10.15625,
+      "commands": {
+        "i1_s3a_identity": 2,
+        "pre0_start": 164,
+        "i1_n2_step": 802,
+        "i1_n2_close": 163,
+        "i1_release": 163,
+        "f1_3c_release": 163,
+        "pre0_abandon": 163,
+        "i1_sv1_graph": 2
+      }
+    },
+    {
+      "stage": "release-compare",
+      "seconds": 18.299026399996364,
+      "python_cpu": null,
+      "host_cpu": null,
+      "commands": {
+        "i1_s3a_identity": 5,
+        "synthetic_start": 1,
+        "i1_begin": 1,
+        "i1_iid_native_roster": 27,
+        "action": 28,
+        "i1_iib_native_stamp": 1,
+        "pre0_start": 4,
+        "i1_sv1_graph": 10,
+        "i1_n2_step": 82,
+        "i1_iid_prediction_roster": 27
+      }
+    },
+    {
+      "stage": "core1-exact-build",
+      "seconds": 42.14,
+      "scope": "SDK-reported elapsed per project; extraction and hashing unmetered"
+    },
+    {
+      "stage": "core1-exact-v2",
+      "seconds": 48.59,
+      "scope": "SDK-reported elapsed per project; extraction and hashing unmetered"
+    },
+    {
+      "stage": "core1-build-final",
+      "seconds": 39.15,
+      "scope": "SDK-reported elapsed per project; extraction and hashing unmetered"
+    },
+    {
+      "stage": "core1-release-build",
+      "seconds": 50.44,
+      "scope": "SDK-reported elapsed per project; extraction and hashing unmetered"
+    },
+    {
+      "stage": "core1-cases",
+      "seconds": 20.463233470916748,
+      "scope": "approximate local output creation-to-last-write"
+    },
+    {
+      "stage": "core1-cases-v2",
+      "seconds": 20.905885696411133,
+      "scope": "approximate local output creation-to-last-write"
+    },
+    {
+      "stage": "core1-exact-final",
+      "seconds": 20.8496356010437,
+      "scope": "approximate local output creation-to-last-write"
+    },
+    {
+      "stage": "core1-release-cases",
+      "seconds": 24.11572551727295,
+      "scope": "approximate local output creation-to-last-write"
+    },
+    {
+      "stage": "core1-hotdraw-regression",
+      "seconds": 45.09740996360779,
+      "scope": "approximate local output creation-to-last-write"
+    },
+    {
+      "stage": "core1-pilot",
+      "seconds": 20.76124668121338,
+      "scope": "approximate local output creation-to-last-write"
+    }
+  ],
+  "total_core1_measured_or_estimated_job_seconds": 1428.1056289304329,
+  "core1_training_presentations": 0,
+  "core1_training_updates": 0,
+  "core1_gpu_inference_or_training_seconds": 0,
+  "deployment_and_conditional_world_counts": "evidence/summary.json",
+  "historical_full_cpu_gpu": null,
+  "distinct_lifetime_families_or_battles": null
+}
