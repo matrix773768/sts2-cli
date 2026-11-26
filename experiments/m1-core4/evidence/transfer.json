@@ -1,0 +1,143 @@
+{
+  "HAUNTED_SHIP_NORMAL": {
+    "eligible": {
+      "n": 100,
+      "wins": 100,
+      "severe": 3,
+      "joint_win_hp": 1.46,
+      "win_flips": [
+        0,
+        0
+      ],
+      "absolute_utility": 88.96942405700683,
+      "delta": {
+        "n": 100,
+        "mean": 1.2885208892822266,
+        "ci": [
+          0.4090889644622803,
+          2.2600622882843013
+        ]
+      },
+      "win_delta": {
+        "n": 100,
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "G2": {
+      "n": 100,
+      "families": 100,
+      "status": {
+        "predicted_win": 100
+      },
+      "C": 375,
+      "mid_late_C": 110,
+      "actions": 1786,
+      "queries": 0,
+      "calls": 0,
+      "decision_complete": 0,
+      "unique_C": 0,
+      "settlements": 0,
+      "execution": {},
+      "used": 0
+    },
+    "v1": {
+      "n": 100,
+      "families": 100,
+      "status": {
+        "predicted_win": 100
+      },
+      "C": 357,
+      "mid_late_C": 99,
+      "actions": 1750,
+      "queries": 456,
+      "calls": 42248,
+      "decision_complete": 453,
+      "unique_C": 5685,
+      "settlements": 7520,
+      "execution": {
+        "G2": 405,
+        "end": 46,
+        "terminal": 5
+      },
+      "used": 51
+    },
+    "species_in_catalog": false,
+    "g2_wins": 100,
+    "qualified": 174
+  },
+  "NIBBITS_NORMAL": {
+    "eligible": {
+      "n": 100,
+      "wins": 100,
+      "severe": 9,
+      "joint_win_hp": 1.5252525252525253,
+      "win_flips": [
+        1,
+        0
+      ],
+      "absolute_utility": 84.41890808105468,
+      "delta": {
+        "n": 100,
+        "mean": 2.621847686767578,
+        "ci": [
+          0.6236639804840088,
+          5.820248945236204
+        ]
+      },
+      "win_delta": {
+        "n": 100,
+        "mean": 0.01,
+        "ci": [
+          0.0,
+          0.03
+        ]
+      }
+    },
+    "G2": {
+      "n": 100,
+      "families": 100,
+      "status": {
+        "predicted_win": 99,
+        "death": 1
+      },
+      "C": 416,
+      "mid_late_C": 133,
+      "actions": 2012,
+      "queries": 0,
+      "calls": 0,
+      "decision_complete": 0,
+      "unique_C": 0,
+      "settlements": 0,
+      "execution": {},
+      "used": 0
+    },
+    "v1": {
+      "n": 100,
+      "families": 100,
+      "status": {
+        "predicted_win": 100
+      },
+      "C": 403,
+      "mid_late_C": 124,
+      "actions": 1963,
+      "queries": 501,
+      "calls": 62528,
+      "decision_complete": 492,
+      "unique_C": 8728,
+      "settlements": 10847,
+      "execution": {
+        "G2": 438,
+        "end": 58,
+        "terminal": 5
+      },
+      "used": 63
+    },
+    "species_in_catalog": false,
+    "g2_wins": 99,
+    "qualified": 176
+  }
+}

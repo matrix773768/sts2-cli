@@ -1,0 +1,287 @@
+{
+  "arms": {
+    "core3": {
+      "attempted": 100,
+      "resolved": 100,
+      "wins": 45,
+      "utility_delta": {
+        "n": 100,
+        "mean": -4.431204872131348,
+        "ci": [
+          -11.53907665157318,
+          2.21388913631439
+        ]
+      },
+      "win_delta": {
+        "n": 100,
+        "mean": -0.04,
+        "ci": [
+          -0.1,
+          0.02
+        ]
+      },
+      "common_win_hp_delta": {
+        "n": 42,
+        "mean": -4.833333333333333,
+        "ci": [
+          -11.547619047619047,
+          1.5238095238095237
+        ]
+      },
+      "actions": 2221,
+      "queries": 911,
+      "interventions": 632,
+      "qualified": null,
+      "search_plays": 104698
+    },
+    "G2": {
+      "attempted": 100,
+      "resolved": 100,
+      "wins": 49,
+      "utility_delta": {
+        "n": 100,
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "win_delta": {
+        "n": 100,
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "common_win_hp_delta": {
+        "n": 49,
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "actions": 2639,
+      "queries": 0,
+      "interventions": 0,
+      "qualified": null,
+      "search_plays": 0
+    },
+    "G2search": {
+      "attempted": 100,
+      "resolved": 100,
+      "wins": 52,
+      "utility_delta": {
+        "n": 100,
+        "mean": 4.380159301757812,
+        "ci": [
+          -1.672438055038452,
+          10.776579821586608
+        ]
+      },
+      "win_delta": {
+        "n": 100,
+        "mean": 0.03,
+        "ci": [
+          -0.03,
+          0.09
+        ]
+      },
+      "common_win_hp_delta": {
+        "n": 46,
+        "mean": 1.6304347826086956,
+        "ci": [
+          -4.326086956521739,
+          7.065760869565209
+        ]
+      },
+      "actions": 2545,
+      "queries": 1479,
+      "interventions": null,
+      "qualified": null,
+      "search_plays": 22890
+    },
+    "v0": {
+      "attempted": 100,
+      "resolved": 100,
+      "wins": 50,
+      "utility_delta": {
+        "n": 100,
+        "mean": 2.29826042175293,
+        "ci": [
+          -0.6448668746948242,
+          5.812201486587522
+        ]
+      },
+      "win_delta": {
+        "n": 100,
+        "mean": 0.01,
+        "ci": [
+          -0.02,
+          0.04
+        ]
+      },
+      "common_win_hp_delta": {
+        "n": 48,
+        "mean": 3.3958333333333335,
+        "ci": [
+          1.1041666666666667,
+          6.104166666666667
+        ]
+      },
+      "actions": 2630,
+      "queries": 643,
+      "interventions": 55,
+      "qualified": 194,
+      "search_plays": 73744
+    },
+    "v1": {
+      "attempted": 100,
+      "resolved": 100,
+      "wins": 49,
+      "utility_delta": {
+        "n": 100,
+        "mean": 1.3837709045410156,
+        "ci": [
+          -1.3194119243621827,
+          4.695035980224604
+        ]
+      },
+      "win_delta": {
+        "n": 100,
+        "mean": 0.0,
+        "ci": [
+          -0.03,
+          0.03
+        ]
+      },
+      "common_win_hp_delta": {
+        "n": 48,
+        "mean": 2.5625,
+        "ci": [
+          0.2708333333333333,
+          5.270833333333333
+        ]
+      },
+      "actions": 2634,
+      "queries": 645,
+      "interventions": 57,
+      "qualified": 192,
+      "search_plays": 73355
+    }
+  },
+  "models": {
+    "v0": {
+      "full": {
+        "n": 547,
+        "nll": 1.7646514177322388,
+        "brier": 0.12641389667987823,
+        "mean_risk": 0.4850156009197235,
+        "actual_risk": 0.5009140968322754
+      },
+      "future_enemy": {
+        "n": 547,
+        "nll": 1.8479113578796387,
+        "brier": 0.1411428302526474,
+        "mean_risk": 0.4259493052959442,
+        "actual_risk": 0.5009140968322754
+      },
+      "pile_position": {
+        "n": 547,
+        "nll": 1.7628304958343506,
+        "brier": 0.12221617996692657,
+        "mean_risk": 0.4759240746498108,
+        "actual_risk": 0.5009140968322754
+      },
+      "persistent": {
+        "n": 547,
+        "nll": 1.857822060585022,
+        "brier": 0.1438925415277481,
+        "mean_risk": 0.49491003155708313,
+        "actual_risk": 0.5009140968322754
+      }
+    },
+    "v1": {
+      "full": {
+        "n": 544,
+        "nll": 1.7324802875518799,
+        "brier": 0.11353643238544464,
+        "mean_risk": 0.5007757544517517,
+        "actual_risk": 0.4944852888584137
+      },
+      "future_enemy": {
+        "n": 544,
+        "nll": 1.8186010122299194,
+        "brier": 0.11230957508087158,
+        "mean_risk": 0.4143044948577881,
+        "actual_risk": 0.4944852888584137
+      },
+      "pile_position": {
+        "n": 544,
+        "nll": 1.7641239166259766,
+        "brier": 0.11517906934022903,
+        "mean_risk": 0.48605436086654663,
+        "actual_risk": 0.4944852888584137
+      },
+      "persistent": {
+        "n": 544,
+        "nll": 1.7793539762496948,
+        "brier": 0.11138667911291122,
+        "mean_risk": 0.5167571902275085,
+        "actual_risk": 0.4944852888584137
+      }
+    }
+  },
+  "strata": {
+    "seen_species": {
+      "n": 98,
+      "mean": 1.412011127082669,
+      "ci": [
+        -1.3270625094978177,
+        4.851604159997434
+      ]
+    },
+    "unseen_species": {
+      "n": 2,
+      "mean": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "largest_losses": [
+    {
+      "family": "286254624e1a88efdb37b70eebe2d50a5e50d8a11b7b3111bfa26c75f36cf6cf",
+      "delta": -71.0,
+      "base_hp": 1,
+      "hp": 0
+    },
+    {
+      "family": "04a313e862bd9e8ccf9f5fba8ba2013f15d778ab193fb3db8bd252a35e5c3364",
+      "delta": -13.0,
+      "base_hp": 15,
+      "hp": 2
+    },
+    {
+      "family": "5a56ef5d7fc7a94adae8dd2580e430cf56bcb3ab0c5998c1430d672c60ebb0bd",
+      "delta": -10.0,
+      "base_hp": 38,
+      "hp": 28
+    },
+    {
+      "family": "96cff431a6cdd0b85bb1add0b4efc92fd033f2cab07da15d9b8f04a70f2b6908",
+      "delta": -6.0,
+      "base_hp": 19,
+      "hp": 13
+    },
+    {
+      "family": "b53b6459424e51f22a07d012e3abc23a3b609930b22f12dad2471519896fcebe",
+      "delta": -0.6582183837890625,
+      "base_hp": 889,
+      "hp": 884
+    }
+  ],
+  "seconds": 2.8853748999827076
+}
