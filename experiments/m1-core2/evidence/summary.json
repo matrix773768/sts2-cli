@@ -1,0 +1,48 @@
+{
+  "families": 24,
+  "states": 131,
+  "labeled": 131,
+  "outcomes": {
+    "predicted_win": 10,
+    "death": 14
+  },
+  "strict_queries": 56,
+  "strict_mass": 47.0,
+  "history_windows": 39,
+  "windows_narrowed": 19,
+  "observed_next_in_window": [
+    30,
+    30
+  ],
+  "attack_contrast": [
+    {
+      "family": "442dbe261b8bd51de90753ab7777c9f599bd6b70e8717dbfb9a71691d9f009f3",
+      "turn": 3,
+      "species": "FUZZY_WURM_CRAWLER",
+      "slot": 1,
+      "move": "ACID_GOOP",
+      "hits": [
+        11
+      ],
+      "next_move": "FIRST_ACID_GOOP",
+      "next_hits": [
+        11
+      ]
+    },
+    {
+      "family": "442dbe261b8bd51de90753ab7777c9f599bd6b70e8717dbfb9a71691d9f009f3",
+      "turn": 4,
+      "species": "FUZZY_WURM_CRAWLER",
+      "slot": 1,
+      "move": "FIRST_ACID_GOOP",
+      "hits": [
+        11
+      ],
+      "next_move": "INHALE",
+      "next_hits": []
+    }
+  ],
+  "encode_seconds": 0.012567300000227988,
+  "median_json_bytes": 4703,
+  "seconds": 1.2692912000056822
+}
