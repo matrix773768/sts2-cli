@@ -4,11 +4,11 @@ from core4_roots import panels,spec_for
 from turn_value import compile_turn
 from value_net import network as old_network
 
-def fight(lane,g2,spec,mode,net,skip=None,trace=None):
-    st=cohort.start(lane,spec);history=[];states=[];queries=[]
+def fight(lane,g2,spec,mode,net,skip=None,trace=None,planner=graph_plan,order=None,counts=None):
+    st=cohort.start(lane,spec,order);history=[];states=[];queries=[]
     if mode in ("G2","G2search"):
         g2.budget=24 if mode=="G2search" else 0
-        result=finish(lane,g2,st);g2.budget=0
+        result=finish(lane,g2,st,counts=counts);g2.budget=0
         return result|dict(queries=[])
     locked=-1
     while st["status"]=="active" and st["actions"]<128:
@@ -18,7 +18,7 @@ def fight(lane,g2,spec,mode,net,skip=None,trace=None):
                 g,ch,ops,q=compile_turn(lane,h,history,net,"simple")
                 use=ops and ops[0][1]>=1-1e-9;idx=ops[0][0] if ops else None
             else:
-                g,ch,q=graph_plan(lane,h,history,net,g2,spec);use=q["use"];idx=ch.get(0)
+                g,ch,q=planner(lane,h,history,net,g2,spec);use=q["use"];idx=ch.get(0)
             queries.append(q|dict(turn=turn,used=bool(use and turn!=skip),hp=h["hp"]))
             if use and turn!=skip:
                 st,played,reason=execute(lane,st,g,ch,idx);history.extend(played);queries[-1]["result"]=reason

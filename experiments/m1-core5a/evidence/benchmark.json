@@ -1,0 +1,45 @@
+{
+  "runs": [
+    {
+      "arm": "slow",
+      "wall": 78.63061319998815,
+      "matches": 52,
+      "calls": 42323,
+      "seconds": 72.84268529998371,
+      "errors": 0,
+      "hits": 0,
+      "misses": 0
+    },
+    {
+      "arm": "fast",
+      "wall": 53.69780080000055,
+      "matches": 52,
+      "calls": 36279,
+      "seconds": 48.075712799996836,
+      "errors": 0,
+      "hits": 142,
+      "misses": 3681
+    },
+    {
+      "arm": "fast",
+      "wall": 51.55280180001864,
+      "matches": 52,
+      "calls": 36279,
+      "seconds": 46.443428700004006,
+      "errors": 0,
+      "hits": 142,
+      "misses": 3681
+    },
+    {
+      "arm": "slow",
+      "wall": 80.60035219998099,
+      "matches": 52,
+      "calls": 42323,
+      "seconds": 74.99823359999573,
+      "errors": 0,
+      "hits": 0,
+      "misses": 0
+    }
+  ],
+  "speedup": 1.5128746198735787
+}

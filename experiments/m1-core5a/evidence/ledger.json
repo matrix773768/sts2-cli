@@ -1,0 +1,180 @@
+{
+  "verification": {
+    "checkpoint_sha256": "d439444a1a9ca9bc8864988e488f720f71b379844b30ddb112bdd8f0ddcfcbbb",
+    "retrained_sha256": "d439444a1a9ca9bc8864988e488f720f71b379844b30ddb112bdd8f0ddcfcbbb",
+    "generated_source_match": {
+      "Tactical.cs": true,
+      "Reference.cs": true,
+      "Strategic.cs": true,
+      "IntegrationProbe.cs": true
+    }
+  },
+  "worker_jobs": {
+    "confirm-G2-0-0": {
+      "seconds": 19.59080819998053,
+      "errors": 0,
+      "hits": 0,
+      "misses": 0
+    },
+    "confirm-G2-1-0": {
+      "seconds": 19.32465119997505,
+      "errors": 0,
+      "hits": 0,
+      "misses": 0
+    },
+    "confirm-G2-2-0": {
+      "seconds": 19.17336419998901,
+      "errors": 0,
+      "hits": 0,
+      "misses": 0
+    },
+    "confirm-G2search-0-0": {
+      "seconds": 25.947439100011252,
+      "errors": 0,
+      "hits": 0,
+      "misses": 0
+    },
+    "confirm-G2search-1-0": {
+      "seconds": 26.283437600010075,
+      "errors": 0,
+      "hits": 0,
+      "misses": 0
+    },
+    "confirm-G2search-2-0": {
+      "seconds": 26.092871400003787,
+      "errors": 0,
+      "hits": 0,
+      "misses": 0
+    },
+    "confirm-original-0-0": {
+      "seconds": 110.9181433999911,
+      "errors": 0,
+      "hits": 0,
+      "misses": 0
+    },
+    "confirm-original-1-0": {
+      "seconds": 106.1276244999899,
+      "errors": 0,
+      "hits": 0,
+      "misses": 0
+    },
+    "confirm-original-2-0": {
+      "seconds": 106.52292139999918,
+      "errors": 0,
+      "hits": 0,
+      "misses": 0
+    },
+    "confirm-v1-0-0": {
+      "seconds": 66.29032629998983,
+      "errors": 0,
+      "hits": 64,
+      "misses": 7712
+    },
+    "confirm-v1-1-0": {
+      "seconds": 63.64482300000964,
+      "errors": 0,
+      "hits": 88,
+      "misses": 7676
+    },
+    "confirm-v1-2-0": {
+      "seconds": 66.18864019998,
+      "errors": 0,
+      "hits": 68,
+      "misses": 7291
+    },
+    "confirm-v2-0-0": {
+      "seconds": 63.617160399997374,
+      "errors": 0,
+      "hits": 54,
+      "misses": 7593
+    },
+    "confirm-v2-1-0": {
+      "seconds": 61.31059280000045,
+      "errors": 0,
+      "hits": 79,
+      "misses": 7602
+    },
+    "confirm-v2-2-0": {
+      "seconds": 65.67407869998715,
+      "errors": 0,
+      "hits": 73,
+      "misses": 7390
+    },
+    "dev-fast-0-0": {
+      "seconds": 73.07508569999482,
+      "errors": 0,
+      "hits": 142,
+      "misses": 3681
+    },
+    "dev-slow-0-0": {
+      "seconds": 77.5620686999755,
+      "errors": 0,
+      "hits": 0,
+      "misses": 0
+    },
+    "dev-v1-0-0": {
+      "seconds": 57.48353800000041,
+      "errors": 0,
+      "hits": 3013,
+      "misses": 4865
+    },
+    "train-v1-0-0": {
+      "seconds": 158.27642360000755,
+      "errors": 0,
+      "hits": 4426,
+      "misses": 12705
+    },
+    "train-v1-0-1": {
+      "seconds": 153.07127889999538,
+      "errors": 0,
+      "hits": 3409,
+      "misses": 12692
+    },
+    "train-v1-0-2": {
+      "seconds": 225.47635700000683,
+      "errors": 0,
+      "hits": 3462,
+      "misses": 12932
+    },
+    "train-v1-1-0": {
+      "seconds": 203.90315369999735,
+      "errors": 0,
+      "hits": 4570,
+      "misses": 12508
+    },
+    "train-v1-1-1": {
+      "seconds": 199.59449419999146,
+      "errors": 0,
+      "hits": 3954,
+      "misses": 11778
+    },
+    "train-v1-1-2": {
+      "seconds": 164.51422879999154,
+      "errors": 0,
+      "hits": 3807,
+      "misses": 12579
+    }
+  },
+  "phase_seconds": {
+    "final_regression": 24.03787090003607,
+    "production_development_and_confirmation": 2159.663510999875,
+    "training": 16.615485199989052,
+    "reproduced_training": 14.956423199997516,
+    "reproduced_build": 24.096641799987992,
+    "independent_teacher": 210.8532683000085,
+    "reference_audit": 17.60964390001027,
+    "controlled_timing": 264.48156799998833
+  },
+  "measured_seconds": 2732.314412299893,
+  "build_and_debug_file_span_estimates": {
+    "core5a-host": 45.3241491317749,
+    "core5a-host2": 317.95117139816284,
+    "core5a-host3": 71.28235125541687,
+    "5a-check": 8.407519102096558,
+    "5a-check2": 14.974259376525879,
+    "5a-check3": 6.340743541717529,
+    "5a-check4": 18.15426230430603
+  },
+  "formal_batch_elapsed_seconds": 952.5342290401459,
+  "excludes": "Human implementation time and uninstrumented per-process Python import/exit except controlled timing; batch elapsed overlaps workers."
+}

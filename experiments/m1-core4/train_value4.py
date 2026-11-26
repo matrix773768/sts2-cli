@@ -7,7 +7,7 @@ def rows(path):
     with gzip.open(path,"rt",encoding="utf8") as stream:
         for line in stream:yield json.loads(line)
 
-def run(out,stage,paths):
+def run(out,stage,paths,continuation="v0"):
     out.mkdir(parents=True,exist_ok=False);t=perf_counter();torch.manual_seed(451);torch.set_num_threads(2)
     data={"train":[],"development":[]};ys={k:[] for k in data};counts=Counter();families=set()
     paired=[]; primary={}; alternate=[]
@@ -16,15 +16,16 @@ def run(out,stage,paths):
             split=r.get("split","train")
             if split not in data or not r.get("terminal"):continue
             if stage!="base" and r.get("policy")=="paired":
-                alternate.append(r);continue
-            if stage!="base" and r.get("policy")!="v0":raise ValueError("Continuation mixture")
-            if stage!="base":primary[r["family"]]=r
+                if split=="train":alternate.append(r)
+                continue
+            if stage!="base" and r.get("policy")!=continuation:raise ValueError("Continuation mixture")
+            if stage!="base":primary[(r["family"],r["seed"])]=r
             counts[split]+=1;families.add(r["family"])
             for c in r["states"]:
                 data[split].append(encode(c))
                 ys[split].append((c["hp"],r["terminal"]["hp"],r["status"]=="death"))
     for alt in alternate:
-        main=primary.get(alt["family"])
+        main=primary.get((alt["family"],alt["seed"]))
         if not main:continue
         turn=alt["skip"]+1
         a=next((c for c in main["states"] if c["turn"]==turn),None)
@@ -61,6 +62,6 @@ def run(out,stage,paths):
         curve.append([ep,trainloss/len(y),nll,((val.softmax(-1)[:,0]-(z==0).float())**2).mean().item()])
         if nll<best:
             best=nll;epoch=ep;torch.save(net.state_dict(),out/"model.pt")
-    (out/"fit.json").write_text(json.dumps(dict(continuation="G2" if stage=="base" else "v0",epoch=epoch,curve=curve,fights=counts,
+    (out/"fit.json").write_text(json.dumps(dict(continuation="G2" if stage=="base" else continuation,epoch=epoch,curve=curve,fights=counts,
         families=len(families),paired_labels=len(paired),states=[len(y),len(z)],parameters=sum(p.numel()for p in net.parameters()),seconds=perf_counter()-t)))
 if __name__=="__main__":run(Path(sys.argv[1]),sys.argv[2],sys.argv[3:])

@@ -21,7 +21,7 @@ def setup(out):
     old.close()
     return host_at(out,ROOT/"logs/core2-state03"),model
 
-def finish(lane,model,st,hist=()):
+def finish(lane,model,st,hist=(),counts=None):
     h=lane.host.project(st["observation"]) if st["status"]=="active" else None
     c=prepared(model,h,hist) if h else None
     if c:c.project=lane.host.project
@@ -32,6 +32,7 @@ def finish(lane,model,st,hist=()):
         st=step(lane,st,a)
         c.after(st)
         if st.get("observed_c"):states.append(st["observed_c"])
+    if counts is not None and c is not None:counts.update(c.counts)
     t=st.get("terminal_observation")
     return dict(status=st["status"],actions=st["actions"],states=states,
         terminal=(t|dict(gold=(st.get("result") or {}).get("gold"))) if t and st["status"] in ("death","predicted_win") else None)

@@ -123,7 +123,7 @@ def policy(graph,value=None,*,first=None,boundary_values=None):
                 deferred_end_turn_mass=deferred,modeled_complete_mass=max(0,coverage-deferred),successors=paths)
 
 
-def integrate(lane,h,history,plan,limit=32,*,previous=None,boundary="C",model_enemy=False,cache=None):
+def integrate(lane,h,history,plan,limit=32,*,previous=None,boundary="C",model_enemy=False,cache=None,fast=False,cache_scope=None):
     """Integrate up to limit additional settlement requests from the same public root and policy."""
     sources=(previous or plan)["successors"]
     pending_kind="deferred" if previous is not None else "A"
@@ -135,7 +135,8 @@ def integrate(lane,h,history,plan,limit=32,*,previous=None,boundary="C",model_en
     stop_after=len(events)+limit
     cache={} if cache is None else cache
     mode="settle_b" if boundary=="B" else "settle_model" if model_enemy else "settle_c"
-    root_key=(digest(h),digest(history))
+    if fast: mode="settle_fast"
+    root_key=cache_scope if cache_scope is not None else (digest(h),digest(history))
     def replay(which,route,setup):
         nonlocal calls,rpc_seconds
         key=(root_key,which,json.dumps([route,setup],sort_keys=True))

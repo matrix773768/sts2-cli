@@ -1,0 +1,14 @@
+private readonly Dictionary<string,(SimulationSnapshot State,PileLaw Law)> prefixes=new();
+        private Dictionary<string,object?> Batch(SimulationSnapshot root,PileLaw bag)
+        {
+            var results=new List<Dictionary<string,object?>>();
+            foreach(var route in request.GetProperty("routes").EnumerateArray())
+            {
+                int before=calls;
+                var result=Settle(root,bag,route);
+                result["calls"]=calls-before;
+                result.Remove("A");
+                results.Add(result);
+            }
+            return new(){["results"]=results,["calls"]=calls};
+        }

@@ -24,11 +24,11 @@ def hooks(rule):
     h=rule.get("HookMask","")
     return {k:1 for k,v in (("before","Before"),("after","After"),("trigger_card","CardPlayed"),("trigger_turn","Turn"),("trigger_damage","Damage"),("trigger_block","Block"),("trigger_draw","Draw"),("trigger_exhaust","Exhaust")) if v in h}
 
-def encode(c):
+def encode(c,row_fn=tensor_row):
     if c["setup"]["stage"]!="before_initial_draw" or c.get("enemy_models"):
         raise ValueError("A strict post-enemy, pre-draw C is required")
     tokens=[];rules=static_rules()
-    def add(attrs,**extra):tokens.append(tensor_row(**(attrs|extra)))
+    def add(attrs,**extra):tokens.append(row_fn(**(attrs|extra)))
     def powers(items,owner):
         for p in items:
             key=p["id"];amount=p["amount"];r=rules["powers"].get(key,{})
