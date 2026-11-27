@@ -1,0 +1,787 @@
+{
+  "rows": {
+    "head_combo": {
+      "actions": [
+        [
+          "play_card",
+          {
+            "card_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 2
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 1,
+            "target_index": 0
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 1
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0
+          }
+        ],
+        [
+          "select_cards",
+          {
+            "indices": "2"
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 4,
+            "target_index": 0
+          }
+        ],
+        [
+          "select_cards",
+          {
+            "indices": "3"
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 3
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 3
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 1
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 2,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0,
+            "target_index": 0
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 1,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 3
+          }
+        ],
+        [
+          "select_cards",
+          {
+            "indices": "2"
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 2,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 1,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 2,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 1,
+            "target_index": 0
+          }
+        ],
+        [
+          "select_cards",
+          {
+            "indices": "10"
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 1,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 1,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0,
+            "target_index": 0
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 3,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0,
+            "target_index": 0
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 1
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 2,
+            "target_index": 0
+          }
+        ],
+        [
+          "select_cards",
+          {
+            "indices": "2"
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0,
+            "target_index": 0
+          }
+        ]
+      ],
+      "decision": "card_reward",
+      "terminal": true,
+      "hp": 28,
+      "exact_hash": "e6ad1e983a88e74c61b0ea5da54376741e966e4296fcc39a6ab0a398da698eff",
+      "matches": true
+    },
+    "adaptive_v2": {
+      "actions": [
+        [
+          "play_card",
+          {
+            "card_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 2
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 1,
+            "target_index": 0
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 1
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0
+          }
+        ],
+        [
+          "select_cards",
+          {
+            "indices": "2"
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 3
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 3,
+            "target_index": 0
+          }
+        ],
+        [
+          "select_cards",
+          {
+            "indices": "3"
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 2,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 4,
+            "target_index": 0
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 2,
+            "target_index": 0
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 2,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 3
+          }
+        ],
+        [
+          "select_cards",
+          {
+            "indices": "1"
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 1,
+            "target_index": 0
+          }
+        ],
+        [
+          "select_cards",
+          {
+            "indices": "2"
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 4,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 4,
+            "target_index": 0
+          }
+        ],
+        [
+          "select_cards",
+          {
+            "indices": "4"
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 3,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 3
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 1,
+            "target_index": 1
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 2,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 3,
+            "target_index": 0
+          }
+        ],
+        [
+          "select_cards",
+          {
+            "indices": "3"
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 1,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0,
+            "target_index": 0
+          }
+        ],
+        [
+          "select_cards",
+          {
+            "indices": "6"
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ]
+      ],
+      "decision": "game_over",
+      "terminal": false,
+      "hp": 0,
+      "exact_hash": "484ee52b43a537d507543383aefef97a2263e6a74f86ad1ded3b4d5376433a9a",
+      "matches": true
+    },
+    "trance_static": {
+      "actions": [
+        [
+          "play_card",
+          {
+            "card_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 2
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 1,
+            "target_index": 0
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 1
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0
+          }
+        ],
+        [
+          "select_cards",
+          {
+            "indices": "2"
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 3
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 1,
+            "target_index": 0
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 1,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 1,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0,
+            "target_index": 0
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 1,
+            "target_index": 0
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 3
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 2,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 2,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 1,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 3,
+            "target_index": 0
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 4
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 4,
+            "target_index": 0
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 3,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 1
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 0,
+            "target_index": 0
+          }
+        ],
+        [
+          "select_cards",
+          {
+            "indices": "2"
+          }
+        ],
+        [
+          "end_turn",
+          {}
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 3,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 1,
+            "target_index": 0
+          }
+        ],
+        [
+          "play_card",
+          {
+            "card_index": 1,
+            "target_index": 0
+          }
+        ]
+      ],
+      "decision": "card_reward",
+      "terminal": true,
+      "hp": 27,
+      "exact_hash": "0715f3f516a68c6ca2d6eee15a5717b317bc8eab7f842b08fe1043675d0aa7fb",
+      "matches": true
+    }
+  },
+  "seconds": 34.23809980000078
+}

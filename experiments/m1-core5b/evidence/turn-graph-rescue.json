@@ -1,0 +1,945 @@
+{
+  "rows": {
+    "base": {
+      "V1": [
+        {
+          "first": [
+            "end_turn"
+          ],
+          "coverage": 1,
+          "value": -42.777286529541016
+        },
+        {
+          "first": [
+            "BASH",
+            1,
+            0
+          ],
+          "coverage": 1,
+          "value": -33.64569854736328
+        },
+        {
+          "first": [
+            "DEFEND_IRONCLAD",
+            0,
+            null
+          ],
+          "coverage": 1,
+          "value": -39.20941925048828
+        },
+        {
+          "first": [
+            "INFLAME",
+            1,
+            null
+          ],
+          "coverage": 1,
+          "value": -39.20941925048828
+        },
+        {
+          "first": [
+            "SHRUG_IT_OFF",
+            0,
+            null
+          ],
+          "coverage": 0.5384615384615385,
+          "value": -42.347935016338646
+        }
+      ],
+      "V1_reference": {
+        "coverage": 0.9999999999999998,
+        "value": -32.72687501173753
+      },
+      "V2": [
+        {
+          "first": [
+            "end_turn"
+          ],
+          "coverage": 1,
+          "value": -44.91783905029297
+        },
+        {
+          "first": [
+            "BASH",
+            1,
+            0
+          ],
+          "coverage": 1,
+          "value": -38.36578369140625
+        },
+        {
+          "first": [
+            "DEFEND_IRONCLAD",
+            0,
+            null
+          ],
+          "coverage": 1,
+          "value": -42.31593704223633
+        },
+        {
+          "first": [
+            "INFLAME",
+            1,
+            null
+          ],
+          "coverage": 1,
+          "value": -42.31593704223633
+        },
+        {
+          "first": [
+            "SHRUG_IT_OFF",
+            0,
+            null
+          ],
+          "coverage": 0.5384615384615385,
+          "value": -43.99727982741136
+        }
+      ],
+      "policies": {
+        "deployed": {
+          "mass": {
+            "generated": 1.0,
+            "admitted": 0.6153846153846154,
+            "settled": 0.6153846153846154
+          },
+          "blocked": {},
+          "visited": {
+            "('BASH', 1, 0)": 1.0,
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('end_turn',)": 1.0
+          },
+          "examples": {}
+        },
+        "defend2": {
+          "mass": {},
+          "blocked": {
+            "budget": 1.0
+          },
+          "visited": {
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('DEFEND_IRONCLAD', 0, None)": 1.7692307692307685
+          },
+          "examples": {}
+        },
+        "shrug_bash": {
+          "mass": {
+            "generated": 0.8461538461538463,
+            "admitted": 0.07692307692307693,
+            "settled": 0.07692307692307693
+          },
+          "blocked": {
+            "budget": 0.15384615384615385
+          },
+          "visited": {
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('BASH', 1, 0)": 1.0,
+            "('end_turn',)": 0.8461538461538463
+          },
+          "examples": {}
+        },
+        "adaptive_v1": {
+          "mass": {
+            "generated": 0.38461538461538464
+          },
+          "blocked": {
+            "budget": 0.5384615384615385,
+            "missing_edge": 0.07692307692307693
+          },
+          "visited": {
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('DEFEND_IRONCLAD', 0, None)": 0.3076923076923077,
+            "('BODY_SLAM', 0, 0)": 0.07692307692307693,
+            "('BASH', 1, 0)": 0.38461538461538464,
+            "('end_turn',)": 0.38461538461538464,
+            "('FLAME_BARRIER', 0, None)": 0.15384615384615385,
+            "('HEADBUTT', 0, 0)": 0.07692307692307693,
+            "('INFLAME', 1, None)": 0.15384615384615385,
+            "('IRON_WAVE', 0, 0)": 0.07692307692307693,
+            "('SETUP_STRIKE', 1, 0)": 0.07692307692307693,
+            "('STRIKE_IRONCLAD', 1, 0)": 0.07692307692307693
+          },
+          "examples": {
+            "missing_edge": {
+              "action": [
+                "SETUP_STRIKE",
+                1,
+                0
+              ],
+              "role": "engine",
+              "approximation": null,
+              "hand": "INFLAME#1|BASH#1|DEFEND_IRONCLAD#0|SETUP_STRIKE#1"
+            }
+          }
+        },
+        "adaptive_v2": {
+          "mass": {
+            "generated": 0.38461538461538464
+          },
+          "blocked": {
+            "budget": 0.5384615384615385,
+            "missing_edge": 0.07692307692307693
+          },
+          "visited": {
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('DEFEND_IRONCLAD', 0, None)": 0.5384615384615385,
+            "('BODY_SLAM', 0, 0)": 0.07692307692307693,
+            "('BASH', 1, 0)": 0.3076923076923077,
+            "('end_turn',)": 0.38461538461538464,
+            "('FLAME_BARRIER', 0, None)": 0.15384615384615385,
+            "('HEADBUTT', 0, 0)": 0.07692307692307693,
+            "('IRON_WAVE', 0, 0)": 0.07692307692307693,
+            "('SETUP_STRIKE', 1, 0)": 0.07692307692307693,
+            "('STRIKE_IRONCLAD', 1, 0)": 0.07692307692307693
+          },
+          "examples": {
+            "missing_edge": {
+              "action": [
+                "SETUP_STRIKE",
+                1,
+                0
+              ],
+              "role": "engine",
+              "approximation": null,
+              "hand": "INFLAME#1|BASH#1|DEFEND_IRONCLAD#0|SETUP_STRIKE#1"
+            }
+          }
+        }
+      },
+      "graph": {
+        "counts": {
+          "catalog_operations": 192,
+          "generated_barrier": 63,
+          "generated_classified": 143,
+          "canonical_constraints": 50,
+          "duplicate_pruned": 41,
+          "sleep_pruned": 8,
+          "dynamic_default": 14,
+          "goal_expand": 29,
+          "precedence_constraints": 2,
+          "ordinary_combinations": 48,
+          "ordinary_skip": 3,
+          "budget": 103
+        },
+        "calls": 128,
+        "possible_A": 122,
+        "selected_A": 32
+      },
+      "V2_reference": {
+        "coverage": 0.9999999999999998,
+        "value": -37.63873114952675
+      }
+    },
+    "medium": {
+      "V1": [
+        {
+          "first": [
+            "end_turn"
+          ],
+          "coverage": 1,
+          "value": -42.777286529541016
+        },
+        {
+          "first": [
+            "BASH",
+            1,
+            0
+          ],
+          "coverage": 1,
+          "value": -33.64569854736328
+        },
+        {
+          "first": [
+            "DEFEND_IRONCLAD",
+            0,
+            null
+          ],
+          "coverage": 1,
+          "value": -39.20941925048828
+        },
+        {
+          "first": [
+            "INFLAME",
+            1,
+            null
+          ],
+          "coverage": 1,
+          "value": -39.20941925048828
+        },
+        {
+          "first": [
+            "SHRUG_IT_OFF",
+            0,
+            null
+          ],
+          "coverage": 0.6153846153846154,
+          "value": -41.08641110933744
+        }
+      ],
+      "V1_reference": {
+        "coverage": 0.9999999999999998,
+        "value": -32.72687501173753
+      },
+      "V2": [
+        {
+          "first": [
+            "end_turn"
+          ],
+          "coverage": 1,
+          "value": -44.91783905029297
+        },
+        {
+          "first": [
+            "BASH",
+            1,
+            0
+          ],
+          "coverage": 1,
+          "value": -38.36578369140625
+        },
+        {
+          "first": [
+            "DEFEND_IRONCLAD",
+            0,
+            null
+          ],
+          "coverage": 1,
+          "value": -42.31593704223633
+        },
+        {
+          "first": [
+            "INFLAME",
+            1,
+            null
+          ],
+          "coverage": 1,
+          "value": -42.31593704223633
+        },
+        {
+          "first": [
+            "SHRUG_IT_OFF",
+            0,
+            null
+          ],
+          "coverage": 0.6153846153846154,
+          "value": -43.093582740196815
+        }
+      ],
+      "policies": {
+        "deployed": {
+          "mass": {
+            "generated": 1.0,
+            "admitted": 0.846153846153846,
+            "settled": 0.846153846153846
+          },
+          "blocked": {},
+          "visited": {
+            "('BASH', 1, 0)": 1.0,
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('end_turn',)": 1.0
+          },
+          "examples": {}
+        },
+        "defend2": {
+          "mass": {
+            "generated": 1.0,
+            "admitted": 0.07692307692307693,
+            "settled": 0.07692307692307693
+          },
+          "blocked": {},
+          "visited": {
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('DEFEND_IRONCLAD', 0, None)": 1.9999999999999991,
+            "('end_turn',)": 1.0
+          },
+          "examples": {}
+        },
+        "shrug_bash": {
+          "mass": {
+            "generated": 1.0,
+            "admitted": 0.07692307692307693,
+            "settled": 0.07692307692307693
+          },
+          "blocked": {},
+          "visited": {
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('BASH', 1, 0)": 1.0,
+            "('end_turn',)": 1.0
+          },
+          "examples": {}
+        },
+        "adaptive_v1": {
+          "mass": {
+            "generated": 0.7692307692307692,
+            "admitted": 0.07692307692307693,
+            "settled": 0.07692307692307693
+          },
+          "blocked": {
+            "unsupported_pending_choice": 0.07692307692307693,
+            "missing_edge": 0.07692307692307693,
+            "random_target": 0.07692307692307693
+          },
+          "visited": {
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('DEFEND_IRONCLAD', 0, None)": 0.3076923076923077,
+            "('BODY_SLAM', 0, 0)": 0.07692307692307693,
+            "('end_turn',)": 0.7692307692307692,
+            "('BASH', 1, 0)": 0.38461538461538464,
+            "('FLAME_BARRIER', 0, None)": 0.15384615384615385,
+            "('HEADBUTT', 0, 0)": 0.07692307692307693,
+            "('INFLAME', 1, None)": 0.15384615384615385,
+            "('IRON_WAVE', 0, 0)": 0.07692307692307693,
+            "('SETUP_STRIKE', 1, 0)": 0.07692307692307693,
+            "('STRIKE_IRONCLAD', 1, 0)": 0.07692307692307693,
+            "('SWORD_BOOMERANG', 1, None)": 0.07692307692307693
+          },
+          "examples": {
+            "missing_edge": {
+              "action": [
+                "SETUP_STRIKE",
+                1,
+                0
+              ],
+              "role": "engine",
+              "approximation": null,
+              "hand": "INFLAME#1|BASH#1|DEFEND_IRONCLAD#0|SETUP_STRIKE#1"
+            }
+          }
+        },
+        "adaptive_v2": {
+          "mass": {
+            "generated": 0.6923076923076923,
+            "admitted": 0.07692307692307693,
+            "settled": 0.07692307692307693
+          },
+          "blocked": {
+            "unsupported_pending_choice": 0.15384615384615385,
+            "missing_edge": 0.07692307692307693,
+            "random_target": 0.07692307692307693
+          },
+          "visited": {
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('DEFEND_IRONCLAD', 0, None)": 0.5384615384615385,
+            "('BODY_SLAM', 0, 0)": 0.07692307692307693,
+            "('end_turn',)": 0.6923076923076923,
+            "('BASH', 1, 0)": 0.3076923076923077,
+            "('FLAME_BARRIER', 0, None)": 0.15384615384615385,
+            "('HEADBUTT', 0, 0)": 0.07692307692307693,
+            "('IRON_WAVE', 0, 0)": 0.07692307692307693,
+            "('SETUP_STRIKE', 1, 0)": 0.07692307692307693,
+            "('STRIKE_IRONCLAD', 1, 0)": 0.07692307692307693,
+            "('SWORD_BOOMERANG', 1, None)": 0.07692307692307693,
+            "('TRUE_GRIT', 1, None)": 0.07692307692307693
+          },
+          "examples": {
+            "missing_edge": {
+              "action": [
+                "SETUP_STRIKE",
+                1,
+                0
+              ],
+              "role": "engine",
+              "approximation": null,
+              "hand": "INFLAME#1|BASH#1|DEFEND_IRONCLAD#0|SETUP_STRIKE#1"
+            }
+          }
+        }
+      },
+      "graph": {
+        "counts": {
+          "catalog_operations": 211,
+          "generated_barrier": 71,
+          "generated_classified": 156,
+          "canonical_constraints": 52,
+          "duplicate_pruned": 45,
+          "sleep_pruned": 9,
+          "dynamic_default": 16,
+          "goal_expand": 29,
+          "precedence_constraints": 2,
+          "ordinary_combinations": 48,
+          "ordinary_skip": 3,
+          "random_target": 4,
+          "unsupported_pending_choice": 7
+        },
+        "calls": 247,
+        "possible_A": 230,
+        "selected_A": 48
+      },
+      "V2_reference": {
+        "coverage": 0.9999999999999998,
+        "value": -37.63873114952675
+      }
+    },
+    "high": {
+      "V1": [
+        {
+          "first": [
+            "end_turn"
+          ],
+          "coverage": 1,
+          "value": -42.777286529541016
+        },
+        {
+          "first": [
+            "BASH",
+            1,
+            0
+          ],
+          "coverage": 1.0,
+          "value": -29.519977569580078
+        },
+        {
+          "first": [
+            "DEFEND_IRONCLAD",
+            0,
+            null
+          ],
+          "coverage": 1,
+          "value": -39.20941925048828
+        },
+        {
+          "first": [
+            "INFLAME",
+            1,
+            null
+          ],
+          "coverage": 1,
+          "value": -39.20941925048828
+        },
+        {
+          "first": [
+            "SHRUG_IT_OFF",
+            0,
+            null
+          ],
+          "coverage": 0.7692307692307692,
+          "value": -37.55693509028508
+        }
+      ],
+      "V1_reference": {
+        "coverage": 0.9999999999999998,
+        "value": -32.72687501173753
+      },
+      "V2": [
+        {
+          "first": [
+            "end_turn"
+          ],
+          "coverage": 1,
+          "value": -44.91783905029297
+        },
+        {
+          "first": [
+            "BASH",
+            1,
+            0
+          ],
+          "coverage": 1.0,
+          "value": -34.25672120314378
+        },
+        {
+          "first": [
+            "DEFEND_IRONCLAD",
+            0,
+            null
+          ],
+          "coverage": 1,
+          "value": -42.31593704223633
+        },
+        {
+          "first": [
+            "INFLAME",
+            1,
+            null
+          ],
+          "coverage": 1,
+          "value": -42.31593704223633
+        },
+        {
+          "first": [
+            "SHRUG_IT_OFF",
+            0,
+            null
+          ],
+          "coverage": 0.7692307692307692,
+          "value": -39.787089421198914
+        }
+      ],
+      "policies": {
+        "deployed": {
+          "mass": {
+            "generated": 1.0,
+            "admitted": 1.0,
+            "settled": 1.0
+          },
+          "blocked": {},
+          "visited": {
+            "('BASH', 1, 0)": 1.0,
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('end_turn',)": 1.0
+          },
+          "examples": {}
+        },
+        "defend2": {
+          "mass": {
+            "generated": 1.0,
+            "admitted": 0.38461538461538464,
+            "settled": 0.38461538461538464
+          },
+          "blocked": {},
+          "visited": {
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('DEFEND_IRONCLAD', 0, None)": 1.9999999999999991,
+            "('end_turn',)": 1.0
+          },
+          "examples": {}
+        },
+        "shrug_bash": {
+          "mass": {
+            "generated": 1.0,
+            "admitted": 0.15384615384615385,
+            "settled": 0.15384615384615385
+          },
+          "blocked": {},
+          "visited": {
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('BASH', 1, 0)": 1.0,
+            "('end_turn',)": 1.0
+          },
+          "examples": {}
+        },
+        "adaptive_v1": {
+          "mass": {
+            "generated": 0.7692307692307692,
+            "admitted": 0.15384615384615385,
+            "settled": 0.15384615384615385
+          },
+          "blocked": {
+            "unsupported_pending_choice": 0.07692307692307693,
+            "missing_edge": 0.07692307692307693,
+            "random_target": 0.07692307692307693
+          },
+          "visited": {
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('DEFEND_IRONCLAD', 0, None)": 0.3076923076923077,
+            "('BODY_SLAM', 0, 0)": 0.07692307692307693,
+            "('end_turn',)": 0.7692307692307692,
+            "('BASH', 1, 0)": 0.38461538461538464,
+            "('FLAME_BARRIER', 0, None)": 0.15384615384615385,
+            "('HEADBUTT', 0, 0)": 0.07692307692307693,
+            "('INFLAME', 1, None)": 0.15384615384615385,
+            "('IRON_WAVE', 0, 0)": 0.07692307692307693,
+            "('SETUP_STRIKE', 1, 0)": 0.07692307692307693,
+            "('STRIKE_IRONCLAD', 1, 0)": 0.07692307692307693,
+            "('SWORD_BOOMERANG', 1, None)": 0.07692307692307693
+          },
+          "examples": {
+            "missing_edge": {
+              "action": [
+                "SETUP_STRIKE",
+                1,
+                0
+              ],
+              "role": "engine",
+              "approximation": null,
+              "hand": "INFLAME#1|BASH#1|DEFEND_IRONCLAD#0|SETUP_STRIKE#1"
+            }
+          }
+        },
+        "adaptive_v2": {
+          "mass": {
+            "generated": 0.6923076923076923,
+            "admitted": 0.15384615384615385,
+            "settled": 0.15384615384615385
+          },
+          "blocked": {
+            "unsupported_pending_choice": 0.15384615384615385,
+            "missing_edge": 0.07692307692307693,
+            "random_target": 0.07692307692307693
+          },
+          "visited": {
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('DEFEND_IRONCLAD', 0, None)": 0.5384615384615385,
+            "('BODY_SLAM', 0, 0)": 0.07692307692307693,
+            "('end_turn',)": 0.6923076923076923,
+            "('BASH', 1, 0)": 0.3076923076923077,
+            "('FLAME_BARRIER', 0, None)": 0.15384615384615385,
+            "('HEADBUTT', 0, 0)": 0.07692307692307693,
+            "('IRON_WAVE', 0, 0)": 0.07692307692307693,
+            "('SETUP_STRIKE', 1, 0)": 0.07692307692307693,
+            "('STRIKE_IRONCLAD', 1, 0)": 0.07692307692307693,
+            "('SWORD_BOOMERANG', 1, None)": 0.07692307692307693,
+            "('TRUE_GRIT', 1, None)": 0.07692307692307693
+          },
+          "examples": {
+            "missing_edge": {
+              "action": [
+                "SETUP_STRIKE",
+                1,
+                0
+              ],
+              "role": "engine",
+              "approximation": null,
+              "hand": "INFLAME#1|BASH#1|DEFEND_IRONCLAD#0|SETUP_STRIKE#1"
+            }
+          }
+        }
+      },
+      "graph": {
+        "counts": {
+          "catalog_operations": 211,
+          "generated_barrier": 71,
+          "generated_classified": 156,
+          "canonical_constraints": 52,
+          "duplicate_pruned": 45,
+          "sleep_pruned": 9,
+          "dynamic_default": 16,
+          "goal_expand": 29,
+          "precedence_constraints": 2,
+          "ordinary_combinations": 48,
+          "ordinary_skip": 3,
+          "random_target": 4,
+          "unsupported_pending_choice": 7
+        },
+        "calls": 247,
+        "possible_A": 230,
+        "selected_A": 80
+      },
+      "V2_reference": {
+        "coverage": 0.9999999999999998,
+        "value": -37.63873114952675
+      }
+    },
+    "reduced-4096": {
+      "graph": {
+        "calls": 247,
+        "counts": {
+          "catalog_operations": 211,
+          "generated_barrier": 71,
+          "generated_classified": 156,
+          "canonical_constraints": 52,
+          "duplicate_pruned": 45,
+          "sleep_pruned": 9,
+          "dynamic_default": 16,
+          "goal_expand": 29,
+          "precedence_constraints": 2,
+          "ordinary_combinations": 48,
+          "ordinary_skip": 3,
+          "random_target": 4,
+          "unsupported_pending_choice": 7
+        }
+      },
+      "policies": {
+        "deployed": {
+          "mass": {
+            "generated": 1.0
+          },
+          "blocked": {},
+          "visited": {
+            "('BASH', 1, 0)": 1.0,
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('end_turn',)": 1.0
+          },
+          "examples": {}
+        },
+        "defend2": {
+          "mass": {
+            "generated": 1.0
+          },
+          "blocked": {},
+          "visited": {
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('DEFEND_IRONCLAD', 0, None)": 1.9999999999999991,
+            "('end_turn',)": 1.0
+          },
+          "examples": {}
+        },
+        "shrug_bash": {
+          "mass": {
+            "generated": 1.0
+          },
+          "blocked": {},
+          "visited": {
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('BASH', 1, 0)": 1.0,
+            "('end_turn',)": 1.0
+          },
+          "examples": {}
+        },
+        "adaptive_v1": {
+          "mass": {
+            "generated": 0.7692307692307692
+          },
+          "blocked": {
+            "unsupported_pending_choice": 0.07692307692307693,
+            "missing_edge": 0.07692307692307693,
+            "random_target": 0.07692307692307693
+          },
+          "visited": {
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('DEFEND_IRONCLAD', 0, None)": 0.3076923076923077,
+            "('BODY_SLAM', 0, 0)": 0.07692307692307693,
+            "('end_turn',)": 0.7692307692307692,
+            "('BASH', 1, 0)": 0.38461538461538464,
+            "('FLAME_BARRIER', 0, None)": 0.15384615384615385,
+            "('HEADBUTT', 0, 0)": 0.07692307692307693,
+            "('INFLAME', 1, None)": 0.15384615384615385,
+            "('IRON_WAVE', 0, 0)": 0.07692307692307693,
+            "('SETUP_STRIKE', 1, 0)": 0.07692307692307693,
+            "('STRIKE_IRONCLAD', 1, 0)": 0.07692307692307693,
+            "('SWORD_BOOMERANG', 1, None)": 0.07692307692307693
+          },
+          "examples": {
+            "missing_edge": {
+              "action": [
+                "SETUP_STRIKE",
+                1,
+                0
+              ],
+              "role": "engine",
+              "approximation": null,
+              "hand": "INFLAME#1|BASH#1|DEFEND_IRONCLAD#0|SETUP_STRIKE#1"
+            }
+          }
+        },
+        "adaptive_v2": {
+          "mass": {
+            "generated": 0.6923076923076923
+          },
+          "blocked": {
+            "unsupported_pending_choice": 0.15384615384615385,
+            "missing_edge": 0.07692307692307693,
+            "random_target": 0.07692307692307693
+          },
+          "visited": {
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('DEFEND_IRONCLAD', 0, None)": 0.5384615384615385,
+            "('BODY_SLAM', 0, 0)": 0.07692307692307693,
+            "('end_turn',)": 0.6923076923076923,
+            "('BASH', 1, 0)": 0.3076923076923077,
+            "('FLAME_BARRIER', 0, None)": 0.15384615384615385,
+            "('HEADBUTT', 0, 0)": 0.07692307692307693,
+            "('IRON_WAVE', 0, 0)": 0.07692307692307693,
+            "('SETUP_STRIKE', 1, 0)": 0.07692307692307693,
+            "('STRIKE_IRONCLAD', 1, 0)": 0.07692307692307693,
+            "('SWORD_BOOMERANG', 1, None)": 0.07692307692307693,
+            "('TRUE_GRIT', 1, None)": 0.07692307692307693
+          },
+          "examples": {
+            "missing_edge": {
+              "action": [
+                "SETUP_STRIKE",
+                1,
+                0
+              ],
+              "role": "engine",
+              "approximation": null,
+              "hand": "INFLAME#1|BASH#1|DEFEND_IRONCLAD#0|SETUP_STRIKE#1"
+            }
+          }
+        }
+      }
+    },
+    "tree-4096": {
+      "graph": {
+        "calls": 425,
+        "counts": {
+          "catalog_operations": 282,
+          "generated_barrier": 108,
+          "generated_classified": 196,
+          "dynamic_default": 22,
+          "goal_expand": 39,
+          "ordinary_combinations": 82,
+          "random_target": 7,
+          "unsupported_pending_choice": 11
+        }
+      },
+      "policies": {
+        "deployed": {
+          "mass": {
+            "generated": 1.0
+          },
+          "blocked": {},
+          "visited": {
+            "('BASH', 1, 0)": 1.0,
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('end_turn',)": 1.0
+          },
+          "examples": {}
+        },
+        "defend2": {
+          "mass": {
+            "generated": 1.0
+          },
+          "blocked": {},
+          "visited": {
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('DEFEND_IRONCLAD', 0, None)": 1.9999999999999991,
+            "('end_turn',)": 1.0
+          },
+          "examples": {}
+        },
+        "shrug_bash": {
+          "mass": {
+            "generated": 1.0
+          },
+          "blocked": {},
+          "visited": {
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('BASH', 1, 0)": 1.0,
+            "('end_turn',)": 1.0
+          },
+          "examples": {}
+        },
+        "adaptive_v1": {
+          "mass": {
+            "generated": 0.846153846153846
+          },
+          "blocked": {
+            "unsupported_pending_choice": 0.07692307692307693,
+            "random_target": 0.07692307692307693
+          },
+          "visited": {
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('DEFEND_IRONCLAD', 0, None)": 0.3076923076923077,
+            "('BODY_SLAM', 0, 0)": 0.07692307692307693,
+            "('end_turn',)": 0.846153846153846,
+            "('BASH', 1, 0)": 0.38461538461538464,
+            "('FLAME_BARRIER', 0, None)": 0.15384615384615385,
+            "('HEADBUTT', 0, 0)": 0.07692307692307693,
+            "('INFLAME', 1, None)": 0.15384615384615385,
+            "('IRON_WAVE', 0, 0)": 0.07692307692307693,
+            "('SETUP_STRIKE', 1, 0)": 0.07692307692307693,
+            "('STRIKE_IRONCLAD', 1, 0)": 0.07692307692307693,
+            "('SWORD_BOOMERANG', 1, None)": 0.07692307692307693
+          },
+          "examples": {}
+        },
+        "adaptive_v2": {
+          "mass": {
+            "generated": 0.7692307692307692
+          },
+          "blocked": {
+            "unsupported_pending_choice": 0.15384615384615385,
+            "random_target": 0.07692307692307693
+          },
+          "visited": {
+            "('SHRUG_IT_OFF', 0, None)": 1.0,
+            "('DEFEND_IRONCLAD', 0, None)": 0.5384615384615385,
+            "('BODY_SLAM', 0, 0)": 0.07692307692307693,
+            "('end_turn',)": 0.7692307692307692,
+            "('BASH', 1, 0)": 0.3076923076923077,
+            "('FLAME_BARRIER', 0, None)": 0.15384615384615385,
+            "('HEADBUTT', 0, 0)": 0.07692307692307693,
+            "('IRON_WAVE', 0, 0)": 0.07692307692307693,
+            "('SETUP_STRIKE', 1, 0)": 0.07692307692307693,
+            "('STRIKE_IRONCLAD', 1, 0)": 0.07692307692307693,
+            "('SWORD_BOOMERANG', 1, None)": 0.07692307692307693,
+            "('TRUE_GRIT', 1, None)": 0.07692307692307693
+          },
+          "examples": {}
+        }
+      }
+    }
+  },
+  "seconds": 20.155727400000615
+}

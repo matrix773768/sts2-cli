@@ -13,3 +13,7 @@ Use the installed game and the pinned CORE-5A and SV4A hosts. Build the new host
 3. Run `review.py`, then `long_turns.py`, `fifth.py`, `candidate_audit.py`, and `pending_review.py`. Run `hp_replay.py` before `hp_native.py`. Use `cost_breakdown.py` for common natural roots, and `render_review.py` for the Chinese review.
 
 The archived experiment uses independently timed jobs. The ledger records their elapsed seconds and the separate estimate for unmetered diagnostics. An original run can be audited directly from the submitted files with the environment variable unset.
+
+## Follow-up on the two draw-first reviews
+
+Use the existing `review-rescue.gz` and `review-loss.gz` as the frozen source cases. For a separate output run copy those two inputs to its evidence folder. `turn_probe.py rescue` and `turn_probe.py loss` enumerate the direct public conditional laws. Run `turn_graph_audit.py` with each case on the production host. For the isolated draw-pile and third-draw diagnostics, build with `build_turn_review.py` at each target `logs/core5b-turn-review-host` and `logs/core5b-turn-filter-host`. The third-draw switch defaults off. `turn_worlds.py CASE SHARD 2` runs shards 0 and 1, followed by `turn_summary.py`. `turn_filter.py` isolates the three double-enemy decision stages. `turn_native.py CASE` cold-replays the selected original-seed routes. The supplementary [player review](../../docs/m1-core5b-draw-first-review.md) documents the candidate menu and conditioning.

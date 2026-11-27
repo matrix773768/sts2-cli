@@ -1,0 +1,55 @@
+{
+  "start": "d9484fe9028fad4b6896c4072fec4dee00cf1703",
+  "weights": {
+    "v1": "b00604265df5a70a52e9a6d386a7a94ff82194b4fc475359fd096ec6770ebaa6",
+    "v2": "d439444a1a9ca9bc8864988e488f720f71b379844b30ddb112bdd8f0ddcfcbbb"
+  },
+  "host": {
+    "core5b-turn-review-host": {
+      "solver-bin/CombatSolver.dll": "e2a5e6d19e5519c38202e825805cb4c299284a74861ac24f385a146e685a33e3",
+      "host/Headless/bin/Debug/net9.0/OfflineSearchHarness.dll": "dc570d759005a64e347018084350c7bcc0928b165c21252834a367fc7859e4bc",
+      "host/Headless/bin/Debug/net9.0/GodotSharp.dll": "3b5504343808b94cb33c69f954fa105587291a247b9e975ecf0a2280ad5e5cb6"
+    },
+    "core5b-turn-filter-host": {
+      "solver-bin/CombatSolver.dll": "750a61b3b79d1fc4d7a318f9aeafd95ea899db735efa69c5553e4c2e8d1da262",
+      "host/Headless/bin/Debug/net9.0/OfflineSearchHarness.dll": "bdee6e383b450ee7683f3377f1258d1deada815f20dc1957b0779444156b767e",
+      "host/Headless/bin/Debug/net9.0/GodotSharp.dll": "5609a5cab87858a6b03fd5e17424bbac40f0c44ec0e0c47af5dd6f15051f580c"
+    }
+  },
+  "artifact_sha256": {
+    "turn-filter.gz": "b7c697f89a7cf87519739e336d436559e8b0ed5d92f3cb32f20cd00673dcc688",
+    "turn-graph-loss.json": "8c8ad4577926e0f6ef7492e95cd29c00432221e08c9a4110a0a8bf011099794c",
+    "turn-graph-rescue.json": "ed6cc648f2a28357e3a891ad18cddadf3c557e63d898d1f6e43a9cf976da9800",
+    "turn-native-loss.json": "343844803182bb92ebf9ba79dff4fbc017c02c2f8be8d3bcd6dff901d4f36387",
+    "turn-native-rescue.json": "26159bd93621cfa6c6ac06cbb2b2dda58a0a2e7d1e7f9969a6f481656a66c092",
+    "turn-probe-loss.gz": "d036224402341f253a3ae526d31cd449dbc5ec9a0e45d56f8e38c3db7c2021ae",
+    "turn-probe-rescue.gz": "d2ed300850bf7a44434019b0de4034df3c97b88c93b30862008455e369e619a1",
+    "turn-summary.json": "c4a6000c26376b22f46d6b060be75f09c8a7e876efe8310e48e706d664aa24c6",
+    "turn-worlds-loss-0.gz": "ddb76086bc586db1b89e493aaaba07acb7f92d34136a1f376f1622322bd1d9b4",
+    "turn-worlds-loss-1.gz": "2a3ba066b386b86bc391b0a230dc31bd539e4aca2a44f214e77b89099cf5e9ac",
+    "turn-worlds-rescue-0.gz": "60d2ea02e496a589e105f7d5f86cd48c3fafde5be4560970fb93d95bfc4f4f5f",
+    "turn-worlds-rescue-1.gz": "3951d951c1c48a3f2eaea50ba46a305c412b06b257bac6c92d24ee582b93473a"
+  },
+  "hash_format": "JSON LF, binary verbatim",
+  "seconds": {
+    "turn-filter.gz": 22.52774689999933,
+    "turn-graph-loss.json": 28.916307899999083,
+    "turn-graph-rescue.json": 20.155727400000615,
+    "turn-native-loss.json": 34.23809980000078,
+    "turn-native-rescue.json": 13.376397899999574,
+    "turn-probe-loss.gz": 36.317903499999375,
+    "turn-probe-rescue.gz": 13.438433200000873,
+    "turn-worlds-loss-0.gz": 821.353000799998,
+    "turn-worlds-loss-1.gz": 750.3788563999988,
+    "turn-worlds-rescue-0.gz": 59.71508990000075,
+    "turn-worlds-rescue-1.gz": 57.57180890000018,
+    "core5b-turn-review-host": 131.17052820000026,
+    "core5b-turn-filter-host": 143.02609029999803
+  },
+  "measured_seconds": 2132.1859910999956,
+  "scope": "Successful recorded phases summed across workers. Additional first probes, the failed 4096-transition third-draw diagnostic, initial native menu-reader runs, report generation and regression tests are excluded.",
+  "worlds_per_case": 48,
+  "originals_per_case": 1,
+  "arms_per_case": 6,
+  "native_routes": 5
+}
