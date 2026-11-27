@@ -4,8 +4,8 @@ from turn_value import routes,execute,terminal
 from search import ask,integrate,mass_kind,binding
 from collections import defaultdict
 
-def graph_plan(lane,h,past,net,g2,opening,limit=32,*,direct=None, evaluator=None, fast=False, alternatives=False):
-    graph=ask(lane,h,past,"reduced",128);nodes=graph["nodes"]
+def graph_plan(lane,h,past,net,g2,opening,limit=32,*,direct=None, evaluator=None, fast=False, alternatives=False, transitions=128, expansions=8, inspect=None):
+    graph=ask(lane,h,past,"reduced",transitions);nodes=graph["nodes"]
     ref={};paths=dict(routes(graph))
     def reference(i,history):
         node=nodes[i];kind=node["kind"]
@@ -37,6 +37,7 @@ def graph_plan(lane,h,past,net,g2,opening,limit=32,*,direct=None, evaluator=None
             if k=="C":key=digest(s);states[key]=s
             law.append((k,key,terminal(k,s,opening) if k in ("victory","death") else -50.,l["probability"]))
         return law
+    ref_law=[];ref_first=None
     if direct is not None:
         leaves,ref_calls,ref_first=direct(lane,h,past,g2)
         calls+=ref_calls
@@ -50,7 +51,7 @@ def graph_plan(lane,h,past,net,g2,opening,limit=32,*,direct=None, evaluator=None
             key=(cache_scope,"settle_fast",json.dumps([paths[i],[]],sort_keys=True))
             cache[key]=response
     for i in selected:
-        result=integrate(lane,h,past,dict(successors=[dict(kind="A",probability=1,route=paths[i])]),limit=8,cache=cache,fast=fast,cache_scope=cache_scope)
+        result=integrate(lane,h,past,dict(successors=[dict(kind="A",probability=1,route=paths[i])]),limit=expansions,cache=cache,fast=fast,cache_scope=cache_scope)
         calls+=result["calls"]
         laws[i]=register(result["successors"])
     estimates={}
@@ -111,6 +112,8 @@ def graph_plan(lane,h,past,net,g2,opening,limit=32,*,direct=None, evaluator=None
     extra={}
     if alternatives:
         extra=dict(ref_first=ref_first,options=root_options)
+    if inspect is not None:
+        inspect(graph,paths,laws,states,estimates,choices,root_options,ref_law,ref_first)
     return graph,choices,dict(**extra,reference_coverage=bc,coverage=ac,reference=bu,value=au,
         reference_mass=ref_mass,candidate_mass=probability_mass(choices),
         use=ac>=1-1e-9 and bc>=1-1e-9 and au>bu+1.,calls=calls,settles=len(cache),unique=len(states))

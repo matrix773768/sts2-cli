@@ -1,0 +1,20 @@
+internal bool ReferenceEvents;
+    internal Dictionary<string,double>? Branch;
+    internal string Choose(Dictionary<string,double> weights)
+    {
+        if(weights.Count==1) return weights.Keys.Single();
+        if(Used==prefix.Length){
+            Branch=weights;
+            SearchProbe.Stop("reference_event");
+        }
+        var key=prefix[Used++];
+        if(!weights.ContainsKey(key)) throw new InvalidOperationException("Reference event outside support");
+        return key;
+    }
+    internal T? Uniform<T>(IEnumerable<T> values,string kind) where T:class
+    {
+        var items=values.ToArray();
+        if(items.Length==0)return null;
+        var weights=Enumerable.Range(0,items.Length).ToDictionary(i=>kind+i,i=>1.0);
+        return items[int.Parse(Choose(weights).Substring(kind.Length))];
+    }

@@ -4,11 +4,11 @@ from core4_roots import panels,spec_for
 from turn_value import compile_turn
 from value_net import network as old_network
 
-def fight(lane,g2,spec,mode,net,skip=None,trace=None,planner=graph_plan,order=None,counts=None):
+def fight(lane,g2,spec,mode,net,skip=None,trace=None,planner=graph_plan,order=None,counts=None,last=None):
     st=cohort.start(lane,spec,order);history=[];states=[];queries=[]
     if mode in ("G2","G2search"):
         g2.budget=24 if mode=="G2search" else 0
-        result=finish(lane,g2,st,counts=counts);g2.budget=0
+        result=finish(lane,g2,st,counts=counts,last=last);g2.budget=0
         return result|dict(queries=[])
     locked=-1
     while st["status"]=="active" and st["actions"]<128:
@@ -28,6 +28,7 @@ def fight(lane,g2,spec,mode,net,skip=None,trace=None,planner=graph_plan,order=No
             a,_,_=ctrl.act(h,lane,before);history.append((h,a));st=step(lane,st,a)
         if st.get("observed_c"):states.append(st["observed_c"])
     if trace is not None:trace.extend(history)
+    if last is not None:last.update(st.get("terminal_observation") or st.get("observation") or {})
     end=st.get("terminal_observation")
     return dict(status=st["status"],actions=st["actions"],states=states,queries=queries,
         terminal=(end|dict(gold=(st.get("result") or {}).get("gold"))) if end and st["status"] in ("predicted_win","death") else None)
