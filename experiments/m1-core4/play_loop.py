@@ -21,7 +21,8 @@ def fight(lane,g2,spec,mode,net,skip=None,trace=None,planner=graph_plan,order=No
                 g,ch,q=planner(lane,h,history,net,g2,spec);use=q["use"];idx=ch.get(0)
             queries.append(q|dict(turn=turn,used=bool(use and turn!=skip),hp=h["hp"]))
             if use and turn!=skip:
-                st,played,reason=execute(lane,st,g,ch,idx);history.extend(played);queries[-1]["result"]=reason
+                st,played,reason=g["execute"](lane,st) if "execute" in g else execute(lane,st,g,ch,idx)
+                history.extend(played);queries[-1]["result"]=reason
             if mode!="core3":locked=turn
         if st["actions"]==before:
             ctrl=prepared(g2,h,history);ctrl.project=lane.host.project

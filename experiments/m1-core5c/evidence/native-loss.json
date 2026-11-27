@@ -1,0 +1,287 @@
+{
+  "query": {
+    "reference_coverage": 1.0000000000000002,
+    "coverage": 0.9999999999999999,
+    "reference": 12.030579471588137,
+    "value": 22.732907485961913,
+    "reference_mass": {
+      "C": 1.0000000000000002
+    },
+    "candidate_mass": {
+      "C": 0.9999999999999999
+    },
+    "use": true,
+    "calls": 1479,
+    "settles": 14,
+    "unique": 24,
+    "policy_requests": 552,
+    "policy_calls": 1001,
+    "policy_ends": 168,
+    "settled_ends": 168,
+    "grouped": 10,
+    "conditional": true,
+    "full_policies": 13,
+    "attempted_policies": 16
+  },
+  "actual": {
+    "actions": [
+      [
+        "play_card",
+        {
+          "card_index": 0
+        }
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 2
+        }
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 1,
+          "target_index": 0
+        }
+      ],
+      [
+        "end_turn",
+        {}
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 1
+        }
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 0
+        }
+      ],
+      [
+        "select_cards",
+        {
+          "indices": "2"
+        }
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 0
+        }
+      ],
+      [
+        "end_turn",
+        {}
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 4,
+          "target_index": 0
+        }
+      ],
+      [
+        "select_cards",
+        {
+          "indices": "3"
+        }
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 3
+        }
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 3
+        }
+      ],
+      [
+        "end_turn",
+        {}
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 1
+        }
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 2,
+          "target_index": 0
+        }
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 0,
+          "target_index": 0
+        }
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 0,
+          "target_index": 0
+        }
+      ],
+      [
+        "end_turn",
+        {}
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 1,
+          "target_index": 0
+        }
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 3
+        }
+      ],
+      [
+        "select_cards",
+        {
+          "indices": "2"
+        }
+      ],
+      [
+        "end_turn",
+        {}
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 2,
+          "target_index": 0
+        }
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 1,
+          "target_index": 0
+        }
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 2,
+          "target_index": 0
+        }
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 1,
+          "target_index": 0
+        }
+      ],
+      [
+        "select_cards",
+        {
+          "indices": "10"
+        }
+      ],
+      [
+        "end_turn",
+        {}
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 1,
+          "target_index": 0
+        }
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 1,
+          "target_index": 0
+        }
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 0,
+          "target_index": 0
+        }
+      ],
+      [
+        "end_turn",
+        {}
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 3,
+          "target_index": 0
+        }
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 0,
+          "target_index": 0
+        }
+      ],
+      [
+        "end_turn",
+        {}
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 1
+        }
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 0,
+          "target_index": 0
+        }
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 2,
+          "target_index": 0
+        }
+      ],
+      [
+        "select_cards",
+        {
+          "indices": "2"
+        }
+      ],
+      [
+        "end_turn",
+        {}
+      ],
+      [
+        "play_card",
+        {
+          "card_index": 0,
+          "target_index": 0
+        }
+      ]
+    ],
+    "decision": "card_reward",
+    "terminal": true,
+    "hp": 28,
+    "exact_hash": "e6ad1e983a88e74c61b0ea5da54376741e966e4296fcc39a6ab0a398da698eff"
+  },
+  "seconds": 48.766616000000795
+}

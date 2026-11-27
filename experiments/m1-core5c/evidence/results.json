@@ -1,0 +1,1875 @@
+{
+  "fresh": {
+    "base": {
+      "n": 96,
+      "term": 96,
+      "wins": 45,
+      "cap": 0,
+      "errors": 0,
+      "severe": 70,
+      "utility": 7.979166666666667,
+      "signed_loss": 45.416666666666664,
+      "win_loss": 26.31111111111111,
+      "turns": 5.760416666666667,
+      "partial_loss": [],
+      "queries": 553,
+      "ref": 430,
+      "cand": 499,
+      "used": 100,
+      "execution": {
+        "end": 95,
+        "terminal": 5
+      },
+      "ref_mass": {
+        "C": 353.19024216524207,
+        "budget": 83.62642727642717,
+        "victory": 41.108333333333334,
+        "death": 47.53095238095238,
+        "mechanism:card_generation": 8.426923076923076,
+        "mechanism:selector_draw_replay": 1.3038461538461539,
+        "unknown_probability": 2.652164502164502,
+        "mechanism:card_selection": 13.0,
+        "mechanism:other_rng": 2.0,
+        "mechanism:autoplay_from_draw": 0.1611111111111111
+      },
+      "calls": 65506,
+      "mean_battle_seconds": 0.6064683437500662,
+      "worker_seconds": 61.05744580000464,
+      "host_peak": 0,
+      "python_peak": 0,
+      "new_interface": {
+        "policy_requests": 0,
+        "policy_calls": 0,
+        "policy_ends": 0,
+        "settled_ends": 0,
+        "full_policies": 0,
+        "attempted_policies": 0,
+        "grouped": 0,
+        "conditional": 0
+      },
+      "conditional_used": 0,
+      "paired": {
+        "medium": {
+          "utility": {
+            "n": 48,
+            "mean": -2.2395833333333335,
+            "ci": [
+              -5.947916666666667,
+              1.3023437499999961
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": -0.020833333333333332,
+            "ci": [
+              -0.0625,
+              0.020833333333333332
+            ]
+          },
+          "common_wins": 44,
+          "win_hp": -0.8181818181818182,
+          "delta_loss": 0.6145833333333334,
+          "n": 96,
+          "flips": [
+            1,
+            3
+          ]
+        },
+        "high": {
+          "utility": {
+            "n": 48,
+            "mean": -2.2916666666666665,
+            "ci": [
+              -5.197916666666667,
+              -0.1875
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": -0.020833333333333332,
+            "ci": [
+              -0.052083333333333336,
+              0.0
+            ]
+          },
+          "common_wins": 45,
+          "win_hp": -1.2,
+          "delta_loss": 0.6666666666666666,
+          "n": 96,
+          "flips": [
+            0,
+            2
+          ]
+        },
+        "referenceOnly": {
+          "utility": {
+            "n": 48,
+            "mean": -2.2916666666666665,
+            "ci": [
+              -5.197916666666667,
+              -0.1875
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": -0.020833333333333332,
+            "ci": [
+              -0.052083333333333336,
+              0.0
+            ]
+          },
+          "common_wins": 45,
+          "win_hp": -1.2,
+          "delta_loss": 0.6666666666666666,
+          "n": 96,
+          "flips": [
+            0,
+            2
+          ]
+        },
+        "V2complete": {
+          "utility": {
+            "n": 48,
+            "mean": -8.1875,
+            "ci": [
+              -13.64609375,
+              -3.4682291666666742
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": -0.07291666666666667,
+            "ci": [
+              -0.125,
+              -0.03125
+            ]
+          },
+          "common_wins": 45,
+          "win_hp": -2.5555555555555554,
+          "delta_loss": 1.7916666666666667,
+          "n": 96,
+          "flips": [
+            0,
+            7
+          ]
+        },
+        "V1complete": {
+          "utility": {
+            "n": 48,
+            "mean": -4.989583333333333,
+            "ci": [
+              -9.9375,
+              -1.0520833333333333
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": -0.041666666666666664,
+            "ci": [
+              -0.08333333333333333,
+              -0.010416666666666666
+            ]
+          },
+          "common_wins": 44,
+          "win_hp": -1.4090909090909092,
+          "delta_loss": 1.15625,
+          "n": 96,
+          "flips": [
+            1,
+            5
+          ]
+        }
+      }
+    },
+    "medium": {
+      "n": 96,
+      "term": 96,
+      "wins": 47,
+      "cap": 0,
+      "errors": 0,
+      "severe": 69,
+      "utility": 10.21875,
+      "signed_loss": 44.802083333333336,
+      "win_loss": 27,
+      "turns": 5.760416666666667,
+      "partial_loss": [],
+      "queries": 552,
+      "ref": 440,
+      "cand": 500,
+      "used": 105,
+      "execution": {
+        "end": 99,
+        "terminal": 6
+      },
+      "ref_mass": {
+        "C": 360.20341880341886,
+        "budget": 71.03264790764779,
+        "victory": 43.585256410256406,
+        "death": 48.547619047619044,
+        "mechanism:card_generation": 9.505494505494505,
+        "mechanism:selector_draw_replay": 1.5038461538461538,
+        "unknown_probability": 2.31060606060606,
+        "mechanism:card_selection": 13.0,
+        "mechanism:other_rng": 2.0,
+        "mechanism:autoplay_from_draw": 0.3111111111111111
+      },
+      "calls": 94661,
+      "mean_battle_seconds": 0.8145748208332103,
+      "worker_seconds": 81.03086720000283,
+      "host_peak": 0,
+      "python_peak": 0,
+      "new_interface": {
+        "policy_requests": 0,
+        "policy_calls": 0,
+        "policy_ends": 0,
+        "settled_ends": 0,
+        "full_policies": 0,
+        "attempted_policies": 0,
+        "grouped": 0,
+        "conditional": 0
+      },
+      "conditional_used": 0,
+      "paired": {
+        "base": {
+          "utility": {
+            "n": 48,
+            "mean": 2.2395833333333335,
+            "ci": [
+              -1.3023437499999997,
+              5.947916666666667
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": 0.020833333333333332,
+            "ci": [
+              -0.020833333333333332,
+              0.0625
+            ]
+          },
+          "common_wins": 44,
+          "win_hp": 0.8181818181818182,
+          "delta_loss": -0.6145833333333334,
+          "n": 96,
+          "flips": [
+            3,
+            1
+          ]
+        },
+        "high": {
+          "utility": {
+            "n": 48,
+            "mean": -0.052083333333333336,
+            "ci": [
+              -2.4583333333333335,
+              2.6145833333333335
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": 0.0,
+            "ci": [
+              -0.03125,
+              0.03125
+            ]
+          },
+          "common_wins": 46,
+          "win_hp": -0.43478260869565216,
+          "delta_loss": 0.052083333333333336,
+          "n": 96,
+          "flips": [
+            1,
+            1
+          ]
+        },
+        "referenceOnly": {
+          "utility": {
+            "n": 48,
+            "mean": -0.052083333333333336,
+            "ci": [
+              -2.4583333333333335,
+              2.6145833333333335
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": 0.0,
+            "ci": [
+              -0.03125,
+              0.03125
+            ]
+          },
+          "common_wins": 46,
+          "win_hp": -0.43478260869565216,
+          "delta_loss": 0.052083333333333336,
+          "n": 96,
+          "flips": [
+            1,
+            1
+          ]
+        },
+        "V2complete": {
+          "utility": {
+            "n": 48,
+            "mean": -5.947916666666667,
+            "ci": [
+              -10.937760416666666,
+              -1.8229166666666667
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": -0.052083333333333336,
+            "ci": [
+              -0.09375,
+              -0.010416666666666666
+            ]
+          },
+          "common_wins": 46,
+          "win_hp": -1.8478260869565217,
+          "delta_loss": 1.1770833333333333,
+          "n": 96,
+          "flips": [
+            1,
+            6
+          ]
+        },
+        "V1complete": {
+          "utility": {
+            "n": 48,
+            "mean": -2.75,
+            "ci": [
+              -7.969010416666666,
+              1.7919270833333296
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": -0.020833333333333332,
+            "ci": [
+              -0.07291666666666667,
+              0.03125
+            ]
+          },
+          "common_wins": 45,
+          "win_hp": -0.9777777777777777,
+          "delta_loss": 0.5416666666666666,
+          "n": 96,
+          "flips": [
+            2,
+            4
+          ]
+        }
+      }
+    },
+    "high": {
+      "n": 96,
+      "term": 96,
+      "wins": 47,
+      "cap": 0,
+      "errors": 0,
+      "severe": 68,
+      "utility": 10.270833333333334,
+      "signed_loss": 44.75,
+      "win_loss": 26.893617021276597,
+      "turns": 5.75,
+      "partial_loss": [],
+      "queries": 551,
+      "ref": 444,
+      "cand": 499,
+      "used": 110,
+      "execution": {
+        "end": 104,
+        "terminal": 6
+      },
+      "ref_mass": {
+        "C": 368.52816748095387,
+        "budget": 63.73456423177768,
+        "victory": 42.64716117216117,
+        "death": 47.83095238095238,
+        "mechanism:card_generation": 8.738827838827838,
+        "mechanism:selector_draw_replay": 1.5038461538461538,
+        "unknown_probability": 2.463702963702963,
+        "mechanism:card_selection": 13.0,
+        "mechanism:other_rng": 2.0,
+        "mechanism:autoplay_from_draw": 0.5527777777777781
+      },
+      "calls": 144329,
+      "mean_battle_seconds": 1.3280625531248613,
+      "worker_seconds": 130.33538630000112,
+      "host_peak": 0,
+      "python_peak": 0,
+      "new_interface": {
+        "policy_requests": 0,
+        "policy_calls": 0,
+        "policy_ends": 0,
+        "settled_ends": 0,
+        "full_policies": 0,
+        "attempted_policies": 0,
+        "grouped": 0,
+        "conditional": 0
+      },
+      "conditional_used": 0,
+      "paired": {
+        "base": {
+          "utility": {
+            "n": 48,
+            "mean": 2.2916666666666665,
+            "ci": [
+              0.1875,
+              5.197916666666667
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": 0.020833333333333332,
+            "ci": [
+              0.0,
+              0.052083333333333336
+            ]
+          },
+          "common_wins": 45,
+          "win_hp": 1.2,
+          "delta_loss": -0.6666666666666666,
+          "n": 96,
+          "flips": [
+            2,
+            0
+          ]
+        },
+        "medium": {
+          "utility": {
+            "n": 48,
+            "mean": 0.052083333333333336,
+            "ci": [
+              -2.6145833333333335,
+              2.4583333333333335
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": 0.0,
+            "ci": [
+              -0.03125,
+              0.03125
+            ]
+          },
+          "common_wins": 46,
+          "win_hp": 0.43478260869565216,
+          "delta_loss": -0.052083333333333336,
+          "n": 96,
+          "flips": [
+            1,
+            1
+          ]
+        },
+        "referenceOnly": {
+          "utility": {
+            "n": 48,
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "common_wins": 47,
+          "win_hp": 0,
+          "delta_loss": 0,
+          "n": 96,
+          "flips": [
+            0,
+            0
+          ]
+        },
+        "V2complete": {
+          "utility": {
+            "n": 48,
+            "mean": -5.895833333333333,
+            "ci": [
+              -10.729427083333333,
+              -1.7916666666666667
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": -0.052083333333333336,
+            "ci": [
+              -0.09375,
+              -0.010416666666666666
+            ]
+          },
+          "common_wins": 47,
+          "win_hp": -1.553191489361702,
+          "delta_loss": 1.125,
+          "n": 96,
+          "flips": [
+            0,
+            5
+          ]
+        },
+        "V1complete": {
+          "utility": {
+            "n": 48,
+            "mean": -2.6979166666666665,
+            "ci": [
+              -7.344010416666666,
+              1.09375
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": -0.020833333333333332,
+            "ci": [
+              -0.0625,
+              0.020833333333333332
+            ]
+          },
+          "common_wins": 46,
+          "win_hp": -0.43478260869565216,
+          "delta_loss": 0.4895833333333333,
+          "n": 96,
+          "flips": [
+            1,
+            3
+          ]
+        }
+      }
+    },
+    "referenceOnly": {
+      "n": 96,
+      "term": 96,
+      "wins": 47,
+      "cap": 0,
+      "errors": 0,
+      "severe": 68,
+      "utility": 10.270833333333334,
+      "signed_loss": 44.75,
+      "win_loss": 26.893617021276597,
+      "turns": 5.75,
+      "partial_loss": [],
+      "queries": 551,
+      "ref": 449,
+      "cand": 499,
+      "used": 110,
+      "execution": {
+        "end": 104,
+        "terminal": 6
+      },
+      "ref_mass": {
+        "C": 375.4353124440813,
+        "budget": 62.20719921092999,
+        "victory": 42.84795482295482,
+        "death": 48.84761904761905,
+        "mechanism:card_generation": 3.0801282051282053,
+        "mechanism:selector_draw_replay": 0.5038461538461538,
+        "unknown_probability": 2.51474567099567,
+        "mechanism:card_selection": 13.0,
+        "mechanism:other_rng": 2.0,
+        "mechanism:autoplay_from_draw": 0.5631944444444448
+      },
+      "calls": 158856,
+      "mean_battle_seconds": 1.9086670968752817,
+      "worker_seconds": 193.62567609999678,
+      "host_peak": 274628608,
+      "python_peak": 369442816,
+      "new_interface": {
+        "policy_requests": 0,
+        "policy_calls": 0,
+        "policy_ends": 0,
+        "settled_ends": 0,
+        "full_policies": 0,
+        "attempted_policies": 0,
+        "grouped": 0,
+        "conditional": 0
+      },
+      "conditional_used": 0,
+      "paired": {
+        "base": {
+          "utility": {
+            "n": 48,
+            "mean": 2.2916666666666665,
+            "ci": [
+              0.1875,
+              5.197916666666667
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": 0.020833333333333332,
+            "ci": [
+              0.0,
+              0.052083333333333336
+            ]
+          },
+          "common_wins": 45,
+          "win_hp": 1.2,
+          "delta_loss": -0.6666666666666666,
+          "n": 96,
+          "flips": [
+            2,
+            0
+          ]
+        },
+        "medium": {
+          "utility": {
+            "n": 48,
+            "mean": 0.052083333333333336,
+            "ci": [
+              -2.6145833333333335,
+              2.4583333333333335
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": 0.0,
+            "ci": [
+              -0.03125,
+              0.03125
+            ]
+          },
+          "common_wins": 46,
+          "win_hp": 0.43478260869565216,
+          "delta_loss": -0.052083333333333336,
+          "n": 96,
+          "flips": [
+            1,
+            1
+          ]
+        },
+        "high": {
+          "utility": {
+            "n": 48,
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "common_wins": 47,
+          "win_hp": 0,
+          "delta_loss": 0,
+          "n": 96,
+          "flips": [
+            0,
+            0
+          ]
+        },
+        "V2complete": {
+          "utility": {
+            "n": 48,
+            "mean": -5.895833333333333,
+            "ci": [
+              -10.729427083333333,
+              -1.7916666666666667
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": -0.052083333333333336,
+            "ci": [
+              -0.09375,
+              -0.010416666666666666
+            ]
+          },
+          "common_wins": 47,
+          "win_hp": -1.553191489361702,
+          "delta_loss": 1.125,
+          "n": 96,
+          "flips": [
+            0,
+            5
+          ]
+        },
+        "V1complete": {
+          "utility": {
+            "n": 48,
+            "mean": -2.6979166666666665,
+            "ci": [
+              -7.344010416666666,
+              1.09375
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": -0.020833333333333332,
+            "ci": [
+              -0.0625,
+              0.020833333333333332
+            ]
+          },
+          "common_wins": 46,
+          "win_hp": -0.43478260869565216,
+          "delta_loss": 0.4895833333333333,
+          "n": 96,
+          "flips": [
+            1,
+            3
+          ]
+        }
+      }
+    },
+    "V2complete": {
+      "n": 96,
+      "term": 96,
+      "wins": 52,
+      "cap": 0,
+      "errors": 0,
+      "severe": 65,
+      "utility": 16.166666666666668,
+      "signed_loss": 43.625,
+      "win_loss": 27.846153846153847,
+      "turns": 5.677083333333333,
+      "partial_loss": [],
+      "queries": 544,
+      "ref": 442,
+      "cand": 524,
+      "used": 145,
+      "execution": {
+        "end": 135,
+        "terminal": 10
+      },
+      "ref_mass": {
+        "C": 369.91904260281154,
+        "budget": 60.93190159188238,
+        "victory": 44.39349053724054,
+        "death": 46.4547619047619,
+        "unknown_probability": 2.26474567099567,
+        "mechanism:card_generation": 4.080128205128205,
+        "mechanism:card_selection": 13.0,
+        "mechanism:selector_draw_replay": 0.5038461538461538,
+        "mechanism:other_rng": 2.0,
+        "mechanism:autoplay_from_draw": 0.45208333333333367
+      },
+      "calls": 294086,
+      "mean_battle_seconds": 6.244600338542038,
+      "worker_seconds": 607.4450055999987,
+      "host_peak": 272523264,
+      "python_peak": 368013312,
+      "new_interface": {
+        "policy_requests": 95440,
+        "policy_calls": 138524,
+        "policy_ends": 26177,
+        "settled_ends": 24720,
+        "full_policies": 3256,
+        "attempted_policies": 4580,
+        "grouped": 178,
+        "conditional": 149
+      },
+      "conditional_used": 40,
+      "paired": {
+        "base": {
+          "utility": {
+            "n": 48,
+            "mean": 8.1875,
+            "ci": [
+              3.468229166666667,
+              13.646093749999997
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": 0.07291666666666667,
+            "ci": [
+              0.03125,
+              0.125
+            ]
+          },
+          "common_wins": 45,
+          "win_hp": 2.5555555555555554,
+          "delta_loss": -1.7916666666666667,
+          "n": 96,
+          "flips": [
+            7,
+            0
+          ]
+        },
+        "medium": {
+          "utility": {
+            "n": 48,
+            "mean": 5.947916666666667,
+            "ci": [
+              1.8229166666666667,
+              10.937760416666663
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": 0.052083333333333336,
+            "ci": [
+              0.010416666666666666,
+              0.09375
+            ]
+          },
+          "common_wins": 46,
+          "win_hp": 1.8478260869565217,
+          "delta_loss": -1.1770833333333333,
+          "n": 96,
+          "flips": [
+            6,
+            1
+          ]
+        },
+        "high": {
+          "utility": {
+            "n": 48,
+            "mean": 5.895833333333333,
+            "ci": [
+              1.7916666666666667,
+              10.729427083333329
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": 0.052083333333333336,
+            "ci": [
+              0.010416666666666666,
+              0.09375
+            ]
+          },
+          "common_wins": 47,
+          "win_hp": 1.553191489361702,
+          "delta_loss": -1.125,
+          "n": 96,
+          "flips": [
+            5,
+            0
+          ]
+        },
+        "referenceOnly": {
+          "utility": {
+            "n": 48,
+            "mean": 5.895833333333333,
+            "ci": [
+              1.7916666666666667,
+              10.729427083333329
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": 0.052083333333333336,
+            "ci": [
+              0.010416666666666666,
+              0.09375
+            ]
+          },
+          "common_wins": 47,
+          "win_hp": 1.553191489361702,
+          "delta_loss": -1.125,
+          "n": 96,
+          "flips": [
+            5,
+            0
+          ]
+        },
+        "V1complete": {
+          "utility": {
+            "n": 48,
+            "mean": 3.1979166666666665,
+            "ci": [
+              0.5729166666666666,
+              6.458333333333333
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": 0.03125,
+            "ci": [
+              0.0,
+              0.07291666666666667
+            ]
+          },
+          "common_wins": 49,
+          "win_hp": 1.0204081632653061,
+          "delta_loss": -0.6354166666666666,
+          "n": 96,
+          "flips": [
+            3,
+            0
+          ]
+        }
+      }
+    },
+    "V1complete": {
+      "n": 96,
+      "term": 96,
+      "wins": 49,
+      "cap": 0,
+      "errors": 0,
+      "severe": 67,
+      "utility": 12.96875,
+      "signed_loss": 44.260416666666664,
+      "win_loss": 26.632653061224488,
+      "turns": 5.53125,
+      "partial_loss": [],
+      "queries": 531,
+      "ref": 435,
+      "cand": 511,
+      "used": 146,
+      "execution": {
+        "end": 137,
+        "terminal": 9
+      },
+      "ref_mass": {
+        "C": 368.4594730057419,
+        "budget": 55.44150010740199,
+        "victory": 42.522061965811965,
+        "death": 41.19282822440717,
+        "unknown_probability": 2.26474567099567,
+        "mechanism:card_generation": 5.163461538461538,
+        "mechanism:card_selection": 13.0,
+        "mechanism:selector_draw_replay": 0.5038461538461538,
+        "mechanism:other_rng": 2.0,
+        "mechanism:autoplay_from_draw": 0.45208333333333367
+      },
+      "calls": 283558,
+      "mean_battle_seconds": 6.086871508333236,
+      "worker_seconds": 592.4162902000025,
+      "host_peak": 272900096,
+      "python_peak": 364969984,
+      "new_interface": {
+        "policy_requests": 91123,
+        "policy_calls": 133486,
+        "policy_ends": 24517,
+        "settled_ends": 23088,
+        "full_policies": 3156,
+        "attempted_policies": 4436,
+        "grouped": 145,
+        "conditional": 144
+      },
+      "conditional_used": 40,
+      "paired": {
+        "base": {
+          "utility": {
+            "n": 48,
+            "mean": 4.989583333333333,
+            "ci": [
+              1.0520833333333333,
+              9.9375
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": 0.041666666666666664,
+            "ci": [
+              0.010416666666666666,
+              0.08333333333333333
+            ]
+          },
+          "common_wins": 44,
+          "win_hp": 1.4090909090909092,
+          "delta_loss": -1.15625,
+          "n": 96,
+          "flips": [
+            5,
+            1
+          ]
+        },
+        "medium": {
+          "utility": {
+            "n": 48,
+            "mean": 2.75,
+            "ci": [
+              -1.7919270833333332,
+              7.969010416666663
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": 0.020833333333333332,
+            "ci": [
+              -0.03125,
+              0.07291666666666667
+            ]
+          },
+          "common_wins": 45,
+          "win_hp": 0.9777777777777777,
+          "delta_loss": -0.5416666666666666,
+          "n": 96,
+          "flips": [
+            4,
+            2
+          ]
+        },
+        "high": {
+          "utility": {
+            "n": 48,
+            "mean": 2.6979166666666665,
+            "ci": [
+              -1.09375,
+              7.344010416666663
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": 0.020833333333333332,
+            "ci": [
+              -0.020833333333333332,
+              0.0625
+            ]
+          },
+          "common_wins": 46,
+          "win_hp": 0.43478260869565216,
+          "delta_loss": -0.4895833333333333,
+          "n": 96,
+          "flips": [
+            3,
+            1
+          ]
+        },
+        "referenceOnly": {
+          "utility": {
+            "n": 48,
+            "mean": 2.6979166666666665,
+            "ci": [
+              -1.09375,
+              7.344010416666663
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": 0.020833333333333332,
+            "ci": [
+              -0.020833333333333332,
+              0.0625
+            ]
+          },
+          "common_wins": 46,
+          "win_hp": 0.43478260869565216,
+          "delta_loss": -0.4895833333333333,
+          "n": 96,
+          "flips": [
+            3,
+            1
+          ]
+        },
+        "V2complete": {
+          "utility": {
+            "n": 48,
+            "mean": -3.1979166666666665,
+            "ci": [
+              -6.458333333333333,
+              -0.5729166666666666
+            ]
+          },
+          "win_delta": {
+            "n": 48,
+            "mean": -0.03125,
+            "ci": [
+              -0.07291666666666667,
+              0.0
+            ]
+          },
+          "common_wins": 49,
+          "win_hp": -1.0204081632653061,
+          "delta_loss": 0.6354166666666666,
+          "n": 96,
+          "flips": [
+            0,
+            3
+          ]
+        }
+      }
+    }
+  },
+  "regression": {
+    "base": {
+      "n": 48,
+      "term": 48,
+      "wins": 25,
+      "cap": 0,
+      "errors": 0,
+      "severe": 39,
+      "utility": 7.520833333333333,
+      "signed_loss": 50.104166666666664,
+      "win_loss": 39.56,
+      "turns": 5.833333333333333,
+      "partial_loss": [],
+      "queries": 280,
+      "ref": 212,
+      "cand": 252,
+      "used": 67,
+      "execution": {
+        "end": 63,
+        "terminal": 4
+      },
+      "ref_mass": {
+        "C": 182.66902427637723,
+        "death": 23.51936258186258,
+        "victory": 16.895833333333336,
+        "budget": 38.27093853858559,
+        "unknown_probability": 2.333333333333333,
+        "mechanism:selector_draw_replay": 0.41666666666666663,
+        "mechanism:random_enemy_effect": 2.5555555555555554,
+        "mechanism:other_rng": 3.0,
+        "mechanism:card_generation": 2.0,
+        "mechanism:card_selection": 4.196428571428571,
+        "C_partial": 1.0,
+        "mechanism:random_target": 3.1428571428571432
+      },
+      "calls": 31566,
+      "mean_battle_seconds": 0.8501982416667033,
+      "worker_seconds": null,
+      "host_peak": 0,
+      "python_peak": 0,
+      "new_interface": {
+        "policy_requests": 0,
+        "policy_calls": 0,
+        "policy_ends": 0,
+        "settled_ends": 0,
+        "full_policies": 0,
+        "attempted_policies": 0,
+        "grouped": 0,
+        "conditional": 0
+      },
+      "conditional_used": 0,
+      "paired": {
+        "medium": {
+          "utility": {
+            "n": 35,
+            "mean": -2.4857142857142858,
+            "ci": [
+              -5.2,
+              -0.5
+            ]
+          },
+          "win_delta": {
+            "n": 35,
+            "mean": -0.014285714285714285,
+            "ci": [
+              -0.04285714285714286,
+              0.0
+            ]
+          },
+          "common_wins": 25,
+          "win_hp": -3.08,
+          "delta_loss": 1.8958333333333333,
+          "n": 48,
+          "flips": [
+            0,
+            1
+          ]
+        },
+        "high": {
+          "utility": {
+            "n": 35,
+            "mean": -0.8714285714285714,
+            "ci": [
+              -4.4,
+              3.428928571428566
+            ]
+          },
+          "win_delta": {
+            "n": 35,
+            "mean": 0.0,
+            "ci": [
+              -0.04285714285714286,
+              0.04285714285714286
+            ]
+          },
+          "common_wins": 24,
+          "win_hp": -3.25,
+          "delta_loss": 1.75,
+          "n": 48,
+          "flips": [
+            1,
+            1
+          ]
+        },
+        "referenceOnly": {
+          "utility": {
+            "n": 35,
+            "mean": -0.9857142857142858,
+            "ci": [
+              -4.6,
+              3.3714285714285714
+            ]
+          },
+          "win_delta": {
+            "n": 35,
+            "mean": 0.0,
+            "ci": [
+              -0.04285714285714286,
+              0.04285714285714286
+            ]
+          },
+          "common_wins": 24,
+          "win_hp": -3.5833333333333335,
+          "delta_loss": 1.9166666666666667,
+          "n": 48,
+          "flips": [
+            1,
+            1
+          ]
+        },
+        "V2complete": {
+          "utility": {
+            "n": 35,
+            "mean": -2.7857142857142856,
+            "ci": [
+              -7.371785714285713,
+              2.0
+            ]
+          },
+          "win_delta": {
+            "n": 35,
+            "mean": 0.0,
+            "ci": [
+              -0.04285714285714286,
+              0.04285714285714286
+            ]
+          },
+          "common_wins": 24,
+          "win_hp": -6.5,
+          "delta_loss": 3.1666666666666665,
+          "n": 48,
+          "flips": [
+            1,
+            1
+          ]
+        }
+      }
+    },
+    "medium": {
+      "n": 48,
+      "term": 48,
+      "wins": 26,
+      "cap": 0,
+      "errors": 0,
+      "severe": 38,
+      "utility": 10.875,
+      "signed_loss": 48.208333333333336,
+      "win_loss": 37.61538461538461,
+      "turns": 5.8125,
+      "partial_loss": [],
+      "queries": 279,
+      "ref": 216,
+      "cand": 253,
+      "used": 78,
+      "execution": {
+        "end": 72,
+        "terminal": 6
+      },
+      "ref_mass": {
+        "C": 189.8425409557763,
+        "death": 23.044074389662626,
+        "victory": 16.54807692307692,
+        "budget": 31.49705376323021,
+        "unknown_probability": 2.333333333333333,
+        "mechanism:selector_draw_replay": 0.3761904761904762,
+        "mechanism:random_enemy_effect": 2.944444444444444,
+        "mechanism:other_rng": 3.0749999999999997,
+        "mechanism:card_generation": 2.0,
+        "mechanism:card_selection": 3.196428571428571,
+        "C_partial": 1.0,
+        "mechanism:random_target": 3.1428571428571432
+      },
+      "calls": 46571,
+      "mean_battle_seconds": 1.108991935416346,
+      "worker_seconds": null,
+      "host_peak": 0,
+      "python_peak": 0,
+      "new_interface": {
+        "policy_requests": 0,
+        "policy_calls": 0,
+        "policy_ends": 0,
+        "settled_ends": 0,
+        "full_policies": 0,
+        "attempted_policies": 0,
+        "grouped": 0,
+        "conditional": 0
+      },
+      "conditional_used": 0,
+      "paired": {
+        "base": {
+          "utility": {
+            "n": 35,
+            "mean": 2.4857142857142858,
+            "ci": [
+              0.5,
+              5.2
+            ]
+          },
+          "win_delta": {
+            "n": 35,
+            "mean": 0.014285714285714285,
+            "ci": [
+              0.0,
+              0.04285714285714286
+            ]
+          },
+          "common_wins": 25,
+          "win_hp": 3.08,
+          "delta_loss": -1.8958333333333333,
+          "n": 48,
+          "flips": [
+            1,
+            0
+          ]
+        },
+        "high": {
+          "utility": {
+            "n": 35,
+            "mean": 1.6142857142857143,
+            "ci": [
+              -0.18571428571428572,
+              4.942857142857143
+            ]
+          },
+          "win_delta": {
+            "n": 35,
+            "mean": 0.014285714285714285,
+            "ci": [
+              0.0,
+              0.04285714285714286
+            ]
+          },
+          "common_wins": 25,
+          "win_hp": 0.2,
+          "delta_loss": -0.14583333333333334,
+          "n": 48,
+          "flips": [
+            1,
+            0
+          ]
+        },
+        "referenceOnly": {
+          "utility": {
+            "n": 35,
+            "mean": 1.5,
+            "ci": [
+              -0.37142857142857144,
+              4.857142857142857
+            ]
+          },
+          "win_delta": {
+            "n": 35,
+            "mean": 0.014285714285714285,
+            "ci": [
+              0.0,
+              0.04285714285714286
+            ]
+          },
+          "common_wins": 25,
+          "win_hp": -0.12,
+          "delta_loss": 0.020833333333333332,
+          "n": 48,
+          "flips": [
+            1,
+            0
+          ]
+        },
+        "V2complete": {
+          "utility": {
+            "n": 35,
+            "mean": -0.3,
+            "ci": [
+              -4.9,
+              4.628928571428567
+            ]
+          },
+          "win_delta": {
+            "n": 35,
+            "mean": 0.014285714285714285,
+            "ci": [
+              -0.02857142857142857,
+              0.0574999999999948
+            ]
+          },
+          "common_wins": 24,
+          "win_hp": -3.25,
+          "delta_loss": 1.2708333333333333,
+          "n": 48,
+          "flips": [
+            2,
+            1
+          ]
+        }
+      }
+    },
+    "high": {
+      "n": 48,
+      "term": 48,
+      "wins": 25,
+      "cap": 0,
+      "errors": 0,
+      "severe": 38,
+      "utility": 8.520833333333334,
+      "signed_loss": 48.354166666666664,
+      "win_loss": 37.64,
+      "turns": 5.833333333333333,
+      "partial_loss": [],
+      "queries": 280,
+      "ref": 223,
+      "cand": 254,
+      "used": 80,
+      "execution": {
+        "end": 76,
+        "terminal": 4
+      },
+      "ref_mass": {
+        "C": 191.77067173023056,
+        "death": 26.891098199186438,
+        "victory": 18.65164835164835,
+        "budget": 23.626029770882695,
+        "unknown_probability": 2.333333333333333,
+        "mechanism:selector_draw_replay": 0.38376623376623376,
+        "mechanism:random_enemy_effect": 3.1666666666666665,
+        "mechanism:other_rng": 3.1500000000000004,
+        "C_partial": 1.6875,
+        "mechanism:card_generation": 2.0,
+        "mechanism:card_selection": 3.196428571428571,
+        "mechanism:random_target": 3.1428571428571432
+      },
+      "calls": 71147,
+      "mean_battle_seconds": 1.6954015833333262,
+      "worker_seconds": null,
+      "host_peak": 0,
+      "python_peak": 0,
+      "new_interface": {
+        "policy_requests": 0,
+        "policy_calls": 0,
+        "policy_ends": 0,
+        "settled_ends": 0,
+        "full_policies": 0,
+        "attempted_policies": 0,
+        "grouped": 0,
+        "conditional": 0
+      },
+      "conditional_used": 0,
+      "paired": {
+        "base": {
+          "utility": {
+            "n": 35,
+            "mean": 0.8714285714285714,
+            "ci": [
+              -3.428928571428571,
+              4.4
+            ]
+          },
+          "win_delta": {
+            "n": 35,
+            "mean": 0.0,
+            "ci": [
+              -0.04285714285714286,
+              0.04285714285714286
+            ]
+          },
+          "common_wins": 24,
+          "win_hp": 3.25,
+          "delta_loss": -1.75,
+          "n": 48,
+          "flips": [
+            1,
+            1
+          ]
+        },
+        "medium": {
+          "utility": {
+            "n": 35,
+            "mean": -1.6142857142857143,
+            "ci": [
+              -4.942857142857143,
+              0.18571428571428572
+            ]
+          },
+          "win_delta": {
+            "n": 35,
+            "mean": -0.014285714285714285,
+            "ci": [
+              -0.04285714285714286,
+              0.0
+            ]
+          },
+          "common_wins": 25,
+          "win_hp": -0.2,
+          "delta_loss": 0.14583333333333334,
+          "n": 48,
+          "flips": [
+            0,
+            1
+          ]
+        },
+        "referenceOnly": {
+          "utility": {
+            "n": 35,
+            "mean": -0.11428571428571428,
+            "ci": [
+              -0.34285714285714286,
+              0.0
+            ]
+          },
+          "win_delta": {
+            "n": 35,
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "common_wins": 25,
+          "win_hp": -0.32,
+          "delta_loss": 0.16666666666666666,
+          "n": 48,
+          "flips": [
+            0,
+            0
+          ]
+        },
+        "V2complete": {
+          "utility": {
+            "n": 35,
+            "mean": -1.9142857142857144,
+            "ci": [
+              -7.771428571428571,
+              3.6007142857142753
+            ]
+          },
+          "win_delta": {
+            "n": 35,
+            "mean": 0.0,
+            "ci": [
+              -0.05714285714285714,
+              0.05714285714285714
+            ]
+          },
+          "common_wins": 23,
+          "win_hp": -3.347826086956522,
+          "delta_loss": 1.4166666666666667,
+          "n": 48,
+          "flips": [
+            2,
+            2
+          ]
+        }
+      }
+    },
+    "referenceOnly": {
+      "n": 48,
+      "term": 48,
+      "wins": 25,
+      "cap": 0,
+      "errors": 0,
+      "severe": 37,
+      "utility": 8.6875,
+      "signed_loss": 48.1875,
+      "win_loss": 37.32,
+      "turns": 5.8125,
+      "partial_loss": [],
+      "queries": 279,
+      "ref": 224,
+      "cand": 253,
+      "used": 80,
+      "execution": {
+        "end": 75,
+        "terminal": 5
+      },
+      "ref_mass": {
+        "C": 194.2496304349246,
+        "victory": 17.83617216117216,
+        "death": 27.39228867537691,
+        "budget": 21.980296174413823,
+        "unknown_probability": 2.333333333333333,
+        "mechanism:random_target": 3.142857142857143,
+        "mechanism:card_selection": 3.196428571428571,
+        "C_partial": 1.6875,
+        "mechanism:selector_draw_replay": 0.40649350649350646,
+        "mechanism:random_enemy_effect": 3.416666666666666,
+        "mechanism:other_rng": 3.358333333333333
+      },
+      "calls": 75419,
+      "mean_battle_seconds": 2.2694801104165285,
+      "worker_seconds": 119.36715350000304,
+      "host_peak": 277164032,
+      "python_peak": 364298240,
+      "new_interface": {
+        "policy_requests": 0,
+        "policy_calls": 0,
+        "policy_ends": 0,
+        "settled_ends": 0,
+        "full_policies": 0,
+        "attempted_policies": 0,
+        "grouped": 0,
+        "conditional": 0
+      },
+      "conditional_used": 0,
+      "paired": {
+        "base": {
+          "utility": {
+            "n": 35,
+            "mean": 0.9857142857142858,
+            "ci": [
+              -3.2142857142857144,
+              4.5
+            ]
+          },
+          "win_delta": {
+            "n": 35,
+            "mean": 0.0,
+            "ci": [
+              -0.04285714285714286,
+              0.04285714285714286
+            ]
+          },
+          "common_wins": 24,
+          "win_hp": 3.5833333333333335,
+          "delta_loss": -1.9166666666666667,
+          "n": 48,
+          "flips": [
+            1,
+            1
+          ]
+        },
+        "medium": {
+          "utility": {
+            "n": 35,
+            "mean": -1.5,
+            "ci": [
+              -4.857142857142857,
+              0.35714285714285715
+            ]
+          },
+          "win_delta": {
+            "n": 35,
+            "mean": -0.014285714285714285,
+            "ci": [
+              -0.04285714285714286,
+              0.0
+            ]
+          },
+          "common_wins": 25,
+          "win_hp": 0.12,
+          "delta_loss": -0.020833333333333332,
+          "n": 48,
+          "flips": [
+            0,
+            1
+          ]
+        },
+        "high": {
+          "utility": {
+            "n": 35,
+            "mean": 0.11428571428571428,
+            "ci": [
+              0.0,
+              0.34285714285714286
+            ]
+          },
+          "win_delta": {
+            "n": 35,
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "common_wins": 25,
+          "win_hp": 0.32,
+          "delta_loss": -0.16666666666666666,
+          "n": 48,
+          "flips": [
+            0,
+            0
+          ]
+        },
+        "V2complete": {
+          "utility": {
+            "n": 35,
+            "mean": -1.8,
+            "ci": [
+              -7.6571428571428575,
+              3.771785714285709
+            ]
+          },
+          "win_delta": {
+            "n": 35,
+            "mean": 0.0,
+            "ci": [
+              -0.05714285714285714,
+              0.05714285714285714
+            ]
+          },
+          "common_wins": 23,
+          "win_hp": -3,
+          "delta_loss": 1.25,
+          "n": 48,
+          "flips": [
+            2,
+            2
+          ]
+        }
+      }
+    },
+    "V2complete": {
+      "n": 48,
+      "term": 48,
+      "wins": 25,
+      "cap": 0,
+      "errors": 0,
+      "severe": 37,
+      "utility": 10.6875,
+      "signed_loss": 46.9375,
+      "win_loss": 33.48,
+      "turns": 5.833333333333333,
+      "partial_loss": [],
+      "queries": 280,
+      "ref": 228,
+      "cand": 267,
+      "used": 94,
+      "execution": {
+        "end": 85,
+        "terminal": 9
+      },
+      "ref_mass": {
+        "C": 198.47522567301982,
+        "victory": 17.377442002442002,
+        "death": 25.18216962775786,
+        "budget": 22.508073952191594,
+        "unknown_probability": 2.333333333333333,
+        "mechanism:random_target": 1.1428571428571428,
+        "mechanism:card_selection": 4.196428571428571,
+        "C_partial": 1.6875,
+        "mechanism:selector_draw_replay": 0.3219696969696969,
+        "mechanism:random_enemy_effect": 3.416666666666666,
+        "mechanism:other_rng": 3.358333333333333
+      },
+      "calls": 133568,
+      "mean_battle_seconds": 5.914712960416637,
+      "worker_seconds": 287.8541836000004,
+      "host_peak": 245825536,
+      "python_peak": 358604800,
+      "new_interface": {
+        "policy_requests": 41281,
+        "policy_calls": 57698,
+        "policy_ends": 11746,
+        "settled_ends": 10264,
+        "full_policies": 1665,
+        "attempted_policies": 2236,
+        "grouped": 35,
+        "conditional": 86
+      },
+      "conditional_used": 25,
+      "paired": {
+        "base": {
+          "utility": {
+            "n": 35,
+            "mean": 2.7857142857142856,
+            "ci": [
+              -2.085714285714286,
+              7.6003571428571375
+            ]
+          },
+          "win_delta": {
+            "n": 35,
+            "mean": 0.0,
+            "ci": [
+              -0.04285714285714286,
+              0.04285714285714286
+            ]
+          },
+          "common_wins": 24,
+          "win_hp": 6.5,
+          "delta_loss": -3.1666666666666665,
+          "n": 48,
+          "flips": [
+            1,
+            1
+          ]
+        },
+        "medium": {
+          "utility": {
+            "n": 35,
+            "mean": 0.3,
+            "ci": [
+              -4.6571428571428575,
+              5.01499999999999
+            ]
+          },
+          "win_delta": {
+            "n": 35,
+            "mean": -0.014285714285714285,
+            "ci": [
+              -0.05714285714285714,
+              0.02857142857142857
+            ]
+          },
+          "common_wins": 24,
+          "win_hp": 3.25,
+          "delta_loss": -1.2708333333333333,
+          "n": 48,
+          "flips": [
+            1,
+            2
+          ]
+        },
+        "high": {
+          "utility": {
+            "n": 35,
+            "mean": 1.9142857142857144,
+            "ci": [
+              -3.657142857142857,
+              7.786071428571423
+            ]
+          },
+          "win_delta": {
+            "n": 35,
+            "mean": 0.0,
+            "ci": [
+              -0.05714285714285714,
+              0.05714285714285714
+            ]
+          },
+          "common_wins": 23,
+          "win_hp": 3.347826086956522,
+          "delta_loss": -1.4166666666666667,
+          "n": 48,
+          "flips": [
+            2,
+            2
+          ]
+        },
+        "referenceOnly": {
+          "utility": {
+            "n": 35,
+            "mean": 1.8,
+            "ci": [
+              -3.771785714285714,
+              7.6571428571428575
+            ]
+          },
+          "win_delta": {
+            "n": 35,
+            "mean": 0.0,
+            "ci": [
+              -0.05714285714285714,
+              0.05714285714285714
+            ]
+          },
+          "common_wins": 23,
+          "win_hp": 3,
+          "delta_loss": -1.25,
+          "n": 48,
+          "flips": [
+            2,
+            2
+          ]
+        }
+      }
+    }
+  }
+}

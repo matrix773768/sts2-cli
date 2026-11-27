@@ -1,0 +1,1434 @@
+{
+  "cases": {
+    "INFERNAL_BLADE": {
+      "opening": {
+        "schema": "sts2.nosl_observation.v3",
+        "turn": 1,
+        "hp": 44,
+        "max_hp": 80,
+        "block": 0,
+        "energy": 3,
+        "draw_count": 4,
+        "hand": [
+          {
+            "index": 0,
+            "id": "INFERNAL_BLADE",
+            "upgrade": 1,
+            "cost": 0,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 1,
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0,
+            "cost": 1,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 2,
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0,
+            "cost": 1,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 3,
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0,
+            "cost": 1,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 4,
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0,
+            "cost": 1,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          }
+        ],
+        "discard": [],
+        "exhaust": [],
+        "deck": [
+          {
+            "index": 0,
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 1,
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 2,
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 3,
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 4,
+            "id": "INFERNAL_BLADE",
+            "upgrade": 1,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 5,
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 6,
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 7,
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 8,
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          }
+        ],
+        "powers": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "relics": [],
+        "enemies": [
+          {
+            "index": 0,
+            "hp": 148,
+            "block": 0,
+            "attack_hits": [
+              13
+            ],
+            "intents": [
+              "Attack",
+              "Debuff"
+            ],
+            "powers": []
+          }
+        ],
+        "actions": [
+          {
+            "index": 0,
+            "kind": "play_card",
+            "card": 0,
+            "target": null,
+            "choice": null,
+            "potion": null,
+            "cost": 0,
+            "preview": null,
+            "choice_zone": null,
+            "star_cost": 0,
+            "energy_x": false,
+            "star_x": false,
+            "target_side": null,
+            "target_type": "Self"
+          },
+          {
+            "index": 1,
+            "kind": "play_card",
+            "card": 1,
+            "target": null,
+            "choice": null,
+            "potion": null,
+            "cost": 1,
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 5,
+              "draw": null
+            },
+            "choice_zone": null,
+            "star_cost": 0,
+            "energy_x": false,
+            "star_x": false,
+            "target_side": null,
+            "target_type": "Self"
+          },
+          {
+            "index": 2,
+            "kind": "play_card",
+            "card": 2,
+            "target": 0,
+            "choice": null,
+            "potion": null,
+            "cost": 1,
+            "preview": {
+              "damage_per_hit": 6,
+              "hits": 1,
+              "block": null,
+              "draw": null
+            },
+            "choice_zone": null,
+            "star_cost": 0,
+            "energy_x": false,
+            "star_x": false,
+            "target_side": "enemy",
+            "target_type": "AnyEnemy"
+          },
+          {
+            "index": 3,
+            "kind": "play_card",
+            "card": 3,
+            "target": null,
+            "choice": null,
+            "potion": null,
+            "cost": 1,
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 5,
+              "draw": null
+            },
+            "choice_zone": null,
+            "star_cost": 0,
+            "energy_x": false,
+            "star_x": false,
+            "target_side": null,
+            "target_type": "Self"
+          },
+          {
+            "index": 4,
+            "kind": "play_card",
+            "card": 4,
+            "target": 0,
+            "choice": null,
+            "potion": null,
+            "cost": 1,
+            "preview": {
+              "damage_per_hit": 6,
+              "hits": 1,
+              "block": null,
+              "draw": null
+            },
+            "choice_zone": null,
+            "star_cost": 0,
+            "energy_x": false,
+            "star_x": false,
+            "target_side": "enemy",
+            "target_type": "AnyEnemy"
+          },
+          {
+            "index": 5,
+            "kind": "end_turn",
+            "card": null,
+            "target": null,
+            "choice": null,
+            "potion": null,
+            "cost": null,
+            "preview": null,
+            "choice_zone": null,
+            "star_cost": null,
+            "energy_x": false,
+            "star_x": false,
+            "target_side": null,
+            "target_type": null
+          }
+        ],
+        "stars": 0,
+        "decision": {
+          "phase": "combat"
+        },
+        "allies": [
+          {
+            "index": 0,
+            "hp": 44,
+            "block": 0,
+            "attack_hits": [],
+            "intents": [],
+            "powers": []
+          }
+        ],
+        "mechanism": {
+          "played": 0,
+          "attacks": 0,
+          "skills": 0,
+          "species": [
+            "GLOBE_HEAD"
+          ],
+          "stacks": []
+        },
+        "nunchaku": null,
+        "order_hooks": [
+          {
+            "owner": 0,
+            "id": "GALVANIC_POWER"
+          }
+        ]
+      },
+      "first": "{\"card\":{\"affliction\":null,\"affliction_amount\":null,\"cost\":0,\"enchantment\":null,\"enchantment_amount\":null,\"id\":\"INFERNAL_BLADE\",\"upgrade\":1},\"choice\":null,\"choice_zone\":null,\"cost\":0,\"energy_x\":false,\"kind\":\"play_card\",\"potion\":null,\"preview\":null,\"star_cost\":0,\"star_x\":false,\"target\":null,\"target_side\":null,\"target_type\":\"Self\"}",
+      "outcomes": [
+        {
+          "event": "generate0",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "ANGER"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate1",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "ASHEN_STRIKE"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate2",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "BLUDGEON"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate3",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "BODY_SLAM"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate4",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "BREAKTHROUGH"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate5",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "BULLY"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate6",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "CINDER"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate7",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "CONFLAGRATION"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate8",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DISMANTLE"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate9",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "FIEND_FIRE"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate10",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "FIGHT_ME"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate11",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "HEADBUTT"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate12",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "HEMOKINESIS"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate13",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "HOWL_FROM_BEYOND"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate14",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "IRON_WAVE"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate15",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "MANGLE"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate16",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "MOLTEN_FIST"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate17",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "PACTS_END"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate18",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "PERFECTED_STRIKE"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate19",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "PILLAGE"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate20",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "POMMEL_STRIKE"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate21",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "RAMPAGE"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate22",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "SETUP_STRIKE"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate23",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "SPITE"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate24",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "STOMP"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate25",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "SWORD_BOOMERANG"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate26",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "TEAR_ASUNDER"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate27",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "THRASH"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate28",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "THUNDERCLAP"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate29",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "TWIN_STRIKE"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate30",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "UNRELENTING"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate31",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "UPPERCUT"
+          ],
+          "energy": 3
+        },
+        {
+          "event": "generate32",
+          "p": 0.030303030303030304,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "WHIRLWIND"
+          ],
+          "energy": 3
+        }
+      ],
+      "matched": [
+        "generate9"
+      ]
+    },
+    "SWORD_BOOMERANG": {
+      "opening": {
+        "schema": "sts2.nosl_observation.v3",
+        "turn": 1,
+        "hp": 44,
+        "max_hp": 80,
+        "block": 0,
+        "energy": 3,
+        "draw_count": 4,
+        "hand": [
+          {
+            "index": 0,
+            "id": "SWORD_BOOMERANG",
+            "upgrade": 0,
+            "cost": 1,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 1,
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0,
+            "cost": 1,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 2,
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0,
+            "cost": 1,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 3,
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0,
+            "cost": 1,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 4,
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0,
+            "cost": 1,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          }
+        ],
+        "discard": [],
+        "exhaust": [],
+        "deck": [
+          {
+            "index": 0,
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 1,
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 2,
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 3,
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 4,
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 5,
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 6,
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 7,
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 8,
+            "id": "SWORD_BOOMERANG",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          }
+        ],
+        "powers": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "relics": [],
+        "enemies": [
+          {
+            "index": 0,
+            "hp": 148,
+            "block": 0,
+            "attack_hits": [
+              13
+            ],
+            "intents": [
+              "Attack",
+              "Debuff"
+            ],
+            "powers": []
+          }
+        ],
+        "actions": [
+          {
+            "index": 0,
+            "kind": "play_card",
+            "card": 0,
+            "target": null,
+            "choice": null,
+            "potion": null,
+            "cost": 1,
+            "preview": null,
+            "choice_zone": null,
+            "star_cost": 0,
+            "energy_x": false,
+            "star_x": false,
+            "target_side": null,
+            "target_type": "RandomEnemy"
+          },
+          {
+            "index": 1,
+            "kind": "play_card",
+            "card": 1,
+            "target": null,
+            "choice": null,
+            "potion": null,
+            "cost": 1,
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 5,
+              "draw": null
+            },
+            "choice_zone": null,
+            "star_cost": 0,
+            "energy_x": false,
+            "star_x": false,
+            "target_side": null,
+            "target_type": "Self"
+          },
+          {
+            "index": 2,
+            "kind": "play_card",
+            "card": 2,
+            "target": 0,
+            "choice": null,
+            "potion": null,
+            "cost": 1,
+            "preview": {
+              "damage_per_hit": 6,
+              "hits": 1,
+              "block": null,
+              "draw": null
+            },
+            "choice_zone": null,
+            "star_cost": 0,
+            "energy_x": false,
+            "star_x": false,
+            "target_side": "enemy",
+            "target_type": "AnyEnemy"
+          },
+          {
+            "index": 3,
+            "kind": "play_card",
+            "card": 3,
+            "target": null,
+            "choice": null,
+            "potion": null,
+            "cost": 1,
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 5,
+              "draw": null
+            },
+            "choice_zone": null,
+            "star_cost": 0,
+            "energy_x": false,
+            "star_x": false,
+            "target_side": null,
+            "target_type": "Self"
+          },
+          {
+            "index": 4,
+            "kind": "play_card",
+            "card": 4,
+            "target": 0,
+            "choice": null,
+            "potion": null,
+            "cost": 1,
+            "preview": {
+              "damage_per_hit": 6,
+              "hits": 1,
+              "block": null,
+              "draw": null
+            },
+            "choice_zone": null,
+            "star_cost": 0,
+            "energy_x": false,
+            "star_x": false,
+            "target_side": "enemy",
+            "target_type": "AnyEnemy"
+          },
+          {
+            "index": 5,
+            "kind": "end_turn",
+            "card": null,
+            "target": null,
+            "choice": null,
+            "potion": null,
+            "cost": null,
+            "preview": null,
+            "choice_zone": null,
+            "star_cost": null,
+            "energy_x": false,
+            "star_x": false,
+            "target_side": null,
+            "target_type": null
+          }
+        ],
+        "stars": 0,
+        "decision": {
+          "phase": "combat"
+        },
+        "allies": [
+          {
+            "index": 0,
+            "hp": 44,
+            "block": 0,
+            "attack_hits": [],
+            "intents": [],
+            "powers": []
+          }
+        ],
+        "mechanism": {
+          "played": 0,
+          "attacks": 0,
+          "skills": 0,
+          "species": [
+            "GLOBE_HEAD"
+          ],
+          "stacks": []
+        },
+        "nunchaku": null,
+        "order_hooks": [
+          {
+            "owner": 0,
+            "id": "GALVANIC_POWER"
+          }
+        ]
+      },
+      "first": "{\"card\":{\"affliction\":null,\"affliction_amount\":null,\"cost\":1,\"enchantment\":null,\"enchantment_amount\":null,\"id\":\"SWORD_BOOMERANG\",\"upgrade\":0},\"choice\":null,\"choice_zone\":null,\"cost\":1,\"energy_x\":false,\"kind\":\"play_card\",\"potion\":null,\"preview\":null,\"star_cost\":0,\"star_x\":false,\"target\":null,\"target_side\":null,\"target_type\":\"RandomEnemy\"}",
+      "outcomes": [
+        {
+          "event": "",
+          "p": 1.0,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD"
+          ],
+          "energy": 2
+        }
+      ],
+      "matched": [
+        ""
+      ]
+    },
+    "TRUE_GRIT": {
+      "opening": {
+        "schema": "sts2.nosl_observation.v3",
+        "turn": 1,
+        "hp": 44,
+        "max_hp": 80,
+        "block": 0,
+        "energy": 3,
+        "draw_count": 4,
+        "hand": [
+          {
+            "index": 0,
+            "id": "TRUE_GRIT",
+            "upgrade": 1,
+            "cost": 1,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 1,
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0,
+            "cost": 1,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 2,
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0,
+            "cost": 1,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 3,
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0,
+            "cost": 1,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 4,
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0,
+            "cost": 1,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          }
+        ],
+        "discard": [],
+        "exhaust": [],
+        "deck": [
+          {
+            "index": 0,
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 1,
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 2,
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 3,
+            "id": "DEFEND_IRONCLAD",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 4,
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 5,
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 6,
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 7,
+            "id": "STRIKE_IRONCLAD",
+            "upgrade": 0,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          },
+          {
+            "index": 8,
+            "id": "TRUE_GRIT",
+            "upgrade": 1,
+            "cost": null,
+            "enchantment": null,
+            "enchantment_amount": null,
+            "affliction": null,
+            "affliction_amount": null
+          }
+        ],
+        "powers": [],
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "relics": [],
+        "enemies": [
+          {
+            "index": 0,
+            "hp": 148,
+            "block": 0,
+            "attack_hits": [
+              13
+            ],
+            "intents": [
+              "Attack",
+              "Debuff"
+            ],
+            "powers": []
+          }
+        ],
+        "actions": [
+          {
+            "index": 0,
+            "kind": "play_card",
+            "card": 0,
+            "target": null,
+            "choice": null,
+            "potion": null,
+            "cost": 1,
+            "preview": null,
+            "choice_zone": null,
+            "star_cost": 0,
+            "energy_x": false,
+            "star_x": false,
+            "target_side": null,
+            "target_type": "Self"
+          },
+          {
+            "index": 1,
+            "kind": "play_card",
+            "card": 1,
+            "target": null,
+            "choice": null,
+            "potion": null,
+            "cost": 1,
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 5,
+              "draw": null
+            },
+            "choice_zone": null,
+            "star_cost": 0,
+            "energy_x": false,
+            "star_x": false,
+            "target_side": null,
+            "target_type": "Self"
+          },
+          {
+            "index": 2,
+            "kind": "play_card",
+            "card": 2,
+            "target": 0,
+            "choice": null,
+            "potion": null,
+            "cost": 1,
+            "preview": {
+              "damage_per_hit": 6,
+              "hits": 1,
+              "block": null,
+              "draw": null
+            },
+            "choice_zone": null,
+            "star_cost": 0,
+            "energy_x": false,
+            "star_x": false,
+            "target_side": "enemy",
+            "target_type": "AnyEnemy"
+          },
+          {
+            "index": 3,
+            "kind": "play_card",
+            "card": 3,
+            "target": null,
+            "choice": null,
+            "potion": null,
+            "cost": 1,
+            "preview": {
+              "damage_per_hit": null,
+              "hits": null,
+              "block": 5,
+              "draw": null
+            },
+            "choice_zone": null,
+            "star_cost": 0,
+            "energy_x": false,
+            "star_x": false,
+            "target_side": null,
+            "target_type": "Self"
+          },
+          {
+            "index": 4,
+            "kind": "play_card",
+            "card": 4,
+            "target": 0,
+            "choice": null,
+            "potion": null,
+            "cost": 1,
+            "preview": {
+              "damage_per_hit": 6,
+              "hits": 1,
+              "block": null,
+              "draw": null
+            },
+            "choice_zone": null,
+            "star_cost": 0,
+            "energy_x": false,
+            "star_x": false,
+            "target_side": "enemy",
+            "target_type": "AnyEnemy"
+          },
+          {
+            "index": 5,
+            "kind": "end_turn",
+            "card": null,
+            "target": null,
+            "choice": null,
+            "potion": null,
+            "cost": null,
+            "preview": null,
+            "choice_zone": null,
+            "star_cost": null,
+            "energy_x": false,
+            "star_x": false,
+            "target_side": null,
+            "target_type": null
+          }
+        ],
+        "stars": 0,
+        "decision": {
+          "phase": "combat"
+        },
+        "allies": [
+          {
+            "index": 0,
+            "hp": 44,
+            "block": 0,
+            "attack_hits": [],
+            "intents": [],
+            "powers": []
+          }
+        ],
+        "mechanism": {
+          "played": 0,
+          "attacks": 0,
+          "skills": 0,
+          "species": [
+            "GLOBE_HEAD"
+          ],
+          "stacks": []
+        },
+        "nunchaku": null,
+        "order_hooks": [
+          {
+            "owner": 0,
+            "id": "GALVANIC_POWER"
+          }
+        ]
+      },
+      "first": "{\"card\":{\"affliction\":null,\"affliction_amount\":null,\"cost\":1,\"enchantment\":null,\"enchantment_amount\":null,\"id\":\"TRUE_GRIT\",\"upgrade\":1},\"choice\":null,\"choice_zone\":null,\"cost\":1,\"energy_x\":false,\"kind\":\"play_card\",\"potion\":null,\"preview\":null,\"star_cost\":0,\"star_x\":false,\"target\":null,\"target_side\":null,\"target_type\":\"Self\"}",
+      "outcomes": [
+        {
+          "event": "",
+          "p": 1.0,
+          "hand": [
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD",
+            "DEFEND_IRONCLAD",
+            "STRIKE_IRONCLAD"
+          ],
+          "energy": 2
+        }
+      ],
+      "matched": [
+        ""
+      ],
+      "exhaust": [
+        {
+          "index": 0,
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0,
+          "cost": null,
+          "enchantment": null,
+          "enchantment_amount": null,
+          "affliction": null,
+          "affliction_amount": null
+        }
+      ]
+    }
+  },
+  "seconds": 5.240713099999994
+}
