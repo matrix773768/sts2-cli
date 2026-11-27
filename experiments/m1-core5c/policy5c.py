@@ -87,8 +87,15 @@ def tactic(h,style,merged):
 
 # These listeners have an implemented AfterCardDrawn/Early effect in the frozen simulator.
 DRAW_POWERS=set("HELLRAISER CONFUSED ITERATION PAGESTORM CHAINS_OF_BINDING CORROSIVE_WAVE SPEEDSTER CACOPHONY AUTOMATION".split())
+# These observed relics resolve at acquisition, rest sites, elite defeat or combat end.
+# Unclassified listeners retain ordered draws. See the native CORE-5D progression witnesses.
+DRAW_NEUTRAL_RELICS=frozenset("""
+BURNING_BLOOD BLACK_BLOOD LOST_COFFER SWORD_OF_STONE SHOVEL STRAWBERRY
+GLASS_EYE SAND_CASTLE TOUCH_OF_OROBAS
+""".split())
+
 def can_group(h,a):
-    if a["kind"]!="play_card" or h["relics"]:
+    if a["kind"]!="play_card" or any(r not in DRAW_NEUTRAL_RELICS for r in h["relics"]):
         return False
     k=h["hand"][a["card"]]["id"]
     if "Draw" not in ops(k) or ops(k)-{"Draw","ApplyPowerSelf","GainBlock","Attack"}:

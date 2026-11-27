@@ -4,8 +4,9 @@ from core4_roots import panels,spec_for
 from turn_value import compile_turn
 from value_net import network as old_network
 
-def fight(lane,g2,spec,mode,net,skip=None,trace=None,planner=graph_plan,order=None,counts=None,last=None):
-    st=cohort.start(lane,spec,order);history=[];states=[];queries=[]
+def fight(lane,g2,spec,mode,net,skip=None,trace=None,planner=graph_plan,order=None,counts=None,last=None,resume=None):
+    st,history=(cohort.start(lane,spec,order),[]) if resume is None else (resume[0],list(resume[1]))
+    states=[];queries=[]
     if mode in ("G2","G2search"):
         g2.budget=24 if mode=="G2search" else 0
         result=finish(lane,g2,st,counts=counts,last=last);g2.budget=0

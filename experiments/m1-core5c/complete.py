@@ -108,14 +108,14 @@ class Turn:
             value += probability * self.values.get(state_key, -50.)
         coverage = sum(mass[kind] for kind in ("C", "death", "victory"))
         return coverage, value, dict(mass)
-    def search(self):
+    def search(self, admitted=None, quotas=(32,80)):
         plans=[]
         # Reserve a fresh quota for each first action. Cheap complete policies survive later budget cuts.
-        for a in roots(self.h)[:4]:
+        for a in (roots(self.h)[:4] if admitted is None else admitted):
             styles=("end","block","repeat","attack")
             by_style={}
             for j,style in enumerate(styles):
-                self.cap=len(self.cache)+(32 if j==0 else 80)
+                self.cap=len(self.cache)+quotas[int(j!=0)]
                 rows=[]
                 self.follow(self.h,a,(),style,False,1.,(),rows)
                 if abs(sum(x[0] for x in rows)-1)>1e-8:
@@ -175,15 +175,20 @@ class Planner:
         self.detail=False
         self.last=None
         self.reference_only=reference_only
+        self.inspect=None
+        self.graph_budget=(512,80,256,20)
+        self.quotas=(32,80)
+        self.admit=None
     def __call__(self,lane,h,past,net,g2,opening):
         public=PublicLane(lane)
         try:
-            g,ch,q=graph_plan(public,h,past,net,g2,opening,80,direct=partial(reference,limit=256),
-                fast=True,evaluator=self.evaluator,transitions=512,expansions=20)
+            transitions,settle,ref,expansions=self.graph_budget
+            g,ch,q=graph_plan(public,h,past,net,g2,opening,settle,direct=partial(reference,limit=ref),
+                fast=True,evaluator=self.evaluator,transitions=transitions,expansions=expansions,inspect=self.inspect)
             if self.reference_only:
                 return g,ch,q
             turn=Turn(public,h,opening,self.evaluator,128-len(past),self.detail)
-            best=turn.search()
+            best=turn.search(self.admit(h) if self.admit else None,self.quotas)
             if self.detail:
                 self.last=turn
             q.update(policy_requests=len(turn.cache),policy_calls=turn.calls,policy_ends=len(turn.eligible),

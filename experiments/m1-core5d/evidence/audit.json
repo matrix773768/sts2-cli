@@ -1,0 +1,2046 @@
+{
+  "cases": {
+    "loss": {
+      "main": "conditional/6/chosen",
+      "query": {
+        "reference_coverage": 1.0000000000000002,
+        "coverage": 0.9999999999999999,
+        "reference": 12.030579471588137,
+        "value": 22.732907485961913,
+        "reference_mass": {
+          "C": 1.0000000000000002
+        },
+        "candidate_mass": {
+          "C": 0.9999999999999999
+        },
+        "use": true,
+        "calls": 526,
+        "settles": 14,
+        "unique": 24,
+        "policy_requests": 200,
+        "policy_calls": 253,
+        "policy_ends": 61,
+        "settled_ends": 61,
+        "grouped": 7,
+        "conditional": true,
+        "full_policies": 8,
+        "attempted_policies": 8
+      },
+      "witnesses": [
+        {
+          "label": "conditional/6/chosen",
+          "first": "HEADBUTT",
+          "value": 22.732907485961913,
+          "law": [
+            [
+              "C",
+              "0852a5f344888b8688b2ec0a2d96ae8d52476904b768ed815417f6501f4cc398",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "2992255582cb3f60f26b857014b51c0311f21228ab3aa96913c568eddda7dcce",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "2c50537aa69755de4cbd7ff9977151d6f31637b3f76f0d7693d2b2957868bea2",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "36d136fad2b2b5135dfe692de58b9d6822561fea4c00b16511924e9bc577d525",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "3d7af09c3a8c07b67b879de8d2ee1adc253cad692660372e633e8d5a0d09215f",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "4753921da024f2249b4bf0579f338f966cbf5f413f161b3654375662cc5a7950",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "7939cc0e85413ec1a80d14ceb7ea8b8bd3ec05c9f8e7322859aa03aad00c3c63",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "aac37c1ff68f946e38df760c07bae45abba247d0fe46e44b79b7814a40e08340",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "b6f34b96f0732a3f1bb0899f752b8a379e31c72ac7f35eea8ba891b66da75f70",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "fde52b3a1953a61c4ec98e6dfe5b9d7cf7593a6a5c248ba3a170054775792bbb",
+              0.0,
+              0.1
+            ]
+          ],
+          "steps": [
+            [
+              "combat",
+              {
+                "index": 6,
+                "kind": "play_card",
+                "card": 4,
+                "target": 0,
+                "choice": null,
+                "potion": null,
+                "cost": 1,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": "enemy",
+                "target_type": "AnyEnemy"
+              }
+            ],
+            [
+              "choice",
+              {
+                "index": 3,
+                "kind": "select_candidate",
+                "card": null,
+                "target": null,
+                "choice": 3,
+                "potion": null,
+                "cost": null,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": null,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": null
+              }
+            ],
+            [
+              "choice",
+              {
+                "index": 0,
+                "kind": "confirm_selection",
+                "card": null,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": null,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": null,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": null
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 5,
+                "kind": "play_card",
+                "card": 3,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": 0,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": "Self"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 5,
+                "kind": "play_card",
+                "card": 3,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": 2,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": "Self"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 0,
+                "kind": "end_turn",
+                "card": null,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": null,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": null,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": null
+              }
+            ]
+          ],
+          "reason": "end",
+          "matched_C": true
+        },
+        {
+          "label": "conditional/6/end",
+          "first": "HEADBUTT",
+          "value": -43.814208984375,
+          "law": [
+            [
+              "C",
+              "71185d6418880b04c9338d887245e280a22638772b493a842bd4e41b5f1e0578",
+              0.0,
+              1.0
+            ]
+          ],
+          "steps": [
+            [
+              "combat",
+              {
+                "index": 6,
+                "kind": "play_card",
+                "card": 4,
+                "target": 0,
+                "choice": null,
+                "potion": null,
+                "cost": 1,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": "enemy",
+                "target_type": "AnyEnemy"
+              }
+            ],
+            [
+              "choice",
+              {
+                "index": 3,
+                "kind": "select_candidate",
+                "card": null,
+                "target": null,
+                "choice": 3,
+                "potion": null,
+                "cost": null,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": null,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": null
+              }
+            ],
+            [
+              "choice",
+              {
+                "index": 0,
+                "kind": "confirm_selection",
+                "card": null,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": null,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": null,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": null
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 6,
+                "kind": "end_turn",
+                "card": null,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": null,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": null,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": null
+              }
+            ]
+          ],
+          "reason": "end",
+          "matched_C": true
+        },
+        {
+          "label": "conditional/6/repeat",
+          "first": "HEADBUTT",
+          "value": 10.937735557556152,
+          "law": [
+            [
+              "C",
+              "008da43580848f33ec4938e2c675ca869816de61ec4879a146f319d0cbe855ba",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "258f5a0002913f71cc8d75d4aa1cf899215a92b9ed82a3d527b2413edb1ebad7",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "49ce1624b3b08af22bc043d118730c544a85184a4508088a2844a04182f9f5d9",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "50e4d55d67fb988270503848923007a917cedc0fdb92fcf6fcedc2770eef8171",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "7d9f6599161f7d7e0182883b3660c462d9345403b339556982eb50fccff6ac71",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "98f23d77d0c893feece3e5942b7ba31b619a022ab186973900e55063070955f7",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "d0edac949172e8755fefebc7c85efb3c2d25b5c36a060f209c493e25e08d4644",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "dd7fdbb77bd81ba53016b2ac313fdac7ab60fdcfbf213d518c98aca4ea67598b",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "e0d2f463ac9dda34bd8d7cfbc35bd0848994dd6dbe26b708c33a1156265555dc",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "ed9217e7c5e68d866cf2098b56a43550b4ad45425e20a8d0b8609d412b3725d2",
+              0.0,
+              0.1
+            ]
+          ],
+          "steps": [
+            [
+              "combat",
+              {
+                "index": 6,
+                "kind": "play_card",
+                "card": 4,
+                "target": 0,
+                "choice": null,
+                "potion": null,
+                "cost": 1,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": "enemy",
+                "target_type": "AnyEnemy"
+              }
+            ],
+            [
+              "choice",
+              {
+                "index": 3,
+                "kind": "select_candidate",
+                "card": null,
+                "target": null,
+                "choice": 3,
+                "potion": null,
+                "cost": null,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": null,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": null
+              }
+            ],
+            [
+              "choice",
+              {
+                "index": 0,
+                "kind": "confirm_selection",
+                "card": null,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": null,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": null,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": null
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 4,
+                "kind": "play_card",
+                "card": 2,
+                "target": 1,
+                "choice": null,
+                "potion": null,
+                "cost": 1,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": "enemy",
+                "target_type": "AnyEnemy"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 2,
+                "kind": "play_card",
+                "card": 2,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": 0,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": "Self"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 1,
+                "kind": "play_card",
+                "card": 1,
+                "target": 1,
+                "choice": null,
+                "potion": null,
+                "cost": 1,
+                "preview": {
+                  "damage_per_hit": 9,
+                  "hits": 1,
+                  "block": null,
+                  "draw": null
+                },
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": "enemy",
+                "target_type": "AnyEnemy"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 0,
+                "kind": "end_turn",
+                "card": null,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": null,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": null,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": null
+              }
+            ]
+          ],
+          "reason": "end",
+          "matched_C": true
+        },
+        {
+          "label": "conditional/6/attack",
+          "first": "HEADBUTT",
+          "value": 7.912207603454591,
+          "law": [
+            [
+              "C",
+              "258f5a0002913f71cc8d75d4aa1cf899215a92b9ed82a3d527b2413edb1ebad7",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "2d3267f0c3386fcca435a057a6bddf37b27df92afe00a6dce1c41e96b6c94c2e",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "49ce1624b3b08af22bc043d118730c544a85184a4508088a2844a04182f9f5d9",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "60c949dc7347b6f8f42919550052083c37bbd9e3647053d4ec618cc0201f5287",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "7d9f6599161f7d7e0182883b3660c462d9345403b339556982eb50fccff6ac71",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "8033fba3e139e47fe79778e586aac5ee7f522cc43cfff457cc6ba59abe29a92e",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "98f23d77d0c893feece3e5942b7ba31b619a022ab186973900e55063070955f7",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "9b48d15f7122ee4df070b52a38f22e3b9275fd72fce06432b5093aecc02476fb",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "e0d2f463ac9dda34bd8d7cfbc35bd0848994dd6dbe26b708c33a1156265555dc",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "ed9217e7c5e68d866cf2098b56a43550b4ad45425e20a8d0b8609d412b3725d2",
+              0.0,
+              0.1
+            ]
+          ],
+          "steps": [
+            [
+              "combat",
+              {
+                "index": 6,
+                "kind": "play_card",
+                "card": 4,
+                "target": 0,
+                "choice": null,
+                "potion": null,
+                "cost": 1,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": "enemy",
+                "target_type": "AnyEnemy"
+              }
+            ],
+            [
+              "choice",
+              {
+                "index": 7,
+                "kind": "select_candidate",
+                "card": null,
+                "target": null,
+                "choice": 7,
+                "potion": null,
+                "cost": null,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": null,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": null
+              }
+            ],
+            [
+              "choice",
+              {
+                "index": 0,
+                "kind": "confirm_selection",
+                "card": null,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": null,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": null,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": null
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 5,
+                "kind": "play_card",
+                "card": 3,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": 0,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": "Self"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 2,
+                "kind": "play_card",
+                "card": 1,
+                "target": 1,
+                "choice": null,
+                "potion": null,
+                "cost": 1,
+                "preview": {
+                  "damage_per_hit": 9,
+                  "hits": 1,
+                  "block": null,
+                  "draw": null
+                },
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": "enemy",
+                "target_type": "AnyEnemy"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 1,
+                "kind": "play_card",
+                "card": 1,
+                "target": 1,
+                "choice": null,
+                "potion": null,
+                "cost": 1,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": "enemy",
+                "target_type": "AnyEnemy"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 0,
+                "kind": "end_turn",
+                "card": null,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": null,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": null,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": null
+              }
+            ]
+          ],
+          "reason": "end",
+          "matched_C": true
+        },
+        {
+          "label": "conditional/5/end",
+          "first": "BATTLE_TRANCE",
+          "value": -45.599317932128905,
+          "law": [
+            [
+              "C",
+              "18ce28bb934f19c43161b2a17869b43c89fe5e63f4d13317c7e6e1d94f58cc63",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "296ba0162c90a5170f522fdfe82c4725c9c755fc6521b0270878e8a314252c50",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "85e5faed622a5b9530935dde4e2c0f26b4f045a8dd463145b66e2ce13f9ad697",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "98d231cccee420b9cdefae0d3ff99d0c50cee1ee0ce949b5e11f8fc35ec20912",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "a3e8a5178a53531ef8a064dd91e8a7415b08868b3598c7152b7edb804817267e",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "bd588176efdd24c9b695a91e4300e0c14472c4c6c58f701d0d4e7ec2e75906d7",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "e8b12335bce33243a2aaf0474582bed3c9ade9c05e150673336520704995aead",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "eb0b9897fcbb3452189ca5c2c45e0c05b8c4066dc36cefa4bf28b6655ca99119",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "f3760226ee3003686e5b55c5ab5709fef1d704999fc65b928b4830dc0dd7ce93",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "fb978e649a07a96bc88f5a3c58429b183098dd84c52a6706901be85750562006",
+              0.0,
+              0.1
+            ]
+          ],
+          "steps": [
+            [
+              "combat",
+              {
+                "index": 5,
+                "kind": "play_card",
+                "card": 3,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": 0,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": "Self"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 12,
+                "kind": "end_turn",
+                "card": null,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": null,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": null,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": null
+              }
+            ]
+          ],
+          "reason": "end",
+          "matched_C": true
+        },
+        {
+          "label": "conditional/5/block",
+          "first": "BATTLE_TRANCE",
+          "value": 6.914671421051026,
+          "law": [
+            [
+              "C",
+              "06acdb98f468cef33dd1b62f31aa245cf27114d5aa7c0b2aec23ecb4ee3ba8ba",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "085fe61badb0b3c56c928f0175439f649e108c8b9309ae0550732d59b2d2d8dc",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "16110421636c543b0c402caf6fbf5897594da692c3a83381d86200f290599ee2",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "1e43372c69c58384d325bef78de3920d8b14385fa8d021265fd6534336ea9331",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "321148e7df258ad368a72784f7f6b07a09865865d606ee60c286d07d08ca5199",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "691de05a314eb4d3858dc65e575860c34f28835d15566ade1fd7c3f40f28c725",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "a3909b1276de5f109eed3a3ce9c66f70efa2a1411a3d81defc3cb53e7b0b64b7",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "c5741d4a912df8369d89c2c69f3ede3d444c71a0db0aa196f9e3e5f419aebfcb",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "e089efcf8cc86d5c7341c146067f27522575ec2e9c41580e144c6e49816f2f0c",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "e2a49d23ffdcfd473d1bd31fc410d6574d225600b7b46d5b03c8862377d5d3a7",
+              0.0,
+              0.1
+            ]
+          ],
+          "steps": [
+            [
+              "combat",
+              {
+                "index": 5,
+                "kind": "play_card",
+                "card": 3,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": 0,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": "Self"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 4,
+                "kind": "play_card",
+                "card": 2,
+                "target": 1,
+                "choice": null,
+                "potion": null,
+                "cost": 1,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": "enemy",
+                "target_type": "AnyEnemy"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 9,
+                "kind": "play_card",
+                "card": 5,
+                "target": 1,
+                "choice": null,
+                "potion": null,
+                "cost": 1,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": "enemy",
+                "target_type": "AnyEnemy"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 1,
+                "kind": "play_card",
+                "card": 1,
+                "target": 1,
+                "choice": null,
+                "potion": null,
+                "cost": 1,
+                "preview": {
+                  "damage_per_hit": 9,
+                  "hits": 1,
+                  "block": null,
+                  "draw": null
+                },
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": "enemy",
+                "target_type": "AnyEnemy"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 0,
+                "kind": "end_turn",
+                "card": null,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": null,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": null,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": null
+              }
+            ]
+          ],
+          "reason": "end",
+          "matched_C": true
+        },
+        {
+          "label": "conditional/5/attack",
+          "first": "BATTLE_TRANCE",
+          "value": -21.44722719192505,
+          "law": [
+            [
+              "C",
+              "04852768d37d208ffd5fe402cbd9bfe7c2c708e60da0baab6ca8cb15a7a7c3d2",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "16110421636c543b0c402caf6fbf5897594da692c3a83381d86200f290599ee2",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "172ca8e337a17c8b9b394c6cd7806190402c4f1caf4d4cf6411a50008ba0c571",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "408f2cfa93a63098faa7394d8ee300daf830bfa793f1731e1a6ce353d8e7128a",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "65559c813b20c1fa3f2ba168ba4061e160098e16a4595480f3594d1a79fb3ea7",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "691de05a314eb4d3858dc65e575860c34f28835d15566ade1fd7c3f40f28c725",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "addfc8e5795dd12a848ee3f48aafe7cd572cf18118a53600c50c8eda4cff409e",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "b9b8f045d189035c0aa7396dc31d9d5b798efd0b7d693324d6352169f8a7bd3f",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "e089efcf8cc86d5c7341c146067f27522575ec2e9c41580e144c6e49816f2f0c",
+              0.0,
+              0.1
+            ],
+            [
+              "C",
+              "e2a49d23ffdcfd473d1bd31fc410d6574d225600b7b46d5b03c8862377d5d3a7",
+              0.0,
+              0.1
+            ]
+          ],
+          "steps": [
+            [
+              "combat",
+              {
+                "index": 5,
+                "kind": "play_card",
+                "card": 3,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": 0,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": "Self"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 2,
+                "kind": "play_card",
+                "card": 1,
+                "target": 1,
+                "choice": null,
+                "potion": null,
+                "cost": 1,
+                "preview": {
+                  "damage_per_hit": 9,
+                  "hits": 1,
+                  "block": null,
+                  "draw": null
+                },
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": "enemy",
+                "target_type": "AnyEnemy"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 7,
+                "kind": "play_card",
+                "card": 4,
+                "target": 1,
+                "choice": null,
+                "potion": null,
+                "cost": 2,
+                "preview": {
+                  "damage_per_hit": 8,
+                  "hits": 1,
+                  "block": null,
+                  "draw": null
+                },
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": "enemy",
+                "target_type": "AnyEnemy"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 0,
+                "kind": "end_turn",
+                "card": null,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": null,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": null,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": null
+              }
+            ]
+          ],
+          "reason": "end",
+          "matched_C": true
+        }
+      ]
+    },
+    "rescue": {
+      "main": "conditional/4/chosen",
+      "query": {
+        "reference_coverage": 0.9999999999999998,
+        "coverage": 0.9999999999999998,
+        "reference": -37.63873114952675,
+        "value": -31.883436936598557,
+        "reference_mass": {
+          "C": 0.9999999999999998
+        },
+        "candidate_mass": {
+          "C": 0.9999999999999998
+        },
+        "use": true,
+        "calls": 423,
+        "settles": 40,
+        "unique": 45,
+        "policy_requests": 91,
+        "policy_calls": 97,
+        "policy_ends": 36,
+        "settled_ends": 36,
+        "grouped": 0,
+        "conditional": true,
+        "full_policies": 4,
+        "attempted_policies": 4
+      },
+      "witnesses": [
+        {
+          "label": "conditional/4/chosen",
+          "first": "SHRUG_IT_OFF",
+          "value": -31.883436936598557,
+          "law": [
+            [
+              "C",
+              "1f6fdaae62cd3d676addc288db55e259d1175e66d094aa0f109525e13c08d9b8",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "225aaf8bfd5d62db5b3e8f18990fee5087e6dfdf5d326122b04a053e2b3f9810",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "35785a94166435bbc2ccadd4731bdcb8ad565e2ab55aed7b0de08ff80fdb7374",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "4876d5f54af7e0aec9d5d159a976ed795afae95d915096b5d9d85d9fd71d540e",
+              0.0,
+              0.15384615384615385
+            ],
+            [
+              "C",
+              "4d148a3c4f3fb466d307fb606dbdc9982168cc23948e16a7eb03baa1a2ba5be5",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "4fd112a7ad8a5c53957f1951dda473ee88e24074bef7a7e088405374091e17ab",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "57c02fa77e6f058d4438a727754d8f4b579b7372d92cce91991f54290a83b24c",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "7b061faf2e7dad648f0c63a2f0e894b34b7adea42c52d4a0f1462226e0ee9058",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "895f7cf06689ac7a9b1b4a8c62afd9a0cb911d736397e44f010ab8136b605ab5",
+              0.0,
+              0.15384615384615385
+            ],
+            [
+              "C",
+              "8a13779d2f3746398db600ad044a0b98f26ddcbd701a6dc5bbc961967b21e13c",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "c15bac9c6157778c114298171e6b7bd02b6017de4e5e2cb1e874e26c1223579b",
+              0.0,
+              0.07692307692307693
+            ]
+          ],
+          "steps": [
+            [
+              "combat",
+              {
+                "index": 4,
+                "kind": "play_card",
+                "card": 4,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": 1,
+                "preview": {
+                  "damage_per_hit": null,
+                  "hits": null,
+                  "block": 6,
+                  "draw": 1
+                },
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": "Self"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 2,
+                "kind": "play_card",
+                "card": 2,
+                "target": 0,
+                "choice": null,
+                "potion": null,
+                "cost": 2,
+                "preview": {
+                  "damage_per_hit": 10,
+                  "hits": 1,
+                  "block": null,
+                  "draw": null
+                },
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": "enemy",
+                "target_type": "AnyEnemy"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 0,
+                "kind": "end_turn",
+                "card": null,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": null,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": null,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": null
+              }
+            ]
+          ],
+          "reason": "end",
+          "matched_C": true
+        },
+        {
+          "label": "conditional/4/end",
+          "first": "SHRUG_IT_OFF",
+          "value": -40.66795671903171,
+          "law": [
+            [
+              "C",
+              "2edbedb3b183d8f206c5ddae41dc64fc2b44060c55736da3ef5732bfcfaee4ee",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "2fc67e261fd9bba3a2ee77a51ad2a3e859da6ad1dbceb43cd996c1b479fc81bc",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "4857bec181b69646805065b3f00ad1a678de11664715e1df3429cc4d9795cc8f",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "6f31795115696e41ab1b658bd5e443492edea8384a93403f3749367bf4fee7be",
+              0.0,
+              0.15384615384615385
+            ],
+            [
+              "C",
+              "6f447f8ac1b87a5fe5b9d476fc1a4e2717cf5d7f7547fb145963decf4d3e3172",
+              0.0,
+              0.15384615384615385
+            ],
+            [
+              "C",
+              "963dd9f25f8701918e9420aa36aa18a046e67548fa19edef42f39f26c28886b3",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "a363ad78c28d38d4874cf982d5172bb73efc60ee0cd74618c8f80eef4f294c2e",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "cdb7cd532b47ffd369a5c8194910a129d536af099120b34ddac2dc1ee83ff7a3",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "cffe8369a89dfc489ec4b7a8bc1c7680abb2abe7f24ae110e2c141e311e6f3b3",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "f7047ed368f2e8d70b431ef2cf7cd0809b40c4f51b99f9a8572e282d6a27df82",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "ff2b266f93f0dbe5baa45c74543ae81b4a2f4cbff093eeba893c8cbf6c6a3ac0",
+              0.0,
+              0.07692307692307693
+            ]
+          ],
+          "steps": [
+            [
+              "combat",
+              {
+                "index": 4,
+                "kind": "play_card",
+                "card": 4,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": 1,
+                "preview": {
+                  "damage_per_hit": null,
+                  "hits": null,
+                  "block": 6,
+                  "draw": 1
+                },
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": "Self"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 5,
+                "kind": "end_turn",
+                "card": null,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": null,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": null,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": null
+              }
+            ]
+          ],
+          "reason": "end",
+          "matched_C": true
+        },
+        {
+          "label": "conditional/4/block",
+          "first": "SHRUG_IT_OFF",
+          "value": -32.78629244290865,
+          "law": [
+            [
+              "C",
+              "04948e0a40a7e71319de4dc831af2bd4c1941daeb16248baabab5619f2ad364d",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "4876d5f54af7e0aec9d5d159a976ed795afae95d915096b5d9d85d9fd71d540e",
+              0.0,
+              0.15384615384615385
+            ],
+            [
+              "C",
+              "4fd112a7ad8a5c53957f1951dda473ee88e24074bef7a7e088405374091e17ab",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "7b061faf2e7dad648f0c63a2f0e894b34b7adea42c52d4a0f1462226e0ee9058",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "b0bc40171561cc776b5152df24d45670ee4023daae336650350159f13740437b",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "c18705b2e9c06857c595d5a2a61c68a553e425c03efdb4030701e342fb216a8d",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "d307e9bc5e57558730dfcbf30b520150c374b262966c2dd0cd43942eaa38b29f",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "e1643ee6c9c6c16a3066c0ceb4f57b7d3d1d36bd7a1c6feebe17d0ffc2202aa2",
+              0.0,
+              0.15384615384615385
+            ],
+            [
+              "C",
+              "ea4daece27cc747ac69b5833415efde0953273ccd23bde248c01f8c4a9ee4774",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "ee53aa757f04a10cd6216f879f7508296b5a6edad1f86adbb8c5875789e8384e",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "fa49eb066083f7dbbfc8b433f715a14df093a4e6e722ae72ac6de8ec2963fc7b",
+              0.0,
+              0.07692307692307693
+            ]
+          ],
+          "steps": [
+            [
+              "combat",
+              {
+                "index": 4,
+                "kind": "play_card",
+                "card": 4,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": 1,
+                "preview": {
+                  "damage_per_hit": null,
+                  "hits": null,
+                  "block": 6,
+                  "draw": 1
+                },
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": "Self"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 1,
+                "kind": "play_card",
+                "card": 1,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": 1,
+                "preview": {
+                  "damage_per_hit": null,
+                  "hits": null,
+                  "block": 3,
+                  "draw": null
+                },
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": "Self"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 1,
+                "kind": "play_card",
+                "card": 2,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": 1,
+                "preview": {
+                  "damage_per_hit": null,
+                  "hits": null,
+                  "block": 3,
+                  "draw": null
+                },
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": "Self"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 0,
+                "kind": "end_turn",
+                "card": null,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": null,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": null,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": null
+              }
+            ]
+          ],
+          "reason": "end",
+          "matched_C": true
+        },
+        {
+          "label": "conditional/4/repeat",
+          "first": "SHRUG_IT_OFF",
+          "value": -34.679109426645134,
+          "law": [
+            [
+              "C",
+              "04948e0a40a7e71319de4dc831af2bd4c1941daeb16248baabab5619f2ad364d",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "486ced0d99a62bf1c4d06ffb77c3bbc3e2fc29fbe1a223b3c9ef340764f8fc64",
+              0.0,
+              0.15384615384615385
+            ],
+            [
+              "C",
+              "4fd112a7ad8a5c53957f1951dda473ee88e24074bef7a7e088405374091e17ab",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "7b061faf2e7dad648f0c63a2f0e894b34b7adea42c52d4a0f1462226e0ee9058",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "b0bc40171561cc776b5152df24d45670ee4023daae336650350159f13740437b",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "c18705b2e9c06857c595d5a2a61c68a553e425c03efdb4030701e342fb216a8d",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "d307e9bc5e57558730dfcbf30b520150c374b262966c2dd0cd43942eaa38b29f",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "e1643ee6c9c6c16a3066c0ceb4f57b7d3d1d36bd7a1c6feebe17d0ffc2202aa2",
+              0.0,
+              0.15384615384615385
+            ],
+            [
+              "C",
+              "ea4daece27cc747ac69b5833415efde0953273ccd23bde248c01f8c4a9ee4774",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "ee53aa757f04a10cd6216f879f7508296b5a6edad1f86adbb8c5875789e8384e",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "fa49eb066083f7dbbfc8b433f715a14df093a4e6e722ae72ac6de8ec2963fc7b",
+              0.0,
+              0.07692307692307693
+            ]
+          ],
+          "steps": [
+            [
+              "combat",
+              {
+                "index": 4,
+                "kind": "play_card",
+                "card": 4,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": 1,
+                "preview": {
+                  "damage_per_hit": null,
+                  "hits": null,
+                  "block": 6,
+                  "draw": 1
+                },
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": "Self"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 1,
+                "kind": "play_card",
+                "card": 1,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": 1,
+                "preview": {
+                  "damage_per_hit": null,
+                  "hits": null,
+                  "block": 3,
+                  "draw": null
+                },
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": "Self"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 1,
+                "kind": "play_card",
+                "card": 2,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": 1,
+                "preview": {
+                  "damage_per_hit": null,
+                  "hits": null,
+                  "block": 3,
+                  "draw": null
+                },
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": "Self"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 0,
+                "kind": "end_turn",
+                "card": null,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": null,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": null,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": null
+              }
+            ]
+          ],
+          "reason": "end",
+          "matched_C": true
+        },
+        {
+          "label": "conditional/4/attack",
+          "first": "SHRUG_IT_OFF",
+          "value": -34.01842264028696,
+          "law": [
+            [
+              "C",
+              "1f6fdaae62cd3d676addc288db55e259d1175e66d094aa0f109525e13c08d9b8",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "225aaf8bfd5d62db5b3e8f18990fee5087e6dfdf5d326122b04a053e2b3f9810",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "35785a94166435bbc2ccadd4731bdcb8ad565e2ab55aed7b0de08ff80fdb7374",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "4d148a3c4f3fb466d307fb606dbdc9982168cc23948e16a7eb03baa1a2ba5be5",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "57c02fa77e6f058d4438a727754d8f4b579b7372d92cce91991f54290a83b24c",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "895f7cf06689ac7a9b1b4a8c62afd9a0cb911d736397e44f010ab8136b605ab5",
+              0.0,
+              0.15384615384615385
+            ],
+            [
+              "C",
+              "8a13779d2f3746398db600ad044a0b98f26ddcbd701a6dc5bbc961967b21e13c",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "ac05709ad44cb3b7552b022b6ef323a1a52f74a70193bafbaa2c6a2586f567f9",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "c15bac9c6157778c114298171e6b7bd02b6017de4e5e2cb1e874e26c1223579b",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "f1ab6ac6cf41c023e80f72409ae7600161790cc16d4692142df77a144d8d4fb3",
+              0.0,
+              0.07692307692307693
+            ],
+            [
+              "C",
+              "ff93d590ca8351c2bf34ec0652a0584aff0c4650f499405c491c11e41c2cdb19",
+              0.0,
+              0.15384615384615385
+            ]
+          ],
+          "steps": [
+            [
+              "combat",
+              {
+                "index": 4,
+                "kind": "play_card",
+                "card": 4,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": 1,
+                "preview": {
+                  "damage_per_hit": null,
+                  "hits": null,
+                  "block": 6,
+                  "draw": 1
+                },
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": "Self"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 2,
+                "kind": "play_card",
+                "card": 2,
+                "target": 0,
+                "choice": null,
+                "potion": null,
+                "cost": 2,
+                "preview": {
+                  "damage_per_hit": 10,
+                  "hits": 1,
+                  "block": null,
+                  "draw": null
+                },
+                "choice_zone": null,
+                "star_cost": 0,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": "enemy",
+                "target_type": "AnyEnemy"
+              }
+            ],
+            [
+              "combat",
+              {
+                "index": 0,
+                "kind": "end_turn",
+                "card": null,
+                "target": null,
+                "choice": null,
+                "potion": null,
+                "cost": null,
+                "preview": null,
+                "choice_zone": null,
+                "star_cost": null,
+                "energy_x": false,
+                "star_x": false,
+                "target_side": null,
+                "target_type": null
+              }
+            ]
+          ],
+          "reason": "end",
+          "matched_C": true
+        }
+      ]
+    }
+  },
+  "relic": {
+    "spec": {
+      "act": 1,
+      "act_variant": "UNDERDOCKS",
+      "ascension": 0,
+      "character": "Ironclad",
+      "deck": [
+        {
+          "id": "BATTLE_TRANCE",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "BASH",
+          "upgrade": 0
+        },
+        {
+          "id": "STRIKE_IRONCLAD",
+          "upgrade": 0
+        },
+        {
+          "id": "DEFEND_IRONCLAD",
+          "upgrade": 0
+        }
+      ],
+      "encounter": "SOUL_FYSH_BOSS",
+      "hp": 80,
+      "max_hp": 80,
+      "potions": [],
+      "relics": [
+        "BURNING_BLOOD"
+      ],
+      "schema": 2,
+      "seed": "D5EC6AE575259479"
+    },
+    "projected": [
+      "BURNING_BLOOD"
+    ],
+    "encoded_C_relics": [
+      {
+        "id": "BURNING_BLOOD"
+      }
+    ],
+    "match": true,
+    "rejected": [
+      [
+        "THE_OBSCURA_NORMAL",
+        1,
+        {
+          "mechanism:other_rng": 5
+        }
+      ]
+    ],
+    "ordered_listener": true,
+    "Ordered": {
+      "law": {
+        "7fb41d3922e49a41ed2d35f95d78df6bd714f75e311cb3cb1da79a86fe6807f7": 0.39999999999999997,
+        "e9127d89563d0ece7045ac9b341d6b0ee59ad6cfe6d1aa4c525dec1162814fe4": 0.2,
+        "675fdc29ea4664768b041d61057bfccbfb40d40759e78caa32bd88bf5160e66b": 0.2,
+        "3f3e23459c8136a2540e24d8634c769d855e17eea999c071a1d9b91bea8fe0a1": 0.1,
+        "96eab0484e817e23d192ca85fb6f542bd0a352037ee4dfaa099028e7c64100bd": 0.1
+      },
+      "requests": 48,
+      "grouped": 0,
+      "kinds": {
+        "C": 18
+      }
+    },
+    "Turn": {
+      "law": {
+        "3f3e23459c8136a2540e24d8634c769d855e17eea999c071a1d9b91bea8fe0a1": 0.1,
+        "7fb41d3922e49a41ed2d35f95d78df6bd714f75e311cb3cb1da79a86fe6807f7": 0.4,
+        "96eab0484e817e23d192ca85fb6f542bd0a352037ee4dfaa099028e7c64100bd": 0.1,
+        "e9127d89563d0ece7045ac9b341d6b0ee59ad6cfe6d1aa4c525dec1162814fe4": 0.2,
+        "675fdc29ea4664768b041d61057bfccbfb40d40759e78caa32bd88bf5160e66b": 0.2
+      },
+      "requests": 11,
+      "grouped": 1,
+      "kinds": {
+        "C": 5
+      }
+    }
+  },
+  "seconds": 21.058106399999815
+}

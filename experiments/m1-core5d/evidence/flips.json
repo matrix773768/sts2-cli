@@ -1,0 +1,417 @@
+{
+  "cases": [
+    {
+      "i": 9,
+      "family": "e290e2e605997c38cf89842a83f3761f71fab2620283c8800c4a9409d4eb0256",
+      "seed": "10E7EE3122D946BE",
+      "encounter": "MYTES_NORMAL",
+      "turn": 2,
+      "hp": 44,
+      "arms": {
+        "V2": {
+          "main": "graph/0",
+          "used": true,
+          "ref_coverage": 1.0,
+          "reference": -7.956798315048218,
+          "best": 17.62494468688965,
+          "actual": [
+            {
+              "card": {
+                "affliction": null,
+                "affliction_amount": null,
+                "cost": 1,
+                "enchantment": null,
+                "enchantment_amount": null,
+                "id": "ONE_TWO_PUNCH",
+                "upgrade": 0
+              },
+              "choice": null,
+              "choice_zone": null,
+              "cost": 1,
+              "energy_x": false,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "Self"
+            },
+            {
+              "card": {
+                "affliction": null,
+                "affliction_amount": null,
+                "cost": 2,
+                "enchantment": null,
+                "enchantment_amount": null,
+                "id": "UPPERCUT",
+                "upgrade": 0
+              },
+              "choice": null,
+              "choice_zone": null,
+              "cost": 2,
+              "energy_x": false,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": 0,
+              "target_side": "enemy",
+              "target_type": "AnyEnemy"
+            },
+            {
+              "card": null,
+              "choice": null,
+              "choice_zone": null,
+              "cost": null,
+              "energy_x": false,
+              "kind": "end_turn",
+              "potion": null,
+              "preview": null,
+              "star_cost": null,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": null
+            }
+          ],
+          "suffix": {
+            "V2": {
+              "status": "predicted_win",
+              "hp": 4,
+              "utility": 60.0
+            },
+            "V3": {
+              "status": "predicted_win",
+              "hp": 4,
+              "utility": 60.0
+            }
+          },
+          "cross_values": {
+            "V2": 17.62494468688965,
+            "V3": 24.987735748291016
+          }
+        },
+        "V3": {
+          "main": "conditional/9/chosen",
+          "used": true,
+          "ref_coverage": 1.0,
+          "reference": 17.433759331703186,
+          "best": 33.39332342147827,
+          "actual": [
+            {
+              "card": {
+                "affliction": null,
+                "affliction_amount": null,
+                "cost": 1,
+                "enchantment": null,
+                "enchantment_amount": null,
+                "id": "HAVOC",
+                "upgrade": 0
+              },
+              "choice": null,
+              "choice_zone": null,
+              "cost": 1,
+              "energy_x": false,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "Self"
+            },
+            {
+              "card": {
+                "affliction": null,
+                "affliction_amount": null,
+                "cost": 1,
+                "enchantment": null,
+                "enchantment_amount": null,
+                "id": "STRIKE_IRONCLAD",
+                "upgrade": 1
+              },
+              "choice": null,
+              "choice_zone": null,
+              "cost": 1,
+              "energy_x": false,
+              "kind": "play_card",
+              "potion": null,
+              "preview": {
+                "block": null,
+                "damage_per_hit": 9,
+                "draw": null,
+                "hits": 1
+              },
+              "star_cost": 0,
+              "star_x": false,
+              "target": 1,
+              "target_side": "enemy",
+              "target_type": "AnyEnemy"
+            },
+            {
+              "card": {
+                "affliction": null,
+                "affliction_amount": null,
+                "cost": 1,
+                "enchantment": null,
+                "enchantment_amount": null,
+                "id": "HEADBUTT",
+                "upgrade": 0
+              },
+              "choice": null,
+              "choice_zone": null,
+              "cost": 1,
+              "energy_x": false,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": 1,
+              "target_side": "enemy",
+              "target_type": "AnyEnemy"
+            },
+            {
+              "card": null,
+              "choice": {
+                "affliction": null,
+                "affliction_amount": null,
+                "cost": null,
+                "enchantment": null,
+                "enchantment_amount": null,
+                "id": "FLAME_BARRIER",
+                "upgrade": 1
+              },
+              "choice_zone": null,
+              "cost": null,
+              "energy_x": false,
+              "kind": "select_candidate",
+              "potion": null,
+              "preview": null,
+              "star_cost": null,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": null
+            },
+            {
+              "card": null,
+              "choice": null,
+              "choice_zone": null,
+              "cost": null,
+              "energy_x": false,
+              "kind": "confirm_selection",
+              "potion": null,
+              "preview": null,
+              "star_cost": null,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": null
+            },
+            {
+              "card": null,
+              "choice": null,
+              "choice_zone": null,
+              "cost": null,
+              "energy_x": false,
+              "kind": "end_turn",
+              "potion": null,
+              "preview": null,
+              "star_cost": null,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": null
+            }
+          ],
+          "suffix": {
+            "V2": {
+              "status": "death",
+              "hp": 0,
+              "utility": -50
+            },
+            "V3": {
+              "status": "death",
+              "hp": 0,
+              "utility": -50
+            }
+          },
+          "cross_values": {
+            "V2": 3.1922218799591064,
+            "V3": 33.39332342147827
+          }
+        }
+      }
+    },
+    {
+      "i": 67,
+      "family": "56fb18b9bc3c3477fc393243308c93cd6bd2bb08c3d4073170d4cfb715099957",
+      "seed": "FF6BC692BD204CBC",
+      "encounter": "VANTOM_BOSS",
+      "turn": 2,
+      "hp": 41,
+      "arms": {
+        "V2": {
+          "main": "graph/0",
+          "used": true,
+          "ref_coverage": 1.0,
+          "reference": -6.877225875854492,
+          "best": 20.677440643310547,
+          "actual": [
+            {
+              "card": {
+                "affliction": null,
+                "affliction_amount": null,
+                "cost": 3,
+                "enchantment": null,
+                "enchantment_amount": null,
+                "id": "DEMON_FORM",
+                "upgrade": 0
+              },
+              "choice": null,
+              "choice_zone": null,
+              "cost": 3,
+              "energy_x": false,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "Self"
+            },
+            {
+              "card": null,
+              "choice": null,
+              "choice_zone": null,
+              "cost": null,
+              "energy_x": false,
+              "kind": "end_turn",
+              "potion": null,
+              "preview": null,
+              "star_cost": null,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": null
+            }
+          ],
+          "suffix": {
+            "V2": {
+              "status": "predicted_win",
+              "hp": 2,
+              "utility": 58.0
+            },
+            "V3": {
+              "status": "predicted_win",
+              "hp": 2,
+              "utility": 58.0
+            }
+          },
+          "cross_values": {
+            "V2": 20.677440643310547,
+            "V3": 48.21219253540039
+          }
+        },
+        "V3": {
+          "main": "graph/1",
+          "used": true,
+          "ref_coverage": 1.0,
+          "reference": 45.290428161621094,
+          "best": 59.360286712646484,
+          "actual": [
+            {
+              "card": {
+                "affliction": null,
+                "affliction_amount": null,
+                "cost": 1,
+                "enchantment": null,
+                "enchantment_amount": null,
+                "id": "CRUELTY",
+                "upgrade": 0
+              },
+              "choice": null,
+              "choice_zone": null,
+              "cost": 1,
+              "energy_x": false,
+              "kind": "play_card",
+              "potion": null,
+              "preview": null,
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "Self"
+            },
+            {
+              "card": {
+                "affliction": null,
+                "affliction_amount": null,
+                "cost": 2,
+                "enchantment": null,
+                "enchantment_amount": null,
+                "id": "FLAME_BARRIER",
+                "upgrade": 0
+              },
+              "choice": null,
+              "choice_zone": null,
+              "cost": 2,
+              "energy_x": false,
+              "kind": "play_card",
+              "potion": null,
+              "preview": {
+                "block": 12,
+                "damage_per_hit": null,
+                "draw": null,
+                "hits": null
+              },
+              "star_cost": 0,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": "Self"
+            },
+            {
+              "card": null,
+              "choice": null,
+              "choice_zone": null,
+              "cost": null,
+              "energy_x": false,
+              "kind": "end_turn",
+              "potion": null,
+              "preview": null,
+              "star_cost": null,
+              "star_x": false,
+              "target": null,
+              "target_side": null,
+              "target_type": null
+            }
+          ],
+          "suffix": {
+            "V2": {
+              "status": "predicted_win",
+              "hp": 2,
+              "utility": 58.0
+            },
+            "V3": {
+              "status": "death",
+              "hp": 0,
+              "utility": -50
+            }
+          },
+          "cross_values": {
+            "V2": 13.587844848632812,
+            "V3": 59.360286712646484
+          }
+        }
+      }
+    }
+  ],
+  "seconds": 25.654180699995777
+}
