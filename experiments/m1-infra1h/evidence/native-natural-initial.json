@@ -1,0 +1,83 @@
+{
+  "source": "infra1h-B-natural-h-kernel3",
+  "rows": [
+    {
+      "i": 0,
+      "expected": {
+        "turn": 5,
+        "hp": 0,
+        "max_hp": 80,
+        "block": 0,
+        "energy": 0,
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "gold": 99
+      },
+      "status": "death",
+      "trace_length": 24,
+      "matched": false,
+      "error": "AssertionError()",
+      "frame": [
+        "  File \"C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h\\native_check.py\", line 43, in run",
+        "    assert st[\"status\"]==item[\"status\"] and st[\"terminal_observation\"]==item[\"terminal\"]",
+        "AssertionError"
+      ],
+      "seconds": 6.727379000003566
+    },
+    {
+      "i": 154,
+      "expected": {
+        "turn": 7,
+        "hp": 28,
+        "max_hp": 80,
+        "block": 0,
+        "energy": 2,
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "gold": 99
+      },
+      "status": "predicted_win",
+      "trace_length": 34,
+      "matched": false,
+      "error": "AssertionError()",
+      "frame": [
+        "  File \"C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h\\native_check.py\", line 43, in run",
+        "    assert st[\"status\"]==item[\"status\"] and st[\"terminal_observation\"]==item[\"terminal\"]",
+        "AssertionError"
+      ],
+      "seconds": 3.0427281000011135
+    },
+    {
+      "i": 190,
+      "expected": {
+        "turn": 9,
+        "hp": 17,
+        "max_hp": 80,
+        "block": 15,
+        "energy": 1,
+        "potions": [
+          null,
+          null,
+          null
+        ],
+        "gold": 99
+      },
+      "status": "predicted_win",
+      "trace_length": 62,
+      "matched": false,
+      "error": "AssertionError()",
+      "frame": [
+        "  File \"C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h\\native_check.py\", line 43, in run",
+        "    assert st[\"status\"]==item[\"status\"] and st[\"terminal_observation\"]==item[\"terminal\"]",
+        "AssertionError"
+      ],
+      "seconds": 2.979942999998457
+    }
+  ]
+}

@@ -44,7 +44,14 @@ def run(a):
     else:
         ids=sorted(i for group in panel[a.kind].values() for i in group)
         if a.smoke:ids=[154] if a.kind=="natural" else [65]
+    sample=getattr(a,"sample",None)
+    if sample is not None:
+        if not (a.variant or "").startswith("h-") or a.smoke or not 1<sample<len(ids):
+            raise ValueError("Expected a bounded subset of an open INFRA panel")
+        ids=[ids[j*(len(ids)-1)//(sample-1)] for j in range(sample)]
     if len(set(ids))!=len(ids) or a.workers>len(ids):raise ValueError("Invalid assignments")
+    if (getattr(a,"variant",None) or "").startswith("h-") and (ROOT/"logs/infra1h"/("skip-"+a.tag)).exists():
+        raise SystemExit("Superseded before worker launch: "+a.tag)
     run_dir=ROOT/"logs/infra0-runs"/a.tag
     run_dir.mkdir(parents=True,exist_ok=False)
     tasks=[]
@@ -114,6 +121,7 @@ if __name__=="__main__":
     parser.add_argument("arm",choices=["V2","V2low"])
     parser.add_argument("mode",choices=["baseline","aggregate","diagnostic"])
     parser.add_argument("--workers",type=int,choices=[1,2,4],default=1)
-    parser.add_argument("--variant",choices=["batch","batch-attribution","g2-check","shadow","reuse"])
+    parser.add_argument("--variant",choices=["batch","batch-attribution","g2-check","shadow","reuse","h-scalar","h-batch","h-engine","h-kernel2","h-kernel3","h-kernel4","h-kernel4-g2","h-kernel5","h-kernel5-g2","h-kernel6","h-kernel6-g2"])
     parser.add_argument("--smoke",action="store_true")
+    parser.add_argument("--sample",type=int,default=argparse.SUPPRESS)
     run(parser.parse_args())

@@ -11,8 +11,11 @@ def produce(task,folder,battle,pairs,meter,events,finish,on_record,observer=None
     os.environ.update(STS2_CORE5E_RUN=str(folder),STS2_CORE5E_WORLD=str(ROOT/"logs"/
         ("core5e-world-host" if mode=="baseline" else "infra0-world-profile")))
     if task.get("variant"):
-        import execution
-        execution.select_host(task,world=True)
+        if task["variant"].startswith("h-"):
+            from integration import select_host
+        else:
+            from execution import select_host
+        select_host(task,world=True)
     sys.path.insert(0,str(CODE))
     import conditions5e as c
     if audit:

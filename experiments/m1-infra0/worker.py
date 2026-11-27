@@ -37,8 +37,12 @@ def run(task):
         os.environ[k]=str(folder/"tmp")
     experiment=None
     if task.get("variant"):
-        sys.path.insert(0,str(ROOT/"experiments/m1-infra1a"))
-        import execution as experiment
+        if task["variant"].startswith("h-"):
+            sys.path.insert(0,str(ROOT/"experiments/m1-infra1h"))
+            import integration as experiment
+        else:
+            sys.path.insert(0,str(ROOT/"experiments/m1-infra1a"))
+            import execution as experiment
         experiment.select_host(task)
     sys.path.insert(0,str(ROOT/"experiments/m1-core5d"))
     import battle5d as battle
