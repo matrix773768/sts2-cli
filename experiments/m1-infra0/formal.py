@@ -8,6 +8,15 @@ from run import run, ROOT
 from semantic_check import digest
 from summarize import summarize
 
+def semantic_rows(folder):
+    semantics={}
+    for worker in folder.glob("worker-*"):
+        w=json.loads((worker/"worker.json").read_bytes())
+        for r in map(json.loads,gzip.open(worker/"evidence"/w["closed"]["file"])):
+            r.pop("seconds",None)
+            semantics[r["i"]]=digest(r)
+    return semantics
+
 def formal(tag):
     import re
     if not re.fullmatch("[a-zA-Z0-9_-]+",tag):raise ValueError("Invalid campaign tag")
@@ -30,12 +39,7 @@ def formal(tag):
         folder=root/name
         receipt=json.loads((folder/"result.json").read_bytes())
         spent+=receipt["process_worker_s"]
-        semantics={}
-        for worker in folder.glob("worker-*"):
-            w=json.loads((worker/"worker.json").read_bytes())
-            for r in map(json.loads,gzip.open(worker/"evidence"/w["closed"]["file"])):
-                r.pop("seconds",None)
-                semantics[r["i"]]=digest(r)
+        semantics=semantic_rows(folder)
         key=(kind,arm)
         if seen.setdefault(key,semantics)!=semantics:raise RuntimeError("Treatment changed paired production records")
         results.append(dict(kind=kind,arm=arm,mode=mode,n=n,worker_s=receipt["process_worker_s"],
@@ -57,4 +61,16 @@ def formal(tag):
 if __name__=="__main__":
     parser=ArgumentParser()
     parser.add_argument("tag")
-    formal(parser.parse_args().tag)
+    parser.add_argument("--combined",action="store_true",help="Use the shared 5D/5E budget")
+    args=parser.parse_args()
+    if args.combined:
+        if args.tag!="infra0b":parser.error("Combined campaign tag is infra0b")
+        from campaign import ledger,treatment
+        from finish_campaign import finish
+        for kind in ("natural","pairs"):
+            for mode in ("baseline","aggregate"):
+                if not any(r.get("success") and r.get("kind")==kind and r.get("mode")==mode
+                           and r.get("arm")=="V2" and not r.get("smoke") for r in ledger()):
+                    if not treatment(kind,mode):raise SystemExit("Campaign budget exhausted")
+        finish()
+    else:formal(args.tag)

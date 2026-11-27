@@ -32,7 +32,7 @@ def run(task):
     roots=task["ids"]
     mode=task["mode"]
     os.environ.update(STS2_CORE5D_RUN=str(folder),STS2_CORE5C_HOST=str(ROOT/"logs"/
-        ("core5c-host" if mode=="baseline" else "infra0-profile-host")))
+        ("core5c-host" if mode=="baseline" or task["kind"] not in ("natural","pairs") else "infra0-profile-host")))
     for k in ("TMP","TEMP","TMPDIR","TORCH_HOME","XDG_CACHE_HOME","DOTNET_CLI_HOME"):
         os.environ[k]=str(folder/"tmp")
     sys.path.insert(0,str(ROOT/"experiments/m1-core5d"))
@@ -74,8 +74,11 @@ def run(task):
     if diag:diag.enable()
     if task["kind"]=="natural":
         battle.run("train",task["arm"],indices=roots,on_closed=finish,on_record=on_record)
-    else:
+    elif task["kind"]=="pairs":
         pairs.run("train",0,1,indices=set(roots),parents=ROOT/"experiments/m1-core5d/evidence",on_closed=finish,on_record=on_record)
+    else:
+        from world_measure import produce
+        produce(task,folder,battle,pairs,meter,events,finish,on_record)
     if diag:
         diag.disable()
         diag.dump_stats(str(folder/"diagnostic.prof"))

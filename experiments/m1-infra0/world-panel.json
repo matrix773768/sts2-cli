@@ -1,0 +1,304 @@
+{
+  "ids": {
+    "initial-train": [
+      4,
+      10,
+      22,
+      25,
+      30,
+      56,
+      69,
+      73,
+      75,
+      99,
+      108,
+      124
+    ],
+    "initial-dev": [
+      8,
+      11,
+      26,
+      32,
+      34,
+      39
+    ],
+    "audit": [
+      6,
+      57,
+      123,
+      13
+    ]
+  },
+  "population": {
+    "initial-train": {
+      "8": 23,
+      "no_pair": 6,
+      "error": 8,
+      "4": 90,
+      "unmatched": 1
+    },
+    "initial-dev": {
+      "8": 43,
+      "error": 4,
+      "no_pair": 1
+    },
+    "audit": {
+      "noisy": [
+        6,
+        18,
+        31,
+        33,
+        51,
+        57,
+        66,
+        80,
+        97,
+        99,
+        107,
+        123
+      ],
+      "zero": [
+        13,
+        27,
+        37,
+        44
+      ]
+    }
+  },
+  "selected": {
+    "initial-train": [
+      {
+        "i": 4,
+        "stratum": "no_pair",
+        "turn": 0,
+        "prefix": 0,
+        "parent_remaining": 14,
+        "same_first": null,
+        "skips": [
+          "no distinct complete policies",
+          "no distinct complete policies",
+          "no distinct complete policies",
+          "no distinct complete policies"
+        ]
+      },
+      {
+        "i": 10,
+        "stratum": "4",
+        "turn": 2,
+        "prefix": 2,
+        "parent_remaining": 25,
+        "same_first": false,
+        "skips": [
+          "nonexchangeable or deterministic"
+        ]
+      },
+      {
+        "i": 22,
+        "stratum": "unmatched",
+        "turn": 5,
+        "prefix": 15,
+        "parent_remaining": 8,
+        "same_first": false,
+        "skips": []
+      },
+      {
+        "i": 25,
+        "stratum": "4",
+        "turn": 5,
+        "prefix": 15,
+        "parent_remaining": 12,
+        "same_first": false,
+        "skips": []
+      },
+      {
+        "i": 30,
+        "stratum": "4",
+        "turn": 3,
+        "prefix": 12,
+        "parent_remaining": 20,
+        "same_first": false,
+        "skips": []
+      },
+      {
+        "i": 56,
+        "stratum": "8",
+        "turn": 3,
+        "prefix": 7,
+        "parent_remaining": 2,
+        "same_first": false,
+        "skips": []
+      },
+      {
+        "i": 69,
+        "stratum": "error",
+        "turn": 7,
+        "prefix": 24,
+        "parent_remaining": 10,
+        "same_first": true,
+        "skips": []
+      },
+      {
+        "i": 73,
+        "stratum": "error",
+        "turn": 1,
+        "prefix": 0,
+        "parent_remaining": 23,
+        "same_first": false,
+        "skips": [
+          "nonexchangeable or deterministic",
+          "nonexchangeable or deterministic",
+          "no distinct complete policies"
+        ]
+      },
+      {
+        "i": 75,
+        "stratum": "4",
+        "turn": 3,
+        "prefix": 6,
+        "parent_remaining": 5,
+        "same_first": true,
+        "skips": []
+      },
+      {
+        "i": 99,
+        "stratum": "4",
+        "turn": 7,
+        "prefix": 35,
+        "parent_remaining": 13,
+        "same_first": true,
+        "skips": []
+      },
+      {
+        "i": 108,
+        "stratum": "8",
+        "turn": 4,
+        "prefix": 10,
+        "parent_remaining": 5,
+        "same_first": false,
+        "skips": []
+      },
+      {
+        "i": 124,
+        "stratum": "8",
+        "turn": 6,
+        "prefix": 19,
+        "parent_remaining": 2,
+        "same_first": true,
+        "skips": []
+      }
+    ],
+    "initial-dev": [
+      {
+        "i": 8,
+        "stratum": "8",
+        "turn": 2,
+        "prefix": 4,
+        "parent_remaining": 3,
+        "same_first": false,
+        "skips": []
+      },
+      {
+        "i": 11,
+        "stratum": "no_pair",
+        "turn": 0,
+        "prefix": 0,
+        "parent_remaining": 0,
+        "same_first": null,
+        "skips": []
+      },
+      {
+        "i": 26,
+        "stratum": "8",
+        "turn": 4,
+        "prefix": 16,
+        "parent_remaining": 8,
+        "same_first": false,
+        "skips": []
+      },
+      {
+        "i": 32,
+        "stratum": "8",
+        "turn": 3,
+        "prefix": 8,
+        "parent_remaining": 12,
+        "same_first": false,
+        "skips": []
+      },
+      {
+        "i": 34,
+        "stratum": "8",
+        "turn": 7,
+        "prefix": 25,
+        "parent_remaining": 17,
+        "same_first": false,
+        "skips": []
+      },
+      {
+        "i": 39,
+        "stratum": "error",
+        "turn": 1,
+        "prefix": 0,
+        "parent_remaining": 11,
+        "same_first": false,
+        "skips": [
+          "nonexchangeable or deterministic",
+          "no distinct complete policies",
+          "no distinct complete policies"
+        ]
+      }
+    ],
+    "audit": [
+      {
+        "i": 6,
+        "stratum": "4",
+        "turn": 3,
+        "prefix": 7,
+        "parent_remaining": 9,
+        "same_first": true,
+        "skips": [
+          "nonexchangeable or deterministic"
+        ]
+      },
+      {
+        "i": 57,
+        "stratum": "4",
+        "turn": 2,
+        "prefix": 4,
+        "parent_remaining": 14,
+        "same_first": true,
+        "skips": []
+      },
+      {
+        "i": 123,
+        "stratum": "4",
+        "turn": 2,
+        "prefix": 7,
+        "parent_remaining": 15,
+        "same_first": false,
+        "skips": []
+      },
+      {
+        "i": 13,
+        "stratum": "4",
+        "turn": 5,
+        "prefix": 20,
+        "parent_remaining": 6,
+        "same_first": false,
+        "skips": [
+          "no distinct complete policies"
+        ]
+      }
+    ]
+  },
+  "sources": {
+    "audit12-train-0.gz": "d751d3a432fdcdf214219f4587c773c94e37dc2a0e5fc50f38a54d6dfd4284e7",
+    "audit12-train-1.gz": "e54e45d5dc7497a0bde99c9e36bab2b482542655ff1c712cd7ef1ee7001b9511",
+    "panel.gz": "742e881297ec536b14ae743e32dad890d168a4907c08722e7c0e14a303d2be4d",
+    "worlds-dev-0.gz": "55bd4ebbbc781496f3172756ad25ba9f299872d8bd88f2874fe434a18c5a9e00",
+    "worlds-dev-1.gz": "fb5050eae3be64d4569cb71dd9fc347efe2845506c628d4d7111c4b89692a1e1",
+    "worlds-train-0.gz": "21a27e93b73df7de65b4916205180c8866a628663337a3705967bc48f346299f",
+    "worlds-train-1.gz": "d96e927e7d05404f5a09b7b2c146976af4db52c845fddf2991a0a2dd85c31982",
+    "worlds-train-2.gz": "d233dd3414098626d9eb38e7dbde5f6297292e4193bcc1a2e3c4a71849de64a2",
+    "worlds-train-3.gz": "1a135cae02e130529b8021907e36bd6452d9f3af386565ebb78b0609c590d81d"
+  }
+}

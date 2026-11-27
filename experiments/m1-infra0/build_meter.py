@@ -9,15 +9,16 @@ import subprocess
 import time
 import xml.etree.ElementTree as ET
 
-def build(source):
-    frozen = ROOT/"logs/core5c-host"
-    folder = ROOT/"logs/infra0-profile-host"
+def build(source, world=False):
+    parent = "core5e-world-host" if world else "core5c-host"
+    frozen = ROOT/"logs"/parent
+    folder = ROOT/"logs"/("infra0-world-profile" if world else "infra0-profile-host")
     folder.mkdir(exist_ok=False)
     shutil.copytree(frozen/"solver-bin", folder/"solver-bin")
     host = folder/"host/Headless"
     host.mkdir(parents=True)
     pdb = (frozen/"host"/BIN/"OfflineSearchHarness.pdb").read_bytes()
-    original = source/"logs/core5c-host/host/Headless"
+    original = source/"logs"/parent/"host/Headless"
     for file in original.glob("*.cs"):
         if bytes.fromhex(sha(file)) not in pdb:
             raise ValueError(f"Source checksum missing from frozen PDB: {file}")
@@ -91,4 +92,6 @@ def build(source):
 if __name__=="__main__":
     parser=argparse.ArgumentParser()
     parser.add_argument("source",type=Path)
-    build(parser.parse_args().source.resolve())
+    parser.add_argument("--world",action="store_true")
+    args=parser.parse_args()
+    build(args.source.resolve(),args.world)

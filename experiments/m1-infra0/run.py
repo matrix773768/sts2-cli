@@ -15,6 +15,12 @@ from infra_assets import ROOT, sha, verify_inputs
 HERE=Path(__file__).resolve().parent
 PARENT=ROOT/"experiments/m1-core5d/evidence"
 
+def good(w):
+    return len(w["outcomes"])==2 and all(o.get("matched") and o.get("utility") is not None for o in w["outcomes"])
+
+def complete(r):
+    return len(r["worlds"])==r.get("world_count",-1) and all(good(w) for w in r["worlds"])
+
 def run(a):
     if not re.fullmatch(r"[a-zA-Z0-9_-]+",a.tag):raise ValueError("Invalid run tag")
     verify_inputs()
@@ -22,8 +28,22 @@ def run(a):
     for name,value in panel["source_sha256"].items():
         if sha(PARENT/name)!=value:raise ValueError(f"Changed input: {name}")
     if a.kind=="pairs" and a.arm!="V2":raise ValueError("Counterfactual continuation requires V2 high")
-    ids=sorted(i for group in panel[a.kind].values() for i in group)
-    if a.smoke:ids=[154] if a.kind=="natural" else [65]
+    world=a.kind not in ("natural","pairs")
+    input_panel=PARENT/"panel.gz"
+    if world:
+        if a.arm!="V2":raise ValueError("Condition worlds require the frozen V2 continuation")
+        from world_assets import OPEN
+        pinned=json.loads((HERE/"world-panel.json").read_bytes())
+        for name,value in pinned["sources"].items():
+            if sha(OPEN/name)!=value:raise ValueError("Changed open 5E input: "+name)
+        for name,value in json.loads((OPEN/"inputs.json").read_bytes())["world_host"]["artifacts"].items():
+            if sha(ROOT/"logs/core5e-world-host"/name)!=value:raise ValueError(name)
+        input_panel=OPEN/"panel.gz"
+        ids=pinned["ids"][a.kind]
+        if a.smoke:ids=[75 if a.kind=="initial-train" else ids[0]]
+    else:
+        ids=sorted(i for group in panel[a.kind].values() for i in group)
+        if a.smoke:ids=[154] if a.kind=="natural" else [65]
     if len(set(ids))!=len(ids) or a.workers>len(ids):raise ValueError("Invalid assignments")
     run_dir=ROOT/"logs/infra0-runs"/a.tag
     run_dir.mkdir(parents=True,exist_ok=False)
@@ -32,7 +52,7 @@ def run(a):
         folder=run_dir/f"worker-{worker}"
         (folder/"tmp").mkdir(parents=True)
         (folder/"evidence").mkdir()
-        shutil.copyfile(PARENT/"panel.gz",folder/"evidence/panel.gz")
+        shutil.copyfile(input_panel,folder/"evidence/panel.gz")
         task=dict(smoke=a.smoke,kind=a.kind,arm=a.arm,mode=a.mode,ids=ids[worker::a.workers],folder=str(folder))
         (folder/"task.json").write_text(json.dumps(task))
         tasks.append(task)
@@ -58,7 +78,7 @@ def run(a):
         rows=list(map(json.loads,gzip.open(output)))
         if sorted(r["i"] for r in rows)!=sorted(task["ids"]):raise ValueError("Lost/duplicate root")
         records.extend(rows)
-        valid=sum(bool(r.get("terminal")) if a.kind=="natural" else
+        valid=sum(complete(r) for r in rows) if world else sum(bool(r.get("terminal")) if a.kind=="natural" else
             len(r.get("outcomes",[]))==2 and all(o.get("matched") and o.get("utility") is not None for o in r["outcomes"]) for r in rows)
         receipts.append(dict(ids=task["ids"],valid=valid,file_sha256=sha(output),bytes=worker["closed"]["bytes"],
              worker_wall_s=(worker["closed"]["at"]-launch)/1e9,cleanup_s=(end-worker["closed"]["at"])/1e9))
@@ -72,6 +92,14 @@ def run(a):
         totals={"valid":totals["valid"],"complete_conditional_plans":sum(len(r.get("plans",[])) for r in records),
                 "matched_realized_sides":sum(o.get("matched",False) and o.get("utility") is not None
                     for r in records for o in r.get("outcomes",[]))}
+    if world:
+        worlds=[w for r in records for w in r["worlds"]]
+        outs=[o for w in worlds for o in w["outcomes"]]
+        totals=dict(attempted_roots=len(records),valid=sum(complete(r) for r in records),
+            started_worlds=len(worlds),paired_worlds=sum(len(w["outcomes"])==2 for w in worlds),
+            locally_valid_worlds=sum(good(w) for w in worlds),
+            admitted_worlds=sum(len(r["worlds"]) for r in records if complete(r)),
+            returned_sides=len(outs),terminal_sides=sum(o.get("utility") is not None for o in outs))
     summary=dict(treatment=vars(a),production_wall_s=elapsed,process_worker_s=sum(b-a for a,b in intervals)/1e9,
         production_worker_s=sum(w["worker_wall_s"] for w in receipts),workers=receipts,totals=totals,
         per_wall_second={k:v/elapsed for k,v in totals.items()})
@@ -81,7 +109,7 @@ def run(a):
 if __name__=="__main__":
     parser=argparse.ArgumentParser()
     parser.add_argument("tag")
-    parser.add_argument("kind",choices=["natural","pairs"])
+    parser.add_argument("kind",choices=["natural","pairs","initial-train","initial-dev","audit"])
     parser.add_argument("arm",choices=["V2","V2low"])
     parser.add_argument("mode",choices=["baseline","aggregate","diagnostic"])
     parser.add_argument("--workers",type=int,choices=[1,2,4],default=1)
