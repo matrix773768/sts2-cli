@@ -6,10 +6,13 @@ import sys
 from world_assets import CODE,OPEN,ROOT
 from semantic_check import digest
 
-def produce(task,folder,battle,pairs,meter,events,finish,on_record):
+def produce(task,folder,battle,pairs,meter,events,finish,on_record,observer=None):
     mode=task["mode"]; audit=task["kind"]=="audit"
     os.environ.update(STS2_CORE5E_RUN=str(folder),STS2_CORE5E_WORLD=str(ROOT/"logs"/
         ("core5e-world-host" if mode=="baseline" else "infra0-world-profile")))
+    if task.get("variant"):
+        import execution
+        execution.select_host(task,world=True)
     sys.path.insert(0,str(CODE))
     import conditions5e as c
     if audit:
@@ -132,6 +135,11 @@ def produce(task,folder,battle,pairs,meter,events,finish,on_record):
                 root["fixed_ns"]=root["root_ns"]
                 root["fixed_counts"]={k:v-root_base[k] for k,v in snapshot().items() if v!=root_base[k]}
             hooks.append(root)
+    callback=phase if meter else None
+    if observer and hasattr(observer,"phase"):
+        def callback(name,i,j,pos):
+            observer.phase(name,i,j,pos)
+            if meter:phase(name,i,j,pos)
     c.run("dev" if task["kind"]=="initial-dev" else "train",0,1,int(audit),indices=task["ids"],
-        phase=phase if meter else None,on_closed=finish,on_record=written)
+        phase=callback,on_closed=finish,on_record=written)
     if meter:(folder/"world-stages.json").write_text(json.dumps(hooks))

@@ -35,11 +35,17 @@ def run(task):
         ("core5c-host" if mode=="baseline" or task["kind"] not in ("natural","pairs") else "infra0-profile-host")))
     for k in ("TMP","TEMP","TMPDIR","TORCH_HOME","XDG_CACHE_HOME","DOTNET_CLI_HOME"):
         os.environ[k]=str(folder/"tmp")
+    experiment=None
+    if task.get("variant"):
+        sys.path.insert(0,str(ROOT/"experiments/m1-infra1a"))
+        import execution as experiment
+        experiment.select_host(task)
     sys.path.insert(0,str(ROOT/"experiments/m1-core5d"))
     import battle5d as battle
     import experience5d as pairs
     from panel5d import cohort
     imported=clock()
+    observer=experiment.install(task,battle,pairs) if experiment else None
     meter=None
     if mode!="baseline":
         from meter import Meter
@@ -78,7 +84,8 @@ def run(task):
         pairs.run("train",0,1,indices=set(roots),parents=ROOT/"experiments/m1-core5d/evidence",on_closed=finish,on_record=on_record)
     else:
         from world_measure import produce
-        produce(task,folder,battle,pairs,meter,events,finish,on_record)
+        produce(task,folder,battle,pairs,meter,events,finish,on_record,observer)
+    if observer:observer.save(folder)
     if diag:
         diag.disable()
         diag.dump_stats(str(folder/"diagnostic.prof"))

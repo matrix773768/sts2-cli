@@ -1,0 +1,74 @@
+{
+  "strict": {
+    "calls": 495,
+    "planner_seconds": 485.7080734,
+    "failed_calls": 0,
+    "unique": 444,
+    "hits": 51,
+    "consistent_hits": 51,
+    "counts": {
+      "all_hits": 51,
+      "cross_world": 45,
+      "different_side": 6
+    },
+    "seconds": {
+      "cross_world": 29.762376799999995,
+      "different_side": 0.6699478
+    },
+    "saved_s": 30.432324599999994,
+    "peak_policy_bytes": 223370424,
+    "conflict_groups": 0,
+    "differences": []
+  },
+  "coarse": {
+    "calls": 495,
+    "planner_seconds": 485.7080734,
+    "failed_calls": 0,
+    "unique": 393,
+    "hits": 102,
+    "consistent_hits": 101,
+    "counts": {
+      "all_hits": 102,
+      "cross_world": 92,
+      "different_side": 9
+    },
+    "seconds": {
+      "cross_world": 75.69870830000002,
+      "different_side": 2.6421782
+    },
+    "saved_s": 78.34088650000002,
+    "peak_policy_bytes": 186990298,
+    "conflict_groups": 1,
+    "differences": [
+      {
+        "key": "9e4a3af79d3fd3507a3a78af8f31a7049d4bfec9fc8a6c14155cac9f75543c40",
+        "first": [
+          "initial-train/30",
+          2,
+          0
+        ],
+        "other": [
+          "initial-train/30",
+          3,
+          0
+        ],
+        "fields": [
+          "values",
+          "options",
+          "conditional",
+          "query"
+        ],
+        "scalar_changes": {
+          "reference": [
+            54.63545608520508,
+            54.63544845581055
+          ],
+          "value": [
+            56.491207122802734,
+            56.49119567871094
+          ]
+        }
+      }
+    ]
+  }
+}

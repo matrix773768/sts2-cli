@@ -1,0 +1,595 @@
+{
+  "initial-train": {
+    "wall": 175.7737973,
+    "all_planner_calls": 197,
+    "suffix": {
+      "calls": 181,
+      "planner_seconds": 90.1308399,
+      "failed_calls": 0,
+      "unique": 167,
+      "hits": 14,
+      "consistent_hits": 14,
+      "counts": {
+        "all_hits": 14,
+        "cross_world": 14
+      },
+      "seconds": {
+        "cross_world": 1.5195749000000003
+      },
+      "saved_s": 1.5195749000000003,
+      "peak_policy_bytes": 84019945,
+      "conflict_groups": 0,
+      "differences": [],
+      "share_wall": 0.008645059294056682
+    },
+    "all_calls": {
+      "calls": 197,
+      "planner_seconds": 120.7218332,
+      "failed_calls": 0,
+      "unique": 183,
+      "hits": 14,
+      "consistent_hits": 14,
+      "counts": {
+        "all_hits": 14,
+        "cross_world": 14
+      },
+      "seconds": {
+        "cross_world": 1.5195749000000003
+      },
+      "saved_s": 1.5195749000000003,
+      "peak_policy_bytes": 97135773,
+      "conflict_groups": 0,
+      "differences": []
+    },
+    "coarse": {
+      "calls": 181,
+      "planner_seconds": 90.1308399,
+      "failed_calls": 0,
+      "unique": 135,
+      "hits": 46,
+      "consistent_hits": 45,
+      "counts": {
+        "all_hits": 46,
+        "cross_world": 42,
+        "different_side": 3
+      },
+      "seconds": {
+        "cross_world": 17.687220800000002,
+        "different_side": 1.9722304
+      },
+      "saved_s": 19.659451200000003,
+      "peak_policy_bytes": 55025822,
+      "conflict_groups": 1,
+      "differences": [
+        {
+          "key": "9e4a3af79d3fd3507a3a78af8f31a7049d4bfec9fc8a6c14155cac9f75543c40",
+          "first": [
+            30,
+            2,
+            0
+          ],
+          "other": [
+            30,
+            3,
+            0
+          ],
+          "fields": [
+            "values",
+            "options",
+            "conditional",
+            "query"
+          ],
+          "scalar_changes": {
+            "reference": [
+              54.63545608520508,
+              54.63544845581055
+            ],
+            "value": [
+              56.491207122802734,
+              56.49119567871094
+            ]
+          }
+        }
+      ]
+    },
+    "per_root": {
+      "4": {
+        "calls": 0,
+        "planner_seconds": 0.0,
+        "failed_calls": 0,
+        "unique": 0,
+        "hits": 0,
+        "consistent_hits": 0,
+        "counts": {},
+        "seconds": {},
+        "saved_s": 0,
+        "peak_policy_bytes": 0,
+        "conflict_groups": 0,
+        "differences": []
+      },
+      "10": {
+        "calls": 48,
+        "planner_seconds": 39.5312181,
+        "failed_calls": 0,
+        "unique": 48,
+        "hits": 0,
+        "consistent_hits": 0,
+        "counts": {},
+        "seconds": {},
+        "saved_s": 0,
+        "peak_policy_bytes": 71965238,
+        "conflict_groups": 0,
+        "differences": []
+      },
+      "22": {
+        "calls": 8,
+        "planner_seconds": 2.615537,
+        "failed_calls": 0,
+        "unique": 8,
+        "hits": 0,
+        "consistent_hits": 0,
+        "counts": {},
+        "seconds": {},
+        "saved_s": 0,
+        "peak_policy_bytes": 1124388,
+        "conflict_groups": 0,
+        "differences": []
+      },
+      "25": {
+        "calls": 18,
+        "planner_seconds": 2.8953375,
+        "failed_calls": 0,
+        "unique": 18,
+        "hits": 0,
+        "consistent_hits": 0,
+        "counts": {},
+        "seconds": {},
+        "saved_s": 0,
+        "peak_policy_bytes": 2342681,
+        "conflict_groups": 0,
+        "differences": []
+      },
+      "30": {
+        "calls": 30,
+        "planner_seconds": 25.3474766,
+        "failed_calls": 0,
+        "unique": 30,
+        "hits": 0,
+        "consistent_hits": 0,
+        "counts": {},
+        "seconds": {},
+        "saved_s": 0,
+        "peak_policy_bytes": 2613040,
+        "conflict_groups": 0,
+        "differences": []
+      },
+      "56": {
+        "calls": 5,
+        "planner_seconds": 0.8891977,
+        "failed_calls": 0,
+        "unique": 5,
+        "hits": 0,
+        "consistent_hits": 0,
+        "counts": {},
+        "seconds": {},
+        "saved_s": 0,
+        "peak_policy_bytes": 665131,
+        "conflict_groups": 0,
+        "differences": []
+      },
+      "69": {
+        "calls": 0,
+        "planner_seconds": 0.0,
+        "failed_calls": 0,
+        "unique": 0,
+        "hits": 0,
+        "consistent_hits": 0,
+        "counts": {},
+        "seconds": {},
+        "saved_s": 0,
+        "peak_policy_bytes": 0,
+        "conflict_groups": 0,
+        "differences": []
+      },
+      "73": {
+        "calls": 4,
+        "planner_seconds": 2.3352397,
+        "failed_calls": 0,
+        "unique": 4,
+        "hits": 0,
+        "consistent_hits": 0,
+        "counts": {},
+        "seconds": {},
+        "saved_s": 0,
+        "peak_policy_bytes": 290801,
+        "conflict_groups": 0,
+        "differences": []
+      },
+      "75": {
+        "calls": 16,
+        "planner_seconds": 2.432874,
+        "failed_calls": 0,
+        "unique": 8,
+        "hits": 8,
+        "consistent_hits": 8,
+        "counts": {
+          "all_hits": 8,
+          "cross_world": 8
+        },
+        "seconds": {
+          "cross_world": 1.2250444
+        },
+        "saved_s": 1.2250444,
+        "peak_policy_bytes": 583972,
+        "conflict_groups": 0,
+        "differences": []
+      },
+      "99": {
+        "calls": 20,
+        "planner_seconds": 12.4666383,
+        "failed_calls": 0,
+        "unique": 20,
+        "hits": 0,
+        "consistent_hits": 0,
+        "counts": {},
+        "seconds": {},
+        "saved_s": 0,
+        "peak_policy_bytes": 3850729,
+        "conflict_groups": 0,
+        "differences": []
+      },
+      "108": {
+        "calls": 24,
+        "planner_seconds": 1.2044891,
+        "failed_calls": 0,
+        "unique": 24,
+        "hits": 0,
+        "consistent_hits": 0,
+        "counts": {},
+        "seconds": {},
+        "saved_s": 0,
+        "peak_policy_bytes": 549355,
+        "conflict_groups": 0,
+        "differences": []
+      },
+      "124": {
+        "calls": 8,
+        "planner_seconds": 0.4128319,
+        "failed_calls": 0,
+        "unique": 2,
+        "hits": 6,
+        "consistent_hits": 6,
+        "counts": {
+          "all_hits": 6,
+          "cross_world": 6
+        },
+        "seconds": {
+          "cross_world": 0.29453050000000003
+        },
+        "saved_s": 0.29453050000000003,
+        "peak_policy_bytes": 34610,
+        "conflict_groups": 0,
+        "differences": []
+      }
+    },
+    "lru_saved": {
+      "8": 1.5195749000000003,
+      "32": 1.5195749000000003,
+      "128": 1.5195749000000003,
+      "512": 1.5195749000000003
+    },
+    "error_calls": 0,
+    "planner_s": 120.7218332,
+    "key_s": 1.1386566,
+    "binding_s": 0.6160669
+  },
+  "initial-dev": {
+    "wall": 195.5098055,
+    "all_planner_calls": 106,
+    "suffix": {
+      "calls": 99,
+      "planner_seconds": 150.2710067,
+      "failed_calls": 0,
+      "unique": 83,
+      "hits": 16,
+      "consistent_hits": 16,
+      "counts": {
+        "all_hits": 16,
+        "cross_world": 16
+      },
+      "seconds": {
+        "cross_world": 27.947604000000002
+      },
+      "saved_s": 27.947604000000002,
+      "peak_policy_bytes": 45986915,
+      "conflict_groups": 0,
+      "differences": [],
+      "share_wall": 0.14294732649611275
+    },
+    "all_calls": {
+      "calls": 106,
+      "planner_seconds": 155.6647729,
+      "failed_calls": 0,
+      "unique": 90,
+      "hits": 16,
+      "consistent_hits": 16,
+      "counts": {
+        "all_hits": 16,
+        "cross_world": 16
+      },
+      "seconds": {
+        "cross_world": 27.947604000000002
+      },
+      "saved_s": 27.947604000000002,
+      "peak_policy_bytes": 46997490,
+      "conflict_groups": 0,
+      "differences": []
+    },
+    "coarse": {
+      "calls": 99,
+      "planner_seconds": 150.2710067,
+      "failed_calls": 0,
+      "unique": 64,
+      "hits": 35,
+      "consistent_hits": 35,
+      "counts": {
+        "all_hits": 35,
+        "cross_world": 35
+      },
+      "seconds": {
+        "cross_world": 57.7162896
+      },
+      "saved_s": 57.7162896,
+      "peak_policy_bytes": 38600912,
+      "conflict_groups": 0,
+      "differences": []
+    },
+    "per_root": {
+      "8": {
+        "calls": 13,
+        "planner_seconds": 5.0207357,
+        "failed_calls": 0,
+        "unique": 13,
+        "hits": 0,
+        "consistent_hits": 0,
+        "counts": {},
+        "seconds": {},
+        "saved_s": 0,
+        "peak_policy_bytes": 5062130,
+        "conflict_groups": 0,
+        "differences": []
+      },
+      "11": {
+        "calls": 0,
+        "planner_seconds": 0.0,
+        "failed_calls": 0,
+        "unique": 0,
+        "hits": 0,
+        "consistent_hits": 0,
+        "counts": {},
+        "seconds": {},
+        "saved_s": 0,
+        "peak_policy_bytes": 0,
+        "conflict_groups": 0,
+        "differences": []
+      },
+      "26": {
+        "calls": 23,
+        "planner_seconds": 39.9143633,
+        "failed_calls": 0,
+        "unique": 23,
+        "hits": 0,
+        "consistent_hits": 0,
+        "counts": {},
+        "seconds": {},
+        "saved_s": 0,
+        "peak_policy_bytes": 6813037,
+        "conflict_groups": 0,
+        "differences": []
+      },
+      "32": {
+        "calls": 16,
+        "planner_seconds": 34.1378135,
+        "failed_calls": 0,
+        "unique": 16,
+        "hits": 0,
+        "consistent_hits": 0,
+        "counts": {},
+        "seconds": {},
+        "saved_s": 0,
+        "peak_policy_bytes": 23546154,
+        "conflict_groups": 0,
+        "differences": []
+      },
+      "34": {
+        "calls": 42,
+        "planner_seconds": 70.1902506,
+        "failed_calls": 0,
+        "unique": 26,
+        "hits": 16,
+        "consistent_hits": 16,
+        "counts": {
+          "all_hits": 16,
+          "cross_world": 16
+        },
+        "seconds": {
+          "cross_world": 27.947604000000002
+        },
+        "saved_s": 27.947604000000002,
+        "peak_policy_bytes": 10238304,
+        "conflict_groups": 0,
+        "differences": []
+      },
+      "39": {
+        "calls": 5,
+        "planner_seconds": 1.0078436,
+        "failed_calls": 0,
+        "unique": 5,
+        "hits": 0,
+        "consistent_hits": 0,
+        "counts": {},
+        "seconds": {},
+        "saved_s": 0,
+        "peak_policy_bytes": 327290,
+        "conflict_groups": 0,
+        "differences": []
+      }
+    },
+    "lru_saved": {
+      "8": 8.1908992,
+      "32": 27.947604000000002,
+      "128": 27.947604000000002,
+      "512": 27.947604000000002
+    },
+    "error_calls": 0,
+    "planner_s": 155.6647729,
+    "key_s": 0.889273,
+    "binding_s": 0.4646042
+  },
+  "audit": {
+    "wall": 304.7794753,
+    "all_planner_calls": 220,
+    "suffix": {
+      "calls": 215,
+      "planner_seconds": 245.3062268,
+      "failed_calls": 0,
+      "unique": 194,
+      "hits": 21,
+      "consistent_hits": 21,
+      "counts": {
+        "all_hits": 21,
+        "different_side": 6,
+        "cross_world": 15
+      },
+      "seconds": {
+        "different_side": 0.6699478,
+        "cross_world": 0.29519789999999996
+      },
+      "saved_s": 0.9651456999999999,
+      "peak_policy_bytes": 93363564,
+      "conflict_groups": 0,
+      "differences": [],
+      "share_wall": 0.003166701757229516
+    },
+    "all_calls": {
+      "calls": 220,
+      "planner_seconds": 261.7469956,
+      "failed_calls": 0,
+      "unique": 199,
+      "hits": 21,
+      "consistent_hits": 21,
+      "counts": {
+        "all_hits": 21,
+        "different_side": 6,
+        "cross_world": 15
+      },
+      "seconds": {
+        "different_side": 0.6699478,
+        "cross_world": 0.29519789999999996
+      },
+      "saved_s": 0.9651456999999999,
+      "peak_policy_bytes": 96848204,
+      "conflict_groups": 0,
+      "differences": []
+    },
+    "coarse": {
+      "calls": 215,
+      "planner_seconds": 245.3062268,
+      "failed_calls": 0,
+      "unique": 194,
+      "hits": 21,
+      "consistent_hits": 21,
+      "counts": {
+        "all_hits": 21,
+        "different_side": 6,
+        "cross_world": 15
+      },
+      "seconds": {
+        "different_side": 0.6699478,
+        "cross_world": 0.29519789999999996
+      },
+      "saved_s": 0.9651456999999999,
+      "peak_policy_bytes": 93363564,
+      "conflict_groups": 0,
+      "differences": []
+    },
+    "per_root": {
+      "6": {
+        "calls": 15,
+        "planner_seconds": 1.7668987,
+        "failed_calls": 0,
+        "unique": 9,
+        "hits": 6,
+        "consistent_hits": 6,
+        "counts": {
+          "all_hits": 6,
+          "different_side": 6
+        },
+        "seconds": {
+          "different_side": 0.6699478
+        },
+        "saved_s": 0.6699478,
+        "peak_policy_bytes": 362890,
+        "conflict_groups": 0,
+        "differences": []
+      },
+      "57": {
+        "calls": 84,
+        "planner_seconds": 23.4158278,
+        "failed_calls": 0,
+        "unique": 84,
+        "hits": 0,
+        "consistent_hits": 0,
+        "counts": {},
+        "seconds": {},
+        "saved_s": 0,
+        "peak_policy_bytes": 20157374,
+        "conflict_groups": 0,
+        "differences": []
+      },
+      "123": {
+        "calls": 70,
+        "planner_seconds": 215.9339432,
+        "failed_calls": 0,
+        "unique": 70,
+        "hits": 0,
+        "consistent_hits": 0,
+        "counts": {},
+        "seconds": {},
+        "saved_s": 0,
+        "peak_policy_bytes": 72008813,
+        "conflict_groups": 0,
+        "differences": []
+      },
+      "13": {
+        "calls": 46,
+        "planner_seconds": 4.1895571,
+        "failed_calls": 0,
+        "unique": 31,
+        "hits": 15,
+        "consistent_hits": 15,
+        "counts": {
+          "all_hits": 15,
+          "cross_world": 15
+        },
+        "seconds": {
+          "cross_world": 0.29519789999999996
+        },
+        "saved_s": 0.29519789999999996,
+        "peak_policy_bytes": 834487,
+        "conflict_groups": 0,
+        "differences": []
+      }
+    },
+    "lru_saved": {
+      "8": 0.898097,
+      "32": 0.9651456999999999,
+      "128": 0.9651456999999999,
+      "512": 0.9651456999999999
+    },
+    "error_calls": 0,
+    "planner_s": 261.7469956,
+    "key_s": 1.0569214,
+    "binding_s": 0.4899926
+  }
+}

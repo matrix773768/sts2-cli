@@ -1,0 +1,473 @@
+{
+  "checks": [
+    {
+      "tag": "infra1a-smoke-natural-original",
+      "checked": 1,
+      "totals": {
+        "valid": 1,
+        "valid_C": 6,
+        "decisions": 34,
+        "full_policies": 44,
+        "attempted_policies": 60
+      }
+    },
+    {
+      "tag": "infra1a-smoke-natural-batch",
+      "checked": 1,
+      "totals": {
+        "valid": 1,
+        "valid_C": 6,
+        "decisions": 34,
+        "full_policies": 44,
+        "attempted_policies": 60
+      }
+    },
+    {
+      "tag": "infra1a-smoke-initial-train-original",
+      "checked": 1,
+      "totals": {
+        "attempted_roots": 1,
+        "valid": 1,
+        "started_worlds": 4,
+        "paired_worlds": 4,
+        "locally_valid_worlds": 4,
+        "admitted_worlds": 4,
+        "returned_sides": 8,
+        "terminal_sides": 8
+      }
+    },
+    {
+      "tag": "infra1a-smoke-initial-train-batch",
+      "checked": 1,
+      "totals": {
+        "attempted_roots": 1,
+        "valid": 1,
+        "started_worlds": 4,
+        "paired_worlds": 4,
+        "locally_valid_worlds": 4,
+        "admitted_worlds": 4,
+        "returned_sides": 8,
+        "terminal_sides": 8
+      }
+    },
+    {
+      "tag": "infra1a-scores-natural-g2-check",
+      "checked": 1,
+      "totals": {
+        "valid": 1,
+        "valid_C": 6,
+        "decisions": 34,
+        "full_policies": 44,
+        "attempted_policies": 60
+      }
+    },
+    {
+      "tag": "infra1a-reuse-initial-train-shadow",
+      "checked": 12,
+      "totals": {
+        "attempted_roots": 12,
+        "valid": 8,
+        "started_worlds": 50,
+        "paired_worlds": 48,
+        "locally_valid_worlds": 44,
+        "admitted_worlds": 44,
+        "returned_sides": 96,
+        "terminal_sides": 96
+      }
+    },
+    {
+      "tag": "infra1a-reuse-initial-dev-shadow",
+      "checked": 6,
+      "totals": {
+        "attempted_roots": 6,
+        "valid": 4,
+        "started_worlds": 33,
+        "paired_worlds": 32,
+        "locally_valid_worlds": 32,
+        "admitted_worlds": 32,
+        "returned_sides": 64,
+        "terminal_sides": 64
+      }
+    },
+    {
+      "tag": "infra1a-reuse-audit-shadow",
+      "checked": 4,
+      "totals": {
+        "attempted_roots": 4,
+        "valid": 4,
+        "started_worlds": 48,
+        "paired_worlds": 48,
+        "locally_valid_worlds": 48,
+        "admitted_worlds": 48,
+        "returned_sides": 96,
+        "terminal_sides": 96
+      }
+    },
+    {
+      "tag": "infra1a-cross1-natural-original",
+      "checked": 96,
+      "totals": {
+        "valid": 96,
+        "valid_C": 513,
+        "decisions": 2503,
+        "full_policies": 3225,
+        "attempted_policies": 4852
+      }
+    },
+    {
+      "tag": "infra1a-cross2-natural-batch",
+      "checked": 96,
+      "totals": {
+        "valid": 96,
+        "valid_C": 513,
+        "decisions": 2503,
+        "full_policies": 3225,
+        "attempted_policies": 4852
+      }
+    },
+    {
+      "tag": "infra1a-cross1-pairs-batch",
+      "checked": 44,
+      "totals": {
+        "valid": 32,
+        "complete_conditional_plans": 78,
+        "matched_realized_sides": 68
+      }
+    },
+    {
+      "tag": "infra1a-cross2-pairs-original",
+      "checked": 44,
+      "totals": {
+        "valid": 32,
+        "complete_conditional_plans": 78,
+        "matched_realized_sides": 68
+      }
+    },
+    {
+      "tag": "infra1a-cross1-initial-train-original",
+      "checked": 12,
+      "totals": {
+        "attempted_roots": 12,
+        "valid": 8,
+        "started_worlds": 50,
+        "paired_worlds": 48,
+        "locally_valid_worlds": 44,
+        "admitted_worlds": 44,
+        "returned_sides": 96,
+        "terminal_sides": 96
+      }
+    },
+    {
+      "tag": "infra1a-cross2-initial-train-batch",
+      "checked": 12,
+      "totals": {
+        "attempted_roots": 12,
+        "valid": 8,
+        "started_worlds": 50,
+        "paired_worlds": 48,
+        "locally_valid_worlds": 44,
+        "admitted_worlds": 44,
+        "returned_sides": 96,
+        "terminal_sides": 96
+      }
+    },
+    {
+      "tag": "infra1a-cross1-initial-dev-batch",
+      "checked": 6,
+      "totals": {
+        "attempted_roots": 6,
+        "valid": 4,
+        "started_worlds": 33,
+        "paired_worlds": 32,
+        "locally_valid_worlds": 32,
+        "admitted_worlds": 32,
+        "returned_sides": 64,
+        "terminal_sides": 64
+      }
+    },
+    {
+      "tag": "infra1a-cross2-initial-dev-original",
+      "checked": 6,
+      "totals": {
+        "attempted_roots": 6,
+        "valid": 4,
+        "started_worlds": 33,
+        "paired_worlds": 32,
+        "locally_valid_worlds": 32,
+        "admitted_worlds": 32,
+        "returned_sides": 64,
+        "terminal_sides": 64
+      }
+    },
+    {
+      "tag": "infra1a-cross1-audit-original",
+      "checked": 4,
+      "totals": {
+        "attempted_roots": 4,
+        "valid": 4,
+        "started_worlds": 48,
+        "paired_worlds": 48,
+        "locally_valid_worlds": 48,
+        "admitted_worlds": 48,
+        "returned_sides": 96,
+        "terminal_sides": 96
+      }
+    },
+    {
+      "tag": "infra1a-cross2-audit-batch",
+      "checked": 4,
+      "totals": {
+        "attempted_roots": 4,
+        "valid": 4,
+        "started_worlds": 48,
+        "paired_worlds": 48,
+        "locally_valid_worlds": 48,
+        "admitted_worlds": 48,
+        "returned_sides": 96,
+        "terminal_sides": 96
+      }
+    },
+    {
+      "tag": "infra1a-encoded-natural-g2-check",
+      "checked": 1,
+      "totals": {
+        "valid": 1,
+        "valid_C": 6,
+        "decisions": 34,
+        "full_policies": 44,
+        "attempted_policies": 60
+      }
+    },
+    {
+      "tag": "infra1a-bounded-initial-dev-reuse",
+      "checked": 6,
+      "totals": {
+        "attempted_roots": 6,
+        "valid": 4,
+        "started_worlds": 33,
+        "paired_worlds": 32,
+        "locally_valid_worlds": 32,
+        "admitted_worlds": 32,
+        "returned_sides": 64,
+        "terminal_sides": 64
+      }
+    },
+    {
+      "tag": "infra1a-profile-natural-batch",
+      "checked": 96,
+      "totals": {
+        "valid": 96,
+        "valid_C": 513,
+        "decisions": 2503,
+        "full_policies": 3225,
+        "attempted_policies": 4852
+      }
+    },
+    {
+      "tag": "infra1a-cross3-natural-batch",
+      "checked": 96,
+      "totals": {
+        "valid": 96,
+        "valid_C": 513,
+        "decisions": 2503,
+        "full_policies": 3225,
+        "attempted_policies": 4852
+      }
+    },
+    {
+      "tag": "infra1a-cross4-natural-original",
+      "checked": 96,
+      "totals": {
+        "valid": 96,
+        "valid_C": 513,
+        "decisions": 2503,
+        "full_policies": 3225,
+        "attempted_policies": 4852
+      }
+    },
+    {
+      "tag": "infra1a-profile-natural-batch-attribution",
+      "checked": 96,
+      "totals": {
+        "valid": 96,
+        "valid_C": 513,
+        "decisions": 2503,
+        "full_policies": 3225,
+        "attempted_policies": 4852
+      }
+    },
+    {
+      "tag": "infra1a-cache-control-initial-dev-original",
+      "checked": 6,
+      "totals": {
+        "attempted_roots": 6,
+        "valid": 4,
+        "started_worlds": 33,
+        "paired_worlds": 32,
+        "locally_valid_worlds": 32,
+        "admitted_worlds": 32,
+        "returned_sides": 64,
+        "terminal_sides": 64
+      }
+    },
+    {
+      "tag": "infra1a-cache-repeat-initial-dev-reuse",
+      "checked": 6,
+      "totals": {
+        "attempted_roots": 6,
+        "valid": 4,
+        "started_worlds": 33,
+        "paired_worlds": 32,
+        "locally_valid_worlds": 32,
+        "admitted_worlds": 32,
+        "returned_sides": 64,
+        "terminal_sides": 64
+      }
+    },
+    {
+      "tag": "infra1a-cache-control-audit-original",
+      "checked": 4,
+      "totals": {
+        "attempted_roots": 4,
+        "valid": 4,
+        "started_worlds": 48,
+        "paired_worlds": 48,
+        "locally_valid_worlds": 48,
+        "admitted_worlds": 48,
+        "returned_sides": 96,
+        "terminal_sides": 96
+      }
+    },
+    {
+      "tag": "infra1a-bounded-audit-reuse",
+      "checked": 4,
+      "totals": {
+        "attempted_roots": 4,
+        "valid": 4,
+        "started_worlds": 48,
+        "paired_worlds": 48,
+        "locally_valid_worlds": 48,
+        "admitted_worlds": 48,
+        "returned_sides": 96,
+        "terminal_sides": 96
+      }
+    },
+    {
+      "tag": "infra1a-bounded-initial-train-reuse",
+      "checked": 12,
+      "totals": {
+        "attempted_roots": 12,
+        "valid": 8,
+        "started_worlds": 50,
+        "paired_worlds": 48,
+        "locally_valid_worlds": 44,
+        "admitted_worlds": 44,
+        "returned_sides": 96,
+        "terminal_sides": 96
+      }
+    },
+    {
+      "tag": "infra1a-profile-audit-batch-attribution",
+      "checked": 4,
+      "totals": {
+        "attempted_roots": 4,
+        "valid": 4,
+        "started_worlds": 48,
+        "paired_worlds": 48,
+        "locally_valid_worlds": 48,
+        "admitted_worlds": 48,
+        "returned_sides": 96,
+        "terminal_sides": 96
+      }
+    },
+    {
+      "tag": "infra1a-cross3-initial-train-batch",
+      "checked": 12,
+      "totals": {
+        "attempted_roots": 12,
+        "valid": 8,
+        "started_worlds": 50,
+        "paired_worlds": 48,
+        "locally_valid_worlds": 44,
+        "admitted_worlds": 44,
+        "returned_sides": 96,
+        "terminal_sides": 96
+      }
+    },
+    {
+      "tag": "infra1a-cross4-initial-train-original",
+      "checked": 12,
+      "totals": {
+        "attempted_roots": 12,
+        "valid": 8,
+        "started_worlds": 50,
+        "paired_worlds": 48,
+        "locally_valid_worlds": 44,
+        "admitted_worlds": 44,
+        "returned_sides": 96,
+        "terminal_sides": 96
+      }
+    }
+  ],
+  "active_evidence": {
+    "infra1a-bounded-initial-dev-reuse": {
+      "kind": "initial-dev",
+      "wall": 90.8240449,
+      "stats": {
+        "key_ns": 183487400,
+        "eligible": 64,
+        "max_entries": 23,
+        "model_guard_ns": 1675800,
+        "hits": 4,
+        "logical_sim_calls_reused": 2655,
+        "transcript_ns": 265877900
+      },
+      "matched_shadow_seconds": 5.549477899999999
+    },
+    "infra1a-cache-repeat-initial-dev-reuse": {
+      "kind": "initial-dev",
+      "wall": 89.8843297,
+      "stats": {
+        "key_ns": 175322200,
+        "eligible": 64,
+        "max_entries": 23,
+        "model_guard_ns": 1471300,
+        "hits": 4,
+        "logical_sim_calls_reused": 2655,
+        "transcript_ns": 266618300
+      },
+      "matched_shadow_seconds": 5.549477899999999
+    },
+    "infra1a-bounded-audit-reuse": {
+      "kind": "audit",
+      "wall": 167.6931927,
+      "stats": {
+        "key_ns": 468399900,
+        "eligible": 188,
+        "max_entries": 32,
+        "model_guard_ns": 23382100,
+        "hits": 12,
+        "logical_sim_calls_reused": 267,
+        "transcript_ns": 336425500
+      },
+      "matched_shadow_seconds": 0.7999529
+    },
+    "infra1a-bounded-initial-train-reuse": {
+      "kind": "initial-train",
+      "wall": 80.4825694,
+      "stats": {
+        "key_ns": 368405600,
+        "eligible": 134,
+        "max_entries": 32,
+        "model_guard_ns": 38837300,
+        "hits": 14,
+        "logical_sim_calls_reused": 496,
+        "transcript_ns": 369479600
+      },
+      "matched_shadow_seconds": 1.5195749000000003
+    }
+  },
+  "checked_active_hits": 34,
+  "charged_s": 7027.736489099996,
+  "failed": []
+}

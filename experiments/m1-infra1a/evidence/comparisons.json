@@ -1,0 +1,267 @@
+{
+  "pairs": {
+    "walls": {
+      "original": [
+        320.5093118
+      ],
+      "batch": [
+        293.5832736
+      ]
+    },
+    "speedup": 1.0917151643887113,
+    "means": {
+      "original": 320.5093118,
+      "batch": 293.5832736
+    },
+    "totals": {
+      "valid": 32,
+      "complete_conditional_plans": 78,
+      "matched_realized_sides": 68
+    },
+    "rates": {
+      "original": {
+        "valid": 0.0998410929788156,
+        "complete_conditional_plans": 0.24336266413586305,
+        "matched_realized_sides": 0.21216232257998316
+      },
+      "batch": {
+        "valid": 0.10899803523411629,
+        "complete_conditional_plans": 0.2656827108831584,
+        "matched_realized_sides": 0.2316208248724971
+      }
+    },
+    "memory": {
+      "original": [
+        343.9375,
+        276.0546875
+      ],
+      "batch": [
+        346.375,
+        267.76953125
+      ]
+    }
+  },
+  "natural": {
+    "walls": {
+      "original": [
+        788.5230911,
+        441.0712339
+      ],
+      "batch": [
+        752.7737471,
+        414.7506378
+      ]
+    },
+    "speedup": 1.0531637205207636,
+    "means": {
+      "original": 614.7971625,
+      "batch": 583.76219245
+    },
+    "totals": {
+      "valid": 96,
+      "valid_C": 513,
+      "decisions": 2503,
+      "full_policies": 3225,
+      "attempted_policies": 4852
+    },
+    "rates": {
+      "original": {
+        "valid": 0.15614906160208572,
+        "valid_C": 0.8344215479361455,
+        "decisions": 4.071261470729381,
+        "full_policies": 5.245632538195067,
+        "attempted_policies": 7.892033821805415
+      },
+      "batch": {
+        "valid": 0.16445052667267848,
+        "valid_C": 0.8787825019071256,
+        "decisions": 4.28770487772619,
+        "full_policies": 5.524509880410292,
+        "attempted_policies": 8.311603702248291
+      }
+    },
+    "memory": {
+      "original": [
+        356.6015625,
+        283.203125
+      ],
+      "batch": [
+        356.96484375,
+        268.71875
+      ]
+    }
+  },
+  "initial-train": {
+    "walls": {
+      "original": [
+        133.1299092,
+        81.6468036
+      ],
+      "batch": [
+        133.3292161,
+        76.431631
+      ]
+    },
+    "speedup": 1.023912306654677,
+    "means": {
+      "original": 107.38835639999999,
+      "batch": 104.88042354999999
+    },
+    "totals": {
+      "attempted_roots": 12,
+      "valid": 8,
+      "started_worlds": 50,
+      "paired_worlds": 48,
+      "locally_valid_worlds": 44,
+      "admitted_worlds": 44,
+      "returned_sides": 96,
+      "terminal_sides": 96
+    },
+    "rates": {
+      "original": {
+        "attempted_roots": 0.11174395811872209,
+        "valid": 0.07449597207914806,
+        "started_worlds": 0.4655998254946754,
+        "paired_worlds": 0.44697583247488837,
+        "locally_valid_worlds": 0.4097278464353143,
+        "admitted_worlds": 0.4097278464353143,
+        "returned_sides": 0.8939516649497767,
+        "terminal_sides": 0.8939516649497767
+      },
+      "batch": {
+        "attempted_roots": 0.11441601391206435,
+        "valid": 0.07627734260804289,
+        "started_worlds": 0.4767333913002681,
+        "paired_worlds": 0.4576640556482574,
+        "locally_valid_worlds": 0.4195253843442359,
+        "admitted_worlds": 0.4195253843442359,
+        "returned_sides": 0.9153281112965148,
+        "terminal_sides": 0.9153281112965148
+      }
+    },
+    "memory": {
+      "original": [
+        385.95703125,
+        240.6640625
+      ],
+      "batch": [
+        384.03515625,
+        240.01953125
+      ]
+    }
+  },
+  "audit": {
+    "walls": {
+      "original": [
+        285.0772216
+      ],
+      "batch": [
+        265.9491632
+      ]
+    },
+    "speedup": 1.071923739747266,
+    "means": {
+      "original": 285.0772216,
+      "batch": 265.9491632
+    },
+    "totals": {
+      "attempted_roots": 4,
+      "valid": 4,
+      "started_worlds": 48,
+      "paired_worlds": 48,
+      "locally_valid_worlds": 48,
+      "admitted_worlds": 48,
+      "returned_sides": 96,
+      "terminal_sides": 96
+    },
+    "rates": {
+      "original": {
+        "attempted_roots": 0.014031285900535801,
+        "valid": 0.014031285900535801,
+        "started_worlds": 0.1683754308064296,
+        "paired_worlds": 0.1683754308064296,
+        "locally_valid_worlds": 0.1683754308064296,
+        "admitted_worlds": 0.1683754308064296,
+        "returned_sides": 0.3367508616128592,
+        "terminal_sides": 0.3367508616128592
+      },
+      "batch": {
+        "attempted_roots": 0.015040468455965423,
+        "valid": 0.015040468455965423,
+        "started_worlds": 0.18048562147158506,
+        "paired_worlds": 0.18048562147158506,
+        "locally_valid_worlds": 0.18048562147158506,
+        "admitted_worlds": 0.18048562147158506,
+        "returned_sides": 0.3609712429431701,
+        "terminal_sides": 0.3609712429431701
+      }
+    },
+    "memory": {
+      "original": [
+        383.62109375,
+        266.48828125
+      ],
+      "batch": [
+        382.58984375,
+        243.50390625
+      ]
+    }
+  },
+  "initial-dev": {
+    "walls": {
+      "original": [
+        160.3532892
+      ],
+      "batch": [
+        155.7764189
+      ]
+    },
+    "speedup": 1.029381021417228,
+    "means": {
+      "original": 160.3532892,
+      "batch": 155.7764189
+    },
+    "totals": {
+      "attempted_roots": 6,
+      "valid": 4,
+      "started_worlds": 33,
+      "paired_worlds": 32,
+      "locally_valid_worlds": 32,
+      "admitted_worlds": 32,
+      "returned_sides": 64,
+      "terminal_sides": 64
+    },
+    "rates": {
+      "original": {
+        "attempted_roots": 0.03741738027285816,
+        "valid": 0.02494492018190544,
+        "started_worlds": 0.20579559150071988,
+        "paired_worlds": 0.19955936145524353,
+        "locally_valid_worlds": 0.19955936145524353,
+        "admitted_worlds": 0.19955936145524353,
+        "returned_sides": 0.39911872291048706,
+        "terminal_sides": 0.39911872291048706
+      },
+      "batch": {
+        "attempted_roots": 0.03851674112403158,
+        "valid": 0.02567782741602105,
+        "started_worlds": 0.21184207618217366,
+        "paired_worlds": 0.2054226193281684,
+        "locally_valid_worlds": 0.2054226193281684,
+        "admitted_worlds": 0.2054226193281684,
+        "returned_sides": 0.4108452386563368,
+        "terminal_sides": 0.4108452386563368
+      }
+    },
+    "memory": {
+      "original": [
+        320.7109375,
+        237.01953125
+      ],
+      "batch": [
+        321.4375,
+        216.1015625
+      ]
+    }
+  }
+}

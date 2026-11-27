@@ -54,6 +54,7 @@ def run(a):
         (folder/"evidence").mkdir()
         shutil.copyfile(input_panel,folder/"evidence/panel.gz")
         task=dict(smoke=a.smoke,kind=a.kind,arm=a.arm,mode=a.mode,ids=ids[worker::a.workers],folder=str(folder))
+        if getattr(a,"variant",None):task["variant"]=a.variant
         (folder/"task.json").write_text(json.dumps(task))
         tasks.append(task)
     def execute(task):
@@ -113,5 +114,6 @@ if __name__=="__main__":
     parser.add_argument("arm",choices=["V2","V2low"])
     parser.add_argument("mode",choices=["baseline","aggregate","diagnostic"])
     parser.add_argument("--workers",type=int,choices=[1,2,4],default=1)
+    parser.add_argument("--variant",choices=["batch","batch-attribution","g2-check","shadow","reuse"])
     parser.add_argument("--smoke",action="store_true")
     run(parser.parse_args())
