@@ -1,0 +1,360 @@
+{
+  "checks": {
+    "qa-natural-aggregate": {
+      "rows": 1,
+      "public_events": 36,
+      "record_sha256": "731ba4c85999fc294d674d6945e7cbfe12076f640d54f9fa1b09c6248c379477",
+      "events_sha256": "a0c8e2e64f07b7abbcbdade233f59b5331ff9c3dde3e2ec2af0f1b4ed0fd9078"
+    },
+    "qa-natural-diagnostic": {
+      "rows": 1,
+      "public_events": 36,
+      "record_sha256": "731ba4c85999fc294d674d6945e7cbfe12076f640d54f9fa1b09c6248c379477",
+      "events_sha256": "a0c8e2e64f07b7abbcbdade233f59b5331ff9c3dde3e2ec2af0f1b4ed0fd9078"
+    },
+    "qa-pairs-aggregate": {
+      "rows": 1,
+      "public_events": 51,
+      "record_sha256": "214f29caece7c6b8222b81e10c79f619dd3f816607f7514947ab66f73bcce8ce",
+      "events_sha256": "bfcece426ad30dc50adc69fc540950fec97d1aae8b04d339c2375dbd3cbf395a"
+    },
+    "qa-pairs-diagnostic": {
+      "rows": 1,
+      "public_events": 51,
+      "record_sha256": "214f29caece7c6b8222b81e10c79f619dd3f816607f7514947ab66f73bcce8ce",
+      "events_sha256": "bfcece426ad30dc50adc69fc540950fec97d1aae8b04d339c2375dbd3cbf395a"
+    },
+    "fixture-final-baseline": {
+      "seconds": 20.16506389999995,
+      "semantic_sha": "d2f795c15ee5f55f1af613660a7095d3cbb74a480cc5239de384a98c5fd969af",
+      "historical_sha": "d2f795c15ee5f55f1af613660a7095d3cbb74a480cc5239de384a98c5fd969af",
+      "matches": true
+    },
+    "fixture-final-aggregate": {
+      "seconds": 20.15858620000654,
+      "semantic_sha": "d2f795c15ee5f55f1af613660a7095d3cbb74a480cc5239de384a98c5fd969af",
+      "historical_sha": "d2f795c15ee5f55f1af613660a7095d3cbb74a480cc5239de384a98c5fd969af",
+      "matches": true
+    },
+    "native": [
+      {
+        "key": "f9ab6b96f1a18733eb19aba96b7dde6418b3c449979566a5c5a2a2b00ed4c930",
+        "act": 1,
+        "matched": true,
+        "relics": [
+          "Burning Blood",
+          "Lost Coffer",
+          "Sword of Stone",
+          "Shovel",
+          "Strawberry"
+        ],
+        "prediction_admission": "unsupported_native_save_import",
+        "commands": 2,
+        "seconds": 3.383466599996609
+      },
+      {
+        "key": "70b6c63795d9d29ec230f607fb7b82863fd0752f40520a44a7df1daa9a4b1e02",
+        "act": 2,
+        "matched": true,
+        "relics": [
+          "Burning Blood",
+          "Precise Scissors",
+          "Bag of Marbles",
+          "Horn Cleat",
+          "Strawberry",
+          "Ectoplasm",
+          "Whetstone",
+          "Stone Cracker",
+          "Bag of Preparation"
+        ],
+        "prediction_admission": "unsupported_native_save_import",
+        "commands": 2,
+        "seconds": 1.696502499995404
+      },
+      {
+        "key": "cfd89b658f8a639f6c61112c98e112bd5659ea3c447b613cfacef361ef455e80",
+        "act": 3,
+        "matched": true,
+        "relics": [
+          "Burning Blood",
+          "Precise Scissors",
+          "Bag of Marbles",
+          "Horn Cleat",
+          "Strawberry",
+          "Ectoplasm",
+          "Whetstone",
+          "Stone Cracker",
+          "Bag of Preparation",
+          "Meat Cleaver",
+          "Ornamental Fan",
+          "Royal Poison"
+        ],
+        "prediction_admission": "unsupported_native_save_import",
+        "commands": 2,
+        "seconds": 1.7294278999979724
+      }
+    ]
+  },
+  "receipts": {
+    "qa-natural-baseline": {
+      "treatment": {
+        "tag": "qa-natural-baseline",
+        "kind": "natural",
+        "arm": "V2",
+        "mode": "baseline",
+        "workers": 1,
+        "smoke": true
+      },
+      "production_wall_s": 12.4344286,
+      "process_worker_s": 12.9632084,
+      "production_worker_s": 12.4334905,
+      "workers": [
+        {
+          "ids": [
+            154
+          ],
+          "valid": 1,
+          "file_sha256": "83326972ca88db7ebc76fe81980f8b5d99c1390eb9b3bd8349933513f26a116d",
+          "bytes": 2738,
+          "worker_wall_s": 12.4334905,
+          "cleanup_s": 0.5297179
+        }
+      ],
+      "totals": {
+        "valid": 1,
+        "valid_C": 6,
+        "decisions": 34,
+        "full_policies": 44,
+        "attempted_policies": 60
+      },
+      "per_wall_second": {
+        "valid": 0.08042186996835544,
+        "valid_C": 0.48253121981013264,
+        "decisions": 2.734343578924085,
+        "full_policies": 3.5385622786076394,
+        "attempted_policies": 4.825312198101327
+      }
+    },
+    "qa-natural-aggregate": {
+      "treatment": {
+        "tag": "qa-natural-aggregate",
+        "kind": "natural",
+        "arm": "V2",
+        "mode": "aggregate",
+        "workers": 1,
+        "smoke": true
+      },
+      "production_wall_s": 12.4802618,
+      "process_worker_s": 13.1347879,
+      "production_worker_s": 12.4793188,
+      "workers": [
+        {
+          "ids": [
+            154
+          ],
+          "valid": 1,
+          "file_sha256": "ce62d819147056c6b20b12729421e9b6a14975615a584e4bcc39a33c195610f8",
+          "bytes": 2737,
+          "worker_wall_s": 12.4793188,
+          "cleanup_s": 0.6554691
+        }
+      ],
+      "totals": {
+        "valid": 1,
+        "valid_C": 6,
+        "decisions": 34,
+        "full_policies": 44,
+        "attempted_policies": 60
+      },
+      "per_wall_second": {
+        "valid": 0.08012652426890597,
+        "valid_C": 0.4807591456134358,
+        "decisions": 2.724301825142803,
+        "full_policies": 3.5255670678318625,
+        "attempted_policies": 4.807591456134358
+      }
+    },
+    "qa-natural-diagnostic": {
+      "treatment": {
+        "tag": "qa-natural-diagnostic",
+        "kind": "natural",
+        "arm": "V2",
+        "mode": "diagnostic",
+        "workers": 1,
+        "smoke": true
+      },
+      "production_wall_s": 13.9534889,
+      "process_worker_s": 14.6492099,
+      "production_worker_s": 13.9524737,
+      "workers": [
+        {
+          "ids": [
+            154
+          ],
+          "valid": 1,
+          "file_sha256": "b6a46d185dac7b42eaf6182a07b4c4873b4f0bd1f9b164bedca8fd5da6d0eed3",
+          "bytes": 2736,
+          "worker_wall_s": 13.9524737,
+          "cleanup_s": 0.6967362
+        }
+      ],
+      "totals": {
+        "valid": 1,
+        "valid_C": 6,
+        "decisions": 34,
+        "full_policies": 44,
+        "attempted_policies": 60
+      },
+      "per_wall_second": {
+        "valid": 0.07166666395527788,
+        "valid_C": 0.42999998373166726,
+        "decisions": 2.436666574479448,
+        "full_policies": 3.1533332140322266,
+        "attempted_policies": 4.299999837316673
+      }
+    },
+    "qa-pairs-baseline": {
+      "treatment": {
+        "tag": "qa-pairs-baseline",
+        "kind": "pairs",
+        "arm": "V2",
+        "mode": "baseline",
+        "workers": 1,
+        "smoke": true
+      },
+      "production_wall_s": 21.3253645,
+      "process_worker_s": 21.9769932,
+      "production_worker_s": 21.3243409,
+      "workers": [
+        {
+          "ids": [
+            65
+          ],
+          "valid": 1,
+          "file_sha256": "516b731e904619627f09b20b9266f42da2b593f99227c723bba9cd8a489fc263",
+          "bytes": 1577,
+          "worker_wall_s": 21.3243409,
+          "cleanup_s": 0.6526523
+        }
+      ],
+      "totals": {
+        "valid": 1,
+        "complete_conditional_plans": 2,
+        "matched_realized_sides": 2
+      },
+      "per_wall_second": {
+        "valid": 0.04689251618653459,
+        "complete_conditional_plans": 0.09378503237306918,
+        "matched_realized_sides": 0.09378503237306918
+      }
+    },
+    "qa-pairs-aggregate": {
+      "treatment": {
+        "tag": "qa-pairs-aggregate",
+        "kind": "pairs",
+        "arm": "V2",
+        "mode": "aggregate",
+        "workers": 1,
+        "smoke": true
+      },
+      "production_wall_s": 20.6721043,
+      "process_worker_s": 21.2243459,
+      "production_worker_s": 20.6710949,
+      "workers": [
+        {
+          "ids": [
+            65
+          ],
+          "valid": 1,
+          "file_sha256": "cbaeebfc50fb1d1bb95a8eede75090896ade8275a4f82eec319bc130169653a4",
+          "bytes": 1577,
+          "worker_wall_s": 20.6710949,
+          "cleanup_s": 0.553251
+        }
+      ],
+      "totals": {
+        "valid": 1,
+        "complete_conditional_plans": 2,
+        "matched_realized_sides": 2
+      },
+      "per_wall_second": {
+        "valid": 0.04837436893156542,
+        "complete_conditional_plans": 0.09674873786313085,
+        "matched_realized_sides": 0.09674873786313085
+      }
+    },
+    "qa-pairs-diagnostic": {
+      "treatment": {
+        "tag": "qa-pairs-diagnostic",
+        "kind": "pairs",
+        "arm": "V2",
+        "mode": "diagnostic",
+        "workers": 1,
+        "smoke": true
+      },
+      "production_wall_s": 22.4005059,
+      "process_worker_s": 22.9992396,
+      "production_worker_s": 22.3995545,
+      "workers": [
+        {
+          "ids": [
+            65
+          ],
+          "valid": 1,
+          "file_sha256": "a5d4b5a9d78c15ebee5745469e137f18b6073866ee769a76bdf189a748c1f8eb",
+          "bytes": 1577,
+          "worker_wall_s": 22.3995545,
+          "cleanup_s": 0.5996851
+        }
+      ],
+      "totals": {
+        "valid": 1,
+        "complete_conditional_plans": 2,
+        "matched_realized_sides": 2
+      },
+      "per_wall_second": {
+        "valid": 0.04464184891467116,
+        "complete_conditional_plans": 0.08928369782934233,
+        "matched_realized_sides": 0.08928369782934233
+      }
+    }
+  },
+  "seconds_by_run": {
+    "fixtures-baseline": 19.32871570000134,
+    "fixtures-aggregate": 19.187788900002488,
+    "fixture-verified-baseline": 19.749365299998317,
+    "fixture-verified-aggregate": 19.12913299999491,
+    "fixture-final-baseline": 20.16506389999995,
+    "fixture-final-aggregate": 20.15858620000654,
+    "native": 6.8093969999899855,
+    "check-natural-aggregate": 13.4718646,
+    "check-natural-baseline": 12.9572334,
+    "check-natural-diagnostic": 14.2131541,
+    "check-pairs-aggregate": 21.9412866,
+    "check-pairs-baseline": 21.3468702,
+    "check-pairs-diagnostic": 22.5723222,
+    "qa-natural-aggregate": 13.1347879,
+    "qa-natural-baseline": 12.9632084,
+    "qa-natural-diagnostic": 14.6492099,
+    "qa-pairs-aggregate": 21.2243459,
+    "qa-pairs-baseline": 21.9769932,
+    "qa-pairs-diagnostic": 22.9992396,
+    "smoke-a": 0.466849,
+    "smoke-b": 3.8454341,
+    "smoke-c": 12.8479568,
+    "verified-natural-aggregate": 12.7710892,
+    "verified-natural-baseline": 12.6926935,
+    "verified-natural-diagnostic": 13.2058766,
+    "verified-pairs-aggregate": 19.6896114,
+    "verified-pairs-baseline": 19.6509697,
+    "verified-pairs-diagnostic": 21.8288398,
+    "build_infra0-meter": 10.843466300000728,
+    "build_infra0-host-v2": 8.753871799999615,
+    "build_infra0-profile-host": 8.484377000000677,
+    "failed_build_msbuild_reported": 23.09,
+    "5B_5C_5D_test_bodies": 8.72
+  },
+  "accounted_s": 514.8696011999947,
+  "formal_worker_s": 0,
+  "unmetered": "checkout, preparation, process/imports outside fixture and unittest timers, early configure/handshake probes, planning and packaging"
+}

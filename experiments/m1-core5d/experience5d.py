@@ -62,21 +62,24 @@ def sample(lane,g2,net,plan,w,natural):
                     same_first=selected[0].first==selected[1].first)
     return dict(skip="no two distinct complete laws")
 
-def run(group,shard,n):
+def run(group,shard,n,*,indices=None,parents=None,on_closed=None,on_record=None):
     start=perf_counter();tag=f"pairs-{group}-{shard}"
     out=OUT/tag;out.mkdir(parents=True,exist_ok=True)
     panel=load(E/("augmentation.gz" if group=="dev2" else "panel.gz"))[group];host,g2,net,plan=configure(out,"V2");lane=Lane(host,0)
     with gzip.open(E/(tag+".gz"),"xt",compresslevel=5) as f:
-        files=sorted(E.glob(group+"-V2-*.gz"))
+        files=sorted((parents or E).glob(group+"-V2-*.gz"))
         for path in files:
             for r in rows(path):
                 i=r["i"]
-                if i%n!=shard:continue
+                if indices is not None and i not in indices:continue
+                if indices is None and i%n!=shard:continue
                 w=panel[i]
                 try:data=sample(lane,g2,net,plan,w,r) if r["terminal"] else dict(skip="unresolved parent")
                 except (RuntimeError,ValueError,IndexError,KeyError) as err:
                     lane.close();data=dict(error=repr(err))
                 record=dict(i=i,family=w["family"],seed=r["seed"],hp=r["hp"],max_hp=r["max_hp"],continuation="5C-V2-high",**data)
                 f.write(json.dumps(record,separators=(",",":"))+"\n");f.flush()
+                if on_record is not None:on_record(i)
+    if on_closed is not None:on_closed(E/(tag+'.gz'))
     lane.close();host.close();(E/(tag+".time.json")).write_text(json.dumps(perf_counter()-start))
 if __name__=="__main__":run(sys.argv[1],*map(int,sys.argv[2:]))

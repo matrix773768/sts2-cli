@@ -27,7 +27,7 @@ def configure(out,arm):
         plan.admit=affordable
         plan.quotas=(24,56)
     return host,g2,net,plan
-def run(group,arm,shard=0,n=1):
+def run(group,arm,shard=0,n=1,*,indices=None,on_closed=None,on_record=None):
     start=perf_counter()
     tag=f"{group}-{arm}-{shard}"
     out=OUT/tag
@@ -39,7 +39,7 @@ def run(group,arm,shard=0,n=1):
         panel=[panel[6*i+i%2] for i in range(16)]
     natural=group in ("train","dev","train2","dev2")
     with gzip.open(E/(tag+".gz"),"xt",compresslevel=4) as f:
-        for i in range(shard,len(panel),n):
+        for i in (range(shard,len(panel),n) if indices is None else indices):
             w=panel[i];s=w["spec"];before=perf_counter();trace=[];last={};counts={}
             try:
                 r=fight(lane,g2,s,arm,net,planner=plan,trace=trace if natural else None,last=last,counts=counts)
@@ -51,6 +51,8 @@ def run(group,arm,shard=0,n=1):
             r.update(i=i,family=w["family"],seed=s["seed"],hp=s["hp"],max_hp=s["max_hp"],arm=arm,
                      turns=last.get("turn"),counts=counts,seconds=perf_counter()-before)
             f.write(json.dumps(r,separators=(",",":"))+"\n");f.flush()
+            if on_record is not None:on_record(i)
+    if on_closed is not None:on_closed(E/(tag+'.gz'))
     lane.close();host.close()
     (E/(tag+".time.json")).write_text(json.dumps(perf_counter()-start))
 if __name__=="__main__":run(*sys.argv[1:3],*map(int,sys.argv[3:]))
