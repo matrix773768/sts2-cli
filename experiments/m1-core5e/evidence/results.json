@@ -1,0 +1,1604 @@
+{
+  "selection": {
+    "V2": {
+      "n": 36,
+      "term": 36,
+      "wins": 19,
+      "cap": 0,
+      "errors": 0,
+      "severe": 22,
+      "utility": 16.5,
+      "signed_loss": 37.55555555555556,
+      "win_loss": 24,
+      "turns": 4.5,
+      "partial_loss": [],
+      "queries": 162,
+      "ref": 145,
+      "cand": 160,
+      "used": 50,
+      "execution": {
+        "end": 46,
+        "terminal": 4
+      },
+      "ref_mass": {
+        "C": 113.13095238095238,
+        "victory": 15.75,
+        "mechanism:random_target": 0.24999999999999997,
+        "mechanism:selector_draw_replay": 0.24999999999999997,
+        "budget": 9.61904761904759,
+        "death": 17.9,
+        "mechanism:card_selection": 4.0,
+        "mechanism:card_generation": 1.1
+      },
+      "calls": 55687,
+      "reached_seconds": 185.8143138999949,
+      "versus": {
+        "mc": {
+          "utility": {
+            "n": 12,
+            "mean": 1.8888888888888886,
+            "ci": [
+              -0.6666666666666666,
+              6.333333333333333
+            ]
+          },
+          "win_delta": {
+            "n": 12,
+            "mean": 0.027777777777777776,
+            "ci": [
+              0.0,
+              0.08333333333333333
+            ]
+          },
+          "common_wins": 18,
+          "win_hp": -0.4444444444444444,
+          "delta_loss": 0.05555555555555555,
+          "n": 36,
+          "flips": [
+            1,
+            0
+          ]
+        },
+        "td": {
+          "utility": {
+            "n": 12,
+            "mean": 0.16666666666666666,
+            "ci": [
+              0.0,
+              0.4444444444444444
+            ]
+          },
+          "win_delta": {
+            "n": 12,
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "common_wins": 19,
+          "win_hp": 0.3157894736842105,
+          "delta_loss": -0.16666666666666666,
+          "n": 36,
+          "flips": [
+            0,
+            0
+          ]
+        },
+        "anchor-td": {
+          "utility": {
+            "n": 12,
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "win_delta": {
+            "n": 12,
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "common_wins": 19,
+          "win_hp": 0,
+          "delta_loss": 0,
+          "n": 36,
+          "flips": [
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "mc": {
+      "n": 36,
+      "term": 36,
+      "wins": 18,
+      "cap": 0,
+      "errors": 0,
+      "severe": 22,
+      "utility": 14.61111111111111,
+      "signed_loss": 37.5,
+      "win_loss": 20.77777777777778,
+      "turns": 4.555555555555555,
+      "partial_loss": [],
+      "queries": 164,
+      "ref": 147,
+      "cand": 162,
+      "used": 53,
+      "execution": {
+        "end": 49,
+        "terminal": 4
+      },
+      "ref_mass": {
+        "C": 113.13095238095238,
+        "victory": 15.194444444444445,
+        "mechanism:random_target": 0.24999999999999997,
+        "mechanism:selector_draw_replay": 0.24999999999999997,
+        "budget": 9.61904761904759,
+        "death": 20.455555555555556,
+        "mechanism:card_selection": 4.0,
+        "mechanism:card_generation": 1.1
+      },
+      "calls": 56540,
+      "reached_seconds": 135.85004539998772,
+      "versus": {
+        "V2": {
+          "utility": {
+            "n": 12,
+            "mean": -1.8888888888888886,
+            "ci": [
+              -6.333333333333333,
+              0.6666666666666666
+            ]
+          },
+          "win_delta": {
+            "n": 12,
+            "mean": -0.027777777777777776,
+            "ci": [
+              -0.08333333333333333,
+              0.0
+            ]
+          },
+          "common_wins": 18,
+          "win_hp": 0.4444444444444444,
+          "delta_loss": -0.05555555555555555,
+          "n": 36,
+          "flips": [
+            0,
+            1
+          ]
+        },
+        "td": {
+          "utility": {
+            "n": 12,
+            "mean": -1.7222222222222223,
+            "ci": [
+              -6.166666666666667,
+              0.7777777777777777
+            ]
+          },
+          "win_delta": {
+            "n": 12,
+            "mean": -0.027777777777777776,
+            "ci": [
+              -0.08333333333333333,
+              0.0
+            ]
+          },
+          "common_wins": 18,
+          "win_hp": 0.7777777777777778,
+          "delta_loss": -0.2222222222222222,
+          "n": 36,
+          "flips": [
+            0,
+            1
+          ]
+        },
+        "anchor-td": {
+          "utility": {
+            "n": 12,
+            "mean": -1.8888888888888886,
+            "ci": [
+              -6.333333333333333,
+              0.6666666666666666
+            ]
+          },
+          "win_delta": {
+            "n": 12,
+            "mean": -0.027777777777777776,
+            "ci": [
+              -0.08333333333333333,
+              0.0
+            ]
+          },
+          "common_wins": 18,
+          "win_hp": 0.4444444444444444,
+          "delta_loss": -0.05555555555555555,
+          "n": 36,
+          "flips": [
+            0,
+            1
+          ]
+        }
+      }
+    },
+    "td": {
+      "n": 36,
+      "term": 36,
+      "wins": 19,
+      "cap": 0,
+      "errors": 0,
+      "severe": 22,
+      "utility": 16.333333333333332,
+      "signed_loss": 37.72222222222222,
+      "win_loss": 24.31578947368421,
+      "turns": 4.527777777777778,
+      "partial_loss": [],
+      "queries": 163,
+      "ref": 146,
+      "cand": 161,
+      "used": 50,
+      "execution": {
+        "end": 46,
+        "terminal": 4
+      },
+      "ref_mass": {
+        "C": 113.13095238095238,
+        "victory": 15.75,
+        "mechanism:random_target": 0.24999999999999997,
+        "mechanism:selector_draw_replay": 0.24999999999999997,
+        "budget": 9.61904761904759,
+        "death": 18.9,
+        "mechanism:card_selection": 4.0,
+        "mechanism:card_generation": 1.1
+      },
+      "calls": 55839,
+      "reached_seconds": 134.42576149999513,
+      "versus": {
+        "V2": {
+          "utility": {
+            "n": 12,
+            "mean": -0.16666666666666666,
+            "ci": [
+              -0.4444444444444444,
+              0.0
+            ]
+          },
+          "win_delta": {
+            "n": 12,
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "common_wins": 19,
+          "win_hp": -0.3157894736842105,
+          "delta_loss": 0.16666666666666666,
+          "n": 36,
+          "flips": [
+            0,
+            0
+          ]
+        },
+        "mc": {
+          "utility": {
+            "n": 12,
+            "mean": 1.7222222222222223,
+            "ci": [
+              -0.7777777777777777,
+              6.166666666666667
+            ]
+          },
+          "win_delta": {
+            "n": 12,
+            "mean": 0.027777777777777776,
+            "ci": [
+              0.0,
+              0.08333333333333333
+            ]
+          },
+          "common_wins": 18,
+          "win_hp": -0.7777777777777778,
+          "delta_loss": 0.2222222222222222,
+          "n": 36,
+          "flips": [
+            1,
+            0
+          ]
+        },
+        "anchor-td": {
+          "utility": {
+            "n": 12,
+            "mean": -0.16666666666666666,
+            "ci": [
+              -0.4444444444444444,
+              0.0
+            ]
+          },
+          "win_delta": {
+            "n": 12,
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "common_wins": 19,
+          "win_hp": -0.3157894736842105,
+          "delta_loss": 0.16666666666666666,
+          "n": 36,
+          "flips": [
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "anchor-td": {
+      "n": 36,
+      "term": 36,
+      "wins": 19,
+      "cap": 0,
+      "errors": 0,
+      "severe": 22,
+      "utility": 16.5,
+      "signed_loss": 37.55555555555556,
+      "win_loss": 24,
+      "turns": 4.527777777777778,
+      "partial_loss": [],
+      "queries": 163,
+      "ref": 146,
+      "cand": 161,
+      "used": 51,
+      "execution": {
+        "end": 47,
+        "terminal": 4
+      },
+      "ref_mass": {
+        "C": 113.13095238095238,
+        "victory": 15.75,
+        "mechanism:random_target": 0.24999999999999997,
+        "mechanism:selector_draw_replay": 0.24999999999999997,
+        "budget": 9.61904761904759,
+        "death": 18.9,
+        "mechanism:card_selection": 4.0,
+        "mechanism:card_generation": 1.1
+      },
+      "calls": 55852,
+      "reached_seconds": 155.19728659999964,
+      "incumbent_available": 146,
+      "incumbent_G2": 113,
+      "generation_switch": 1,
+      "switch_from_G2": 1,
+      "versus": {
+        "V2": {
+          "utility": {
+            "n": 12,
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "win_delta": {
+            "n": 12,
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "common_wins": 19,
+          "win_hp": 0,
+          "delta_loss": 0,
+          "n": 36,
+          "flips": [
+            0,
+            0
+          ]
+        },
+        "mc": {
+          "utility": {
+            "n": 12,
+            "mean": 1.8888888888888886,
+            "ci": [
+              -0.6666666666666666,
+              6.333333333333333
+            ]
+          },
+          "win_delta": {
+            "n": 12,
+            "mean": 0.027777777777777776,
+            "ci": [
+              0.0,
+              0.08333333333333333
+            ]
+          },
+          "common_wins": 18,
+          "win_hp": -0.4444444444444444,
+          "delta_loss": 0.05555555555555555,
+          "n": 36,
+          "flips": [
+            1,
+            0
+          ]
+        },
+        "td": {
+          "utility": {
+            "n": 12,
+            "mean": 0.16666666666666666,
+            "ci": [
+              0.0,
+              0.4444444444444444
+            ]
+          },
+          "win_delta": {
+            "n": 12,
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "common_wins": 19,
+          "win_hp": 0.3157894736842105,
+          "delta_loss": -0.16666666666666666,
+          "n": 36,
+          "flips": [
+            0,
+            0
+          ]
+        }
+      }
+    }
+  },
+  "confirm": {
+    "V2": {
+      "n": 128,
+      "term": 127,
+      "wins": 62,
+      "cap": 0,
+      "errors": 1,
+      "severe": 95,
+      "utility": 8.417322834645669,
+      "signed_loss": 47.56692913385827,
+      "win_loss": 30.338709677419356,
+      "turns": 5.511811023622047,
+      "partial_loss": [],
+      "queries": 700,
+      "ref": 516,
+      "cand": 643,
+      "used": 153,
+      "execution": {
+        "end": 144,
+        "terminal": 9
+      },
+      "ref_mass": {
+        "C": 432.4456070965068,
+        "budget": 80.20422008153184,
+        "victory": 45.95430541680541,
+        "mechanism:random_enemy_effect": 9.998863636363636,
+        "mechanism:other_rng": 15.273809523809524,
+        "death": 64.65703601953601,
+        "mechanism:card_selection": 21.352941176470587,
+        "unknown_probability": 10.441850507020785,
+        "C_partial": 10.000000000000002,
+        "mechanism:card_generation": 3.0,
+        "mechanism:random_target": 5.061904761904762,
+        "mechanism:selector_draw_replay": 1.609461780050015
+      },
+      "calls": 426507,
+      "reached_seconds": 762.917786900005,
+      "versus": {
+        "td": {
+          "utility": {
+            "n": 64,
+            "mean": 0.8984375,
+            "ci": [
+              -0.046875,
+              2.7421875
+            ]
+          },
+          "win_delta": {
+            "n": 64,
+            "mean": 0.0078125,
+            "ci": [
+              0.0,
+              0.0234375
+            ]
+          },
+          "common_wins": 61,
+          "win_hp": -0.03278688524590164,
+          "delta_loss": -0.07086614173228346,
+          "n": 127,
+          "flips": [
+            1,
+            0
+          ]
+        },
+        "V2low": {
+          "utility": {
+            "n": 64,
+            "mean": 0.09375,
+            "ci": [
+              -2.4609375,
+              2.3984375
+            ]
+          },
+          "win_delta": {
+            "n": 64,
+            "mean": 0.0,
+            "ci": [
+              -0.0234375,
+              0.0234375
+            ]
+          },
+          "common_wins": 61,
+          "win_hp": 0.4918032786885246,
+          "delta_loss": -0.3779527559055118,
+          "n": 127,
+          "flips": [
+            1,
+            1
+          ]
+        }
+      }
+    },
+    "td": {
+      "n": 128,
+      "term": 127,
+      "wins": 61,
+      "cap": 0,
+      "errors": 1,
+      "severe": 94,
+      "utility": 7.511811023622047,
+      "signed_loss": 47.63779527559055,
+      "win_loss": 30.262295081967213,
+      "turns": 5.559055118110236,
+      "partial_loss": [],
+      "queries": 706,
+      "ref": 520,
+      "cand": 649,
+      "used": 159,
+      "execution": {
+        "end": 149,
+        "terminal": 10
+      },
+      "ref_mass": {
+        "C": 435.84560709650685,
+        "budget": 81.20422008153187,
+        "victory": 45.61680541680542,
+        "mechanism:random_enemy_effect": 9.998863636363636,
+        "mechanism:other_rng": 15.273809523809524,
+        "death": 66.46953601953601,
+        "unknown_probability": 10.566850507020785,
+        "mechanism:card_selection": 21.352941176470587,
+        "C_partial": 10.000000000000002,
+        "mechanism:card_generation": 3.0,
+        "mechanism:random_target": 5.061904761904762,
+        "mechanism:selector_draw_replay": 1.609461780050015
+      },
+      "calls": 430470,
+      "reached_seconds": 1051.0555870999378,
+      "versus": {
+        "V2": {
+          "utility": {
+            "n": 64,
+            "mean": -0.8984375,
+            "ci": [
+              -2.7421875,
+              0.046875
+            ]
+          },
+          "win_delta": {
+            "n": 64,
+            "mean": -0.0078125,
+            "ci": [
+              -0.0234375,
+              0.0
+            ]
+          },
+          "common_wins": 61,
+          "win_hp": 0.03278688524590164,
+          "delta_loss": 0.07086614173228346,
+          "n": 127,
+          "flips": [
+            0,
+            1
+          ]
+        },
+        "V2low": {
+          "utility": {
+            "n": 64,
+            "mean": -0.8046875,
+            "ci": [
+              -3.8126953125,
+              1.8283203124999972
+            ]
+          },
+          "win_delta": {
+            "n": 64,
+            "mean": -0.0078125,
+            "ci": [
+              -0.03125,
+              0.015625
+            ]
+          },
+          "common_wins": 60,
+          "win_hp": 0.5333333333333333,
+          "delta_loss": -0.30708661417322836,
+          "n": 127,
+          "flips": [
+            1,
+            2
+          ]
+        }
+      }
+    },
+    "V2low": {
+      "n": 128,
+      "term": 127,
+      "wins": 62,
+      "cap": 0,
+      "errors": 1,
+      "severe": 95,
+      "utility": 8.32283464566929,
+      "signed_loss": 47.94488188976378,
+      "win_loss": 30.532258064516128,
+      "turns": 5.503937007874016,
+      "partial_loss": [],
+      "queries": 699,
+      "ref": 509,
+      "cand": 640,
+      "used": 148,
+      "execution": {
+        "end": 137,
+        "terminal": 11
+      },
+      "ref_mass": {
+        "C": 430.4998201968597,
+        "budget": 90.9966809737768,
+        "victory": 41.73379675879676,
+        "mechanism:random_enemy_effect": 9.653156565656566,
+        "mechanism:other_rng": 15.23392857142857,
+        "death": 60.56271367521367,
+        "mechanism:card_selection": 21.352941176470587,
+        "unknown_probability": 10.264122075035388,
+        "C_partial": 9.135802469135802,
+        "mechanism:card_generation": 3.0,
+        "mechanism:random_target": 5.0095238095238095,
+        "mechanism:selector_draw_replay": 1.5575137281019633
+      },
+      "calls": 231529,
+      "reached_seconds": 544.8199561999791,
+      "versus": {
+        "V2": {
+          "utility": {
+            "n": 64,
+            "mean": -0.09375,
+            "ci": [
+              -2.3984375,
+              2.4609375
+            ]
+          },
+          "win_delta": {
+            "n": 64,
+            "mean": 0.0,
+            "ci": [
+              -0.0234375,
+              0.0234375
+            ]
+          },
+          "common_wins": 61,
+          "win_hp": -0.4918032786885246,
+          "delta_loss": 0.3779527559055118,
+          "n": 127,
+          "flips": [
+            1,
+            1
+          ]
+        },
+        "td": {
+          "utility": {
+            "n": 64,
+            "mean": 0.8046875,
+            "ci": [
+              -1.8283203124999998,
+              3.812695312499997
+            ]
+          },
+          "win_delta": {
+            "n": 64,
+            "mean": 0.0078125,
+            "ci": [
+              -0.015625,
+              0.03125
+            ]
+          },
+          "common_wins": 60,
+          "win_hp": -0.5333333333333333,
+          "delta_loss": 0.30708661417322836,
+          "n": 127,
+          "flips": [
+            2,
+            1
+          ]
+        }
+      }
+    }
+  },
+  "followup": {
+    "cases": [
+      {
+        "i": 6,
+        "family": "1bf2b743ad37de19ad218b86baf9091c986264fff6847959643eaa759a277cb1",
+        "pilot": 4.75,
+        "original_world": 0.0,
+        "old": 15.0,
+        "reference": 0.6666666666666666,
+        "worlds": 12,
+        "zero_control": false,
+        "nonzero_reference": true,
+        "v2": 3.6634441557384463
+      },
+      {
+        "i": 18,
+        "family": "c344c8963a58e75df0e0a13281e709daefb5ee5f34dea16954d58d37aa75747e",
+        "pilot": 55.5,
+        "original_world": 0,
+        "old": 69.75,
+        "reference": 24.666666666666668,
+        "worlds": 12,
+        "zero_control": false,
+        "nonzero_reference": true,
+        "v2": 20.498981475830078
+      },
+      {
+        "i": 44,
+        "family": "9bfe177e532151aef018aeeff11a8e73aab1e850ad64bc3f2d94458339b5e35e",
+        "pilot": 0.0,
+        "original_world": 0.0,
+        "old": 0.0,
+        "reference": 0.0,
+        "worlds": 12,
+        "zero_control": true,
+        "nonzero_reference": false,
+        "v2": 7.378570556640625
+      },
+      {
+        "i": 66,
+        "family": "88aea63c722e172ba0c40ffb05518e84b5eee929668a1d3b01fe02692bef0b3d",
+        "pilot": 21.75,
+        "original_world": 33.0,
+        "old": 28.25,
+        "reference": 11.333333333333334,
+        "worlds": 12,
+        "zero_control": false,
+        "nonzero_reference": true,
+        "v2": 4.426815032958984
+      },
+      {
+        "i": 80,
+        "family": "0fe06902648fd8287ce3986b67db2f43dbb00981f08a0dc414405dfa50b65c2d",
+        "pilot": 31.75,
+        "original_world": 1.0,
+        "old": 14.75,
+        "reference": 32.666666666666664,
+        "worlds": 12,
+        "zero_control": false,
+        "nonzero_reference": true,
+        "v2": 28.934032440185547
+      },
+      {
+        "i": 13,
+        "family": "3183824b4fafb6f27a46aff7fc8b0f52cd8eb36bcbc73e7c6c8c6f96b3406159",
+        "pilot": 0,
+        "original_world": 0,
+        "old": 0.0,
+        "reference": 35.833333333333336,
+        "worlds": 12,
+        "zero_control": true,
+        "nonzero_reference": true,
+        "v2": 13.98912239074707
+      },
+      {
+        "i": 27,
+        "family": "b24365c3354189569123c14884f4b2ab47663b0bdcacaa5f1f0d15a7dd05569f",
+        "pilot": 0,
+        "original_world": 0,
+        "old": 0.0,
+        "reference": 0,
+        "worlds": 12,
+        "zero_control": true,
+        "nonzero_reference": false,
+        "v2": 0.015357017517089844
+      },
+      {
+        "i": 31,
+        "family": "7b5d060b2a0b0292869a7d08e35e93665dd9529e1e3435e7a9b72bb929cb96e5",
+        "pilot": 94.75,
+        "original_world": 13.0,
+        "old": 108.75,
+        "reference": 112.91666666666667,
+        "worlds": 12,
+        "zero_control": false,
+        "nonzero_reference": true,
+        "v2": 46.597813796997066
+      },
+      {
+        "i": 33,
+        "family": "f04fd6d6aa826bda9ff783ed5a83bcde7e650327ea01e52f98a30b543125ccd0",
+        "pilot": 55.0,
+        "original_world": 0,
+        "old": 96.75,
+        "reference": 45.833333333333336,
+        "worlds": 12,
+        "zero_control": false,
+        "nonzero_reference": true,
+        "v2": 10.969059944152832
+      },
+      {
+        "i": 37,
+        "family": "84de14d9a71e0e21df5f1ad76eed888f4a24aed55caeaedf6d67066ff4dfdc06",
+        "pilot": 0,
+        "original_world": 0,
+        "old": 0.0,
+        "reference": 0,
+        "worlds": 12,
+        "zero_control": true,
+        "nonzero_reference": false,
+        "v2": 0.0251312255859375
+      },
+      {
+        "i": 51,
+        "family": "0854caec0d25423550a6f23f42788785aa016cc27eb2e0e71e5fca15921052b0",
+        "pilot": 4.75,
+        "original_world": 0.0,
+        "old": 15.0,
+        "reference": 2.9166666666666665,
+        "worlds": 12,
+        "zero_control": false,
+        "nonzero_reference": true,
+        "v2": 0.29454053242999123
+      },
+      {
+        "i": 57,
+        "family": "1f03935b5bbb0d3fb69d386b66f96d4c720e9848ec824a749c2355b176e8e672",
+        "pilot": 26.75,
+        "original_world": 0,
+        "old": 67.25,
+        "reference": 27.166666666666668,
+        "worlds": 12,
+        "zero_control": false,
+        "nonzero_reference": true,
+        "v2": 5.159442901611328
+      },
+      {
+        "i": 97,
+        "family": "26d98ec3400acf91535d7dc9de42a5628ef9fd87e86d46f4a684ce871d1594bd",
+        "pilot": 22.0,
+        "original_world": 88.0,
+        "old": 48.75,
+        "reference": 2.0,
+        "worlds": 12,
+        "zero_control": false,
+        "nonzero_reference": true,
+        "v2": 9.599567413330078
+      },
+      {
+        "i": 99,
+        "family": "54f4b9dfebdd4617c4dd388cd74ff3e5c4e4dab41a105f127bae247a6a172cee",
+        "pilot": 40.0,
+        "original_world": 15.0,
+        "old": 33.0,
+        "reference": 21.916666666666668,
+        "worlds": 12,
+        "zero_control": false,
+        "nonzero_reference": true,
+        "v2": 26.580444971720368
+      },
+      {
+        "i": 107,
+        "family": "54b7e6f38f4e6eb5b903a8748530be82dc611e88a1feb983a2c9ac37994bf4a5",
+        "pilot": 103.5,
+        "original_world": 92.0,
+        "old": 103.5,
+        "reference": 78.75,
+        "worlds": 12,
+        "zero_control": false,
+        "nonzero_reference": true,
+        "v2": 74.35864215426975
+      },
+      {
+        "i": 123,
+        "family": "401a26cc8cb2c7d9f9e0f0e9d6a8c23ca1e9010189f74793d97652c597d5f132",
+        "pilot": 1.75,
+        "original_world": -4.0,
+        "old": -1.25,
+        "reference": 0.25,
+        "worlds": 12,
+        "zero_control": false,
+        "nonzero_reference": true,
+        "v2": 2.1944173177083286
+      }
+    ],
+    "n": 16,
+    "noisy": 12,
+    "rmse": {
+      "original_world": 43.348534993827776,
+      "old": 29.05583107475063,
+      "pilot": 15.37347553417899,
+      "v2": 22.90460854658511
+    }
+  },
+  "paired_development_mse": {
+    "td-mc": {
+      "n": 24,
+      "mean": -10.15711233719916,
+      "ci": [
+        -25.98431301584587,
+        3.18259942445062
+      ]
+    },
+    "td-V2": {
+      "n": 24,
+      "mean": 8.77023021631866,
+      "ci": [
+        -6.0463430422527535,
+        25.676643386446084
+      ]
+    },
+    "mc-V2": {
+      "n": 24,
+      "mean": 18.92734255351782,
+      "ci": [
+        -5.296817062910804,
+        47.95986093526402
+      ]
+    }
+  },
+  "paired_repair": {
+    "V2": {
+      "n": 128,
+      "term": 128,
+      "wins": 63,
+      "cap": 0,
+      "errors": 0,
+      "severe": 96,
+      "utility": 8.6796875,
+      "signed_loss": 47.6484375,
+      "win_loss": 30.77777777777778,
+      "turns": 5.5390625,
+      "partial_loss": [],
+      "queries": 709,
+      "ref": 520,
+      "cand": 651,
+      "used": 155,
+      "execution": {
+        "end": 146,
+        "terminal": 9
+      },
+      "ref_mass": {
+        "C": 436.1956070965068,
+        "budget": 80.20422008153184,
+        "victory": 46.95430541680541,
+        "mechanism:random_enemy_effect": 9.998863636363636,
+        "mechanism:other_rng": 15.273809523809524,
+        "death": 64.65703601953601,
+        "mechanism:card_selection": 21.352941176470587,
+        "unknown_probability": 10.441850507020785,
+        "C_partial": 10.000000000000002,
+        "mechanism:card_generation": 4.125,
+        "mechanism:random_target": 8.186904761904762,
+        "mechanism:selector_draw_replay": 1.609461780050015
+      },
+      "calls": 429910,
+      "reached_seconds": 771.9105964000119,
+      "versus": {
+        "td": {
+          "utility": {
+            "n": 64,
+            "mean": 0.8984375,
+            "ci": [
+              -0.046875,
+              2.7421875
+            ]
+          },
+          "win_delta": {
+            "n": 64,
+            "mean": 0.0078125,
+            "ci": [
+              0.0,
+              0.0234375
+            ]
+          },
+          "common_wins": 62,
+          "win_hp": -0.03225806451612903,
+          "delta_loss": -0.0703125,
+          "n": 128,
+          "flips": [
+            1,
+            0
+          ]
+        },
+        "V2low": {
+          "utility": {
+            "n": 64,
+            "mean": 0.09375,
+            "ci": [
+              -2.4609375,
+              2.3984375
+            ]
+          },
+          "win_delta": {
+            "n": 64,
+            "mean": 0.0,
+            "ci": [
+              -0.0234375,
+              0.0234375
+            ]
+          },
+          "common_wins": 62,
+          "win_hp": 0.4838709677419355,
+          "delta_loss": -0.375,
+          "n": 128,
+          "flips": [
+            1,
+            1
+          ]
+        }
+      }
+    },
+    "td": {
+      "n": 128,
+      "term": 128,
+      "wins": 62,
+      "cap": 0,
+      "errors": 0,
+      "severe": 95,
+      "utility": 7.78125,
+      "signed_loss": 47.71875,
+      "win_loss": 30.70967741935484,
+      "turns": 5.5859375,
+      "partial_loss": [],
+      "queries": 715,
+      "ref": 524,
+      "cand": 657,
+      "used": 161,
+      "execution": {
+        "end": 151,
+        "terminal": 10
+      },
+      "ref_mass": {
+        "C": 439.59560709650685,
+        "budget": 81.20422008153187,
+        "victory": 46.61680541680542,
+        "mechanism:random_enemy_effect": 9.998863636363636,
+        "mechanism:other_rng": 15.273809523809524,
+        "death": 66.46953601953601,
+        "unknown_probability": 10.566850507020785,
+        "mechanism:card_selection": 21.352941176470587,
+        "C_partial": 10.000000000000002,
+        "mechanism:card_generation": 4.125,
+        "mechanism:random_target": 8.186904761904762,
+        "mechanism:selector_draw_replay": 1.609461780050015
+      },
+      "calls": 433873,
+      "reached_seconds": 1059.1841552999322,
+      "versus": {
+        "V2": {
+          "utility": {
+            "n": 64,
+            "mean": -0.8984375,
+            "ci": [
+              -2.7421875,
+              0.046875
+            ]
+          },
+          "win_delta": {
+            "n": 64,
+            "mean": -0.0078125,
+            "ci": [
+              -0.0234375,
+              0.0
+            ]
+          },
+          "common_wins": 62,
+          "win_hp": 0.03225806451612903,
+          "delta_loss": 0.0703125,
+          "n": 128,
+          "flips": [
+            0,
+            1
+          ]
+        },
+        "V2low": {
+          "utility": {
+            "n": 64,
+            "mean": -0.8046875,
+            "ci": [
+              -3.8126953125,
+              1.8283203124999972
+            ]
+          },
+          "win_delta": {
+            "n": 64,
+            "mean": -0.0078125,
+            "ci": [
+              -0.03125,
+              0.015625
+            ]
+          },
+          "common_wins": 61,
+          "win_hp": 0.5245901639344263,
+          "delta_loss": -0.3046875,
+          "n": 128,
+          "flips": [
+            1,
+            2
+          ]
+        }
+      }
+    },
+    "V2low": {
+      "n": 128,
+      "term": 128,
+      "wins": 63,
+      "cap": 0,
+      "errors": 0,
+      "severe": 96,
+      "utility": 8.5859375,
+      "signed_loss": 48.0234375,
+      "win_loss": 30.96825396825397,
+      "turns": 5.53125,
+      "partial_loss": [],
+      "queries": 708,
+      "ref": 513,
+      "cand": 648,
+      "used": 150,
+      "execution": {
+        "end": 139,
+        "terminal": 11
+      },
+      "ref_mass": {
+        "C": 434.2498201968597,
+        "budget": 90.9966809737768,
+        "victory": 42.73379675879676,
+        "mechanism:random_enemy_effect": 9.653156565656566,
+        "mechanism:other_rng": 15.23392857142857,
+        "death": 60.56271367521367,
+        "mechanism:card_selection": 21.352941176470587,
+        "unknown_probability": 10.264122075035388,
+        "C_partial": 9.135802469135802,
+        "mechanism:card_generation": 4.125,
+        "mechanism:random_target": 8.13452380952381,
+        "mechanism:selector_draw_replay": 1.5575137281019633
+      },
+      "calls": 234096,
+      "reached_seconds": 549.337733499975,
+      "versus": {
+        "V2": {
+          "utility": {
+            "n": 64,
+            "mean": -0.09375,
+            "ci": [
+              -2.3984375,
+              2.4609375
+            ]
+          },
+          "win_delta": {
+            "n": 64,
+            "mean": 0.0,
+            "ci": [
+              -0.0234375,
+              0.0234375
+            ]
+          },
+          "common_wins": 62,
+          "win_hp": -0.4838709677419355,
+          "delta_loss": 0.375,
+          "n": 128,
+          "flips": [
+            1,
+            1
+          ]
+        },
+        "td": {
+          "utility": {
+            "n": 64,
+            "mean": 0.8046875,
+            "ci": [
+              -1.8283203124999998,
+              3.812695312499997
+            ]
+          },
+          "win_delta": {
+            "n": 64,
+            "mean": 0.0078125,
+            "ci": [
+              -0.015625,
+              0.03125
+            ]
+          },
+          "common_wins": 61,
+          "win_hp": -0.5245901639344263,
+          "delta_loss": 0.3046875,
+          "n": 128,
+          "flips": [
+            2,
+            1
+          ]
+        }
+      }
+    }
+  },
+  "cost": {
+    "V2": {
+      "roots": 16,
+      "worker_seconds": 86.3868586000026
+    },
+    "td": {
+      "roots": 16,
+      "worker_seconds": 63.5480036999943
+    }
+  },
+  "native": {
+    "V2": {
+      "episodes": 17,
+      "matched": 16,
+      "cost_matched": 15,
+      "flips": [
+        {
+          "i": 14,
+          "arm": "V2",
+          "flip": true,
+          "cost_root": false,
+          "expected": "predicted_win",
+          "expected_hp": 11,
+          "actual": {
+            "actions": [
+              [
+                "play_card",
+                {
+                  "card_index": 1
+                }
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 3,
+                  "target_index": 0
+                }
+              ],
+              [
+                "end_turn",
+                {}
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 0
+                }
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 2,
+                  "target_index": 0
+                }
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 3
+                }
+              ],
+              [
+                "end_turn",
+                {}
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 4
+                }
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 3,
+                  "target_index": 0
+                }
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 2
+                }
+              ],
+              [
+                "end_turn",
+                {}
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 4
+                }
+              ],
+              [
+                "end_turn",
+                {}
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 1
+                }
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 0,
+                  "target_index": 0
+                }
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 1
+                }
+              ],
+              [
+                "end_turn",
+                {}
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 4
+                }
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 3,
+                  "target_index": 0
+                }
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 1
+                }
+              ]
+            ],
+            "decision": "card_reward",
+            "terminal": true,
+            "hp": 11,
+            "exact_hash": "d2ff158d37b883dbb766920d9ac56e9883de8df8856405330f70d57c5b3d52e0"
+          },
+          "match": true
+        }
+      ]
+    },
+    "td": {
+      "episodes": 17,
+      "matched": 16,
+      "cost_matched": 15,
+      "flips": [
+        {
+          "i": 14,
+          "arm": "td",
+          "flip": true,
+          "cost_root": false,
+          "expected": "death",
+          "expected_hp": 0,
+          "actual": {
+            "actions": [
+              [
+                "play_card",
+                {
+                  "card_index": 1
+                }
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 3,
+                  "target_index": 0
+                }
+              ],
+              [
+                "end_turn",
+                {}
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 0
+                }
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 2,
+                  "target_index": 0
+                }
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 3
+                }
+              ],
+              [
+                "end_turn",
+                {}
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 4
+                }
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 3,
+                  "target_index": 0
+                }
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 2
+                }
+              ],
+              [
+                "end_turn",
+                {}
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 3
+                }
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 1,
+                  "target_index": 0
+                }
+              ],
+              [
+                "end_turn",
+                {}
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 3
+                }
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 3
+                }
+              ],
+              [
+                "end_turn",
+                {}
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 3
+                }
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 0
+                }
+              ],
+              [
+                "end_turn",
+                {}
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 2
+                }
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 3
+                }
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 0
+                }
+              ],
+              [
+                "end_turn",
+                {}
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 0,
+                  "target_index": 0
+                }
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 3,
+                  "target_index": 0
+                }
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 2,
+                  "target_index": 0
+                }
+              ],
+              [
+                "end_turn",
+                {}
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 0
+                }
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 2
+                }
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 3,
+                  "target_index": 0
+                }
+              ],
+              [
+                "play_card",
+                {
+                  "card_index": 0
+                }
+              ],
+              [
+                "end_turn",
+                {}
+              ]
+            ],
+            "decision": "game_over",
+            "terminal": false,
+            "hp": 0,
+            "exact_hash": "95dd0e6b69aa3a997eae456bb9796624cbe81054f755ce9f5c54b995200a8254"
+          },
+          "match": true
+        }
+      ]
+    }
+  },
+  "seconds": 0.7961788999964483
+}

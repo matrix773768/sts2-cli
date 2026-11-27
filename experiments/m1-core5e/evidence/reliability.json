@@ -1,0 +1,90 @@
+{
+  "train": {
+    "attempted": 128,
+    "complete": 113,
+    "failed": {
+      "no eligible plan/root": 6,
+      "RuntimeError('InvalidOperationException: Outside public draw support')": 1,
+      "RuntimeError('InvalidOperationException: Tail or instance law mismatch')": 4,
+      "RuntimeError('InvalidOperationException: Interactive episode changed its stable source')": 3,
+      "incomplete paired execution": 1
+    },
+    "excluded_worlds_started": 12,
+    "worlds": 544,
+    "turns": {
+      "6": 8,
+      "5": 20,
+      "4": 24,
+      "3": 37,
+      "2": 21,
+      "7": 3
+    },
+    "same_first": 32,
+    "incumbent_pairs": 70,
+    "nonintervention": 90,
+    "vary": 22,
+    "single_zero": 351,
+    "zero_in_varying_pair": 23,
+    "common_deaths": 293,
+    "common_death_with_nonzero_sibling": 9,
+    "all_zero": 65,
+    "single_rmse": 14.445072574459981,
+    "half_rmse": 10.184498241188848,
+    "sd_single": 13.037724042524376,
+    "se_mean": 6.254208970460314,
+    "old_location_rmse": 12.96587590767,
+    "old_minus_mean_mse": {
+      "n": 113,
+      "mean": 64.38993362831859,
+      "ci": [
+        5.741814159292036,
+        142.19118501106192
+      ]
+    },
+    "half_sign_agreement": 0.9302325581395349,
+    "both_nonzero_halves": 43
+  },
+  "dev": {
+    "attempted": 48,
+    "complete": 43,
+    "failed": {
+      "RuntimeError('InvalidOperationException: Tail or instance law mismatch')": 1,
+      "no eligible plan/root": 1,
+      "RuntimeError('InvalidOperationException: Interactive episode changed its stable source')": 3
+    },
+    "excluded_worlds_started": 4,
+    "worlds": 344,
+    "turns": {
+      "3": 15,
+      "4": 12,
+      "2": 5,
+      "6": 1,
+      "5": 8,
+      "7": 2
+    },
+    "same_first": 11,
+    "incumbent_pairs": 33,
+    "nonintervention": 28,
+    "vary": 7,
+    "single_zero": 235,
+    "zero_in_varying_pair": 35,
+    "common_deaths": 201,
+    "common_death_with_nonzero_sibling": 17,
+    "all_zero": 25,
+    "single_rmse": 14.376857817258763,
+    "half_rmse": 5.090317987051725,
+    "sd_single": 14.629150460275154,
+    "se_mean": 5.172185746729433,
+    "old_location_rmse": 10.10939437608222,
+    "old_minus_mean_mse": {
+      "n": 24,
+      "mean": 123.56770833333333,
+      "ci": [
+        10.718001302083334,
+        317.6016927083333
+      ]
+    },
+    "half_sign_agreement": 0.9333333333333333,
+    "both_nonzero_halves": 15
+  }
+}

@@ -27,18 +27,18 @@ def configure(out,arm):
         plan.admit=affordable
         plan.quotas=(24,56)
     return host,g2,net,plan
-def run(group,arm,shard=0,n=1):
+def run(group,arm,shard=0,n=1,*,evidence=E,logs=OUT,setup_arm=configure):
     start=perf_counter()
     tag=f"{group}-{arm}-{shard}"
-    out=OUT/tag
+    out=logs/tag
     out.mkdir(parents=True,exist_ok=True)
-    host,g2,net,plan=configure(out,arm)
+    host,g2,net,plan=setup_arm(out,arm)
     lane=Lane(host,0)
-    panel=load(E/("augmentation.gz" if group in ("train2","dev2") else "panel.gz"))["confirm" if group=="cost" else group]
+    panel=load(evidence/("augmentation.gz" if group in ("train2","dev2") else "panel.gz"))["confirm" if group=="cost" else group]
     if group=="cost":
         panel=[panel[6*i+i%2] for i in range(16)]
     natural=group in ("train","dev","train2","dev2")
-    with gzip.open(E/(tag+".gz"),"xt",compresslevel=4) as f:
+    with gzip.open(evidence/(tag+".gz"),"xt",compresslevel=4) as f:
         for i in range(shard,len(panel),n):
             w=panel[i];s=w["spec"];before=perf_counter();trace=[];last={};counts={}
             try:
@@ -52,5 +52,5 @@ def run(group,arm,shard=0,n=1):
                      turns=last.get("turn"),counts=counts,seconds=perf_counter()-before)
             f.write(json.dumps(r,separators=(",",":"))+"\n");f.flush()
     lane.close();host.close()
-    (E/(tag+".time.json")).write_text(json.dumps(perf_counter()-start))
+    (evidence/(tag+".time.json")).write_text(json.dumps(perf_counter()-start))
 if __name__=="__main__":run(*sys.argv[1:3],*map(int,sys.argv[3:]))

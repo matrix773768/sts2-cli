@@ -1,0 +1,347 @@
+{
+  "cases": [
+    {
+      "family": "e290e2e605997c38cf89842a83f3761f71fab2620283c8800c4a9409d4eb0256",
+      "seed": "10E7EE3122D946BE",
+      "turn": 2,
+      "encounter": "MYTES_NORMAL",
+      "policies": {
+        "V2": {
+          "main": "graph/0",
+          "first": "{\"card\":{\"affliction\":null,\"affliction_amount\":null,\"cost\":1,\"enchantment\":null,\"enchantment_amount\":null,\"id\":\"ONE_TWO_PUNCH\",\"upgrade\":0},\"choice\":null,\"choice_zone\":null,\"cost\":1,\"energy_x\":false,\"kind\":\"play_card\",\"potion\":null,\"preview\":null,\"star_cost\":0,\"star_x\":false,\"target\":null,\"target_side\":null,\"target_type\":\"Self\"}",
+          "law": [
+            [
+              "C",
+              "507a760b54b097e5c29abd5805c4ea6bea3276361190188d3093241758c51a5c",
+              0.0,
+              1.0
+            ]
+          ],
+          "use": true,
+          "cross": {
+            "V2": 17.62494468688965,
+            "V3": 24.98771858215332,
+            "mc": 36.88872528076172,
+            "td": 25.340974807739258
+          }
+        },
+        "V3": {
+          "main": "conditional/9/chosen",
+          "first": "{\"card\":{\"affliction\":null,\"affliction_amount\":null,\"cost\":1,\"enchantment\":null,\"enchantment_amount\":null,\"id\":\"HAVOC\",\"upgrade\":0},\"choice\":null,\"choice_zone\":null,\"cost\":1,\"energy_x\":false,\"kind\":\"play_card\",\"potion\":null,\"preview\":null,\"star_cost\":0,\"star_x\":false,\"target\":null,\"target_side\":null,\"target_type\":\"Self\"}",
+          "law": [
+            [
+              "C",
+              "0a383e53c5d9b7de52d8b0f66623e49ffc5378c993e03afac8079fa5ced138c7",
+              0.0,
+              0.0625
+            ],
+            [
+              "C",
+              "119397f87e09d767409455d9489d30ed1dac06b417fe23ca0705b0c7b57770f1",
+              0.0,
+              0.0625
+            ],
+            [
+              "C",
+              "5afac3cade1ad747651c4e37241618c6e0a8a93ef0e9125d4f9c2486839ff752",
+              0.0,
+              0.125
+            ],
+            [
+              "C",
+              "87a0ab5e8d81d1c133cc0d2b22c447c5973616166421fe636860d456924bdd4e",
+              0.0,
+              0.0625
+            ],
+            [
+              "C",
+              "9a33bc343875a01447eea0af6199ec4ed73b1240698152d760fb227f0cafa4ff",
+              0.0,
+              0.125
+            ],
+            [
+              "C",
+              "a255b8aa9d20115f627454167a5c5527e5c9b3d2fb227ec18bbf3bf2fde1c9bb",
+              0.0,
+              0.375
+            ],
+            [
+              "C",
+              "ae4f69c8558cd877a4fb9926e02890fe09e9e47e1a611b3d36e1a5c8354f4c9b",
+              0.0,
+              0.125
+            ],
+            [
+              "C",
+              "b85c94b8024fd1d28ce33489133eb691b7d085cf9a84ccf3d365cbd075bcbdda",
+              0.0,
+              0.0625
+            ]
+          ],
+          "use": true,
+          "cross": {
+            "V2": 3.1922218799591064,
+            "V3": 33.39332342147827,
+            "mc": 24.512861371040344,
+            "td": 12.359219551086426
+          }
+        },
+        "mc": {
+          "main": "graph/0",
+          "first": "{\"card\":{\"affliction\":null,\"affliction_amount\":null,\"cost\":1,\"enchantment\":null,\"enchantment_amount\":null,\"id\":\"ONE_TWO_PUNCH\",\"upgrade\":0},\"choice\":null,\"choice_zone\":null,\"cost\":1,\"energy_x\":false,\"kind\":\"play_card\",\"potion\":null,\"preview\":null,\"star_cost\":0,\"star_x\":false,\"target\":null,\"target_side\":null,\"target_type\":\"Self\"}",
+          "law": [
+            [
+              "C",
+              "507a760b54b097e5c29abd5805c4ea6bea3276361190188d3093241758c51a5c",
+              0.0,
+              1.0
+            ]
+          ],
+          "use": true,
+          "cross": {
+            "V2": 17.62494468688965,
+            "V3": 24.98771858215332,
+            "mc": 36.88872528076172,
+            "td": 25.340974807739258
+          }
+        },
+        "td": {
+          "main": "graph/0",
+          "first": "{\"card\":{\"affliction\":null,\"affliction_amount\":null,\"cost\":1,\"enchantment\":null,\"enchantment_amount\":null,\"id\":\"ONE_TWO_PUNCH\",\"upgrade\":0},\"choice\":null,\"choice_zone\":null,\"cost\":1,\"energy_x\":false,\"kind\":\"play_card\",\"potion\":null,\"preview\":null,\"star_cost\":0,\"star_x\":false,\"target\":null,\"target_side\":null,\"target_type\":\"Self\"}",
+          "law": [
+            [
+              "C",
+              "507a760b54b097e5c29abd5805c4ea6bea3276361190188d3093241758c51a5c",
+              0.0,
+              1.0
+            ]
+          ],
+          "use": true,
+          "cross": {
+            "V2": 17.62494468688965,
+            "V3": 24.98771858215332,
+            "mc": 36.88872528076172,
+            "td": 25.340974807739258
+          }
+        }
+      },
+      "whole": {
+        "V2": {
+          "status": "predicted_win",
+          "terminal": {
+            "turn": 6,
+            "hp": 4,
+            "max_hp": 80,
+            "block": 0,
+            "energy": 0,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "gold": 99
+          }
+        },
+        "V3": {
+          "status": "death",
+          "terminal": {
+            "turn": 5,
+            "hp": 0,
+            "max_hp": 80,
+            "block": 0,
+            "energy": 0,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "gold": 99
+          }
+        },
+        "mc": {
+          "status": "predicted_win",
+          "terminal": {
+            "turn": 6,
+            "hp": 4,
+            "max_hp": 80,
+            "block": 0,
+            "energy": 0,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "gold": 99
+          }
+        },
+        "td": {
+          "status": "predicted_win",
+          "terminal": {
+            "turn": 6,
+            "hp": 4,
+            "max_hp": 80,
+            "block": 0,
+            "energy": 0,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "gold": 99
+          }
+        }
+      }
+    },
+    {
+      "family": "56fb18b9bc3c3477fc393243308c93cd6bd2bb08c3d4073170d4cfb715099957",
+      "seed": "FF6BC692BD204CBC",
+      "turn": 2,
+      "encounter": "VANTOM_BOSS",
+      "policies": {
+        "V2": {
+          "main": "graph/0",
+          "first": "{\"card\":{\"affliction\":null,\"affliction_amount\":null,\"cost\":3,\"enchantment\":null,\"enchantment_amount\":null,\"id\":\"DEMON_FORM\",\"upgrade\":0},\"choice\":null,\"choice_zone\":null,\"cost\":3,\"energy_x\":false,\"kind\":\"play_card\",\"potion\":null,\"preview\":null,\"star_cost\":0,\"star_x\":false,\"target\":null,\"target_side\":null,\"target_type\":\"Self\"}",
+          "law": [
+            [
+              "C",
+              "617f0c13e70c130fdd738e4db8ff685f35dfcfda0a1d85f074c06e82e4ccc182",
+              0.0,
+              1.0
+            ]
+          ],
+          "use": true,
+          "cross": {
+            "V2": 20.677440643310547,
+            "V3": 48.21219253540039,
+            "mc": 30.078739166259766,
+            "td": 23.897911071777344
+          }
+        },
+        "V3": {
+          "main": "graph/1",
+          "first": "{\"card\":{\"affliction\":null,\"affliction_amount\":null,\"cost\":1,\"enchantment\":null,\"enchantment_amount\":null,\"id\":\"CRUELTY\",\"upgrade\":0},\"choice\":null,\"choice_zone\":null,\"cost\":1,\"energy_x\":false,\"kind\":\"play_card\",\"potion\":null,\"preview\":null,\"star_cost\":0,\"star_x\":false,\"target\":null,\"target_side\":null,\"target_type\":\"Self\"}",
+          "law": [
+            [
+              "C",
+              "09f34d9e102ce3e2ae3527d9dceaef01c08d920fff7a2dbc4e184dbdf02c273b",
+              0.0,
+              1.0
+            ]
+          ],
+          "use": true,
+          "cross": {
+            "V2": 13.587844848632812,
+            "V3": 59.36033248901367,
+            "mc": 28.01156234741211,
+            "td": 18.09882164001465
+          }
+        },
+        "mc": {
+          "main": "graph/2",
+          "first": "{\"card\":{\"affliction\":null,\"affliction_amount\":null,\"cost\":1,\"enchantment\":null,\"enchantment_amount\":null,\"id\":\"CRIMSON_MANTLE\",\"upgrade\":1},\"choice\":null,\"choice_zone\":null,\"cost\":1,\"energy_x\":false,\"kind\":\"play_card\",\"potion\":null,\"preview\":null,\"star_cost\":0,\"star_x\":false,\"target\":null,\"target_side\":null,\"target_type\":\"Self\"}",
+          "law": [
+            [
+              "C",
+              "8a4c8e7c05808d850bf0af784d4be5a9ed894aba7dcd541fac204a096765f06f",
+              0.0,
+              1.0
+            ]
+          ],
+          "use": true,
+          "cross": {
+            "V2": 18.728124618530273,
+            "V3": 51.69847869873047,
+            "mc": 31.33574104309082,
+            "td": 23.646059036254883
+          }
+        },
+        "td": {
+          "main": "graph/0",
+          "first": "{\"card\":{\"affliction\":null,\"affliction_amount\":null,\"cost\":3,\"enchantment\":null,\"enchantment_amount\":null,\"id\":\"DEMON_FORM\",\"upgrade\":0},\"choice\":null,\"choice_zone\":null,\"cost\":3,\"energy_x\":false,\"kind\":\"play_card\",\"potion\":null,\"preview\":null,\"star_cost\":0,\"star_x\":false,\"target\":null,\"target_side\":null,\"target_type\":\"Self\"}",
+          "law": [
+            [
+              "C",
+              "617f0c13e70c130fdd738e4db8ff685f35dfcfda0a1d85f074c06e82e4ccc182",
+              0.0,
+              1.0
+            ]
+          ],
+          "use": true,
+          "cross": {
+            "V2": 20.677440643310547,
+            "V3": 48.21219253540039,
+            "mc": 30.078739166259766,
+            "td": 23.897911071777344
+          }
+        }
+      },
+      "whole": {
+        "V2": {
+          "status": "predicted_win",
+          "terminal": {
+            "turn": 6,
+            "hp": 2,
+            "max_hp": 80,
+            "block": 10,
+            "energy": 1,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "gold": 99
+          }
+        },
+        "V3": {
+          "status": "death",
+          "terminal": {
+            "turn": 7,
+            "hp": 0,
+            "max_hp": 80,
+            "block": 0,
+            "energy": 1,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "gold": 99
+          }
+        },
+        "mc": {
+          "status": "predicted_win",
+          "terminal": {
+            "turn": 6,
+            "hp": 11,
+            "max_hp": 80,
+            "block": 10,
+            "energy": 1,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "gold": 99
+          }
+        },
+        "td": {
+          "status": "predicted_win",
+          "terminal": {
+            "turn": 6,
+            "hp": 2,
+            "max_hp": 80,
+            "block": 10,
+            "energy": 1,
+            "potions": [
+              null,
+              null,
+              null
+            ],
+            "gold": 99
+          }
+        }
+      }
+    }
+  ],
+  "seconds": 71.75667550000071
+}

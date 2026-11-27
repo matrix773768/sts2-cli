@@ -8,6 +8,9 @@ def extension(solver,sim,host):
     # Opt-in comparison: let a single card expose its third draw while retaining
     # the original frontier, key-card heuristic, pending-choice and settlement rules.
     build.replace(host/"Tactical.cs","tape.Length>=2?Stop", 'tape.Length>=(request.TryGetProperty("review_third_draw",out var third) && third.GetBoolean()?3:2)?Stop')
+    add_world_sampler(host)
+
+def add_world_sampler(host):
     build.replace(host/"Reference.cs",'if(request.TryGetProperty("clear",out _))','''if(request.TryGetProperty("diagnostic_world",out var world)){
             ClearReference();
             var pile=source.Simulator.State.GetPlayerCombatState(_player).DrawPile;
