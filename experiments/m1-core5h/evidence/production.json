@@ -1,0 +1,4068 @@
+{
+  "protocol_sha256": "5f03b1a6fb2b405da03e6cf4629523bf4ec78ec823b7959a647a535c3ee0b6c5",
+  "archives": {
+    "paired-raw-0.zip": "30190891f4ee3768a90217c89c86d4fb6293122642716060daa6a369a1d1864f",
+    "paired-raw-1.zip": "a7e63a512c0356387cbbb42e8c790c68337a8b86ddf71c456f99f3bc9dc7e1a8",
+    "paired-raw-2.zip": "083904c6ed1f19be921362bf611fd16e469169d995979c6a244043c0c88f2917",
+    "paired-raw-3.zip": "1eaad5fb4239590eb210bb645e36487ce45db8ef87fb6cdb2991bb40d901f075"
+  },
+  "scanned": 339,
+  "selected": 160,
+  "eligible": 142,
+  "coverage": {
+    "queries": 1317,
+    "reference_closed": 758,
+    "comparable": 646,
+    "reference_open": 559,
+    "disagreements": 143
+  },
+  "block_failures": {
+    "law_or_execution_gap": 18
+  },
+  "groups": {
+    "all-disagreement": {
+      "effect": {
+        "n": 113,
+        "mean": 2.200221238938053,
+        "ci": [
+          -0.8330199115044247,
+          5.627350663716812
+        ]
+      },
+      "size": 7.370575221238938,
+      "positive": 29,
+      "negative": 22,
+      "direction": {
+        "uncertain": 86,
+        "negative": 9,
+        "positive": 18
+      },
+      "side0_regret": 2.5851769911504423,
+      "v2_regret": 4.785398230088496
+    },
+    "all-representative": {
+      "effect": {
+        "n": 29,
+        "mean": -12.97844827586207,
+        "ci": [
+          -29.198275862068964,
+          1.8020474137930986
+        ]
+      },
+      "size": 25.038793103448278,
+      "positive": 6,
+      "negative": 16,
+      "direction": {
+        "uncertain": 13,
+        "positive": 3,
+        "negative": 13
+      },
+      "side0_regret": 19.00862068965517,
+      "v2_regret": 6.030172413793103
+    },
+    "train-disagreement": {
+      "effect": {
+        "n": 84,
+        "mean": 1.53125,
+        "ci": [
+          -2.3246651785714283,
+          5.832142857142853
+        ]
+      },
+      "size": 7.912202380952381,
+      "positive": 22,
+      "negative": 18,
+      "direction": {
+        "uncertain": 63,
+        "negative": 8,
+        "positive": 13
+      },
+      "side0_regret": 3.1904761904761907,
+      "v2_regret": 4.721726190476191
+    },
+    "train-representative": {
+      "effect": {
+        "n": 22,
+        "mean": -16.835227272727273,
+        "ci": [
+          -37.23877840909091,
+          2.579687499999998
+        ]
+      },
+      "size": 30.77840909090909,
+      "positive": 4,
+      "negative": 12,
+      "direction": {
+        "positive": 3,
+        "uncertain": 9,
+        "negative": 10
+      },
+      "side0_regret": 23.806818181818183,
+      "v2_regret": 6.971590909090909
+    },
+    "dev-disagreement": {
+      "effect": {
+        "n": 29,
+        "mean": 4.137931034482759,
+        "ci": [
+          -0.11637931034482758,
+          9.146659482758619
+        ]
+      },
+      "size": 5.801724137931035,
+      "positive": 7,
+      "negative": 4,
+      "direction": {
+        "uncertain": 23,
+        "negative": 1,
+        "positive": 5
+      },
+      "side0_regret": 0.8318965517241379,
+      "v2_regret": 4.969827586206897
+    },
+    "dev-representative": {
+      "effect": {
+        "n": 7,
+        "mean": -0.8571428571428571,
+        "ci": [
+          -8.25,
+          7.678571428571429
+        ]
+      },
+      "size": 7.0,
+      "positive": 2,
+      "negative": 4,
+      "direction": {
+        "uncertain": 4,
+        "negative": 3
+      },
+      "side0_regret": 3.9285714285714284,
+      "v2_regret": 3.0714285714285716
+    }
+  },
+  "reassessment": {
+    "all": {
+      "n": 56,
+      "four_rmse": 28.86900834557957,
+      "eight_rmse": 22.78420456541267,
+      "same": 28,
+      "opposite": 6,
+      "zero": 22
+    },
+    "fixed": {
+      "n": 31,
+      "four_rmse": 12.99460961446161,
+      "eight_rmse": 9.926823997503902,
+      "same": 10,
+      "opposite": 0,
+      "zero": 21
+    },
+    "adaptive-only": {
+      "n": 25,
+      "four_rmse": 40.71208358706295,
+      "eight_rmse": 32.25890380964611,
+      "same": 18,
+      "opposite": 6,
+      "zero": 1
+    }
+  },
+  "examples": [
+    {
+      "slot": 108,
+      "turn": 1,
+      "encounter": "SCROLLS_OF_BITING_NORMAL",
+      "hp": 64,
+      "choices": [
+        {
+          "card": "SETUP_STRIKE",
+          "target": 2,
+          "style": "light"
+        },
+        {
+          "card": "SETUP_STRIKE",
+          "target": 0,
+          "style": "light"
+        }
+      ],
+      "v2_gap": -1.9070167609700093,
+      "long_gap": 2.3257961242719603,
+      "effect": 50.375,
+      "repeat": 3.75,
+      "ys": [
+        7.0,
+        100.0,
+        0,
+        101.0,
+        107.0,
+        91.0,
+        0,
+        -3.0
+      ]
+    },
+    {
+      "slot": 32,
+      "turn": 2,
+      "encounter": "SCROLLS_OF_BITING_WEAK",
+      "hp": 48,
+      "choices": [
+        {
+          "card": "WHIRLWIND",
+          "target": null,
+          "style": "light"
+        },
+        {
+          "card": "FLAME_BARRIER",
+          "target": null,
+          "style": "light"
+        }
+      ],
+      "v2_gap": -16.823920305741865,
+      "long_gap": 6.961378970044677,
+      "effect": -6.0,
+      "repeat": -34.0,
+      "ys": [
+        -7.0,
+        -7.0,
+        4.0,
+        4.0,
+        -5.0,
+        4.0,
+        -17.0,
+        -24.0
+      ]
+    }
+  ],
+  "roots": [
+    {
+      "slot": 0,
+      "family": "6574b8258e82ea7e120350cf4d1efb14a74fd4168b551282b8b2a3ca1dcb152e",
+      "role": "representative",
+      "split": "dev",
+      "disagree": false,
+      "original": 0.0,
+      "ys": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 1,
+      "family": "004befcf46025fef284b10990a78df410fe0de138da07894ccd638f9424491e9",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 2,
+      "family": "5472f65a5358f95f5d439a0cad3f30deb61eab57444ce99e8ece70afd0b96639",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": -16.0,
+      "ys": [
+        -19.0,
+        -14.0,
+        -33.0,
+        -10.0,
+        -13.0,
+        -13.0,
+        -3.0,
+        -14.0
+      ],
+      "effect": -14.875,
+      "interval": [
+        -20.878124999999997,
+        -9.875
+      ],
+      "sign": "negative",
+      "repeat": [
+        -3.0,
+        -15.0,
+        -6.0,
+        -31.0
+      ]
+    },
+    {
+      "slot": 3,
+      "family": "c89ce10c6a0e658d9bfec8ec932faf6e095ed229d5e717d95bc7ed56aaee3a7c",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        75.0,
+        0,
+        75.0,
+        0,
+        0,
+        0,
+        75.0
+      ],
+      "effect": 28.125,
+      "interval": [
+        0.0,
+        56.25
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0,
+        0,
+        0,
+        75.0
+      ]
+    },
+    {
+      "slot": 4,
+      "family": "dee4b3d361aab76b11f566a93072956e2fe4ff8fe1f18c0ab9f168f98a0e6743",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 5,
+      "family": "f079a3e4f228cd3b7525de051b1c88eed626e84d33e4bf7397b44e36bb99fa9f",
+      "role": "representative",
+      "split": "train",
+      "disagree": true,
+      "original": 9.0,
+      "ys": [
+        25.0,
+        4.0,
+        19.0,
+        14.0,
+        16.0,
+        -4.0,
+        13.0,
+        10.0
+      ],
+      "effect": 12.125,
+      "interval": [
+        6.125,
+        17.75
+      ],
+      "sign": "positive",
+      "repeat": []
+    },
+    {
+      "slot": 6,
+      "family": "89fd95d7c38e322f22edc0a7010522c22484157cac6dbd421ec5f6439284ca60",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 7,
+      "family": "ff0c6e665e945110dc5c04ceb478b8feb408787116a3b888b9d43152080c927d",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": 8,
+      "family": "a8c017d832a11b12439ca19273b561b0b544ebab4de90ad4f4d983c65bf3dc2b",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": -19.0,
+      "ys": [
+        -19.0,
+        -20.0,
+        -19.0,
+        -21.0,
+        -19.0,
+        -19.0,
+        -2.0,
+        -19.0
+      ],
+      "effect": -17.25,
+      "interval": [
+        -19.875,
+        -12.75
+      ],
+      "sign": "negative",
+      "repeat": []
+    },
+    {
+      "slot": 9,
+      "family": "21d360f6e7b3cfe22be3c35de478b0f73e31d7bdd6e5a94064bdb8f8bbb111eb",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 10,
+      "family": "ee79bd46dd782ef89314d22c641f47fc916ca628d74be88db0c861a2ea211223",
+      "role": "representative",
+      "split": "train",
+      "disagree": false,
+      "original": 0.0,
+      "ys": [
+        -14.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -10.0,
+        11.0,
+        0.0
+      ],
+      "effect": -1.625,
+      "interval": [
+        -6.5,
+        2.875
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 11,
+      "family": "6580e71a1cabe1e6e1611aaedd4ac1724ef1acaad3b193bce3aa5e5b35a1d0e9",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 13.0,
+      "ys": [
+        13.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "effect": 1.625,
+      "interval": [
+        0.0,
+        4.875
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 12,
+      "family": "be09d8f9bb3b9b0800dd0f6ce6be635fa7d00c09348ea41e78e9962e81c04a11",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": 13,
+      "family": "e305b8cf38604e8800c619d24c346301460161860a5b9459e7d157c9d587f226",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 3.0,
+      "ys": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        -3.0,
+        3.0,
+        3.0,
+        3.0
+      ],
+      "effect": 2.25,
+      "interval": [
+        0.75,
+        3.0
+      ],
+      "sign": "positive",
+      "repeat": []
+    },
+    {
+      "slot": 14,
+      "family": "7d50c9c17ad7ceaf64818a6c25b43536005346a4a79a62f56c91a5842fcabef7",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 3.0,
+      "ys": [
+        2.0,
+        0.0,
+        2.0,
+        0.0,
+        2.0,
+        0.0,
+        2.0,
+        2.0
+      ],
+      "effect": 1.25,
+      "interval": [
+        0.5,
+        1.75
+      ],
+      "sign": "positive",
+      "repeat": []
+    },
+    {
+      "slot": 15,
+      "family": "b8a79a60d8d22e4288ef34444ab30511f7f459b2060e365f2356eaff69401ad0",
+      "role": "representative",
+      "split": "train",
+      "disagree": true,
+      "original": 81.0,
+      "ys": [
+        83.0,
+        101.0,
+        101.0,
+        101.0,
+        71.0,
+        101.0,
+        74.0,
+        74.0
+      ],
+      "effect": 88.25,
+      "interval": [
+        79.25,
+        97.625
+      ],
+      "sign": "positive",
+      "repeat": []
+    },
+    {
+      "slot": 16,
+      "family": "ff33050bb1b79b4db3b154b39318b1ddf50cc3e6225570d265c7466a22190034",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 17,
+      "family": "5f7f9bec3563f8687bb8aa96c4db75248fdfc16ea1132a89039621015cc9ee62",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 109.0,
+      "ys": [
+        109.0,
+        109.0,
+        109.0,
+        109.0,
+        109.0,
+        109.0,
+        109.0,
+        109.0
+      ],
+      "effect": 109.0,
+      "interval": [
+        109.0,
+        109.0
+      ],
+      "sign": "positive",
+      "repeat": [
+        109.0,
+        109.0,
+        109.0,
+        109.0
+      ]
+    },
+    {
+      "slot": 18,
+      "family": "624cb1e717a72e3e7fa648649986abac094e91637c5d536ea2145a2757934e4d",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": -11.0,
+      "ys": [
+        -24.0,
+        18.0,
+        2.0,
+        -5.0,
+        -9.0,
+        -28.0,
+        -12.0,
+        -12.0
+      ],
+      "effect": -8.75,
+      "interval": [
+        -17.75,
+        1.125
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        -25.0,
+        -17.0,
+        -17.0,
+        -9.0
+      ]
+    },
+    {
+      "slot": 20,
+      "family": "1e662d9e825ac9d66a607dcf4c442c3d43ae833ef224fcfe01fecf447ed0a225",
+      "role": "representative",
+      "split": "dev",
+      "disagree": false,
+      "original": 3.0,
+      "ys": [
+        89.0,
+        -12.0,
+        89.0,
+        3.0,
+        3.0,
+        3.0,
+        -12.0,
+        3.0
+      ],
+      "effect": 20.75,
+      "interval": [
+        -4.5,
+        53.0
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        -2.0,
+        -5.0,
+        3.0,
+        3.0
+      ]
+    },
+    {
+      "slot": 21,
+      "family": "b2f587583e77bf668a200e11909540c99ab210e794d1640c3b4ec1a0d0fa820e",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 5.0,
+      "ys": [
+        5.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "effect": 0.625,
+      "interval": [
+        0.0,
+        1.875
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 22,
+      "family": "de66e07addf2a89f189844ae119efd2e5941a6e4d2d6f489d7755beadf53c84b",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 7.0,
+      "ys": [
+        7.0,
+        10.0,
+        1.0,
+        7.0,
+        15.0,
+        3.0,
+        23.0,
+        15.0
+      ],
+      "effect": 10.125,
+      "interval": [
+        5.75,
+        15.125
+      ],
+      "sign": "positive",
+      "repeat": [
+        23.0,
+        0.0,
+        13.0,
+        7.0
+      ]
+    },
+    {
+      "slot": 23,
+      "family": "49bb48cc2d60e84c4eb158871636c5bdfa77bd77b532b130f201986da509afcb",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": -17.0,
+      "ys": [
+        -17.0,
+        -15.0,
+        -15.0,
+        -15.0,
+        -23.0,
+        1.0,
+        -115.0,
+        -15.0
+      ],
+      "effect": -26.75,
+      "interval": [
+        -53.75,
+        -11.0
+      ],
+      "sign": "negative",
+      "repeat": [
+        -23.0,
+        -25.0,
+        -11.0,
+        -17.0
+      ]
+    },
+    {
+      "slot": 24,
+      "family": "4904ae8f9b4a7f5f4a52e423b4c57ccd14a5c2ff6b7b70b51f8a93bd5de2c0d9",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 25,
+      "family": "38d49c8b893f9b072312d2dc29e0c62d125a4e3af515cd92efac6c9b12474c04",
+      "role": "representative",
+      "split": "train",
+      "disagree": false,
+      "original": -25.0,
+      "ys": [
+        -30.0,
+        -33.0,
+        -29.0,
+        -31.0,
+        -30.0,
+        -39.0,
+        -31.0,
+        -15.0
+      ],
+      "effect": -29.75,
+      "interval": [
+        -33.625,
+        -24.875
+      ],
+      "sign": "negative",
+      "repeat": []
+    },
+    {
+      "slot": 26,
+      "family": "b0cd19773dbadb0af8fb66ed1b436f87d9a7dbf1218bc910df574e9e061e7aee",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 11.0,
+      "ys": [
+        -2.0,
+        0,
+        11.0,
+        -102.0,
+        -2.0,
+        0,
+        0,
+        0
+      ],
+      "effect": -11.875,
+      "interval": [
+        -38.75,
+        3.625
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        -2.0,
+        0.0,
+        -2.0,
+        -2.0
+      ]
+    },
+    {
+      "slot": 27,
+      "family": "09b9793543523750497f9bf951bd1b98b66ef6d36c54519bfa6ccb9cbabdb90e",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": 28,
+      "family": "00614bb161ea8aa6d6389dddc465d604ed39fa1ed7aea051811859781772ad2e",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": 0.0,
+      "ys": [
+        0.0,
+        0.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        0.0
+      ],
+      "effect": 1.875,
+      "interval": [
+        0.75,
+        2.625
+      ],
+      "sign": "positive",
+      "repeat": []
+    },
+    {
+      "slot": 29,
+      "family": "5631bc357f464cc35349c58e6ca5de34492fe49a2e16d2374f1c562e71cc55b5",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 30,
+      "family": "f26e78f97f08302204e37e892cf96304c3eb76c05a87a3c1be522ae326929e3d",
+      "role": "representative",
+      "split": "train",
+      "disagree": false,
+      "original": -13.0,
+      "ys": [
+        -13.0,
+        -13.0,
+        -13.0,
+        -16.0,
+        -13.0,
+        -13.0,
+        -13.0,
+        -13.0
+      ],
+      "effect": -13.375,
+      "interval": [
+        -14.125,
+        -13.0
+      ],
+      "sign": "negative",
+      "repeat": []
+    },
+    {
+      "slot": 31,
+      "family": "737d0f9e2174f53a664ff9282d62ee68286593684de70396ecba3d39199d4092",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 32,
+      "family": "4cf77c0d05dc28301be13861fda843d23b7696794302ecfd541303e659fd3731",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": 8.0,
+      "ys": [
+        -7.0,
+        -7.0,
+        4.0,
+        4.0,
+        -5.0,
+        4.0,
+        -17.0,
+        -24.0
+      ],
+      "effect": -6.0,
+      "interval": [
+        -13.125,
+        0.125
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        -97.0,
+        -19.0,
+        -10.0,
+        -10.0
+      ]
+    },
+    {
+      "slot": 33,
+      "family": "c8d64187551481c18e9b13a8ccb0019b3b740b7438e4aab96d45cde555315f84",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 35,
+      "family": "eb1b3d605981069816fd8875264b0a185308a19ebd35e880d093301ed2fa76c7",
+      "role": "representative",
+      "split": "train",
+      "disagree": false,
+      "original": -114.0,
+      "ys": [
+        -114.0,
+        -114.0,
+        -114.0,
+        -114.0,
+        -114.0,
+        -114.0,
+        -114.0,
+        -114.0
+      ],
+      "effect": -114.0,
+      "interval": [
+        -114.0,
+        -114.0
+      ],
+      "sign": "negative",
+      "repeat": []
+    },
+    {
+      "slot": 36,
+      "family": "506ffd37166141b89ccb05dfe73d53b6ad2a93079aba2eb77045d83fd0663770",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 37,
+      "family": "e1beb446d58c37ec592d27ee93d2f2502f92d1e24cad5bdf5aa4ae4e5ae99957",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": -2.0,
+      "ys": [
+        -2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        -2.0
+      ],
+      "effect": -2.0,
+      "interval": [
+        -2.0,
+        -2.0
+      ],
+      "sign": "negative",
+      "repeat": [
+        -2.0,
+        -2.0,
+        -2.0,
+        -2.0
+      ]
+    },
+    {
+      "slot": 40,
+      "family": "f4406cc968dbe70eaba9798d0aeb14020fc349cfa3a1ccd8c06300b53e3c637d",
+      "role": "representative",
+      "split": "dev",
+      "disagree": false,
+      "original": -33.0,
+      "ys": [
+        -11.0,
+        0.0,
+        0.0,
+        6.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "effect": -0.625,
+      "interval": [
+        -4.125,
+        2.25
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 42,
+      "family": "1deb019b45419f750ac28e7f7bbffc52dceaa5f95fa38ce2b4a24ea50a1ff7bf",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": 43,
+      "family": "165f1c0c96bf12acb502a14b0fc113caf9bff738cf1ba9f6a7d47ddbd0bf7c34",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 1.0,
+      "ys": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -10.0,
+        -10.0,
+        1.0,
+        6.0
+      ],
+      "effect": -1.125,
+      "interval": [
+        -5.25,
+        2.25
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 44,
+      "family": "e7e40e45bb8dd7e2e5885e8eed8ff00f3075ccbc0e0a7862c525905b8a1de182",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 45,
+      "family": "c56b25da7df727a0720dc63739a1938a249b2d83a35641d89eb115706d2129a9",
+      "role": "representative",
+      "split": "train",
+      "disagree": false,
+      "original": -7.0,
+      "ys": [
+        0,
+        75.0,
+        0,
+        0,
+        83.0,
+        0,
+        0,
+        0
+      ],
+      "effect": 19.75,
+      "interval": [
+        0.0,
+        41.5
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        83.0,
+        0,
+        83.0,
+        83.0
+      ]
+    },
+    {
+      "slot": 46,
+      "family": "7604fff6201a4f5dd5d36447f5ea92a6a412c9827957d7335a671bc3e781ddae",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 47,
+      "family": "c29eec102818e6ff046ddf08028455246319f044e0249216d7db0727f63c4607",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": 48,
+      "family": "e1bdd1fd1039f42ff085d4c76079b33eb35071757bbbab3ba0376389d0c0b5f2",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 49,
+      "family": "5afb7e13086775365c2c8a85f88ff3b5952f3cf5f58dc2f627a894b4f9b83030",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": -1.0,
+      "ys": [
+        107.0,
+        -4.0,
+        123.0,
+        17.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0
+      ],
+      "effect": 31.875,
+      "interval": [
+        3.0,
+        69.75624999999991
+      ],
+      "sign": "positive",
+      "repeat": [
+        7.0,
+        0.0,
+        6.0,
+        1.0
+      ]
+    },
+    {
+      "slot": 50,
+      "family": "0662834c4f91df4e1d5c2e1182abed3ed8a0d99c66da192d4c465aebbff2adf4",
+      "role": "representative",
+      "split": "train",
+      "disagree": false,
+      "original": -127.0,
+      "ys": [
+        -127.0,
+        -127.0,
+        -127.0,
+        -127.0,
+        -127.0,
+        -127.0,
+        -127.0,
+        -127.0
+      ],
+      "effect": -127.0,
+      "interval": [
+        -127.0,
+        -127.0
+      ],
+      "sign": "negative",
+      "repeat": []
+    },
+    {
+      "slot": 51,
+      "family": "990b791a5cb44e63fd210ac92aee451c69fb061278cb3a5499b683f24b0f91d5",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": -3.0,
+      "ys": [
+        -3.0,
+        -3.0,
+        -3.0,
+        -3.0,
+        -3.0,
+        -3.0,
+        -3.0,
+        -3.0
+      ],
+      "effect": -3.0,
+      "interval": [
+        -3.0,
+        -3.0
+      ],
+      "sign": "negative",
+      "repeat": []
+    },
+    {
+      "slot": 52,
+      "family": "3f0babf694f7340e0ad4872ced54eca26d08403c2acef252842f676706921c5a",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": 53,
+      "family": "21e222868ec507097b93990e31e99163c4e7985061646c33449b42f150f774fa",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 54,
+      "family": "66a24ffa83927c6b1592df8a12b719ff276a020adf18043868450d7668a86865",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        111.0,
+        111.0
+      ],
+      "effect": 27.75,
+      "interval": [
+        0.0,
+        55.5
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0,
+        0,
+        111.0,
+        0
+      ]
+    },
+    {
+      "slot": 55,
+      "family": "7a0ce961d3ea538b2ac559d7c7cdd4b28a6d2d5058fc5c8a97973672b5c3a7a5",
+      "role": "representative",
+      "split": "train",
+      "disagree": false,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 56,
+      "family": "cd0e5bd3d84273a03cb078b75847808224c5203cc380924a1fff2b53b95d95f0",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": 0.0,
+      "ys": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 57,
+      "family": "9407e3f3f0c60df0d1ed6bee7813e4048450e2e4cc6873e36188506e5009af59",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 108.0,
+      "ys": [
+        3.0,
+        0,
+        0,
+        0,
+        8.0,
+        0,
+        114.0,
+        0
+      ],
+      "effect": 15.625,
+      "interval": [
+        0.375,
+        44.125
+      ],
+      "sign": "positive",
+      "repeat": [
+        127.0,
+        -112.0,
+        19.0,
+        0
+      ]
+    },
+    {
+      "slot": 59,
+      "family": "311f288ac7440ff8ca548d5fcf4dc03cb30a732d4fbebe67d5d03b4dabae4a3b",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 60,
+      "family": "f062484520ad755e510e74c2f1b49a8d76f76c13de210b436b7c2cf104c4c036",
+      "role": "representative",
+      "split": "dev",
+      "disagree": false,
+      "original": -2.0,
+      "ys": [
+        -2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        -2.0
+      ],
+      "effect": -2.0,
+      "interval": [
+        -2.0,
+        -2.0
+      ],
+      "sign": "negative",
+      "repeat": []
+    },
+    {
+      "slot": 61,
+      "family": "4ca3bbdddcae9d673b3305da9258d007007a1a7ddc49620a9c592a05dcaecf6e",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": -73.0,
+      "ys": [
+        -73.0,
+        -73.0,
+        -73.0,
+        -73.0,
+        -73.0,
+        -73.0,
+        -73.0,
+        -73.0
+      ],
+      "effect": -73.0,
+      "interval": [
+        -73.0,
+        -73.0
+      ],
+      "sign": "negative",
+      "repeat": []
+    },
+    {
+      "slot": 62,
+      "family": "0fafec8d4c176d2e2949bdf9fc8a7e67baba3188ff1e124223b18d68a2fcc485",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": 63,
+      "family": "b79d31927fe2df50584806a2fa54e5285288e57c9b4c7ed3670c144ddfc4c626",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        109.0,
+        -108.0,
+        -120.0,
+        -8.0,
+        0,
+        0
+      ],
+      "effect": -15.875,
+      "interval": [
+        -60.0,
+        27.25
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0,
+        0,
+        0,
+        117.0
+      ]
+    },
+    {
+      "slot": 65,
+      "family": "502ef5c9260570913b0b8293e77250158cbfff4b06f1c8d67e0dcfccdb139412",
+      "role": "representative",
+      "split": "train",
+      "disagree": false,
+      "original": 0,
+      "ys": [
+        -74.0,
+        -77.0,
+        0,
+        -99.0,
+        -77.0,
+        -73.0,
+        0,
+        0
+      ],
+      "effect": -50.0,
+      "interval": [
+        -75.75,
+        -19.25
+      ],
+      "sign": "negative",
+      "repeat": [
+        0,
+        0,
+        -74.0,
+        0
+      ]
+    },
+    {
+      "slot": 66,
+      "family": "6a3572236537c26e4ed9076316ea7aeff29ce42145eaace4a59ff5bf67edcbe3",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 6.0,
+      "ys": [
+        2.0,
+        6.0,
+        6.0,
+        2.0,
+        -2.0,
+        1.0,
+        2.0,
+        1.0
+      ],
+      "effect": 2.25,
+      "interval": [
+        0.625,
+        3.875
+      ],
+      "sign": "positive",
+      "repeat": []
+    },
+    {
+      "slot": 67,
+      "family": "bccbf596c496a4d866942a743543525ffbdc418c7bc07ecf667536e6689e3177",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": 68,
+      "family": "e6a96ca801af5cae74b5a75d1573f66d8cf06b6ab98e4adadf0ff563df37e3b9",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": -9.0,
+      "ys": [
+        -75.0,
+        0.0,
+        79.0,
+        72.0,
+        7.0,
+        0,
+        77.0,
+        80.0
+      ],
+      "effect": 30.0,
+      "interval": [
+        -8.25,
+        66.5
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0,
+        0.0,
+        79.0,
+        25.0
+      ]
+    },
+    {
+      "slot": 69,
+      "family": "eec461bc227570225fd866e93cb1d87dc3989dafed3726c3574c958f8bfcc842",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 70,
+      "family": "b873cc1de35c9e328550436cd5fe08fc53825f05a911ef9772a9f5234199b84f",
+      "role": "representative",
+      "split": "train",
+      "disagree": false,
+      "original": 0,
+      "ys": [
+        0,
+        0.0,
+        0.0,
+        0.0,
+        -2.0,
+        0.0,
+        -2.0,
+        0
+      ],
+      "effect": -0.5,
+      "interval": [
+        -1.25,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 71,
+      "family": "7a7214d5bba01f99b9d23c9dabbf037ec84bfe5d3cac3e64123de533adcf9b89",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 72,
+      "family": "78f185dfd2255afc6ca5325cd9f7588204bffa4f87f9b49714fd3cbb94a7d4e4",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": 73,
+      "family": "1f967f49e61b2f0bfc26b8a2fafcd9b1c3f679fe633991976dbc61b192f7d7b3",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 74,
+      "family": "e26a0bb48f833cd43acc0bdad2bead1bce9b6485a8d21a11fdc595cc48f9b1f2",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 12.0,
+      "ys": [
+        4.0,
+        12.0,
+        7.0,
+        12.0,
+        -5.0,
+        -1.0,
+        -5.0,
+        15.0
+      ],
+      "effect": 4.875,
+      "interval": [
+        -0.25,
+        9.75
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 75,
+      "family": "7304dba4d8686e481b589c2979b28ac1b47d4f72149b77d47d9dab0a82651bb0",
+      "role": "representative",
+      "split": "train",
+      "disagree": false,
+      "original": -2.0,
+      "ys": [
+        -2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        -2.0
+      ],
+      "effect": -2.0,
+      "interval": [
+        -2.0,
+        -2.0
+      ],
+      "sign": "negative",
+      "repeat": []
+    },
+    {
+      "slot": 76,
+      "family": "d89c48e8e481d0d9eac0939f27a48d0737c6e29153a0b93ed3c7925e19935090",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 77,
+      "family": "ac970ec801195cf2b1ca2bf0034e4a43ce8740022617226ef3a0d82b436d52be",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 23.0,
+      "ys": [
+        12.0,
+        18.0,
+        -88.0,
+        18.0,
+        -99.0,
+        19.0,
+        19.0,
+        6.0
+      ],
+      "effect": -11.875,
+      "interval": [
+        -49.375,
+        16.75
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        -99.0,
+        13.0,
+        18.0,
+        19.0
+      ]
+    },
+    {
+      "slot": 78,
+      "family": "0b96ed77a30eda36aa2380203bda198669d762e1d81693e82c692e3aa945f4f7",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": -9.0,
+      "ys": [
+        0,
+        111.0,
+        113.0,
+        0,
+        0,
+        -110.0,
+        -9.0,
+        113.0
+      ],
+      "effect": 27.25,
+      "interval": [
+        -27.375,
+        70.75
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        5.0,
+        -115.0,
+        -108.0,
+        0
+      ]
+    },
+    {
+      "slot": 81,
+      "family": "a68e4c556008d43ac93045ebf18357c963f3f5f21507e680eefeb840f009c1d2",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 82,
+      "family": "c93086a764c3e5f5d7c3b557936069fdca25797be2f9698eaac1c51af2777299",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": 83,
+      "family": "c1eb3ba465cb88c3eb85022d2f72ba9ae6d2290c7815f6a10ca57f7011aec6e3",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 84,
+      "family": "7678091dce2d01b0713a4840a30be6b58728c5dd8e4bdf1e923ecde6bc599621",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 85,
+      "family": "e266c7bc5e31f4f4da91e57f8e2046f00a2a8505a0917281665b6bf8033a99ed",
+      "role": "representative",
+      "split": "train",
+      "disagree": true,
+      "original": -97.0,
+      "ys": [
+        -97.0,
+        -97.0,
+        -97.0,
+        -97.0,
+        -97.0,
+        -97.0,
+        -97.0,
+        -97.0
+      ],
+      "effect": -97.0,
+      "interval": [
+        -97.0,
+        -97.0
+      ],
+      "sign": "negative",
+      "repeat": []
+    },
+    {
+      "slot": 86,
+      "family": "9b1741169fdac3d24ec4c6915669fdfc27121509273dc27142e3e3f33ec0dfee",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 87,
+      "family": "8a29e165ef004d5825a9be45ea546f10b0cb403b944eca1603979c7898090207",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": -4.0,
+      "ys": [
+        -4.0,
+        -8.0,
+        -4.0,
+        -4.0,
+        -4.0,
+        -4.0,
+        -4.0,
+        3.0
+      ],
+      "effect": -3.625,
+      "interval": [
+        -5.5,
+        -1.375
+      ],
+      "sign": "negative",
+      "repeat": [
+        -4.0,
+        3.0,
+        -22.0,
+        -4.0
+      ]
+    },
+    {
+      "slot": 88,
+      "family": "f6b5889a03466b425d3ce9a3f5e9009b0d0892cb6eee616d6f8a1bc9daaf7478",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": -85.0,
+      "ys": [
+        -77.0,
+        4.0,
+        -4.0,
+        4.0,
+        76.0,
+        41.0,
+        15.0,
+        99.0
+      ],
+      "effect": 19.75,
+      "interval": [
+        -15.625,
+        54.003124999999955
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        5.0,
+        -74.0,
+        9.0,
+        97.0
+      ]
+    },
+    {
+      "slot": 89,
+      "family": "1223b2cd91f7ad03941abded775d77df3adbf762ee4553fab18a6b7e7941608c",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 5.0,
+      "ys": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0
+      ],
+      "effect": 2.0,
+      "interval": [
+        2.0,
+        2.0
+      ],
+      "sign": "positive",
+      "repeat": []
+    },
+    {
+      "slot": 90,
+      "family": "6255eff71760d7483e86efd355dfb3ebf9ccf8e3ebf2162048fd4662510971a9",
+      "role": "representative",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 91,
+      "family": "bb59ae54b98ddc9b4ccd43c8ebe524b17c8dbbbb4b89b0cba99fbae20bca0be4",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 20.0,
+      "ys": [
+        -21.0,
+        20.0,
+        4.0,
+        -13.0,
+        -13.0,
+        -3.0,
+        7.0,
+        2.0
+      ],
+      "effect": -2.125,
+      "interval": [
+        -10.625,
+        6.625
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        -13.0,
+        -22.0,
+        20.0,
+        4.0
+      ]
+    },
+    {
+      "slot": 92,
+      "family": "75b64424bffc330a8a6dd2aa95e35952f900fcca0bca762c338df7a34234fdc5",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": 93,
+      "family": "1e4abf50f668e8d86202473c0a0cf16488c2dc0fc2e2a4a236521a5415f1bd19",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 94,
+      "family": "431ef1206d9a3342d7833593fbf162452d7007441490bfd4a4af2334c91d8920",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 95,
+      "family": "950aeada37b91ea07cbc15f681a6ecd89ee0b0b448973ee732db35c04a226178",
+      "role": "representative",
+      "split": "train",
+      "disagree": false,
+      "original": -18.0,
+      "ys": [
+        -18.0,
+        -18.0,
+        -18.0,
+        -18.0,
+        -18.0,
+        -18.0,
+        -18.0,
+        -18.0
+      ],
+      "effect": -18.0,
+      "interval": [
+        -18.0,
+        -18.0
+      ],
+      "sign": "negative",
+      "repeat": []
+    },
+    {
+      "slot": 96,
+      "family": "b532c27ae37a1a0280095f38f8b62926bcbce2b2937c06cb08e64d4f2925b19e",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": -73.0,
+      "ys": [
+        0,
+        0.0,
+        0,
+        0,
+        0,
+        0,
+        -5.0,
+        0
+      ],
+      "effect": -0.625,
+      "interval": [
+        -1.875,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 97,
+      "family": "d08f8285238fad8c1a430cc40b34eed582fe95f3a1f73413752f4cbdb33b16f8",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": 98,
+      "family": "a435f84fb0c6f618139ec029c6e3b97a3b0f9f5090a7e47772afa9f5112be981",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 99,
+      "family": "84b24d5ee5f8637e5d852f1384f3d31a8fe88c1012eae0de8d91a9961fcd00d2",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0.0,
+      "ys": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 100,
+      "family": "05e169cff025bb313fd4579f9843a203227af6ca690bd8b899b3f620322f9b3b",
+      "role": "representative",
+      "split": "dev",
+      "disagree": false,
+      "original": -17.0,
+      "ys": [
+        -16.0,
+        -17.0,
+        -17.0,
+        -17.0,
+        -17.0,
+        -17.0,
+        -17.0,
+        -17.0
+      ],
+      "effect": -16.875,
+      "interval": [
+        -17.0,
+        -16.625
+      ],
+      "sign": "negative",
+      "repeat": []
+    },
+    {
+      "slot": 101,
+      "family": "c9b9f9fe081400e7221a3cacfc91b5c4965a890f084e815e5f845019e52fe3d3",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 102,
+      "family": "82a2241062fe66526695f7cd703c3de102cda65edb5e3ada5a5ce9c42a47c44f",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": -5.0,
+      "ys": [
+        -20.0,
+        2.0,
+        -22.0,
+        -22.0,
+        -23.0,
+        -6.0,
+        -4.0,
+        -122.0
+      ],
+      "effect": -27.125,
+      "interval": [
+        -56.503125,
+        -8.625
+      ],
+      "sign": "negative",
+      "repeat": [
+        -18.0,
+        -2.0,
+        -133.0,
+        -133.0
+      ]
+    },
+    {
+      "slot": 103,
+      "family": "5c7d7ad9140cd5001045afe47d0b425c69bf6ccf3e8c0429e06ccf94378f18af",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0.0,
+      "ys": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 104,
+      "family": "38b02a332c9e571b195b7a62aa9566acdf406a52e16525ea4f9ffa7c99ba8977",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 106,
+      "family": "4eff77b1bbb57b45fdc5d1304355c6acd643309ebc04b50d17dae34459c197c3",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 4.0,
+      "ys": [
+        -8.0,
+        -8.0,
+        -8.0,
+        6.0,
+        4.0,
+        -98.0,
+        4.0,
+        14.0
+      ],
+      "effect": -11.75,
+      "interval": [
+        -38.25,
+        5.0
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        6.0,
+        -2.0,
+        -13.0,
+        2.0
+      ]
+    },
+    {
+      "slot": 107,
+      "family": "48e4d853ae907be57e9213219e6f435d169b8371912281f0bcb2143cbb37dfa3",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": 108,
+      "family": "598053192b0f0b7255ea846425d1389d9377c29dcf3f0848da1f2fad159cd527",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": -91.0,
+      "ys": [
+        7.0,
+        100.0,
+        0,
+        101.0,
+        107.0,
+        91.0,
+        0,
+        -3.0
+      ],
+      "effect": 50.375,
+      "interval": [
+        13.625,
+        86.5
+      ],
+      "sign": "positive",
+      "repeat": [
+        -3.0,
+        19.0,
+        -1.0,
+        0
+      ]
+    },
+    {
+      "slot": 109,
+      "family": "3564a56e81c76a490b017263e8a3a645393b46626251de7f300836bf62491016",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 1.0,
+      "ys": [
+        14.0,
+        -4.0,
+        -2.0,
+        0.0,
+        -2.0,
+        15.0,
+        -2.0,
+        -2.0
+      ],
+      "effect": 2.125,
+      "interval": [
+        -2.25,
+        7.875
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 110,
+      "family": "e49a77c7eef0e590a5ae890df86d14f9775d7234337db6c197cb83c759776d39",
+      "role": "representative",
+      "split": "train",
+      "disagree": false,
+      "original": -9.0,
+      "ys": [
+        -9.0,
+        -9.0,
+        -9.0,
+        -9.0,
+        -9.0,
+        -9.0,
+        -9.0,
+        -9.0
+      ],
+      "effect": -9.0,
+      "interval": [
+        -9.0,
+        -9.0
+      ],
+      "sign": "negative",
+      "repeat": []
+    },
+    {
+      "slot": 111,
+      "family": "d5d855a797f69c005a10f9124311fbe890724d5e815a765a1a99f7b4931fe227",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0.0,
+      "ys": [
+        6.0,
+        0.0,
+        6.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -5.0
+      ],
+      "effect": 0.875,
+      "interval": [
+        -1.25,
+        3.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 112,
+      "family": "777ab4bbf4b975e68cced6d5dbd3f2433b409439d2a05fde3568d03c1cbe4652",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": 113,
+      "family": "1cab594096e31427ef0941e65d02c2af179f6acd3e31c6a3f31ad063d1902a8b",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 109.0,
+      "ys": [
+        109.0,
+        -3.0,
+        -3.0,
+        107.0,
+        -3.0,
+        107.0,
+        109.0,
+        107.0
+      ],
+      "effect": 66.25,
+      "interval": [
+        24.75,
+        94.75
+      ],
+      "sign": "positive",
+      "repeat": [
+        -3.0,
+        -3.0,
+        -3.0,
+        107.0
+      ]
+    },
+    {
+      "slot": 114,
+      "family": "2465187cc838d76085350c94030fae63453117c19246269cb3b27d3f1835190a",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 115,
+      "family": "727c823fad8707e9d209d438f33ac3c2101780908fe9a4bd8b6c027d91be2c5b",
+      "role": "representative",
+      "split": "train",
+      "disagree": false,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 119,
+      "family": "b4029102fb36ffa01d7ae8d2da12ef5065b72df21c92dbbf502dd5f64ab34052",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 10.0,
+      "ys": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "effect": 10.0,
+      "interval": [
+        10.0,
+        10.0
+      ],
+      "sign": "positive",
+      "repeat": []
+    },
+    {
+      "slot": 120,
+      "family": "387b1b5fe901633017523291d43e7dfcbe036d2ecf8fd12e3ba48990f4f7f562",
+      "role": "representative",
+      "split": "dev",
+      "disagree": false,
+      "original": -8.0,
+      "ys": [
+        -8.0,
+        -8.0,
+        -8.0,
+        -8.0,
+        -8.0,
+        -8.0,
+        -8.0,
+        -8.0
+      ],
+      "effect": -8.0,
+      "interval": [
+        -8.0,
+        -8.0
+      ],
+      "sign": "negative",
+      "repeat": []
+    },
+    {
+      "slot": 121,
+      "family": "1d9be1cec82c96dd5aacfb3b8c15e8ec278b23bc45f786fe17ab120920dc8c84",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 122,
+      "family": "310b7fe9049fc9c1d99a19716c24624ec03eb5041ecc5ac5ba2992c88d108600",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": 123,
+      "family": "518cd636050cd5c0d95769584ffbe17be7b45515a7e11659fca76796d9a22ccd",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 124,
+      "family": "297158b944fc41358d5d4f4a6ab066d3ac6ab8ec908ebc6cdcba4ce606e70495",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": 2.0,
+      "ys": [
+        2.0,
+        5.0,
+        0.0,
+        5.0,
+        2.0,
+        0.0,
+        5.0,
+        2.0
+      ],
+      "effect": 2.625,
+      "interval": [
+        1.25,
+        4.0
+      ],
+      "sign": "positive",
+      "repeat": []
+    },
+    {
+      "slot": 125,
+      "family": "b0ea051ea01af2779c20f44ef0d06b37e2f44f52058490815af956b57a1bcdfb",
+      "role": "representative",
+      "split": "train",
+      "disagree": false,
+      "original": -100.0,
+      "ys": [
+        0,
+        0,
+        -95.0,
+        0,
+        -99.0,
+        -104.0,
+        -99.0,
+        -95.0
+      ],
+      "effect": -61.5,
+      "interval": [
+        -88.625,
+        -24.75
+      ],
+      "sign": "negative",
+      "repeat": [
+        -100.0,
+        -95.0,
+        -104.0,
+        0
+      ]
+    },
+    {
+      "slot": 127,
+      "family": "c22e6b2dd728c38340a00ad106b24d78df8f88ddf39f9cc260cc240eb9f1bf1d",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": 129,
+      "family": "5b939230c1a1f025195fa162bc32baf8f6c30312d8472fb5947bbeb383886e7e",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 130,
+      "family": "f3791dc866ca6b7394f83e91e815d2ee60a14e4b986e886b972b05d0943d4083",
+      "role": "representative",
+      "split": "train",
+      "disagree": true,
+      "original": 2.0,
+      "ys": [
+        22.0,
+        0.0,
+        2.0,
+        2.0,
+        118.0,
+        118.0,
+        2.0,
+        2.0
+      ],
+      "effect": 33.25,
+      "interval": [
+        3.5,
+        74.0
+      ],
+      "sign": "positive",
+      "repeat": [
+        2.0,
+        2.0,
+        118.0,
+        2.0
+      ]
+    },
+    {
+      "slot": 131,
+      "family": "db2e633c8645d8758b255bedb13f16bdd79f69faa7d547ae60e9961aa5ce34a2",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        -3.0,
+        0,
+        0,
+        0,
+        -3.0,
+        0
+      ],
+      "effect": -0.75,
+      "interval": [
+        -1.875,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 132,
+      "family": "08121f6ca1251d44dfdce5ad72955d722641db03ac8a0c55da06fb0a44ceaf51",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": 7.0,
+      "ys": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0
+      ],
+      "effect": 7.0,
+      "interval": [
+        7.0,
+        7.0
+      ],
+      "sign": "positive",
+      "repeat": [
+        7.0,
+        7.0,
+        7.0,
+        7.0
+      ]
+    },
+    {
+      "slot": 133,
+      "family": "8e601bf2a8ca7d583731ded24879c9dc5d04b15fa179583bef3084028dff45dc",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 3.0,
+      "ys": [
+        -116.0,
+        -7.0,
+        -125.0,
+        10.0,
+        121.0,
+        -2.0,
+        0,
+        111.0
+      ],
+      "effect": -1.0,
+      "interval": [
+        -59.625,
+        57.753124999999955
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        -8.0,
+        -6.0,
+        -116.0,
+        -8.0
+      ]
+    },
+    {
+      "slot": 134,
+      "family": "33417aa1d17e74b215f1f68e76b138a2f8982419788bb663da3902b250253716",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 6.0,
+      "ys": [
+        4.0,
+        4.0,
+        2.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        2.0
+      ],
+      "effect": 3.5,
+      "interval": [
+        3.0,
+        4.0
+      ],
+      "sign": "positive",
+      "repeat": []
+    },
+    {
+      "slot": 135,
+      "family": "e8014de3eafce55809bbda47071be4735d0b5899381e9c6f9cd0c566501369f3",
+      "role": "representative",
+      "split": "train",
+      "disagree": false,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 136,
+      "family": "a61e37e3de49c7a823a3354b54a457b7ae4cb0322df0901091b4ce981943726a",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": -1.0,
+      "ys": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        1.0,
+        1.0,
+        -1.0,
+        1.0
+      ],
+      "effect": -0.25,
+      "interval": [
+        -0.75,
+        0.5
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 137,
+      "family": "b4d5d923fc6d269418565e974934c181c3393e9f7cc933fe260180470e49a87c",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": 138,
+      "family": "c9e30e22035c1ca4c7cce0eb2564c350d0a3722e3e678ce77830709c8db75866",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": -102.0,
+      "ys": [
+        -10.0,
+        -14.0,
+        -52.0,
+        -6.0,
+        -18.0,
+        -17.0,
+        -29.0,
+        -20.0
+      ],
+      "effect": -20.75,
+      "interval": [
+        -30.875,
+        -12.75
+      ],
+      "sign": "negative",
+      "repeat": [
+        0.0,
+        102.0,
+        94.0,
+        -10.0
+      ]
+    },
+    {
+      "slot": 139,
+      "family": "294d7056d48d4f92bbed0a1c4a7632f826c5d6c581678aba28900ac4bc8b76b5",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0.0,
+      "ys": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 140,
+      "family": "2e8272e09ca1fdb17cbda240ede82cdae3d42271e725562f696ad931d27735d9",
+      "role": "representative",
+      "split": "dev",
+      "disagree": false,
+      "original": 0.0,
+      "ys": [
+        0.0,
+        0.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        0.0,
+        9.0,
+        0.0
+      ],
+      "effect": 0.75,
+      "interval": [
+        -0.75,
+        3.25
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 141,
+      "family": "ececce048c0afc72b64896804ce99f86736b77a7277367a9f4bce73678bc2ce2",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0.0,
+      "ys": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        18.0
+      ],
+      "effect": 4.0,
+      "interval": [
+        2.0,
+        8.0
+      ],
+      "sign": "positive",
+      "repeat": []
+    },
+    {
+      "slot": 142,
+      "family": "b0c35bb54afc60fe543d8da3846a0859b8bb962d788f1c4926719a6391558c2d",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        -107.0,
+        113.0,
+        0,
+        115.0,
+        0
+      ],
+      "effect": 15.125,
+      "interval": [
+        -26.75,
+        57.5
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": 144,
+      "family": "497cf51685d9e23593fc449e0187b8c0a7f9992459c4e47e8e228e7db0b1f837",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 145,
+      "family": "8bce4d21057bc6ccb63ba38d9033555abfbf73784817751dc0e6c73dc00bae47",
+      "role": "representative",
+      "split": "train",
+      "disagree": false,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 146,
+      "family": "2ed139055cc3d9e4e58d6ebc0910751c9d90d9dc1c92b871fc681f3fd3b51285",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 147,
+      "family": "899084936829402b8833c630576d2623915271d9683beeb00ba548680dd13037",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": 148,
+      "family": "932aada77f966b946c4fbaa80a79b3d229fb44dc7702bed17e9cc441926975f9",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": 79.0,
+      "ys": [
+        -6.0,
+        7.0,
+        79.0,
+        4.0,
+        -1.0,
+        5.0,
+        86.0,
+        86.0
+      ],
+      "effect": 32.5,
+      "interval": [
+        8.625,
+        62.5
+      ],
+      "sign": "positive",
+      "repeat": [
+        -2.0,
+        -6.0,
+        1.0,
+        5.0
+      ]
+    },
+    {
+      "slot": 149,
+      "family": "63cfdf8ecfaf418b07b81eb7feb788297d02d8e1b848823d7790429554ef82c3",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 150,
+      "family": "2bd7c409eca2d98d875fc52102c00ecbdd4091f899c6e539a3109de2bf274816",
+      "role": "representative",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 151,
+      "family": "1fa1e686cf9bc797f1ebb4f2f948fb1d9264a7b15ce52134c068ef1a72f13cbb",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        113.0,
+        0,
+        0,
+        0,
+        0,
+        -126.0,
+        13.0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        -45.625,
+        42.375
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        5.0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "slot": 152,
+      "family": "89181da2336cc542bcfa3cba843b0ca972005c905cd8edfe5b6f41ca205e0826",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": 0.0,
+      "ys": [
+        1.0,
+        13.0,
+        0.0,
+        0.0,
+        -7.0,
+        -7.0,
+        0.0,
+        0.0
+      ],
+      "effect": 0.0,
+      "interval": [
+        -3.5,
+        4.125
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        13.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "slot": 153,
+      "family": "2162435f3d4e3c80ee2040ae854dc01213d9432125c1bae5f145acb8f94e8564",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 156,
+      "family": "22bc5b97fda10e26749d462512d6bc130d1dbe7ed5ace1bd8b1ee0a9eb42f87a",
+      "role": "disagreement",
+      "split": "dev",
+      "disagree": true,
+      "original": 0,
+      "ys": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": []
+    },
+    {
+      "slot": 157,
+      "family": "03d8eb77ac3e325d125fd21c19e0f803dc219ac038d0c038f3f2645aa073d524",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0.0,
+      "ys": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "effect": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "slot": 158,
+      "family": "6e09b2fc1366108301cf552c0e9289b575ac09d05e59f3dec0ea98c157e848c8",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 113.0,
+      "ys": [
+        5.0,
+        117.0,
+        -4.0,
+        2.0,
+        4.0,
+        113.0,
+        2.0,
+        2.0
+      ],
+      "effect": 30.125,
+      "interval": [
+        1.125,
+        71.62812499999995
+      ],
+      "sign": "positive",
+      "repeat": [
+        4.0,
+        2.0,
+        108.0,
+        117.0
+      ]
+    },
+    {
+      "slot": 159,
+      "family": "e9f7ea75cf849a643cc68ce9a212ed656a01fe9baa035d8d9a26d4faa4a14c91",
+      "role": "disagreement",
+      "split": "train",
+      "disagree": true,
+      "original": 0.0,
+      "ys": [
+        -119.0,
+        -123.0,
+        -119.0,
+        0.0,
+        1.0,
+        112.0,
+        -10.0,
+        4.0
+      ],
+      "effect": -31.75,
+      "interval": [
+        -89.25,
+        25.5
+      ],
+      "sign": "uncertain",
+      "repeat": [
+        0.0,
+        4.0,
+        3.0,
+        -1.0
+      ]
+    }
+  ],
+  "seconds": 29.005150800017873
+}

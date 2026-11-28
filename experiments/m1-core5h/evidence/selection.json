@@ -1,0 +1,337 @@
+{
+  "primary": "pool-active-5719",
+  "arms": [
+    "v2",
+    "long",
+    "pool-active-5719",
+    "interact-active-5719",
+    "interact-control-7213"
+  ],
+  "reps": {
+    "pool-active": "pool-active-5719",
+    "pool-control": "pool-control-7213",
+    "local-active": "local-active-5719",
+    "local-control": "local-control-7213",
+    "interact-active": "interact-active-5719",
+    "interact-control": "interact-control-7213"
+  },
+  "entries": {
+    "pool-active-5719": {
+      "nll": 1.2817597389221191,
+      "conditional": 18.645116806030273,
+      "regret": 1.3402777910232544,
+      "panel": {
+        "attempts": 64,
+        "complete": 63,
+        "wins": 26,
+        "utility": 0.9523809523809523,
+        "loss": 46.317460317460316,
+        "severe": 48,
+        "failures": {
+          "policy/observation_outside_evaluated_program": 1
+        },
+        "queries": 364,
+        "closed": 221,
+        "interventions": 110,
+        "worker_seconds": 91.19355070000165,
+        "forward_seconds": 1.2873167002107948,
+        "forward_rows": 4713,
+        "forward_batches": 812
+      },
+      "paired": {
+        "common": 63,
+        "families": 63,
+        "delta": 2.4761904761904763,
+        "ci": [
+          -3.140625,
+          8.873065476190476
+        ],
+        "both_win": 24,
+        "loss_difference": -0.9583333333333334,
+        "gained": 2,
+        "lost": 1,
+        "all_win_delta": 0.015625,
+        "all_completion_delta": -0.015625
+      },
+      "score": 2.95
+    },
+    "pool-active-7213": {
+      "nll": 1.2829502820968628,
+      "conditional": 19.504318237304688,
+      "regret": 1.8159722089767456,
+      "panel": {
+        "attempts": 64,
+        "complete": 63,
+        "wins": 26,
+        "utility": 0.7619047619047619,
+        "loss": 46.507936507936506,
+        "severe": 48,
+        "failures": {
+          "policy/observation_outside_evaluated_program": 1
+        },
+        "queries": 363,
+        "closed": 222,
+        "interventions": 111,
+        "worker_seconds": 87.21637629999896,
+        "forward_seconds": 1.3420097999332938,
+        "forward_rows": 4698,
+        "forward_batches": 804
+      },
+      "paired": {
+        "common": 63,
+        "families": 63,
+        "delta": 2.2857142857142856,
+        "ci": [
+          -3.200078125,
+          8.666666666666666
+        ],
+        "both_win": 24,
+        "loss_difference": -0.4583333333333333,
+        "gained": 2,
+        "lost": 1,
+        "all_win_delta": 0.015625,
+        "all_completion_delta": -0.015625
+      },
+      "score": 5.65
+    },
+    "pool-control-7213": {
+      "nll": 1.2768601179122925,
+      "conditional": 19.358610153198242,
+      "regret": 1.2673611640930176,
+      "panel": {
+        "attempts": 64,
+        "complete": 62,
+        "wins": 25,
+        "utility": 0.14516129032258066,
+        "loss": 46.274193548387096,
+        "severe": 47,
+        "failures": {
+          "conditional_policy/realized_boundary_outside_law": 1,
+          "policy/observation_outside_evaluated_program": 1
+        },
+        "queries": 360,
+        "closed": 221,
+        "interventions": 111,
+        "worker_seconds": 90.41066560000763,
+        "forward_seconds": 1.3955499993171543,
+        "forward_rows": 4739,
+        "forward_batches": 818
+      },
+      "paired": {
+        "common": 62,
+        "families": 62,
+        "delta": 2.338709677419355,
+        "ci": [
+          -3.25,
+          8.803358011634055
+        ],
+        "both_win": 23,
+        "loss_difference": -0.5217391304347826,
+        "gained": 2,
+        "lost": 1,
+        "all_win_delta": 0,
+        "all_completion_delta": -0.03125
+      },
+      "score": 3.2
+    },
+    "local-active-5719": {
+      "nll": 1.2823495864868164,
+      "conditional": 18.518457412719727,
+      "regret": 1.3402777910232544,
+      "panel": {
+        "attempts": 64,
+        "complete": 63,
+        "wins": 26,
+        "utility": 0.9523809523809523,
+        "loss": 46.317460317460316,
+        "severe": 48,
+        "failures": {
+          "policy/observation_outside_evaluated_program": 1
+        },
+        "queries": 364,
+        "closed": 221,
+        "interventions": 110,
+        "worker_seconds": 40.199804000003496,
+        "forward_seconds": 0.5314388000988401,
+        "forward_rows": 4713,
+        "forward_batches": 812
+      },
+      "paired": {
+        "common": 63,
+        "families": 63,
+        "delta": 2.4761904761904763,
+        "ci": [
+          -3.140625,
+          8.873065476190476
+        ],
+        "both_win": 24,
+        "loss_difference": -0.9583333333333334,
+        "gained": 2,
+        "lost": 1,
+        "all_win_delta": 0.015625,
+        "all_completion_delta": -0.015625
+      },
+      "score": 3.0500000000000003
+    },
+    "local-control-7213": {
+      "nll": 1.2773165702819824,
+      "conditional": 19.107332229614258,
+      "regret": 1.2673611640930176,
+      "panel": {
+        "attempts": 64,
+        "complete": 62,
+        "wins": 25,
+        "utility": 0.3548387096774194,
+        "loss": 46.064516129032256,
+        "severe": 47,
+        "failures": {
+          "conditional_policy/realized_boundary_outside_law": 1,
+          "policy/observation_outside_evaluated_program": 1
+        },
+        "queries": 357,
+        "closed": 222,
+        "interventions": 109,
+        "worker_seconds": 83.7310346000013,
+        "forward_seconds": 1.4886933997040614,
+        "forward_rows": 4727,
+        "forward_batches": 809
+      },
+      "paired": {
+        "common": 62,
+        "families": 62,
+        "delta": 2.5483870967741935,
+        "ci": [
+          -3.224179644048943,
+          9.047619047619047
+        ],
+        "both_win": 23,
+        "loss_difference": -0.9565217391304348,
+        "gained": 2,
+        "lost": 1,
+        "all_win_delta": 0,
+        "all_completion_delta": -0.03125
+      },
+      "score": 2.2750000000000004
+    },
+    "interact-active-5719": {
+      "nll": 1.2825762033462524,
+      "conditional": 18.47303581237793,
+      "regret": 1.3402777910232544,
+      "panel": {
+        "attempts": 64,
+        "complete": 63,
+        "wins": 26,
+        "utility": 0.9523809523809523,
+        "loss": 46.317460317460316,
+        "severe": 48,
+        "failures": {
+          "policy/observation_outside_evaluated_program": 1
+        },
+        "queries": 364,
+        "closed": 221,
+        "interventions": 110,
+        "worker_seconds": 38.32766890001949,
+        "forward_seconds": 0.7557412003225181,
+        "forward_rows": 4713,
+        "forward_batches": 812
+      },
+      "paired": {
+        "common": 63,
+        "families": 63,
+        "delta": 2.4761904761904763,
+        "ci": [
+          -3.140625,
+          8.873065476190476
+        ],
+        "both_win": 24,
+        "loss_difference": -0.9583333333333334,
+        "gained": 2,
+        "lost": 1,
+        "all_win_delta": 0.015625,
+        "all_completion_delta": -0.015625
+      },
+      "score": 3.1500000000000004
+    },
+    "interact-active-7213": {
+      "nll": 1.2827873229980469,
+      "conditional": 19.53680419921875,
+      "regret": 1.8159722089767456,
+      "panel": {
+        "attempts": 64,
+        "complete": 63,
+        "wins": 26,
+        "utility": 0.7619047619047619,
+        "loss": 46.507936507936506,
+        "severe": 48,
+        "failures": {
+          "policy/observation_outside_evaluated_program": 1
+        },
+        "queries": 363,
+        "closed": 222,
+        "interventions": 111,
+        "worker_seconds": 37.913617200014414,
+        "forward_seconds": 0.8230288001650479,
+        "forward_rows": 4698,
+        "forward_batches": 804
+      },
+      "paired": {
+        "common": 63,
+        "families": 63,
+        "delta": 2.2857142857142856,
+        "ci": [
+          -3.200078125,
+          8.666666666666666
+        ],
+        "both_win": 24,
+        "loss_difference": -0.4583333333333333,
+        "gained": 2,
+        "lost": 1,
+        "all_win_delta": 0.015625,
+        "all_completion_delta": -0.015625
+      },
+      "score": 5.550000000000001
+    },
+    "interact-control-7213": {
+      "nll": 1.277315378189087,
+      "conditional": 19.108142852783203,
+      "regret": 1.2673611640930176,
+      "panel": {
+        "attempts": 64,
+        "complete": 62,
+        "wins": 25,
+        "utility": 0.3548387096774194,
+        "loss": 46.064516129032256,
+        "severe": 47,
+        "failures": {
+          "conditional_policy/realized_boundary_outside_law": 1,
+          "policy/observation_outside_evaluated_program": 1
+        },
+        "queries": 357,
+        "closed": 222,
+        "interventions": 109,
+        "worker_seconds": 37.67236409999896,
+        "forward_seconds": 0.7822584006353281,
+        "forward_rows": 4727,
+        "forward_batches": 809
+      },
+      "paired": {
+        "common": 62,
+        "families": 62,
+        "delta": 2.5483870967741935,
+        "ci": [
+          -3.224179644048943,
+          9.047619047619047
+        ],
+        "both_win": 23,
+        "loss_difference": -0.9565217391304348,
+        "gained": 2,
+        "lost": 1,
+        "all_win_delta": 0,
+        "all_completion_delta": -0.03125
+      },
+      "score": 2.1750000000000003
+    }
+  },
+  "forecast_seconds": 7056.886798800202,
+  "spent_and_reserve": 5609.200749600073
+}

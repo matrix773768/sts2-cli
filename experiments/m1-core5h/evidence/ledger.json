@@ -1,0 +1,35 @@
+{
+  "measured": 6716.209889600053,
+  "phases": {
+    "production": 3388.9614413999952,
+    "source": 80.29323569999542,
+    "fit": 1230.463647800003,
+    "network_check": 28.089414700021734,
+    "archive_analysis": 29.005150800017873,
+    "decision_analysis": 0.1951575999846682,
+    "diagnostics": 3.375238399981754,
+    "exploratory_scratch": 480.9821316000016,
+    "dev_battles": 701.393010000058,
+    "confirm_battles": 771.6534796000051,
+    "audit": 1.7979819999891333
+  },
+  "allowance": 180,
+  "budget_charge": 6896.209889600053,
+  "coverage": {
+    "dev": {
+      "options": 10320,
+      "closed_options": 6933,
+      "queries": 350,
+      "open_reference": 142
+    },
+    "confirm": {
+      "options": 40312,
+      "closed_options": 27504,
+      "queries": 1477,
+      "open_reference": 566
+    }
+  },
+  "weights": 16,
+  "battle_shards": 30,
+  "scope": "Worker sums; 180 seconds estimated for freeze, smoke checks, subprocess import overhead, selection and remaining checks. Writing/Git excluded."
+}

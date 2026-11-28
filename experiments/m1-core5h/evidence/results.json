@@ -1,0 +1,226 @@
+{
+  "arms": {
+    "v2": {
+      "stats": {
+        "attempts": 256,
+        "complete": 237,
+        "wins": 117,
+        "utility": 9.227848101265822,
+        "loss": 45.219409282700425,
+        "severe": 174,
+        "failures": {
+          "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 4,
+          "policy/observation_outside_evaluated_program": 9,
+          "AddCard/random_insert_known_positions @ Play": 1,
+          "conditional_policy/realized_boundary_outside_law": 5
+        },
+        "queries": 1477,
+        "closed": 911,
+        "interventions": 498,
+        "worker_seconds": 151.30945810000412,
+        "forward_seconds": 2.118693599506514,
+        "forward_rows": 17709,
+        "forward_batches": 3355
+      },
+      "vs_v2": {
+        "common": 237,
+        "families": 121,
+        "delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "both_win": 117,
+        "loss_difference": 0,
+        "gained": 0,
+        "lost": 0,
+        "all_win_delta": 0,
+        "all_completion_delta": 0
+      }
+    },
+    "long": {
+      "stats": {
+        "attempts": 256,
+        "complete": 238,
+        "wins": 117,
+        "utility": 9.235294117647058,
+        "loss": 45.19327731092437,
+        "severe": 178,
+        "failures": {
+          "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 4,
+          "policy/observation_outside_evaluated_program": 8,
+          "AddCard/random_insert_known_positions @ Play": 1,
+          "conditional_policy/realized_boundary_outside_law": 5
+        },
+        "queries": 1496,
+        "closed": 928,
+        "interventions": 510,
+        "worker_seconds": 154.77517940002144,
+        "forward_seconds": 2.083919399912702,
+        "forward_rows": 18174,
+        "forward_batches": 3432
+      },
+      "vs_v2": {
+        "common": 237,
+        "families": 121,
+        "delta": 0.25738396624472576,
+        "ci": [
+          -2.2774266094102837,
+          2.746965767634854
+        ],
+        "both_win": 113,
+        "loss_difference": -0.37168141592920356,
+        "gained": 4,
+        "lost": 4,
+        "all_win_delta": 0,
+        "all_completion_delta": 0.00390625
+      }
+    },
+    "pool-active-5719": {
+      "stats": {
+        "attempts": 256,
+        "complete": 238,
+        "wins": 119,
+        "utility": 10.063025210084033,
+        "loss": 45.02100840336134,
+        "severe": 178,
+        "failures": {
+          "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 4,
+          "policy/observation_outside_evaluated_program": 8,
+          "AddCard/random_insert_known_positions @ Play": 1,
+          "conditional_policy/realized_boundary_outside_law": 5
+        },
+        "queries": 1495,
+        "closed": 925,
+        "interventions": 501,
+        "worker_seconds": 154.29767800000263,
+        "forward_seconds": 2.0726398997649085,
+        "forward_rows": 17963,
+        "forward_batches": 3417
+      },
+      "vs_v2": {
+        "common": 237,
+        "families": 121,
+        "delta": 1.0886075949367089,
+        "ci": [
+          -1.4058738986971457,
+          3.5909632034632026
+        ],
+        "both_win": 114,
+        "loss_difference": -0.40350877192982454,
+        "gained": 5,
+        "lost": 3,
+        "all_win_delta": 0.0078125,
+        "all_completion_delta": 0.00390625
+      }
+    },
+    "interact-active-5719": {
+      "stats": {
+        "attempts": 256,
+        "complete": 238,
+        "wins": 119,
+        "utility": 10.063025210084033,
+        "loss": 45.02100840336134,
+        "severe": 178,
+        "failures": {
+          "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 4,
+          "policy/observation_outside_evaluated_program": 8,
+          "AddCard/random_insert_known_positions @ Play": 1,
+          "conditional_policy/realized_boundary_outside_law": 5
+        },
+        "queries": 1495,
+        "closed": 926,
+        "interventions": 502,
+        "worker_seconds": 155.66610429997672,
+        "forward_seconds": 3.077908100327477,
+        "forward_rows": 17979,
+        "forward_batches": 3420
+      },
+      "vs_v2": {
+        "common": 237,
+        "families": 121,
+        "delta": 1.0886075949367089,
+        "ci": [
+          -1.4058738986971457,
+          3.5909632034632026
+        ],
+        "both_win": 114,
+        "loss_difference": -0.40350877192982454,
+        "gained": 5,
+        "lost": 3,
+        "all_win_delta": 0.0078125,
+        "all_completion_delta": 0.00390625
+      }
+    },
+    "interact-control-7213": {
+      "stats": {
+        "attempts": 256,
+        "complete": 237,
+        "wins": 116,
+        "utility": 9.29957805907173,
+        "loss": 44.78481012658228,
+        "severe": 175,
+        "failures": {
+          "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 4,
+          "policy/observation_outside_evaluated_program": 9,
+          "AddCard/random_insert_known_positions @ Play": 1,
+          "conditional_policy/realized_boundary_outside_law": 5
+        },
+        "queries": 1492,
+        "closed": 923,
+        "interventions": 512,
+        "worker_seconds": 155.60505980000016,
+        "forward_seconds": 3.160680099070305,
+        "forward_rows": 18097,
+        "forward_batches": 3411
+      },
+      "vs_v2": {
+        "common": 237,
+        "families": 121,
+        "delta": 0.07172995780590717,
+        "ci": [
+          -2.245788856833754,
+          2.3306461191033785
+        ],
+        "both_win": 113,
+        "loss_difference": -0.8938053097345132,
+        "gained": 3,
+        "lost": 4,
+        "all_win_delta": -0.00390625,
+        "all_completion_delta": 0
+      }
+    }
+  },
+  "comparisons": {
+    "interact-active minus interact-control": {
+      "common": 237,
+      "families": 121,
+      "delta": 1.0168776371308017,
+      "ci": [
+        -0.19314011197654496,
+        2.5787402976897082
+      ],
+      "both_win": 116,
+      "loss_difference": 0.4051724137931034,
+      "gained": 3,
+      "lost": 0,
+      "all_win_delta": 0.01171875,
+      "all_completion_delta": 0.00390625
+    },
+    "interact-active minus pool-active": {
+      "common": 238,
+      "families": 122,
+      "delta": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "both_win": 119,
+      "loss_difference": 0,
+      "gained": 0,
+      "lost": 0,
+      "all_win_delta": 0,
+      "all_completion_delta": 0
+    }
+  }
+}
