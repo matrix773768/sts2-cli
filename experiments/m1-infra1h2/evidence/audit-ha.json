@@ -1,0 +1,61 @@
+{
+  "kind": "audit",
+  "variant": "h-state",
+  "ids": [
+    6,
+    123
+  ],
+  "hashes": {
+    "6": "76f3466b838ffdc0767c6347eec3918d1fa6ede069fad6020e5fb5a24d51fc7a",
+    "123": "be71d5671a6b0835e4a0363e75f4f83ae5598ec7d9dc1b79137949b13b726961"
+  },
+  "archive_differences": [],
+  "process_wall": 114.5554992,
+  "production_wall": 113.726587,
+  "cold_to_import": 10.0414583,
+  "python_cpu": 57.25,
+  "host_resources": [
+    {
+      "peak_rss": 251244544,
+      "read_bytes": 19544027,
+      "write_bytes": 211597718,
+      "cpu_s": 54.21875
+    }
+  ],
+  "host": [],
+  "resources": {
+    "peak_rss": 402481152,
+    "read_bytes": 394850249,
+    "write_bytes": 23380738
+  },
+  "threads": 1,
+  "interop": 12,
+  "gzip_sha256": "4d4d39130647949e6b8f0c841ef35d2728675ce3160ef5de201e62552d244c0f",
+  "cumulative_seconds": [
+    [
+      6,
+      115499343063200
+    ],
+    [
+      123,
+      115590422355800
+    ]
+  ],
+  "hot_turns": [],
+  "terminal": 0,
+  "queries": 0,
+  "admissions": [
+    {
+      "i": 6,
+      "status": null,
+      "worlds": 12,
+      "valid": 12
+    },
+    {
+      "i": 123,
+      "status": null,
+      "worlds": 12,
+      "valid": 12
+    }
+  ]
+}

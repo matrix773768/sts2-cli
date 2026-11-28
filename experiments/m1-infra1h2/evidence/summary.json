@@ -1,0 +1,1031 @@
+{
+  "private_counts": {
+    "import": 96,
+    "pre_draw_C": 508,
+    "terminal": 91,
+    "stop": 5
+  },
+  "matched_actions": 2466,
+  "total_actions": 2503,
+  "panel_turns": 607,
+  "full_hot_turns": 1,
+  "panel_calls": 340976,
+  "qualified_calls": 1305,
+  "reference_replies": 33986,
+  "policy_requests": 106510,
+  "policy_calls": 151884,
+  "settlements": 21422,
+  "direct_edges": {
+    "decision": 19,
+    "C": 6,
+    "R": 3,
+    "stop": 8
+  },
+  "exact_edges": 28,
+  "first_draw_children": 33,
+  "child_differences": [],
+  "root123": {
+    "source": "train",
+    "index": 87,
+    "turn": 2,
+    "worlds": 12,
+    "cost_seconds": 80.9816967,
+    "predecessor_count": 9,
+    "visible_species": [
+      "CORPSE_SLUG"
+    ],
+    "visible_powers": [
+      "FRAIL_POWER",
+      "RAVENOUS_POWER"
+    ],
+    "options": [
+      "graph/3",
+      "graph/1"
+    ],
+    "unique_C": 10
+  },
+  "census": {
+    "Hot": {
+      "turns": 1,
+      "search_seconds": 1.0423109,
+      "logical_calls": 1305,
+      "root_ids": [
+        0
+      ]
+    },
+    "nonopening_turn": {
+      "turns": 511,
+      "search_seconds": 311.8361425,
+      "logical_calls": 266041,
+      "root_ids": [
+        0,
+        1,
+        2,
+        4,
+        10,
+        13,
+        14,
+        16,
+        23,
+        25,
+        27,
+        30,
+        33,
+        41,
+        44,
+        46,
+        49,
+        54,
+        57,
+        61,
+        64,
+        65,
+        69,
+        72,
+        77,
+        78,
+        81,
+        82,
+        84,
+        86,
+        89,
+        90,
+        91,
+        93,
+        96,
+        97,
+        99,
+        101,
+        104,
+        105,
+        110,
+        113,
+        114,
+        115,
+        118,
+        122,
+        128,
+        131,
+        132,
+        135,
+        139,
+        140,
+        142,
+        144,
+        145,
+        146,
+        154,
+        158,
+        159,
+        160,
+        166,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        181,
+        188,
+        190,
+        192,
+        194,
+        195,
+        196,
+        197,
+        200,
+        201,
+        202,
+        204,
+        205,
+        209,
+        212,
+        213,
+        215,
+        220,
+        222,
+        226,
+        232,
+        235,
+        236,
+        238,
+        242,
+        243,
+        245,
+        251,
+        255
+      ]
+    },
+    "encounter/SKULKING_COLONY_ELITE": {
+      "turns": 3,
+      "search_seconds": 2.9558564,
+      "logical_calls": 3574,
+      "root_ids": [
+        1,
+        65,
+        213
+      ]
+    },
+    "graph/card/BATTLE_TRANCE": {
+      "turns": 1,
+      "search_seconds": 0.9788931,
+      "logical_calls": 1398,
+      "root_ids": [
+        2
+      ]
+    },
+    "encounter/EXOSKELETONS_WEAK": {
+      "turns": 2,
+      "search_seconds": 3.3459412,
+      "logical_calls": 4328,
+      "root_ids": [
+        4,
+        188
+      ]
+    },
+    "encounter/BOWLBUGS_NORMAL": {
+      "turns": 3,
+      "search_seconds": 1.4865577,
+      "logical_calls": 1808,
+      "root_ids": [
+        10,
+        69,
+        96
+      ]
+    },
+    "encounter/VANTOM_BOSS": {
+      "turns": 2,
+      "search_seconds": 0.14423799999999998,
+      "logical_calls": 139,
+      "root_ids": [
+        13,
+        82
+      ]
+    },
+    "encounter/LOUSE_PROGENITOR_NORMAL": {
+      "turns": 2,
+      "search_seconds": 2.158992,
+      "logical_calls": 1925,
+      "root_ids": [
+        14,
+        192
+      ]
+    },
+    "encounter/DEVOTED_SCULPTOR_WEAK": {
+      "turns": 2,
+      "search_seconds": 4.3266595,
+      "logical_calls": 3360,
+      "root_ids": [
+        16,
+        242
+      ]
+    },
+    "encounter/PHANTASMAL_GARDENERS_ELITE": {
+      "turns": 3,
+      "search_seconds": 0.9534703999999999,
+      "logical_calls": 1603,
+      "root_ids": [
+        23,
+        86,
+        89
+      ]
+    },
+    "encounter/KAISER_CRAB_BOSS": {
+      "turns": 3,
+      "search_seconds": 1.3292179,
+      "logical_calls": 1397,
+      "root_ids": [
+        25,
+        178,
+        179
+      ]
+    },
+    "encounter/OVERGROWTH_CRAWLERS": {
+      "turns": 1,
+      "search_seconds": 0.09002249999999999,
+      "logical_calls": 206,
+      "root_ids": [
+        27
+      ]
+    },
+    "encounter/FABRICATOR_NORMAL": {
+      "turns": 2,
+      "search_seconds": 2.6104509,
+      "logical_calls": 1708,
+      "root_ids": [
+        30,
+        194
+      ]
+    },
+    "encounter/INFESTED_PRISMS_ELITE": {
+      "turns": 4,
+      "search_seconds": 1.1113144,
+      "logical_calls": 1175,
+      "root_ids": [
+        33,
+        181,
+        238,
+        243
+      ]
+    },
+    "encounter/SCROLLS_OF_BITING_NORMAL": {
+      "turns": 2,
+      "search_seconds": 5.114905800000001,
+      "logical_calls": 3133,
+      "root_ids": [
+        41,
+        197
+      ]
+    },
+    "encounter/AEONGLASS_BOSS": {
+      "turns": 1,
+      "search_seconds": 1.0465725,
+      "logical_calls": 1125,
+      "root_ids": [
+        44
+      ]
+    },
+    "encounter/ENTOMANCER_ELITE": {
+      "turns": 3,
+      "search_seconds": 3.6580905,
+      "logical_calls": 2567,
+      "root_ids": [
+        46,
+        99,
+        226
+      ]
+    },
+    "graph/card/SHRUG_IT_OFF": {
+      "turns": 1,
+      "search_seconds": 0.1532227,
+      "logical_calls": 355,
+      "root_ids": [
+        49
+      ]
+    },
+    "encounter/SOUL_NEXUS_ELITE": {
+      "turns": 3,
+      "search_seconds": 3.6083913,
+      "logical_calls": 3626,
+      "root_ids": [
+        54,
+        104,
+        115
+      ]
+    },
+    "encounter/GLOBE_HEAD_NORMAL": {
+      "turns": 3,
+      "search_seconds": 1.5481652000000001,
+      "logical_calls": 1244,
+      "root_ids": [
+        57,
+        139,
+        236
+      ]
+    },
+    "graph/card/CINDER": {
+      "turns": 1,
+      "search_seconds": 0.1963904,
+      "logical_calls": 157,
+      "root_ids": [
+        61
+      ]
+    },
+    "graph/card/JUGGLING": {
+      "turns": 1,
+      "search_seconds": 1.5066955999999998,
+      "logical_calls": 1809,
+      "root_ids": [
+        64
+      ]
+    },
+    "encounter/CUBEX_CONSTRUCT_NORMAL": {
+      "turns": 2,
+      "search_seconds": 1.5797597,
+      "logical_calls": 1673,
+      "root_ids": [
+        72,
+        174
+      ]
+    },
+    "encounter/VINE_SHAMBLER_NORMAL": {
+      "turns": 3,
+      "search_seconds": 1.2570927,
+      "logical_calls": 1334,
+      "root_ids": [
+        77,
+        114,
+        222
+      ]
+    },
+    "encounter/PHROG_PARASITE_ELITE": {
+      "turns": 2,
+      "search_seconds": 0.28917950000000003,
+      "logical_calls": 209,
+      "root_ids": [
+        78,
+        232
+      ]
+    },
+    "encounter/CONSTRUCT_MENAGERIE_NORMAL": {
+      "turns": 2,
+      "search_seconds": 2.2414992,
+      "logical_calls": 1401,
+      "root_ids": [
+        81,
+        245
+      ]
+    },
+    "encounter/SEAPUNK_WEAK": {
+      "turns": 2,
+      "search_seconds": 0.08356359999999999,
+      "logical_calls": 143,
+      "root_ids": [
+        84,
+        90
+      ]
+    },
+    "encounter/CEREMONIAL_BEAST_BOSS": {
+      "turns": 2,
+      "search_seconds": 0.39962050000000005,
+      "logical_calls": 231,
+      "root_ids": [
+        91,
+        209
+      ]
+    },
+    "encounter/THE_INSATIABLE_BOSS": {
+      "turns": 6,
+      "search_seconds": 8.871531699999998,
+      "logical_calls": 6531,
+      "root_ids": [
+        93,
+        132,
+        177,
+        196,
+        201,
+        205
+      ]
+    },
+    "encounter/SCROLLS_OF_BITING_WEAK": {
+      "turns": 1,
+      "search_seconds": 0.6533798,
+      "logical_calls": 626,
+      "root_ids": [
+        97
+      ]
+    },
+    "encounter/SOUL_FYSH_BOSS": {
+      "turns": 3,
+      "search_seconds": 2.3316126,
+      "logical_calls": 1538,
+      "root_ids": [
+        101,
+        202,
+        212
+      ]
+    },
+    "encounter/DECIMILLIPEDE_ELITE": {
+      "turns": 1,
+      "search_seconds": 1.7987988000000001,
+      "logical_calls": 1582,
+      "root_ids": [
+        105
+      ]
+    },
+    "encounter/KNIGHTS_ELITE": {
+      "turns": 4,
+      "search_seconds": 3.939475,
+      "logical_calls": 3040,
+      "root_ids": [
+        110,
+        135,
+        220,
+        251
+      ]
+    },
+    "encounter/THE_KIN_BOSS": {
+      "turns": 3,
+      "search_seconds": 2.2446121999999997,
+      "logical_calls": 2348,
+      "root_ids": [
+        113,
+        122,
+        146
+      ]
+    },
+    "encounter/WATERFALL_GIANT_BOSS": {
+      "turns": 2,
+      "search_seconds": 0.504691,
+      "logical_calls": 468,
+      "root_ids": [
+        118,
+        204
+      ]
+    },
+    "encounter/TEST_SUBJECT_BOSS": {
+      "turns": 3,
+      "search_seconds": 1.7598322,
+      "logical_calls": 2370,
+      "root_ids": [
+        128,
+        166,
+        175
+      ]
+    },
+    "encounter/TUNNELER_WEAK": {
+      "turns": 1,
+      "search_seconds": 0.17389580000000002,
+      "logical_calls": 104,
+      "root_ids": [
+        131
+      ]
+    },
+    "encounter/HUNTER_KILLER_NORMAL": {
+      "turns": 1,
+      "search_seconds": 1.4354997,
+      "logical_calls": 1706,
+      "root_ids": [
+        140
+      ]
+    },
+    "encounter/BYGONE_EFFIGY_ELITE": {
+      "turns": 1,
+      "search_seconds": 1.8313701,
+      "logical_calls": 2199,
+      "root_ids": [
+        142
+      ]
+    },
+    "encounter/KNOWLEDGE_DEMON_BOSS": {
+      "turns": 1,
+      "search_seconds": 0.0879976,
+      "logical_calls": 108,
+      "root_ids": [
+        144
+      ]
+    },
+    "encounter/THE_OBSCURA_NORMAL": {
+      "turns": 2,
+      "search_seconds": 2.0455471000000003,
+      "logical_calls": 3012,
+      "root_ids": [
+        145,
+        190
+      ]
+    },
+    "encounter/AXEBOTS_NORMAL": {
+      "turns": 1,
+      "search_seconds": 0.0503919,
+      "logical_calls": 80,
+      "root_ids": [
+        154
+      ]
+    },
+    "encounter/FLYCONID_NORMAL": {
+      "turns": 1,
+      "search_seconds": 0.1517964,
+      "logical_calls": 143,
+      "root_ids": [
+        158
+      ]
+    },
+    "encounter/SPINY_TOAD_NORMAL": {
+      "turns": 1,
+      "search_seconds": 0.0393492,
+      "logical_calls": 38,
+      "root_ids": [
+        159
+      ]
+    },
+    "encounter/TERROR_EEL_ELITE": {
+      "turns": 2,
+      "search_seconds": 2.7716711000000003,
+      "logical_calls": 2460,
+      "root_ids": [
+        160,
+        176
+      ]
+    },
+    "encounter/SLUMBERING_BEETLE_NORMAL": {
+      "turns": 1,
+      "search_seconds": 4.4135043,
+      "logical_calls": 2287,
+      "root_ids": [
+        195
+      ]
+    },
+    "encounter/SLIMED_BERSERKER_NORMAL": {
+      "turns": 1,
+      "search_seconds": 0.1924146,
+      "logical_calls": 94,
+      "root_ids": [
+        200
+      ]
+    },
+    "encounter/BYRDONIS_ELITE": {
+      "turns": 1,
+      "search_seconds": 0.1295985,
+      "logical_calls": 42,
+      "root_ids": [
+        215
+      ]
+    },
+    "encounter/SNAPPING_JAXFRUIT_NORMAL": {
+      "turns": 1,
+      "search_seconds": 1.889959,
+      "logical_calls": 1121,
+      "root_ids": [
+        235
+      ]
+    },
+    "graph/card/THRASH": {
+      "turns": 1,
+      "search_seconds": 0.25446810000000003,
+      "logical_calls": 105,
+      "root_ids": [
+        255
+      ]
+    }
+  },
+  "production": [
+    {
+      "run": "audit-ba",
+      "ids": [
+        6,
+        123
+      ],
+      "seconds": 198.8785148,
+      "cleanup": 0.9319818999999825,
+      "python_cpu": 91.671875,
+      "host_cpu": 90.765625,
+      "archive_delta": [],
+      "valid": 24,
+      "queries": 0,
+      "hot": 0,
+      "fallback": {}
+    },
+    {
+      "run": "audit-ha",
+      "ids": [
+        6,
+        123
+      ],
+      "seconds": 113.726587,
+      "cleanup": 0.8289122000000049,
+      "python_cpu": 57.25,
+      "host_cpu": 54.21875,
+      "archive_delta": [],
+      "valid": 24,
+      "queries": 0,
+      "hot": 0,
+      "fallback": {}
+    },
+    {
+      "run": "natural-ba",
+      "ids": [
+        0,
+        41,
+        82,
+        110,
+        145,
+        181,
+        212,
+        255
+      ],
+      "seconds": 68.9781055,
+      "cleanup": 1.1082444999999979,
+      "python_cpu": 36.171875,
+      "host_cpu": 35.375,
+      "archive_delta": [],
+      "valid": 8,
+      "queries": 55,
+      "hot": 0,
+      "fallback": {}
+    },
+    {
+      "run": "natural-bb",
+      "ids": [
+        0,
+        41,
+        82,
+        110,
+        145,
+        181,
+        212,
+        255
+      ],
+      "seconds": 38.9983211,
+      "cleanup": 0.8371229999999983,
+      "python_cpu": 20.328125,
+      "host_cpu": 20.453125,
+      "archive_delta": [],
+      "valid": 8,
+      "queries": 55,
+      "hot": 0,
+      "fallback": {}
+    },
+    {
+      "run": "natural-bd",
+      "ids": [
+        0,
+        41,
+        82,
+        110,
+        145,
+        181,
+        212,
+        255
+      ],
+      "seconds": 37.1576962,
+      "cleanup": 0.7308860000000053,
+      "python_cpu": 20.0,
+      "host_cpu": 19.140625,
+      "archive_delta": [],
+      "valid": 8,
+      "queries": 55,
+      "hot": 0,
+      "fallback": {}
+    },
+    {
+      "run": "natural-census",
+      "ids": [
+        0,
+        1,
+        2,
+        4,
+        10,
+        13,
+        14,
+        16,
+        23,
+        25,
+        27,
+        30,
+        33,
+        41,
+        44,
+        46,
+        49,
+        54,
+        57,
+        61,
+        64,
+        65,
+        69,
+        72,
+        77,
+        78,
+        81,
+        82,
+        84,
+        86,
+        89,
+        90,
+        91,
+        93,
+        96,
+        97,
+        99,
+        101,
+        104,
+        105,
+        110,
+        113,
+        114,
+        115,
+        118,
+        122,
+        128,
+        131,
+        132,
+        135,
+        139,
+        140,
+        142,
+        144,
+        145,
+        146,
+        154,
+        158,
+        159,
+        160,
+        166,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        181,
+        188,
+        190,
+        192,
+        194,
+        195,
+        196,
+        197,
+        200,
+        201,
+        202,
+        204,
+        205,
+        209,
+        212,
+        213,
+        215,
+        220,
+        222,
+        226,
+        232,
+        235,
+        236,
+        238,
+        242,
+        243,
+        245,
+        251,
+        255
+      ],
+      "seconds": 422.5843564,
+      "cleanup": 1.0626205000000368,
+      "python_cpu": 232.953125,
+      "host_cpu": 174.71875,
+      "archive_delta": [],
+      "valid": 96,
+      "queries": 607,
+      "hot": 1,
+      "fallback": {
+        "nonopening_turn": 511,
+        "encounter/SKULKING_COLONY_ELITE": 3,
+        "graph/card/BATTLE_TRANCE": 1,
+        "encounter/EXOSKELETONS_WEAK": 2,
+        "encounter/BOWLBUGS_NORMAL": 3,
+        "encounter/VANTOM_BOSS": 2,
+        "encounter/LOUSE_PROGENITOR_NORMAL": 2,
+        "encounter/DEVOTED_SCULPTOR_WEAK": 2,
+        "encounter/PHANTASMAL_GARDENERS_ELITE": 3,
+        "encounter/KAISER_CRAB_BOSS": 3,
+        "encounter/OVERGROWTH_CRAWLERS": 1,
+        "encounter/FABRICATOR_NORMAL": 2,
+        "encounter/INFESTED_PRISMS_ELITE": 4,
+        "encounter/SCROLLS_OF_BITING_NORMAL": 2,
+        "encounter/AEONGLASS_BOSS": 1,
+        "encounter/ENTOMANCER_ELITE": 3,
+        "graph/card/SHRUG_IT_OFF": 1,
+        "encounter/SOUL_NEXUS_ELITE": 3,
+        "encounter/GLOBE_HEAD_NORMAL": 3,
+        "graph/card/CINDER": 1,
+        "graph/card/JUGGLING": 1,
+        "encounter/CUBEX_CONSTRUCT_NORMAL": 2,
+        "encounter/VINE_SHAMBLER_NORMAL": 3,
+        "encounter/PHROG_PARASITE_ELITE": 2,
+        "encounter/CONSTRUCT_MENAGERIE_NORMAL": 2,
+        "encounter/SEAPUNK_WEAK": 2,
+        "encounter/CEREMONIAL_BEAST_BOSS": 2,
+        "encounter/THE_INSATIABLE_BOSS": 6,
+        "encounter/SCROLLS_OF_BITING_WEAK": 1,
+        "encounter/SOUL_FYSH_BOSS": 3,
+        "encounter/DECIMILLIPEDE_ELITE": 1,
+        "encounter/KNIGHTS_ELITE": 4,
+        "encounter/THE_KIN_BOSS": 3,
+        "encounter/WATERFALL_GIANT_BOSS": 2,
+        "encounter/TEST_SUBJECT_BOSS": 3,
+        "encounter/TUNNELER_WEAK": 1,
+        "encounter/HUNTER_KILLER_NORMAL": 1,
+        "encounter/BYGONE_EFFIGY_ELITE": 1,
+        "encounter/KNOWLEDGE_DEMON_BOSS": 1,
+        "encounter/THE_OBSCURA_NORMAL": 2,
+        "encounter/AXEBOTS_NORMAL": 1,
+        "encounter/FLYCONID_NORMAL": 1,
+        "encounter/SPINY_TOAD_NORMAL": 1,
+        "encounter/TERROR_EEL_ELITE": 2,
+        "encounter/SLUMBERING_BEETLE_NORMAL": 1,
+        "encounter/SLIMED_BERSERKER_NORMAL": 1,
+        "encounter/BYRDONIS_ELITE": 1,
+        "encounter/SNAPPING_JAXFRUIT_NORMAL": 1,
+        "graph/card/THRASH": 1
+      }
+    },
+    {
+      "run": "natural-cost",
+      "ids": [
+        0,
+        41,
+        82,
+        110,
+        145,
+        181,
+        212,
+        255
+      ],
+      "seconds": 65.8078245,
+      "cleanup": 1.1884272000000067,
+      "python_cpu": 35.015625,
+      "host_cpu": 33.703125,
+      "archive_delta": [],
+      "valid": 8,
+      "queries": 55,
+      "hot": 0,
+      "fallback": {}
+    },
+    {
+      "run": "natural-final",
+      "ids": [
+        0,
+        41,
+        82,
+        110,
+        145,
+        181,
+        212,
+        255
+      ],
+      "seconds": 66.2255703,
+      "cleanup": 1.060721000000001,
+      "python_cpu": 33.859375,
+      "host_cpu": 34.65625,
+      "archive_delta": [],
+      "valid": 8,
+      "queries": 55,
+      "hot": 1,
+      "fallback": {
+        "nonopening_turn": 47,
+        "encounter/SCROLLS_OF_BITING_NORMAL": 1,
+        "encounter/VANTOM_BOSS": 1,
+        "encounter/KNIGHTS_ELITE": 1,
+        "encounter/THE_OBSCURA_NORMAL": 1,
+        "encounter/INFESTED_PRISMS_ELITE": 1,
+        "encounter/SOUL_FYSH_BOSS": 1,
+        "graph/card/THRASH": 1
+      }
+    },
+    {
+      "run": "natural-ha",
+      "ids": [
+        0,
+        41,
+        82,
+        110,
+        145,
+        181,
+        212,
+        255
+      ],
+      "seconds": 65.7900521,
+      "cleanup": 1.0388844000000006,
+      "python_cpu": 34.296875,
+      "host_cpu": 34.09375,
+      "archive_delta": [
+        255
+      ],
+      "valid": 7,
+      "queries": 50,
+      "hot": 0,
+      "fallback": {
+        "opening/not_observed": 1,
+        "nonopening_turn": 43,
+        "encounter/SCROLLS_OF_BITING_NORMAL": 1,
+        "encounter/VANTOM_BOSS": 1,
+        "encounter/KNIGHTS_ELITE": 1,
+        "encounter/THE_OBSCURA_NORMAL": 1,
+        "encounter/INFESTED_PRISMS_ELITE": 1,
+        "encounter/SOUL_FYSH_BOSS": 1,
+        "failed_before_fallback": 1
+      }
+    },
+    {
+      "run": "natural-hb",
+      "ids": [
+        0,
+        41,
+        82,
+        110,
+        145,
+        181,
+        212,
+        255
+      ],
+      "seconds": 76.6831123,
+      "cleanup": 1.2197176999999897,
+      "python_cpu": 39.71875,
+      "host_cpu": 38.859375,
+      "archive_delta": [],
+      "valid": 8,
+      "queries": 55,
+      "hot": 1,
+      "fallback": {
+        "nonopening_turn": 47,
+        "encounter/SCROLLS_OF_BITING_NORMAL": 1,
+        "encounter/VANTOM_BOSS": 1,
+        "encounter/KNIGHTS_ELITE": 1,
+        "encounter/THE_OBSCURA_NORMAL": 1,
+        "encounter/INFESTED_PRISMS_ELITE": 1,
+        "encounter/SOUL_FYSH_BOSS": 1,
+        "graph/card/THRASH": 1
+      }
+    },
+    {
+      "run": "natural-hc",
+      "ids": [
+        0,
+        41,
+        82,
+        110,
+        145,
+        181,
+        212,
+        255
+      ],
+      "seconds": 40.0153496,
+      "cleanup": 0.8292055000000005,
+      "python_cpu": 20.171875,
+      "host_cpu": 21.0625,
+      "archive_delta": [],
+      "valid": 8,
+      "queries": 55,
+      "hot": 1,
+      "fallback": {
+        "nonopening_turn": 47,
+        "encounter/SCROLLS_OF_BITING_NORMAL": 1,
+        "encounter/VANTOM_BOSS": 1,
+        "encounter/KNIGHTS_ELITE": 1,
+        "encounter/THE_OBSCURA_NORMAL": 1,
+        "encounter/INFESTED_PRISMS_ELITE": 1,
+        "encounter/SOUL_FYSH_BOSS": 1,
+        "graph/card/THRASH": 1
+      }
+    },
+    {
+      "run": "natural-hd",
+      "ids": [
+        0,
+        41,
+        82,
+        110,
+        145,
+        181,
+        212,
+        255
+      ],
+      "seconds": 39.1932089,
+      "cleanup": 0.8858406000000016,
+      "python_cpu": 20.640625,
+      "host_cpu": 21.25,
+      "archive_delta": [],
+      "valid": 8,
+      "queries": 55,
+      "hot": 1,
+      "fallback": {
+        "nonopening_turn": 47,
+        "encounter/SCROLLS_OF_BITING_NORMAL": 1,
+        "encounter/VANTOM_BOSS": 1,
+        "encounter/KNIGHTS_ELITE": 1,
+        "encounter/THE_OBSCURA_NORMAL": 1,
+        "encounter/INFESTED_PRISMS_ELITE": 1,
+        "encounter/SOUL_FYSH_BOSS": 1,
+        "graph/card/THRASH": 1
+      }
+    }
+  ]
+}

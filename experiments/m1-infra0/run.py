@@ -121,7 +121,7 @@ if __name__=="__main__":
     parser.add_argument("arm",choices=["V2","V2low"])
     parser.add_argument("mode",choices=["baseline","aggregate","diagnostic"])
     parser.add_argument("--workers",type=int,choices=[1,2,4],default=1)
-    parser.add_argument("--variant",choices=["batch","batch-attribution","g2-check","shadow","reuse","h-scalar","h-batch","h-engine","h-kernel2","h-kernel3","h-kernel4","h-kernel4-g2","h-kernel5","h-kernel5-g2","h-kernel6","h-kernel6-g2"])
+    parser.add_argument("--variant",choices=["batch","batch-attribution","g2-check","shadow","reuse","h-scalar","h-batch","h-engine","h-kernel2","h-kernel3","h-kernel4","h-kernel4-g2","h-kernel5","h-kernel5-g2","h-kernel6","h-kernel6-g2","h-state","h-state-control"])
     parser.add_argument("--smoke",action="store_true")
     parser.add_argument("--sample",type=int,default=argparse.SUPPRESS)
     run(parser.parse_args())

@@ -1,0 +1,188 @@
+[
+  {
+    "panel": "starter",
+    "nodes": 9,
+    "graph_delta": [],
+    "candidate": {
+      "reference_coverage": 1.0,
+      "coverage": 1,
+      "reference": -49.66476821899414,
+      "value": -49.66476821899414,
+      "reference_mass": {
+        "C": 1.0
+      },
+      "candidate_mass": {
+        "C": 1.0
+      },
+      "use": false,
+      "calls": 29,
+      "settles": 9,
+      "unique": 9,
+      "policy_requests": 0,
+      "policy_calls": 0,
+      "policy_ends": 0,
+      "settled_ends": 0,
+      "grouped": 0,
+      "conditional": false,
+      "full_policies": 0,
+      "attempted_policies": 0
+    },
+    "reference": {
+      "reference_coverage": 1.0,
+      "coverage": 1,
+      "reference": -49.66476821899414,
+      "value": -49.66476821899414,
+      "reference_mass": {
+        "C": 1.0
+      },
+      "candidate_mass": {
+        "C": 1.0
+      },
+      "use": false,
+      "calls": 29,
+      "settles": 9,
+      "unique": 9,
+      "policy_requests": 0,
+      "policy_calls": 0,
+      "policy_ends": 0,
+      "settled_ends": 0,
+      "grouped": 0,
+      "conditional": false,
+      "full_policies": 0,
+      "attempted_policies": 0
+    },
+    "hot_seconds": 0.09076190000632778,
+    "reference_seconds": 0.15897429999313317,
+    "planner_delta": [],
+    "C_tensors": {
+      "graph_C_tensors": 9,
+      "conditional_C_tensors": 0
+    },
+    "C_tensors_equal": true,
+    "conditional_replies": 0,
+    "hot_physical": {
+      "open": 1,
+      "advance": 17,
+      "reduced/decision": 8,
+      "conditional/C": 1,
+      "settle_batch/C": 8
+    },
+    "kernel_stats": {
+      "steps": 17,
+      "replays": 0,
+      "saved": 9,
+      "reused": 0,
+      "transcripts": 0,
+      "live": 9,
+      "value_bytes": 17256
+    },
+    "seconds": 3.428443500000867
+  },
+  {
+    "panel": "0",
+    "nodes": 41,
+    "graph_delta": [],
+    "candidate": {
+      "reference_coverage": 0,
+      "coverage": 1,
+      "reference": -50.000000000001,
+      "value": -49.54253005981445,
+      "reference_mass": {
+        "budget": 0.9999999999999342
+      },
+      "candidate_mass": {
+        "C": 1.0
+      },
+      "use": false,
+      "calls": 1305,
+      "settles": 27,
+      "unique": 15,
+      "policy_requests": 280,
+      "policy_calls": 451,
+      "policy_ends": 98,
+      "settled_ends": 95,
+      "grouped": 3,
+      "conditional": false,
+      "full_policies": 4,
+      "attempted_policies": 8
+    },
+    "reference": {
+      "reference_coverage": 0,
+      "coverage": 1,
+      "reference": -50.000000000001,
+      "value": -49.54253005981445,
+      "reference_mass": {
+        "budget": 0.9999999999999342
+      },
+      "candidate_mass": {
+        "C": 1.0
+      },
+      "use": false,
+      "calls": 1305,
+      "settles": 27,
+      "unique": 15,
+      "policy_requests": 280,
+      "policy_calls": 451,
+      "policy_ends": 98,
+      "settled_ends": 95,
+      "grouped": 3,
+      "conditional": false,
+      "full_policies": 4,
+      "attempted_policies": 8
+    },
+    "hot_seconds": 0.7740271000075154,
+    "reference_seconds": 1.264626699994551,
+    "planner_delta": [],
+    "C_tensors": {
+      "graph_C_tensors": 15,
+      "conditional_C_tensors": 77
+    },
+    "C_tensors_equal": true,
+    "conditional_replies": 280,
+    "hot_physical": {
+      "open": 1,
+      "advance": 590,
+      "reduced/decision": 26,
+      "reduced/choice": 14,
+      "conditional/R": 261,
+      "settle_batch/C": 27,
+      "conditional/decision": 169,
+      "conditional/C": 93
+    },
+    "kernel_stats": {
+      "steps": 603,
+      "replays": 13,
+      "saved": 196,
+      "reused": 1089,
+      "transcripts": 3955,
+      "live": 196,
+      "value_bytes": 17256
+    },
+    "seconds": 2.388431599989417
+  },
+  {
+    "panel": "2",
+    "fallback": "graph/card/BATTLE_TRANCE",
+    "seconds": 0.06989410000096541
+  },
+  {
+    "panel": "49",
+    "fallback": "graph/card/SHRUG_IT_OFF",
+    "seconds": 0.035900600007153116
+  },
+  {
+    "panel": "61",
+    "fallback": "graph/card/CINDER",
+    "seconds": 0.04379049999988638
+  },
+  {
+    "panel": "64",
+    "fallback": "graph/card/JUGGLING",
+    "seconds": 0.03759379999246448
+  },
+  {
+    "panel": "255",
+    "fallback": "graph/card/THRASH",
+    "seconds": 0.034474100000807084
+  }
+]

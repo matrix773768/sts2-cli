@@ -1,0 +1,1324 @@
+{
+  "source_index": 87,
+  "wire": {
+    "schema": "sts2.nosl_observation.v3",
+    "order_hooks": [
+      {
+        "owner": -1,
+        "id": "FRAIL_POWER"
+      },
+      {
+        "owner": 0,
+        "id": "RAVENOUS_POWER"
+      },
+      {
+        "owner": 1,
+        "id": "RAVENOUS_POWER"
+      },
+      {
+        "owner": 2,
+        "id": "RAVENOUS_POWER"
+      }
+    ],
+    "mechanism": {
+      "played": 0,
+      "attacks": 0,
+      "skills": 0,
+      "stacks": [],
+      "species": [
+        "CORPSE_SLUG",
+        "CORPSE_SLUG",
+        "CORPSE_SLUG"
+      ]
+    },
+    "decision": {
+      "phase": "combat"
+    },
+    "turn": 2,
+    "hp": 77,
+    "max_hp": 80,
+    "block": 0,
+    "energy": 3,
+    "stars": 0,
+    "draw_count": 9,
+    "hand": [
+      {
+        "index": 0,
+        "id": "BATTLE_TRANCE",
+        "upgrade": 0,
+        "cost": 0
+      },
+      {
+        "index": 1,
+        "id": "FORGOTTEN_RITUAL",
+        "upgrade": 1,
+        "cost": 1
+      },
+      {
+        "index": 2,
+        "id": "ARMAMENTS",
+        "upgrade": 1,
+        "cost": 1
+      },
+      {
+        "index": 3,
+        "id": "SHRUG_IT_OFF",
+        "upgrade": 0,
+        "cost": 1
+      },
+      {
+        "index": 4,
+        "id": "BODY_SLAM",
+        "upgrade": 1,
+        "cost": 0
+      }
+    ],
+    "discard": [
+      {
+        "index": 0,
+        "id": "SHRUG_IT_OFF",
+        "upgrade": 0
+      },
+      {
+        "index": 1,
+        "id": "PRIMAL_FORCE",
+        "upgrade": 1
+      },
+      {
+        "index": 2,
+        "id": "BLOODLETTING",
+        "upgrade": 1
+      },
+      {
+        "index": 3,
+        "id": "STOKE",
+        "upgrade": 1
+      },
+      {
+        "index": 4,
+        "id": "TWIN_STRIKE",
+        "upgrade": 1
+      }
+    ],
+    "exhaust": [
+      {
+        "index": 0,
+        "id": "BARRICADE",
+        "upgrade": 0
+      },
+      {
+        "index": 1,
+        "id": "IMPERVIOUS",
+        "upgrade": 1
+      }
+    ],
+    "deck": [
+      {
+        "index": 0,
+        "id": "ARMAMENTS",
+        "upgrade": 1
+      },
+      {
+        "index": 1,
+        "id": "BARRICADE",
+        "upgrade": 0
+      },
+      {
+        "index": 2,
+        "id": "BATTLE_TRANCE",
+        "upgrade": 0
+      },
+      {
+        "index": 3,
+        "id": "BLOODLETTING",
+        "upgrade": 1
+      },
+      {
+        "index": 4,
+        "id": "BODY_SLAM",
+        "upgrade": 1
+      },
+      {
+        "index": 5,
+        "id": "CASCADE",
+        "upgrade": 0
+      },
+      {
+        "index": 6,
+        "id": "CONFLAGRATION",
+        "upgrade": 0
+      },
+      {
+        "index": 7,
+        "id": "FORGOTTEN_RITUAL",
+        "upgrade": 1
+      },
+      {
+        "index": 8,
+        "id": "IMPERVIOUS",
+        "upgrade": 1
+      },
+      {
+        "index": 9,
+        "id": "INFERNAL_BLADE",
+        "upgrade": 0
+      },
+      {
+        "index": 10,
+        "id": "IRON_WAVE",
+        "upgrade": 0
+      },
+      {
+        "index": 11,
+        "id": "PRIMAL_FORCE",
+        "upgrade": 1
+      },
+      {
+        "index": 12,
+        "id": "RUPTURE",
+        "upgrade": 0
+      },
+      {
+        "index": 13,
+        "id": "SHRUG_IT_OFF",
+        "upgrade": 0
+      },
+      {
+        "index": 14,
+        "id": "SHRUG_IT_OFF",
+        "upgrade": 0
+      },
+      {
+        "index": 15,
+        "id": "SPITE",
+        "upgrade": 0
+      },
+      {
+        "index": 16,
+        "id": "STOKE",
+        "upgrade": 1
+      },
+      {
+        "index": 17,
+        "id": "TRUE_GRIT",
+        "upgrade": 0
+      },
+      {
+        "index": 18,
+        "id": "UNMOVABLE",
+        "upgrade": 0
+      },
+      {
+        "index": 19,
+        "id": "WHIRLWIND",
+        "upgrade": 0
+      }
+    ],
+    "powers": [
+      {
+        "id": "FRAIL_POWER",
+        "amount": 2
+      }
+    ],
+    "potions": [
+      null,
+      null,
+      null
+    ],
+    "relics": [],
+    "allies": [
+      {
+        "index": 0,
+        "hp": 77,
+        "block": 0,
+        "attack_hits": [],
+        "intents": [],
+        "powers": [
+          {
+            "id": "FRAIL_POWER",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "enemies": [
+      {
+        "index": 0,
+        "hp": 25,
+        "block": 0,
+        "attack_hits": [
+          8
+        ],
+        "intents": [
+          "Attack"
+        ],
+        "powers": []
+      },
+      {
+        "index": 1,
+        "hp": 12,
+        "block": 0,
+        "attack_hits": [],
+        "intents": [
+          "Debuff"
+        ],
+        "powers": []
+      },
+      {
+        "index": 2,
+        "hp": 27,
+        "block": 0,
+        "attack_hits": [
+          3,
+          3
+        ],
+        "intents": [
+          "Attack"
+        ],
+        "powers": []
+      }
+    ],
+    "actions": [
+      {
+        "index": 0,
+        "kind": "play_card",
+        "card": 0,
+        "cost": 0,
+        "star_cost": 0,
+        "energy_x": false,
+        "star_x": false,
+        "target_type": "Self"
+      },
+      {
+        "index": 1,
+        "kind": "play_card",
+        "card": 1,
+        "cost": 1,
+        "star_cost": 0,
+        "energy_x": false,
+        "star_x": false,
+        "target_type": "Self"
+      },
+      {
+        "index": 2,
+        "kind": "play_card",
+        "card": 2,
+        "cost": 1,
+        "star_cost": 0,
+        "energy_x": false,
+        "star_x": false,
+        "target_type": "Self"
+      },
+      {
+        "index": 3,
+        "kind": "play_card",
+        "card": 3,
+        "cost": 1,
+        "preview": {
+          "block": 6,
+          "draw": 1
+        },
+        "star_cost": 0,
+        "energy_x": false,
+        "star_x": false,
+        "target_type": "Self"
+      },
+      {
+        "index": 4,
+        "kind": "play_card",
+        "card": 4,
+        "target": 0,
+        "cost": 0,
+        "star_cost": 0,
+        "energy_x": false,
+        "star_x": false,
+        "target_side": "enemy",
+        "target_type": "AnyEnemy"
+      },
+      {
+        "index": 5,
+        "kind": "play_card",
+        "card": 4,
+        "target": 1,
+        "cost": 0,
+        "star_cost": 0,
+        "energy_x": false,
+        "star_x": false,
+        "target_side": "enemy",
+        "target_type": "AnyEnemy"
+      },
+      {
+        "index": 6,
+        "kind": "play_card",
+        "card": 4,
+        "target": 2,
+        "cost": 0,
+        "star_cost": 0,
+        "energy_x": false,
+        "star_x": false,
+        "target_side": "enemy",
+        "target_type": "AnyEnemy"
+      },
+      {
+        "index": 7,
+        "kind": "end_turn",
+        "energy_x": false,
+        "star_x": false
+      }
+    ]
+  },
+  "law": {
+    "counts": {
+      "CONFLAGRATION#0": 1,
+      "IRON_WAVE#0": 1,
+      "SPITE#0": 1,
+      "UNMOVABLE#0": 1,
+      "WHIRLWIND#0": 1,
+      "RUPTURE#0": 1,
+      "INFERNAL_BLADE#0": 1,
+      "TRUE_GRIT#0": 1,
+      "CASCADE#0": 1
+    },
+    "top": [],
+    "bottom": [],
+    "shuffles": 0
+  },
+  "prior": {
+    "schema": "sts2.core.c.v3",
+    "turn": 2,
+    "round": 2,
+    "hp": 77,
+    "max_hp": 80,
+    "block": 0,
+    "energy": 3,
+    "stars": 0,
+    "gold": 99,
+    "potions": [
+      null,
+      null,
+      null
+    ],
+    "powers": [
+      {
+        "id": "FRAIL_POWER",
+        "amount": 2
+      }
+    ],
+    "relics": [],
+    "card_state": {
+      "hand": [],
+      "discard": [
+        {
+          "type": "BLOODLETTING#1",
+          "cost": 0,
+          "cost_layers": {
+            "energy": [],
+            "stars": []
+          },
+          "vars": {
+            "Energy": 3
+          }
+        },
+        {
+          "type": "PRIMAL_FORCE#1",
+          "cost": 0,
+          "cost_layers": {
+            "energy": [],
+            "stars": []
+          },
+          "vars": {}
+        },
+        {
+          "type": "SHRUG_IT_OFF#0",
+          "cost": 1,
+          "cost_layers": {
+            "energy": [],
+            "stars": []
+          },
+          "vars": {
+            "Block": 8,
+            "Cards": 1
+          }
+        },
+        {
+          "type": "STOKE#1",
+          "cost": 1,
+          "cost_layers": {
+            "energy": [],
+            "stars": []
+          },
+          "vars": {}
+        },
+        {
+          "type": "TWIN_STRIKE#1",
+          "cost": 1,
+          "cost_layers": {
+            "energy": [],
+            "stars": []
+          },
+          "vars": {
+            "Damage": 7,
+            "HitCount": 2
+          }
+        }
+      ],
+      "exhaust": [
+        {
+          "type": "BARRICADE#0",
+          "cost": 3,
+          "cost_layers": {
+            "energy": [],
+            "stars": []
+          },
+          "vars": {}
+        },
+        {
+          "type": "IMPERVIOUS#1",
+          "cost": 2,
+          "cost_layers": {
+            "energy": [],
+            "stars": []
+          },
+          "vars": {
+            "Block": 40
+          }
+        }
+      ]
+    },
+    "hand": [],
+    "discard": [
+      {
+        "index": 0,
+        "id": "BLOODLETTING",
+        "upgrade": 1
+      },
+      {
+        "index": 1,
+        "id": "PRIMAL_FORCE",
+        "upgrade": 1
+      },
+      {
+        "index": 2,
+        "id": "SHRUG_IT_OFF",
+        "upgrade": 0
+      },
+      {
+        "index": 3,
+        "id": "STOKE",
+        "upgrade": 1
+      },
+      {
+        "index": 4,
+        "id": "TWIN_STRIKE",
+        "upgrade": 1
+      }
+    ],
+    "exhaust": [
+      {
+        "index": 0,
+        "id": "BARRICADE",
+        "upgrade": 0
+      },
+      {
+        "index": 1,
+        "id": "IMPERVIOUS",
+        "upgrade": 1
+      }
+    ],
+    "deck": [
+      {
+        "index": 0,
+        "id": "ARMAMENTS",
+        "upgrade": 1
+      },
+      {
+        "index": 1,
+        "id": "BARRICADE",
+        "upgrade": 0
+      },
+      {
+        "index": 2,
+        "id": "BATTLE_TRANCE",
+        "upgrade": 0
+      },
+      {
+        "index": 3,
+        "id": "BLOODLETTING",
+        "upgrade": 1
+      },
+      {
+        "index": 4,
+        "id": "BODY_SLAM",
+        "upgrade": 1
+      },
+      {
+        "index": 5,
+        "id": "CASCADE",
+        "upgrade": 0
+      },
+      {
+        "index": 6,
+        "id": "CONFLAGRATION",
+        "upgrade": 0
+      },
+      {
+        "index": 7,
+        "id": "FORGOTTEN_RITUAL",
+        "upgrade": 1
+      },
+      {
+        "index": 8,
+        "id": "IMPERVIOUS",
+        "upgrade": 1
+      },
+      {
+        "index": 9,
+        "id": "INFERNAL_BLADE",
+        "upgrade": 0
+      },
+      {
+        "index": 10,
+        "id": "IRON_WAVE",
+        "upgrade": 0
+      },
+      {
+        "index": 11,
+        "id": "PRIMAL_FORCE",
+        "upgrade": 1
+      },
+      {
+        "index": 12,
+        "id": "RUPTURE",
+        "upgrade": 0
+      },
+      {
+        "index": 13,
+        "id": "SHRUG_IT_OFF",
+        "upgrade": 0
+      },
+      {
+        "index": 14,
+        "id": "SHRUG_IT_OFF",
+        "upgrade": 0
+      },
+      {
+        "index": 15,
+        "id": "SPITE",
+        "upgrade": 0
+      },
+      {
+        "index": 16,
+        "id": "STOKE",
+        "upgrade": 1
+      },
+      {
+        "index": 17,
+        "id": "TRUE_GRIT",
+        "upgrade": 0
+      },
+      {
+        "index": 18,
+        "id": "UNMOVABLE",
+        "upgrade": 0
+      },
+      {
+        "index": 19,
+        "id": "WHIRLWIND",
+        "upgrade": 0
+      }
+    ],
+    "draw_count": 14,
+    "belief": {
+      "counts": {
+        "CONFLAGRATION#0": 1,
+        "IRON_WAVE#0": 1,
+        "SPITE#0": 1,
+        "UNMOVABLE#0": 1,
+        "BODY_SLAM#1": 1,
+        "WHIRLWIND#0": 1,
+        "FORGOTTEN_RITUAL#1": 1,
+        "RUPTURE#0": 1,
+        "ARMAMENTS#1": 1,
+        "INFERNAL_BLADE#0": 1,
+        "SHRUG_IT_OFF#0": 1,
+        "BATTLE_TRANCE#0": 1,
+        "TRUE_GRIT#0": 1,
+        "CASCADE#0": 1
+      },
+      "top": [],
+      "bottom": [],
+      "shuffles": 0
+    },
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "CORPSE_SLUG",
+        "hp": 25,
+        "max_hp": 25,
+        "block": 0,
+        "move": "GLOMP_MOVE",
+        "phase": {
+          "node": "GLOMP_MOVE",
+          "repeat_windows": {},
+          "committed_moves": [
+            "WHIP_SLAP_MOVE",
+            "GLOMP_MOVE"
+          ],
+          "registers": {},
+          "rule_ref": "CORPSE_SLUG"
+        },
+        "attack_hits": [
+          8
+        ],
+        "powers": [
+          {
+            "id": "RAVENOUS_POWER",
+            "amount": 4
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "CORPSE_SLUG",
+        "hp": 12,
+        "max_hp": 26,
+        "block": 0,
+        "move": "GOOP_MOVE",
+        "phase": {
+          "node": "GOOP_MOVE",
+          "repeat_windows": {},
+          "committed_moves": [
+            "GLOMP_MOVE",
+            "GOOP_MOVE"
+          ],
+          "registers": {},
+          "rule_ref": "CORPSE_SLUG"
+        },
+        "attack_hits": [],
+        "powers": [
+          {
+            "id": "RAVENOUS_POWER",
+            "amount": 4
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "species": "CORPSE_SLUG",
+        "hp": 27,
+        "max_hp": 27,
+        "block": 0,
+        "move": "WHIP_SLAP_MOVE",
+        "phase": {
+          "node": "WHIP_SLAP_MOVE",
+          "repeat_windows": {},
+          "committed_moves": [
+            "GOOP_MOVE",
+            "WHIP_SLAP_MOVE"
+          ],
+          "registers": {},
+          "rule_ref": "CORPSE_SLUG"
+        },
+        "attack_hits": [
+          3,
+          3
+        ],
+        "powers": [
+          {
+            "id": "RAVENOUS_POWER",
+            "amount": 4
+          }
+        ]
+      }
+    ],
+    "setup": {
+      "stage": "before_initial_draw",
+      "draw": 5,
+      "will_shuffle": false,
+      "side_started": false,
+      "extra_turn": false,
+      "completed": [
+        "enemy_side",
+        "before_hand_draw",
+        "modified_draw_count"
+      ],
+      "pending": [
+        "hand_draw",
+        "draw_hooks",
+        "after_player_start",
+        "side_start",
+        "deaths_orbs_autoplay"
+      ]
+    },
+    "events": [],
+    "enemy_models": []
+  },
+  "edges": [
+    {
+      "route": [
+        {
+          "action": 0,
+          "draws": []
+        }
+      ],
+      "kind": "R",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 0,
+          "draws": [
+            "CASCADE#0"
+          ]
+        }
+      ],
+      "kind": "R",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 0,
+          "draws": [
+            "CONFLAGRATION#0"
+          ]
+        }
+      ],
+      "kind": "R",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 0,
+          "draws": [
+            "INFERNAL_BLADE#0"
+          ]
+        }
+      ],
+      "kind": "R",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 0,
+          "draws": [
+            "IRON_WAVE#0"
+          ]
+        }
+      ],
+      "kind": "R",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 0,
+          "draws": [
+            "RUPTURE#0"
+          ]
+        }
+      ],
+      "kind": "R",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 0,
+          "draws": [
+            "SPITE#0"
+          ]
+        }
+      ],
+      "kind": "R",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 0,
+          "draws": [
+            "TRUE_GRIT#0"
+          ]
+        }
+      ],
+      "kind": "R",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 0,
+          "draws": [
+            "UNMOVABLE#0"
+          ]
+        }
+      ],
+      "kind": "R",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 0,
+          "draws": [
+            "WHIRLWIND#0"
+          ]
+        }
+      ],
+      "kind": "R",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 1,
+          "draws": []
+        }
+      ],
+      "kind": "decision",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 2,
+          "draws": []
+        }
+      ],
+      "kind": "decision",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 3,
+          "draws": []
+        }
+      ],
+      "kind": "R",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 3,
+          "draws": [
+            "CASCADE#0"
+          ]
+        }
+      ],
+      "kind": "decision",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 3,
+          "draws": [
+            "CASCADE#0"
+          ]
+        },
+        {
+          "action": 7,
+          "draws": []
+        }
+      ],
+      "kind": "C",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 3,
+          "draws": [
+            "CONFLAGRATION#0"
+          ]
+        }
+      ],
+      "kind": "decision",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 3,
+          "draws": [
+            "CONFLAGRATION#0"
+          ]
+        },
+        {
+          "action": 7,
+          "draws": []
+        }
+      ],
+      "kind": "C",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 3,
+          "draws": [
+            "INFERNAL_BLADE#0"
+          ]
+        }
+      ],
+      "kind": "decision",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 3,
+          "draws": [
+            "INFERNAL_BLADE#0"
+          ]
+        },
+        {
+          "action": 7,
+          "draws": []
+        }
+      ],
+      "kind": "C",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 3,
+          "draws": [
+            "IRON_WAVE#0"
+          ]
+        }
+      ],
+      "kind": "decision",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 3,
+          "draws": [
+            "IRON_WAVE#0"
+          ]
+        },
+        {
+          "action": 9,
+          "draws": []
+        }
+      ],
+      "kind": "C",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 3,
+          "draws": [
+            "RUPTURE#0"
+          ]
+        }
+      ],
+      "kind": "decision",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 3,
+          "draws": [
+            "RUPTURE#0"
+          ]
+        },
+        {
+          "action": 7,
+          "draws": []
+        }
+      ],
+      "kind": "C",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 3,
+          "draws": [
+            "SPITE#0"
+          ]
+        }
+      ],
+      "kind": "decision",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 3,
+          "draws": [
+            "SPITE#0"
+          ]
+        },
+        {
+          "action": 9,
+          "draws": []
+        }
+      ],
+      "kind": "C",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 3,
+          "draws": [
+            "TRUE_GRIT#0"
+          ]
+        }
+      ],
+      "kind": "decision",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 3,
+          "draws": [
+            "TRUE_GRIT#0"
+          ]
+        },
+        {
+          "action": 7,
+          "draws": []
+        }
+      ],
+      "kind": "C",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 3,
+          "draws": [
+            "UNMOVABLE#0"
+          ]
+        }
+      ],
+      "kind": "decision",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 3,
+          "draws": [
+            "UNMOVABLE#0"
+          ]
+        },
+        {
+          "action": 7,
+          "draws": []
+        }
+      ],
+      "kind": "C",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 3,
+          "draws": [
+            "WHIRLWIND#0"
+          ]
+        }
+      ],
+      "kind": "decision",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 3,
+          "draws": [
+            "WHIRLWIND#0"
+          ]
+        },
+        {
+          "action": 7,
+          "draws": []
+        }
+      ],
+      "kind": "C",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 4,
+          "draws": []
+        }
+      ],
+      "kind": "decision",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 5,
+          "draws": []
+        }
+      ],
+      "kind": "decision",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 6,
+          "draws": []
+        }
+      ],
+      "kind": "decision",
+      "equal": true,
+      "delta": []
+    },
+    {
+      "route": [
+        {
+          "action": 7,
+          "draws": []
+        }
+      ],
+      "kind": "C",
+      "equal": true,
+      "delta": []
+    }
+  ],
+  "programs": [
+    {
+      "label": "graph/3",
+      "leaf_differences": [
+        {
+          "candidate": "12e96f3244db0dd7874aefcfba08afa8f1176608116d494a40edcf2956b27556",
+          "archived": "12e96f3244db0dd7874aefcfba08afa8f1176608116d494a40edcf2956b27556",
+          "weight": 0.1111111111111111,
+          "delta": []
+        },
+        {
+          "candidate": "171fb7789e9d3efa919f00b0d448b5d78316aba18dc134d8a302443c67d6c766",
+          "archived": "171fb7789e9d3efa919f00b0d448b5d78316aba18dc134d8a302443c67d6c766",
+          "weight": 0.1111111111111111,
+          "delta": []
+        },
+        {
+          "candidate": "225c6f0979c486ceb3e4fd8028e90c845a315262720a2a79bde4e094fd7a8269",
+          "archived": "225c6f0979c486ceb3e4fd8028e90c845a315262720a2a79bde4e094fd7a8269",
+          "weight": 0.1111111111111111,
+          "delta": []
+        },
+        {
+          "candidate": "25def5bc0ec2d6ff12b01cee549311940cdc76185321e51e0e90d4e4a387b4f7",
+          "archived": "25def5bc0ec2d6ff12b01cee549311940cdc76185321e51e0e90d4e4a387b4f7",
+          "weight": 0.1111111111111111,
+          "delta": []
+        },
+        {
+          "candidate": "4af25cc0561a4b338640bab0fff64a371d7d472e9a0247277f923dbd35a4266f",
+          "archived": "4af25cc0561a4b338640bab0fff64a371d7d472e9a0247277f923dbd35a4266f",
+          "weight": 0.1111111111111111,
+          "delta": []
+        },
+        {
+          "candidate": "a7cf6e215925ef1050ddf624a4279540c3c97e5db6c752904f2b824eb2349f88",
+          "archived": "a7cf6e215925ef1050ddf624a4279540c3c97e5db6c752904f2b824eb2349f88",
+          "weight": 0.1111111111111111,
+          "delta": []
+        },
+        {
+          "candidate": "c320ace41a308b59d3f564c32d064c9bf42eb031d9243414d6c4f5541272ca83",
+          "archived": "c320ace41a308b59d3f564c32d064c9bf42eb031d9243414d6c4f5541272ca83",
+          "weight": 0.1111111111111111,
+          "delta": []
+        },
+        {
+          "candidate": "d9aa1c432715dfe453459d7de7801318c8f17289ec61ca6cba1fb7b03dcf5318",
+          "archived": "d9aa1c432715dfe453459d7de7801318c8f17289ec61ca6cba1fb7b03dcf5318",
+          "weight": 0.1111111111111111,
+          "delta": []
+        },
+        {
+          "candidate": "e42332623b2ab6c7980737855057d6b54443c284c31ac0530dc09033a443fdc1",
+          "archived": "e42332623b2ab6c7980737855057d6b54443c284c31ac0530dc09033a443fdc1",
+          "weight": 0.1111111111111111,
+          "delta": []
+        }
+      ],
+      "law_equal": true,
+      "public_C_equal": true,
+      "same_batch_v2_equal": true,
+      "tensor_equal": true,
+      "leaves": 9,
+      "utility": 75.09843275282117,
+      "frozen_utility": 75.09843190511067,
+      "probability": 1.0000000000000002
+    },
+    {
+      "label": "graph/1",
+      "leaf_differences": [
+        {
+          "candidate": "a4f827546260be98c3be4bd04f221e3bf79f35060847ac50f1ca51e6189f4baa",
+          "archived": "a4f827546260be98c3be4bd04f221e3bf79f35060847ac50f1ca51e6189f4baa",
+          "weight": 1.0,
+          "delta": []
+        }
+      ],
+      "law_equal": true,
+      "public_C_equal": true,
+      "same_batch_v2_equal": true,
+      "tensor_equal": true,
+      "leaves": 1,
+      "utility": 72.90400695800781,
+      "frozen_utility": 72.90401458740234,
+      "probability": 1.0
+    }
+  ],
+  "reference": {
+    "stop": "action/CASCADE"
+  }
+}

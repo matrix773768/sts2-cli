@@ -1,0 +1,839 @@
+{
+  "worker_seconds": 2405.442041199989,
+  "attempts": [
+    {
+      "label": "native-01",
+      "seconds": 87.16196850000415,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\audit.py"
+      ],
+      "start_utc_unix": 1795836225.7540607,
+      "settings": {}
+    },
+    {
+      "label": "build-01",
+      "seconds": 15.511049599997932,
+      "exit": 1,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\build.py",
+        "5d"
+      ],
+      "start_utc_unix": 1795836684.9769986,
+      "settings": {}
+    },
+    {
+      "label": "build-02",
+      "seconds": 15.756993199989665,
+      "exit": 1,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\build.py",
+        "5d"
+      ],
+      "start_utc_unix": 1795836725.1275291,
+      "settings": {}
+    },
+    {
+      "label": "build-03",
+      "seconds": 16.91360290000739,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\build.py",
+        "5d"
+      ],
+      "start_utc_unix": 1795836818.8187904,
+      "settings": {}
+    },
+    {
+      "label": "differential-01",
+      "seconds": 16.3599028000026,
+      "exit": 1,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\check.py"
+      ],
+      "start_utc_unix": 1795836858.4185817,
+      "settings": {}
+    },
+    {
+      "label": "differential-02",
+      "seconds": 16.824243199997,
+      "exit": 1,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\check.py",
+        "--full"
+      ],
+      "start_utc_unix": 1795836918.052066,
+      "settings": {}
+    },
+    {
+      "label": "differential-03",
+      "seconds": 36.15565780000179,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\check.py",
+        "--full"
+      ],
+      "start_utc_unix": 1795836957.5752368,
+      "settings": {}
+    },
+    {
+      "label": "differential-04",
+      "seconds": 16.799835700003314,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\check.py"
+      ],
+      "start_utc_unix": 1795837012.8818252,
+      "settings": {}
+    },
+    {
+      "label": "differential-05",
+      "seconds": 17.15522939999937,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\check.py"
+      ],
+      "start_utc_unix": 1795837056.1106741,
+      "settings": {}
+    },
+    {
+      "label": "build-04",
+      "seconds": 14.24246540000604,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\build.py",
+        "5d"
+      ],
+      "start_utc_unix": 1795837113.8602514,
+      "settings": {}
+    },
+    {
+      "label": "differential-06",
+      "seconds": 19.350603400002,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\check.py"
+      ],
+      "start_utc_unix": 1795837128.358,
+      "settings": {}
+    },
+    {
+      "label": "protocol-01",
+      "seconds": 16.286414699992747,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\protocol.py"
+      ],
+      "start_utc_unix": 1795837244.377067,
+      "settings": {}
+    },
+    {
+      "label": "build-05",
+      "seconds": 15.182700200006366,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\build.py",
+        "5d"
+      ],
+      "start_utc_unix": 1795837307.3007035,
+      "settings": {}
+    },
+    {
+      "label": "turns-01",
+      "seconds": 20.510973799988278,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\turns.py"
+      ],
+      "start_utc_unix": 1795837433.892895,
+      "settings": {}
+    },
+    {
+      "label": "turns-02",
+      "seconds": 18.99804540000332,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\turns.py"
+      ],
+      "start_utc_unix": 1795837477.3207831,
+      "settings": {}
+    },
+    {
+      "label": "differential-07",
+      "seconds": 37.4506987999921,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\check.py",
+        "--full"
+      ],
+      "start_utc_unix": 1795837496.5541568,
+      "settings": {}
+    },
+    {
+      "label": "turns-03",
+      "seconds": 22.03826850000769,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\turns.py"
+      ],
+      "start_utc_unix": 1795837557.453855,
+      "settings": {}
+    },
+    {
+      "label": "prod-build-01",
+      "seconds": 25.00987539999187,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\build.py",
+        "5d",
+        "--production"
+      ],
+      "start_utc_unix": 1795837579.6849875,
+      "settings": {}
+    },
+    {
+      "label": "turns-04",
+      "seconds": 24.527554499989492,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\turns.py"
+      ],
+      "start_utc_unix": 1795837633.3189535,
+      "settings": {}
+    },
+    {
+      "label": "turns-05",
+      "seconds": 23.062374200002523,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\turns.py"
+      ],
+      "start_utc_unix": 1795837723.5364547,
+      "settings": {}
+    },
+    {
+      "label": "prod-build-02",
+      "seconds": 15.11332799999218,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\build.py",
+        "5d",
+        "--production"
+      ],
+      "start_utc_unix": 1795837782.8657105,
+      "settings": {}
+    },
+    {
+      "label": "turns-06",
+      "seconds": 21.487340099993162,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\turns.py"
+      ],
+      "start_utc_unix": 1795837798.2287812,
+      "settings": {}
+    },
+    {
+      "label": "natural-hot-a",
+      "seconds": 6.752303200002643,
+      "exit": 1,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\..\\m1-infra0\\run.py",
+        "infra1h2-a",
+        "natural",
+        "V2",
+        "baseline",
+        "--sample",
+        "8",
+        "--variant",
+        "h-state"
+      ],
+      "start_utc_unix": 1795837881.6898973,
+      "settings": {}
+    },
+    {
+      "label": "recover-01",
+      "seconds": 100.19005160000233,
+      "exit": 1,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\recover.py"
+      ],
+      "start_utc_unix": 1795838247.1198812,
+      "settings": {}
+    },
+    {
+      "label": "paired-baseline-a",
+      "seconds": 71.04331280000042,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\measure.py",
+        "natural-ba",
+        "natural",
+        "h-batch"
+      ],
+      "start_utc_unix": 1795838371.830374,
+      "settings": {}
+    },
+    {
+      "label": "paired-candidate-a",
+      "seconds": 67.70014099999389,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\measure.py",
+        "natural-ha",
+        "natural",
+        "h-state"
+      ],
+      "start_utc_unix": 1795838443.2000988,
+      "settings": {}
+    },
+    {
+      "label": "prod-build-03",
+      "seconds": 15.087879099999554,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\build.py",
+        "5d",
+        "--production"
+      ],
+      "start_utc_unix": 1795838511.089366,
+      "settings": {}
+    },
+    {
+      "label": "invariance-01",
+      "seconds": 22.08967329999723,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\invariance.py"
+      ],
+      "start_utc_unix": 1795838526.4293363,
+      "settings": {}
+    },
+    {
+      "label": "paired-candidate-b",
+      "seconds": 78.75831779999135,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\measure.py",
+        "natural-hb",
+        "natural",
+        "h-state"
+      ],
+      "start_utc_unix": 1795838548.7303433,
+      "settings": {}
+    },
+    {
+      "label": "native-02",
+      "seconds": 72.29710480000358,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\native_h2.py"
+      ],
+      "start_utc_unix": 1795838627.5357497,
+      "settings": {}
+    },
+    {
+      "label": "audit-paired-a",
+      "seconds": 200.53203180000128,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\measure.py",
+        "audit-ba",
+        "audit",
+        "h-batch"
+      ],
+      "start_utc_unix": 1795838699.9249284,
+      "settings": {}
+    },
+    {
+      "label": "slugs-build-01",
+      "seconds": 23.75404559999879,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\build.py",
+        "5e",
+        "--production"
+      ],
+      "start_utc_unix": 1795838900.5436664,
+      "settings": {}
+    },
+    {
+      "label": "shadow-build-06",
+      "seconds": 17.557956400007242,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\build.py",
+        "5d"
+      ],
+      "start_utc_unix": 1795838924.3392997,
+      "settings": {}
+    },
+    {
+      "label": "audit-paired-b",
+      "seconds": 122.54444230000081,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\measure.py",
+        "audit-ha",
+        "audit",
+        "h-state"
+      ],
+      "start_utc_unix": 1795838941.968977,
+      "settings": {}
+    },
+    {
+      "label": "differential-08",
+      "seconds": 24.86201460000302,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\check.py",
+        "--full"
+      ],
+      "start_utc_unix": 1795839064.6305592,
+      "settings": {}
+    },
+    {
+      "label": "slug-public-01",
+      "seconds": 12.914377200009767,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\slug_check.py"
+      ],
+      "start_utc_unix": 1795839089.640191,
+      "settings": {}
+    },
+    {
+      "label": "paired-baseline-b",
+      "seconds": 40.66744679999829,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\measure.py",
+        "natural-bb",
+        "natural",
+        "h-batch"
+      ],
+      "start_utc_unix": 1795839102.7175446,
+      "settings": {}
+    },
+    {
+      "label": "slugs-diff-01",
+      "seconds": 14.202036300004693,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\slug_check.py",
+        "--probe"
+      ],
+      "start_utc_unix": 1795839143.5132043,
+      "settings": {}
+    },
+    {
+      "label": "paired-candidate-c",
+      "seconds": 41.755184400011785,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\measure.py",
+        "natural-hc",
+        "natural",
+        "h-state"
+      ],
+      "start_utc_unix": 1795839157.7813196,
+      "settings": {}
+    },
+    {
+      "label": "final-prod-build",
+      "seconds": 16.050517199997557,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\build.py",
+        "5d",
+        "--production"
+      ],
+      "start_utc_unix": 1795839199.793952,
+      "settings": {}
+    },
+    {
+      "label": "final-planner",
+      "seconds": 16.625739900002372,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\turns.py"
+      ],
+      "start_utc_unix": 1795839216.1734252,
+      "settings": {}
+    },
+    {
+      "label": "slugs-build-02",
+      "seconds": 13.913987199994153,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\build.py",
+        "5e",
+        "--production"
+      ],
+      "start_utc_unix": 1795839294.8060157,
+      "settings": {}
+    },
+    {
+      "label": "slugs-diff-02",
+      "seconds": 13.955374400000437,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\slug_check.py",
+        "--probe"
+      ],
+      "start_utc_unix": 1795839308.976581,
+      "settings": {}
+    },
+    {
+      "label": "slugs-diff-03",
+      "seconds": 13.214152400003513,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\slug_check.py",
+        "--probe"
+      ],
+      "start_utc_unix": 1795839435.804401,
+      "settings": {}
+    },
+    {
+      "label": "transcripts-build",
+      "seconds": 13.99862720000965,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\build.py",
+        "5d",
+        "--production"
+      ],
+      "start_utc_unix": 1795839510.56325,
+      "settings": {}
+    },
+    {
+      "label": "transcripts-slugs",
+      "seconds": 13.97298160000355,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\build.py",
+        "5e",
+        "--production"
+      ],
+      "start_utc_unix": 1795839524.7889547,
+      "settings": {}
+    },
+    {
+      "label": "transcripts-planner",
+      "seconds": 15.991549700003816,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\turns.py"
+      ],
+      "start_utc_unix": 1795839539.0102754,
+      "settings": {}
+    },
+    {
+      "label": "transcripts-invariance",
+      "seconds": 15.663873199999216,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\invariance.py"
+      ],
+      "start_utc_unix": 1795839555.2032044,
+      "settings": {}
+    },
+    {
+      "label": "current-baseline",
+      "seconds": 38.68945909998729,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\measure.py",
+        "natural-bd",
+        "natural",
+        "h-batch"
+      ],
+      "start_utc_unix": 1795839570.9564795,
+      "settings": {}
+    },
+    {
+      "label": "slug-archived-diff",
+      "seconds": 13.291847700005746,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\slug_check.py",
+        "--probe"
+      ],
+      "start_utc_unix": 1795839609.9360397,
+      "settings": {}
+    },
+    {
+      "label": "current-hot",
+      "seconds": 40.90022619999945,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\measure.py",
+        "natural-hd",
+        "natural",
+        "h-state"
+      ],
+      "start_utc_unix": 1795839623.2940342,
+      "settings": {}
+    },
+    {
+      "label": "ordered-C-planner",
+      "seconds": 12.920600400000694,
+      "exit": 1,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\turns.py"
+      ],
+      "start_utc_unix": 1795839664.3558464,
+      "settings": {}
+    },
+    {
+      "label": "final-C-slugs",
+      "seconds": 13.602753400002257,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\slug_check.py",
+        "--probe"
+      ],
+      "start_utc_unix": 1795839765.0395758,
+      "settings": {}
+    },
+    {
+      "label": "final-C-planner",
+      "seconds": 15.744697999994969,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\turns.py"
+      ],
+      "start_utc_unix": 1795839778.9025748,
+      "settings": {}
+    },
+    {
+      "label": "final-C-edges",
+      "seconds": 15.66949490000843,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\check.py"
+      ],
+      "start_utc_unix": 1795839794.9526336,
+      "settings": {}
+    },
+    {
+      "label": "natural-census",
+      "seconds": 424.8507660999894,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\measure.py",
+        "natural-census",
+        "natural",
+        "h-state",
+        "full"
+      ],
+      "start_utc_unix": 1795839810.8035104,
+      "settings": {}
+    },
+    {
+      "label": "unified-shadow-build",
+      "seconds": 15.865489599993452,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\build.py",
+        "5d"
+      ],
+      "start_utc_unix": 1795840235.8754597,
+      "settings": {}
+    },
+    {
+      "label": "cost-control",
+      "seconds": 68.04488610000408,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\measure.py",
+        "natural-cost",
+        "natural",
+        "h-state-control"
+      ],
+      "start_utc_unix": 1795840251.8130062,
+      "settings": {}
+    },
+    {
+      "label": "final-C-invariance",
+      "seconds": 19.57117309999012,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\invariance.py"
+      ],
+      "start_utc_unix": 1795840319.9782457,
+      "settings": {}
+    },
+    {
+      "label": "check-final-edges",
+      "seconds": 20.879288100011763,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\check.py"
+      ],
+      "start_utc_unix": 1795840339.74516,
+      "settings": {}
+    },
+    {
+      "label": "unified-private",
+      "seconds": 37.721399599991855,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\check.py",
+        "--full"
+      ],
+      "start_utc_unix": 1795840360.7071793,
+      "settings": {}
+    },
+    {
+      "label": "cost-hot",
+      "seconds": 68.22387269999308,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\measure.py",
+        "natural-final",
+        "natural",
+        "h-state"
+      ],
+      "start_utc_unix": 1795840398.4564402,
+      "settings": {}
+    },
+    {
+      "label": "check-final-handles",
+      "seconds": 21.471838900004514,
+      "exit": 0,
+      "args": [
+        "C:\\Users\\31830\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-B",
+        "C:\\Users\\31830\\Documents\\ChatGPT\\Slay the Spire 2 AI\\sts2-infra\\experiments\\m1-infra1h2\\invariance.py"
+      ],
+      "start_utc_unix": 1795840466.8522747,
+      "settings": {}
+    }
+  ]
+}

@@ -37,7 +37,10 @@ def run(task):
         os.environ[k]=str(folder/"tmp")
     experiment=None
     if task.get("variant"):
-        if task["variant"].startswith("h-"):
+        if task["variant"] in ("h-state","h-state-control"):
+            sys.path.insert(0,str(ROOT/"experiments/m1-infra1h2"))
+            import production as experiment
+        elif task["variant"].startswith("h-"):
             sys.path.insert(0,str(ROOT/"experiments/m1-infra1h"))
             import integration as experiment
         else:

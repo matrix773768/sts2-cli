@@ -1,0 +1,757 @@
+{
+  "roots": [
+    {
+      "ordinal": 0,
+      "i": 0,
+      "hot_seconds": 0.6550334999919869,
+      "reference_equal": true,
+      "calls": [
+        761,
+        761
+      ],
+      "leaves": {
+        "deferred": 3361
+      },
+      "strict_g2": true,
+      "physical": {
+        "open": 1,
+        "advance": 255,
+        "conditional/decision": 2,
+        "conditional/choice": 1,
+        "conditional/R": 252
+      },
+      "seconds": 4.504159300005995
+    },
+    {
+      "ordinal": 2,
+      "i": 2,
+      "hot_seconds": 0.2644771000050241,
+      "reference_equal": true,
+      "calls": [
+        256,
+        256
+      ],
+      "leaves": {
+        "deferred": 3655
+      },
+      "strict_g2": true,
+      "physical": {
+        "open": 1,
+        "advance": 256,
+        "conditional/decision": 1,
+        "conditional/R": 255
+      },
+      "seconds": 1.0621308999980101
+    },
+    {
+      "ordinal": 16,
+      "i": 49,
+      "hot_seconds": 0.017694800000754185,
+      "reference_equal": true,
+      "calls": [
+        2,
+        2
+      ],
+      "leaves": {
+        "C": 1
+      },
+      "strict_g2": true,
+      "physical": {
+        "open": 1,
+        "advance": 2,
+        "conditional/decision": 1,
+        "conditional/C": 1
+      },
+      "seconds": 0.2773921999905724
+    },
+    {
+      "ordinal": 19,
+      "i": 61,
+      "physical": {
+        "open": 1,
+        "advance": 2,
+        "conditional/decision": 1,
+        "conditional/unsupported": 1
+      },
+      "stop": "action/WHIRLWIND",
+      "seconds": 0.14818550000200048
+    },
+    {
+      "ordinal": 20,
+      "i": 64,
+      "physical": {
+        "open": 1,
+        "advance": 1,
+        "conditional/decision": 1
+      },
+      "stop": "B/power/[{'id': 'ARTIFACT_POWER', 'owner': 3, 'amount': 3}, {'id': 'CRIMSON_MANTLE_POWER', 'owner': 0, 'amount': 7}]",
+      "seconds": 0.17206070000247564
+    },
+    {
+      "ordinal": 95,
+      "i": 255,
+      "physical": {
+        "open": 1,
+        "advance": 3,
+        "conditional/decision": 2,
+        "conditional/C": 1
+      },
+      "stop": "C/power_visibility",
+      "seconds": 0.10259439999936149
+    }
+  ],
+  "edges": [
+    {
+      "ordinal": 0,
+      "route": [
+        {
+          "action": 0,
+          "draws": []
+        }
+      ],
+      "kind": "decision",
+      "delta": [],
+      "equal": true,
+      "follow_kind": "C",
+      "follow_equal": true,
+      "follow_delta": []
+    },
+    {
+      "ordinal": 0,
+      "route": [
+        {
+          "action": 1,
+          "draws": []
+        }
+      ],
+      "kind": "decision",
+      "delta": [],
+      "equal": true,
+      "follow_kind": "C",
+      "follow_equal": true,
+      "follow_delta": []
+    },
+    {
+      "ordinal": 0,
+      "route": [
+        {
+          "action": 2,
+          "draws": []
+        }
+      ],
+      "kind": "decision",
+      "delta": [],
+      "equal": true,
+      "follow_kind": "C",
+      "follow_equal": true,
+      "follow_delta": []
+    },
+    {
+      "ordinal": 0,
+      "route": [
+        {
+          "action": 3,
+          "draws": []
+        }
+      ],
+      "kind": "decision",
+      "delta": [],
+      "equal": true,
+      "follow_kind": "decision",
+      "follow_equal": true,
+      "follow_delta": []
+    },
+    {
+      "ordinal": 0,
+      "route": [
+        {
+          "action": 4,
+          "draws": []
+        }
+      ],
+      "kind": "decision",
+      "delta": [],
+      "equal": true,
+      "follow_kind": "C",
+      "follow_equal": true,
+      "follow_delta": []
+    },
+    {
+      "ordinal": 0,
+      "route": [
+        {
+          "action": 5,
+          "draws": []
+        }
+      ],
+      "kind": "C",
+      "delta": [],
+      "equal": true,
+      "tensor_equal": true,
+      "value_equal": true
+    },
+    {
+      "ordinal": 2,
+      "route": [
+        {
+          "action": 0,
+          "draws": []
+        }
+      ],
+      "kind": "R",
+      "delta": [],
+      "equal": true,
+      "children": [
+        {
+          "name": "ARMAMENTS#1",
+          "kind": "R",
+          "delta": []
+        },
+        {
+          "name": "BARRICADE#0",
+          "kind": "R",
+          "delta": []
+        },
+        {
+          "name": "BASH#1",
+          "kind": "R",
+          "delta": []
+        },
+        {
+          "name": "BLOOD_WALL#0",
+          "kind": "R",
+          "delta": []
+        },
+        {
+          "name": "BODY_SLAM#0",
+          "kind": "R",
+          "delta": []
+        },
+        {
+          "name": "DEFEND_IRONCLAD#0",
+          "kind": "R",
+          "delta": []
+        },
+        {
+          "name": "FLAME_BARRIER#0",
+          "kind": "R",
+          "delta": []
+        },
+        {
+          "name": "HEADBUTT#1",
+          "kind": "R",
+          "delta": []
+        },
+        {
+          "name": "HEMOKINESIS#1",
+          "kind": "R",
+          "delta": []
+        },
+        {
+          "name": "IMPERVIOUS#1",
+          "kind": "R",
+          "delta": []
+        },
+        {
+          "name": "INFLAME#0",
+          "kind": "R",
+          "delta": []
+        },
+        {
+          "name": "IRON_WAVE#0",
+          "kind": "R",
+          "delta": []
+        },
+        {
+          "name": "SHRUG_IT_OFF#0",
+          "kind": "R",
+          "delta": []
+        },
+        {
+          "name": "STONE_ARMOR#1",
+          "kind": "R",
+          "delta": []
+        },
+        {
+          "name": "STRIKE_IRONCLAD#0",
+          "kind": "R",
+          "delta": []
+        },
+        {
+          "name": "STRIKE_IRONCLAD#1",
+          "kind": "R",
+          "delta": []
+        },
+        {
+          "name": "SWORD_BOOMERANG#0",
+          "kind": "R",
+          "delta": []
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "route": [
+        {
+          "action": 1,
+          "draws": []
+        }
+      ],
+      "kind": "decision",
+      "delta": [],
+      "equal": true,
+      "follow_kind": "C",
+      "follow_equal": true,
+      "follow_delta": []
+    },
+    {
+      "ordinal": 2,
+      "route": [
+        {
+          "action": 2,
+          "draws": []
+        }
+      ],
+      "kind": "decision",
+      "delta": [],
+      "equal": true,
+      "follow_kind": "C",
+      "follow_equal": true,
+      "follow_delta": []
+    },
+    {
+      "ordinal": 2,
+      "route": [
+        {
+          "action": 3,
+          "draws": []
+        }
+      ],
+      "kind": "decision",
+      "delta": [],
+      "equal": true,
+      "follow_kind": "C",
+      "follow_equal": true,
+      "follow_delta": []
+    },
+    {
+      "ordinal": 2,
+      "route": [
+        {
+          "action": 4,
+          "draws": []
+        }
+      ],
+      "kind": "decision",
+      "delta": [],
+      "equal": true,
+      "follow_kind": "C",
+      "follow_equal": true,
+      "follow_delta": []
+    },
+    {
+      "ordinal": 2,
+      "route": [
+        {
+          "action": 5,
+          "draws": []
+        }
+      ],
+      "kind": "C",
+      "delta": [],
+      "equal": true,
+      "tensor_equal": true,
+      "value_equal": true
+    },
+    {
+      "ordinal": 16,
+      "route": [
+        {
+          "action": 0,
+          "draws": []
+        }
+      ],
+      "kind": "R",
+      "delta": [],
+      "equal": true,
+      "children": [
+        {
+          "name": "BODY_SLAM#0",
+          "kind": "decision",
+          "delta": []
+        },
+        {
+          "name": "CRUELTY#0",
+          "kind": "decision",
+          "delta": []
+        },
+        {
+          "name": "DISMANTLE#0",
+          "kind": "decision",
+          "delta": []
+        },
+        {
+          "name": "EXPECT_A_FIGHT#0",
+          "kind": "decision",
+          "delta": []
+        },
+        {
+          "name": "FIEND_FIRE#0",
+          "kind": "decision",
+          "delta": []
+        },
+        {
+          "name": "PERFECTED_STRIKE#1",
+          "kind": "decision",
+          "delta": []
+        },
+        {
+          "name": "STAMPEDE#0",
+          "kind": "decision",
+          "delta": []
+        },
+        {
+          "name": "VICIOUS#0",
+          "kind": "decision",
+          "delta": []
+        }
+      ]
+    },
+    {
+      "ordinal": 16,
+      "route": [
+        {
+          "action": 1,
+          "draws": []
+        }
+      ],
+      "kind": "decision",
+      "delta": [],
+      "equal": true,
+      "follow_kind": "C",
+      "follow_equal": true,
+      "follow_delta": []
+    },
+    {
+      "ordinal": 16,
+      "route": [
+        {
+          "action": 2,
+          "draws": []
+        }
+      ],
+      "stop": "unmodeled_rng"
+    },
+    {
+      "ordinal": 16,
+      "route": [
+        {
+          "action": 3,
+          "draws": []
+        }
+      ],
+      "kind": "decision",
+      "delta": [],
+      "equal": true,
+      "stop": "C/power_visibility"
+    },
+    {
+      "ordinal": 16,
+      "route": [
+        {
+          "action": 4,
+          "draws": []
+        }
+      ],
+      "kind": "decision",
+      "delta": [],
+      "equal": true,
+      "follow_kind": "C",
+      "follow_equal": true,
+      "follow_delta": []
+    },
+    {
+      "ordinal": 16,
+      "route": [
+        {
+          "action": 5,
+          "draws": []
+        }
+      ],
+      "kind": "C",
+      "delta": [],
+      "equal": true,
+      "tensor_equal": true,
+      "value_equal": true
+    },
+    {
+      "ordinal": 19,
+      "route": [
+        {
+          "action": 0,
+          "draws": []
+        }
+      ],
+      "kind": "decision",
+      "delta": [],
+      "equal": true,
+      "follow_kind": "C",
+      "follow_equal": true,
+      "follow_delta": []
+    },
+    {
+      "ordinal": 19,
+      "route": [
+        {
+          "action": 1,
+          "draws": []
+        }
+      ],
+      "stop": "action/CINDER"
+    },
+    {
+      "ordinal": 19,
+      "route": [
+        {
+          "action": 2,
+          "draws": []
+        }
+      ],
+      "stop": "action/WHIRLWIND"
+    },
+    {
+      "ordinal": 19,
+      "route": [
+        {
+          "action": 3,
+          "draws": []
+        }
+      ],
+      "kind": "decision",
+      "delta": [],
+      "equal": true,
+      "follow_kind": "C",
+      "follow_equal": true,
+      "follow_delta": []
+    },
+    {
+      "ordinal": 19,
+      "route": [
+        {
+          "action": 4,
+          "draws": []
+        }
+      ],
+      "kind": "decision",
+      "delta": [],
+      "equal": true,
+      "follow_kind": "C",
+      "follow_equal": true,
+      "follow_delta": []
+    },
+    {
+      "ordinal": 19,
+      "route": [
+        {
+          "action": 5,
+          "draws": []
+        }
+      ],
+      "kind": "C",
+      "delta": [],
+      "equal": true,
+      "tensor_equal": true,
+      "value_equal": true
+    },
+    {
+      "ordinal": 20,
+      "route": [
+        {
+          "action": 0,
+          "draws": []
+        }
+      ],
+      "stop": "B/power/[{'id': 'ARTIFACT_POWER', 'owner': 3, 'amount': 3}, {'id': 'JUGGLING_POWER', 'owner': 0, 'amount': 1}]"
+    },
+    {
+      "ordinal": 20,
+      "route": [
+        {
+          "action": 1,
+          "draws": []
+        }
+      ],
+      "stop": "B/power/[{'id': 'ARTIFACT_POWER', 'owner': 3, 'amount': 3}, {'id': 'CRIMSON_MANTLE_POWER', 'owner': 0, 'amount': 7}]"
+    },
+    {
+      "ordinal": 20,
+      "route": [
+        {
+          "action": 2,
+          "draws": []
+        }
+      ],
+      "kind": "R",
+      "delta": [],
+      "equal": true,
+      "children": [
+        {
+          "name": "BODY_SLAM#1",
+          "kind": "R",
+          "delta": []
+        },
+        {
+          "name": "BRAND#0",
+          "kind": "decision",
+          "delta": []
+        },
+        {
+          "name": "BULLY#0",
+          "kind": "R",
+          "delta": []
+        },
+        {
+          "name": "CINDER#0",
+          "kind": "R",
+          "delta": []
+        },
+        {
+          "name": "EVIL_EYE#0",
+          "kind": "decision",
+          "delta": []
+        },
+        {
+          "name": "PERFECTED_STRIKE#0",
+          "kind": "R",
+          "delta": []
+        },
+        {
+          "name": "SECOND_WIND#0",
+          "kind": "decision",
+          "delta": []
+        },
+        {
+          "name": "SETUP_STRIKE#0",
+          "kind": "R",
+          "delta": []
+        }
+      ]
+    },
+    {
+      "ordinal": 20,
+      "route": [
+        {
+          "action": 3,
+          "draws": []
+        }
+      ],
+      "kind": "decision",
+      "delta": [],
+      "equal": true,
+      "follow_kind": "C",
+      "follow_equal": true,
+      "follow_delta": []
+    },
+    {
+      "ordinal": 20,
+      "route": [
+        {
+          "action": 4,
+          "draws": []
+        }
+      ],
+      "stop": "action/HAVOC"
+    },
+    {
+      "ordinal": 20,
+      "route": [
+        {
+          "action": 5,
+          "draws": []
+        }
+      ],
+      "kind": "C",
+      "delta": [],
+      "equal": true,
+      "tensor_equal": true,
+      "value_equal": true
+    },
+    {
+      "ordinal": 95,
+      "route": [
+        {
+          "action": 0,
+          "draws": []
+        }
+      ],
+      "stop": "unmodeled_rng"
+    },
+    {
+      "ordinal": 95,
+      "route": [
+        {
+          "action": 1,
+          "draws": []
+        }
+      ],
+      "kind": "decision",
+      "delta": [],
+      "equal": true,
+      "follow_kind": "C",
+      "follow_equal": true,
+      "follow_delta": []
+    },
+    {
+      "ordinal": 95,
+      "route": [
+        {
+          "action": 2,
+          "draws": []
+        }
+      ],
+      "kind": "decision",
+      "delta": [],
+      "equal": true,
+      "stop": "C/power_visibility"
+    },
+    {
+      "ordinal": 95,
+      "route": [
+        {
+          "action": 3,
+          "draws": []
+        }
+      ],
+      "stop": "export/modified_instance"
+    },
+    {
+      "ordinal": 95,
+      "route": [
+        {
+          "action": 4,
+          "draws": []
+        }
+      ],
+      "kind": "decision",
+      "delta": [],
+      "equal": true,
+      "follow_kind": "C",
+      "follow_equal": true,
+      "follow_delta": []
+    },
+    {
+      "ordinal": 95,
+      "route": [
+        {
+          "action": 5,
+          "draws": []
+        }
+      ],
+      "kind": "C",
+      "delta": [],
+      "equal": true,
+      "tensor_equal": true,
+      "value_equal": true
+    }
+  ]
+}
