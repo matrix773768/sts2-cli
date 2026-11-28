@@ -21,7 +21,7 @@ class EngineClient:
     """Run the built headless engine with per-process logs and user data."""
 
     def __init__(self, *, deadline=None, log_root=None, startup_timeout=20, command_timeout=45,
-                 cancelled=None, on_process=None):
+                 cancelled=None, on_process=None, command=None, extra_env=None):
         self._deadline = deadline
         self._cancelled = cancelled
         self._lock = threading.RLock()
@@ -41,6 +41,8 @@ class EngineClient:
 
         env = {key: value for key, value in os.environ.items()
                if not key.upper().startswith("STEAM")}
+        if extra_env:
+            env.update(extra_env)
         env.update(
             STS2_LIB=str(ROOT / "lib"), STS2_GAME_DIR=str(ROOT / "lib"),
             HOME=str(profile), USERPROFILE=str(profile), APPDATA=str(roaming),
@@ -61,7 +63,7 @@ class EngineClient:
         if self._remaining(startup_timeout) <= 0:
             raise TimeoutError("Engine launch deadline exceeded")
         self.proc = subprocess.Popen(
-            headless_command(), cwd=cwd, env=env,
+            headless_command() if command is None else command, cwd=cwd, env=env,
             stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
         )
         threads = [

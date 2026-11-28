@@ -1,0 +1,41 @@
+# HotSearch
+
+HotSearch 是 INFRA 独立研究生产器。一个 .NET 9 进程持有真实战斗，每个战斗只从游戏导入一次开局。Python 在公开决策点运行冻结 G2，在抽牌前 C 上批量运行冻结 V2，并写入研究数据。默认自然生产在已选策略的公开后继不属于预测分布时停止该根，保留前缀和原因。
+
+## 构建和运行
+
+从独立研究检出的仓库根目录执行下列命令。每次运行使用新的输出目录。
+
+```powershell
+python -B engine/HotSearch/build.py
+python -B engine/HotSearch/hot_produce.py logs/my-hot-natural --ids 87 176 --limit 32
+python -B engine/HotSearch/hot_produce.py logs/my-hot-panel --limit 32
+python -B engine/HotSearch/condition.py logs/my-hot-pairs --hot-pairs
+python -B engine/HotSearch/condition.py logs/my-hot-worlds --split train
+python -B engine/HotSearch/condition.py logs/my-hot-123 --ids 123 --audit
+```
+
+自备战斗使用 `hot_produce.py OUTPUT --specs FILE`。FILE 为 UTF-8 JSON 数组，每项含 `family` 和完整原生 synthetic combat `spec`。生产器把这些记录标记为 `custom`。内置自然面板固定为 96 个训练根。每次收到失败回复，当前战斗停止，下一根重新初始化。若原生开局被拒绝，下一个开局使用新的独立宿主；账本累计已退出宿主的 CPU 并保留各次峰值的最大值。独立经验文件为 `natural.jsonl.gz`，资源账本为 `ledger.json`。
+
+构建需要已有研究资产。游戏使用仓库 `lib/sts2.dll`，HotKernel 1.0.2 源码使用同工作区 `hk0-isolated-131d10a/upstream.zip`。构建验证归档和游戏身份，重新应用 HotDraw 观测点并编译到 `logs/hotsearch/rules`。原生开局复用已校验的四份 `infra1h-5d-base2/host/Headless` 源码。既有 `infra1h-hot-k2`、离线 NuGet feed、GodotSharp、RitsuLib 以及 `logs/m0-v5/dotnet9` 提供配套依赖。冻结 G2 位于 `logs/inf1/jobs/dc2b-night1-hf1/g2-fit/best.pt`，V2 位于 `experiments/m1-core5a/evidence/v2.pt`。两个权重加载前均校验 SHA-256。独立可执行文件名沿用上游 friend assembly 名称 `OfflineSearchHarness.dll`。
+
+## 状态和策略
+
+- `Battle.cs` 持有真实状态、冷数据、随机流、公开牌袋和待选重放前缀。开局校验构筑多重集。公开抽牌、洗牌、顶底插入、生成、自动打出和待选更新这一战斗的记录。
+- `TurnSearch.cs` 从可见区域、已声明的未知牌类型、公开历史和已宣告敌方行动建立新根。未知牌按公开描述排序并重新绑定实例编号。假设动作复制紧凑状态并共享只读冷数据。HotDraw 在随机点分支；未建模 RNG、预算耗尽、深度及容量限制保留各自的概率质量。
+- `kernel/Events.cs` 在随机生成牌进入可交换牌袋时维持成员资格。加权敌方转移按实际浮点扣减规则积分，保留零权重端点在有限随机数网格上的行为。
+- `--arm turn` 比较完整 G2 回合参考和候选回合策略。候选首动作取 G2 前两名及结束回合，后续动作按当前公开伤害、格挡和目标生命排序。只有候选与参考都闭合、且候选的冻结 V2 期望更高时才执行替代策略。每个实际回合最多发起一次比较。`--arm feedback` 用 G2 随后续公开观察重新决策，`--arm g2` 直接运行 G2。G2 模型输入与旧部署的预览、待选历史及特征数值仍有差异。
+- `Observation.cs` 在战斗内核调用下一回合初始抽牌之前采集 C。记录含真实资源、各公开牌区、合法牌袋约束、敌方行动、能力、费用层和可见历史。胜负终局记录战斗资源。独立原生审核在领取房间奖励之前读取金币。
+- `Worlds.cs` 在稳定 B 保存快照，恢复时重建可变元数据。配对自然后缀使用同一原世界。条件世界只重排可交换尾部；两个策略共享同一世界和真实未来随机流。审计另行扰动随机流，校验公开搜索结果后恢复实验世界。
+- `condition.py` 的 `--hot-pairs` 使用本引擎自己的自然前缀。5E 桥接面板只读取冻结历史动作，所有前缀和后缀都在 HotKernel 上执行。当前根选择固定在第 2 回合，候选包含“首动作后结束回合”及继续战术出牌两类。每个被选程序均保留独立条件分布、C 特征键和完整公开 C 键。
+
+## 证据与复现
+
+```powershell
+python -B engine/HotSearch/build_oracle.py
+python -B engine/HotSearch/frozen_audit.py logs/my-frozen-replay
+python -B engine/HotSearch/native_audit.py logs/my-native logs/my-hot-panel/natural.jsonl.gz
+python -B engine/HotSearch/verify.py
+```
+
+`--diagnostic` 显式开启失配后的影子采集，以便测量新策略的整战能力；每次失配仍保留原分布和实际边界。打包数据中的 `strict` 为停止模式，`natural` 为诊断模式，`natural-reviewed` 为停止模式完成且通过整战原生重放的交集。条件世界默认同时检查干预回合的完整公开边界和后续回合全部已闭合的预测。发生失配即停止这一侧；同根的双方及全部预定世界通过后，该根才进入严格统计。`strict-train`、`strict-dev`、`strict123`、`strict-pairs` 为此模式。`world-train`、`world-dev`、`123`、`pairs` 记录仅审核首个干预边界、继续采集后续诊断轨迹的对照。不同策略、训练和开发世界分别存储。正式运行可用 `campaign.py LABEL SCRIPT ARGS...` 共用一个串行 worker 账本。命令、验收数字和缺口见仓库的 [1H3-R 研究报告](../../docs/m1-infra1h3r-independent-hot-search.md)。
