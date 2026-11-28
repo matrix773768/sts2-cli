@@ -1,0 +1,25 @@
+{
+  "workers": 1,
+  "core": "4143e8fb3cd64bc60cba6f8e6b28014d0778a6a3",
+  "infra": "80ca8165fee768ba4e2b55bfd367ee00df650616",
+  "engine_sha256": "9ce97b34c9e278f38ff5f72cb5bdb56b753d04f302486feb965596890f4594d1",
+  "measured_seconds": {
+    "pilot": 21.45643300001393,
+    "panel": 336.7684210999869,
+    "review": 32.65108890002011,
+    "compression": 76.95173870000872,
+    "b2": 39.01159490001737,
+    "b2-trace": 3.193518900021445,
+    "analysis": 0.42383220000192523,
+    "first_pilot_counter_export_error": 3.8093260999885388
+  },
+  "measured_total_seconds": 514.2659538000589,
+  "ancillary_allowance_seconds": 600,
+  "charged_upper_seconds": 1114.265953800059,
+  "hard_cap_seconds": 3600,
+  "scope": "Single simulation worker; ancillary allowance covers interpreter startup, freezing, fixture checks including the failed upgrade equivalence check, exploratory reads, rendering and offline verification. Compression replay and B2 diagnostic are separate from the formal curve.",
+  "retries": [
+    "First pilot ended exporting a dict counter delta before a receipt was saved; fixed accounting and restarted all three calibration roots.",
+    "Fixture set equality failed on mixed upgrades; retained missing outcomes and limited strict claim to basic and multi_target."
+  ]
+}

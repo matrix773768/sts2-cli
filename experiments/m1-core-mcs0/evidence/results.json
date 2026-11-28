@@ -1,0 +1,7687 @@
+{
+  "rows": {
+    "A": {
+      "exact": null,
+      "reference": null,
+      "search_value": null,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 37,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 0,
+        "classes": 0,
+        "class_edges": 0,
+        "response_classes": 0
+      },
+      "flags": [
+        "energy",
+        "multi_enemy"
+      ],
+      "group": "human",
+      "root_legal": 9,
+      "summary": {
+        "histories": 372,
+        "legal": 867,
+        "known_edges": 0,
+        "exact": null,
+        "witness": null,
+        "steps": 2090,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 512,
+        "seconds": 3.0395275999908336
+      },
+      "stops": [
+        "logical_budget",
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "HandleBeforeSideTurnStartPower/unmodeled_rng": 512
+      },
+      "C": 0,
+      "terminal": 0,
+      "prefix": 8,
+      "peak": 136007680,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 0,
+        "v2_batches": 0
+      },
+      "curve": [
+        {
+          "histories": 29,
+          "legal": 146,
+          "known_edges": 0,
+          "exact": null,
+          "witness": null,
+          "steps": 83,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.15070049997302704
+        },
+        {
+          "histories": 104,
+          "legal": 390,
+          "known_edges": 0,
+          "exact": null,
+          "witness": null,
+          "steps": 418,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 0.5950946999946609
+        },
+        {
+          "histories": 372,
+          "legal": 867,
+          "known_edges": 0,
+          "exact": null,
+          "witness": null,
+          "steps": 2090,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 512,
+          "seconds": 3.0395275999908336
+        }
+      ]
+    },
+    "B1": {
+      "exact": null,
+      "reference": 61.455999581019086,
+      "search_value": 61.455999581019086,
+      "arms": {
+        "v2": {
+          "adopted": 29.06944704055786,
+          "candidate": 29.06944704055786,
+          "open_reference": false,
+          "closed": 28,
+          "offered": 41,
+          "candidate_gap": 32.386552540461224,
+          "adopted_gap": 32.386552540461224
+        },
+        "low": {
+          "adopted": 61.32025742530823,
+          "candidate": 61.32025742530823,
+          "open_reference": false,
+          "closed": 7,
+          "offered": 10,
+          "candidate_gap": 0.13574215571085801,
+          "adopted_gap": 0.13574215571085801
+        },
+        "general": {
+          "adopted": 61.32025742530823,
+          "candidate": 61.32025742530823,
+          "open_reference": false,
+          "closed": 10,
+          "offered": 13,
+          "candidate_gap": 0.13574215571085801,
+          "adopted_gap": 0.13574215571085801
+        }
+      },
+      "compression": {
+        "complete_histories": 414,
+        "classes": 414,
+        "class_edges": 562,
+        "response_classes": 562
+      },
+      "flags": [
+        "draw",
+        "multi_enemy"
+      ],
+      "group": "human",
+      "root_legal": 10,
+      "summary": {
+        "histories": 988,
+        "legal": 2606,
+        "known_edges": 1045,
+        "exact": null,
+        "witness": 61.16508626937866,
+        "steps": 10933,
+        "chances": 415,
+        "choices": 4,
+        "budget": 512,
+        "probes": 418,
+        "seconds": 12.00697570000193
+      },
+      "stops": [
+        "wall",
+        "per_program_step_cap",
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "budget": 4,
+        "ExecuteCoreCustomCard/unmodeled_rng": 3
+      },
+      "C": 635,
+      "terminal": 0,
+      "prefix": 0,
+      "peak": 148803584,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 4763,
+        "v2_batches": 418
+      },
+      "curve": [
+        {
+          "histories": 80,
+          "legal": 412,
+          "known_edges": 111,
+          "exact": null,
+          "witness": 24.06083619594574,
+          "steps": 285,
+          "chances": 8,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.4657696000067517
+        },
+        {
+          "histories": 261,
+          "legal": 1184,
+          "known_edges": 295,
+          "exact": null,
+          "witness": 24.06083619594574,
+          "steps": 3070,
+          "chances": 117,
+          "choices": 1,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 3.4499420000065584
+        },
+        {
+          "histories": 988,
+          "legal": 2606,
+          "known_edges": 1045,
+          "exact": null,
+          "witness": 61.16508626937866,
+          "steps": 10933,
+          "chances": 415,
+          "choices": 4,
+          "budget": 512,
+          "probes": 418,
+          "seconds": 12.00697570000193
+        }
+      ]
+    },
+    "B2": {
+      "exact": null,
+      "reference": 41.75636672973633,
+      "search_value": -12.543851852416992,
+      "arms": {
+        "v2": {
+          "adopted": 1.0694446563720703,
+          "candidate": 1.0694446563720703,
+          "open_reference": false,
+          "closed": 26,
+          "offered": 49,
+          "candidate_gap": 40.68692207336426,
+          "adopted_gap": 40.68692207336426
+        },
+        "low": {
+          "adopted": -0.8632888793945312,
+          "candidate": -0.8632888793945312,
+          "open_reference": false,
+          "closed": 7,
+          "offered": 8,
+          "candidate_gap": 42.61965560913086,
+          "adopted_gap": 42.61965560913086
+        },
+        "general": {
+          "adopted": 41.75636672973633,
+          "candidate": 41.75636672973633,
+          "open_reference": false,
+          "closed": 11,
+          "offered": 12,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        }
+      },
+      "compression": {
+        "complete_histories": 0,
+        "classes": 0,
+        "class_edges": 0,
+        "response_classes": 0
+      },
+      "flags": [
+        "draw",
+        "multi_enemy"
+      ],
+      "group": "human",
+      "root_legal": 12,
+      "summary": {
+        "histories": 841,
+        "legal": 6745,
+        "known_edges": 105,
+        "exact": null,
+        "witness": -12.543851852416992,
+        "steps": 9107,
+        "chances": 700,
+        "choices": 70,
+        "budget": 512,
+        "probes": 123,
+        "seconds": 12.050206399988383
+      },
+      "stops": [
+        "wall",
+        "per_program_step_cap",
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "budget": 70,
+        "ExecuteCoreCustomCard/unmodeled_rng": 3
+      },
+      "C": 38,
+      "terminal": 0,
+      "prefix": 4,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 3073,
+        "v2_batches": 123
+      },
+      "curve": [
+        {
+          "histories": 324,
+          "legal": 2362,
+          "known_edges": 55,
+          "exact": null,
+          "witness": -12.543851852416992,
+          "steps": 584,
+          "chances": 40,
+          "choices": 4,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.6054919000016525
+        },
+        {
+          "histories": 841,
+          "legal": 6745,
+          "known_edges": 105,
+          "exact": null,
+          "witness": -12.543851852416992,
+          "steps": 9107,
+          "chances": 700,
+          "choices": 70,
+          "budget": 128,
+          "probes": 123,
+          "seconds": 12.049628900014795
+        },
+        {
+          "histories": 841,
+          "legal": 6745,
+          "known_edges": 105,
+          "exact": null,
+          "witness": -12.543851852416992,
+          "steps": 9107,
+          "chances": 700,
+          "choices": 70,
+          "budget": 512,
+          "probes": 123,
+          "seconds": 12.050206399988383
+        }
+      ]
+    },
+    "B3": {
+      "exact": null,
+      "reference": -12.270549392700197,
+      "search_value": -12.270549392700197,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": -24.84625625610352,
+          "open_reference": true,
+          "closed": 19,
+          "offered": 33,
+          "candidate_gap": 12.575706863403322,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 163,
+        "classes": 112,
+        "class_edges": 184,
+        "response_classes": 182
+      },
+      "flags": [
+        "draw",
+        "multi_enemy"
+      ],
+      "group": "human",
+      "root_legal": 8,
+      "summary": {
+        "histories": 172,
+        "legal": 325,
+        "known_edges": 307,
+        "exact": null,
+        "witness": -28.31996841430664,
+        "steps": 1703,
+        "chances": 131,
+        "choices": 0,
+        "budget": 512,
+        "probes": 154,
+        "seconds": 2.569764899992151
+      },
+      "stops": [
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "ExecuteCoreCustomCard/unmodeled_rng": 18
+      },
+      "C": 121,
+      "terminal": 0,
+      "prefix": 8,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 660,
+        "v2_batches": 146
+      },
+      "curve": [
+        {
+          "histories": 36,
+          "legal": 131,
+          "known_edges": 59,
+          "exact": null,
+          "witness": -31.031539154052734,
+          "steps": 232,
+          "chances": 17,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.289431200013496
+        },
+        {
+          "histories": 138,
+          "legal": 291,
+          "known_edges": 247,
+          "exact": null,
+          "witness": -28.31996841430664,
+          "steps": 1365,
+          "chances": 105,
+          "choices": 0,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 2.048879300011322
+        },
+        {
+          "histories": 172,
+          "legal": 325,
+          "known_edges": 307,
+          "exact": null,
+          "witness": -28.31996841430664,
+          "steps": 1703,
+          "chances": 131,
+          "choices": 0,
+          "budget": 512,
+          "probes": 154,
+          "seconds": 2.569764899992151
+        }
+      ]
+    },
+    "enemy-01": {
+      "exact": 78.30504455566407,
+      "reference": 78.30504455566407,
+      "search_value": 78.30504455566407,
+      "arms": {
+        "v2": {
+          "adopted": 78.30504455566407,
+          "candidate": 78.30504455566407,
+          "open_reference": false,
+          "closed": 33,
+          "offered": 33,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "low": {
+          "adopted": 77.90039672851563,
+          "candidate": 77.90039672851563,
+          "open_reference": false,
+          "closed": 10,
+          "offered": 10,
+          "candidate_gap": 0.4046478271484375,
+          "adopted_gap": 0.4046478271484375
+        },
+        "general": {
+          "adopted": 77.90039672851563,
+          "candidate": 77.90039672851563,
+          "open_reference": false,
+          "closed": 15,
+          "offered": 15,
+          "candidate_gap": 0.4046478271484375,
+          "adopted_gap": 0.4046478271484375
+        }
+      },
+      "compression": {
+        "complete_histories": 380,
+        "classes": 315,
+        "class_edges": 605,
+        "response_classes": 595
+      },
+      "flags": [
+        "draw",
+        "multi_enemy"
+      ],
+      "group": "enemy",
+      "root_legal": 8,
+      "summary": {
+        "histories": 380,
+        "legal": 682,
+        "known_edges": 682,
+        "exact": 78.30504455566407,
+        "witness": 77.37650909423829,
+        "steps": 3479,
+        "chances": 258,
+        "choices": 33,
+        "budget": 512,
+        "probes": 303,
+        "seconds": 5.3639750000147615
+      },
+      "stops": [],
+      "gap_queries": {},
+      "C": 227,
+      "terminal": 0,
+      "prefix": 13,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 1335,
+        "v2_batches": 303
+      },
+      "curve": [
+        {
+          "histories": 41,
+          "legal": 190,
+          "known_edges": 72,
+          "exact": null,
+          "witness": 73.79284973144532,
+          "steps": 268,
+          "chances": 20,
+          "choices": 1,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.35817400002270006
+        },
+        {
+          "histories": 174,
+          "legal": 472,
+          "known_edges": 301,
+          "exact": null,
+          "witness": 77.06446990966796,
+          "steps": 1255,
+          "chances": 91,
+          "choices": 12,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 1.8296475000097416
+        },
+        {
+          "histories": 380,
+          "legal": 682,
+          "known_edges": 682,
+          "exact": 78.30504455566407,
+          "witness": 77.37650909423829,
+          "steps": 3479,
+          "chances": 258,
+          "choices": 33,
+          "budget": 512,
+          "probes": 303,
+          "seconds": 5.3639750000147615
+        }
+      ]
+    },
+    "enemy-02": {
+      "exact": null,
+      "reference": -20.363577558064037,
+      "search_value": -20.363577558064037,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": -34.57456949233165,
+          "open_reference": true,
+          "closed": 13,
+          "offered": 33,
+          "candidate_gap": 14.21099193426761,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 11,
+        "classes": 11,
+        "class_edges": 11,
+        "response_classes": 11
+      },
+      "flags": [
+        "X",
+        "energy",
+        "multi_enemy"
+      ],
+      "group": "enemy",
+      "root_legal": 8,
+      "summary": {
+        "histories": 39,
+        "legal": 99,
+        "known_edges": 74,
+        "exact": null,
+        "witness": -20.363577558064037,
+        "steps": 232,
+        "chances": 14,
+        "choices": 12,
+        "budget": 512,
+        "probes": 61,
+        "seconds": 0.2917581999790855
+      },
+      "stops": [
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "PickRandomLivingEnemySlot/unmodeled_rng": 25
+      },
+      "C": 22,
+      "terminal": 1,
+      "prefix": 17,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 28,
+        "v2_batches": 14
+      },
+      "curve": [
+        {
+          "histories": 24,
+          "legal": 75,
+          "known_edges": 47,
+          "exact": null,
+          "witness": -26.264154183012465,
+          "steps": 100,
+          "chances": 8,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.14226579997921363
+        },
+        {
+          "histories": 39,
+          "legal": 99,
+          "known_edges": 74,
+          "exact": null,
+          "witness": -20.363577558064037,
+          "steps": 232,
+          "chances": 14,
+          "choices": 12,
+          "budget": 128,
+          "probes": 61,
+          "seconds": 0.29169650000403635
+        },
+        {
+          "histories": 39,
+          "legal": 99,
+          "known_edges": 74,
+          "exact": null,
+          "witness": -20.363577558064037,
+          "steps": 232,
+          "chances": 14,
+          "choices": 12,
+          "budget": 512,
+          "probes": 61,
+          "seconds": 0.2917581999790855
+        }
+      ]
+    },
+    "enemy-03": {
+      "exact": null,
+      "reference": 60.17753408162582,
+      "search_value": 60.17753408162582,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": 58.79306601340056,
+          "open_reference": true,
+          "closed": 10,
+          "offered": 33,
+          "candidate_gap": 1.3844680682252601,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 0,
+        "classes": 0,
+        "class_edges": 0,
+        "response_classes": 0
+      },
+      "flags": [
+        "draw",
+        "energy",
+        "multi_enemy"
+      ],
+      "group": "enemy",
+      "root_legal": 8,
+      "summary": {
+        "histories": 53,
+        "legal": 158,
+        "known_edges": 105,
+        "exact": null,
+        "witness": 60.17753408162582,
+        "steps": 7584,
+        "chances": 6970,
+        "choices": 0,
+        "budget": 512,
+        "probes": 106,
+        "seconds": 1.3852909000124782
+      },
+      "stops": [
+        "per_program_step_cap"
+      ],
+      "gap_queries": {
+        "budget": 53
+      },
+      "C": 216,
+      "terminal": 0,
+      "prefix": 10,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 364,
+        "v2_batches": 53
+      },
+      "curve": [
+        {
+          "histories": 26,
+          "legal": 104,
+          "known_edges": 51,
+          "exact": null,
+          "witness": 60.17753408162582,
+          "steps": 1154,
+          "chances": 921,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.4276275000011083
+        },
+        {
+          "histories": 53,
+          "legal": 158,
+          "known_edges": 105,
+          "exact": null,
+          "witness": 60.17753408162582,
+          "steps": 7584,
+          "chances": 6970,
+          "choices": 0,
+          "budget": 128,
+          "probes": 106,
+          "seconds": 1.385234000015771
+        },
+        {
+          "histories": 53,
+          "legal": 158,
+          "known_edges": 105,
+          "exact": null,
+          "witness": 60.17753408162582,
+          "steps": 7584,
+          "chances": 6970,
+          "choices": 0,
+          "budget": 512,
+          "probes": 106,
+          "seconds": 1.3852909000124782
+        }
+      ]
+    },
+    "enemy-04": {
+      "exact": null,
+      "reference": 31.025909423828125,
+      "search_value": 31.025909423828125,
+      "arms": {
+        "v2": {
+          "adopted": 15.733132362365723,
+          "candidate": 15.733132362365723,
+          "open_reference": false,
+          "closed": 21,
+          "offered": 73,
+          "candidate_gap": 15.292777061462402,
+          "adopted_gap": 15.292777061462402
+        },
+        "low": {
+          "adopted": 15.733132362365723,
+          "candidate": 15.733132362365723,
+          "open_reference": false,
+          "closed": 6,
+          "offered": 8,
+          "candidate_gap": 15.292777061462402,
+          "adopted_gap": 15.292777061462402
+        },
+        "general": {
+          "adopted": 15.733132362365723,
+          "candidate": 15.733132362365723,
+          "open_reference": false,
+          "closed": 6,
+          "offered": 8,
+          "candidate_gap": 15.292777061462402,
+          "adopted_gap": 15.292777061462402
+        }
+      },
+      "compression": {
+        "complete_histories": 177,
+        "classes": 85,
+        "class_edges": 85,
+        "response_classes": 85
+      },
+      "flags": [
+        "cost_layer",
+        "multi_enemy"
+      ],
+      "group": "enemy",
+      "root_legal": 18,
+      "summary": {
+        "histories": 286,
+        "legal": 1215,
+        "known_edges": 571,
+        "exact": null,
+        "witness": 31.025909423828125,
+        "steps": 1641,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 512,
+        "seconds": 3.6828367999987677
+      },
+      "stops": [
+        "logical_budget",
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "ExecuteCoreCustomCard/unmodeled_rng": 226
+      },
+      "C": 115,
+      "terminal": 0,
+      "prefix": 10,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 286,
+        "v2_batches": 286
+      },
+      "curve": [
+        {
+          "histories": 24,
+          "legal": 265,
+          "known_edges": 47,
+          "exact": null,
+          "witness": 15.733132362365723,
+          "steps": 69,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.18519060002290644
+        },
+        {
+          "histories": 88,
+          "legal": 841,
+          "known_edges": 175,
+          "exact": null,
+          "witness": 15.733132362365723,
+          "steps": 325,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 0.8823215000156779
+        },
+        {
+          "histories": 286,
+          "legal": 1215,
+          "known_edges": 571,
+          "exact": null,
+          "witness": 31.025909423828125,
+          "steps": 1641,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 512,
+          "seconds": 3.6828367999987677
+        }
+      ]
+    },
+    "enemy-05": {
+      "exact": null,
+      "reference": 92.0,
+      "search_value": 92.0,
+      "arms": {
+        "v2": {
+          "adopted": 77.6113265991211,
+          "candidate": 77.6113265991211,
+          "open_reference": false,
+          "closed": 35,
+          "offered": 37,
+          "candidate_gap": 14.3886734008789,
+          "adopted_gap": 14.3886734008789
+        },
+        "low": {
+          "adopted": 92.0,
+          "candidate": 92.0,
+          "open_reference": false,
+          "closed": 11,
+          "offered": 12,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "general": {
+          "adopted": 92.0,
+          "candidate": 92.0,
+          "open_reference": false,
+          "closed": 14,
+          "offered": 15,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        }
+      },
+      "compression": {
+        "complete_histories": 284,
+        "classes": 242,
+        "class_edges": 441,
+        "response_classes": 441
+      },
+      "flags": [
+        "draw",
+        "multi_enemy"
+      ],
+      "group": "enemy",
+      "root_legal": 9,
+      "summary": {
+        "histories": 381,
+        "legal": 955,
+        "known_edges": 676,
+        "exact": null,
+        "witness": 92.0,
+        "steps": 10006,
+        "chances": 1202,
+        "choices": 0,
+        "budget": 512,
+        "probes": 296,
+        "seconds": 12.048565299977781
+      },
+      "stops": [
+        "wall"
+      ],
+      "gap_queries": {},
+      "C": 322,
+      "terminal": 1,
+      "prefix": 17,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 4163,
+        "v2_batches": 295
+      },
+      "curve": [
+        {
+          "histories": 90,
+          "legal": 471,
+          "known_edges": 121,
+          "exact": null,
+          "witness": 74.40780639648438,
+          "steps": 273,
+          "chances": 23,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.437364899989916
+        },
+        {
+          "histories": 213,
+          "legal": 787,
+          "known_edges": 340,
+          "exact": null,
+          "witness": 92.0,
+          "steps": 1942,
+          "chances": 194,
+          "choices": 0,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 2.8296163999766577
+        },
+        {
+          "histories": 381,
+          "legal": 955,
+          "known_edges": 676,
+          "exact": null,
+          "witness": 92.0,
+          "steps": 10006,
+          "chances": 1202,
+          "choices": 0,
+          "budget": 512,
+          "probes": 296,
+          "seconds": 12.048565299977781
+        }
+      ]
+    },
+    "enemy-06": {
+      "exact": 21.56183433532715,
+      "reference": 21.56183433532715,
+      "search_value": 21.56183433532715,
+      "arms": {
+        "v2": {
+          "adopted": 9.481386184692383,
+          "candidate": 9.481386184692383,
+          "open_reference": false,
+          "closed": 41,
+          "offered": 41,
+          "candidate_gap": 12.080448150634766,
+          "adopted_gap": 12.080448150634766
+        },
+        "low": {
+          "adopted": 9.48133659362793,
+          "candidate": 9.48133659362793,
+          "open_reference": false,
+          "closed": 10,
+          "offered": 10,
+          "candidate_gap": 12.080497741699219,
+          "adopted_gap": 12.080497741699219
+        },
+        "general": {
+          "adopted": 21.561866760253906,
+          "candidate": 21.561866760253906,
+          "open_reference": false,
+          "closed": 12,
+          "offered": 12,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        }
+      },
+      "compression": {
+        "complete_histories": 198,
+        "classes": 70,
+        "class_edges": 168,
+        "response_classes": 159
+      },
+      "flags": [
+        "X",
+        "multi_enemy"
+      ],
+      "group": "enemy",
+      "root_legal": 10,
+      "summary": {
+        "histories": 198,
+        "legal": 395,
+        "known_edges": 395,
+        "exact": 21.56183433532715,
+        "witness": 21.56183433532715,
+        "steps": 757,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 198,
+        "seconds": 1.5497957000043243
+      },
+      "stops": [],
+      "gap_queries": {},
+      "C": 67,
+      "terminal": 0,
+      "prefix": 5,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 198,
+        "v2_batches": 198
+      },
+      "curve": [
+        {
+          "histories": 32,
+          "legal": 136,
+          "known_edges": 63,
+          "exact": null,
+          "witness": 15.000102996826172,
+          "steps": 85,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.2070499999972526
+        },
+        {
+          "histories": 128,
+          "legal": 310,
+          "known_edges": 255,
+          "exact": null,
+          "witness": 21.56183433532715,
+          "steps": 435,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 0.9664713999954984
+        },
+        {
+          "histories": 198,
+          "legal": 395,
+          "known_edges": 395,
+          "exact": 21.56183433532715,
+          "witness": 21.56183433532715,
+          "steps": 757,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 198,
+          "seconds": 1.5497957000043243
+        }
+      ]
+    },
+    "enemy-07": {
+      "exact": null,
+      "reference": null,
+      "search_value": null,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 53,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 0,
+        "classes": 0,
+        "class_edges": 0,
+        "response_classes": 0
+      },
+      "flags": [
+        "multi_enemy"
+      ],
+      "group": "enemy",
+      "root_legal": 13,
+      "summary": {
+        "histories": 723,
+        "legal": 7944,
+        "known_edges": 0,
+        "exact": null,
+        "witness": null,
+        "steps": 16051,
+        "chances": 7316,
+        "choices": 248,
+        "budget": 512,
+        "probes": 201,
+        "seconds": 12.057120699988445
+      },
+      "stops": [
+        "wall",
+        "per_program_step_cap",
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "HandleBeforeSideTurnStartPower/unmodeled_rng": 169,
+        "ExecuteCoreCustomCard/unmodeled_rng": 42,
+        "PickRandomLivingEnemySlot/unmodeled_rng": 15,
+        "budget": 124,
+        "AutoPlayCard/unmodeled_rng": 123
+      },
+      "C": 0,
+      "terminal": 0,
+      "prefix": 4,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 0,
+        "v2_batches": 0
+      },
+      "curve": [
+        {
+          "histories": 185,
+          "legal": 1898,
+          "known_edges": 0,
+          "exact": null,
+          "witness": null,
+          "steps": 445,
+          "chances": 177,
+          "choices": 6,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.35279889998491853
+        },
+        {
+          "histories": 703,
+          "legal": 7799,
+          "known_edges": 0,
+          "exact": null,
+          "witness": null,
+          "steps": 6707,
+          "chances": 3009,
+          "choices": 102,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 4.829808899987256
+        },
+        {
+          "histories": 723,
+          "legal": 7944,
+          "known_edges": 0,
+          "exact": null,
+          "witness": null,
+          "steps": 16051,
+          "chances": 7316,
+          "choices": 248,
+          "budget": 512,
+          "probes": 201,
+          "seconds": 12.057120699988445
+        }
+      ]
+    },
+    "enemy-08": {
+      "exact": -47.063255310058594,
+      "reference": -47.063255310058594,
+      "search_value": -47.063255310058594,
+      "arms": {
+        "v2": {
+          "adopted": -47.063255310058594,
+          "candidate": -47.063255310058594,
+          "open_reference": false,
+          "closed": 57,
+          "offered": 57,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "low": {
+          "adopted": -50.0,
+          "candidate": -50.0,
+          "open_reference": false,
+          "closed": 10,
+          "offered": 10,
+          "candidate_gap": 2.9367446899414062,
+          "adopted_gap": 2.9367446899414062
+        },
+        "general": {
+          "adopted": -50.0,
+          "candidate": -50.0,
+          "open_reference": false,
+          "closed": 12,
+          "offered": 12,
+          "candidate_gap": 2.9367446899414062,
+          "adopted_gap": 2.9367446899414062
+        }
+      },
+      "compression": {
+        "complete_histories": 296,
+        "classes": 219,
+        "class_edges": 490,
+        "response_classes": 490
+      },
+      "flags": [
+        "draw",
+        "multi_enemy"
+      ],
+      "group": "enemy",
+      "root_legal": 14,
+      "summary": {
+        "histories": 296,
+        "legal": 591,
+        "known_edges": 591,
+        "exact": -47.063255310058594,
+        "witness": -47.063255310058594,
+        "steps": 1032,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 296,
+        "seconds": 1.645758200000273
+      },
+      "stops": [],
+      "gap_queries": {},
+      "C": 8,
+      "terminal": 1,
+      "prefix": 8,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 9,
+        "v2_batches": 9
+      },
+      "curve": [
+        {
+          "histories": 32,
+          "legal": 168,
+          "known_edges": 63,
+          "exact": null,
+          "witness": -50.0,
+          "steps": 81,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.0916373000072781
+        },
+        {
+          "histories": 128,
+          "legal": 423,
+          "known_edges": 255,
+          "exact": null,
+          "witness": -50.0,
+          "steps": 369,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 0.4988614000030793
+        },
+        {
+          "histories": 296,
+          "legal": 591,
+          "known_edges": 591,
+          "exact": -47.063255310058594,
+          "witness": -47.063255310058594,
+          "steps": 1032,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 296,
+          "seconds": 1.645758200000273
+        }
+      ]
+    },
+    "draw-01": {
+      "exact": null,
+      "reference": 65.07124328613281,
+      "search_value": 60.604068756103516,
+      "arms": {
+        "v2": {
+          "adopted": 65.07124328613281,
+          "candidate": 65.07124328613281,
+          "open_reference": false,
+          "closed": 23,
+          "offered": 37,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "low": {
+          "adopted": 65.07124328613281,
+          "candidate": 65.07124328613281,
+          "open_reference": false,
+          "closed": 7,
+          "offered": 8,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "general": {
+          "adopted": 65.07124328613281,
+          "candidate": 65.07124328613281,
+          "open_reference": false,
+          "closed": 11,
+          "offered": 13,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        }
+      },
+      "compression": {
+        "complete_histories": 0,
+        "classes": 0,
+        "class_edges": 0,
+        "response_classes": 0
+      },
+      "flags": [
+        "draw",
+        "energy",
+        "multi_enemy"
+      ],
+      "group": "draw",
+      "root_legal": 9,
+      "summary": {
+        "histories": 341,
+        "legal": 2558,
+        "known_edges": 534,
+        "exact": null,
+        "witness": 60.604068756103516,
+        "steps": 9557,
+        "chances": 1212,
+        "choices": 33,
+        "budget": 512,
+        "probes": 226,
+        "seconds": 12.00694730001851
+      },
+      "stops": [
+        "wall",
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "ExecuteCoreCustomCard/unmodeled_rng": 32
+      },
+      "C": 276,
+      "terminal": 0,
+      "prefix": 4,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 4032,
+        "v2_batches": 226
+      },
+      "curve": [
+        {
+          "histories": 75,
+          "legal": 632,
+          "known_edges": 106,
+          "exact": null,
+          "witness": 58.459922790527344,
+          "steps": 883,
+          "chances": 108,
+          "choices": 5,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 1.3215524000115693
+        },
+        {
+          "histories": 176,
+          "legal": 1391,
+          "known_edges": 293,
+          "exact": null,
+          "witness": 58.459922790527344,
+          "steps": 5400,
+          "chances": 684,
+          "choices": 20,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 7.004281800007448
+        },
+        {
+          "histories": 341,
+          "legal": 2558,
+          "known_edges": 534,
+          "exact": null,
+          "witness": 60.604068756103516,
+          "steps": 9557,
+          "chances": 1212,
+          "choices": 33,
+          "budget": 512,
+          "probes": 226,
+          "seconds": 12.00694730001851
+        }
+      ]
+    },
+    "draw-02": {
+      "exact": -20.503684997558594,
+      "reference": -20.503684997558594,
+      "search_value": -20.503684997558594,
+      "arms": {
+        "v2": {
+          "adopted": -24.986839294433594,
+          "candidate": -24.986839294433594,
+          "open_reference": false,
+          "closed": 21,
+          "offered": 21,
+          "candidate_gap": 4.483154296875,
+          "adopted_gap": 4.483154296875
+        },
+        "low": {
+          "adopted": -24.986839294433594,
+          "candidate": -24.986839294433594,
+          "open_reference": false,
+          "closed": 8,
+          "offered": 8,
+          "candidate_gap": 4.483154296875,
+          "adopted_gap": 4.483154296875
+        },
+        "general": {
+          "adopted": -22.072628021240234,
+          "candidate": -22.072628021240234,
+          "open_reference": false,
+          "closed": 9,
+          "offered": 9,
+          "candidate_gap": 1.5689430236816406,
+          "adopted_gap": 1.5689430236816406
+        }
+      },
+      "compression": {
+        "complete_histories": 32,
+        "classes": 32,
+        "class_edges": 63,
+        "response_classes": 63
+      },
+      "flags": [
+        "energy"
+      ],
+      "group": "draw",
+      "root_legal": 5,
+      "summary": {
+        "histories": 32,
+        "legal": 63,
+        "known_edges": 63,
+        "exact": -20.503684997558594,
+        "witness": -20.503684997558594,
+        "steps": 114,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 32,
+        "seconds": 0.2000302999804262
+      },
+      "stops": [],
+      "gap_queries": {},
+      "C": 16,
+      "terminal": 1,
+      "prefix": 22,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 16,
+        "v2_batches": 16
+      },
+      "curve": [
+        {
+          "histories": 32,
+          "legal": 63,
+          "known_edges": 63,
+          "exact": -20.503684997558594,
+          "witness": -20.503684997558594,
+          "steps": 114,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.1998666999861598
+        },
+        {
+          "histories": 32,
+          "legal": 63,
+          "known_edges": 63,
+          "exact": -20.503684997558594,
+          "witness": -20.503684997558594,
+          "steps": 114,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 32,
+          "seconds": 0.19995429998380132
+        },
+        {
+          "histories": 32,
+          "legal": 63,
+          "known_edges": 63,
+          "exact": -20.503684997558594,
+          "witness": -20.503684997558594,
+          "steps": 114,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 32,
+          "seconds": 0.2000302999804262
+        }
+      ]
+    },
+    "draw-03": {
+      "exact": null,
+      "reference": -48.67981719970703,
+      "search_value": -48.67981719970703,
+      "arms": {
+        "v2": {
+          "adopted": -48.67981719970703,
+          "candidate": -48.67981719970703,
+          "open_reference": false,
+          "closed": 19,
+          "offered": 25,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "low": {
+          "adopted": -48.67981719970703,
+          "candidate": -48.67981719970703,
+          "open_reference": false,
+          "closed": 10,
+          "offered": 10,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "general": {
+          "adopted": -48.67981719970703,
+          "candidate": -48.67981719970703,
+          "open_reference": false,
+          "closed": 10,
+          "offered": 10,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        }
+      },
+      "compression": {
+        "complete_histories": 201,
+        "classes": 180,
+        "class_edges": 294,
+        "response_classes": 294
+      },
+      "flags": [
+        "draw"
+      ],
+      "group": "draw",
+      "root_legal": 6,
+      "summary": {
+        "histories": 446,
+        "legal": 1336,
+        "known_edges": 798,
+        "exact": null,
+        "witness": -48.67981719970703,
+        "steps": 10545,
+        "chances": 1680,
+        "choices": 336,
+        "budget": 512,
+        "probes": 353,
+        "seconds": 12.012661399989156
+      },
+      "stops": [
+        "wall"
+      ],
+      "gap_queries": {},
+      "C": 386,
+      "terminal": 0,
+      "prefix": 22,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 4049,
+        "v2_batches": 353
+      },
+      "curve": [
+        {
+          "histories": 77,
+          "legal": 399,
+          "known_edges": 108,
+          "exact": null,
+          "witness": -49.25773970286051,
+          "steps": 842,
+          "chances": 135,
+          "choices": 27,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.8097062000015285
+        },
+        {
+          "histories": 221,
+          "legal": 879,
+          "known_edges": 348,
+          "exact": null,
+          "witness": -48.67981719970703,
+          "steps": 3482,
+          "chances": 555,
+          "choices": 111,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 3.6951141000026837
+        },
+        {
+          "histories": 446,
+          "legal": 1336,
+          "known_edges": 798,
+          "exact": null,
+          "witness": -48.67981719970703,
+          "steps": 10545,
+          "chances": 1680,
+          "choices": 336,
+          "budget": 512,
+          "probes": 353,
+          "seconds": 12.012661399989156
+        }
+      ]
+    },
+    "draw-04": {
+      "exact": -39.13933563232422,
+      "reference": -39.13933563232422,
+      "search_value": -39.13933563232422,
+      "arms": {
+        "v2": {
+          "adopted": -39.13933563232422,
+          "candidate": -39.13933563232422,
+          "open_reference": false,
+          "closed": 25,
+          "offered": 25,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "low": {
+          "adopted": -39.13933563232422,
+          "candidate": -39.13933563232422,
+          "open_reference": false,
+          "closed": 8,
+          "offered": 8,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "general": {
+          "adopted": -39.13933563232422,
+          "candidate": -39.13933563232422,
+          "open_reference": false,
+          "closed": 9,
+          "offered": 9,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        }
+      },
+      "compression": {
+        "complete_histories": 46,
+        "classes": 28,
+        "class_edges": 60,
+        "response_classes": 55
+      },
+      "flags": [
+        "energy"
+      ],
+      "group": "draw",
+      "root_legal": 6,
+      "summary": {
+        "histories": 46,
+        "legal": 91,
+        "known_edges": 91,
+        "exact": -39.13933563232422,
+        "witness": -39.13933563232422,
+        "steps": 157,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 46,
+        "seconds": 0.24968520001857542
+      },
+      "stops": [],
+      "gap_queries": {},
+      "C": 20,
+      "terminal": 0,
+      "prefix": 26,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 46,
+        "v2_batches": 46
+      },
+      "curve": [
+        {
+          "histories": 32,
+          "legal": 77,
+          "known_edges": 63,
+          "exact": null,
+          "witness": -39.13933563232422,
+          "steps": 101,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.17300410001189448
+        },
+        {
+          "histories": 46,
+          "legal": 91,
+          "known_edges": 91,
+          "exact": -39.13933563232422,
+          "witness": -39.13933563232422,
+          "steps": 157,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 46,
+          "seconds": 0.24954710001475178
+        },
+        {
+          "histories": 46,
+          "legal": 91,
+          "known_edges": 91,
+          "exact": -39.13933563232422,
+          "witness": -39.13933563232422,
+          "steps": 157,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 46,
+          "seconds": 0.24968520001857542
+        }
+      ]
+    },
+    "draw-05": {
+      "exact": null,
+      "reference": -34.42682598087434,
+      "search_value": -34.42682598087434,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": -38.74382020613825,
+          "open_reference": true,
+          "closed": 11,
+          "offered": 33,
+          "candidate_gap": 4.316994225263912,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 4,
+        "classes": 4,
+        "class_edges": 4,
+        "response_classes": 4
+      },
+      "flags": [
+        "draw",
+        "energy",
+        "multi_enemy"
+      ],
+      "group": "draw",
+      "root_legal": 8,
+      "summary": {
+        "histories": 638,
+        "legal": 2785,
+        "known_edges": 1121,
+        "exact": null,
+        "witness": -35.68749620388053,
+        "steps": 11015,
+        "chances": 2735,
+        "choices": 0,
+        "budget": 512,
+        "probes": 512,
+        "seconds": 8.819251600012649
+      },
+      "stops": [
+        "logical_budget",
+        "per_program_step_cap",
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "budget": 16,
+        "ExecuteCoreCustomCard/unmodeled_rng": 12
+      },
+      "C": 648,
+      "terminal": 1,
+      "prefix": 25,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 978,
+        "v2_batches": 275
+      },
+      "curve": [
+        {
+          "histories": 71,
+          "legal": 372,
+          "known_edges": 101,
+          "exact": null,
+          "witness": -35.68749620388053,
+          "steps": 499,
+          "chances": 161,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.3593852999911178
+        },
+        {
+          "histories": 200,
+          "legal": 918,
+          "known_edges": 321,
+          "exact": null,
+          "witness": -35.68749620388053,
+          "steps": 2121,
+          "chances": 413,
+          "choices": 0,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 1.5896275000122841
+        },
+        {
+          "histories": 638,
+          "legal": 2785,
+          "known_edges": 1121,
+          "exact": null,
+          "witness": -35.68749620388053,
+          "steps": 11015,
+          "chances": 2735,
+          "choices": 0,
+          "budget": 512,
+          "probes": 512,
+          "seconds": 8.819251600012649
+        }
+      ]
+    },
+    "draw-06": {
+      "exact": null,
+      "reference": -49.968902587890625,
+      "search_value": -49.968902587890625,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": -49.973716735839844,
+          "open_reference": true,
+          "closed": 9,
+          "offered": 37,
+          "candidate_gap": 0.00481414794921875,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 0,
+        "classes": 0,
+        "class_edges": 0,
+        "response_classes": 0
+      },
+      "flags": [
+        "draw",
+        "multi_enemy"
+      ],
+      "group": "draw",
+      "root_legal": 9,
+      "summary": {
+        "histories": 22,
+        "legal": 73,
+        "known_edges": 43,
+        "exact": null,
+        "witness": -49.968902587890625,
+        "steps": 2889,
+        "chances": 2779,
+        "choices": 0,
+        "budget": 512,
+        "probes": 52,
+        "seconds": 0.2553087999986019
+      },
+      "stops": [
+        "per_program_step_cap",
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "ExecuteCoreCustomCard/unmodeled_rng": 8,
+        "budget": 22
+      },
+      "C": 19,
+      "terminal": 1,
+      "prefix": 27,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 19,
+        "v2_batches": 19
+      },
+      "curve": [
+        {
+          "histories": 19,
+          "legal": 67,
+          "known_edges": 37,
+          "exact": null,
+          "witness": -49.96945571899414,
+          "steps": 704,
+          "chances": 636,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.13195270000142045
+        },
+        {
+          "histories": 22,
+          "legal": 73,
+          "known_edges": 43,
+          "exact": null,
+          "witness": -49.968902587890625,
+          "steps": 2889,
+          "chances": 2779,
+          "choices": 0,
+          "budget": 128,
+          "probes": 52,
+          "seconds": 0.2552927999931853
+        },
+        {
+          "histories": 22,
+          "legal": 73,
+          "known_edges": 43,
+          "exact": null,
+          "witness": -49.968902587890625,
+          "steps": 2889,
+          "chances": 2779,
+          "choices": 0,
+          "budget": 512,
+          "probes": 52,
+          "seconds": 0.2553087999986019
+        }
+      ]
+    },
+    "draw-07": {
+      "exact": null,
+      "reference": -28.284605979919434,
+      "search_value": -28.284605979919434,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": -39.790035247802734,
+          "open_reference": true,
+          "closed": 9,
+          "offered": 25,
+          "candidate_gap": 11.5054292678833,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 0,
+        "classes": 0,
+        "class_edges": 0,
+        "response_classes": 0
+      },
+      "flags": [
+        "energy"
+      ],
+      "group": "draw",
+      "root_legal": 6,
+      "summary": {
+        "histories": 744,
+        "legal": 2744,
+        "known_edges": 649,
+        "exact": null,
+        "witness": -28.284605979919434,
+        "steps": 9346,
+        "chances": 1351,
+        "choices": 0,
+        "budget": 512,
+        "probes": 512,
+        "seconds": 8.71125680001569
+      },
+      "stops": [
+        "logical_budget",
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "AutoPlayCard/unmodeled_rng": 223
+      },
+      "C": 145,
+      "terminal": 0,
+      "prefix": 9,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 3166,
+        "v2_batches": 512
+      },
+      "curve": [
+        {
+          "histories": 49,
+          "legal": 256,
+          "known_edges": 68,
+          "exact": null,
+          "witness": -37.0184326171875,
+          "steps": 268,
+          "chances": 29,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.36534000001847744
+        },
+        {
+          "histories": 204,
+          "legal": 843,
+          "known_edges": 226,
+          "exact": null,
+          "witness": -30.45145845413208,
+          "steps": 1668,
+          "chances": 223,
+          "choices": 0,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 1.749036299996078
+        },
+        {
+          "histories": 744,
+          "legal": 2744,
+          "known_edges": 649,
+          "exact": null,
+          "witness": -28.284605979919434,
+          "steps": 9346,
+          "chances": 1351,
+          "choices": 0,
+          "budget": 512,
+          "probes": 512,
+          "seconds": 8.71125680001569
+        }
+      ]
+    },
+    "draw-08": {
+      "exact": null,
+      "reference": 74.07367630004883,
+      "search_value": 72.70472403632272,
+      "arms": {
+        "v2": {
+          "adopted": 74.07367630004883,
+          "candidate": 74.07367630004883,
+          "open_reference": false,
+          "closed": 9,
+          "offered": 25,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "low": {
+          "adopted": 74.07367630004883,
+          "candidate": 74.07367630004883,
+          "open_reference": false,
+          "closed": 5,
+          "offered": 10,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "general": {
+          "adopted": 74.07367630004883,
+          "candidate": 74.07367630004883,
+          "open_reference": false,
+          "closed": 5,
+          "offered": 12,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        }
+      },
+      "compression": {
+        "complete_histories": 2,
+        "classes": 2,
+        "class_edges": 2,
+        "response_classes": 2
+      },
+      "flags": [
+        "draw"
+      ],
+      "group": "draw",
+      "root_legal": 6,
+      "summary": {
+        "histories": 1446,
+        "legal": 6487,
+        "known_edges": 106,
+        "exact": null,
+        "witness": 71.88747329711914,
+        "steps": 12188,
+        "chances": 1027,
+        "choices": 87,
+        "budget": 512,
+        "probes": 137,
+        "seconds": 12.093506600009277
+      },
+      "stops": [
+        "wall",
+        "per_program_step_cap",
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "budget": 88,
+        "ExecuteCoreCustomCard/unmodeled_rng": 25
+      },
+      "C": 71,
+      "terminal": 0,
+      "prefix": 0,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 2729,
+        "v2_batches": 134
+      },
+      "curve": [
+        {
+          "histories": 682,
+          "legal": 2987,
+          "known_edges": 62,
+          "exact": null,
+          "witness": 71.88747329711914,
+          "steps": 1388,
+          "chances": 104,
+          "choices": 7,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 1.1281178999925032
+        },
+        {
+          "histories": 1443,
+          "legal": 6475,
+          "known_edges": 106,
+          "exact": null,
+          "witness": 71.88747329711914,
+          "steps": 11036,
+          "chances": 925,
+          "choices": 78,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 10.918706199998269
+        },
+        {
+          "histories": 1446,
+          "legal": 6487,
+          "known_edges": 106,
+          "exact": null,
+          "witness": 71.88747329711914,
+          "steps": 12188,
+          "chances": 1027,
+          "choices": 87,
+          "budget": 512,
+          "probes": 137,
+          "seconds": 12.093506600009277
+        }
+      ]
+    },
+    "combo-01": {
+      "exact": null,
+      "reference": -43.789283752441406,
+      "search_value": -43.789283752441406,
+      "arms": {
+        "v2": {
+          "adopted": -45.534786224365234,
+          "candidate": -45.534786224365234,
+          "open_reference": false,
+          "closed": 25,
+          "offered": 37,
+          "candidate_gap": 1.7455024719238281,
+          "adopted_gap": 1.7455024719238281
+        },
+        "low": {
+          "adopted": -45.534786224365234,
+          "candidate": -45.534786224365234,
+          "open_reference": false,
+          "closed": 8,
+          "offered": 10,
+          "candidate_gap": 1.7455024719238281,
+          "adopted_gap": 1.7455024719238281
+        },
+        "general": {
+          "adopted": -45.5347900390625,
+          "candidate": -45.5347900390625,
+          "open_reference": false,
+          "closed": 12,
+          "offered": 14,
+          "candidate_gap": 1.7455062866210938,
+          "adopted_gap": 1.7455062866210938
+        }
+      },
+      "compression": {
+        "complete_histories": 25,
+        "classes": 23,
+        "class_edges": 33,
+        "response_classes": 33
+      },
+      "flags": [
+        "draw",
+        "multi_enemy"
+      ],
+      "group": "combo",
+      "root_legal": 9,
+      "summary": {
+        "histories": 1089,
+        "legal": 4939,
+        "known_edges": 573,
+        "exact": null,
+        "witness": -45.534786224365234,
+        "steps": 10024,
+        "chances": 680,
+        "choices": 31,
+        "budget": 512,
+        "probes": 258,
+        "seconds": 12.05052250000881
+      },
+      "stops": [
+        "wall",
+        "per_program_step_cap",
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "budget": 31,
+        "ExecuteCoreCustomCard/unmodeled_rng": 2,
+        "PickRandomLivingEnemySlot/unmodeled_rng": 1
+      },
+      "C": 294,
+      "terminal": 0,
+      "prefix": 0,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 3234,
+        "v2_batches": 258
+      },
+      "curve": [
+        {
+          "histories": 128,
+          "legal": 737,
+          "known_edges": 75,
+          "exact": null,
+          "witness": -46.182719735538264,
+          "steps": 878,
+          "chances": 39,
+          "choices": 1,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 1.1034019000071567
+        },
+        {
+          "histories": 235,
+          "legal": 1313,
+          "known_edges": 275,
+          "exact": null,
+          "witness": -46.182719735538264,
+          "steps": 3976,
+          "chances": 136,
+          "choices": 1,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 4.868214200017974
+        },
+        {
+          "histories": 1089,
+          "legal": 4939,
+          "known_edges": 573,
+          "exact": null,
+          "witness": -45.534786224365234,
+          "steps": 10024,
+          "chances": 680,
+          "choices": 31,
+          "budget": 512,
+          "probes": 258,
+          "seconds": 12.05052250000881
+        }
+      ]
+    },
+    "combo-02": {
+      "exact": null,
+      "reference": -49.75236511230469,
+      "search_value": -49.75236511230469,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": -49.769500732421875,
+          "open_reference": true,
+          "closed": 25,
+          "offered": 33,
+          "candidate_gap": 0.0171356201171875,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 70,
+        "classes": 55,
+        "class_edges": 57,
+        "response_classes": 57
+      },
+      "flags": [
+        "draw",
+        "multi_enemy"
+      ],
+      "group": "combo",
+      "root_legal": 8,
+      "summary": {
+        "histories": 128,
+        "legal": 266,
+        "known_edges": 177,
+        "exact": null,
+        "witness": -49.75236511230469,
+        "steps": 12253,
+        "chances": 10831,
+        "choices": 83,
+        "budget": 512,
+        "probes": 164,
+        "seconds": 2.6215111000055913
+      },
+      "stops": [
+        "per_program_step_cap"
+      ],
+      "gap_queries": {
+        "budget": 89
+      },
+      "C": 84,
+      "terminal": 0,
+      "prefix": 0,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 523,
+        "v2_batches": 87
+      },
+      "curve": [
+        {
+          "histories": 56,
+          "legal": 128,
+          "known_edges": 73,
+          "exact": null,
+          "witness": -49.75236511230469,
+          "steps": 1271,
+          "chances": 1141,
+          "choices": 9,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.27670519999810494
+        },
+        {
+          "histories": 120,
+          "legal": 258,
+          "known_edges": 161,
+          "exact": null,
+          "witness": -49.75236511230469,
+          "steps": 8389,
+          "chances": 7613,
+          "choices": 61,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 1.6307693000126164
+        },
+        {
+          "histories": 128,
+          "legal": 266,
+          "known_edges": 177,
+          "exact": null,
+          "witness": -49.75236511230469,
+          "steps": 12253,
+          "chances": 10831,
+          "choices": 83,
+          "budget": 512,
+          "probes": 164,
+          "seconds": 2.6215111000055913
+        }
+      ]
+    },
+    "combo-03": {
+      "exact": null,
+      "reference": 14.669099807739258,
+      "search_value": 14.669044494628906,
+      "arms": {
+        "v2": {
+          "adopted": 14.669044494628906,
+          "candidate": 14.669044494628906,
+          "open_reference": false,
+          "closed": 49,
+          "offered": 49,
+          "candidate_gap": 5.53131103515625e-05,
+          "adopted_gap": 5.53131103515625e-05
+        },
+        "low": {
+          "adopted": 14.669099807739258,
+          "candidate": 14.669099807739258,
+          "open_reference": false,
+          "closed": 10,
+          "offered": 10,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "general": {
+          "adopted": 14.669099807739258,
+          "candidate": 14.669099807739258,
+          "open_reference": false,
+          "closed": 14,
+          "offered": 14,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        }
+      },
+      "compression": {
+        "complete_histories": 506,
+        "classes": 93,
+        "class_edges": 313,
+        "response_classes": 264
+      },
+      "flags": [
+        "multi_enemy"
+      ],
+      "group": "combo",
+      "root_legal": 12,
+      "summary": {
+        "histories": 512,
+        "legal": 1047,
+        "known_edges": 1023,
+        "exact": null,
+        "witness": 14.669044494628906,
+        "steps": 1937,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 512,
+        "seconds": 3.629351699986728
+      },
+      "stops": [
+        "logical_budget"
+      ],
+      "gap_queries": {},
+      "C": 85,
+      "terminal": 0,
+      "prefix": 8,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 512,
+        "v2_batches": 512
+      },
+      "curve": [
+        {
+          "histories": 32,
+          "legal": 213,
+          "known_edges": 63,
+          "exact": null,
+          "witness": -0.29843711853027344,
+          "steps": 83,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.22565519998897798
+        },
+        {
+          "histories": 128,
+          "legal": 663,
+          "known_edges": 255,
+          "exact": null,
+          "witness": 8.617109298706055,
+          "steps": 401,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 0.8368222000135574
+        },
+        {
+          "histories": 512,
+          "legal": 1047,
+          "known_edges": 1023,
+          "exact": null,
+          "witness": 14.669044494628906,
+          "steps": 1937,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 512,
+          "seconds": 3.629351699986728
+        }
+      ]
+    },
+    "combo-04": {
+      "exact": null,
+      "reference": null,
+      "search_value": null,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 25,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 0,
+        "classes": 0,
+        "class_edges": 0,
+        "response_classes": 0
+      },
+      "flags": [
+        "multi_enemy"
+      ],
+      "group": "combo",
+      "root_legal": 6,
+      "summary": {
+        "histories": 17,
+        "legal": 33,
+        "known_edges": 0,
+        "exact": null,
+        "witness": null,
+        "steps": 87,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 33,
+        "seconds": 0.16992129999562167
+      },
+      "stops": [
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "SpawnFabricatorBot/unmodeled_rng": 33
+      },
+      "C": 0,
+      "terminal": 0,
+      "prefix": 47,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 0,
+        "v2_batches": 0
+      },
+      "curve": [
+        {
+          "histories": 17,
+          "legal": 33,
+          "known_edges": 0,
+          "exact": null,
+          "witness": null,
+          "steps": 84,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.16611550000379793
+        },
+        {
+          "histories": 17,
+          "legal": 33,
+          "known_edges": 0,
+          "exact": null,
+          "witness": null,
+          "steps": 87,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 33,
+          "seconds": 0.16990660000010394
+        },
+        {
+          "histories": 17,
+          "legal": 33,
+          "known_edges": 0,
+          "exact": null,
+          "witness": null,
+          "steps": 87,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 33,
+          "seconds": 0.16992129999562167
+        }
+      ]
+    },
+    "combo-05": {
+      "exact": -12.334338234386848,
+      "reference": -12.334338234386848,
+      "search_value": -12.334338234386848,
+      "arms": {
+        "v2": {
+          "adopted": -22.36554149235701,
+          "candidate": -22.36554149235701,
+          "open_reference": false,
+          "closed": 29,
+          "offered": 29,
+          "candidate_gap": 10.031203257970162,
+          "adopted_gap": 10.031203257970162
+        },
+        "low": {
+          "adopted": -22.36554149235701,
+          "candidate": -22.36554149235701,
+          "open_reference": false,
+          "closed": 10,
+          "offered": 10,
+          "candidate_gap": 10.031203257970162,
+          "adopted_gap": 10.031203257970162
+        },
+        "general": {
+          "adopted": -22.36554149235701,
+          "candidate": -22.36554149235701,
+          "open_reference": false,
+          "closed": 11,
+          "offered": 11,
+          "candidate_gap": 10.031203257970162,
+          "adopted_gap": 10.031203257970162
+        }
+      },
+      "compression": {
+        "complete_histories": 395,
+        "classes": 395,
+        "class_edges": 789,
+        "response_classes": 789
+      },
+      "flags": [
+        "energy",
+        "multi_enemy"
+      ],
+      "group": "combo",
+      "root_legal": 7,
+      "summary": {
+        "histories": 395,
+        "legal": 789,
+        "known_edges": 789,
+        "exact": -12.334338234386848,
+        "witness": -12.334338234386848,
+        "steps": 2663,
+        "chances": 338,
+        "choices": 0,
+        "budget": 512,
+        "probes": 395,
+        "seconds": 4.303732400003355
+      },
+      "stops": [],
+      "gap_queries": {},
+      "C": 508,
+      "terminal": 1,
+      "prefix": 32,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 676,
+        "v2_batches": 338
+      },
+      "curve": [
+        {
+          "histories": 32,
+          "legal": 125,
+          "known_edges": 63,
+          "exact": null,
+          "witness": -12.334338234386848,
+          "steps": 124,
+          "chances": 18,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.1963289999985136
+        },
+        {
+          "histories": 128,
+          "legal": 396,
+          "known_edges": 255,
+          "exact": null,
+          "witness": -12.334338234386848,
+          "steps": 682,
+          "chances": 93,
+          "choices": 0,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 1.1797736999869812
+        },
+        {
+          "histories": 395,
+          "legal": 789,
+          "known_edges": 789,
+          "exact": -12.334338234386848,
+          "witness": -12.334338234386848,
+          "steps": 2663,
+          "chances": 338,
+          "choices": 0,
+          "budget": 512,
+          "probes": 395,
+          "seconds": 4.303732400003355
+        }
+      ]
+    },
+    "combo-06": {
+      "exact": -49.659454345703125,
+      "reference": -49.659454345703125,
+      "search_value": -49.659454345703125,
+      "arms": {
+        "v2": {
+          "adopted": -49.659454345703125,
+          "candidate": -49.659454345703125,
+          "open_reference": false,
+          "closed": 25,
+          "offered": 25,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "low": {
+          "adopted": -49.670677185058594,
+          "candidate": -49.670677185058594,
+          "open_reference": false,
+          "closed": 12,
+          "offered": 12,
+          "candidate_gap": 0.01122283935546875,
+          "adopted_gap": 0.01122283935546875
+        },
+        "general": {
+          "adopted": -49.670677185058594,
+          "candidate": -49.670677185058594,
+          "open_reference": false,
+          "closed": 13,
+          "offered": 13,
+          "candidate_gap": 0.01122283935546875,
+          "adopted_gap": 0.01122283935546875
+        }
+      },
+      "compression": {
+        "complete_histories": 92,
+        "classes": 57,
+        "class_edges": 129,
+        "response_classes": 129
+      },
+      "flags": [],
+      "group": "combo",
+      "root_legal": 6,
+      "summary": {
+        "histories": 92,
+        "legal": 183,
+        "known_edges": 183,
+        "exact": -49.659454345703125,
+        "witness": -49.659454345703125,
+        "steps": 359,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 92,
+        "seconds": 0.7398168999934569
+      },
+      "stops": [],
+      "gap_queries": {},
+      "C": 57,
+      "terminal": 0,
+      "prefix": 3,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 92,
+        "v2_batches": 92
+      },
+      "curve": [
+        {
+          "histories": 32,
+          "legal": 104,
+          "known_edges": 63,
+          "exact": null,
+          "witness": -49.70109558105469,
+          "steps": 95,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.26897509998525493
+        },
+        {
+          "histories": 92,
+          "legal": 183,
+          "known_edges": 183,
+          "exact": -49.659454345703125,
+          "witness": -49.659454345703125,
+          "steps": 359,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 92,
+          "seconds": 0.7395911999919917
+        },
+        {
+          "histories": 92,
+          "legal": 183,
+          "known_edges": 183,
+          "exact": -49.659454345703125,
+          "witness": -49.659454345703125,
+          "steps": 359,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 92,
+          "seconds": 0.7398168999934569
+        }
+      ]
+    },
+    "combo-07": {
+      "exact": null,
+      "reference": -48.52653121948242,
+      "search_value": -48.52653121948242,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": -49.34505844116211,
+          "open_reference": true,
+          "closed": 15,
+          "offered": 41,
+          "candidate_gap": 0.8185272216796875,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 48,
+        "classes": 39,
+        "class_edges": 39,
+        "response_classes": 39
+      },
+      "flags": [
+        "draw",
+        "multi_enemy"
+      ],
+      "group": "combo",
+      "root_legal": 10,
+      "summary": {
+        "histories": 393,
+        "legal": 837,
+        "known_edges": 202,
+        "exact": null,
+        "witness": -48.52653121948242,
+        "steps": 2199,
+        "chances": 0,
+        "choices": 365,
+        "budget": 512,
+        "probes": 512,
+        "seconds": 3.3970298999920487
+      },
+      "stops": [
+        "logical_budget",
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "HandleAfterAutoPostPlayPower/unmodeled_rng": 452
+      },
+      "C": 51,
+      "terminal": 0,
+      "prefix": 7,
+      "peak": 160411648,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 60,
+        "v2_batches": 60
+      },
+      "curve": [
+        {
+          "histories": 34,
+          "legal": 150,
+          "known_edges": 0,
+          "exact": null,
+          "witness": null,
+          "steps": 87,
+          "chances": 0,
+          "choices": 4,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.13759629998821765
+        },
+        {
+          "histories": 123,
+          "legal": 391,
+          "known_edges": 0,
+          "exact": null,
+          "witness": null,
+          "steps": 435,
+          "chances": 0,
+          "choices": 48,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 0.620246499980567
+        },
+        {
+          "histories": 393,
+          "legal": 837,
+          "known_edges": 202,
+          "exact": null,
+          "witness": -48.52653121948242,
+          "steps": 2199,
+          "chances": 0,
+          "choices": 365,
+          "budget": 512,
+          "probes": 512,
+          "seconds": 3.3970298999920487
+        }
+      ]
+    },
+    "combo-08": {
+      "exact": null,
+      "reference": 38.66432960824932,
+      "search_value": 38.66432960824932,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": -14.26363258616965,
+          "open_reference": true,
+          "closed": 11,
+          "offered": 49,
+          "candidate_gap": 52.92796219441897,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 1,
+        "classes": 1,
+        "class_edges": 1,
+        "response_classes": 1
+      },
+      "flags": [
+        "X",
+        "draw",
+        "energy",
+        "multi_enemy"
+      ],
+      "group": "combo",
+      "root_legal": 12,
+      "summary": {
+        "histories": 2646,
+        "legal": 19723,
+        "known_edges": 51,
+        "exact": null,
+        "witness": 38.66432960824932,
+        "steps": 8825,
+        "chances": 1250,
+        "choices": 0,
+        "budget": 512,
+        "probes": 94,
+        "seconds": 12.058379399997648
+      },
+      "stops": [
+        "wall",
+        "per_program_step_cap"
+      ],
+      "gap_queries": {
+        "budget": 68
+      },
+      "C": 52,
+      "terminal": 0,
+      "prefix": 0,
+      "peak": 166957056,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 52,
+        "v2_batches": 26
+      },
+      "curve": [
+        {
+          "histories": 1764,
+          "legal": 12601,
+          "known_edges": 31,
+          "exact": null,
+          "witness": -14.26363258616965,
+          "steps": 2119,
+          "chances": 304,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 2.7783485999971163
+        },
+        {
+          "histories": 2646,
+          "legal": 19723,
+          "known_edges": 51,
+          "exact": null,
+          "witness": 38.66432960824932,
+          "steps": 8825,
+          "chances": 1250,
+          "choices": 0,
+          "budget": 128,
+          "probes": 94,
+          "seconds": 12.056723199988483
+        },
+        {
+          "histories": 2646,
+          "legal": 19723,
+          "known_edges": 51,
+          "exact": null,
+          "witness": 38.66432960824932,
+          "steps": 8825,
+          "chances": 1250,
+          "choices": 0,
+          "budget": 512,
+          "probes": 94,
+          "seconds": 12.058379399997648
+        }
+      ]
+    },
+    "ordinary-01": {
+      "exact": 93.0,
+      "reference": 93.0,
+      "search_value": 93.0,
+      "arms": {
+        "v2": {
+          "adopted": 93.0,
+          "candidate": 93.0,
+          "open_reference": false,
+          "closed": 25,
+          "offered": 25,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "low": {
+          "adopted": 89.89030456542969,
+          "candidate": 89.89030456542969,
+          "open_reference": false,
+          "closed": 10,
+          "offered": 10,
+          "candidate_gap": 3.1096954345703125,
+          "adopted_gap": 3.1096954345703125
+        },
+        "general": {
+          "adopted": 89.89030456542969,
+          "candidate": 89.89030456542969,
+          "open_reference": false,
+          "closed": 12,
+          "offered": 12,
+          "candidate_gap": 3.1096954345703125,
+          "adopted_gap": 3.1096954345703125
+        }
+      },
+      "compression": {
+        "complete_histories": 36,
+        "classes": 23,
+        "class_edges": 56,
+        "response_classes": 50
+      },
+      "flags": [],
+      "group": "ordinary",
+      "root_legal": 6,
+      "summary": {
+        "histories": 36,
+        "legal": 81,
+        "known_edges": 81,
+        "exact": 93.0,
+        "witness": 93.0,
+        "steps": 141,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 46,
+        "seconds": 0.41660460000275634
+      },
+      "stops": [],
+      "gap_queries": {},
+      "C": 22,
+      "terminal": 3,
+      "prefix": 10,
+      "peak": 166957056,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 36,
+        "v2_batches": 36
+      },
+      "curve": [
+        {
+          "histories": 28,
+          "legal": 73,
+          "known_edges": 59,
+          "exact": null,
+          "witness": 93.0,
+          "steps": 91,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.32517830000142567
+        },
+        {
+          "histories": 36,
+          "legal": 81,
+          "known_edges": 81,
+          "exact": 93.0,
+          "witness": 93.0,
+          "steps": 141,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 46,
+          "seconds": 0.4164930000260938
+        },
+        {
+          "histories": 36,
+          "legal": 81,
+          "known_edges": 81,
+          "exact": 93.0,
+          "witness": 93.0,
+          "steps": 141,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 46,
+          "seconds": 0.41660460000275634
+        }
+      ]
+    },
+    "ordinary-02": {
+      "exact": null,
+      "reference": null,
+      "search_value": null,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 25,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 0,
+        "classes": 0,
+        "class_edges": 0,
+        "response_classes": 0
+      },
+      "flags": [
+        "draw"
+      ],
+      "group": "ordinary",
+      "root_legal": 6,
+      "summary": {
+        "histories": 566,
+        "legal": 1014,
+        "known_edges": 0,
+        "exact": null,
+        "witness": null,
+        "steps": 15117,
+        "chances": 538,
+        "choices": 14,
+        "budget": 512,
+        "probes": 512,
+        "seconds": 10.117602799989982
+      },
+      "stops": [
+        "logical_budget",
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "ApplyThievingHopperStealCard/unmodeled_rng": 512,
+        "GenerateRandomFromPoolWithReplacement/unmodeled_rng": 7
+      },
+      "C": 0,
+      "terminal": 0,
+      "prefix": 0,
+      "peak": 166957056,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 0,
+        "v2_batches": 0
+      },
+      "curve": [
+        {
+          "histories": 76,
+          "legal": 265,
+          "known_edges": 0,
+          "exact": null,
+          "witness": null,
+          "steps": 460,
+          "chances": 15,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.4144337000034284
+        },
+        {
+          "histories": 187,
+          "legal": 592,
+          "known_edges": 0,
+          "exact": null,
+          "witness": null,
+          "steps": 3000,
+          "chances": 105,
+          "choices": 1,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 1.9395680000016
+        },
+        {
+          "histories": 566,
+          "legal": 1014,
+          "known_edges": 0,
+          "exact": null,
+          "witness": null,
+          "steps": 15117,
+          "chances": 538,
+          "choices": 14,
+          "budget": 512,
+          "probes": 512,
+          "seconds": 10.117602799989982
+        }
+      ]
+    },
+    "ordinary-03": {
+      "exact": -5.8232269287109375,
+      "reference": -5.8232269287109375,
+      "search_value": -5.8232269287109375,
+      "arms": {
+        "v2": {
+          "adopted": -5.8232269287109375,
+          "candidate": -5.8232269287109375,
+          "open_reference": false,
+          "closed": 25,
+          "offered": 25,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "low": {
+          "adopted": -17.017797470092773,
+          "candidate": -17.017797470092773,
+          "open_reference": false,
+          "closed": 8,
+          "offered": 8,
+          "candidate_gap": 11.194570541381836,
+          "adopted_gap": 11.194570541381836
+        },
+        "general": {
+          "adopted": -17.017797470092773,
+          "candidate": -17.017797470092773,
+          "open_reference": false,
+          "closed": 8,
+          "offered": 8,
+          "candidate_gap": 11.194570541381836,
+          "adopted_gap": 11.194570541381836
+        }
+      },
+      "compression": {
+        "complete_histories": 10,
+        "classes": 9,
+        "class_edges": 18,
+        "response_classes": 18
+      },
+      "flags": [],
+      "group": "ordinary",
+      "root_legal": 6,
+      "summary": {
+        "histories": 10,
+        "legal": 19,
+        "known_edges": 19,
+        "exact": -5.8232269287109375,
+        "witness": -5.8232269287109375,
+        "steps": 23,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 10,
+        "seconds": 0.07600349999847822
+      },
+      "stops": [],
+      "gap_queries": {},
+      "C": 9,
+      "terminal": 0,
+      "prefix": 4,
+      "peak": 166957056,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 10,
+        "v2_batches": 10
+      },
+      "curve": [
+        {
+          "histories": 10,
+          "legal": 19,
+          "known_edges": 19,
+          "exact": -5.8232269287109375,
+          "witness": -5.8232269287109375,
+          "steps": 23,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 10,
+          "seconds": 0.0759509000054095
+        },
+        {
+          "histories": 10,
+          "legal": 19,
+          "known_edges": 19,
+          "exact": -5.8232269287109375,
+          "witness": -5.8232269287109375,
+          "steps": 23,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 10,
+          "seconds": 0.07597860001260415
+        },
+        {
+          "histories": 10,
+          "legal": 19,
+          "known_edges": 19,
+          "exact": -5.8232269287109375,
+          "witness": -5.8232269287109375,
+          "steps": 23,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 10,
+          "seconds": 0.07600349999847822
+        }
+      ]
+    },
+    "ordinary-04": {
+      "exact": -49.95738220214844,
+      "reference": -49.95738220214844,
+      "search_value": -49.95738220214844,
+      "arms": {
+        "v2": {
+          "adopted": -49.95738220214844,
+          "candidate": -49.95738220214844,
+          "open_reference": false,
+          "closed": 25,
+          "offered": 25,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "low": {
+          "adopted": -49.958038330078125,
+          "candidate": -49.958038330078125,
+          "open_reference": false,
+          "closed": 10,
+          "offered": 10,
+          "candidate_gap": 0.0006561279296875,
+          "adopted_gap": 0.0006561279296875
+        },
+        "general": {
+          "adopted": -49.958038330078125,
+          "candidate": -49.958038330078125,
+          "open_reference": false,
+          "closed": 10,
+          "offered": 10,
+          "candidate_gap": 0.0006561279296875,
+          "adopted_gap": 0.0006561279296875
+        }
+      },
+      "compression": {
+        "complete_histories": 86,
+        "classes": 34,
+        "class_edges": 85,
+        "response_classes": 77
+      },
+      "flags": [],
+      "group": "ordinary",
+      "root_legal": 6,
+      "summary": {
+        "histories": 86,
+        "legal": 171,
+        "known_edges": 171,
+        "exact": -49.95738220214844,
+        "witness": -49.95738220214844,
+        "steps": 311,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 86,
+        "seconds": 0.7902413999836426
+      },
+      "stops": [],
+      "gap_queries": {},
+      "C": 34,
+      "terminal": 0,
+      "prefix": 12,
+      "peak": 166957056,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 86,
+        "v2_batches": 86
+      },
+      "curve": [
+        {
+          "histories": 32,
+          "legal": 117,
+          "known_edges": 63,
+          "exact": null,
+          "witness": -49.95738220214844,
+          "steps": 95,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.19595470000058413
+        },
+        {
+          "histories": 86,
+          "legal": 171,
+          "known_edges": 171,
+          "exact": -49.95738220214844,
+          "witness": -49.95738220214844,
+          "steps": 311,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 86,
+          "seconds": 0.7897930999752134
+        },
+        {
+          "histories": 86,
+          "legal": 171,
+          "known_edges": 171,
+          "exact": -49.95738220214844,
+          "witness": -49.95738220214844,
+          "steps": 311,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 86,
+          "seconds": 0.7902413999836426
+        }
+      ]
+    },
+    "ordinary-05": {
+      "exact": -18.57413101196289,
+      "reference": -18.57413101196289,
+      "search_value": -18.57413101196289,
+      "arms": {
+        "v2": {
+          "adopted": -19.83863067626953,
+          "candidate": -19.83863067626953,
+          "open_reference": false,
+          "closed": 25,
+          "offered": 25,
+          "candidate_gap": 1.2644996643066406,
+          "adopted_gap": 1.2644996643066406
+        },
+        "low": {
+          "adopted": -19.83858871459961,
+          "candidate": -19.83858871459961,
+          "open_reference": false,
+          "closed": 10,
+          "offered": 10,
+          "candidate_gap": 1.2644577026367188,
+          "adopted_gap": 1.2644577026367188
+        },
+        "general": {
+          "adopted": -19.540687561035156,
+          "candidate": -19.540687561035156,
+          "open_reference": false,
+          "closed": 12,
+          "offered": 12,
+          "candidate_gap": 0.9665565490722656,
+          "adopted_gap": 0.9665565490722656
+        }
+      },
+      "compression": {
+        "complete_histories": 212,
+        "classes": 134,
+        "class_edges": 285,
+        "response_classes": 283
+      },
+      "flags": [
+        "X"
+      ],
+      "group": "ordinary",
+      "root_legal": 6,
+      "summary": {
+        "histories": 212,
+        "legal": 401,
+        "known_edges": 401,
+        "exact": -18.57413101196289,
+        "witness": -18.57413101196289,
+        "steps": 923,
+        "chances": 0,
+        "choices": 200,
+        "budget": 512,
+        "probes": 190,
+        "seconds": 1.606120699987514
+      },
+      "stops": [],
+      "gap_queries": {},
+      "C": 95,
+      "terminal": 1,
+      "prefix": 20,
+      "peak": 166957056,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 162,
+        "v2_batches": 162
+      },
+      "curve": [
+        {
+          "histories": 42,
+          "legal": 135,
+          "known_edges": 73,
+          "exact": null,
+          "witness": -21.56842803955078,
+          "steps": 109,
+          "chances": 0,
+          "choices": 26,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.1974350999807939
+        },
+        {
+          "histories": 150,
+          "legal": 327,
+          "known_edges": 277,
+          "exact": null,
+          "witness": -18.990224838256836,
+          "steps": 575,
+          "chances": 0,
+          "choices": 129,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 1.0683351999905426
+        },
+        {
+          "histories": 212,
+          "legal": 401,
+          "known_edges": 401,
+          "exact": -18.57413101196289,
+          "witness": -18.57413101196289,
+          "steps": 923,
+          "chances": 0,
+          "choices": 200,
+          "budget": 512,
+          "probes": 190,
+          "seconds": 1.606120699987514
+        }
+      ]
+    },
+    "ordinary-06": {
+      "exact": -49.947479248046875,
+      "reference": -49.947479248046875,
+      "search_value": -49.947479248046875,
+      "arms": {
+        "v2": {
+          "adopted": -49.947479248046875,
+          "candidate": -49.947479248046875,
+          "open_reference": false,
+          "closed": 37,
+          "offered": 37,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "low": {
+          "adopted": -49.947479248046875,
+          "candidate": -49.947479248046875,
+          "open_reference": false,
+          "closed": 8,
+          "offered": 8,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "general": {
+          "adopted": -49.947479248046875,
+          "candidate": -49.947479248046875,
+          "open_reference": false,
+          "closed": 8,
+          "offered": 8,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        }
+      },
+      "compression": {
+        "complete_histories": 41,
+        "classes": 33,
+        "class_edges": 73,
+        "response_classes": 73
+      },
+      "flags": [
+        "multi_enemy"
+      ],
+      "group": "ordinary",
+      "root_legal": 9,
+      "summary": {
+        "histories": 41,
+        "legal": 81,
+        "known_edges": 81,
+        "exact": -49.947479248046875,
+        "witness": -49.947479248046875,
+        "steps": 113,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 41,
+        "seconds": 0.22565350000513718
+      },
+      "stops": [],
+      "gap_queries": {},
+      "C": 33,
+      "terminal": 0,
+      "prefix": 0,
+      "peak": 166957056,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 41,
+        "v2_batches": 41
+      },
+      "curve": [
+        {
+          "histories": 32,
+          "legal": 72,
+          "known_edges": 63,
+          "exact": null,
+          "witness": -49.947479248046875,
+          "steps": 86,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.17394680000143126
+        },
+        {
+          "histories": 41,
+          "legal": 81,
+          "known_edges": 81,
+          "exact": -49.947479248046875,
+          "witness": -49.947479248046875,
+          "steps": 113,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 41,
+          "seconds": 0.2255464000045322
+        },
+        {
+          "histories": 41,
+          "legal": 81,
+          "known_edges": 81,
+          "exact": -49.947479248046875,
+          "witness": -49.947479248046875,
+          "steps": 113,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 41,
+          "seconds": 0.22565350000513718
+        }
+      ]
+    },
+    "ordinary-07": {
+      "exact": null,
+      "reference": -49.8524284362793,
+      "search_value": -49.8524284362793,
+      "arms": {
+        "v2": {
+          "adopted": -49.889930725097656,
+          "candidate": -49.889930725097656,
+          "open_reference": false,
+          "closed": 11,
+          "offered": 37,
+          "candidate_gap": 0.037502288818359375,
+          "adopted_gap": 0.037502288818359375
+        },
+        "low": {
+          "adopted": -49.85940170288086,
+          "candidate": -49.85940170288086,
+          "open_reference": false,
+          "closed": 4,
+          "offered": 10,
+          "candidate_gap": 0.0069732666015625,
+          "adopted_gap": 0.0069732666015625
+        },
+        "general": {
+          "adopted": -49.85940170288086,
+          "candidate": -49.85940170288086,
+          "open_reference": false,
+          "closed": 7,
+          "offered": 14,
+          "candidate_gap": 0.0069732666015625,
+          "adopted_gap": 0.0069732666015625
+        }
+      },
+      "compression": {
+        "complete_histories": 72,
+        "classes": 36,
+        "class_edges": 36,
+        "response_classes": 36
+      },
+      "flags": [
+        "energy",
+        "multi_enemy"
+      ],
+      "group": "ordinary",
+      "root_legal": 9,
+      "summary": {
+        "histories": 153,
+        "legal": 433,
+        "known_edges": 305,
+        "exact": null,
+        "witness": -49.8524284362793,
+        "steps": 1109,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 281,
+        "seconds": 2.1140269000025
+      },
+      "stops": [
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "ExecuteCoreCustomCard/unmodeled_rng": 128
+      },
+      "C": 79,
+      "terminal": 0,
+      "prefix": 4,
+      "peak": 166957056,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 153,
+        "v2_batches": 153
+      },
+      "curve": [
+        {
+          "histories": 23,
+          "legal": 99,
+          "known_edges": 45,
+          "exact": null,
+          "witness": -49.8524284362793,
+          "steps": 77,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.16296799998963252
+        },
+        {
+          "histories": 87,
+          "legal": 367,
+          "known_edges": 173,
+          "exact": null,
+          "witness": -49.8524284362793,
+          "steps": 431,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 0.9234927000070456
+        },
+        {
+          "histories": 153,
+          "legal": 433,
+          "known_edges": 305,
+          "exact": null,
+          "witness": -49.8524284362793,
+          "steps": 1109,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 281,
+          "seconds": 2.1140269000025
+        }
+      ]
+    },
+    "ordinary-08": {
+      "exact": 47.411109924316406,
+      "reference": 47.411109924316406,
+      "search_value": 47.411109924316406,
+      "arms": {
+        "v2": {
+          "adopted": 41.521324157714844,
+          "candidate": 41.521324157714844,
+          "open_reference": false,
+          "closed": 25,
+          "offered": 25,
+          "candidate_gap": 5.8897857666015625,
+          "adopted_gap": 5.8897857666015625
+        },
+        "low": {
+          "adopted": 41.52135467529297,
+          "candidate": 41.52135467529297,
+          "open_reference": false,
+          "closed": 8,
+          "offered": 8,
+          "candidate_gap": 5.8897552490234375,
+          "adopted_gap": 5.8897552490234375
+        },
+        "general": {
+          "adopted": 41.52135467529297,
+          "candidate": 41.52135467529297,
+          "open_reference": false,
+          "closed": 8,
+          "offered": 8,
+          "candidate_gap": 5.8897552490234375,
+          "adopted_gap": 5.8897552490234375
+        }
+      },
+      "compression": {
+        "complete_histories": 50,
+        "classes": 45,
+        "class_edges": 92,
+        "response_classes": 89
+      },
+      "flags": [],
+      "group": "ordinary",
+      "root_legal": 6,
+      "summary": {
+        "histories": 50,
+        "legal": 99,
+        "known_edges": 99,
+        "exact": 47.411109924316406,
+        "witness": 47.411109924316406,
+        "steps": 167,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 50,
+        "seconds": 0.3665035000012722
+      },
+      "stops": [],
+      "gap_queries": {},
+      "C": 45,
+      "terminal": 0,
+      "prefix": 8,
+      "peak": 166957056,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 50,
+        "v2_batches": 50
+      },
+      "curve": [
+        {
+          "histories": 32,
+          "legal": 81,
+          "known_edges": 63,
+          "exact": null,
+          "witness": 47.411109924316406,
+          "steps": 95,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.248334599978989
+        },
+        {
+          "histories": 50,
+          "legal": 99,
+          "known_edges": 99,
+          "exact": 47.411109924316406,
+          "witness": 47.411109924316406,
+          "steps": 167,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 50,
+          "seconds": 0.3663857000065036
+        },
+        {
+          "histories": 50,
+          "legal": 99,
+          "known_edges": 99,
+          "exact": 47.411109924316406,
+          "witness": 47.411109924316406,
+          "steps": 167,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 50,
+          "seconds": 0.3665035000012722
+        }
+      ]
+    },
+    "ordinary-09": {
+      "exact": 57.54436492919922,
+      "reference": 57.54436492919922,
+      "search_value": 57.54436492919922,
+      "arms": {
+        "v2": {
+          "adopted": 57.54436492919922,
+          "candidate": 57.54436492919922,
+          "open_reference": false,
+          "closed": 25,
+          "offered": 25,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "low": {
+          "adopted": 57.54436111450195,
+          "candidate": 57.54436111450195,
+          "open_reference": false,
+          "closed": 8,
+          "offered": 8,
+          "candidate_gap": 3.814697265625e-06,
+          "adopted_gap": 3.814697265625e-06
+        },
+        "general": {
+          "adopted": 57.54436111450195,
+          "candidate": 57.54436111450195,
+          "open_reference": false,
+          "closed": 8,
+          "offered": 8,
+          "candidate_gap": 3.814697265625e-06,
+          "adopted_gap": 3.814697265625e-06
+        }
+      },
+      "compression": {
+        "complete_histories": 18,
+        "classes": 12,
+        "class_edges": 27,
+        "response_classes": 27
+      },
+      "flags": [
+        "energy"
+      ],
+      "group": "ordinary",
+      "root_legal": 6,
+      "summary": {
+        "histories": 18,
+        "legal": 35,
+        "known_edges": 35,
+        "exact": 57.54436492919922,
+        "witness": 57.54436492919922,
+        "steps": 53,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 18,
+        "seconds": 0.05877530001453124
+      },
+      "stops": [],
+      "gap_queries": {},
+      "C": 12,
+      "terminal": 0,
+      "prefix": 0,
+      "peak": 166957056,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 18,
+        "v2_batches": 18
+      },
+      "curve": [
+        {
+          "histories": 18,
+          "legal": 35,
+          "known_edges": 35,
+          "exact": 57.54436492919922,
+          "witness": 57.54436492919922,
+          "steps": 53,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 18,
+          "seconds": 0.058672300016041845
+        },
+        {
+          "histories": 18,
+          "legal": 35,
+          "known_edges": 35,
+          "exact": 57.54436492919922,
+          "witness": 57.54436492919922,
+          "steps": 53,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 18,
+          "seconds": 0.05872500000987202
+        },
+        {
+          "histories": 18,
+          "legal": 35,
+          "known_edges": 35,
+          "exact": 57.54436492919922,
+          "witness": 57.54436492919922,
+          "steps": 53,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 18,
+          "seconds": 0.05877530001453124
+        }
+      ]
+    },
+    "ordinary-10": {
+      "exact": 90.6265640258789,
+      "reference": 90.6265640258789,
+      "search_value": 90.6265640258789,
+      "arms": {
+        "v2": {
+          "adopted": 90.6265640258789,
+          "candidate": 90.6265640258789,
+          "open_reference": false,
+          "closed": 41,
+          "offered": 41,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "low": {
+          "adopted": 90.6265640258789,
+          "candidate": 90.6265640258789,
+          "open_reference": false,
+          "closed": 10,
+          "offered": 10,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "general": {
+          "adopted": 90.6265640258789,
+          "candidate": 90.6265640258789,
+          "open_reference": false,
+          "closed": 11,
+          "offered": 11,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        }
+      },
+      "compression": {
+        "complete_histories": 90,
+        "classes": 70,
+        "class_edges": 154,
+        "response_classes": 154
+      },
+      "flags": [
+        "multi_enemy"
+      ],
+      "group": "ordinary",
+      "root_legal": 10,
+      "summary": {
+        "histories": 90,
+        "legal": 179,
+        "known_edges": 179,
+        "exact": 90.6265640258789,
+        "witness": 90.6265640258789,
+        "steps": 283,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 90,
+        "seconds": 0.6889102999994066
+      },
+      "stops": [],
+      "gap_queries": {},
+      "C": 70,
+      "terminal": 0,
+      "prefix": 0,
+      "peak": 166957056,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 90,
+        "v2_batches": 90
+      },
+      "curve": [
+        {
+          "histories": 32,
+          "legal": 105,
+          "known_edges": 63,
+          "exact": null,
+          "witness": 89.00614929199219,
+          "steps": 85,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.17417220000061207
+        },
+        {
+          "histories": 90,
+          "legal": 179,
+          "known_edges": 179,
+          "exact": 90.6265640258789,
+          "witness": 90.6265640258789,
+          "steps": 283,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 90,
+          "seconds": 0.6885503999947105
+        },
+        {
+          "histories": 90,
+          "legal": 179,
+          "known_edges": 179,
+          "exact": 90.6265640258789,
+          "witness": 90.6265640258789,
+          "steps": 283,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 90,
+          "seconds": 0.6889102999994066
+        }
+      ]
+    },
+    "ordinary-11": {
+      "exact": -41.376449498169904,
+      "reference": -41.376449498169904,
+      "search_value": -41.376449498169904,
+      "arms": {
+        "v2": {
+          "adopted": -45.22108263906591,
+          "candidate": -45.22108263906591,
+          "open_reference": false,
+          "closed": 37,
+          "offered": 37,
+          "candidate_gap": 3.8446331408960077,
+          "adopted_gap": 3.8446331408960077
+        },
+        "low": {
+          "adopted": -45.22108263906591,
+          "candidate": -45.22108263906591,
+          "open_reference": false,
+          "closed": 10,
+          "offered": 10,
+          "candidate_gap": 3.8446331408960077,
+          "adopted_gap": 3.8446331408960077
+        },
+        "general": {
+          "adopted": -45.22108263906591,
+          "candidate": -45.22108263906591,
+          "open_reference": false,
+          "closed": 12,
+          "offered": 12,
+          "candidate_gap": 3.8446331408960077,
+          "adopted_gap": 3.8446331408960077
+        }
+      },
+      "compression": {
+        "complete_histories": 381,
+        "classes": 285,
+        "class_edges": 620,
+        "response_classes": 604
+      },
+      "flags": [
+        "multi_enemy"
+      ],
+      "group": "ordinary",
+      "root_legal": 9,
+      "summary": {
+        "histories": 381,
+        "legal": 737,
+        "known_edges": 737,
+        "exact": -41.376449498169904,
+        "witness": -41.376449498169904,
+        "steps": 2003,
+        "chances": 146,
+        "choices": 227,
+        "budget": 512,
+        "probes": 357,
+        "seconds": 3.3967684999806806
+      },
+      "stops": [],
+      "gap_queries": {},
+      "C": 312,
+      "terminal": 1,
+      "prefix": 33,
+      "peak": 166957056,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 438,
+        "v2_batches": 146
+      },
+      "curve": [
+        {
+          "histories": 36,
+          "legal": 190,
+          "known_edges": 67,
+          "exact": null,
+          "witness": -46.77722927671584,
+          "steps": 103,
+          "chances": 3,
+          "choices": 10,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.1713529999833554
+        },
+        {
+          "histories": 141,
+          "legal": 419,
+          "known_edges": 268,
+          "exact": null,
+          "witness": -43.92220109504308,
+          "steps": 562,
+          "chances": 27,
+          "choices": 43,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 0.9743638999934774
+        },
+        {
+          "histories": 381,
+          "legal": 737,
+          "known_edges": 737,
+          "exact": -41.376449498169904,
+          "witness": -41.376449498169904,
+          "steps": 2003,
+          "chances": 146,
+          "choices": 227,
+          "budget": 512,
+          "probes": 357,
+          "seconds": 3.3967684999806806
+        }
+      ]
+    },
+    "ordinary-12": {
+      "exact": null,
+      "reference": -49.685036979679964,
+      "search_value": -49.685036979679964,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": -49.73722458088491,
+          "open_reference": true,
+          "closed": 28,
+          "offered": 33,
+          "candidate_gap": 0.05218760120494892,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 60,
+        "classes": 32,
+        "class_edges": 32,
+        "response_classes": 32
+      },
+      "flags": [
+        "multi_enemy"
+      ],
+      "group": "ordinary",
+      "root_legal": 8,
+      "summary": {
+        "histories": 427,
+        "legal": 809,
+        "known_edges": 181,
+        "exact": null,
+        "witness": -49.685036979679964,
+        "steps": 12688,
+        "chances": 1775,
+        "choices": 421,
+        "budget": 512,
+        "probes": 512,
+        "seconds": 7.999278900009813
+      },
+      "stops": [
+        "logical_budget",
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "AutoPlayCard/unmodeled_rng": 421
+      },
+      "C": 174,
+      "terminal": 0,
+      "prefix": 0,
+      "peak": 166957056,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 4062,
+        "v2_batches": 512
+      },
+      "curve": [
+        {
+          "histories": 50,
+          "legal": 232,
+          "known_edges": 51,
+          "exact": null,
+          "witness": -49.76403808765917,
+          "steps": 315,
+          "chances": 50,
+          "choices": 6,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.24066290000337176
+        },
+        {
+          "histories": 167,
+          "legal": 481,
+          "known_edges": 109,
+          "exact": null,
+          "witness": -49.685036979679964,
+          "steps": 2412,
+          "chances": 347,
+          "choices": 73,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 1.735496500012232
+        },
+        {
+          "histories": 427,
+          "legal": 809,
+          "known_edges": 181,
+          "exact": null,
+          "witness": -49.685036979679964,
+          "steps": 12688,
+          "chances": 1775,
+          "choices": 421,
+          "budget": 512,
+          "probes": 512,
+          "seconds": 7.999278900009813
+        }
+      ]
+    },
+    "dev-01": {
+      "exact": null,
+      "reference": -47.97026824951172,
+      "search_value": -47.97026824951172,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": -48.3277702331543,
+          "open_reference": true,
+          "closed": 8,
+          "offered": 25,
+          "candidate_gap": 0.3575019836425781,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 24,
+        "classes": 12,
+        "class_edges": 12,
+        "response_classes": 12
+      },
+      "flags": [],
+      "group": "dev",
+      "root_legal": 6,
+      "summary": {
+        "histories": 41,
+        "legal": 98,
+        "known_edges": 81,
+        "exact": null,
+        "witness": -47.97026824951172,
+        "steps": 186,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 58,
+        "seconds": 0.2507100999937393
+      },
+      "stops": [
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "PickRandomLivingEnemySlot/unmodeled_rng": 17
+      },
+      "C": 20,
+      "terminal": 0,
+      "prefix": 0,
+      "peak": 166957056,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 41,
+        "v2_batches": 41
+      },
+      "curve": [
+        {
+          "histories": 23,
+          "legal": 80,
+          "known_edges": 45,
+          "exact": null,
+          "witness": -47.97026824951172,
+          "steps": 90,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.14635230001294985
+        },
+        {
+          "histories": 41,
+          "legal": 98,
+          "known_edges": 81,
+          "exact": null,
+          "witness": -47.97026824951172,
+          "steps": 186,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 58,
+          "seconds": 0.2506246000120882
+        },
+        {
+          "histories": 41,
+          "legal": 98,
+          "known_edges": 81,
+          "exact": null,
+          "witness": -47.97026824951172,
+          "steps": 186,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 58,
+          "seconds": 0.2507100999937393
+        }
+      ]
+    },
+    "dev-02": {
+      "exact": 82.4915771484375,
+      "reference": 82.4915771484375,
+      "search_value": 82.4915771484375,
+      "arms": {
+        "v2": {
+          "adopted": 82.4915771484375,
+          "candidate": 82.4915771484375,
+          "open_reference": false,
+          "closed": 25,
+          "offered": 25,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "low": {
+          "adopted": 82.4915771484375,
+          "candidate": 82.4915771484375,
+          "open_reference": false,
+          "closed": 10,
+          "offered": 10,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "general": {
+          "adopted": 82.4915771484375,
+          "candidate": 82.4915771484375,
+          "open_reference": false,
+          "closed": 12,
+          "offered": 12,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        }
+      },
+      "compression": {
+        "complete_histories": 86,
+        "classes": 30,
+        "class_edges": 74,
+        "response_classes": 67
+      },
+      "flags": [
+        "energy"
+      ],
+      "group": "dev",
+      "root_legal": 6,
+      "summary": {
+        "histories": 86,
+        "legal": 171,
+        "known_edges": 171,
+        "exact": 82.4915771484375,
+        "witness": 82.4915771484375,
+        "steps": 347,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 86,
+        "seconds": 0.7027082999993581
+      },
+      "stops": [],
+      "gap_queries": {},
+      "C": 30,
+      "terminal": 0,
+      "prefix": 0,
+      "peak": 166957056,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 86,
+        "v2_batches": 86
+      },
+      "curve": [
+        {
+          "histories": 32,
+          "legal": 95,
+          "known_edges": 63,
+          "exact": null,
+          "witness": 81.6014175415039,
+          "steps": 99,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.2789444999943953
+        },
+        {
+          "histories": 86,
+          "legal": 171,
+          "known_edges": 171,
+          "exact": 82.4915771484375,
+          "witness": 82.4915771484375,
+          "steps": 347,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 86,
+          "seconds": 0.7024508999893442
+        },
+        {
+          "histories": 86,
+          "legal": 171,
+          "known_edges": 171,
+          "exact": 82.4915771484375,
+          "witness": 82.4915771484375,
+          "steps": 347,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 86,
+          "seconds": 0.7027082999993581
+        }
+      ]
+    },
+    "dev-03": {
+      "exact": 77.8539810180664,
+      "reference": 77.8539810180664,
+      "search_value": 77.8539810180664,
+      "arms": {
+        "v2": {
+          "adopted": 77.8539810180664,
+          "candidate": 77.8539810180664,
+          "open_reference": false,
+          "closed": 25,
+          "offered": 25,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "low": {
+          "adopted": 77.8539810180664,
+          "candidate": 77.8539810180664,
+          "open_reference": false,
+          "closed": 12,
+          "offered": 12,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "general": {
+          "adopted": 77.8539810180664,
+          "candidate": 77.8539810180664,
+          "open_reference": false,
+          "closed": 13,
+          "offered": 13,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        }
+      },
+      "compression": {
+        "complete_histories": 30,
+        "classes": 19,
+        "class_edges": 41,
+        "response_classes": 37
+      },
+      "flags": [],
+      "group": "dev",
+      "root_legal": 6,
+      "summary": {
+        "histories": 30,
+        "legal": 59,
+        "known_edges": 59,
+        "exact": 77.8539810180664,
+        "witness": 77.8539810180664,
+        "steps": 89,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 30,
+        "seconds": 0.22682029998395592
+      },
+      "stops": [],
+      "gap_queries": {},
+      "C": 19,
+      "terminal": 0,
+      "prefix": 19,
+      "peak": 166957056,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 30,
+        "v2_batches": 30
+      },
+      "curve": [
+        {
+          "histories": 30,
+          "legal": 59,
+          "known_edges": 59,
+          "exact": 77.8539810180664,
+          "witness": 77.8539810180664,
+          "steps": 89,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 30,
+          "seconds": 0.22659849998308346
+        },
+        {
+          "histories": 30,
+          "legal": 59,
+          "known_edges": 59,
+          "exact": 77.8539810180664,
+          "witness": 77.8539810180664,
+          "steps": 89,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 30,
+          "seconds": 0.22672499998589046
+        },
+        {
+          "histories": 30,
+          "legal": 59,
+          "known_edges": 59,
+          "exact": 77.8539810180664,
+          "witness": 77.8539810180664,
+          "steps": 89,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 30,
+          "seconds": 0.22682029998395592
+        }
+      ]
+    },
+    "dev-04": {
+      "exact": -50.0,
+      "reference": -50.0,
+      "search_value": -50.0,
+      "arms": {
+        "v2": {
+          "adopted": -50.0,
+          "candidate": -50.0,
+          "open_reference": false,
+          "closed": 33,
+          "offered": 33,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "low": {
+          "adopted": -50.0,
+          "candidate": -50.0,
+          "open_reference": false,
+          "closed": 10,
+          "offered": 10,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "general": {
+          "adopted": -50.0,
+          "candidate": -50.0,
+          "open_reference": false,
+          "closed": 11,
+          "offered": 11,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        }
+      },
+      "compression": {
+        "complete_histories": 84,
+        "classes": 63,
+        "class_edges": 138,
+        "response_classes": 138
+      },
+      "flags": [
+        "draw",
+        "multi_enemy"
+      ],
+      "group": "dev",
+      "root_legal": 8,
+      "summary": {
+        "histories": 84,
+        "legal": 167,
+        "known_edges": 167,
+        "exact": -50.0,
+        "witness": -50.0,
+        "steps": 291,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 84,
+        "seconds": 0.3038145999889821
+      },
+      "stops": [],
+      "gap_queries": {},
+      "C": 0,
+      "terminal": 1,
+      "prefix": 2,
+      "peak": 166957056,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 0,
+        "v2_batches": 0
+      },
+      "curve": [
+        {
+          "histories": 32,
+          "legal": 103,
+          "known_edges": 63,
+          "exact": null,
+          "witness": -50.0,
+          "steps": 87,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.1286921999999322
+        },
+        {
+          "histories": 84,
+          "legal": 167,
+          "known_edges": 167,
+          "exact": -50.0,
+          "witness": -50.0,
+          "steps": 291,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 84,
+          "seconds": 0.30362210000748746
+        },
+        {
+          "histories": 84,
+          "legal": 167,
+          "known_edges": 167,
+          "exact": -50.0,
+          "witness": -50.0,
+          "steps": 291,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 84,
+          "seconds": 0.3038145999889821
+        }
+      ]
+    },
+    "dev-05": {
+      "exact": -47.025604248046875,
+      "reference": -47.025604248046875,
+      "search_value": -47.025604248046875,
+      "arms": {
+        "v2": {
+          "adopted": -47.025604248046875,
+          "candidate": -47.025604248046875,
+          "open_reference": false,
+          "closed": 17,
+          "offered": 17,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "low": {
+          "adopted": -47.025604248046875,
+          "candidate": -47.025604248046875,
+          "open_reference": false,
+          "closed": 10,
+          "offered": 10,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "general": {
+          "adopted": -47.025604248046875,
+          "candidate": -47.025604248046875,
+          "open_reference": false,
+          "closed": 10,
+          "offered": 10,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        }
+      },
+      "compression": {
+        "complete_histories": 16,
+        "classes": 9,
+        "class_edges": 19,
+        "response_classes": 17
+      },
+      "flags": [
+        "cost_layer"
+      ],
+      "group": "dev",
+      "root_legal": 4,
+      "summary": {
+        "histories": 16,
+        "legal": 31,
+        "known_edges": 31,
+        "exact": -47.025604248046875,
+        "witness": -47.025604248046875,
+        "steps": 49,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 16,
+        "seconds": 0.06914310000138357
+      },
+      "stops": [],
+      "gap_queries": {},
+      "C": 7,
+      "terminal": 1,
+      "prefix": 12,
+      "peak": 166957056,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 14,
+        "v2_batches": 14
+      },
+      "curve": [
+        {
+          "histories": 16,
+          "legal": 31,
+          "known_edges": 31,
+          "exact": -47.025604248046875,
+          "witness": -47.025604248046875,
+          "steps": 49,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 16,
+          "seconds": 0.06906079998589121
+        },
+        {
+          "histories": 16,
+          "legal": 31,
+          "known_edges": 31,
+          "exact": -47.025604248046875,
+          "witness": -47.025604248046875,
+          "steps": 49,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 16,
+          "seconds": 0.06910309998784214
+        },
+        {
+          "histories": 16,
+          "legal": 31,
+          "known_edges": 31,
+          "exact": -47.025604248046875,
+          "witness": -47.025604248046875,
+          "steps": 49,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 16,
+          "seconds": 0.06914310000138357
+        }
+      ]
+    },
+    "dev-06": {
+      "exact": null,
+      "reference": -29.229761941092352,
+      "search_value": -29.6951904296875,
+      "arms": {
+        "v2": {
+          "adopted": -29.229761941092352,
+          "candidate": -29.229761941092352,
+          "open_reference": false,
+          "closed": 53,
+          "offered": 53,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "low": {
+          "adopted": -29.229761941092352,
+          "candidate": -29.229761941092352,
+          "open_reference": false,
+          "closed": 10,
+          "offered": 10,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "general": {
+          "adopted": -29.229761941092352,
+          "candidate": -29.229761941092352,
+          "open_reference": false,
+          "closed": 13,
+          "offered": 14,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        }
+      },
+      "compression": {
+        "complete_histories": 463,
+        "classes": 279,
+        "class_edges": 415,
+        "response_classes": 413
+      },
+      "flags": [
+        "draw",
+        "multi_enemy"
+      ],
+      "group": "dev",
+      "root_legal": 13,
+      "summary": {
+        "histories": 740,
+        "legal": 3052,
+        "known_edges": 1233,
+        "exact": null,
+        "witness": -29.6951904296875,
+        "steps": 5866,
+        "chances": 373,
+        "choices": 12,
+        "budget": 512,
+        "probes": 512,
+        "seconds": 6.626605400000699
+      },
+      "stops": [
+        "logical_budget",
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "AutoPlayCard/unmodeled_rng": 6
+      },
+      "C": 282,
+      "terminal": 1,
+      "prefix": 7,
+      "peak": 166957056,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 1456,
+        "v2_batches": 377
+      },
+      "curve": [
+        {
+          "histories": 62,
+          "legal": 607,
+          "known_edges": 93,
+          "exact": null,
+          "witness": -40.57084274291992,
+          "steps": 148,
+          "chances": 6,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.29138710000552237
+        },
+        {
+          "histories": 181,
+          "legal": 1473,
+          "known_edges": 305,
+          "exact": null,
+          "witness": -40.57084274291992,
+          "steps": 1291,
+          "chances": 84,
+          "choices": 2,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 1.2878418000182137
+        },
+        {
+          "histories": 740,
+          "legal": 3052,
+          "known_edges": 1233,
+          "exact": null,
+          "witness": -29.6951904296875,
+          "steps": 5866,
+          "chances": 373,
+          "choices": 12,
+          "budget": 512,
+          "probes": 512,
+          "seconds": 6.626605400000699
+        }
+      ]
+    },
+    "dev-07": {
+      "exact": null,
+      "reference": -49.939570744832345,
+      "search_value": -49.93957074483236,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": -49.939570744832345,
+          "open_reference": true,
+          "closed": 12,
+          "offered": 33,
+          "candidate_gap": 0,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 586,
+        "classes": 531,
+        "class_edges": 561,
+        "response_classes": 561
+      },
+      "flags": [
+        "draw",
+        "multi_enemy"
+      ],
+      "group": "dev",
+      "root_legal": 8,
+      "summary": {
+        "histories": 737,
+        "legal": 1311,
+        "known_edges": 887,
+        "exact": null,
+        "witness": -49.939570744832345,
+        "steps": 9110,
+        "chances": 947,
+        "choices": 13,
+        "budget": 512,
+        "probes": 151,
+        "seconds": 12.022435299993958
+      },
+      "stops": [
+        "wall"
+      ],
+      "gap_queries": {},
+      "C": 669,
+      "terminal": 0,
+      "prefix": 8,
+      "peak": 166957056,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 4004,
+        "v2_batches": 151
+      },
+      "curve": [
+        {
+          "histories": 459,
+          "legal": 1001,
+          "known_edges": 490,
+          "exact": null,
+          "witness": -49.96361796061197,
+          "steps": 1223,
+          "chances": 132,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 1.5274854000017513
+        },
+        {
+          "histories": 701,
+          "legal": 1271,
+          "known_edges": 828,
+          "exact": null,
+          "witness": -49.939570744832345,
+          "steps": 7517,
+          "chances": 782,
+          "choices": 12,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 9.874315499997465
+        },
+        {
+          "histories": 737,
+          "legal": 1311,
+          "known_edges": 887,
+          "exact": null,
+          "witness": -49.939570744832345,
+          "steps": 9110,
+          "chances": 947,
+          "choices": 13,
+          "budget": 512,
+          "probes": 151,
+          "seconds": 12.022435299993958
+        }
+      ]
+    },
+    "dev-08": {
+      "exact": null,
+      "reference": -49.90179104275171,
+      "search_value": -49.90179104275171,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": -49.912497626410584,
+          "open_reference": true,
+          "closed": 7,
+          "offered": 25,
+          "candidate_gap": 0.010706583658873114,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 0,
+        "classes": 0,
+        "class_edges": 0,
+        "response_classes": 0
+      },
+      "flags": [
+        "draw"
+      ],
+      "group": "dev",
+      "root_legal": 6,
+      "summary": {
+        "histories": 633,
+        "legal": 4288,
+        "known_edges": 538,
+        "exact": null,
+        "witness": -49.904557122124565,
+        "steps": 8477,
+        "chances": 726,
+        "choices": 0,
+        "budget": 512,
+        "probes": 107,
+        "seconds": 12.19564089999767
+      },
+      "stops": [
+        "wall",
+        "per_program_step_cap",
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "PickRandomLivingEnemySlot/unmodeled_rng": 20,
+        "budget": 3
+      },
+      "C": 444,
+      "terminal": 0,
+      "prefix": 8,
+      "peak": 166957056,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 3750,
+        "v2_batches": 102
+      },
+      "curve": [
+        {
+          "histories": 348,
+          "legal": 2363,
+          "known_edges": 248,
+          "exact": null,
+          "witness": -49.904557122124565,
+          "steps": 1044,
+          "chances": 186,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 1.365237599995453
+        },
+        {
+          "histories": 633,
+          "legal": 4288,
+          "known_edges": 538,
+          "exact": null,
+          "witness": -49.904557122124565,
+          "steps": 8477,
+          "chances": 726,
+          "choices": 0,
+          "budget": 128,
+          "probes": 107,
+          "seconds": 12.195383499987656
+        },
+        {
+          "histories": 633,
+          "legal": 4288,
+          "known_edges": 538,
+          "exact": null,
+          "witness": -49.904557122124565,
+          "steps": 8477,
+          "chances": 726,
+          "choices": 0,
+          "budget": 512,
+          "probes": 107,
+          "seconds": 12.19564089999767
+        }
+      ]
+    },
+    "dev-09": {
+      "exact": null,
+      "reference": null,
+      "search_value": null,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 41,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 0,
+        "classes": 0,
+        "class_edges": 0,
+        "response_classes": 0
+      },
+      "flags": [
+        "multi_enemy"
+      ],
+      "group": "dev",
+      "root_legal": 10,
+      "summary": {
+        "histories": 179,
+        "legal": 428,
+        "known_edges": 0,
+        "exact": null,
+        "witness": null,
+        "steps": 1520,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 428,
+        "seconds": 3.0302377000043634
+      },
+      "stops": [
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "ExecuteCoreCustomCard/unmodeled_rng": 71,
+        "SpawnFabricatorBot/unmodeled_rng": 357
+      },
+      "C": 0,
+      "terminal": 0,
+      "prefix": 4,
+      "peak": 166957056,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 0,
+        "v2_batches": 0
+      },
+      "curve": [
+        {
+          "histories": 22,
+          "legal": 157,
+          "known_edges": 0,
+          "exact": null,
+          "witness": null,
+          "steps": 75,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.1438442000071518
+        },
+        {
+          "histories": 77,
+          "legal": 326,
+          "known_edges": 0,
+          "exact": null,
+          "witness": null,
+          "steps": 383,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 0.6015373000118416
+        },
+        {
+          "histories": 179,
+          "legal": 428,
+          "known_edges": 0,
+          "exact": null,
+          "witness": null,
+          "steps": 1520,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 428,
+          "seconds": 3.0302377000043634
+        }
+      ]
+    },
+    "dev-10": {
+      "exact": null,
+      "reference": -46.55883026123047,
+      "search_value": -46.55883026123047,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": -46.55883026123047,
+          "open_reference": true,
+          "closed": 8,
+          "offered": 25,
+          "candidate_gap": 0,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 0,
+        "classes": 0,
+        "class_edges": 0,
+        "response_classes": 0
+      },
+      "flags": [
+        "draw"
+      ],
+      "group": "dev",
+      "root_legal": 6,
+      "summary": {
+        "histories": 96,
+        "legal": 754,
+        "known_edges": 9,
+        "exact": null,
+        "witness": -46.55883026123047,
+        "steps": 11273,
+        "chances": 3256,
+        "choices": 0,
+        "budget": 512,
+        "probes": 93,
+        "seconds": 12.011179399996763
+      },
+      "stops": [
+        "wall",
+        "per_program_step_cap"
+      ],
+      "gap_queries": {
+        "budget": 88
+      },
+      "C": 5,
+      "terminal": 0,
+      "prefix": 7,
+      "peak": 169074688,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 5,
+        "v2_batches": 5
+      },
+      "curve": [
+        {
+          "histories": 96,
+          "legal": 754,
+          "known_edges": 9,
+          "exact": null,
+          "witness": -46.55883026123047,
+          "steps": 3465,
+          "chances": 999,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 5.003780500002904
+        },
+        {
+          "histories": 96,
+          "legal": 754,
+          "known_edges": 9,
+          "exact": null,
+          "witness": -46.55883026123047,
+          "steps": 11273,
+          "chances": 3256,
+          "choices": 0,
+          "budget": 128,
+          "probes": 93,
+          "seconds": 12.011136799992528
+        },
+        {
+          "histories": 96,
+          "legal": 754,
+          "known_edges": 9,
+          "exact": null,
+          "witness": -46.55883026123047,
+          "steps": 11273,
+          "chances": 3256,
+          "choices": 0,
+          "budget": 512,
+          "probes": 93,
+          "seconds": 12.011179399996763
+        }
+      ]
+    },
+    "dev-11": {
+      "exact": null,
+      "reference": 58.27054977416992,
+      "search_value": 21.404617309570312,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": 58.27054977416992,
+          "open_reference": true,
+          "closed": 25,
+          "offered": 41,
+          "candidate_gap": 0,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 0,
+        "classes": 0,
+        "class_edges": 0,
+        "response_classes": 0
+      },
+      "flags": [
+        "X",
+        "multi_enemy"
+      ],
+      "group": "dev",
+      "root_legal": 10,
+      "summary": {
+        "histories": 762,
+        "legal": 1446,
+        "known_edges": 111,
+        "exact": null,
+        "witness": 21.404617309570312,
+        "steps": 24429,
+        "chances": 8213,
+        "choices": 3131,
+        "budget": 512,
+        "probes": 265,
+        "seconds": 12.061528499994893
+      },
+      "stops": [
+        "wall",
+        "per_program_step_cap",
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "HandleAfterAutoPostPlayPower/unmodeled_rng": 81,
+        "AutoPlayCard/unmodeled_rng": 189,
+        "budget": 189
+      },
+      "C": 34,
+      "terminal": 0,
+      "prefix": 5,
+      "peak": 169074688,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 464,
+        "v2_batches": 97
+      },
+      "curve": [
+        {
+          "histories": 122,
+          "legal": 332,
+          "known_edges": 27,
+          "exact": null,
+          "witness": 19.418235778808594,
+          "steps": 1085,
+          "chances": 340,
+          "choices": 201,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.5170674999826588
+        },
+        {
+          "histories": 170,
+          "legal": 455,
+          "known_edges": 45,
+          "exact": null,
+          "witness": 21.404617309570312,
+          "steps": 11873,
+          "chances": 3610,
+          "choices": 2817,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 4.8710369000036735
+        },
+        {
+          "histories": 762,
+          "legal": 1446,
+          "known_edges": 111,
+          "exact": null,
+          "witness": 21.404617309570312,
+          "steps": 24429,
+          "chances": 8213,
+          "choices": 3131,
+          "budget": 512,
+          "probes": 265,
+          "seconds": 12.061528499994893
+        }
+      ]
+    },
+    "dev-12": {
+      "exact": null,
+      "reference": 80.49402618408203,
+      "search_value": 80.49402618408203,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": 80.49402618408203,
+          "open_reference": true,
+          "closed": 15,
+          "offered": 25,
+          "candidate_gap": 0,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 4,
+        "classes": 4,
+        "class_edges": 4,
+        "response_classes": 4
+      },
+      "flags": [],
+      "group": "dev",
+      "root_legal": 6,
+      "summary": {
+        "histories": 7,
+        "legal": 16,
+        "known_edges": 13,
+        "exact": null,
+        "witness": 80.49402618408203,
+        "steps": 20,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 10,
+        "seconds": 0.03225190000375733
+      },
+      "stops": [
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "ExecuteCoreCustomCard/unmodeled_rng": 3
+      },
+      "C": 7,
+      "terminal": 0,
+      "prefix": 8,
+      "peak": 169074688,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 7,
+        "v2_batches": 7
+      },
+      "curve": [
+        {
+          "histories": 7,
+          "legal": 16,
+          "known_edges": 13,
+          "exact": null,
+          "witness": 80.49402618408203,
+          "steps": 20,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 10,
+          "seconds": 0.032222699985140935
+        },
+        {
+          "histories": 7,
+          "legal": 16,
+          "known_edges": 13,
+          "exact": null,
+          "witness": 80.49402618408203,
+          "steps": 20,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 10,
+          "seconds": 0.03223849998903461
+        },
+        {
+          "histories": 7,
+          "legal": 16,
+          "known_edges": 13,
+          "exact": null,
+          "witness": 80.49402618408203,
+          "steps": 20,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 10,
+          "seconds": 0.03225190000375733
+        }
+      ]
+    },
+    "dev-13": {
+      "exact": null,
+      "reference": null,
+      "search_value": null,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 25,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 0,
+        "classes": 0,
+        "class_edges": 0,
+        "response_classes": 0
+      },
+      "flags": [
+        "X"
+      ],
+      "group": "dev",
+      "root_legal": 6,
+      "summary": {
+        "histories": 16,
+        "legal": 35,
+        "known_edges": 0,
+        "exact": null,
+        "witness": null,
+        "steps": 98,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 35,
+        "seconds": 0.2253850999986753
+      },
+      "stops": [
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "AddGeneratedCardInstance/unmodeled_rng": 31,
+        "GenerateRandomFromPoolWithReplacement/unmodeled_rng": 4
+      },
+      "C": 0,
+      "terminal": 0,
+      "prefix": 0,
+      "peak": 171810816,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 0,
+        "v2_batches": 0
+      },
+      "curve": [
+        {
+          "histories": 16,
+          "legal": 35,
+          "known_edges": 0,
+          "exact": null,
+          "witness": null,
+          "steps": 86,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.20465639999019913
+        },
+        {
+          "histories": 16,
+          "legal": 35,
+          "known_edges": 0,
+          "exact": null,
+          "witness": null,
+          "steps": 98,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 35,
+          "seconds": 0.22537369999918155
+        },
+        {
+          "histories": 16,
+          "legal": 35,
+          "known_edges": 0,
+          "exact": null,
+          "witness": null,
+          "steps": 98,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 35,
+          "seconds": 0.2253850999986753
+        }
+      ]
+    },
+    "dev-14": {
+      "exact": -31.621562957763672,
+      "reference": -31.621562957763672,
+      "search_value": -31.621562957763672,
+      "arms": {
+        "v2": {
+          "adopted": -34.850059509277344,
+          "candidate": -34.850059509277344,
+          "open_reference": false,
+          "closed": 25,
+          "offered": 25,
+          "candidate_gap": 3.228496551513672,
+          "adopted_gap": 3.228496551513672
+        },
+        "low": {
+          "adopted": -34.850059509277344,
+          "candidate": -34.850059509277344,
+          "open_reference": false,
+          "closed": 10,
+          "offered": 10,
+          "candidate_gap": 3.228496551513672,
+          "adopted_gap": 3.228496551513672
+        },
+        "general": {
+          "adopted": -34.850059509277344,
+          "candidate": -34.850059509277344,
+          "open_reference": false,
+          "closed": 11,
+          "offered": 11,
+          "candidate_gap": 3.228496551513672,
+          "adopted_gap": 3.228496551513672
+        }
+      },
+      "compression": {
+        "complete_histories": 35,
+        "classes": 31,
+        "class_edges": 63,
+        "response_classes": 62
+      },
+      "flags": [],
+      "group": "dev",
+      "root_legal": 6,
+      "summary": {
+        "histories": 35,
+        "legal": 67,
+        "known_edges": 67,
+        "exact": -31.621562957763672,
+        "witness": -31.621562957763672,
+        "steps": 112,
+        "chances": 2,
+        "choices": 0,
+        "budget": 512,
+        "probes": 33,
+        "seconds": 0.12998960001277737
+      },
+      "stops": [],
+      "gap_queries": {},
+      "C": 31,
+      "terminal": 0,
+      "prefix": 11,
+      "peak": 172036096,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 35,
+        "v2_batches": 33
+      },
+      "curve": [
+        {
+          "histories": 34,
+          "legal": 66,
+          "known_edges": 65,
+          "exact": null,
+          "witness": -31.621562957763672,
+          "steps": 108,
+          "chances": 2,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.12544810000690632
+        },
+        {
+          "histories": 35,
+          "legal": 67,
+          "known_edges": 67,
+          "exact": -31.621562957763672,
+          "witness": -31.621562957763672,
+          "steps": 112,
+          "chances": 2,
+          "choices": 0,
+          "budget": 128,
+          "probes": 33,
+          "seconds": 0.12990639999043196
+        },
+        {
+          "histories": 35,
+          "legal": 67,
+          "known_edges": 67,
+          "exact": -31.621562957763672,
+          "witness": -31.621562957763672,
+          "steps": 112,
+          "chances": 2,
+          "choices": 0,
+          "budget": 512,
+          "probes": 33,
+          "seconds": 0.12998960001277737
+        }
+      ]
+    },
+    "dev-15": {
+      "exact": null,
+      "reference": 46.095409279709884,
+      "search_value": 46.095409279709884,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": 46.095409279709884,
+          "open_reference": true,
+          "closed": 9,
+          "offered": 29,
+          "candidate_gap": 0,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 0,
+        "classes": 0,
+        "class_edges": 0,
+        "response_classes": 0
+      },
+      "flags": [
+        "X",
+        "draw",
+        "multi_enemy"
+      ],
+      "group": "dev",
+      "root_legal": 7,
+      "summary": {
+        "histories": 164,
+        "legal": 1469,
+        "known_edges": 11,
+        "exact": null,
+        "witness": 46.095409279709884,
+        "steps": 9367,
+        "chances": 1200,
+        "choices": 0,
+        "budget": 512,
+        "probes": 79,
+        "seconds": 12.289524099993287
+      },
+      "stops": [
+        "wall",
+        "per_program_step_cap"
+      ],
+      "gap_queries": {
+        "budget": 73
+      },
+      "C": 12,
+      "terminal": 0,
+      "prefix": 13,
+      "peak": 177831936,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 12,
+        "v2_batches": 6
+      },
+      "curve": [
+        {
+          "histories": 140,
+          "legal": 1292,
+          "known_edges": 11,
+          "exact": null,
+          "witness": 46.095409279709884,
+          "steps": 3351,
+          "chances": 425,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 4.080334300000686
+        },
+        {
+          "histories": 164,
+          "legal": 1469,
+          "known_edges": 11,
+          "exact": null,
+          "witness": 46.095409279709884,
+          "steps": 9367,
+          "chances": 1200,
+          "choices": 0,
+          "budget": 128,
+          "probes": 79,
+          "seconds": 12.28926649998175
+        },
+        {
+          "histories": 164,
+          "legal": 1469,
+          "known_edges": 11,
+          "exact": null,
+          "witness": 46.095409279709884,
+          "steps": 9367,
+          "chances": 1200,
+          "choices": 0,
+          "budget": 512,
+          "probes": 79,
+          "seconds": 12.289524099993287
+        }
+      ]
+    },
+    "dev-16": {
+      "exact": null,
+      "reference": -49.9669189453125,
+      "search_value": -49.9669189453125,
+      "arms": {
+        "v2": {
+          "adopted": -49.9669189453125,
+          "candidate": -49.9669189453125,
+          "open_reference": false,
+          "closed": 20,
+          "offered": 25,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "low": {
+          "adopted": -49.9669189453125,
+          "candidate": -49.9669189453125,
+          "open_reference": false,
+          "closed": 10,
+          "offered": 10,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "general": {
+          "adopted": -49.9669189453125,
+          "candidate": -49.9669189453125,
+          "open_reference": false,
+          "closed": 10,
+          "offered": 11,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        }
+      },
+      "compression": {
+        "complete_histories": 9,
+        "classes": 9,
+        "class_edges": 9,
+        "response_classes": 9
+      },
+      "flags": [
+        "draw"
+      ],
+      "group": "dev",
+      "root_legal": 6,
+      "summary": {
+        "histories": 374,
+        "legal": 1442,
+        "known_edges": 39,
+        "exact": null,
+        "witness": -49.9669189453125,
+        "steps": 34233,
+        "chances": 27501,
+        "choices": 267,
+        "budget": 512,
+        "probes": 287,
+        "seconds": 12.00073609998799
+      },
+      "stops": [
+        "wall",
+        "per_program_step_cap"
+      ],
+      "gap_queries": {
+        "budget": 267
+      },
+      "C": 7,
+      "terminal": 1,
+      "prefix": 26,
+      "peak": 177831936,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 7,
+        "v2_batches": 7
+      },
+      "curve": [
+        {
+          "histories": 183,
+          "legal": 881,
+          "known_edges": 27,
+          "exact": null,
+          "witness": -49.9669189453125,
+          "steps": 2340,
+          "chances": 1854,
+          "choices": 18,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.9453030999866314
+        },
+        {
+          "histories": 183,
+          "legal": 881,
+          "known_edges": 27,
+          "exact": null,
+          "witness": -49.9669189453125,
+          "steps": 14628,
+          "chances": 11742,
+          "choices": 114,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 4.8593014999933075
+        },
+        {
+          "histories": 374,
+          "legal": 1442,
+          "known_edges": 39,
+          "exact": null,
+          "witness": -49.9669189453125,
+          "steps": 34233,
+          "chances": 27501,
+          "choices": 267,
+          "budget": 512,
+          "probes": 287,
+          "seconds": 12.00073609998799
+        }
+      ]
+    },
+    "dev-17": {
+      "exact": -49.91771507370777,
+      "reference": -49.91771507370777,
+      "search_value": -49.91771507370777,
+      "arms": {
+        "v2": {
+          "adopted": -49.91771507370777,
+          "candidate": -49.91771507370777,
+          "open_reference": false,
+          "closed": 33,
+          "offered": 33,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "low": {
+          "adopted": -49.91772747147343,
+          "candidate": -49.91772747147343,
+          "open_reference": false,
+          "closed": 10,
+          "offered": 10,
+          "candidate_gap": 1.2397765658533899e-05,
+          "adopted_gap": 1.2397765658533899e-05
+        },
+        "general": {
+          "adopted": -49.91772747147343,
+          "candidate": -49.91772747147343,
+          "open_reference": false,
+          "closed": 13,
+          "offered": 13,
+          "candidate_gap": 1.2397765658533899e-05,
+          "adopted_gap": 1.2397765658533899e-05
+        }
+      },
+      "compression": {
+        "complete_histories": 174,
+        "classes": 148,
+        "class_edges": 302,
+        "response_classes": 302
+      },
+      "flags": [
+        "multi_enemy"
+      ],
+      "group": "dev",
+      "root_legal": 8,
+      "summary": {
+        "histories": 174,
+        "legal": 340,
+        "known_edges": 340,
+        "exact": -49.91771507370777,
+        "witness": -49.91771507370777,
+        "steps": 1698,
+        "chances": 501,
+        "choices": 104,
+        "budget": 512,
+        "probes": 167,
+        "seconds": 2.39205920000677
+      },
+      "stops": [],
+      "gap_queries": {},
+      "C": 504,
+      "terminal": 0,
+      "prefix": 4,
+      "peak": 177831936,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 668,
+        "v2_batches": 167
+      },
+      "curve": [
+        {
+          "histories": 37,
+          "legal": 142,
+          "known_edges": 68,
+          "exact": null,
+          "witness": -49.91772747147343,
+          "steps": 290,
+          "chances": 96,
+          "choices": 13,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.418491799995536
+        },
+        {
+          "histories": 135,
+          "legal": 301,
+          "known_edges": 262,
+          "exact": null,
+          "witness": -49.91771507370777,
+          "steps": 1269,
+          "chances": 384,
+          "choices": 65,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 1.8533409999799915
+        },
+        {
+          "histories": 174,
+          "legal": 340,
+          "known_edges": 340,
+          "exact": -49.91771507370777,
+          "witness": -49.91771507370777,
+          "steps": 1698,
+          "chances": 501,
+          "choices": 104,
+          "budget": 512,
+          "probes": 167,
+          "seconds": 2.39205920000677
+        }
+      ]
+    },
+    "dev-18": {
+      "exact": null,
+      "reference": null,
+      "search_value": null,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 21,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 0,
+        "classes": 0,
+        "class_edges": 0,
+        "response_classes": 0
+      },
+      "flags": [
+        "multi_enemy"
+      ],
+      "group": "dev",
+      "root_legal": 5,
+      "summary": {
+        "histories": 21,
+        "legal": 41,
+        "known_edges": 0,
+        "exact": null,
+        "witness": null,
+        "steps": 129,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 41,
+        "seconds": 0.12587099999655038
+      },
+      "stops": [
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "SpawnFabricatorBot/unmodeled_rng": 41
+      },
+      "C": 0,
+      "terminal": 0,
+      "prefix": 20,
+      "peak": 177831936,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 0,
+        "v2_batches": 0
+      },
+      "curve": [
+        {
+          "histories": 21,
+          "legal": 41,
+          "known_edges": 0,
+          "exact": null,
+          "witness": null,
+          "steps": 94,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.09581410000100732
+        },
+        {
+          "histories": 21,
+          "legal": 41,
+          "known_edges": 0,
+          "exact": null,
+          "witness": null,
+          "steps": 129,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 41,
+          "seconds": 0.1258580000139773
+        },
+        {
+          "histories": 21,
+          "legal": 41,
+          "known_edges": 0,
+          "exact": null,
+          "witness": null,
+          "steps": 129,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 41,
+          "seconds": 0.12587099999655038
+        }
+      ]
+    },
+    "dev-19": {
+      "exact": -49.58689880371094,
+      "reference": -49.58689880371094,
+      "search_value": -49.58689880371094,
+      "arms": {
+        "v2": {
+          "adopted": -49.587730407714844,
+          "candidate": -49.587730407714844,
+          "open_reference": false,
+          "closed": 49,
+          "offered": 49,
+          "candidate_gap": 0.00083160400390625,
+          "adopted_gap": 0.00083160400390625
+        },
+        "low": {
+          "adopted": -49.58773422241211,
+          "candidate": -49.58773422241211,
+          "open_reference": false,
+          "closed": 10,
+          "offered": 10,
+          "candidate_gap": 0.000835418701171875,
+          "adopted_gap": 0.000835418701171875
+        },
+        "general": {
+          "adopted": -49.58689880371094,
+          "candidate": -49.58689880371094,
+          "open_reference": false,
+          "closed": 16,
+          "offered": 16,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        }
+      },
+      "compression": {
+        "complete_histories": 490,
+        "classes": 184,
+        "class_edges": 409,
+        "response_classes": 394
+      },
+      "flags": [
+        "X",
+        "multi_enemy"
+      ],
+      "group": "dev",
+      "root_legal": 12,
+      "summary": {
+        "histories": 490,
+        "legal": 979,
+        "known_edges": 979,
+        "exact": -49.58689880371094,
+        "witness": -49.58689880371094,
+        "steps": 2015,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 490,
+        "seconds": 3.8901091000007
+      },
+      "stops": [],
+      "gap_queries": {},
+      "C": 181,
+      "terminal": 0,
+      "prefix": 16,
+      "peak": 177831936,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 490,
+        "v2_batches": 490
+      },
+      "curve": [
+        {
+          "histories": 32,
+          "legal": 160,
+          "known_edges": 63,
+          "exact": null,
+          "witness": -49.587730407714844,
+          "steps": 83,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.18925620001391508
+        },
+        {
+          "histories": 128,
+          "legal": 473,
+          "known_edges": 255,
+          "exact": null,
+          "witness": -49.587730407714844,
+          "steps": 405,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 0.799279300001217
+        },
+        {
+          "histories": 490,
+          "legal": 979,
+          "known_edges": 979,
+          "exact": -49.58689880371094,
+          "witness": -49.58689880371094,
+          "steps": 2015,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 490,
+          "seconds": 3.8901091000007
+        }
+      ]
+    },
+    "dev-20": {
+      "exact": null,
+      "reference": 73.37191009521484,
+      "search_value": 73.37191009521484,
+      "arms": {
+        "v2": {
+          "adopted": 73.37191009521484,
+          "candidate": 73.37191009521484,
+          "open_reference": false,
+          "closed": 15,
+          "offered": 25,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "low": {
+          "adopted": 73.37191009521484,
+          "candidate": 73.37191009521484,
+          "open_reference": false,
+          "closed": 9,
+          "offered": 10,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        },
+        "general": {
+          "adopted": 73.37191009521484,
+          "candidate": 73.37191009521484,
+          "open_reference": false,
+          "closed": 9,
+          "offered": 11,
+          "candidate_gap": 0,
+          "adopted_gap": 0
+        }
+      },
+      "compression": {
+        "complete_histories": 9,
+        "classes": 9,
+        "class_edges": 9,
+        "response_classes": 9
+      },
+      "flags": [
+        "draw",
+        "energy"
+      ],
+      "group": "dev",
+      "root_legal": 6,
+      "summary": {
+        "histories": 855,
+        "legal": 3741,
+        "known_edges": 380,
+        "exact": null,
+        "witness": 73.37191009521484,
+        "steps": 13313,
+        "chances": 1344,
+        "choices": 122,
+        "budget": 512,
+        "probes": 134,
+        "seconds": 12.015312600007746
+      },
+      "stops": [
+        "wall",
+        "per_program_step_cap"
+      ],
+      "gap_queries": {
+        "budget": 34
+      },
+      "C": 254,
+      "terminal": 0,
+      "prefix": 10,
+      "peak": 177831936,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 5546,
+        "v2_batches": 133
+      },
+      "curve": [
+        {
+          "histories": 369,
+          "legal": 1678,
+          "known_edges": 228,
+          "exact": null,
+          "witness": 73.37191009521484,
+          "steps": 2816,
+          "chances": 312,
+          "choices": 25,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 2.247443000000203
+        },
+        {
+          "histories": 829,
+          "legal": 3643,
+          "known_edges": 370,
+          "exact": null,
+          "witness": 73.37191009521484,
+          "steps": 12717,
+          "chances": 1284,
+          "choices": 120,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 11.485371100017801
+        },
+        {
+          "histories": 855,
+          "legal": 3741,
+          "known_edges": 380,
+          "exact": null,
+          "witness": 73.37191009521484,
+          "steps": 13313,
+          "chances": 1344,
+          "choices": 122,
+          "budget": 512,
+          "probes": 134,
+          "seconds": 12.015312600007746
+        }
+      ]
+    },
+    "dev-21": {
+      "exact": null,
+      "reference": 100.0,
+      "search_value": 100.0,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": 81.92884063720703,
+          "open_reference": true,
+          "closed": 24,
+          "offered": 29,
+          "candidate_gap": 18.07115936279297,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 12,
+        "classes": 12,
+        "class_edges": 12,
+        "response_classes": 12
+      },
+      "flags": [
+        "multi_enemy"
+      ],
+      "group": "dev",
+      "root_legal": 7,
+      "summary": {
+        "histories": 871,
+        "legal": 1945,
+        "known_edges": 66,
+        "exact": null,
+        "witness": 100.0,
+        "steps": 15020,
+        "chances": 1116,
+        "choices": 12,
+        "budget": 512,
+        "probes": 512,
+        "seconds": 11.226706300018122
+      },
+      "stops": [
+        "logical_budget",
+        "per_program_step_cap",
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "AutoPlayCard/unmodeled_rng": 476,
+        "budget": 1
+      },
+      "C": 20,
+      "terminal": 1,
+      "prefix": 7,
+      "peak": 177831936,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 5067,
+        "v2_batches": 507
+      },
+      "curve": [
+        {
+          "histories": 84,
+          "legal": 400,
+          "known_edges": 38,
+          "exact": null,
+          "witness": 100.0,
+          "steps": 398,
+          "chances": 24,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.29818020001403056
+        },
+        {
+          "histories": 276,
+          "legal": 1338,
+          "known_edges": 45,
+          "exact": null,
+          "witness": 100.0,
+          "steps": 3280,
+          "chances": 224,
+          "choices": 0,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 2.4325620000017807
+        },
+        {
+          "histories": 871,
+          "legal": 1945,
+          "known_edges": 66,
+          "exact": null,
+          "witness": 100.0,
+          "steps": 15020,
+          "chances": 1116,
+          "choices": 12,
+          "budget": 512,
+          "probes": 512,
+          "seconds": 11.226706300018122
+        }
+      ]
+    },
+    "dev-22": {
+      "exact": null,
+      "reference": -49.61907196044922,
+      "search_value": -49.61907196044922,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": -49.61907196044922,
+          "open_reference": true,
+          "closed": 13,
+          "offered": 37,
+          "candidate_gap": 0,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 12,
+        "classes": 12,
+        "class_edges": 12,
+        "response_classes": 12
+      },
+      "flags": [
+        "multi_enemy"
+      ],
+      "group": "dev",
+      "root_legal": 9,
+      "summary": {
+        "histories": 22,
+        "legal": 61,
+        "known_edges": 43,
+        "exact": null,
+        "witness": -49.61907196044922,
+        "steps": 96,
+        "chances": 0,
+        "choices": 0,
+        "budget": 512,
+        "probes": 40,
+        "seconds": 0.12071990000549704
+      },
+      "stops": [
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "ExecuteCoreCustomCard/unmodeled_rng": 8,
+        "PickRandomLivingEnemySlot/unmodeled_rng": 10
+      },
+      "C": 22,
+      "terminal": 0,
+      "prefix": 0,
+      "peak": 177831936,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 22,
+        "v2_batches": 22
+      },
+      "curve": [
+        {
+          "histories": 19,
+          "legal": 58,
+          "known_edges": 37,
+          "exact": null,
+          "witness": -49.61907196044922,
+          "steps": 73,
+          "chances": 0,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.09023239999078214
+        },
+        {
+          "histories": 22,
+          "legal": 61,
+          "known_edges": 43,
+          "exact": null,
+          "witness": -49.61907196044922,
+          "steps": 96,
+          "chances": 0,
+          "choices": 0,
+          "budget": 128,
+          "probes": 40,
+          "seconds": 0.12068369999178685
+        },
+        {
+          "histories": 22,
+          "legal": 61,
+          "known_edges": 43,
+          "exact": null,
+          "witness": -49.61907196044922,
+          "steps": 96,
+          "chances": 0,
+          "choices": 0,
+          "budget": 512,
+          "probes": 40,
+          "seconds": 0.12071990000549704
+        }
+      ]
+    },
+    "dev-23": {
+      "exact": null,
+      "reference": -45.36600875854492,
+      "search_value": -46.42317581176758,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": -45.36600875854492,
+          "open_reference": true,
+          "closed": 35,
+          "offered": 49,
+          "candidate_gap": 0,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 0,
+        "classes": 0,
+        "class_edges": 0,
+        "response_classes": 0
+      },
+      "flags": [
+        "multi_enemy"
+      ],
+      "group": "dev",
+      "root_legal": 12,
+      "summary": {
+        "histories": 360,
+        "legal": 4417,
+        "known_edges": 105,
+        "exact": null,
+        "witness": -46.42317581176758,
+        "steps": 10754,
+        "chances": 1379,
+        "choices": 0,
+        "budget": 512,
+        "probes": 250,
+        "seconds": 12.047708900005091
+      },
+      "stops": [
+        "wall",
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "AutoPlayCard/unmodeled_rng": 197,
+        "ExecuteCoreCustomCard/unmodeled_rng": 18
+      },
+      "C": 47,
+      "terminal": 0,
+      "prefix": 8,
+      "peak": 177831936,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 4172,
+        "v2_batches": 250
+      },
+      "curve": [
+        {
+          "histories": 112,
+          "legal": 1361,
+          "known_edges": 55,
+          "exact": null,
+          "witness": -46.42317581176758,
+          "steps": 287,
+          "chances": 28,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.28682520001893863
+        },
+        {
+          "histories": 255,
+          "legal": 3033,
+          "known_edges": 105,
+          "exact": null,
+          "witness": -46.42317581176758,
+          "steps": 4183,
+          "chances": 525,
+          "choices": 0,
+          "budget": 128,
+          "probes": 128,
+          "seconds": 4.670929200015962
+        },
+        {
+          "histories": 360,
+          "legal": 4417,
+          "known_edges": 105,
+          "exact": null,
+          "witness": -46.42317581176758,
+          "steps": 10754,
+          "chances": 1379,
+          "choices": 0,
+          "budget": 512,
+          "probes": 250,
+          "seconds": 12.047708900005091
+        }
+      ]
+    },
+    "dev-24": {
+      "exact": null,
+      "reference": 54.474311849540754,
+      "search_value": 54.474311849540754,
+      "arms": {
+        "v2": {
+          "adopted": null,
+          "candidate": 51.34973719221682,
+          "open_reference": true,
+          "closed": 10,
+          "offered": 25,
+          "candidate_gap": 3.124574657323933,
+          "adopted_gap": null
+        },
+        "low": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        },
+        "general": {
+          "adopted": null,
+          "candidate": null,
+          "open_reference": true,
+          "closed": 0,
+          "offered": 1,
+          "candidate_gap": null,
+          "adopted_gap": null
+        }
+      },
+      "compression": {
+        "complete_histories": 24,
+        "classes": 12,
+        "class_edges": 12,
+        "response_classes": 12
+      },
+      "flags": [],
+      "group": "dev",
+      "root_legal": 6,
+      "summary": {
+        "histories": 41,
+        "legal": 98,
+        "known_edges": 81,
+        "exact": null,
+        "witness": 54.474311849540754,
+        "steps": 268,
+        "chances": 41,
+        "choices": 0,
+        "budget": 512,
+        "probes": 58,
+        "seconds": 0.3614225999917835
+      },
+      "stops": [
+        "unmodeled_rng"
+      ],
+      "gap_queries": {
+        "PickRandomLivingEnemySlot/unmodeled_rng": 17
+      },
+      "C": 56,
+      "terminal": 0,
+      "prefix": 26,
+      "peak": 177831936,
+      "model": {
+        "g2_rows": 0,
+        "v2_rows": 82,
+        "v2_batches": 41
+      },
+      "curve": [
+        {
+          "histories": 23,
+          "legal": 80,
+          "known_edges": 45,
+          "exact": null,
+          "witness": 53.45993808050116,
+          "steps": 136,
+          "chances": 23,
+          "choices": 0,
+          "budget": 32,
+          "probes": 32,
+          "seconds": 0.23716409999178723
+        },
+        {
+          "histories": 41,
+          "legal": 98,
+          "known_edges": 81,
+          "exact": null,
+          "witness": 54.474311849540754,
+          "steps": 268,
+          "chances": 41,
+          "choices": 0,
+          "budget": 128,
+          "probes": 58,
+          "seconds": 0.36135880000074394
+        },
+        {
+          "histories": 41,
+          "legal": 98,
+          "known_edges": 81,
+          "exact": null,
+          "witness": 54.474311849540754,
+          "steps": 268,
+          "chances": 41,
+          "choices": 0,
+          "budget": 512,
+          "probes": 58,
+          "seconds": 0.3614225999917835
+        }
+      ]
+    }
+  },
+  "groups": {
+    "all": {
+      "roots": 64,
+      "exact": 23,
+      "histories": {
+        "n": 64,
+        "min": 7,
+        "median": 188.5,
+        "mean": 353.4375,
+        "max": 2646,
+        "positive": 64
+      },
+      "legal": {
+        "n": 64,
+        "min": 16,
+        "median": 512.0,
+        "mean": 1516.421875,
+        "max": 19723,
+        "positive": 64
+      },
+      "steps": {
+        "n": 64,
+        "min": 20,
+        "median": 1970.0,
+        "mean": 5319.75,
+        "max": 34233,
+        "positive": 64
+      },
+      "seconds": {
+        "n": 64,
+        "min": 0.03225190000375733,
+        "median": 2.8258744000049774,
+        "mean": 4.9253999765614935,
+        "max": 12.289524099993287,
+        "positive": 64
+      },
+      "menu": {
+        "n": 64,
+        "min": 4,
+        "median": 8.0,
+        "mean": 8.09375,
+        "max": 18,
+        "positive": 64
+      }
+    },
+    "draw": {
+      "roots": 25,
+      "exact": 3,
+      "histories": {
+        "n": 25,
+        "min": 22,
+        "median": 393,
+        "mean": 580.36,
+        "max": 2646,
+        "positive": 25
+      },
+      "legal": {
+        "n": 25,
+        "min": 73,
+        "median": 1336,
+        "mean": 2732.16,
+        "max": 19723,
+        "positive": 25
+      },
+      "steps": {
+        "n": 25,
+        "min": 291,
+        "median": 9367,
+        "mean": 9215.44,
+        "max": 34233,
+        "positive": 25
+      },
+      "seconds": {
+        "n": 25,
+        "min": 0.2553087999986019,
+        "median": 12.00694730001851,
+        "mean": 8.478740247999085,
+        "max": 12.289524099993287,
+        "positive": 25
+      },
+      "menu": {
+        "n": 25,
+        "min": 6,
+        "median": 8,
+        "mean": 8.48,
+        "max": 14,
+        "positive": 25
+      }
+    },
+    "multi_enemy": {
+      "roots": 39,
+      "exact": 10,
+      "histories": {
+        "n": 39,
+        "min": 17,
+        "median": 360,
+        "mean": 425.79487179487177,
+        "max": 2646,
+        "positive": 39
+      },
+      "legal": {
+        "n": 39,
+        "min": 33,
+        "median": 809,
+        "mean": 1885.3076923076924,
+        "max": 19723,
+        "positive": 39
+      },
+      "steps": {
+        "n": 39,
+        "min": 87,
+        "median": 2663,
+        "mean": 5706.538461538462,
+        "max": 24429,
+        "positive": 39
+      },
+      "seconds": {
+        "n": 39,
+        "min": 0.12071990000549704,
+        "median": 3.629351699986728,
+        "mean": 5.5786022948711596,
+        "max": 12.289524099993287,
+        "positive": 39
+      },
+      "menu": {
+        "n": 39,
+        "min": 5,
+        "median": 9,
+        "mean": 9.512820512820513,
+        "max": 18,
+        "positive": 39
+      }
+    },
+    "energy": {
+      "roots": 14,
+      "exact": 5,
+      "histories": {
+        "n": 14,
+        "min": 18,
+        "median": 247.0,
+        "mean": 458.42857142857144,
+        "max": 2646,
+        "positive": 14
+      },
+      "legal": {
+        "n": 14,
+        "min": 35,
+        "median": 611.0,
+        "mean": 2446.9285714285716,
+        "max": 19723,
+        "positive": 14
+      },
+      "steps": {
+        "n": 14,
+        "min": 53,
+        "median": 2376.5,
+        "mean": 4743.214285714285,
+        "max": 13313,
+        "positive": 14
+      },
+      "seconds": {
+        "n": 14,
+        "min": 0.05877530001453124,
+        "median": 2.576777249996667,
+        "mean": 4.711191628575242,
+        "max": 12.058379399997648,
+        "positive": 14
+      },
+      "menu": {
+        "n": 14,
+        "min": 5,
+        "median": 7.5,
+        "mean": 7.5,
+        "max": 12,
+        "positive": 14
+      }
+    },
+    "X": {
+      "roots": 8,
+      "exact": 3,
+      "histories": {
+        "n": 8,
+        "min": 16,
+        "median": 205.0,
+        "mean": 565.875,
+        "max": 2646,
+        "positive": 8
+      },
+      "legal": {
+        "n": 8,
+        "min": 35,
+        "median": 690.0,
+        "mean": 3068.375,
+        "max": 19723,
+        "positive": 8
+      },
+      "steps": {
+        "n": 8,
+        "min": 98,
+        "median": 1469.0,
+        "mean": 5830.75,
+        "max": 24429,
+        "positive": 8
+      },
+      "seconds": {
+        "n": 8,
+        "min": 0.2253850999986753,
+        "median": 2.748114899994107,
+        "mean": 5.496575099994516,
+        "max": 12.289524099993287,
+        "positive": 8
+      },
+      "menu": {
+        "n": 8,
+        "min": 6,
+        "median": 9.0,
+        "mean": 8.875,
+        "max": 12,
+        "positive": 8
+      }
+    },
+    "cost_layer": {
+      "roots": 2,
+      "exact": 1,
+      "histories": {
+        "n": 2,
+        "min": 16,
+        "median": 151.0,
+        "mean": 151,
+        "max": 286,
+        "positive": 2
+      },
+      "legal": {
+        "n": 2,
+        "min": 31,
+        "median": 623.0,
+        "mean": 623,
+        "max": 1215,
+        "positive": 2
+      },
+      "steps": {
+        "n": 2,
+        "min": 49,
+        "median": 845.0,
+        "mean": 845,
+        "max": 1641,
+        "positive": 2
+      },
+      "seconds": {
+        "n": 2,
+        "min": 0.06914310000138357,
+        "median": 1.8759899500000756,
+        "mean": 1.8759899500000756,
+        "max": 3.6828367999987677,
+        "positive": 2
+      },
+      "menu": {
+        "n": 2,
+        "min": 4,
+        "median": 11.0,
+        "mean": 11,
+        "max": 18,
+        "positive": 2
+      }
+    },
+    "none": {
+      "roots": 10,
+      "exact": 7,
+      "histories": {
+        "n": 10,
+        "min": 7,
+        "median": 38.5,
+        "mean": 42.8,
+        "max": 92,
+        "positive": 10
+      },
+      "legal": {
+        "n": 10,
+        "min": 16,
+        "median": 89.5,
+        "mean": 89.1,
+        "max": 183,
+        "positive": 10
+      },
+      "steps": {
+        "n": 10,
+        "min": 20,
+        "median": 154.0,
+        "mean": 167.6,
+        "max": 359,
+        "positive": 10
+      },
+      "seconds": {
+        "n": 10,
+        "min": 0.03225190000375733,
+        "median": 0.3060663499927614,
+        "mean": 0.33903643999656197,
+        "max": 0.7902413999836426,
+        "positive": 10
+      },
+      "menu": {
+        "n": 10,
+        "min": 6,
+        "median": 6.0,
+        "mean": 6,
+        "max": 6,
+        "positive": 10
+      }
+    }
+  },
+  "regrets": {
+    "exact/v2/candidate": {
+      "n": 23,
+      "min": 0,
+      "median": 0,
+      "mean": 1.774915323165292,
+      "max": 12.080448150634766,
+      "positive": 8
+    },
+    "exact/v2/adopted": {
+      "n": 23,
+      "min": 0,
+      "median": 0,
+      "mean": 1.774915323165292,
+      "max": 12.080448150634766,
+      "positive": 8
+    },
+    "exact/low/candidate": {
+      "n": 23,
+      "min": 0,
+      "median": 0.01122283935546875,
+      "mean": 2.5426342187871938,
+      "max": 12.080497741699219,
+      "positive": 14
+    },
+    "exact/low/adopted": {
+      "n": 23,
+      "min": 0,
+      "median": 0.01122283935546875,
+      "mean": 2.5426342187871938,
+      "max": 12.080497741699219,
+      "positive": 14
+    },
+    "exact/general/candidate": {
+      "n": 23,
+      "min": 0,
+      "median": 0.0006561279296875,
+      "mean": 1.8777018019542286,
+      "max": 11.194570541381836,
+      "positive": 12
+    },
+    "exact/general/adopted": {
+      "n": 23,
+      "min": 0,
+      "median": 0.0006561279296875,
+      "mean": 1.8777018019542286,
+      "max": 11.194570541381836,
+      "positive": 12
+    },
+    "pooled/v2/candidate": {
+      "n": 34,
+      "min": 0,
+      "median": 0.027318954467773438,
+      "mean": 6.5857689671132675,
+      "max": 52.92796219441897,
+      "positive": 20
+    },
+    "pooled/v2/adopted": {
+      "n": 13,
+      "min": 0,
+      "median": 5.53131103515625e-05,
+      "mean": 8.04138347307841,
+      "max": 40.68692207336426,
+      "positive": 6
+    },
+    "pooled/low/candidate": {
+      "n": 13,
+      "min": 0,
+      "median": 0,
+      "mean": 4.600050043448424,
+      "max": 42.61965560913086,
+      "positive": 5
+    },
+    "pooled/low/adopted": {
+      "n": 13,
+      "min": 0,
+      "median": 0,
+      "mean": 4.600050043448424,
+      "max": 42.61965560913086,
+      "positive": 5
+    },
+    "pooled/general/candidate": {
+      "n": 13,
+      "min": 0,
+      "median": 0,
+      "mean": 1.3216152900304552,
+      "max": 15.292777061462402,
+      "positive": 4
+    },
+    "pooled/general/adopted": {
+      "n": 13,
+      "min": 0,
+      "median": 0,
+      "mean": 1.3216152900304552,
+      "max": 15.292777061462402,
+      "positive": 4
+    }
+  },
+  "solved": [
+    5,
+    15,
+    23
+  ],
+  "stops": {
+    "logical_budget": 10,
+    "unmodeled_rng": 30,
+    "wall": 17,
+    "per_program_step_cap": 17
+  },
+  "analysis_seconds": 0.42383220000192523
+}

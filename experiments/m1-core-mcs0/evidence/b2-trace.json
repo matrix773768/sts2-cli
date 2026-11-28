@@ -1,0 +1,239 @@
+{
+  "roots": {
+    "general": {
+      "trace": [
+        {
+          "action": {
+            "index": 7,
+            "kind": "PlayCard",
+            "card": 3,
+            "damage": null,
+            "block": 40,
+            "target": null,
+            "target_side": null
+          },
+          "card": "IMPERVIOUS"
+        },
+        {
+          "action": {
+            "index": 9,
+            "kind": "PlayCard",
+            "card": 3,
+            "damage": null,
+            "block": null,
+            "target": 2,
+            "target_side": "enemy"
+          },
+          "card": "BODY_SLAM"
+        },
+        {
+          "action": {
+            "index": 3,
+            "kind": "PlayCard",
+            "card": 1,
+            "damage": 5,
+            "block": 5,
+            "target": 1,
+            "target_side": "enemy"
+          },
+          "card": "IRON_WAVE"
+        },
+        {
+          "action": {
+            "index": 0,
+            "kind": "EndTurn",
+            "card": 0,
+            "damage": null,
+            "block": null,
+            "target": null,
+            "target_side": null
+          },
+          "card": null
+        }
+      ],
+      "enemies": [
+        {
+          "slot": 0,
+          "species": "BOWLBUG_ROCK",
+          "hp": 47,
+          "max_hp": 47,
+          "block": 0,
+          "move": "HEADBUTT_MOVE",
+          "attack_hits": [
+            15
+          ],
+          "powers": [
+            {
+              "id": "IMBALANCED_POWER",
+              "amount": 1
+            }
+          ],
+          "phase": {
+            "node": "HEADBUTT_MOVE",
+            "rule_ref": "BOWLBUG_ROCK",
+            "committed_moves": [
+              "HEADBUTT_MOVE",
+              "STUNNED",
+              "HEADBUTT_MOVE"
+            ],
+            "registers": {},
+            "repeat_windows": {}
+          }
+        },
+        {
+          "slot": 1,
+          "species": "BOWLBUG_EGG",
+          "hp": 15,
+          "max_hp": 22,
+          "block": 7,
+          "move": "BITE_MOVE",
+          "attack_hits": [
+            7
+          ],
+          "powers": [],
+          "phase": {
+            "node": "BITE_MOVE",
+            "rule_ref": "BOWLBUG_EGG",
+            "committed_moves": [
+              "BITE_MOVE",
+              "BITE_MOVE",
+              "BITE_MOVE"
+            ],
+            "registers": {},
+            "repeat_windows": {}
+          }
+        },
+        {
+          "slot": 2,
+          "species": "BOWLBUG_NECTAR",
+          "hp": 0,
+          "max_hp": 37,
+          "block": 0,
+          "move": null,
+          "phase": null,
+          "attack_hits": [],
+          "powers": []
+        }
+      ],
+      "hp": 35
+    },
+    "single_successor": {
+      "trace": [
+        {
+          "action": {
+            "index": 0,
+            "kind": "PlayCard",
+            "card": 0,
+            "damage": 6,
+            "block": null,
+            "target": 0,
+            "target_side": "enemy"
+          },
+          "card": "STRIKE_IRONCLAD"
+        },
+        {
+          "action": {
+            "index": 4,
+            "kind": "PlayCard",
+            "card": 2,
+            "damage": null,
+            "block": 40,
+            "target": null,
+            "target_side": null
+          },
+          "card": "IMPERVIOUS"
+        },
+        {
+          "action": {
+            "index": 2,
+            "kind": "PlayCard",
+            "card": 2,
+            "damage": null,
+            "block": null,
+            "target": 2,
+            "target_side": "enemy"
+          },
+          "card": "BODY_SLAM"
+        },
+        {
+          "action": {
+            "index": 0,
+            "kind": "EndTurn",
+            "card": 0,
+            "damage": null,
+            "block": null,
+            "target": null,
+            "target_side": null
+          },
+          "card": null
+        }
+      ],
+      "enemies": [
+        {
+          "slot": 0,
+          "species": "BOWLBUG_ROCK",
+          "hp": 41,
+          "max_hp": 47,
+          "block": 0,
+          "move": "HEADBUTT_MOVE",
+          "attack_hits": [
+            15
+          ],
+          "powers": [
+            {
+              "id": "IMBALANCED_POWER",
+              "amount": 1
+            }
+          ],
+          "phase": {
+            "node": "HEADBUTT_MOVE",
+            "rule_ref": "BOWLBUG_ROCK",
+            "committed_moves": [
+              "HEADBUTT_MOVE",
+              "STUNNED",
+              "HEADBUTT_MOVE"
+            ],
+            "registers": {},
+            "repeat_windows": {}
+          }
+        },
+        {
+          "slot": 1,
+          "species": "BOWLBUG_EGG",
+          "hp": 15,
+          "max_hp": 22,
+          "block": 7,
+          "move": "BITE_MOVE",
+          "attack_hits": [
+            7
+          ],
+          "powers": [],
+          "phase": {
+            "node": "BITE_MOVE",
+            "rule_ref": "BOWLBUG_EGG",
+            "committed_moves": [
+              "BITE_MOVE",
+              "BITE_MOVE",
+              "BITE_MOVE"
+            ],
+            "registers": {},
+            "repeat_windows": {}
+          }
+        },
+        {
+          "slot": 2,
+          "species": "BOWLBUG_NECTAR",
+          "hp": 0,
+          "max_hp": 37,
+          "block": 0,
+          "move": null,
+          "phase": null,
+          "attack_hits": [],
+          "powers": []
+        }
+      ],
+      "hp": 35
+    }
+  },
+  "seconds": 3.193518900021445
+}

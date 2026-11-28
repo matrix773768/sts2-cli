@@ -1,0 +1,4898 @@
+[
+  {
+    "key": "a7b7b401effd484f6b4142d32710bb74df068736c84ea7d0a66ccddea415d093",
+    "family": "db252e524ab7d0ecac00d589cb6a0c048e2834c1cc4335ec37105bba709aec58",
+    "seed": "3D9019F1288C617C",
+    "shard": 0,
+    "battle": 18,
+    "index": 8,
+    "turn": 3,
+    "hp": 56,
+    "act": 2,
+    "encounter": "CHOMPERS_NORMAL",
+    "source": "foundation",
+    "package": null,
+    "mp": [
+      "MIDNIGHT"
+    ],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "FF8FA0BEE086CCC7A8989F5B8A36B0B46FE9D43B0D10D5DBB48D6617F0F93DEF",
+    "classes": [
+      "enemy",
+      "draw",
+      "combo"
+    ],
+    "actual": 0,
+    "id": "A",
+    "group": "human",
+    "deck_size": 15,
+    "hand": 6,
+    "energy": 3,
+    "legal": 9,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "CHOMPER",
+        "hp": 38,
+        "max_hp": 63,
+        "block": 0,
+        "move": "CLAMP_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          8,
+          8
+        ],
+        "powers": [
+          {
+            "id": "ARTIFACT_POWER",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "CHOMPER",
+        "hp": 24,
+        "max_hp": 64,
+        "block": 0,
+        "move": "SCREECH_MOVE",
+        "intents": [
+          "StatusCard"
+        ],
+        "attack_hits": [],
+        "powers": [
+          {
+            "id": "ARTIFACT_POWER",
+            "amount": 1
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "AGGRESSION_POWER",
+        "amount": 1
+      },
+      {
+        "id": "INFERNO_POWER",
+        "amount": 9
+      },
+      {
+        "id": "RUPTURE_POWER",
+        "amount": 1
+      },
+      {
+        "id": "STRENGTH_POWER",
+        "amount": 2
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "46dc781f459c685580299e01a87d8a2c07ccc4b61766172223509cb8111d00ff",
+    "flags": [
+      "energy",
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "58c227a9e24209af44fab4dc202ad476da182b07114151cec42fac560b0d0f8a",
+    "family": "711550cf7d87ce52def0b245955f4dc0287a40f6bb9f9397ae86b8fbc3d649ec",
+    "seed": "488B8A8FE5F35D10",
+    "shard": 0,
+    "battle": 35,
+    "index": 0,
+    "turn": 1,
+    "hp": 44,
+    "act": 2,
+    "encounter": "BOWLBUGS_NORMAL",
+    "source": "synthetic-synergy",
+    "package": "block-carry",
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "9459DACE2DA43100BFBB4DF910D7ADE369AF3DE44B6171D713E9BDEE67069023",
+    "classes": [
+      "enemy",
+      "draw",
+      "combo"
+    ],
+    "actual": 8,
+    "id": "B1",
+    "group": "human",
+    "deck_size": 21,
+    "hand": 5,
+    "energy": 3,
+    "legal": 10,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "BOWLBUG_ROCK",
+        "hp": 47,
+        "max_hp": 47,
+        "block": 0,
+        "move": "HEADBUTT_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          15
+        ],
+        "powers": [
+          {
+            "id": "IMBALANCED_POWER",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "BOWLBUG_EGG",
+        "hp": 22,
+        "max_hp": 22,
+        "block": 0,
+        "move": "BITE_MOVE",
+        "intents": [
+          "Attack",
+          "Defend"
+        ],
+        "attack_hits": [
+          7
+        ],
+        "powers": []
+      },
+      {
+        "slot": 2,
+        "species": "BOWLBUG_NECTAR",
+        "hp": 37,
+        "max_hp": 37,
+        "block": 0,
+        "move": "THRASH_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          3
+        ],
+        "powers": []
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "flags": [
+      "draw",
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "b268b22d7e6268c8e13c1205cedf20a652ededca32eff2c49b11b9085d9d8330",
+    "family": "711550cf7d87ce52def0b245955f4dc0287a40f6bb9f9397ae86b8fbc3d649ec",
+    "seed": "488B8A8FE5F35D10",
+    "shard": 0,
+    "battle": 35,
+    "index": 4,
+    "turn": 2,
+    "hp": 35,
+    "act": 2,
+    "encounter": "BOWLBUGS_NORMAL",
+    "source": "synthetic-synergy",
+    "package": "block-carry",
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "3031C582F0D38A8C3F66C03948A13F498B3099A34D0742AA2EBF39B76FF86B05",
+    "classes": [
+      "enemy",
+      "draw",
+      "combo"
+    ],
+    "actual": 7,
+    "id": "B2",
+    "group": "human",
+    "deck_size": 21,
+    "hand": 5,
+    "energy": 3,
+    "legal": 12,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "BOWLBUG_ROCK",
+        "hp": 47,
+        "max_hp": 47,
+        "block": 0,
+        "move": "STUNNED",
+        "intents": [],
+        "attack_hits": [],
+        "powers": [
+          {
+            "id": "IMBALANCED_POWER",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "BOWLBUG_EGG",
+        "hp": 15,
+        "max_hp": 22,
+        "block": 7,
+        "move": "BITE_MOVE",
+        "intents": [
+          "Attack",
+          "Defend"
+        ],
+        "attack_hits": [
+          7
+        ],
+        "powers": []
+      },
+      {
+        "slot": 2,
+        "species": "BOWLBUG_NECTAR",
+        "hp": 37,
+        "max_hp": 37,
+        "block": 0,
+        "move": "BUFF_MOVE",
+        "intents": [
+          "Buff"
+        ],
+        "attack_hits": [],
+        "powers": []
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "e8dea1a80110ed7352647900888071d4e4529c98f39c993b6199a503edbd1e1c",
+    "flags": [
+      "draw",
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "c6fb6dad96ed57c3477718c4b68c2eb3ee9500f334b7e92fa13779b259bf6763",
+    "family": "711550cf7d87ce52def0b245955f4dc0287a40f6bb9f9397ae86b8fbc3d649ec",
+    "seed": "488B8A8FE5F35D10",
+    "shard": 0,
+    "battle": 35,
+    "index": 8,
+    "turn": 3,
+    "hp": 35,
+    "act": 2,
+    "encounter": "BOWLBUGS_NORMAL",
+    "source": "synthetic-synergy",
+    "package": "block-carry",
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "AB967405E11F90AA57C4CA6462A29CECADBFAD9EFA7FD99ADCAA34DAB9F4F48B",
+    "classes": [
+      "enemy",
+      "draw",
+      "combo"
+    ],
+    "actual": 1,
+    "id": "B3",
+    "group": "human",
+    "deck_size": 21,
+    "hand": 5,
+    "energy": 3,
+    "legal": 8,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "BOWLBUG_ROCK",
+        "hp": 47,
+        "max_hp": 47,
+        "block": 0,
+        "move": "HEADBUTT_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          15
+        ],
+        "powers": [
+          {
+            "id": "IMBALANCED_POWER",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "BOWLBUG_NECTAR",
+        "hp": 32,
+        "max_hp": 37,
+        "block": 0,
+        "move": "THRASH2_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          18
+        ],
+        "powers": [
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 15
+          }
+        ]
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "9bf4d7ca65baf6154c92faf4572fb1f1e60bf0c4fa13c5aff61e6abbc8e0a942",
+    "flags": [
+      "draw",
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "6e69e42646c0c9d67dd667be9feeac84ca58c592e5bea6f603e642851d7f10f1",
+    "family": "0b90241e49fcc25d5379870822cd059d4d60628906a79f9803e8820eda2d6945",
+    "seed": "DFAB1EC2C5C861C0",
+    "shard": 2,
+    "battle": 13,
+    "index": 13,
+    "turn": 4,
+    "hp": 53,
+    "act": 1,
+    "encounter": "RUBY_RAIDERS_NORMAL",
+    "source": "synthetic-normal",
+    "package": null,
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "8BE931A913B81762E9814D0D5F8BE39647D7A94434E73564D4318A43445E9202",
+    "classes": [
+      "enemy",
+      "draw",
+      "combo"
+    ],
+    "actual": 1,
+    "id": "enemy-01",
+    "group": "enemy",
+    "deck_size": 17,
+    "hand": 5,
+    "energy": 3,
+    "legal": 8,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "BRUTE_RUBY_RAIDER",
+        "hp": 24,
+        "max_hp": 30,
+        "block": 0,
+        "move": "ROAR_MOVE",
+        "intents": [
+          "Buff"
+        ],
+        "attack_hits": [],
+        "powers": [
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "TRACKER_RUBY_RAIDER",
+        "hp": 24,
+        "max_hp": 24,
+        "block": 0,
+        "move": "HOUNDS_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "powers": []
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "ed767fcfa663b592447b03c94e6c5a148819949547b53cc68142d99ec2ce3c8f",
+    "flags": [
+      "draw",
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "5b4fdbc92bde17c00162107c3344f6b1dd3abd29ae0af50177a31acc8caa1a87",
+    "family": "b92a94c8f23af27e757bfefa323b99386e79de60564a8123f17ab16081c326fa",
+    "seed": "A87E97F3959661BA",
+    "shard": 0,
+    "battle": 46,
+    "index": 17,
+    "turn": 4,
+    "hp": 23,
+    "act": 3,
+    "encounter": "SCROLLS_OF_BITING_NORMAL",
+    "source": "synthetic-normal",
+    "package": null,
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "EEFC01716CC9F08A1FEFA061A8EF240D0CBA4E19C84496DBF855BE65D1C9F712",
+    "classes": [
+      "enemy",
+      "draw",
+      "combo"
+    ],
+    "actual": 0,
+    "id": "enemy-02",
+    "group": "enemy",
+    "deck_size": 25,
+    "hand": 5,
+    "energy": 3,
+    "legal": 8,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "SCROLL_OF_BITING",
+        "hp": 34,
+        "max_hp": 37,
+        "block": 0,
+        "move": "CHEW",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          7,
+          7
+        ],
+        "powers": [
+          {
+            "id": "PAPER_CUTS_POWER",
+            "amount": 2
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "SCROLL_OF_BITING",
+        "hp": 24,
+        "max_hp": 30,
+        "block": 0,
+        "move": "MORE_TEETH",
+        "intents": [
+          "Buff"
+        ],
+        "attack_hits": [],
+        "powers": [
+          {
+            "id": "PAPER_CUTS_POWER",
+            "amount": 2
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "species": "SCROLL_OF_BITING",
+        "hp": 28,
+        "max_hp": 31,
+        "block": 0,
+        "move": "CHOMP",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          16
+        ],
+        "powers": [
+          {
+            "id": "PAPER_CUTS_POWER",
+            "amount": 2
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "PLATING_POWER",
+        "amount": 5
+      },
+      {
+        "id": "UNMOVABLE_POWER",
+        "amount": 1
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "8f5dd670bd08f5e0fe95dff57b377b524635855905fdf0d92b6589cc6e8ddfa9",
+    "flags": [
+      "X",
+      "energy",
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "2fab64f3d66230b1766f66770851886263582142caba07f5bb709f24062eb5e3",
+    "family": "011cc11af57b7bc82264ee04981ee421199e11c67c553b9edfce077a67e5dbfe",
+    "seed": "3776A47768138E1C",
+    "shard": 1,
+    "battle": 20,
+    "index": 10,
+    "turn": 3,
+    "hp": 49,
+    "act": 2,
+    "encounter": "EXOSKELETONS_NORMAL",
+    "source": "foundation",
+    "package": null,
+    "mp": [
+      "MIDNIGHT",
+      "BLAZE"
+    ],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "F7353545357576D250B788FCE508822987CE7AD235AF082F997C6A0B6EC7FEEB",
+    "classes": [
+      "enemy",
+      "draw",
+      "combo"
+    ],
+    "actual": 1,
+    "id": "enemy-03",
+    "group": "enemy",
+    "deck_size": 20,
+    "hand": 5,
+    "energy": 3,
+    "legal": 8,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "EXOSKELETON",
+        "hp": 26,
+        "max_hp": 26,
+        "block": 0,
+        "move": "ENRAGE_MOVE",
+        "intents": [
+          "Buff"
+        ],
+        "attack_hits": [],
+        "powers": [
+          {
+            "id": "HARD_TO_KILL_POWER",
+            "amount": 9
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "EXOSKELETON",
+        "hp": 8,
+        "max_hp": 27,
+        "block": 0,
+        "move": "SKITTER_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          4,
+          4,
+          4
+        ],
+        "powers": [
+          {
+            "id": "HARD_TO_KILL_POWER",
+            "amount": 9
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "species": "EXOSKELETON",
+        "hp": 24,
+        "max_hp": 24,
+        "block": 0,
+        "move": "ENRAGE_MOVE",
+        "intents": [
+          "Buff"
+        ],
+        "attack_hits": [],
+        "powers": [
+          {
+            "id": "HARD_TO_KILL_POWER",
+            "amount": 9
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "CRUELTY_POWER",
+        "amount": 50
+      },
+      {
+        "id": "STRENGTH_POWER",
+        "amount": 3
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "5604749eaf754e7d59c06170ac635b0b89c3edd528e99d39cfee9334fbc82b06",
+    "flags": [
+      "draw",
+      "energy",
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "e3877ce80bc5e3a07c103fc2540bc7d4e138e8bbfd6db5fdbdbac33b6dc6fee2",
+    "family": "339a240e7b731f6e4fad1997820d18e788f6b24d8442196dd2f2021df8703bc4",
+    "seed": "BC0C1D5684EB4B8B",
+    "shard": 3,
+    "battle": 60,
+    "index": 10,
+    "turn": 4,
+    "hp": 58,
+    "act": 1,
+    "encounter": "PHANTASMAL_GARDENERS_ELITE",
+    "source": "synthetic-synergy",
+    "package": "strength-multihit",
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "E0233F7B387C1845125F7C64C7892A7ED2DFC008D66B58F4BBB5508983011CDD",
+    "classes": [
+      "enemy",
+      "combo"
+    ],
+    "actual": 4,
+    "id": "enemy-04",
+    "group": "enemy",
+    "deck_size": 15,
+    "hand": 5,
+    "energy": 3,
+    "legal": 18,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "PHANTASMAL_GARDENER",
+        "hp": 15,
+        "max_hp": 27,
+        "block": 0,
+        "move": "LASH_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          9
+        ],
+        "powers": [
+          {
+            "id": "SKITTISH_POWER",
+            "amount": 6
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "PHANTASMAL_GARDENER",
+        "hp": 25,
+        "max_hp": 28,
+        "block": 0,
+        "move": "ENLARGE_MOVE",
+        "intents": [
+          "Buff"
+        ],
+        "attack_hits": [],
+        "powers": [
+          {
+            "id": "SKITTISH_POWER",
+            "amount": 6
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "species": "PHANTASMAL_GARDENER",
+        "hp": 23,
+        "max_hp": 29,
+        "block": 0,
+        "move": "BITE_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          7
+        ],
+        "powers": [
+          {
+            "id": "SKITTISH_POWER",
+            "amount": 6
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "slot": 3,
+        "species": "PHANTASMAL_GARDENER",
+        "hp": 15,
+        "max_hp": 31,
+        "block": 0,
+        "move": "FLAIL_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          3,
+          3,
+          3
+        ],
+        "powers": [
+          {
+            "id": "SKITTISH_POWER",
+            "amount": 6
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "ee707fbd38dadc3ab53c3069a99a3aa9de8e3e0812944c6a3b3a19dfc9dc7d49",
+    "flags": [
+      "cost_layer",
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "c0256d81eeef5be7955277ec359b6ce1d4b0e942cb714631d54aa59cc328fa90",
+    "family": "427b2b9e7aa9ed0aac67c414675f6544c13c0d03c31867b0d91f21a185af4f0d",
+    "seed": "DC8016B9E8AE5F20",
+    "shard": 0,
+    "battle": 48,
+    "index": 17,
+    "turn": 5,
+    "hp": 36,
+    "act": 1,
+    "encounter": "FOGMOG_NORMAL",
+    "source": "synthetic-synergy",
+    "package": "topdeck-repeat",
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "63D05858115D7141592FFCA808F64DE74B88EC6D354B4504436AAC8EB0E8D9BB",
+    "classes": [
+      "enemy",
+      "draw",
+      "combo"
+    ],
+    "actual": 0,
+    "id": "enemy-05",
+    "group": "enemy",
+    "deck_size": 16,
+    "hand": 5,
+    "energy": 3,
+    "legal": 9,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "EYE_WITH_TEETH",
+        "hp": 6,
+        "max_hp": 6,
+        "block": 0,
+        "move": "DISTRACT_MOVE",
+        "intents": [],
+        "attack_hits": [],
+        "powers": [
+          {
+            "id": "ILLUSION_POWER",
+            "amount": 1
+          },
+          {
+            "id": "MINION_POWER",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "FOGMOG",
+        "hp": 33,
+        "max_hp": 74,
+        "block": 0,
+        "move": "HEADBUTT_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          16
+        ],
+        "powers": [
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "f87b5a7bf011862bc069ff5c5f8407de0de21809f41de7ea7c33fa6fbce5e823",
+    "flags": [
+      "draw",
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "caa91a78f0efdd3b0830a078ae6aa9474df87030a4a175224e21edccea795096",
+    "family": "6f3cc9ffb25a4be002d49bc5116b5964e0c85ab283bc37c47a5b04799278eea1",
+    "seed": "286AB9C473EE5CC4",
+    "shard": 2,
+    "battle": 17,
+    "index": 5,
+    "turn": 2,
+    "hp": 40,
+    "act": 2,
+    "encounter": "MYTES_NORMAL",
+    "source": "synthetic-synergy",
+    "package": "topdeck-repeat",
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "8FAA5A7DFB02F006E1F4CE4D883E27509BE06885618168878B7C459AEDF686D9",
+    "classes": [
+      "enemy",
+      "combo"
+    ],
+    "actual": 2,
+    "id": "enemy-06",
+    "group": "enemy",
+    "deck_size": 21,
+    "hand": 7,
+    "energy": 3,
+    "legal": 10,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "MYTE",
+        "hp": 65,
+        "max_hp": 65,
+        "block": 0,
+        "move": "BITE_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          13
+        ],
+        "powers": []
+      },
+      {
+        "slot": 1,
+        "species": "MYTE",
+        "hp": 35,
+        "max_hp": 67,
+        "block": 0,
+        "move": "TOXIC_MOVE",
+        "intents": [
+          "StatusCard"
+        ],
+        "attack_hits": [],
+        "powers": [
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "ba203f4c4a1b90ddccd1215e32f386f531e8be998d7c12b5ca961c31d17063ec",
+    "flags": [
+      "X",
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "bcb22f0ceceb304b15d3803c4585dad6936c9e0f4860202752275e2ec63ebb6f",
+    "family": "3b6bb6494b12971ddb2b9b4d3aacf579167df32619e82d884df011944cbc4a6e",
+    "seed": "6FCEE290B06C1084",
+    "shard": 2,
+    "battle": 18,
+    "index": 4,
+    "turn": 2,
+    "hp": 40,
+    "act": 2,
+    "encounter": "DECIMILLIPEDE_ELITE",
+    "source": "foundation",
+    "package": null,
+    "mp": [
+      "OUTRAGE",
+      "MIDNIGHT"
+    ],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "CCA90299E36EDFA8D31C02E9F482839428A9A35BB26DCDA637877F8857A6727D",
+    "classes": [
+      "enemy",
+      "combo"
+    ],
+    "actual": 7,
+    "id": "enemy-07",
+    "group": "enemy",
+    "deck_size": 18,
+    "hand": 6,
+    "energy": 3,
+    "legal": 13,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "DECIMILLIPEDE_SEGMENT_FRONT",
+        "hp": 42,
+        "max_hp": 42,
+        "block": 0,
+        "move": "CONSTRICT_MOVE",
+        "intents": [
+          "Attack",
+          "Debuff"
+        ],
+        "attack_hits": [
+          8
+        ],
+        "powers": [
+          {
+            "id": "REATTACH_POWER",
+            "amount": 25
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "DECIMILLIPEDE_SEGMENT_MIDDLE",
+        "hp": 40,
+        "max_hp": 46,
+        "block": 0,
+        "move": "WRITHE_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          7,
+          7
+        ],
+        "powers": [
+          {
+            "id": "REATTACH_POWER",
+            "amount": 25
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "species": "DECIMILLIPEDE_SEGMENT_BACK",
+        "hp": 44,
+        "max_hp": 44,
+        "block": 0,
+        "move": "BULK_MOVE",
+        "intents": [
+          "Attack",
+          "Buff"
+        ],
+        "attack_hits": [
+          6
+        ],
+        "powers": [
+          {
+            "id": "REATTACH_POWER",
+            "amount": 25
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "AGGRESSION_POWER",
+        "amount": 1
+      },
+      {
+        "id": "JUGGLING_POWER",
+        "amount": 1
+      },
+      {
+        "id": "WEAK_POWER",
+        "amount": 1
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "3dfcec2bd965452c1be8eea7bf9ada946dcae51c862be1a6f9c62451bc9f4231",
+    "flags": [
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "36c28e7a6972a935ff1e113fdead90ba18291386fa942b8485dcc16ae42a9b78",
+    "family": "3dab71f4669da906ade55e1f9479c2fa2459c0d884712ae3f5f84bbc3b2d37aa",
+    "seed": "EF2BED7585931A45",
+    "shard": 2,
+    "battle": 62,
+    "index": 8,
+    "turn": 3,
+    "hp": 17,
+    "act": 2,
+    "encounter": "DECIMILLIPEDE_ELITE",
+    "source": "synthetic-normal",
+    "package": null,
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "9BBE1BF52E40A2717E6FA34DDAA2532E0D649EB9D8EF1E6568D6D3BA65C0FA2E",
+    "classes": [
+      "enemy",
+      "draw",
+      "combo"
+    ],
+    "actual": 1,
+    "id": "enemy-08",
+    "group": "enemy",
+    "deck_size": 17,
+    "hand": 5,
+    "energy": 3,
+    "legal": 14,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "DECIMILLIPEDE_SEGMENT_FRONT",
+        "hp": 40,
+        "max_hp": 40,
+        "block": 0,
+        "move": "BULK_MOVE",
+        "intents": [
+          "Attack",
+          "Buff"
+        ],
+        "attack_hits": [
+          6
+        ],
+        "powers": [
+          {
+            "id": "REATTACH_POWER",
+            "amount": 25
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "DECIMILLIPEDE_SEGMENT_MIDDLE",
+        "hp": 11,
+        "max_hp": 44,
+        "block": 0,
+        "move": "CONSTRICT_MOVE",
+        "intents": [
+          "Attack",
+          "Debuff"
+        ],
+        "attack_hits": [
+          10
+        ],
+        "powers": [
+          {
+            "id": "REATTACH_POWER",
+            "amount": 25
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "species": "DECIMILLIPEDE_SEGMENT_BACK",
+        "hp": 42,
+        "max_hp": 42,
+        "block": 0,
+        "move": "WRITHE_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          7,
+          7
+        ],
+        "powers": [
+          {
+            "id": "REATTACH_POWER",
+            "amount": 25
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "WEAK_POWER",
+        "amount": 1
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "2ce8b2f5a13deeb4bd70d188e63572de54df9b178d3d65b96f21ee854889b2b3",
+    "flags": [
+      "draw",
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "43b63e11875dfdeab7dece493ffee8359bd936f7185a8b52a8b7f5c1f191df51",
+    "family": "ee2921ed484a1f12de85f73b07c39b8629c9e31dc183a16ff188b8cf75ed5268",
+    "seed": "B9E371BF1C818344",
+    "shard": 1,
+    "battle": 49,
+    "index": 4,
+    "turn": 2,
+    "hp": 59,
+    "act": 1,
+    "encounter": "PHANTASMAL_GARDENERS_ELITE",
+    "source": "foundation",
+    "package": null,
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "79C9B6635D7A26D1595A24FE081508509B98007856B345EE0C0F8AC2FE696326",
+    "classes": [
+      "enemy",
+      "draw",
+      "combo"
+    ],
+    "actual": 7,
+    "id": "draw-01",
+    "group": "draw",
+    "deck_size": 15,
+    "hand": 5,
+    "energy": 3,
+    "legal": 9,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "PHANTASMAL_GARDENER",
+        "hp": 23,
+        "max_hp": 28,
+        "block": 0,
+        "move": "ENLARGE_MOVE",
+        "intents": [
+          "Buff"
+        ],
+        "attack_hits": [],
+        "powers": [
+          {
+            "id": "SKITTISH_POWER",
+            "amount": 6
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "PHANTASMAL_GARDENER",
+        "hp": 29,
+        "max_hp": 29,
+        "block": 0,
+        "move": "LASH_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          7
+        ],
+        "powers": [
+          {
+            "id": "SKITTISH_POWER",
+            "amount": 6
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "species": "PHANTASMAL_GARDENER",
+        "hp": 31,
+        "max_hp": 31,
+        "block": 0,
+        "move": "FLAIL_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          1,
+          1,
+          1
+        ],
+        "powers": [
+          {
+            "id": "SKITTISH_POWER",
+            "amount": 6
+          }
+        ]
+      },
+      {
+        "slot": 3,
+        "species": "PHANTASMAL_GARDENER",
+        "hp": 30,
+        "max_hp": 30,
+        "block": 0,
+        "move": "BITE_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          7
+        ],
+        "powers": [
+          {
+            "id": "SKITTISH_POWER",
+            "amount": 6
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "FEEL_NO_PAIN_POWER",
+        "amount": 4
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "7bfcd4c2bf23e6b080d2532429aa1400728b5f6ffc04330f4bbb79ef95bf75d2",
+    "flags": [
+      "draw",
+      "energy",
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "a196801764ec89f57ccc604a59dc98c72275e9f698292d3dee0ae4019660a180",
+    "family": "e5a34c018b1d9375fb33990a4cc6077c27e056ef19f1d8750ba668fc4626f749",
+    "seed": "2A6ED20874AEF449",
+    "shard": 3,
+    "battle": 9,
+    "index": 22,
+    "turn": 7,
+    "hp": 31,
+    "act": 3,
+    "encounter": "MECHA_KNIGHT_ELITE",
+    "source": "synthetic-synergy",
+    "package": "strength-multihit",
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "9107B648763C24416EB6745F844A0F6556FC52BE1275A6FD53008CB37A5072F1",
+    "classes": [
+      "draw"
+    ],
+    "actual": 3,
+    "id": "draw-02",
+    "group": "draw",
+    "deck_size": 22,
+    "hand": 5,
+    "energy": 3,
+    "legal": 5,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "MECHA_KNIGHT",
+        "hp": 159,
+        "max_hp": 300,
+        "block": 15,
+        "move": "HEAVY_CLEAVE_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          45
+        ],
+        "powers": [
+          {
+            "id": "ARTIFACT_POWER",
+            "amount": 3
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 10
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "DEMON_FORM_POWER",
+        "amount": 4
+      },
+      {
+        "id": "STRENGTH_POWER",
+        "amount": 16
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "345d9f7366ea79808f682c44eb1ebbe45c42d705559ba041bf396c64d3d4751b",
+    "flags": [
+      "energy"
+    ]
+  },
+  {
+    "key": "7cac7a6a7779e7d5d99774b0f5514bdcb00c7403940f89312197d6d180c7f54c",
+    "family": "8aa386c9cd0fb45d9b7b48771a628e456d5aef0545260bc359387e1088f50361",
+    "seed": "BCA36BE8F1C47FD9",
+    "shard": 0,
+    "battle": 54,
+    "index": 22,
+    "turn": 7,
+    "hp": 29,
+    "act": 1,
+    "encounter": "LAGAVULIN_MATRIARCH_BOSS",
+    "source": "synthetic-synergy",
+    "package": "exhaust-draw",
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "A3D0765F6C42263CD5EEDD01464DF1D314DB59E091F74A5A2594D9543C4D5575",
+    "classes": [
+      "draw"
+    ],
+    "actual": 2,
+    "id": "draw-03",
+    "group": "draw",
+    "deck_size": 16,
+    "hand": 5,
+    "energy": 3,
+    "legal": 6,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "LAGAVULIN_MATRIARCH",
+        "hp": 146,
+        "max_hp": 222,
+        "block": 0,
+        "move": "DISEMBOWEL_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          11,
+          11
+        ],
+        "powers": [
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "DEXTERITY_POWER",
+        "amount": -2
+      },
+      {
+        "id": "FEEL_NO_PAIN_POWER",
+        "amount": 3
+      },
+      {
+        "id": "STRENGTH_POWER",
+        "amount": -2
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "b6f656353718b2eb6027810abc4c9f40a5a6022786a76aecab8ba30762d44571",
+    "flags": [
+      "draw"
+    ]
+  },
+  {
+    "key": "1d564d25c04d3ca00a080b292dee8c481a9ed6f95e3b6db5e56c786c0879a0f0",
+    "family": "d2ffa9b32ba1cdaef3a262e290a7c2b8c1a8d4f9c54572b2d1626a92675d1b31",
+    "seed": "8AD18B74043A7B6A",
+    "shard": 3,
+    "battle": 3,
+    "index": 26,
+    "turn": 8,
+    "hp": 38,
+    "act": 1,
+    "encounter": "SOUL_FYSH_BOSS",
+    "source": "synthetic-normal",
+    "package": null,
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "29F97C4CD5CB35C5FBA8E91C69F66FCF91CC0473104F6B537CF2437CEE80F419",
+    "classes": [
+      "draw"
+    ],
+    "actual": 4,
+    "id": "draw-04",
+    "group": "draw",
+    "deck_size": 17,
+    "hand": 5,
+    "energy": 3,
+    "legal": 6,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "SOUL_FYSH",
+        "hp": 112,
+        "max_hp": 211,
+        "block": 0,
+        "move": "GAZE_MOVE",
+        "intents": [
+          "Attack",
+          "StatusCard"
+        ],
+        "attack_hits": [
+          10
+        ],
+        "powers": []
+      }
+    ],
+    "powers": [
+      {
+        "id": "UNMOVABLE_POWER",
+        "amount": 1
+      },
+      {
+        "id": "VULNERABLE_POWER",
+        "amount": 1
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "daeaf31b51e4c5a04a82c7e74baa6780ac203eca692748a8ef81ee3809ddcb64",
+    "flags": [
+      "energy"
+    ]
+  },
+  {
+    "key": "cc671f1658e4a2bd51480c6721bf911fea780d536296657aab0a57f497957f8d",
+    "family": "7ea83411bb6812369aedf11e2ad0e19f9d2d1df167fcc1f66006524f090f855a",
+    "seed": "27BD1D08CE2DEFF5",
+    "shard": 3,
+    "battle": 55,
+    "index": 25,
+    "turn": 6,
+    "hp": 16,
+    "act": 2,
+    "encounter": "THE_OBSCURA_NORMAL",
+    "source": "synthetic-synergy",
+    "package": "draw-energy",
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "5A263441CDD1B2BA2556E29DA6DEDF19EEA8EDA75F94B45C10039E6EBF12AA54",
+    "classes": [
+      "enemy",
+      "draw",
+      "combo"
+    ],
+    "actual": 0,
+    "id": "draw-05",
+    "group": "draw",
+    "deck_size": 20,
+    "hand": 5,
+    "energy": 3,
+    "legal": 8,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "PARAFRIGHT",
+        "hp": 21,
+        "max_hp": 21,
+        "block": 0,
+        "move": "SLAM_MOVE",
+        "intents": [],
+        "attack_hits": [
+          22
+        ],
+        "powers": [
+          {
+            "id": "ILLUSION_POWER",
+            "amount": 1
+          },
+          {
+            "id": "MINION_POWER",
+            "amount": 1
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 6
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "THE_OBSCURA",
+        "hp": 82,
+        "max_hp": 123,
+        "block": 6,
+        "move": "SAIL_MOVE",
+        "intents": [
+          "Buff"
+        ],
+        "attack_hits": [],
+        "powers": [
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 6
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "PLATING_POWER",
+        "amount": 2
+      },
+      {
+        "id": "STRENGTH_POWER",
+        "amount": 2
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "588fad0d2a5b2c3dc36f109ad2217c0b4da6632a8bb1607831efbe4269b035e9",
+    "flags": [
+      "draw",
+      "energy",
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "d50ac938961e2e7b771cb717339e63bbfdc340d7c5e6c18ae771a5dd362247b5",
+    "family": "516a12b1e4db906a59fc16333cf178931b95b1fc7d8b84b7530c47dec2c0a31c",
+    "seed": "62C00E893BA59497",
+    "shard": 3,
+    "battle": 34,
+    "index": 27,
+    "turn": 7,
+    "hp": 28,
+    "act": 2,
+    "encounter": "KAISER_CRAB_BOSS",
+    "source": "synthetic-normal",
+    "package": null,
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "339C9EEA5E59E2B5F3F10D16084E629B1F9B3EAB2A8E45A0F665FA28D4366FC0",
+    "classes": [
+      "enemy",
+      "draw",
+      "combo"
+    ],
+    "actual": 7,
+    "id": "draw-06",
+    "group": "draw",
+    "deck_size": 18,
+    "hand": 5,
+    "energy": 3,
+    "legal": 9,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "CRUSHER",
+        "hp": 166,
+        "max_hp": 209,
+        "block": 0,
+        "move": "ENLARGING_STRIKE_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          9
+        ],
+        "powers": [
+          {
+            "id": "BACK_ATTACK_LEFT_POWER",
+            "amount": 1
+          },
+          {
+            "id": "CRAB_RAGE_POWER",
+            "amount": 1
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "ROCKET",
+        "hp": 102,
+        "max_hp": 199,
+        "block": 0,
+        "move": "PRECISE_SMASH_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          20
+        ],
+        "powers": [
+          {
+            "id": "BACK_ATTACK_RIGHT_POWER",
+            "amount": 1
+          },
+          {
+            "id": "CRAB_RAGE_POWER",
+            "amount": 1
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "SURROUNDED_POWER",
+        "amount": 1
+      },
+      {
+        "id": "UNMOVABLE_POWER",
+        "amount": 1
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "db4c53de51dd0732042786be86eed84bbf01eb568f6bbdbb4b0ad2c31d54f9b6",
+    "flags": [
+      "draw",
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "b85dddb77da4e579e2485031b618570f69131fa282963e7a2f06862cd1a36740",
+    "family": "6acc68bc5c216bfd401e31a3a89dbf6818defa26aec827f1fbbf8634e8284982",
+    "seed": "23E78D8F1C10CB32",
+    "shard": 0,
+    "battle": 24,
+    "index": 9,
+    "turn": 2,
+    "hp": 31,
+    "act": 1,
+    "encounter": "VANTOM_BOSS",
+    "source": "foundation",
+    "package": null,
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "52E44F5E090416658FD4B1CB0BF6332D10B23E65A4376FCB57C81562AD524C0E",
+    "classes": [
+      "draw"
+    ],
+    "actual": 3,
+    "id": "draw-07",
+    "group": "draw",
+    "deck_size": 16,
+    "hand": 5,
+    "energy": 4,
+    "legal": 6,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "VANTOM",
+        "hp": 169,
+        "max_hp": 173,
+        "block": 0,
+        "move": "INKY_LANCE_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          6,
+          6
+        ],
+        "powers": [
+          {
+            "id": "SLIPPERY_POWER",
+            "amount": 4
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "DARK_EMBRACE_POWER",
+        "amount": 1
+      },
+      {
+        "id": "PYRE_POWER",
+        "amount": 1
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "304dce041e91d5069a5d9027cc01ae047a188cebdd7d30b24782fc1d68798074",
+    "flags": [
+      "energy"
+    ]
+  },
+  {
+    "key": "e3e716c27f58d4d9eeaa3131e8a3b42be0901247c217d23144f85005fc0038dd",
+    "family": "d4d8d36d76e055dd434e24f6615c50e3cf31df308757fa9b173306046d3cf583",
+    "seed": "FAB92A5BFC3CE047",
+    "shard": 1,
+    "battle": 57,
+    "index": 0,
+    "turn": 1,
+    "hp": 80,
+    "act": 3,
+    "encounter": "AXEBOTS_NORMAL",
+    "source": "foundation",
+    "package": null,
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "A01334D4F55BD9616EA3A9C57AB1038D84A0198ACF2B6423DF9B0C51AD160193",
+    "classes": [
+      "draw"
+    ],
+    "actual": 1,
+    "id": "draw-08",
+    "group": "draw",
+    "deck_size": 15,
+    "hand": 5,
+    "energy": 3,
+    "legal": 6,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "AXEBOT",
+        "hp": 70,
+        "max_hp": 70,
+        "block": 0,
+        "move": "HAMMER_UPPERCUT_MOVE",
+        "intents": [
+          "Attack",
+          "Debuff"
+        ],
+        "attack_hits": [
+          14
+        ],
+        "powers": [
+          {
+            "id": "STOCK_POWER",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "flags": [
+      "draw"
+    ]
+  },
+  {
+    "key": "088033e00e3fc7b0305c72934f47c74116b3ceb6c1ae48fdeb9c820bfc082de1",
+    "family": "2f2f136543a712b30873c3d86fc0d2f5991b74cec63e0052bba1541c6d1a3b4b",
+    "seed": "C7C0FFD2D1BC69F7",
+    "shard": 0,
+    "battle": 15,
+    "index": 0,
+    "turn": 1,
+    "hp": 44,
+    "act": 3,
+    "encounter": "THE_LOST_AND_FORGOTTEN_NORMAL",
+    "source": "synthetic-synergy",
+    "package": "block-carry",
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "CC67B6E13268BC41FBC797B62DF6DD53DA8AD36618DA8D835E1AFEF06772560F",
+    "classes": [
+      "enemy",
+      "draw",
+      "combo"
+    ],
+    "actual": 4,
+    "id": "combo-01",
+    "group": "combo",
+    "deck_size": 22,
+    "hand": 5,
+    "energy": 3,
+    "legal": 9,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "THE_LOST",
+        "hp": 93,
+        "max_hp": 93,
+        "block": 0,
+        "move": "DEBILITATING_SMOG",
+        "intents": [
+          "Debuff",
+          "Buff"
+        ],
+        "attack_hits": [],
+        "powers": [
+          {
+            "id": "POSSESS_STRENGTH_POWER",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "THE_FORGOTTEN",
+        "hp": 106,
+        "max_hp": 106,
+        "block": 0,
+        "move": "MIASMA",
+        "intents": [
+          "Debuff",
+          "Defend",
+          "Buff"
+        ],
+        "attack_hits": [],
+        "powers": [
+          {
+            "id": "POSSESS_SPEED_POWER",
+            "amount": 1
+          }
+        ]
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "flags": [
+      "draw",
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "35e2434ea50d07c8905330894df625c8739c0cb2eb40333eb4224fac248ff4e7",
+    "family": "39829cc3315336053421ad4eb449d3a949d97a6e796140f1661e36c9d5457c83",
+    "seed": "E2721E0DE4FB99F8",
+    "shard": 0,
+    "battle": 3,
+    "index": 0,
+    "turn": 1,
+    "hp": 64,
+    "act": 2,
+    "encounter": "KAISER_CRAB_BOSS",
+    "source": "synthetic-synergy",
+    "package": "exhaust-draw",
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "9295CA8321EA13904D48D9DCB0A98831971BEA023FDB7BA42838EF0F4AAD49E6",
+    "classes": [
+      "enemy",
+      "draw",
+      "combo"
+    ],
+    "actual": 5,
+    "id": "combo-02",
+    "group": "combo",
+    "deck_size": 20,
+    "hand": 5,
+    "energy": 3,
+    "legal": 8,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "CRUSHER",
+        "hp": 209,
+        "max_hp": 209,
+        "block": 0,
+        "move": "THRASH_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          18
+        ],
+        "powers": [
+          {
+            "id": "BACK_ATTACK_LEFT_POWER",
+            "amount": 1
+          },
+          {
+            "id": "CRAB_RAGE_POWER",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "ROCKET",
+        "hp": 199,
+        "max_hp": 199,
+        "block": 0,
+        "move": "CALCULATING_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          3
+        ],
+        "powers": [
+          {
+            "id": "BACK_ATTACK_RIGHT_POWER",
+            "amount": 1
+          },
+          {
+            "id": "CRAB_RAGE_POWER",
+            "amount": 1
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "SURROUNDED_POWER",
+        "amount": 1
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "flags": [
+      "draw",
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "9b389721bf08763f0cbf871b1fb977a77bb580619f9be767ffd01feb06283e50",
+    "family": "ef232d87354f4fb82f51827e8870bb71567f1d89531b3cae13e00f6682e86ebf",
+    "seed": "67C0F1CB981EF999",
+    "shard": 2,
+    "battle": 41,
+    "index": 8,
+    "turn": 3,
+    "hp": 33,
+    "act": 1,
+    "encounter": "PHANTASMAL_GARDENERS_ELITE",
+    "source": "synthetic-normal",
+    "package": null,
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "E66BCA50D32883FE70F5E033AC31316C90AD13323FB6579876A7A3DDA78A66EE",
+    "classes": [
+      "enemy",
+      "combo"
+    ],
+    "actual": 4,
+    "id": "combo-03",
+    "group": "combo",
+    "deck_size": 15,
+    "hand": 5,
+    "energy": 3,
+    "legal": 12,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "PHANTASMAL_GARDENER",
+        "hp": 19,
+        "max_hp": 31,
+        "block": 0,
+        "move": "BITE_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          7
+        ],
+        "powers": [
+          {
+            "id": "SKITTISH_POWER",
+            "amount": 6
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "PHANTASMAL_GARDENER",
+        "hp": 26,
+        "max_hp": 30,
+        "block": 0,
+        "move": "FLAIL_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          1,
+          1,
+          1
+        ],
+        "powers": [
+          {
+            "id": "SKITTISH_POWER",
+            "amount": 6
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "species": "PHANTASMAL_GARDENER",
+        "hp": 25,
+        "max_hp": 29,
+        "block": 0,
+        "move": "ENLARGE_MOVE",
+        "intents": [
+          "Buff"
+        ],
+        "attack_hits": [],
+        "powers": [
+          {
+            "id": "SKITTISH_POWER",
+            "amount": 6
+          }
+        ]
+      },
+      {
+        "slot": 3,
+        "species": "PHANTASMAL_GARDENER",
+        "hp": 19,
+        "max_hp": 27,
+        "block": 0,
+        "move": "LASH_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          9
+        ],
+        "powers": [
+          {
+            "id": "SKITTISH_POWER",
+            "amount": 6
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          },
+          {
+            "id": "VULNERABLE_POWER",
+            "amount": 1
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "PLATING_POWER",
+        "amount": 5
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "a7526a433e774c681cdaed1acde98424211ab2027a8f21ce2c81b480b32f1e79",
+    "flags": [
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "977d94f5f802b4ac47566dd429774b8cf0fb22ff0a034581487c5a1cf1f7c9e4",
+    "family": "be7041201457d28c5c93db8380e20d97b8aa530be0283e1ab535db1e14f01075",
+    "seed": "11FE51FD94451556",
+    "shard": 1,
+    "battle": 35,
+    "index": 47,
+    "turn": 14,
+    "hp": 19,
+    "act": 3,
+    "encounter": "FABRICATOR_NORMAL",
+    "source": "foundation",
+    "package": null,
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "C8DDCC96252C32ECB471581385C7DAA77CF8C12952334095B8E86F3082189601",
+    "classes": [
+      "enemy",
+      "combo"
+    ],
+    "actual": 3,
+    "id": "combo-04",
+    "group": "combo",
+    "deck_size": 15,
+    "hand": 5,
+    "energy": 3,
+    "legal": 6,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "NOISEBOT",
+        "hp": 19,
+        "max_hp": 23,
+        "block": 0,
+        "move": "NOISE_MOVE",
+        "intents": [],
+        "attack_hits": [],
+        "powers": [
+          {
+            "id": "MINION_POWER",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "FABRICATOR",
+        "hp": 93,
+        "max_hp": 150,
+        "block": 0,
+        "move": "FABRICATE_MOVE",
+        "intents": [
+          "Summon"
+        ],
+        "attack_hits": [],
+        "powers": []
+      }
+    ],
+    "powers": [
+      {
+        "id": "CRIMSON_MANTLE_POWER",
+        "amount": 7
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "bbcb87e965bff3aeda11a87320f166a48b631fbf0d22c243f8049328b17e0534",
+    "flags": [
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "8db1b9b90ff94cb880182d4aa5d3d172169f97e23a15a65fd1014ac1b7c16e37",
+    "family": "22bd7a6fd92e7ab0ec5cb10fe44c3847fb55a1abc28769758846da30b38522c7",
+    "seed": "765A2CC6E9435469",
+    "shard": 2,
+    "battle": 59,
+    "index": 32,
+    "turn": 9,
+    "hp": 9,
+    "act": 2,
+    "encounter": "THE_OBSCURA_NORMAL",
+    "source": "synthetic-synergy",
+    "package": "hp-strength-multihit",
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "0A872DD389B9CAB44B44ECE6EF2F279C356E22A21DF9AEF1834BC831BE4630FA",
+    "classes": [
+      "enemy",
+      "draw",
+      "combo"
+    ],
+    "actual": 3,
+    "id": "combo-05",
+    "group": "combo",
+    "deck_size": 18,
+    "hand": 5,
+    "energy": 3,
+    "legal": 7,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "PARAFRIGHT",
+        "hp": 21,
+        "max_hp": 21,
+        "block": 0,
+        "move": "SLAM_MOVE",
+        "intents": [],
+        "attack_hits": [
+          19
+        ],
+        "powers": [
+          {
+            "id": "ILLUSION_POWER",
+            "amount": 1
+          },
+          {
+            "id": "MINION_POWER",
+            "amount": 1
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "THE_OBSCURA",
+        "hp": 45,
+        "max_hp": 123,
+        "block": 0,
+        "move": "SAIL_MOVE",
+        "intents": [
+          "Buff"
+        ],
+        "attack_hits": [],
+        "powers": [
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 3
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "RUPTURE_POWER",
+        "amount": 1
+      },
+      {
+        "id": "STRENGTH_POWER",
+        "amount": 6
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "e9589eacba0151031d4ebace200eaffd2eaf41e192058c9ca2007b821cc3e288",
+    "flags": [
+      "energy",
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "ba1e17ec589d01137141ef306a02fe2b4ef0f05430a3ba05a0f8ffe15f933d09",
+    "family": "d4d830d075bfbe2f85b713027452f474722e0edf57fcde96cfa1c4fe868dbc0a",
+    "seed": "489D601AF2318C7C",
+    "shard": 0,
+    "battle": 36,
+    "index": 3,
+    "turn": 2,
+    "hp": 52,
+    "act": 3,
+    "encounter": "TEST_SUBJECT_BOSS",
+    "source": "synthetic-synergy",
+    "package": "block-carry",
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "20B5666565C0F6C563A80FCE8AAE8B3AAB7DB7D9055E6C934B3C3A684C568C91",
+    "classes": [
+      "combo"
+    ],
+    "actual": 1,
+    "id": "combo-06",
+    "group": "combo",
+    "deck_size": 23,
+    "hand": 5,
+    "energy": 3,
+    "legal": 6,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "TEST_SUBJECT",
+        "hp": 100,
+        "max_hp": 100,
+        "block": 0,
+        "move": "SKULL_BASH_MOVE",
+        "intents": [
+          "Attack",
+          "Debuff"
+        ],
+        "attack_hits": [
+          16
+        ],
+        "powers": [
+          {
+            "id": "ADAPTABLE_POWER",
+            "amount": 1
+          },
+          {
+            "id": "ENRAGE_POWER",
+            "amount": 2
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "UNMOVABLE_POWER",
+        "amount": 1
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "e76517453e89d26f39e5397697f573f523ba395dc6222afb1eed54ec790c9919",
+    "flags": []
+  },
+  {
+    "key": "30cdc4dc7b04f29ec528a6123aaf1f2618083ab6f015e4c2dce7dc5bbfa2c8bb",
+    "family": "5e275a961bc8611e7ce08074244587fd913e84620201c4350277173e897c40d5",
+    "seed": "A136156D22D659A0",
+    "shard": 2,
+    "battle": 45,
+    "index": 7,
+    "turn": 3,
+    "hp": 21,
+    "act": 1,
+    "encounter": "THE_KIN_BOSS",
+    "source": "foundation",
+    "package": null,
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "44E1E8E5A353B06A479B1309C4FD25A73B65F2DB9E9C1D4DEBF3EFF121D972E8",
+    "classes": [
+      "enemy",
+      "draw",
+      "combo"
+    ],
+    "actual": 5,
+    "id": "combo-07",
+    "group": "combo",
+    "deck_size": 20,
+    "hand": 5,
+    "energy": 3,
+    "legal": 10,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "KIN_FOLLOWER",
+        "hp": 33,
+        "max_hp": 59,
+        "block": 0,
+        "move": "BOOMERANG_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          4,
+          4
+        ],
+        "powers": [
+          {
+            "id": "MINION_POWER",
+            "amount": 1
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "KIN_FOLLOWER",
+        "hp": 46,
+        "max_hp": 58,
+        "block": 0,
+        "move": "POWER_DANCE_MOVE",
+        "intents": [
+          "Buff"
+        ],
+        "attack_hits": [],
+        "powers": [
+          {
+            "id": "MINION_POWER",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "species": "KIN_PRIEST",
+        "hp": 178,
+        "max_hp": 190,
+        "block": 0,
+        "move": "BEAM_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          3,
+          3,
+          3
+        ],
+        "powers": []
+      }
+    ],
+    "powers": [
+      {
+        "id": "STAMPEDE_POWER",
+        "amount": 1
+      },
+      {
+        "id": "UNMOVABLE_POWER",
+        "amount": 1
+      },
+      {
+        "id": "WEAK_POWER",
+        "amount": 1
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "e4f5a0429c294894de01afcce74f3019b11c8bde150f9b157018559294358980",
+    "flags": [
+      "draw",
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "9de417326f3d2c0470ced2ad50ed59b59057c76d4b635ebe5b2accf47d7511a8",
+    "family": "92a04acc863dda9f94732925e02008eb49710b6814c4ab0dfb445a2b0d27c787",
+    "seed": "3039C675329E954C",
+    "shard": 2,
+    "battle": 2,
+    "index": 0,
+    "turn": 1,
+    "hp": 64,
+    "act": 3,
+    "encounter": "SCROLLS_OF_BITING_NORMAL",
+    "source": "synthetic-normal",
+    "package": null,
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "49481ACD22066C518442A4C3E4F7D27D65B1A835C4C9338943877A8539FD1E4B",
+    "classes": [
+      "enemy",
+      "draw",
+      "combo"
+    ],
+    "actual": 6,
+    "id": "combo-08",
+    "group": "combo",
+    "deck_size": 23,
+    "hand": 5,
+    "energy": 3,
+    "legal": 12,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "SCROLL_OF_BITING",
+        "hp": 35,
+        "max_hp": 35,
+        "block": 0,
+        "move": "CHEW",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          5,
+          5
+        ],
+        "powers": [
+          {
+            "id": "PAPER_CUTS_POWER",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "SCROLL_OF_BITING",
+        "hp": 30,
+        "max_hp": 30,
+        "block": 0,
+        "move": "MORE_TEETH",
+        "intents": [
+          "Buff"
+        ],
+        "attack_hits": [],
+        "powers": [
+          {
+            "id": "PAPER_CUTS_POWER",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "species": "SCROLL_OF_BITING",
+        "hp": 37,
+        "max_hp": 37,
+        "block": 0,
+        "move": "CHOMP",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          14
+        ],
+        "powers": [
+          {
+            "id": "PAPER_CUTS_POWER",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "slot": 3,
+        "species": "SCROLL_OF_BITING",
+        "hp": 34,
+        "max_hp": 34,
+        "block": 0,
+        "move": "MORE_TEETH",
+        "intents": [
+          "Buff"
+        ],
+        "attack_hits": [],
+        "powers": [
+          {
+            "id": "PAPER_CUTS_POWER",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "flags": [
+      "X",
+      "draw",
+      "energy",
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "d1170c1e8339ffabffd096ae7369c30c62b734e979c4e436596ef9b0cc44f3e2",
+    "family": "a0a41e66ae8bb7ac6eb51fcf5c5511bfe5e05fd909608ff6c3138110f46177f3",
+    "seed": "BD8BC370235B71D8",
+    "shard": 3,
+    "battle": 7,
+    "index": 10,
+    "turn": 3,
+    "hp": 57,
+    "act": 1,
+    "encounter": "TOADPOLES_WEAK",
+    "source": "synthetic-normal",
+    "package": null,
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "85DB1F986FD7FC8482D2D44C39DF2BCB3E0D986E2C817B8C175FE12F5F52BED6",
+    "classes": [
+      "combo"
+    ],
+    "actual": 2,
+    "id": "ordinary-01",
+    "group": "ordinary",
+    "deck_size": 17,
+    "hand": 5,
+    "energy": 3,
+    "legal": 6,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "TOADPOLE",
+        "hp": 12,
+        "max_hp": 21,
+        "block": 0,
+        "move": "SPIKE_SPIT_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          3,
+          3,
+          3
+        ],
+        "powers": [
+          {
+            "id": "THORNS_POWER",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "68152ba8afd1985c430f4ec73271efba291c9468890962d2c391dce993d849c3",
+    "flags": []
+  },
+  {
+    "key": "348f0e980cce6317e1909a0a8677e656b96985059f7f79862f1e539b4efdfede",
+    "family": "fcd6e8496b88b6e2cb7c46281d2145ba6e7456978aa261b0fff4900901798e34",
+    "seed": "5228873B043967A4",
+    "shard": 3,
+    "battle": 32,
+    "index": 0,
+    "turn": 1,
+    "hp": 44,
+    "act": 2,
+    "encounter": "THIEVING_HOPPER_WEAK",
+    "source": "synthetic-synergy",
+    "package": "exhaust-energy",
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "2EF859981AC6EEE6064957538C9FD16AA40083EACCB24655BD99A95F3E8D396E",
+    "classes": [
+      "draw"
+    ],
+    "actual": 2,
+    "id": "ordinary-02",
+    "group": "ordinary",
+    "deck_size": 21,
+    "hand": 5,
+    "energy": 3,
+    "legal": 6,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "THIEVING_HOPPER",
+        "hp": 79,
+        "max_hp": 79,
+        "block": 0,
+        "move": "THIEVERY_MOVE",
+        "intents": [
+          "Attack",
+          "CardDebuff"
+        ],
+        "attack_hits": [
+          17
+        ],
+        "powers": [
+          {
+            "id": "ESCAPE_ARTIST_POWER",
+            "amount": 5
+          }
+        ]
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "flags": [
+      "draw"
+    ]
+  },
+  {
+    "key": "3d2fad876a71ff54d79e71f883a21412ca82a48b8af93a6d2003f3926628e673",
+    "family": "21da91b298830280b9564db16e77ed325c9512110372a0fbd4c4cec80f8c2008",
+    "seed": "1FF91B228F0B673E",
+    "shard": 3,
+    "battle": 18,
+    "index": 4,
+    "turn": 2,
+    "hp": 80,
+    "act": 3,
+    "encounter": "SLIMED_BERSERKER_NORMAL",
+    "source": "foundation",
+    "package": null,
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "56179B191654DEC50AEF1ECADBD1134F8C54004F67E204CA0BDC16AE2AB3CED9",
+    "classes": [],
+    "actual": 3,
+    "id": "ordinary-03",
+    "group": "ordinary",
+    "deck_size": 14,
+    "hand": 5,
+    "energy": 3,
+    "legal": 6,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "SLIMED_BERSERKER",
+        "hp": 245,
+        "max_hp": 261,
+        "block": 0,
+        "move": "FURIOUS_PUMMELING_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "powers": []
+      }
+    ],
+    "powers": [
+      {
+        "id": "CRUELTY_POWER",
+        "amount": 25
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "130fb5889a5fce09080cefe7da77414e3fe81bc6e3dd0ef13ba5663aa766703d",
+    "flags": []
+  },
+  {
+    "key": "496e3db666ea959b3596a9246798235e160617b99871c7d864debd9de2157494",
+    "family": "2686c2e3b14cada26875d69da6e0a706f27b37ba8adba379e93eb7894e95856d",
+    "seed": "CBF5DF8500A0F4DC",
+    "shard": 1,
+    "battle": 9,
+    "index": 12,
+    "turn": 4,
+    "hp": 64,
+    "act": 3,
+    "encounter": "MECHA_KNIGHT_ELITE",
+    "source": "synthetic-synergy",
+    "package": "exhaust-energy",
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "12F725E1C6525B5C25929A7D0FDBA80915F5B773750F90E83CDCD57C1ECF6B6F",
+    "classes": [],
+    "actual": 2,
+    "id": "ordinary-04",
+    "group": "ordinary",
+    "deck_size": 21,
+    "hand": 5,
+    "energy": 3,
+    "legal": 6,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "MECHA_KNIGHT",
+        "hp": 261,
+        "max_hp": 300,
+        "block": 15,
+        "move": "HEAVY_CLEAVE_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          40
+        ],
+        "powers": [
+          {
+            "id": "ARTIFACT_POWER",
+            "amount": 3
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 5
+          }
+        ]
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "7630fee9d76e3991d8075af30919ee7d78bc92529c947012c831b55c0b5b3b4b",
+    "flags": []
+  },
+  {
+    "key": "51fc7922522dcc0c56547e1b2f1feef8a856eb9930ff604745cfce2ac20caed3",
+    "family": "a000988da6630626206af5019bb4216863ad46931d9d75c35defd7a18032de32",
+    "seed": "E3F727D3BF2EEE5A",
+    "shard": 0,
+    "battle": 11,
+    "index": 20,
+    "turn": 5,
+    "hp": 22,
+    "act": 1,
+    "encounter": "WATERFALL_GIANT_BOSS",
+    "source": "foundation",
+    "package": null,
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "24FFAD0CE211D49EF000C7F46ABA5113FDE09AE1A4FFA6A2192C42C1679DC328",
+    "classes": [],
+    "actual": 3,
+    "id": "ordinary-05",
+    "group": "ordinary",
+    "deck_size": 15,
+    "hand": 5,
+    "energy": 3,
+    "legal": 6,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "WATERFALL_GIANT",
+        "hp": 74,
+        "max_hp": 240,
+        "block": 0,
+        "move": "PRESSURE_GUN_MOVE",
+        "intents": [
+          "Attack",
+          "Buff"
+        ],
+        "attack_hits": [
+          20
+        ],
+        "powers": [
+          {
+            "id": "STEAM_ERUPTION_POWER",
+            "amount": 24
+          },
+          {
+            "id": "VULNERABLE_POWER",
+            "amount": 1
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "STRENGTH_POWER",
+        "amount": 2
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "3622e8be63943480e8f17349355bd468792f69d335bc3c9caff8da8eeb96a049",
+    "flags": [
+      "X"
+    ]
+  },
+  {
+    "key": "13d2c651c94fb5fe1222ef5dfe1fcda491813539a3728b099c24ff4bc6b8552e",
+    "family": "1f6d112789484250392ab583791dd1312d1581153894bacb45f4e7ca0065ae7a",
+    "seed": "1318FF7B0A7A37D0",
+    "shard": 0,
+    "battle": 17,
+    "index": 0,
+    "turn": 1,
+    "hp": 64,
+    "act": 3,
+    "encounter": "QUEEN_BOSS",
+    "source": "synthetic-synergy",
+    "package": "strength-multihit",
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "DBE7B3701432C616F22341E764A23CB9857076C56356FD595A1B020DD1C505D9",
+    "classes": [
+      "enemy",
+      "combo"
+    ],
+    "actual": 1,
+    "id": "ordinary-06",
+    "group": "ordinary",
+    "deck_size": 22,
+    "hand": 5,
+    "energy": 3,
+    "legal": 9,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "TORCH_HEAD_AMALGAM",
+        "hp": 199,
+        "max_hp": 199,
+        "block": 0,
+        "move": "STRONG_TACKLE_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          26
+        ],
+        "powers": [
+          {
+            "id": "MINION_POWER",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "QUEEN",
+        "hp": 400,
+        "max_hp": 400,
+        "block": 0,
+        "move": "PUPPET_STRINGS_MOVE",
+        "intents": [
+          "CardDebuff"
+        ],
+        "attack_hits": [],
+        "powers": []
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "flags": [
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "492414991d627a4d417a5c0ea71407c0133d326d43229a9cb9dca5e77b65f14e",
+    "family": "edd186d46df4fc5e69598aac770ff16d70a70995ae4179059b15ab025e0e7604",
+    "seed": "A7B4F12A6C7FC5A3",
+    "shard": 2,
+    "battle": 1,
+    "index": 4,
+    "turn": 2,
+    "hp": 69,
+    "act": 2,
+    "encounter": "KAISER_CRAB_BOSS",
+    "source": "synthetic-normal",
+    "package": null,
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "6B91A4D98351945E3D7C84690FB3F8216BFD89AD5CC5CC0A11C13F015192B26F",
+    "classes": [
+      "enemy",
+      "draw",
+      "combo"
+    ],
+    "actual": 5,
+    "id": "ordinary-07",
+    "group": "ordinary",
+    "deck_size": 21,
+    "hand": 5,
+    "energy": 3,
+    "legal": 9,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "CRUSHER",
+        "hp": 190,
+        "max_hp": 209,
+        "block": 0,
+        "move": "ENLARGING_STRIKE_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          4
+        ],
+        "powers": [
+          {
+            "id": "BACK_ATTACK_LEFT_POWER",
+            "amount": 1
+          },
+          {
+            "id": "CRAB_RAGE_POWER",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "ROCKET",
+        "hp": 199,
+        "max_hp": 199,
+        "block": 0,
+        "move": "PRECISE_SMASH_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          27
+        ],
+        "powers": [
+          {
+            "id": "BACK_ATTACK_RIGHT_POWER",
+            "amount": 1
+          },
+          {
+            "id": "CRAB_RAGE_POWER",
+            "amount": 1
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "SURROUNDED_POWER",
+        "amount": 1
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "c940b75e0273b333b33f8980e7fceb8de5fb59201efd0af4ab74c22e3924fc27",
+    "flags": [
+      "energy",
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "269b21de9565eab2827ae54a82a166b9d9cb27c77d616f7d1a5b988018f87016",
+    "family": "76bc372ff15af0fb32d3dce8b810e91186bc265e8f29fcd44b4d899bd328f3f9",
+    "seed": "8CE95F2B75FC7B02",
+    "shard": 2,
+    "battle": 10,
+    "index": 8,
+    "turn": 3,
+    "hp": 36,
+    "act": 1,
+    "encounter": "TERROR_EEL_ELITE",
+    "source": "synthetic-normal",
+    "package": null,
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "5C2B8396A600B469AE7629841B7F28BECC80F13D79D9B401E863637FB97FDE07",
+    "classes": [],
+    "actual": 4,
+    "id": "ordinary-08",
+    "group": "ordinary",
+    "deck_size": 13,
+    "hand": 5,
+    "energy": 3,
+    "legal": 6,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "TERROR_EEL",
+        "hp": 119,
+        "max_hp": 140,
+        "block": 0,
+        "move": "CRASH_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          22
+        ],
+        "powers": [
+          {
+            "id": "SHRIEK_POWER",
+            "amount": 70
+          },
+          {
+            "id": "VIGOR_POWER",
+            "amount": 6
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "UNMOVABLE_POWER",
+        "amount": 1
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "3db78dc370dad12d72f0254ea5cd6f5973499e961d9ffc881a86b51d75167132",
+    "flags": []
+  },
+  {
+    "key": "3b8645ea878d0e8395e4b23b68742a500636a6142588b62a03b306d0a6172ec5",
+    "family": "1157cf8563bfef99fd92aa6fc66a7da95906712f11035e14bcf0d345686cdba0",
+    "seed": "210B4BE1F7884930",
+    "shard": 2,
+    "battle": 15,
+    "index": 0,
+    "turn": 1,
+    "hp": 80,
+    "act": 2,
+    "encounter": "ENTOMANCER_ELITE",
+    "source": "synthetic-synergy",
+    "package": "strength-multihit",
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "1BBFE3CDB7943F2FD5A95E49ACBFAE3BAD55A665970A7B525115908A16AAF1AB",
+    "classes": [
+      "draw"
+    ],
+    "actual": 4,
+    "id": "ordinary-09",
+    "group": "ordinary",
+    "deck_size": 19,
+    "hand": 5,
+    "energy": 3,
+    "legal": 6,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "ENTOMANCER",
+        "hp": 145,
+        "max_hp": 145,
+        "block": 0,
+        "move": "BEES_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "powers": [
+          {
+            "id": "PERSONAL_HIVE_POWER",
+            "amount": 1
+          }
+        ]
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "flags": [
+      "energy"
+    ]
+  },
+  {
+    "key": "0c58f329d64c82d1e377ae0bc0f82938efc1acbeb67a0784079ac1820d83267b",
+    "family": "70e2ff156a15772c6048c8556e43af28d41d7b1a01f80ff73dbebdad4b98550c",
+    "seed": "9958EF37925B4392",
+    "shard": 3,
+    "battle": 13,
+    "index": 0,
+    "turn": 1,
+    "hp": 64,
+    "act": 1,
+    "encounter": "CORPSE_SLUGS_WEAK",
+    "source": "synthetic-normal",
+    "package": null,
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "3D324EA199A556C844C843AAD42403F04DF94BD4252D4A553DBC9B8A21D21ABF",
+    "classes": [
+      "enemy",
+      "combo"
+    ],
+    "actual": 4,
+    "id": "ordinary-10",
+    "group": "ordinary",
+    "deck_size": 13,
+    "hand": 5,
+    "energy": 3,
+    "legal": 10,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "CORPSE_SLUG",
+        "hp": 26,
+        "max_hp": 26,
+        "block": 0,
+        "move": "GLOMP_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          8
+        ],
+        "powers": [
+          {
+            "id": "RAVENOUS_POWER",
+            "amount": 4
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "CORPSE_SLUG",
+        "hp": 25,
+        "max_hp": 25,
+        "block": 0,
+        "move": "GOOP_MOVE",
+        "intents": [
+          "Debuff"
+        ],
+        "attack_hits": [],
+        "powers": [
+          {
+            "id": "RAVENOUS_POWER",
+            "amount": 4
+          }
+        ]
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "flags": [
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "cf38ce82f829ee5823fc567f273703e0ccbd2140ebda17642446a8fc6e7c1974",
+    "family": "f4e11d3ec114551d2c9dcd5088acc858ca3e683a2f68159d3fe046e7d820dfae",
+    "seed": "888717D7A77DB68F",
+    "shard": 1,
+    "battle": 0,
+    "index": 33,
+    "turn": 9,
+    "hp": 16,
+    "act": 2,
+    "encounter": "THE_OBSCURA_NORMAL",
+    "source": "synthetic-normal",
+    "package": null,
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "8B515D86990D6814419C2D1C1F55CAD106E627BFBC8310B4FE7732F678E9AD62",
+    "classes": [
+      "enemy",
+      "combo"
+    ],
+    "actual": 3,
+    "id": "ordinary-11",
+    "group": "ordinary",
+    "deck_size": 21,
+    "hand": 5,
+    "energy": 3,
+    "legal": 9,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "PARAFRIGHT",
+        "hp": 8,
+        "max_hp": 21,
+        "block": 0,
+        "move": "SLAM_MOVE",
+        "intents": [],
+        "attack_hits": [
+          22
+        ],
+        "powers": [
+          {
+            "id": "ILLUSION_POWER",
+            "amount": 1
+          },
+          {
+            "id": "MINION_POWER",
+            "amount": 1
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 6
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "THE_OBSCURA",
+        "hp": 75,
+        "max_hp": 123,
+        "block": 0,
+        "move": "PIERCING_GAZE_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          16
+        ],
+        "powers": [
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 6
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "STRENGTH_POWER",
+        "amount": 2
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "916a3c689ca90fb62c237d5ecfc74819ec395f1576ea2601b19806c5771678f9",
+    "flags": [
+      "multi_enemy"
+    ]
+  },
+  {
+    "key": "c9060d5f27c58529e9c95916e1575ce5649c163b1cdbb720d99502d709cbd852",
+    "family": "b82444b7b96034b798a86d5a56eabfc89d8a6e2307043965ad4e58409f8484c3",
+    "seed": "101DACF60F29C8B6",
+    "shard": 2,
+    "battle": 38,
+    "index": 0,
+    "turn": 1,
+    "hp": 80,
+    "act": 3,
+    "encounter": "KNIGHTS_ELITE",
+    "source": "synthetic-synergy",
+    "package": "topdeck-repeat",
+    "mp": [],
+    "behavior": "e1dd6416ea365afb36ad5bf68159e89d789df24859044280c593213e6189892e",
+    "view": "50F0ADD344E801CEA5065807B540EBB85AC1924ED76DA6A9E736C79666AC67F0",
+    "classes": [
+      "enemy",
+      "combo"
+    ],
+    "actual": 6,
+    "id": "ordinary-12",
+    "group": "ordinary",
+    "deck_size": 21,
+    "hand": 5,
+    "energy": 3,
+    "legal": 8,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "FLAIL_KNIGHT",
+        "hp": 101,
+        "max_hp": 101,
+        "block": 0,
+        "move": "RAM_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          15
+        ],
+        "powers": []
+      },
+      {
+        "slot": 1,
+        "species": "SPECTRAL_KNIGHT",
+        "hp": 93,
+        "max_hp": 93,
+        "block": 0,
+        "move": "HEX",
+        "intents": [
+          "Debuff"
+        ],
+        "attack_hits": [],
+        "powers": []
+      },
+      {
+        "slot": 2,
+        "species": "MAGI_KNIGHT",
+        "hp": 82,
+        "max_hp": 82,
+        "block": 0,
+        "move": "POWER_SHIELD_MOVE",
+        "intents": [
+          "Attack",
+          "Defend"
+        ],
+        "attack_hits": [
+          6
+        ],
+        "powers": []
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "flags": [
+      "multi_enemy"
+    ]
+  },
+  {
+    "id": "dev-01",
+    "family": "a0f06b6ac02fcfaf49264fb2df93caa98d2cb8ab7e2fdb15b434fa0c865a1d1a",
+    "source": "6A dev-low-0",
+    "group": "dev",
+    "turn": 1,
+    "view": "FBADC518AA6F8207C3AFEB97C2B6D2EA3D853C218C3D9814ED9CD362EF2601A9",
+    "index": 0,
+    "seed": "A93015CB6E609F26",
+    "act": 1,
+    "encounter": "WATERFALL_GIANT_BOSS",
+    "deck_size": 17,
+    "hand": 5,
+    "energy": 3,
+    "legal": 6,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "WATERFALL_GIANT",
+        "hp": 240,
+        "max_hp": 240,
+        "block": 0,
+        "move": "PRESSURIZE_MOVE",
+        "intents": [
+          "Buff"
+        ],
+        "attack_hits": [],
+        "powers": []
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "flags": []
+  },
+  {
+    "id": "dev-02",
+    "family": "224b2b7bda50c1e3f278a7baba3e4c9c5e16e5b163d0e0b4cf75fc2e99472cb7",
+    "source": "6A dev-low-0",
+    "group": "dev",
+    "turn": 1,
+    "view": "F98162B4D288F226C6BD389425610D6A2F4C8157AABB08EB398AF8A7E3212813",
+    "index": 0,
+    "seed": "04B82CC989291326",
+    "act": 1,
+    "encounter": "BYRDONIS_ELITE",
+    "deck_size": 13,
+    "hand": 5,
+    "energy": 3,
+    "legal": 6,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "BYRDONIS",
+        "hp": 83,
+        "max_hp": 83,
+        "block": 0,
+        "move": "SWOOP_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          17
+        ],
+        "powers": [
+          {
+            "id": "TERRITORIAL_POWER",
+            "amount": 1
+          }
+        ]
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "flags": [
+      "energy"
+    ]
+  },
+  {
+    "id": "dev-03",
+    "family": "361f009fd21765a703b73d16d7119ac49cf11de627d6ca686965929cee63eb1b",
+    "source": "6A dev-low-0",
+    "group": "dev",
+    "turn": 6,
+    "view": "B7C4CA3C152DB97CB56A2BF9D1585F7DC17E4D3FC8E7F971F110A97D67EE0C56",
+    "index": 19,
+    "seed": "371CC1B14C8638A9",
+    "act": 1,
+    "encounter": "CUBEX_CONSTRUCT_NORMAL",
+    "deck_size": 16,
+    "hand": 5,
+    "energy": 3,
+    "legal": 6,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "CUBEX_CONSTRUCT",
+        "hp": 16,
+        "max_hp": 65,
+        "block": 0,
+        "move": "REPEATER_BLAST_MOVE_2",
+        "intents": [
+          "Attack",
+          "Buff"
+        ],
+        "attack_hits": [
+          15
+        ],
+        "powers": [
+          {
+            "id": "ARTIFACT_POWER",
+            "amount": 1
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 8
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "FEEL_NO_PAIN_POWER",
+        "amount": 4
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "918739d8fd584c31f5d1e2e80159d8939d2357bb1b6f7015a53c07f259da2e80",
+    "flags": []
+  },
+  {
+    "id": "dev-04",
+    "family": "f6ffb6f2ccc986a6b3cabb3208ae2dc6979b2efe75e6674e0522b7942048d731",
+    "source": "6A dev-low-0",
+    "group": "dev",
+    "turn": 2,
+    "view": "B014E28390D40EAED89786ED4C00C35F7149FAC66E889BD2F9E0D15B327B68B4",
+    "index": 2,
+    "seed": "411F5F7B5CEF2DBC",
+    "act": 2,
+    "encounter": "KAISER_CRAB_BOSS",
+    "deck_size": 19,
+    "hand": 5,
+    "energy": 3,
+    "legal": 8,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "CRUSHER",
+        "hp": 209,
+        "max_hp": 209,
+        "block": 0,
+        "move": "ENLARGING_STRIKE_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          6
+        ],
+        "powers": [
+          {
+            "id": "BACK_ATTACK_LEFT_POWER",
+            "amount": 1
+          },
+          {
+            "id": "CRAB_RAGE_POWER",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "ROCKET",
+        "hp": 199,
+        "max_hp": 199,
+        "block": 0,
+        "move": "PRECISE_SMASH_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          18
+        ],
+        "powers": [
+          {
+            "id": "BACK_ATTACK_RIGHT_POWER",
+            "amount": 1
+          },
+          {
+            "id": "CRAB_RAGE_POWER",
+            "amount": 1
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "DEMON_FORM_POWER",
+        "amount": 3
+      },
+      {
+        "id": "STRENGTH_POWER",
+        "amount": 3
+      },
+      {
+        "id": "SURROUNDED_POWER",
+        "amount": 1
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "793712586f28d62dfa9c1f8f1e5ff375e92a523e635d4c0e6e5d642d9aef3466",
+    "flags": [
+      "draw",
+      "multi_enemy"
+    ]
+  },
+  {
+    "id": "dev-05",
+    "family": "d83f21fbdfeef8c34560beafbe7b2149ecacc2bf37fbf1a1843b936dffce9bc0",
+    "source": "6A dev-low-0",
+    "group": "dev",
+    "turn": 5,
+    "view": "910D636D471CE080F79B09678D312E26040F51D9C5EE1A508E5B48CC0F894827",
+    "index": 12,
+    "seed": "2DA6A229B555325D",
+    "act": 2,
+    "encounter": "ENTOMANCER_ELITE",
+    "deck_size": 17,
+    "hand": 5,
+    "energy": 3,
+    "legal": 4,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "ENTOMANCER",
+        "hp": 105,
+        "max_hp": 145,
+        "block": 0,
+        "move": "SPEAR_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          19
+        ],
+        "powers": [
+          {
+            "id": "PERSONAL_HIVE_POWER",
+            "amount": 2
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 1
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "UNMOVABLE_POWER",
+        "amount": 1
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "47ee2bdab1d02ba41a0c1c91278f7cc1718f4ae7b1caba570418a9a0df7e5bfe",
+    "flags": [
+      "cost_layer"
+    ]
+  },
+  {
+    "id": "dev-06",
+    "family": "a9833286ca5a1aebfeb0a52dbd737c5e717f8e9502cd400ea6aad0233b032edf",
+    "source": "6A dev-low-0",
+    "group": "dev",
+    "turn": 3,
+    "view": "454D5006FC6FA115BB1E10D6654A940575661A6B1ED3C33F52F996C5F586A8DE",
+    "index": 7,
+    "seed": "B7032880C7E4E9BF",
+    "act": 2,
+    "encounter": "MYTES_NORMAL",
+    "deck_size": 22,
+    "hand": 7,
+    "energy": 3,
+    "legal": 13,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "MYTE",
+        "hp": 47,
+        "max_hp": 62,
+        "block": 0,
+        "move": "SUCK_MOVE",
+        "intents": [
+          "Attack",
+          "Buff"
+        ],
+        "attack_hits": [
+          4
+        ],
+        "powers": []
+      },
+      {
+        "slot": 1,
+        "species": "MYTE",
+        "hp": 49,
+        "max_hp": 64,
+        "block": 0,
+        "move": "BITE_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          11
+        ],
+        "powers": [
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          },
+          {
+            "id": "VULNERABLE_POWER",
+            "amount": 1
+          },
+          {
+            "id": "WEAK_POWER",
+            "amount": 1
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "STRENGTH_POWER",
+        "amount": 2
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "c92c85dc5ba4b72c0612bbebc488fd67da9908453c553dc6b3aa98138242f2b8",
+    "flags": [
+      "draw",
+      "multi_enemy"
+    ]
+  },
+  {
+    "id": "dev-07",
+    "family": "b83d3c6f0cd6ad419701af5a615767a34a43db1e66213b75fea3966b678e7fc6",
+    "source": "6A dev-low-0",
+    "group": "dev",
+    "turn": 3,
+    "view": "C94CA424975FD4A08EBABDD93BFE9CB827FCD4D5D64D6F76500026DA914EBE69",
+    "index": 8,
+    "seed": "B4869B9012BC545A",
+    "act": 3,
+    "encounter": "QUEEN_BOSS",
+    "deck_size": 21,
+    "hand": 5,
+    "energy": 3,
+    "legal": 8,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "TORCH_HEAD_AMALGAM",
+        "hp": 167,
+        "max_hp": 199,
+        "block": 0,
+        "move": "BEAM_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          13,
+          13,
+          13
+        ],
+        "powers": [
+          {
+            "id": "MINION_POWER",
+            "amount": 1
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "QUEEN",
+        "hp": 394,
+        "max_hp": 400,
+        "block": 0,
+        "move": "BURN_BRIGHT_FOR_ME_MOVE",
+        "intents": [
+          "Buff",
+          "Defend"
+        ],
+        "attack_hits": [],
+        "powers": []
+      }
+    ],
+    "powers": [
+      {
+        "id": "CHAINS_OF_BINDING_POWER",
+        "amount": 3
+      },
+      {
+        "id": "FRAIL_POWER",
+        "amount": 99
+      },
+      {
+        "id": "PLATING_POWER",
+        "amount": 5
+      },
+      {
+        "id": "STRENGTH_POWER",
+        "amount": 3
+      },
+      {
+        "id": "VULNERABLE_POWER",
+        "amount": 99
+      },
+      {
+        "id": "WEAK_POWER",
+        "amount": 99
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "3e9cc63f395d85a1e04b1320165e621d8b198de672782f47a89bcc79008faa62",
+    "flags": [
+      "draw",
+      "multi_enemy"
+    ]
+  },
+  {
+    "id": "dev-08",
+    "family": "a964fee7e0d8b362b9e3157c4ed090af230e34643ec69e3d6fbe90a574fa2c95",
+    "source": "6A dev-low-0",
+    "group": "dev",
+    "turn": 3,
+    "view": "845DF593BF3D92AC825A3FB7F4E37377F55543A660E487A8AEE90BEC74B509D1",
+    "index": 8,
+    "seed": "57D1F4FA8496C35A",
+    "act": 3,
+    "encounter": "MECHA_KNIGHT_ELITE",
+    "deck_size": 25,
+    "hand": 9,
+    "energy": 3,
+    "legal": 6,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "MECHA_KNIGHT",
+        "hp": 252,
+        "max_hp": 300,
+        "block": 0,
+        "move": "WINDUP_MOVE",
+        "intents": [
+          "Defend",
+          "Buff"
+        ],
+        "attack_hits": [],
+        "powers": [
+          {
+            "id": "ARTIFACT_POWER",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "246fa9910a477a7f1a37d9a985f74d85e3aede9add845ba0f396915d18e0d94f",
+    "flags": [
+      "draw"
+    ]
+  },
+  {
+    "id": "dev-09",
+    "family": "dbaa28f54163a43a5d0fc10be0cc3932f7b0c24dd2524a62e766f332dfc88194",
+    "source": "6A dev-low-0",
+    "group": "dev",
+    "turn": 2,
+    "view": "DF38868A8B9C80881F75B0344EA893CDFCE4B5D43FCE792239016A2889B992C3",
+    "index": 4,
+    "seed": "390E6C649609D9A4",
+    "act": 3,
+    "encounter": "FABRICATOR_NORMAL",
+    "deck_size": 18,
+    "hand": 5,
+    "energy": 3,
+    "legal": 10,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "STABBOT",
+        "hp": 20,
+        "max_hp": 20,
+        "block": 0,
+        "move": "STAB_MOVE",
+        "intents": [],
+        "attack_hits": [
+          11
+        ],
+        "powers": [
+          {
+            "id": "MINION_POWER",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "FABRICATOR",
+        "hp": 108,
+        "max_hp": 150,
+        "block": 0,
+        "move": "FABRICATE_MOVE",
+        "intents": [
+          "Summon"
+        ],
+        "attack_hits": [],
+        "powers": []
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "26d409b0d2c524c9b05eef885e104b98187b2bd1f396ec380f3e894244a8c0b5",
+    "flags": [
+      "multi_enemy"
+    ]
+  },
+  {
+    "id": "dev-10",
+    "family": "b3df17b949962adc34be6b8ad79b58f4b6e2a8e8287253f03c8b5008667d7d78",
+    "source": "6A dev-low-0",
+    "group": "dev",
+    "turn": 2,
+    "view": "0CE620D4E01BDC82EB3FE39769CA0B768EB8DCCC5EFF5F95C628ED55FE465CFA",
+    "index": 7,
+    "seed": "1E473CB6D8873DB3",
+    "act": 1,
+    "encounter": "SOUL_FYSH_BOSS",
+    "deck_size": 16,
+    "hand": 5,
+    "energy": 3,
+    "legal": 6,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "SOUL_FYSH",
+        "hp": 181,
+        "max_hp": 211,
+        "block": 0,
+        "move": "DE_GAS_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          16
+        ],
+        "powers": []
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "f81ae227186dd73359b28e7c47dd858809e841ca1d795e85bd032db8e7c329f3",
+    "flags": [
+      "draw"
+    ]
+  },
+  {
+    "id": "dev-11",
+    "family": "2fadab9c1c9de55949c28f32b51f183f63a3989cd5d4f644dc397cee63cc6d55",
+    "source": "6A dev-low-0",
+    "group": "dev",
+    "turn": 3,
+    "view": "C85905FAFD437EDD590C5B9F58341C5762CB3A9C5700481EC4AE3FDD8ECEB7C0",
+    "index": 5,
+    "seed": "EA6734CE013F4735",
+    "act": 1,
+    "encounter": "PHANTASMAL_GARDENERS_ELITE",
+    "deck_size": 17,
+    "hand": 5,
+    "energy": 3,
+    "legal": 10,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "PHANTASMAL_GARDENER",
+        "hp": 29,
+        "max_hp": 29,
+        "block": 0,
+        "move": "BITE_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          7
+        ],
+        "powers": [
+          {
+            "id": "SKITTISH_POWER",
+            "amount": 6
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "PHANTASMAL_GARDENER",
+        "hp": 26,
+        "max_hp": 26,
+        "block": 0,
+        "move": "FLAIL_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          1,
+          1,
+          1
+        ],
+        "powers": [
+          {
+            "id": "SKITTISH_POWER",
+            "amount": 6
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "species": "PHANTASMAL_GARDENER",
+        "hp": 18,
+        "max_hp": 28,
+        "block": 0,
+        "move": "LASH_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          9
+        ],
+        "powers": [
+          {
+            "id": "SKITTISH_POWER",
+            "amount": 6
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "945ce9fee01561d30ddc489c988a5402825cf0618af7a39a97762dc9f6add872",
+    "flags": [
+      "X",
+      "multi_enemy"
+    ]
+  },
+  {
+    "id": "dev-12",
+    "family": "d503abe4dd4a2765c80899059bcac0408a5b970e42832d06b620bf83d0503ebc",
+    "source": "6A dev-low-0",
+    "group": "dev",
+    "turn": 3,
+    "view": "F93290FC7E4280DE004A162C8B548A758F13731300838E5F6585DF72E2AC67AE",
+    "index": 8,
+    "seed": "0C613B7F36AD8D82",
+    "act": 1,
+    "encounter": "VINE_SHAMBLER_NORMAL",
+    "deck_size": 15,
+    "hand": 5,
+    "energy": 3,
+    "legal": 6,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "VINE_SHAMBLER",
+        "hp": 42,
+        "max_hp": 61,
+        "block": 0,
+        "move": "CHOMP_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          16
+        ],
+        "powers": []
+      }
+    ],
+    "powers": [
+      {
+        "id": "STRENGTH_POWER",
+        "amount": 2
+      },
+      {
+        "id": "TANGLED_POWER",
+        "amount": 1
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "5703d20e4bca3dd301f01a11ea0e841aa9ff52461d760c7357fe17a991ebab34",
+    "flags": []
+  },
+  {
+    "id": "dev-13",
+    "family": "850e5180ba54356f412dfb39df0fe4cebcf0dba417c0a90e26584201d5827f5f",
+    "source": "6A dev-low-0",
+    "group": "dev",
+    "turn": 1,
+    "view": "D9D0E82A3E3ABC409622DB9EF3DAFEE2BE0E7400DD2F77996D8D7AF5F9C8F551",
+    "index": 0,
+    "seed": "0997820B2406E09A",
+    "act": 2,
+    "encounter": "THE_INSATIABLE_BOSS",
+    "deck_size": 20,
+    "hand": 5,
+    "energy": 3,
+    "legal": 6,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "THE_INSATIABLE",
+        "hp": 321,
+        "max_hp": 321,
+        "block": 0,
+        "move": "LIQUIFY_GROUND_MOVE",
+        "intents": [
+          "Buff",
+          "StatusCard"
+        ],
+        "attack_hits": [],
+        "powers": []
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "flags": [
+      "X"
+    ]
+  },
+  {
+    "id": "dev-14",
+    "family": "7afaf73ad95d5156a725f369684a1d0089a87686fadb8a86ee3819b22439754f",
+    "source": "6A dev-low-0",
+    "group": "dev",
+    "turn": 4,
+    "view": "9B32A38C7E7E90AB5788A94CD0503035ED54DAB5CA81A79C74405D334A48252F",
+    "index": 11,
+    "seed": "7C391A12846B7797",
+    "act": 2,
+    "encounter": "INFESTED_PRISMS_ELITE",
+    "deck_size": 12,
+    "hand": 5,
+    "energy": 3,
+    "legal": 6,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "INFESTED_PRISM",
+        "hp": 91,
+        "max_hp": 161,
+        "block": 0,
+        "move": "PULSATE_MOVE",
+        "intents": [
+          "Attack",
+          "Debuff",
+          "Buff"
+        ],
+        "attack_hits": [
+          8
+        ],
+        "powers": [
+          {
+            "id": "VITAL_SPARK_POWER",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "RUPTURE_POWER",
+        "amount": 1
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "ca7d6ac59c5477e8cff49def7460e187ed251e02565ef9201b3a89500fa99733",
+    "flags": []
+  },
+  {
+    "id": "dev-15",
+    "family": "a74ee4d226eee3217fd5f14f27cbf4555704d11fa9c789a00ebebf1cd9701fb1",
+    "source": "6A dev-low-0",
+    "group": "dev",
+    "turn": 3,
+    "view": "F37D590C675499E55DA9E9D0FA4881F026BCE5A7091E37F5F9922ACA1FEF8D0A",
+    "index": 13,
+    "seed": "64C36E875BA8A695",
+    "act": 2,
+    "encounter": "THE_OBSCURA_NORMAL",
+    "deck_size": 22,
+    "hand": 5,
+    "energy": 3,
+    "legal": 7,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "PARAFRIGHT",
+        "hp": 21,
+        "max_hp": 21,
+        "block": 0,
+        "move": "SLAM_MOVE",
+        "intents": [],
+        "attack_hits": [
+          16
+        ],
+        "powers": [
+          {
+            "id": "ILLUSION_POWER",
+            "amount": 1
+          },
+          {
+            "id": "MINION_POWER",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "THE_OBSCURA",
+        "hp": 66,
+        "max_hp": 123,
+        "block": 0,
+        "move": "SAIL_MOVE",
+        "intents": [
+          "Buff"
+        ],
+        "attack_hits": [],
+        "powers": [
+          {
+            "id": "VULNERABLE_POWER",
+            "amount": 1
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "PLATING_POWER",
+        "amount": 2
+      },
+      {
+        "id": "STRENGTH_POWER",
+        "amount": 3
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "71e21f12c6d5ee7930e11bc820169d7b92fd08da6fdea97a0d6c8004a7f20a3e",
+    "flags": [
+      "X",
+      "draw",
+      "multi_enemy"
+    ]
+  },
+  {
+    "id": "dev-16",
+    "family": "055d3dfebb4a239114098972a62c6bccd3383c9c29cacbe01d3c11db55ab3ea9",
+    "source": "6A dev-low-0",
+    "group": "dev",
+    "turn": 6,
+    "view": "66CBCCB199C5B46E451ECAAF72828A9CDE9AE737BE0F23EF6E0231646ECED367",
+    "index": 26,
+    "seed": "30F7F8217B4FA0E2",
+    "act": 3,
+    "encounter": "TEST_SUBJECT_BOSS",
+    "deck_size": 24,
+    "hand": 5,
+    "energy": 3,
+    "legal": 6,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "TEST_SUBJECT",
+        "hp": 200,
+        "max_hp": 200,
+        "block": 0,
+        "move": "MULTI_CLAW_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          10,
+          10,
+          10
+        ],
+        "powers": [
+          {
+            "id": "ADAPTABLE_POWER",
+            "amount": 1
+          },
+          {
+            "id": "PAINFUL_STABS_POWER",
+            "amount": 1
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "STRENGTH_POWER",
+        "amount": 2
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "26ce93dc6f44a85a39420bbb08fa5b1812532bf810fa2812ef19cdd4487028e4",
+    "flags": [
+      "draw"
+    ]
+  },
+  {
+    "id": "dev-17",
+    "family": "661413ede63c7315beb36210fa4fbd3be6a827e90ba2cf5b8413880c72390fe9",
+    "source": "6A dev-low-0",
+    "group": "dev",
+    "turn": 2,
+    "view": "C3BBD2DCDC25B61E917937594A9A48F68EB5E0919A3BC14D2A37326BE1489EE2",
+    "index": 4,
+    "seed": "ACF6B9D36AFB83B0",
+    "act": 3,
+    "encounter": "KNIGHTS_ELITE",
+    "deck_size": 24,
+    "hand": 5,
+    "energy": 3,
+    "legal": 8,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "FLAIL_KNIGHT",
+        "hp": 101,
+        "max_hp": 101,
+        "block": 0,
+        "move": "RAM_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          15
+        ],
+        "powers": []
+      },
+      {
+        "slot": 1,
+        "species": "SPECTRAL_KNIGHT",
+        "hp": 87,
+        "max_hp": 93,
+        "block": 0,
+        "move": "SOUL_SLASH",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          15
+        ],
+        "powers": []
+      },
+      {
+        "slot": 2,
+        "species": "MAGI_KNIGHT",
+        "hp": 82,
+        "max_hp": 82,
+        "block": 5,
+        "move": "DAMPEN_MOVE",
+        "intents": [
+          "Debuff"
+        ],
+        "attack_hits": [],
+        "powers": []
+      }
+    ],
+    "powers": [
+      {
+        "id": "HEX_POWER",
+        "amount": 2
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "0cc23d613dfd8b2d0ce1f67d6599be6d9b8a4846779b53ad3c5a48a5d60bf1d0",
+    "flags": [
+      "multi_enemy"
+    ]
+  },
+  {
+    "id": "dev-18",
+    "family": "02920dc0f4bfb5b21d4760f677a2c8576d3e0a9b04a351416bf8e0a0168fcdaf",
+    "source": "6A dev-low-0",
+    "group": "dev",
+    "turn": 6,
+    "view": "998494B9A6DDFACCE89CE941CF0FDF48F9036434979ED17145EB85E2B218CB36",
+    "index": 20,
+    "seed": "0A3C22122A304BA9",
+    "act": 3,
+    "encounter": "FABRICATOR_NORMAL",
+    "deck_size": 12,
+    "hand": 5,
+    "energy": 3,
+    "legal": 5,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "STABBOT",
+        "hp": 19,
+        "max_hp": 19,
+        "block": 0,
+        "move": "STAB_MOVE",
+        "intents": [],
+        "attack_hits": [
+          11
+        ],
+        "powers": [
+          {
+            "id": "MINION_POWER",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "FABRICATOR",
+        "hp": 55,
+        "max_hp": 150,
+        "block": 0,
+        "move": "FABRICATE_MOVE",
+        "intents": [
+          "Summon"
+        ],
+        "attack_hits": [],
+        "powers": []
+      }
+    ],
+    "powers": [
+      {
+        "id": "STRENGTH_POWER",
+        "amount": 4
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "e32523785b1eefd39d1a5a26018f32fa385c02b92d54f0a1d4a145cc9d99807d",
+    "flags": [
+      "multi_enemy"
+    ]
+  },
+  {
+    "id": "dev-19",
+    "family": "f00e15912f5c350b63ae982c8de6d6c09a4db698eadc7fec92801d9c1c195db8",
+    "source": "6A dev-low-0",
+    "group": "dev",
+    "turn": 5,
+    "view": "AB10BBD7F937948600F770D8557E3AFA14CC3DCCA12A47375461BAF1B9FFACC4",
+    "index": 16,
+    "seed": "67576E4AFDD9F5E0",
+    "act": 1,
+    "encounter": "THE_KIN_BOSS",
+    "deck_size": 16,
+    "hand": 5,
+    "energy": 3,
+    "legal": 12,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "KIN_FOLLOWER",
+        "hp": 28,
+        "max_hp": 58,
+        "block": 0,
+        "move": "QUICK_SLASH_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          9
+        ],
+        "powers": [
+          {
+            "id": "MINION_POWER",
+            "amount": 1
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 4
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "KIN_FOLLOWER",
+        "hp": 34,
+        "max_hp": 59,
+        "block": 0,
+        "move": "BOOMERANG_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          4,
+          4
+        ],
+        "powers": [
+          {
+            "id": "MINION_POWER",
+            "amount": 1
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          },
+          {
+            "id": "VULNERABLE_POWER",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "species": "KIN_PRIEST",
+        "hp": 190,
+        "max_hp": 190,
+        "block": 0,
+        "move": "ORB_OF_FRAILTY_MOVE",
+        "intents": [
+          "Attack",
+          "Debuff"
+        ],
+        "attack_hits": [
+          10
+        ],
+        "powers": [
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "c7811a0f3ddc669d66cc3ff6421b2e12a00d28bc8bbaba387b6c8d671b87425b",
+    "flags": [
+      "X",
+      "multi_enemy"
+    ]
+  },
+  {
+    "id": "dev-20",
+    "family": "fd2af0166991db698af6c7fd3bcecad9488e5652b1f0fe586a73e95eca9d02b6",
+    "source": "6A dev-low-0",
+    "group": "dev",
+    "turn": 3,
+    "view": "EF3EF023F19A937CDBCFADC89926543707416A81E70330580DF3C60148FDF4AC",
+    "index": 10,
+    "seed": "C4E6DA969FC2BEE5",
+    "act": 1,
+    "encounter": "BYRDONIS_ELITE",
+    "deck_size": 13,
+    "hand": 5,
+    "energy": 3,
+    "legal": 6,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "BYRDONIS",
+        "hp": 44,
+        "max_hp": 83,
+        "block": 0,
+        "move": "SWOOP_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          19
+        ],
+        "powers": [
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          },
+          {
+            "id": "TERRITORIAL_POWER",
+            "amount": 1
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "INFERNO_POWER",
+        "amount": 6
+      },
+      {
+        "id": "RUPTURE_POWER",
+        "amount": 1
+      },
+      {
+        "id": "STRENGTH_POWER",
+        "amount": 1
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "18e335e0cf1400c027cc1a0a526aff0395e4d2e040e6b286ad2014f97b52f0b0",
+    "flags": [
+      "draw",
+      "energy"
+    ]
+  },
+  {
+    "id": "dev-21",
+    "family": "09fda266feabc42f9e659c0604d6b611f8376d6e3a13e6fa475d5357d8738a65",
+    "source": "6A dev-low-0",
+    "group": "dev",
+    "turn": 3,
+    "view": "4466B75BE8F33B0F1CBFDB8D27B65B2FE62CDB089A8E6CB2959DF3B0F746AA35",
+    "index": 7,
+    "seed": "08DCD48F4E1AD207",
+    "act": 1,
+    "encounter": "FOGMOG_NORMAL",
+    "deck_size": 17,
+    "hand": 5,
+    "energy": 3,
+    "legal": 7,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "EYE_WITH_TEETH",
+        "hp": 6,
+        "max_hp": 6,
+        "block": 0,
+        "move": "DISTRACT_MOVE",
+        "intents": [],
+        "attack_hits": [],
+        "powers": [
+          {
+            "id": "ILLUSION_POWER",
+            "amount": 1
+          },
+          {
+            "id": "MINION_POWER",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "FOGMOG",
+        "hp": 26,
+        "max_hp": 74,
+        "block": 0,
+        "move": "HEADBUTT_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          15
+        ],
+        "powers": [
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 1
+          },
+          {
+            "id": "VULNERABLE_POWER",
+            "amount": 3
+          }
+        ]
+      }
+    ],
+    "powers": [],
+    "relics": [],
+    "prefix_sha256": "dee59c6b11229f4475741a591bb6d30ad7ab6ed687e991415b8df7bdf83cde26",
+    "flags": [
+      "multi_enemy"
+    ]
+  },
+  {
+    "id": "dev-22",
+    "family": "c7bcf3ec25228e4142f6e84f52d2cc7ced7dfd43ae67918153c39228858d73ee",
+    "source": "6A dev-low-0",
+    "group": "dev",
+    "turn": 1,
+    "view": "5CB2FB11DB3C0AAF266B902EE0113BA8C7633731CB3AC502899E57E684377A98",
+    "index": 0,
+    "seed": "68941D814A8E4B70",
+    "act": 2,
+    "encounter": "KAISER_CRAB_BOSS",
+    "deck_size": 19,
+    "hand": 5,
+    "energy": 3,
+    "legal": 9,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "CRUSHER",
+        "hp": 209,
+        "max_hp": 209,
+        "block": 0,
+        "move": "THRASH_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          18
+        ],
+        "powers": [
+          {
+            "id": "BACK_ATTACK_LEFT_POWER",
+            "amount": 1
+          },
+          {
+            "id": "CRAB_RAGE_POWER",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "ROCKET",
+        "hp": 199,
+        "max_hp": 199,
+        "block": 0,
+        "move": "CALCULATING_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          3
+        ],
+        "powers": [
+          {
+            "id": "BACK_ATTACK_RIGHT_POWER",
+            "amount": 1
+          },
+          {
+            "id": "CRAB_RAGE_POWER",
+            "amount": 1
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "SURROUNDED_POWER",
+        "amount": 1
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "flags": [
+      "multi_enemy"
+    ]
+  },
+  {
+    "id": "dev-23",
+    "family": "ff215b4bca921e642008273c49e83b788d4999f3e3fd64cb3f15b034be048f22",
+    "source": "6A dev-low-0",
+    "group": "dev",
+    "turn": 3,
+    "view": "68E52F585DE99819C9AB23D3ABDD4E167F8AEE21D02D3E2E5A74AC8A5DD50F68",
+    "index": 8,
+    "seed": "0EEAE79C25012DDF",
+    "act": 2,
+    "encounter": "DECIMILLIPEDE_ELITE",
+    "deck_size": 14,
+    "hand": 5,
+    "energy": 4,
+    "legal": 12,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "DECIMILLIPEDE_SEGMENT_FRONT",
+        "hp": 35,
+        "max_hp": 42,
+        "block": 0,
+        "move": "BULK_MOVE",
+        "intents": [
+          "Attack",
+          "Buff"
+        ],
+        "attack_hits": [
+          6
+        ],
+        "powers": [
+          {
+            "id": "REATTACH_POWER",
+            "amount": 25
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "species": "DECIMILLIPEDE_SEGMENT_MIDDLE",
+        "hp": 44,
+        "max_hp": 44,
+        "block": 0,
+        "move": "CONSTRICT_MOVE",
+        "intents": [
+          "Attack",
+          "Debuff"
+        ],
+        "attack_hits": [
+          10
+        ],
+        "powers": [
+          {
+            "id": "REATTACH_POWER",
+            "amount": 25
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "species": "DECIMILLIPEDE_SEGMENT_BACK",
+        "hp": 46,
+        "max_hp": 46,
+        "block": 0,
+        "move": "WRITHE_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          7,
+          7
+        ],
+        "powers": [
+          {
+            "id": "REATTACH_POWER",
+            "amount": 25
+          },
+          {
+            "id": "STRENGTH_POWER",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "id": "CRIMSON_MANTLE_POWER",
+        "amount": 7
+      },
+      {
+        "id": "PYRE_POWER",
+        "amount": 1
+      },
+      {
+        "id": "WEAK_POWER",
+        "amount": 1
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "43ec5d1c983250e569782ebe77e15dfea1a9b2c5776779a95e9ffc558344d6bc",
+    "flags": [
+      "multi_enemy"
+    ]
+  },
+  {
+    "id": "dev-24",
+    "family": "abf121a9d4ebe5fbb163b93a903d323a8dd78b125cbc537523388165be2d10e6",
+    "source": "6A dev-low-0",
+    "group": "dev",
+    "turn": 7,
+    "view": "8FF4E15A74B6B53B8F6ACD5D72EA63249438D3FD00C6C96260F157B98D32E036",
+    "index": 26,
+    "seed": "98230063B4B7EBA9",
+    "act": 2,
+    "encounter": "HUNTER_KILLER_NORMAL",
+    "deck_size": 18,
+    "hand": 5,
+    "energy": 3,
+    "legal": 6,
+    "enemies": [
+      {
+        "slot": 0,
+        "species": "HUNTER_KILLER",
+        "hp": 38,
+        "max_hp": 121,
+        "block": 0,
+        "move": "PUNCTURE_MOVE",
+        "intents": [
+          "Attack"
+        ],
+        "attack_hits": [
+          7,
+          7,
+          7
+        ],
+        "powers": []
+      }
+    ],
+    "powers": [
+      {
+        "id": "STRENGTH_POWER",
+        "amount": 3
+      },
+      {
+        "id": "TENDER_POWER",
+        "amount": 1
+      },
+      {
+        "id": "UNMOVABLE_POWER",
+        "amount": 1
+      }
+    ],
+    "relics": [],
+    "prefix_sha256": "f59ebd8a9c96f5a0d9fa67ceb8021352865e2a41316ff428072365ae54bc7a46",
+    "flags": []
+  }
+]
