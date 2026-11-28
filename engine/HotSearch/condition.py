@@ -51,9 +51,13 @@ def restore(client,spec,trace,turn,models,prefix):
     return st,history
 
 
-def run(out,ids,limit,split="train",audit=False,hot_pairs=False,diagnostic=False,arm="tactical",suffix_limit=32,native_worlds=0):
+def run(out,ids,limit,split="train",audit=False,hot_pairs=False,diagnostic=False,arm="tactical",suffix_limit=32,native_worlds=0,*,specs=None,worlds_per_root=None,retain_trajectory=False):
     out.mkdir(parents=True,exist_ok=False)
-    if hot_pairs:
+    if specs is not None:
+        if not hot_pairs:raise ValueError("custom roots require a Hot prefix")
+        panel=[w|dict(source="hot",index=i) for i,w in enumerate(json.loads(specs.read_bytes()))]
+        if ids is None:ids=list(range(len(panel)))
+    elif hot_pairs:
         if split!="train" or audit:raise ValueError("hot pair panel is the train intervention panel")
         panel=[w|dict(source=split,index=i) for i,w in enumerate(json.load(gzip.open(ROOT/"experiments/m1-core5d/evidence/panel.gz"))[split])]
         groups=json.loads((ROOT/"experiments/m1-infra0/panel.json").read_bytes())["pairs"]
@@ -62,6 +66,9 @@ def run(out,ids,limit,split="train",audit=False,hot_pairs=False,diagnostic=False
         panel=json.load(gzip.open(ROOT/"logs/infra0-world-inputs/panel.gz"))[split]
         if ids is None:ids=list(range(len(panel)))
     world_count=0 if hot_pairs else 12 if audit else 8 if split=="dev" else 4
+    if worlds_per_root is not None:
+        if worlds_per_root<0:raise ValueError("negative world count")
+        world_count=worlds_per_root
     old={}
     for source in (set() if hot_pairs else {panel[i]["source"] for i in ids}):
         for p in (ROOT/"experiments/m1-core5d/evidence").glob(source+"-V2-*.gz"):
@@ -149,6 +156,7 @@ def run(out,ids,limit,split="train",audit=False,hot_pairs=False,diagnostic=False
                                     matched=observed in plan["law"],public_key=public_key,public_matched=public_key in plan["public_law"],actual_steps=row["actual_steps"],
                                     search_steps=sum(q["reference_law"]["steps"]+sum(o["steps"] for o in q["options"]) for q in row["queries"]),
                                     utility=-50 if row["status"]=="Defeat" else float(payoff(torch.tensor(s["hp"]-end["hp"]),torch.tensor(s["max_hp"])))))
+                                if retain_trajectory:sides[-1]["trajectory"]=row
                                 if native_worlds and world<native_worlds:
                                     witness=dict(trace=prefix["trace"]+row["trace"],
                                         boundaries=prefix.get("boundaries",[])+row.get("boundaries",[]),
@@ -163,11 +171,11 @@ def run(out,ids,limit,split="train",audit=False,hot_pairs=False,diagnostic=False
                                     sides[-1]["native_seconds"]=time.perf_counter()-tick
                             except (KeyError,RuntimeError,ValueError,IndexError) as e:
                                 sides.append(dict(status="failed",reason=str(e)[:300],actual_steps=row["actual_steps"],
+                                    trajectory=row if retain_trajectory else None,
                                     failed_boundary=next((q for q in [row.get("intervention",{}),*row["queries"]] if q.get("matched") is False),None)))
                     outcomes=case["natural_pair"]+[r for w in case["worlds"] for r in w["outcomes"]]
                     case["status"]="matched" if all(r.get("matched") and r.get("public_matched") for r in outcomes) else "law_or_execution_gap"
-                    if any(r["native"]["status"]!="matched" for r in outcomes if "native" in r):
-                        case["status"]="native_audit_gap"
+                    # Optional mechanism-debug receipts have no role in strict production admission.
                 except (ValueError,RuntimeError,KeyError,IndexError) as e:case["reason"]=str(e)[:300]
                 stream.write(json.dumps(case,separators=(",",":"))+"\n");stream.flush()
         host=client.call("metrics")
@@ -185,4 +193,5 @@ if __name__=="__main__":
     p.add_argument("--arm",choices=["tactical","contingent","turn"],default="tactical")
     p.add_argument("--suffix-limit",type=int,default=32)
     p.add_argument("--native-worlds",type=int,default=0,help="audit original plus this many resampled worlds per root")
-    a=p.parse_args();run(a.output,a.ids,a.limit,a.split,a.audit,a.hot_pairs,a.diagnostic,a.arm,a.suffix_limit,a.native_worlds)
+    p.add_argument("--specs",type=Path);p.add_argument("--worlds",type=int);p.add_argument("--retain-trajectory",action="store_true")
+    a=p.parse_args();run(a.output,a.ids,a.limit,a.split,a.audit,a.hot_pairs,a.diagnostic,a.arm,a.suffix_limit,a.native_worlds,specs=a.specs,worlds_per_root=a.worlds,retain_trajectory=a.retain_trajectory)

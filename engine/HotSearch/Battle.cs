@@ -18,8 +18,10 @@ internal sealed partial class Battle
     private readonly Dictionary<ushort,(ushort Def,byte Up)> labels=new();
     private readonly Dictionary<ushort,HotCard> declaredCards=new();
     private CombatHotState world;
-    private static HotCard PublicCard(HotCard c)=>new(){
+    private HotCard PublicCard(HotCard c)=>new(){
         CardDefId=c.CardDefId,UpgradeLevel=c.UpgradeLevel,BaseEnergyCost=c.BaseEnergyCost,BaseStarCost=c.BaseStarCost,
+        // WITHER's persistent fake upgrades add exactly three to its public damage variable.
+        CardPrivate=rules.Cards[c.CardDefId].CardId==HotCustomCardId.Wither?c.Var0Delta/3:0,
         DampenOrigUpg=c.DampenOrigUpg,BaseReplayCount=c.BaseReplayCount,ExtraReplayThisTurn=c.ExtraReplayThisTurn,LocalKeywordsMask=c.LocalKeywordsMask,
         Flags=c.Flags&(HotCardFlags.CostsX|HotCardFlags.HasStarCostX|HotCardFlags.HasDeckVersion|HotCardFlags.SingleTurnRetain|
             HotCardFlags.IsSlyThisTurn|HotCardFlags.ExhaustOnNextPlay|HotCardFlags.ReturnToHandNextTurn|HotCardFlags.FetchPlayedThisTurn),
@@ -85,6 +87,12 @@ internal sealed partial class Battle
                 foreach(var enemy in ZonePowers(world,HotPowerId.VitalSparkPower)){
                     prototype.AfflId=rules.GetAfflictionDefId(HotAfflictionId.Tainted);
                     prototype.AfflAmt=(short)Math.Clamp(enemy,0,byte.MaxValue);
+                }
+            }
+            if(rules.Cards[c.Def].Type.ToString()=="Power"){
+                foreach(var amount in ZonePowers(world,HotPowerId.GalvanicPower)){
+                    prototype.AfflId=rules.GetAfflictionDefId(HotAfflictionId.Galvanized);
+                    prototype.AfflAmt=(short)Math.Clamp(amount,0,byte.MaxValue);
                 }
             }
             prototype.Flags|=HotCardFlags.HasDeckVersion;declaredCards[uid]=PublicCard(prototype);

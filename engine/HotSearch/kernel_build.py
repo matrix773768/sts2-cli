@@ -71,6 +71,8 @@ def kernel(here,root,build):
     edit(sim/"HotCombatEngine.Damage.cs","private static decimal ComputeModifiedDamage(","internal static decimal ComputeModifiedDamage(")
     edit(resolver,"ids[i] = cards[i].CardUid;","Published?.Invoke(cards[i]);\n                ids[i] = cards[i].CardUid;")
     monsters=sim/"Content/HotMonsters.cs"
+    anchor="private static void FakeUpgradeAllWitherCards(ref CombatHotState s, HotRules rules)\n    {"
+    edit(monsters,anchor,anchor+"\n        "+probe+"?.TransformDraw(in s,c=>{if(rules.Cards[c.CardDefId].CardId==HotCustomCardId.Wither){c.Var0Delta+=3;c.CardPrivate++;}return c;});")
     # Reuse the vanilla per-card downgrade body for the public descriptor update.
     body=monsters.read_text()
     downgrade=body.split("            byte origUpg = card.UpgradeLevel;",1)[1].split("            next[cursor++]",1)[0]

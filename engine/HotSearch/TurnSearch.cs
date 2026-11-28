@@ -47,8 +47,14 @@ internal sealed partial class Battle
                 // ImbalancedPower forces this public continuation after a fully blocked hit.
                 enemy.AiRegs[3]=machine.FindNode("HEADBUTT_MOVE")+1;
             }
-            if(machine.MonsterEntry is "KNOWLEDGE_DEMON" or "TEST_SUBJECT"){
-                string completed=machine.MonsterEntry=="TEST_SUBJECT"?"RESPAWN_MOVE":"CURSE_OF_KNOWLEDGE_MOVE";
+            if(machine.MonsterEntry=="TEST_SUBJECT"){
+                // A respawn can interrupt a player action between two intent announcements.
+                // Each new form applies its own public, permanent power.
+                enemy.AiRegs[0]=HotCombatEngine.GetPowerAmountById(in w,rules,(byte)(slot+3),HotPowerId.NemesisPower)>0?2:
+                    HotCombatEngine.GetPowerAmountById(in w,rules,(byte)(slot+3),HotPowerId.PainfulStabsPower)>0?1:0;
+            }
+            if(machine.MonsterEntry=="KNOWLEDGE_DEMON"){
+                const string completed="CURSE_OF_KNOWLEDGE_MOVE";
                 enemy.AiRegs[0]=history.SkipLast(1).Count(move=>machine.Nodes[move].MoveId==completed);
             }
             if(machine.MonsterEntry=="AEONGLASS"){
