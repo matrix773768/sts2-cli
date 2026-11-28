@@ -1,0 +1,868 @@
+{
+  "StatusCardsDrawnThisTurn": {
+    "observable": "drawn status card enters visible hand",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 1866,
+        "write": "hot.Counters[(int)HotCounterSlot.StatusCardsDrawnThisTurn] = statusCardsDrawn;",
+        "condition": [
+          "}"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.CardPlay.cs",
+        "line": 958,
+        "write": "s.Counters[(int)HotCounterSlot.StatusCardsDrawnThisTurn]++;",
+        "condition": [
+          "s.Counters[(int)HotCounterSlot.NonHandDrawsThisTurn]++;",
+          "if (drawnDef.Type == CardType.Status)"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Turn.cs",
+        "line": 1564,
+        "write": "s.Counters[(int)HotCounterSlot.StatusCardsDrawnThisTurn] = 0;",
+        "condition": [
+          "private static void ResetPlayerTurnCounters(ref CombatHotState s, HotRules rules)",
+          "{"
+        ]
+      }
+    ]
+  },
+  "ZeroCostAttackStartsThisTurn": {
+    "observable": "a zero-cost attack starts",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 1867,
+        "write": "hot.Counters[(int)HotCounterSlot.ZeroCostAttackStartsThisTurn] = zeroCostAttackStarts;",
+        "condition": [
+          "hot.Counters[(int)HotCounterSlot.StatusCardsDrawnThisTurn] = statusCardsDrawn;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.CardPlay.cs",
+        "line": 537,
+        "write": "s.Counters[(int)HotCounterSlot.ZeroCostAttackStartsThisTurn]++;",
+        "condition": [
+          "s.Counters[(int)HotCounterSlot.AttackSkillStartsThisTurn]++;",
+          "if (energyValue == 0)"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Turn.cs",
+        "line": 1565,
+        "write": "s.Counters[(int)HotCounterSlot.ZeroCostAttackStartsThisTurn] = 0;",
+        "condition": [
+          "{",
+          "s.Counters[(int)HotCounterSlot.StatusCardsDrawnThisTurn] = 0;"
+        ]
+      }
+    ]
+  },
+  "CardPlayStartsThisTurn": {
+    "observable": "a declared card play starts, including replay",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 1868,
+        "write": "hot.Counters[(int)HotCounterSlot.CardPlayStartsThisTurn] = cardPlayStarts;",
+        "condition": [
+          "hot.Counters[(int)HotCounterSlot.StatusCardsDrawnThisTurn] = statusCardsDrawn;",
+          "hot.Counters[(int)HotCounterSlot.ZeroCostAttackStartsThisTurn] = zeroCostAttackStarts;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.CardPlay.cs",
+        "line": 529,
+        "write": "s.Counters[(int)HotCounterSlot.CardPlayStartsThisTurn]++;",
+        "condition": [
+          "// RecordCardPlayStarted"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Turn.cs",
+        "line": 1566,
+        "write": "s.Counters[(int)HotCounterSlot.CardPlayStartsThisTurn] = 0;",
+        "condition": [
+          "s.Counters[(int)HotCounterSlot.StatusCardsDrawnThisTurn] = 0;",
+          "s.Counters[(int)HotCounterSlot.ZeroCostAttackStartsThisTurn] = 0;"
+        ]
+      }
+    ]
+  },
+  "AttackSkillStartsThisTurn": {
+    "observable": "attack or skill starts",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 1869,
+        "write": "hot.Counters[(int)HotCounterSlot.AttackSkillStartsThisTurn] = attackSkillStarts;",
+        "condition": [
+          "hot.Counters[(int)HotCounterSlot.ZeroCostAttackStartsThisTurn] = zeroCostAttackStarts;",
+          "hot.Counters[(int)HotCounterSlot.CardPlayStartsThisTurn] = cardPlayStarts;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.CardPlay.cs",
+        "line": 535,
+        "write": "s.Counters[(int)HotCounterSlot.AttackSkillStartsThisTurn]++;",
+        "condition": [
+          "{",
+          "s.Counters[(int)HotCounterSlot.AttackPlayStartsThisTurn]++;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.CardPlay.cs",
+        "line": 542,
+        "write": "s.Counters[(int)HotCounterSlot.AttackSkillStartsThisTurn]++;",
+        "condition": [
+          "{",
+          "s.Counters[(int)HotCounterSlot.SkillPlayStartsThisTurn]++;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Turn.cs",
+        "line": 1568,
+        "write": "s.Counters[(int)HotCounterSlot.AttackSkillStartsThisTurn] = 0;",
+        "condition": [
+          "s.Counters[(int)HotCounterSlot.CardPlayStartsThisTurn] = 0;",
+          "s.Counters[(int)HotCounterSlot.FirstInSeriesCardPlayStartsThisTurn] = 0;"
+        ]
+      }
+    ]
+  },
+  "AttackPlayStartsThisTurn": {
+    "observable": "attack starts",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 1870,
+        "write": "hot.Counters[(int)HotCounterSlot.AttackPlayStartsThisTurn] = attackPlayStarts;",
+        "condition": [
+          "hot.Counters[(int)HotCounterSlot.CardPlayStartsThisTurn] = cardPlayStarts;",
+          "hot.Counters[(int)HotCounterSlot.AttackSkillStartsThisTurn] = attackSkillStarts;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.CardPlay.cs",
+        "line": 534,
+        "write": "s.Counters[(int)HotCounterSlot.AttackPlayStartsThisTurn]++;",
+        "condition": [
+          "if (cardDef.Type == CardType.Attack)",
+          "{"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Turn.cs",
+        "line": 1569,
+        "write": "s.Counters[(int)HotCounterSlot.AttackPlayStartsThisTurn] = 0;",
+        "condition": [
+          "s.Counters[(int)HotCounterSlot.FirstInSeriesCardPlayStartsThisTurn] = 0;",
+          "s.Counters[(int)HotCounterSlot.AttackSkillStartsThisTurn] = 0;"
+        ]
+      }
+    ]
+  },
+  "SkillPlayStartsThisTurn": {
+    "observable": "skill starts",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 1871,
+        "write": "hot.Counters[(int)HotCounterSlot.SkillPlayStartsThisTurn] = skillPlayStarts;",
+        "condition": [
+          "hot.Counters[(int)HotCounterSlot.AttackSkillStartsThisTurn] = attackSkillStarts;",
+          "hot.Counters[(int)HotCounterSlot.AttackPlayStartsThisTurn] = attackPlayStarts;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.CardPlay.cs",
+        "line": 541,
+        "write": "s.Counters[(int)HotCounterSlot.SkillPlayStartsThisTurn]++;",
+        "condition": [
+          "else if (cardDef.Type == CardType.Skill)",
+          "{"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Turn.cs",
+        "line": 1570,
+        "write": "s.Counters[(int)HotCounterSlot.SkillPlayStartsThisTurn] = 0;",
+        "condition": [
+          "s.Counters[(int)HotCounterSlot.AttackSkillStartsThisTurn] = 0;",
+          "s.Counters[(int)HotCounterSlot.AttackPlayStartsThisTurn] = 0;"
+        ]
+      }
+    ]
+  },
+  "PowerPlayStartsThisTurn": {
+    "observable": "power play starts",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 1872,
+        "write": "hot.Counters[(int)HotCounterSlot.PowerPlayStartsThisTurn] = powerPlayStarts;",
+        "condition": [
+          "hot.Counters[(int)HotCounterSlot.AttackPlayStartsThisTurn] = attackPlayStarts;",
+          "hot.Counters[(int)HotCounterSlot.SkillPlayStartsThisTurn] = skillPlayStarts;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.CardPlay.cs",
+        "line": 546,
+        "write": "s.Counters[(int)HotCounterSlot.PowerPlayStartsThisTurn]++;",
+        "condition": [
+          "else if (cardDef.Type == CardType.Power)",
+          "{"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Turn.cs",
+        "line": 1571,
+        "write": "s.Counters[(int)HotCounterSlot.PowerPlayStartsThisTurn] = 0;",
+        "condition": [
+          "s.Counters[(int)HotCounterSlot.AttackPlayStartsThisTurn] = 0;",
+          "s.Counters[(int)HotCounterSlot.SkillPlayStartsThisTurn] = 0;"
+        ]
+      }
+    ]
+  },
+  "CardsExhaustedThisTurn": {
+    "observable": "a card becomes exhausted",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 1873,
+        "write": "hot.Counters[(int)HotCounterSlot.CardsExhaustedThisTurn] = cardsExhausted;",
+        "condition": [
+          "hot.Counters[(int)HotCounterSlot.SkillPlayStartsThisTurn] = skillPlayStarts;",
+          "hot.Counters[(int)HotCounterSlot.PowerPlayStartsThisTurn] = powerPlayStarts;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.CardPlay.cs",
+        "line": 806,
+        "write": "s.Counters[(int)HotCounterSlot.CardsExhaustedThisTurn]++;",
+        "condition": [
+          "int dstIdx = HotPiles.MoveCard(ref s, finalPlayIdx, HotPileKind.Exhaust, s.ExhaustCount);",
+          "ushort exhaustedUid = s.Cards[dstIdx].CardUid;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.CardPlay.cs",
+        "line": 1147,
+        "write": "s.Counters[(int)HotCounterSlot.CardsExhaustedThisTurn]++;",
+        "condition": [
+          "int dstIdx = HotPiles.MoveCard(ref s, cardIdx, HotPileKind.Exhaust, s.ExhaustCount);"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Turn.cs",
+        "line": 1572,
+        "write": "s.Counters[(int)HotCounterSlot.CardsExhaustedThisTurn] = 0;",
+        "condition": [
+          "s.Counters[(int)HotCounterSlot.SkillPlayStartsThisTurn] = 0;",
+          "s.Counters[(int)HotCounterSlot.PowerPlayStartsThisTurn] = 0;"
+        ]
+      }
+    ]
+  },
+  "CardsDiscardedThisTurn": {
+    "observable": "a card enters discard through discard event",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 1874,
+        "write": "hot.Counters[(int)HotCounterSlot.CardsDiscardedThisTurn] = cardsDiscarded;",
+        "condition": [
+          "hot.Counters[(int)HotCounterSlot.PowerPlayStartsThisTurn] = powerPlayStarts;",
+          "hot.Counters[(int)HotCounterSlot.CardsExhaustedThisTurn] = cardsExhausted;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.CardPlay.cs",
+        "line": 1038,
+        "write": "s.Counters[(int)HotCounterSlot.CardsDiscardedThisTurn]++;",
+        "condition": [
+          "int dstIdx = HotPiles.MoveCard(ref s, cardIdx, HotPileKind.Discard, s.DiscardCount);"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.CardPlay.cs",
+        "line": 1103,
+        "write": "s.Counters[(int)HotCounterSlot.CardsDiscardedThisTurn]++;",
+        "condition": [
+          "ushort cardDefId = s.Cards[idx].CardDefId;",
+          "int dstIdx = HotPiles.MoveCard(ref s, idx, HotPileKind.Discard, s.DiscardCount);"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Turn.cs",
+        "line": 1573,
+        "write": "s.Counters[(int)HotCounterSlot.CardsDiscardedThisTurn] = 0;",
+        "condition": [
+          "s.Counters[(int)HotCounterSlot.PowerPlayStartsThisTurn] = 0;",
+          "s.Counters[(int)HotCounterSlot.CardsExhaustedThisTurn] = 0;"
+        ]
+      }
+    ]
+  },
+  "EnergySpentThisTurn": {
+    "observable": "energy actually spent on a public play",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 1875,
+        "write": "hot.Counters[(int)HotCounterSlot.EnergySpentThisTurn] = energySpent;",
+        "condition": [
+          "hot.Counters[(int)HotCounterSlot.CardsExhaustedThisTurn] = cardsExhausted;",
+          "hot.Counters[(int)HotCounterSlot.CardsDiscardedThisTurn] = cardsDiscarded;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.CardPlay.cs",
+        "line": 127,
+        "write": "s.Counters[(int)HotCounterSlot.EnergySpentThisTurn] += energyValue;",
+        "condition": [
+          "if (energyValue > 0)",
+          "{"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Turn.cs",
+        "line": 1574,
+        "write": "s.Counters[(int)HotCounterSlot.EnergySpentThisTurn] = 0;",
+        "condition": [
+          "s.Counters[(int)HotCounterSlot.CardsExhaustedThisTurn] = 0;",
+          "s.Counters[(int)HotCounterSlot.CardsDiscardedThisTurn] = 0;"
+        ]
+      }
+    ]
+  },
+  "StarsGainedThisTurn": {
+    "observable": "public star gain",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 1876,
+        "write": "hot.Counters[(int)HotCounterSlot.StarsGainedThisTurn] = starsGained;",
+        "condition": [
+          "hot.Counters[(int)HotCounterSlot.CardsDiscardedThisTurn] = cardsDiscarded;",
+          "hot.Counters[(int)HotCounterSlot.EnergySpentThisTurn] = energySpent;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Damage.cs",
+        "line": 1080,
+        "write": "s.Counters[(int)HotCounterSlot.StarsGainedThisTurn] += amount;",
+        "condition": [
+          "return;",
+          "s.Stars += amount;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Turn.cs",
+        "line": 1575,
+        "write": "s.Counters[(int)HotCounterSlot.StarsGainedThisTurn] = 0;",
+        "condition": [
+          "s.Counters[(int)HotCounterSlot.CardsDiscardedThisTurn] = 0;",
+          "s.Counters[(int)HotCounterSlot.EnergySpentThisTurn] = 0;"
+        ]
+      }
+    ]
+  },
+  "NonHandDrawsThisTurn": {
+    "observable": "a draw outside initial hand draw",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 1877,
+        "write": "hot.Counters[(int)HotCounterSlot.NonHandDrawsThisTurn] = nonHandDraws;",
+        "condition": [
+          "hot.Counters[(int)HotCounterSlot.EnergySpentThisTurn] = energySpent;",
+          "hot.Counters[(int)HotCounterSlot.StarsGainedThisTurn] = starsGained;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.CardPlay.cs",
+        "line": 956,
+        "write": "s.Counters[(int)HotCounterSlot.NonHandDrawsThisTurn]++;",
+        "condition": [
+          "s.HistoryCardsDrawn++;",
+          "if (!fromHandDraw)"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Turn.cs",
+        "line": 1576,
+        "write": "s.Counters[(int)HotCounterSlot.NonHandDrawsThisTurn] = 0;",
+        "condition": [
+          "s.Counters[(int)HotCounterSlot.EnergySpentThisTurn] = 0;",
+          "s.Counters[(int)HotCounterSlot.StarsGainedThisTurn] = 0;"
+        ]
+      }
+    ]
+  },
+  "HasLostHpThisTurn": {
+    "observable": "visible positive HP loss",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 1878,
+        "write": "hot.Counters[(int)HotCounterSlot.HasLostHpThisTurn] = hasLostHpThisTurn;",
+        "condition": [
+          "hot.Counters[(int)HotCounterSlot.StarsGainedThisTurn] = starsGained;",
+          "hot.Counters[(int)HotCounterSlot.NonHandDrawsThisTurn] = nonHandDraws;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Damage.cs",
+        "line": 500,
+        "write": "s.Counters[(int)HotCounterSlot.HasLostHpThisTurn] = 1;",
+        "condition": [
+          "{",
+          "s.HistoryUnblockedHitsReceived++;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Turn.cs",
+        "line": 1577,
+        "write": "s.Counters[(int)HotCounterSlot.HasLostHpThisTurn] = 0;",
+        "condition": [
+          "s.Counters[(int)HotCounterSlot.StarsGainedThisTurn] = 0;",
+          "s.Counters[(int)HotCounterSlot.NonHandDrawsThisTurn] = 0;"
+        ]
+      }
+    ]
+  },
+  "WasDoomAppliedThisTurn": {
+    "observable": "visible Doom application",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 1879,
+        "write": "hot.Counters[(int)HotCounterSlot.WasDoomAppliedThisTurn] = wasDoomAppliedThisTurn;",
+        "condition": [
+          "hot.Counters[(int)HotCounterSlot.NonHandDrawsThisTurn] = nonHandDraws;",
+          "hot.Counters[(int)HotCounterSlot.HasLostHpThisTurn] = hasLostHpThisTurn;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Damage.cs",
+        "line": 1434,
+        "write": "s.Counters[(int)HotCounterSlot.WasDoomAppliedThisTurn] = 1;",
+        "condition": [
+          "if (pid == HotPowerId.DoomPower && delta > 0)",
+          "{"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Turn.cs",
+        "line": 1578,
+        "write": "s.Counters[(int)HotCounterSlot.WasDoomAppliedThisTurn] = 0;",
+        "condition": [
+          "s.Counters[(int)HotCounterSlot.NonHandDrawsThisTurn] = 0;",
+          "s.Counters[(int)HotCounterSlot.HasLostHpThisTurn] = 0;"
+        ]
+      }
+    ]
+  },
+  "AttacksPlayedThisTurn": {
+    "observable": "attack finished resolving",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 1880,
+        "write": "hot.Counters[(int)HotCounterSlot.AttacksPlayedThisTurn] = attackPlayStarts;",
+        "condition": [
+          "hot.Counters[(int)HotCounterSlot.HasLostHpThisTurn] = hasLostHpThisTurn;",
+          "hot.Counters[(int)HotCounterSlot.WasDoomAppliedThisTurn] = wasDoomAppliedThisTurn;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.CardPlay.cs",
+        "line": 674,
+        "write": "s.Counters[(int)HotCounterSlot.AttacksPlayedThisTurn]++;",
+        "condition": [
+          "if (cardDef.Type == CardType.Attack)",
+          "{"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Turn.cs",
+        "line": 1579,
+        "write": "s.Counters[(int)HotCounterSlot.AttacksPlayedThisTurn] = 0;",
+        "condition": [
+          "s.Counters[(int)HotCounterSlot.HasLostHpThisTurn] = 0;",
+          "s.Counters[(int)HotCounterSlot.WasDoomAppliedThisTurn] = 0;"
+        ]
+      }
+    ]
+  },
+  "SkillsPlayedThisTurn": {
+    "observable": "skill finished resolving",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 1881,
+        "write": "hot.Counters[(int)HotCounterSlot.SkillsPlayedThisTurn] = skillPlayStarts;",
+        "condition": [
+          "hot.Counters[(int)HotCounterSlot.WasDoomAppliedThisTurn] = wasDoomAppliedThisTurn;",
+          "hot.Counters[(int)HotCounterSlot.AttacksPlayedThisTurn] = attackPlayStarts;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.CardPlay.cs",
+        "line": 685,
+        "write": "s.Counters[(int)HotCounterSlot.SkillsPlayedThisTurn]++;",
+        "condition": [
+          "}",
+          "else if (cardDef.Type == CardType.Skill)"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Turn.cs",
+        "line": 1580,
+        "write": "s.Counters[(int)HotCounterSlot.SkillsPlayedThisTurn] = 0;",
+        "condition": [
+          "s.Counters[(int)HotCounterSlot.WasDoomAppliedThisTurn] = 0;",
+          "s.Counters[(int)HotCounterSlot.AttacksPlayedThisTurn] = 0;"
+        ]
+      }
+    ]
+  },
+  "CardsPlayedThisTurn": {
+    "observable": "card play finished resolving",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 1882,
+        "write": "hot.Counters[(int)HotCounterSlot.CardsPlayedThisTurn] = cardPlayStarts;",
+        "condition": [
+          "hot.Counters[(int)HotCounterSlot.AttacksPlayedThisTurn] = attackPlayStarts;",
+          "hot.Counters[(int)HotCounterSlot.SkillsPlayedThisTurn] = skillPlayStarts;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.CardPlay.cs",
+        "line": 671,
+        "write": "s.Counters[(int)HotCounterSlot.CardsPlayedThisTurn]++;",
+        "condition": [
+          "}"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Turn.cs",
+        "line": 1581,
+        "write": "s.Counters[(int)HotCounterSlot.CardsPlayedThisTurn] = 0;",
+        "condition": [
+          "s.Counters[(int)HotCounterSlot.AttacksPlayedThisTurn] = 0;",
+          "s.Counters[(int)HotCounterSlot.SkillsPlayedThisTurn] = 0;"
+        ]
+      }
+    ]
+  },
+  "PlayerCumulativeHpLost": {
+    "observable": "sum of visible HP-loss events, before netting heal",
+    "writes": [
+      {
+        "source": "Sim/HotCombatEngine.Damage.cs",
+        "line": 501,
+        "write": "s.Counters[(int)HotCounterSlot.PlayerCumulativeHpLost] += unblockedDamage;",
+        "condition": [
+          "s.HistoryUnblockedHitsReceived++;",
+          "s.Counters[(int)HotCounterSlot.HasLostHpThisTurn] = 1;"
+        ]
+      }
+    ]
+  },
+  "PlayerRecoveredHp": {
+    "observable": "sum of visible heals",
+    "writes": [
+      {
+        "source": "Sim/HotCombatEngine.Damage.cs",
+        "line": 951,
+        "write": "s.Counters[(int)HotCounterSlot.PlayerRecoveredHp] += healed;",
+        "condition": [
+          "creature.CurrentHp = next;",
+          "if (targetSlot == 0 && healed > 0)"
+        ]
+      }
+    ]
+  },
+  "OstyAttacksThisTurn": {
+    "observable": "pet attack (pet roots are blocked)",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 1883,
+        "write": "hot.Counters[(int)HotCounterSlot.OstyAttacksThisTurn] = ostyAttacks;",
+        "condition": [
+          "hot.Counters[(int)HotCounterSlot.SkillsPlayedThisTurn] = skillPlayStarts;",
+          "hot.Counters[(int)HotCounterSlot.CardsPlayedThisTurn] = cardPlayStarts;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Bytecode.cs",
+        "line": 601,
+        "write": "s.Counters[(int)HotCounterSlot.OstyAttacksThisTurn]++;",
+        "condition": [
+          "break;",
+          "}"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Turn.cs",
+        "line": 1582,
+        "write": "s.Counters[(int)HotCounterSlot.OstyAttacksThisTurn] = 0;",
+        "condition": [
+          "s.Counters[(int)HotCounterSlot.SkillsPlayedThisTurn] = 0;",
+          "s.Counters[(int)HotCounterSlot.CardsPlayedThisTurn] = 0;"
+        ]
+      },
+      {
+        "source": "Sim/Content/HotRegentNecro.cs",
+        "line": 857,
+        "write": "s.Counters[(int)HotCounterSlot.OstyAttacksThisTurn]++;",
+        "condition": [
+          "int playIdx = HotCombatEngine.FindCardIndexByUid(in s, HotPileKind.Play, card.CardUid);",
+          "HotCombatEngine.ExecuteDealerAllEnemiesAttack(ref s, ref cold, rules, scratch, dealerSlot: 1, cardIdx: playIdx, cardDefId: cardDefId, baseDamage: ostyDmg, hits: 1, powered: true);"
+        ]
+      },
+      {
+        "source": "Sim/Content/HotRegentNecro.cs",
+        "line": 1203,
+        "write": "s.Counters[(int)HotCounterSlot.OstyAttacksThisTurn]++;",
+        "condition": [
+          "int playIdx = HotCombatEngine.FindCardIndexByUid(in s, HotPileKind.Play, card.CardUid);",
+          "HotCombatEngine.ExecuteDealerAllEnemiesAttack(ref s, ref cold, rules, scratch, dealerSlot: 1, cardIdx: playIdx, cardDefId: cardDefId, baseDamage: ostyDmg, hits: 1, powered: true);"
+        ]
+      },
+      {
+        "source": "Sim/Content/HotRegentNecro.cs",
+        "line": 1674,
+        "write": "s.Counters[(int)HotCounterSlot.OstyAttacksThisTurn]++;",
+        "condition": [
+          "int playIdx = HotCombatEngine.FindCardIndexByUid(in s, HotPileKind.Play, card.CardUid);",
+          "HotCombatEngine.ExecuteDealerRandomEnemyAttack(ref s, ref cold, rules, scratch, dealerSlot: 1, cardIdx: playIdx, cardDefId: cardDefId, baseDamage: ostyDmg, hits: 1, powered: true);"
+        ]
+      },
+      {
+        "source": "Sim/Content/HotRegentNecro.cs",
+        "line": 2793,
+        "write": "s.Counters[(int)HotCounterSlot.OstyAttacksThisTurn]++;",
+        "condition": [
+          "dealerSlot: 1, cardIdx: playIdx, cardDefId: cardDefId,",
+          "targetEnemySlot: targetEnemySlot, baseDamage: dmg, hits: hits, powered: true);"
+        ]
+      }
+    ]
+  },
+  "SadnessGeneratedBefore": {
+    "observable": "named Sadness generation at declared rule sites",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 1884,
+        "write": "hot.Counters[(int)HotCounterSlot.SadnessGeneratedBefore] = sadnessGenerated;",
+        "condition": [
+          "hot.Counters[(int)HotCounterSlot.CardsPlayedThisTurn] = cardPlayStarts;",
+          "hot.Counters[(int)HotCounterSlot.OstyAttacksThisTurn] = ostyAttacks;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.CardPlay.cs",
+        "line": 1535,
+        "write": "s.Counters[(int)HotCounterSlot.SadnessGeneratedBefore]++;",
+        "condition": [
+          "s.HistoryCardsGenerated++;",
+          "if (def.CardId == HotCustomCardId.Sadness)"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Cards.Core.cs",
+        "line": 3085,
+        "write": "s.Counters[(int)HotCounterSlot.SadnessGeneratedBefore]++;",
+        "condition": [
+          "s.HistoryCardsGenerated++;",
+          "if (newDef.CardId == HotCustomCardId.Sadness)"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Cards.Core.cs",
+        "line": 3260,
+        "write": "s.Counters[(int)HotCounterSlot.SadnessGeneratedBefore]++;",
+        "condition": [
+          "s.HistoryCardsGenerated++;",
+          "if (newDef.CardId == HotCustomCardId.Sadness)"
+        ]
+      },
+      {
+        "source": "Sim/Content/HotFoolTarot.cs",
+        "line": 3020,
+        "write": "s.Counters[(int)HotCounterSlot.SadnessGeneratedBefore]++;",
+        "condition": [
+          "s.HistoryCourseUid = 0;",
+          "s.HistoryCardsGenerated++;"
+        ]
+      }
+    ]
+  },
+  "BaseMaxEnergy": {
+    "observable": "base max energy from opening combat setup",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 181,
+        "write": "hot.Counters[(int)HotCounterSlot.BaseMaxEnergy] = baseMaxEnergy;",
+        "condition": [
+          "int baseMaxEnergy = player.MaxEnergy;"
+        ]
+      }
+    ]
+  },
+  "BaseHandDraw": {
+    "observable": "base hand draw from opening combat setup",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 182,
+        "write": "hot.Counters[(int)HotCounterSlot.BaseHandDraw] = 5;",
+        "condition": [
+          "int baseMaxEnergy = player.MaxEnergy;",
+          "hot.Counters[(int)HotCounterSlot.BaseMaxEnergy] = baseMaxEnergy;"
+        ]
+      }
+    ]
+  },
+  "CardBlockGainsThisTurn": {
+    "observable": "card-generated positive block events",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 1885,
+        "write": "hot.Counters[(int)HotCounterSlot.CardBlockGainsThisTurn] = cardBlockGains;",
+        "condition": [
+          "hot.Counters[(int)HotCounterSlot.OstyAttacksThisTurn] = ostyAttacks;",
+          "hot.Counters[(int)HotCounterSlot.SadnessGeneratedBefore] = sadnessGenerated;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Damage.cs",
+        "line": 212,
+        "write": "s.Counters[(int)HotCounterSlot.CardBlockGainsThisTurn]++;",
+        "condition": [
+          "if (isCardBlock && targetSlot == 0 && gained > 0)",
+          "{"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Turn.cs",
+        "line": 1583,
+        "write": "s.Counters[(int)HotCounterSlot.CardBlockGainsThisTurn] = 0;",
+        "condition": [
+          "s.Counters[(int)HotCounterSlot.CardsPlayedThisTurn] = 0;",
+          "s.Counters[(int)HotCounterSlot.OstyAttacksThisTurn] = 0;"
+        ]
+      }
+    ]
+  },
+  "ShivPlaysFinishedThisTurn": {
+    "observable": "finished Shiv plays",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 1886,
+        "write": "hot.Counters[(int)HotCounterSlot.ShivPlaysFinishedThisTurn] = shivPlaysFinished;",
+        "condition": [
+          "hot.Counters[(int)HotCounterSlot.SadnessGeneratedBefore] = sadnessGenerated;",
+          "hot.Counters[(int)HotCounterSlot.CardBlockGainsThisTurn] = cardBlockGains;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.CardPlay.cs",
+        "line": 636,
+        "write": "s.Counters[(int)HotCounterSlot.ShivPlaysFinishedThisTurn]++;",
+        "condition": [
+          "s.HistoryFinishedPlays++;",
+          "if (cardDef.IsShivTag)"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Turn.cs",
+        "line": 1584,
+        "write": "s.Counters[(int)HotCounterSlot.ShivPlaysFinishedThisTurn] = 0;",
+        "condition": [
+          "s.Counters[(int)HotCounterSlot.OstyAttacksThisTurn] = 0;",
+          "s.Counters[(int)HotCounterSlot.CardBlockGainsThisTurn] = 0;"
+        ]
+      }
+    ]
+  },
+  "FirstInSeriesCardPlayStartsThisTurn": {
+    "observable": "first play in the publicly resolved replay series",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 1887,
+        "write": "hot.Counters[(int)HotCounterSlot.FirstInSeriesCardPlayStartsThisTurn] = firstInSeriesCardPlayStarts;",
+        "condition": [
+          "hot.Counters[(int)HotCounterSlot.CardBlockGainsThisTurn] = cardBlockGains;",
+          "hot.Counters[(int)HotCounterSlot.ShivPlaysFinishedThisTurn] = shivPlaysFinished;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.CardPlay.cs",
+        "line": 531,
+        "write": "s.Counters[(int)HotCounterSlot.FirstInSeriesCardPlayStartsThisTurn]++;",
+        "condition": [
+          "s.Counters[(int)HotCounterSlot.CardPlayStartsThisTurn]++;",
+          "if (playIndex == 0)"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.Turn.cs",
+        "line": 1567,
+        "write": "s.Counters[(int)HotCounterSlot.FirstInSeriesCardPlayStartsThisTurn] = 0;",
+        "condition": [
+          "s.Counters[(int)HotCounterSlot.ZeroCostAttackStartsThisTurn] = 0;",
+          "s.Counters[(int)HotCounterSlot.CardPlayStartsThisTurn] = 0;"
+        ]
+      }
+    ]
+  },
+  "HistoryCardsExhausted": {
+    "observable": "all exhausted cards over combat",
+    "writes": [
+      {
+        "source": "Import/HotRootBuilder.cs",
+        "line": 1888,
+        "write": "hot.Counters[(int)HotCounterSlot.HistoryCardsExhausted] = historyCardsExhausted;",
+        "condition": [
+          "hot.Counters[(int)HotCounterSlot.ShivPlaysFinishedThisTurn] = shivPlaysFinished;",
+          "hot.Counters[(int)HotCounterSlot.FirstInSeriesCardPlayStartsThisTurn] = firstInSeriesCardPlayStarts;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.CardPlay.cs",
+        "line": 807,
+        "write": "s.Counters[(int)HotCounterSlot.HistoryCardsExhausted]++;",
+        "condition": [
+          "ushort exhaustedUid = s.Cards[dstIdx].CardUid;",
+          "s.Counters[(int)HotCounterSlot.CardsExhaustedThisTurn]++;"
+        ]
+      },
+      {
+        "source": "Sim/HotCombatEngine.CardPlay.cs",
+        "line": 1148,
+        "write": "s.Counters[(int)HotCounterSlot.HistoryCardsExhausted]++;",
+        "condition": [
+          "int dstIdx = HotPiles.MoveCard(ref s, cardIdx, HotPileKind.Exhaust, s.ExhaustCount);",
+          "s.Counters[(int)HotCounterSlot.CardsExhaustedThisTurn]++;"
+        ]
+      }
+    ]
+  }
+}

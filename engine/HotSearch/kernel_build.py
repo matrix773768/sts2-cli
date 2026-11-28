@@ -70,6 +70,41 @@ def kernel(here,root,build):
         edit(sim/"Content/HotMonsters.cs",f"private static {typ} {name}(",f"internal static {typ} {name}(")
     edit(sim/"HotCombatEngine.Damage.cs","private static decimal ComputeModifiedDamage(","internal static decimal ComputeModifiedDamage(")
     edit(resolver,"ids[i] = cards[i].CardUid;","Published?.Invoke(cards[i]);\n                ids[i] = cards[i].CardUid;")
+    monsters=sim/"Content/HotMonsters.cs"
+    # Reuse the vanilla per-card downgrade body for the public descriptor update.
+    body=monsters.read_text()
+    downgrade=body.split("            byte origUpg = card.UpgradeLevel;",1)[1].split("            next[cursor++]",1)[0]
+    anchor="        // Downgrade all currently upgraded player cards"
+    edit(monsters,anchor,"""        HotCard DowngradeKnown(HotCard card){
+            if(card.UpgradeLevel==0)return card;
+            byte origUpg=card.UpgradeLevel;
+"""+downgrade+"            return card;\n        }\n        "+probe+"?.TransformDraw(in s,DowngradeKnown);\n"+anchor)
+    anchor="        // Last caster died: remove DampenPower"
+    edit(monsters,anchor,"""        HotCard RestoreKnown(HotCard card){
+            if(card.DampenOrigUpg==0)return card;
+            CombatHotState shadow=default;shadow.HandCount=1;shadow.Cards[0]=card;
+            for(int n=0;n<card.DampenOrigUpg;n++)HotCombatEngine.UpgradeCard(ref shadow,rules,0);
+            card=shadow.Cards[0];card.DampenOrigUpg=0;return card;
+        }
+        """+probe+"?.TransformDraw(in s,RestoreKnown);\n"+anchor)
+    anchor="    internal static void ClearCardAffliction(ref CombatHotState s, HotRules rules, HotAfflictionId targetAffliction)\n    {"
+    edit(monsters,anchor,anchor+"\n        "+probe+"?.TransformDraw(in s,c=>{if(c.AfflId!=0 && rules.Afflictions[c.AfflId].AfflictionId==targetAffliction){c.AfflId=0;c.AfflAmt=0;}return c;});")
+    damage=sim/"HotCombatEngine.Damage.cs"
+    anchor="    internal static void ApplyPlayerPowerCardAffliction(ref CombatHotState s, HotRules rules, HotPowerId powerId, int amount)\n    {"
+    edit(damage,anchor,anchor+"\n        "+probe+"""?.TransformDraw(in s,c=>{
+            if(amount<=0 || c.AfflId!=0)return c;
+            var a=powerId switch {
+                HotPowerId.HexPower=>HotAfflictionId.Hexed,HotPowerId.RingingPower=>HotAfflictionId.Ringing,
+                HotPowerId.TangledPower when rules.Cards[c.CardDefId].Type==CardType.Attack=>HotAfflictionId.Entangled,
+                _=>default};
+            if(a!=default){c.AfflId=rules.GetAfflictionDefId(a);c.AfflAmt=(short)(powerId==HotPowerId.HexPower?Math.Clamp(amount,0,short.MaxValue):1);}
+            return c;
+        });""")
+    anchor="    internal static void ClearHexedAffliction(ref CombatHotState s, HotRules rules)\n    {"
+    edit(damage,anchor,anchor+"\n        "+probe+"?.TransformDraw(in s,c=>{if(c.AfflId!=0 && rules.Afflictions[c.AfflId].AfflictionId==HotAfflictionId.Hexed){c.AfflId=0;c.AfflAmt=0;}return c;});")
+    powers=sim/"HotCombatEngine.Powers.cs"
+    anchor="                byte clamped = (byte)Math.Clamp(amount, 0, byte.MaxValue);\n                int total = s.TotalCardCount;"
+    edit(powers,anchor,anchor+"\n                "+probe+"?.TransformDraw(in s,c=>{if(c.AfflId==taintedId)c.AfflAmt=clamped;return c;});")
     shutil.copyfile(here/"kernel/Events.cs",hk/"HotEvents.cs")
     foundation=root/"logs/infra1h-hot-k2"
     shutil.copyfile(next(foundation.glob("CombatSolver-*/NuGet.Config")),tree/"NuGet.Config")

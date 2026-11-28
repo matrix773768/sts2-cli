@@ -8,7 +8,7 @@ ROOT=HERE.parents[1]
 path=ROOT/"experiments/m1-infra1h/campaign.py"
 spec=importlib.util.spec_from_file_location("worker_budget",path)
 budget=importlib.util.module_from_spec(spec);spec.loader.exec_module(budget)
-budget.LOG=ROOT/"logs/hotsearch/campaign"
+budget.LOG=ROOT/"logs/hotsearch-h4/campaign"
 budget.BOOK=budget.LOG/"ledger.jsonl"
 
 

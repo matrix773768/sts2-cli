@@ -8,7 +8,7 @@ from xml.etree import ElementTree as ET
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
-BUILD = ROOT / "logs/hotsearch"
+BUILD = ROOT / os.environ.get("HOTSEARCH_BUILD","logs/hotsearch-h4")
 DLL = BUILD / "bin/Release/net9.0/OfflineSearchHarness.dll"
 
 

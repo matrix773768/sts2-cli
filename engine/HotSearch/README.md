@@ -2,7 +2,26 @@
 
 HotSearch 是 INFRA 独立研究生产器。一个 .NET 9 进程持有真实战斗，每个战斗只从游戏导入一次开局。Python 在公开决策点运行冻结 G2，在抽牌前 C 上批量运行冻结 V2，并写入研究数据。默认自然生产在已选策略的公开后继不属于预测分布时停止该根，保留前缀和原因。
 
-## 构建和运行
+## INFRA-1H4 研究入口
+
+自然生产可选 `--arm tactical` 或 `--arm contingent`。前者为所有合法首动作构造轻量、偏防御、偏成长和提前结束四类续法。后者增加待选策略，并尝试按同一公开观察组合闭合续法。`--limit` 对每个首动作和续法分别计量物理规则调用。只有所比较双方的条件质量均闭合，且期望提升超过 `--margin`，才干预。参考未闭合时运行直接 G2。每个闭合程序绑定父节点、公开菜单摘要和动作索引，实际轨迹保存动作绑定与完整边界分布。
+
+```powershell
+$env:HOTSEARCH_BUILD='logs/hotsearch-h4-public-fix'
+python -B engine/HotSearch/build.py
+$env:HOTSEARCH_ORACLE_MATH='1'
+$env:HOTSEARCH_ORACLE_SCENE='1'
+$env:HOTSEARCH_ORACLE_DIR=(Join-Path (Get-Location) 'logs/hotsearch-h4-release-oracle')
+python -B engine/HotSearch/build_oracle.py
+python -B engine/HotSearch/hot_produce.py logs/my-h4-production --arm tactical --limit 32 --margin 0
+python -B engine/HotSearch/native_audit.py logs/my-h4-native logs/my-h4-production/natural.jsonl.gz
+python -B engine/HotSearch/condition.py logs/my-h4-123 --ids 123 --arm contingent --limit 128 --suffix-limit 32 --audit --native-worlds 2
+python -B experiments/m1-infra1h4/verify.py
+```
+
+`HOTSEARCH_ORACLE_MATH=1` 可在原生审核构建时补齐离线 Godot 数学接口。另设 `HOTSEARCH_ORACLE_SCENE=1` 可补齐可见性与兄弟节点索引查询，用于园丁、凯撒蟹及 UNRELENTING 等真实轨迹的审核。`HOTSEARCH_ORACLE_DIR` 可以把审核可执行文件及其依赖保存在独立目录。自然结果全部保留，只有通过严格实际边界和整条原生重放的轨迹进入经过审核的数据文件。模型、宿主、策略实现、预算和裕量共同标识生产策略。研究复现和审核边界见 [1H4 报告](../../docs/m1-infra1h4-search-quality-and-semantics.md)。
+
+## 基础构建和 1H3-R 模式
 
 从独立研究检出的仓库根目录执行下列命令。每次运行使用新的输出目录。
 

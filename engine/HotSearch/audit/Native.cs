@@ -14,8 +14,12 @@ internal static class Native
                 if(cmd.TryGetProperty("args",out var fields))
                     foreach(var field in fields.EnumerateObject())
                         args[field.Name]=field.Value.ValueKind==JsonValueKind.Number?field.Value.GetInt32():field.Value.GetString();
+                DrawCut.Last=null;
                 var result=cmd.GetProperty("cmd").GetString()=="synthetic_start"?sim.StartSyntheticCombat(cmd):
+                    cmd.GetProperty("cmd").GetString()=="resample"?sim.AuditWorld(cmd):
                     sim.ExecuteAction(cmd.GetProperty("action").GetString()!,args);
+                if(Environment.GetEnvironmentVariable("HOTSEARCH_NATIVE_CUTS")=="1" && cmd.GetProperty("cmd").GetString()=="synthetic_start")DrawCut.Attach();
+                if(DrawCut.Last!=null)result["native_c"]=DrawCut.Last;
                 if(sim.BeforeRewards!=null)result["before_rewards"]=sim.BeforeRewards;
                 Console.WriteLine(JsonSerializer.Serialize(result));
             }catch(Exception e){

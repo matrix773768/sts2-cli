@@ -1,0 +1,4817 @@
+{
+  "arms": {
+    "g2": {
+      "attempts": 96,
+      "status": {
+        "Victory": 43,
+        "Defeat": 53
+      },
+      "encounters": 44,
+      "failures": {},
+      "actual_steps": 2380,
+      "player_choices": 62,
+      "C_completed": 492,
+      "C_partial": 0,
+      "turn_queries": 0,
+      "candidate_and_reference": 0,
+      "changed_turns": 0,
+      "changed_first": 0,
+      "full_laws": 0,
+      "full_reference": 0,
+      "mean_covered_mass": null,
+      "search_steps": 0,
+      "chance_boundaries": 0,
+      "pending_boundaries": 0,
+      "realized_laws": {},
+      "gap_events": {},
+      "completed": 96,
+      "wins": 43,
+      "mean_utility": 1.6875,
+      "mean_hp_loss": 50.25,
+      "C": 492,
+      "cost": {
+        "policy": {
+          "schema": "sts2.hotsearch.policy.h4",
+          "arm": "g2",
+          "rule_calls_per_action_style": 32,
+          "margin": 0.0,
+          "incomplete_reference": "direct-g2",
+          "g2": "1077c191586885c49173afe5801849b3ea6a4535425731e27226fe1978abf084",
+          "v2": "d439444a1a9ca9bc8864988e488f720f71b379844b30ddb112bdd8f0ddcfcbbb",
+          "build": {
+            "host": "f307445b8a29c484b752ae8d159efab17a5e4a769dcee3619c524df2168f0417",
+            "hot": "6df16c30ec7e04ed1495c0d03411de862c3374de109a3ec9ebe4d0dcf83c413a",
+            "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+          },
+          "python": {
+            "hot_produce.py": "9c38d72b60d37e0e2fe6c7a39750dad7f7f303d7464e50d785a19e26ee9a5609",
+            "client.py": "daf57c2c975e2dbd22b9ee32e631d741f0e81ceede8460cef05db38dd8b158fa",
+            "models.py": "d167fe8e4b95c75d23b3bc4998f95d8de8c322c68402ea46cf69bef57b8ce727",
+            "contingent.py": "21e3a0dea75670f7a27ea786e85667ab98b53e29e0ca36d0d4a6af65a1c69432"
+          },
+          "id": "7cba7de3ce2359abe74fbe411e7857e0a04b5ff052112f1474d76831a5813f28"
+        },
+        "attempts": 96,
+        "status": {
+          "Victory": 43,
+          "Defeat": 53
+        },
+        "wall": 17.343588200004888,
+        "python_cpu": 11.65625,
+        "python_peak_rss": 214892544,
+        "model_work": {
+          "g2_rows": 2380,
+          "v2_rows": 0,
+          "v2_batches": 0,
+          "v2_cache_hits": 0,
+          "v2_inferred": 0
+        },
+        "host": {
+          "cpu": 9.625,
+          "peak_rss": 145514496
+        },
+        "limit": 32,
+        "arm": "g2",
+        "diagnostic": false,
+        "ids": [
+          176,
+          174,
+          128,
+          194,
+          192,
+          81,
+          242,
+          131,
+          245,
+          104,
+          16,
+          177,
+          2,
+          140,
+          0,
+          196,
+          135,
+          145,
+          114,
+          54,
+          90,
+          61,
+          154,
+          4,
+          97,
+          226,
+          46,
+          160,
+          220,
+          23,
+          236,
+          188,
+          89,
+          72,
+          222,
+          158,
+          64,
+          33,
+          77,
+          105,
+          238,
+          215,
+          139,
+          65,
+          49,
+          146,
+          44,
+          178,
+          201,
+          110,
+          197,
+          255,
+          115,
+          25,
+          243,
+          144,
+          10,
+          200,
+          179,
+          251,
+          41,
+          84,
+          57,
+          175,
+          209,
+          166,
+          235,
+          142,
+          205,
+          122,
+          190,
+          78,
+          212,
+          118,
+          69,
+          86,
+          202,
+          99,
+          93,
+          159,
+          181,
+          30,
+          14,
+          91,
+          204,
+          132,
+          232,
+          101,
+          82,
+          113,
+          1,
+          213,
+          96,
+          27,
+          195,
+          13
+        ]
+      },
+      "physical": {
+        "commands": {
+          "open": 96,
+          "step": 2380,
+          "metrics": 1
+        },
+        "searched_rule_steps": 0,
+        "chance": 0,
+        "choices": 0,
+        "requested_real_steps": 2380
+      },
+      "selected_styles": {},
+      "review": {
+        "attempts": 96,
+        "audited": 82,
+        "reused": 14,
+        "reviewed": 93,
+        "C": 471,
+        "wall": 179.97145749999618,
+        "python_cpu": 3.75,
+        "python_peak_rss": 248745984,
+        "host_cpu": 155.3125,
+        "host_peak_rss": 103325696,
+        "oracle": "9416ebb8fc8b3083c220149865988f80c9e658e52886988e6105c0bfac66d3b4",
+        "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+      },
+      "paired": {
+        "light": {
+          "n": 96,
+          "missing": 0,
+          "wins_gained": 4,
+          "wins_lost": 6,
+          "mean_delta": -2.9791666666666665,
+          "median_delta": 0.0
+        },
+        "1A": {
+          "n": 96,
+          "missing": 0,
+          "wins_gained": 0,
+          "wins_lost": 9,
+          "mean_delta": -11.78125,
+          "median_delta": 0.0
+        },
+        "h3-strict": {
+          "n": 84,
+          "missing": 12,
+          "wins_gained": 4,
+          "wins_lost": 3,
+          "mean_delta": -0.011904761904761904,
+          "median_delta": 0.0
+        }
+      }
+    },
+    "light": {
+      "attempts": 96,
+      "status": {
+        "Victory": 45,
+        "Defeat": 51
+      },
+      "encounters": 44,
+      "failures": {},
+      "actual_steps": 2338,
+      "player_choices": 54,
+      "C_completed": 488,
+      "C_partial": 0,
+      "turn_queries": 581,
+      "candidate_and_reference": 2318,
+      "changed_turns": 110,
+      "changed_first": 61,
+      "full_laws": 1613,
+      "full_reference": 367,
+      "mean_covered_mass": 0.7094167328798181,
+      "search_steps": 18002,
+      "chance_boundaries": 7397,
+      "pending_boundaries": 149,
+      "realized_laws": {
+        "None": 214,
+        "True": 367
+      },
+      "gap_events": {
+        "budget": 340,
+        "PickRandomLivingEnemySlot/unmodeled_rng": 172,
+        "ExecuteCoreCustomCard/unmodeled_rng": 108,
+        "SpawnFabricatorBot/unmodeled_rng": 23,
+        "HandleBeforeSideTurnStartPower/unmodeled_rng": 23,
+        "AddGeneratedCardInstance/unmodeled_rng": 16,
+        "GenerateRandomFromPoolWithReplacement/unmodeled_rng": 7,
+        "RollSpawnHp/unmodeled_rng": 16,
+        "HandleAfterAutoPostPlayPower/unmodeled_rng": 30,
+        "AutoPlayCard/unmodeled_rng": 23,
+        "AddCard/random_insert_known_positions": 1
+      },
+      "completed": 96,
+      "wins": 45,
+      "mean_utility": 4.666666666666667,
+      "mean_hp_loss": 48.895833333333336,
+      "C": 488,
+      "cost": {
+        "policy": {
+          "schema": "sts2.hotsearch.policy.h4",
+          "arm": "turn",
+          "rule_calls_per_action_style": 32,
+          "margin": 0.0,
+          "incomplete_reference": "direct-g2",
+          "g2": "1077c191586885c49173afe5801849b3ea6a4535425731e27226fe1978abf084",
+          "v2": "d439444a1a9ca9bc8864988e488f720f71b379844b30ddb112bdd8f0ddcfcbbb",
+          "build": {
+            "host": "f307445b8a29c484b752ae8d159efab17a5e4a769dcee3619c524df2168f0417",
+            "hot": "6df16c30ec7e04ed1495c0d03411de862c3374de109a3ec9ebe4d0dcf83c413a",
+            "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+          },
+          "python": {
+            "hot_produce.py": "9c38d72b60d37e0e2fe6c7a39750dad7f7f303d7464e50d785a19e26ee9a5609",
+            "client.py": "daf57c2c975e2dbd22b9ee32e631d741f0e81ceede8460cef05db38dd8b158fa",
+            "models.py": "d167fe8e4b95c75d23b3bc4998f95d8de8c322c68402ea46cf69bef57b8ce727",
+            "contingent.py": "21e3a0dea75670f7a27ea786e85667ab98b53e29e0ca36d0d4a6af65a1c69432"
+          },
+          "id": "50cc4356e0f31da367d74e46a43747cc40dc8e3c8771aca6e28c3f7d194d9b7d"
+        },
+        "attempts": 96,
+        "status": {
+          "Victory": 45,
+          "Defeat": 51
+        },
+        "wall": 28.511252199998125,
+        "python_cpu": 20.671875,
+        "python_peak_rss": 231456768,
+        "model_work": {
+          "g2_rows": 3731,
+          "v2_rows": 2078,
+          "v2_batches": 802,
+          "v2_cache_hits": 437,
+          "v2_inferred": 1641
+        },
+        "host": {
+          "cpu": 12.125,
+          "peak_rss": 160911360
+        },
+        "limit": 32,
+        "arm": "turn",
+        "diagnostic": false,
+        "ids": [
+          176,
+          174,
+          128,
+          194,
+          192,
+          81,
+          242,
+          131,
+          245,
+          104,
+          16,
+          177,
+          2,
+          140,
+          0,
+          196,
+          135,
+          145,
+          114,
+          54,
+          90,
+          61,
+          154,
+          4,
+          97,
+          226,
+          46,
+          160,
+          220,
+          23,
+          236,
+          188,
+          89,
+          72,
+          222,
+          158,
+          64,
+          33,
+          77,
+          105,
+          238,
+          215,
+          139,
+          65,
+          49,
+          146,
+          44,
+          178,
+          201,
+          110,
+          197,
+          255,
+          115,
+          25,
+          243,
+          144,
+          10,
+          200,
+          179,
+          251,
+          41,
+          84,
+          57,
+          175,
+          209,
+          166,
+          235,
+          142,
+          205,
+          122,
+          190,
+          78,
+          212,
+          118,
+          69,
+          86,
+          202,
+          99,
+          93,
+          159,
+          181,
+          30,
+          14,
+          91,
+          204,
+          132,
+          232,
+          101,
+          82,
+          113,
+          1,
+          213,
+          96,
+          27,
+          195,
+          13
+        ]
+      },
+      "physical": {
+        "commands": {
+          "open": 96,
+          "search": 1162,
+          "step": 2338,
+          "g2": 2323,
+          "metrics": 1
+        },
+        "searched_rule_steps": 18002,
+        "chance": 7397,
+        "choices": 149,
+        "requested_real_steps": 2338
+      },
+      "selected_styles": {
+        "reference": 471,
+        "turn": 110
+      },
+      "review": {
+        "attempts": 96,
+        "audited": 57,
+        "reused": 39,
+        "reviewed": 92,
+        "C": 463,
+        "wall": 131.49630389999948,
+        "python_cpu": 3.078125,
+        "python_peak_rss": 250998784,
+        "host_cpu": 109.5,
+        "host_peak_rss": 104431616,
+        "oracle": "9416ebb8fc8b3083c220149865988f80c9e658e52886988e6105c0bfac66d3b4",
+        "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+      },
+      "paired": {
+        "g2": {
+          "n": 96,
+          "missing": 0,
+          "wins_gained": 6,
+          "wins_lost": 4,
+          "mean_delta": 2.9791666666666665,
+          "median_delta": 0.0
+        },
+        "1A": {
+          "n": 96,
+          "missing": 0,
+          "wins_gained": 3,
+          "wins_lost": 10,
+          "mean_delta": -8.802083333333334,
+          "median_delta": 0.0
+        },
+        "h3-strict": {
+          "n": 84,
+          "missing": 12,
+          "wins_gained": 1,
+          "wins_lost": 0,
+          "mean_delta": 1.2738095238095237,
+          "median_delta": 0.0
+        }
+      }
+    },
+    "quality32": {
+      "attempts": 96,
+      "status": {
+        "Victory": 48,
+        "Defeat": 46,
+        "failed": 2
+      },
+      "encounters": 44,
+      "failures": {
+        "220": "policy/observation_outside_evaluated_program",
+        "96": "conditional_policy/realized_boundary_outside_law"
+      },
+      "actual_steps": 2427,
+      "player_choices": 68,
+      "C_completed": 503,
+      "C_partial": 7,
+      "turn_queries": 602,
+      "candidate_and_reference": 16778,
+      "changed_turns": 217,
+      "changed_first": 159,
+      "full_laws": 11600,
+      "full_reference": 378,
+      "mean_covered_mass": 0.7037889570778808,
+      "search_steps": 138723,
+      "chance_boundaries": 56072,
+      "pending_boundaries": 1451,
+      "realized_laws": {
+        "None": 225,
+        "True": 376,
+        "False": 1
+      },
+      "gap_events": {
+        "budget": 2664,
+        "PickRandomLivingEnemySlot/unmodeled_rng": 776,
+        "ExecuteCoreCustomCard/unmodeled_rng": 996,
+        "SpawnFabricatorBot/unmodeled_rng": 207,
+        "HandleBeforeSideTurnStartPower/unmodeled_rng": 214,
+        "AutoPlayCard/unmodeled_rng": 149,
+        "AddGeneratedCardInstance/unmodeled_rng": 110,
+        "GenerateRandomFromPoolWithReplacement/unmodeled_rng": 61,
+        "RollSpawnHp/unmodeled_rng": 59,
+        "AddCard/random_insert_known_positions": 13,
+        "HandleAfterAutoPostPlayPower/unmodeled_rng": 163
+      },
+      "completed": 94,
+      "wins": 48,
+      "mean_utility": 9.542553191489361,
+      "mean_hp_loss": 48.45744680851064,
+      "C": 503,
+      "cost": {
+        "attempts": 96,
+        "status": {
+          "Victory": 48,
+          "Defeat": 46,
+          "failed": 2
+        },
+        "wall": 109.16983139999502,
+        "python_cpu": 65.296875,
+        "python_peak_rss": 255143936,
+        "model_work": {
+          "g2_rows": 3860,
+          "v2_rows": 16295,
+          "v2_batches": 2355,
+          "v2_cache_hits": 8571,
+          "v2_inferred": 7724
+        },
+        "host": {
+          "cpu": 45.078125,
+          "peak_rss": 164585472
+        },
+        "limit": 32,
+        "arm": "tactical",
+        "diagnostic": false,
+        "ids": [
+          176,
+          174,
+          128,
+          194,
+          192,
+          81,
+          242,
+          131,
+          245,
+          104,
+          16,
+          177,
+          2,
+          140,
+          0,
+          196,
+          135,
+          145,
+          114,
+          54,
+          90,
+          61,
+          154,
+          4,
+          97,
+          226,
+          46,
+          160,
+          220,
+          23,
+          236,
+          188,
+          89,
+          72,
+          222,
+          158,
+          64,
+          33,
+          77,
+          105,
+          238,
+          215,
+          139,
+          65,
+          49,
+          146,
+          44,
+          178,
+          201,
+          110,
+          197,
+          255,
+          115,
+          25,
+          243,
+          144,
+          10,
+          200,
+          179,
+          251,
+          41,
+          84,
+          57,
+          175,
+          209,
+          166,
+          235,
+          142,
+          205,
+          122,
+          190,
+          78,
+          212,
+          118,
+          69,
+          86,
+          202,
+          99,
+          93,
+          159,
+          181,
+          30,
+          14,
+          91,
+          204,
+          132,
+          232,
+          101,
+          82,
+          113,
+          1,
+          213,
+          96,
+          27,
+          195,
+          13
+        ]
+      },
+      "physical": {
+        "commands": {
+          "open": 96,
+          "search": 3010,
+          "step": 2427,
+          "g2": 2398,
+          "metrics": 1
+        },
+        "searched_rule_steps": 138723,
+        "chance": 56072,
+        "choices": 1451,
+        "requested_real_steps": 2427
+      },
+      "selected_styles": {
+        "reference": 385,
+        "guard": 61,
+        "light": 126,
+        "end": 18,
+        "build": 12
+      },
+      "full_review": {
+        "wall": 208.51139339999645,
+        "python_cpu": 4.46875,
+        "python_peak_rss": 199553024,
+        "host_cpu": 181.390625,
+        "host_peak_rss": 104247296,
+        "audited": 94,
+        "reviewed": 91,
+        "C": 486
+      },
+      "paired": {
+        "g2": {
+          "n": 94,
+          "missing": 2,
+          "wins_gained": 7,
+          "wins_lost": 2,
+          "mean_delta": 6.75531914893617,
+          "median_delta": 0.0
+        },
+        "light": {
+          "n": 94,
+          "missing": 2,
+          "wins_gained": 8,
+          "wins_lost": 4,
+          "mean_delta": 4.723404255319149,
+          "median_delta": 0.0
+        },
+        "1A": {
+          "n": 94,
+          "missing": 2,
+          "wins_gained": 2,
+          "wins_lost": 5,
+          "mean_delta": -4.085106382978723,
+          "median_delta": 0.0
+        },
+        "h3-strict": {
+          "n": 83,
+          "missing": 13,
+          "wins_gained": 8,
+          "wins_lost": 2,
+          "mean_delta": 7.566265060240964,
+          "median_delta": 0.0
+        }
+      }
+    },
+    "quality128": {
+      "attempts": 96,
+      "status": {
+        "Victory": 47,
+        "Defeat": 46,
+        "failed": 3
+      },
+      "encounters": 44,
+      "failures": {
+        "220": "policy/observation_outside_evaluated_program",
+        "236": "policy/observation_outside_evaluated_program",
+        "96": "conditional_policy/realized_boundary_outside_law"
+      },
+      "actual_steps": 2440,
+      "player_choices": 69,
+      "C_completed": 506,
+      "C_partial": 7,
+      "turn_queries": 605,
+      "candidate_and_reference": 16841,
+      "changed_turns": 230,
+      "changed_first": 171,
+      "full_laws": 11964,
+      "full_reference": 393,
+      "mean_covered_mass": 0.730115879184631,
+      "search_steps": 374396,
+      "chance_boundaries": 158283,
+      "pending_boundaries": 2900,
+      "realized_laws": {
+        "None": 214,
+        "True": 390,
+        "False": 1
+      },
+      "gap_events": {
+        "budget": 2260,
+        "PickRandomLivingEnemySlot/unmodeled_rng": 768,
+        "ExecuteCoreCustomCard/unmodeled_rng": 1049,
+        "AutoPlayCard/unmodeled_rng": 240,
+        "SpawnFabricatorBot/unmodeled_rng": 208,
+        "HandleBeforeSideTurnStartPower/unmodeled_rng": 225,
+        "AddGeneratedCardInstance/unmodeled_rng": 113,
+        "GenerateRandomFromPoolWithReplacement/unmodeled_rng": 61,
+        "RollSpawnHp/unmodeled_rng": 67,
+        "AddCard/random_insert_known_positions": 13,
+        "HandleAfterAutoPostPlayPower/unmodeled_rng": 192
+      },
+      "completed": 93,
+      "wins": 47,
+      "mean_utility": 8.838709677419354,
+      "mean_hp_loss": 48.70967741935484,
+      "C": 506,
+      "cost": {
+        "attempts": 96,
+        "status": {
+          "Victory": 47,
+          "Defeat": 46,
+          "failed": 3
+        },
+        "wall": 222.21325030000298,
+        "python_cpu": 123.84375,
+        "python_peak_rss": 270884864,
+        "model_work": {
+          "g2_rows": 9198,
+          "v2_rows": 27822,
+          "v2_batches": 2398,
+          "v2_cache_hits": 16408,
+          "v2_inferred": 11414
+        },
+        "host": {
+          "cpu": 92.328125,
+          "peak_rss": 180043776
+        },
+        "limit": 128,
+        "arm": "tactical",
+        "diagnostic": false,
+        "ids": [
+          176,
+          174,
+          128,
+          194,
+          192,
+          81,
+          242,
+          131,
+          245,
+          104,
+          16,
+          177,
+          2,
+          140,
+          0,
+          196,
+          135,
+          145,
+          114,
+          54,
+          90,
+          61,
+          154,
+          4,
+          97,
+          226,
+          46,
+          160,
+          220,
+          23,
+          236,
+          188,
+          89,
+          72,
+          222,
+          158,
+          64,
+          33,
+          77,
+          105,
+          238,
+          215,
+          139,
+          65,
+          49,
+          146,
+          44,
+          178,
+          201,
+          110,
+          197,
+          255,
+          115,
+          25,
+          243,
+          144,
+          10,
+          200,
+          179,
+          251,
+          41,
+          84,
+          57,
+          175,
+          209,
+          166,
+          235,
+          142,
+          205,
+          122,
+          190,
+          78,
+          212,
+          118,
+          69,
+          86,
+          202,
+          99,
+          93,
+          159,
+          181,
+          30,
+          14,
+          91,
+          204,
+          132,
+          232,
+          101,
+          82,
+          113,
+          1,
+          213,
+          96,
+          27,
+          195,
+          13
+        ]
+      },
+      "physical": {
+        "commands": {
+          "open": 96,
+          "search": 3025,
+          "g2": 7780,
+          "step": 2440,
+          "metrics": 1
+        },
+        "searched_rule_steps": 374396,
+        "chance": 158283,
+        "choices": 2900,
+        "requested_real_steps": 2440
+      },
+      "selected_styles": {
+        "reference": 375,
+        "guard": 68,
+        "light": 127,
+        "end": 19,
+        "build": 16
+      },
+      "review": {
+        "attempts": 96,
+        "audited": 15,
+        "reused": 78,
+        "reviewed": 90,
+        "C": 489,
+        "wall": 45.95233539999754,
+        "python_cpu": 1.0625,
+        "python_peak_rss": 261206016,
+        "host_cpu": 29.78125,
+        "host_peak_rss": 103944192,
+        "oracle": "9416ebb8fc8b3083c220149865988f80c9e658e52886988e6105c0bfac66d3b4",
+        "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+      },
+      "paired": {
+        "g2": {
+          "n": 93,
+          "missing": 3,
+          "wins_gained": 6,
+          "wins_lost": 2,
+          "mean_delta": 5.483870967741935,
+          "median_delta": 0.0
+        },
+        "light": {
+          "n": 93,
+          "missing": 3,
+          "wins_gained": 7,
+          "wins_lost": 4,
+          "mean_delta": 3.4301075268817205,
+          "median_delta": 0.0
+        },
+        "1A": {
+          "n": 93,
+          "missing": 3,
+          "wins_gained": 2,
+          "wins_lost": 5,
+          "mean_delta": -4.32258064516129,
+          "median_delta": 0.0
+        },
+        "h3-strict": {
+          "n": 82,
+          "missing": 14,
+          "wins_gained": 7,
+          "wins_lost": 2,
+          "mean_delta": 6.134146341463414,
+          "median_delta": 0.0
+        }
+      }
+    },
+    "quality512": {
+      "attempts": 96,
+      "status": {
+        "Victory": 47,
+        "Defeat": 44,
+        "failed": 5
+      },
+      "encounters": 44,
+      "failures": {
+        "220": "policy/observation_outside_evaluated_program",
+        "236": "policy/observation_outside_evaluated_program",
+        "166": "policy/observation_outside_evaluated_program",
+        "69": "conditional_policy/realized_boundary_outside_law",
+        "96": "conditional_policy/realized_boundary_outside_law"
+      },
+      "actual_steps": 2396,
+      "player_choices": 65,
+      "C_completed": 489,
+      "C_partial": 17,
+      "turn_queries": 597,
+      "candidate_and_reference": 16577,
+      "changed_turns": 237,
+      "changed_first": 178,
+      "full_laws": 12099,
+      "full_reference": 404,
+      "mean_covered_mass": 0.7568364825757066,
+      "search_steps": 1107665,
+      "chance_boundaries": 372257,
+      "pending_boundaries": 5879,
+      "realized_laws": {
+        "None": 196,
+        "True": 399,
+        "False": 2
+      },
+      "gap_events": {
+        "budget": 1764,
+        "PickRandomLivingEnemySlot/unmodeled_rng": 792,
+        "ExecuteCoreCustomCard/unmodeled_rng": 1118,
+        "AutoPlayCard/unmodeled_rng": 280,
+        "SpawnFabricatorBot/unmodeled_rng": 209,
+        "HandleBeforeSideTurnStartPower/unmodeled_rng": 240,
+        "AddGeneratedCardInstance/unmodeled_rng": 130,
+        "GenerateRandomFromPoolWithReplacement/unmodeled_rng": 67,
+        "RollSpawnHp/unmodeled_rng": 67,
+        "AddCard/random_insert_known_positions": 13,
+        "HandleAfterAutoPostPlayPower/unmodeled_rng": 210
+      },
+      "completed": 91,
+      "wins": 47,
+      "mean_utility": 10.406593406593407,
+      "mean_hp_loss": 47.747252747252745,
+      "C": 489,
+      "cost": {
+        "attempts": 96,
+        "status": {
+          "Victory": 47,
+          "Defeat": 44,
+          "failed": 5
+        },
+        "wall": 383.65513349999674,
+        "python_cpu": 226.453125,
+        "python_peak_rss": 445652992,
+        "model_work": {
+          "g2_rows": 30768,
+          "v2_rows": 81966,
+          "v2_batches": 2411,
+          "v2_cache_hits": 59466,
+          "v2_inferred": 22500
+        },
+        "host": {
+          "cpu": 152.015625,
+          "peak_rss": 303087616
+        },
+        "limit": 512,
+        "arm": "tactical",
+        "diagnostic": false,
+        "ids": [
+          176,
+          174,
+          128,
+          194,
+          192,
+          81,
+          242,
+          131,
+          245,
+          104,
+          16,
+          177,
+          2,
+          140,
+          0,
+          196,
+          135,
+          145,
+          114,
+          54,
+          90,
+          61,
+          154,
+          4,
+          97,
+          226,
+          46,
+          160,
+          220,
+          23,
+          236,
+          188,
+          89,
+          72,
+          222,
+          158,
+          64,
+          33,
+          77,
+          105,
+          238,
+          215,
+          139,
+          65,
+          49,
+          146,
+          44,
+          178,
+          201,
+          110,
+          197,
+          255,
+          115,
+          25,
+          243,
+          144,
+          10,
+          200,
+          179,
+          251,
+          41,
+          84,
+          57,
+          175,
+          209,
+          166,
+          235,
+          142,
+          205,
+          122,
+          190,
+          78,
+          212,
+          118,
+          69,
+          86,
+          202,
+          99,
+          93,
+          159,
+          181,
+          30,
+          14,
+          91,
+          204,
+          132,
+          232,
+          101,
+          82,
+          113,
+          1,
+          213,
+          96,
+          27,
+          195,
+          13
+        ]
+      },
+      "physical": {
+        "commands": {
+          "open": 96,
+          "search": 2985,
+          "g2": 29438,
+          "step": 2396,
+          "metrics": 1
+        },
+        "searched_rule_steps": 1107665,
+        "chance": 372257,
+        "choices": 5879,
+        "requested_real_steps": 2396
+      },
+      "selected_styles": {
+        "reference": 360,
+        "guard": 71,
+        "light": 128,
+        "end": 19,
+        "build": 19
+      },
+      "review": {
+        "attempts": 96,
+        "audited": 18,
+        "reused": 73,
+        "reviewed": 88,
+        "C": 471,
+        "wall": 51.4068408000021,
+        "python_cpu": 1.1875,
+        "python_peak_rss": 261775360,
+        "host_cpu": 34.765625,
+        "host_peak_rss": 102854656,
+        "oracle": "9416ebb8fc8b3083c220149865988f80c9e658e52886988e6105c0bfac66d3b4",
+        "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+      },
+      "paired": {
+        "g2": {
+          "n": 91,
+          "missing": 5,
+          "wins_gained": 6,
+          "wins_lost": 1,
+          "mean_delta": 7.131868131868132,
+          "median_delta": 0.0
+        },
+        "light": {
+          "n": 91,
+          "missing": 5,
+          "wins_gained": 6,
+          "wins_lost": 3,
+          "mean_delta": 3.78021978021978,
+          "median_delta": 0.0
+        },
+        "1A": {
+          "n": 91,
+          "missing": 5,
+          "wins_gained": 2,
+          "wins_lost": 4,
+          "mean_delta": -2.901098901098901,
+          "median_delta": 0.0
+        },
+        "h3-strict": {
+          "n": 80,
+          "missing": 16,
+          "wins_gained": 6,
+          "wins_lost": 1,
+          "mean_delta": 6.6,
+          "median_delta": 0.0
+        }
+      }
+    },
+    "candidate32": {
+      "attempts": 96,
+      "status": {
+        "Victory": 49,
+        "Defeat": 47
+      },
+      "encounters": 44,
+      "failures": {},
+      "actual_steps": 2445,
+      "player_choices": 69,
+      "C_completed": 513,
+      "C_partial": 0,
+      "turn_queries": 606,
+      "candidate_and_reference": 16890,
+      "changed_turns": 218,
+      "changed_first": 160,
+      "full_laws": 11694,
+      "full_reference": 381,
+      "mean_covered_mass": 0.7048083356139344,
+      "search_steps": 139591,
+      "chance_boundaries": 56323,
+      "pending_boundaries": 1466,
+      "realized_laws": {
+        "None": 225,
+        "True": 381
+      },
+      "gap_events": {
+        "budget": 2680,
+        "PickRandomLivingEnemySlot/unmodeled_rng": 781,
+        "ExecuteCoreCustomCard/unmodeled_rng": 996,
+        "SpawnFabricatorBot/unmodeled_rng": 207,
+        "HandleBeforeSideTurnStartPower/unmodeled_rng": 214,
+        "AddGeneratedCardInstance/unmodeled_rng": 110,
+        "GenerateRandomFromPoolWithReplacement/unmodeled_rng": 61,
+        "AutoPlayCard/unmodeled_rng": 149,
+        "RollSpawnHp/unmodeled_rng": 59,
+        "AddCard/random_insert_known_positions": 13,
+        "HandleAfterAutoPostPlayPower/unmodeled_rng": 163
+      },
+      "completed": 96,
+      "wins": 49,
+      "mean_utility": 9.520833333333334,
+      "mean_hp_loss": 48.458333333333336,
+      "C": 513,
+      "cost": {
+        "policy": {
+          "schema": "sts2.hotsearch.policy.h4",
+          "arm": "tactical",
+          "rule_calls_per_action_style": 32,
+          "margin": 0.0,
+          "incomplete_reference": "direct-g2",
+          "g2": "1077c191586885c49173afe5801849b3ea6a4535425731e27226fe1978abf084",
+          "v2": "d439444a1a9ca9bc8864988e488f720f71b379844b30ddb112bdd8f0ddcfcbbb",
+          "build": {
+            "host": "6779319a718763ad643fcdd01365ddfddf6c9d6a356335c2d61b34dfa898bb5c",
+            "hot": "2ea1d3970cb63cafc8ec4df413454a65842f3732e367b70629997b3cc42dc51a",
+            "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+          },
+          "python": {
+            "hot_produce.py": "9c38d72b60d37e0e2fe6c7a39750dad7f7f303d7464e50d785a19e26ee9a5609",
+            "client.py": "daf57c2c975e2dbd22b9ee32e631d741f0e81ceede8460cef05db38dd8b158fa",
+            "models.py": "d167fe8e4b95c75d23b3bc4998f95d8de8c322c68402ea46cf69bef57b8ce727",
+            "contingent.py": "21e3a0dea75670f7a27ea786e85667ab98b53e29e0ca36d0d4a6af65a1c69432"
+          },
+          "id": "8f85646011f7d798bf25dc9b46b950901e93e9a95df1331bfc40de86ae4d8185"
+        },
+        "attempts": 96,
+        "status": {
+          "Victory": 49,
+          "Defeat": 47
+        },
+        "wall": 61.612547800003085,
+        "python_cpu": 37.078125,
+        "python_peak_rss": 255053824,
+        "model_work": {
+          "g2_rows": 3899,
+          "v2_rows": 16347,
+          "v2_batches": 2365,
+          "v2_cache_hits": 8592,
+          "v2_inferred": 7755
+        },
+        "host": {
+          "cpu": 27.625,
+          "peak_rss": 164818944
+        },
+        "limit": 32,
+        "arm": "tactical",
+        "diagnostic": false,
+        "ids": [
+          176,
+          174,
+          128,
+          194,
+          192,
+          81,
+          242,
+          131,
+          245,
+          104,
+          16,
+          177,
+          2,
+          140,
+          0,
+          196,
+          135,
+          145,
+          114,
+          54,
+          90,
+          61,
+          154,
+          4,
+          97,
+          226,
+          46,
+          160,
+          220,
+          23,
+          236,
+          188,
+          89,
+          72,
+          222,
+          158,
+          64,
+          33,
+          77,
+          105,
+          238,
+          215,
+          139,
+          65,
+          49,
+          146,
+          44,
+          178,
+          201,
+          110,
+          197,
+          255,
+          115,
+          25,
+          243,
+          144,
+          10,
+          200,
+          179,
+          251,
+          41,
+          84,
+          57,
+          175,
+          209,
+          166,
+          235,
+          142,
+          205,
+          122,
+          190,
+          78,
+          212,
+          118,
+          69,
+          86,
+          202,
+          99,
+          93,
+          159,
+          181,
+          30,
+          14,
+          91,
+          204,
+          132,
+          232,
+          101,
+          82,
+          113,
+          1,
+          213,
+          96,
+          27,
+          195,
+          13
+        ]
+      },
+      "physical": {
+        "commands": {
+          "open": 96,
+          "search": 3030,
+          "step": 2445,
+          "g2": 2428,
+          "metrics": 1
+        },
+        "searched_rule_steps": 139591,
+        "chance": 56323,
+        "choices": 1466,
+        "requested_real_steps": 2445
+      },
+      "selected_styles": {
+        "reference": 388,
+        "guard": 60,
+        "light": 126,
+        "end": 19,
+        "build": 13
+      },
+      "review": {
+        "attempts": 96,
+        "audited": 5,
+        "reused": 91,
+        "reviewed": 93,
+        "C": 496,
+        "wall": 25.256926800007932,
+        "python_cpu": 0.53125,
+        "python_peak_rss": 261021696,
+        "host_cpu": 9.96875,
+        "host_peak_rss": 101859328,
+        "oracle": "9416ebb8fc8b3083c220149865988f80c9e658e52886988e6105c0bfac66d3b4",
+        "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+      },
+      "full_review": {
+        "wall": 209.63057099998696,
+        "python_cpu": 4.546875,
+        "python_peak_rss": 199700480,
+        "host_cpu": 184.015625,
+        "host_peak_rss": 104202240,
+        "audited": 96,
+        "reviewed": 93,
+        "C": 496
+      },
+      "paired": {
+        "g2": {
+          "n": 96,
+          "missing": 0,
+          "wins_gained": 8,
+          "wins_lost": 2,
+          "mean_delta": 7.833333333333333,
+          "median_delta": 0.0
+        },
+        "light": {
+          "n": 96,
+          "missing": 0,
+          "wins_gained": 9,
+          "wins_lost": 5,
+          "mean_delta": 4.854166666666667,
+          "median_delta": 0.0
+        },
+        "1A": {
+          "n": 96,
+          "missing": 0,
+          "wins_gained": 2,
+          "wins_lost": 5,
+          "mean_delta": -3.9479166666666665,
+          "median_delta": 0.0
+        },
+        "h3-strict": {
+          "n": 84,
+          "missing": 12,
+          "wins_gained": 9,
+          "wins_lost": 2,
+          "mean_delta": 8.869047619047619,
+          "median_delta": 0.0
+        }
+      }
+    },
+    "composed32": {
+      "attempts": 96,
+      "status": {
+        "Victory": 48,
+        "Defeat": 48
+      },
+      "encounters": 44,
+      "failures": {},
+      "actual_steps": 2443,
+      "player_choices": 67,
+      "C_completed": 513,
+      "C_partial": 0,
+      "turn_queries": 606,
+      "candidate_and_reference": 18552,
+      "changed_turns": 221,
+      "changed_first": 164,
+      "full_laws": 11843,
+      "full_reference": 384,
+      "mean_covered_mass": 0.6545706975204219,
+      "search_steps": 178957,
+      "chance_boundaries": 73375,
+      "pending_boundaries": 2015,
+      "realized_laws": {
+        "None": 222,
+        "True": 384
+      },
+      "gap_events": {
+        "budget": 3566,
+        "PickRandomLivingEnemySlot/unmodeled_rng": 981,
+        "ExecuteCoreCustomCard/unmodeled_rng": 1252,
+        "SpawnFabricatorBot/unmodeled_rng": 252,
+        "HandleBeforeSideTurnStartPower/unmodeled_rng": 264,
+        "AddGeneratedCardInstance/unmodeled_rng": 134,
+        "GenerateRandomFromPoolWithReplacement/unmodeled_rng": 79,
+        "AutoPlayCard/unmodeled_rng": 188,
+        "RollSpawnHp/unmodeled_rng": 71,
+        "AddCard/random_insert_known_positions": 17,
+        "HandleAfterAutoPostPlayPower/unmodeled_rng": 202
+      },
+      "completed": 96,
+      "wins": 48,
+      "mean_utility": 8.520833333333334,
+      "mean_hp_loss": 48.729166666666664,
+      "C": 513,
+      "cost": {
+        "policy": {
+          "schema": "sts2.hotsearch.policy.h4",
+          "arm": "contingent",
+          "rule_calls_per_action_style": 32,
+          "margin": 0.0,
+          "incomplete_reference": "direct-g2",
+          "g2": "1077c191586885c49173afe5801849b3ea6a4535425731e27226fe1978abf084",
+          "v2": "d439444a1a9ca9bc8864988e488f720f71b379844b30ddb112bdd8f0ddcfcbbb",
+          "build": {
+            "host": "6779319a718763ad643fcdd01365ddfddf6c9d6a356335c2d61b34dfa898bb5c",
+            "hot": "2ea1d3970cb63cafc8ec4df413454a65842f3732e367b70629997b3cc42dc51a",
+            "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+          },
+          "python": {
+            "hot_produce.py": "9c38d72b60d37e0e2fe6c7a39750dad7f7f303d7464e50d785a19e26ee9a5609",
+            "client.py": "daf57c2c975e2dbd22b9ee32e631d741f0e81ceede8460cef05db38dd8b158fa",
+            "models.py": "d167fe8e4b95c75d23b3bc4998f95d8de8c322c68402ea46cf69bef57b8ce727",
+            "contingent.py": "21e3a0dea75670f7a27ea786e85667ab98b53e29e0ca36d0d4a6af65a1c69432"
+          },
+          "id": "1e1b7623c9f742585f06d3d4003cdae5659ee2bc7e396e61ac5c9c60dfb10b5b"
+        },
+        "attempts": 96,
+        "status": {
+          "Victory": 48,
+          "Defeat": 48
+        },
+        "wall": 67.85300299999653,
+        "python_cpu": 39.828125,
+        "python_peak_rss": 254533632,
+        "model_work": {
+          "g2_rows": 3881,
+          "v2_rows": 18012,
+          "v2_batches": 2495,
+          "v2_cache_hits": 10171,
+          "v2_inferred": 7841
+        },
+        "host": {
+          "cpu": 31.25,
+          "peak_rss": 164868096
+        },
+        "limit": 32,
+        "arm": "contingent",
+        "diagnostic": false,
+        "ids": [
+          176,
+          174,
+          128,
+          194,
+          192,
+          81,
+          242,
+          131,
+          245,
+          104,
+          16,
+          177,
+          2,
+          140,
+          0,
+          196,
+          135,
+          145,
+          114,
+          54,
+          90,
+          61,
+          154,
+          4,
+          97,
+          226,
+          46,
+          160,
+          220,
+          23,
+          236,
+          188,
+          89,
+          72,
+          222,
+          158,
+          64,
+          33,
+          77,
+          105,
+          238,
+          215,
+          139,
+          65,
+          49,
+          146,
+          44,
+          178,
+          201,
+          110,
+          197,
+          255,
+          115,
+          25,
+          243,
+          144,
+          10,
+          200,
+          179,
+          251,
+          41,
+          84,
+          57,
+          175,
+          209,
+          166,
+          235,
+          142,
+          205,
+          122,
+          190,
+          78,
+          212,
+          118,
+          69,
+          86,
+          202,
+          99,
+          93,
+          159,
+          181,
+          30,
+          14,
+          91,
+          204,
+          132,
+          232,
+          101,
+          82,
+          113,
+          1,
+          213,
+          96,
+          27,
+          195,
+          13
+        ]
+      },
+      "physical": {
+        "commands": {
+          "open": 96,
+          "search": 3636,
+          "step": 2443,
+          "g2": 2421,
+          "metrics": 1
+        },
+        "searched_rule_steps": 178957,
+        "chance": 73375,
+        "choices": 2015,
+        "requested_real_steps": 2443
+      },
+      "selected_styles": {
+        "reference": 385,
+        "guard": 59,
+        "light": 126,
+        "end": 19,
+        "setup": 4,
+        "build": 13
+      },
+      "review": {
+        "attempts": 96,
+        "audited": 7,
+        "reused": 89,
+        "reviewed": 93,
+        "C": 496,
+        "wall": 29.83421049999015,
+        "python_cpu": 0.515625,
+        "python_peak_rss": 261738496,
+        "host_cpu": 15.578125,
+        "host_peak_rss": 102395904,
+        "oracle": "9416ebb8fc8b3083c220149865988f80c9e658e52886988e6105c0bfac66d3b4",
+        "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+      },
+      "paired": {
+        "g2": {
+          "n": 96,
+          "missing": 0,
+          "wins_gained": 8,
+          "wins_lost": 3,
+          "mean_delta": 6.833333333333333,
+          "median_delta": 0.0
+        },
+        "light": {
+          "n": 96,
+          "missing": 0,
+          "wins_gained": 9,
+          "wins_lost": 6,
+          "mean_delta": 3.8541666666666665,
+          "median_delta": 0.0
+        },
+        "1A": {
+          "n": 96,
+          "missing": 0,
+          "wins_gained": 2,
+          "wins_lost": 6,
+          "mean_delta": -4.947916666666667,
+          "median_delta": 0.0
+        },
+        "h3-strict": {
+          "n": 84,
+          "missing": 12,
+          "wins_gained": 9,
+          "wins_lost": 3,
+          "mean_delta": 7.726190476190476,
+          "median_delta": 0.0
+        }
+      }
+    },
+    "composed128": {
+      "attempts": 96,
+      "status": {
+        "Victory": 47,
+        "Defeat": 48,
+        "failed": 1
+      },
+      "encounters": 44,
+      "failures": {
+        "236": "policy/observation_outside_evaluated_program"
+      },
+      "actual_steps": 2467,
+      "player_choices": 67,
+      "C_completed": 517,
+      "C_partial": 0,
+      "turn_queries": 610,
+      "candidate_and_reference": 18638,
+      "changed_turns": 234,
+      "changed_first": 174,
+      "full_laws": 12301,
+      "full_reference": 399,
+      "mean_covered_mass": 0.685878099135466,
+      "search_steps": 495888,
+      "chance_boundaries": 212689,
+      "pending_boundaries": 4118,
+      "realized_laws": {
+        "None": 212,
+        "True": 398
+      },
+      "gap_events": {
+        "budget": 3036,
+        "PickRandomLivingEnemySlot/unmodeled_rng": 1034,
+        "ExecuteCoreCustomCard/unmodeled_rng": 1321,
+        "SpawnFabricatorBot/unmodeled_rng": 253,
+        "HandleBeforeSideTurnStartPower/unmodeled_rng": 281,
+        "AutoPlayCard/unmodeled_rng": 248,
+        "AddGeneratedCardInstance/unmodeled_rng": 137,
+        "GenerateRandomFromPoolWithReplacement/unmodeled_rng": 79,
+        "RollSpawnHp/unmodeled_rng": 83,
+        "AddCard/random_insert_known_positions": 17,
+        "HandleAfterAutoPostPlayPower/unmodeled_rng": 240
+      },
+      "completed": 95,
+      "wins": 47,
+      "mean_utility": 7.926315789473684,
+      "mean_hp_loss": 48.873684210526314,
+      "C": 517,
+      "cost": {
+        "policy": {
+          "schema": "sts2.hotsearch.policy.h4",
+          "arm": "contingent",
+          "rule_calls_per_action_style": 128,
+          "margin": 0.0,
+          "incomplete_reference": "direct-g2",
+          "g2": "1077c191586885c49173afe5801849b3ea6a4535425731e27226fe1978abf084",
+          "v2": "d439444a1a9ca9bc8864988e488f720f71b379844b30ddb112bdd8f0ddcfcbbb",
+          "build": {
+            "host": "6779319a718763ad643fcdd01365ddfddf6c9d6a356335c2d61b34dfa898bb5c",
+            "hot": "2ea1d3970cb63cafc8ec4df413454a65842f3732e367b70629997b3cc42dc51a",
+            "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+          },
+          "python": {
+            "hot_produce.py": "9c38d72b60d37e0e2fe6c7a39750dad7f7f303d7464e50d785a19e26ee9a5609",
+            "client.py": "daf57c2c975e2dbd22b9ee32e631d741f0e81ceede8460cef05db38dd8b158fa",
+            "models.py": "d167fe8e4b95c75d23b3bc4998f95d8de8c322c68402ea46cf69bef57b8ce727",
+            "contingent.py": "21e3a0dea75670f7a27ea786e85667ab98b53e29e0ca36d0d4a6af65a1c69432"
+          },
+          "id": "a21ec23586152faff52ee8e2ac46dcc3bdc4f988ae41b4f92ccc254992d6c9a5"
+        },
+        "attempts": 96,
+        "status": {
+          "Victory": 47,
+          "Defeat": 48,
+          "failed": 1
+        },
+        "wall": 139.41985630001,
+        "python_cpu": 77.578125,
+        "python_peak_rss": 276238336,
+        "model_work": {
+          "g2_rows": 9127,
+          "v2_rows": 33309,
+          "v2_batches": 2609,
+          "v2_cache_hits": 21716,
+          "v2_inferred": 11593
+        },
+        "host": {
+          "cpu": 63.703125,
+          "peak_rss": 180150272
+        },
+        "limit": 128,
+        "arm": "contingent",
+        "diagnostic": false,
+        "ids": [
+          176,
+          174,
+          128,
+          194,
+          192,
+          81,
+          242,
+          131,
+          245,
+          104,
+          16,
+          177,
+          2,
+          140,
+          0,
+          196,
+          135,
+          145,
+          114,
+          54,
+          90,
+          61,
+          154,
+          4,
+          97,
+          226,
+          46,
+          160,
+          220,
+          23,
+          236,
+          188,
+          89,
+          72,
+          222,
+          158,
+          64,
+          33,
+          77,
+          105,
+          238,
+          215,
+          139,
+          65,
+          49,
+          146,
+          44,
+          178,
+          201,
+          110,
+          197,
+          255,
+          115,
+          25,
+          243,
+          144,
+          10,
+          200,
+          179,
+          251,
+          41,
+          84,
+          57,
+          175,
+          209,
+          166,
+          235,
+          142,
+          205,
+          122,
+          190,
+          78,
+          212,
+          118,
+          69,
+          86,
+          202,
+          99,
+          93,
+          159,
+          181,
+          30,
+          14,
+          91,
+          204,
+          132,
+          232,
+          101,
+          82,
+          113,
+          1,
+          213,
+          96,
+          27,
+          195,
+          13
+        ]
+      },
+      "physical": {
+        "commands": {
+          "open": 96,
+          "search": 3660,
+          "g2": 7710,
+          "step": 2467,
+          "metrics": 1
+        },
+        "searched_rule_steps": 495888,
+        "chance": 212689,
+        "choices": 4118,
+        "requested_real_steps": 2467
+      },
+      "selected_styles": {
+        "reference": 376,
+        "guard": 65,
+        "light": 128,
+        "end": 19,
+        "setup": 4,
+        "build": 17,
+        "conditional": 1
+      },
+      "review": {
+        "attempts": 96,
+        "audited": 4,
+        "reused": 91,
+        "reviewed": 92,
+        "C": 500,
+        "wall": 23.596754500002135,
+        "python_cpu": 0.609375,
+        "python_peak_rss": 261898240,
+        "host_cpu": 9.578125,
+        "host_peak_rss": 102301696,
+        "oracle": "9416ebb8fc8b3083c220149865988f80c9e658e52886988e6105c0bfac66d3b4",
+        "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+      },
+      "paired": {
+        "g2": {
+          "n": 95,
+          "missing": 1,
+          "wins_gained": 7,
+          "wins_lost": 3,
+          "mean_delta": 5.6947368421052635,
+          "median_delta": 0.0
+        },
+        "light": {
+          "n": 95,
+          "missing": 1,
+          "wins_gained": 8,
+          "wins_lost": 6,
+          "mean_delta": 2.6842105263157894,
+          "median_delta": 0.0
+        },
+        "1A": {
+          "n": 95,
+          "missing": 1,
+          "wins_gained": 2,
+          "wins_lost": 6,
+          "mean_delta": -5.08421052631579,
+          "median_delta": 0.0
+        },
+        "h3-strict": {
+          "n": 83,
+          "missing": 13,
+          "wins_gained": 8,
+          "wins_lost": 3,
+          "mean_delta": 6.433734939759036,
+          "median_delta": 0.0
+        }
+      }
+    },
+    "composed512": {
+      "attempts": 96,
+      "status": {
+        "Victory": 48,
+        "Defeat": 46,
+        "failed": 2
+      },
+      "encounters": 44,
+      "failures": {
+        "236": "policy/observation_outside_evaluated_program",
+        "166": "policy/observation_outside_evaluated_program"
+      },
+      "actual_steps": 2413,
+      "player_choices": 65,
+      "C_completed": 504,
+      "C_partial": 6,
+      "turn_queries": 603,
+      "candidate_and_reference": 18408,
+      "changed_turns": 241,
+      "changed_first": 182,
+      "full_laws": 12616,
+      "full_reference": 411,
+      "mean_covered_mass": 0.7196910157901789,
+      "search_steps": 1482239,
+      "chance_boundaries": 503897,
+      "pending_boundaries": 8796,
+      "realized_laws": {
+        "None": 194,
+        "True": 409
+      },
+      "gap_events": {
+        "budget": 2360,
+        "PickRandomLivingEnemySlot/unmodeled_rng": 1017,
+        "ExecuteCoreCustomCard/unmodeled_rng": 1421,
+        "AutoPlayCard/unmodeled_rng": 362,
+        "SpawnFabricatorBot/unmodeled_rng": 254,
+        "HandleBeforeSideTurnStartPower/unmodeled_rng": 305,
+        "AddGeneratedCardInstance/unmodeled_rng": 160,
+        "GenerateRandomFromPoolWithReplacement/unmodeled_rng": 87,
+        "RollSpawnHp/unmodeled_rng": 83,
+        "AddCard/random_insert_known_positions": 17,
+        "HandleAfterAutoPostPlayPower/unmodeled_rng": 267
+      },
+      "completed": 94,
+      "wins": 48,
+      "mean_utility": 9.946808510638299,
+      "mean_hp_loss": 47.88297872340426,
+      "C": 504,
+      "cost": {
+        "policy": {
+          "schema": "sts2.hotsearch.policy.h4",
+          "arm": "contingent",
+          "rule_calls_per_action_style": 512,
+          "margin": 0.0,
+          "incomplete_reference": "direct-g2",
+          "g2": "1077c191586885c49173afe5801849b3ea6a4535425731e27226fe1978abf084",
+          "v2": "d439444a1a9ca9bc8864988e488f720f71b379844b30ddb112bdd8f0ddcfcbbb",
+          "build": {
+            "host": "6779319a718763ad643fcdd01365ddfddf6c9d6a356335c2d61b34dfa898bb5c",
+            "hot": "2ea1d3970cb63cafc8ec4df413454a65842f3732e367b70629997b3cc42dc51a",
+            "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+          },
+          "python": {
+            "hot_produce.py": "9c38d72b60d37e0e2fe6c7a39750dad7f7f303d7464e50d785a19e26ee9a5609",
+            "client.py": "daf57c2c975e2dbd22b9ee32e631d741f0e81ceede8460cef05db38dd8b158fa",
+            "models.py": "d167fe8e4b95c75d23b3bc4998f95d8de8c322c68402ea46cf69bef57b8ce727",
+            "contingent.py": "21e3a0dea75670f7a27ea786e85667ab98b53e29e0ca36d0d4a6af65a1c69432"
+          },
+          "id": "3442edce9ebb129625ae9a26a77f5022808c3ffb8a3147ac973edc2a3bc630ee"
+        },
+        "attempts": 96,
+        "status": {
+          "Victory": 48,
+          "Defeat": 46,
+          "failed": 2
+        },
+        "wall": 446.7210320000013,
+        "python_cpu": 242.515625,
+        "python_peak_rss": 482471936,
+        "model_work": {
+          "g2_rows": 30479,
+          "v2_rows": 104603,
+          "v2_batches": 2677,
+          "v2_cache_hits": 81809,
+          "v2_inferred": 22794
+        },
+        "host": {
+          "cpu": 197.6875,
+          "peak_rss": 306814976
+        },
+        "limit": 512,
+        "arm": "contingent",
+        "diagnostic": false,
+        "ids": [
+          176,
+          174,
+          128,
+          194,
+          192,
+          81,
+          242,
+          131,
+          245,
+          104,
+          16,
+          177,
+          2,
+          140,
+          0,
+          196,
+          135,
+          145,
+          114,
+          54,
+          90,
+          61,
+          154,
+          4,
+          97,
+          226,
+          46,
+          160,
+          220,
+          23,
+          236,
+          188,
+          89,
+          72,
+          222,
+          158,
+          64,
+          33,
+          77,
+          105,
+          238,
+          215,
+          139,
+          65,
+          49,
+          146,
+          44,
+          178,
+          201,
+          110,
+          197,
+          255,
+          115,
+          25,
+          243,
+          144,
+          10,
+          200,
+          179,
+          251,
+          41,
+          84,
+          57,
+          175,
+          209,
+          166,
+          235,
+          142,
+          205,
+          122,
+          190,
+          78,
+          212,
+          118,
+          69,
+          86,
+          202,
+          99,
+          93,
+          159,
+          181,
+          30,
+          14,
+          91,
+          204,
+          132,
+          232,
+          101,
+          82,
+          113,
+          1,
+          213,
+          96,
+          27,
+          195,
+          13
+        ]
+      },
+      "physical": {
+        "commands": {
+          "open": 96,
+          "search": 3614,
+          "g2": 29146,
+          "step": 2413,
+          "metrics": 1
+        },
+        "searched_rule_steps": 1482239,
+        "chance": 503897,
+        "choices": 8796,
+        "requested_real_steps": 2413
+      },
+      "selected_styles": {
+        "reference": 362,
+        "guard": 66,
+        "light": 128,
+        "end": 19,
+        "build": 20,
+        "setup": 5,
+        "conditional": 3
+      },
+      "review": {
+        "attempts": 96,
+        "audited": 7,
+        "reused": 87,
+        "reviewed": 91,
+        "C": 486,
+        "wall": 28.923906900003203,
+        "python_cpu": 0.703125,
+        "python_peak_rss": 263884800,
+        "host_cpu": 13.890625,
+        "host_peak_rss": 102301696,
+        "oracle": "9416ebb8fc8b3083c220149865988f80c9e658e52886988e6105c0bfac66d3b4",
+        "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+      },
+      "paired": {
+        "g2": {
+          "n": 94,
+          "missing": 2,
+          "wins_gained": 7,
+          "wins_lost": 2,
+          "mean_delta": 7.159574468085107,
+          "median_delta": 0.0
+        },
+        "light": {
+          "n": 94,
+          "missing": 2,
+          "wins_gained": 8,
+          "wins_lost": 5,
+          "mean_delta": 4.117021276595745,
+          "median_delta": 0.0
+        },
+        "1A": {
+          "n": 94,
+          "missing": 2,
+          "wins_gained": 2,
+          "wins_lost": 5,
+          "mean_delta": -3.734042553191489,
+          "median_delta": 0.0
+        },
+        "h3-strict": {
+          "n": 82,
+          "missing": 14,
+          "wins_gained": 8,
+          "wins_lost": 2,
+          "mean_delta": 8.121951219512194,
+          "median_delta": 0.0
+        }
+      }
+    },
+    "open-hot": {
+      "attempts": 32,
+      "status": {
+        "Victory": 18,
+        "Defeat": 10,
+        "failed": 4
+      },
+      "encounters": 24,
+      "failures": {
+        "5": "policy/observation_outside_evaluated_program",
+        "11": "policy/observation_outside_evaluated_program",
+        "20": "policy/observation_outside_evaluated_program",
+        "27": "AddCard/random_insert_known_positions @ Play"
+      },
+      "actual_steps": 673,
+      "player_choices": 12,
+      "C_completed": 134,
+      "C_partial": 8,
+      "turn_queries": 174,
+      "candidate_and_reference": 5914,
+      "changed_turns": 54,
+      "changed_first": 40,
+      "full_laws": 3486,
+      "full_reference": 103,
+      "mean_covered_mass": 0.6125970298446598,
+      "search_steps": 41220,
+      "chance_boundaries": 9929,
+      "pending_boundaries": 432,
+      "realized_laws": {
+        "True": 100,
+        "None": 74
+      },
+      "gap_events": {
+        "PickRandomLivingEnemySlot/unmodeled_rng": 214,
+        "ExecuteCoreCustomCard/unmodeled_rng": 844,
+        "GenerateRandomFromPoolWithReplacement/unmodeled_rng": 120,
+        "budget": 623,
+        "RollDistinctFromPool/unmodeled_rng": 38,
+        "AddGeneratedCardInstance/unmodeled_rng": 36,
+        "DispatchCorePowerHook/unmodeled_rng": 1,
+        "HandleBeforeSideTurnStartPower/unmodeled_rng": 109,
+        "RollSpawnHp/unmodeled_rng": 185,
+        "ApplyPostAttackMoveEffects/unmodeled_rng": 298,
+        "HandleAfterAutoPostPlayPower/unmodeled_rng": 2,
+        "ApplyThievingHopperStealCard/unmodeled_rng": 21,
+        "AddCard/random_insert_known_positions": 13
+      },
+      "completed": 28,
+      "wins": 18,
+      "mean_utility": 28.928571428571427,
+      "mean_hp_loss": 39.357142857142854,
+      "C": 134,
+      "cost": {
+        "policy": {
+          "schema": "sts2.hotsearch.policy.h4",
+          "arm": "contingent",
+          "rule_calls_per_action_style": 32,
+          "margin": 0.0,
+          "incomplete_reference": "direct-g2",
+          "g2": "1077c191586885c49173afe5801849b3ea6a4535425731e27226fe1978abf084",
+          "v2": "d439444a1a9ca9bc8864988e488f720f71b379844b30ddb112bdd8f0ddcfcbbb",
+          "build": {
+            "host": "6779319a718763ad643fcdd01365ddfddf6c9d6a356335c2d61b34dfa898bb5c",
+            "hot": "2ea1d3970cb63cafc8ec4df413454a65842f3732e367b70629997b3cc42dc51a",
+            "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+          },
+          "python": {
+            "hot_produce.py": "9c38d72b60d37e0e2fe6c7a39750dad7f7f303d7464e50d785a19e26ee9a5609",
+            "client.py": "daf57c2c975e2dbd22b9ee32e631d741f0e81ceede8460cef05db38dd8b158fa",
+            "models.py": "d167fe8e4b95c75d23b3bc4998f95d8de8c322c68402ea46cf69bef57b8ce727",
+            "contingent.py": "21e3a0dea75670f7a27ea786e85667ab98b53e29e0ca36d0d4a6af65a1c69432"
+          },
+          "id": "1e1b7623c9f742585f06d3d4003cdae5659ee2bc7e396e61ac5c9c60dfb10b5b"
+        },
+        "attempts": 32,
+        "status": {
+          "Victory": 18,
+          "Defeat": 10,
+          "failed": 4
+        },
+        "wall": 21.64667429999099,
+        "python_cpu": 11.09375,
+        "python_peak_rss": 239628288,
+        "model_work": {
+          "g2_rows": 1106,
+          "v2_rows": 5175,
+          "v2_batches": 735,
+          "v2_cache_hits": 3060,
+          "v2_inferred": 2115
+        },
+        "host": {
+          "cpu": 13.3125,
+          "peak_rss": 153505792
+        },
+        "limit": 32,
+        "arm": "contingent",
+        "diagnostic": false,
+        "ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ]
+      },
+      "physical": {
+        "commands": {
+          "open": 32,
+          "search": 1044,
+          "g2": 679,
+          "step": 673,
+          "metrics": 1
+        },
+        "searched_rule_steps": 41220,
+        "chance": 9929,
+        "choices": 432,
+        "requested_real_steps": 673
+      },
+      "selected_styles": {
+        "light": 35,
+        "build": 2,
+        "reference": 120,
+        "guard": 14,
+        "end": 3
+      },
+      "review": {
+        "attempts": 32,
+        "audited": 28,
+        "reused": 0,
+        "reviewed": 24,
+        "C": 115,
+        "wall": 71.02765449999424,
+        "python_cpu": 1.21875,
+        "python_peak_rss": 237916160,
+        "host_cpu": 53.796875,
+        "host_peak_rss": 103497728,
+        "oracle": "9416ebb8fc8b3083c220149865988f80c9e658e52886988e6105c0bfac66d3b4",
+        "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+      },
+      "paired": {
+        "open-g2": {
+          "n": 28,
+          "missing": 4,
+          "wins_gained": 0,
+          "wins_lost": 1,
+          "mean_delta": 0.03571428571428571,
+          "median_delta": 0.0
+        },
+        "open-1A": {
+          "n": 28,
+          "missing": 4,
+          "wins_gained": 0,
+          "wins_lost": 1,
+          "mean_delta": -3.142857142857143,
+          "median_delta": 0.0
+        }
+      }
+    },
+    "open-g2": {
+      "attempts": 32,
+      "status": {
+        "Victory": 19,
+        "Defeat": 12,
+        "failed": 1
+      },
+      "encounters": 24,
+      "failures": {
+        "27": "AddCard/random_insert_known_positions @ Play"
+      },
+      "actual_steps": 689,
+      "player_choices": 13,
+      "C_completed": 140,
+      "C_partial": 0,
+      "turn_queries": 0,
+      "candidate_and_reference": 0,
+      "changed_turns": 0,
+      "changed_first": 0,
+      "full_laws": 0,
+      "full_reference": 0,
+      "mean_covered_mass": null,
+      "search_steps": 0,
+      "chance_boundaries": 0,
+      "pending_boundaries": 0,
+      "realized_laws": {},
+      "gap_events": {},
+      "completed": 31,
+      "wins": 19,
+      "mean_utility": 21.258064516129032,
+      "mean_hp_loss": 43.903225806451616,
+      "C": 140,
+      "cost": {
+        "policy": {
+          "schema": "sts2.hotsearch.policy.h4",
+          "arm": "g2",
+          "rule_calls_per_action_style": 32,
+          "margin": 0.0,
+          "incomplete_reference": "direct-g2",
+          "g2": "1077c191586885c49173afe5801849b3ea6a4535425731e27226fe1978abf084",
+          "v2": "d439444a1a9ca9bc8864988e488f720f71b379844b30ddb112bdd8f0ddcfcbbb",
+          "build": {
+            "host": "6779319a718763ad643fcdd01365ddfddf6c9d6a356335c2d61b34dfa898bb5c",
+            "hot": "2ea1d3970cb63cafc8ec4df413454a65842f3732e367b70629997b3cc42dc51a",
+            "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+          },
+          "python": {
+            "hot_produce.py": "9c38d72b60d37e0e2fe6c7a39750dad7f7f303d7464e50d785a19e26ee9a5609",
+            "client.py": "daf57c2c975e2dbd22b9ee32e631d741f0e81ceede8460cef05db38dd8b158fa",
+            "models.py": "d167fe8e4b95c75d23b3bc4998f95d8de8c322c68402ea46cf69bef57b8ce727",
+            "contingent.py": "21e3a0dea75670f7a27ea786e85667ab98b53e29e0ca36d0d4a6af65a1c69432"
+          },
+          "id": "8e315720d841234bf5d2d0e059b7a637993fc59e780bb948b90802cb59566de1"
+        },
+        "attempts": 32,
+        "status": {
+          "Victory": 19,
+          "Defeat": 12,
+          "failed": 1
+        },
+        "wall": 7.5614561999973375,
+        "python_cpu": 3.65625,
+        "python_peak_rss": 213716992,
+        "model_work": {
+          "g2_rows": 689,
+          "v2_rows": 0,
+          "v2_batches": 0,
+          "v2_cache_hits": 0,
+          "v2_inferred": 0
+        },
+        "host": {
+          "cpu": 4.296875,
+          "peak_rss": 134127616
+        },
+        "limit": 32,
+        "arm": "g2",
+        "diagnostic": false,
+        "ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ]
+      },
+      "physical": {
+        "commands": {
+          "open": 32,
+          "step": 689,
+          "metrics": 1
+        },
+        "searched_rule_steps": 0,
+        "chance": 0,
+        "choices": 0,
+        "requested_real_steps": 689
+      },
+      "selected_styles": {},
+      "review": {
+        "attempts": 32,
+        "audited": 23,
+        "reused": 8,
+        "reviewed": 27,
+        "C": 119,
+        "wall": 62.750023499989766,
+        "python_cpu": 1.125,
+        "python_peak_rss": 233955328,
+        "host_cpu": 46.9375,
+        "host_peak_rss": 103534592,
+        "oracle": "9416ebb8fc8b3083c220149865988f80c9e658e52886988e6105c0bfac66d3b4",
+        "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+      },
+      "paired": {
+        "open-1A": {
+          "n": 31,
+          "missing": 1,
+          "wins_gained": 1,
+          "wins_lost": 1,
+          "mean_delta": -2.870967741935484,
+          "median_delta": 0.0
+        }
+      }
+    },
+    "post-open-fixed": {
+      "attempts": 32,
+      "status": {
+        "Victory": 18,
+        "Defeat": 12,
+        "failed": 2
+      },
+      "encounters": 24,
+      "failures": {
+        "11": "conditional_policy/realized_boundary_outside_law",
+        "27": "AddCard/random_insert_known_positions @ Play"
+      },
+      "actual_steps": 688,
+      "player_choices": 12,
+      "C_completed": 142,
+      "C_partial": 4,
+      "turn_queries": 177,
+      "candidate_and_reference": 5999,
+      "changed_turns": 54,
+      "changed_first": 40,
+      "full_laws": 3516,
+      "full_reference": 104,
+      "mean_covered_mass": 0.6089179587433435,
+      "search_steps": 42158,
+      "chance_boundaries": 10303,
+      "pending_boundaries": 463,
+      "realized_laws": {
+        "True": 103,
+        "None": 73,
+        "False": 1
+      },
+      "gap_events": {
+        "PickRandomLivingEnemySlot/unmodeled_rng": 216,
+        "ExecuteCoreCustomCard/unmodeled_rng": 850,
+        "GenerateRandomFromPoolWithReplacement/unmodeled_rng": 120,
+        "budget": 642,
+        "RollDistinctFromPool/unmodeled_rng": 38,
+        "AddGeneratedCardInstance/unmodeled_rng": 74,
+        "DispatchCorePowerHook/unmodeled_rng": 1,
+        "HandleBeforeSideTurnStartPower/unmodeled_rng": 109,
+        "RollSpawnHp/unmodeled_rng": 185,
+        "ApplyPostAttackMoveEffects/unmodeled_rng": 298,
+        "HandleAfterAutoPostPlayPower/unmodeled_rng": 2,
+        "ApplyThievingHopperStealCard/unmodeled_rng": 21,
+        "AddCard/random_insert_known_positions": 13
+      },
+      "completed": 30,
+      "wins": 18,
+      "mean_utility": 23.666666666666668,
+      "mean_hp_loss": 40.86666666666667,
+      "C": 142,
+      "cost": {
+        "policy": {
+          "schema": "sts2.hotsearch.policy.h4",
+          "arm": "contingent",
+          "rule_calls_per_action_style": 32,
+          "margin": 0.0,
+          "incomplete_reference": "direct-g2",
+          "g2": "1077c191586885c49173afe5801849b3ea6a4535425731e27226fe1978abf084",
+          "v2": "d439444a1a9ca9bc8864988e488f720f71b379844b30ddb112bdd8f0ddcfcbbb",
+          "build": {
+            "host": "236fa864aeab6c37945ba3384712ef1d6d653baf7a5022d1ccb03a3daadf15af",
+            "hot": "40829de3ef8309fbbc4164f56dbe4b182dccd718cce6a11f8e5daf260c05f38a",
+            "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+          },
+          "python": {
+            "hot_produce.py": "9c38d72b60d37e0e2fe6c7a39750dad7f7f303d7464e50d785a19e26ee9a5609",
+            "client.py": "daf57c2c975e2dbd22b9ee32e631d741f0e81ceede8460cef05db38dd8b158fa",
+            "models.py": "d167fe8e4b95c75d23b3bc4998f95d8de8c322c68402ea46cf69bef57b8ce727",
+            "contingent.py": "031a7755a673a85ea573f9eda2c2651032e51b7cf5691e04952017d561720fb3"
+          },
+          "id": "aa12e8acf0c4ea151391c6ebc06df992f57c56ed71add3a5bd7dde1202cb9d12"
+        },
+        "attempts": 32,
+        "status": {
+          "Victory": 18,
+          "Defeat": 12,
+          "failed": 2
+        },
+        "wall": 22.169621299995924,
+        "python_cpu": 10.75,
+        "python_peak_rss": 240046080,
+        "model_work": {
+          "g2_rows": 1134,
+          "v2_rows": 5201,
+          "v2_batches": 740,
+          "v2_cache_hits": 3073,
+          "v2_inferred": 2128
+        },
+        "host": {
+          "cpu": 14.734375,
+          "peak_rss": 155824128
+        },
+        "limit": 32,
+        "arm": "contingent",
+        "diagnostic": false,
+        "ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ]
+      },
+      "physical": {
+        "commands": {
+          "open": 32,
+          "search": 1062,
+          "g2": 701,
+          "step": 688,
+          "metrics": 1
+        },
+        "searched_rule_steps": 42158,
+        "chance": 10303,
+        "choices": 463,
+        "requested_real_steps": 688
+      },
+      "selected_styles": {
+        "light": 35,
+        "build": 2,
+        "reference": 123,
+        "guard": 14,
+        "end": 3
+      },
+      "paired": {
+        "open-g2": {
+          "n": 30,
+          "missing": 2,
+          "wins_gained": 0,
+          "wins_lost": 1,
+          "mean_delta": 0.03333333333333333,
+          "median_delta": 0.0
+        },
+        "open-1A": {
+          "n": 30,
+          "missing": 2,
+          "wins_gained": 0,
+          "wins_lost": 1,
+          "mean_delta": -2.933333333333333,
+          "median_delta": 0.0
+        }
+      }
+    },
+    "post-fix96": {
+      "attempts": 96,
+      "status": {
+        "Victory": 49,
+        "Defeat": 47
+      },
+      "encounters": 44,
+      "failures": {},
+      "actual_steps": 2445,
+      "player_choices": 69,
+      "C_completed": 513,
+      "C_partial": 0,
+      "turn_queries": 606,
+      "candidate_and_reference": 16890,
+      "changed_turns": 218,
+      "changed_first": 160,
+      "full_laws": 11694,
+      "full_reference": 381,
+      "mean_covered_mass": 0.7048083356139344,
+      "search_steps": 139591,
+      "chance_boundaries": 56323,
+      "pending_boundaries": 1466,
+      "realized_laws": {
+        "None": 225,
+        "True": 381
+      },
+      "gap_events": {
+        "budget": 2680,
+        "PickRandomLivingEnemySlot/unmodeled_rng": 781,
+        "ExecuteCoreCustomCard/unmodeled_rng": 996,
+        "SpawnFabricatorBot/unmodeled_rng": 207,
+        "HandleBeforeSideTurnStartPower/unmodeled_rng": 214,
+        "AddGeneratedCardInstance/unmodeled_rng": 110,
+        "GenerateRandomFromPoolWithReplacement/unmodeled_rng": 61,
+        "AutoPlayCard/unmodeled_rng": 149,
+        "RollSpawnHp/unmodeled_rng": 59,
+        "AddCard/random_insert_known_positions": 13,
+        "HandleAfterAutoPostPlayPower/unmodeled_rng": 163
+      },
+      "completed": 96,
+      "wins": 49,
+      "mean_utility": 9.520833333333334,
+      "mean_hp_loss": 48.458333333333336,
+      "C": 513,
+      "cost": {
+        "policy": {
+          "schema": "sts2.hotsearch.policy.h4",
+          "arm": "tactical",
+          "rule_calls_per_action_style": 32,
+          "margin": 0.0,
+          "incomplete_reference": "direct-g2",
+          "g2": "1077c191586885c49173afe5801849b3ea6a4535425731e27226fe1978abf084",
+          "v2": "d439444a1a9ca9bc8864988e488f720f71b379844b30ddb112bdd8f0ddcfcbbb",
+          "build": {
+            "host": "236fa864aeab6c37945ba3384712ef1d6d653baf7a5022d1ccb03a3daadf15af",
+            "hot": "40829de3ef8309fbbc4164f56dbe4b182dccd718cce6a11f8e5daf260c05f38a",
+            "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+          },
+          "python": {
+            "hot_produce.py": "9c38d72b60d37e0e2fe6c7a39750dad7f7f303d7464e50d785a19e26ee9a5609",
+            "client.py": "daf57c2c975e2dbd22b9ee32e631d741f0e81ceede8460cef05db38dd8b158fa",
+            "models.py": "d167fe8e4b95c75d23b3bc4998f95d8de8c322c68402ea46cf69bef57b8ce727",
+            "contingent.py": "031a7755a673a85ea573f9eda2c2651032e51b7cf5691e04952017d561720fb3"
+          },
+          "id": "021488dacd5ba175e32663c552629db9a5218433c6b8763f505569e3ec2ca233"
+        },
+        "attempts": 96,
+        "status": {
+          "Victory": 49,
+          "Defeat": 47
+        },
+        "wall": 63.20624689999386,
+        "python_cpu": 39.28125,
+        "python_peak_rss": 254922752,
+        "model_work": {
+          "g2_rows": 3899,
+          "v2_rows": 16347,
+          "v2_batches": 2365,
+          "v2_cache_hits": 8592,
+          "v2_inferred": 7755
+        },
+        "host": {
+          "cpu": 28,
+          "peak_rss": 165138432
+        },
+        "limit": 32,
+        "arm": "tactical",
+        "diagnostic": false,
+        "ids": [
+          176,
+          174,
+          128,
+          194,
+          192,
+          81,
+          242,
+          131,
+          245,
+          104,
+          16,
+          177,
+          2,
+          140,
+          0,
+          196,
+          135,
+          145,
+          114,
+          54,
+          90,
+          61,
+          154,
+          4,
+          97,
+          226,
+          46,
+          160,
+          220,
+          23,
+          236,
+          188,
+          89,
+          72,
+          222,
+          158,
+          64,
+          33,
+          77,
+          105,
+          238,
+          215,
+          139,
+          65,
+          49,
+          146,
+          44,
+          178,
+          201,
+          110,
+          197,
+          255,
+          115,
+          25,
+          243,
+          144,
+          10,
+          200,
+          179,
+          251,
+          41,
+          84,
+          57,
+          175,
+          209,
+          166,
+          235,
+          142,
+          205,
+          122,
+          190,
+          78,
+          212,
+          118,
+          69,
+          86,
+          202,
+          99,
+          93,
+          159,
+          181,
+          30,
+          14,
+          91,
+          204,
+          132,
+          232,
+          101,
+          82,
+          113,
+          1,
+          213,
+          96,
+          27,
+          195,
+          13
+        ]
+      },
+      "physical": {
+        "commands": {
+          "open": 96,
+          "search": 3030,
+          "step": 2445,
+          "g2": 2428,
+          "metrics": 1
+        },
+        "searched_rule_steps": 139591,
+        "chance": 56323,
+        "choices": 1466,
+        "requested_real_steps": 2445
+      },
+      "selected_styles": {
+        "reference": 388,
+        "guard": 60,
+        "light": 126,
+        "end": 19,
+        "build": 13
+      },
+      "paired": {
+        "final-g2": {
+          "n": 96,
+          "missing": 0,
+          "wins_gained": 8,
+          "wins_lost": 2,
+          "mean_delta": 7.833333333333333,
+          "median_delta": 0.0
+        },
+        "final-light": {
+          "n": 96,
+          "missing": 0,
+          "wins_gained": 9,
+          "wins_lost": 5,
+          "mean_delta": 4.854166666666667,
+          "median_delta": 0.0
+        },
+        "1A": {
+          "n": 96,
+          "missing": 0,
+          "wins_gained": 2,
+          "wins_lost": 5,
+          "mean_delta": -3.9479166666666665,
+          "median_delta": 0.0
+        },
+        "candidate32": {
+          "n": 96,
+          "missing": 0,
+          "wins_gained": 0,
+          "wins_lost": 0,
+          "mean_delta": 0.0,
+          "median_delta": 0.0
+        },
+        "h3-strict": {
+          "n": 84,
+          "missing": 12,
+          "wins_gained": 9,
+          "wins_lost": 2,
+          "mean_delta": 8.869047619047619,
+          "median_delta": 0.0
+        }
+      }
+    },
+    "final-g2": {
+      "attempts": 96,
+      "status": {
+        "Victory": 43,
+        "Defeat": 53
+      },
+      "encounters": 44,
+      "failures": {},
+      "actual_steps": 2380,
+      "player_choices": 62,
+      "C_completed": 492,
+      "C_partial": 0,
+      "turn_queries": 0,
+      "candidate_and_reference": 0,
+      "changed_turns": 0,
+      "changed_first": 0,
+      "full_laws": 0,
+      "full_reference": 0,
+      "mean_covered_mass": null,
+      "search_steps": 0,
+      "chance_boundaries": 0,
+      "pending_boundaries": 0,
+      "realized_laws": {},
+      "gap_events": {},
+      "completed": 96,
+      "wins": 43,
+      "mean_utility": 1.6875,
+      "mean_hp_loss": 50.25,
+      "C": 492,
+      "cost": {
+        "policy": {
+          "schema": "sts2.hotsearch.policy.h4",
+          "arm": "g2",
+          "rule_calls_per_action_style": 32,
+          "margin": 0.0,
+          "incomplete_reference": "direct-g2",
+          "g2": "1077c191586885c49173afe5801849b3ea6a4535425731e27226fe1978abf084",
+          "v2": "d439444a1a9ca9bc8864988e488f720f71b379844b30ddb112bdd8f0ddcfcbbb",
+          "build": {
+            "host": "236fa864aeab6c37945ba3384712ef1d6d653baf7a5022d1ccb03a3daadf15af",
+            "hot": "40829de3ef8309fbbc4164f56dbe4b182dccd718cce6a11f8e5daf260c05f38a",
+            "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+          },
+          "python": {
+            "hot_produce.py": "9c38d72b60d37e0e2fe6c7a39750dad7f7f303d7464e50d785a19e26ee9a5609",
+            "client.py": "daf57c2c975e2dbd22b9ee32e631d741f0e81ceede8460cef05db38dd8b158fa",
+            "models.py": "d167fe8e4b95c75d23b3bc4998f95d8de8c322c68402ea46cf69bef57b8ce727",
+            "contingent.py": "031a7755a673a85ea573f9eda2c2651032e51b7cf5691e04952017d561720fb3"
+          },
+          "id": "95e91c3eaf5b5468114f479c245457bab6eb3d8fb91d42acbb67dd6aa0d14fb9"
+        },
+        "attempts": 96,
+        "status": {
+          "Victory": 43,
+          "Defeat": 53
+        },
+        "wall": 17.029642500012415,
+        "python_cpu": 10.703125,
+        "python_peak_rss": 214990848,
+        "model_work": {
+          "g2_rows": 2380,
+          "v2_rows": 0,
+          "v2_batches": 0,
+          "v2_cache_hits": 0,
+          "v2_inferred": 0
+        },
+        "host": {
+          "cpu": 9.171875,
+          "peak_rss": 147726336
+        },
+        "limit": 32,
+        "arm": "g2",
+        "diagnostic": false,
+        "ids": [
+          176,
+          174,
+          128,
+          194,
+          192,
+          81,
+          242,
+          131,
+          245,
+          104,
+          16,
+          177,
+          2,
+          140,
+          0,
+          196,
+          135,
+          145,
+          114,
+          54,
+          90,
+          61,
+          154,
+          4,
+          97,
+          226,
+          46,
+          160,
+          220,
+          23,
+          236,
+          188,
+          89,
+          72,
+          222,
+          158,
+          64,
+          33,
+          77,
+          105,
+          238,
+          215,
+          139,
+          65,
+          49,
+          146,
+          44,
+          178,
+          201,
+          110,
+          197,
+          255,
+          115,
+          25,
+          243,
+          144,
+          10,
+          200,
+          179,
+          251,
+          41,
+          84,
+          57,
+          175,
+          209,
+          166,
+          235,
+          142,
+          205,
+          122,
+          190,
+          78,
+          212,
+          118,
+          69,
+          86,
+          202,
+          99,
+          93,
+          159,
+          181,
+          30,
+          14,
+          91,
+          204,
+          132,
+          232,
+          101,
+          82,
+          113,
+          1,
+          213,
+          96,
+          27,
+          195,
+          13
+        ]
+      },
+      "physical": {
+        "commands": {
+          "open": 96,
+          "step": 2380,
+          "metrics": 1
+        },
+        "searched_rule_steps": 0,
+        "chance": 0,
+        "choices": 0,
+        "requested_real_steps": 2380
+      },
+      "selected_styles": {},
+      "paired": {
+        "final-light": {
+          "n": 96,
+          "missing": 0,
+          "wins_gained": 4,
+          "wins_lost": 6,
+          "mean_delta": -2.9791666666666665,
+          "median_delta": 0.0
+        },
+        "1A": {
+          "n": 96,
+          "missing": 0,
+          "wins_gained": 0,
+          "wins_lost": 9,
+          "mean_delta": -11.78125,
+          "median_delta": 0.0
+        },
+        "candidate32": {
+          "n": 96,
+          "missing": 0,
+          "wins_gained": 2,
+          "wins_lost": 8,
+          "mean_delta": -7.833333333333333,
+          "median_delta": 0.0
+        },
+        "h3-strict": {
+          "n": 84,
+          "missing": 12,
+          "wins_gained": 4,
+          "wins_lost": 3,
+          "mean_delta": -0.011904761904761904,
+          "median_delta": 0.0
+        }
+      }
+    },
+    "final-light": {
+      "attempts": 96,
+      "status": {
+        "Victory": 45,
+        "Defeat": 51
+      },
+      "encounters": 44,
+      "failures": {},
+      "actual_steps": 2338,
+      "player_choices": 54,
+      "C_completed": 488,
+      "C_partial": 0,
+      "turn_queries": 581,
+      "candidate_and_reference": 2318,
+      "changed_turns": 110,
+      "changed_first": 61,
+      "full_laws": 1613,
+      "full_reference": 367,
+      "mean_covered_mass": 0.7094167328798181,
+      "search_steps": 18002,
+      "chance_boundaries": 7397,
+      "pending_boundaries": 149,
+      "realized_laws": {
+        "None": 214,
+        "True": 367
+      },
+      "gap_events": {
+        "budget": 340,
+        "PickRandomLivingEnemySlot/unmodeled_rng": 175,
+        "ExecuteCoreCustomCard/unmodeled_rng": 108,
+        "SpawnFabricatorBot/unmodeled_rng": 23,
+        "HandleBeforeSideTurnStartPower/unmodeled_rng": 23,
+        "AddGeneratedCardInstance/unmodeled_rng": 16,
+        "GenerateRandomFromPoolWithReplacement/unmodeled_rng": 7,
+        "RollSpawnHp/unmodeled_rng": 16,
+        "HandleAfterAutoPostPlayPower/unmodeled_rng": 30,
+        "AutoPlayCard/unmodeled_rng": 20,
+        "AddCard/random_insert_known_positions": 1
+      },
+      "completed": 96,
+      "wins": 45,
+      "mean_utility": 4.666666666666667,
+      "mean_hp_loss": 48.895833333333336,
+      "C": 488,
+      "cost": {
+        "policy": {
+          "schema": "sts2.hotsearch.policy.h4",
+          "arm": "turn",
+          "rule_calls_per_action_style": 32,
+          "margin": 0.0,
+          "incomplete_reference": "direct-g2",
+          "g2": "1077c191586885c49173afe5801849b3ea6a4535425731e27226fe1978abf084",
+          "v2": "d439444a1a9ca9bc8864988e488f720f71b379844b30ddb112bdd8f0ddcfcbbb",
+          "build": {
+            "host": "236fa864aeab6c37945ba3384712ef1d6d653baf7a5022d1ccb03a3daadf15af",
+            "hot": "40829de3ef8309fbbc4164f56dbe4b182dccd718cce6a11f8e5daf260c05f38a",
+            "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+          },
+          "python": {
+            "hot_produce.py": "9c38d72b60d37e0e2fe6c7a39750dad7f7f303d7464e50d785a19e26ee9a5609",
+            "client.py": "daf57c2c975e2dbd22b9ee32e631d741f0e81ceede8460cef05db38dd8b158fa",
+            "models.py": "d167fe8e4b95c75d23b3bc4998f95d8de8c322c68402ea46cf69bef57b8ce727",
+            "contingent.py": "031a7755a673a85ea573f9eda2c2651032e51b7cf5691e04952017d561720fb3"
+          },
+          "id": "ab9e783af5e728d0a97e89a52a94b5631f4e64f78a8a6d9b7cff495fe92e1756"
+        },
+        "attempts": 96,
+        "status": {
+          "Victory": 45,
+          "Defeat": 51
+        },
+        "wall": 30.46551829999953,
+        "python_cpu": 21.328125,
+        "python_peak_rss": 232050688,
+        "model_work": {
+          "g2_rows": 3731,
+          "v2_rows": 2078,
+          "v2_batches": 802,
+          "v2_cache_hits": 437,
+          "v2_inferred": 1641
+        },
+        "host": {
+          "cpu": 13.0625,
+          "peak_rss": 156880896
+        },
+        "limit": 32,
+        "arm": "turn",
+        "diagnostic": false,
+        "ids": [
+          176,
+          174,
+          128,
+          194,
+          192,
+          81,
+          242,
+          131,
+          245,
+          104,
+          16,
+          177,
+          2,
+          140,
+          0,
+          196,
+          135,
+          145,
+          114,
+          54,
+          90,
+          61,
+          154,
+          4,
+          97,
+          226,
+          46,
+          160,
+          220,
+          23,
+          236,
+          188,
+          89,
+          72,
+          222,
+          158,
+          64,
+          33,
+          77,
+          105,
+          238,
+          215,
+          139,
+          65,
+          49,
+          146,
+          44,
+          178,
+          201,
+          110,
+          197,
+          255,
+          115,
+          25,
+          243,
+          144,
+          10,
+          200,
+          179,
+          251,
+          41,
+          84,
+          57,
+          175,
+          209,
+          166,
+          235,
+          142,
+          205,
+          122,
+          190,
+          78,
+          212,
+          118,
+          69,
+          86,
+          202,
+          99,
+          93,
+          159,
+          181,
+          30,
+          14,
+          91,
+          204,
+          132,
+          232,
+          101,
+          82,
+          113,
+          1,
+          213,
+          96,
+          27,
+          195,
+          13
+        ]
+      },
+      "physical": {
+        "commands": {
+          "open": 96,
+          "search": 1162,
+          "step": 2338,
+          "g2": 2323,
+          "metrics": 1
+        },
+        "searched_rule_steps": 18002,
+        "chance": 7397,
+        "choices": 149,
+        "requested_real_steps": 2338
+      },
+      "selected_styles": {
+        "reference": 471,
+        "turn": 110
+      },
+      "paired": {
+        "final-g2": {
+          "n": 96,
+          "missing": 0,
+          "wins_gained": 6,
+          "wins_lost": 4,
+          "mean_delta": 2.9791666666666665,
+          "median_delta": 0.0
+        },
+        "1A": {
+          "n": 96,
+          "missing": 0,
+          "wins_gained": 3,
+          "wins_lost": 10,
+          "mean_delta": -8.802083333333334,
+          "median_delta": 0.0
+        },
+        "candidate32": {
+          "n": 96,
+          "missing": 0,
+          "wins_gained": 5,
+          "wins_lost": 9,
+          "mean_delta": -4.854166666666667,
+          "median_delta": 0.0
+        },
+        "h3-strict": {
+          "n": 84,
+          "missing": 12,
+          "wins_gained": 1,
+          "wins_lost": 0,
+          "mean_delta": 1.2738095238095237,
+          "median_delta": 0.0
+        }
+      }
+    }
+  },
+  "worlds": {
+    "worlds123": {
+      "attempts": 1,
+      "paired_plan0_minus_plan1": {
+        "accepted": 1,
+        "natural_mean": 3.0,
+        "conditional_root_mean": 1.75,
+        "median_within_root_paired_mcse": 2.7746826190329656
+      },
+      "status": {
+        "matched": 1
+      },
+      "terminal_sides": 26,
+      "paired_natural_matched": 1,
+      "paired_natural_attempts": 1,
+      "world_pairs": 12,
+      "matched_world_pairs": 12,
+      "admitted_world_pairs": 12,
+      "invariant_roots": 1,
+      "search_steps_root": 5698,
+      "actual_steps_suffix": 342,
+      "search_steps_completed_suffix": 23920,
+      "failures": {},
+      "cost": {
+        "policy": {
+          "schema": "sts2.hotsearch.policy.h4",
+          "arm": "tactical",
+          "rule_calls_per_action_style": 32,
+          "margin": 0.0,
+          "incomplete_reference": "direct-g2",
+          "g2": "1077c191586885c49173afe5801849b3ea6a4535425731e27226fe1978abf084",
+          "v2": "d439444a1a9ca9bc8864988e488f720f71b379844b30ddb112bdd8f0ddcfcbbb",
+          "build": {
+            "host": "f307445b8a29c484b752ae8d159efab17a5e4a769dcee3619c524df2168f0417",
+            "hot": "6df16c30ec7e04ed1495c0d03411de862c3374de109a3ec9ebe4d0dcf83c413a",
+            "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+          },
+          "python": {
+            "hot_produce.py": "9c38d72b60d37e0e2fe6c7a39750dad7f7f303d7464e50d785a19e26ee9a5609",
+            "client.py": "daf57c2c975e2dbd22b9ee32e631d741f0e81ceede8460cef05db38dd8b158fa",
+            "models.py": "d167fe8e4b95c75d23b3bc4998f95d8de8c322c68402ea46cf69bef57b8ce727",
+            "contingent.py": "21e3a0dea75670f7a27ea786e85667ab98b53e29e0ca36d0d4a6af65a1c69432"
+          },
+          "id": "12aaec0a5d63c77f546d5f81f5f4f01fe4ad25a2d720844d51f40780d353e3a5"
+        },
+        "model_work": {
+          "g2_rows": 464,
+          "v2_rows": 1681,
+          "v2_batches": 343,
+          "v2_inferred": 1014
+        },
+        "ids": [
+          123
+        ],
+        "limit": 128,
+        "diagnostic": false,
+        "wall": 19.595985299994936,
+        "python_cpu": 4.96875,
+        "python_peak_rss": 261906432,
+        "host": {
+          "cpu": 8.40625,
+          "peak_rss": 146382848
+        }
+      },
+      "native": {
+        "matched": 4
+      },
+      "physical": {
+        "commands": {
+          "open": 1,
+          "step": 349,
+          "search": 413,
+          "checkpoint": 1,
+          "restore": 28,
+          "g2": 210,
+          "metrics": 1
+        },
+        "searched_rule_steps": 29618,
+        "chance": 13090,
+        "choices": 11,
+        "requested_real_steps": 349
+      }
+    },
+    "pairs": {
+      "attempts": 4,
+      "paired_plan0_minus_plan1": {
+        "accepted": 3,
+        "natural_mean": -23.0,
+        "conditional_root_mean": null,
+        "median_within_root_paired_mcse": null
+      },
+      "status": {
+        "matched": 3,
+        "failed": 1
+      },
+      "terminal_sides": 6,
+      "paired_natural_matched": 3,
+      "paired_natural_attempts": 3,
+      "world_pairs": 0,
+      "matched_world_pairs": 0,
+      "admitted_world_pairs": 0,
+      "invariant_roots": 0,
+      "search_steps_root": 6344,
+      "actual_steps_suffix": 118,
+      "search_steps_completed_suffix": 7134,
+      "failures": {
+        "not an exchangeable multitype tail": 1
+      },
+      "cost": {
+        "policy": {
+          "schema": "sts2.hotsearch.policy.h4",
+          "arm": "tactical",
+          "rule_calls_per_action_style": 32,
+          "margin": 0.0,
+          "incomplete_reference": "direct-g2",
+          "g2": "1077c191586885c49173afe5801849b3ea6a4535425731e27226fe1978abf084",
+          "v2": "d439444a1a9ca9bc8864988e488f720f71b379844b30ddb112bdd8f0ddcfcbbb",
+          "build": {
+            "host": "f307445b8a29c484b752ae8d159efab17a5e4a769dcee3619c524df2168f0417",
+            "hot": "6df16c30ec7e04ed1495c0d03411de862c3374de109a3ec9ebe4d0dcf83c413a",
+            "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+          },
+          "python": {
+            "hot_produce.py": "9c38d72b60d37e0e2fe6c7a39750dad7f7f303d7464e50d785a19e26ee9a5609",
+            "client.py": "daf57c2c975e2dbd22b9ee32e631d741f0e81ceede8460cef05db38dd8b158fa",
+            "models.py": "d167fe8e4b95c75d23b3bc4998f95d8de8c322c68402ea46cf69bef57b8ce727",
+            "contingent.py": "21e3a0dea75670f7a27ea786e85667ab98b53e29e0ca36d0d4a6af65a1c69432"
+          },
+          "id": "12aaec0a5d63c77f546d5f81f5f4f01fe4ad25a2d720844d51f40780d353e3a5"
+        },
+        "model_work": {
+          "g2_rows": 297,
+          "v2_rows": 1085,
+          "v2_batches": 161,
+          "v2_inferred": 484
+        },
+        "ids": [
+          87,
+          176,
+          177,
+          33
+        ],
+        "limit": 128,
+        "diagnostic": false,
+        "wall": 19.53051779999805,
+        "python_cpu": 2.796875,
+        "python_peak_rss": 226615296,
+        "host": {
+          "cpu": 7.09375,
+          "peak_rss": 152342528
+        }
+      },
+      "native": {
+        "matched": 6
+      },
+      "physical": {
+        "commands": {
+          "open": 4,
+          "search": 172,
+          "g2": 209,
+          "step": 139,
+          "checkpoint": 3,
+          "restore": 6,
+          "metrics": 1
+        },
+        "searched_rule_steps": 15432,
+        "chance": 6059,
+        "choices": 1,
+        "requested_real_steps": 139
+      }
+    },
+    "candidate123": {
+      "attempts": 1,
+      "paired_plan0_minus_plan1": {
+        "accepted": 1,
+        "natural_mean": 3.0,
+        "conditional_root_mean": 1.75,
+        "median_within_root_paired_mcse": 2.7746826190329656
+      },
+      "status": {
+        "matched": 1
+      },
+      "terminal_sides": 26,
+      "paired_natural_matched": 1,
+      "paired_natural_attempts": 1,
+      "world_pairs": 12,
+      "matched_world_pairs": 12,
+      "admitted_world_pairs": 12,
+      "invariant_roots": 1,
+      "search_steps_root": 7484,
+      "actual_steps_suffix": 342,
+      "search_steps_completed_suffix": 30504,
+      "failures": {},
+      "cost": {
+        "policy": {
+          "schema": "sts2.hotsearch.policy.h4",
+          "arm": "contingent",
+          "rule_calls_per_action_style": 32,
+          "margin": 0.0,
+          "incomplete_reference": "direct-g2",
+          "g2": "1077c191586885c49173afe5801849b3ea6a4535425731e27226fe1978abf084",
+          "v2": "d439444a1a9ca9bc8864988e488f720f71b379844b30ddb112bdd8f0ddcfcbbb",
+          "build": {
+            "host": "6779319a718763ad643fcdd01365ddfddf6c9d6a356335c2d61b34dfa898bb5c",
+            "hot": "2ea1d3970cb63cafc8ec4df413454a65842f3732e367b70629997b3cc42dc51a",
+            "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+          },
+          "python": {
+            "hot_produce.py": "9c38d72b60d37e0e2fe6c7a39750dad7f7f303d7464e50d785a19e26ee9a5609",
+            "client.py": "daf57c2c975e2dbd22b9ee32e631d741f0e81ceede8460cef05db38dd8b158fa",
+            "models.py": "d167fe8e4b95c75d23b3bc4998f95d8de8c322c68402ea46cf69bef57b8ce727",
+            "contingent.py": "21e3a0dea75670f7a27ea786e85667ab98b53e29e0ca36d0d4a6af65a1c69432"
+          },
+          "id": "1e1b7623c9f742585f06d3d4003cdae5659ee2bc7e396e61ac5c9c60dfb10b5b"
+        },
+        "model_work": {
+          "g2_rows": 464,
+          "v2_rows": 1657,
+          "v2_batches": 334,
+          "v2_inferred": 1014
+        },
+        "ids": [
+          123
+        ],
+        "limit": 128,
+        "diagnostic": false,
+        "wall": 25.11175959999673,
+        "python_cpu": 4.984375,
+        "python_peak_rss": 260874240,
+        "host": {
+          "cpu": 9.515625,
+          "peak_rss": 145842176
+        }
+      },
+      "native": {
+        "matched": 6
+      },
+      "physical": {
+        "commands": {
+          "open": 1,
+          "step": 349,
+          "search": 496,
+          "checkpoint": 1,
+          "restore": 28,
+          "g2": 210,
+          "metrics": 1
+        },
+        "searched_rule_steps": 37988,
+        "chance": 17082,
+        "choices": 13,
+        "requested_real_steps": 349
+      }
+    },
+    "candidate-pairs": {
+      "attempts": 4,
+      "paired_plan0_minus_plan1": {
+        "accepted": 3,
+        "natural_mean": -23.0,
+        "conditional_root_mean": null,
+        "median_within_root_paired_mcse": null
+      },
+      "status": {
+        "matched": 3,
+        "failed": 1
+      },
+      "terminal_sides": 6,
+      "paired_natural_matched": 3,
+      "paired_natural_attempts": 3,
+      "world_pairs": 0,
+      "matched_world_pairs": 0,
+      "admitted_world_pairs": 0,
+      "invariant_roots": 0,
+      "search_steps_root": 8511,
+      "actual_steps_suffix": 118,
+      "search_steps_completed_suffix": 9392,
+      "failures": {
+        "not an exchangeable multitype tail": 1
+      },
+      "cost": {
+        "policy": {
+          "schema": "sts2.hotsearch.policy.h4",
+          "arm": "contingent",
+          "rule_calls_per_action_style": 32,
+          "margin": 0.0,
+          "incomplete_reference": "direct-g2",
+          "g2": "1077c191586885c49173afe5801849b3ea6a4535425731e27226fe1978abf084",
+          "v2": "d439444a1a9ca9bc8864988e488f720f71b379844b30ddb112bdd8f0ddcfcbbb",
+          "build": {
+            "host": "6779319a718763ad643fcdd01365ddfddf6c9d6a356335c2d61b34dfa898bb5c",
+            "hot": "2ea1d3970cb63cafc8ec4df413454a65842f3732e367b70629997b3cc42dc51a",
+            "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+          },
+          "python": {
+            "hot_produce.py": "9c38d72b60d37e0e2fe6c7a39750dad7f7f303d7464e50d785a19e26ee9a5609",
+            "client.py": "daf57c2c975e2dbd22b9ee32e631d741f0e81ceede8460cef05db38dd8b158fa",
+            "models.py": "d167fe8e4b95c75d23b3bc4998f95d8de8c322c68402ea46cf69bef57b8ce727",
+            "contingent.py": "21e3a0dea75670f7a27ea786e85667ab98b53e29e0ca36d0d4a6af65a1c69432"
+          },
+          "id": "1e1b7623c9f742585f06d3d4003cdae5659ee2bc7e396e61ac5c9c60dfb10b5b"
+        },
+        "model_work": {
+          "g2_rows": 297,
+          "v2_rows": 1430,
+          "v2_batches": 168,
+          "v2_inferred": 484
+        },
+        "ids": [
+          87,
+          176,
+          177,
+          33
+        ],
+        "limit": 128,
+        "diagnostic": false,
+        "wall": 20.004584100010106,
+        "python_cpu": 3.203125,
+        "python_peak_rss": 229289984,
+        "host": {
+          "cpu": 7.796875,
+          "peak_rss": 153227264
+        }
+      },
+      "native": {
+        "matched": 6
+      },
+      "physical": {
+        "commands": {
+          "open": 4,
+          "search": 207,
+          "g2": 209,
+          "step": 139,
+          "checkpoint": 3,
+          "restore": 6,
+          "metrics": 1
+        },
+        "searched_rule_steps": 20458,
+        "chance": 8053,
+        "choices": 1,
+        "requested_real_steps": 139
+      }
+    },
+    "release123": {
+      "attempts": 1,
+      "paired_plan0_minus_plan1": {
+        "accepted": 1,
+        "natural_mean": 3.0,
+        "conditional_root_mean": 1.75,
+        "median_within_root_paired_mcse": 2.7746826190329656
+      },
+      "status": {
+        "matched": 1
+      },
+      "terminal_sides": 26,
+      "paired_natural_matched": 1,
+      "paired_natural_attempts": 1,
+      "world_pairs": 12,
+      "matched_world_pairs": 12,
+      "admitted_world_pairs": 12,
+      "invariant_roots": 1,
+      "search_steps_root": 7484,
+      "actual_steps_suffix": 342,
+      "search_steps_completed_suffix": 30504,
+      "failures": {},
+      "cost": {
+        "policy": {
+          "schema": "sts2.hotsearch.policy.h4",
+          "arm": "contingent",
+          "rule_calls_per_action_style": 32,
+          "margin": 0.0,
+          "incomplete_reference": "direct-g2",
+          "g2": "1077c191586885c49173afe5801849b3ea6a4535425731e27226fe1978abf084",
+          "v2": "d439444a1a9ca9bc8864988e488f720f71b379844b30ddb112bdd8f0ddcfcbbb",
+          "build": {
+            "host": "236fa864aeab6c37945ba3384712ef1d6d653baf7a5022d1ccb03a3daadf15af",
+            "hot": "40829de3ef8309fbbc4164f56dbe4b182dccd718cce6a11f8e5daf260c05f38a",
+            "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+          },
+          "python": {
+            "hot_produce.py": "9c38d72b60d37e0e2fe6c7a39750dad7f7f303d7464e50d785a19e26ee9a5609",
+            "client.py": "daf57c2c975e2dbd22b9ee32e631d741f0e81ceede8460cef05db38dd8b158fa",
+            "models.py": "d167fe8e4b95c75d23b3bc4998f95d8de8c322c68402ea46cf69bef57b8ce727",
+            "contingent.py": "031a7755a673a85ea573f9eda2c2651032e51b7cf5691e04952017d561720fb3"
+          },
+          "id": "aa12e8acf0c4ea151391c6ebc06df992f57c56ed71add3a5bd7dde1202cb9d12"
+        },
+        "model_work": {
+          "g2_rows": 464,
+          "v2_rows": 1657,
+          "v2_batches": 334,
+          "v2_inferred": 1014
+        },
+        "ids": [
+          123
+        ],
+        "limit": 128,
+        "diagnostic": false,
+        "wall": 24.33349819999421,
+        "python_cpu": 5.5,
+        "python_peak_rss": 260628480,
+        "host": {
+          "cpu": 9.15625,
+          "peak_rss": 142434304
+        }
+      },
+      "native": {
+        "matched": 6
+      },
+      "physical": {
+        "commands": {
+          "open": 1,
+          "step": 349,
+          "search": 496,
+          "checkpoint": 1,
+          "restore": 28,
+          "g2": 210,
+          "metrics": 1
+        },
+        "searched_rule_steps": 37988,
+        "chance": 17082,
+        "choices": 13,
+        "requested_real_steps": 349
+      }
+    }
+  },
+  "controls": {
+    "1A": {
+      "completed": 96,
+      "wins": 52,
+      "mean_utility": 13.46875,
+      "mean_hp_loss": 47.239583333333336,
+      "C": 513,
+      "cost": {
+        "python_cpu_ns": 177218750000,
+        "host_resources": [
+          {
+            "peak_rss": 307417088,
+            "read_bytes": 39062590,
+            "write_bytes": 878429526,
+            "cpu_s": 132.90625
+          }
+        ],
+        "python_resources": {
+          "peak_rss": 373657600,
+          "read_bytes": 1025035108,
+          "write_bytes": 62720548
+        },
+        "telemetry": {
+          "valid": 96,
+          "valid_C": 513,
+          "decisions": 2503,
+          "full_policies": 3225,
+          "attempted_policies": 4852
+        },
+        "wall": 307.3525255
+      }
+    },
+    "open-1A": {
+      "completed": 32,
+      "wins": 20,
+      "mean_utility": 24.46875,
+      "mean_hp_loss": 42.28125,
+      "C": 141,
+      "cost": {
+        "python_cpu_ns": 54343750000,
+        "host_resources": [
+          {
+            "peak_rss": 276512768,
+            "read_bytes": 15799197,
+            "write_bytes": 249603358,
+            "cpu_s": 51.109375
+          }
+        ],
+        "python_resources": {
+          "peak_rss": 355151872,
+          "read_bytes": 396175687,
+          "write_bytes": 15995528
+        },
+        "wall": 102.5367527
+      }
+    }
+  },
+  "builds": {
+    "hotsearch-h4": {
+      "host": "f307445b8a29c484b752ae8d159efab17a5e4a769dcee3619c524df2168f0417",
+      "hot": "6df16c30ec7e04ed1495c0d03411de862c3374de109a3ec9ebe4d0dcf83c413a",
+      "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+    },
+    "hotsearch-h4-candidate": {
+      "host": "6779319a718763ad643fcdd01365ddfddf6c9d6a356335c2d61b34dfa898bb5c",
+      "hot": "2ea1d3970cb63cafc8ec4df413454a65842f3732e367b70629997b3cc42dc51a",
+      "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+    },
+    "hotsearch-h4-public-fix": {
+      "host": "236fa864aeab6c37945ba3384712ef1d6d653baf7a5022d1ccb03a3daadf15af",
+      "hot": "40829de3ef8309fbbc4164f56dbe4b182dccd718cce6a11f8e5daf260c05f38a",
+      "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+    }
+  },
+  "native_followups": {
+    "gardens-native": {
+      "description": "原园丁三根使用补全数学函数的审核宿主",
+      "status": {
+        "matched": 3
+      },
+      "reviewed": 3,
+      "C": 17,
+      "cost": {
+        "wall": 6.920783300010953,
+        "python_cpu": 0.171875,
+        "python_peak_rss": 200351744,
+        "host_cpu": 5.265625,
+        "host_peak_rss": 98373632,
+        "audited": 3
+      }
+    },
+    "post96-native": {
+      "description": "当前源码的战术 32 全面板逐条原生重放",
+      "status": {
+        "matched": 93,
+        "diverged": 3
+      },
+      "reviewed": 93,
+      "C": 504,
+      "cost": {
+        "wall": 193.20982189998904,
+        "python_cpu": 5.140625,
+        "python_peak_rss": 200212480,
+        "host_cpu": 180.65625,
+        "host_peak_rss": 104198144,
+        "audited": 96
+      }
+    },
+    "post-open-native": {
+      "description": "后验开放回测全体根逐条原生重放",
+      "status": {
+        "matched": 29,
+        "diverged": 1,
+        "hot_incomplete": 2
+      },
+      "reviewed": 29,
+      "C": 139,
+      "cost": {
+        "wall": 58.558654899999965,
+        "python_cpu": 1.46875,
+        "python_peak_rss": 197918720,
+        "host_cpu": 54.890625,
+        "host_peak_rss": 103419904,
+        "audited": 30
+      }
+    },
+    "release96-native": {
+      "description": "补齐场景树接口后，当前战术 32 全面板原生重放",
+      "status": {
+        "matched": 96
+      },
+      "reviewed": 96,
+      "C": 513,
+      "cost": {
+        "wall": 196.52012020000257,
+        "python_cpu": 5.3125,
+        "python_peak_rss": 200032256,
+        "host_cpu": 183.390625,
+        "host_peak_rss": 104251392,
+        "audited": 96
+      }
+    },
+    "release-open-native": {
+      "description": "补齐场景树接口后，后验开放面板原生重放",
+      "status": {
+        "matched": 30,
+        "hot_incomplete": 2
+      },
+      "reviewed": 30,
+      "C": 142,
+      "cost": {
+        "wall": 63.0848502000008,
+        "python_cpu": 1.359375,
+        "python_peak_rss": 197742592,
+        "host_cpu": 57.84375,
+        "host_peak_rss": 103415808,
+        "audited": 30
+      }
+    }
+  },
+  "runtime": {
+    "python": "3.10.11",
+    "torch": "2.12.0+cpu",
+    "threads": 1,
+    "interop": 12,
+    "dotnet": "9.0.7",
+    "hotkernel": "1.0.2"
+  },
+  "inputs": {
+    "experiments/m1-infra0/panel.json": "5d1ee32ed45f1205abc0c93c8984f94ac490b02fb2bbd7286dd6a5a272509e7e",
+    "experiments/m1-core5d/evidence/panel.gz": "c704169eef5a61d118496f5791db2adf9ea0ad83d4d35dc6be54e00c0fdb1cdd",
+    "logs/infra0-world-inputs/panel.gz": "742e881297ec536b14ae743e32dad890d168a4907c08722e7c0e14a303d2be4d",
+    "logs/inf1/jobs/dc2b-night1-hf1/g2-fit/best.pt": "1077c191586885c49173afe5801849b3ea6a4535425731e27226fe1978abf084",
+    "experiments/m1-core5a/evidence/v2.pt": "d439444a1a9ca9bc8864988e488f720f71b379844b30ddb112bdd8f0ddcfcbbb"
+  },
+  "native_binaries": {
+    "math-oracle": {
+      "OfflineSearchHarness.dll": "7c31ba7b12bd9e833c7ea1f07aa94ad0621a148522734669691fc981c270ce09",
+      "GodotSharp.dll": "e5befc91981232ecfad391d069a59b617d06eb653f3d9a583b736ebd73437a4c"
+    },
+    "scene-oracle": {
+      "OfflineSearchHarness.dll": "0b7f8992f852a74fd4db3c92ec340e255c5129660ce4501f14d26c1bdce6b97a",
+      "GodotSharp.dll": "53b0f0808e6a2a6ed0e3ec492382da6fea8f6d68344654a42cd48aeda9167201"
+    }
+  },
+  "campaign": [
+    {
+      "label": "build-rules",
+      "seconds": 85.54149750000215,
+      "exit": 0,
+      "start": 1795846759.8632743,
+      "args": []
+    },
+    {
+      "label": "contract-build",
+      "seconds": 45.50281350000296,
+      "exit": 1,
+      "start": 1795846889.2916517,
+      "args": []
+    },
+    {
+      "label": "check-turn",
+      "seconds": 15.106483199997456,
+      "exit": 0,
+      "start": 1795846950.0322628,
+      "args": [
+        "logs/hotsearch-h4/check-turn",
+        "--ids",
+        "176",
+        "177",
+        "196",
+        "135",
+        "114",
+        "220",
+        "33",
+        "201",
+        "205",
+        "212",
+        "118",
+        "204",
+        "132"
+      ]
+    },
+    {
+      "label": "compiled",
+      "seconds": 5.5307924000080675,
+      "exit": 1,
+      "start": 1795846993.315912,
+      "args": []
+    },
+    {
+      "label": "compiled-r2",
+      "seconds": 5.523607600000105,
+      "exit": 1,
+      "start": 1795847022.5498722,
+      "args": []
+    },
+    {
+      "label": "compiled-r3",
+      "seconds": 6.313691799994558,
+      "exit": 0,
+      "start": 1795847052.4163904,
+      "args": []
+    },
+    {
+      "label": "check-r2",
+      "seconds": 21.224793600005796,
+      "exit": 0,
+      "start": 1795847059.0692456,
+      "args": [
+        "logs/hotsearch-h4/check-r2",
+        "--ids",
+        "176",
+        "177",
+        "196",
+        "135",
+        "114",
+        "220",
+        "33",
+        "201",
+        "205",
+        "212",
+        "118",
+        "204",
+        "132"
+      ]
+    },
+    {
+      "label": "pilot32",
+      "seconds": 118.88591919999453,
+      "exit": 0,
+      "start": 1795847095.5239115,
+      "args": [
+        "logs/hotsearch-h4/pilot32",
+        "--arm",
+        "tactical",
+        "--limit",
+        "32"
+      ]
+    },
+    {
+      "label": "view-build",
+      "seconds": 6.478208100001211,
+      "exit": 0,
+      "start": 1795847315.9341848,
+      "args": []
+    },
+    {
+      "label": "view-check",
+      "seconds": 27.185016699993866,
+      "exit": 0,
+      "start": 1795847323.0859082,
+      "args": [
+        "logs/hotsearch-h4/view-check",
+        "--arm",
+        "tactical",
+        "--ids",
+        "220",
+        "33",
+        "178",
+        "25",
+        "118",
+        "204"
+      ]
+    },
+    {
+      "label": "h4-engine",
+      "seconds": 49.5476864999946,
+      "exit": 0,
+      "start": 1795847451.688237,
+      "args": []
+    },
+    {
+      "label": "h4-oracle",
+      "seconds": 6.74239809998835,
+      "exit": 0,
+      "start": 1795847501.4604151,
+      "args": []
+    },
+    {
+      "label": "quality32",
+      "seconds": 115.87331189999531,
+      "exit": 0,
+      "start": 1795847527.1658342,
+      "args": [
+        "logs/hotsearch-h4/quality32",
+        "--arm",
+        "tactical",
+        "--limit",
+        "32"
+      ]
+    },
+    {
+      "label": "typed-oracle",
+      "seconds": 6.191447500008508,
+      "exit": 0,
+      "start": 1795847643.331662,
+      "args": []
+    },
+    {
+      "label": "quality128",
+      "seconds": 229.4667427999957,
+      "exit": 0,
+      "start": 1795847649.7380462,
+      "args": [
+        "logs/hotsearch-h4/quality128",
+        "--arm",
+        "tactical",
+        "--limit",
+        "128"
+      ]
+    },
+    {
+      "label": "reviewed32",
+      "seconds": 216.01632570000947,
+      "exit": 0,
+      "start": 1795847879.272361,
+      "args": [
+        "logs/hotsearch-h4/reviewed32",
+        "logs/hotsearch-h4/quality32/natural.jsonl.gz"
+      ]
+    },
+    {
+      "label": "quality512",
+      "seconds": 389.1575129999983,
+      "exit": 0,
+      "start": 1795848095.5726678,
+      "args": [
+        "logs/hotsearch-h4/quality512",
+        "--arm",
+        "tactical",
+        "--limit",
+        "512"
+      ]
+    },
+    {
+      "label": "open-reference",
+      "seconds": 103.80930670000089,
+      "exit": 0,
+      "start": 1795848484.8068557,
+      "args": []
+    },
+    {
+      "label": "candidate-build",
+      "seconds": 47.93270990000747,
+      "exit": 0,
+      "start": 1795848588.6944463,
+      "args": []
+    },
+    {
+      "label": "g2",
+      "seconds": 22.50191249999625,
+      "exit": 0,
+      "start": 1795848636.8200622,
+      "args": [
+        "logs/hotsearch-h4/g2",
+        "--arm",
+        "g2"
+      ]
+    },
+    {
+      "label": "candidate-oracle",
+      "seconds": 6.803268899995601,
+      "exit": 0,
+      "start": 1795848659.4176152,
+      "args": []
+    },
+    {
+      "label": "light",
+      "seconds": 33.449502200004645,
+      "exit": 0,
+      "start": 1795848666.3485928,
+      "args": [
+        "logs/hotsearch-h4/light",
+        "--arm",
+        "turn"
+      ]
+    },
+    {
+      "label": "review128",
+      "seconds": 51.66497739999613,
+      "exit": 0,
+      "start": 1795848699.8867202,
+      "args": [
+        "quality128"
+      ]
+    },
+    {
+      "label": "candidate32",
+      "seconds": 67.01758600000176,
+      "exit": 0,
+      "start": 1795848751.6926584,
+      "args": [
+        "logs/hotsearch-h4/candidate32",
+        "--arm",
+        "tactical",
+        "--limit",
+        "32"
+      ]
+    },
+    {
+      "label": "cut-oracle",
+      "seconds": 6.54496780000045,
+      "exit": 0,
+      "start": 1795848818.7580175,
+      "args": []
+    },
+    {
+      "label": "frozen",
+      "seconds": 14.604714699991746,
+      "exit": 0,
+      "start": 1795848825.4396677,
+      "args": [
+        "logs/hotsearch-h4/frozen"
+      ]
+    },
+    {
+      "label": "review512",
+      "seconds": 57.508714900002815,
+      "exit": 0,
+      "start": 1795848840.0872362,
+      "args": [
+        "quality512",
+        "quality128"
+      ]
+    },
+    {
+      "label": "replay-failures",
+      "seconds": 9.407111900000018,
+      "exit": 0,
+      "start": 1795848897.6570153,
+      "args": [
+        "logs/hotsearch-h4/replay-failures"
+      ]
+    },
+    {
+      "label": "native-cuts",
+      "seconds": 5.134052800000063,
+      "exit": 1,
+      "start": 1795848907.255174,
+      "args": [
+        "logs/hotsearch-h4/native-cuts"
+      ]
+    },
+    {
+      "label": "composed32",
+      "seconds": 73.46243470000627,
+      "exit": 0,
+      "start": 1795848912.5831463,
+      "args": [
+        "logs/hotsearch-h4/composed32",
+        "--arm",
+        "contingent",
+        "--limit",
+        "32"
+      ]
+    },
+    {
+      "label": "worlds123",
+      "seconds": 25.618212000001222,
+      "exit": 0,
+      "start": 1795848986.083018,
+      "args": [
+        "logs/hotsearch-h4/worlds123",
+        "--audit",
+        "--ids",
+        "123",
+        "--native-worlds",
+        "1"
+      ]
+    },
+    {
+      "label": "native-cuts-verified",
+      "seconds": 38.18607219999831,
+      "exit": 0,
+      "start": 1795849011.7366884,
+      "args": [
+        "logs/hotsearch-h4/native-cuts"
+      ]
+    },
+    {
+      "label": "candidate123",
+      "seconds": 31.09271660000377,
+      "exit": 0,
+      "start": 1795849050.0722492,
+      "args": [
+        "logs/hotsearch-h4/candidate123",
+        "--audit",
+        "--ids",
+        "123",
+        "--arm",
+        "contingent",
+        "--native-worlds",
+        "2"
+      ]
+    },
+    {
+      "label": "open-hot",
+      "seconds": 27.395424199989066,
+      "exit": 0,
+      "start": 1795849081.2657347,
+      "args": [
+        "logs/hotsearch-h4/open-hot",
+        "--arm",
+        "contingent",
+        "--limit",
+        "32",
+        "--specs",
+        "experiments/m1-infra1h4/evidence/open-specs.json"
+      ]
+    },
+    {
+      "label": "review-candidate32",
+      "seconds": 30.878869699998177,
+      "exit": 0,
+      "start": 1795849108.6981688,
+      "args": [
+        "candidate32",
+        "quality128",
+        "quality512"
+      ]
+    },
+    {
+      "label": "candidate32-full-native",
+      "seconds": 215.30609079998976,
+      "exit": 0,
+      "start": 1795849139.6142309,
+      "args": [
+        "logs/hotsearch-h4/full-native-candidate32",
+        "logs/hotsearch-h4/candidate32/natural.jsonl.gz"
+      ]
+    },
+    {
+      "label": "review-open-hot",
+      "seconds": 76.89979080000194,
+      "exit": 0,
+      "start": 1795849355.1144605,
+      "args": [
+        "open-hot"
+      ]
+    },
+    {
+      "label": "pairs",
+      "seconds": 24.367913599999156,
+      "exit": 0,
+      "start": 1795849432.1482854,
+      "args": [
+        "logs/hotsearch-h4/pairs",
+        "--hot-pairs",
+        "--ids",
+        "87",
+        "176",
+        "177",
+        "33",
+        "--native-worlds",
+        "1"
+      ]
+    },
+    {
+      "label": "review-open-g2",
+      "seconds": 4.945411599997897,
+      "exit": 1,
+      "start": 1795849456.6052747,
+      "args": [
+        "open-g2",
+        "open-hot"
+      ]
+    },
+    {
+      "label": "candidate-pairs",
+      "seconds": 24.83855110000877,
+      "exit": 0,
+      "start": 1795849461.740316,
+      "args": [
+        "logs/hotsearch-h4/candidate-pairs",
+        "--hot-pairs",
+        "--ids",
+        "87",
+        "176",
+        "177",
+        "33",
+        "--arm",
+        "contingent",
+        "--native-worlds",
+        "1"
+      ]
+    },
+    {
+      "label": "review-composed32",
+      "seconds": 35.54096720000962,
+      "exit": 0,
+      "start": 1795849486.7100148,
+      "args": [
+        "composed32",
+        "quality128",
+        "quality512",
+        "candidate32"
+      ]
+    },
+    {
+      "label": "open-g2",
+      "seconds": 13.48529939999571,
+      "exit": 0,
+      "start": 1795849522.443024,
+      "args": [
+        "logs/hotsearch-h4/open-g2",
+        "--arm",
+        "g2",
+        "--specs",
+        "experiments/m1-infra1h4/evidence/open-specs.json"
+      ]
+    },
+    {
+      "label": "ordered-cuts",
+      "seconds": 39.09117429998878,
+      "exit": 0,
+      "start": 1795849536.0492458,
+      "args": [
+        "logs/hotsearch-h4/ordered-cuts"
+      ]
+    },
+    {
+      "label": "composed128",
+      "seconds": 144.91501259998768,
+      "exit": 0,
+      "start": 1795849575.319388,
+      "args": [
+        "logs/hotsearch-h4/composed128",
+        "--arm",
+        "contingent",
+        "--limit",
+        "128"
+      ]
+    },
+    {
+      "label": "open-failure-views",
+      "seconds": 11.482918699999573,
+      "exit": 0,
+      "start": 1795849720.2919705,
+      "args": []
+    },
+    {
+      "label": "review-g2",
+      "seconds": 186.7885588999925,
+      "exit": 0,
+      "start": 1795849731.8299725,
+      "args": [
+        "g2",
+        "quality128",
+        "quality512",
+        "candidate32",
+        "composed32"
+      ]
+    },
+    {
+      "label": "native-composed128",
+      "seconds": 30.20907709999301,
+      "exit": 0,
+      "start": 1795849918.6616724,
+      "args": [
+        "composed128",
+        "quality128",
+        "quality512",
+        "candidate32",
+        "composed32"
+      ]
+    },
+    {
+      "label": "composed512",
+      "seconds": 452.6185673,
+      "exit": 0,
+      "start": 1795849949.0888262,
+      "args": [
+        "logs/hotsearch-h4/composed512",
+        "--arm",
+        "contingent",
+        "--limit",
+        "512"
+      ]
+    },
+    {
+      "label": "math-oracle-build",
+      "seconds": 32.375660799996695,
+      "exit": 0,
+      "start": 1795850401.7889178,
+      "args": []
+    },
+    {
+      "label": "open-g2-native-final",
+      "seconds": 68.30178850000084,
+      "exit": 0,
+      "start": 1795850434.2182696,
+      "args": [
+        "open-g2",
+        "open-hot"
+      ]
+    },
+    {
+      "label": "review-light",
+      "seconds": 137.47914329999185,
+      "exit": 0,
+      "start": 1795850502.6153197,
+      "args": [
+        "light",
+        "quality128",
+        "quality512",
+        "candidate32",
+        "composed32",
+        "g2"
+      ]
+    },
+    {
+      "label": "gardens-native",
+      "seconds": 12.656201499994495,
+      "exit": 0,
+      "start": 1795850640.291889,
+      "args": [
+        "logs/hotsearch-h4/gardens-native",
+        "logs/hotsearch-h4/candidate32/natural.jsonl.gz",
+        "--ids",
+        "23",
+        "89",
+        "86"
+      ]
+    },
+    {
+      "label": "native-composed512",
+      "seconds": 34.96092630000203,
+      "exit": 0,
+      "start": 1795850653.056457,
+      "args": [
+        "composed512",
+        "quality128",
+        "quality512",
+        "candidate32",
+        "composed32",
+        "composed128"
+      ]
+    },
+    {
+      "label": "wither-fix-build",
+      "seconds": 66.40326660001301,
+      "exit": 0,
+      "start": 1795850688.165308,
+      "args": []
+    },
+    {
+      "label": "budget512-failure-views",
+      "seconds": 33.722736700001406,
+      "exit": 0,
+      "start": 1795850754.6885023,
+      "args": [
+        "composed512"
+      ]
+    },
+    {
+      "label": "final-control-g2",
+      "seconds": 23.413346300003468,
+      "exit": 0,
+      "start": 1795850788.6984248,
+      "args": [
+        "logs/hotsearch-h4/final-g2",
+        "--arm",
+        "g2",
+        "--limit",
+        "32"
+      ]
+    },
+    {
+      "label": "final-control-light",
+      "seconds": 35.684456200004206,
+      "exit": 0,
+      "start": 1795850812.302951,
+      "args": [
+        "logs/hotsearch-h4/final-light",
+        "--arm",
+        "turn",
+        "--limit",
+        "32"
+      ]
+    },
+    {
+      "label": "release123",
+      "seconds": 29.35479430000123,
+      "exit": 0,
+      "start": 1795850848.2046068,
+      "args": [
+        "logs/hotsearch-h4/release123",
+        "--ids",
+        "123",
+        "--arm",
+        "contingent",
+        "--limit",
+        "128",
+        "--suffix-limit",
+        "32",
+        "--native-worlds",
+        "2",
+        "--audit"
+      ]
+    },
+    {
+      "label": "post-open-fixed",
+      "seconds": 27.614704799998435,
+      "exit": 0,
+      "start": 1795850877.7383676,
+      "args": [
+        "logs/hotsearch-h4/post-open-fixed",
+        "--arm",
+        "contingent",
+        "--limit",
+        "32",
+        "--specs",
+        "experiments/m1-infra1h4/evidence/open-specs.json"
+      ]
+    },
+    {
+      "label": "post-fix96",
+      "seconds": 68.93808340000396,
+      "exit": 0,
+      "start": 1795850905.569657,
+      "args": [
+        "logs/hotsearch-h4/post-fix96",
+        "--arm",
+        "tactical",
+        "--limit",
+        "32"
+      ]
+    },
+    {
+      "label": "post-open-native",
+      "seconds": 64.3727249000076,
+      "exit": 0,
+      "start": 1795850974.6996822,
+      "args": [
+        "logs/hotsearch-h4/post-open-native",
+        "logs/hotsearch-h4/post-open-fixed/natural.jsonl.gz",
+        "--specs",
+        "experiments/m1-infra1h4/evidence/open-specs.json"
+      ]
+    },
+    {
+      "label": "post96-native",
+      "seconds": 198.33279570000013,
+      "exit": 0,
+      "start": 1795851039.2921746,
+      "args": [
+        "logs/hotsearch-h4/post96-native",
+        "logs/hotsearch-h4/post-fix96/natural.jsonl.gz"
+      ]
+    },
+    {
+      "label": "scene-oracle-build",
+      "seconds": 12.463862699994934,
+      "exit": 0,
+      "start": 1795851237.721398,
+      "args": []
+    },
+    {
+      "label": "release-open-native",
+      "seconds": 68.58430610000505,
+      "exit": 0,
+      "start": 1795851250.4297776,
+      "args": [
+        "logs/hotsearch-h4/release-open-native",
+        "logs/hotsearch-h4/post-open-fixed/natural.jsonl.gz",
+        "--specs",
+        "experiments/m1-infra1h4/evidence/open-specs.json"
+      ]
+    },
+    {
+      "label": "release96-native",
+      "seconds": 202.01207189999695,
+      "exit": 0,
+      "start": 1795851319.2730813,
+      "args": [
+        "logs/hotsearch-h4/release96-native",
+        "logs/hotsearch-h4/post-fix96/natural.jsonl.gz"
+      ]
+    },
+    {
+      "label": "verified-selected-laws",
+      "seconds": 5.850109999999404,
+      "exit": 1,
+      "start": 1795851521.4506164,
+      "args": []
+    },
+    {
+      "label": "verified-law-batches",
+      "seconds": 19.07473600000958,
+      "exit": 0,
+      "start": 1795851594.2479022,
+      "args": []
+    }
+  ],
+  "worker_seconds": 4405.385853599975
+}

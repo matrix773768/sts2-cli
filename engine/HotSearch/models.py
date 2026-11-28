@@ -46,8 +46,8 @@ def public_b(f):
             _,details=variant(c["id"],c["upgrade"])
             for effect in details.get("effects",[]):
                 if effect.get("kind")=="Damage":
-                    preview.update(damage_per_hit=c["damage"],hits=c["hits"])
-                if effect.get("kind")=="Block":preview["block"]=c["block"]
+                    preview.update(damage_per_hit=a["damage"] if a.get("damage") is not None else c["damage"],hits=c["hits"])
+                if effect.get("kind")=="Block":preview["block"]=a["block"] if a.get("block") is not None else c["block"]
                 if effect.get("kind")=="Draw" and "Cards" in c["vars"]:preview["draw"]=c["vars"]["Cards"]
         h["actions"].append(dict(index=a["index"],kind="play_card" if play else "end_turn",
             card=a["card"] if play else None,target=a["target"],target_side=a["target_side"],
@@ -80,7 +80,7 @@ def strategic(f,draw):
         rows=f[z] if z=="hand" else sorted(f[z],key=token)
         c[z]=[card(r,i,z=="hand") for i,r in enumerate(rows)]
         c["card_state"][z]=[dict(type=token(r),cost=r["cost"],vars=r["vars"],cost_layers=r.get("cost_layers",{})) for r in rows]
-    c["setup"]=dict(stage="before_initial_draw",draw=draw,will_shuffle=f["draw_count"]<draw,
+    c["setup"]=dict(stage="before_initial_draw",draw=draw,will_shuffle=bool(f["discard"]) and f["draw_count"]<min(draw,10-len(f["hand"])),
         side_started=False,extra_turn=False,completed=["enemy_side","before_hand_draw","modified_draw_count"],
         pending=["hand_draw","draw_hooks","after_player_start","side_start","deaths_orbs_autoplay"])
     return c
@@ -105,6 +105,7 @@ def return_law(graph):
 
 class Models:
     def __init__(self):
+        self.work=dict(g2_rows=0,v2_rows=0,v2_batches=0)
         torch.set_num_threads(1)
         if cohort.checksum(cohort.PARENT)!=cohort.PARENT_SHA:raise ValueError("G2 identity")
         _,meta=cohort.load(cohort.PARENT)
@@ -116,12 +117,33 @@ class Models:
         net.load_state_dict(torch.load(v2,weights_only=True))
         self.evaluate=Evaluator(net.eval())
 
+    def identity(self,arm,limit,margin=0.):
+        from client import BUILD,HERE
+        body=dict(schema="sts2.hotsearch.policy.h4",arm=arm,rule_calls_per_action_style=limit,
+            margin=margin,incomplete_reference="direct-g2",g2=cohort.PARENT_SHA,
+            v2="d439444a1a9ca9bc8864988e488f720f71b379844b30ddb112bdd8f0ddcfcbbb",
+            build=json.loads((BUILD/"identity.json").read_bytes()),
+            python={name:hashlib.sha256((HERE/name).read_bytes()).hexdigest() for name in
+                    ("hot_produce.py","client.py","models.py","contingent.py")})
+        body["id"]=hashlib.sha256(json.dumps(body,sort_keys=True,separators=(",",":")).encode()).hexdigest()
+        return body
+
+    def advance(self,history,obs,action):
+        memory=self.g2.encoder.update(history,obs,action)
+        if action["kind"]=="select_candidate":
+            # Frozen G2 receives a second public action after an atomic one-card choice.
+            confirm=dict(kind="confirm_selection",index=0,card=None,target=None,choice=None,cost=None)
+            chosen=obs["decision"]|dict(selected=[action["choice"]])
+            memory=self.g2.encoder.update(memory,obs|dict(decision=chosen,actions=[confirm]),confirm)
+        return memory
+
     def rank(self,h,history,opening):
         row=self.g2.encoder.encode(h,history)|dict(policy=self.g2.slot,dc_hp=(opening["hp"],h["hp"],opening["max_hp"]))
+        self.work["g2_rows"]+=1
         scores=next(self.g2.forward([([row],)]))[0][0]
         return sorted(range(len(scores)),key=lambda i:(-float(scores[i]),i))
 
-    def backup(self,results,opening):
+    def backup(self,results,opening,*,annotate=False):
         states={};values={};rows=[]
         for r in results:
             mass=sum(x["mass"] for x in r["leaves"])
@@ -134,7 +156,11 @@ class Models:
                 elif leaf["kind"]=="Defeat":values[key]=-50.
                 else:raise ValueError("terminal/"+leaf["kind"])
             rows.append({k:r[k] for k in ("index","steps","choices","chances","gaps")}|dict(coverage=mass,leaves=len(r["leaves"])))
+        self.work["v2_rows"]+=len(states)
+        self.work["v2_batches"]+=int(bool(states))
         values.update(self.evaluate(states,opening))
         for row,r in zip(rows,results):
+            if annotate and not r["gaps"]:
+                for j,x in enumerate(r["leaves"]):x["evaluated"]=values[r["index"],j]
             row["value"]=sum(x["mass"]*values[r["index"],j] for j,x in enumerate(r["leaves"])) if not r["gaps"] else None
         return rows

@@ -65,7 +65,16 @@ internal sealed partial class Battle
         }
         var legal=actions.Select((a,i)=>{
             bool self=a.Kind==HotActionKind.PlayCard && Target(s,a)==MegaCrit.Sts2.Core.Entities.Cards.TargetType.AnyPlayer;
-            return new{index=i,kind=a.Kind.ToString(),card=(int)a.SlotOrHandIdx,
+            int? damage=null,block=null;
+            if(a.Kind==HotActionKind.PlayCard){
+                var c=s.Cards[a.SlotOrHandIdx];var def=rules.Cards[c.CardDefId];
+                var sample=s;var sampleSide=side;
+                int baseDamage=def.GetDamage(c.UpgradeLevel,c.Var0Delta),baseBlock=def.GetBlock(c.UpgradeLevel,c.Var1Delta);
+                if(baseDamage>0 && a.TargetEnemySlot>=0)
+                    damage=(int)HotCombatEngine.ComputeModifiedDamage(ref sample,ref sampleSide,rules,new HotExecScratch(),0,(byte)(3+a.TargetEnemySlot),baseDamage,true,a.SlotOrHandIdx,c.CardDefId);
+                if(baseBlock>0)block=HotCombatEngine.ComputeModifiedBlockAmount(ref sample,ref sampleSide,rules,new HotExecScratch(),0,baseBlock,true,a.SlotOrHandIdx,c.CardDefId);
+            }
+            return new{index=i,kind=a.Kind.ToString(),card=(int)a.SlotOrHandIdx,damage,block,
                 target=self?0:a.TargetEnemySlot<0?(int?)null:slots[a.TargetEnemySlot],target_side=self?"ally":a.TargetEnemySlot>=0?"enemy":null};
         }).ToArray();
         return new{turn=s.PlayerTurnNumber,round=s.RoundNumber,hp=s.Player.CurrentHp,max_hp=s.Player.MaxHp,block=s.Player.Block,energy=s.Energy,

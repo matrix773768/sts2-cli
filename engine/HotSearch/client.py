@@ -5,7 +5,7 @@ import sys
 
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[1]
-BUILD=ROOT/"logs/hotsearch"
+BUILD=ROOT/os.environ.get("HOTSEARCH_BUILD","logs/hotsearch-h4")
 sys.path.insert(0,str(ROOT/"python"))
 import engine_client
 
@@ -68,7 +68,7 @@ class Client:
                 parent=memory[row["parent"]]
                 obs=choice_b(row["facts"],row["prompt"]) if row["prompt"] else public_b(row["facts"])
                 chosen=models.rank(obs,parent,opening)[0]
-                memory[ticket]=models.g2.encoder.update(parent,obs,obs["actions"][chosen])
+                memory[ticket]=models.advance(parent,obs,obs["actions"][chosen])
             except Exception:
                 self.engine.send(dict(op="g2",ticket=ticket,index=-1))
                 raise

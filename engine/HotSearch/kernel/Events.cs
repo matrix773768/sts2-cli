@@ -6,6 +6,22 @@ internal sealed partial class Probe
 {
     internal bool PublicMode => resolution==Resolution.Public;
     [ThreadStatic] internal static Action<HotCard>? Published;
+    [ThreadStatic] internal static Func<ushort,HotCard>? Declared;
+    // Apply a publicly announced all-card operation to the declared descriptors.
+    // Iterate a multiset in public type order. Never publish the private storage order.
+    internal void TransformDraw(in CombatHotState s,Func<HotCard,HotCard> transform){
+        var changes=new List<(HotCard Before,HotCard After)>();
+        foreach(var uid in Belief.OrderedIds()){
+            var before=PublicMode?s.Cards[HotCombatEngine.FindCardIndexByUidAnyPile(in s,uid)]:Declared!(uid);
+            before.CardUid=uid;
+            var after=transform(before);
+            changes.Add((before,after));
+        }
+        foreach(var (before,after) in changes.OrderBy(c=>TypeOf(c.Before),StringComparer.Ordinal).ThenBy(c=>TypeOf(c.After),StringComparer.Ordinal)){
+            if(TypeOf(before)!=TypeOf(after)){Count(before,-1);Count(after,1);}
+            Published?.Invoke(after);
+        }
+    }
     private ushort staged;
     private string TypeOf(HotCard c)=>rules.Cards[c.CardDefId].Entry+"#"+c.UpgradeLevel;
     private Dictionary<string,int>? membership;
@@ -36,8 +52,12 @@ internal sealed partial class Probe
     private bool randomInsert;
     internal bool BeginRandomInsert()
     {
-        if(Belief.Top.Length+Belief.Bottom.Length!=0)
-            Reject("random_insert_known_positions","AddCard");
+        if(Belief.Top.Length+Belief.Bottom.Length!=0){
+            var ids=Belief.OrderedIds().ToArray();
+            if(ids.Length!=1)Reject("random_insert_known_positions","AddCard");
+            // A uniformly inserted new card and the sole old card are exchangeable.
+            Belief=Belief with{Top=[],Unknown=ids,Bottom=[]};
+        }
         randomInsert=true;
         return PublicMode;
     }

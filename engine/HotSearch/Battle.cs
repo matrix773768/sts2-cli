@@ -20,7 +20,7 @@ internal sealed partial class Battle
     private CombatHotState world;
     private static HotCard PublicCard(HotCard c)=>new(){
         CardDefId=c.CardDefId,UpgradeLevel=c.UpgradeLevel,BaseEnergyCost=c.BaseEnergyCost,BaseStarCost=c.BaseStarCost,
-        BaseReplayCount=c.BaseReplayCount,ExtraReplayThisTurn=c.ExtraReplayThisTurn,LocalKeywordsMask=c.LocalKeywordsMask,
+        DampenOrigUpg=c.DampenOrigUpg,BaseReplayCount=c.BaseReplayCount,ExtraReplayThisTurn=c.ExtraReplayThisTurn,LocalKeywordsMask=c.LocalKeywordsMask,
         Flags=c.Flags&(HotCardFlags.CostsX|HotCardFlags.HasStarCostX|HotCardFlags.HasDeckVersion|HotCardFlags.SingleTurnRetain|
             HotCardFlags.IsSlyThisTurn|HotCardFlags.ExhaustOnNextPlay|HotCardFlags.ReturnToHandNextTurn|HotCardFlags.FetchPlayedThisTurn),
         CostModCount=c.CostModCount,EnergyCostMods=c.EnergyCostMods,TempStarCostPacked=c.TempStarCostPacked,
@@ -80,6 +80,13 @@ internal sealed partial class Battle
         foreach(var uid in unknown){
             var c=labels[uid];
             var prototype=HotCombatEngine.CreateFreshCard(ref rootScratch,rules.Cards[c.Def],c.Up!=0);
+            // Before the opening draw, Vital Spark afflicts every skill entering combat.
+            if(rules.Cards[c.Def].Type.ToString()=="Skill"){
+                foreach(var enemy in ZonePowers(world,HotPowerId.VitalSparkPower)){
+                    prototype.AfflId=rules.GetAfflictionDefId(HotAfflictionId.Tainted);
+                    prototype.AfflAmt=(short)Math.Clamp(enemy,0,byte.MaxValue);
+                }
+            }
             prototype.Flags|=HotCardFlags.HasDeckVersion;declaredCards[uid]=PublicCard(prototype);
             if((prototype.LocalKeywordsMask&HotCardKeywordMask.Innate)!=0)throw new NotSupportedException("opening/innate_overflow");
         }
@@ -87,6 +94,12 @@ internal sealed partial class Battle
         Remember();
     }
 
+    private IEnumerable<int> ZonePowers(CombatHotState s,HotPowerId power){
+        for(int i=0;i<s.PowerCount;i++){
+            var p=s.Powers[i];
+            if(p.Amount>0 && rules.Powers[p.PowerDefId].PowerId==power)yield return p.Amount;
+        }
+    }
     private string Token(HotCard card)=>rules.Cards[card.CardDefId].Entry+"#"+card.UpgradeLevel;
     private string Label(ushort uid){var c=labels[uid];return rules.Cards[c.Def].Entry+"#"+c.Up;}
     private void Remember()
@@ -118,7 +131,8 @@ internal sealed partial class Battle
     public object View(){
         bool terminal=world.TerminalOutcome!=HotCombatOutcome.Ongoing;
         menu=terminal?[]:Menu(world,cold);
-        return new{status=terminal?world.TerminalOutcome.ToString():"active", facts=Facts(world,cold,law,menu),
+        var facts=Facts(world,cold,law,menu);
+        return new{status=terminal?world.TerminalOutcome.ToString():"active", facts,view=Stamp(facts),
             observed_c=observedC,actual_steps=actualSteps,decisions};
     }
     private string[] OptionNames(CombatHotState s,StepEvent ev){
@@ -142,11 +156,23 @@ internal sealed partial class Battle
             waiting=menu[index];transcript=Prefix.Empty;
         }
         var child=world;var side=cold;var scratch=new HotExecScratch();
+        // The kernel restarts an interrupted action from its parent on selection.
+        // Undo only descriptor writes from the temporary prefix before replay.
+        var prior=new Dictionary<ushort,(bool Known,HotCard Card,(ushort Def,byte Up)? Label)>();
+        void PublishStep(HotCard c){
+            if(!prior.ContainsKey(c.CardUid)){
+                bool known=declaredCards.TryGetValue(c.CardUid,out var old);
+                prior.Add(c.CardUid,(known,old,labels.TryGetValue(c.CardUid,out var label)?label:null));
+            }
+            Publish(c);
+        }
+        bool committed=false;
         var probe=new Probe(rules,law,transcript,waiting.Kind.ToString(),Resolution.CaptureWorld);
         observedC=null;
         try{
             Probe.Current=probe;
-            Probe.Published=Publish;
+            Probe.Published=PublishStep;
+            Probe.Declared=id=>declaredCards[id];
             InfraCObserver.BeforeDraw=(in CombatHotState s,HotColdSidecar? c,HotRules r,int draw)=>
                 observedC=new{facts=Facts(s,c,probe.Belief,[]),draw};
             actualSteps++;
@@ -155,13 +181,19 @@ internal sealed partial class Battle
             if(result.NeedsChoice || !result.Executed)throw new NotSupportedException("actual/unhandled_input");
 
             probe.Belief.Validate(in child,true);
-            world=child;cold=side;law=probe.Belief;Remember();
+            world=child;cold=side;law=probe.Belief;Remember();committed=true;
         }catch(Boundary b) when(b.Status==StepStatus.NeedsChoice){
             prompt=probe.Events[^1];
             var options=OptionNames(child,prompt);
-            return new{status="choice",kind=prompt.Phase,options,facts=Facts(child,side,probe.Belief,[]),actual_steps=actualSteps,decisions};
+            var facts=Facts(child,side,probe.Belief,[]);
+            return new{status="choice",kind=prompt.Phase,options,facts,view=Stamp(facts,new{kind=prompt.Phase,options}),actual_steps=actualSteps,decisions};
         }catch(Boundary b){throw new NotSupportedException(b.Point+"/"+b.Message);}
-        finally{Probe.Published=null;Probe.Current=null;InfraCObserver.BeforeDraw=null;HotCombatEngine.ClearPendingChoiceUidFilters();}
+        finally{
+            if(!committed)foreach(var (id,entry) in prior){
+                if(entry.Known)declaredCards[id]=entry.Card;else declaredCards.Remove(id);
+                if(entry.Label is {} l)labels[id]=l;else labels.Remove(id);
+            }
+            Probe.Declared=null;Probe.Published=null;Probe.Current=null;InfraCObserver.BeforeDraw=null;HotCombatEngine.ClearPendingChoiceUidFilters();}
         return View();
     }
 }

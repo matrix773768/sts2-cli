@@ -1,0 +1,10 @@
+{
+  "partition": "new-open-research",
+  "source": "CORE-5D train families, excluding all natural-96 families",
+  "selection": "first 32 distinct remaining families by SHA256(M1-INFRA-1H4-open-v1|family)",
+  "seed": "uppercase first 16 hex digits of SHA256(M1-INFRA-1H4-open-v1|family|new-seed)",
+  "candidate": {"arm":"contingent","limit":32,"margin":0.0,"requires_complete_reference":true},
+  "control": {"arm":"g2"},
+  "scoring": "all roots, paired terminal utility, separate native-reviewed admission",
+  "frozen_before_open_results": true
+}

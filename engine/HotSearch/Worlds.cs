@@ -42,6 +42,18 @@ internal sealed partial class Battle
         if(auditRng.HasValue){
             ulong mixer=(uint)auditRng.Value;
             for(int i=0;i<10;i++)world.Rng[i]=HotRng.CreateFromSeed(HotRng.Splitmix64(ref mixer));
+            // A bijection on hidden handles preserves the declared public descriptors.
+            var old=law.Unknown.ToArray();var rev=old.Reverse().ToArray();
+            var rename=old.Zip(rev).ToDictionary(x=>x.First,x=>x.Second);
+            for(int i=world.DrawStart;i<world.DiscardStart;i++){
+                ref var card=ref world.Cards[i];
+                if(rename.TryGetValue(card.CardUid,out var id))card.CardUid=id;
+            }
+            for(int i=0;i<old.Length;i++){
+                labels[rev[i]]=c.Labels[old[i]];
+                declaredCards[rev[i]]=c.Cards[old[i]];
+            }
+            for(int i=0;i<world.EnemyCount;i++)world.Enemies[i].AiRegs[3]^=17;
         }
         return View();
     }
