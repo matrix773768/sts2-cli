@@ -1,0 +1,5375 @@
+{
+  "regression": {
+    "totals": {
+      "v2": {
+        "roots": 40,
+        "closed_reference": 26,
+        "options": 1356,
+        "complete": 866,
+        "closed_programs": 589,
+        "closed_laws": 380,
+        "added_laws": 280,
+        "lost_laws": 5,
+        "changed": 10,
+        "materially_improved": 6,
+        "gain": -27.079816198348993,
+        "seconds": 10.165607799834106,
+        "unresolved_mass": 473.4777660989918,
+        "rule_steps": 11440,
+        "attempted_graphs": 1396,
+        "g2_rows": 244,
+        "v2_batches": 159,
+        "v2_rows": 1471
+      },
+      "low": {
+        "roots": 40,
+        "closed_reference": 26,
+        "options": 220,
+        "complete": 199,
+        "closed_programs": 143,
+        "closed_laws": 105,
+        "added_laws": 0,
+        "lost_laws": 0,
+        "changed": 0,
+        "materially_improved": 0,
+        "gain": 0.0,
+        "seconds": 4.547217699961038,
+        "unresolved_mass": 20.3375,
+        "rule_steps": 1636,
+        "attempted_graphs": 260,
+        "g2_rows": 244,
+        "v2_batches": 99,
+        "v2_rows": 329
+      },
+      "target": {
+        "roots": 40,
+        "closed_reference": 26,
+        "options": 242,
+        "complete": 221,
+        "closed_programs": 165,
+        "closed_laws": 122,
+        "added_laws": 17,
+        "lost_laws": 0,
+        "changed": 1,
+        "materially_improved": 1,
+        "gain": 42.619632720947266,
+        "seconds": 5.6566107000398915,
+        "unresolved_mass": 20.3375,
+        "rule_steps": 1801,
+        "attempted_graphs": 284,
+        "g2_rows": 336,
+        "v2_batches": 117,
+        "v2_rows": 382
+      },
+      "general": {
+        "roots": 40,
+        "closed_reference": 26,
+        "options": 269,
+        "complete": 244,
+        "closed_programs": 188,
+        "closed_laws": 135,
+        "added_laws": 30,
+        "lost_laws": 0,
+        "changed": 4,
+        "materially_improved": 4,
+        "gain": 57.91229438781738,
+        "seconds": 7.888918400014518,
+        "unresolved_mass": 24.237499999999997,
+        "rule_steps": 2101,
+        "attempted_graphs": 321,
+        "g2_rows": 514,
+        "v2_batches": 134,
+        "v2_rows": 438
+      },
+      "expand": {
+        "roots": 40,
+        "closed_reference": 26,
+        "options": 414,
+        "complete": 375,
+        "closed_programs": 219,
+        "closed_laws": 165,
+        "added_laws": 60,
+        "lost_laws": 0,
+        "changed": 2,
+        "materially_improved": 2,
+        "gain": 14.304323196411133,
+        "seconds": 5.49873750002007,
+        "unresolved_mass": 37.49583333333332,
+        "rule_steps": 2640,
+        "attempted_graphs": 454,
+        "g2_rows": 244,
+        "v2_batches": 148,
+        "v2_rows": 546
+      }
+    },
+    "roots": {
+      "A": {
+        "v2": {
+          "best": {
+            "index": 0,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {
+              "HandleBeforeSideTurnStartPower/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 0,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {
+              "HandleBeforeSideTurnStartPower/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 0,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {
+              "HandleBeforeSideTurnStartPower/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 0,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {
+              "HandleBeforeSideTurnStartPower/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 0,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {
+              "HandleBeforeSideTurnStartPower/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        }
+      },
+      "B1": {
+        "v2": {
+          "best": {
+            "index": 6,
+            "steps": 29,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 1.0,
+            "leaves": 13,
+            "value": 29.06944704055786,
+            "style": "guard"
+          },
+          "delta": -32.250810384750366,
+          "added_laws": 15,
+          "distinct_laws": 19,
+          "different_program": true
+        },
+        "low": {
+          "best": {
+            "index": 8,
+            "steps": 30,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 1.0,
+            "leaves": 13,
+            "value": 61.32025742530823,
+            "style": "learned-follow"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 5,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 8,
+            "steps": 30,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 1.0,
+            "leaves": 13,
+            "value": 61.32025742530823,
+            "style": "learned-follow"
+          },
+          "delta": 0.0,
+          "added_laws": 2,
+          "distinct_laws": 7,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 8,
+            "steps": 30,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 1.0,
+            "leaves": 13,
+            "value": 61.32025742530823,
+            "style": "learned-follow"
+          },
+          "delta": 0.0,
+          "added_laws": 3,
+          "distinct_laws": 8,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 8,
+            "steps": 30,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 1.0,
+            "leaves": 13,
+            "value": 61.32025742530823,
+            "style": "learned-follow"
+          },
+          "delta": 0.0,
+          "added_laws": 3,
+          "distinct_laws": 8,
+          "different_program": false
+        }
+      },
+      "B2": {
+        "v2": {
+          "best": {
+            "index": 2,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 1.0694446563720703,
+            "style": "light"
+          },
+          "delta": 1.9327335357666016,
+          "added_laws": 9,
+          "distinct_laws": 12,
+          "different_program": true
+        },
+        "low": {
+          "best": {
+            "index": 7,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -0.8632888793945312,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 3,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 7,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 41.756343841552734,
+            "style": "branch-target",
+            "old_action": 8,
+            "new_action": 9,
+            "at_menu": "83133c816e850d40177c5f2c60c7d335c9de3c02df0b6d28d82a5b3d7d9b7bb7",
+            "changed_edges": [
+              [
+                1,
+                "0DDC124D2073D2560210CC34C4FF52A5965E04C01314C50288AE73CE4769EEE8",
+                9
+              ]
+            ]
+          },
+          "delta": 42.619632720947266,
+          "added_laws": 3,
+          "distinct_laws": 6,
+          "different_program": true
+        },
+        "general": {
+          "best": {
+            "index": 7,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 41.75636672973633,
+            "style": "branch-target",
+            "old_action": 8,
+            "new_action": 9,
+            "at_menu": "83133c816e850d40177c5f2c60c7d335c9de3c02df0b6d28d82a5b3d7d9b7bb7",
+            "changed_edges": [
+              [
+                1,
+                "0DDC124D2073D2560210CC34C4FF52A5965E04C01314C50288AE73CE4769EEE8",
+                9
+              ]
+            ]
+          },
+          "delta": 42.61965560913086,
+          "added_laws": 4,
+          "distinct_laws": 7,
+          "different_program": true
+        },
+        "expand": {
+          "best": {
+            "index": 7,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -0.8632888793945312,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 2,
+          "distinct_laws": 5,
+          "different_program": false
+        }
+      },
+      "B3": {
+        "v2": {
+          "best": {
+            "index": 1,
+            "steps": 1,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {
+              "ExecuteCoreCustomCard/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 13,
+          "distinct_laws": 13,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 1,
+            "steps": 1,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {
+              "ExecuteCoreCustomCard/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 1,
+            "steps": 1,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {
+              "ExecuteCoreCustomCard/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 1,
+            "steps": 1,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {
+              "ExecuteCoreCustomCard/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 1,
+            "steps": 1,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {
+              "ExecuteCoreCustomCard/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        }
+      },
+      "enemy-01": {
+        "v2": {
+          "best": {
+            "index": 5,
+            "steps": 17,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 1.0,
+            "leaves": 5,
+            "value": 78.30504455566407,
+            "style": "guard"
+          },
+          "delta": 0.4046478271484375,
+          "added_laws": 18,
+          "distinct_laws": 26,
+          "different_program": true
+        },
+        "low": {
+          "best": {
+            "index": 1,
+            "steps": 18,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 1.0,
+            "leaves": 5,
+            "value": 77.90039672851563,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 9,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 1,
+            "steps": 18,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 1.0,
+            "leaves": 5,
+            "value": 77.90039672851563,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 3,
+          "distinct_laws": 12,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 1,
+            "steps": 18,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 1.0,
+            "leaves": 5,
+            "value": 77.90039672851563,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 3,
+          "distinct_laws": 12,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 1,
+            "steps": 18,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 1.0,
+            "leaves": 5,
+            "value": 77.90039672851563,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 3,
+          "distinct_laws": 12,
+          "different_program": false
+        }
+      },
+      "enemy-02": {
+        "v2": {
+          "best": {
+            "index": 0,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {
+              "PickRandomLivingEnemySlot/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 2,
+          "distinct_laws": 2,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 0,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {
+              "PickRandomLivingEnemySlot/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 0,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {
+              "PickRandomLivingEnemySlot/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 0,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {
+              "PickRandomLivingEnemySlot/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 0,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {
+              "PickRandomLivingEnemySlot/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        }
+      },
+      "enemy-03": {
+        "v2": {
+          "best": {
+            "index": 1,
+            "steps": 32,
+            "choices": 0,
+            "chances": 30,
+            "gaps": {
+              "budget": 0.9999999999999976
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 6,
+          "distinct_laws": 6,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 1,
+            "steps": 32,
+            "choices": 0,
+            "chances": 30,
+            "gaps": {
+              "budget": 0.9999999999999976
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 1,
+            "steps": 32,
+            "choices": 0,
+            "chances": 30,
+            "gaps": {
+              "budget": 0.9999999999999976
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 1,
+            "steps": 32,
+            "choices": 0,
+            "chances": 30,
+            "gaps": {
+              "budget": 0.9999999999999976
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 1,
+            "steps": 32,
+            "choices": 0,
+            "chances": 30,
+            "gaps": {
+              "budget": 0.9999999999999976
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        }
+      },
+      "enemy-04": {
+        "v2": {
+          "best": {
+            "index": 4,
+            "steps": 2,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 15.733132362365723,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 8,
+          "distinct_laws": 10,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 4,
+            "steps": 2,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 15.733132362365723,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 2,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 4,
+            "steps": 2,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 15.733132362365723,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 2,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 4,
+            "steps": 2,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 15.733132362365723,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 2,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 4,
+            "steps": 2,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 15.733132362365723,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 1,
+          "distinct_laws": 3,
+          "different_program": false
+        }
+      },
+      "enemy-05": {
+        "v2": {
+          "best": {
+            "index": 5,
+            "steps": 13,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 1.0,
+            "leaves": 5,
+            "value": 77.6113265991211,
+            "style": "ref"
+          },
+          "delta": -14.3886734008789,
+          "added_laws": 16,
+          "distinct_laws": 24,
+          "different_program": true
+        },
+        "low": {
+          "best": {
+            "index": 0,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 92.0,
+            "style": "learned-follow"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 9,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 0,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 92.0,
+            "style": "learned-follow"
+          },
+          "delta": 0.0,
+          "added_laws": 1,
+          "distinct_laws": 10,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 0,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 92.0,
+            "style": "learned-follow"
+          },
+          "delta": 0.0,
+          "added_laws": 3,
+          "distinct_laws": 12,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 0,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 92.0,
+            "style": "learned-follow"
+          },
+          "delta": 0.0,
+          "added_laws": 6,
+          "distinct_laws": 15,
+          "different_program": false
+        }
+      },
+      "enemy-06": {
+        "v2": {
+          "best": {
+            "index": 2,
+            "steps": 2,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 9.481386184692383,
+            "style": "light"
+          },
+          "delta": 4.9591064453125e-05,
+          "added_laws": 15,
+          "distinct_laws": 20,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 2,
+            "steps": 2,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 9.48133659362793,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 5,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 2,
+            "steps": 2,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 9.48133659362793,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 1,
+          "distinct_laws": 6,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 8,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 21.561866760253906,
+            "style": "branch-continue",
+            "old_action": 5,
+            "new_action": 0,
+            "at_menu": "68e8397162c6991238ba0bbbcd7604e848767a05757c857e039d3c5655451fdf",
+            "changed_edges": [
+              [
+                0,
+                "8FAA5A7DFB02F006E1F4CE4D883E27509BE06885618168878B7C459AEDF686D9",
+                8
+              ]
+            ]
+          },
+          "delta": 12.080530166625977,
+          "added_laws": 2,
+          "distinct_laws": 7,
+          "different_program": true
+        },
+        "expand": {
+          "best": {
+            "index": 2,
+            "steps": 2,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 9.48133659362793,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 2,
+          "distinct_laws": 7,
+          "different_program": false
+        }
+      },
+      "enemy-07": {
+        "v2": {
+          "best": {
+            "index": 7,
+            "steps": 32,
+            "choices": 2,
+            "chances": 11,
+            "gaps": {
+              "PickRandomLivingEnemySlot/unmodeled_rng": 0.8392857142857145,
+              "budget": 0.16071428571428567
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 7,
+            "steps": 32,
+            "choices": 2,
+            "chances": 11,
+            "gaps": {
+              "PickRandomLivingEnemySlot/unmodeled_rng": 0.8392857142857145,
+              "budget": 0.16071428571428567
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 7,
+            "steps": 32,
+            "choices": 2,
+            "chances": 11,
+            "gaps": {
+              "PickRandomLivingEnemySlot/unmodeled_rng": 0.6607142857142858,
+              "AutoPlayCard/unmodeled_rng": 0.17857142857142855,
+              "budget": 0.16071428571428567
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 7,
+            "steps": 32,
+            "choices": 2,
+            "chances": 11,
+            "gaps": {
+              "AutoPlayCard/unmodeled_rng": 0.42857142857142855,
+              "PickRandomLivingEnemySlot/unmodeled_rng": 0.4107142857142857,
+              "budget": 0.16071428571428567
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 7,
+            "steps": 32,
+            "choices": 2,
+            "chances": 11,
+            "gaps": {
+              "AutoPlayCard/unmodeled_rng": 0.42857142857142855,
+              "PickRandomLivingEnemySlot/unmodeled_rng": 0.4107142857142857,
+              "budget": 0.16071428571428567
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        }
+      },
+      "enemy-08": {
+        "v2": {
+          "best": {
+            "index": 5,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -47.063255310058594,
+            "style": "guard"
+          },
+          "delta": 2.9367446899414062,
+          "added_laws": 1,
+          "distinct_laws": 2,
+          "different_program": true
+        },
+        "low": {
+          "best": {
+            "index": 1,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -50.0,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 1,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 1,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -50.0,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 1,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 1,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -50.0,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 1,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 1,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -50.0,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 1,
+          "different_program": false
+        }
+      },
+      "draw-01": {
+        "v2": {
+          "best": {
+            "index": 7,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 65.07124328613281,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 10,
+          "distinct_laws": 14,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 7,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 65.07124328613281,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 4,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 7,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 65.07124328613281,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 2,
+          "distinct_laws": 6,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 7,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 65.07124328613281,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 3,
+          "distinct_laws": 7,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 7,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 65.07124328613281,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 2,
+          "distinct_laws": 6,
+          "different_program": false
+        }
+      },
+      "draw-02": {
+        "v2": {
+          "best": {
+            "index": 3,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -24.986839294433594,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 1,
+          "distinct_laws": 3,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 3,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -24.986839294433594,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 2,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 3,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -24.986839294433594,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 2,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 3,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -22.072628021240234,
+            "style": "branch-continue",
+            "old_action": 1,
+            "new_action": 0,
+            "at_menu": "3279165ec4da6eb6d76fd60af278b715e34a269b623a26ed331ec14eac266631",
+            "changed_edges": [
+              [
+                2,
+                "C8EBE0213C230CDA3AADBEA00DFF236430AEE43F6306025B3347896519795915",
+                0
+              ]
+            ]
+          },
+          "delta": 2.9142112731933594,
+          "added_laws": 1,
+          "distinct_laws": 3,
+          "different_program": true
+        },
+        "expand": {
+          "best": {
+            "index": 3,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -24.986839294433594,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 1,
+          "distinct_laws": 3,
+          "different_program": false
+        }
+      },
+      "draw-03": {
+        "v2": {
+          "best": {
+            "index": 2,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -48.67981719970703,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 7,
+          "distinct_laws": 12,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 2,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -48.67981719970703,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 5,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 2,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -48.67981719970703,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 5,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 2,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -48.67981719970703,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 5,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 2,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -48.67981719970703,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 4,
+          "distinct_laws": 9,
+          "different_program": false
+        }
+      },
+      "draw-04": {
+        "v2": {
+          "best": {
+            "index": 4,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -39.13933563232422,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 4,
+          "distinct_laws": 6,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 4,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -39.13933563232422,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 2,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 4,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -39.13933563232422,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 2,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 4,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -39.13933563232422,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 2,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 4,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -39.13933563232422,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 2,
+          "distinct_laws": 4,
+          "different_program": false
+        }
+      },
+      "draw-05": {
+        "v2": {
+          "best": {
+            "index": 0,
+            "steps": 32,
+            "choices": 0,
+            "chances": 9,
+            "gaps": {
+              "ExecuteCoreCustomCard/unmodeled_rng": 0.08333333333333333,
+              "budget": 0.9166666666666666
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 3,
+          "distinct_laws": 3,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 0,
+            "steps": 32,
+            "choices": 0,
+            "chances": 9,
+            "gaps": {
+              "ExecuteCoreCustomCard/unmodeled_rng": 0.08333333333333333,
+              "budget": 0.9166666666666666
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 0,
+            "steps": 32,
+            "choices": 0,
+            "chances": 9,
+            "gaps": {
+              "ExecuteCoreCustomCard/unmodeled_rng": 0.08333333333333333,
+              "budget": 0.9166666666666666
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 0,
+            "steps": 32,
+            "choices": 0,
+            "chances": 9,
+            "gaps": {
+              "ExecuteCoreCustomCard/unmodeled_rng": 0.08333333333333333,
+              "budget": 0.9166666666666666
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 0,
+            "steps": 32,
+            "choices": 0,
+            "chances": 9,
+            "gaps": {
+              "ExecuteCoreCustomCard/unmodeled_rng": 0.08333333333333333,
+              "budget": 0.9166666666666666
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        }
+      },
+      "draw-06": {
+        "v2": {
+          "best": {
+            "index": 7,
+            "steps": 32,
+            "choices": 0,
+            "chances": 32,
+            "gaps": {
+              "budget": 0.9999999999999983
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 4,
+          "distinct_laws": 4,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 7,
+            "steps": 32,
+            "choices": 0,
+            "chances": 32,
+            "gaps": {
+              "budget": 0.9999999999999983
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 7,
+            "steps": 32,
+            "choices": 0,
+            "chances": 32,
+            "gaps": {
+              "budget": 0.9999999999999983
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 7,
+            "steps": 32,
+            "choices": 0,
+            "chances": 32,
+            "gaps": {
+              "budget": 0.9999999999999983
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 7,
+            "steps": 32,
+            "choices": 0,
+            "chances": 32,
+            "gaps": {
+              "budget": 0.9999999999999983
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        }
+      },
+      "draw-07": {
+        "v2": {
+          "best": {
+            "index": 3,
+            "steps": 32,
+            "choices": 0,
+            "chances": 9,
+            "gaps": {
+              "AutoPlayCard/unmodeled_rng": 0.24999999999999997,
+              "budget": 0.49999999999999994
+            },
+            "coverage": 0.25,
+            "leaves": 1,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 6,
+          "distinct_laws": 6,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 3,
+            "steps": 32,
+            "choices": 0,
+            "chances": 9,
+            "gaps": {
+              "AutoPlayCard/unmodeled_rng": 0.24999999999999997,
+              "budget": 0.49999999999999994
+            },
+            "coverage": 0.25,
+            "leaves": 1,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 3,
+            "steps": 32,
+            "choices": 0,
+            "chances": 9,
+            "gaps": {
+              "AutoPlayCard/unmodeled_rng": 0.24999999999999997,
+              "budget": 0.49999999999999994
+            },
+            "coverage": 0.25,
+            "leaves": 1,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 3,
+            "steps": 32,
+            "choices": 0,
+            "chances": 9,
+            "gaps": {
+              "AutoPlayCard/unmodeled_rng": 0.24999999999999997,
+              "budget": 0.49999999999999994
+            },
+            "coverage": 0.25,
+            "leaves": 1,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 3,
+            "steps": 32,
+            "choices": 0,
+            "chances": 9,
+            "gaps": {
+              "AutoPlayCard/unmodeled_rng": 0.24999999999999997,
+              "budget": 0.49999999999999994
+            },
+            "coverage": 0.25,
+            "leaves": 1,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        }
+      },
+      "draw-08": {
+        "v2": {
+          "best": {
+            "index": 1,
+            "steps": 23,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 0.9999999999999999,
+            "leaves": 10,
+            "value": 74.07367630004883,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 3,
+          "distinct_laws": 5,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 1,
+            "steps": 23,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 0.9999999999999999,
+            "leaves": 10,
+            "value": 74.07367630004883,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 2,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 1,
+            "steps": 23,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 0.9999999999999999,
+            "leaves": 10,
+            "value": 74.07367630004883,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 2,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 1,
+            "steps": 23,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 0.9999999999999999,
+            "leaves": 10,
+            "value": 74.07367630004883,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 2,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 1,
+            "steps": 23,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 0.9999999999999999,
+            "leaves": 10,
+            "value": 74.07367630004883,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 3,
+          "distinct_laws": 5,
+          "different_program": false
+        }
+      },
+      "combo-01": {
+        "v2": {
+          "best": {
+            "index": 4,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -45.534786224365234,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 9,
+          "distinct_laws": 14,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 4,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -45.534786224365234,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 5,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 4,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -45.534786224365234,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 5,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 4,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -45.5347900390625,
+            "style": "ref"
+          },
+          "delta": -3.814697265625e-06,
+          "added_laws": 1,
+          "distinct_laws": 6,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 4,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -45.534786224365234,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 4,
+          "distinct_laws": 9,
+          "different_program": false
+        }
+      },
+      "combo-02": {
+        "v2": {
+          "best": {
+            "index": 5,
+            "steps": 32,
+            "choices": 1,
+            "chances": 29,
+            "gaps": {
+              "budget": 0.9999999999999976
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 14,
+          "distinct_laws": 14,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 5,
+            "steps": 32,
+            "choices": 1,
+            "chances": 29,
+            "gaps": {
+              "budget": 0.9999999999999976
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 5,
+            "steps": 32,
+            "choices": 1,
+            "chances": 29,
+            "gaps": {
+              "budget": 0.9999999999999976
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 5,
+            "steps": 32,
+            "choices": 1,
+            "chances": 29,
+            "gaps": {
+              "budget": 0.9999999999999976
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 5,
+            "steps": 32,
+            "choices": 1,
+            "chances": 29,
+            "gaps": {
+              "budget": 0.9999999999999976
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        }
+      },
+      "combo-03": {
+        "v2": {
+          "best": {
+            "index": 4,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 14.669044494628906,
+            "style": "guard"
+          },
+          "delta": -5.53131103515625e-05,
+          "added_laws": 10,
+          "distinct_laws": 15,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 4,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 14.669099807739258,
+            "style": "guard"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 5,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 4,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 14.669099807739258,
+            "style": "guard"
+          },
+          "delta": 0.0,
+          "added_laws": 3,
+          "distinct_laws": 8,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 4,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 14.669099807739258,
+            "style": "guard"
+          },
+          "delta": 0.0,
+          "added_laws": 3,
+          "distinct_laws": 8,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 4,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 14.669099807739258,
+            "style": "guard"
+          },
+          "delta": 0.0,
+          "added_laws": 2,
+          "distinct_laws": 7,
+          "different_program": false
+        }
+      },
+      "combo-04": {
+        "v2": {
+          "best": {
+            "index": 3,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {
+              "SpawnFabricatorBot/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 3,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {
+              "SpawnFabricatorBot/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 3,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {
+              "SpawnFabricatorBot/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 3,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {
+              "SpawnFabricatorBot/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 3,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {
+              "SpawnFabricatorBot/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        }
+      },
+      "combo-05": {
+        "v2": {
+          "best": {
+            "index": 3,
+            "steps": 8,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 1.0,
+            "leaves": 2,
+            "value": -22.36554149235701,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 1,
+          "distinct_laws": 4,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 3,
+            "steps": 8,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 1.0,
+            "leaves": 2,
+            "value": -22.36554149235701,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 3,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 3,
+            "steps": 8,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 1.0,
+            "leaves": 2,
+            "value": -22.36554149235701,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 3,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 3,
+            "steps": 8,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 1.0,
+            "leaves": 2,
+            "value": -22.36554149235701,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 3,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 3,
+            "steps": 8,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 1.0,
+            "leaves": 2,
+            "value": -22.36554149235701,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 1,
+          "distinct_laws": 4,
+          "different_program": false
+        }
+      },
+      "combo-06": {
+        "v2": {
+          "best": {
+            "index": 2,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -49.659454345703125,
+            "style": "guard"
+          },
+          "delta": 0.01122283935546875,
+          "added_laws": 6,
+          "distinct_laws": 9,
+          "different_program": true
+        },
+        "low": {
+          "best": {
+            "index": 1,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -49.670677185058594,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 3,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 1,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -49.670677185058594,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 3,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 1,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -49.670677185058594,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 1,
+          "distinct_laws": 4,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 1,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -49.670677185058594,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 3,
+          "distinct_laws": 6,
+          "different_program": false
+        }
+      },
+      "combo-07": {
+        "v2": {
+          "best": {
+            "index": 5,
+            "steps": 5,
+            "choices": 1,
+            "chances": 0,
+            "gaps": {
+              "HandleAfterAutoPostPlayPower/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 3,
+          "distinct_laws": 3,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 5,
+            "steps": 5,
+            "choices": 1,
+            "chances": 0,
+            "gaps": {
+              "HandleAfterAutoPostPlayPower/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 5,
+            "steps": 5,
+            "choices": 1,
+            "chances": 0,
+            "gaps": {
+              "HandleAfterAutoPostPlayPower/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 5,
+            "steps": 5,
+            "choices": 1,
+            "chances": 0,
+            "gaps": {
+              "HandleAfterAutoPostPlayPower/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 5,
+            "steps": 5,
+            "choices": 1,
+            "chances": 0,
+            "gaps": {
+              "HandleAfterAutoPostPlayPower/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        }
+      },
+      "combo-08": {
+        "v2": {
+          "best": {
+            "index": 6,
+            "steps": 32,
+            "choices": 0,
+            "chances": 18,
+            "gaps": {
+              "budget": 0.999999999999997
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 8,
+          "distinct_laws": 8,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 6,
+            "steps": 32,
+            "choices": 0,
+            "chances": 18,
+            "gaps": {
+              "budget": 0.999999999999997
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 6,
+            "steps": 32,
+            "choices": 0,
+            "chances": 18,
+            "gaps": {
+              "budget": 0.999999999999997
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 6,
+            "steps": 32,
+            "choices": 0,
+            "chances": 18,
+            "gaps": {
+              "budget": 0.999999999999997
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 6,
+            "steps": 32,
+            "choices": 0,
+            "chances": 18,
+            "gaps": {
+              "budget": 0.999999999999997
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        }
+      },
+      "ordinary-01": {
+        "v2": {
+          "best": {
+            "index": 2,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 93.0,
+            "style": "build"
+          },
+          "delta": 3.1096954345703125,
+          "added_laws": 4,
+          "distinct_laws": 9,
+          "different_program": true
+        },
+        "low": {
+          "best": {
+            "index": 2,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 89.89030456542969,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 5,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 2,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 89.89030456542969,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 5,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 2,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 89.89030456542969,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 5,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 2,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 93.0,
+            "style": "expand-build"
+          },
+          "delta": 3.1096954345703125,
+          "added_laws": 3,
+          "distinct_laws": 8,
+          "different_program": true
+        }
+      },
+      "ordinary-02": {
+        "v2": {
+          "best": {
+            "index": 2,
+            "steps": 29,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {
+              "ApplyThievingHopperStealCard/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 2,
+            "steps": 29,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {
+              "ApplyThievingHopperStealCard/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 2,
+            "steps": 29,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {
+              "ApplyThievingHopperStealCard/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 2,
+            "steps": 29,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {
+              "ApplyThievingHopperStealCard/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 2,
+            "steps": 29,
+            "choices": 0,
+            "chances": 1,
+            "gaps": {
+              "ApplyThievingHopperStealCard/unmodeled_rng": 1
+            },
+            "coverage": 0,
+            "leaves": 0,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        }
+      },
+      "ordinary-03": {
+        "v2": {
+          "best": {
+            "index": 0,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -5.8232269287109375,
+            "style": "light"
+          },
+          "delta": 11.194570541381836,
+          "added_laws": 6,
+          "distinct_laws": 8,
+          "different_program": true
+        },
+        "low": {
+          "best": {
+            "index": 3,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -17.017797470092773,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 2,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 3,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -17.017797470092773,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 2,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 3,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -17.017797470092773,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 2,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 2,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -5.823169708251953,
+            "style": "expand-build"
+          },
+          "delta": 11.19462776184082,
+          "added_laws": 3,
+          "distinct_laws": 5,
+          "different_program": true
+        }
+      },
+      "ordinary-04": {
+        "v2": {
+          "best": {
+            "index": 0,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -49.95738220214844,
+            "style": "guard"
+          },
+          "delta": 0.0006561279296875,
+          "added_laws": 5,
+          "distinct_laws": 10,
+          "different_program": true
+        },
+        "low": {
+          "best": {
+            "index": 2,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -49.958038330078125,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 6,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 2,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -49.958038330078125,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 6,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 2,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -49.958038330078125,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 6,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 2,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -49.958038330078125,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 3,
+          "distinct_laws": 9,
+          "different_program": false
+        }
+      },
+      "ordinary-05": {
+        "v2": {
+          "best": {
+            "index": 3,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -19.83863067626953,
+            "style": "ref"
+          },
+          "delta": -4.1961669921875e-05,
+          "added_laws": 6,
+          "distinct_laws": 10,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 3,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -19.83858871459961,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 4,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 3,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -19.83858871459961,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 4,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 3,
+            "steps": 6,
+            "choices": 1,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -19.540687561035156,
+            "style": "branch-continue",
+            "old_action": 1,
+            "new_action": 0,
+            "at_menu": "e37be8487575ffb7a91f94a81ddd66b31cab4ca6baf9f2e2f8c5bc9d270a10e0",
+            "changed_edges": [
+              [
+                2,
+                "7FA1A43DEB6932290F7EE96926F1AB145D90DED9DDCEB05550AC5558996750F3",
+                0
+              ]
+            ]
+          },
+          "delta": 0.2979011535644531,
+          "added_laws": 2,
+          "distinct_laws": 6,
+          "different_program": true
+        },
+        "expand": {
+          "best": {
+            "index": 3,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -19.83858871459961,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 3,
+          "distinct_laws": 7,
+          "different_program": false
+        }
+      },
+      "ordinary-06": {
+        "v2": {
+          "best": {
+            "index": 1,
+            "steps": 2,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -49.947479248046875,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 19,
+          "distinct_laws": 23,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 1,
+            "steps": 2,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -49.947479248046875,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 4,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 1,
+            "steps": 2,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -49.947479248046875,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 4,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 1,
+            "steps": 2,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -49.947479248046875,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 4,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 1,
+            "steps": 2,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -49.947479248046875,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 1,
+          "distinct_laws": 5,
+          "different_program": false
+        }
+      },
+      "ordinary-07": {
+        "v2": {
+          "best": {
+            "index": 5,
+            "steps": 2,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -49.889930725097656,
+            "style": "end"
+          },
+          "delta": -0.030529022216796875,
+          "added_laws": 4,
+          "distinct_laws": 6,
+          "different_program": true
+        },
+        "low": {
+          "best": {
+            "index": 5,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -49.85940170288086,
+            "style": "learned-follow"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 3,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 5,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -49.85940170288086,
+            "style": "learned-follow"
+          },
+          "delta": 0.0,
+          "added_laws": 2,
+          "distinct_laws": 5,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 5,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -49.85940170288086,
+            "style": "learned-follow"
+          },
+          "delta": 0.0,
+          "added_laws": 2,
+          "distinct_laws": 5,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 5,
+            "steps": 5,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": -49.85940170288086,
+            "style": "learned-follow"
+          },
+          "delta": 0.0,
+          "added_laws": 3,
+          "distinct_laws": 6,
+          "different_program": false
+        }
+      },
+      "ordinary-08": {
+        "v2": {
+          "best": {
+            "index": 4,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 41.521324157714844,
+            "style": "guard"
+          },
+          "delta": -3.0517578125e-05,
+          "added_laws": 10,
+          "distinct_laws": 15,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 4,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 41.52135467529297,
+            "style": "guard"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 5,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 4,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 41.52135467529297,
+            "style": "guard"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 5,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 4,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 41.52135467529297,
+            "style": "guard"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 5,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 4,
+            "steps": 4,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 41.52135467529297,
+            "style": "guard"
+          },
+          "delta": 0.0,
+          "added_laws": 2,
+          "distinct_laws": 7,
+          "different_program": false
+        }
+      },
+      "ordinary-09": {
+        "v2": {
+          "best": {
+            "index": 4,
+            "steps": 2,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 57.54436492919922,
+            "style": "ref"
+          },
+          "delta": 3.814697265625e-06,
+          "added_laws": 4,
+          "distinct_laws": 7,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 4,
+            "steps": 2,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 57.54436111450195,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 3,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 4,
+            "steps": 2,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 57.54436111450195,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 3,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 4,
+            "steps": 2,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 57.54436111450195,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 3,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 4,
+            "steps": 2,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 57.54436111450195,
+            "style": "ref"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 3,
+          "different_program": false
+        }
+      },
+      "ordinary-10": {
+        "v2": {
+          "best": {
+            "index": 4,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 90.6265640258789,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 15,
+          "distinct_laws": 20,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 4,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 90.6265640258789,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 5,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 4,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 90.6265640258789,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 5,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 4,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 90.6265640258789,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 1,
+          "distinct_laws": 6,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 4,
+            "steps": 3,
+            "choices": 0,
+            "chances": 0,
+            "gaps": {},
+            "coverage": 1,
+            "leaves": 1,
+            "value": 90.6265640258789,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 3,
+          "distinct_laws": 8,
+          "different_program": false
+        }
+      },
+      "ordinary-11": {
+        "v2": {
+          "best": {
+            "index": 3,
+            "steps": 8,
+            "choices": 1,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 1.0,
+            "leaves": 3,
+            "value": -45.22108263906591,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 3,
+          "distinct_laws": 6,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 3,
+            "steps": 8,
+            "choices": 1,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 1.0,
+            "leaves": 3,
+            "value": -45.22108263906591,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 3,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 3,
+            "steps": 8,
+            "choices": 1,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 1.0,
+            "leaves": 3,
+            "value": -45.22108263906591,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 3,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 3,
+            "steps": 8,
+            "choices": 1,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 1.0,
+            "leaves": 3,
+            "value": -45.22108263906591,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 1,
+          "distinct_laws": 4,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 3,
+            "steps": 8,
+            "choices": 1,
+            "chances": 1,
+            "gaps": {},
+            "coverage": 1.0,
+            "leaves": 3,
+            "value": -45.22108263906591,
+            "style": "light"
+          },
+          "delta": 0.0,
+          "added_laws": 0,
+          "distinct_laws": 3,
+          "different_program": false
+        }
+      },
+      "ordinary-12": {
+        "v2": {
+          "best": {
+            "index": 6,
+            "steps": 32,
+            "choices": 1,
+            "chances": 4,
+            "gaps": {
+              "AutoPlayCard/unmodeled_rng": 0.8125,
+              "budget": 0.02083333084980646
+            },
+            "coverage": 0.16666666915019357,
+            "leaves": 8,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 12,
+          "distinct_laws": 12,
+          "different_program": false
+        },
+        "low": {
+          "best": {
+            "index": 6,
+            "steps": 32,
+            "choices": 1,
+            "chances": 4,
+            "gaps": {
+              "AutoPlayCard/unmodeled_rng": 0.8125,
+              "budget": 0.02083333084980646
+            },
+            "coverage": 0.16666666915019357,
+            "leaves": 8,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "target": {
+          "best": {
+            "index": 6,
+            "steps": 32,
+            "choices": 1,
+            "chances": 4,
+            "gaps": {
+              "AutoPlayCard/unmodeled_rng": 0.8125,
+              "budget": 0.02083333084980646
+            },
+            "coverage": 0.16666666915019357,
+            "leaves": 8,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "general": {
+          "best": {
+            "index": 6,
+            "steps": 32,
+            "choices": 1,
+            "chances": 4,
+            "gaps": {
+              "AutoPlayCard/unmodeled_rng": 0.8125,
+              "budget": 0.02083333084980646
+            },
+            "coverage": 0.16666666915019357,
+            "leaves": 8,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        },
+        "expand": {
+          "best": {
+            "index": 6,
+            "steps": 32,
+            "choices": 1,
+            "chances": 4,
+            "gaps": {
+              "AutoPlayCard/unmodeled_rng": 0.8125,
+              "budget": 0.02083333084980646
+            },
+            "coverage": 0.16666666915019357,
+            "leaves": 8,
+            "value": null,
+            "style": "ref"
+          },
+          "delta": null,
+          "added_laws": 0,
+          "distinct_laws": 0,
+          "different_program": false
+        }
+      }
+    },
+    "seconds": 39.14294449999579
+  },
+  "stats": {
+    "dev": {
+      "v2": {
+        "attempts": 32,
+        "complete": 32,
+        "wins": 13,
+        "severe": 26,
+        "loss": 50.625,
+        "failures": {},
+        "cost": 1.4720062312499067,
+        "seconds": 47.104199399997015,
+        "throughput": 40.76069701760225,
+        "branch_wins": 0,
+        "eligible_C": 148,
+        "queries": 180,
+        "closed": 115,
+        "candidates": 5520,
+        "complete_options": 3798,
+        "reference_steps": 1344,
+        "option_steps": 39279,
+        "interventions": 62,
+        "realized": 0,
+        "changed_first": 0,
+        "model_work": {
+          "g2_rows": 1090,
+          "v2_rows": 5124,
+          "v2_batches": 640,
+          "v2_cache_hits": 2706,
+          "v2_inferred": 2418
+        },
+        "branch_work": {},
+        "rule_steps": 40623
+      },
+      "low": {
+        "attempts": 32,
+        "complete": 32,
+        "wins": 14,
+        "severe": 27,
+        "loss": 50.75,
+        "failures": {},
+        "cost": 1.0403855687500254,
+        "seconds": 33.29233820000081,
+        "throughput": 57.670926820031916,
+        "branch_wins": 0,
+        "eligible_C": 149,
+        "queries": 181,
+        "closed": 116,
+        "candidates": 1024,
+        "complete_options": 963,
+        "reference_steps": 1317,
+        "option_steps": 4670,
+        "interventions": 47,
+        "realized": 0,
+        "changed_first": 0,
+        "model_work": {
+          "g2_rows": 1074,
+          "v2_rows": 1116,
+          "v2_batches": 376,
+          "v2_cache_hits": 563,
+          "v2_inferred": 553
+        },
+        "branch_work": {
+          "policy_menus": 500,
+          "legal_first_on_expansion": 884,
+          "expanded_first": 454,
+          "expansions": 116,
+          "learned_follow": 374,
+          "skipped_open_reference": 65,
+          "learned_choice": 10
+        },
+        "rule_steps": 5987
+      },
+      "expand": {
+        "attempts": 32,
+        "complete": 32,
+        "wins": 14,
+        "severe": 27,
+        "loss": 50.6875,
+        "failures": {},
+        "cost": 1.0724908500005768,
+        "seconds": 34.319707200018456,
+        "throughput": 55.94453323305064,
+        "branch_wins": 0,
+        "eligible_C": 148,
+        "queries": 180,
+        "closed": 116,
+        "candidates": 1916,
+        "complete_options": 1821,
+        "reference_steps": 1340,
+        "option_steps": 8116,
+        "interventions": 54,
+        "realized": 0,
+        "changed_first": 0,
+        "model_work": {
+          "g2_rows": 1081,
+          "v2_rows": 2007,
+          "v2_batches": 574,
+          "v2_cache_hits": 1125,
+          "v2_inferred": 882
+        },
+        "branch_work": {
+          "policy_menus": 501,
+          "legal_first_on_expansion": 885,
+          "expanded_first": 450,
+          "expansions": 116,
+          "learned_follow": 376,
+          "skipped_open_reference": 64,
+          "learned_choice": 9
+        },
+        "rule_steps": 9456
+      },
+      "target": {
+        "attempts": 32,
+        "complete": 32,
+        "wins": 14,
+        "severe": 26,
+        "loss": 50.28125,
+        "failures": {},
+        "cost": 1.077243424999324,
+        "seconds": 34.471789599978365,
+        "throughput": 55.69771753309857,
+        "branch_wins": 3,
+        "eligible_C": 148,
+        "queries": 180,
+        "closed": 115,
+        "candidates": 1081,
+        "complete_options": 1020,
+        "reference_steps": 1316,
+        "option_steps": 5090,
+        "interventions": 48,
+        "realized": 3,
+        "changed_first": 0,
+        "model_work": {
+          "g2_rows": 1300,
+          "v2_rows": 1234,
+          "v2_batches": 425,
+          "v2_cache_hits": 605,
+          "v2_inferred": 629
+        },
+        "branch_work": {
+          "policy_menus": 499,
+          "legal_first_on_expansion": 876,
+          "expanded_first": 449,
+          "expansions": 115,
+          "learned_follow": 374,
+          "skipped_open_reference": 65,
+          "learned_choice": 10,
+          "deviation_graphs": 70,
+          "deviation_steps": 446,
+          "duplicate_closed_graphs": 2,
+          "duplicate_steps": 7
+        },
+        "rule_steps": 6413
+      },
+      "general": {
+        "attempts": 32,
+        "complete": 32,
+        "wins": 14,
+        "severe": 26,
+        "loss": 50.03125,
+        "failures": {},
+        "cost": 1.2976953625002352,
+        "seconds": 41.52625160000753,
+        "throughput": 46.2358129140568,
+        "branch_wins": 8,
+        "eligible_C": 148,
+        "queries": 180,
+        "closed": 116,
+        "candidates": 1206,
+        "complete_options": 1134,
+        "reference_steps": 1321,
+        "option_steps": 5904,
+        "interventions": 53,
+        "realized": 8,
+        "changed_first": 1,
+        "model_work": {
+          "g2_rows": 1792,
+          "v2_rows": 1446,
+          "v2_batches": 522,
+          "v2_cache_hits": 737,
+          "v2_inferred": 709
+        },
+        "branch_work": {
+          "policy_menus": 508,
+          "legal_first_on_expansion": 885,
+          "expanded_first": 452,
+          "expansions": 116,
+          "learned_follow": 381,
+          "skipped_open_reference": 64,
+          "deviation_graphs": 222,
+          "deviation_steps": 1369,
+          "learned_choice": 11,
+          "duplicate_closed_graphs": 36,
+          "duplicate_steps": 160
+        },
+        "rule_steps": 7385
+      }
+    },
+    "confirm": {
+      "v2": {
+        "attempts": 384,
+        "complete": 356,
+        "wins": 169,
+        "severe": 263,
+        "loss": 45.81741573033708,
+        "failures": {
+          "policy/observation_outside_evaluated_program": 13,
+          "conditional_policy/realized_boundary_outside_law": 4,
+          "AddCard/random_insert_known_positions @ Play": 3,
+          "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 7,
+          "Index was outside the bounds of the array. @ ThrowIndexOutOfRangeException": 1
+        },
+        "cost": 1.1464968749999873,
+        "seconds": 440.25479999999516,
+        "throughput": 48.51735858416588,
+        "branch_wins": 0,
+        "eligible_C": 1698,
+        "queries": 2138,
+        "closed": 1294,
+        "candidates": 60600,
+        "complete_options": 40587,
+        "reference_steps": 18987,
+        "option_steps": 464408,
+        "interventions": 696,
+        "realized": 0,
+        "changed_first": 0,
+        "model_work": {
+          "g2_rows": 14127,
+          "v2_rows": 57157,
+          "v2_batches": 8008,
+          "v2_cache_hits": 30057,
+          "v2_inferred": 27100
+        },
+        "branch_work": {},
+        "rule_steps": 483395
+      },
+      "low": {
+        "attempts": 384,
+        "complete": 358,
+        "wins": 173,
+        "severe": 265,
+        "loss": 45.79329608938548,
+        "failures": {
+          "policy/observation_outside_evaluated_program": 12,
+          "conditional_policy/realized_boundary_outside_law": 3,
+          "AddCard/random_insert_known_positions @ Play": 3,
+          "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 7,
+          "Index was outside the bounds of the array. @ ThrowIndexOutOfRangeException": 1
+        },
+        "cost": 0.7641194658854147,
+        "seconds": 293.42187489999924,
+        "throughput": 73.20517601941087,
+        "branch_wins": 0,
+        "eligible_C": 1689,
+        "queries": 2124,
+        "closed": 1293,
+        "candidates": 11181,
+        "complete_options": 10364,
+        "reference_steps": 18883,
+        "option_steps": 50340,
+        "interventions": 614,
+        "realized": 0,
+        "changed_first": 0,
+        "model_work": {
+          "g2_rows": 13958,
+          "v2_rows": 13617,
+          "v2_batches": 4404,
+          "v2_cache_hits": 6578,
+          "v2_inferred": 7039
+        },
+        "branch_work": {
+          "skipped_open_reference": 831,
+          "policy_menus": 5423,
+          "legal_first_on_expansion": 9120,
+          "expanded_first": 4944,
+          "expansions": 1293,
+          "learned_follow": 4004,
+          "learned_choice": 126
+        },
+        "rule_steps": 69223
+      },
+      "general": {
+        "attempts": 384,
+        "complete": 357,
+        "wins": 170,
+        "severe": 262,
+        "loss": 45.71148459383753,
+        "failures": {
+          "policy/observation_outside_evaluated_program": 13,
+          "conditional_policy/realized_boundary_outside_law": 3,
+          "AddCard/random_insert_known_positions @ Play": 3,
+          "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 7,
+          "Index was outside the bounds of the array. @ ThrowIndexOutOfRangeException": 1
+        },
+        "cost": 0.9981989101562855,
+        "seconds": 383.30838150001364,
+        "throughput": 55.88189831951075,
+        "branch_wins": 82,
+        "eligible_C": 1673,
+        "queries": 2111,
+        "closed": 1280,
+        "candidates": 12855,
+        "complete_options": 11971,
+        "reference_steps": 18768,
+        "option_steps": 60227,
+        "interventions": 663,
+        "realized": 81,
+        "changed_first": 24,
+        "model_work": {
+          "g2_rows": 20205,
+          "v2_rows": 16639,
+          "v2_batches": 5849,
+          "v2_cache_hits": 8641,
+          "v2_inferred": 7998
+        },
+        "branch_work": {
+          "skipped_open_reference": 831,
+          "policy_menus": 5327,
+          "legal_first_on_expansion": 9021,
+          "expanded_first": 4888,
+          "expansions": 1280,
+          "learned_follow": 3924,
+          "deviation_graphs": 2174,
+          "deviation_steps": 12996,
+          "duplicate_closed_graphs": 375,
+          "duplicate_steps": 1697,
+          "learned_choice": 123
+        },
+        "rule_steps": 80692
+      }
+    }
+  },
+  "comparisons": {
+    "dev": {
+      "v2-low": {
+        "common": 32,
+        "families": 32,
+        "utility": {
+          "mean": -2.5625,
+          "ci": [
+            -9.9375,
+            1.6875
+          ]
+        },
+        "win_delta": {
+          "mean": -0.03125,
+          "ci": [
+            -0.09375,
+            0.0
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 1.5648796029562533,
+          "ci": [
+            1.3694339632445895,
+            1.7846185289464893
+          ]
+        },
+        "gained": 0,
+        "lost": 1,
+        "both_win": 13,
+        "same_win_loss": -2
+      },
+      "v2-expand": {
+        "common": 32,
+        "families": 32,
+        "utility": {
+          "mean": -2.625,
+          "ci": [
+            -9.9375,
+            1.5625
+          ]
+        },
+        "win_delta": {
+          "mean": -0.03125,
+          "ci": [
+            -0.09375,
+            0.0
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 1.4386445200334375,
+          "ci": [
+            1.2405313557416213,
+            1.6670745012445818
+          ]
+        },
+        "gained": 0,
+        "lost": 1,
+        "both_win": 13,
+        "same_win_loss": -1.7692307692307692
+      },
+      "v2-target": {
+        "common": 32,
+        "families": 32,
+        "utility": {
+          "mean": -3.03125,
+          "ci": [
+            -10.5,
+            1.40625
+          ]
+        },
+        "win_delta": {
+          "mean": -0.03125,
+          "ci": [
+            -0.09375,
+            0.0
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 1.44948175194154,
+          "ci": [
+            1.2620298922252824,
+            1.6721405419018098
+          ]
+        },
+        "gained": 0,
+        "lost": 1,
+        "both_win": 13,
+        "same_win_loss": -0.8461538461538461
+      },
+      "v2-general": {
+        "common": 32,
+        "families": 32,
+        "utility": {
+          "mean": -3.28125,
+          "ci": [
+            -10.59375,
+            1.09375
+          ]
+        },
+        "win_delta": {
+          "mean": -0.03125,
+          "ci": [
+            -0.09375,
+            0.0
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 1.136991506506549,
+          "ci": [
+            0.9722714316975904,
+            1.3246091564593723
+          ]
+        },
+        "gained": 0,
+        "lost": 1,
+        "both_win": 13,
+        "same_win_loss": -0.23076923076923078
+      },
+      "low-v2": {
+        "common": 32,
+        "families": 32,
+        "utility": {
+          "mean": 2.5625,
+          "ci": [
+            -1.6875,
+            9.9375
+          ]
+        },
+        "win_delta": {
+          "mean": 0.03125,
+          "ci": [
+            0.0,
+            0.09375
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.6390267967649875,
+          "ci": [
+            0.5603438403184038,
+            0.730228713096017
+          ]
+        },
+        "gained": 1,
+        "lost": 0,
+        "both_win": 13,
+        "same_win_loss": 2
+      },
+      "low-expand": {
+        "common": 32,
+        "families": 32,
+        "utility": {
+          "mean": -0.0625,
+          "ci": [
+            -0.28125,
+            0.09375
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.9193323993204704,
+          "ci": [
+            0.8716059770282593,
+            0.9682271470629238
+          ]
+        },
+        "gained": 0,
+        "lost": 0,
+        "both_win": 14,
+        "same_win_loss": 0.14285714285714285
+      },
+      "low-target": {
+        "common": 32,
+        "families": 32,
+        "utility": {
+          "mean": -0.46875,
+          "ci": [
+            -1.40625,
+            0.0
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.9262576809125045,
+          "ci": [
+            0.8368637082232581,
+            1.0055293126188263
+          ]
+        },
+        "gained": 0,
+        "lost": 0,
+        "both_win": 14,
+        "same_win_loss": 1.0714285714285714
+      },
+      "low-general": {
+        "common": 32,
+        "families": 32,
+        "utility": {
+          "mean": -0.71875,
+          "ci": [
+            -1.8125,
+            0.0
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.7265680403518774,
+          "ci": [
+            0.6421699405825811,
+            0.816492265518102
+          ]
+        },
+        "gained": 0,
+        "lost": 0,
+        "both_win": 14,
+        "same_win_loss": 1.6428571428571428
+      },
+      "expand-v2": {
+        "common": 32,
+        "families": 32,
+        "utility": {
+          "mean": 2.625,
+          "ci": [
+            -1.5625,
+            9.9375
+          ]
+        },
+        "win_delta": {
+          "mean": 0.03125,
+          "ci": [
+            0.0,
+            0.09375
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.695098744738386,
+          "ci": [
+            0.5998532186995703,
+            0.8061061861795684
+          ]
+        },
+        "gained": 1,
+        "lost": 0,
+        "both_win": 13,
+        "same_win_loss": 1.7692307692307692
+      },
+      "expand-low": {
+        "common": 32,
+        "families": 32,
+        "utility": {
+          "mean": 0.0625,
+          "ci": [
+            -0.09375,
+            0.28125
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 1.0877458476815953,
+          "ci": [
+            1.0328154951212514,
+            1.1473074145437512
+          ]
+        },
+        "gained": 0,
+        "lost": 0,
+        "both_win": 14,
+        "same_win_loss": -0.14285714285714285
+      },
+      "expand-target": {
+        "common": 32,
+        "families": 32,
+        "utility": {
+          "mean": -0.40625,
+          "ci": [
+            -1.4375,
+            0.21875
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 1.007532946295761,
+          "ci": [
+            0.8997745596058219,
+            1.1070166495538396
+          ]
+        },
+        "gained": 0,
+        "lost": 0,
+        "both_win": 14,
+        "same_win_loss": 0.9285714285714286
+      },
+      "expand-general": {
+        "common": 32,
+        "families": 32,
+        "utility": {
+          "mean": -0.65625,
+          "ci": [
+            -1.75,
+            0.0
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.7903213689509085,
+          "ci": [
+            0.7035979994725207,
+            0.8743187524629051
+          ]
+        },
+        "gained": 0,
+        "lost": 0,
+        "both_win": 14,
+        "same_win_loss": 1.5
+      },
+      "target-v2": {
+        "common": 32,
+        "families": 32,
+        "utility": {
+          "mean": 3.03125,
+          "ci": [
+            -1.40625,
+            10.5
+          ]
+        },
+        "win_delta": {
+          "mean": 0.03125,
+          "ci": [
+            0.0,
+            0.09375
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.6899017518920318,
+          "ci": [
+            0.5980358560767384,
+            0.7923742585771815
+          ]
+        },
+        "gained": 1,
+        "lost": 0,
+        "both_win": 13,
+        "same_win_loss": 0.8461538461538461
+      },
+      "target-low": {
+        "common": 32,
+        "families": 32,
+        "utility": {
+          "mean": 0.46875,
+          "ci": [
+            0.0,
+            1.40625
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 1.0796131795796264,
+          "ci": [
+            0.9945010925924258,
+            1.1949377082683503
+          ]
+        },
+        "gained": 0,
+        "lost": 0,
+        "both_win": 14,
+        "same_win_loss": -1.0714285714285714
+      },
+      "target-expand": {
+        "common": 32,
+        "families": 32,
+        "utility": {
+          "mean": 0.40625,
+          "ci": [
+            -0.21875,
+            1.4375
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.9925233747209398,
+          "ci": [
+            0.9033287804774688,
+            1.1113895024352918
+          ]
+        },
+        "gained": 0,
+        "lost": 0,
+        "both_win": 14,
+        "same_win_loss": -0.9285714285714286
+      },
+      "target-general": {
+        "common": 32,
+        "families": 32,
+        "utility": {
+          "mean": -0.25,
+          "ci": [
+            -0.65625,
+            0.0
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.7844124322252287,
+          "ci": [
+            0.7249629137217659,
+            0.8461415217228546
+          ]
+        },
+        "gained": 0,
+        "lost": 0,
+        "both_win": 14,
+        "same_win_loss": 0.5714285714285714
+      },
+      "general-v2": {
+        "common": 32,
+        "families": 32,
+        "utility": {
+          "mean": 3.28125,
+          "ci": [
+            -1.09375,
+            10.59375
+          ]
+        },
+        "win_delta": {
+          "mean": 0.03125,
+          "ci": [
+            0.0,
+            0.09375
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.8795140458634905,
+          "ci": [
+            0.7549396704421022,
+            1.0285193697384938
+          ]
+        },
+        "gained": 1,
+        "lost": 0,
+        "both_win": 13,
+        "same_win_loss": 0.23076923076923078
+      },
+      "general-low": {
+        "common": 32,
+        "families": 32,
+        "utility": {
+          "mean": 0.71875,
+          "ci": [
+            0.0,
+            1.8125
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 1.376333590885307,
+          "ci": [
+            1.2247513445407696,
+            1.5572201960496719
+          ]
+        },
+        "gained": 0,
+        "lost": 0,
+        "both_win": 14,
+        "same_win_loss": -1.6428571428571428
+      },
+      "general-expand": {
+        "common": 32,
+        "families": 32,
+        "utility": {
+          "mean": 0.65625,
+          "ci": [
+            0.0,
+            1.75
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 1.2653080623739479,
+          "ci": [
+            1.1437476288673951,
+            1.421266122366246
+          ]
+        },
+        "gained": 0,
+        "lost": 0,
+        "both_win": 14,
+        "same_win_loss": -1.5
+      },
+      "general-target": {
+        "common": 32,
+        "families": 32,
+        "utility": {
+          "mean": 0.25,
+          "ci": [
+            0.0,
+            0.65625
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 1.274839560055404,
+          "ci": [
+            1.1818353955315608,
+            1.3793809049862098
+          ]
+        },
+        "gained": 0,
+        "lost": 0,
+        "both_win": 14,
+        "same_win_loss": -0.5714285714285714
+      },
+      "common_all": {
+        "v2": {
+          "common": 32,
+          "families": 32,
+          "utility": {
+            "mean": -2.5625,
+            "ci": [
+              -9.9375,
+              1.6875
+            ]
+          },
+          "win_delta": {
+            "mean": -0.03125,
+            "ci": [
+              -0.09375,
+              0.0
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 1.5648796029562533,
+            "ci": [
+              1.3694339632445895,
+              1.7846185289464893
+            ]
+          },
+          "gained": 0,
+          "lost": 1,
+          "both_win": 13,
+          "same_win_loss": -2
+        },
+        "low": {
+          "common": 32,
+          "families": 32,
+          "utility": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "win_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ]
+          },
+          "gained": 0,
+          "lost": 0,
+          "both_win": 14,
+          "same_win_loss": 0
+        },
+        "expand": {
+          "common": 32,
+          "families": 32,
+          "utility": {
+            "mean": 0.0625,
+            "ci": [
+              -0.09375,
+              0.28125
+            ]
+          },
+          "win_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 1.0877458476815953,
+            "ci": [
+              1.0328154951212514,
+              1.1473074145437512
+            ]
+          },
+          "gained": 0,
+          "lost": 0,
+          "both_win": 14,
+          "same_win_loss": -0.14285714285714285
+        },
+        "target": {
+          "common": 32,
+          "families": 32,
+          "utility": {
+            "mean": 0.46875,
+            "ci": [
+              0.0,
+              1.40625
+            ]
+          },
+          "win_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 1.0796131795796264,
+            "ci": [
+              0.9945010925924258,
+              1.1949377082683503
+            ]
+          },
+          "gained": 0,
+          "lost": 0,
+          "both_win": 14,
+          "same_win_loss": -1.0714285714285714
+        },
+        "general": {
+          "common": 32,
+          "families": 32,
+          "utility": {
+            "mean": 0.71875,
+            "ci": [
+              0.0,
+              1.8125
+            ]
+          },
+          "win_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 1.376333590885307,
+            "ci": [
+              1.2247513445407696,
+              1.5572201960496719
+            ]
+          },
+          "gained": 0,
+          "lost": 0,
+          "both_win": 14,
+          "same_win_loss": -1.6428571428571428
+        }
+      }
+    },
+    "confirm": {
+      "v2-low": {
+        "common": 356,
+        "families": 184,
+        "utility": {
+          "mean": -0.6741573033707865,
+          "ci": [
+            -2.4648019620613857,
+            1.033953625235404
+          ]
+        },
+        "win_delta": {
+          "mean": -0.010416666666666666,
+          "ci": [
+            -0.026041666666666668,
+            0.005208333333333333
+          ]
+        },
+        "completion_delta": {
+          "mean": -0.005208333333333333,
+          "ci": [
+            -0.013020833333333334,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 1.5849209027104785,
+          "ci": [
+            1.4999233152253755,
+            1.6733665162510518
+          ]
+        },
+        "gained": 4,
+        "lost": 7,
+        "both_win": 165,
+        "same_win_loss": -0.4484848484848485
+      },
+      "v2-general": {
+        "common": 356,
+        "families": 184,
+        "utility": {
+          "mean": 0.13202247191011235,
+          "ci": [
+            -1.9507015920029618,
+            2.328695627176555
+          ]
+        },
+        "win_delta": {
+          "mean": -0.0026041666666666665,
+          "ci": [
+            -0.020833333333333332,
+            0.015625
+          ]
+        },
+        "completion_delta": {
+          "mean": -0.0026041666666666665,
+          "ci": [
+            -0.0078125,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 1.1783653030824068,
+          "ci": [
+            1.1106790311312669,
+            1.2488822044708607
+          ]
+        },
+        "gained": 5,
+        "lost": 5,
+        "both_win": 164,
+        "same_win_loss": -0.09146341463414634
+      },
+      "low-v2": {
+        "common": 356,
+        "families": 184,
+        "utility": {
+          "mean": 0.6741573033707865,
+          "ci": [
+            -1.0339536252354047,
+            2.4648019620613852
+          ]
+        },
+        "win_delta": {
+          "mean": 0.010416666666666666,
+          "ci": [
+            -0.005208333333333333,
+            0.026041666666666668
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.005208333333333333,
+          "ci": [
+            0.0,
+            0.013020833333333334
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.6309463130240971,
+          "ci": [
+            0.5975977121944113,
+            0.6667007505348238
+          ]
+        },
+        "gained": 7,
+        "lost": 4,
+        "both_win": 165,
+        "same_win_loss": 0.4484848484848485
+      },
+      "low-general": {
+        "common": 357,
+        "families": 184,
+        "utility": {
+          "mean": 0.803921568627451,
+          "ci": [
+            -0.4735412696085618,
+            2.2507824726134573
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0078125,
+          "ci": [
+            -0.0026041666666666665,
+            0.020833333333333332
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0026041666666666665,
+          "ci": [
+            0.0,
+            0.0078125
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.7434852433753673,
+          "ci": [
+            0.7049773878239163,
+            0.7832857429745324
+          ]
+        },
+        "gained": 4,
+        "lost": 1,
+        "both_win": 169,
+        "same_win_loss": 0.1834319526627219
+      },
+      "general-v2": {
+        "common": 356,
+        "families": 184,
+        "utility": {
+          "mean": -0.13202247191011235,
+          "ci": [
+            -2.3286956271765558,
+            1.9507015920029616
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0026041666666666665,
+          "ci": [
+            -0.015625,
+            0.020833333333333332
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0026041666666666665,
+          "ci": [
+            0.0,
+            0.0078125
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.8486332696526001,
+          "ci": [
+            0.8007160294393757,
+            0.9003501221896489
+          ]
+        },
+        "gained": 5,
+        "lost": 5,
+        "both_win": 164,
+        "same_win_loss": 0.09146341463414634
+      },
+      "general-low": {
+        "common": 357,
+        "families": 184,
+        "utility": {
+          "mean": -0.803921568627451,
+          "ci": [
+            -2.250782472613458,
+            0.47354126960856174
+          ]
+        },
+        "win_delta": {
+          "mean": -0.0078125,
+          "ci": [
+            -0.020833333333333332,
+            0.0026041666666666665
+          ]
+        },
+        "completion_delta": {
+          "mean": -0.0026041666666666665,
+          "ci": [
+            -0.0078125,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 1.3450166078079437,
+          "ci": [
+            1.2766733073264178,
+            1.418485212827045
+          ]
+        },
+        "gained": 1,
+        "lost": 4,
+        "both_win": 169,
+        "same_win_loss": -0.1834319526627219
+      },
+      "common_all": {
+        "v2": {
+          "common": 356,
+          "families": 184,
+          "utility": {
+            "mean": -0.6741573033707865,
+            "ci": [
+              -2.46653718575419,
+              1.1083484636871508
+            ]
+          },
+          "win_delta": {
+            "mean": -0.008426966292134831,
+            "ci": [
+              -0.025280898876404494,
+              0.008379888268156424
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 1.5793444944319017,
+            "ci": [
+              1.4916006399582555,
+              1.668262402449601
+            ]
+          },
+          "gained": 4,
+          "lost": 7,
+          "both_win": 165,
+          "same_win_loss": -0.4484848484848485
+        },
+        "low": {
+          "common": 356,
+          "families": 184,
+          "utility": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "win_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ]
+          },
+          "gained": 0,
+          "lost": 0,
+          "both_win": 172,
+          "same_win_loss": 0
+        },
+        "general": {
+          "common": 356,
+          "families": 184,
+          "utility": {
+            "mean": -0.8061797752808989,
+            "ci": [
+              -2.2535378471949015,
+              0.4450781157533435
+            ]
+          },
+          "win_delta": {
+            "mean": -0.008426966292134831,
+            "ci": [
+              -0.0223463687150838,
+              0.0028089887640449437
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 1.3433288651448234,
+            "ci": [
+              1.2722805021793235,
+              1.4191348935842023
+            ]
+          },
+          "gained": 1,
+          "lost": 4,
+          "both_win": 168,
+          "same_win_loss": -0.18452380952380953
+        }
+      }
+    }
+  },
+  "gate": {
+    "cost_ratio": 0.8706512262899073,
+    "utility_lower": -2.3286956271765558,
+    "wins_delta": 1,
+    "complete_delta": 1,
+    "passed": false
+  }
+}
