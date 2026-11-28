@@ -1,0 +1,383 @@
+{
+  "entries": {
+    "v2": {
+      "stats": {
+        "attempts": 64,
+        "wins": 25,
+        "complete": 64,
+        "utility": -2.28125,
+        "loss": 47.625,
+        "severe": 50,
+        "closed": 208,
+        "queries": 350,
+        "interventions": 108,
+        "failures": {},
+        "seconds": 34.828116599994246
+      },
+      "paired": {
+        "common": 64,
+        "families": 64,
+        "delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "both_win": 25,
+        "loss_difference": 0,
+        "gained": 0,
+        "lost": 0,
+        "all_win_delta": 0,
+        "all_completion_delta": 0
+      },
+      "nll": 1.4255679845809937,
+      "pair_rmse": 20.257211685180664,
+      "ranks": [
+        8.0,
+        8.0,
+        7.5,
+        4.5,
+        1.5
+      ],
+      "score": 6.675
+    },
+    "conservative-4096-7213": {
+      "stats": {
+        "attempts": 64,
+        "wins": 25,
+        "complete": 64,
+        "utility": -2.28125,
+        "loss": 47.625,
+        "severe": 50,
+        "closed": 206,
+        "queries": 350,
+        "interventions": 105,
+        "failures": {},
+        "seconds": 49.01156859999173
+      },
+      "paired": {
+        "common": 64,
+        "families": 64,
+        "delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "both_win": 25,
+        "loss_difference": 0,
+        "gained": 0,
+        "lost": 0,
+        "all_win_delta": 0,
+        "all_completion_delta": 0
+      },
+      "nll": 1.386906623840332,
+      "pair_rmse": 20.115493774414062,
+      "ranks": [
+        7.0,
+        7.0,
+        7.5,
+        4.5,
+        1.5
+      ],
+      "score": 6.2250000000000005
+    },
+    "tuned-4096-5719": {
+      "stats": {
+        "attempts": 64,
+        "wins": 25,
+        "complete": 63,
+        "utility": -0.6984126984126984,
+        "loss": 46.285714285714285,
+        "severe": 48,
+        "closed": 214,
+        "queries": 359,
+        "interventions": 109,
+        "failures": {
+          "policy/observation_outside_evaluated_program": 1
+        },
+        "seconds": 49.33071479998762
+      },
+      "paired": {
+        "common": 63,
+        "families": 63,
+        "delta": 0.8253968253968254,
+        "ci": [
+          -3.8253968253968256,
+          5.698412698412699
+        ],
+        "both_win": 24,
+        "loss_difference": -1.5833333333333333,
+        "gained": 1,
+        "lost": 1,
+        "all_win_delta": 0,
+        "all_completion_delta": -0.015625
+      },
+      "nll": 1.2981749773025513,
+      "pair_rmse": 19.206892013549805,
+      "ranks": [
+        3.0,
+        3.0,
+        3.0,
+        4.5,
+        5.0
+      ],
+      "score": 3.425
+    },
+    "long-4096-5719": {
+      "stats": {
+        "attempts": 64,
+        "wins": 26,
+        "complete": 63,
+        "utility": 0.9841269841269841,
+        "loss": 46.285714285714285,
+        "severe": 48,
+        "closed": 220,
+        "queries": 361,
+        "interventions": 108,
+        "failures": {
+          "policy/observation_outside_evaluated_program": 1
+        },
+        "seconds": 41.601656299986644
+      },
+      "paired": {
+        "common": 63,
+        "families": 63,
+        "delta": 2.507936507936508,
+        "ci": [
+          -3.142857142857143,
+          8.984274193548382
+        ],
+        "both_win": 24,
+        "loss_difference": -0.9166666666666666,
+        "gained": 2,
+        "lost": 1,
+        "all_win_delta": 0.015625,
+        "all_completion_delta": -0.015625
+      },
+      "nll": 1.276552677154541,
+      "pair_rmse": 19.632404327392578,
+      "ranks": [
+        2.0,
+        5.0,
+        1.0,
+        1.0,
+        5.0
+      ],
+      "score": 2.45
+    },
+    "matched-4096-5719": {
+      "stats": {
+        "attempts": 64,
+        "wins": 23,
+        "complete": 60,
+        "utility": -2.283333333333333,
+        "loss": 46.31666666666667,
+        "severe": 46,
+        "closed": 223,
+        "queries": 363,
+        "interventions": 113,
+        "failures": {
+          "conditional_policy/realized_boundary_outside_law": 1,
+          "policy/observation_outside_evaluated_program": 3
+        },
+        "seconds": 41.70990270000766
+      },
+      "paired": {
+        "common": 60,
+        "families": 60,
+        "delta": 0.2833333333333333,
+        "ci": [
+          -4.484274193548386,
+          5.216666666666667
+        ],
+        "both_win": 22,
+        "loss_difference": -0.2727272727272727,
+        "gained": 1,
+        "lost": 1,
+        "all_win_delta": -0.03125,
+        "all_completion_delta": -0.0625
+      },
+      "nll": 1.2753040790557861,
+      "pair_rmse": 18.324281692504883,
+      "ranks": [
+        1.0,
+        1.0,
+        5.0,
+        8.0,
+        7.5
+      ],
+      "score": 3.9
+    },
+    "scratch-4096-5719": {
+      "stats": {
+        "attempts": 64,
+        "wins": 24,
+        "complete": 60,
+        "utility": -0.9166666666666666,
+        "loss": 46.38333333333333,
+        "severe": 46,
+        "closed": 216,
+        "queries": 367,
+        "interventions": 108,
+        "failures": {
+          "policy/observation_outside_evaluated_program": 4
+        },
+        "seconds": 55.66736560000572
+      },
+      "paired": {
+        "common": 60,
+        "families": 60,
+        "delta": 0.15,
+        "ci": [
+          -4.603259172521467,
+          5.064598141060688
+        ],
+        "both_win": 23,
+        "loss_difference": 0.08695652173913043,
+        "gained": 1,
+        "lost": 1,
+        "all_win_delta": -0.015625,
+        "all_completion_delta": -0.0625
+      },
+      "nll": 1.2639026641845703,
+      "pair_rmse": 17.724369049072266,
+      "ranks": [
+        0.0,
+        0.0,
+        6.0,
+        7.0,
+        7.5
+      ],
+      "score": 3.5999999999999996
+    },
+    "td-4096-5719": {
+      "stats": {
+        "attempts": 64,
+        "wins": 26,
+        "complete": 63,
+        "utility": 1.0158730158730158,
+        "loss": 45.93650793650794,
+        "severe": 47,
+        "closed": 215,
+        "queries": 356,
+        "interventions": 103,
+        "failures": {
+          "policy/observation_outside_evaluated_program": 1
+        },
+        "seconds": 46.55623289998039
+      },
+      "paired": {
+        "common": 63,
+        "families": 63,
+        "delta": 2.5396825396825395,
+        "ci": [
+          0.0,
+          6.6875
+        ],
+        "both_win": 25,
+        "loss_difference": -2.12,
+        "gained": 1,
+        "lost": 0,
+        "all_win_delta": 0.015625,
+        "all_completion_delta": -0.015625
+      },
+      "nll": 1.3108386993408203,
+      "pair_rmse": 19.417633056640625,
+      "ranks": [
+        4.0,
+        4.0,
+        0.0,
+        1.0,
+        5.0
+      ],
+      "score": 2.45
+    },
+    "pair-4096-5719": {
+      "stats": {
+        "attempts": 64,
+        "wins": 25,
+        "complete": 64,
+        "utility": -1.734375,
+        "loss": 46.765625,
+        "severe": 48,
+        "closed": 213,
+        "queries": 356,
+        "interventions": 106,
+        "failures": {},
+        "seconds": 46.11618730000919
+      },
+      "paired": {
+        "common": 64,
+        "families": 64,
+        "delta": 0.546875,
+        "ci": [
+          -4.921875,
+          5.5
+        ],
+        "both_win": 24,
+        "loss_difference": -2.25,
+        "gained": 1,
+        "lost": 1,
+        "all_win_delta": 0,
+        "all_completion_delta": 0
+      },
+      "nll": 1.3200404644012451,
+      "pair_rmse": 18.935333251953125,
+      "ranks": [
+        6.0,
+        2.0,
+        4.0,
+        4.5,
+        1.5
+      ],
+      "score": 3.9249999999999994
+    },
+    "active-4096-5719": {
+      "stats": {
+        "attempts": 64,
+        "wins": 26,
+        "complete": 64,
+        "utility": 0.09375,
+        "loss": 46.59375,
+        "severe": 48,
+        "closed": 215,
+        "queries": 357,
+        "interventions": 108,
+        "failures": {},
+        "seconds": 39.47760330000892
+      },
+      "paired": {
+        "common": 64,
+        "families": 64,
+        "delta": 2.375,
+        "ci": [
+          -0.078125,
+          6.34375
+        ],
+        "both_win": 25,
+        "loss_difference": -1.92,
+        "gained": 1,
+        "lost": 0,
+        "all_win_delta": 0.015625,
+        "all_completion_delta": 0
+      },
+      "nll": 1.31731116771698,
+      "pair_rmse": 19.797630310058594,
+      "ranks": [
+        5.0,
+        6.0,
+        2.0,
+        1.0,
+        1.5
+      ],
+      "score": 3.35
+    }
+  },
+  "primary": "long-4096-5719",
+  "development_winner": "long-4096-5719",
+  "confirm": [
+    "v2",
+    "long-4096-5719",
+    "scratch-4096-5719"
+  ],
+  "promotion": "Primary only: positive lower 95% family-bootstrap utility bound; all-attempt wins and completions at least V2."
+}

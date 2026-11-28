@@ -1,0 +1,58 @@
+{
+  "ingest": 71.6357299000083,
+  "optimizer_workers": {
+    "init-worker-0": 303.49778750000405,
+    "init-worker-1": 303.183234600001,
+    "long-worker-5719": 289.58428129999083,
+    "long-worker-7213": 219.99711199998274,
+    "worker-0": 375.09097039999324,
+    "worker-1": 377.2216887999966
+  },
+  "dev_battles": {
+    "v2": 34.828116599994246,
+    "conservative-4096-7213": 49.01156859999173,
+    "tuned-4096-5719": 49.33071479998762,
+    "long-4096-5719": 41.601656299986644,
+    "matched-4096-5719": 41.70990270000766,
+    "scratch-4096-5719": 55.66736560000572,
+    "td-4096-5719": 46.55623289998039,
+    "pair-4096-5719": 46.11618730000919,
+    "active-4096-5719": 39.47760330000892
+  },
+  "confirm_battles": {
+    "v2": 199.2711937999993,
+    "long-4096-5719": 200.09087739998358,
+    "scratch-4096-5719": 202.2913652000425
+  },
+  "cross": 7.697226400021464,
+  "menu_analysis": 20.085621300007915,
+  "calibration": 2.7577415999840014,
+  "measured": 2976.7041782999877,
+  "unmetered_allowance": 300,
+  "budget_charge": 3276.7041782999877,
+  "allowance_scope": "Estimate for publisher offline verification, cohort freeze, import diagnostics and failed starts, non-battle script startup, selection, result checks and seven 5E regressions. Writing and Git excluded.",
+  "verification": {
+    "2a": [
+      [
+        3164,
+        3400
+      ],
+      [
+        179,
+        192
+      ],
+      [
+        161,
+        192
+      ],
+      [
+        32,
+        32
+      ]
+    ],
+    "runtime_equal": true,
+    "weights": 34,
+    "battle_shards": 24,
+    "5e_regressions": 7
+  }
+}

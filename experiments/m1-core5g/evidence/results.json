@@ -1,0 +1,109 @@
+{
+  "v2": {
+    "stats": {
+      "attempts": 320,
+      "wins": 145,
+      "complete": 296,
+      "utility": 9.878378378378379,
+      "loss": 44.520270270270274,
+      "severe": 212,
+      "closed": 1150,
+      "queries": 1848,
+      "interventions": 655,
+      "failures": {
+        "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 4,
+        "conditional_policy/realized_boundary_outside_law": 6,
+        "policy/observation_outside_evaluated_program": 10,
+        "AddCard/random_insert_known_positions @ Play": 3,
+        "OUTRAGE/modified @ ResolveMovedCardInPlay": 1
+      },
+      "seconds": 199.2711937999993
+    },
+    "paired": {
+      "common": 296,
+      "families": 154,
+      "delta": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "both_win": 145,
+      "loss_difference": 0,
+      "gained": 0,
+      "lost": 0,
+      "all_win_delta": 0,
+      "all_completion_delta": 0
+    }
+  },
+  "long-4096-5719": {
+    "stats": {
+      "attempts": 320,
+      "wins": 149,
+      "complete": 296,
+      "utility": 11.14527027027027,
+      "loss": 44.09121621621622,
+      "severe": 211,
+      "closed": 1160,
+      "queries": 1856,
+      "interventions": 637,
+      "failures": {
+        "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 4,
+        "conditional_policy/realized_boundary_outside_law": 6,
+        "policy/observation_outside_evaluated_program": 10,
+        "AddCard/random_insert_known_positions @ Play": 4
+      },
+      "seconds": 200.09087739998358
+    },
+    "paired": {
+      "common": 292,
+      "families": 152,
+      "delta": 1.595890410958904,
+      "ci": [
+        -0.6597240120274914,
+        4.129749123056502
+      ],
+      "both_win": 140,
+      "loss_difference": -0.2642857142857143,
+      "gained": 8,
+      "lost": 3,
+      "all_win_delta": 0.0125,
+      "all_completion_delta": 0
+    }
+  },
+  "scratch-4096-5719": {
+    "stats": {
+      "attempts": 320,
+      "wins": 145,
+      "complete": 299,
+      "utility": 9.451505016722408,
+      "loss": 44.408026755852845,
+      "severe": 210,
+      "closed": 1162,
+      "queries": 1870,
+      "interventions": 649,
+      "failures": {
+        "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 4,
+        "conditional_policy/realized_boundary_outside_law": 4,
+        "policy/observation_outside_evaluated_program": 8,
+        "AddCard/random_insert_known_positions @ Play": 4,
+        "OUTRAGE/modified @ ResolveMovedCardInPlay": 1
+      },
+      "seconds": 202.2913652000425
+    },
+    "paired": {
+      "common": 295,
+      "families": 153,
+      "delta": 0.17627118644067796,
+      "ci": [
+        -2.2785371468706104,
+        2.6379367059891106
+      ],
+      "both_win": 138,
+      "loss_difference": -0.7028985507246377,
+      "gained": 7,
+      "lost": 7,
+      "all_win_delta": 0,
+      "all_completion_delta": 0.009375
+    }
+  }
+}
