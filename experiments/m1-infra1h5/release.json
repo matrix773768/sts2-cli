@@ -1,0 +1,39 @@
+{
+  "schema": "sts2.hotsearch.release.v1",
+  "name": "M1-INFRA-1H5",
+  "policy": "tactical32",
+  "native_audit": "not_run",
+  "editions": [
+    {
+      "path": "data",
+      "manifest": "967a38838965b6de168ab741a406f0744dec82c19a1c9eda7ed367454799ac3a",
+      "plan": "744208512e634cfe06254485ee44ab23659c6135723ccfe14f4dd177a9fa8e5d",
+      "public": "1ff787b0649623be628e054fdbda633195976ee6550200a01353c83bc4b44856",
+      "attempts": 641,
+      "eligible": 591
+    },
+    {
+      "path": "capacity",
+      "manifest": "d8ee9f103dca66391d495d6b9a54f046b2e0027c77cff8e55515c9106e190bd5",
+      "plan": "66da2f0833eb38dcce1ae6a45e82b15f4754125c2682d31a5dff24a8e5425f56",
+      "public": "8ff7046ba84b653afcd8fe2fdc1c7ae52c981f9a8b2a5ad94ca8a11f1d5342a5",
+      "attempts": 608,
+      "eligible": 566
+    }
+  ],
+  "artifacts": {
+    "cohort.json.gz": "65a360482d9f82740b0441a8f5b781b66ad5deb4a46fb82df47185c43ab558a8",
+    "capacity-cohort.json.gz": "442a25d393976fc065f595312d4c6972cd589db82f81a0956d6eb003c7ecd1a1",
+    "results/capacity.json": "d394b53c17ed48de4e96f5df50cd13477a43685df07f73324304ecbe4ab79889",
+    "results/ledger.json": "33abb730c0888ac610e8536b51b15d894161ca150ea044218ad088d1223a7205",
+    "results/mechanisms.jsonl.gz": "baa802cfad937a14c804c38172881502800cfce285775210716061e3b9b3168f",
+    "results/reference-open.jsonl.gz": "e2ea0ade2cdf0d1afdffd95cc78976c74d60fe0250652a780baf3049183f8050"
+  },
+  "training": {
+    "natural_battles": 1041,
+    "natural_C": 5089,
+    "conditional_roots": 56,
+    "resampled_pairs": 224
+  },
+  "id": "188cda5924b614b6399810c7aad897dafb319de0c66fdb956344e9380bb1a6da"
+}

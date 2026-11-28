@@ -2,7 +2,24 @@
 
 HotSearch 是 INFRA 独立研究生产器。一个 .NET 9 进程持有真实战斗，每个战斗只从游戏导入一次开局。Python 在公开决策点运行冻结 G2，在抽牌前 C 上批量运行冻结 V2，并写入研究数据。默认自然生产在已选策略的公开后继不属于预测分布时停止该根，保留前缀和原因。
 
-## INFRA-1H4 研究入口
+## INFRA-1H5 常规研究生产
+
+战术 32 是低成本研究行为策略。常规准入要求完整终局、合法动作与公开观察绑定、条件程序忠实执行和完整概率记账。条件世界按根准入，原世界及所有预定重排世界的两侧均须完成。未运行原生审核的记录带 `native_audit="not_run"`、空收据。失败保留实际前缀和原因，可在独立分区查询。修正 1A 仍是正式生产默认。
+
+从仓库根目录运行。已交付的数据直接使用读取命令。新采集请使用独立的数据和工作目录；恢复同一采集时保持构建、输入、源码及分片大小不变。
+
+```powershell
+$env:HOTSEARCH_BUILD='logs/hotsearch-h5-local'
+python -B engine/HotSearch/build.py
+python -B engine/HotSearch/produce_batch.py experiments/m1-infra1h5/cohort.json.gz logs/my-h5-library logs/my-h5-workers logs/hotsearch-h5-local --workers 4 --size 16
+python -B engine/HotSearch/read_experience.py experiments/m1-infra1h5/data --split train --kind natural --output logs/h5-natural-training.jsonl
+```
+
+交付包含首批 `experiments/m1-infra1h5/data` 和单独冻结的千场容量批次 `experiments/m1-infra1h5/capacity`。两批训练自然经验共享战术 32，构筑族互斥。需要每次行动前的完整公开事实、动作或待选菜单时，读取命令加 `--public-views`。新生产可执行 `python -B engine/HotSearch/publish_views.py DATA WORK` 从已提交 worker 的实际公开回复导出这一层；它绑定已封存数据集摘要。
+
+同一生产命令可恢复未提交的分片。`--max-shards` 支持分阶段运行，`--retries` 控制基础设施失败的重试次数。已完成的规则失败占用其原分母。要检索条件监督，可使用 `--kind conditional`。还支持 `--family`、`--policy`、`--mechanism`、`--native` 和显式的 `--rejected`。程序入口、已冻结的数据清单和统计见 [1H5 报告](../../docs/m1-infra1h5-production-qualification.md)。
+
+## INFRA-1H4 历史研究入口
 
 自然生产可选 `--arm tactical` 或 `--arm contingent`。前者为所有合法首动作构造轻量、偏防御、偏成长和提前结束四类续法。后者增加待选策略，并尝试按同一公开观察组合闭合续法。`--limit` 对每个首动作和续法分别计量物理规则调用。只有所比较双方的条件质量均闭合，且期望提升超过 `--margin`，才干预。参考未闭合时运行直接 G2。每个闭合程序绑定父节点、公开菜单摘要和动作索引，实际轨迹保存动作绑定与完整边界分布。
 

@@ -11,7 +11,7 @@ ROOT=HERE.parents[1]
 sys.path.insert(0,str(ROOT/"experiments/m1-core5d"))
 from panel5d import ROOT as PANEL_ROOT,deck_for,digest,load,read
 
-def prepare(out):
+def prepare(out,capacity=False):
     import os
     assets=Path(os.environ.get("HOTSEARCH_DC1_ROOT",ROOT/"logs/m1-dc1-formal/roots"))
     pool=read(assets/"families.json")
@@ -29,13 +29,17 @@ def prepare(out):
     for group in load(FIVE/"evidence/panels.gz").values():
         for r in group:banned.add(digest(sorted(c["id"] for c in r[1]["deck"])))
     donors=sorted(base["train"],key=lambda r:digest(["H5-donor",r["family"]]))
-    records={}
-    for split,count in [("open",64),("train",512)]:
+    domain="H5-capacity-1" if capacity else "H5-1"
+    if capacity:
+        primary=load(HERE/"cohort.json.gz")
+        banned.update(r["family"] for split in ("train","open") for r in primary[split])
+    records={"open":[]}
+    for split,count in ([("train",608)] if capacity else [("open",64),("train",512)]):
         data=[]
         for i in range(count):
             donor=meta[donors[i%len(donors)]["family"]]
             spec=donor["spec"]
-            rng=random.Random(digest(["H5-1",split,i,donor["id"]]))
+            rng=random.Random(digest([domain,split,i,donor["id"]]))
             for attempt in range(20000):
                 names,rate=deck_for(role,cards,spec["act"],donor["source"],donor["package"],rng)
                 family=digest(sorted(names)) if names else None
@@ -47,13 +51,16 @@ def prepare(out):
             data.append(dict(family=family,donor=donor["id"],spec=spec|dict(deck=deck,seed=seed)))
         records[split]=data
     historical=load(ROOT/"logs/infra0-world-inputs/panel.gz")["train"][123]
-    records["bridge123"]=[historical]
-    records["conditions"]=[r["family"] for r in sorted(records["train"],key=lambda r:digest(["H5-conditions",r["family"]]))[:64]]
+    records["bridge123"]=[] if capacity else [historical]
+    records["conditions"]=[] if capacity else [r["family"] for r in sorted(records["train"],key=lambda r:digest(["H5-conditions",r["family"]]))[:64]]
     records["protocol"]=dict(version="m1-infra1h5-v1",natural="tactical",limit=32,margin=0,weights="frozen G2/V2",
         conditional_root_budget=128,conditional_turn=2,worlds=4,closed_reference=True,native_audit="not_run",
         open_analysis="64 fixed compositions, all attempts, terminal utility and HP loss, paired common-completion difference, high-budget corrected 1A",
         sampling="256 training donors in fixed hash order, two cycles for production; unique deck multisets across splits")
+    if capacity:
+        records["protocol"].update(version="m1-infra1h5-capacity-v1",sampling="608 new composition-exclusive training roots, ordered donor cycles",open_analysis=None,
+            primary_cohort_sha256=hashlib.sha256((HERE/"cohort.json.gz").read_bytes()).hexdigest())
     out.parent.mkdir(exist_ok=True,parents=True)
     with out.open("xb") as file,gzip.GzipFile(fileobj=file,mode="wb",mtime=0,filename="") as z:
         z.write(json.dumps(records,ensure_ascii=False,separators=(",",":")).encode())
-if __name__=="__main__":prepare(Path(sys.argv[1]))
+if __name__=="__main__":prepare(Path(sys.argv[1]),capacity=sys.argv[2:]==["--capacity"])
