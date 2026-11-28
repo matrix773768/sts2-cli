@@ -1,0 +1,2409 @@
+{
+  "stats": {
+    "dev": {
+      "g2": {
+        "attempts": 64,
+        "complete": 64,
+        "wins": 21,
+        "severe": 54,
+        "mean_loss": 50.703125,
+        "failures": {},
+        "queries": 0,
+        "closed": 0,
+        "options": 0,
+        "closed_options": 0,
+        "interventions": 0,
+        "learned_wins": 0,
+        "learned_options": 0,
+        "completed_query_rule_steps": 0,
+        "C": 269,
+        "actions": 1312,
+        "worker_seconds": 20.728304899996147,
+        "per_attempt": 0.3238797640624398,
+        "eligible_per_min": 185.2539326551837,
+        "rollout_export_seconds": 19.429517200100236,
+        "validation_seconds": 0.7296777000010479,
+        "with_imports": 20.728304899996147,
+        "bytes": 591411,
+        "metrics": {},
+        "model_work": {
+          "g2_rows": 1312,
+          "v2_rows": 0,
+          "v2_batches": 0,
+          "v2_cache_hits": 0,
+          "v2_inferred": 0
+        }
+      },
+      "v2": {
+        "attempts": 64,
+        "complete": 64,
+        "wins": 25,
+        "severe": 50,
+        "mean_loss": 47.625,
+        "failures": {},
+        "queries": 350,
+        "closed": 208,
+        "options": 10320,
+        "closed_options": 6933,
+        "interventions": 108,
+        "learned_wins": 0,
+        "learned_options": 0,
+        "completed_query_rule_steps": 82690,
+        "C": 287,
+        "actions": 1394,
+        "worker_seconds": 78.21593580002082,
+        "per_attempt": 1.2221239968753252,
+        "eligible_per_min": 49.09485465746966,
+        "rollout_export_seconds": 76.65317419997882,
+        "validation_seconds": 0.8540580999979284,
+        "with_imports": 78.21593580002082,
+        "bytes": 861863,
+        "metrics": {},
+        "model_work": {
+          "g2_rows": 2444,
+          "v2_rows": 10112,
+          "v2_batches": 1272,
+          "v2_cache_hits": 5467,
+          "v2_inferred": 4645
+        }
+      },
+      "direct": {
+        "attempts": 64,
+        "complete": 64,
+        "wins": 26,
+        "severe": 54,
+        "mean_loss": 48.65625,
+        "failures": {},
+        "queries": 0,
+        "closed": 0,
+        "options": 0,
+        "closed_options": 0,
+        "interventions": 0,
+        "learned_wins": 0,
+        "learned_options": 0,
+        "completed_query_rule_steps": 0,
+        "C": 298,
+        "actions": 1450,
+        "worker_seconds": 13.231860100000631,
+        "per_attempt": 0.31606401249973715,
+        "eligible_per_min": 189.8349626250154,
+        "rollout_export_seconds": 11.911877500009723,
+        "validation_seconds": 0.7221993000130169,
+        "with_imports": 20.228096799983177,
+        "bytes": 656985,
+        "metrics": {
+          "policy_menus": 1450
+        },
+        "model_work": {
+          "g2_rows": 0,
+          "v2_rows": 0,
+          "v2_batches": 0,
+          "v2_cache_hits": 0,
+          "v2_inferred": 0
+        }
+      },
+      "low": {
+        "attempts": 64,
+        "complete": 64,
+        "wins": 25,
+        "severe": 51,
+        "mean_loss": 48.03125,
+        "failures": {},
+        "queries": 356,
+        "closed": 214,
+        "options": 1874,
+        "closed_options": 1731,
+        "interventions": 91,
+        "learned_wins": 4,
+        "learned_options": 214,
+        "completed_query_rule_steps": 12427,
+        "C": 293,
+        "actions": 1398,
+        "worker_seconds": 49.680058400001144,
+        "per_attempt": 0.8838066593752956,
+        "eligible_per_min": 67.88815106056117,
+        "rollout_export_seconds": 48.19147850011359,
+        "validation_seconds": 0.8025125999993179,
+        "with_imports": 56.563626200018916,
+        "bytes": 758301,
+        "metrics": {
+          "policy_menus": 913,
+          "legal_first_on_expansion": 1573,
+          "expanded_first": 830,
+          "expansions": 214,
+          "learned_follow": 683,
+          "skipped_open_reference": 142,
+          "learned_choice": 16
+        },
+        "model_work": {
+          "g2_rows": 2434,
+          "v2_rows": 2349,
+          "v2_batches": 713,
+          "v2_cache_hits": 1204,
+          "v2_inferred": 1145
+        }
+      },
+      "g2low": {
+        "attempts": 64,
+        "complete": 64,
+        "wins": 25,
+        "severe": 51,
+        "mean_loss": 48.1875,
+        "failures": {},
+        "queries": 347,
+        "closed": 207,
+        "options": 1559,
+        "closed_options": 1440,
+        "interventions": 77,
+        "learned_wins": 0,
+        "learned_options": 0,
+        "completed_query_rule_steps": 10954,
+        "C": 284,
+        "actions": 1365,
+        "worker_seconds": 50.271612200012896,
+        "per_attempt": 0.7854939406252015,
+        "eligible_per_min": 76.3850577284453,
+        "rollout_export_seconds": 48.96907410005224,
+        "validation_seconds": 0.6861607999890111,
+        "with_imports": 50.271612200012896,
+        "bytes": 736535,
+        "metrics": {
+          "legal_first_on_expansion": 1515,
+          "expanded_first": 676,
+          "expansions": 207,
+          "skipped_open_reference": 140
+        },
+        "model_work": {
+          "g2_rows": 3037,
+          "v2_rows": 2046,
+          "v2_batches": 697,
+          "v2_cache_hits": 1051,
+          "v2_inferred": 995
+        }
+      },
+      "same32": {
+        "attempts": 64,
+        "complete": 64,
+        "wins": 25,
+        "severe": 49,
+        "mean_loss": 47.390625,
+        "failures": {},
+        "queries": 348,
+        "closed": 205,
+        "options": 10224,
+        "closed_options": 6723,
+        "interventions": 105,
+        "learned_wins": 6,
+        "learned_options": 696,
+        "completed_query_rule_steps": 85708,
+        "C": 285,
+        "actions": 1392,
+        "worker_seconds": 99.03884639998432,
+        "per_attempt": 1.6567931859372038,
+        "eligible_per_min": 36.21453812659158,
+        "rollout_export_seconds": 97.38970890024211,
+        "validation_seconds": 0.931716300023254,
+        "with_imports": 106.03476389998104,
+        "bytes": 858533,
+        "metrics": {
+          "policy_menus": 3585,
+          "legal_first_on_expansion": 2556,
+          "expanded_first": 2556,
+          "expansions": 348,
+          "learned_follow": 3147,
+          "learned_choice": 90
+        },
+        "model_work": {
+          "g2_rows": 2483,
+          "v2_rows": 10071,
+          "v2_batches": 1627,
+          "v2_cache_hits": 5889,
+          "v2_inferred": 4182
+        }
+      },
+      "trim32": {
+        "attempts": 64,
+        "complete": 64,
+        "wins": 26,
+        "severe": 51,
+        "mean_loss": 47.59375,
+        "failures": {},
+        "queries": 351,
+        "closed": 211,
+        "options": 4255,
+        "closed_options": 3915,
+        "interventions": 105,
+        "learned_wins": 3,
+        "learned_options": 211,
+        "completed_query_rule_steps": 24460,
+        "C": 288,
+        "actions": 1374,
+        "worker_seconds": 61.53148199999123,
+        "per_attempt": 1.0474780546874172,
+        "eligible_per_min": 57.28043631224797,
+        "rollout_export_seconds": 59.99436249991413,
+        "validation_seconds": 0.960220599983586,
+        "with_imports": 67.0385954999947,
+        "bytes": 782649,
+        "metrics": {
+          "policy_menus": 918,
+          "legal_first_on_expansion": 1551,
+          "expanded_first": 1011,
+          "expansions": 211,
+          "learned_follow": 692,
+          "skipped_open_reference": 140,
+          "learned_choice": 15
+        },
+        "model_work": {
+          "g2_rows": 2455,
+          "v2_rows": 5079,
+          "v2_batches": 1079,
+          "v2_cache_hits": 2880,
+          "v2_inferred": 2199
+        }
+      },
+      "same24": {
+        "attempts": 64,
+        "complete": 64,
+        "wins": 25,
+        "severe": 49,
+        "mean_loss": 47.390625,
+        "failures": {},
+        "queries": 347,
+        "closed": 201,
+        "options": 10200,
+        "closed_options": 6573,
+        "interventions": 102,
+        "learned_wins": 5,
+        "learned_options": 694,
+        "completed_query_rule_steps": 72679,
+        "C": 284,
+        "actions": 1386,
+        "worker_seconds": 88.14061840000795,
+        "per_attempt": 1.5250629843749266,
+        "eligible_per_min": 39.34263739578732,
+        "rollout_export_seconds": 86.29200300003868,
+        "validation_seconds": 0.9366544999938924,
+        "with_imports": 97.6040309999953,
+        "bytes": 848440,
+        "metrics": {
+          "policy_menus": 3198,
+          "legal_first_on_expansion": 2550,
+          "expanded_first": 2550,
+          "expansions": 347,
+          "learned_follow": 2776,
+          "learned_choice": 75
+        },
+        "model_work": {
+          "g2_rows": 2254,
+          "v2_rows": 8888,
+          "v2_batches": 1604,
+          "v2_cache_hits": 5178,
+          "v2_inferred": 3710
+        }
+      },
+      "same48": {
+        "attempts": 64,
+        "complete": 63,
+        "wins": 24,
+        "severe": 47,
+        "mean_loss": 46.87301587301587,
+        "failures": {
+          "AddCard/random_insert_known_positions @ Play": 1
+        },
+        "queries": 348,
+        "closed": 203,
+        "options": 10368,
+        "closed_options": 6707,
+        "interventions": 111,
+        "learned_wins": 5,
+        "learned_options": 696,
+        "completed_query_rule_steps": 113189,
+        "C": 275,
+        "actions": 1343,
+        "worker_seconds": 111.78327370001352,
+        "per_attempt": 1.8688744609376045,
+        "eligible_per_min": 31.603246357365627,
+        "rollout_export_seconds": 109.92494379993877,
+        "validation_seconds": 0.9664810999820475,
+        "with_imports": 119.60796550000669,
+        "bytes": 878312,
+        "metrics": {
+          "policy_menus": 4440,
+          "legal_first_on_expansion": 2592,
+          "expanded_first": 2592,
+          "expansions": 348,
+          "learned_follow": 4003,
+          "learned_choice": 89
+        },
+        "model_work": {
+          "g2_rows": 2832,
+          "v2_rows": 11790,
+          "v2_batches": 1604,
+          "v2_cache_hits": 7095,
+          "v2_inferred": 4695
+        }
+      },
+      "clone": {
+        "attempts": 64,
+        "complete": 64,
+        "wins": 26,
+        "severe": 53,
+        "mean_loss": 50.6875,
+        "failures": {},
+        "queries": 0,
+        "closed": 0,
+        "options": 0,
+        "closed_options": 0,
+        "interventions": 0,
+        "learned_wins": 0,
+        "learned_options": 0,
+        "completed_query_rule_steps": 0,
+        "C": 295,
+        "actions": 1448,
+        "worker_seconds": 14.544189499982167,
+        "per_attempt": 0.34060599375015954,
+        "eligible_per_min": 176.15661820681598,
+        "rollout_export_seconds": 13.073030700033996,
+        "validation_seconds": 0.7903341999917757,
+        "with_imports": 21.79878360001021,
+        "bytes": 660283,
+        "metrics": {
+          "policy_menus": 1448
+        },
+        "model_work": {
+          "g2_rows": 0,
+          "v2_rows": 0,
+          "v2_batches": 0,
+          "v2_cache_hits": 0,
+          "v2_inferred": 0
+        }
+      }
+    },
+    "confirm": {
+      "g2": {
+        "attempts": 640,
+        "complete": 626,
+        "wins": 269,
+        "severe": 499,
+        "mean_loss": 49.239616613418534,
+        "failures": {
+          "AddCard/random_insert_known_positions @ Play": 6,
+          "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 7,
+          "OUTRAGE/modified @ ResolveMovedCardInPlay": 1
+        },
+        "queries": 0,
+        "closed": 0,
+        "options": 0,
+        "closed_options": 0,
+        "interventions": 0,
+        "learned_wins": 0,
+        "learned_options": 0,
+        "completed_query_rule_steps": 0,
+        "C": 2922,
+        "actions": 14097,
+        "worker_seconds": 233.85700180003187,
+        "per_attempt": 0.4895509164062332,
+        "eligible_per_min": 119.88027809409849,
+        "rollout_export_seconds": 219.51472909958102,
+        "validation_seconds": 7.78298079999513,
+        "with_imports": 313.31258649998927,
+        "bytes": 5969866,
+        "metrics": {},
+        "model_work": {
+          "g2_rows": 14217,
+          "v2_rows": 0,
+          "v2_batches": 0,
+          "v2_cache_hits": 0,
+          "v2_inferred": 0
+        }
+      },
+      "v2": {
+        "attempts": 640,
+        "complete": 594,
+        "wins": 290,
+        "severe": 440,
+        "mean_loss": 46.51178451178451,
+        "failures": {
+          "policy/observation_outside_evaluated_program": 18,
+          "AddCard/random_insert_known_positions @ Play": 13,
+          "conditional_policy/realized_boundary_outside_law": 7,
+          "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 7,
+          "OUTRAGE/modified @ ResolveMovedCardInPlay": 1
+        },
+        "queries": 3706,
+        "closed": 2296,
+        "options": 103768,
+        "closed_options": 70361,
+        "interventions": 1302,
+        "learned_wins": 0,
+        "learned_options": 0,
+        "completed_query_rule_steps": 859575,
+        "C": 2957,
+        "actions": 14020,
+        "worker_seconds": 882.489261199953,
+        "per_attempt": 1.5095102357812267,
+        "eligible_per_min": 36.89110459802857,
+        "rollout_export_seconds": 864.2748828999174,
+        "validation_seconds": 9.884944000048563,
+        "with_imports": 966.086550899985,
+        "bytes": 8654963,
+        "metrics": {},
+        "model_work": {
+          "g2_rows": 25240,
+          "v2_rows": 108578,
+          "v2_batches": 14150,
+          "v2_cache_hits": 57982,
+          "v2_inferred": 50596
+        }
+      },
+      "direct": {
+        "attempts": 640,
+        "complete": 617,
+        "wins": 272,
+        "severe": 500,
+        "mean_loss": 49.354943273905995,
+        "failures": {
+          "AddCard/random_insert_known_positions @ Play": 14,
+          "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 7,
+          "OUTRAGE/modified @ ResolveMovedCardInPlay": 2
+        },
+        "queries": 0,
+        "closed": 0,
+        "options": 0,
+        "closed_options": 0,
+        "interventions": 0,
+        "learned_wins": 0,
+        "learned_options": 0,
+        "completed_query_rule_steps": 0,
+        "C": 3012,
+        "actions": 14551,
+        "worker_seconds": 154.5123114999733,
+        "per_attempt": 0.3660858310938238,
+        "eligible_per_min": 158.00597861755344,
+        "rollout_export_seconds": 138.88741739973193,
+        "validation_seconds": 8.281446399982087,
+        "with_imports": 234.29493190004723,
+        "bytes": 6230181,
+        "metrics": {
+          "policy_menus": 14795
+        },
+        "model_work": {
+          "g2_rows": 0,
+          "v2_rows": 0,
+          "v2_batches": 0,
+          "v2_cache_hits": 0,
+          "v2_inferred": 0
+        }
+      },
+      "g2low": {
+        "attempts": 640,
+        "complete": 601,
+        "wins": 274,
+        "severe": 465,
+        "mean_loss": 47.61730449251248,
+        "failures": {
+          "policy/observation_outside_evaluated_program": 17,
+          "AddCard/random_insert_known_positions @ Play": 7,
+          "conditional_policy/realized_boundary_outside_law": 7,
+          "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 7,
+          "OUTRAGE/modified @ ResolveMovedCardInPlay": 1
+        },
+        "queries": 3599,
+        "closed": 2212,
+        "options": 16498,
+        "closed_options": 15161,
+        "interventions": 906,
+        "learned_wins": 0,
+        "learned_options": 0,
+        "completed_query_rule_steps": 115445,
+        "C": 2890,
+        "actions": 13995,
+        "worker_seconds": 555.961559599993,
+        "per_attempt": 1.0066998337500537,
+        "eligible_per_min": 55.96876855548304,
+        "rollout_export_seconds": 540.1788181005104,
+        "validation_seconds": 8.268590200052131,
+        "with_imports": 644.2878936000343,
+        "bytes": 7305373,
+        "metrics": {
+          "skipped_open_reference": 1387,
+          "legal_first_on_expansion": 15493,
+          "expanded_first": 7143,
+          "expansions": 2212
+        },
+        "model_work": {
+          "g2_rows": 31104,
+          "v2_rows": 22873,
+          "v2_batches": 7612,
+          "v2_cache_hits": 11701,
+          "v2_inferred": 11172
+        }
+      },
+      "low": {
+        "attempts": 640,
+        "complete": 599,
+        "wins": 284,
+        "severe": 457,
+        "mean_loss": 46.92988313856427,
+        "failures": {
+          "policy/observation_outside_evaluated_program": 16,
+          "AddCard/random_insert_known_positions @ Play": 9,
+          "conditional_policy/realized_boundary_outside_law": 8,
+          "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 7,
+          "OUTRAGE/modified @ ResolveMovedCardInPlay": 1
+        },
+        "queries": 3658,
+        "closed": 2261,
+        "options": 19697,
+        "closed_options": 17915,
+        "interventions": 1105,
+        "learned_wins": 111,
+        "learned_options": 2261,
+        "completed_query_rule_steps": 135504,
+        "C": 2930,
+        "actions": 14139,
+        "worker_seconds": 538.2035705999006,
+        "per_attempt": 0.9748650706249009,
+        "eligible_per_min": 57.604125629409545,
+        "rollout_export_seconds": 522.0384374001005,
+        "validation_seconds": 8.341840600012802,
+        "with_imports": 623.9136451999366,
+        "bytes": 7480037,
+        "metrics": {
+          "skipped_open_reference": 1397,
+          "policy_menus": 10254,
+          "legal_first_on_expansion": 15873,
+          "expanded_first": 8718,
+          "expansions": 2261,
+          "learned_follow": 7717,
+          "learned_choice": 276
+        },
+        "model_work": {
+          "g2_rows": 24766,
+          "v2_rows": 26516,
+          "v2_batches": 7724,
+          "v2_cache_hits": 13304,
+          "v2_inferred": 13212
+        }
+      },
+      "same32": {
+        "attempts": 640,
+        "complete": 592,
+        "wins": 290,
+        "severe": 436,
+        "mean_loss": 46.4375,
+        "failures": {
+          "policy/observation_outside_evaluated_program": 19,
+          "AddCard/random_insert_known_positions @ Play": 13,
+          "conditional_policy/realized_boundary_outside_law": 8,
+          "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 7,
+          "OUTRAGE/modified @ ResolveMovedCardInPlay": 1
+        },
+        "queries": 3688,
+        "closed": 2291,
+        "options": 103332,
+        "closed_options": 68845,
+        "interventions": 1273,
+        "learned_wins": 117,
+        "learned_options": 7376,
+        "completed_query_rule_steps": 898153,
+        "C": 2920,
+        "actions": 14016,
+        "worker_seconds": 1036.018600099982,
+        "per_attempt": 1.7501322920312758,
+        "eligible_per_min": 31.711888439921534,
+        "rollout_export_seconds": 1017.600336600357,
+        "validation_seconds": 10.209148799913237,
+        "with_imports": 1120.0846669000166,
+        "bytes": 8653881,
+        "metrics": {
+          "policy_menus": 36756,
+          "legal_first_on_expansion": 25833,
+          "expanded_first": 25833,
+          "expansions": 3688,
+          "learned_follow": 32079,
+          "learned_choice": 989
+        },
+        "model_work": {
+          "g2_rows": 25029,
+          "v2_rows": 107074,
+          "v2_batches": 18031,
+          "v2_cache_hits": 61817,
+          "v2_inferred": 45257
+        }
+      },
+      "same24": {
+        "attempts": 640,
+        "complete": 596,
+        "wins": 290,
+        "severe": 441,
+        "mean_loss": 46.560402684563755,
+        "failures": {
+          "policy/observation_outside_evaluated_program": 18,
+          "AddCard/random_insert_known_positions @ Play": 12,
+          "conditional_policy/realized_boundary_outside_law": 6,
+          "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 7,
+          "OUTRAGE/modified @ ResolveMovedCardInPlay": 1
+        },
+        "queries": 3682,
+        "closed": 2255,
+        "options": 103192,
+        "closed_options": 67652,
+        "interventions": 1243,
+        "learned_wins": 112,
+        "learned_options": 7364,
+        "completed_query_rule_steps": 761550,
+        "C": 2932,
+        "actions": 14052,
+        "worker_seconds": 947.6946886999358,
+        "per_attempt": 1.604749772968762,
+        "eligible_per_min": 34.81851248162641,
+        "rollout_export_seconds": 929.384990899387,
+        "validation_seconds": 9.758800500014331,
+        "with_imports": 1027.0398547000077,
+        "bytes": 8532570,
+        "metrics": {
+          "policy_menus": 32647,
+          "legal_first_on_expansion": 25798,
+          "expanded_first": 25798,
+          "expansions": 3682,
+          "learned_follow": 28029,
+          "learned_choice": 936
+        },
+        "model_work": {
+          "g2_rows": 23114,
+          "v2_rows": 94917,
+          "v2_batches": 17855,
+          "v2_cache_hits": 54540,
+          "v2_inferred": 40377
+        }
+      },
+      "clone": {
+        "attempts": 640,
+        "complete": 622,
+        "wins": 257,
+        "severe": 493,
+        "mean_loss": 49.448553054662376,
+        "failures": {
+          "AddCard/random_insert_known_positions @ Play": 9,
+          "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 7,
+          "OUTRAGE/modified @ ResolveMovedCardInPlay": 2
+        },
+        "queries": 0,
+        "closed": 0,
+        "options": 0,
+        "closed_options": 0,
+        "interventions": 0,
+        "learned_wins": 0,
+        "learned_options": 0,
+        "completed_query_rule_steps": 0,
+        "C": 2895,
+        "actions": 14176,
+        "worker_seconds": 132.61028169994825,
+        "per_attempt": 0.28469993703120056,
+        "eligible_per_min": 204.8209093689033,
+        "rollout_export_seconds": 118.94927489946713,
+        "validation_seconds": 7.2913314000179525,
+        "with_imports": 182.20795969996834,
+        "bytes": 6033143,
+        "metrics": {
+          "policy_menus": 14360
+        },
+        "model_work": {
+          "g2_rows": 0,
+          "v2_rows": 0,
+          "v2_batches": 0,
+          "v2_cache_hits": 0,
+          "v2_inferred": 0
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "dev": {
+      "g2 minus v2": {
+        "common": 64,
+        "families": 64,
+        "utility": {
+          "mean": -9.078125,
+          "ci": [
+            -19.171875,
+            0.10976562499999432
+          ]
+        },
+        "win_delta": {
+          "mean": -0.0625,
+          "ci": [
+            -0.15625,
+            0.015625
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.2534730936178975,
+          "ci": [
+            0.21408717727282198,
+            0.3037007386776316
+          ]
+        },
+        "gained": 2,
+        "lost": 6,
+        "both_win": 19,
+        "same_win_loss": 5.368421052631579
+      },
+      "v2 minus v2": {
+        "common": 64,
+        "families": 64,
+        "utility": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 1.0,
+          "ci": [
+            1.0,
+            1.0
+          ]
+        },
+        "gained": 0,
+        "lost": 0,
+        "both_win": 25,
+        "same_win_loss": 0
+      },
+      "direct minus v2": {
+        "common": 64,
+        "families": 64,
+        "utility": {
+          "mean": 0.9375,
+          "ci": [
+            -7.421875,
+            9.59375
+          ]
+        },
+        "win_delta": {
+          "mean": 0.015625,
+          "ci": [
+            -0.0625,
+            0.09375
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.1553996638016983,
+          "ci": [
+            0.12484986371753778,
+            0.19778090502632625
+          ]
+        },
+        "gained": 4,
+        "lost": 3,
+        "both_win": 22,
+        "same_win_loss": 4.090909090909091
+      },
+      "low minus v2": {
+        "common": 64,
+        "families": 64,
+        "utility": {
+          "mean": 0.15625,
+          "ci": [
+            -6.40625,
+            7.125
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0,
+          "ci": [
+            -0.0625,
+            0.0625
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.6286951454141726,
+          "ci": [
+            0.5741038663231711,
+            0.6936259650915231
+          ]
+        },
+        "gained": 2,
+        "lost": 2,
+        "both_win": 23,
+        "same_win_loss": 0.9565217391304348
+      },
+      "g2low minus v2": {
+        "common": 64,
+        "families": 64,
+        "utility": {
+          "mean": -0.25,
+          "ci": [
+            -6.734375,
+            6.515625
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0,
+          "ci": [
+            -0.0625,
+            0.0625
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.6388394820062882,
+          "ci": [
+            0.578410560663798,
+            0.7086459532906302
+          ]
+        },
+        "gained": 2,
+        "lost": 2,
+        "both_win": 23,
+        "same_win_loss": 0.9130434782608695
+      },
+      "same32 minus v2": {
+        "common": 64,
+        "families": 64,
+        "utility": {
+          "mean": 0.234375,
+          "ci": [
+            0.0,
+            0.703125
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 1.2705241487608092,
+          "ci": [
+            1.1966180965335123,
+            1.350786648355176
+          ]
+        },
+        "gained": 0,
+        "lost": 0,
+        "both_win": 25,
+        "same_win_loss": -0.6
+      },
+      "trim32 minus v2": {
+        "common": 64,
+        "families": 64,
+        "utility": {
+          "mean": 1.6875,
+          "ci": [
+            -3.6410156249999996,
+            8.203125
+          ]
+        },
+        "win_delta": {
+          "mean": 0.015625,
+          "ci": [
+            -0.03125,
+            0.078125
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.7826729046261819,
+          "ci": [
+            0.7227314972419918,
+            0.8487303830210603
+          ]
+        },
+        "gained": 2,
+        "lost": 1,
+        "both_win": 24,
+        "same_win_loss": 0.75
+      },
+      "same24 minus v2": {
+        "common": 64,
+        "families": 64,
+        "utility": {
+          "mean": 0.234375,
+          "ci": [
+            0.0,
+            0.703125
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 1.1257459837855288,
+          "ci": [
+            1.0472100786726555,
+            1.1998850276692805
+          ]
+        },
+        "gained": 0,
+        "lost": 0,
+        "both_win": 25,
+        "same_win_loss": -0.6
+      },
+      "same48 minus v2": {
+        "common": 63,
+        "families": 63,
+        "utility": {
+          "mean": -1.126984126984127,
+          "ci": [
+            -4.555555555555555,
+            0.9375
+          ]
+        },
+        "win_delta": {
+          "mean": -0.015625,
+          "ci": [
+            -0.046875,
+            0.0
+          ]
+        },
+        "completion_delta": {
+          "mean": -0.015625,
+          "ci": [
+            -0.046875,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 1.4340559924258054,
+          "ci": [
+            1.308139636181812,
+            1.5676599127511588
+          ]
+        },
+        "gained": 0,
+        "lost": 1,
+        "both_win": 24,
+        "same_win_loss": -0.9166666666666666
+      },
+      "clone minus v2": {
+        "common": 64,
+        "families": 64,
+        "utility": {
+          "mean": -1.15625,
+          "ci": [
+            -9.53125,
+            7.40625
+          ]
+        },
+        "win_delta": {
+          "mean": 0.015625,
+          "ci": [
+            -0.0625,
+            0.09375
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.17054780622558496,
+          "ci": [
+            0.13047204582474572,
+            0.23234018612564686
+          ]
+        },
+        "gained": 4,
+        "lost": 3,
+        "both_win": 22,
+        "same_win_loss": 8.136363636363637
+      },
+      "direct minus g2": {
+        "common": 64,
+        "families": 64,
+        "utility": {
+          "mean": 10.015625,
+          "ci": [
+            0.8902343750000004,
+            20.09375
+          ]
+        },
+        "win_delta": {
+          "mean": 0.078125,
+          "ci": [
+            -0.015625,
+            0.171875
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.6130814974624419,
+          "ci": [
+            0.5436161516905923,
+            0.6792814031364782
+          ]
+        },
+        "gained": 7,
+        "lost": 2,
+        "both_win": 19,
+        "same_win_loss": -1
+      },
+      "direct minus clone": {
+        "common": 64,
+        "families": 64,
+        "utility": {
+          "mean": 2.09375,
+          "ci": [
+            -5.25,
+            9.875390624999994
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0,
+          "ci": [
+            -0.078125,
+            0.078125
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.9111794941305191,
+          "ci": [
+            0.8301108954321395,
+            1.0255660676836045
+          ]
+        },
+        "gained": 3,
+        "lost": 3,
+        "both_win": 23,
+        "same_win_loss": -3.260869565217391
+      },
+      "low minus g2low": {
+        "common": 64,
+        "families": 64,
+        "utility": {
+          "mean": 0.40625,
+          "ci": [
+            -3.984375,
+            4.984375
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0,
+          "ci": [
+            -0.046875,
+            0.046875
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.9841206799550695,
+          "ci": [
+            0.9443900118181204,
+            1.0288580679982904
+          ]
+        },
+        "gained": 1,
+        "lost": 1,
+        "both_win": 24,
+        "same_win_loss": -0.5833333333333334
+      },
+      "low minus direct": {
+        "common": 64,
+        "families": 64,
+        "utility": {
+          "mean": -0.78125,
+          "ci": [
+            -9.422265625,
+            7.390625
+          ]
+        },
+        "win_delta": {
+          "mean": -0.015625,
+          "ci": [
+            -0.09375,
+            0.0625
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 4.045666058946145,
+          "ci": [
+            3.152768948894802,
+            5.045649730280954
+          ]
+        },
+        "gained": 3,
+        "lost": 4,
+        "both_win": 22,
+        "same_win_loss": -3.4545454545454546
+      },
+      "low minus g2": {
+        "common": 64,
+        "families": 64,
+        "utility": {
+          "mean": 9.234375,
+          "ci": [
+            1.4214843750000004,
+            17.906640624999994
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0625,
+          "ci": [
+            0.0,
+            0.140625
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 2.480323005651678,
+          "ci": [
+            2.0759411040447726,
+            2.8923759418925687
+          ]
+        },
+        "gained": 5,
+        "lost": 1,
+        "both_win": 20,
+        "same_win_loss": -4.55
+      },
+      "common_all": {
+        "g2": {
+          "common": 63,
+          "families": 63,
+          "utility": {
+            "mean": -9.222222222222221,
+            "ci": [
+              -19.428571428571427,
+              0.36507936507936506
+            ]
+          },
+          "win_delta": {
+            "mean": -0.06349206349206349,
+            "ci": [
+              -0.15873015873015872,
+              0.015873015873015872
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 0.2523059848571754,
+            "ci": [
+              0.21124135292474477,
+              0.3041879354981693
+            ]
+          },
+          "gained": 2,
+          "lost": 6,
+          "both_win": 19,
+          "same_win_loss": 5.368421052631579
+        },
+        "v2": {
+          "common": 63,
+          "families": 63,
+          "utility": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "win_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ]
+          },
+          "gained": 0,
+          "lost": 0,
+          "both_win": 25,
+          "same_win_loss": 0
+        },
+        "direct": {
+          "common": 63,
+          "families": 63,
+          "utility": {
+            "mean": 0.9523809523809523,
+            "ci": [
+              -7.587301587301587,
+              9.778174603174598
+            ]
+          },
+          "win_delta": {
+            "mean": 0.015873015873015872,
+            "ci": [
+              -0.06349206349206349,
+              0.09523809523809523
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 0.15584575553076946,
+            "ci": [
+              0.12452321436107015,
+              0.2003627347832131
+            ]
+          },
+          "gained": 4,
+          "lost": 3,
+          "both_win": 22,
+          "same_win_loss": 4.090909090909091
+        },
+        "low": {
+          "common": 63,
+          "families": 63,
+          "utility": {
+            "mean": 0.15873015873015872,
+            "ci": [
+              -6.444444444444445,
+              7.0476190476190474
+            ]
+          },
+          "win_delta": {
+            "mean": 0.0,
+            "ci": [
+              -0.06349206349206349,
+              0.06349206349206349
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 0.6230498660989705,
+            "ci": [
+              0.5693800753334674,
+              0.6877410893297986
+            ]
+          },
+          "gained": 2,
+          "lost": 2,
+          "both_win": 23,
+          "same_win_loss": 0.9565217391304348
+        },
+        "g2low": {
+          "common": 63,
+          "families": 63,
+          "utility": {
+            "mean": -0.25396825396825395,
+            "ci": [
+              -6.857142857142857,
+              6.444444444444445
+            ]
+          },
+          "win_delta": {
+            "mean": 0.0,
+            "ci": [
+              -0.06349206349206349,
+              0.06349206349206349
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 0.6324880451807859,
+            "ci": [
+              0.5720028418806202,
+              0.6998213831467948
+            ]
+          },
+          "gained": 2,
+          "lost": 2,
+          "both_win": 23,
+          "same_win_loss": 0.9130434782608695
+        },
+        "same32": {
+          "common": 63,
+          "families": 63,
+          "utility": {
+            "mean": 0.23809523809523808,
+            "ci": [
+              0.0,
+              0.7142857142857143
+            ]
+          },
+          "win_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 1.2585107679910288,
+            "ci": [
+              1.185718463808099,
+              1.337993510831727
+            ]
+          },
+          "gained": 0,
+          "lost": 0,
+          "both_win": 25,
+          "same_win_loss": -0.6
+        },
+        "trim32": {
+          "common": 63,
+          "families": 63,
+          "utility": {
+            "mean": 1.7142857142857142,
+            "ci": [
+              -3.7301587301587302,
+              7.857142857142857
+            ]
+          },
+          "win_delta": {
+            "mean": 0.015873015873015872,
+            "ci": [
+              -0.031746031746031744,
+              0.06349206349206349
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 0.7731197127364859,
+            "ci": [
+              0.7132063982541943,
+              0.8372969029854395
+            ]
+          },
+          "gained": 2,
+          "lost": 1,
+          "both_win": 24,
+          "same_win_loss": 0.75
+        },
+        "same24": {
+          "common": 63,
+          "families": 63,
+          "utility": {
+            "mean": 0.23809523809523808,
+            "ci": [
+              0.0,
+              0.7142857142857143
+            ]
+          },
+          "win_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 1.1158696223551863,
+            "ci": [
+              1.0388730359893816,
+              1.1903015693252808
+            ]
+          },
+          "gained": 0,
+          "lost": 0,
+          "both_win": 25,
+          "same_win_loss": -0.6
+        },
+        "same48": {
+          "common": 63,
+          "families": 63,
+          "utility": {
+            "mean": -1.126984126984127,
+            "ci": [
+              -4.555555555555555,
+              0.9523809523809523
+            ]
+          },
+          "win_delta": {
+            "mean": -0.015873015873015872,
+            "ci": [
+              -0.047619047619047616,
+              0.0
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 1.4183228197385307,
+            "ci": [
+              1.2916306876482502,
+              1.548723298126972
+            ]
+          },
+          "gained": 0,
+          "lost": 1,
+          "both_win": 24,
+          "same_win_loss": -0.9166666666666666
+        },
+        "clone": {
+          "common": 63,
+          "families": 63,
+          "utility": {
+            "mean": -1.1746031746031746,
+            "ci": [
+              -9.524206349206349,
+              7.413095238095233
+            ]
+          },
+          "win_delta": {
+            "mean": 0.015873015873015872,
+            "ci": [
+              -0.06349206349206349,
+              0.09523809523809523
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 0.170694465292532,
+            "ci": [
+              0.1287392645071733,
+              0.23429603888724115
+            ]
+          },
+          "gained": 4,
+          "lost": 3,
+          "both_win": 22,
+          "same_win_loss": 8.136363636363637
+        }
+      }
+    },
+    "confirm": {
+      "g2 minus v2": {
+        "common": 594,
+        "families": 309,
+        "utility": {
+          "mean": -6.047138047138047,
+          "ci": [
+            -8.707051986591196,
+            -3.5125064812229714
+          ]
+        },
+        "win_delta": {
+          "mean": -0.0328125,
+          "ci": [
+            -0.05625,
+            -0.009375
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.05,
+          "ci": [
+            0.03125,
+            0.0703125
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.25398716709554164,
+          "ci": [
+            0.2380709830421232,
+            0.2706242211554571
+          ]
+        },
+        "gained": 12,
+        "lost": 38,
+        "both_win": 252,
+        "same_win_loss": 3.7142857142857144
+      },
+      "v2 minus v2": {
+        "common": 594,
+        "families": 309,
+        "utility": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 1.0,
+          "ci": [
+            1.0,
+            1.0
+          ]
+        },
+        "gained": 0,
+        "lost": 0,
+        "both_win": 290,
+        "same_win_loss": 0
+      },
+      "direct minus v2": {
+        "common": 590,
+        "families": 305,
+        "utility": {
+          "mean": -5.5288135593220336,
+          "ci": [
+            -8.278641791044775,
+            -2.800165063261457
+          ]
+        },
+        "win_delta": {
+          "mean": -0.028125,
+          "ci": [
+            -0.053125,
+            -0.003125
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0359375,
+          "ci": [
+            0.0171875,
+            0.05625
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.16069819932024454,
+          "ci": [
+            0.14321805278591565,
+            0.17963578306587463
+          ]
+        },
+        "gained": 20,
+        "lost": 40,
+        "both_win": 249,
+        "same_win_loss": 4.899598393574297
+      },
+      "g2low minus v2": {
+        "common": 588,
+        "families": 308,
+        "utility": {
+          "mean": -2.5510204081632653,
+          "ci": [
+            -4.641231405053031,
+            -0.5620643596674075
+          ]
+        },
+        "win_delta": {
+          "mean": -0.025,
+          "ci": [
+            -0.04375,
+            -0.0078125
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0109375,
+          "ci": [
+            -0.003125,
+            0.025
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.6250081181209831,
+          "ci": [
+            0.6027644669056115,
+            0.6472221021338009
+          ]
+        },
+        "gained": 7,
+        "lost": 19,
+        "both_win": 266,
+        "same_win_loss": 0.7330827067669173
+      },
+      "low minus v2": {
+        "common": 589,
+        "families": 309,
+        "utility": {
+          "mean": -1.0594227504244482,
+          "ci": [
+            -2.741005941751451,
+            0.5517020547945201
+          ]
+        },
+        "win_delta": {
+          "mean": -0.009375,
+          "ci": [
+            -0.025,
+            0.00625
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.0078125,
+          "ci": [
+            -0.0046875,
+            0.0203125
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.6040189848494675,
+          "ci": [
+            0.5829935227415283,
+            0.6246571608138064
+          ]
+        },
+        "gained": 10,
+        "lost": 15,
+        "both_win": 273,
+        "same_win_loss": 0.17582417582417584
+      },
+      "same32 minus v2": {
+        "common": 591,
+        "families": 308,
+        "utility": {
+          "mean": 0.21658206429780033,
+          "ci": [
+            -0.9106079714653984,
+            1.3368132537989286
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0,
+          "ci": [
+            -0.0109375,
+            0.0109375
+          ]
+        },
+        "completion_delta": {
+          "mean": -0.003125,
+          "ci": [
+            -0.009375,
+            0.003125
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 1.177403574642808,
+          "ci": [
+            1.159795652684013,
+            1.1948977331537554
+          ]
+        },
+        "gained": 7,
+        "lost": 6,
+        "both_win": 283,
+        "same_win_loss": -0.1519434628975265
+      },
+      "same24 minus v2": {
+        "common": 592,
+        "families": 308,
+        "utility": {
+          "mean": 0.20439189189189189,
+          "ci": [
+            -0.9626729505361465,
+            1.3271209784669364
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0,
+          "ci": [
+            -0.0109375,
+            0.0109375
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.003125,
+          "ci": [
+            -0.003125,
+            0.009375
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 1.0753349533669248,
+          "ci": [
+            1.0563301702914485,
+            1.0941455759363141
+          ]
+        },
+        "gained": 7,
+        "lost": 6,
+        "both_win": 283,
+        "same_win_loss": -0.11307420494699646
+      },
+      "clone minus v2": {
+        "common": 590,
+        "families": 306,
+        "utility": {
+          "mean": -7.438983050847457,
+          "ci": [
+            -10.277841880341882,
+            -4.7529590741898025
+          ]
+        },
+        "win_delta": {
+          "mean": -0.0515625,
+          "ci": [
+            -0.0765625,
+            -0.028125
+          ]
+        },
+        "completion_delta": {
+          "mean": 0.04375,
+          "ci": [
+            0.025,
+            0.0640625
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.13762898500573617,
+          "ci": [
+            0.1266525788896735,
+            0.14897156457324953
+          ]
+        },
+        "gained": 15,
+        "lost": 50,
+        "both_win": 238,
+        "same_win_loss": 3.638655462184874
+      },
+      "direct minus g2": {
+        "common": 616,
+        "families": 311,
+        "utility": {
+          "mean": 0.3327922077922078,
+          "ci": [
+            -2.4822779840091376,
+            3.266145135525095
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0046875,
+          "ci": [
+            -0.0203125,
+            0.03125
+          ]
+        },
+        "completion_delta": {
+          "mean": -0.0140625,
+          "ci": [
+            -0.0265625,
+            -0.003125
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.632702042224815,
+          "ci": [
+            0.5914290196756072,
+            0.6760123224461
+          ]
+        },
+        "gained": 28,
+        "lost": 23,
+        "both_win": 244,
+        "same_win_loss": 0.7909836065573771
+      },
+      "direct minus clone": {
+        "common": 616,
+        "families": 312,
+        "utility": {
+          "mean": 1.8133116883116882,
+          "ci": [
+            -0.27068597250099286,
+            3.998459518723604
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0234375,
+          "ci": [
+            0.0046875,
+            0.04375
+          ]
+        },
+        "completion_delta": {
+          "mean": -0.0078125,
+          "ci": [
+            -0.0171875,
+            0.0
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 1.167618865412303,
+          "ci": [
+            1.1071483811418357,
+            1.229176283414062
+          ]
+        },
+        "gained": 28,
+        "lost": 13,
+        "both_win": 243,
+        "same_win_loss": 0.8724279835390947
+      },
+      "low minus g2low": {
+        "common": 596,
+        "families": 310,
+        "utility": {
+          "mean": 1.4781879194630871,
+          "ci": [
+            0.04893239288619728,
+            2.95966343765524
+          ]
+        },
+        "win_delta": {
+          "mean": 0.015625,
+          "ci": [
+            0.0015625,
+            0.03125
+          ]
+        },
+        "completion_delta": {
+          "mean": -0.003125,
+          "ci": [
+            -0.0125,
+            0.0046875
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 0.9664178229642568,
+          "ci": [
+            0.9453700884203398,
+            0.9878260512412594
+          ]
+        },
+        "gained": 14,
+        "lost": 7,
+        "both_win": 267,
+        "same_win_loss": -0.7228464419475655
+      },
+      "low minus direct": {
+        "common": 592,
+        "families": 308,
+        "utility": {
+          "mean": 4.429054054054054,
+          "ci": [
+            1.7690322776362093,
+            7.081643118785976
+          ]
+        },
+        "win_delta": {
+          "mean": 0.01875,
+          "ci": [
+            -0.0078125,
+            0.04375
+          ]
+        },
+        "completion_delta": {
+          "mean": -0.028125,
+          "ci": [
+            -0.05,
+            -0.0078125
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 3.7587165718376165,
+          "ci": [
+            3.399105648423782,
+            4.167196906533597
+          ]
+        },
+        "gained": 33,
+        "lost": 18,
+        "both_win": 249,
+        "same_win_loss": -4.791164658634538
+      },
+      "low minus g2": {
+        "common": 598,
+        "families": 311,
+        "utility": {
+          "mean": 4.9397993311036785,
+          "ci": [
+            2.6979148800856407,
+            7.287196339434276
+          ]
+        },
+        "win_delta": {
+          "mean": 0.0234375,
+          "ci": [
+            0.0015625,
+            0.0453125
+          ]
+        },
+        "completion_delta": {
+          "mean": -0.0421875,
+          "ci": [
+            -0.0609375,
+            -0.025
+          ]
+        },
+        "fight_time_ratio": {
+          "mean": 2.378147651145915,
+          "ci": [
+            2.259409097493546,
+            2.508489433198876
+          ]
+        },
+        "gained": 31,
+        "lost": 10,
+        "both_win": 253,
+        "same_win_loss": -3.5296442687747036
+      },
+      "common_all": {
+        "g2": {
+          "common": 580,
+          "families": 303,
+          "utility": {
+            "mean": -6.182758620689655,
+            "ci": [
+              -8.854708311094853,
+              -3.6163430969189783
+            ]
+          },
+          "win_delta": {
+            "mean": -0.04482758620689655,
+            "ci": [
+              -0.06984667802385008,
+              -0.02072538860103627
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 0.2506526891996344,
+            "ci": [
+              0.2344186225613155,
+              0.26786665707568796
+            ]
+          },
+          "gained": 12,
+          "lost": 38,
+          "both_win": 245,
+          "same_win_loss": 3.795918367346939
+        },
+        "v2": {
+          "common": 580,
+          "families": 303,
+          "utility": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "win_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ]
+          },
+          "gained": 0,
+          "lost": 0,
+          "both_win": 283,
+          "same_win_loss": 0
+        },
+        "direct": {
+          "common": 580,
+          "families": 303,
+          "utility": {
+            "mean": -5.63448275862069,
+            "ci": [
+              -8.450955140441778,
+              -2.9518555821399675
+            ]
+          },
+          "win_delta": {
+            "mean": -0.034482758620689655,
+            "ci": [
+              -0.06143344709897611,
+              -0.00859106529209622
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 0.1595121855810207,
+            "ci": [
+              0.14132044093571589,
+              0.1791977441387049
+            ]
+          },
+          "gained": 20,
+          "lost": 40,
+          "both_win": 243,
+          "same_win_loss": 5.045267489711934
+        },
+        "g2low": {
+          "common": 580,
+          "families": 303,
+          "utility": {
+            "mean": -2.586206896551724,
+            "ci": [
+              -4.708404802744425,
+              -0.5767620480161387
+            ]
+          },
+          "win_delta": {
+            "mean": -0.020689655172413793,
+            "ci": [
+              -0.03958862543771144,
+              -0.003430531732418525
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 0.6260935152175932,
+            "ci": [
+              0.6038305417465016,
+              0.6488327872207896
+            ]
+          },
+          "gained": 7,
+          "lost": 19,
+          "both_win": 264,
+          "same_win_loss": 0.7386363636363636
+        },
+        "low": {
+          "common": 580,
+          "families": 303,
+          "utility": {
+            "mean": -1.0672413793103448,
+            "ci": [
+              -2.779119028802248,
+              0.5917825730172975
+            ]
+          },
+          "win_delta": {
+            "mean": -0.008620689655172414,
+            "ci": [
+              -0.02551129054688315,
+              0.006944444444444444
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 0.6027987995627824,
+            "ci": [
+              0.5826008453720875,
+              0.6233805436506277
+            ]
+          },
+          "gained": 10,
+          "lost": 15,
+          "both_win": 268,
+          "same_win_loss": 0.16044776119402984
+        },
+        "same32": {
+          "common": 580,
+          "families": 303,
+          "utility": {
+            "mean": 0.21551724137931033,
+            "ci": [
+              -0.9237142415385391,
+              1.3720287351902565
+            ]
+          },
+          "win_delta": {
+            "mean": 0.0017241379310344827,
+            "ci": [
+              -0.008772315234483396,
+              0.013651877133105802
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 1.1783391802622405,
+            "ci": [
+              1.160030094100686,
+              1.1968260640047441
+            ]
+          },
+          "gained": 7,
+          "lost": 6,
+          "both_win": 277,
+          "same_win_loss": -0.1444043321299639
+        },
+        "same24": {
+          "common": 580,
+          "families": 303,
+          "utility": {
+            "mean": 0.20344827586206896,
+            "ci": [
+              -0.9829718267370948,
+              1.3958781216510243
+            ]
+          },
+          "win_delta": {
+            "mean": 0.0017241379310344827,
+            "ci": [
+              -0.010221901145990196,
+              0.013605442176870748
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 1.075192684170397,
+            "ci": [
+              1.0561283272748063,
+              1.094997332003651
+            ]
+          },
+          "gained": 7,
+          "lost": 6,
+          "both_win": 277,
+          "same_win_loss": -0.10469314079422383
+        },
+        "clone": {
+          "common": 580,
+          "families": 303,
+          "utility": {
+            "mean": -7.56551724137931,
+            "ci": [
+              -10.419456298520927,
+              -4.95332469775475
+            ]
+          },
+          "win_delta": {
+            "mean": -0.0603448275862069,
+            "ci": [
+              -0.08747855917667238,
+              -0.03553299492385787
+            ]
+          },
+          "completion_delta": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "fight_time_ratio": {
+            "mean": 0.1360190737375557,
+            "ci": [
+              0.12524848167485333,
+              0.14750754809214567
+            ]
+          },
+          "gained": 15,
+          "lost": 50,
+          "both_win": 233,
+          "same_win_loss": 3.7124463519313307
+        }
+      }
+    }
+  },
+  "gates": {
+    "same24": {
+      "cost_ratio": 1.0630930052211573,
+      "noninferior": true,
+      "fast": false,
+      "same_cost_improves": false
+    },
+    "low": {
+      "cost_ratio": 0.645815475454774,
+      "noninferior": true,
+      "fast": true,
+      "same_cost_improves": false
+    },
+    "same32": {
+      "cost_ratio": 1.159404057386546,
+      "noninferior": true,
+      "fast": false,
+      "same_cost_improves": false
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "releases": [
+    "188cda5924b614b6399810c7aad897dafb319de0c66fdb956344e9380bb1a6da",
+    "dc7985a66a7cc0de2ac2a85f5dfa95cd804dc061286e366a7211bb1db43d4bb2"
+  ],
+  "partitions": {
+    "train": {
+      "families": 4096,
+      "terminal": {
+        "Defeat": 2160,
+        "Victory": 1936
+      },
+      "counts": {
+        "closed_options": 368235,
+        "options_closed_reference": 415164,
+        "search_first": 8214,
+        "search_follow": 14053,
+        "forced": 21034,
+        "reference_first": 6596,
+        "reference_follow": 9908,
+        "open_first": 9164,
+        "fallback": 22981,
+        "choice_fallback": 1336,
+        "choice_search": 1061,
+        "choice_reference": 456
+      },
+      "decisions": 73769,
+      "actions": 397146,
+      "width": 100
+    },
+    "dev": {
+      "families": 275,
+      "terminal": {
+        "Defeat": 149,
+        "Victory": 126
+      },
+      "counts": {
+        "closed_options": 24639,
+        "options_closed_reference": 27636,
+        "reference_first": 460,
+        "forced": 1391,
+        "reference_follow": 694,
+        "open_first": 582,
+        "fallback": 1350,
+        "choice_fallback": 96,
+        "search_first": 540,
+        "search_follow": 938,
+        "choice_search": 66,
+        "choice_reference": 34
+      },
+      "decisions": 4760,
+      "actions": 25280,
+      "width": 100
+    }
+  },
+  "groups": [
+    "forced",
+    "search_first",
+    "reference_first",
+    "open_first",
+    "search_follow",
+    "reference_follow",
+    "fallback",
+    "choice_search",
+    "choice_reference",
+    "choice_fallback"
+  ],
+  "seconds": 96.91781449998962
+}

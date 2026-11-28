@@ -1,6 +1,6 @@
 # M1-CORE：完整回合搜索与机制化战略评价系统
 
-> **当前规划入口（2026-11-28）：** 项目已采用 [PROJECT-VISION v2.0](project-vision-v2.0.md)、[M1-CORE v2.0](m1-core-v2.0.md)、[M1-INFRA v1.0](m1-infra-v1.0.md) 和 [M1-RUN v0.1](m1-run-v0.1.md)。本页保留截至 CORE-5H 的历史架构、证据与 TODO，不作为新版任务编号或优先级的唯一依据。CORE-5H 已完成，冻结 V2 保留；CORE-6A 尚未下发。
+> **当前规划入口（2026-11-28）：** 项目已采用 [PROJECT-VISION v2.0](project-vision-v2.0.md)、[M1-CORE v2.0](m1-core-v2.0.md)、[M1-INFRA v1.0](m1-infra-v1.0.md) 和 [M1-RUN v0.1](m1-run-v0.1.md)。本页保留 CORE-5 及以前的历史架构和开放问题。CORE-5H 已完成，未通过基线升级。CORE-6A 已完成独立确认，学习引导在配对检验中以较低成本保留能力，H5 tactical32＋V2 继续作为完整搜索对照。[CORE-6A 证据与接口](m1-core6a-learned-policy-guidance.md)
 
 版本：v1.3（C 战略边界、共享机制语义与完整战斗学习闭环）｜日期：2026-11-26
 

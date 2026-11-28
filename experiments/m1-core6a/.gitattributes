@@ -1,0 +1,11 @@
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.pt binary
+*.gz binary
+*.zip binary
+# Preserve byte-exact sources embedded in scored policy identities or the portable bundle.
+clone6.py whitespace=-blank-at-eof
+guide_api.py whitespace=-blank-at-eof
+policy6.py whitespace=-blank-at-eof
+search6.py whitespace=-blank-at-eof
