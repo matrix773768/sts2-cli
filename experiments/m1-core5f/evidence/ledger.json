@@ -1,0 +1,30 @@
+{
+  "admission": 11.191567500005476,
+  "fit": 87.76520940000773,
+  "development": 7.475238399987575,
+  "confirmation_by_arm": {
+    "v2": 125.62667919998057,
+    "mc-128": 127.10337339996477,
+    "mc-256": 124.50822729992797,
+    "mc-512": 123.53594620001968,
+    "mc-945": 118.41429130008328,
+    "td-945": 118.95936059995438,
+    "paired-945": 120.39921039997716
+  },
+  "metered_worker_seconds": 964.9791036999086,
+  "outside_internal_timers": "Publisher verifier, panel freeze, diagnostics and failed module imports, process startup outside offline scripts, test runner, aggregation, documentation and Git. No additional training battles or native audits.",
+  "verification": {
+    "publisher": [
+      [
+        641,
+        591
+      ],
+      [
+        608,
+        566
+      ]
+    ],
+    "provenance_differences": {},
+    "conditional_regressions": 7
+  }
+}

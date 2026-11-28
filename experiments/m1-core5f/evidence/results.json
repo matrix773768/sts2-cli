@@ -1,0 +1,269 @@
+{
+  "arms": {
+    "v2": {
+      "n": 192,
+      "complete": 179,
+      "wins": 96,
+      "mean_u": 16.692737430167597,
+      "mean_loss": 42.022346368715084,
+      "severe": 117,
+      "worker": 125.62667919998057,
+      "queries": 1076,
+      "closed": 661,
+      "interventions": 373,
+      "failures": {
+        "OUTRAGE/modified @ ResolveMovedCardInPlay": 2,
+        "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 4,
+        "conditional_policy/realized_boundary_outside_law": 1,
+        "policy/observation_outside_evaluated_program": 6
+      }
+    },
+    "mc-128": {
+      "n": 192,
+      "complete": 179,
+      "wins": 97,
+      "mean_u": 17.35754189944134,
+      "mean_loss": 41.94972067039106,
+      "severe": 118,
+      "worker": 127.10337339996477,
+      "queries": 1080,
+      "closed": 664,
+      "interventions": 376,
+      "failures": {
+        "OUTRAGE/modified @ ResolveMovedCardInPlay": 2,
+        "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 4,
+        "conditional_policy/realized_boundary_outside_law": 1,
+        "policy/observation_outside_evaluated_program": 6
+      }
+    },
+    "mc-256": {
+      "n": 192,
+      "complete": 179,
+      "wins": 97,
+      "mean_u": 17.256983240223462,
+      "mean_loss": 42.05027932960894,
+      "severe": 118,
+      "worker": 124.50822729992797,
+      "queries": 1088,
+      "closed": 670,
+      "interventions": 381,
+      "failures": {
+        "OUTRAGE/modified @ ResolveMovedCardInPlay": 2,
+        "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 4,
+        "conditional_policy/realized_boundary_outside_law": 1,
+        "policy/observation_outside_evaluated_program": 6
+      }
+    },
+    "mc-512": {
+      "n": 192,
+      "complete": 179,
+      "wins": 97,
+      "mean_u": 17.391061452513966,
+      "mean_loss": 41.91620111731844,
+      "severe": 117,
+      "worker": 123.53594620001968,
+      "queries": 1086,
+      "closed": 670,
+      "interventions": 378,
+      "failures": {
+        "OUTRAGE/modified @ ResolveMovedCardInPlay": 2,
+        "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 4,
+        "conditional_policy/realized_boundary_outside_law": 1,
+        "policy/observation_outside_evaluated_program": 6
+      }
+    },
+    "mc-945": {
+      "n": 192,
+      "complete": 179,
+      "wins": 97,
+      "mean_u": 17.41899441340782,
+      "mean_loss": 41.88826815642458,
+      "severe": 117,
+      "worker": 118.41429130008328,
+      "queries": 1081,
+      "closed": 666,
+      "interventions": 376,
+      "failures": {
+        "OUTRAGE/modified @ ResolveMovedCardInPlay": 2,
+        "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 4,
+        "conditional_policy/realized_boundary_outside_law": 1,
+        "policy/observation_outside_evaluated_program": 6
+      }
+    },
+    "td-945": {
+      "n": 192,
+      "complete": 179,
+      "wins": 97,
+      "mean_u": 17.424581005586592,
+      "mean_loss": 41.88268156424581,
+      "severe": 117,
+      "worker": 118.95936059995438,
+      "queries": 1080,
+      "closed": 663,
+      "interventions": 374,
+      "failures": {
+        "OUTRAGE/modified @ ResolveMovedCardInPlay": 2,
+        "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 4,
+        "conditional_policy/realized_boundary_outside_law": 1,
+        "policy/observation_outside_evaluated_program": 6
+      }
+    },
+    "paired-945": {
+      "n": 192,
+      "complete": 179,
+      "wins": 97,
+      "mean_u": 17.424581005586592,
+      "mean_loss": 41.88268156424581,
+      "severe": 117,
+      "worker": 120.39921039997716,
+      "queries": 1080,
+      "closed": 664,
+      "interventions": 375,
+      "failures": {
+        "OUTRAGE/modified @ ResolveMovedCardInPlay": 2,
+        "HotPiles.RemoveCard/direct_draw_pile_remove @ Play": 4,
+        "conditional_policy/realized_boundary_outside_law": 1,
+        "policy/observation_outside_evaluated_program": 6
+      }
+    }
+  },
+  "vs_v2": {
+    "mc-128": {
+      "common": 179,
+      "families": 93,
+      "delta": 0.664804469273743,
+      "ci": [
+        -0.3314917127071823,
+        2.261111111111111
+      ],
+      "both_win": 96,
+      "loss_difference": 0,
+      "gained": 1,
+      "lost": 0,
+      "all_win_delta": 0.005208333333333333,
+      "all_completion_delta": 0
+    },
+    "mc-256": {
+      "common": 179,
+      "families": 93,
+      "delta": 0.5642458100558659,
+      "ci": [
+        -0.4080721003134796,
+        2.123758960573475
+      ],
+      "both_win": 96,
+      "loss_difference": 0.1875,
+      "gained": 1,
+      "lost": 0,
+      "all_win_delta": 0.005208333333333333,
+      "all_completion_delta": 0
+    },
+    "mc-512": {
+      "common": 179,
+      "families": 93,
+      "delta": 0.6983240223463687,
+      "ci": [
+        -0.11430213464696222,
+        2.1609243295019156
+      ],
+      "both_win": 96,
+      "loss_difference": -0.0625,
+      "gained": 1,
+      "lost": 0,
+      "all_win_delta": 0.005208333333333333,
+      "all_completion_delta": 0
+    },
+    "mc-945": {
+      "common": 179,
+      "families": 93,
+      "delta": 0.7262569832402235,
+      "ci": [
+        -0.011235955056179775,
+        2.1551819923371647
+      ],
+      "both_win": 96,
+      "loss_difference": -0.11458333333333333,
+      "gained": 1,
+      "lost": 0,
+      "all_win_delta": 0.005208333333333333,
+      "all_completion_delta": 0
+    },
+    "td-945": {
+      "common": 179,
+      "families": 93,
+      "delta": 0.7318435754189944,
+      "ci": [
+        -0.016668994413407818,
+        2.1716373012462395
+      ],
+      "both_win": 96,
+      "loss_difference": -0.125,
+      "gained": 1,
+      "lost": 0,
+      "all_win_delta": 0.005208333333333333,
+      "all_completion_delta": 0
+    },
+    "paired-945": {
+      "common": 179,
+      "families": 93,
+      "delta": 0.7318435754189944,
+      "ci": [
+        -0.016668994413407818,
+        2.1716373012462395
+      ],
+      "both_win": 96,
+      "loss_difference": -0.125,
+      "gained": 1,
+      "lost": 0,
+      "all_win_delta": 0.005208333333333333,
+      "all_completion_delta": 0
+    }
+  },
+  "contrasts": {
+    "td-945 minus mc-945": {
+      "common": 179,
+      "families": 93,
+      "delta": 0.00558659217877095,
+      "ci": [
+        -0.046242774566473986,
+        0.06043956043956044
+      ],
+      "both_win": 97,
+      "loss_difference": -0.010309278350515464,
+      "gained": 0,
+      "lost": 0,
+      "all_win_delta": 0,
+      "all_completion_delta": 0
+    },
+    "paired-945 minus td-945": {
+      "common": 179,
+      "families": 93,
+      "delta": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "both_win": 97,
+      "loss_difference": 0,
+      "gained": 0,
+      "lost": 0,
+      "all_win_delta": 0,
+      "all_completion_delta": 0
+    },
+    "mc-945 minus mc-128": {
+      "common": 179,
+      "families": 93,
+      "delta": 0.061452513966480445,
+      "ci": [
+        -0.28161316441226897,
+        0.5054960317460317
+      ],
+      "both_win": 97,
+      "loss_difference": -0.1134020618556701,
+      "gained": 0,
+      "lost": 0,
+      "all_win_delta": 0,
+      "all_completion_delta": 0
+    }
+  }
+}

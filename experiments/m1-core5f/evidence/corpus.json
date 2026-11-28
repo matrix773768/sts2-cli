@@ -1,0 +1,654 @@
+{
+  "editions": {
+    "data": {
+      "plan": "744208512e634cfe06254485ee44ab23659c6135723ccfe14f4dd177a9fa8e5d",
+      "manifest": "967a38838965b6de168ab741a406f0744dec82c19a1c9eda7ed367454799ac3a",
+      "policy": "25740c4a3b29a5f378f6bd5723d3b594be6547a77e16b891e461bbf2bfcdcda7",
+      "behavior": "51ed7db73b4d583c183d5a37bbcb6a2f3585bc73cd4cb931774fee46b8e32616",
+      "runtime": {
+        "bridge_inputs": {
+          "panel.gz": "742e881297ec536b14ae743e32dad890d168a4907c08722e7c0e14a303d2be4d",
+          "train-V2-0.gz": "05b7b9392502077e684a0dd9895676fdd7762e9a25fccf065ce9951fd90f3bcf",
+          "train-V2-1.gz": "f971fc4a0ccac360f6503e2dfe8fb0ddd9082fcf81658f42a5c8c640962e56e6",
+          "train-V2-2.gz": "89278859ef432dc2d7c59592ae324892218fa5826afac326b4c54c20814d2b56",
+          "train-V2-3.gz": "fb4d6afb61d47ceb30e795e3c1a824fa68c8f489c92100c1f7b281205ebc63e8"
+        },
+        "build": {
+          "host": "9ce97b34c9e278f38ff5f72cb5bdb56b753d04f302486feb965596890f4594d1",
+          "hot": "3713b6f7464f435c16cfb672217147a63a358d257c9a9890b60dacb115fcb6e2",
+          "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+        },
+        "godot": "d6dd03e77bd4c02f87cc757472329ca0413e20522a4b2561d4755b286d509362",
+        "coreclr": "9.0.7",
+        "python": "3.10.11",
+        "torch": "2.12.0",
+        "kernel": "1.0.2",
+        "sources": {
+          "hot_produce.py": "9c38d72b60d37e0e2fe6c7a39750dad7f7f303d7464e50d785a19e26ee9a5609",
+          "condition.py": "2e0340e8c757287bb482dc2f5a11c8a1e055fb37288a738fac75ee15aa910dce",
+          "client.py": "daf57c2c975e2dbd22b9ee32e631d741f0e81ceede8460cef05db38dd8b158fa",
+          "models.py": "d167fe8e4b95c75d23b3bc4998f95d8de8c322c68402ea46cf69bef57b8ce727",
+          "contingent.py": "031a7755a673a85ea573f9eda2c2651032e51b7cf5691e04952017d561720fb3",
+          "experience.py": "9eabb035db041fe3f3c36ddb600a3390db33d90441009f907e186617fe12920b",
+          "produce_batch.py": "89c366fba5c981284ec78d6a282e4721133fc50869b185f2668a2fe80feca2bc"
+        },
+        "g2": "1077c191586885c49173afe5801849b3ea6a4535425731e27226fe1978abf084",
+        "v2": "d439444a1a9ca9bc8864988e488f720f71b379844b30ddb112bdd8f0ddcfcbbb"
+      }
+    },
+    "capacity": {
+      "plan": "66da2f0833eb38dcce1ae6a45e82b15f4754125c2682d31a5dff24a8e5425f56",
+      "manifest": "d8ee9f103dca66391d495d6b9a54f046b2e0027c77cff8e55515c9106e190bd5",
+      "policy": "25740c4a3b29a5f378f6bd5723d3b594be6547a77e16b891e461bbf2bfcdcda7",
+      "behavior": "51ed7db73b4d583c183d5a37bbcb6a2f3585bc73cd4cb931774fee46b8e32616",
+      "runtime": {
+        "bridge_inputs": {
+          "panel.gz": "742e881297ec536b14ae743e32dad890d168a4907c08722e7c0e14a303d2be4d",
+          "train-V2-0.gz": "05b7b9392502077e684a0dd9895676fdd7762e9a25fccf065ce9951fd90f3bcf",
+          "train-V2-1.gz": "f971fc4a0ccac360f6503e2dfe8fb0ddd9082fcf81658f42a5c8c640962e56e6",
+          "train-V2-2.gz": "89278859ef432dc2d7c59592ae324892218fa5826afac326b4c54c20814d2b56",
+          "train-V2-3.gz": "fb4d6afb61d47ceb30e795e3c1a824fa68c8f489c92100c1f7b281205ebc63e8"
+        },
+        "build": {
+          "host": "9ce97b34c9e278f38ff5f72cb5bdb56b753d04f302486feb965596890f4594d1",
+          "hot": "3713b6f7464f435c16cfb672217147a63a358d257c9a9890b60dacb115fcb6e2",
+          "game": "62ecbe91093e1fa862de4329aac865209dcb297804caf0f0520d92d8c0b4a9c3"
+        },
+        "godot": "d6dd03e77bd4c02f87cc757472329ca0413e20522a4b2561d4755b286d509362",
+        "coreclr": "9.0.7",
+        "python": "3.10.11",
+        "torch": "2.12.0",
+        "kernel": "1.0.2",
+        "sources": {
+          "hot_produce.py": "9c38d72b60d37e0e2fe6c7a39750dad7f7f303d7464e50d785a19e26ee9a5609",
+          "condition.py": "2e0340e8c757287bb482dc2f5a11c8a1e055fb37288a738fac75ee15aa910dce",
+          "client.py": "daf57c2c975e2dbd22b9ee32e631d741f0e81ceede8460cef05db38dd8b158fa",
+          "models.py": "d167fe8e4b95c75d23b3bc4998f95d8de8c322c68402ea46cf69bef57b8ce727",
+          "contingent.py": "031a7755a673a85ea573f9eda2c2651032e51b7cf5691e04952017d561720fb3",
+          "experience.py": "9eabb035db041fe3f3c36ddb600a3390db33d90441009f907e186617fe12920b",
+          "produce_batch.py": "89c366fba5c981284ec78d6a282e4721133fc50869b185f2668a2fe80feca2bc"
+        },
+        "g2": "1077c191586885c49173afe5801849b3ea6a4535425731e27226fe1978abf084",
+        "v2": "d439444a1a9ca9bc8864988e488f720f71b379844b30ddb112bdd8f0ddcfcbbb"
+      }
+    }
+  },
+  "train": {
+    "C": 4635,
+    "adjacent": 3693,
+    "terminal_edges": 942,
+    "overflow_mean": 1.6277638792416838e-07
+  },
+  "dev": {
+    "C": 454,
+    "adjacent": 358,
+    "terminal_edges": 96,
+    "overflow_mean": 1.76564725506978e-07
+  },
+  "conditional": {
+    "train": [
+      {
+        "family": "a91d24bf80d10ff264cc36ccab0f0728701ae5c685f65e891be4dfa7888909df",
+        "original": 2.0,
+        "resampled": [
+          2.0,
+          3.0,
+          2.0,
+          2.0
+        ]
+      },
+      {
+        "family": "3825a8d19f1310077ef757ed15411d76720cd9b75ca35f6f1dda87815d450af9",
+        "original": -4.0,
+        "resampled": [
+          -4.0,
+          -4.0,
+          -4.0,
+          -4.0
+        ]
+      },
+      {
+        "family": "ce36bc61cf84c16885620383cece97d7bf31fdc4ddb720fad819fa19b71179a4",
+        "original": 10.0,
+        "resampled": [
+          10.0,
+          10.0,
+          10.0,
+          10.0
+        ]
+      },
+      {
+        "family": "3eef80dd8079ea476340f0e0cdc2d8a6ecba545e891eb9b97b8f94e96690338c",
+        "original": 0.0,
+        "resampled": [
+          0.0,
+          14.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "family": "46a255920a41c5c2b93708d55269d9ed866c0d2c98cec2dffe6390639a92cfc6",
+        "original": 0,
+        "resampled": [
+          0,
+          0.0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "bd5eefea2a22419939945284e61cc7d8b869ca850fd2d364d3cea6a82c5857ac",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "3b57e51635b98fb1904e01090ee2ffc72f668a22b2f0f0704f8de38828077ad1",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "154898ffa39a945351276bbc449065798473e692d110f86980fa89459f2ecf51",
+        "original": -5.0,
+        "resampled": [
+          -5.0,
+          -5.0,
+          -5.0,
+          -5.0
+        ]
+      },
+      {
+        "family": "d93e30467c43e5cbe10a26b290540022e127fac86b507734e8a5b857ac789f9a",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "f34571e299ca513bacc5c3d77f55652f7e3eb7d67b5d5297f7faee5cbe8790c3",
+        "original": 0.0,
+        "resampled": [
+          19.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "family": "04dc196c922e04b5d76ad10a11bcaabad1a4551e7ae69b3fbb477d75bc31df09",
+        "original": 0.0,
+        "resampled": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "family": "22222cf03628d71d9dae1479de042711b15cfea787f7cf8ba496165ef5a78052",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "ebd9031b2fbcc93c7b95e8723c1e23ab3781546d00005fc5feffba8aa9cf5263",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "a80ba2ab618bfffc95218d3125f83746e34d3c9612d736f1b25d8c6e58993092",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "e3f2433891bffab41920085889fa4ba6e2e33563b3431cfefa3f613a10efe19e",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "8c559975f0c05eae4e7d566d60e5b7ab4d2b49ccef2c2ff42862a6a0715247f5",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "990b1dcb32bcc81df04aec5e83da430a16887654e986989e464f28a388999c09",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "00481f78e8c7c0958c614ae28a762b660c5dcdcf991b4d81de0b494d0f56afb5",
+        "original": 0.0,
+        "resampled": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "family": "a7e1e41bcdf6a88bdaacd682e3a7ac9c9a2971e7eb19c7991aeae8ae45847fa4",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "ef941eb8df3cf35fc768d929f93e6e5276cd016688a12e9d11caead3bb83f032",
+        "original": 94.0,
+        "resampled": [
+          0.0,
+          -9.0,
+          -7.0,
+          -101.0
+        ]
+      },
+      {
+        "family": "14322def151af4dbaa2d512717a0a76e42649ec106468b2b5aa0502dda166f17",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          107.0,
+          -16.0
+        ]
+      },
+      {
+        "family": "dd7deef2d3ce029266b1e23c4ff98f8d7b9f23b2f07b6201967d55527e8cfe11",
+        "original": 3.0,
+        "resampled": [
+          5.0,
+          0.0,
+          2.0,
+          8.0
+        ]
+      },
+      {
+        "family": "ab672c4b96cfe92d74544cafdda93f83116f726f3be8bc777d24978f2ea0d72e",
+        "original": 1.0,
+        "resampled": [
+          1.0,
+          1.0,
+          1.0,
+          -13.0
+        ]
+      },
+      {
+        "family": "e4f64f1582313d2563aa5800eb125d3144643ccaf83622dc0ad94515abacb76c",
+        "original": 0.0,
+        "resampled": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "family": "538fd6339811e8ee0230a2c80227cf9e9e8da4f069df21a3c51c8e0649743837",
+        "original": 13.0,
+        "resampled": [
+          13.0,
+          22.0,
+          22.0,
+          13.0
+        ]
+      },
+      {
+        "family": "bcdb39de4ae104b5489ed9930a86037007a4f02320807ef49fbb4b6f2d3c6fa4",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "145e43dd18c2323699178602096f9d1809f3179eaa7fefb91b69c402d290e744",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "5c59cb3b7e0f3e20a336e27bf1d710e3a236fb69057fb432a31fb6f7274c8346",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "4bb9488fa48f517d1aac8101c8094cfcdbd5b6275b12d44b6f74cca0789a2705",
+        "original": 0,
+        "resampled": [
+          3.0,
+          3.0,
+          3.0,
+          0
+        ]
+      },
+      {
+        "family": "0fb95ae2088f47b4caba758b9029917a94a0dae16b95b86928b2089c5f806643",
+        "original": 0.0,
+        "resampled": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "family": "e85efe8ea55dbb70ed064ad9cfe8f9b5c528125a53226f4fe3bf861c3e70e516",
+        "original": -107.0,
+        "resampled": [
+          -107.0,
+          -107.0,
+          -107.0,
+          -107.0
+        ]
+      },
+      {
+        "family": "213c5c4cfa776750cc1d0f8ecfdda8925f85a686431ea26b767814a93f54b641",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "9ff3d1cc431974830e16822839d8defe58d402582efb72df80b07b64c30c3201",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "4b4a7ba6849799a9092bc39d107fc60c65e34bf8f875c8e6877c7dc15e253ea5",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "b68b9ba5a6c686cc85fc868c95b3b05c057ead34795c9549e688019366d4b77d",
+        "original": 3.0,
+        "resampled": [
+          3.0,
+          -109.0,
+          3.0,
+          -112.0
+        ]
+      },
+      {
+        "family": "3c326f47ea85eae3bacfc7ea30e0791489571768f34a03b401ab12c3a0b3958b",
+        "original": -1.0,
+        "resampled": [
+          -2.0,
+          12.0,
+          1.0,
+          0
+        ]
+      },
+      {
+        "family": "09e18f62d3be97367bb58bec31e61e5b529c8fb5731ac816dab1653ed217f2a3",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "9753e1422b30e39e283d7d0e63397c26d7a20f02923b03bb92244efad4b842e7",
+        "original": 3.0,
+        "resampled": [
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ]
+      },
+      {
+        "family": "5174185115e25f6597e2bb9928b9e79c4667508eb4f22abc237dc33322c99ce3",
+        "original": 1.0,
+        "resampled": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "family": "92cb523fe6964e7ddb783dd85b0a7425780dcd1df652ec6e537d21121904f7c6",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "a1116898cf40076246b867ae2be75ebfb113b37c44d0461847b37afa057b318f",
+        "original": 0.0,
+        "resampled": [
+          -2.0,
+          2.0,
+          2.0,
+          0.0
+        ]
+      },
+      {
+        "family": "f4b94a77cd777ac5e65bb36735cc209957fd899066e0185c454f193f9fa4478f",
+        "original": 4.0,
+        "resampled": [
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ]
+      },
+      {
+        "family": "b145c53de88267e6ed86dd880371dfdc734395a86d74a1a60dc8e4e677acb921",
+        "original": 2.0,
+        "resampled": [
+          2.0,
+          0,
+          -124.0,
+          2.0
+        ]
+      },
+      {
+        "family": "09311dc719c70ae7090f505c3a1e6de8c7715a75c6a77ef0237457080df46685",
+        "original": -1.0,
+        "resampled": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ]
+      }
+    ],
+    "dev": [
+      {
+        "family": "1c0e8bac081477f9864c3cd70fe194d66d7ab996dc0ea5a82fd2e4071c98468b",
+        "original": -1.0,
+        "resampled": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ]
+      },
+      {
+        "family": "3e6271e883c5c327f9d9c3562fb9e73d0613c0cda81e2ae3e2881c2a679e9a74",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "94af1473da444608321f8ba086a7fa0414382146f05bb07c3441eadab6fd8654",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "ea01536e45be0363ed1dc640f0c9a4b182ee90ba0618f7f2f4534513b0a338ce",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "7af12819caf3b066be3a4ee9e5fea28bdf5a16930d54c17b165e3ef2ad2416c3",
+        "original": 15.0,
+        "resampled": [
+          15.0,
+          15.0,
+          15.0,
+          15.0
+        ]
+      },
+      {
+        "family": "a1e706bd37f125083fc605a7edc654be36c86d0fd7245b26bab4ef4cb9d6c8f3",
+        "original": 4.0,
+        "resampled": [
+          4.0,
+          25.0,
+          25.0,
+          4.0
+        ]
+      },
+      {
+        "family": "36ba4065cde48243da43dcb3732e316f5c327efb116c552d0dad1b0004b152c5",
+        "original": 0.0,
+        "resampled": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "family": "837db2ca9678f8fb9a6e1b85233e6a46da21f51e00623aae482bb4f584905be6",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "f24a769180ec03a5a9bded34ed86faf8700b871085b6982c2fcffcb37f3e4d3b",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "849fe974d29c2dee86e138090ad9b8d214a29a9ec67300b54b9a9899a410cad2",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "b33e1cb0ddcdacf4ff7f7b3aac18a0933403d6f2a549def5144bc3c2aa7e3608",
+        "original": 0,
+        "resampled": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "family": "7a0f5e7e30439b224680f04cbe8c831d02c01e7f6e92f016e3c785ba10f0643f",
+        "original": 1.0,
+        "resampled": [
+          127.0,
+          -2.0,
+          -12.0,
+          -14.0
+        ]
+      }
+    ]
+  }
+}
